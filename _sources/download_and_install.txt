@@ -1,0 +1,26 @@
+Download and Install
+====================
+
+This document will show you how to download and install :class:`~atlas` and :class:`~Fokko` on your machine.
+
+Choose your operating system:
+
+* :ref:`linux`
+* :ref:`mac`
+* :ref:`windows`
+
+.. _linux:
+
+Linux
+-----
+If you have a Linux machine, you should be able to get the latest version of 
+
+.. _mac:
+
+Mac
+---
+
+.. _windows:
+
+Windows
+-------

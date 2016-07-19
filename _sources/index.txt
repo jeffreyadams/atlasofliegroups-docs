@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to atlas' documentation!
-=================================
+Welcome to atlas' Documentation Page!
+=====================================
 
 The `Atlas of Lie Groups and Representations`_ is a project to make available information about representations of reductive Lie groups over real and p-adic fields. Of particular importance is the problem of the unitary dual: classifying all of the irreducible `unitary representations`_ of a given Lie group.
 
