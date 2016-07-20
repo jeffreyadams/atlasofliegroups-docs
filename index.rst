@@ -13,7 +13,7 @@ The Atlas consists in part of a project to compute the unitary dual, by mathemat
 .. _Atlas of Lie Groups and Representations: http://liegroups.org/
 .. _unitary representations: https://en.wikipedia.org/wiki/Unitary_representation
 
-This documentation is organized into these sections:
+The main documentation is organized by these sections:
 
 * :ref:`general_info`
 * :ref:`getting_started`
