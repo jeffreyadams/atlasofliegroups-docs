@@ -59,3 +59,5 @@ The main documentation is organized by these sections:
 .. toctree::
    :maxdepth: 2
    :caption: Trouble Shooting
+   
+   ts-install
