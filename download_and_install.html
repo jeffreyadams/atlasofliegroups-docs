@@ -98,7 +98,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#mac">Mac</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#windows">Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#windows">Windows</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#download">Download</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Installation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="run_atlas.html">Run atlas</a></li>
@@ -180,7 +184,7 @@
 <div class="section" id="using-git">
 <span id="id2"></span><h4>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h4>
 <p>If you choose to use git, you can get the most up-to-date version of the software.</p>
-<p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, type:</p>
+<p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>git clone https://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
@@ -252,18 +256,68 @@ and rx-scripts directory (scripts for realex, and also some realex help files).<
 <div class="section" id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p><strong>Source code</strong></p>
-<p>If you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type:</p>
+<p>Assuming you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">make</span>
 </pre></div>
 </div>
-<p>Ideally, this should get the source code compiled. If you encounter any error, see <a class="reference internal" href="index.html#trouble-shooting"><span>Trouble Shooting</span></a></p>
+<p>You can choose turn on the verbose option by typing:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>make verbose=true
+</pre></div>
+</div>
+<p>This will show you the details of the commands your compiler is using to compile and link the codes.</p>
+<p>Ideally, this should get the source code compiled. If you encounter any error, see <a class="reference internal" href="index.html#trouble-shooting"><span>Trouble Shooting</span></a>.</p>
+<p><strong>Executables</strong></p>
+<p>Assuming you have downloaded the executables from the provided links, after you unzip the files you are pretty much good to go. Proceed to <a class="reference internal" href="run_atlas.html#run-atlas"><span>Run atlas</span></a>.</p>
+<p>If you want to create <a class="reference external" href="https://en.wikipedia.org/wiki/Symbolic_link">symlinks</a> for atlas, you can do:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
+</pre></div>
+</div>
+<p>For example, if you want to install the executables in /home/userid/software/atlas, and symlinks in /home/userid/bin, type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you have downloaded the messages (help) files, you must put it in the same directory as the atlas executables. Otherwise, you can run atlas with this command <code class="docutils literal"><span class="pre">atlas</span> <span class="pre">[message</span> <span class="pre">directory]</span></code>.</p>
+</div>
 </div>
 </div>
 <div class="section" id="mac">
 <span id="macs"></span><h2>Mac<a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h2>
+<p>This section is currently under construction. For instruction on how to download and install on a Mac machine, see <a class="reference external" href="http://www.liegroups.org/software/download/mac.html">compiling atlas for Mac using MacPorts</a>.</p>
 </div>
 <div class="section" id="windows">
 <span id="id3"></span><h2>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="download">
+<h3>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h3>
+<p>We recommend you to download the latest version.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="20%" />
+<col width="57%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Latest atlas-scripts directory</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.6/atlas_0.6.tgz">atlas-scripts.0.6.3.tgz</a></td>
+<td>supplementary files for atlas</td>
+</tr>
+<tr class="row-even"><td>Latest complete version: 0.6</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.6/atlas_0.6_windows.tgz">atlas_0.6_windows.tgz</a></td>
+<td>executables for Windows, Fokko and atlas, including messages and atlas-scripts</td>
+</tr>
+<tr class="row-odd"><td>Verstion 0.5.9</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.9.windows.zip">atlas_0.5.9.windows.zip</a></td>
+<td>executables for Windows, atlas and realex, including messages and rx-scripts</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h3>Installation<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Unzip the file you just downloaded, open atlas_windows/bin, double click on atlas.exe or Fokko.exe to run.</p>
+<p>If for some reason, you choose to download the source files and would like to compile atlas, see <a class="reference external" href="http://www.liegroups.org/software/download/windows.html">this page</a> for instructions.</p>
+</div>
 </div>
 </div>
 
