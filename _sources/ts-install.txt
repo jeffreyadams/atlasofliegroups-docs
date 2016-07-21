@@ -1,2 +1,2 @@
-Trouble Shooting -- Installation
-================================
+Installation
+============

@@ -1,3 +1,5 @@
+.. _download_and_install:
+
 Download and Install
 ====================
 
@@ -112,7 +114,7 @@ For example, if you want to install the executables in /home/userid/software/atl
 
     make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
     
-.. note:: If you have downloaded the messages (help) files, you must put it in the same directory as the atlas executables. Otherwise, you can run atlas with this command ``atlas [message directory]``.
+.. note:: If you have downloaded the messages (help) files, it is recommended that you put it in the same directory as the atlas executables.
 
 
 
