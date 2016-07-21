@@ -30,7 +30,7 @@ Using git
 
 If you choose to use git, you can get the most up-to-date version of the software. 
 
-Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, type::
+Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type::
 
     git clone https://github.com/jeffreyadams/atlasofliegroups.git
     
@@ -88,11 +88,32 @@ Installation
 
 **Source code**
 
-If you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type::
+Assuming you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type::
 
     make
 
-Ideally, this should get the source code compiled. If you encounter any error, see :ref:`trouble_shooting`
+You can choose turn on the verbose option by typing::
+
+    make verbose=true
+
+This will show you the details of the commands your compiler is using to compile and link the codes.
+
+Ideally, this should get the source code compiled. If you encounter any error, see :ref:`trouble_shooting`.
+
+**Executables**
+
+Assuming you have downloaded the executables from the provided links, after you unzip the files you are pretty much good to go. Proceed to :ref:`run_atlas`.
+
+If you want to create `symlinks <https://en.wikipedia.org/wiki/Symbolic_link>`_ for atlas, you can do::
+
+    make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
+   
+For example, if you want to install the executables in /home/userid/software/atlas, and symlinks in /home/userid/bin, type::
+
+    make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
+    
+.. note:: If you have downloaded the messages (help) files, you must put it in the same directory as the atlas executables. Otherwise, you can run atlas with this command ``atlas [message directory]``.
+
 
 
 .. _macs:
@@ -100,7 +121,32 @@ Ideally, this should get the source code compiled. If you encounter any error, s
 Mac
 ---
 
+This section is currently under construction. For instruction on how to download and install on a Mac machine, see `compiling atlas for Mac using MacPorts <http://www.liegroups.org/software/download/mac.html>`_.
+
 .. _windows:
 
 Windows
 -------
+
+Download
+~~~~~~~~
+
+We recommend you to download the latest version.
+
++--------------------------------+----------------------------+--------------------------------------------------------------------------------+
+| Latest atlas-scripts directory | `atlas-scripts.0.6.3.tgz`_ | supplementary files for atlas                                                  |
++--------------------------------+----------------------------+--------------------------------------------------------------------------------+
+| Latest complete version: 0.6   | `atlas_0.6_windows.tgz`_   | executables for Windows, Fokko and atlas, including messages and atlas-scripts |
++--------------------------------+----------------------------+--------------------------------------------------------------------------------+
+| Verstion 0.5.9                 | `atlas_0.5.9.windows.zip`_ | executables for Windows, atlas and realex, including messages and rx-scripts   |
++--------------------------------+----------------------------+--------------------------------------------------------------------------------+
+
+.. _atlas_0.6_windows.tgz: http://www.liegroups.org/software/atlas_0.6/atlas_0.6_windows.tgz
+.. _atlas_0.5.9.windows.zip: http://www.liegroups.org/software/atlas_0.5.9.windows.zip
+
+Installation
+~~~~~~~~~~~~
+
+Unzip the file you just downloaded, open atlas_windows/bin, double click on atlas.exe or Fokko.exe to run.
+
+If for some reason, you choose to download the source files and would like to compile atlas, see `this page <http://www.liegroups.org/software/download/windows.html>`_ for instructions.
