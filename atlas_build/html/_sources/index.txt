@@ -19,7 +19,8 @@ The main documentation is organized by these sections:
 
 * :ref:`general_info`
 * :ref:`getting_started`
-* :ref:`functions`
+* :ref:`tutorial_with_examples`
+* :ref:`library`
 * :ref:`resources`
 * :ref:`trouble_shooting`
 
@@ -30,6 +31,7 @@ The main documentation is organized by these sections:
    :caption: General Information
    
    about_us
+   about_atlas
 
 .. _getting_started:
 
@@ -39,7 +41,21 @@ The main documentation is organized by these sections:
    
    download_and_install
    run_atlas
-   simple_commands
+   
+.. _tutorial_with_examples:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Tutorial
+   
+   basics
+   data_type
+   
+.. _library:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: atlas Function Library
    
 .. _resources:
 
@@ -50,11 +66,6 @@ The main documentation is organized by these sections:
    videos
    training
    
-.. _functions:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: atlas Functions
 
 .. _trouble_shooting:
 
