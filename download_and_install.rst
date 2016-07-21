@@ -30,7 +30,9 @@ You have two options:
 Using git
 +++++++++
 
-If you choose to use git, you can get the most up-to-date version of the software. 
+If you choose to use git, you can get the most up-to-date version of the software. Make sure your git client is relatively new. Version 1.7.0.4 and above should work. To check your git version, do::
+
+    git --version
 
 Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type::
 
@@ -100,7 +102,7 @@ You can choose turn on the verbose option by typing::
 
 This will show you the details of the commands your compiler is using to compile and link the codes.
 
-Ideally, this should get the source code compiled. If you encounter any error, see :ref:`trouble_shooting`.
+Ideally, this should get the source code compiled. If you encounter any error, see :ref:`installation_troubleshooting`.
 
 **Executables**
 

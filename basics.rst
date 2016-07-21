@@ -1,3 +1,3 @@
-Basics
-======
+Basic atlas Syntax
+==================
 

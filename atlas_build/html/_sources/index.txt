@@ -33,6 +33,7 @@ The main documentation is organized by these sections:
    about_us
    about_atlas
 
+
 .. _getting_started:
 
 .. toctree::
@@ -41,6 +42,7 @@ The main documentation is organized by these sections:
    
    download_and_install
    run_atlas
+   
    
 .. _tutorial_with_examples:
 
@@ -51,11 +53,13 @@ The main documentation is organized by these sections:
    basics
    data_type
    
+   
 .. _library:
 
 .. toctree::
    :maxdepth: 2
    :caption: atlas Function Library
+   
    
 .. _resources:
 

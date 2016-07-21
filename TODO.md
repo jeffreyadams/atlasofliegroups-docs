@@ -1,5 +1,5 @@
 # Todo List
 
 ## Short term
-* Finish writing instructions for download and installation
-* Add troubleshooting page for installation
+* Add video links.
+* Transfer the "help with git" page from liegroups.org.
