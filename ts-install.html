@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; atlas 0.6 documentation</title>
+  <title>Installation – Trouble Shooting &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -83,24 +83,34 @@
                 <p class="caption"><span class="caption-text">General Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="about_us.html">About Us</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_atlas.html">About the Software</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="download_and_install.html">Download and Install</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run_atlas.html">Run atlas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="simple_commands.html">Simple Commands</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="basics.html">Basic atlas Syntax</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_type.html">Data Type</a></li>
+</ul>
+<p class="caption"><span class="caption-text">atlas Function Library</span></p>
+<ul class="simple">
 </ul>
 <p class="caption"><span class="caption-text">Online Resources</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">Videos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="training.html">Online Training</a></li>
 </ul>
-<p class="caption"><span class="caption-text">atlas Functions</span></p>
-<ul class="simple">
-</ul>
 <p class="caption"><span class="caption-text">Trouble Shooting</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Installation &#8211; Trouble Shooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#the-readline-package">The readline package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ctanglex-error">ctanglex error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compiler-error">Compiler error</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -131,7 +141,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Installation</li>
+    <li>Installation &#8211; Trouble Shooting</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -145,8 +155,60 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="installation-trouble-shooting">
+<span id="installation-troubleshooting"></span><h1>Installation &#8211; Trouble Shooting<a class="headerlink" href="#installation-trouble-shooting" title="Permalink to this headline">¶</a></h1>
+<p>During the compile process, errors may occur. This page will help you fix errors regarding:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#readline"><span>The readline package</span></a></li>
+<li><a class="reference internal" href="#ctanglex"><span>ctanglex error</span></a></li>
+<li><a class="reference internal" href="#compiler"><span>Compiler error</span></a></li>
+</ul>
+<div class="section" id="the-readline-package">
+<span id="readline"></span><h2>The readline package<a class="headerlink" href="#the-readline-package" title="Permalink to this headline">¶</a></h2>
+<p>If you see an error about readline, you probably need to install the readline package.</p>
+<p>The software uses the readline package to provide very useful command line tools, including CTRL-p for previous line, tab completion, etc.</p>
+<p>To compile atlas with readline you need the development version of readline. To install this under <strong>Linux</strong> Debian-based systems (including Ubuntu), do:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get install libreadline-dev
+</pre></div>
+</div>
+<p>On <strong>redhat</strong>-like systems do:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo yum install libreadline-dev
+</pre></div>
+</div>
+<p>This line in the makefile tells the software where to find the readline library:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">rlincludes</span> <span class="o">=</span> <span class="o">-</span><span class="n">lreadline</span> <span class="o">-</span><span class="n">lcurses</span>
+</pre></div>
+</div>
+<p>On some systems it is necessary to replace <code class="docutils literal"><span class="pre">-lcurses</span></code> with <code class="docutils literal"><span class="pre">-lncurses</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If all else fails, you can compile the software without readline <code class="docutils literal"><span class="pre">make</span> <span class="pre">readline</span> <span class="pre">=</span> <span class="pre">false</span></code>.</p>
+</div>
+</div>
+<div class="section" id="ctanglex-error">
+<span id="ctanglex"></span><h2>ctanglex error<a class="headerlink" href="#ctanglex-error" title="Permalink to this headline">¶</a></h2>
+<p>If you see:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>ctanglex: Command not found
+</pre></div>
+</div>
+<p>this means you need to install <a class="reference external" href="http://wwwmathlabo.univ-poitiers.fr/~maavl/CWEBx/">CWEBx</a>. It is included in our distribution of atlas. You can find the subdirectory &#8220;cwebx&#8221;. Running <code class="docutils literal"><span class="pre">make</span></code> under that directory should compile cwebx and generate cwebx/ctanglex and cwebx/cweavex.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions you must edit this Makefile.</p>
+</div>
+</div>
+<div class="section" id="compiler-error">
+<span id="compiler"></span><h2>Compiler error<a class="headerlink" href="#compiler-error" title="Permalink to this headline">¶</a></h2>
+<p>Your g++ version should be newer than version 4.4. To check your g++ version, do:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">++</span> <span class="o">--</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>If you are using a C++ compiler that&#8217;s not g++, you need to edit Makefile. Find the line:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>C++ = g++
+</pre></div>
+</div>
+<p>replace g++ with your C++ compiler.</p>
+</div>
 </div>
 
 
