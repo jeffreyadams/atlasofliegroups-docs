@@ -43,7 +43,7 @@ You will see atlas output::
     Added definition [13] of #: (bool->int)
     ...
     
-The symbol "<" means read a file. If this doesn't work, please see :ref:`trouble_shooting`.
+The symbol "<" means read a file. If this doesn't work, please see :ref:`trouble_shooting`. Also, there is a `video <https://www.youtube.com/watch?v=SU4fql8rOQg&feature=youtu.be>`_ explaining how to launch atlas so that it finds the necessary .at files.
 
 Once this is working, you can and should load other files. Load all.at to get a recommended set of files::
 
@@ -69,4 +69,9 @@ This indicates that command completion is working. Now do a few simple commands:
     2:  1  [r1]  2   (0,1)  *(x=2,lam=rho+  [0], nu=  [1]/1)  1^e
 
 Congratulations! Now you have atlas working on your machine! Proceed to :ref:`simple_commands` for some examples of what you can do with atlas.
+
+Quit atlas
+----------
+
+Just type ``quit`` :)
 
