@@ -22,13 +22,15 @@ Download the software
 
 You have two options:
 
-* :ref:`using_git` : recommended method if you are comfortable with git
+* :ref:`using_git` : recommended method.
 * :ref:`using_link`
 
 .. _using_git:
 
 Using git
 +++++++++
+
+For users who are not familiar with git, see :ref:`help_git` to get started with git.
 
 If you choose to use git, you can get the most up-to-date version of the software. Make sure your git client is relatively new. Version 1.7.0.4 and above should work. To check your git version, do::
 
@@ -154,3 +156,6 @@ Installation
 Unzip the file you just downloaded, open atlas_windows/bin, double click on atlas.exe or Fokko.exe to run.
 
 If for some reason, you choose to download the source files and would like to compile atlas, see `this page <http://www.liegroups.org/software/download/windows.html>`_ for instructions.
+
+
+

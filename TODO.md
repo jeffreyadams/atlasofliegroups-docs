@@ -2,4 +2,5 @@
 
 ## Short term
 * Add video links.
-* Transfer the "help with git" page from liegroups.org.
+* Add information about what the software does
+* Transfer example page from http://www.liegroups.org/software/examples/

@@ -42,6 +42,7 @@ The main documentation is organized by these sections:
    
    download_and_install
    run_atlas
+   help_git
    
    
 .. _tutorial_with_examples:
