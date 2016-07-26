@@ -17,7 +17,7 @@ Sphinx supports all three major operating systems. For details of how to install
 
 To only clone this branch, do:
 ```
-git clone -b gh-pages --single-branch https://github.com/cuiran/atlas_documentation.git
+git clone -b gh-pages --single-branch https://github.com/jeffreyadams/atlasofliegroups-docs.git
 ```	
 You can view the website locally by opening the index.html file with your browser.
 
