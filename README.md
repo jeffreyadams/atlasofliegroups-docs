@@ -19,11 +19,11 @@ Sphinx supports all three major operating systems. For details of how to install
 
 Under desired directory on your machine, do 
 ```
-git clone https://github.com/cuiran/atlas_documentation.git
+git clone https://github.com/jeffreyadams/atlasofliegroups-docs.git
 ```	
 Go to the atlas_documentation directory 
 ```
-cd atlas_documentation
+cd atlasofliegroups-docs
 ```
 since we are trying to make a website, type: 
 ```
