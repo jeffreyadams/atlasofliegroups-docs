@@ -88,7 +88,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Download and Install</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Download and Install</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#linux">Linux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#download-the-software">Download the software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#using-git">Using git</a></li>
@@ -147,7 +147,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -174,9 +174,9 @@
 <p>This document will show you how to download and install atlas and Fokko on your machine.</p>
 <p>Choose your operating system:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#linux"><span>Linux</span></a></li>
-<li><a class="reference internal" href="#macs"><span>Mac</span></a></li>
-<li><a class="reference internal" href="#windows"><span>Windows</span></a></li>
+<li><a class="reference internal" href="#linux"><span class="std std-ref">Linux</span></a></li>
+<li><a class="reference internal" href="#macs"><span class="std std-ref">Mac</span></a></li>
+<li><a class="reference internal" href="#windows"><span class="std std-ref">Windows</span></a></li>
 </ul>
 <div class="section" id="linux">
 <span id="id2"></span><h2>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
@@ -184,18 +184,18 @@
 <h3>Download the software<a class="headerlink" href="#download-the-software" title="Permalink to this headline">¶</a></h3>
 <p>You have two options:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#using-git"><span>Using git</span></a> : recommended method.</li>
-<li><a class="reference internal" href="#using-link"><span>Using provided links</span></a></li>
+<li><a class="reference internal" href="#using-git"><span class="std std-ref">Using git</span></a> : recommended method.</li>
+<li><a class="reference internal" href="#using-link"><span class="std std-ref">Using provided links</span></a></li>
 </ul>
 <div class="section" id="using-git">
 <span id="id3"></span><h4>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h4>
-<p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span>Help with git</span></a> to get started with git.</p>
+<p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span class="std std-ref">Help with git</span></a> to get started with git.</p>
 <p>If you choose to use git, you can get the most up-to-date version of the software. Make sure your git client is relatively new. Version 1.7.0.4 and above should work. To check your git version, do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
 </pre></div>
 </div>
 <p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>git clone https://github.com/jeffreyadams/atlasofliegroups.git
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
 <p>This creates a subdirectory &#8220;atlasofliegroups&#8221; and stores the files there.</p>
@@ -267,23 +267,23 @@ and rx-scripts directory (scripts for realex, and also some realex help files).<
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p><strong>Source code</strong></p>
 <p>Assuming you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">make</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span>
 </pre></div>
 </div>
 <p>You can choose turn on the verbose option by typing:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>make verbose=true
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">verbose</span><span class="o">=</span><span class="n">true</span>
 </pre></div>
 </div>
 <p>This will show you the details of the commands your compiler is using to compile and link the codes.</p>
-<p>Ideally, this should get the source code compiled. If you encounter any error, see <a class="reference internal" href="ts-install.html#installation-troubleshooting"><span>Installation &#8211; Trouble Shooting</span></a>.</p>
+<p>Ideally, this should get the source code compiled. If you encounter any error, see <a class="reference internal" href="ts-install.html#installation-troubleshooting"><span class="std std-ref">Installation &#8211; Trouble Shooting</span></a>.</p>
 <p><strong>Executables</strong></p>
-<p>Assuming you have downloaded the executables from the provided links, after you unzip the files you are pretty much good to go. Proceed to <a class="reference internal" href="run_atlas.html#run-atlas"><span>Run atlas</span></a>.</p>
+<p>Assuming you have downloaded the executables from the provided links, after you unzip the files you are pretty much good to go. Proceed to <a class="reference internal" href="run_atlas.html#run-atlas"><span class="std std-ref">Run atlas</span></a>.</p>
 <p>If you want to create <a class="reference external" href="https://en.wikipedia.org/wiki/Symbolic_link">symlinks</a> for atlas, you can do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span> <span class="o">=</span> <span class="p">[</span><span class="n">installation</span> <span class="n">directory</span><span class="p">]</span> <span class="n">BINDIR</span> <span class="o">=</span> <span class="p">[</span><span class="n">desired</span> <span class="n">symlinks</span> <span class="n">directory</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>For example, if you want to install the executables in /home/userid/software/atlas, and symlinks in /home/userid/bin, type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">userid</span><span class="o">/</span><span class="n">software</span> <span class="n">BINDIR</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">userid</span><span class="o">/</span><span class="nb">bin</span>
 </pre></div>
 </div>
 <div class="admonition note">

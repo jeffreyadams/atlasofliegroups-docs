@@ -51,7 +51,7 @@ Once this is working, you can and should load other files. Load all.at to get a 
     [... some atlas output ...]
     atlas>
     
-To check if readline (command completion, recalling previous commands, etc.) is working. Hit **TAB** on your keyboard twice. You should see something like::
+To check if readline (command completion, recalling previous commands, etc.) is working, hit **TAB** on your keyboard twice. You should see something like::
 
     atlas> 
     Display all 902 possibilities? (y or n)
