@@ -35,3 +35,4 @@ Another useful command is whattype::
 
 This tells us the data type (int) of the variable x.
 
+
