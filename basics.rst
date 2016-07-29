@@ -11,6 +11,7 @@ For more examples on the following discussion go to
 
 http://www.liegroups.org/software/download/online_training_videos_IA.html#
 
+``atlas`` is a general purpose programing language written by Marc van Leuwen. It the usual features like loops, conditionals and  expressions as in any programing language. And it has features especially designed for Lie Groups. 
 The :code:`atlas` software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that :code:`atlas` uses to store and give information on Lie groups structure and representations.
 
 You can ask the software to compute basic operations on the different data types.
@@ -34,6 +35,13 @@ Another useful command is whattype::
         atlas>
 
 This tells us the data type (int) of the variable x.
+
+To know more about the different data types you can quit ``atlas`` for a moment and go to the directory atlas-scripts and look for the helpfile atlas.help. This file gives an introduction of the software and how to install it. If you go to #3. Design principles of ``axis`` language, and current limitations, scrolling down you will find information about the details covered in the present document including the list of data types used by the software. Some of them are ``bool`` for boolean, ``int`` for integer, ``rat`` for tational, etc.; and some are related to Lie groups, like LieType, RootDAtum, etc. that we will see later in this notes.
+
+Another useful help file is atlas.functions.help. This has listed all the functions defined on ``atlas``. It describes how they are used.
+Finally the 
+
+
 
 
 
