@@ -8,7 +8,7 @@ This document will tell you how to start running atlas after you have done :ref:
 Get atlas running
 --------------------
 
-Let's say you compiled the software in a directory atlasofliegroup, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. You should end up in a directory contains the excecutable files Fokko and atlas, and subdirectories messages (help files for Fokko) and atlas-scripts (auxiliary and help files for atlas).
+Let's say you compiled the software in a directory atlasofliegroup, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. You should end up in a directory that contains the excecutable files Fokko and atlas, and subdirectories messages (help files for Fokko) and atlas-scripts (auxiliary and help files for atlas).
 
 Once you are there, depending on your setting, do either::
 
