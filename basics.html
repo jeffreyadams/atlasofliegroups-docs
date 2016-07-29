@@ -32,7 +32,7 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="index.html"/>
         <link rel="next" title="Data Type" href="data_type.html"/>
-        <link rel="prev" title="Run atlas" href="run_atlas.html"/> 
+        <link rel="prev" title="Help with git" href="help_git.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -90,10 +90,14 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="download_and_install.html">Download and Install</a></li>
 <li class="toctree-l1"><a class="reference internal" href="run_atlas.html">Run atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="help_git.html">Help with git</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Tutorial</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="">Basic atlas Syntax</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic atlas Syntax</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-operations">Basic Operations</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="data_type.html">Data Type</a></li>
 </ul>
 <p class="caption"><span class="caption-text">atlas Function Library</span></p>
@@ -106,8 +110,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Trouble Shooting</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ts-install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ts-install.html#the-readline-package">The readline package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ts-install.html">Installation &#8211; Trouble Shooting</a></li>
 </ul>
 
             
@@ -130,7 +133,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -154,6 +157,33 @@
             
   <div class="section" id="basic-atlas-syntax">
 <h1>Basic atlas Syntax<a class="headerlink" href="#basic-atlas-syntax" title="Permalink to this headline">¶</a></h1>
+<p>This document will tell you about <code class="code docutils literal"><span class="pre">atlas</span></code>&#8216;s syntax. To learn about how to launch code:<cite>atlas</cite> see <a class="reference internal" href="run_atlas.html#run-atlas"><span class="std std-ref">Run atlas</span></a>.</p>
+<div class="section" id="basic-operations">
+<h2>Basic Operations<a class="headerlink" href="#basic-operations" title="Permalink to this headline">¶</a></h2>
+<p>For more examples on the following discussion go to</p>
+<p><a class="reference external" href="http://www.liegroups.org/software/download/online_training_videos_IA">http://www.liegroups.org/software/download/online_training_videos_IA</a>.html#</p>
+<p>The <code class="code docutils literal"><span class="pre">atlas</span></code> software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that <code class="code docutils literal"><span class="pre">atlas</span></code> uses to store and give information on Lie groups structure and representations.</p>
+<p>You can ask the software to compute basic operations on the different data types.</p>
+<p>To set up a variable, for example x=1, type:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The second line is <code class="code docutils literal"><span class="pre">atlas</span></code> telling us that it recognizes x as an integer. We can verify we typed the correct variable by typing just x:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Another useful command is whattype:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">whattype</span> <span class="n">x</span>
+<span class="nb">type</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>This tells us the data type (int) of the variable x.</p>
+</div>
 </div>
 
 
@@ -166,7 +196,7 @@
         <a href="data_type.html" class="btn btn-neutral float-right" title="Data Type" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="run_atlas.html" class="btn btn-neutral" title="Run atlas" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="help_git.html" class="btn btn-neutral" title="Help with git" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
