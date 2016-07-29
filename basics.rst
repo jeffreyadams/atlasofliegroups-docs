@@ -15,7 +15,7 @@ The :code:`atlas` software will do basic arithmetic operations on integers, vect
 
 You can ask the software to compute basic operations on the different data types.
 
-To set up a variable, for example x=1, type::
+To set up a variable, for example ``x=1``, type::
 
    atlas> set x=1
    Identifier x: int
@@ -34,5 +34,6 @@ Another useful command is whattype::
         atlas>
 
 This tells us the data type (int) of the variable x.
+
 
 
