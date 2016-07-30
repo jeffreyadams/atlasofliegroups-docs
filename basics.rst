@@ -27,7 +27,6 @@ The second line is :code:`atlas` telling us that it recognizes x as an integer. 
     atlas> x
     Value: 1
     atlas>
-
 Another useful command is whattype::
    atlas> whattype x
    type: int
