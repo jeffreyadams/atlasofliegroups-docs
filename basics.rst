@@ -44,7 +44,8 @@ Finally the file scripts.help which lists most of the supplementary scripts foun
 Useful ``unix`` commands
 -------------------------
 
-Another thing you can do on ``atlas`` is hitting the ``TAB`` twice. Hitting it once does command completion which helps you finish a command if you do not quite remember it. Hitting it twice it does command completion on the empty string and it will tell you all possible completions::
+
+Another thing you can do in ``atlas`` is hitting the ``TAB`` key twice. Hitting it once does command completion which helps you finish a command if you do not quite remember it. Hitting it twice does command completion on the empty string and it will tell you all possible completions::
    atlas> 
    Display all 204 possibilities? (y or n)
 Now, when you type ``y`` it will display all the 204 commands in the software using more, so you can scroll through them when needed. You can also use it to find more than one possible command completions. For example, typing ``nu`` and then ``TAB`` completes to null. Typing ``TAB`` again gives::
