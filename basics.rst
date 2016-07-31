@@ -77,18 +77,16 @@ s command completion on the empty string and it will tell youall possible comple
 
 Here the brackets mean a comment. In this case it means that you hit the key in question inste\
 ad of typing the word. Now, when you type ``y`` it will display all the 204 commands in the so\
-ftware using more, so you can scroll through them when needed. You can also use it to find mor\
-e than one possible command completions. For example, typing ``nu`` and then ``TAB`` completes\
- to null. Typing ``TAB`` again gives::
+ftware using more, so you can scroll through them to find the command you need. You can also u\
+se it to find more than one possible command completions. For example, typing ``nu`` and then \
+``TAB`` completes to null. Typing ``TAB`` again gives the possible commands that start with nu\
+ll::
 
    atlas> nu{TAB}
    atlas> null
    {TAB}
    null         null_module
    atlas> null
-
-Here the brackets mean a comment. In this case it means that you hit the key in question inste\
-ad of typing the word.
 
 Note, if you try this on your version of `atlas` and it does not work it may be because the re\
 adline is not working, since it is by the readline library that command completion is implemen\
