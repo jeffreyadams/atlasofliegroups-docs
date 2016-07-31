@@ -8,7 +8,7 @@ This document will tell you how to start running atlas after you have done :ref:
 Get atlas running
 --------------------
 
-Let's say you compiled the software in a directory atlasofliegroup, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. You should end up in a directory contains the excecutable files Fokko and atlas, and subdirectories messages (help files for Fokko) and atlas-scripts (auxiliary and help files for atlas).
+Let's say you compiled the software in a directory atlasofliegroup, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. You should end up in a directory that contains the excecutable files Fokko and atlas, and subdirectories messages (help files for Fokko) and atlas-scripts (auxiliary and help files for atlas).
 
 Once you are there, depending on your setting, do either::
 
@@ -25,7 +25,7 @@ You should then see something like this::
     compiled on Jan 19 2016 at 02:21:55.   http://www.liegroups.org/
     atlas> 
     
-Alternatively, you can cd into atlas-scripts folder, then do::
+Alternatively, you can cd into the atlas-scripts folder, then do::
 
     ../atlas
     
@@ -51,7 +51,7 @@ Once this is working, you can and should load other files. Load all.at to get a 
     [... some atlas output ...]
     atlas>
     
-To check if readline (command completion, recalling previous commands, etc.) is working. Hit **TAB** on your keyboard twice. You should see something like::
+To check if readline (command completion, recalling previous commands, etc.) is working, hit **TAB** on your keyboard twice. You should see something like::
 
     atlas> 
     Display all 902 possibilities? (y or n)
@@ -68,7 +68,7 @@ This indicates that command completion is working. Now do a few simple commands:
     1:  0  [i1]  0   (2,*)  *(x=1,lam=rho+  [0], nu=  [0]/1)  e
     2:  1  [r1]  2   (0,1)  *(x=2,lam=rho+  [0], nu=  [1]/1)  1^e
 
-Congratulations! Now you have atlas working on your machine! Proceed to :ref:`simple_commands` for some examples of what you can do with atlas.
+Congratulations! Now you have atlas working on your machine! Proceed to :ref:`tutorial_with_examples` for some examples of what you can do with atlas.
 
 Quit atlas
 ----------
