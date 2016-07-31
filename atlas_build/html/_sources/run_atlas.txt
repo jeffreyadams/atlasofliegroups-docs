@@ -25,7 +25,7 @@ You should then see something like this::
     compiled on Jan 19 2016 at 02:21:55.   http://www.liegroups.org/
     atlas> 
     
-Alternatively, you can cd into atlas-scripts folder, then do::
+Alternatively, you can cd into the atlas-scripts folder, then do::
 
     ../atlas
     
