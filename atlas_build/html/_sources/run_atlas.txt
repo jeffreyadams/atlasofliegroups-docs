@@ -68,7 +68,7 @@ This indicates that command completion is working. Now do a few simple commands:
     1:  0  [i1]  0   (2,*)  *(x=1,lam=rho+  [0], nu=  [0]/1)  e
     2:  1  [r1]  2   (0,1)  *(x=2,lam=rho+  [0], nu=  [1]/1)  1^e
 
-Congratulations! Now you have atlas working on your machine! Proceed to :ref:`simple_commands` for some examples of what you can do with atlas.
+Congratulations! Now you have atlas working on your machine! Proceed to :ref:`tutorial_with_examples` for some examples of what you can do with atlas.
 
 Quit atlas
 ----------

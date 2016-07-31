@@ -191,11 +191,11 @@
 <span id="id3"></span><h4>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h4>
 <p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span>Help with git</span></a> to get started with git.</p>
 <p>If you choose to use git, you can get the most up-to-date version of the software. Make sure your git client is relatively new. Version 1.7.0.4 and above should work. To check your git version, do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
 </pre></div>
 </div>
 <p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
-<div class="highlight-python"><div class="highlight"><pre>git clone https://github.com/jeffreyadams/atlasofliegroups.git
+<div class="highlight-python"><div class="highlight"><pre><span></span>git clone https://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
 <p>This creates a subdirectory &#8220;atlasofliegroups&#8221; and stores the files there.</p>
@@ -267,11 +267,11 @@ and rx-scripts directory (scripts for realex, and also some realex help files).<
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p><strong>Source code</strong></p>
 <p>Assuming you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">make</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">make</span>
 </pre></div>
 </div>
 <p>You can choose turn on the verbose option by typing:</p>
-<div class="highlight-python"><div class="highlight"><pre>make verbose=true
+<div class="highlight-python"><div class="highlight"><pre><span></span>make verbose=true
 </pre></div>
 </div>
 <p>This will show you the details of the commands your compiler is using to compile and link the codes.</p>
@@ -279,11 +279,11 @@ and rx-scripts directory (scripts for realex, and also some realex help files).<
 <p><strong>Executables</strong></p>
 <p>Assuming you have downloaded the executables from the provided links, after you unzip the files you are pretty much good to go. Proceed to <a class="reference internal" href="run_atlas.html#run-atlas"><span>Run atlas</span></a>.</p>
 <p>If you want to create <a class="reference external" href="https://en.wikipedia.org/wiki/Symbolic_link">symlinks</a> for atlas, you can do:</p>
-<div class="highlight-python"><div class="highlight"><pre>make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
 </pre></div>
 </div>
 <p>For example, if you want to install the executables in /home/userid/software/atlas, and symlinks in /home/userid/bin, type:</p>
-<div class="highlight-python"><div class="highlight"><pre>make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
 </pre></div>
 </div>
 <div class="admonition note">

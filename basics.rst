@@ -2,7 +2,7 @@ Basic atlas Syntax
 ==================
 
 
-This document will tell you about :code:`atlas`'s syntax. To learn about how to launch code:`atlas` see :ref:`run_atlas`.
+This document will tell you about :code:`atlas`s syntax. To learn about how to launch :code:`atlas` see :ref:`run_atlas`.
 
 
 Basic Operations
@@ -11,7 +11,7 @@ Basic Operations
 
 For more examples on the following discussion go to
 
-http://www.liegroups.org/software/download/online_training_videos_IA.html#
+http://www.liegroups.org/software/download/online_training_videos_IA.html
 
 The :code:`atlas` software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that :code:`atlas` uses to store and give information on Lie groups structure and representations.
 
@@ -64,7 +64,7 @@ Here the brackets mean a comment. In this case it means that you hit the key in 
    null         null_module  
    atlas> null   
 
-Note, if you try this on your version of `atlas` and it does not work it may be because the readline is not working, since it is by the readline library that command completion is implemented. It is reccommended that you get that fixed.
+Note, if you try this on your version of ``atlas`` and it does not work it may be because the readline is not working, since it is by the readline library that command completion is implemented. It is reccommended that you get that fixed.
 Another useful unix command is ``ctrl-p`` which helps you find the previous command you typed. For example::
 
    atlas> set y=2

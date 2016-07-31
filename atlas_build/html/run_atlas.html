@@ -164,33 +164,33 @@
 <h2>Get atlas running<a class="headerlink" href="#get-atlas-running" title="Permalink to this headline">¶</a></h2>
 <p>Let&#8217;s say you compiled the software in a directory atlasofliegroup, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. You should end up in a directory that contains the excecutable files Fokko and atlas, and subdirectories messages (help files for Fokko) and atlas-scripts (auxiliary and help files for atlas).</p>
 <p>Once you are there, depending on your setting, do either:</p>
-<div class="highlight-python"><div class="highlight"><pre>./atlas --path=atlas-scripts
+<div class="highlight-python"><div class="highlight"><pre><span></span>./atlas --path=atlas-scripts
 </pre></div>
 </div>
 <p>or:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
 </pre></div>
 </div>
 <p>You should then see something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>This is &#39;atlas&#39; (version 0.6, axis language version 0.9),
+<div class="highlight-python"><div class="highlight"><pre><span></span>This is &#39;atlas&#39; (version 0.6, axis language version 0.9),
 the Atlas of Lie Groups and Representations interpreter,
 compiled on Jan 19 2016 at 02:21:55.   http://www.liegroups.org/
 atlas&gt;
 </pre></div>
 </div>
 <p>Alternatively, you can cd into the atlas-scripts folder, then do:</p>
-<div class="highlight-python"><div class="highlight"><pre>../atlas
+<div class="highlight-python"><div class="highlight"><pre><span></span>../atlas
 </pre></div>
 </div>
 </div>
 <div class="section" id="load-scripts">
 <h2>Load scripts<a class="headerlink" href="#load-scripts" title="Permalink to this headline">¶</a></h2>
 <p>Assuming you are in the atlas environment (when you see <code class="docutils literal"><span class="pre">atlas&gt;</span></code> in your terminal), you should now load some scripts. For example, to load the file &#8220;basic.at&#8221; do:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &lt;basic
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;basic
 </pre></div>
 </div>
 <p>You will see atlas output:</p>
-<div class="highlight-python"><div class="highlight"><pre>Starting to read from file &#39;atlas-scripts//basic.at&#39;.
+<div class="highlight-python"><div class="highlight"><pre><span></span>Starting to read from file &#39;atlas-scripts//basic.at&#39;.
 Added definition [12] of #: (int-&gt;[int])
 Added definition [13] of #: (bool-&gt;int)
 ...
@@ -198,18 +198,18 @@ Added definition [13] of #: (bool-&gt;int)
 </div>
 <p>The symbol &#8220;&lt;&#8221; means read a file. If this doesn&#8217;t work, please see <a class="reference internal" href="index.html#trouble-shooting"><span>Trouble Shooting</span></a>. Also, there is a <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">video</a> explaining how to launch atlas so that it finds the necessary .at files.</p>
 <p>Once this is working, you can and should load other files. Load all.at to get a recommended set of files:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &lt;all
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;all
 [... some atlas output ...]
 atlas&gt;
 </pre></div>
 </div>
 <p>To check if readline (command completion, recalling previous commands, etc.) is working, hit <strong>TAB</strong> on your keyboard twice. You should see something like:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt;
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;
 Display all 902 possibilities? (y or n)
 </pre></div>
 </div>
 <p>This indicates that command completion is working. Now do a few simple commands:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; 1+1
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; 1+1
 Value: 2
 atlas&gt; set G=SL(2,R)
 Identifier G: RealForm
@@ -220,7 +220,7 @@ Parameter defines element 2 of the following block:
 2:  1  [r1]  2   (0,1)  *(x=2,lam=rho+  [0], nu=  [1]/1)  1^e
 </pre></div>
 </div>
-<p>Congratulations! Now you have atlas working on your machine! Proceed to <span class="xref std std-ref">simple_commands</span> for some examples of what you can do with atlas.</p>
+<p>Congratulations! Now you have atlas working on your machine! Proceed to <a class="reference internal" href="index.html#tutorial-with-examples"><span>Tutorial</span></a> for some examples of what you can do with atlas.</p>
 </div>
 <div class="section" id="quit-atlas">
 <h2>Quit atlas<a class="headerlink" href="#quit-atlas" title="Permalink to this headline">¶</a></h2>
