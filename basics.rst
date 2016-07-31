@@ -53,6 +53,7 @@ in the present document including the list of data types used by the software. S
 e ``bool`` for boolean, ``int`` for integer, ``rat`` for tational, etc.; and some are related \
 to Lie groups, like LieType, RootDAtum, etc. that we will see later in this notes.
 
+
 Another useful help file is atlas.functions.help. This has listed all the functions defined on\
  ``atlas``. It describes their domain and range (data types); starting from the basic symbol-o\
 perators ``+``, ``_``, ``*``, to booleans, to word-operators like ``null`` that takes an integ\
