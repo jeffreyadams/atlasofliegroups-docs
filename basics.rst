@@ -41,6 +41,7 @@ Another useful command is whattype::
 
 This tells us the data type (int) of the variable x.
 
+
 Useful Help files
 ------------------
 
@@ -53,15 +54,15 @@ in the present document including the list of data types used by the software. S
 e ``bool`` for boolean, ``int`` for integer, ``rat`` for tational, etc.; and some are related \
 to Lie groups, like LieType, RootDAtum, etc. that we will see later in this notes.
 
-
-Another useful help file is atlas.functions.help. This has listed all the functions defined on\
- ``atlas``. It describes their domain and range (data types); starting from the basic symbol-o\
-perators ``+``, ``_``, ``*``, to booleans, to word-operators like ``null`` that takes an integ\
-er ``n`` to the null n-vector, to ``invert`` and ``diagonalize``, which act on matrices, etc.
+Another useful help file is atlas.functions.help. This lists all the functions defined on ``at\
+las``. It describes their domain and range (data types); starting from the basic symbol operat\
+ors ``+``, ``_``, ``*``, to booleans, to word operators like ``null`` that takes an integer ``\
+n`` to the null n-vector, to ``invert`` and ``diagonalize``, which act on matrices, etc.
 Finally the file scripts.help which lists most of the supplementary scripts found in this dire\
 ctory and a short description of what they do. The most basic one is ``basic.at`` which includ\
 es many useful scripts. We will see how to load them and look at them directly to see what the\
 y do.
+
 
 Helpful unix tools
 -------------------
