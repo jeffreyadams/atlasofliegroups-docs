@@ -14,9 +14,7 @@ For more examples on the following discussion go to
 
 http://www.liegroups.org/software/download/online_training_videos_IA.html#
 
-The :code:`atlas` software will do basic arithmetic operations on integers, vectors, and matri\
-ces with integral or rational coefficients. These are the basic types of data that :code:`atla\
-s` uses to store and give information on Lie groups structure and representations.
+The :code:`atlas` software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that :code:`atlas` uses to store and give information on Lie groups structure and representations.
 
 You can ask the software to compute basic operations on the different data types.
 
@@ -26,8 +24,7 @@ To set up a variable, for example ``x=1``, type::
    Identifier x: int
    atlas>
 
-The second line is :code:`atlas` telling us that it recognizes x as an integer. We can verify \
-we typed the correct variable by typing just x::
+The second line is :code:`atlas` telling us that it recognizes x as an integer. We can verify we typed the correct variable by typing just x::
 
     atlas> x
     Value: 1
@@ -46,13 +43,7 @@ Useful Help files
 ------------------
 
 
-To know more about the different data types you can quit ``atlas`` for a moment and go to the \
-directory atlas-scripts and look for the helpfile atlas.help. This file gives an introduction \
-of the software and how to install it. If you go to #3. Design principles of ``axis`` language\
-, and current limitations, scrolling down you will find information about the details covered \
-in the present document including the list of data types used by the software. Some of them ar\
-e ``bool`` for boolean, ``int`` for integer, ``rat`` for tational, etc.; and some are related \
-to Lie groups, like LieType, RootDAtum, etc. that we will see later in this notes.
+To know more about the different data types you can quit ``atlas`` for a moment and go to the directory atlas-scripts and look for the helpfile atlas.help. This file gives an introduction of the software and how to install it. If you go to #3. Design principles of ``axis`` language, and current limitations, scrolling down you will find information about the details covered in the present document including the list of data types used by the software. Some of them are ``bool`` for boolean, ``int`` for integer, ``rat`` for tational, etc.; and some are related to Lie groups, like LieType, RootDAtum, etc. that we will see later in this notes.
 
 Another useful help file is atlas.functions.help. This lists all the functions defined on ``at\
 las``. It describes their domain and range (data types); starting from the basic symbol operat\
