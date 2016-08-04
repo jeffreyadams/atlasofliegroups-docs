@@ -6,3 +6,5 @@
 * Check if Sphinx can generate html files into the gh-pages branch.
 * Transfer the recordings for instructional videos.
 * Figure out how to truncate the videos.
+* Make an outline for the Tutorial session
+* Decide the font/style of "atlas"

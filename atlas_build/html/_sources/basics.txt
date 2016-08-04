@@ -2,7 +2,7 @@ Basic atlas Syntax
 ==================
 
 
-This document will tell you about :code:`atlas`'s syntax. To learn about how to launch :code:`atlas` see :ref:`run_atlas`.
+This document will tell you about atlas' syntax. To learn about how to launch :code:`atlas` see :ref:`run_atlas`.
 
 
 Basic Operations
