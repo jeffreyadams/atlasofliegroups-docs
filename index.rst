@@ -27,7 +27,7 @@ The main documentation is organized by these sections:
 .. _general_info:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: General Information
    
    about_us
@@ -37,7 +37,7 @@ The main documentation is organized by these sections:
 .. _getting_started:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Getting Started
    
    download_and_install
@@ -48,7 +48,7 @@ The main documentation is organized by these sections:
 .. _tutorial_with_examples:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Tutorial
    
    basics
@@ -66,14 +66,14 @@ The main documentation is organized by these sections:
 .. _library:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: atlas Function Library
    
    
 .. _resources:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Online Resources
    
    videos
@@ -83,7 +83,7 @@ The main documentation is organized by these sections:
 .. _trouble_shooting:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Trouble Shooting
    
    ts-install
