@@ -31,6 +31,7 @@
 
   
     <link rel="top" title="atlas 0.6 documentation" href="index.html"/>
+        <link rel="up" title="Getting Started" href="getting_started.html"/>
         <link rel="next" title="Help with git" href="help_git.html"/>
         <link rel="prev" title="Download and Install" href="download_and_install.html"/> 
 
@@ -81,46 +82,24 @@
           
             
             
-                <p class="caption"><span class="caption-text">General Information</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="about_us.html">About Us</a></li>
-<li class="toctree-l1"><a class="reference internal" href="about_atlas.html">About the Software</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="download_and_install.html">Download and Install</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Run atlas</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#get-atlas-running">Get atlas running</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#load-scripts">Load scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#quit-atlas">Quit atlas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gen_info.html">General Information</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="download_and_install.html">Download and Install</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Run atlas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#get-atlas-running">Get atlas running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-scripts">Load scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quit-atlas">Quit atlas</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="help_git.html">Help with git</a></li>
+<li class="toctree-l2"><a class="reference internal" href="help_git.html">Help with git</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Tutorial</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="basics.html">Basic atlas Syntax</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_type.html">Data Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="def_grps.html">Defining Groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="structure_thy.html">Structure Theory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="coord.html">Coordinates</a></li>
-<li class="toctree-l1"><a class="reference internal" href="char_tori.html">Characters of Tori</a></li>
-<li class="toctree-l1"><a class="reference internal" href="min_ps_split.html">Minimal Principal Series of Split Groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kgb.html">KGB Orbits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="disc_series_param.html">Discrete Series Parameters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gen_param.html">General Parameters</a></li>
-</ul>
-<p class="caption"><span class="caption-text">atlas Function Library</span></p>
-<ul class="simple">
-</ul>
-<p class="caption"><span class="caption-text">Online Resources</span></p>
-<ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library.html">atlas Function Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">Videos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="training.html">Online Training</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Trouble Shooting</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="ts-install.html">Installation &#8211; Trouble Shooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trouble_shooting.html">Trouble Shooting</a></li>
 </ul>
 
             
@@ -150,6 +129,8 @@
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="getting_started.html">Getting Started</a> &raquo;</li>
       
     <li>Run atlas</li>
       <li class="wy-breadcrumbs-aside">
@@ -204,7 +185,7 @@ Added definition [13] of #: (bool-&gt;int)
 ...
 </pre></div>
 </div>
-<p>The symbol &#8220;&lt;&#8221; means read a file. If this doesn&#8217;t work, please see <a class="reference internal" href="index.html#trouble-shooting"><span>Trouble Shooting</span></a>. Also, there is a <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">video</a> explaining how to launch atlas so that it finds the necessary .at files.</p>
+<p>The symbol &#8220;&lt;&#8221; means read a file. If this doesn&#8217;t work, please see <a class="reference internal" href="trouble_shooting.html#trouble-shooting"><span>Trouble Shooting</span></a>. Also, there is a <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">video</a> explaining how to launch atlas so that it finds the necessary .at files.</p>
 <p>Once this is working, you can and should load other files. Load all.at to get a recommended set of files:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;all
 [... some atlas output ...]
@@ -228,7 +209,7 @@ Parameter defines element 2 of the following block:
 2:  1  [r1]  2   (0,1)  *(x=2,lam=rho+  [0], nu=  [1]/1)  1^e
 </pre></div>
 </div>
-<p>Congratulations! Now you have atlas working on your machine! Proceed to <a class="reference internal" href="index.html#tutorial-with-examples"><span>Tutorial</span></a> for some examples of what you can do with atlas.</p>
+<p>Congratulations! Now you have atlas working on your machine! Proceed to <a class="reference internal" href="tutorial_with_examples.html#tutorial-with-examples"><span>Tutorial</span></a> for some examples of what you can do with atlas.</p>
 </div>
 <div class="section" id="quit-atlas">
 <h2>Quit atlas<a class="headerlink" href="#quit-atlas" title="Permalink to this headline">¶</a></h2>

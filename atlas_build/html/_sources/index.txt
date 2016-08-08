@@ -15,75 +15,16 @@ The Atlas consists in part of a project to compute the unitary dual, by mathemat
 .. _Atlas of Lie Groups and Representations: http://liegroups.org/
 .. _unitary representations: https://en.wikipedia.org/wiki/Unitary_representation
 
-The main documentation is organized by these sections:
 
-* :ref:`general_info`
-* :ref:`getting_started`
-* :ref:`tutorial_with_examples`
-* :ref:`library`
-* :ref:`resources`
-* :ref:`trouble_shooting`
-
-.. _general_info:
 
 .. toctree::
    :maxdepth: 1
-   :caption: General Information
+   :caption: Table of Contents
    
-   about_us
-   about_atlas
-
-
-.. _getting_started:
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Getting Started
-   
-   download_and_install
-   run_atlas
-   help_git
-   
-   
-.. _tutorial_with_examples:
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Tutorial
-   
-   basics
-   data_type
-   def_grps
-   structure_thy
-   coord
-   char_tori
-   min_ps_split
-   kgb
-   disc_series_param
-   gen_param
-   
-   
-.. _library:
-
-.. toctree::
-   :maxdepth: 1
-   :caption: atlas Function Library
-   
-   
-.. _resources:
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Online Resources
-   
+   gen_info
+   getting_started
+   tutorial_with_examples
+   library
    videos
-   training
-   
+   trouble_shooting
 
-.. _trouble_shooting:
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Trouble Shooting
-   
-   ts-install
