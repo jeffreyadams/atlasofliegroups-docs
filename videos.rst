@@ -1,11 +1,10 @@
 Videos
-======
+=======
 
 .. toctree::
    :maxdepth: 2
+   :caption: Online Training
    
-   atlas_startup
-   change_coor
    session_1A
    session_1B
    session_2A
@@ -15,3 +14,10 @@ Videos
    session_4A
    session_4B
 
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Miscellaneous Videos
+   
+   atlas_startup
+   change_coor
