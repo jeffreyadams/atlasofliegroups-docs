@@ -6,12 +6,13 @@
 Welcome to atlas' Documentation Page!
 =====================================
 
-.. note:: This site is under construction, we are adding new content every day! For information that you cannot find here, please go to `liegroups.org <liegroups.org>`_.
+.. note:: This site is under construction, we are adding new content every day! For information that you cannot find here, please go to `atlas' website`_.
 
 The `Atlas of Lie Groups and Representations`_ is a project to make available information about representations of reductive Lie groups over real and p-adic fields. Of particular importance is the problem of the unitary dual: classifying all of the irreducible `unitary representations`_ of a given Lie group.
 
 The Atlas consists in part of a project to compute the unitary dual, by mathematical and computational methods. We are also planning to make information about Lie groups and representation theory, in particular unitary representations, available to the general mathematical public.
 
+.. _atlas' website: http://liegroups.org/
 .. _Atlas of Lie Groups and Representations: http://liegroups.org/
 .. _unitary representations: https://en.wikipedia.org/wiki/Unitary_representation
 
