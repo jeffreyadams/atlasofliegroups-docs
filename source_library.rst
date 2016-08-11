@@ -3,6 +3,7 @@
 atlas Source Library
 ======================
 
+.. note:: If you only want to use atlas, and are not interested in the source code. Please go to :ref:`fun_lib`.
 
 .. raw:: html
 
