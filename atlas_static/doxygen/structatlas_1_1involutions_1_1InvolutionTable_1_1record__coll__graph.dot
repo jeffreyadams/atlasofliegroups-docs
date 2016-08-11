@@ -1,0 +1,34 @@
+digraph "atlas::involutions::InvolutionTable::record"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="atlas::involutions\l::InvolutionTable::record",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" mod_space" ,fontname="Helvetica"];
+  Node2 [label="atlas::subquotient\l::Subspace\< constants\l::RANK_MAX \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1subquotient_1_1Subspace.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_basis" ,fontname="Helvetica"];
+  Node3 [label="BitVectorList\< dim \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_support" ,fontname="Helvetica"];
+  Node4 [label="BitSet\< dim \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" diagonal" ,fontname="Helvetica"];
+  Node5 [label="atlas::matrix::Vector\l\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Vector.html"];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="std::vector\< int \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" theta" ,fontname="Helvetica"];
+  Node7 [label="atlas::matrix::PID\l_Matrix\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1PID__Matrix.html"];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="atlas::matrix::Matrix\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Matrix.html"];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="atlas::matrix::Matrix\l_base\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Matrix__base.html"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lift_mat\nprojector\nM_real" ,fontname="Helvetica"];
+  Node10 [label="atlas::matrix::PID\l_Matrix\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1PID__Matrix.html"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="atlas::matrix::Matrix\l\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Matrix.html"];
+  Node9 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id" ,fontname="Helvetica"];
+  Node12 [label="atlas::involutions\l::InvolutionData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1involutions_1_1InvolutionData.html"];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_rootInvolution" ,fontname="Helvetica"];
+  Node13 [label="Permutation",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node14 -> Node12 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_imaginary\nd_real\nd_complex" ,fontname="Helvetica"];
+  Node14 [label="atlas::bitmap::BitMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1bitmap_1_1BitMap.html",tooltip="Container of a large (more than twice the machine word size) set of bits. "];
+}
