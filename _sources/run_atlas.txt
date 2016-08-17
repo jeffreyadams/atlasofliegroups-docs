@@ -32,6 +32,8 @@ Alternatively, you can cd into the atlas-scripts folder, then do::
 Load scripts
 ------------
 
+There are some scripts, like basics.at in the folder atlas-scripts, that defines a collection of user-defined functions complementing the primitive functions that comes with atlas. You should load them.
+
 Assuming you are in the atlas environment (when you see ``atlas>`` in your terminal), you should now load some scripts. For example, to load the file "basic.at" do::
 
     atlas> <basic
