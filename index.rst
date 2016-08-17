@@ -19,13 +19,13 @@ The Atlas consists in part of a project to compute the unitary dual, by mathemat
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Table of Contents
    
    gen_info
    getting_started
    tutorial_with_examples
-   function_library
+   atlas_lib
    source_library
    videos
    trouble_shooting

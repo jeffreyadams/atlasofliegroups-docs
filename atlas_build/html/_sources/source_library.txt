@@ -1,9 +1,9 @@
 .. _source_library:
 
-atlas Source Library
-======================
+Source Code Library
+==============================================
 
-.. note:: If you only want to use atlas, and are not interested in the source code. Please go to :ref:`fun_lib`.
+.. note:: If you only want to use atlas, and are not interested in the source code. Please go to :ref:`atlas_lib`.
 
 .. raw:: html
 

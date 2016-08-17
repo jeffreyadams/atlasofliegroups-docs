@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Types &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="The Axis Language" href="../axis.html"/>
+        <link rel="next" title="Array" href="array.html"/>
+        <link rel="prev" title="Design Principles" href="design_principles.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../axis.html">The Axis Language</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="design_principles.html">Design Principles</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#primitive-types">Primitive Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
+      
+    <li>Types</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/axis/types.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="types">
+<h1>Types<a class="headerlink" href="#types" title="Permalink to this headline">¶</a></h1>
+<p>The axis language is strongly and statically typed: the interpreter first
+analyses the expressions and definitions given by the user to verify that
+types can be attributed to all subexpressions, and all operations are defined
+for the types they are applied to; only if the expression passes this test
+does the system attempt to evaluate the expression. Thus many computations
+that would produce problems on execution are signaled. For instance, after
+loading groups.at which defined GL: (int-&gt;RootDatum), atlas will complain
+about:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; block_sizes (GL(5))
+Type error:
+  Subexpression GL(5) at &lt;standard input&gt;:...
+  has wrong type: found RootDatum while InnerClass was needed.
+Type check failed
+</pre></div>
+</div>
+<p>because the built-in function &#8216;block_sizes&#8217; requires an &#8216;InnerClass&#8217; value but
+&#8216;GL&#8217; produces a value of type &#8216;RootDatum&#8217;. In the following example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; Lie_type(Cartan_matrix(GL(5)))
+Error in expression Lie_type(Cartan_matrix(GL(5))) at...
+  Failed to match &#39;Lie_type&#39; with argument type mat
+Type check failed
+</pre></div>
+</div>
+<p>the message is somewhat different, because the name &#8216;Lie_type&#8217; corresponds to
+several functions, and atlas can only report that none of them applies for
+the given expression. To find out which instances are known, one can enter:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype Lie_type ?
+Overloaded instances of Lie_type
+string-&gt;LieType
+RootDatum-&gt;LieType
+(int,int)-&gt;LieType
+</pre></div>
+</div>
+<p>(note the question mark, which here means treat &#8216;Lie_type&#8217; as possibly
+overloaded function name rather than as a variable) showing that either a
+string or a RootDatum value would have worked instead of a (Cartan) matrix.
+For instance:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; Lie_type(GL(5))
+Value: Lie type &#39;A4.T1&#39;
+atlas&gt; Lie_type(&quot;E6.T1.D4&quot;)
+Value: Lie type &#39;E6.T1.D4&#39;
+</pre></div>
+</div>
+<p>All built-in operators and functions, and normally also all user defined ones,
+are defined as &#8220;overloaded&#8221; symbols (even if only one meaning is built-in, as
+is the case for &#8216;block_sizes&#8217;). This allows the user to add new definitions of
+those symbols without overriding those built in. On the other hand, the values
+of all identifiers that are not functions are stored in a different table,
+allowing only one such value at a time to be associated to a given identifier.</p>
+<div class="section" id="primitive-types">
+<h2>Primitive Types<a class="headerlink" href="#primitive-types" title="Permalink to this headline">¶</a></h2>
+<p>The interpreter knows about several &#8220;primitive&#8221; types, which it distinguishes
+but for which (in contrast to &#8220;composite&#8221; types discussed below) it usually
+does not provide specific language constructions (although it does know for
+instance that a Boolean value can be tested in a conditional expression).
+These basic types are:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="84%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><strong>type</strong></th>
+<th class="head"><strong>represents</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#bool"><span>bool</span></a></td>
+<td>truth values</td>
+</tr>
+<tr class="row-odd"><td>int</td>
+<td>machine integers (32 or 64 bits depending on the machine)</td>
+</tr>
+<tr class="row-even"><td>rat</td>
+<td>rational numbers (quotient of two machine integers)</td>
+</tr>
+<tr class="row-odd"><td>string</td>
+<td>string of characters</td>
+</tr>
+<tr class="row-even"><td>vec</td>
+<td>vector of machine integers</td>
+</tr>
+<tr class="row-odd"><td>mat</td>
+<td>matrix of machine integers</td>
+</tr>
+<tr class="row-even"><td>ratvec</td>
+<td>rational vector (vector numerator with common denominator)</td>
+</tr>
+<tr class="row-odd"><td>LieType</td>
+<td>Lie type (such as D4.A2.T1.E8)</td>
+</tr>
+<tr class="row-even"><td>RootDatum</td>
+<td>root datum, specifying a connected complex reductive group</td>
+</tr>
+<tr class="row-odd"><td>InnerClass</td>
+<td>inner class of real forms (based root datum with involution)</td>
+</tr>
+<tr class="row-even"><td>RealForm</td>
+<td>real form within an inner class</td>
+</tr>
+<tr class="row-odd"><td>CartanClass</td>
+<td>class of Cartan subgroups within an inner class</td>
+</tr>
+<tr class="row-even"><td>KGBElt</td>
+<td>element of the set KG/B associated to some RealForm value</td>
+</tr>
+<tr class="row-odd"><td>Block</td>
+<td>block for a pair of RealForm values (at dual inner classes)</td>
+</tr>
+<tr class="row-even"><td>Split</td>
+<td>&#8220;split integer&#8221; a + b.s where s is &#8220;split unit&#8221; with s^2=1</td>
+</tr>
+<tr class="row-odd"><td>Param</td>
+<td>value representing a standard module or its irreducible quotient</td>
+</tr>
+<tr class="row-even"><td>ParamPol</td>
+<td>virtual module with signature (Param values with Split coefs)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bool">
+<span id="id1"></span><h3>bool<a class="headerlink" href="#bool" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; 1 = 1
+Value: true
+atlas&gt; 1 = 2
+Value: false
+</pre></div>
+</div>
+<p>Constant values of type bool, int and string can be entered as usual (use
+&#8216;true&#8217; or &#8216;false&#8217; (without quotes) for truth values, and a string in
+double-quotes (with any contained double-quote characters doubled) for
+strings. Strings denotations contain newline characters (but a constant
+&#8216;new_line&#8217; is provided, containing a string with a single newline character).
+Values of other basic types can only be obtained by using appropriate
+operators and functions (for instance 22/7 has type &#8216;rat&#8217; and GL(5) has type
+&#8216;RootDatum&#8217;), or sometimes via implicit conversions (see below).</p>
+<p>Composite types are either array (list) types, tuple types or function types.
+Array and tuple types both construct aggregates by combining a sequence of
+component values; for array types all components must have the same type and
+there could be any number of them (including none at all), while for tuple
+types the type explicitly enumerates the types of the components, so in
+particular the number of components is determined by the type. A function type
+specifies zero or more argument and result types; for either, unless exactly
+one such type is specified the argument or result type is actually a tuple
+type. Thus if t0,t1,t2,t3 are types, one has composite types like:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Composite Types</th>
+<th class="head">Represents</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>[t0]</td>
+<td>array of elements all of which have type t0</td>
+</tr>
+<tr class="row-odd"><td>[[t0]]</td>
+<td>array of elements all of which have type [t0] (a list of lists)</td>
+</tr>
+<tr class="row-even"><td>...</td>
+<td>etc</td>
+</tr>
+<tr class="row-odd"><td>(t0,t1)</td>
+<td>2-tuple formed of components of types t0 and t1 respectively</td>
+</tr>
+<tr class="row-even"><td>(t0,t1,t2)</td>
+<td>3-tuple, with components of types t0,t1,t2 respectively</td>
+</tr>
+<tr class="row-odd"><td>(t0,t1,t2,t3)</td>
+<td>4-tuple, with components of types t0,t1,t2,t3 respectively</td>
+</tr>
+<tr class="row-even"><td>...</td>
+<td>etc</td>
+</tr>
+<tr class="row-odd"><td>void</td>
+<td>0-tuple (irrelevant value)</td>
+</tr>
+<tr class="row-even"><td>(t0-&gt;t1)</td>
+<td>function with argument of type t0 and result of type t1</td>
+</tr>
+<tr class="row-odd"><td>(t0,t1-&gt;t2)</td>
+<td>function with argument of type (t0,t1) and result of type t2</td>
+</tr>
+<tr class="row-even"><td>(t0-&gt;t1,t2)</td>
+<td>function with argument of type t0 and result of type (t1,t2)</td>
+</tr>
+<tr class="row-odd"><td>(t0,t1-&gt;t2,t3)</td>
+<td>function with argument of type (t0,t1), result of type (t2,t3)</td>
+</tr>
+<tr class="row-even"><td>(t0,t1-&gt;)</td>
+<td>function with argument of type (t0,t1) and no useful result</td>
+</tr>
+<tr class="row-odd"><td>(-&gt;t0)</td>
+<td>function with 0 arguments with result of type t0</td>
+</tr>
+<tr class="row-even"><td>...</td>
+<td>etc</td>
+</tr>
+</tbody>
+</table>
+<p>Often the user does not have to write any types, and the system will take care
+of deriving primitive and composite types as implicitly specified by the
+expression. However when writing user defined functions, the types of the
+arguments must be specified, so that types can be checked for the function
+body; once this check succeeds, a type is attributed to the function, and it
+will henceforth be treated just like a built-in function of that type would be
+(and one can in fact for instance form an array that contains both built-in
+and user-defined functions, provided they all have the same (function) type).</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="array.html" class="btn btn-neutral float-right" title="Array" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="design_principles.html" class="btn btn-neutral" title="Design Principles" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
