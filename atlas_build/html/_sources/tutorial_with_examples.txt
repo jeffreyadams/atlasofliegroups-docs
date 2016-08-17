@@ -6,14 +6,14 @@ Tutorial
 .. toctree::
    :maxdepth: 2
    
-   basics
-   data_type
-   def_grps
-   structure_thy
-   coord
-   char_tori
-   min_ps_split
-   kgb
-   disc_series_param
-   gen_param
+   tutorial/basics
+   tutorial/data_type
+   tutorial/def_grps
+   tutorial/structure_thy
+   tutorial/coord
+   tutorial/char_tori
+   tutorial/min_ps_split
+   tutorial/kgb
+   tutorial/disc_series_param
+   tutorial/gen_param
 

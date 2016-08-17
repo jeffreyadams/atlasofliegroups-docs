@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Basic atlas Syntax &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../index.html"/>
+        <link rel="up" title="Tutorial" href="../tutorial_with_examples.html"/>
+        <link rel="next" title="Data Type" href="data_type.html"/>
+        <link rel="prev" title="Tutorial" href="../tutorial_with_examples.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorial_with_examples.html">Tutorial</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="">Basic atlas Syntax</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#basic-operations">Basic Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#useful-help-files">Useful Help files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#helpful-unix-tools">Helpful unix tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#back-to-basic-operations">Back to Basic Operations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_type.html">Data Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="def_grps.html">Defining Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_thy.html">Structure Theory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="coord.html">Coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="char_tori.html">Characters of Tori</a></li>
+<li class="toctree-l2"><a class="reference internal" href="min_ps_split.html">Minimal Principal Series of Split Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kgb.html">KGB Orbits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="disc_series_param.html">Discrete Series Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gen_param.html">General Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../function_library.html">atlas User Function Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../source_library.html">atlas Source Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
+      
+    <li>Basic atlas Syntax</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/tutorial/basics.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="basic-atlas-syntax">
+<h1>Basic atlas Syntax<a class="headerlink" href="#basic-atlas-syntax" title="Permalink to this headline">¶</a></h1>
+<p>This document will tell you about atlas&#8217; syntax. To learn about how to launch <code class="code docutils literal"><span class="pre">atlas</span></code> see <a class="reference internal" href="../run_atlas.html#run-atlas"><span>Run atlas</span></a>.</p>
+<div class="section" id="basic-operations">
+<h2>Basic Operations<a class="headerlink" href="#basic-operations" title="Permalink to this headline">¶</a></h2>
+<p>For more examples on the following discussion go to</p>
+<p><a class="reference external" href="http://www.liegroups.org/software/download/online_training_videos_IA.html">http://www.liegroups.org/software/download/online_training_videos_IA.html</a></p>
+<p>The <code class="code docutils literal"><span class="pre">atlas</span></code> software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that <code class="code docutils literal"><span class="pre">atlas</span></code> uses to store and give information on Lie groups structure and representations.</p>
+<p>You can ask the software to compute basic operations on the different data types.</p>
+<p>To set up a variable, for example <code class="docutils literal"><span class="pre">x=1</span></code>, type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=1
+Identifier x: int
+atlas&gt;
+</pre></div>
+</div>
+<p>The second line is <code class="code docutils literal"><span class="pre">atlas</span></code> telling us that it recognizes x as an integer. We can verify we typed the correct variable by typing just x:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; x
+Value: 1
+atlas&gt;
+</pre></div>
+</div>
+<p>Another useful command is whattype:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype x
+type: int
+atlas&gt;
+</pre></div>
+</div>
+<p>This tells us the data type (int) of the variable x.</p>
+</div>
+<div class="section" id="useful-help-files">
+<h2>Useful Help files<a class="headerlink" href="#useful-help-files" title="Permalink to this headline">¶</a></h2>
+<p>To know more about the different data types you can quit <code class="docutils literal"><span class="pre">atlas</span></code> for a moment and go to the directory atlas-scripts and look for the helpfile atlas.help. This file gives an introduction of the software and how to install it. If you go to #3. Design principles of <code class="docutils literal"><span class="pre">axis</span></code> language, and current limitations, scrolling down you will find information about the details covered in the present document including the list of data types used by the software. Some of them are <code class="docutils literal"><span class="pre">bool</span></code> for boolean, <code class="docutils literal"><span class="pre">int</span></code> for integer, <code class="docutils literal"><span class="pre">rat</span></code> for tational, etc.; and some are related to Lie groups, like LieType, RootDAtum, etc. that we will see later in this notes.</p>
+<p>Another useful help file is atlas.functions.help. This lists all the functions defined on <code class="docutils literal"><span class="pre">atlas</span></code>. It describes their domain and range (data types); starting from the basic symbol operators <code class="docutils literal"><span class="pre">+</span></code>, <code class="docutils literal"><span class="pre">_</span></code>, <code class="docutils literal"><span class="pre">*</span></code>, to booleans, to word operators like <code class="docutils literal"><span class="pre">null</span></code> that takes an integer <code class="docutils literal"><span class="pre">n</span></code> to the null n-vector, to <code class="docutils literal"><span class="pre">invert</span></code> and <code class="docutils literal"><span class="pre">diagonalize</span></code>, which act on matrices, etc.
+Finally the file scripts.help which lists most of the supplementary scripts found in this directory and a short description of what they do. The most basic one is <code class="docutils literal"><span class="pre">basic.at</span></code> which includes many useful scripts. We will see how to load them and look at them directly to see what they do.</p>
+</div>
+<div class="section" id="helpful-unix-tools">
+<h2>Helpful unix tools<a class="headerlink" href="#helpful-unix-tools" title="Permalink to this headline">¶</a></h2>
+<p>One useful tool you can use is hitting the <code class="docutils literal"><span class="pre">TAB</span></code> key twice. Hitting it once does command cmpletion which helps you finish a command if you dont remember how it ends. Hitting it twice does command completion on the empty string and it will tell you all possible completions:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; {TAB,TAB}
+Display all 204 possibilities? (y or n)
+</pre></div>
+</div>
+<p>Here the brackets mean a comment. In this case it means that you hit the key in question instead of typing the word. Now, when you type <code class="docutils literal"><span class="pre">y</span></code> it will display all the 204 commands in the software using more, so you can scroll through them to find the command you need. You can also use it to find more than one possible command completions. For example, typing <code class="docutils literal"><span class="pre">nu</span></code> and then <code class="docutils literal"><span class="pre">TAB</span></code> completes to null. Typing <code class="docutils literal"><span class="pre">TAB</span></code> again gives the possible commands that start with null:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; nu{TAB}
+atlas&gt; null
+{TAB}
+null         null_module
+atlas&gt; null
+</pre></div>
+</div>
+<p>Note, if you try this on your version of <code class="docutils literal"><span class="pre">atlas</span></code> and it does not work it may be because the readline is not working, since it is by the readline library that command completion is implemented. It is reccommended that you get that fixed.
+Another useful unix command is <code class="docutils literal"><span class="pre">ctrl-p</span></code> which helps you find the previous command you typed. For example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set y=2
+Identifier y: int
+atlas&gt; {ctrl-p}
+atlas&gt; set y=3
+</pre></div>
+</div>
+<p>So, you can easily scroll back to the previous commands that you have typed by repeating this step. This is also useful for editing the commands without having to type them all again, as we did in the above example by changing <code class="docutils literal"><span class="pre">y=2</span></code> to <code class="docutils literal"><span class="pre">y=3</span></code> after recalling our previous command.</p>
+<p>A simpler way to do this is to hit the up/down arrow keys. This also lets you scroll forward as well as backward.</p>
+</div>
+<div class="section" id="back-to-basic-operations">
+<h2>Back to Basic Operations<a class="headerlink" href="#back-to-basic-operations" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data_type.html" class="btn btn-neutral float-right" title="Data Type" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../tutorial_with_examples.html" class="btn btn-neutral" title="Tutorial" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
