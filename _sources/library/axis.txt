@@ -9,3 +9,4 @@ The Axis Language
    axis/design_principles
    axis/types
    axis/array
+   axis/implicit_conversion
