@@ -6,3 +6,4 @@
 * Decide the font/style of "atlas".
 * Test git subtree push from atlas_build/html to gh-pages.
 * Transfer selected content from atlas.help file.
+* put command completion examples in atlas library.

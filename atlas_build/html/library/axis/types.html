@@ -92,11 +92,13 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../axis.html">The Axis Language</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="design_principles.html">Design Principles</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#primitive-types">Primitive Types</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#composite-types">Composite Types</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
 </ul>
 </li>
 </ul>
@@ -154,13 +156,15 @@
             
   <div class="section" id="types">
 <h1>Types<a class="headerlink" href="#types" title="Permalink to this headline">¶</a></h1>
-<p>The axis language is strongly and statically typed: the interpreter first
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The axis language is <a class="reference external" href="https://en.wikipedia.org/wiki/Strong_and_weak_typing">strongly</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Type_system#Static_type_checking">statically</a> typed: the interpreter first
 analyses the expressions and definitions given by the user to verify that
 types can be attributed to all subexpressions, and all operations are defined
 for the types they are applied to; only if the expression passes this test
 does the system attempt to evaluate the expression. Thus many computations
 that would produce problems on execution are signaled. For instance, after
-loading groups.at which defined GL: (int-&gt;RootDatum), atlas will complain
+loading &#8220;groups.at&#8221; which defined <code class="docutils literal"><span class="pre">GL:</span> <span class="pre">(int-&gt;RootDatum)</span></code>, <strong>atlas</strong> will complain
 about:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; block_sizes (GL(5))
 Type error:
@@ -169,16 +173,16 @@ Type error:
 Type check failed
 </pre></div>
 </div>
-<p>because the built-in function &#8216;block_sizes&#8217; requires an &#8216;InnerClass&#8217; value but
-&#8216;GL&#8217; produces a value of type &#8216;RootDatum&#8217;. In the following example:</p>
+<p>because the built-in function <code class="docutils literal"><span class="pre">block_sizes</span></code> requires an <code class="docutils literal"><span class="pre">InnerClass</span></code> value but
+<code class="docutils literal"><span class="pre">GL</span></code> produces a value of type <code class="docutils literal"><span class="pre">RootDatum</span></code>. In the following example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; Lie_type(Cartan_matrix(GL(5)))
 Error in expression Lie_type(Cartan_matrix(GL(5))) at...
   Failed to match &#39;Lie_type&#39; with argument type mat
 Type check failed
 </pre></div>
 </div>
-<p>the message is somewhat different, because the name &#8216;Lie_type&#8217; corresponds to
-several functions, and atlas can only report that none of them applies for
+<p>the message is somewhat different, because the name <code class="docutils literal"><span class="pre">Lie_type</span></code> corresponds to
+several functions, and <strong>atlas</strong> can only report that none of them applies for
 the given expression. To find out which instances are known, one can enter:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype Lie_type ?
 Overloaded instances of Lie_type
@@ -187,9 +191,9 @@ RootDatum-&gt;LieType
 (int,int)-&gt;LieType
 </pre></div>
 </div>
-<p>(note the question mark, which here means treat &#8216;Lie_type&#8217; as possibly
+<p>(note the question mark, which here means treat <code class="docutils literal"><span class="pre">Lie_type</span></code> as possibly
 overloaded function name rather than as a variable) showing that either a
-string or a RootDatum value would have worked instead of a (Cartan) matrix.
+<code class="docutils literal"><span class="pre">string</span></code> or a <code class="docutils literal"><span class="pre">RootDatum</span></code> value would have worked instead of a (Cartan) <code class="docutils literal"><span class="pre">matrix</span></code>.
 For instance:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; Lie_type(GL(5))
 Value: Lie type &#39;A4.T1&#39;
@@ -199,10 +203,11 @@ Value: Lie type &#39;E6.T1.D4&#39;
 </div>
 <p>All built-in operators and functions, and normally also all user defined ones,
 are defined as &#8220;overloaded&#8221; symbols (even if only one meaning is built-in, as
-is the case for &#8216;block_sizes&#8217;). This allows the user to add new definitions of
+is the case for <code class="docutils literal"><span class="pre">block_sizes</span></code>). This allows the user to add new definitions of
 those symbols without overriding those built in. On the other hand, the values
 of all identifiers that are not functions are stored in a different table,
 allowing only one such value at a time to be associated to a given identifier.</p>
+</div>
 <div class="section" id="primitive-types">
 <h2>Primitive Types<a class="headerlink" href="#primitive-types" title="Permalink to this headline">¶</a></h2>
 <p>The interpreter knows about several &#8220;primitive&#8221; types, which it distinguishes
@@ -212,88 +217,119 @@ instance that a Boolean value can be tested in a conditional expression).
 These basic types are:</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="16%" />
-<col width="84%" />
+<col width="24%" />
+<col width="36%" />
+<col width="40%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head"><strong>type</strong></th>
-<th class="head"><strong>represents</strong></th>
+<tr class="row-odd"><th class="head">Primitive Type</th>
+<th class="head">Represent</th>
+<th class="head">Example</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#bool"><span>bool</span></a></td>
+<tr class="row-even"><td>bool</td>
 <td>truth values</td>
+<td><code class="docutils literal"><span class="pre">true</span></code> or <code class="docutils literal"><span class="pre">false</span></code></td>
 </tr>
-<tr class="row-odd"><td>int</td>
-<td>machine integers (32 or 64 bits depending on the machine)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#int-rat-vec"><span>int</span></a></td>
+<td>machine integers (32 or 64 bits)</td>
+<td><code class="docutils literal"><span class="pre">8</span></code></td>
 </tr>
-<tr class="row-even"><td>rat</td>
+<tr class="row-even"><td><a class="reference internal" href="#int-rat-vec"><span>rat</span></a></td>
 <td>rational numbers (quotient of two machine integers)</td>
+<td><code class="docutils literal"><span class="pre">2/3</span></code></td>
 </tr>
-<tr class="row-odd"><td>string</td>
+<tr class="row-odd"><td><a class="reference internal" href="#string"><span>string</span></a></td>
 <td>string of characters</td>
+<td><code class="docutils literal"><span class="pre">&quot;atlas&quot;</span></code></td>
 </tr>
-<tr class="row-even"><td>vec</td>
+<tr class="row-even"><td><a class="reference internal" href="#int-rat-vec"><span>vec</span></a></td>
 <td>vector of machine integers</td>
+<td><code class="docutils literal"><span class="pre">vec:[1,2,3]</span></code></td>
 </tr>
 <tr class="row-odd"><td>mat</td>
 <td>matrix of machine integers</td>
+<td><code class="docutils literal"><span class="pre">id_mat(3)</span></code>, <code class="docutils literal"><span class="pre">mat:[[1,2],[3,4]]</span></code></td>
 </tr>
 <tr class="row-even"><td>ratvec</td>
 <td>rational vector (vector numerator with common denominator)</td>
+<td><code class="docutils literal"><span class="pre">[1,2]/3</span></code>, <code class="docutils literal"><span class="pre">[1/2,2/3]</span></code></td>
 </tr>
 <tr class="row-odd"><td>LieType</td>
-<td>Lie type (such as D4.A2.T1.E8)</td>
+<td>Lie type</td>
+<td><code class="docutils literal"><span class="pre">D4.A2.T1.E8</span></code></td>
 </tr>
-<tr class="row-even"><td>RootDatum</td>
+<tr class="row-even"><td><a class="reference internal" href="#rootdatum"><span>RootDatum</span></a></td>
 <td>root datum, specifying a connected complex reductive group</td>
+<td><code class="docutils literal"><span class="pre">simply_connected(LieType:&quot;A1.T1&quot;)</span></code></td>
 </tr>
 <tr class="row-odd"><td>InnerClass</td>
 <td>inner class of real forms (based root datum with involution)</td>
+<td><code class="docutils literal"><span class="pre">inner_class</span> <span class="pre">(split_form(E8))</span></code></td>
 </tr>
 <tr class="row-even"><td>RealForm</td>
 <td>real form within an inner class</td>
+<td><code class="docutils literal"><span class="pre">SL(3,R)</span></code></td>
 </tr>
 <tr class="row-odd"><td>CartanClass</td>
 <td>class of Cartan subgroups within an inner class</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>KGBElt</td>
 <td>element of the set KG/B associated to some RealForm value</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>Block</td>
 <td>block for a pair of RealForm values (at dual inner classes)</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>Split</td>
 <td>&#8220;split integer&#8221; a + b.s where s is &#8220;split unit&#8221; with s^2=1</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-odd"><td>Param</td>
 <td>value representing a standard module or its irreducible quotient</td>
+<td>&nbsp;</td>
 </tr>
 <tr class="row-even"><td>ParamPol</td>
 <td>virtual module with signature (Param values with Split coefs)</td>
+<td>&nbsp;</td>
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you want to check the data type of something, for example <code class="docutils literal"><span class="pre">id_mat(3)</span></code>. You can type <code class="docutils literal"><span class="pre">whattype</span> <span class="pre">id_mat(3)</span></code> in <strong>atlas</strong> and it will output <code class="docutils literal"><span class="pre">type:</span> <span class="pre">mat</span></code>.</p>
 </div>
-<div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="bool">
-<span id="id1"></span><h3>bool<a class="headerlink" href="#bool" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; 1 = 1
-Value: true
-atlas&gt; 1 = 2
-Value: false
-</pre></div>
-</div>
-<p>Constant values of type bool, int and string can be entered as usual (use
-&#8216;true&#8217; or &#8216;false&#8217; (without quotes) for truth values, and a string in
-double-quotes (with any contained double-quote characters doubled) for
-strings. Strings denotations contain newline characters (but a constant
+<div class="section" id="string">
+<span id="id1"></span><h3>string<a class="headerlink" href="#string" title="Permalink to this headline">¶</a></h3>
+<p>Strings denotations contain newline characters (but a constant
 &#8216;new_line&#8217; is provided, containing a string with a single newline character).
 Values of other basic types can only be obtained by using appropriate
 operators and functions (for instance 22/7 has type &#8216;rat&#8217; and GL(5) has type
-&#8216;RootDatum&#8217;), or sometimes via implicit conversions (see below).</p>
-<p>Composite types are either array (list) types, tuple types or function types.
+&#8216;RootDatum&#8217;), or sometimes via <a class="reference internal" href="implicit_conversion.html#implicit-conversion"><span>implicit conversions</span></a>.</p>
+</div>
+<div class="section" id="int-rat-vec">
+<span id="id2"></span><h3>int, rat, &amp; vec<a class="headerlink" href="#int-rat-vec" title="Permalink to this headline">¶</a></h3>
+<p>As you might expect, the sum of a <code class="docutils literal"><span class="pre">int</span></code> type and <code class="docutils literal"><span class="pre">rat</span></code> type is a <code class="docutils literal"><span class="pre">rat</span></code> type. Similarly, if you add a <code class="docutils literal"><span class="pre">vec</span></code> type and an array of <code class="docutils literal"><span class="pre">int</span></code>, whenever possible, the result is of type <code class="docutils literal"><span class="pre">vec</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set v = vec:[1,2,3]
+Variable v: vec
+atlas&gt; set w = [3,4,5]
+Variable w: [int]
+atlas&gt; v+w
+Value: [ 4, 6, 8 ]
+</pre></div>
+</div>
+</div>
+<div class="section" id="rootdatum">
+<span id="id3"></span><h3>RootDatum<a class="headerlink" href="#rootdatum" title="Permalink to this headline">¶</a></h3>
+<p>In <strong>atlas</strong>, a root datum is a pair of m by n (integral) matrices (A,B) such that (A^T)*B is a Cartan matrix. The number m is rank (number of rows) and n is the semi-simple rank (number of columns).</p>
+</div>
+</div>
+<div class="section" id="composite-types">
+<h2>Composite Types<a class="headerlink" href="#composite-types" title="Permalink to this headline">¶</a></h2>
+<p>Composite types are either <strong>array (list) types</strong>, <strong>tuple types</strong> or <strong>function types</strong>.
 Array and tuple types both construct aggregates by combining a sequence of
 component values; for array types all components must have the same type and
 there could be any number of them (including none at all), while for tuple
@@ -368,7 +404,6 @@ body; once this check succeeds, a type is attributed to the function, and it
 will henceforth be treated just like a built-in function of that type would be
 (and one can in fact for instance form an array that contains both built-in
 and user-defined functions, provided they all have the same (function) type).</p>
-</div>
 </div>
 </div>
 
