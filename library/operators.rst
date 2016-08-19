@@ -2,12 +2,12 @@ Basic Operators
 =================
 
 .. list-table::
-   :widths: 8 12 20
+   :widths: 6 8 16
    :header-rows: 1
    
    * - Operator
-     - Function Type
-     - Description
+     - Argument(s) -> Result(s)
+     - Brief Description
    * - ``+``, ``-``, ``*``
      - ``(int,int->int)``
      - usual integer arithmetic operations
@@ -16,7 +16,8 @@ Basic Operators
      - integral unary minus
    * - ``^``
      - ``(int,int->int)``
-     - integer exponentiation (whenever result integral)
+     - | integer exponentiation 
+       | (whenever result integral)
    * - ``\``, ``%``
      - ``(int,int->int)``
      - integer (Euclidian) division and remainder
@@ -31,10 +32,12 @@ Basic Operators
      - more efficient in applicable bcases
    * - ``%``
      - ``(rat,int->rat)``
-     - remainder after removing greatest integer multiple
+     - | remainder after removing 
+       | greatest integer multiple
    * - ``%``
      - ``(rat,rat->rat)``
-     - remainder after removing greatest integer multiple
+     - | remainder after removing 
+       | greatest integer multiple
    * - ``-``
      - ``(rat->rat)``
      - rational unary minus
@@ -43,7 +46,8 @@ Basic Operators
      - rational unary divide (in other words: inverse)
    * - ``^``
      - ``(rat,int->rat)``
-     - rational exponentiation (whenever result defined)
+     - | rational exponentiation 
+       | (whenever result defined)
    * - ``%``
      - ``(rat->int,int)``
      - pair of numerator and denominator
@@ -65,12 +69,6 @@ Basic Operators
    * - ``*``
      - ``(vec,vec->int)``
      - scalar product
-   * - ``flex_add``, ``flex_sub``
-     - ``(vec,vec->vec)``
-     - variants of +,- adding/removing trailing 0's
-   * - ``convolve``
-     - ``(vec,vec->vec)``
-     - convolution product of vectors, removing trailing 0's
    * - ``+``, ``-``
      - ``(mat,mat->mat)``
      - matrix addition and subtraction
@@ -88,13 +86,16 @@ Basic Operators
      - (unary use of ^) matrix transposition
    * - ``^``
      - ``(vec->mat)``
-     - (unary use of ^) (transposed) vector as 1-line matrix
+     - | (unary use of ^) (transposed) vector 
+       | as 1-line matrix
    * - ``+``, ``-``
      - ``(mat,int->mat)``
-     - addition/subtraction of multiple of identity
+     - | addition/subtraction 
+       | of multiple of identity
    * - ``+``, ``-``
      - ``(int,mat->mat)``
-     - addition/subtraction from multiple of identity
+     - | addition/subtraction 
+       | from multiple of identity
    * - ``/``
      - ``(vec,int->ratvec)``
      - vector division giving rational vector
@@ -124,11 +125,14 @@ Basic Operators
      - test for equality/inequality against 0
    * - ``>=``, ``>``
      - ``(int->bool)``
-     - non-negative, positive (note op. on wrong side)
+     - | non-negative, positive 
+       | (note op. on wrong side)
    * - ``<=``, ``<``
      - ``(int->bool)`` 
-     - non-positive, negative (note op. on wrong side)
-   * - ``>``, ``>=``, ``<``, ``<=``, ``=``, ``!=``
+     - | non-positive, negative 
+       | (note op. on wrong side)
+   * - | ``>``, ``>=``, ``<``, ``<=``, 
+       | ``=``, ``!=``
      - ``(int,int->bool)``
      - usual relational operators
    * - ``=``, ``!=``
@@ -136,11 +140,14 @@ Basic Operators
      - test for equality/inequality against 0/1
    * - ``>=``, ``>``
      - ``(rat->bool)``
-     - non-negative, positive (note op. on wrong side)
+     - | non-negative, positive 
+       | (note op. on wrong side)
    * - ``<=``, ``<``
      - ``(rat->bool)``
-     - non-positive, negative (note op. on wrong side)
-   * - ``>``, ``>=``, ``<``, ``<=``, ``=``, ``!=``
+     - | non-positive, negative 
+       | (note op. on wrong side)
+   * - | ``>``, ``>=``, ``<``, ``<=``, 
+       | ``=``, ``!=``
      - ``(rat,rat->bool)``
      - usual relational operators
    * - ``=``, ``!=``
@@ -149,7 +156,8 @@ Basic Operators
    * - ``=``, ``!=``
      - ``(string->bool)``
      - test for being (or not being) the empty string
-   * - ``>``, ``>=``, ``<``, ``<=``, ``=``, ``!=``
+   * - | ``>``, ``>=``, ``<``, ``<=``, 
+       | ``=``, ``!=``
      - ``(string,string->bool)``
      - relational operators
    * - ``=``, ``!=``
@@ -157,28 +165,68 @@ Basic Operators
      - test for being (or not being) a zero vector
    * - ``>=``, ``>`` 
      - ``(vec->bool)``
-     - test for all entries being non-negative/positive
+     - | test for all entries being 
+       | non-negative/positive
+   * - ``=``, ``!=``
+     - ``(vec,vec->bool)``
+     - vector equality and inequality
+   * - ``=``, ``!=``
+     - ``(ratvec->bool)``
+     - test for being a (or not) zero rational vector
+   * - ``>=``, ``>``
+     - ``(ratvec->bool)``
+     - test for all entries non-negative/positive
+   * - ``=``, ``!=``
+     - ``(ratvec,ratvec->bool)``
+     - rational vector equality, inequality
+   * - ``=``, ``!=``
+     - ``(mat->bool)``
+     - test for being a (or not) zero matrix
+   * - ``=``, ``!=``
+     - ``(mat,mat->bool)``
+     - matrix equality and inequality
+   * - ``#``
+     - ``(string->int)``
+     - length of string
+   * - ``#``
+     - ``(vec->int)``
+     - number of components of vector
+   * - ``#``
+     - ``(ratvec->int)``
+     - number of components of rational vector
+   * - ``#``
+     - ``(mat->int,int)``
+     - dimensions (rows, columns) of a matrix
+   * - ``#``
+     - ``([T]->int)``
+     - number of components of row (T is any type)
+   * - ``#``
+     - ``(string,string->string)``
+     - string concatenation
+   * - ``#``
+     - ``(vec,vec->vec)``
+     - concatenation of vectors
+   * - ``#``
+     - ``(vec,int->vec)``
+     - append element to a vector
+   * - ``#``
+     - ``(int,vec->vec)``
+     - prepend element to a vector
+   * - ``#``
+     - ``([T],[T]->[T])``
+     - concatenation of rows (T is any type)
+   * - ``#``
+     - ``([T],T->[T])``
+     - append element to a row (T is any type)
+   * - ``#``
+     - ``(T,[T]->[T])``
+     - prepend element to a row (T is any type)
+   * - ``#``
+     - ``(int,[vec]->mat)``
+     - | combine columns of given fixed height 
+       | into matrix
+   * - ``^``
+     - ``(int,[vec]->mat)``
+     - | combine rows of given fixed length 
+       | into matrix
    
-operators =, != : (vec,vec->bool): vector equality and inequality
-operators =, != : (ratvec->bool): test for being a (or not) zero rational vector
-operators >=, > : (ratvec->bool): test for all entries non-negative/positive
-operators =, != : (ratvec,ratvec->bool): rational vector equality, inequality
-operators =, != : (mat->bool): test for being a (or not) zero matrix
-operators =, != : (mat,mat->bool): matrix equality and inequality
-
-operator # : (string->int) : length of string
-operator # : (vec->int) : number of components of vector
-operator # : (ratvec->int) : number of components of rational vector
-operator # : (mat->int,int) : dimensions (rows*columns) of a matrix
-operator # : ([T]->int) : number of components of row (T is any type)
-
-operator # : (string,string->string): string concatenation
-operator # : (vec,vec->vec) : concatenation of vectors
-operator # : (vec,int->vec) : append element to a vector
-operator # : (int,vec->vec) : prepend element to a vector
-operator # : ([T],[T]->[T]) : concatenation of rows (T is any type)
-operator # : ([T],T->[T]) : append element to a row (T is any type)
-operator # : (T,[T]->[T]) : prepend element to a row (T is any type)
-
-operator #: (int,[vec]->mat): combine columns of given fixed height into matrix
-operator ^: (int,[vec]->mat): combine rows of given fixed length into matrix

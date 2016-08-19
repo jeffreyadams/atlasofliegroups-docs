@@ -111,6 +111,11 @@ These basic types are:
 
 .. note:: If you want to check the data type of something, for example ``id_mat(3)``. You can do ``whattype id_mat(3)`` in **atlas** and it will output ``type: mat``.
 
+
+
+Description and Examples of Primitive Types
+---------------------------------------------
+
 .. _bool:
 
 bool
@@ -275,7 +280,9 @@ This is enabled by the various user-defined scripts in "atlas-scripts" folder.
 If furthermore you want to see all real forms that are in the same inner class as :math:`Sp(4,R)`, do::
 
     atlas> real_forms(G)
-    Value: [compact connected real group with Lie algebra 'sp(2)',connected real group with Lie algebra 'sp(1,1)',connected split real group with Lie algebra 'sp(4,R)']
+    Value: [compact connected real group with Lie algebra 'sp(2)',
+    connected real group with Lie algebra 'sp(1,1)',
+    connected split real group with Lie algebra 'sp(4,R)']
     
 .. _CartanClass:
 
@@ -290,20 +297,22 @@ For a specific real group :math:`G = Sp(4,R)`, one can ask **atlas** what are th
     Variable G: RealForm
     atlas>
     atlas> Cartan_classes(G)
-    Value: [Cartan class #0, occurring for 3 real forms and for 1 dual real form,Cartan class #1, occurring for 2 real forms and for 1 dual real form,Cartan class #2, occurring for 1 real form and for 2 dual real forms,Cartan class #3, occurring for 1 real form and for 3 dual real forms]
+    Value: [Cartan class #0, occurring for 3 real forms and for 1 dual real form,
+    Cartan class #1, occurring for 2 real forms and for 1 dual real form,
+    Cartan class #2, occurring for 1 real form and for 2 dual real forms,
+    Cartan class #3, occurring for 1 real form and for 3 dual real forms]
     atlas>
     atlas> whattype Cartan_classes(G)[1]
     type: CartanClass
     
-    
-    The reference to 'dual real forms' concerns the various blocks of representations for which each Cartan class appears.
+The reference to 'dual real forms' concerns the various blocks of representations for which each Cartan class appears.
     
 .. _KGBElt:
 
 KGBElt
 +++++++
 
-``KGBElt`` represents element of the set K\\G/B associated to some RealForm value.
+``KGBElt`` represents element of the set :math:`K\backslash G/B` associated to some RealForm value.
 
 Given a group :math:`G`, for example :math:`G = SL(2,R)`. One can ask **atlas** to print out the KGB elements associated to different Cartan involutions::
 
@@ -336,7 +345,7 @@ Block
 Split
 ++++++
 
-``Split`` represents “split integer” :math:`a + b.s` where s is “split unit” with :math:`s^2=1`.
+``Split`` represents “split integer” :math:`a + b.s` where :math:`s` is “split unit” with :math:`s^2=1`.
 
 
 .. _Param:
@@ -359,7 +368,7 @@ ParamPol
 Composite Types
 -----------------
 
-Composite types are either **array (list) types**, **tuple types** or **function types**.
+Composite types are either **array (list)** types, **tuple** types or **function** types.
 Array and tuple types both construct aggregates by combining a sequence of
 component values. The difference is: 
 
@@ -377,33 +386,33 @@ type. Thus if t0,t1,t2,t3 are types, one has composite types like:
 
    * - Composite Types
      - Represents
-   * - [t0]
+   * - ``[t0]``
      - array of elements all of which have type t0
-   * - [[t0]]
+   * - ``[[t0]]``
      - array of elements all of which have type [t0] (a list of lists)
    * - ...
      - etc
-   * - (t0,t1)
+   * - ``(t0,t1)``
      - 2-tuple formed of components of types t0 and t1 respectively
-   * - (t0,t1,t2)
+   * - ``(t0,t1,t2)``
      - 3-tuple, with components of types t0,t1,t2 respectively
-   * - (t0,t1,t2,t3)
+   * - ``(t0,t1,t2,t3)``
      - 4-tuple, with components of types t0,t1,t2,t3 respectively
    * - ...
      - etc
-   * - void
+   * - ``void``
      - 0-tuple (irrelevant value)
-   * - (t0->t1)
+   * - ``(t0->t1)``
      - function with argument of type t0 and result of type t1
-   * - (t0,t1->t2)
+   * - ``(t0,t1->t2)``
      - function with argument of type (t0,t1) and result of type t2
-   * - (t0->t1,t2)
+   * - ``(t0->t1,t2)``
      - function with argument of type t0 and result of type (t1,t2)
-   * - (t0,t1->t2,t3)
+   * - ``(t0,t1->t2,t3)``
      - function with argument of type (t0,t1), result of type (t2,t3)
-   * - (t0,t1->)
+   * - ``(t0,t1->)``
      - function with argument of type (t0,t1) and no useful result
-   * - (->t0)
+   * - ``(->t0)``
      - function with 0 arguments with result of type t0
    * - ...
      - etc

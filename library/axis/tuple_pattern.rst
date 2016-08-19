@@ -36,13 +36,15 @@ an identifier can be introduced, one may also specify a tuple of identifiers,
 if the type of the value is appropriate, and the components will be bound to
 the corresponding identifiers. So whereas::
 
-  atlas> set x=E
+    atlas> set x = E
 
 introduces the identifier 'x' whose value (and type) are set to that of the
-expression 'E', one can alternatively say::
+expression 'E', one can alternatively say 
 
-  atlas> set (x,y)=E
+.. code-block:: none
 
+    atlas> set (x,y) = E
+    
 provided that E produces a pair (some value of some 2-tuple type), and the
 variable 'x' will be set to the first component of the pair, and 'y' to the
 second component. In either case, the types of the variables introduced will
@@ -60,14 +62,18 @@ user-defined functions, or when introducing local variables. To introduce
 local variables one uses a syntax like that of 'set' used above, but with
 'let' instead of 'set', and followed by 'in' and the "body" if the
 let-expression, the expression where the local variable is in scope. So to
-compute a value from the components of 'z', one could say::
+compute a value from the components of 'z', one could say:
 
-  let (x,y)=z in 3*y-x
+.. code-block:: none
+
+    atlas> let (x,y) = z in 3*y-x
 
 If only the first component is needed, there is no need to give a name to the
-other one, so for the projection to the first component one can write::
+other one, so for the projection to the first component one can write:
 
-  let (x,)=z in x
+.. code-block:: none
+
+    atlas> let (x,)=z in x
 
 Local variables get their value and type from the expression between '=' and
 'in', and are independent of any meaning that might previously be associated
