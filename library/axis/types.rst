@@ -95,7 +95,8 @@ These basic types are:
    * - :ref:`RealForm`
      - real form within an inner class
    * - :ref:`CartanClass`
-     - class of Cartan subgroups within an inner class
+     - all the conjugacy classes of Cartan
+       subgroups  of real groups in an inner class
    * - :ref:`KGBElt`
      - element of the set K\\G/B associated to some RealForm value
    * - :ref:`Block`
@@ -212,7 +213,7 @@ Similar to ``int``, if you add a ``ratvec`` to ``[rat]``, the result is ``ratvec
 
     atlas> set v = [1,2,3]/5
     Variable v: ratvec
-    atlas> set w = [1/2,3/5]
+    atlas> set w = [1/2,3/5, 5/7]
     Variable w: [rat]
     atlas> whattype v+w
     type: ratvec
@@ -281,7 +282,7 @@ If furthermore you want to see all real forms that are in the same inner class a
 CartanClass
 ++++++++++++
 
-``CartanClass`` represents class of Cartan subgroups within an inner class.
+``CartanClass`` represents all the conjugacy classes of Cartan subgroups  of real groups in an inner class.
 
 For a specific real group :math:`G = Sp(4,R)`, one can ask **atlas** what are the Cartan classes that are in the same inner class::
 
@@ -294,12 +295,15 @@ For a specific real group :math:`G = Sp(4,R)`, one can ask **atlas** what are th
     atlas> whattype Cartan_classes(G)[1]
     type: CartanClass
     
+    
+    The reference to 'dual real forms' concerns the various blocks of representations for which each Cartan class appears.
+    
 .. _KGBElt:
 
 KGBElt
 +++++++
 
-``KGBElt`` represents element of the set K\G/B associated to some RealForm value.
+``KGBElt`` represents element of the set K\\G/B associated to some RealForm value.
 
 Given a group :math:`G`, for example :math:`G = SL(2,R)`. One can ask **atlas** to print out the KGB elements associated to different Cartan involutions::
 
