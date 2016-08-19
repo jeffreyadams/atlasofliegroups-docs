@@ -67,71 +67,73 @@ instance that a Boolean value can be tested in a conditional expression).
 These basic types are:
 
 .. list-table::
-   :widths: 12 18 20
+   :widths: 12 30
    :header-rows: 1
 
    * - Primitive Type
      - Represent
-     - Example
-   * - bool
+   * - :ref:`bool`
      - truth values
-     - ``true`` or ``false``
    * - :ref:`int <int_rat_vec>`
-     - machine integers (32 or 64 bits) 
-     - ``8``
+     - machine integers (32 or 64 bits)
    * - :ref:`rat <int_rat_vec>`
      - rational numbers (quotient of two machine integers)
-     - ``2/3``
    * - :ref:`string <string>`
      - string of characters
-     - ``"atlas"``
    * - :ref:`vec <int_rat_vec>`
      - vector of machine integers
-     - ``vec:[1,2,3]``
-   * - mat
+   * - :ref:`mat <mat>`
      - matrix of machine integers
-     - ``id_mat(3)``, ``mat:[[1,2],[3,4]]``
-   * - ratvec
+   * - :ref:`ratvec`
      - rational vector (vector numerator with common denominator)
-     - ``[1,2]/3``, ``[1/2,2/3]``
-   * - LieType
+   * - :ref:`LieType`
      - Lie type
-     - ``D4.A2.T1.E8``
    * - :ref:`RootDatum`
      - root datum, specifying a connected complex reductive group
-     - ``simply_connected(LieType:"A1.T1")``
-   * - InnerClass
+   * - :ref:`InnerClass`
      - inner class of real forms (based root datum with involution)
-     - ``inner_class (split_form(E8))``
-   * - RealForm
+   * - :ref:`RealForm`
      - real form within an inner class
-     - ``SL(3,R)``
-   * - CartanClass
+   * - :ref:`CartanClass`
      - class of Cartan subgroups within an inner class
-     - 
-   * - KGBElt
-     - element of the set K\G/B associated to some RealForm value
-     - 
-   * - Block
+   * - :ref:`KGBElt`
+     - element of the set K\\G/B associated to some RealForm value
+   * - :ref:`Block`
      - block for a pair of RealForm values (at dual inner classes)
-     - 
    * - Split
      - "split integer" a + b.s where s is "split unit" with s^2=1 
-     - 
    * - Param
      - value representing a standard module or its irreducible quotient
-     - 
    * - ParamPol
      - virtual module with signature (Param values with Split coefs)
-     - 
 
 
-.. note:: If you want to check the data type of something, for example ``id_mat(3)``. You can type ``whattype id_mat(3)`` in **atlas** and it will output ``type: mat``.
+.. note:: If you want to check the data type of something, for example ``id_mat(3)``. You can do ``whattype id_mat(3)`` in **atlas** and it will output ``type: mat``.
+
+.. _bool:
+
+bool
++++++
+
+Values of bool are ``true``, ``false``::
+
+    atlas> whattype true
+    type: bool
+    atlas> whattype false
+    type: bool
+
 
 .. _string:
 
 string
 ++++++++
+
+String values can be entered using a double quote::
+
+    atlas> set s = "atlas"
+    Variable s: string
+    
+    
 
 Strings denotations contain newline characters (but a constant
 'new_line' is provided, containing a string with a single newline character).
@@ -144,21 +146,160 @@ operators and functions (for instance 22/7 has type 'rat' and GL(5) has type
 int, rat, & vec
 ++++++++++++++++
 
-As you might expect, the sum of a ``int`` type and ``rat`` type is a ``rat`` type. Similarly, if you add a ``vec`` type and an array of ``int``, whenever possible, the result is of type ``vec``::
+As you might expect, the sum of a ``int`` type and ``rat`` type is a ``rat`` type::
+    
+    atlas> set a = 2
+    Variable a: int
+    atlas> set b = 1/2
+    Variable b: rat
+    atlas> whattype a+b
+    type: rat
+    
+
+Similarly, if you add a ``vec`` type and an array of ``int``, whenever possible, the result is of type ``vec``::
 
     atlas> set v = vec:[1,2,3]
     Variable v: vec
     atlas> set w = [3,4,5]
     Variable w: [int]
-    atlas> v+w
-    Value: [ 4, 6, 8 ]
+    atlas> whattype v+w
+    type: vec
+    
+.. _mat:
+
+If you directly enter ``[[1,2],[3,4]]``, the type would be set to ``[[int]]``. You need to specifically declare the type ``mat`` if you want ``[[1,2],[3,4]]`` to be a matrix::
+    
+    atlas> set m = mat : [[1,2],[3,4]]
+    Variable m: mat
+    
+Identity matrix of dimension n is a build-in expression. Suppose :math:`n=3`::
+
+    atlas> id_mat(3)
+    Value: 
+    | 1, 0, 0 |
+    | 0, 1, 0 |
+    | 0, 0, 1 |
+    
+.. _ratvec:
+
+ratvec
++++++++
+
+There are two basic ways to declare a rational vector::
+
+    atlas> set v = [1,2,3]/5
+    Variable v: ratvec
+    atlas> set w = ratvec:[1/2,3/5]
+    Variable w: ratvec
+    
+You can also make array of rational numbers ``[rat]``::
+    
+    atlas> set w = [1/2,3/5]
+    Variable w: [rat]
+    
+Similar to ``int``, if you add a ``ratvec`` to ``[rat]``, the result is ``ratvec``::
+
+    atlas> set v = [1,2,3]/5
+    Variable v: ratvec
+    atlas> set w = [1/2,3/5]
+    Variable w: [rat]
+    atlas> whattype v+w
+    type: ratvec
+    
+.. _LieType:
+
+LieType
+++++++++
+
+An example of a valid Lie type is "A1.T1"::
+
+    atlas> set l = LieType : "A1.T1"
+    Variable l: LieType
+    
 
 .. _RootDatum:
 
 RootDatum
 +++++++++++
 
-In **atlas**, a root datum is a pair of m by n (integral) matrices (A,B) such that (A^T)*B is a Cartan matrix. The number m is rank (number of rows) and n is the semi-simple rank (number of columns).
+In **atlas**, a root datum is a pair of :math:`m\times n` (integral) matrices :math:`(A,B)` such that :math:`A^T*B` is a Cartan matrix. The number m is rank (number of rows) and n is the semi-simple rank (number of columns). One way to define a ``RootDatum`` is to use ``LieType``::
+
+    atlas> set rd =  simply_connected(LieType:"A1.T1")
+    Variable rd: RootDatum
+
+.. _InnerClass:
+
+InnerClass
+++++++++++++++
+
+One can think of an inner class as a set of real forms (of a certain complex Lie group) that share some properties. One can define an inner class in **atlas** as::
+
+    atlas> inner_class(SL(2,R))
+    Value: Complex reductive group of type A1, with involution defining
+    inner class of type 'c', with 2 real forms and 2 dual real forms
+    atlas> whattype inner_class(SL(2,R))
+    type: InnerClass
+    
+.. _RealForm:
+
+RealForm
+++++++++++
+
+A simple way of specifying a real form is::
+    
+    atlas> set G = Sp(4,R)
+    Variable G: RealForm
+
+This is enabled by the various user-defined scripts in "atlas-scripts" folder.
+
+If furthermore you want to see all real forms that are in the same inner class as :math:`Sp(4,R)`, do::
+
+    atlas> real_forms(G)
+    Value: [compact connected real group with Lie algebra 'sp(2)',connected real group with Lie algebra 'sp(1,1)',connected split real group with Lie algebra 'sp(4,R)']
+    
+.. _CartanClass:
+
+CartanClass
+++++++++++++
+
+For a specific real group :math:`G = Sp(4,R)`, one can ask **atlas** what are the Cartan classes that are in the same inner class::
+
+    atlas> set G = Sp(4,R)
+    Variable G: RealForm
+    atlas>
+    atlas> Cartan_classes(G)
+    Value: [Cartan class #0, occurring for 3 real forms and for 1 dual real form,Cartan class #1, occurring for 2 real forms and for 1 dual real form,Cartan class #2, occurring for 1 real form and for 2 dual real forms,Cartan class #3, occurring for 1 real form and for 3 dual real forms]
+    atlas>
+    atlas> whattype Cartan_classes(G)[1]
+    type: CartanClass
+    
+.. _KGBElt:
+
+KGBElt
++++++++
+
+Given a group :math:`G`, for example :math:`G = SL(2,R)`. One can ask **atlas** to print out the KGB elements associated to different Cartan involutions::
+
+    atlas> set G = SL(2,R)
+    Variable G: RealForm (overriding previous instance, which had type RealForm)
+    atlas> KGB(G)
+    Value: [KGB element #0,KGB element #1,KGB element #2]
+    atlas> KGB(G,0)
+    Value: KGB element #0
+
+.. _Block:
+
+Block
+++++++
+::
+
+    atlas> set G = SL(2,R)
+    Variable G: RealForm (overriding previous instance, which had type RealForm)
+    atlas> blocks(G)
+    Value: [Block of 1 elements,Block of 1 elements,Block of 3 elements]
+    atlas> whattype blocks(G)[0]
+    type: Block
+
 
 Composite Types
 -----------------
