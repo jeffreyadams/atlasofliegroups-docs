@@ -272,7 +272,8 @@ These basic types are:</p>
 <td>real form within an inner class</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="#cartanclass"><span>CartanClass</span></a></td>
-<td>class of Cartan subgroups within an inner class</td>
+<td>all the conjugacy classes of Cartan
+subgroups  of real groups in an inner class</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="#kgbelt"><span>KGBElt</span></a></td>
 <td>element of the set K\G/B associated to some RealForm value</td>
@@ -379,7 +380,7 @@ Variable w: [rat]
 <p>Similar to <code class="docutils literal"><span class="pre">int</span></code>, if you add a <code class="docutils literal"><span class="pre">ratvec</span></code> to <code class="docutils literal"><span class="pre">[rat]</span></code>, the result is <code class="docutils literal"><span class="pre">ratvec</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set v = [1,2,3]/5
 Variable v: ratvec
-atlas&gt; set w = [1/2,3/5]
+atlas&gt; set w = [1/2,3/5, 5/7]
 Variable w: [rat]
 atlas&gt; whattype v+w
 type: ratvec
@@ -433,7 +434,7 @@ Value: [compact connected real group with Lie algebra &#39;sp(2)&#39;,connected 
 </div>
 <div class="section" id="cartanclass">
 <span id="id10"></span><h3>CartanClass<a class="headerlink" href="#cartanclass" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">CartanClass</span></code> represents class of Cartan subgroups within an inner class.</p>
+<p><code class="docutils literal"><span class="pre">CartanClass</span></code> represents all the conjugacy classes of Cartan subgroups  of real groups in an inner class.</p>
 <p>For a specific real group <span class="math">\(G = Sp(4,R)\)</span>, one can ask <strong>atlas</strong> what are the Cartan classes that are in the same inner class:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G = Sp(4,R)
 Variable G: RealForm
@@ -443,12 +444,15 @@ Value: [Cartan class #0, occurring for 3 real forms and for 1 dual real form,Car
 atlas&gt;
 atlas&gt; whattype Cartan_classes(G)[1]
 type: CartanClass
+
+
+The reference to &#39;dual real forms&#39; concerns the various blocks of representations for which each Cartan class appears.
 </pre></div>
 </div>
 </div>
 <div class="section" id="kgbelt">
 <span id="id11"></span><h3>KGBElt<a class="headerlink" href="#kgbelt" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">KGBElt</span></code> represents element of the set KG/B associated to some RealForm value.</p>
+<p><code class="docutils literal"><span class="pre">KGBElt</span></code> represents element of the set K\G/B associated to some RealForm value.</p>
 <p>Given a group <span class="math">\(G\)</span>, for example <span class="math">\(G = SL(2,R)\)</span>. One can ask <strong>atlas</strong> to print out the KGB elements associated to different Cartan involutions:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G = SL(2,R)
 Variable G: RealForm (overriding previous instance, which had type RealForm)
