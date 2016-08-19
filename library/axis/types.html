@@ -278,13 +278,13 @@ These basic types are:</p>
 <tr class="row-odd"><td><a class="reference internal" href="#block"><span>Block</span></a></td>
 <td>block for a pair of RealForm values (at dual inner classes)</td>
 </tr>
-<tr class="row-even"><td>Split</td>
+<tr class="row-even"><td><a class="reference internal" href="#split"><span>Split</span></a></td>
 <td>&#8220;split integer&#8221; a + b.s where s is &#8220;split unit&#8221; with s^2=1</td>
 </tr>
-<tr class="row-odd"><td>Param</td>
+<tr class="row-odd"><td><a class="reference internal" href="#param"><span>Param</span></a></td>
 <td>value representing a standard module or its irreducible quotient</td>
 </tr>
-<tr class="row-even"><td>ParamPol</td>
+<tr class="row-even"><td><a class="reference internal" href="#parampol"><span>ParamPol</span></a></td>
 <td>virtual module with signature (Param values with Split coefs)</td>
 </tr>
 </tbody>
@@ -295,7 +295,7 @@ These basic types are:</p>
 </div>
 <div class="section" id="bool">
 <span id="id1"></span><h3>bool<a class="headerlink" href="#bool" title="Permalink to this headline">¶</a></h3>
-<p>Values of bool are <code class="docutils literal"><span class="pre">true</span></code>, <code class="docutils literal"><span class="pre">false</span></code>:</p>
+<p><code class="docutils literal"><span class="pre">bool</span></code> represents truth values. Values of bool are <code class="docutils literal"><span class="pre">true</span></code>, <code class="docutils literal"><span class="pre">false</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype true
 type: bool
 atlas&gt; whattype false
@@ -305,7 +305,7 @@ type: bool
 </div>
 <div class="section" id="string">
 <span id="id2"></span><h3>string<a class="headerlink" href="#string" title="Permalink to this headline">¶</a></h3>
-<p>String values can be entered using a double quote:</p>
+<p><code class="docutils literal"><span class="pre">string</span></code> represents string of characters. String values can be entered using a double quote:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set s = &quot;atlas&quot;
 Variable s: string
 </pre></div>
@@ -318,6 +318,11 @@ operators and functions (for instance 22/7 has type &#8216;rat&#8217; and GL(5) 
 </div>
 <div class="section" id="int-rat-vec">
 <span id="id3"></span><h3>int, rat, &amp; vec<a class="headerlink" href="#int-rat-vec" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">int</span></code> represents machine integers (32 or 64 bits);</li>
+<li><code class="docutils literal"><span class="pre">rat</span></code> represents rational numbers (quotient of two machine integers);</li>
+<li><code class="docutils literal"><span class="pre">vec</span></code> represents vector of machine integers.</li>
+</ul>
 <p>As you might expect, the sum of a <code class="docutils literal"><span class="pre">int</span></code> type and <code class="docutils literal"><span class="pre">rat</span></code> type is a <code class="docutils literal"><span class="pre">rat</span></code> type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set a = 2
 Variable a: int
@@ -336,7 +341,11 @@ atlas&gt; whattype v+w
 type: vec
 </pre></div>
 </div>
-<p id="mat">If you directly enter <code class="docutils literal"><span class="pre">[[1,2],[3,4]]</span></code>, the type would be set to <code class="docutils literal"><span class="pre">[[int]]</span></code>. You need to specifically declare the type <code class="docutils literal"><span class="pre">mat</span></code> if you want <code class="docutils literal"><span class="pre">[[1,2],[3,4]]</span></code> to be a matrix:</p>
+</div>
+<div class="section" id="mat">
+<span id="id4"></span><h3>mat<a class="headerlink" href="#mat" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">mat</span></code> represents matrix of machine integers.</p>
+<p>If you directly enter <code class="docutils literal"><span class="pre">[[1,2],[3,4]]</span></code>, the type would be set to <code class="docutils literal"><span class="pre">[[int]]</span></code>. You need to specifically declare the type <code class="docutils literal"><span class="pre">mat</span></code> if you want <code class="docutils literal"><span class="pre">[[1,2],[3,4]]</span></code> to be a matrix:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set m = mat : [[1,2],[3,4]]
 Variable m: mat
 </pre></div>
@@ -351,7 +360,8 @@ Value:
 </div>
 </div>
 <div class="section" id="ratvec">
-<span id="id4"></span><h3>ratvec<a class="headerlink" href="#ratvec" title="Permalink to this headline">¶</a></h3>
+<span id="id5"></span><h3>ratvec<a class="headerlink" href="#ratvec" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">ratvec</span></code> represents rational vector (vector numerator with common denominator).</p>
 <p>There are two basic ways to declare a rational vector:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set v = [1,2,3]/5
 Variable v: ratvec
@@ -375,7 +385,8 @@ type: ratvec
 </div>
 </div>
 <div class="section" id="lietype">
-<span id="id5"></span><h3>LieType<a class="headerlink" href="#lietype" title="Permalink to this headline">¶</a></h3>
+<span id="id6"></span><h3>LieType<a class="headerlink" href="#lietype" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">LieType</span></code> represents Lie types.</p>
 <p>An example of a valid Lie type is &#8220;A1.T1&#8221;:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set l = LieType : &quot;A1.T1&quot;
 Variable l: LieType
@@ -383,7 +394,8 @@ Variable l: LieType
 </div>
 </div>
 <div class="section" id="rootdatum">
-<span id="id6"></span><h3>RootDatum<a class="headerlink" href="#rootdatum" title="Permalink to this headline">¶</a></h3>
+<span id="id7"></span><h3>RootDatum<a class="headerlink" href="#rootdatum" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">RootDatum</span></code> represents root datum, specifying a connected complex reductive group.</p>
 <p>In <strong>atlas</strong>, a root datum is a pair of <span class="math">\(m\times n\)</span> (integral) matrices <span class="math">\((A,B)\)</span> such that <span class="math">\(A^T*B\)</span> is a Cartan matrix. The number m is rank (number of rows) and n is the semi-simple rank (number of columns). One way to define a <code class="docutils literal"><span class="pre">RootDatum</span></code> is to use <code class="docutils literal"><span class="pre">LieType</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd =  simply_connected(LieType:&quot;A1.T1&quot;)
 Variable rd: RootDatum
@@ -391,7 +403,8 @@ Variable rd: RootDatum
 </div>
 </div>
 <div class="section" id="innerclass">
-<span id="id7"></span><h3>InnerClass<a class="headerlink" href="#innerclass" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3>InnerClass<a class="headerlink" href="#innerclass" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">InnerClass</span></code> represents inner class of real forms (based root datum with involution).</p>
 <p>One can think of an inner class as a set of real forms (of a certain complex Lie group) that share some properties. One can define an inner class in <strong>atlas</strong> as:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; inner_class(SL(2,R))
 Value: Complex reductive group of type A1, with involution defining
@@ -402,7 +415,8 @@ type: InnerClass
 </div>
 </div>
 <div class="section" id="realform">
-<span id="id8"></span><h3>RealForm<a class="headerlink" href="#realform" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3>RealForm<a class="headerlink" href="#realform" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">RealForm</span></code> represents real form within an inner class.</p>
 <p>A simple way of specifying a real form is:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G = Sp(4,R)
 Variable G: RealForm
@@ -416,7 +430,8 @@ Value: [compact connected real group with Lie algebra &#39;sp(2)&#39;,connected 
 </div>
 </div>
 <div class="section" id="cartanclass">
-<span id="id9"></span><h3>CartanClass<a class="headerlink" href="#cartanclass" title="Permalink to this headline">¶</a></h3>
+<span id="id10"></span><h3>CartanClass<a class="headerlink" href="#cartanclass" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">CartanClass</span></code> represents class of Cartan subgroups within an inner class.</p>
 <p>For a specific real group <span class="math">\(G = Sp(4,R)\)</span>, one can ask <strong>atlas</strong> what are the Cartan classes that are in the same inner class:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G = Sp(4,R)
 Variable G: RealForm
@@ -430,7 +445,8 @@ type: CartanClass
 </div>
 </div>
 <div class="section" id="kgbelt">
-<span id="id10"></span><h3>KGBElt<a class="headerlink" href="#kgbelt" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3>KGBElt<a class="headerlink" href="#kgbelt" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">KGBElt</span></code> represents element of the set KG/B associated to some RealForm value.</p>
 <p>Given a group <span class="math">\(G\)</span>, for example <span class="math">\(G = SL(2,R)\)</span>. One can ask <strong>atlas</strong> to print out the KGB elements associated to different Cartan involutions:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G = SL(2,R)
 Variable G: RealForm (overriding previous instance, which had type RealForm)
@@ -442,7 +458,8 @@ Value: KGB element #0
 </div>
 </div>
 <div class="section" id="block">
-<span id="id11"></span><h3>Block<a class="headerlink" href="#block" title="Permalink to this headline">¶</a></h3>
+<span id="id12"></span><h3>Block<a class="headerlink" href="#block" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">Block</span></code> represents block for a pair of RealForm values (at dual inner classes).</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G = SL(2,R)
 Variable G: RealForm (overriding previous instance, which had type RealForm)
 atlas&gt; blocks(G)
@@ -451,6 +468,18 @@ atlas&gt; whattype blocks(G)[0]
 type: Block
 </pre></div>
 </div>
+</div>
+<div class="section" id="split">
+<span id="id13"></span><h3>Split<a class="headerlink" href="#split" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">Split</span></code> represents “split integer” <span class="math">\(a + b.s\)</span> where s is “split unit” with <span class="math">\(s^2=1\)</span>.</p>
+</div>
+<div class="section" id="param">
+<span id="id14"></span><h3>Param<a class="headerlink" href="#param" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">Param</span></code> represents value representing a standard module or its irreducible quotient.</p>
+</div>
+<div class="section" id="parampol">
+<span id="id15"></span><h3>ParamPol<a class="headerlink" href="#parampol" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">ParamPol</span></code> represents virtual module with signature (Param values with Split coefs).</p>
 </div>
 </div>
 <div class="section" id="composite-types">

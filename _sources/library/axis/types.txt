@@ -100,11 +100,11 @@ These basic types are:
      - element of the set K\\G/B associated to some RealForm value
    * - :ref:`Block`
      - block for a pair of RealForm values (at dual inner classes)
-   * - Split
+   * - :ref:`Split`
      - "split integer" a + b.s where s is "split unit" with s^2=1 
-   * - Param
+   * - :ref:`Param`
      - value representing a standard module or its irreducible quotient
-   * - ParamPol
+   * - :ref:`ParamPol`
      - virtual module with signature (Param values with Split coefs)
 
 
@@ -115,7 +115,7 @@ These basic types are:
 bool
 +++++
 
-Values of bool are ``true``, ``false``::
+``bool`` represents truth values. Values of bool are ``true``, ``false``::
 
     atlas> whattype true
     type: bool
@@ -128,7 +128,7 @@ Values of bool are ``true``, ``false``::
 string
 ++++++++
 
-String values can be entered using a double quote::
+``string`` represents string of characters. String values can be entered using a double quote::
 
     atlas> set s = "atlas"
     Variable s: string
@@ -145,6 +145,10 @@ operators and functions (for instance 22/7 has type 'rat' and GL(5) has type
 
 int, rat, & vec
 ++++++++++++++++
+
+* ``int`` represents machine integers (32 or 64 bits); 
+* ``rat`` represents rational numbers (quotient of two machine integers); 
+* ``vec`` represents vector of machine integers.
 
 As you might expect, the sum of a ``int`` type and ``rat`` type is a ``rat`` type::
     
@@ -167,6 +171,11 @@ Similarly, if you add a ``vec`` type and an array of ``int``, whenever possible,
     
 .. _mat:
 
+mat
+++++
+
+``mat`` represents matrix of machine integers.
+
 If you directly enter ``[[1,2],[3,4]]``, the type would be set to ``[[int]]``. You need to specifically declare the type ``mat`` if you want ``[[1,2],[3,4]]`` to be a matrix::
     
     atlas> set m = mat : [[1,2],[3,4]]
@@ -184,6 +193,8 @@ Identity matrix of dimension n is a build-in expression. Suppose :math:`n=3`::
 
 ratvec
 +++++++
+
+``ratvec`` represents rational vector (vector numerator with common denominator).
 
 There are two basic ways to declare a rational vector::
 
@@ -211,6 +222,8 @@ Similar to ``int``, if you add a ``ratvec`` to ``[rat]``, the result is ``ratvec
 LieType
 ++++++++
 
+``LieType`` represents Lie types.
+
 An example of a valid Lie type is "A1.T1"::
 
     atlas> set l = LieType : "A1.T1"
@@ -222,6 +235,8 @@ An example of a valid Lie type is "A1.T1"::
 RootDatum
 +++++++++++
 
+``RootDatum`` represents root datum, specifying a connected complex reductive group.
+
 In **atlas**, a root datum is a pair of :math:`m\times n` (integral) matrices :math:`(A,B)` such that :math:`A^T*B` is a Cartan matrix. The number m is rank (number of rows) and n is the semi-simple rank (number of columns). One way to define a ``RootDatum`` is to use ``LieType``::
 
     atlas> set rd =  simply_connected(LieType:"A1.T1")
@@ -231,6 +246,8 @@ In **atlas**, a root datum is a pair of :math:`m\times n` (integral) matrices :m
 
 InnerClass
 ++++++++++++++
+
+``InnerClass`` represents inner class of real forms (based root datum with involution).
 
 One can think of an inner class as a set of real forms (of a certain complex Lie group) that share some properties. One can define an inner class in **atlas** as::
 
@@ -244,6 +261,8 @@ One can think of an inner class as a set of real forms (of a certain complex Lie
 
 RealForm
 ++++++++++
+
+``RealForm`` represents real form within an inner class.
 
 A simple way of specifying a real form is::
     
@@ -262,6 +281,8 @@ If furthermore you want to see all real forms that are in the same inner class a
 CartanClass
 ++++++++++++
 
+``CartanClass`` represents class of Cartan subgroups within an inner class.
+
 For a specific real group :math:`G = Sp(4,R)`, one can ask **atlas** what are the Cartan classes that are in the same inner class::
 
     atlas> set G = Sp(4,R)
@@ -278,6 +299,8 @@ For a specific real group :math:`G = Sp(4,R)`, one can ask **atlas** what are th
 KGBElt
 +++++++
 
+``KGBElt`` represents element of the set K\G/B associated to some RealForm value.
+
 Given a group :math:`G`, for example :math:`G = SL(2,R)`. One can ask **atlas** to print out the KGB elements associated to different Cartan involutions::
 
     atlas> set G = SL(2,R)
@@ -291,6 +314,9 @@ Given a group :math:`G`, for example :math:`G = SL(2,R)`. One can ask **atlas** 
 
 Block
 ++++++
+
+``Block`` represents block for a pair of RealForm values (at dual inner classes).
+
 ::
 
     atlas> set G = SL(2,R)
@@ -299,6 +325,31 @@ Block
     Value: [Block of 1 elements,Block of 1 elements,Block of 3 elements]
     atlas> whattype blocks(G)[0]
     type: Block
+
+
+.. _Split:
+
+Split
+++++++
+
+``Split`` represents “split integer” :math:`a + b.s` where s is “split unit” with :math:`s^2=1`.
+
+
+.. _Param:
+
+Param
+++++++
+
+``Param`` represents value representing a standard module or its irreducible quotient.
+
+
+.. _ParamPol:
+
+ParamPol
++++++++++
+
+``ParamPol`` represents virtual module with signature (Param values with Split coefs).
+
 
 
 Composite Types
