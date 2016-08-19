@@ -306,12 +306,14 @@ Composite Types
 
 Composite types are either **array (list) types**, **tuple types** or **function types**.
 Array and tuple types both construct aggregates by combining a sequence of
-component values; for array types all components must have the same type and
-there could be any number of them (including none at all), while for tuple
-types the type explicitly enumerates the types of the components, so in
-particular the number of components is determined by the type. A function type
-specifies zero or more argument and result types; for either, unless exactly
-one such type is specified the argument or result type is actually a tuple
+component values. The difference is: 
+
+* for array types all components must have the *same* type and there could be any number of them (including none at all);
+
+* for tuple types the type explicitly enumerates the (may-be-*different*) types of the components, so in particular the number of components is determined by the type. 
+
+A function type specifies zero or more argument and result types; for either, unless exactly
+one such type is specified, the argument or result type is actually a tuple
 type. Thus if t0,t1,t2,t3 are types, one has composite types like:
 
 .. list-table::

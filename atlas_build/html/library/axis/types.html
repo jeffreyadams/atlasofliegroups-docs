@@ -98,7 +98,17 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
 <li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a></li>
 </ul>
 </li>
 </ul>
@@ -447,12 +457,13 @@ type: Block
 <h2>Composite Types<a class="headerlink" href="#composite-types" title="Permalink to this headline">¶</a></h2>
 <p>Composite types are either <strong>array (list) types</strong>, <strong>tuple types</strong> or <strong>function types</strong>.
 Array and tuple types both construct aggregates by combining a sequence of
-component values; for array types all components must have the same type and
-there could be any number of them (including none at all), while for tuple
-types the type explicitly enumerates the types of the components, so in
-particular the number of components is determined by the type. A function type
-specifies zero or more argument and result types; for either, unless exactly
-one such type is specified the argument or result type is actually a tuple
+component values. The difference is:</p>
+<ul class="simple">
+<li>for array types all components must have the <em>same</em> type and there could be any number of them (including none at all);</li>
+<li>for tuple types the type explicitly enumerates the (may-be-<em>different</em>) types of the components, so in particular the number of components is determined by the type.</li>
+</ul>
+<p>A function type specifies zero or more argument and result types; for either, unless exactly
+one such type is specified, the argument or result type is actually a tuple
 type. Thus if t0,t1,t2,t3 are types, one has composite types like:</p>
 <table border="1" class="docutils">
 <colgroup>
