@@ -94,6 +94,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="">Types</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#primitive-types">Primitive Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#description-and-examples-of-primitive-types">Description and Examples of Primitive Types</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#composite-types">Composite Types</a></li>
 </ul>
 </li>
@@ -112,7 +113,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../basic_atlas_functions.html">Basic <strong>atlas</strong> Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
@@ -296,6 +297,9 @@ subgroups  of real groups in an inner class</td>
 <p class="first admonition-title">Note</p>
 <p class="last">If you want to check the data type of something, for example <code class="docutils literal"><span class="pre">id_mat(3)</span></code>. You can do <code class="docutils literal"><span class="pre">whattype</span> <span class="pre">id_mat(3)</span></code> in <strong>atlas</strong> and it will output <code class="docutils literal"><span class="pre">type:</span> <span class="pre">mat</span></code>.</p>
 </div>
+</div>
+<div class="section" id="description-and-examples-of-primitive-types">
+<h2>Description and Examples of Primitive Types<a class="headerlink" href="#description-and-examples-of-primitive-types" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="bool">
 <span id="id1"></span><h3>bool<a class="headerlink" href="#bool" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal"><span class="pre">bool</span></code> represents truth values. Values of bool are <code class="docutils literal"><span class="pre">true</span></code>, <code class="docutils literal"><span class="pre">false</span></code>:</p>
@@ -428,7 +432,9 @@ Variable G: RealForm
 <p>This is enabled by the various user-defined scripts in &#8220;atlas-scripts&#8221; folder.</p>
 <p>If furthermore you want to see all real forms that are in the same inner class as <span class="math">\(Sp(4,R)\)</span>, do:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; real_forms(G)
-Value: [compact connected real group with Lie algebra &#39;sp(2)&#39;,connected real group with Lie algebra &#39;sp(1,1)&#39;,connected split real group with Lie algebra &#39;sp(4,R)&#39;]
+Value: [compact connected real group with Lie algebra &#39;sp(2)&#39;,
+connected real group with Lie algebra &#39;sp(1,1)&#39;,
+connected split real group with Lie algebra &#39;sp(4,R)&#39;]
 </pre></div>
 </div>
 </div>
@@ -440,19 +446,20 @@ Value: [compact connected real group with Lie algebra &#39;sp(2)&#39;,connected 
 Variable G: RealForm
 atlas&gt;
 atlas&gt; Cartan_classes(G)
-Value: [Cartan class #0, occurring for 3 real forms and for 1 dual real form,Cartan class #1, occurring for 2 real forms and for 1 dual real form,Cartan class #2, occurring for 1 real form and for 2 dual real forms,Cartan class #3, occurring for 1 real form and for 3 dual real forms]
+Value: [Cartan class #0, occurring for 3 real forms and for 1 dual real form,
+Cartan class #1, occurring for 2 real forms and for 1 dual real form,
+Cartan class #2, occurring for 1 real form and for 2 dual real forms,
+Cartan class #3, occurring for 1 real form and for 3 dual real forms]
 atlas&gt;
 atlas&gt; whattype Cartan_classes(G)[1]
 type: CartanClass
-
-
-The reference to &#39;dual real forms&#39; concerns the various blocks of representations for which each Cartan class appears.
 </pre></div>
 </div>
+<p>The reference to &#8216;dual real forms&#8217; concerns the various blocks of representations for which each Cartan class appears.</p>
 </div>
 <div class="section" id="kgbelt">
 <span id="id11"></span><h3>KGBElt<a class="headerlink" href="#kgbelt" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">KGBElt</span></code> represents element of the set K\G/B associated to some RealForm value.</p>
+<p><code class="docutils literal"><span class="pre">KGBElt</span></code> represents element of the set <span class="math">\(K\backslash G/B\)</span> associated to some RealForm value.</p>
 <p>Given a group <span class="math">\(G\)</span>, for example <span class="math">\(G = SL(2,R)\)</span>. One can ask <strong>atlas</strong> to print out the KGB elements associated to different Cartan involutions:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G = SL(2,R)
 Variable G: RealForm (overriding previous instance, which had type RealForm)
@@ -477,7 +484,7 @@ type: Block
 </div>
 <div class="section" id="split">
 <span id="id13"></span><h3>Split<a class="headerlink" href="#split" title="Permalink to this headline">¶</a></h3>
-<p><code class="docutils literal"><span class="pre">Split</span></code> represents “split integer” <span class="math">\(a + b.s\)</span> where s is “split unit” with <span class="math">\(s^2=1\)</span>.</p>
+<p><code class="docutils literal"><span class="pre">Split</span></code> represents “split integer” <span class="math">\(a + b.s\)</span> where <span class="math">\(s\)</span> is “split unit” with <span class="math">\(s^2=1\)</span>.</p>
 </div>
 <div class="section" id="param">
 <span id="id14"></span><h3>Param<a class="headerlink" href="#param" title="Permalink to this headline">¶</a></h3>
@@ -490,7 +497,7 @@ type: Block
 </div>
 <div class="section" id="composite-types">
 <h2>Composite Types<a class="headerlink" href="#composite-types" title="Permalink to this headline">¶</a></h2>
-<p>Composite types are either <strong>array (list) types</strong>, <strong>tuple types</strong> or <strong>function types</strong>.
+<p>Composite types are either <strong>array (list)</strong> types, <strong>tuple</strong> types or <strong>function</strong> types.
 Array and tuple types both construct aggregates by combining a sequence of
 component values. The difference is:</p>
 <ul class="simple">
@@ -511,46 +518,46 @@ type. Thus if t0,t1,t2,t3 are types, one has composite types like:</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>[t0]</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">[t0]</span></code></td>
 <td>array of elements all of which have type t0</td>
 </tr>
-<tr class="row-odd"><td>[[t0]]</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">[[t0]]</span></code></td>
 <td>array of elements all of which have type [t0] (a list of lists)</td>
 </tr>
 <tr class="row-even"><td>...</td>
 <td>etc</td>
 </tr>
-<tr class="row-odd"><td>(t0,t1)</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">(t0,t1)</span></code></td>
 <td>2-tuple formed of components of types t0 and t1 respectively</td>
 </tr>
-<tr class="row-even"><td>(t0,t1,t2)</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">(t0,t1,t2)</span></code></td>
 <td>3-tuple, with components of types t0,t1,t2 respectively</td>
 </tr>
-<tr class="row-odd"><td>(t0,t1,t2,t3)</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">(t0,t1,t2,t3)</span></code></td>
 <td>4-tuple, with components of types t0,t1,t2,t3 respectively</td>
 </tr>
 <tr class="row-even"><td>...</td>
 <td>etc</td>
 </tr>
-<tr class="row-odd"><td>void</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">void</span></code></td>
 <td>0-tuple (irrelevant value)</td>
 </tr>
-<tr class="row-even"><td>(t0-&gt;t1)</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">(t0-&gt;t1)</span></code></td>
 <td>function with argument of type t0 and result of type t1</td>
 </tr>
-<tr class="row-odd"><td>(t0,t1-&gt;t2)</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">(t0,t1-&gt;t2)</span></code></td>
 <td>function with argument of type (t0,t1) and result of type t2</td>
 </tr>
-<tr class="row-even"><td>(t0-&gt;t1,t2)</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">(t0-&gt;t1,t2)</span></code></td>
 <td>function with argument of type t0 and result of type (t1,t2)</td>
 </tr>
-<tr class="row-odd"><td>(t0,t1-&gt;t2,t3)</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">(t0,t1-&gt;t2,t3)</span></code></td>
 <td>function with argument of type (t0,t1), result of type (t2,t3)</td>
 </tr>
-<tr class="row-even"><td>(t0,t1-&gt;)</td>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">(t0,t1-&gt;)</span></code></td>
 <td>function with argument of type (t0,t1) and no useful result</td>
 </tr>
-<tr class="row-odd"><td>(-&gt;t0)</td>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">(-&gt;t0)</span></code></td>
 <td>function with 0 arguments with result of type t0</td>
 </tr>
 <tr class="row-even"><td>...</td>

@@ -107,7 +107,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../basic_atlas_functions.html">Basic <strong>atlas</strong> Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
@@ -195,12 +195,12 @@ ignoring the remainder one should write 102 instead).</p>
 an identifier can be introduced, one may also specify a tuple of identifiers,
 if the type of the value is appropriate, and the components will be bound to
 the corresponding identifiers. So whereas:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=E
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x = E
 </pre></div>
 </div>
 <p>introduces the identifier &#8216;x&#8217; whose value (and type) are set to that of the
-expression &#8216;E&#8217;, one can alternatively say:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="o">=</span><span class="n">E</span>
+expression &#8216;E&#8217;, one can alternatively say</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>atlas&gt; set (x,y) = E
 </pre></div>
 </div>
 <p>provided that E produces a pair (some value of some 2-tuple type), and the
@@ -221,12 +221,12 @@ local variables one uses a syntax like that of &#8216;set&#8217; used above, but
 &#8216;let&#8217; instead of &#8216;set&#8217;, and followed by &#8216;in&#8217; and the &#8220;body&#8221; if the
 let-expression, the expression where the local variable is in scope. So to
 compute a value from the components of &#8216;z&#8217;, one could say:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="o">=</span><span class="n">z</span> <span class="ow">in</span> <span class="mi">3</span><span class="o">*</span><span class="n">y</span><span class="o">-</span><span class="n">x</span>
+<div class="highlight-none"><div class="highlight"><pre><span></span>atlas&gt; let (x,y) = z in 3*y-x
 </pre></div>
 </div>
 <p>If only the first component is needed, there is no need to give a name to the
 other one, so for the projection to the first component one can write:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="p">(</span><span class="n">x</span><span class="p">,)</span><span class="o">=</span><span class="n">z</span> <span class="ow">in</span> <span class="n">x</span>
+<div class="highlight-none"><div class="highlight"><pre><span></span>atlas&gt; let (x,)=z in x
 </pre></div>
 </div>
 <p>Local variables get their value and type from the expression between &#8216;=&#8217; and

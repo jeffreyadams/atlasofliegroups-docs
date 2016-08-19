@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Basic atlas Functions &mdash; atlas 0.6 documentation</title>
+  <title>Built-In atlas Functions &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -91,7 +91,14 @@
 <li class="toctree-l2"><a class="reference internal" href="intro.html">A Brief Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="axis.html">The Axis Language</a></li>
 <li class="toctree-l2"><a class="reference internal" href="operators.html">Basic Operators</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Basic <strong>atlas</strong> Functions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Built-In <strong>atlas</strong> Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#basic-functions">Basic Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#flex">flex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#convolve">convolve</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../source_library.html">Source Code Library</a></li>
@@ -129,7 +136,7 @@
       
           <li><a href="../atlas_lib.html">atlas Library</a> &raquo;</li>
       
-    <li>Basic <strong>atlas</strong> Functions</li>
+    <li>Built-In <strong>atlas</strong> Functions</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -143,8 +150,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="basic-atlas-functions">
-<h1>Basic <strong>atlas</strong> Functions<a class="headerlink" href="#basic-atlas-functions" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="built-in-atlas-functions">
+<h1>Built-In <strong>atlas</strong> Functions<a class="headerlink" href="#built-in-atlas-functions" title="Permalink to this headline">¶</a></h1>
+<p>Built-in functions are those functions that are available before you load any <code class="docutils literal"><span class="pre">.at</span></code> files.</p>
+<div class="section" id="basic-functions">
+<h2>Basic Functions<a class="headerlink" href="#basic-functions" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Function</th>
+<th class="head">Argument(s) -&gt; Result(s)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#flex"><span>flex_add, flex_sub</span></a></td>
+<td><code class="docutils literal"><span class="pre">(vec,vec-&gt;vec)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#convolve"><span>convolve</span></a></td>
+<td><code class="docutils literal"><span class="pre">(vec,vec-&gt;vec)</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="flex">
+<span id="id1"></span><h3>flex<a class="headerlink" href="#flex" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">flex_add</span></code> and <code class="docutils literal"><span class="pre">flex_sub</span></code> are variants of <code class="docutils literal"><span class="pre">+</span></code>, <code class="docutils literal"><span class="pre">-</span></code> adding/removing trailing 0&#8217;s.</p>
+</div>
+<div class="section" id="convolve">
+<span id="id2"></span><h3>convolve<a class="headerlink" href="#convolve" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal"><span class="pre">convolve</span></code> produce convolution product of vectors, removing trailing 0&#8217;s.</p>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible">
+    <h1>Click me - I'm collapsible!</h1>
+    <p>I'm the expanded content.</p>
+  </div>
+</div></div>
+</div>
 </div>
 
 
