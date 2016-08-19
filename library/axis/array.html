@@ -32,7 +32,7 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
-        <link rel="next" title="Implicit Conversions" href="implicit_conversion.html"/>
+        <link rel="next" title="Tuple Displays and Pattern Matching" href="tuple_pattern.html"/>
         <link rel="prev" title="Types" href="types.html"/> 
 
   
@@ -96,9 +96,20 @@
 <li class="toctree-l4"><a class="reference internal" href="#array-displays">Array Displays</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#array-selection">Array Selection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#array-slicing">Array Slicing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-array-like-types">Other Array-Like Types</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
 <li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a></li>
 </ul>
 </li>
 </ul>
@@ -158,12 +169,125 @@
 <h1>Array<a class="headerlink" href="#array" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="array-displays">
 <h2>Array Displays<a class="headerlink" href="#array-displays" title="Permalink to this headline">¶</a></h2>
+<p>Array values can be constructed by enclosing a comma-separated lists of
+component expressions (all of the same type) in brackets, as in <code class="docutils literal"><span class="pre">[1,-4,3*6]</span></code>,
+which is called a <strong>row display</strong> (the given one will be printed as <code class="docutils literal"><span class="pre">[1,-4,18]</span></code>).
+They are also implicitly constructed by <a class="reference internal" href="control_structures.html#control-struc"><span>loops</span></a>.</p>
 </div>
 <div class="section" id="array-selection">
 <h2>Array Selection<a class="headerlink" href="#array-selection" title="Permalink to this headline">¶</a></h2>
+<p>If &#8216;v&#8217; is an identifier, or more generally an expression, whose value is an
+array, then the individual components can of the array can be accessed by
+subscripting, as in &#8216;v[i]&#8217;. Interpretation of the index always starts from 0:
+the first element of v is v[0], and the last is v[#v-1]. However, one can also
+index counting from the end by prefixing the &#8216;[&#8216; by &#8216;~&#8217;, so the last element
+is also v~[0], and the before-last v~[1] and so on.</p>
 </div>
 <div class="section" id="array-slicing">
 <h2>Array Slicing<a class="headerlink" href="#array-slicing" title="Permalink to this headline">¶</a></h2>
+<p>One can also select
+multiple elements at once (combined into a new array value) using a &#8220;slice&#8221;,
+specifying the a lower and an upper bound separated by &#8216;:&#8217;. Each should be
+thought of as indicating a separation between two elements, namely between the
+one at the given index and at an index one less; the slice then selects all
+elements between the lower separator and the upper separator. This means that
+in a v[a:b] includes the element v[a] but excludes v[b], and therefore selects
+b-a elements in all. In case a&gt;=b the slice returns an empty array of the same
+type as v (having a=b is normal, having a&gt;b is allowed but rarely useful). It
+is an error if the lower bound is negative, or if the upper bound exceeds the
+size of the array. Individual bounds in a range can also be counted from the
+end by appending a &#8216;~&#8217;, in which case they indicate the separation after (that
+is, closer to the end) then the element the index would reversely select. As a
+convenience a completely omitted lower bound means 0 (from the beginning) and
+an omitted upper bound means 0~ (up to the end). Finally one can (like for
+subscription) select from the reverses array by prefixing the &#8216;[&#8216; by &#8216;~&#8217;.</p>
+<p>Here are some examples of various uses of slices</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="77%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Expression</th>
+<th class="head">Effect</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>v[0:3]  or v[:3]</td>
+<td>the first 3 elements of v</td>
+</tr>
+<tr class="row-odd"><td>v[3:0~] or v[3:]</td>
+<td>everything except the first 3 elements of v</td>
+</tr>
+<tr class="row-even"><td>v[2~:0~] or v[2~:]</td>
+<td>the last 2 elements of v</td>
+</tr>
+<tr class="row-odd"><td>v[0:2~]  or v[:2~]</td>
+<td>everything except the last 2 elements of v</td>
+</tr>
+<tr class="row-even"><td>v[i:k]</td>
+<td>the elements [v[i],v[i+1],...,v[k-1]</td>
+</tr>
+<tr class="row-odd"><td>v[i:k~]</td>
+<td>all of v except its first i and its last k elements</td>
+</tr>
+<tr class="row-even"><td>v~[0:0~] or v~[:]</td>
+<td>all of v in reverse order</td>
+</tr>
+<tr class="row-odd"><td>v~[4:0~] or v~[4:]</td>
+<td>all of v except the last 4 elements, in reverse order</td>
+</tr>
+<tr class="row-even"><td>v~[0:5~] or v~[:5~]</td>
+<td>all of v except the first 5 elements, in reverse order</td>
+</tr>
+<tr class="row-odd"><td>v~[i:k]</td>
+<td>the k-i elements [v[n-1-i],...,v[n-k-1],v[n-k]] (n=#v)</td>
+</tr>
+<tr class="row-even"><td>v~[k~:i~]</td>
+<td>the k-i elements [v[k-1],...,v[i+1],v[i]]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="other-array-like-types">
+<h2>Other Array-Like Types<a class="headerlink" href="#other-array-like-types" title="Permalink to this headline">¶</a></h2>
+<p>While vectors, rational vectors, matrices and strings are not axis arrays
+(they are instead members of primitive types), they do behave like arrays for
+the purpose of selection; the result is respectively an integer, rational
+number, vector (column of the matrix) or a one-character string (the selection
+can also cause an error, if the index is out of bounds). They can also be used
+in slicing, in which case they return a value of the same type as what was
+selected from. For instance &#8220;reverse me!&#8221;~[:] gives &#8221;!em esrever&#8221; and
+id_mat(6)[1:2~] returns:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>| 0, 0, 0 |
+| 1, 0, 0 |
+| 0, 1, 0 |
+| 0, 0, 1 |
+| 0, 0, 0 |
+| 0, 0, 0 |
+</pre></div>
+</div>
+<p>For individual entries of a matrix, one can provide row and column index at
+once (in that order), separated by a comma as in A[i,j] (this actually indexes
+A by a tuple of type (int,int), as in A[(i,j)]). One can apply reverse
+indexing provided it applies to both indexes, as in A~[0,0] for the bottom
+right entry. Slicing applies somewhat differently in case of matrices (unless
+it involves a single integer range, in which case a range of columns is
+selected). The general form is A[i:k,j:l] where each of the bounds i,k,j,l may
+be followed by &#8216;~&#8217; (but not &#8216;A&#8217;; this syntax allows no global reversal). This
+selects a block of &#8216;A&#8217; with the interpretation above for each of the ranges.
+For more general slicing of matrices (with optional reversal of row and/or
+columns, transposition, and negation of individual entries, atlas provides a
+built-in function swiss_matrix_knife (the A[i:k,j:l] syntax in fact uses it).</p>
+<p>Finally there is selection if ParamPol values, which can be seen as
+associative arrays mapping certain Param values to Split coefficients, by
+Param values used as index: for a ParamPol P and a Pram value q, the
+subscription P[q] returns the coefficient of q in P (or Split:0 if no term q
+is present). There is a technical restriction to this use due to the fact that
+terms in ParamPol can only involve so-called standard parameters, and these
+are automatically expanded to nonzero final parameters; therefore P[q] gives
+an error unless q is standard, nonzero and final. There is no such thing as
+reversal in associative arrays, so the syntax P~[q] is not allowed here.</p>
 </div>
 </div>
 
@@ -174,7 +298,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="tuple_pattern.html" class="btn btn-neutral float-right" title="Tuple Displays and Pattern Matching" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="types.html" class="btn btn-neutral" title="Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

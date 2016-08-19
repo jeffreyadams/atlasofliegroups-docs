@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Design Principles &mdash; atlas 0.6 documentation</title>
+  <title>Recursion &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -32,8 +32,8 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
-        <link rel="next" title="Types" href="types.html"/>
-        <link rel="prev" title="The Axis Language" href="../axis.html"/> 
+        <link rel="next" title="Splitting Commands" href="split_comm.html"/>
+        <link rel="prev" title="Control Structures" href="control_structures.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -90,7 +90,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../axis.html">The Axis Language</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Design Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="design_principles.html">Design Principles</a></li>
 <li class="toctree-l3"><a class="reference internal" href="types.html">Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
@@ -99,7 +99,7 @@
 <li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
-<li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Recursion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
@@ -145,11 +145,11 @@
       
           <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
       
-    <li>Design Principles</li>
+    <li>Recursion</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/axis/design_principles.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/library/axis/recursion.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -159,74 +159,62 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="design-principles">
-<h1>Design Principles<a class="headerlink" href="#design-principles" title="Permalink to this headline">¶</a></h1>
-<p>The axis language is expression based, which means that the text entered
-serves most often to designate values to be computed rather than actions to be
-performed. Its design is close to that of functional programming languages:
-function values are first class citizens, binding is static with no
-restrictions on lifetime, semantics is value-based for all types (no
-distinction betwen object and value, or between mutable and unmutable values).
-The language does provide assignable variables and loops. All control
-structures including loops are oriented towards construction of values rather
-than towards sequencing of side-effects, although they do provide the latter.
-Somewhat curiously for a language close to functional languages, ordinary
-definitions cannot be recursive, which is a consequence of strict scoping
-rules derived from the lambda-calculus. Nonetheless recursive function
-definitions are supported through use of the rec_fun keyword.</p>
-<p>For beginning users it is important to stress the fundamental distinction
-between creating names (variables) and assigning to them. The interpreter will
-never create a variable just because it appears to be used, and therefore
-refuses expressions with unknown names in them: it neither creates new
-variables that are being assigned to (as Python does), nor assumes new names
-to be meaningful but undefined (as do many symbolic algebra packages, which
-take unknown names to stand for indeterminates). Names are introduced using
-the keyword &#8216;set&#8217; (for permanent names) or using the keyword &#8216;let&#8217; (for local
-names, whose scope is limited to the current expression, or even to part of
-it); in both cases the name is immediately bound to a value. Once a name is
-introduced, its value can be altered by assignment, which is written &#8216;:=&#8217; (in
-the tradition of Algol and Pascal, and unlike FORTRAN and C). Such assignments
-are fairly rare (they are used almost exclusively for programming purposes),
-and cannot alter the type of the value bound to the name. Both &#8216;set&#8217; and &#8216;let&#8217;
-follow the name(s) being introduced by &#8216;=&#8217; (not &#8216;:=&#8217;). Apart from that, &#8216;=&#8217;
-also serves as equality testing operator (defined for most types).</p>
-<p>The language is strictly typed, so that type-correctness of expressions must
-be established before their evaluation is attempted. This means that most
-common errors are caught before execution starts, and these error messages are
-usually more specific about their cause than runtime errors (which mention any
-offending value, but cannot trace where that value originated). As a
-consequence it can be tough to write a script in such a way that will load
-without any error message, but the correction cycle is fast: atlas just stops
-at the first error, with a detailed message, and reloading after correcting
-the problem is easy (type up-arrow once to recover the load command from
-history). Once a script is fixed to the point that loading runs to the end of
-the file, most trivial errors will have been eliminated. Nonetheless, type
-checking is a complicated process, which in rare cases could produce hard to
-decipher error messages (but nothing compared to what C++ compilers produce).</p>
-<p>Most of the time the system can figure out the types from the expressions, so
-the user need not write them explicitly; however the types of arguments of
-user-defined functions must always be specified. Types are also used to allow
-overloading, which means that it is possible to give the same (natural)
-function or operator name to different operations; in each expression using
-these names, the type system then determines which instance is to be used.
-This applies in particular to user function definitions, so that binding of
-overloaded operators and functions is done statically (when the user defines
-the function rather than when it gets executed). Currently types are
-straightforward and therefore somewhat limited; this is quite sufficient for
-using the Atlas functionality, though for advanced programming the set of
-possible types might need to be enlarged in the future.</p>
-<p>The primitive data types currently available for values cover almost all those
-that the Atlas library can handle (root data, inner classes, real forms,
-Cartan classes, KGB elements, parameters for (standard) modules and formal
-sums of those; a notable exception is twisted involutions or Weyl group
-elements but working with representing matrices suffices). For the types
-available not all library functionality is available in atlas, but this can
-sometimes be circumvented using a script. Some data types used internally
-(such as Weyl groups, polynomials) may appear in printed output but cannot be
-further manipulated. The programming language itself is fairly complete in
-functionality, with constructions like variables, loops and conditionals, as
-well as functions and operators (both built-in and user-defined); what is
-currently the most annoying limitation is the absence of second order typing.</p>
+  <div class="section" id="recursion">
+<h1>Recursion<a class="headerlink" href="#recursion" title="Permalink to this headline">¶</a></h1>
+<p>As mentioned above, axis strict scoping rules makes defining recursive
+functions a bit more difficult than most programming languages do. It used to
+be somewhat of an art to define a recursive function (it could, and can still,
+be achieved by calling a function held in a variable to which the recursive
+function itself is assigned), but starting with version 0.9 of axis there is
+a keyword &#8216;rec_fun&#8217; that make this automatic (at least for simple recursive
+functions; complicated mutually recursive definitions still require some
+effort). Basically take the function definition as one would write it if
+recursion were directly allowed, and the insert &#8216;rec_fun&#8217; before the recursive
+name at its (function) definition. The only restriction is that the return
+type must be explicitly specified (while it is option for ordinary functions);
+failing to do so after rec_fun will result in a syntax error.</p>
+<p>Here is the classical (but silly, as using a loop would do quite as well)
+example of the factorial function &#8216;fac&#8217;:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rec_fun fac (int n) = int: { return type int is specified }
+  if n&lt;=0 then 1 else n*fac(n-1) fi
+Defined fac: (int-&gt;int)
+atlas&gt; fac(7)
+Value: 5040
+</pre></div>
+</div>
+<p>However, in practice it is often better to achieve recursion locally rather
+than directly for the function defined by &#8216;set&#8217;, as this will allow the latter
+to do some preliminary things that are not to be repeated at each recursive
+call. For instance if in the above definition one wants to signal negative
+arguments as errors rather than returning the (mathematically meaningless)
+value 1 for them, this can be done as follows (the example also shows that the
+recursive function need not have the same name as the global one:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac (int n) = { no return type needed here }
+if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not defined&quot;) fi;
+let rec_fun f(int n) = int: { return type required here }
+            if n&lt;=0 then 1 else n*f(n-1) fi
+in f(n)
+</pre></div>
+</div>
+<p>Since the local function f is defined only to be immediately called, one can
+even make the recursive function anonymous to the outside, as follows:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac (int n) = { no return type needed here }
+if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not defined&quot;) fi;
+(rec_fun f(int n) = int: if n&lt;=0 then 1 else n*f(n-1) fi) (n) { call it! }
+</pre></div>
+</div>
+<p>Finally, one could avoid making a new (local) recursive function each time the
+global function is called by postponing the introduction of its arguments;
+this gives the following (optimal though maybe not optimally readable) style:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac = { no arguments yet }
+let rec_fun f(int n) = int: if n&lt;=0 then 1 else n*f(n-1) fi { build once }
+in { now comes that actual definition of fac, an anonymous function }
+(int n): { introduce argument of fac }
+  if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not defined&quot;)
+  else f(n) { call the recursive function }
+  fi
+</pre></div>
+</div>
 </div>
 
 
@@ -236,10 +224,10 @@ currently the most annoying limitation is the absence of second order typing.</p
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="types.html" class="btn btn-neutral float-right" title="Types" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../axis.html" class="btn btn-neutral" title="The Axis Language" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="control_structures.html" class="btn btn-neutral" title="Control Structures" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
