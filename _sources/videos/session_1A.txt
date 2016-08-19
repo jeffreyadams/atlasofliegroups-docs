@@ -13,7 +13,7 @@ Information on Hangout, Google Plus, overall plan for training sessions, other p
 
 .. raw:: html
         
-        <video controls src="_static/1A_intro.mp4"></video>
+        <video controls src="../_static/1A_intro.mp4"></video>
         
 2. Basics
 ----------
@@ -22,7 +22,7 @@ Basics, outline, atlas files, directories, some useful Linux commands for atlas
 
 .. raw:: html
 
-        <video controls src="_static/1A_1.mp4"></video>
+        <video controls src="../_static/1A_1.mp4"></video>
         
 3. First Command
 -----------------
@@ -31,7 +31,7 @@ Basics, outline, atlas files, directories, some useful Linux commands for atlas
 
 .. raw:: html
 
-        <video controls src="_static/1A_2.mp4"></video>
+        <video controls src="../_static/1A_2.mp4"></video>
         
 4. atlas Scripts
 ----------------
@@ -40,7 +40,7 @@ The atlas-scripts directory, .at files, help files: atlas.help,installation, sof
 
 .. raw:: html
 
-        <video controls src="_static/1A_3.mp4"></video>
+        <video controls src="../_static/1A_3.mp4"></video>
         
 5. More Commands and Shortcuts
 --------------------------------
@@ -49,7 +49,7 @@ Comments, \{TAB TAB\}, command completion, readline library test,more useful Lin
 
 .. raw:: html
 
-        <video controls src="_static/1A_4.mp4"></video>
+        <video controls src="../_static/1A_4.mp4"></video>
         
 6. Redefining Variables, Vector Operations
 -------------------------------------------
@@ -58,4 +58,4 @@ Redefining variables, the ":" syntax, vectors, vec:, arrays, vector coordinates,
 
 .. raw:: html
 
-        <video controls src="_static/1A_5.mp4"></video>
+        <video controls src="../_static/1A_5.mp4"></video>

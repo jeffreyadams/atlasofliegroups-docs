@@ -3,12 +3,12 @@
 Run atlas
 =========
 
-This document will tell you how to start running atlas after you have done :ref:`download_and_install`. These instruction works the best for the latest version.
+This document will tell you how to start running atlas after you have done :ref:`download_and_install`. These instructions work best for the latest version.
 
 Get atlas running
 --------------------
 
-Let's say you compiled the software in a directory atlasofliegroup, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. You should end up in a directory that contains the excecutable files Fokko and atlas, and subdirectories messages (help files for Fokko) and atlas-scripts (auxiliary and help files for atlas).
+Let's say you compiled the software in a directory atlasofliegroups, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. It should contain the executable files Fokko and atlas, and subdirectories "messages" (help files for Fokko) and "atlas-scripts" (auxiliary and help files for atlas).
 
 Once you are there, depending on your setting, do either::
 
@@ -32,9 +32,9 @@ Alternatively, you can cd into the atlas-scripts folder, then do::
 Load scripts
 ------------
 
-There are some scripts, like basics.at in the folder atlas-scripts, that defines a collection of user-defined functions complementing the primitive functions that comes with atlas. You should load them.
+The folder atlas-scripts includes scripts, like "basics.at", that define a collection of functions complementing the primitive functions built into atlas.
 
-Assuming you are in the atlas environment (when you see ``atlas>`` in your terminal), you should now load some scripts. For example, to load the file "basic.at" do::
+Assuming you are in the atlas environment (when you see ``atlas>`` in your terminal), here is how to load some scripts. For example, to load the file "basic.at" do::
 
     atlas> <basic
     
@@ -47,7 +47,7 @@ You will see atlas output::
     
 The symbol "<" means read a file. If this doesn't work, please see :ref:`trouble_shooting`. Also, there is a `video <https://www.youtube.com/watch?v=SU4fql8rOQg&feature=youtu.be>`_ explaining how to launch atlas so that it finds the necessary .at files.
 
-Once this is working, you can and should load other files. Load all.at to get a recommended set of files::
+Once this is working, you can and should load other files. Load "all.at" to get a recommended set of files::
 
     atlas> <all
     [... some atlas output ...]

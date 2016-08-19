@@ -149,10 +149,10 @@
             
   <div class="section" id="run-atlas">
 <span id="id1"></span><h1>Run atlas<a class="headerlink" href="#run-atlas" title="Permalink to this headline">¶</a></h1>
-<p>This document will tell you how to start running atlas after you have done <a class="reference internal" href="download_and_install.html#download-and-install"><span>Download and Install</span></a>. These instruction works the best for the latest version.</p>
+<p>This document will tell you how to start running atlas after you have done <a class="reference internal" href="download_and_install.html#download-and-install"><span>Download and Install</span></a>. These instructions work best for the latest version.</p>
 <div class="section" id="get-atlas-running">
 <h2>Get atlas running<a class="headerlink" href="#get-atlas-running" title="Permalink to this headline">¶</a></h2>
-<p>Let&#8217;s say you compiled the software in a directory atlasofliegroup, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. You should end up in a directory that contains the excecutable files Fokko and atlas, and subdirectories messages (help files for Fokko) and atlas-scripts (auxiliary and help files for atlas).</p>
+<p>Let&#8217;s say you compiled the software in a directory atlasofliegroups, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. It should contain the executable files Fokko and atlas, and subdirectories &#8220;messages&#8221; (help files for Fokko) and &#8220;atlas-scripts&#8221; (auxiliary and help files for atlas).</p>
 <p>Once you are there, depending on your setting, do either:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>./atlas --path=atlas-scripts
 </pre></div>
@@ -175,8 +175,8 @@ atlas&gt;
 </div>
 <div class="section" id="load-scripts">
 <h2>Load scripts<a class="headerlink" href="#load-scripts" title="Permalink to this headline">¶</a></h2>
-<p>There are some scripts, like basics.at in the folder atlas-scripts, that defines a collection of user-defined functions complementing the primitive functions that comes with atlas. You should load them.</p>
-<p>Assuming you are in the atlas environment (when you see <code class="docutils literal"><span class="pre">atlas&gt;</span></code> in your terminal), you should now load some scripts. For example, to load the file &#8220;basic.at&#8221; do:</p>
+<p>The folder atlas-scripts includes scripts, like &#8220;basics.at&#8221;, that define a collection of functions complementing the primitive functions built into atlas.</p>
+<p>Assuming you are in the atlas environment (when you see <code class="docutils literal"><span class="pre">atlas&gt;</span></code> in your terminal), here is how to load some scripts. For example, to load the file &#8220;basic.at&#8221; do:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;basic
 </pre></div>
 </div>
@@ -188,7 +188,7 @@ Added definition [13] of #: (bool-&gt;int)
 </pre></div>
 </div>
 <p>The symbol &#8220;&lt;&#8221; means read a file. If this doesn&#8217;t work, please see <a class="reference internal" href="trouble_shooting.html#trouble-shooting"><span>Trouble Shooting</span></a>. Also, there is a <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">video</a> explaining how to launch atlas so that it finds the necessary .at files.</p>
-<p>Once this is working, you can and should load other files. Load all.at to get a recommended set of files:</p>
+<p>Once this is working, you can and should load other files. Load &#8220;all.at&#8221; to get a recommended set of files:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;all
 [... some atlas output ...]
 atlas&gt;
