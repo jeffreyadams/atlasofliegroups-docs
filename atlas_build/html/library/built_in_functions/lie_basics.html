@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lie Group Basics &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
+        <link rel="next" title="Roots and Weights" href="roots_weights.html"/>
+        <link rel="prev" title="Matrix Manipulating Functions" href="matrix.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../axis.html">The Axis Language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="basic_functions.html">Basic Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matrix.html">Matrix Manipulating Functions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Lie Group Basics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#lie-type">Lie_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lie-type2">Lie_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-matrix">Cartan_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-matrix2">Cartan_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-matrix-type">Cartan_matrix_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rank">rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#semisimple-rank">semisimple_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operator">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smith-cartan">Smith_Cartan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filter-units">filter_units</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ann-mod">ann_mod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#replace-gen">replace_gen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#involution2">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-datum">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-datum2">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-datum3">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-datum4">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quotient-basis">quotient_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simply-connected">simply_connected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adjoint">adjoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual">dual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#derived-info">derived_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mod-central-torus-info">mod_central_torus_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rank2">rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#semisimple-rank2">semisimple_rank</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="roots_weights.html">Roots and Weights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="more_advanced.html">More Advanced Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
+      
+    <li>Lie Group Basics</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/built_in_functions/lie_basics.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lie-group-basics">
+<h1>Lie Group Basics<a class="headerlink" href="#lie-group-basics" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Function</th>
+<th class="head">Argument(s) -&gt; Result(s)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#lie-type"><span>Lie_type</span></a></td>
+<td><code class="docutils literal"><span class="pre">(string-&gt;LieType)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#lie-type2"><span>Lie_type</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum-&gt;LieType)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-matrix"><span>Cartan_matrix</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#cartan-matrix2"><span>Cartan_matrix</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-matrix-type"><span>Cartan_matrix_type</span></a></td>
+<td><code class="docutils literal"><span class="pre">(mat-&gt;LieType,vec)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#rank"><span>rank</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#semisimple-rank"><span>semisimple_rank</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#operator"><span>#</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#id9"><span>%</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType-&gt;[LieType])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#smith-cartan"><span>Smith_Cartan</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType-&gt;mat,vec)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#filter-units"><span>filter_units</span></a></td>
+<td><code class="docutils literal"><span class="pre">(mat,vec-&gt;mat,vec)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#ann-mod"><span>ann_mod</span></a></td>
+<td><code class="docutils literal"><span class="pre">(mat,int-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#replace-gen"><span>replace_gen</span></a></td>
+<td><code class="docutils literal"><span class="pre">((mat,vec),mat-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#involution"><span>involution</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType,string-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#involution2"><span>involution</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType,mat,string-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#root-datum"><span>root_datum</span></a></td>
+<td><code class="docutils literal"><span class="pre">(mat,mat-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#root-datum2"><span>root_datum</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType,mat-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#root-datum3"><span>root_datum</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#root-datum4"><span>root_datum</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quotient-basis"><span>quotient_basis</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType,[ratvec]-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#simply-connected"><span>simply_connected</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#adjoint"><span>adjoint</span></a></td>
+<td><code class="docutils literal"><span class="pre">(LieType-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dual"><span>dual</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#derived-info"><span>derived_info</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum,mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#mod-central-torus-info"><span>mod_central_torus_info</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum,mat)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#rank2"><span>rank</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum-&gt;int)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#semisimple-rank2"><span>semisimple_rank</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum-&gt;int)</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="lie-type">
+<span id="id1"></span><h2>Lie_type<a class="headerlink" href="#lie-type" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(string-&gt;LieType)</span></code>: interpret string as Lie type.</p>
+<p>Factors are one of &#8220;ABCDEFGT&#8221; followed by a number; several factors can be concatenated in a string with optional punctuation. Must have total rank&lt;=16.</p>
+</div></blockquote>
+</div>
+<div class="section" id="lie-type2">
+<span id="id2"></span><h2>Lie_type<a class="headerlink" href="#lie-type2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(RootDatum-&gt;LieType)</span></code>: Lie type of a root datum.</div></blockquote>
+</div>
+<div class="section" id="cartan-matrix">
+<span id="id3"></span><h2>Cartan_matrix<a class="headerlink" href="#cartan-matrix" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(LieType-&gt;mat)</span></code>: Cartan matrix of Lie type (square of size rank).</p>
+<p>A block form Cartan matrix, with zeros in rows and columns of torus factors</p>
+</div></blockquote>
+</div>
+<div class="section" id="cartan-matrix2">
+<span id="id4"></span><h2>Cartan_matrix<a class="headerlink" href="#cartan-matrix2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RootDatum-&gt;mat)</span></code>: Cartan matrix of root datum.</p>
+<p>This pairs roots and coroots, so it is square, of size the semisimple rank. By force of convention, rows correspond to roots and columns to coroots.</p>
+</div></blockquote>
+</div>
+<div class="section" id="cartan-matrix-type">
+<span id="id5"></span><h2>Cartan_matrix_type<a class="headerlink" href="#cartan-matrix-type" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(mat-&gt;LieType,vec)</span></code>: type given by Cartan matrix.</p>
+<p>The input should be a Cartan matrix for a semisimple type (no zero rows or columns). The function returns the semisimple type, and the permutation of mapping the standard (Bourbaki) ordering of the diagram of that type to the ordering of the corresponding simple roots in matrix rows and columns.</p>
+</div></blockquote>
+</div>
+<div class="section" id="rank">
+<span id="id6"></span><h2>rank<a class="headerlink" href="#rank" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code>: Rank of the weight lattice for this Lie type.</div></blockquote>
+</div>
+<div class="section" id="semisimple-rank">
+<span id="id7"></span><h2>semisimple_rank<a class="headerlink" href="#semisimple-rank" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code>: Rank of the root lattice of this Lie type.</div></blockquote>
+</div>
+<div class="section" id="operator">
+<span id="id8"></span><h2>#<a class="headerlink" href="#operator" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code>: Number of (simple or T1) factors in this Lie type</div></blockquote>
+</div>
+<div class="section" id="id9">
+<span id="id10"></span><h2>%<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(LieType-&gt;[LieType])</span></code>: Expand into row of simple factors (or T1)</div></blockquote>
+</div>
+<div class="section" id="smith-cartan">
+<span id="id11"></span><h2>Smith_Cartan<a class="headerlink" href="#smith-cartan" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(LieType-&gt;mat,vec)</span></code>: generators of weights modulo roots.</p>
+<p>Find a Smith basis for the weight lattice relative to the sublattice of roots, with corresponding invariant factors. It is almost equivalent to <code class="docutils literal"><span class="pre">Smith(^Cartan_matrix(type))</span></code>, except that
+(1). Smith_Cartan produces a separate diagonal block for each simple or torus factor,
+(2). for factors <code class="docutils literal"><span class="pre">T</span></code> of the Lie type, <code class="docutils literal"><span class="pre">Smith_Cartan</span></code> produces a column with just &#8216;1&#8217; on the diagonal, but with corresponding &#8220;invariant factor&#8221; set equal to &#8216;0&#8217;, and
+(3). for factors <span class="math">\(D_{2n}\)</span> an equivalent basis is given, which has been tweaked so that the final two vectors are standard basis vectors.</p>
+</div></blockquote>
+</div>
+<div class="section" id="filter-units">
+<span id="id12"></span><h2>filter_units<a class="headerlink" href="#filter-units" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(mat,vec-&gt;mat,vec)</span></code>: discard entries &#8216;1&#8217; and their columns.</p>
+<p>The input is presumably produced by <code class="docutils literal"><span class="pre">Smith_Cartan</span></code> or <code class="docutils literal"><span class="pre">adapted_basis</span></code>; for all positions where the second (vector) component has &#8216;1&#8217;, that entry and the corresponding column of the first matrix is discarded; what is left of the matrix and the vector is returned. If the vector has fewer entries than the matrix has columns (cf. <code class="docutils literal"><span class="pre">adapted_basis</span></code>), missing entries count as not 1.</p>
+</div></blockquote>
+</div>
+<div class="section" id="ann-mod">
+<span id="id13"></span><h2>ann_mod<a class="headerlink" href="#ann-mod" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(mat,int-&gt;mat)</span></code>: find maximal matrix with product divisible by d.</p>
+<p>The call <code class="docutils literal"><span class="pre">ann_mod(M,d)</span></code> finds a square matrix A whose columns have the same height as those of M and span a maximal sublattice subject to the condition that the scalar product of every column of A with every column of M is divisible by d (the matrix product <code class="docutils literal"><span class="pre">^A*M</span></code> vanishes modulo d).</p>
+</div></blockquote>
+</div>
+<div class="section" id="replace-gen">
+<span id="id14"></span><h2>replace_gen<a class="headerlink" href="#replace-gen" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">((mat,vec),mat-&gt;mat)</span></code>: replace generators of weight lattice.</p>
+<p>The arguments are as for <code class="docutils literal"><span class="pre">filter_units</span></code>. For every entry different from &#8216;1&#8217; in the vector argument, replace a column from the first matrix by a column from the second matrix. Both matrices must have the same column size; like for <code class="docutils literal"><span class="pre">filter_units</span></code> the vector may be short, missing entries being not 1.</p>
+</div></blockquote>
+</div>
+<div class="section" id="involution">
+<span id="id15"></span><h2>involution<a class="headerlink" href="#involution" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(LieType,string-&gt;mat)</span></code>: diagram involution for inner class.</p>
+<p>Return an involution matrix corresponding to the diagram involution described symbolically by the string, which is interpreted as the inner class string is in the Atlas, where &#8216;e&#8217; or &#8216;c&#8217; mean compact (equal rank), &#8216;u&#8217; means unequal rank (for types <span class="math">\(A_n\)</span> with <span class="math">\(n&gt;1\)</span>, <span class="math">\(D_n\)</span> and <span class="math">\(E_6\)</span>), &#8216;s&#8217; means split and &#8216;C&#8217; means Complex. This is essentially a permutation matrix, except that for the split type on torus factors there is a diagonal entry -1</p>
+</div></blockquote>
+</div>
+<div class="section" id="involution2">
+<span id="id16"></span><h2>involution<a class="headerlink" href="#involution2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(LieType,mat,string-&gt;mat)</span></code>: basic involution on given basis.</p>
+<p>This is like previous &#8216;involution&#8217; for the same Lie type and inner class string, but the involution matrix is now expressed the given basis given by the columns of the matrix specified as second argument; this expression must be possible, so the sublattice spanned should be stable under the involution.</p>
+</div></blockquote>
+</div>
+<div class="section" id="root-datum">
+<span id="id17"></span><h2>root_datum<a class="headerlink" href="#root-datum" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(mat,mat-&gt;RootDatum)</span></code>: root datum from simple (co)root systems.</p>
+<p>In <code class="docutils literal"><span class="pre">root_datum(roots,coroots)</span></code>, matrices roots and coroots must have the same dimensions (rank x semisimple rank); their columns give the desired systems of simple roots respectively simple coroots. The matrix of pairings of roots and coroots should be a valid Cartan matrix. A root datum with those systems of simple roots and simple coroots is returned.</p>
+</div></blockquote>
+</div>
+<div class="section" id="root-datum2">
+<span id="id18"></span><h2>root_datum<a class="headerlink" href="#root-datum2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(LieType,mat-&gt;RootDatum)</span></code>: root datum for given type and sublattice.</p>
+<p>The columns of the matrix argument are interpreted as specifying the basis of a sublattice of the character lattice of the &#8220;simply connected&#8221; group G of the given Lie type (which is a direct product of a simply connected semisimple group G&#8217; and a central torus S), expressed in the basis of fundamental weights of G&#8217; and an arbitrary basis for characters of S). For this to be possible, it is required that the sublattice contain the root lattice of G&#8217;. The sublattice becomes the standard lattice for working with the root datum, and is identified with Z^n using the given basis, which thus becomes the standard basis of the sublattice, henceforth called lattice.</p>
+</div></blockquote>
+</div>
+<div class="section" id="root-datum3">
+<span id="id19"></span><h2>root_datum<a class="headerlink" href="#root-datum3" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;RootDatum)</span></code>: root datum for sublattice in old one</p>
+<p>This is like root_datum&#64;(LieType,mat), but starting from the specified root datum rd rather than from the simply connected one for the Lie type. The provided sublattice matrix must be square and full rank (invertible of the rational numbers) and the roots of rd must be in its integral column span.</p>
+</div></blockquote>
+</div>
+<div class="section" id="root-datum4">
+<span id="id20"></span><h2>root_datum<a class="headerlink" href="#root-datum4" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass-&gt;RootDatum)</span></code>: root datum of inner class.</p>
+<p>Extract the root datum from the <code class="docutils literal"><span class="pre">InnerClass</span></code> value.</p>
+</div></blockquote>
+</div>
+<div class="section" id="quotient-basis">
+<span id="id21"></span><h2>quotient_basis<a class="headerlink" href="#quotient-basis" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">(LieType,[ratvec]-&gt;mat)</span></code>: sublattice given by kernel generators.</p>
+<blockquote>
+<div>Interpret the rational vectors as kernel generators for the given type, as in the atlas program, and return the corresponding sublattice as a matrix whose column are its generators. More precisely, the rational vectors represent linear combinations of certain coweights in the dual basis to a basis of the weight lattice adapted to the root lattice; for those weights in the latter basis that already lie in the root lattice, the corresponding coweight is omitted, since there are no useful rational multiples of it anyway. Return a basis for the sublattice of <span class="math">\(X^{\*}\)</span> of weights on which all kernel generators have integer evaluation. If M is the matrix whose columns are the numerators of the kernel generators, brought to a common denominator d, this amounts to setting <code class="docutils literal"><span class="pre">S=Smith_Cartan(type)</span></code> and <code class="docutils literal"><span class="pre">(C,)=filter_units(S)</span></code>, and then returning the value <code class="docutils literal"><span class="pre">replace_gen(S,C\*ann_mod(M,d))</span></code>. This function is intended for use in constructing root data; see basic.at</div></blockquote>
+</div>
+<div class="section" id="simply-connected">
+<span id="id22"></span><h2>simply_connected<a class="headerlink" href="#simply-connected" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(LieType-&gt;RootDatum)</span></code>: simply connected datum for given type.</p>
+<p>This gives the root datum for the &#8220;simply connected&#8221; group of the given type (the direct product of a simply conneted G&#8217; with a central torus): <code class="docutils literal"><span class="pre">set</span> <span class="pre">simply_connected_datum(LieType</span> <span class="pre">type)</span> <span class="pre">=</span> <span class="pre">root_datum(type,id_mat(rank))</span></code></p>
+</div></blockquote>
+</div>
+<div class="section" id="adjoint">
+<span id="id23"></span><h2>adjoint<a class="headerlink" href="#adjoint" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(LieType-&gt;RootDatum)</span></code>: adjoint root datum for given type.
+Here the sublattice for the semisimple factor is the root lattice, with simple roots as basis; for the central torus an arbitrary basis is used. Therefore the this function could be defined as</div></blockquote>
+<div class="highlight-python"><div class="highlight"><pre><span></span>set adjoint_datum(LieType type) =
+let M= for alpha@j in ^Cartan_matrix(type)
+       do for entry@i in alpha
+          do if i=j and entry=0 then 1 else entry fi
+          od
+       od
+in root_datum(type,M)
+</pre></div>
+</div>
+</div>
+<div class="section" id="dual">
+<span id="id24"></span><h2>dual<a class="headerlink" href="#dual" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum)</span></code>: dual of given root datum.</div></blockquote>
+</div>
+<div class="section" id="derived-info">
+<span id="id25"></span><h2>derived_info<a class="headerlink" href="#derived-info" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum,mat)</span></code>: information for the derived group.</p>
+<p>The first result is the root datum for the derived group itself, the second result is a matrix mapping weights from the original to the derived datum.</p>
+</div></blockquote>
+</div>
+<div class="section" id="mod-central-torus-info">
+<span id="id26"></span><h2>mod_central_torus_info<a class="headerlink" href="#mod-central-torus-info" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum,mat)</span></code>: quotient by central torus.</p>
+<p>The (semisimple) root datum obtained by quotienting by the central torus, and matrix embedding weights for the quotient datum into the original datum.</p>
+</div></blockquote>
+</div>
+<div class="section" id="rank2">
+<span id="id27"></span><h2>rank<a class="headerlink" href="#rank2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(RootDatum-&gt;int)</span></code>: Rank of the weight lattice for this Lie type.</div></blockquote>
+</div>
+<div class="section" id="semisimple-rank2">
+<span id="id28"></span><h2>semisimple_rank<a class="headerlink" href="#semisimple-rank2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(RootDatum-&gt;int)</span></code>: Rank of the root lattice of  this Lie type.</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="matrix.html" class="btn btn-neutral" title="Matrix Manipulating Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
