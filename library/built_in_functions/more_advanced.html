@@ -1,0 +1,899 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>More Advanced Functions &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
+        <link rel="next" title="Source Code Library" href="../../source_library.html"/>
+        <link rel="prev" title="Roots and Weights" href="roots_weights.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../axis.html">The Axis Language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="basic_functions.html">Basic Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matrix.html">Matrix Manipulating Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lie_basics.html">Lie Group Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="roots_weights.html">Roots and Weights</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">More Advanced Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#classify-involution">classify_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-class">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twisted-involution">twisted_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-class2">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-class3">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operator">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nr-of-real-forms">nr_of_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nr-of-dual-real-forms">nr_of_dual_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nr-of-cartan-classes">nr_of_Cartan_classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block-sizes">block_sizes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#form-names">form_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-form-names">dual_form_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#occurrence-matrix">occurrence_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-occurrence-matrix">dual_occurrence_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-form">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#form-number">form_number</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quasisplit-form">quasisplit_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#components-rank">components_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#count-cartans">count_Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#operator-2">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kgb-size">KGB_size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#base-grading-vector">base_grading_vector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-order">Cartan_order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-real-form">dual_real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-quasisplit-form">dual_quasisplit_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-class">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-class2">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#most-split-cartan">most_split_Cartan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-info">Cartan_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-forms">real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-real-forms">dual_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#square-classes">square_classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fiber-partition">fiber_partition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-form2">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#central-fiber">central_fiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#initial-torus-bits">initial_torus_bits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kgb">KGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id37">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id39">Cartan_class</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
+      
+    <li>More Advanced Functions</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/built_in_functions/more_advanced.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="more-advanced-functions">
+<h1>More Advanced Functions<a class="headerlink" href="#more-advanced-functions" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Function</th>
+<th class="head">Argument(s) -&gt; Result(s)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="#classify-involution"><span>classify_involution</span></a></td>
+<td><code class="docutils literal"><span class="pre">(mat-&gt;int,int,int)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#inner-class"><span>inner_class</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;InnerClass)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#twisted-involution"><span>twisted_involution</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;InnerClass,vec)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#inner-class2"><span>inner_class</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,string-&gt;InnerClass)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#inner-class3"><span>inner_class</span></a></td>
+<td><code class="docutils literal"><span class="pre">(Lie_type,[ratvec],string-&gt;InnerClass)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#operator"><span>=</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass,InnerClass-&gt;bool)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#nr-of-real-forms"><span>nr_of_real_forms</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#nr-of-dual-real-forms"><span>nr_of_dual_real_forms</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#nr-of-cartan-classes"><span>nr_of_Cartan_classes</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#block-sizes"><span>block_sizes</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#form-names"><span>form_names</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;[string])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dual-form-names"><span>dual_form_names</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;[string])</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#occurrence-matrix"><span>occurrence_matrix</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dual-occurrence-matrix"><span>dual_occurrence_matrix</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#real-form"><span>real_form</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#inner-class"><span>inner_class</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;InnerClass)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#form-number"><span>form_number</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#quasisplit-form"><span>quasisplit_form</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#components-rank"><span>components_rank</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#count-cartans"><span>count_Cartans</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#operator-2"><span>=</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm,RealForm-&gt;bool)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#kgb-size"><span>KGB_size</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#base-grading-vector"><span>base_grading_vector</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;ratvec)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#cartan-order"><span>Cartan_order</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dual-real-form"><span>dual_real_form</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dual-quasisplit-form"><span>dual_quasisplit_form</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#id39"><span>Cartan_class</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;CartanClass)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#cartan-class2"><span>Cartan_class</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm,int-&gt;CartanClass)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#most-split-cartan"><span>most_split_Cartan</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;CartanClass)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#involution3"><span>involution</span></a></td>
+<td><code class="docutils literal"><span class="pre">(CartanClass-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-info"><span>Cartan_info</span></a></td>
+<td><code class="docutils literal"><span class="pre">(CartanClass-&gt;(int,int,int),vec,(int,int),(LieType,LieType,LieType))</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#real-forms"><span>real_forms</span></a></td>
+<td><code class="docutils literal"><span class="pre">(CartanClass-&gt;[RealForm])</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dual-real-forms"><span>dual_real_forms</span></a></td>
+<td><code class="docutils literal"><span class="pre">(CartanClass-&gt;[RealForm])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#square-classes"><span>square_classes</span></a></td>
+<td><code class="docutils literal"><span class="pre">(CartanClass-&gt;[[int]])</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#fiber-partition"><span>fiber_partition</span></a></td>
+<td><code class="docutils literal"><span class="pre">(CartanClass,RealForm-&gt;[int])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#real-form2"><span>real_form</span></a></td>
+<td><code class="docutils literal"><span class="pre">(InnerClass,mat,ratvec-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#central-fiber"><span>central_fiber</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;[vec])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#initial-torus-bits"><span>initial_torus_bits</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;vec)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#kgb"><span>KGB</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealFrom,int-&gt;KGBElt)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#id37"><span>%</span></a></td>
+<td><code class="docutils literal"><span class="pre">(KGBElt-&gt;RealForm,int)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-class3"><span>Cartan_class</span></a></td>
+<td><code class="docutils literal"><span class="pre">(KGBElt-&gt;CartanClass)</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="classify-involution">
+<span id="id1"></span><h2>classify_involution<a class="headerlink" href="#classify-involution" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(mat-&gt;int,int,int)</span></code>: determine type of lattice involution</p>
+<p>For any linear involution of <span class="math">\(\mathbb{Z}^n\)</span>, there is a basis consisting of certain vectors that are eigenvectors with eigenvalues 1 or -1 for the involution, and of pairs of vectors that are interchanged by the involution. The numbers of such vectors for each eigenvalue and of interchanged pairs determine the involution up to base change. This function, which requires its argument to be the matrix of an involution, returns these three numbers in the following order: eigenvectors for 1 (compact rank), pairs of interchanged vectors (Complex rank), eigenvectors for -1 (split rank).</p>
+</div></blockquote>
+</div>
+<div class="section" id="inner-class">
+<span id="id2"></span><h2>inner_class<a class="headerlink" href="#inner-class" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;InnerClass)</span></code>: inner_class of G from involution</p>
+<p>This is the basic function for building a complex reductive group equipped with an involution from the root datum and that involution; the latter is given on the lattice basis of the root datum, and must describe an involutive automorphism of the root datum. The involution is converted to a based root datum involution if necessary, using the Weyl group.</p>
+</div></blockquote>
+</div>
+<div class="section" id="twisted-involution">
+<span id="id3"></span><h2>twisted_involution<a class="headerlink" href="#twisted-involution" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;InnerClass,vec)</span></code>: inner_class and Weyl word
+Build an inner class as the above function, and also return a Weyl word (twisted involution) that expresses the given involution in that inner class. The latter is a reduced word (with Weyl group generators numbered from 0), to be left-multiplied to the distinguished involution.</div></blockquote>
+</div>
+<div class="section" id="inner-class2">
+<span id="id4"></span><h2>inner_class<a class="headerlink" href="#inner-class2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(RootDatum,string-&gt;InnerClass)</span></code>: get inner class of G symbolically
+Build a complex reductive group directly from a root datum, but compute the distinguished involution from the string describing it symbolically.</div></blockquote>
+</div>
+<div class="section" id="inner-class3">
+<span id="id5"></span><h2>inner_class<a class="headerlink" href="#inner-class3" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(Lie_type,[ratvec],string-&gt;InnerClass)</span></code>: inner class as in Atlas</div></blockquote>
+</div>
+<div class="section" id="operator">
+<span id="id6"></span><h2>=<a class="headerlink" href="#operator" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass,InnerClass-&gt;bool)</span></code>: identity of inner classes</p>
+<p>This holds only when both arguments refer to the same inner class creation, in other words it will recognize <code class="docutils literal"><span class="pre">ic=inner_class(real_form(ic,0))</span></code> as true, but any freshly built inner class tests unequal to anything preexisting <code class="docutils literal"><span class="pre">distinguished_involution</span></code>: <code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code>: involution of the inner class. Extract the distinguished involution of <span class="math">\(X^*\)</span> that defines the inner class dual: <code class="docutils literal"><span class="pre">(InnerClass-&gt;InnerClass)</span></code>: dual inner class for dual complex group</p>
+</div></blockquote>
+</div>
+<div class="section" id="nr-of-real-forms">
+<span id="id7"></span><h2>nr_of_real_forms<a class="headerlink" href="#nr-of-real-forms" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code>: number of real forms in inner class</div></blockquote>
+</div>
+<div class="section" id="nr-of-dual-real-forms">
+<span id="id8"></span><h2>nr_of_dual_real_forms<a class="headerlink" href="#nr-of-dual-real-forms" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code>: number of dual forms in inner class</div></blockquote>
+</div>
+<div class="section" id="nr-of-cartan-classes">
+<span id="id9"></span><h2>nr_of_Cartan_classes<a class="headerlink" href="#nr-of-cartan-classes" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code>: total number of Cartans in inner class</div></blockquote>
+</div>
+<div class="section" id="block-sizes">
+<span id="id10"></span><h2>block_sizes<a class="headerlink" href="#block-sizes" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code>: matrix giving the block sizes.</p>
+<p>This is essentially the same as the output of &#8216;blocksizes&#8217; in Atlas; the rows of the matrix correspond to real forms for the inner class, and the columns correspond to dual real forms for the inner class.</p>
+</div></blockquote>
+</div>
+<div class="section" id="form-names">
+<span id="id11"></span><h2>form_names<a class="headerlink" href="#form-names" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass-&gt;[string])</span></code>: list of names of real forms.</p>
+<p>These are the same names used in atlas, describing real Lie algebras</p>
+</div></blockquote>
+</div>
+<div class="section" id="dual-form-names">
+<span id="id12"></span><h2>dual_form_names<a class="headerlink" href="#dual-form-names" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass-&gt;[string])</span></code>: list of names of dual real forms.</p>
+<p>These are the names for the real forms of the dual InnerClass value</p>
+</div></blockquote>
+</div>
+<div class="section" id="occurrence-matrix">
+<span id="id13"></span><h2>occurrence_matrix<a class="headerlink" href="#occurrence-matrix" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code>: real form-Cartan class incidence matrix</p>
+<p>For the given inner class, construct a matrix whose rows are parametrized by the real forms, and whose columns are parametrized by the Cartan classes, showing whether (1) or not (0) the Cartan class occurs for the real form</p>
+</div></blockquote>
+</div>
+<div class="section" id="dual-occurrence-matrix">
+<span id="id14"></span><h2>dual_occurrence_matrix<a class="headerlink" href="#dual-occurrence-matrix" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code>: dual real form-Cartan class matrix. This is like <code class="docutils literal"><span class="pre">occurrence_matrix</span></code>, but with rows representing dual real forms.</div></blockquote>
+</div>
+<div class="section" id="real-form">
+<span id="id15"></span><h2>real_form<a class="headerlink" href="#real-form" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;RealForm)</span></code>: select a real form from inner class.</p>
+<p>The result of form_names describes the valid range and names of real forms; this function actually constructs a real form from the list, selected by its position (starting from 0). The list is always the same for a given inner class (independent of other computations), unlike the list of Cartan classes for a real form as discussed below</p>
+<p><code class="docutils literal"><span class="pre">inner_class:</span> <span class="pre">(RealForm-&gt;InnerClass)</span></code>: inner class containing the form</p>
+</div></blockquote>
+</div>
+<div class="section" id="form-number">
+<span id="id16"></span><h2>form_number<a class="headerlink" href="#form-number" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code>: index of the real form in its inner class</div></blockquote>
+</div>
+<div class="section" id="quasisplit-form">
+<span id="id17"></span><h2>quasisplit_form<a class="headerlink" href="#quasisplit-form" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass-&gt;RealForm)</span></code>: quasisplit form for the inner class</p>
+<p>This is the last one in the list of real forms for the fundamental Cartan (number 0 in the list) of the inner class.</p>
+</div></blockquote>
+</div>
+<div class="section" id="components-rank">
+<span id="id18"></span><h2>components_rank<a class="headerlink" href="#components-rank" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code>: rank of the component group</p>
+<p>The group of connected components of the real Lie group defined by a real form is an elementary 2-group (<span class="math">\(\mathbb{Z}/2\mathbb{Z}\)</span> vector space); this function gives its rank, so the number of connected components is 2^components_rank(rf)</p>
+</div></blockquote>
+</div>
+<div class="section" id="count-cartans">
+<span id="id19"></span><h2>count_Cartans<a class="headerlink" href="#count-cartans" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code>: number of Cartan classes for this real form</p>
+<p>The Cartan classes are actually constructed, and remembered, by this command whence its first execution for some real form may take some time</p>
+</div></blockquote>
+</div>
+<div class="section" id="operator-2">
+<span id="id20"></span><h2>=<a class="headerlink" href="#operator-2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm,RealForm-&gt;bool)</span></code>: equality of real forms</p>
+<p>It means they belong to an identical inner class, and have same form number</p>
+</div></blockquote>
+</div>
+<div class="section" id="kgb-size">
+<span id="id21"></span><h2>KGB_size<a class="headerlink" href="#kgb-size" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code>: size of the set <span class="math">\(K\backslash G/B\)</span> for this real form</div></blockquote>
+</div>
+<div class="section" id="base-grading-vector">
+<span id="id22"></span><h2>base_grading_vector<a class="headerlink" href="#base-grading-vector" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm-&gt;ratvec)</span></code>: Offset implicit in torus_bits values</p>
+<p>The binary vectors torus_bits for elements of the KGB associated to a real form are relative to a special torus element t0, and this function produces a dominant rational coweight c for which <span class="math">\(\exp(\pi i c)\)</span> equals this t0. The choice of t0 and of c are constant for each &#8220;square class&#8221; of real forms (which are grouped together in the output of print_strong_real for the fundamental Cartan), for which the squares of any of their strong involutions are the same torus element z: the choice of c is subject to <span class="math">\(\exp(2\pi i(c+rho_check))=z\)</span> which reflects <span class="math">\((t0)^2\exp(2\pi i rho_check)=z\)</span>.</p>
+<p>Apart from z, the choice of c (or of t0) defines an implicit &#8220;base grading&#8221; of the simple roots at the distinguished involution of the inner class, by the parity of the (integer) pairing of c with the simple root. Here &#8220;odd&#8221; corresponds to grading 0, due to the mentioned rho_check: so c differs by <code class="docutils literal"><span class="pre">rho_check</span></code> from some &#8220;inifinitesimal cocharacter&#8221; g chosen for the real form. A standard choice for c is determined by the base grading for the  weak real form, whence the name of this function. However for real forms synthesized by the function <code class="docutils literal"><span class="pre">real_form&#64;(InnerClass,mat,ratvec)</span></code>, the arguments of that call may determine a different value of z, in which case a different choice for c is made to match it. The choice of c then depends on z only; in particular it will be the same for real forms synthesized using different strong involutions for the same real group, and such groups will test equal.</p>
+</div></blockquote>
+</div>
+<div class="section" id="cartan-order">
+<span id="id23"></span><h2>Cartan_order<a class="headerlink" href="#cartan-order" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm-&gt;mat)</span></code>: matrix describing ordering of Cartan classes</p>
+<p>The Cartan classes for a given real form form a partially ordered set; this function returns this partial ordering in the form of a square 0-1 matrix.</p>
+</div></blockquote>
+</div>
+<div class="section" id="dual-real-form">
+<span id="id24"></span><h2>dual_real_form<a class="headerlink" href="#dual-real-form" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;RealForm)</span></code>: select a dual real form</p>
+<p>This is like real_form, but selects a dual real form for the inner class (whose names are given by <code class="docutils literal"><span class="pre">dual_form_names</span></code>) by index. This is intended for functions that require both a real form and a dual real form for a given inner class; the compatibility between them is tested by a runtime check.</p>
+</div></blockquote>
+</div>
+<div class="section" id="dual-quasisplit-form">
+<span id="id25"></span><h2>dual_quasisplit_form<a class="headerlink" href="#dual-quasisplit-form" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(InnerClass-&gt;RealForm)</span></code>: quasisplit dual real form</div></blockquote>
+</div>
+<div class="section" id="cartan-class">
+<span id="cartan-class3"></span><h2>Cartan_class<a class="headerlink" href="#cartan-class" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;CartanClass)</span></code>: Cartan class selected by number</p>
+<p>This selects a Cartan class by number in the list of all Cartan classes for this inner class. The numbering is fixed, and compatible with  the partial ordering on Cartan classes where more split ones are considered greater.</p>
+</div></blockquote>
+</div>
+<div class="section" id="cartan-class2">
+<span id="id26"></span><h2>Cartan_class<a class="headerlink" href="#cartan-class2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm,int-&gt;CartanClass)</span></code>: Cartan class selected by number</p>
+<p>This selects a Cartan class by number in the list of Cartan classes defined for this real form. The numbering is not the same as when selecting a Cartan class directly from an inner class, unless the real form is quasisplit.</p>
+</div></blockquote>
+</div>
+<div class="section" id="most-split-cartan">
+<span id="id27"></span><h2>most_split_Cartan<a class="headerlink" href="#most-split-cartan" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm-&gt;CartanClass)</span></code>: most split Cartan class for form</p>
+<p>The most split Cartan class of a given real form is the last one in the list of its Cartan classes, so set <code class="docutils literal"><span class="pre">most_split_Cartan(RealForm</span> <span class="pre">rf)``=``Cartan_class(rf,count_Cartans(rf)-1)</span></code></p>
+</div></blockquote>
+</div>
+<div class="section" id="involution">
+<span id="involution3"></span><h2>involution<a class="headerlink" href="#involution" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(CartanClass-&gt;mat)</span></code>: weight lattice involution for Cartan class</div></blockquote>
+</div>
+<div class="section" id="cartan-info">
+<span id="id28"></span><h2>Cartan_info<a class="headerlink" href="#cartan-info" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(CartanClass-&gt;(int,int,int),vec,(int,int),(LieType,LieType,LieType))</span></code>:</p>
+<p>Information about the Cartan class, essentially that given by the output of &#8216;cartan&#8217; in Fokko (except for the final partition corresponding to the real forms for this Cartan class, for which see fiber_partition). The first triple of integers gives in order the number of compact (<span class="math">\(U(1)\)</span>), complex (<span class="math">\(GL(1,\mathbb{C})\)</span>), and split (<span class="math">\(GL(1,\mathbb{R})\)</span>) factors of the real torus defined by this Cartan class. Follows the canonical twisted involution for the Cartan class, a pair of integers giving the number of distinct twisted involutions defining this same Cartan class and their fiber size, and finally the types of the imaginary, real, and complex root subsystems (note the order here).</p>
+</div></blockquote>
+</div>
+<div class="section" id="real-forms">
+<span id="id29"></span><h2>real_forms<a class="headerlink" href="#real-forms" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(CartanClass-&gt;[RealForm])</span></code>: list of real forms with given Cartan</p>
+<p>Returns a list of the real forms for which this Cartan class occurs</p>
+</div></blockquote>
+</div>
+<div class="section" id="dual-real-forms">
+<span id="id30"></span><h2>dual_real_forms<a class="headerlink" href="#dual-real-forms" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(CartanClass-&gt;[RealForm])</span></code>: list Cartan&#8217;s dual real forms</p>
+<p>Returns a list of the dual real forms for which this Cartan class occurs</p>
+</div></blockquote>
+</div>
+<div class="section" id="square-classes">
+<span id="id31"></span><h2>square_classes<a class="headerlink" href="#square-classes" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(CartanClass-&gt;[[int]])</span></code>: partition real forms by square class</p>
+<p>This returns a list of lists of numbers that identify real forms in the inner class. All real forms whose representative strong involutions may square to the same value in the center are grouped together in a sublist (the number of sublists is a power of 2). Each number occurs only in a single sublist, but may be repeated, which indicates that there are mulitple orbits of strong involutions (strong real forms) for the same real form. The value returned represents a part of the print_strong_real output.</p>
+</div></blockquote>
+</div>
+<div class="section" id="fiber-partition">
+<span id="id32"></span><h2>fiber_partition<a class="headerlink" href="#fiber-partition" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(CartanClass,RealForm-&gt;[int])</span></code>: identifying part of fiber group</p>
+<p>This produces an increasing sequence of integers that characterizes the real form relative to the CartanClass. It describes a part of the adjoint fiber group associated to the Cartan class (an elementary 2-group of rank r equal to the number of compact factors of the real torus in the _adjoint_ group defined by the Cartan class), whose elements are represented by numbers 0 to <span class="math">\(2^r-1\)</span>; as the real form traverses all those for which this Cartan class occurs, the results of the function form a partition of that set of numbers.</p>
+</div></blockquote>
+</div>
+<div class="section" id="real-form2">
+<span id="id33"></span><h2>real_form<a class="headerlink" href="#real-form2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(InnerClass,mat,ratvec-&gt;RealForm)</span></code>: real form from strong real form</p>
+<p>Synthesize a real form defined by an involution and a torus factor. With arguments (ic,M,v), the matrix M should define an involution theta in the inner class. The rational vector v, after being made right M-fixed by right multiplication by (M+1)/2, defines a torus element <span class="math">\(\exp(\pi i v)\)</span> whose square must be central, which means that v*alpha must be integral for all (simple) roots alpha. If this holds then theta and torus_factor v together define a strong involution representative. The function returns the strong real form rf identified by that strong involution. It may differ from real_form(ic,form_number(rf)), the standard version of this weak real form; the difference can be seen through the value of base_grading_vector(rf), and in the RealForm equality test (because of this distinction, one may consider the result to represent a strong real form). Real forms produced by this function are said to be synthesized (rather than selected). A subsequent call KGB_elt(rf,theta,v) should always produce a valid KGB element x. The grading of the imaginary roots alpha for theta defined by this x will be given by the parity of <span class="math">\(&lt; v+\check\rho_i, \alpha &gt;\)</span>, where <span class="math">\(\check\rho_i\)</span> is half the sum of the positive imaginary coroots for M (its presence in the formula ensures that v=0 is always valid, and grades all simple-imaginary roots as noncompact). This grading is the most tangible aspect of (theta,v), but only determines the weak real form, and may fail to identify a unique KGB element x; this function and the mentioned instance of KGB_elt are faithful beyond just reconstructing the correct grading.</p>
+</div></blockquote>
+</div>
+<div class="section" id="central-fiber">
+<span id="id34"></span><h2>central_fiber<a class="headerlink" href="#central-fiber" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm-&gt;[vec])</span></code>: Set of torus bits not affecting any gradings</p>
+<p>These are binary vectors that can be added to <code class="docutils literal"><span class="pre">|torus_bits|</span></code> of KGB elements in the fundamental fiber to get another KGB element giving the same status (including compactness of imaginary roots) to every simple root; adding any of these values to torus bits defines an automorphism of the KGB structure</p>
+</div></blockquote>
+</div>
+<div class="section" id="initial-torus-bits">
+<span id="id35"></span><h2>initial_torus_bits<a class="headerlink" href="#initial-torus-bits" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealForm-&gt;vec)</span></code>: Torus bits for initial KGB element</p>
+<p>This is a test function, computing what should be the torus bits of KGB(G,0) independently of what is currently set in the implementation. They could differ from reality by an element of <code class="docutils literal"><span class="pre">|central_fiber(G)|</span></code>. This function can be removed once the same computation will actually replace the implemented choice for the torus bits with which the KGB construction starts off.</p>
+</div></blockquote>
+</div>
+<div class="section" id="kgb">
+<span id="id36"></span><h2>KGB<a class="headerlink" href="#kgb" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p><code class="docutils literal"><span class="pre">(RealFrom,int-&gt;KGBElt)</span></code>: select a KGB element x among those of a real form</p>
+<p>The call <code class="docutils literal"><span class="pre">KGB(i,rf)</span></code> selects the element in line i of the <code class="docutils literal"><span class="pre">print_KGB(rf)</span></code> output.</p>
+</div></blockquote>
+</div>
+<div class="section" id="id37">
+<span id="id38"></span><h2>%<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(KGBElt-&gt;RealForm,int)</span></code>: real form and number; inverse of <code class="docutils literal"><span class="pre">KGB&#64;(RealForm,int)</span></code></div></blockquote>
+</div>
+<div class="section" id="id39">
+<span id="id40"></span><h2>Cartan_class<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">(KGBElt-&gt;CartanClass)</span></code>: the Cartan class for the KGB element</div></blockquote>
+<p>involution: (KGBElt-&gt;mat): the involution of X^* associated to the KGB element</p>
+<p>length: (KGBElt-&gt;int): length of the element within its KGB set</p>
+<dl class="docutils">
+<dt>status: (int,KGBElt-&gt;int): status of generator on KGB element, scale 0..4</dt>
+<dd>Encoding 0: Complex descent, 1: imaginary compact, 2: real,
+3: imaginary non-compact, 4: Complex ascent</dd>
+<dt>status: (vec,KGBElt-&gt;int): status of any root on KGB element, scale 0..4</dt>
+<dd>The value status(alpha,x) gives the status of the root alpha at x; the
+encoding of statuses is the same as for the function status&#64;(int,KGBElt)</dd>
+<dt>cross: (int,KGBElt-&gt;KGBElt): cross action for (posrootnr,KGB element)</dt>
+<dd>Returns result of cross action by root reflection of the given KGB element</dd>
+<dt>Cayley: (int,KGBElt-&gt;KGBElt): Cayley transform for (posrootnr,KGB element)</dt>
+<dd>Returns either the Cayley transform or an inverse Cayley transform of the
+KGB element through the given positive root, or returns that element itself
+when neither is defined. If defined, one can find which it is using status,
+and whether there is a second inverse Cayley transform can be found out by
+applying cross action to the result; it either returns the same result,
+which signifies a single-value inverse Cayley, or else the second value</dd>
+<dt>twist: (KGBElt-&gt;KGBElt): twist of KGB element x, useful for Hermitian dual</dt>
+<dd>This is defined by conjugation of x by the distinguished involution delta</dd>
+<dt>torus_factor: (KGBElt-&gt;ratvec): coweight for KGB element, twice that in print_X</dt>
+<dd>This is a theta^t stable rational vector v with integral evaluations on
+all imaginary roots; interpreted modulo the image of 1+theta^t acting
+on X_*, so in particular modulo (2Z)^n. For an imaginary root alpha
+the scalar product &lt; v + checkrho_i , alpha &gt; determines whether alpha
+is compact (if even) or noncompact (if odd). Together with the inner class
+and the invlution, this value completely characterises the KGB element (and
+its real form), and it can be reconstructed using the KGB_elt function below.</dd>
+<dt>torus_bits: (KGBElt-&gt;vec): torus part of KGB element as vector of 0,1 values</dt>
+<dd>A vector of size the rank that distinguishes between different KGB elements
+at the same involution, in the format used internally. From this the value
+torus_factor(x) is computed using base_grading_vector(rf)-torus_bits(x), for
+the real form rf of x, which value is then symmetrized for theta^t.</dd>
+<dt>KGB_elt: (RealForm,mat,ratvec): KGB element defined by rational coweight</dt>
+<dd>This function finds a KGB element x such that real_form(x), involution(x),
+and torus_factor(x) match the values (rf,M,v) given as arguments. The
+interpretation for the (involution) matrix M and rational (coweight) vector
+v are as for real_form&#64;(InnerClass,mat,ratvec); moreover rf should be equal
+to the real form returned (for this inner class) by real_form(ic,M,v), and
+the difference v-base_grading_vector(rf) must be an integer vector. There is
+then at most one KGB element x for rf such that torus_factor(x) is congruent
+to v modulo the image of ^M+1 (i.e., M+1 applied on right), which x is then
+returned by this function (if no such x is found, an error is signaled).</dd>
+</dl>
+<p>operator = : (KGBElt,KGBElt): equality of elements of a same KGB set</p>
+<p>block: (RealForm,RealForm-&gt;Block): construct tradiational atlas block</p>
+<p>%: (Block-&gt;RealForm,RealForm): decompose block, inverse of &#8216;block&#8217;</p>
+<p>#: (Block-&gt;int): number of elements of block</p>
+<p>element: (Block,int-&gt;KGBElt,KGBElt): KGB and dual KGB values for block element</p>
+<dl class="docutils">
+<dt>index (Block,KGBElt,KGBElt-&gt;int): index in block, from KGB, dual KGB components</dt>
+<dd>This is the inverse of the map defined by element&#64;(Block,int): given a
+compatible pair of a KGB element x and a dual KGB element y, it returns the
+index in the block of the corresponding element. For efficiency reasons the
+function requires the containing block to be supplied as first argument; if
+needed, block(real_form(x),dual_real_form(real_form(y))) computes the block</dd>
+</dl>
+<p>dual: (Block-&gt;Block): dual block, with real form and dual real form swapped</p>
+<dl class="docutils">
+<dt>status: (int,Block,int-&gt;): status at a block element of a simple reflection</dt>
+<dd>For s the index of a reflection, and i the index of an element of block b,
+status(s,b,i) gives according to the codes 0:C-, 1:ic, 2:r1, 3:r2,  4:C+,
+5: rn, 6:i1, 7:i2. Note that the descents s have status(b,i,s)&lt;4</dd>
+</dl>
+<p>param: (KGBElt,vec,ratvec-&gt;Param): form parameter from (x,lambda-rho,nu)</p>
+<p>operator % : (Param-&gt;KGBElt,vec,ratvec): recover (x,lambda-rho,nu) from param</p>
+<p>real_form: (Param-&gt;RealForm): recover the real form from a Param value</p>
+<dl class="docutils">
+<dt>infinitesimal_character: (Param-&gt;ratvec): infinitesimal character of parameter</dt>
+<dd>This is actually a representative of the infinitesimal character, given by
+gamma = ((1+theta)lambda+(1-theta)nu)/2. The meaning of the x component of
+the parameter is determined by its position relative to this representative
+gamma, so to find the x value uniquely associated to the representation for
+the parameter, one should apply the function &#8216;dominant&#8217; to the parameter
+first, after which the value of infinitesimal_character is indeed dominant</dd>
+<dt>is_standard: (Param-&gt;bool): whether parameter defines a standard module</dt>
+<dd>This is true whenever gamma is dominant relative to the imaginary roots</dd>
+<dt>is_zero: (Param-&gt;bool): whether parameter defines a zero standard module</dt>
+<dd>True whenever gamma is singular on a compact (for x) simple-imaginary root</dd>
+<dt>is_final: (Param-&gt;bool): whether parameter defines a final standard module</dt>
+<dd>False whenever associated standard representation is combination of others
+on more compact Cartans by a Hecht-Schmid identity. So is_final(p) is true
+provided no real coroots for which gamma is singular satisfy the parity
+condition. Note: one could still have is_zero(p); this needs a separate test.</dd>
+<dt>dominant: (Param-&gt;Param): make gamma dominant and do singular complex descents</dt>
+<dd>This brings the parameter p into standard form, in which it will appear when
+p occurs in a ParamPol (which also requires is_final(p) and not is_zero(p)).</dd>
+<dt>operator = <span class="classifier-delimiter">:</span> <span class="classifier">(Param,Param-&gt;bool): test equivalence of parameters</span></dt>
+<dd>This is implemented by applying dominant and testing identity of all
+three components x, lambda (defined modulo (1-theta_x)X^*) and nu.</dd>
+<dt>cross: (int,Param-&gt;Param): cross action for (Weyl group generator,parameter)</dt>
+<dd>This first argument indexes (starting at 0) a simple root for the subsystem
+for the given parameter p: integrality_datum(infinitesimal_character(p))</dd>
+<dt>Cayley: (int,Param-&gt;Param): Cayley transform for (Weyl generator,parameter)</dt>
+<dd>If (and only if) the transform is undefined it returns the same parameter
+Find out possible second value by applying cross action to the result</dd>
+<dt>inv_Cayley: (int,Param-&gt;Param): inverse Cayley transform</dt>
+<dd>If (and only if) the inverse transform is undefined it returns the same
+parameter. Find out possible second value of invere transform by applying
+cross action to the result, which either produces it or else fixes result</dd>
+</dl>
+<p>cross: (vec,Param-&gt;Param): cross action for (root,parameter)</p>
+<dl class="docutils">
+<dt>Cayley: (vec,Param-&gt;Param): Cayley transform for (root,parameter)</dt>
+<dd>These two functions should do the same as the three before, but taking the
+root in coordinates, and combining the Cayley/inverse Cayley into one
+function (whichever is defined is applied, or else the parameter returned).
+The implementation is quite independent however, so comparison is useful.</dd>
+</dl>
+<p>twist: (Param-&gt;Param): twist the parameter by the distinguihed involution</p>
+<p>orientation_nr: (Param-&gt;int): the orientation number</p>
+<p>reducibility_points: (Param-&gt;[rat]): the 0&lt;t&lt;=1 with I(x,lambda,tnu) reducible</p>
+<p>print_block: (Param-&gt;): print (nonintegral) block generated from parameter</p>
+<dl class="docutils">
+<dt>block: (Param-&gt;[Param],int): return block as list of parameters, and index</dt>
+<dd>The second component is the index into the first of the original parameter.</dd>
+<dt>partial_block: (Param-&gt;[Param]): return partial block as list of parameters</dt>
+<dd>This is the Bruhat interval of the block below the given parameter,
+sorted by length and including the given parameter as final element</dd>
+</dl>
+<p>length: (Param-&gt;int): the length of a parameter within its block</p>
+<dl class="docutils">
+<dt>KL_block: (Param-&gt;[Param],int,mat,[vec],vec,vec,mat): block, raw_KL, and more</dt>
+<dd>This combines block with the Kazhdan-Lustzig table for the block appended,
+and two more values that allow cumulation to be performed. The two values of
+block are followed by three values in the format of raw_KL below: a matrix
+of indices into the following list of polynomials, coded as a list of
+coefficient vectors, then a list of indices where the length function
+increases. Finally follow a vector with indices of the &#8220;surviving&#8221; block
+elements, and a matrix whose rows correspond to those survivors, its columns
+to all block elements, and whose the entries gives the coefficients by which
+each the block element (column) contributes to the surviving element (row),
+with a sign given by the parity of their length difference. Here &#8220;surviving&#8221;
+refers to the result of applying a translation functor to a standard module,
+namely a functor from regular infinitesimal character to the current
+(possibly) singular infinitesimal character. Thus one can transform the
+given KL matrix (computed at regular infinitesimal character) to one at the
+actual block by selecting only the columns whose index is among the
+survivors, and multiplying the resulting matrix on the left by the
+contibution-coefficient matrix (the final component this function returns).</dd>
+<dt>partial_KL_block: (Param-&gt;[Param],mat,[vec],vec,vec,mat) partial KL_block</dt>
+<dd>This function relates to KL_block as partial_block relates to block. The
+first component of the result is the Bruhat interval as in partial_block,
+and all other components are the same is in KL_block (except that the now
+superfluous second component of KL_block is omitted), but with the two vec
+components filtered so as to be indexed by the Bruhat interval indices only.</dd>
+</dl>
+<p>operators =, != : (Split-&gt;bool): test split integer against Split:(0,0)
+operators =, != : (Split,Split-&gt;bool): equality/inequality of split integers
+operator + : (Split,Split-&gt;Split): addition of split integers
+operator - : (Split,Split-&gt;Split): subtraction of split integers
+operator - : (Split-&gt;Split): negation of a split integer
+operator * : (Split,Split-&gt;Split): multiplication of split integers
+operator % : (Split,int,int): decomposition of split integer into components</p>
+<p>null_module: (RealForm-&gt;ParamPol): empty sum of parameters for the real form
+real_form: (ParamPol-&gt;RealForm): recover the real form from a ParamPol value
+operator # : (ParamPol-&gt;int): number of nonzero terms of the formal sum
+operators =, != : (ParamPol-&gt;bool): test virtual module for being zero
+operators =, != : (ParamPol,ParamPol-&gt;bool): test virtual modules for equality
+operator +, - : (ParamPol,Param-&gt;ParamPol): add/subtract parameter to formal sum
+operator + : (ParamPol,(Split,Param)-&gt;ParamPol): add parameter with coefficient
+operator + : (ParamPol,[(Split,Param)]-&gt;ParamPol): add terms to formal sum
+operators +, - : (ParamPol,ParamPol-&gt;ParamPol): addition/subtraction formal sums
+operator * : (int,ParamPol-&gt;ParamPol): integer multiple of a formal sum
+operator * : (Split,ParamPol-&gt;ParamPol): split integer multiple of a formal sum
+last_term: (ParamPol-&gt;Split,Param): highest term (for #x(p)) of non-empty module
+first_term: (ParamPol-&gt;Split,Param): lowest term (for #x(p)) of non-empty module</p>
+<dl class="docutils">
+<dt>K_type_formula: (Param-&gt;ParamPol) Express K-type in terms of standardrepns|_K</dt>
+<dd>The argument parameter is interpreted as giving an irreducible module; its
+restriction to K is expressed as linear combination of restrictions to K of
+standard representations, and a polynomial giving their parameters returned.</dd>
+<dt>branch: (Param,int-&gt;ParamPol) Find K-types of standardrepn up to given limit</dt>
+<dd>The first argument is taken as standard representation, and is interpreted
+as restricted to K (the nu component is replaced by a zero vector), while
+the argument second is a bound on the height; the result should be
+interpreted as linear combination of K-types, each standard final parameter
+term standing for its lowest K-type.</dd>
+</dl>
+<p>to_canonical: (Param-&gt;Param) Move parameter to canonical fiber (making nu=0)</p>
+<dl class="docutils">
+<dt>height: (Param-&gt;int) W-invariant height measure standardrepn restricted to K</dt>
+<dd>This is the sum of absolute values of the scalar products of (1+theta)lambda
+and the positive coroots; it ignores the nu component of the parameter.
+This is the same function as used in branch to compare with the given limit.</dd>
+<dt>deform: (Param-&gt;ParamPol): compute deformation terms when nu decreases</dt>
+<dd>The non-integral block for the parameter and its KL polynomials are
+computed, from which the deformation terms involing other members of the
+block are computed. They are returned as a formal sum of paramters with
+split integer coefficients, which are in fact integer multiples of (1-s).</dd>
+<dt>full_deform: (Param-&gt;ParamPol): perform deformation all the way to nu=0</dt>
+<dd>This is like deform, but recursively deforms all new terms produced as long
+as they do not have nu=0; all terms in the result therefore have nu=0.</dd>
+<dt>KL_sum_at_s: (Param-&gt;ParamPol): signed sum of KL polynomials at s, fixed y</dt>
+<dd>Computes sum_{xleq y}(-1)^{l(y)-l(x)}P_{x,y}[q:=s].x where y is the block
+element of the parameter, and the sum is over other block elements x.</dd>
+<dt>raw_KL: (Block-&gt;mat,[vec],vec): Kazhdan-Lusztig data for block, raw form</dt>
+<dd>The call raw_KL(b) produces a matrix of numbers identifying polynomials, a
+list of those polynomials in the form of coefficient vectors, and a sequence
+of length boundaries that allow deducing the &#8220;lengths&#8221; of the integers used
+to index the matrix. These integers identify block elements for the block
+print_block(b). If (M,L,len)=raw_KL(b), and v,w are integers identifying
+block elements, then the vector L[M[v,w]] gives the coefficients of the KL
+polynomial P_{v,w}. The length of v is the lergest index i such that
+len[i]&lt;=v, so the length difference between v and w is the number of indices
+with v&lt;len[i]&lt;=w.</dd>
+<dt>dual_KL: (Block-&gt;mat,[vec],vec): dual KL polynomials (Q_{x,y}) for block</dt>
+<dd>This is like raw_KL, but computes the polynomials Q instead of P. The
+indexing of the block is the same as for the polynomials P, so up to length
+signs, the matrix should be the inverse of the P matrix. The length stops
+are provided as final value, as in raw_KL; these are for the _same_ block.</dd>
+<dt>print_gradings: (CartanClass,RealForm-&gt;): print gradings defined by real form</dt>
+<dd>This more or less gives the output of the &#8216;gradings&#8217; command in the Atlas
+software, for the selected real form. The type of the imaginary root system
+is printed, with the numbers of the roots that span this root subsytem as
+simple roots, in the Bourbaki ordering for its type. Then for each element
+in the list produced by fiber_part for the same arguments, the grading of
+the imaginary root system is given as a sequence of bits 0 (compact) or 1
+(non-compact), to be interpreted on the simple roots in the given order, and
+extended to the whole imaginary root subsystem as a Z/2Z grading.</dd>
+</dl>
+<p>print_real_Weyl: (RealForm,CartanClass-&gt;)
+print_strong_real: (CartanClass-&gt;)</p>
+<p>print_block: (Block-&gt;):
+print_blocku: (Block-&gt;):
+print_blockd: (Block-&gt;):
+print_blockstabilizer: (Block,CartanClass-&gt;):
+print_KGB: (RealForm-&gt;):
+print_X: (InnerClass-&gt;):
+print_KL_basis: (Block-&gt;):
+print_prim_KL: (Block-&gt;):
+print_KL_list: (Block-&gt;):
+print_W_cells: (Block-&gt;):
+print_W_graph: (Block-&gt;):</p>
+<p>These commands give the output of the corresponding commands of &#8216;atlas&#8217;.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../source_library.html" class="btn btn-neutral float-right" title="Source Code Library" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="roots_weights.html" class="btn btn-neutral" title="Roots and Weights" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

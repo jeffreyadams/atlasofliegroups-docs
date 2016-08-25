@@ -9,4 +9,4 @@ atlas Library
    library/intro
    library/axis
    library/operators
-   library/basic_atlas_functions
+   library/builtin_atlas_functions
