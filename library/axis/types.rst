@@ -107,6 +107,8 @@ These basic types are:
      - value representing a standard module or its irreducible quotient
    * - :ref:`ParamPol`
      - virtual module with signature (Param values with Split coefs)
+   * - `T`
+     - we use ``T`` to represent any type
 
 
 .. note:: If you want to check the data type of something, for example ``id_mat(3)``. You can do ``whattype id_mat(3)`` in **atlas** and it will output ``type: mat``.
