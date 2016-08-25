@@ -113,9 +113,6 @@ These basic types are:
 
 
 
-Description and Examples of Primitive Types
----------------------------------------------
-
 .. _bool:
 
 bool

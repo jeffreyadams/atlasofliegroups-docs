@@ -34,11 +34,9 @@ convolve
 
 ``convolve`` produce convolution product of vectors, removing trailing 0's.
 
-.. raw:: html
+.. _swiss_matrix_knife:
 
-    <div data-role="main" class="ui-content">
-      <div data-role="collapsible">
-        <h1>Click me - I'm collapsible!</h1>
-        <p>I'm the expanded content.</p>
-      </div>
-    </div>
+swiss_matix_knife
+++++++++++++++++++
+    
+    
