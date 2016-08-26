@@ -65,7 +65,7 @@ More Advanced Functions
      - ``(RealForm,int->CartanClass)``
    * - :ref:`most_split_Cartan`
      - ``(RealForm->CartanClass)``
-   * - :ref:`involution3`
+   * - :ref:`involution4`
      - ``(CartanClass->mat)``
    * - :ref:`Cartan_info`
      - ``(CartanClass->(int,int,int),vec,(int,int),(LieType,LieType,LieType))``
@@ -83,12 +83,7 @@ More Advanced Functions
      - ``(RealForm->[vec])``
    * - :ref:`initial_torus_bits`
      - ``(RealForm->vec)``
-   * - :ref:`KGB`
-     - ``(RealFrom,int->KGBElt)``
-   * - :ref:`operator_%2`
-     - ``(KGBElt->RealForm,int)``
-   * - :ref:`Cartan_class3`
-     - ``(KGBElt->CartanClass)``
+
 
 
 .. _classify_involution:
@@ -272,7 +267,7 @@ KGB_size
 base_grading_vector
 +++++++++++++++++++++
 
-    ``(RealForm->ratvec)``: Offset implicit in torus_bits values
+    ``(RealForm->ratvec)``: Offset implicit in ``torus_bits`` values
     
     The binary vectors torus_bits for elements of the KGB associated to a real form are relative to a special torus element t0, and this function produces a dominant rational coweight c for which :math:`\exp(\pi i c)` equals this t0. The choice of t0 and of c are constant for each "square class" of real forms (which are grouped together in the output of print_strong_real for the fundamental Cartan), for which the squares of any of their strong involutions are the same torus element z: the choice of c is subject to :math:`\exp(2\pi i(c+rho_check))=z` which reflects :math:`(t0)^2\exp(2\pi i rho_check)=z`.
 
@@ -303,7 +298,7 @@ dual_quasisplit_form
 
     ``(InnerClass->RealForm)``: quasisplit dual real form
 
-.. _Cartan_class3:
+.. _Cartan_class:
 
 Cartan_class
 +++++++++++++++++
@@ -331,7 +326,7 @@ most_split_Cartan
     
     The most split Cartan class of a given real form is the last one in the list of its Cartan classes, so set ``most_split_Cartan(RealForm rf)``=``Cartan_class(rf,count_Cartans(rf)-1)``
 
-.. _involution3:
+.. _involution4:
 
 involution
 ++++++++++++++
@@ -410,304 +405,3 @@ initial_torus_bits
 
     This is a test function, computing what should be the torus bits of KGB(G,0) independently of what is currently set in the implementation. They could differ from reality by an element of ``|central_fiber(G)|``. This function can be removed once the same computation will actually replace the implemented choice for the torus bits with which the KGB construction starts off.
 
-
-.. _KGB:
-
-KGB
-+++++++++
-
-    ``(RealFrom,int->KGBElt)``: select a KGB element x among those of a real form
-
-    The call ``KGB(i,rf)`` selects the element in line i of the ``print_KGB(rf)`` output.
-    
-.. _operator_%2:
-
-\%
-+++
-
-    ``(KGBElt->RealForm,int)``: real form and number; inverse of ``KGB@(RealForm,int)``
-    
-.. _Cartan_class:
-
-Cartan_class
-+++++++++++++++++
-
-    ``(KGBElt->CartanClass)``: the Cartan class for the KGB element
-    
-involution: (KGBElt->mat): the involution of X^* associated to the KGB element
-
-length: (KGBElt->int): length of the element within its KGB set
-
-status: (int,KGBElt->int): status of generator on KGB element, scale 0..4
-  Encoding 0: Complex descent, 1: imaginary compact, 2: real,
-  3: imaginary non-compact, 4: Complex ascent
-  
-status: (vec,KGBElt->int): status of any root on KGB element, scale 0..4
-  The value status(alpha,x) gives the status of the root alpha at x; the
-  encoding of statuses is the same as for the function status@(int,KGBElt)
-  
-cross: (int,KGBElt->KGBElt): cross action for (posrootnr,KGB element)
-  Returns result of cross action by root reflection of the given KGB element
-  
-Cayley: (int,KGBElt->KGBElt): Cayley transform for (posrootnr,KGB element)
-  Returns either the Cayley transform or an inverse Cayley transform of the
-  KGB element through the given positive root, or returns that element itself
-  when neither is defined. If defined, one can find which it is using status,
-  and whether there is a second inverse Cayley transform can be found out by
-  applying cross action to the result; it either returns the same result,
-  which signifies a single-value inverse Cayley, or else the second value
-  
-twist: (KGBElt->KGBElt): twist of KGB element x, useful for Hermitian dual
-  This is defined by conjugation of x by the distinguished involution delta
-  
-torus_factor: (KGBElt->ratvec): coweight for KGB element, twice that in print_X
-  This is a \theta^t stable rational vector v with integral evaluations on
-  all imaginary roots; interpreted modulo the image of 1+\theta^t acting
-  on X_*, so in particular modulo (2\Z)^n. For an imaginary root \alpha
-  the scalar product < v + \check\rho_i , \alpha > determines whether \alpha
-  is compact (if even) or noncompact (if odd). Together with the inner class
-  and the invlution, this value completely characterises the KGB element (and
-  its real form), and it can be reconstructed using the KGB_elt function below.
-  
-torus_bits: (KGBElt->vec): torus part of KGB element as vector of 0,1 values
-  A vector of size the rank that distinguishes between different KGB elements
-  at the same involution, in the format used internally. From this the value
-  torus_factor(x) is computed using base_grading_vector(rf)-torus_bits(x), for
-  the real form rf of x, which value is then symmetrized for \theta^t.
-  
-KGB_elt: (RealForm,mat,ratvec): KGB element defined by rational coweight
-  This function finds a KGB element x such that real_form(x), involution(x),
-  and torus_factor(x) match the values (rf,M,v) given as arguments. The
-  interpretation for the (involution) matrix M and rational (coweight) vector
-  v are as for real_form@(InnerClass,mat,ratvec); moreover rf should be equal
-  to the real form returned (for this inner class) by real_form(ic,M,v), and
-  the difference v-base_grading_vector(rf) must be an integer vector. There is
-  then at most one KGB element x for rf such that torus_factor(x) is congruent
-  to v modulo the image of ^M+1 (i.e., M+1 applied on right), which x is then
-  returned by this function (if no such x is found, an error is signaled).
-
-operator = : (KGBElt,KGBElt): equality of elements of a same KGB set
-
-
-
-block: (RealForm,RealForm->Block): construct tradiational atlas block
-
-%: (Block->RealForm,RealForm): decompose block, inverse of 'block'
-
-#: (Block->int): number of elements of block
-
-element: (Block,int->KGBElt,KGBElt): KGB and dual KGB values for block element
-
-index (Block,KGBElt,KGBElt->int): index in block, from KGB, dual KGB components
-  This is the inverse of the map defined by element@(Block,int): given a
-  compatible pair of a KGB element x and a dual KGB element y, it returns the
-  index in the block of the corresponding element. For efficiency reasons the
-  function requires the containing block to be supplied as first argument; if
-  needed, block(real_form(x),dual_real_form(real_form(y))) computes the block
-  
-dual: (Block->Block): dual block, with real form and dual real form swapped
-
-status: (int,Block,int->): status at a block element of a simple reflection
-  For s the index of a reflection, and i the index of an element of block b,
-  status(s,b,i) gives according to the codes 0:C-, 1:ic, 2:r1, 3:r2,  4:C+,
-  5: rn, 6:i1, 7:i2. Note that the descents s have status(b,i,s)<4
-
-
-param: (KGBElt,vec,ratvec->Param): form parameter from (x,lambda-rho,nu)
-
-operator % : (Param->KGBElt,vec,ratvec): recover (x,lambda-rho,nu) from param
-
-real_form: (Param->RealForm): recover the real form from a Param value
-
-infinitesimal_character: (Param->ratvec): infinitesimal character of parameter
-  This is actually a representative of the infinitesimal character, given by
-  gamma = ((1+theta)lambda+(1-theta)nu)/2. The meaning of the x component of
-  the parameter is determined by its position relative to this representative
-  gamma, so to find the x value uniquely associated to the representation for
-  the parameter, one should apply the function 'dominant' to the parameter
-  first, after which the value of infinitesimal_character is indeed dominant
-  
-is_standard: (Param->bool): whether parameter defines a standard module
-  This is true whenever gamma is dominant relative to the imaginary roots
-  
-is_zero: (Param->bool): whether parameter defines a zero standard module
-  True whenever gamma is singular on a compact (for x) simple-imaginary root
-  
-is_final: (Param->bool): whether parameter defines a final standard module
-  False whenever associated standard representation is combination of others
-  on more compact Cartans by a Hecht-Schmid identity. So is_final(p) is true
-  provided no real coroots for which gamma is singular satisfy the parity
-  condition. Note: one could still have is_zero(p); this needs a separate test.
-  
-dominant: (Param->Param): make gamma dominant and do singular complex descents
-  This brings the parameter p into standard form, in which it will appear when
-  p occurs in a ParamPol (which also requires is_final(p) and not is_zero(p)).
-  
-operator = : (Param,Param->bool): test equivalence of parameters
-  This is implemented by applying dominant and testing identity of all
-  three components x, lambda (defined modulo (1-theta_x)X^*) and nu.
-  
-cross: (int,Param->Param): cross action for (Weyl group generator,parameter)
-  This first argument indexes (starting at 0) a simple root for the subsystem
-  for the given parameter p: integrality_datum(infinitesimal_character(p))
-  
-Cayley: (int,Param->Param): Cayley transform for (Weyl generator,parameter)
-  If (and only if) the transform is undefined it returns the same parameter
-  Find out possible second value by applying cross action to the result
-  
-inv_Cayley: (int,Param->Param): inverse Cayley transform
-  If (and only if) the inverse transform is undefined it returns the same
-  parameter. Find out possible second value of invere transform by applying
-  cross action to the result, which either produces it or else fixes result
-  
-cross: (vec,Param->Param): cross action for (root,parameter)
-
-Cayley: (vec,Param->Param): Cayley transform for (root,parameter)
-  These two functions should do the same as the three before, but taking the
-  root in coordinates, and combining the Cayley/inverse Cayley into one
-  function (whichever is defined is applied, or else the parameter returned).
-  The implementation is quite independent however, so comparison is useful.
-
-twist: (Param->Param): twist the parameter by the distinguihed involution
-
-orientation_nr: (Param->int): the orientation number
-
-reducibility_points: (Param->[rat]): the 0<t<=1 with I(x,lambda,t\nu) reducible
-
-print_block: (Param->): print (nonintegral) block generated from parameter
-
-block: (Param->[Param],int): return block as list of parameters, and index
-  The second component is the index into the first of the original parameter.
-
-partial_block: (Param->[Param]): return partial block as list of parameters
-  This is the Bruhat interval of the block below the given parameter,
-  sorted by length and including the given parameter as final element
-
-length: (Param->int): the length of a parameter within its block
-
-KL_block: (Param->[Param],int,mat,[vec],vec,vec,mat): block, raw_KL, and more
-  This combines block with the Kazhdan-Lustzig table for the block appended,
-  and two more values that allow cumulation to be performed. The two values of
-  block are followed by three values in the format of raw_KL below: a matrix
-  of indices into the following list of polynomials, coded as a list of
-  coefficient vectors, then a list of indices where the length function
-  increases. Finally follow a vector with indices of the "surviving" block
-  elements, and a matrix whose rows correspond to those survivors, its columns
-  to all block elements, and whose the entries gives the coefficients by which
-  each the block element (column) contributes to the surviving element (row),
-  with a sign given by the parity of their length difference. Here "surviving"
-  refers to the result of applying a translation functor to a standard module,
-  namely a functor from regular infinitesimal character to the current
-  (possibly) singular infinitesimal character. Thus one can transform the
-  given KL matrix (computed at regular infinitesimal character) to one at the
-  actual block by selecting only the columns whose index is among the
-  survivors, and multiplying the resulting matrix on the left by the
-  contibution-coefficient matrix (the final component this function returns).
-
-partial_KL_block: (Param->[Param],mat,[vec],vec,vec,mat) partial KL_block
-  This function relates to KL_block as partial_block relates to block. The
-  first component of the result is the Bruhat interval as in partial_block,
-  and all other components are the same is in KL_block (except that the now
-  superfluous second component of KL_block is omitted), but with the two vec
-  components filtered so as to be indexed by the Bruhat interval indices only.
-
-
-operators =, != : (Split->bool): test split integer against Split:(0,0)
-operators =, != : (Split,Split->bool): equality/inequality of split integers
-operator + : (Split,Split->Split): addition of split integers
-operator - : (Split,Split->Split): subtraction of split integers
-operator - : (Split->Split): negation of a split integer
-operator * : (Split,Split->Split): multiplication of split integers
-operator % : (Split,int,int): decomposition of split integer into components
-
-null_module: (RealForm->ParamPol): empty sum of parameters for the real form
-real_form: (ParamPol->RealForm): recover the real form from a ParamPol value
-operator # : (ParamPol->int): number of nonzero terms of the formal sum
-operators =, != : (ParamPol->bool): test virtual module for being zero
-operators =, != : (ParamPol,ParamPol->bool): test virtual modules for equality
-operator +, - : (ParamPol,Param->ParamPol): add/subtract parameter to formal sum
-operator + : (ParamPol,(Split,Param)->ParamPol): add parameter with coefficient
-operator + : (ParamPol,[(Split,Param)]->ParamPol): add terms to formal sum
-operators +, - : (ParamPol,ParamPol->ParamPol): addition/subtraction formal sums
-operator * : (int,ParamPol->ParamPol): integer multiple of a formal sum
-operator * : (Split,ParamPol->ParamPol): split integer multiple of a formal sum
-last_term: (ParamPol->Split,Param): highest term (for #x(p)) of non-empty module
-first_term: (ParamPol->Split,Param): lowest term (for #x(p)) of non-empty module
-
-K_type_formula: (Param->ParamPol) Express K-type in terms of standardrepns|_K
-  The argument parameter is interpreted as giving an irreducible module; its
-  restriction to K is expressed as linear combination of restrictions to K of
-  standard representations, and a polynomial giving their parameters returned.
-
-branch: (Param,int->ParamPol) Find K-types of standardrepn up to given limit
-  The first argument is taken as standard representation, and is interpreted
-  as restricted to K (the nu component is replaced by a zero vector), while
-  the argument second is a bound on the height; the result should be
-  interpreted as linear combination of K-types, each standard final parameter
-  term standing for its lowest K-type.
-
-to_canonical: (Param->Param) Move parameter to canonical fiber (making nu=0)
-
-height: (Param->int) W-invariant height measure standardrepn restricted to K
-  This is the sum of absolute values of the scalar products of (1+theta)lambda
-  and the positive coroots; it ignores the nu component of the parameter.
-  This is the same function as used in branch to compare with the given limit.
-
-
-deform: (Param->ParamPol): compute deformation terms when nu decreases
-  The non-integral block for the parameter and its KL polynomials are
-  computed, from which the deformation terms involing other members of the
-  block are computed. They are returned as a formal sum of paramters with
-  split integer coefficients, which are in fact integer multiples of (1-s).
-
-full_deform: (Param->ParamPol): perform deformation all the way to nu=0
-  This is like deform, but recursively deforms all new terms produced as long
-  as they do not have nu=0; all terms in the result therefore have nu=0.
-
-KL_sum_at_s: (Param->ParamPol): signed sum of KL polynomials at s, fixed y
-  Computes \sum_{x\leq y}(-1)^{l(y)-l(x)}P_{x,y}[q:=s].x where y is the block
-  element of the parameter, and the sum is over other block elements x.
-
-raw_KL: (Block->mat,[vec],vec): Kazhdan-Lusztig data for block, raw form
-  The call raw_KL(b) produces a matrix of numbers identifying polynomials, a
-  list of those polynomials in the form of coefficient vectors, and a sequence
-  of length boundaries that allow deducing the "lengths" of the integers used
-  to index the matrix. These integers identify block elements for the block
-  print_block(b). If (M,L,len)=raw_KL(b), and v,w are integers identifying
-  block elements, then the vector L[M[v,w]] gives the coefficients of the KL
-  polynomial P_{v,w}. The length of v is the lergest index i such that
-  len[i]<=v, so the length difference between v and w is the number of indices
-  with v<len[i]<=w.
-
-dual_KL: (Block->mat,[vec],vec): dual KL polynomials (Q_{x,y}) for block
-  This is like raw_KL, but computes the polynomials Q instead of P. The
-  indexing of the block is the same as for the polynomials P, so up to length
-  signs, the matrix should be the inverse of the P matrix. The length stops
-  are provided as final value, as in raw_KL; these are for the _same_ block.
-
-print_gradings: (CartanClass,RealForm->): print gradings defined by real form
-  This more or less gives the output of the 'gradings' command in the Atlas
-  software, for the selected real form. The type of the imaginary root system
-  is printed, with the numbers of the roots that span this root subsytem as
-  simple roots, in the Bourbaki ordering for its type. Then for each element
-  in the list produced by fiber_part for the same arguments, the grading of
-  the imaginary root system is given as a sequence of bits 0 (compact) or 1
-  (non-compact), to be interpreted on the simple roots in the given order, and
-  extended to the whole imaginary root subsystem as a Z/2Z grading.
-
-print_real_Weyl: (RealForm,CartanClass->)
-print_strong_real: (CartanClass->)
-
-print_block: (Block->):
-print_blocku: (Block->):
-print_blockd: (Block->):
-print_blockstabilizer: (Block,CartanClass->):
-print_KGB: (RealForm->):
-print_X: (InnerClass->):
-print_KL_basis: (Block->):
-print_prim_KL: (Block->):
-print_KL_list: (Block->):
-print_W_cells: (Block->):
-print_W_graph: (Block->):
-
-These commands give the output of the corresponding commands of 'atlas'.
