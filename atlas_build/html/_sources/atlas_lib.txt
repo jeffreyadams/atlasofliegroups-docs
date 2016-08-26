@@ -10,3 +10,4 @@ atlas Library
    library/axis
    library/operators
    library/builtin_atlas_functions
+   library/usr_defined_functions
