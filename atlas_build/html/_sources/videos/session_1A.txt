@@ -59,3 +59,76 @@ Redefining variables, the ":" syntax, vectors, vec:, arrays, vector coordinates,
 .. raw:: html
 
         <video controls src="../_static/1A_5.mp4"></video>
+        
+7. Operator \$, \%, and booleans
+-------------------------------------
+
+Use of $ rational vectors, % on rational vectors, booleans
+
+.. raw:: html
+
+        <video controls src="../_static/1A_6.mp4"></video>
+        
+8. Matrix Operations
+------------------------
+
+Matrices, mat:, arrays of integer arrays, matrix operations, transpose, invert commands.
+
+.. raw:: html
+
+        <video controls src="../_static/1A_7.mp4"></video>
+        
+9. Loading Files
+--------------------
+
+Loading .at files, < input command, launching atlas with path argument for supplementary files, basic.at file.
+
+.. raw:: html
+
+        <video controls src="../_static/1A_8.mp4"></video>
+        
+10. Inverse
+-----------------
+
+Inverse command, invertible matrices over :math:`\mathbb{Z}`.
+
+.. raw:: html
+
+        <video controls src="../_static/1A_9.mp4"></video>
+        
+11. File Output
+-------------------
+
+File output command: ``>`` outputfile, append command: ``>>``
+
+.. raw:: html
+
+        <video controls src="../_static/1A_10.mp4"></video>
+        
+12. Solving Matrix Equations
+----------------------------------
+
+Solving matrix equations, null space.
+
+.. raw:: html
+
+        <video controls src="../_static/1A_11.mp4"></video>
+        
+13. Functions, Types, etc.
+--------------------------
+
+Functions, definitions, input and output types, example of functions scripts, basic for loops
+
+.. raw:: html
+
+        <video controls src="../_static/1A_12.mp4"></video>
+        
+14. Loops
+-------------
+
+for loops, while loops in atlas.help, examples of such loops in .at files
+
+.. raw:: html
+
+        <video controls src="../_static/1A_13.mp4"></video>
+        
