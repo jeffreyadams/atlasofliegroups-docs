@@ -6,6 +6,8 @@ Online Training Session 1, Part A
 Basics of the software: running it for the first time, varibles, expressions, some simple commands. 
 
     
+.. _1A_intro:
+
 1. Introduction
 ---------------
 
