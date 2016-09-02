@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="atlas::descents::Descent\lStatus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1descents_1_1DescentStatus.html",tooltip="Describes the descent status of each simple root for a single representation. "];
-}
