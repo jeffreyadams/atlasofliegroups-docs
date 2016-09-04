@@ -1,0 +1,120 @@
+Helpful unix tools
+-------------------
+
+
+One useful tool you can use is hitting the ``TAB`` key twice. Hitting it once does command cmpletion which helps you finish a command if you dont remember how it ends. Hitting it twice does command completion on the empty string and it will tell you all possible completions::
+
+        atlas> {TAB,TAB}
+        Display all 204 possibilities? (y or n)
+
+Here the curly brackets mean a comment. In this case it means that you hit the key in question instead of typing the word. Now, when you type ``y`` it will display all the 204 commands in the software using more, so you can scroll through them to find the command you need. You can also use it to find more than one possible command completions. For example, typing ``nu`` and then ``TAB`` completes to null. Typing ``TAB`` again gives the possible commands that start with null::
+
+   atlas> nu{TAB}
+   atlas> null
+   {TAB}
+   null         null_module
+   atlas> null
+
+Note, if you try this on your version of ``atlas`` and it does not work it may be because the readline is not working, since it is by the readline library that command completion is implemented. It is reccommended that you get that fixed.
+Another useful unix command is ``ctrl-p`` which helps you find the previous command you typed. For example::
+
+   atlas> set y=2
+   Identifier y: int
+   atlas> {ctrl-p}
+   atlas> set y=2
+
+So, you can easily scroll back to the previous commands that you have typed by repeating this step. This is also useful for editing the commands without having to type them all again, as we could do in the above example by changing ``y=2`` to ``y=3`` after recalling our previous command.
+
+A simpler way to do this is to hit the up/down arrow keys. This also lets you scroll forward as well as backward.
+
+Back to Basic ``atlas`` Operations
+-----------------------------------
+
+Redifining a variable. 
+
+Another useful way to redefine a variable is using the command ``:=``. However this works as long as the new variable is of the same data type as the old one. Note in the example below, that if we don't use this command we get a message "hiding previous one of type ...." ::
+
+	atlas> set x=2
+	Identifier x: int (hiding previous one of type int)
+	atlas> x
+	Value: 2
+	atlas> x:=5
+	Value: 5
+	atlas> x:=2/3
+	Error during analysis of expression at <standard input>:33:0-6
+	Type error:
+	  Subexpression /(2,3) at <standard input>:33:3-6
+	  has wrong type: found rat while int was needed.
+	Type check failed
+	atlas>
+
+
+We can set different variables to be different types of data and the software will most of the time compute operations on different data types as long as they are well defined::
+
+   atlas> y:=3
+   Identifier y: int
+   atlas> set z=3/2
+   Identifier z: rat
+   atlas> y+z
+   Value: 9/2
+   atlas> whattype(y+z)
+   type: rat
+   atlas>
+
+
+This works in most cases. However, there are some exceptions when the software does not switch to the appropriate datatype. 
+
+Division, ``/``; rounding down, ``\``; remainder, ``%``; n-tuples.
+------------------------------------------------------------------
+
+
+``atlas`` also performs operations on non-integers and outputs integers or integer tupples. For example you could ask the software to round down to the the largest integer less than a number, to compute the remainder, or to exppress a rational as a pair:: 
+
+	  atlas> x:=13
+	  Value: 13
+	  atlas> x\5
+	  Value: 2
+	  atlas> x%5
+	  Value: 3
+	  atlas> z:=x/5
+	  Value: 13/5	
+	  atlas> %z
+	  Value: (13,5)
+
+We can also work with each part of the pair separately::
+
+   atlas> set s=%z
+   Identifier s: (int,int)
+   atlas> set (num,denom)=s
+   Identifiers num: int, denom: int
+   atlas> num
+   Value: 13
+   atlas> denom
+   Value: 5
+   atlas> 
+
+
+n-tupples
+
+The above pair of integers belongs to the more general data type, tupples, which could consist of integers, rationals, vectors, strings or a combination of a variety of data types::
+
+A string can be any string of characters in quotes such as::
+
+  atlas> set x="hello world"
+  Identifier x: string
+  atlas> x
+  Value: "hello world"
+  atlas> print(x)
+  "hello world"
+  Value: "hello world"
+  atlas> prints(x)
+  hello world
+  
+
+We use the command ``prints`` which means print string, to print without quotes. And we can form the triple of different data types::
+
+   set z=(1,2/3,x)
+   Identifier z: (int,rat,string)
+   atlas> z
+   Value: (1,2/3,"hello world")
+
