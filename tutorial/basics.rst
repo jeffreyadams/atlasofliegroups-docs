@@ -38,35 +38,5 @@ Another useful command is whattype::
 This tells us the data type (int) of the variable x.
 
 
-Helpful unix tools
--------------------
-
-
-One useful tool you can use is hitting the ``TAB`` key twice. Hitting it once does command cmpletion which helps you finish a command if you dont remember how it ends. Hitting it twice does command completion on the empty string and it will tell you all possible completions:: 
-
-	atlas> {TAB,TAB}
-	Display all 204 possibilities? (y or n)
-
-Here the brackets mean a comment. In this case it means that you hit the key in question instead of typing the word. Now, when you type ``y`` it will display all the 204 commands in the software using more, so you can scroll through them to find the command you need. You can also use it to find more than one possible command completions. For example, typing ``nu`` and then ``TAB`` completes to null. Typing ``TAB`` again gives the possible commands that start with null::
-
-   atlas> nu{TAB}
-   atlas> null
-   {TAB}
-   null         null_module  
-   atlas> null   
-
-Note, if you try this on your version of ``atlas`` and it does not work it may be because the readline is not working, since it is by the readline library that command completion is implemented. It is reccommended that you get that fixed.
-Another useful unix command is ``ctrl-p`` which helps you find the previous command you typed. For example::
-
-   atlas> set y=2
-   Identifier y: int
-   atlas> {ctrl-p}
-   atlas> set y=3
-
-So, you can easily scroll back to the previous commands that you have typed by repeating this step. This is also useful for editing the commands without having to type them all again, as we did in the above example by changing ``y=2`` to ``y=3`` after recalling our previous command. 
-
-A simpler way to do this is to hit the up/down arrow keys. This also lets you scroll forward as well as backward.
-
-Back to Basic Operations
-------------------------
+To quit ``atlas`` just type ``quit``
 
