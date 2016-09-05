@@ -1,17 +1,9 @@
-Starting ``atlas``
-==================
+Getting started
+================
 
 
 This document will tell you about how to get started using ``atlas``. To learn about how to launch :code:`atlas` see :ref:`run_atlas`.
 
-
-Basic Operations
-------------------
-
-
-For more examples on the following discussion go to
-
-http://www.liegroups.org/software/download/online_training_videos_IA.html
 
 The :code:`atlas` software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that :code:`atlas` uses to store and give information on Lie groups structure and representations.
 
