@@ -1,8 +1,8 @@
-Basic atlas Syntax
+Starting ``atlas``
 ==================
 
 
-This document will tell you about atlas' syntax. To learn about how to launch :code:`atlas` see :ref:`run_atlas`.
+This document will tell you about how to get started using ``atlas``. To learn about how to launch :code:`atlas` see :ref:`run_atlas`.
 
 
 Basic Operations
