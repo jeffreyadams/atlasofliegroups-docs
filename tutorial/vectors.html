@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Help files &mdash; atlas 0.6 documentation</title>
+  <title>Vectors &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="atlas 0.6 documentation" href="../index.html"/> 
+    <link rel="top" title="atlas 0.6 documentation" href="../index.html"/>
+        <link rel="up" title="Tutorial" href="../tutorial_with_examples.html"/>
+        <link rel="next" title="atlas Library" href="../atlas_lib.html"/>
+        <link rel="prev" title="Basic Commands" href="basic_commands.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -80,10 +83,20 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../gen_info.html">General Information</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../tutorial_with_examples.html">Tutorial</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="welcome.html">Welcome</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atlas_help_files.html">Help files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="basic_commands.html">Basic Commands</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Vectors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#operations-and-coordinates">Operations and coordinates</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../atlas_lib.html">atlas Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../source_library.html">Source Code Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../videos.html">Videos</a></li>
@@ -118,11 +131,13 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>Help files</li>
+          <li><a href="../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
+      
+    <li>Vectors</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/tutorial/data_type.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/vectors.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -132,19 +147,72 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="help-files">
-<h1>Help files<a class="headerlink" href="#help-files" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="atlas-help">
-<h2><code class="docutils literal"><span class="pre">atlas.help</span></code><a class="headerlink" href="#atlas-help" title="Permalink to this headline">¶</a></h2>
-<p>To know more about the different data types you can quit <code class="docutils literal"><span class="pre">atlas</span></code> for a moment and go to the directory atlas-scripts and look for the helpfile atlas.help. This file gives an introduction of the software and how to install it. If you go to #3. Design principles of <code class="docutils literal"><span class="pre">axis</span></code> language, and current limitations, scrolling down you will find information about the details covered in the present document including the list of data types used by the software. Some of them are <code class="docutils literal"><span class="pre">bool</span></code> for boolean, <code class="docutils literal"><span class="pre">int</span></code> for integer, <code class="docutils literal"><span class="pre">rat</span></code> for tational, etc.; and some are related to Lie groups, like LieType, RootDAtum, etc. that we will see later in this notes.</p>
+  <div class="section" id="vectors">
+<h1>Vectors<a class="headerlink" href="#vectors" title="Permalink to this headline">¶</a></h1>
+<p>Another data type is <code class="docutils literal"><span class="pre">vec</span></code>. vectors and other data types like arrays
+and matrices are defined using brackets. So in order to specify the
+data type you want, you use <code class="docutils literal"><span class="pre">:</span></code>. For example, to define, respectively, a vector, an
+array of integers and a matrix, we do:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set v=vec:[4,6,7]
+Identifier v: vec
+atlas&gt; v
+Value: [ 4, 6, 7 ]
+
+atlas&gt; set w=[4,6,7]
+Identifier w: [int]
+atlas&gt; w
+Value: [4,6,7]
+
+atlas&gt; set A=mat:[[2,4],[1,3]]
+Identifier A: mat
+atlas&gt; A
+Value:
+| 2, 1 |
+| 4, 3 |
+
+atlas&gt;
+</pre></div>
 </div>
-<div class="section" id="atlas-functions-help">
-<h2><code class="docutils literal"><span class="pre">atlas.functions.help</span></code><a class="headerlink" href="#atlas-functions-help" title="Permalink to this headline">¶</a></h2>
-<p>This is another useful help file that lists all the functions defined on <code class="docutils literal"><span class="pre">atlas</span></code>. It describes their domain and range (data types); starting from the basic symbol operators <code class="docutils literal"><span class="pre">+</span></code>, <code class="docutils literal"><span class="pre">_</span></code>, <code class="docutils literal"><span class="pre">*</span></code>, to booleans, to word operators like <code class="docutils literal"><span class="pre">null</span></code> that takes an integer <code class="docutils literal"><span class="pre">n</span></code> to the null n-vector, to <code class="docutils literal"><span class="pre">invert</span></code> and <code class="docutils literal"><span class="pre">diagonalize</span></code>, which act on matrices, etc.</p>
+<p>We will see more about matrices and arrays later. Most of the time it
+does not matter if you define a vector as an array. For example,
+<code class="docutils literal"><span class="pre">atlas</span></code> can add <code class="docutils literal"><span class="pre">v+w</span></code> above:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype v
+type: vec
+atlas&gt; whattype w
+type: [int]
+atlas&gt; v+w
+Value: [  8, 12, 14 ]
+atlas&gt; whattype(v+w)
+type: vec
+atlas&gt;
+</pre></div>
 </div>
-<div class="section" id="scripts-help">
-<h2><code class="docutils literal"><span class="pre">scripts.help</span></code><a class="headerlink" href="#scripts-help" title="Permalink to this headline">¶</a></h2>
-<p>Finally, this help file lists most of the supplementary scripts found in this directory and a short description of what they do. The most basic one is <code class="docutils literal"><span class="pre">basic.at</span></code> which includes many useful scripts. We will see how to load them and look at them directly to see what they do.</p>
+<p>There are some cases where you need to specify the data type.</p>
+<div class="section" id="operations-and-coordinates">
+<h2>Operations and coordinates<a class="headerlink" href="#operations-and-coordinates" title="Permalink to this headline">¶</a></h2>
+<p>The commands for standard operations like length, dot product, coordinates of v, adition and scalar multiplication  are self explanatory:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; #v
+Value: 3
+atlas&gt; v*v
+Value: 101
+atlas&gt; v[0]
+Value: 4
+atlas&gt; v[1]
+Value: 6
+atlas&gt; v[2]
+Value: 7
+atlas&gt; v[3]
+atlas&gt; v+w
+Value: [ 8, 12, 14 ]
+atlas&gt; v/2
+Value: [ 4, 6, 7 ]/2
+atlas&gt; whattype $
+type: ratvec
+atlas&gt;
+</pre></div>
+</div>
+<p>Note how <code class="docutils literal"><span class="pre">atlas</span></code> converted v/2 to a ratvec. This is a new data type.
+Here, we again used <code class="docutils literal"><span class="pre">$</span></code> to call the <code class="docutils literal"><span class="pre">Value</span></code> on the previous line.</p>
 </div>
 </div>
 
@@ -152,6 +220,15 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../atlas_lib.html" class="btn btn-neutral float-right" title="atlas Library" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="basic_commands.html" class="btn btn-neutral" title="Basic Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

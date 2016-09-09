@@ -8,7 +8,7 @@ Tutorial
    
    tutorial/welcome
    tutorial/basics
-   tutorial/data_type
-   tutorial/def_grps
-   
+   tutorial/atlas_help_files
+   tutorial/basic_commands.rst
+   tutorial/vectors.rst   
 

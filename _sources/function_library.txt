@@ -1,4 +1,0 @@
-.. _fun_lib:
-
-atlas Library
-===============
