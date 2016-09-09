@@ -1,0 +1,22 @@
+digraph "atlas::interpreter::projector_value"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="atlas::interpreter\l::projector_value",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="atlas::interpreter\l::function_base",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1function__base.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="atlas::interpreter\l::value_base",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1value__base.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" loc" ,fontname="Helvetica"];
+  Node4 [label="atlas::interpreter\l::source_location",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1source__location.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" type" ,fontname="Helvetica"];
+  Node5 [label="atlas::interpreter\l::type_expr",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1type__expr.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" func" ,fontname="Helvetica"];
+  Node6 [label="atlas::interpreter\l::func_type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1func__type.html"];
+  Node5 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" arg_type\nresult_type" ,fontname="Helvetica"];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tupple" ,fontname="Helvetica"];
+  Node7 [label="atlas::containers::\lsl_node\< type_expr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1containers_1_1sl__node.html"];
+  Node5 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" contents" ,fontname="Helvetica"];
+  Node5 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" component_type" ,fontname="Helvetica"];
+}

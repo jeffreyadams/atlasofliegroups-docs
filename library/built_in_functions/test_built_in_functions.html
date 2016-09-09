@@ -1,0 +1,1205 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>atlas Built-In Operators and Functions &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
+        <link rel="next" title="User Defined Functions" href="../usr_defined_functions.html"/>
+        <link rel="prev" title="More Advanced Functions" href="more_advanced.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../axis.html">The Axis Language</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="basic_functions.html">Basic Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="matrix.html">Matrix Manipulating Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lie_basics.html">Lie Group Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="roots_weights.html">Roots and Weights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kgb_related.html">KGB Related</a></li>
+<li class="toctree-l3"><a class="reference internal" href="param.html">Parameter, KL, print, etc.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="more_advanced.html">More Advanced Functions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">atlas Built-In Operators and Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../usr_defined_functions.html">User Defined Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
+      
+    <li>atlas Built-In Operators and Functions</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/built_in_functions/test_built_in_functions.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="atlas-built-in-operators-and-functions">
+<h1>atlas Built-In Operators and Functions<a class="headerlink" href="#atlas-built-in-operators-and-functions" title="Permalink to this headline">¶</a></h1>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Function</th>
+<th class="head">Argument(s) -&gt; Results</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>+</td>
+<td>(int,int-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>+</td>
+<td>(rat,int-&gt;rat)</td>
+</tr>
+<tr class="row-even"><td>+</td>
+<td>(rat,rat-&gt;rat)</td>
+</tr>
+<tr class="row-odd"><td>+</td>
+<td>(vec,vec-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>+</td>
+<td>(ratvec,ratvec-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>+</td>
+<td>(mat,int-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>+</td>
+<td>(int,mat-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>+</td>
+<td>(mat,mat-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>+</td>
+<td>(Split,Split-&gt;Split)</td>
+</tr>
+<tr class="row-odd"><td>+</td>
+<td>(ParamPol,Param-&gt;ParamPol)</td>
+</tr>
+<tr class="row-even"><td>+</td>
+<td>(ParamPol,(Split,Param)-&gt;ParamPol)</td>
+</tr>
+<tr class="row-odd"><td>+</td>
+<td>(ParamPol,[(Split,Param)]-&gt;ParamPol)</td>
+</tr>
+<tr class="row-even"><td>+</td>
+<td>(ParamPol,ParamPol-&gt;ParamPol)</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>(int,int-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>-</td>
+<td>(int-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>(rat,int-&gt;rat)</td>
+</tr>
+<tr class="row-even"><td>-</td>
+<td>(rat,rat-&gt;rat)</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>(rat-&gt;rat)</td>
+</tr>
+<tr class="row-even"><td>-</td>
+<td>(vec,vec-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>(vec-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>-</td>
+<td>(ratvec,ratvec-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>(ratvec-&gt;ratvec)</td>
+</tr>
+<tr class="row-even"><td>-</td>
+<td>(mat,int-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>(int,mat-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>-</td>
+<td>(mat,mat-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>(Split,Split-&gt;Split)</td>
+</tr>
+<tr class="row-even"><td>-</td>
+<td>(Split-&gt;Split)</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>(ParamPol,Param-&gt;ParamPol)</td>
+</tr>
+<tr class="row-even"><td>-</td>
+<td>(ParamPol,ParamPol-&gt;ParamPol)</td>
+</tr>
+<tr class="row-odd"><td>*</td>
+<td>(int,int-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>*</td>
+<td>(rat,int-&gt;rat)</td>
+</tr>
+<tr class="row-odd"><td>*</td>
+<td>(rat,rat-&gt;rat)</td>
+</tr>
+<tr class="row-even"><td>*</td>
+<td>(vec,int-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>*</td>
+<td>(ratvec,int-&gt;ratvec)</td>
+</tr>
+<tr class="row-even"><td>*</td>
+<td>(ratvec,rat-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>*</td>
+<td>(vec,vec-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>*</td>
+<td>(mat,vec-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>*</td>
+<td>(mat,ratvec-&gt;ratvec)</td>
+</tr>
+<tr class="row-even"><td>*</td>
+<td>(mat,mat-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>*</td>
+<td>(vec,mat-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>*</td>
+<td>(ratvec,mat-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>*</td>
+<td>(Split,Split-&gt;Split)</td>
+</tr>
+<tr class="row-even"><td>*</td>
+<td>(int,ParamPol-&gt;ParamPol)</td>
+</tr>
+<tr class="row-odd"><td>*</td>
+<td>(Split,ParamPol-&gt;ParamPol)</td>
+</tr>
+<tr class="row-even"><td>\</td>
+<td>(int,int-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>\</td>
+<td>(vec,int-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>%</td>
+<td>(int,int-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>%</td>
+<td>(rat-&gt;int,int)</td>
+</tr>
+<tr class="row-even"><td>%</td>
+<td>(rat,int-&gt;rat)</td>
+</tr>
+<tr class="row-odd"><td>%</td>
+<td>(rat,rat-&gt;rat)</td>
+</tr>
+<tr class="row-even"><td>%</td>
+<td>(vec,int-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>%</td>
+<td>(ratvec-&gt;vec,int)</td>
+</tr>
+<tr class="row-even"><td>%</td>
+<td>(ratvec,int-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>%</td>
+<td>(LieType-&gt;[LieType])</td>
+</tr>
+<tr class="row-even"><td>%</td>
+<td>(KGBElt-&gt;RealForm,int)</td>
+</tr>
+<tr class="row-odd"><td>%</td>
+<td>(Block-&gt;RealForm,RealForm)</td>
+</tr>
+<tr class="row-even"><td>%</td>
+<td>(Param-&gt;KGBElt,vec,ratvec)</td>
+</tr>
+<tr class="row-odd"><td>%</td>
+<td>(Split-&gt;int,int)</td>
+</tr>
+<tr class="row-even"><td>%</td>
+<td>(int,int-&gt;int,int)</td>
+</tr>
+<tr class="row-odd"><td>^</td>
+<td>(int,int-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>^</td>
+<td>(rat,int-&gt;rat)</td>
+</tr>
+<tr class="row-odd"><td>^</td>
+<td>(vec-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>^</td>
+<td>(mat-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>^</td>
+<td>(int,[vec]-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>/</td>
+<td>(int,int-&gt;rat)</td>
+</tr>
+<tr class="row-odd"><td>/</td>
+<td>(rat,int-&gt;rat)</td>
+</tr>
+<tr class="row-even"><td>/</td>
+<td>(rat,rat-&gt;rat)</td>
+</tr>
+<tr class="row-odd"><td>/</td>
+<td>(rat-&gt;rat)</td>
+</tr>
+<tr class="row-even"><td>/</td>
+<td>(vec,int-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>/</td>
+<td>(ratvec,int-&gt;ratvec)</td>
+</tr>
+<tr class="row-even"><td>/</td>
+<td>(ratvec,rat-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(int-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(int,int-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(rat-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(rat,rat-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(bool,bool-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(string-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(string,string-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(vec-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(vec,vec-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(ratvec-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(ratvec,ratvec-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(mat-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(mat,mat-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(RealForm,RealForm-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(InnerClass,InnerClass-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(KGBElt,KGBElt-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(Param,Param-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(Split-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(Split,Split-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>=</td>
+<td>(ParamPol-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>=</td>
+<td>(ParamPol,ParamPol-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(int-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>(int,int-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(rat-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>(rat,rat-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(bool,bool-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>(string-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(string,string-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>(vec-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(vec,vec-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>(ratvec-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(ratvec,ratvec-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>(mat-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(mat,mat-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>(Split-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(Split,Split-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>!=</td>
+<td>(ParamPol-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>!=</td>
+<td>(ParamPol,ParamPol-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&gt;=</td>
+<td>(int-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&gt;=</td>
+<td>(int,int-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&gt;=</td>
+<td>(rat-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&gt;=</td>
+<td>(rat,rat-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&gt;=</td>
+<td>(string,string-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&gt;=</td>
+<td>(vec-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&gt;=</td>
+<td>(ratvec-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>(int-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>(int,int-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>(rat-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>(rat,rat-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>(string,string-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&gt;</td>
+<td>(vec-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&gt;</td>
+<td>(ratvec-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&lt;=</td>
+<td>(int-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&lt;=</td>
+<td>(int,int-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&lt;=</td>
+<td>(rat-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&lt;=</td>
+<td>(rat,rat-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&lt;=</td>
+<td>(string,string-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&lt;</td>
+<td>(int-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&lt;</td>
+<td>(int,int-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&lt;</td>
+<td>(rat-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>&lt;</td>
+<td>(rat,rat-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>&lt;</td>
+<td>(string,string-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>##</td>
+<td>(string,string-&gt;string)</td>
+</tr>
+<tr class="row-even"><td>##</td>
+<td>([string]-&gt;string)</td>
+</tr>
+<tr class="row-odd"><td>##</td>
+<td>(vec,vec-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>##</td>
+<td>([vec]-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>int_format</td>
+<td>(int-&gt;string)</td>
+</tr>
+<tr class="row-even"><td>ascii</td>
+<td>(string-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>ascii</td>
+<td>(int-&gt;string)</td>
+</tr>
+<tr class="row-even"><td>#</td>
+<td>(string-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>#</td>
+<td>(vec-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>#</td>
+<td>(ratvec-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>#</td>
+<td>(mat-&gt;int,int)</td>
+</tr>
+<tr class="row-even"><td>#</td>
+<td>(vec,int-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>#</td>
+<td>(int,vec-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>#</td>
+<td>(int,[vec]-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>#</td>
+<td>(LieType-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>#</td>
+<td>(Block-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>#</td>
+<td>(ParamPol-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>flex_add</td>
+<td>(vec,vec-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>flex_sub</td>
+<td>(vec,vec-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>convolve</td>
+<td>(vec,vec-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>null</td>
+<td>(int-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>null</td>
+<td>(int,int-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>transpose</td>
+<td>(mat-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>id_mat</td>
+<td>(int-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>diagonal</td>
+<td>(vec-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>stack_rows</td>
+<td>([vec]-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>swiss_matrix_knife</td>
+<td>(int,mat,int,int,int,int-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>matrix slicer</td>
+<td>(int,mat,int,int,int,int-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>echelon</td>
+<td>(mat-&gt;mat,[int])</td>
+</tr>
+<tr class="row-even"><td>diagonalize</td>
+<td>(mat-&gt;vec,mat,mat)</td>
+</tr>
+<tr class="row-odd"><td>adapted_basis</td>
+<td>(mat-&gt;mat,vec)</td>
+</tr>
+<tr class="row-even"><td>kernel</td>
+<td>(mat-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>eigen_lattice</td>
+<td>(mat,int-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>row_saturate</td>
+<td>(mat-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>inv_fact</td>
+<td>(mat-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>Smith_basis</td>
+<td>(mat-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>Smith</td>
+<td>(mat-&gt;mat,vec)</td>
+</tr>
+<tr class="row-even"><td>invert</td>
+<td>(mat-&gt;mat,int)</td>
+</tr>
+<tr class="row-odd"><td>mod2_section</td>
+<td>(mat-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>subspace_normal</td>
+<td>(mat-&gt;mat,mat,mat,[int])</td>
+</tr>
+<tr class="row-odd"><td>Lie_type</td>
+<td>(string-&gt;LieType)</td>
+</tr>
+<tr class="row-even"><td>Lie_type</td>
+<td>(RootDatum-&gt;LieType)</td>
+</tr>
+<tr class="row-odd"><td>Cartan_matrix</td>
+<td>(LieType-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>Cartan_matrix</td>
+<td>(RootDatum-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>Cartan_matrix_type</td>
+<td>(mat-&gt;LieType,vec)</td>
+</tr>
+<tr class="row-even"><td>rank</td>
+<td>(LieType-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>rank</td>
+<td>(RootDatum-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>semisimple_rank</td>
+<td>(LieType-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>semisimple_rank</td>
+<td>(RootDatum-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>str</td>
+<td>(LieType-&gt;string)</td>
+</tr>
+<tr class="row-odd"><td>Smith_Cartan</td>
+<td>(LieType-&gt;mat,vec)</td>
+</tr>
+<tr class="row-even"><td>filter_units</td>
+<td>(mat,vec-&gt;mat,vec)</td>
+</tr>
+<tr class="row-odd"><td>ann_mod</td>
+<td>(mat,int-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>replace_gen</td>
+<td>((mat,vec),mat-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>quotient_basis</td>
+<td>(LieType,[ratvec]-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>involution</td>
+<td>(LieType,string-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>involution</td>
+<td>(LieType,mat,string-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>involution</td>
+<td>(CartanClass-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>involution</td>
+<td>(KGBElt-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>root_datum</td>
+<td>(mat,mat-&gt;RootDatum)</td>
+</tr>
+<tr class="row-odd"><td>root_datum</td>
+<td>(LieType,mat-&gt;RootDatum)</td>
+</tr>
+<tr class="row-even"><td>root_datum</td>
+<td>(RootDatum,mat-&gt;RootDatum)</td>
+</tr>
+<tr class="row-odd"><td>root_datum</td>
+<td>(InnerClass-&gt;RootDatum)</td>
+</tr>
+<tr class="row-even"><td>simply_connected</td>
+<td>(LieType-&gt;RootDatum)</td>
+</tr>
+<tr class="row-odd"><td>adjoint</td>
+<td>(LieType-&gt;RootDatum)</td>
+</tr>
+<tr class="row-even"><td>root</td>
+<td>(RootDatum,int-&gt;vec)</td>
+</tr>
+<tr class="row-odd"><td>coroot</td>
+<td>(RootDatum,int-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>simple_roots</td>
+<td>(RootDatum-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>simple_coroots</td>
+<td>(RootDatum-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>posroots</td>
+<td>(RootDatum-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>poscoroots</td>
+<td>(RootDatum-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>root_coradical</td>
+<td>(RootDatum-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>coroot_radical</td>
+<td>(RootDatum-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>fundamental_weight</td>
+<td>(RootDatum,int-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>fundamental_coweight</td>
+<td>(RootDatum,int-&gt;ratvec)</td>
+</tr>
+<tr class="row-even"><td>dual</td>
+<td>(InnerClass-&gt;InnerClass)</td>
+</tr>
+<tr class="row-odd"><td>dual</td>
+<td>(RootDatum-&gt;RootDatum)</td>
+</tr>
+<tr class="row-even"><td>dual</td>
+<td>(Block-&gt;Block)</td>
+</tr>
+<tr class="row-odd"><td>derived_info</td>
+<td>(RootDatum-&gt;RootDatum,mat)</td>
+</tr>
+<tr class="row-even"><td>mod_central_torus_info</td>
+<td>(RootDatum-&gt;RootDatum,mat)</td>
+</tr>
+<tr class="row-odd"><td>nr_of_posroots</td>
+<td>(RootDatum-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>root_index</td>
+<td>(RootDatum,vec-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>coroot_index</td>
+<td>(RootDatum,vec-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>integrality_datum</td>
+<td>(RootDatum,ratvec-&gt;RootDatum)</td>
+</tr>
+<tr class="row-odd"><td>integrality_points</td>
+<td>(RootDatum,ratvec-&gt;[rat])</td>
+</tr>
+<tr class="row-even"><td>classify_involution</td>
+<td>(mat-&gt;int,int,int)</td>
+</tr>
+<tr class="row-odd"><td>inner_class</td>
+<td>(RootDatum,mat-&gt;InnerClass)</td>
+</tr>
+<tr class="row-even"><td>inner_class</td>
+<td>(LieType,[ratvec],string-&gt;InnerClass)</td>
+</tr>
+<tr class="row-odd"><td>inner_class</td>
+<td>(RootDatum,string-&gt;InnerClass)</td>
+</tr>
+<tr class="row-even"><td>inner_class</td>
+<td>(RealForm-&gt;InnerClass)</td>
+</tr>
+<tr class="row-odd"><td>twisted_involution</td>
+<td>(RootDatum,mat-&gt;InnerClass,vec)</td>
+</tr>
+<tr class="row-even"><td>distinguished_involution</td>
+<td>(InnerClass-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>form_names</td>
+<td>(InnerClass-&gt;[string])</td>
+</tr>
+<tr class="row-even"><td>dual_form_names</td>
+<td>(InnerClass-&gt;[string])</td>
+</tr>
+<tr class="row-odd"><td>nr_of_real_forms</td>
+<td>(InnerClass-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>nr_of_dual_real_forms</td>
+<td>(InnerClass-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>nr_of_Cartan_classes</td>
+<td>(InnerClass-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>block_sizes</td>
+<td>(InnerClass-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>occurrence_matrix</td>
+<td>(InnerClass-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>dual_occurrence_matrix</td>
+<td>(InnerClass-&gt;mat)</td>
+</tr>
+<tr class="row-odd"><td>real_form</td>
+<td>(InnerClass,int-&gt;RealForm)</td>
+</tr>
+<tr class="row-even"><td>real_form</td>
+<td>(InnerClass,mat,ratvec-&gt;RealForm)</td>
+</tr>
+<tr class="row-odd"><td>real_form</td>
+<td>(Param-&gt;RealForm)</td>
+</tr>
+<tr class="row-even"><td>real_form</td>
+<td>(ParamPol-&gt;RealForm)</td>
+</tr>
+<tr class="row-odd"><td>form_number</td>
+<td>(RealForm-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>quasisplit_form</td>
+<td>(InnerClass-&gt;RealForm)</td>
+</tr>
+<tr class="row-odd"><td>components_rank</td>
+<td>(RealForm-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>count_Cartans</td>
+<td>(RealForm-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>KGB_size</td>
+<td>(RealForm-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>base_grading_vector</td>
+<td>(RealForm-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>Cartan_order</td>
+<td>(RealForm-&gt;mat)</td>
+</tr>
+<tr class="row-even"><td>dual_real_form</td>
+<td>(InnerClass,int-&gt;RealForm)</td>
+</tr>
+<tr class="row-odd"><td>dual_quasisplit_form</td>
+<td>(InnerClass-&gt;RealForm)</td>
+</tr>
+<tr class="row-even"><td>central_fiber</td>
+<td>(RealForm-&gt;[vec])</td>
+</tr>
+<tr class="row-odd"><td>initial_torus_bits</td>
+<td>(RealForm-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>Cartan_class</td>
+<td>(RealForm,int-&gt;CartanClass)</td>
+</tr>
+<tr class="row-odd"><td>Cartan_class</td>
+<td>(InnerClass,int-&gt;CartanClass)</td>
+</tr>
+<tr class="row-even"><td>Cartan_class</td>
+<td>(KGBElt-&gt;CartanClass)</td>
+</tr>
+<tr class="row-odd"><td>most_split_Cartan</td>
+<td>(RealForm-&gt;CartanClass)</td>
+</tr>
+<tr class="row-even"><td>Cartan_info</td>
+<td>(CartanClass-&gt;(int,int,int),vec,(int,int),(LieType,LieType,LieType))</td>
+</tr>
+<tr class="row-odd"><td>real_forms</td>
+<td>(CartanClass-&gt;[RealForm])</td>
+</tr>
+<tr class="row-even"><td>dual_real_forms</td>
+<td>(CartanClass-&gt;[RealForm])</td>
+</tr>
+<tr class="row-odd"><td>fiber_partition</td>
+<td>(CartanClass,RealForm-&gt;[int])</td>
+</tr>
+<tr class="row-even"><td>square_classes</td>
+<td>(CartanClass-&gt;[[int]])</td>
+</tr>
+<tr class="row-odd"><td>KGB</td>
+<td>(RealForm,int-&gt;KGBElt)</td>
+</tr>
+<tr class="row-even"><td>cross</td>
+<td>(int,KGBElt-&gt;KGBElt)</td>
+</tr>
+<tr class="row-odd"><td>cross</td>
+<td>(int,Block,int-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>cross</td>
+<td>(int,Param-&gt;Param)</td>
+</tr>
+<tr class="row-odd"><td>cross</td>
+<td>(vec,Param-&gt;Param)</td>
+</tr>
+<tr class="row-even"><td>Cayley</td>
+<td>(int,KGBElt-&gt;KGBElt)</td>
+</tr>
+<tr class="row-odd"><td>Cayley</td>
+<td>(int,Block,int-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>Cayley</td>
+<td>(int,Param-&gt;Param)</td>
+</tr>
+<tr class="row-odd"><td>Cayley</td>
+<td>(vec,Param-&gt;Param)</td>
+</tr>
+<tr class="row-even"><td>status</td>
+<td>(int,KGBElt-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>status</td>
+<td>(int,Block,int-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>KGB_elt</td>
+<td>(RealForm,mat,ratvec-&gt;KGBElt)</td>
+</tr>
+<tr class="row-odd"><td>twist</td>
+<td>(KGBElt-&gt;KGBElt)</td>
+</tr>
+<tr class="row-even"><td>twist</td>
+<td>(Param-&gt;Param)</td>
+</tr>
+<tr class="row-odd"><td>length</td>
+<td>(KGBElt-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>length</td>
+<td>(Param-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>torus_bits</td>
+<td>(KGBElt-&gt;vec)</td>
+</tr>
+<tr class="row-even"><td>torus_factor</td>
+<td>(KGBElt-&gt;ratvec)</td>
+</tr>
+<tr class="row-odd"><td>block</td>
+<td>(RealForm,RealForm-&gt;Block)</td>
+</tr>
+<tr class="row-even"><td>block</td>
+<td>(Param-&gt;[Param],int)</td>
+</tr>
+<tr class="row-odd"><td>element</td>
+<td>(Block,int-&gt;KGBElt,KGBElt)</td>
+</tr>
+<tr class="row-even"><td>index</td>
+<td>(Block,KGBElt,KGBElt-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>inverse_Cayley</td>
+<td>(int,Block,int-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>param</td>
+<td>(KGBElt,vec,ratvec-&gt;Param)</td>
+</tr>
+<tr class="row-odd"><td>is_standard</td>
+<td>(Param-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>is_zero</td>
+<td>(Param-&gt;bool)</td>
+</tr>
+<tr class="row-odd"><td>is_final</td>
+<td>(Param-&gt;bool)</td>
+</tr>
+<tr class="row-even"><td>dominant</td>
+<td>(Param-&gt;Param)</td>
+</tr>
+<tr class="row-odd"><td>inv_Cayley</td>
+<td>(int,Param-&gt;Param)</td>
+</tr>
+<tr class="row-even"><td>orientation_nr</td>
+<td>(Param-&gt;int)</td>
+</tr>
+<tr class="row-odd"><td>reducibility_points</td>
+<td>(Param-&gt;[rat])</td>
+</tr>
+<tr class="row-even"><td>print_block</td>
+<td>(Param-&gt;)</td>
+</tr>
+<tr class="row-odd"><td>print_block</td>
+<td>(Block-&gt;)</td>
+</tr>
+<tr class="row-even"><td>partial_block</td>
+<td>(Param-&gt;[Param])</td>
+</tr>
+<tr class="row-odd"><td>KL_block</td>
+<td>(Param-&gt;[Param],int,mat,[vec],vec,vec,mat)</td>
+</tr>
+<tr class="row-even"><td>partial_KL_block</td>
+<td>(Param-&gt;[Param],mat,[vec],vec,vec,mat)</td>
+</tr>
+<tr class="row-odd"><td>null_module</td>
+<td>(RealForm-&gt;ParamPol)</td>
+</tr>
+<tr class="row-even"><td>last_term</td>
+<td>(ParamPol-&gt;Split,Param)</td>
+</tr>
+<tr class="row-odd"><td>first_term</td>
+<td>(ParamPol-&gt;Split,Param)</td>
+</tr>
+<tr class="row-even"><td>K_type_formula</td>
+<td>(Param-&gt;ParamPol)</td>
+</tr>
+<tr class="row-odd"><td>branch</td>
+<td>(Param,int-&gt;ParamPol)</td>
+</tr>
+<tr class="row-even"><td>to_canonical</td>
+<td>(Param-&gt;Param)</td>
+</tr>
+<tr class="row-odd"><td>height</td>
+<td>(Param-&gt;int)</td>
+</tr>
+<tr class="row-even"><td>deform</td>
+<td>(Param-&gt;ParamPol)</td>
+</tr>
+<tr class="row-odd"><td>full_deform</td>
+<td>(Param-&gt;ParamPol)</td>
+</tr>
+<tr class="row-even"><td>KL_sum_at_s</td>
+<td>(Param-&gt;ParamPol)</td>
+</tr>
+<tr class="row-odd"><td>raw_KL</td>
+<td>(Block-&gt;mat,[vec],vec)</td>
+</tr>
+<tr class="row-even"><td>dual_KL</td>
+<td>(Block-&gt;mat,[vec],vec)</td>
+</tr>
+<tr class="row-odd"><td>print_gradings</td>
+<td>(CartanClass,RealForm-&gt;)</td>
+</tr>
+<tr class="row-even"><td>print_real_Weyl</td>
+<td>(RealForm,CartanClass-&gt;)</td>
+</tr>
+<tr class="row-odd"><td>print_strong_real</td>
+<td>(CartanClass-&gt;)</td>
+</tr>
+<tr class="row-even"><td>print_blocku</td>
+<td>(Block-&gt;)</td>
+</tr>
+<tr class="row-odd"><td>print_blockd</td>
+<td>(Block-&gt;)</td>
+</tr>
+<tr class="row-even"><td>print_blockstabilizer</td>
+<td>(Block,CartanClass-&gt;)</td>
+</tr>
+<tr class="row-odd"><td>print_KGB</td>
+<td>(RealForm-&gt;)</td>
+</tr>
+<tr class="row-even"><td>print_X</td>
+<td>(InnerClass-&gt;)</td>
+</tr>
+<tr class="row-odd"><td>print_KL_basis</td>
+<td>(Block-&gt;)</td>
+</tr>
+<tr class="row-even"><td>print_prim_KL</td>
+<td>(Block-&gt;)</td>
+</tr>
+<tr class="row-odd"><td>print_KL_list</td>
+<td>(Block-&gt;)</td>
+</tr>
+<tr class="row-even"><td>print_W_cells</td>
+<td>(Block-&gt;)</td>
+</tr>
+<tr class="row-odd"><td>print_W_graph</td>
+<td>(Block-&gt;)</td>
+</tr>
+<tr class="row-even"><td>input_path</td>
+<td>[string]</td>
+</tr>
+<tr class="row-odd"><td>prelude_log</td>
+<td>[string]</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../usr_defined_functions.html" class="btn btn-neutral float-right" title="User Defined Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="more_advanced.html" class="btn btn-neutral" title="More Advanced Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

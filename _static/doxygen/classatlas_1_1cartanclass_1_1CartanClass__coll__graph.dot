@@ -1,0 +1,37 @@
+digraph "atlas::cartanclass::CartanClass"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="atlas::cartanclass\l::CartanClass",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_fiber\nd_dualFiber" ,fontname="Helvetica"];
+  Node2 [label="atlas::cartanclass\l::Fiber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1cartanclass_1_1Fiber.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_weakReal\nd_realFormPartition" ,fontname="Helvetica"];
+  Node3 [label="Partition",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_baseGrading" ,fontname="Helvetica"];
+  Node4 [label="BitSet",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_adjointFiberGroup\nd_fiberGroup" ,fontname="Helvetica"];
+  Node5 [label="atlas::subquotient\l::Subquotient\< constants\l::RANK_MAX \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1subquotient_1_1Subquotient.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_rel_support" ,fontname="Helvetica"];
+  Node6 [label="BitSet\< dim \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_toAdjoint" ,fontname="Helvetica"];
+  Node7 [label="BitMatrix\< constants\l::RANK_MAX \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_torus" ,fontname="Helvetica"];
+  Node8 [label="atlas::tori::RealTorus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1tori_1_1RealTorus.html",tooltip="Represents a torus defined over R. "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_toMinus\nd_toPlus" ,fontname="Helvetica"];
+  Node9 [label="atlas::matrix::PID\l_Matrix\< LatticeCoeff \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1PID__Matrix.html"];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="atlas::matrix::Matrix\l\< LatticeCoeff \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Matrix.html"];
+  Node11 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="atlas::matrix::Matrix\l_base\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Matrix__base.html"];
+  Node5 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_topology" ,fontname="Helvetica"];
+  Node12 -> Node8 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_involution" ,fontname="Helvetica"];
+  Node12 [label="atlas::matrix::PID\l_Matrix\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1PID__Matrix.html"];
+  Node13 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="atlas::matrix::Matrix\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Matrix.html"];
+  Node11 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_involutionData" ,fontname="Helvetica"];
+  Node14 [label="InvolutionData",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node15 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_baseNoncompact" ,fontname="Helvetica"];
+  Node15 [label="atlas::bitmap::BitMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1bitmap_1_1BitMap.html",tooltip="Container of a large (more than twice the machine word size) set of bits. "];
+}

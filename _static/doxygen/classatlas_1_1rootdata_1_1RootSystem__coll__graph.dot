@@ -1,0 +1,14 @@
+digraph "atlas::rootdata::RootSystem"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="atlas::rootdata::RootSystem",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" two_rho_in_simple_roots" ,fontname="Helvetica"];
+  Node2 [label="atlas::matrix::Vector\l\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Vector.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="std::vector\< int \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" Cmat" ,fontname="Helvetica"];
+  Node4 [label="atlas::matrix::Vector\l\< byte \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Vector.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="std::vector\< byte \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}
