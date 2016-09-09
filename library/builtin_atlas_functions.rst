@@ -15,6 +15,7 @@ Built-in functions are those functions that are available before you load any ``
    built_in_functions/kgb_related
    built_in_functions/param
    built_in_functions/more_advanced
+   built_in_functions/test_built_in_functions
 
 
 
