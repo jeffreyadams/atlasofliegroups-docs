@@ -18,7 +18,7 @@ Here the curly brackets mean a comment. In this case it means that you hit the k
    null         null_module
    atlas> null
 
-If this does not work on your version of ``atlas`` it may be that the appropriate ``readline`` library is not installed on your computer: command completion is implemented by ``readline. Addressing this problem is worth the effort!
+If this does not work on your version of ``atlas`` it may be that the appropriate ``readline`` library is not installed on your computer: command completion is implemented by ``readline``. Addressing this problem is worth the effort!
 
 Another useful unix command is ``ctrl-p`` which helps you find the previous command you typed. For example::
 
@@ -104,15 +104,15 @@ The above pair of integers belongs to the more general data type, tupples, which
 
 A string can be any string of characters in quotes such as::
 
-  atlas> set x="hello world"
-  Identifier x: string
-  atlas> x
-  Value: "hello world"
-  atlas> print(x)
-  "hello world"
-  Value: "hello world"
-  atlas> prints(x)
-  hello world
+    atlas> set x="hello world"
+    Identifier x: string
+    atlas> x
+    Value: "hello world"
+    atlas> print(x)
+    "hello world"
+    Value: "hello world"
+    atlas> prints(x)
+    hello world
   
 
 We use the command ``prints`` which means print string, to print without quotes. And we can form the triple of different data types::

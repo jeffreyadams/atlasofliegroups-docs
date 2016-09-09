@@ -12,11 +12,7 @@ Welcome back. Questions from previous hour. Function arguments/outputs queries: 
 
 .. raw:: html
 
-        <video width="440" height="330" controls>
-        <source src="../_static/1B_1.mp4">
-        </video>
-        
-        <p> Right click to <a href="../_static/1B_1.mp4">download</a> this video </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=0&end=355" frameborder="0" allowfullscreen></iframe>
         
 2. Data Types, Root Datum
 ----------------------------
@@ -25,9 +21,7 @@ Data type: LieType, atlas functions: ``simply_connected``, ``adjoint``, ``simple
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_2.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=355&end=937" frameborder="0" allowfullscreen></iframe>
         
 3. More about Lie Groups
 ----------------------------
@@ -36,9 +30,7 @@ More Lie groups, The file groups.at, realform data type, GL(2,R), Sp(4,R), ``pos
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_3.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=937&end=1355" frameborder="0" allowfullscreen></iframe>
         
 4. Fundamental Weight Coordinates, :math:`Sp(8,\mathbb{R})`
 ------------------------------------------------------------------
@@ -47,9 +39,7 @@ The file lietypes.at, strings, type C4, fundamental weight coordinates, :math:`S
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_4.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=1355&end=1518" frameborder="0" allowfullscreen></iframe>
         
 5. Simple Roots of :math:`SL(5,\mathbb{R})`
 ---------------------------------------------------
@@ -58,9 +48,7 @@ Simple roots of :math:`SL(5,\mathbb{R})`, atlas coordinates.
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_5.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=1518&end=1765" frameborder="0" allowfullscreen></iframe>
         
 6. More on Coordinates
 ---------------------------
@@ -69,9 +57,7 @@ More on atlas' choice of coordinates, help files.
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_6.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=1765&end=2070" frameborder="0" allowfullscreen></iframe>
         
 7. The atlas-functions.help File
 --------------------------------------
@@ -80,9 +66,7 @@ The file atlas-functions.help
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_7.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=2070&end=2145" frameborder="0" allowfullscreen></iframe>
         
 8. Get Lie Groups Information
 -----------------------------------
@@ -91,9 +75,7 @@ More Lie group information, Lie algebra, connectednes, root datum, split, quasis
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_8.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=2145&end=2564" frameborder="0" allowfullscreen></iframe>
         
 9. Real Forms
 -----------------
@@ -102,9 +84,7 @@ More Lie group information, Lie algebra, connectednes, root datum, split, quasis
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_9.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=2564&end=2753" frameborder="0" allowfullscreen></iframe>
         
 10. Inner Class
 --------------------
@@ -114,7 +94,5 @@ real forms in an inner class. :math:`SL(5,\mathbb{R})`, distinguished involution
 
 .. raw:: html
 
-        <video width="320" height="240" controls>
-        <source src="../_static/1B_10.mp4">
-        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pg3ekZnUh3M?start=2753" frameborder="0" allowfullscreen></iframe>
         
