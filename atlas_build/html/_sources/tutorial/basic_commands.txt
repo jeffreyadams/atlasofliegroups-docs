@@ -100,7 +100,7 @@ We can also work with each part of the pair separately::
 
 n-tupples
 
-The above pair of integers belongs to the more general data type, tupples, which could consist of integers, rationals, vectors, strings or a combination of a variety of data types::
+The above pair of integers belongs to the more general data type, tupples, which could consist of integers, rationals, vectors, strings or a combination of a variety of data types.
 
 A string can be any string of characters in quotes such as::
 
@@ -113,7 +113,6 @@ A string can be any string of characters in quotes such as::
     Value: "hello world"
     atlas> prints(x)
     hello world
-  
 
 We use the command ``prints`` which means print string, to print without quotes. And we can form the triple of different data types::
 
