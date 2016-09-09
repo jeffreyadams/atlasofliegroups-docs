@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Syntax Summary &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="The Axis Language" href="../axis.html"/>
+        <link rel="next" title="Basic Operators" href="../operators.html"/>
+        <link rel="prev" title="Miscellaneous Commands" href="misc.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../axis.html">The Axis Language</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="design_principles.html">Design Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types.html">Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Syntax Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#command-level">Command level</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quaternary-expressions-let-anonymous-functions-casts-sequences">Quaternary expressions: &#8216;let&#8217;, anonymous functions, casts, sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tertiary-expressions-assignments">Tertiary expressions: assignments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#secondary-expressions-formulas">Secondary expressions: formulas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#primary-expressions-subscriptions-function-calls-atomic-expressions">Primary expressions: subscriptions, function calls, atomic expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#closed-expressions-displays-and-groupings-conditionals-loops">Closed expressions: displays and groupings, conditionals, loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#identifier-patterns">Identifier patterns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#types">Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usr_defined_functions.html">User Defined Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
+      
+    <li>Syntax Summary</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/axis/summary.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="syntax-summary">
+<h1>Syntax Summary<a class="headerlink" href="#syntax-summary" title="Permalink to this headline">¶</a></h1>
+<p>The formal syntax is defined in the parser generator source file &#8220;parser.y&#8221;; a
+readable summary can be found at the beginning of &#8220;parser.output&#8221; which if
+needed can be created by the shell command &#8220;bison &#8211;report=states parser.y&#8221;.</p>
+<p>The syntax is very largely centered around a single &#8220;part of speech&#8221;, the
+expression. There is no distinction between expressions and statements: every
+expression may have side effects (if it contains assignments for instance) and
+yields a value (although it might be void, i.e., useless). The only part of
+the syntax not directly concerned with expressions is that defining commands,
+which are only allowed at the outermost level. Some other categories, such as
+type specifications and formal parameter lists, are used within certain kinds
+of expressions, but do not themselves constitute expressions. The command level
+will be described at the beginning, the other non-expressions categories at
+the end. In between we enumerate the different kinds of expressions, in order
+from most loosely bound to most tightly bound; using a loosely bound form in
+more tightly bound context requires enclosing the expression in parentheses.</p>
+<div class="section" id="command-level">
+<h2>Command level<a class="headerlink" href="#command-level" title="Permalink to this headline">¶</a></h2>
+<p>The most common command is an expression, possibly followed by a semicolon;
+the case with semicolon is treated exactly as if &#8216;()&#8217; followed to form a
+sequenced expression with void value (so that no value will be printed.</p>
+<p>Another common command is the definition starting with &#8216;set&#8217;. In it&#8217;s basic
+form &#8216;set&#8217; is followed by a an identifier pattern or an operator name, an &#8216;=&#8217;
+and an expression. For function definitions there is an alternative form
+deemed more pleasant than writing an anonymous function body after the &#8216;=&#8217;;
+here &#8216;set&#8217; is followed by a single function name or operator symbol, and then
+directly the (possibly empty) parameter list in parentheses, only then
+followed by &#8216;=&#8217; and an expression (the function body). The latter form is
+treated like the basic form of &#8216;set&#8217; command obtained by moving the &#8216;=&#8217; in
+front of the parameter list and inserting &#8216;:&#8217; where it used to be. Whether
+identifiers or operator of the &#8216;set&#8217; command will be stored in the identifier
+table or in the overloading table is not directly dependent on the syntactic
+form used: the rule is currently that overload table is chosen when a single
+identifier or operator is set to an expression of function type, and in all
+other cases the identifier table is used (this does imply the special function
+syntax always overloads). So combined definitions (using a pattern) cannot
+define overloads, but this rule (and the syntax) might change in the future.</p>
+<p>A command of the form &#8216;ident : expr&#8217; is almost equivalent to the command &#8216;set
+ident = expr&#8217;, except that it adds to the identifier table in all cases.</p>
+<p>A command of the form &#8216;ident : type&#8217; similarly introduces an identifier
+into the identifier table, with the given type but with an undefined value.</p>
+<p>The &#8216;forget&#8217; command removes a global identifier or overload. In the former
+case &#8216;forget&#8217; is just followed by the identifier to be removed; in the latter
+case the overload to remove must be specified by writing an operator cast
+(described under expressions): &#8216;forget +&#64;(int,int)&#8217; forgets integer addition.</p>
+<p>The command &#8216;whattype expression&#8217; performs type analysis of the expression,
+and upon success just prints the type found, suppressing evaluation.</p>
+<p>The command &#8216;whattype x ?&#8217; where x is an identifier or operator symbol shows
+the types of all overloads currently defined for that symbol.</p>
+<p>A command &#8216;showall&#8217; displays the contents of overload and identifier tables.</p>
+<p>The command &#8216;quit&#8217; terminates the interpreter, while &#8216;verbose&#8217; and &#8216;quiet&#8217;
+turn on or off extra diagnostics during expression analysis.</p>
+<p>A command starting with &#8216;&gt;&#8217; or &#8216;&gt;&gt;&#8217; redirect output to a file; the symbol is
+followed by a file name (either delimited by whitespace or enclosed in quotes)
+and then the expression to be evaluated.</p>
+<p>A command starting with &#8216;&lt;&#8217; or &#8216;&lt;&lt;&#8217; opens a subsidiary input file as described
+above; it should be followed just by the name of the file to include</p>
+</div>
+<div class="section" id="quaternary-expressions-let-anonymous-functions-casts-sequences">
+<h2>Quaternary expressions: &#8216;let&#8217;, anonymous functions, casts, sequences<a class="headerlink" href="#quaternary-expressions-let-anonymous-functions-casts-sequences" title="Permalink to this headline">¶</a></h2>
+<p>These are the expression types that end with another expression, without ever
+needing parentheses around that other expression; they are themselves loosely
+bound, so the might require parentheses (or equivalently a begin-end pair)
+around the entire expression if used in certain contexts (as right hand side
+of an assignment for instance, or as item in a semicolon-separated sequence).</p>
+<p>Let-expressions introduce local definitions: they start with &#8216;let&#8217;, then a
+list of one or more definition groups separated by &#8216;then&#8217;, followed by &#8216;in&#8217;
+and finally an expression that produces the value of the construct.
+Definitions in a definition group take effect in the following group, or after
+&#8216;in&#8217; in case of the last group; in other words &#8216;then&#8217; here behaves like &#8216;in
+let&#8217;. A definition group consists of one or more definitions separated by
+commas, which definitions are handled in parallel. Each basic definition
+consists of an identifier pattern (see h) followed by &#8216;=&#8217; and an expression.
+The variation of the &#8216;set&#8217; syntax for function definitions (with &#8216;=&#8217; coming
+after the parameter list) is also available for local function definitions.</p>
+<p>Anonymous functions consist of a pair of parentheses enclosing a parameter
+list, followed by an optional (result) type, and then &#8216;:&#8217; and a (function
+body) expression. A parameter list consists of zero or more pairs of a type
+followed by an identifier pattern, separated by commas.</p>
+<p>Casts consist of a type followed by &#8216;:&#8217; and an expression. They define an
+expression forced to be of the given type (possibly applying an implicit
+conversion to the given expression). Like any other type of expression, an
+implicit conversion may also apply to a cast itself (though this is rare);
+however a cast immediately following &#8216;=&#8217; in a definition will ensure that the
+entity defined (identifier or function body) will be of exactly that type.</p>
+<p>Sequenced expressions come in two kinds: they are sequences of expressions,
+separated either by &#8216;next&#8217; or by &#8216;;&#8217;. Both are as loosely bound as let
+expressions, function definitions and casts, which means that one can chain
+any sequence of &#8216;let ... then .. in&#8217; and &#8216;expression ;&#8217; or &#8216;expression next&#8217;
+before a final expression, without requiring parentheses (also function
+headings and casts can occur, but they usually only occur at the beginning or
+at the end of a chain). Both &#8216;expr1 ; expr2&#8217; and &#8216;expr1 next expr2&#8217; evaluate
+both expressions from left to right; with a (more usual) semicolon the value
+is that of expr2, while with the &#8216;next&#8217; keyword it is the value of expr1. The
+purpose of next is to retain the current value of expr1 even though the later
+side effect of evaluating expr2 might modify the value of expr1. It is unusual
+to have more than one &#8216;expression next&#8217; in the chain, but if one does, it is
+the first one that will determine the final value (if there are none, as is
+often the case, then the final expression produces the value of the clause).</p>
+</div>
+<div class="section" id="tertiary-expressions-assignments">
+<h2>Tertiary expressions: assignments<a class="headerlink" href="#tertiary-expressions-assignments" title="Permalink to this headline">¶</a></h2>
+<p>The three kinds of assignments are tertiary level expressions: simple
+assignments, component assignments and compound assignments (compound
+component assignments are not currently possible). Each of them end with &#8221;:=&#8221;
+followed by a tertiary level expression. To the left of &#8221;:=&#8221; they have
+respectively an identifier, a subscripted identifier (the subscript being an
+expression enclosed in &#8216;[&#8216; and &#8216;]&#8217;), and an expression followed by an operator
+symbol. For a component assignment to be valid it is necessary that the type
+of identifier and index are such that the subscription would be a valid
+expression, but component assignments are not allowed for identifiers of type
+&#8216;string&#8217;, &#8216;ratvec&#8217;, or &#8216;ParamPol&#8217;. When valid, a component assignment is
+handled as a primitive operation in the evaluator. The meaning of a compound
+assignment of the form &#8216;ident # := expr&#8217; on the other hand (where # represents
+any infix operator) is by definition that of &#8216;indent := ident # (expr)&#8217;; in
+other words it is determined by the overload of the operator for operand types
+of the identifier and the expression, whether built-in or user-defined.
+Currently compound statements are transformed into that form by the parser
+(compound assignments might be handled by the evaluator instead in the future,
+but only so as to achieve the same effect possibly more efficiently.)</p>
+</div>
+<div class="section" id="secondary-expressions-formulas">
+<h2>Secondary expressions: formulas<a class="headerlink" href="#secondary-expressions-formulas" title="Permalink to this headline">¶</a></h2>
+<p>Expressions at the secondary level are formulas, consisting of an operator
+applied to one or two operands. The level in fact splits into many sub-levels
+corresponding to different operator precedences. This structure is not very
+clear from the formal grammar (because precedence is largely handled by
+formula restructuring inside parser actions), but the operators, ordered by
+increasing precedence, are:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>or
+and
+not         (prefix use only)
+=,  !=,  &lt;,  &gt;,  &lt;=,  &gt;=
++, -
+*, /, \, %, \%
+^
+#, ~
+</pre></div>
+</div>
+<p>The logical connectives in the first three lines above are somewhat different,
+in that they are keywords rather than operator symbols, cannot be overloaded
+or redefined, and are in fact currently handled in special ways by the parser
+so as to ensure for instance the short-circuit evaluation of &#8216;and&#8217; and &#8216;or&#8217;.</p>
+<p>Association (implicit grouping among operators of equal precedence) is from
+left to right at all levels, with the exception of the level of &#8216;^&#8217; at which
+association is from right to left. A monadic (prefix) use of an operator
+symbol has the same precedence as a dyadic (infix) use of the same symbol,
+except that a monadic operator symbol that is immediately preceded by a dyadic
+one, thereby effectively gets the highest possible precedence (the latter
+stipulation is needed to ensure consistency of precedence rules).</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>-x+y    is parsed as    (-x)+y
+-a%p    is parsed as    -(a%p)
+-a^b    is parsed as    -(a^b)
+a+-b^c  is parsed as    a+((-b)^c)
+a/b*c   is parsed as    (a/b)*c
+a^-1    is parsed as    a^(-1)
+a/-b+c  is parsed as    (a/(-b))+c
+a/-b*c  is parsed as    (a/(-b))*c
+a/-b^c  is parsed as    a/((-b)^c)
+</pre></div>
+</div>
+<p>All operator symbols can be used as monadic operators; doing so it may in some
+cases be necessary to separate the operator by white space from a preceding
+operator symbol to avoid a two-character operator symbol from being formed.</p>
+</div>
+<div class="section" id="primary-expressions-subscriptions-function-calls-atomic-expressions">
+<h2>Primary expressions: subscriptions, function calls, atomic expressions<a class="headerlink" href="#primary-expressions-subscriptions-function-calls-atomic-expressions" title="Permalink to this headline">¶</a></h2>
+<p>Primary expressions are sufficiently strongly bound to never require
+parenthesis around them. They comprise subscriptions of aggregate values,
+function calls, and expressions like identifiers without any subexpressions.</p>
+<p>Subscriptions and function calls generally consist of a primary expression
+(often just an identifier) followed by an expression enclosed in &#8216;[&#8216; and &#8216;]&#8217;
+(for subscriptions) or &#8216;(&#8216; and &#8216;)&#8217; (for calls). If the latter expression is a
+tuple display its outer parentheses can be omitted; thus selecting an entry
+from a matrix &#8216;a&#8217; can be written &#8216;a[i,j]&#8217;, and calling a function &#8216;f&#8217; with a
+3-tuple as argument can be written &#8216;f(x,y,z)&#8217;. The initial expression (giving
+the aggregate of function) can be any primary level expression, or any closed
+clause, except that for technical reasons the grammar forbids writing &#8216;()&#8217;
+here (this is no problem since the empty tuple is neither an aggregate nor a
+function), which construct is artificially introduced at the secondary level.</p>
+<p>Atomic expressions are identifiers, non-negative integer constants, the
+keywords true, false, string constants (enclosed in quotes and on a single
+line), the symbol &#8216;$&#8217; (representing the value of the last evaluated
+expression) and specializations of overloaded symbols. The latter are formed
+by an (overloaded) identifier or operator followed by &#8216;&#64;&#8217; and a type.</p>
+</div>
+<div class="section" id="closed-expressions-displays-and-groupings-conditionals-loops">
+<h2>Closed expressions: displays and groupings, conditionals, loops<a class="headerlink" href="#closed-expressions-displays-and-groupings-conditionals-loops" title="Permalink to this headline">¶</a></h2>
+<p>These compound expressions include delimiters at both ends, so they never need
+(additional) parentheses; a single parenthesized expression also forms a closed
+expression. The different forms are as follows, where &#8216;*&#8217; is any expression</p>
+<p>if * then * fi                  which abbreviates: if * then * else () fi)
+if * then * else * fi
+if * then * elif * then ... fi
+while * do * od
+for pattern in * do * od        optionally with ~ before do and/or od
+for pattern &#64; ident in * do * od idem
+for ident : * do * od            idem (implicit &#8216;from 0&#8217;)
+for ident : * from * do * od     idem
+for ident : * downto * do * od  deprecated, means &#8216;for ident : to * ~do * od&#8217;
+( * )                           a parenthesized expression
+begin * end                     which is equivalent to: ( * )
+( * , * , ... )                 which builds a tuple
+[ * , ... ]                     which builds a list
+[ * , ... | * , ... | ... ]     which builds a matrix by rows</p>
+</div>
+<div class="section" id="identifier-patterns">
+<h2>Identifier patterns<a class="headerlink" href="#identifier-patterns" title="Permalink to this headline">¶</a></h2>
+<p>Identifier patterns occur in parameter lists for functions, and in local
+(&#8216;let&#8217;) or global (&#8216;set&#8217;) declarations. An identifier pattern can be a single
+identifier, or a parenthesized and comma-separated list of optional identifier
+patterns, optionally followed by &#8216;:&#8217; and an identifier. If a pattern consist
+of or ends with an identifier, that identifier names the entire value
+corresponding to the pattern. If it contains a parenthesized and
+comma-separated list, the corresponding value must have tuple type with as
+many components as the list, and each identifier pattern in the list
+corresponds to the component of that tuple value at its position. If a pattern
+is absent at some position, the corresponding component is not individually
+named in the pattern, nor (should it be a tuple) any of its own components.</p>
+</div>
+<div class="section" id="types">
+<h2>Types<a class="headerlink" href="#types" title="Permalink to this headline">¶</a></h2>
+<p>In the grammar types occur in parameter lists, casts, and in specializations
+of overloaded symbols. Currently possibilities of specifying types is fairly
+limited: they are built up of primitive types (one of &#8216;int&#8217;, &#8216;rat&#8217;, &#8216;bool&#8217;,
+&#8216;string&#8217;, &#8216;vec&#8217;, &#8216;mat&#8217;, &#8216;ratvec&#8217;, &#8216;Lie_type&#8217;, &#8216;RootDatum&#8217;, &#8216;InnerClass&#8217;,
+&#8216;RealForm&#8217;, &#8216;CartanClass&#8217;, &#8216;KGBElt&#8217;, &#8216;Block&#8217;, &#8216;Param, &#8216;Split&#8217;, &#8216;ParamPol&#8217;)
+using three constructors: the list constructor [*], the tuple constructor
+(<em>,</em>,...) (with at least two component types; around a single type parentheses
+just provide redundant grouping) and the function constructor
+(<em>,</em>,...-&gt;*,*,...) (here if the number of argument or result types is not
+exactly one, parentheses are implicitly assumed around the list, making it
+into a tuple type). There are no type names standing for non-primitive types,
+with one exception: &#8216;void&#8217; is predefined as name for the tuple type with no
+component types. Because of ambiguity with empty tuple displays and ditto
+parameter lists, one cannot use &#8216;()&#8217; to designate this 0-tuple type.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../operators.html" class="btn btn-neutral float-right" title="Basic Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="misc.html" class="btn btn-neutral" title="Miscellaneous Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  test change Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

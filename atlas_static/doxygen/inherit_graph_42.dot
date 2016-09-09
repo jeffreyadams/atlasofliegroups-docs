@@ -1,0 +1,11 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="other",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="atlas::containers::\lsl_list\< atlas::interpreter\l::BufferedInput::input_record,\l std::allocator\< atlas::interpreter\l::BufferedInput::input_record \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1sl__list.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="atlas::containers::\lmirrored_sl_list\< atlas\l::interpreter::BufferedInput\l::input_record \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1mirrored__sl__list.html"];
+}

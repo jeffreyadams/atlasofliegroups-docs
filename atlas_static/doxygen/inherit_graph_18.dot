@@ -1,0 +1,27 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="atlas::bitvector::BitVector\lList\< dim \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1bitvector_1_1BitVectorList.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="atlas::lietype::InnerClassType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1lietype_1_1InnerClassType.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="atlas::lietype::LieType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1lietype_1_1LieType.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="atlas::matrix::Vector\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Vector.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="atlas::permutations\l::Permutation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1permutations_1_1Permutation.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="atlas::weyl::WeylWord",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1weyl_1_1WeylWord.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="atlas::matrix::Vector\l\< arithmetic::Numer_t \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Vector.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="atlas::matrix::Vector\l\< byte \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Vector.html"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="atlas::matrix::Vector\l\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Vector.html"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="partition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classpartition.html"];
+}

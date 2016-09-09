@@ -1,0 +1,313 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Defining and Modifying Identifiers &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="The Axis Language" href="../axis.html"/>
+        <link rel="next" title="Defining Functions and Operators" href="def_func_op.html"/>
+        <link rel="prev" title="Implicit Conversions" href="implicit_conversion.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../axis.html">The Axis Language</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="design_principles.html">Design Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types.html">Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usr_defined_functions.html">User Defined Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
+      
+    <li>Defining and Modifying Identifiers</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/axis/def_mod_identifiers.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="defining-and-modifying-identifiers">
+<h1>Defining and Modifying Identifiers<a class="headerlink" href="#defining-and-modifying-identifiers" title="Permalink to this headline">¶</a></h1>
+<p>As shown in the examples above, global identifiers are introduced using &#8216;set&#8217;,
+while local identifiers are introduced with &#8216;let&#8217;. Local identifiers can be
+used only in the expression after the following &#8216;in&#8217;, which may however be an
+arbitrarily large composite expression or clause. Note that in both cases
+the initial keyword is necessary; without it the &#8216;=&#8217; would be interpreted as
+equality test (probably leading to an error due to an undefined left operand).</p>
+<p>For modifying an existing variable, global or local, the assignment operator
+&#8216;:=&#8217; is provided. It is mainly intended for programming use rather than for
+expression evaluation. For instance, a function returning a list of numbers
+1,...,n may be written as follows (while-loops are explained later):</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set initial (int n) = let i=0 in while i&lt;n do i:=i+1 od
+Defined initial: (int-&gt;[int])
+</pre></div>
+</div>
+<p>Here the part &#8216;let i=0 in&#8217; serves to introduce &#8216;i&#8217; as a variable, whose value
+is then repeatedly modified by the assignment &#8216;i:=i+1&#8217;. (The values from the
+assignments in the successive iterations of the loop body are then gathered
+into a row-of-integer value; a property of axis that is uncommon in other
+languages.) Any identifier can be used as a variable, including one introduced
+as a function argument; for instance for a decreasing list n-1,...,1,0 one
+could write:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set initial_downwards (int n) = while (n:=n-1)&gt;=0 do n od
+Defined initial_downwards: (int-&gt;[int])
+</pre></div>
+</div>
+<p>For identifiers holding an array, vector or matrix, one can also assign to
+individual entries, as in &#8216;v[i]:=x&#8217; or &#8216;m[i,j]=i+j&#8217;; for matrices one can also
+assign to a whole column, provided the vector that replaces it has the correct
+size; for instance m[i]:=m[i]+m[j]*2 adds column j of m twice to its column i.</p>
+<p>It is important to note that (unlike many programming languages) axis does
+not distinguish between values and objects. In other words two different names
+can never have any intimate relation (sharing an object) to each other, so
+assigning to one name will have no effect on the value associated to the other
+name. Therefore evaluating &#8216;let vi=v[i] in vi:=3&#8217; does not have the same
+effect as evaluating v[i]:=3, as this would suppose that assigning to vi
+changes the (vector) value associated to v. Instead the value of the local
+name vi is assigned to just before that name disappears, so there is no side
+effect at all and the expression (it just returns 3), which then is rather
+pointless. By the same token calling functions is conceptually strictly by
+value (even if the implementation often avoids duplicating values); a function
+is allowed to assign to the names of its arguments, but this has no effect for
+the caller. For instance the assignment to its argument in the above function
+&#8216;initial_downwards&#8217; does not have any affect for callers of this function, who
+do not know about the identifier &#8216;n&#8217; in &#8216;initial_downwards&#8217;, or of its use. To
+pass information back from function to its caller, use the return value(s).</p>
+<p>As a consequence of this principle, an assignment like v[i]:=x is really an
+assignment to the name v; this value is replaced by a value differing only at
+index i from the value it previously held.</p>
+<p>(There is one way a function f can alter values of names of its caller g, but
+this requires that f be defined as a local function inside the body of g. Now
+f can, apart from its own parameters and local variables, can also &#8220;see&#8221; the
+names of g that are accessible at the point where f is defined, and just like
+any subexpression of the body of g, the body of f can assign to those names.)</p>
+<p>In some cases it is desirable to introduce a name, but to forbid any form of
+assignment to that name; for instance if the value of a global variable is
+used inside a function, it can be important to ensure that the value obtained
+is that at the time the function was defined. Such constant names can be
+introduced by prefixing the name by &#8216;!&#8217;, as in &#8216;set !s = Split:(0,1)&#8217; (this
+applies to local names as well as to global ones, and to function parameters,
+and also to components of a pattern matching a tuple value). Names introduced
+locally in loops (as described below) are automatically considered constant in
+this sense, since assigning to them has little effect and is usually an error.</p>
+<p>As a convenience one can write &#8216;x +:= y&#8217; instead of &#8216;x := x + y&#8217;, and
+similarly for any operator in the place of &#8216;+&#8217;, so in the above examples one
+could say i+:=1 and n-:=1. This is a transformation performed in the parser,
+so &#8216;+:=&#8217; is not really an operator (and is composed of separate &#8216;+&#8217; and &#8216;:=&#8217;).
+It should be noted that this requires a simple variable as left operand: the
+parser will reject for instance v[i]+:=1; this should be written v[i]:=v[i]+1.</p>
+<p>The rules for assignment are quite different from the introduction of a
+variable (by &#8216;set&#8217; or &#8216;let&#8217;): the variable must have been introduced
+beforehand, and the value assigned must have the same type as the previously
+held value. An assignment need not be used exclusively for the change to its
+variable it causes; it is also a subexpression in its own right whose value is
+the value assigned (both for ordinary and for component assignments); we
+already used this fact in the examples above.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="def_func_op.html" class="btn btn-neutral float-right" title="Defining Functions and Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="implicit_conversion.html" class="btn btn-neutral" title="Implicit Conversions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  test change Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

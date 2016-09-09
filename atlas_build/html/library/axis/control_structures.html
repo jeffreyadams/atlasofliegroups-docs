@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Control Structures &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="The Axis Language" href="../axis.html"/>
+        <link rel="next" title="Recursion" href="recursion.html"/>
+        <link rel="prev" title="Overloading v.s. Redefining, and Conflicts" href="overload_redef_conflicts.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../axis.html">The Axis Language</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="design_principles.html">Design Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types.html">Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Control Structures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#sequenced-expressions">Sequenced expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#conditional-expressions-and-case-expressions">Conditional expressions and case expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#loops">Loops</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usr_defined_functions.html">User Defined Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
+      
+    <li>Control Structures</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/axis/control_structures.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="control-structures">
+<span id="control-struc"></span><h1>Control Structures<a class="headerlink" href="#control-structures" title="Permalink to this headline">¶</a></h1>
+<p>As control structures, the axis language currently provides sequenced
+expressions, conditional and case expressions and various kinds of loops. Each
+of them optionally deliver values (which is somewhat unusual in the case of
+loops), though they can also serve more conventionally for selecting/iterating
+actions.</p>
+<div class="section" id="sequenced-expressions">
+<h2>Sequenced expressions<a class="headerlink" href="#sequenced-expressions" title="Permalink to this headline">¶</a></h2>
+<p>Sequenced expressions are simply sequences of expressions separated by
+semicolons; together they form a new expression, whose evaluation consists of
+the successive evaluation of the component expressions from left to right, and
+whose value is taken to be that of the final component expression evaluated.
+The values of the other expressions (if any) are ignored; we say they are
+voided. Voiding is like an implicit conversion to a $0$-tuple &#8216;()&#8217; that can be
+applied to values of all (non-void) types. In particular voiding is recorded
+in the expression after type analysis, and the evaluator uses this information
+to suppress the construction of any (components of) values that are destined
+to be immediately voided, evaluating in those cases only for side effects;
+this can be particularly relevant for the values of function calls and loops.</p>
+<p>One might consider &#8216;;&#8217; as an associative operator with very low precedence
+(lower than assignment, and on the same level as &#8216;let&#8217;: if the final operand
+starts with &#8216;let&#8217; it need not be parenthesized) that evaluates its operands in
+order and returns the value of the rightmost one. Occasionally useful
+(especially in loops) is its variant written as the keyword &#8216;next&#8217;, that also
+evaluates its operands (usually just two of them) from left to right, but
+returns the value of the leftmost one. Thus in &#8216;e1; e2; e3 next e4&#8217; all
+expressions are evaluated in order, and the value of &#8216;e3&#8217; is returned. Both
+forms have the same precedence and associate to the right (as &#8216;let&#8217; requires
+them to), which implies that in cases like &#8216;e1; e2 next e3; e4 next e5&#8217;, the
+value will be that of the expression before the first &#8216;next&#8217; (i.e., &#8216;e2&#8217;);
+clearly such multiple use of &#8216;next&#8217; is rather pointless.</p>
+<p>Being at the same precedence level means that the scope of a &#8216;let&#8217; is not
+terminated by a following semicolon: in &#8216;let x=3 in x:=2*x; x+3&#8217; the final &#8216;x&#8217;
+is still in scope. On the other hand expression with a semicolon always need
+parentheses when used as operands. They do not need them in function
+arguments, as there the parentheses and commas provide sufficient grouping; so
+&#8216;f(x;y,z)&#8217; is OK though maybe more readable when written as &#8216;(x;f(y,z))&#8217;. Such
+usage is rare, but the same goes for control structures like conditionals and
+loops: these all provide their own closing symbols, so that semicolons can be
+freely used inside those. Whether or not necessary, it can be useful to group
+large sequences of expressions separated by semicolon with the keywords
+&#8216;begin&#8217; and &#8216;end&#8217;, as a more readable equivalent alternative to parentheses.</p>
+</div>
+<div class="section" id="conditional-expressions-and-case-expressions">
+<h2>Conditional expressions and case expressions<a class="headerlink" href="#conditional-expressions-and-case-expressions" title="Permalink to this headline">¶</a></h2>
+<p>Conditional expressions take the form:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>if ... then ... else ... fi
+</pre></div>
+</div>
+<p>for a simple 2-way branch, or a more elaborate multi-way branch:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>if   ... then ...
+elif ... then ...
+elif ... then ...
+...
+else ...
+fi
+</pre></div>
+</div>
+<p>The else branch may be omitted, the implied branch then being void: &#8216;else ()&#8217;.</p>
+<p>If the selection is determined by an integral expression &#8216;I&#8217; with values in the
+range 0,1,...,n-1 (for instance the result of a reduction modulo n), then the
+multi-way branching is better done using a case-expressions, of the form:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>case I
+in E_0
+, E_1
+, ...
+, E_{n-1}
+esac
+</pre></div>
+</div>
+<p>In the conditional expression, the branches after &#8216;then&#8217; and &#8216;else&#8217; should all
+have the same type that will become the type of the conditional expression, or
+they should be implicitly convertible to a common type. Type analysis tries to
+cleverly guess that common type, and in particular if any of the branches has
+void type, then all non-void branches will be voided (any value is ignored).
+Should axis fail to guess the intended type (with type analysis reporting
+&#8220;Could not find common type for branches&#8221;), then one can always make the type
+desired (possibly void) explicit, by casting the whole conditional expression
+to it. Casting &#8216;T: if .. then E0 elif .. then E1 else E2 fi&#8217; is equivalent to
+casting all branches: if .. then T:E0 elif .. then T:E1 else T:e2 fi&#8217;.</p>
+<p>The conditions (after &#8216;if&#8217; or &#8216;elif&#8217;) must be expressions of type &#8216;bool&#8217;. For
+such expressions one can use logical connectives &#8216;or&#8217;, &#8216;and&#8217; and &#8216;not&#8217;. These
+behave like operators with precedences just above that of assignment (and
+increasing in the order given); they are however handled in the parser, which
+will for instance transform &#8216;x and y&#8217; into &#8216;if x then y else false fi&#8217;. In
+particular &#8216;or&#8217; and &#8216;and&#8217; short-circuit: they only evaluate their second
+operand if the first operand is not decisive. The user cannot redefine or
+overload these operators. Usage of &#8216;not&#8217; in conditions has no runtime cost, as
+axis will rewrite internally to an equivalent expression without &#8216;not&#8217;.</p>
+</div>
+<div class="section" id="loops">
+<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="while-loops">
+<h3>While loops<a class="headerlink" href="#while-loops" title="Permalink to this headline">¶</a></h3>
+<p>Loops come in various flavors, each one returning a row value with one
+component for each iteration of the loop (however for loops in voided context,
+no result is constructed). There are simple while loops:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>while ... do ... od
+</pre></div>
+</div>
+<p>with as usual a continuation condition after &#8216;while&#8217;. This condition is
+evaluated before each iteration, but if some action must be performed each
+time before the condition is tested, it suffices to use a sequenced expression
+as condition. The other expression is the loop body; it is evaluated as long
+as the condition evaluated to &#8216;true&#8217;, and the values (all of the same type) of
+the evaluations of the loop body for, in order, the components of the row
+value returned by the loop. Obviously evaluating the loop body (or maybe of the
+condition itself) must potentially involve a a side effect susceptible of
+changing the loop condition, if the loop is ever to terminate. So the loop in:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>let i=0 in while i&lt;=n do i+:=1 od
+</pre></div>
+</div>
+<p>will produce a row [1,2,...,n]. Often the side effect is required to
+take place after a component to the row result is contributed; to that end and
+expression sequenced by &#8216;next&#8217; can be used. So for instance the variation:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>let i=0 in while i&lt;=n do i next i+:=i od
+</pre></div>
+</div>
+<p>produces the row [0,1,...,n-1].</p>
+</div>
+<div class="section" id="counted-for-loops">
+<h3>Counted for loops<a class="headerlink" href="#counted-for-loops" title="Permalink to this headline">¶</a></h3>
+<p>The remaining loops are &#8216;for&#8217; loops, which determine the number of iterations
+at the beginning rather than dynamically. Their syntax is somewhat unusual, in
+that it does not specify the starting and ending values of the iteration, but
+rather the number of iterations and the smallest index (which may be the first
+or the last one, depending on the sense of the loop); this appears to be less
+conducive to producing off-by-one errors. Thus an iteration from 0 to n-1 is
+specified as n iterations with lowest index 0, an iteration from 1 to n as n
+iterations with lowest index 1, and an iteration from n-1 to 0 as n downwards
+iterations with lowest index 0. More specifically, one specifies (in this
+order) the number of iterations, the direction (increasing or decreasing) and
+the lower bound of the range (only unit steps are supported, and a negative
+iteration count is interpreted as no iterations). The iteration count is
+preceded by &#8216;:&#8217;, the direction by the keyword &#8216;from&#8217; (increasing) or &#8216;downto&#8217;
+(decreasing), and the lower bound follows. In the common case of increasing
+iteration starting at 0, the part &#8216;from 0&#8217; may be omitted. So:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 0 do i od
+</pre></div>
+</div>
+<p>is an alternative way to produce [0,1,...,n-1], and it may be abbreviated:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n do i od .
+</pre></div>
+</div>
+<p>To obtain a more traditional range [1,2,...,n], one may say:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 1 do i od .
+</pre></div>
+</div>
+<p>For the reverse list [n-1,...,1,0] use &#8216;~&#8217; as in:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n ~ do i od
+</pre></div>
+</div>
+<p>and the shifted reversed list [n,...,1] is produced by:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 1 ~ do i od
+</pre></div>
+</div>
+<p>(This used to be written as &#8216;for i : n downto 1 do i od&#8217;, but this syntax is
+redundant given the new more flexible tilde syntax, and is now deprecated.)</p>
+<p>If something is just to be repeated n times, the loop index can be omitted:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for :n do 1 od { generate a list of n ones }
+</pre></div>
+</div>
+</div>
+<div class="section" id="iteration-over-composite-values">
+<h3>Iteration over composite values<a class="headerlink" href="#iteration-over-composite-values" title="Permalink to this headline">¶</a></h3>
+<p>Rather than counted iteration, it is often convenient to use iteration over an
+existing composite value. If V is a row value, or vector, rational vector
+string or matrix then:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for e in V do ... od
+</pre></div>
+</div>
+<p>iterates over the components of V (for a string these components are
+one-character strings; for a matrix they are its columns), setting e to such a
+component before evaluating the loop body. For instance, one can produce the
+scalar multiple by 3 of a vector V using:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>vec: for e in V do 3*e od
+</pre></div>
+</div>
+<p>(the &#8216;vec:&#8217; serves to assemble the entries in a vector rather than a list).
+In some cases it is useful to know the index of the component taken as well
+inside the loop body, in other words the iteration count starting from 0; this
+can be accessed by writing &#8216;&#64; index&#8217; before &#8216;in&#8217; where &#8216;index&#8217; is an
+identifier used to bind the index to, This explains the vector addition above:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>set +(vec v,vec w) = vec: for vi@i in v do vi+w[i] od
+</pre></div>
+</div>
+<p>where the index i is needed to select the corresponding entry from the other
+vector. These value-returning loops are quite flexible, for instance:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>mat: for j = n do for i = m do if i=j then 1 else 0 fi od od
+</pre></div>
+</div>
+<p>produces an m*n matrix with unit diagonal entries and zeroes elsewhere. Of
+course the case m=n of the identity matrix is most common, be we allowed
+distinct values of m and n to stress that the column-oriented conventions
+force the outer loop to be over the columns and the inner loop to be over the
+rows. (In this case the relevant convention is not one associated to the loops
+themselves, but the one for the implicit conversion of a row of integer lists
+to a value of type &#8216;mat&#8217;; but all these conventions are &#8220;column-oriented&#8221; for
+compatibility.) To add such a matrix to an existing matrix M it suffices to
+write (with again columns being traversed in the outer loop and rows in the
+inner loop):</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for col@j in M do for entry@i in col do entry+if i=j then 1 else 0 fi od od
+</pre></div>
+</div>
+<p>By the way the standard definitions in basic.at allow replacing the expression
+&#8216;if i=j then 1 else 0 fi&#8217; by &#8216;#(i=j)&#8217;, a axis version of the Iverson symbol.</p>
+<p>These for loops can iterate over every kind of composite value that allows
+subscription (but although one can obtain matrix _entries_ directly by
+subscription, one cannot directly iterate over them; this requires two nested
+loops as the last example above illustrates). Thus one can loop over
+characters in a string (which for lack of a character type are turned into
+single-character strings), entries of a rational vector.</p>
+<p>One can also loop over the (nonzero) terms of a &#8216;ParamPol&#8217; value, which is
+convenient though somewhat special. One should think of a &#8216;ParamPol&#8217; not as a
+list of terms (there is no absolute meaning to the order in which terms are
+presented) but as an association of coefficients (of type &#8216;Split&#8217;) to values
+of type &#8216;Param&#8217; (which values have been made standard, nonzero, and final in
+order for the association to be mathematically meaningful; they also have
+their infinitesimal character representative made dominant so that terms with
+equivalent Param values will combine). This is reflected by allowing the
+coefficient associated in the ParamPol &#8216;pol&#8217; to the Param value &#8216;p&#8217; to be
+written as &#8216;pol[p]&#8217;. Then iterating over a &#8216;pol&#8217;, a term with Param &#8216;p&#8217; and
+coefficient &#8216;c&#8217; is presented as a component &#8216;c&#8217; stored at index &#8216;p&#8217;. Therefore
+a loop over such terms will take the form:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for c@p in pol do ... od
+</pre></div>
+</div>
+<p>During execution, each time &#8216;c&#8217; will be a nonzero &#8216;Split&#8217; coefficient, and &#8216;p&#8217;
+the corresponding (standard final nonzero dominant) &#8216;Param&#8217; value. The order
+of traversal of the terms in the loop is determined by an ordering of &#8216;Param&#8217;
+values that is fixed by atlas but not easy to fully describe; however in most
+cases it ought not matter much. (This does imply that the value of this loop,
+in which the values of the loop bodies have been ordered by traversal order,
+is only rarely useful; it could be for instance if the values are then passed
+through a commutative operation, or are being sorted afterwards.) For the
+opposite operation of combining a collection of &#8216;(Split,Param)&#8217; values
+(possibly generated by a loop) into a &#8216;ParamPol&#8217; value, a built-in instance of
+&#8216;+&#8217; is provided. The collection is given as a row forming the right operand of
+&#8216;+&#8217;, while the left operand is an initial &#8216;ParamPol&#8217; to which the terms are to
+be added; often this will take the form &#8216;null_module(rf)+for ... od&#8217;.</p>
+</div>
+<div class="section" id="reversal-variants-in-loops">
+<h3>Reversal variants in loops<a class="headerlink" href="#reversal-variants-in-loops" title="Permalink to this headline">¶</a></h3>
+<p>As a general rule, if &#8216;do&#8217; in a for loop is preceded by a tilde, then the
+iteration will be performed on the same set of values as before, but traversed
+in the opposite order. If a row is produced as value of the loop, it will
+still be the values of the loop bodies in the order of traversal. However
+preceding the final &#8216;od&#8217; be a tilde assembles the values of the loop bodies in
+the order opposite to iteration. The two variants can be combined (traversing
+backwards, but assembling the result in the original increasing order), and
+apply also to versions of &#8216;for&#8217; loops given below (the second variant also
+applies to &#8216;while&#8217; loops; not the first variant, which is meaningless there).</p>
+<p>Like for the while loop, the body may be a sequence expression, and it may
+have side effects. However, assignments to the variables introduced in the
+loop (index and/or value of iteration) are forbidden. This is so because it
+would usually mask an error: once the heading of a loop is processed, there is
+no way to alter the number of iterations (in particular the expressions for
+bounds or array iterated over are evaluated just once), and assignment to the
+loop index suggests that the user tries to do so anyway. (In rare cases where
+one really needs a modified version of an iteration value, copy it to a local
+variable and modify that.) In fact the loop variables are distinct for each
+iteration: if one captures them in functions, each one stays at its initial
+value; so to create a list of functions that add respectively 1,3,6, doing:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>functions := for x in [1,3,6] do (int n): n+x od
+</pre></div>
+</div>
+<p>has the desired effect (functions[1] adds 3, not the &#8220;final value&#8221; 6 of &#8216;x&#8217;).</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="recursion.html" class="btn btn-neutral float-right" title="Recursion" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="overload_redef_conflicts.html" class="btn btn-neutral" title="Overloading v.s. Redefining, and Conflicts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  test change Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

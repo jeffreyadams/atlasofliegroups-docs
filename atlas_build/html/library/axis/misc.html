@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Miscellaneous Commands &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="The Axis Language" href="../axis.html"/>
+        <link rel="next" title="Syntax Summary" href="summary.html"/>
+        <link rel="prev" title="Output, Input, and Redirection" href="in_out_redir.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../axis.html">The Axis Language</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="design_principles.html">Design Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types.html">Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Miscellaneous Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usr_defined_functions.html">User Defined Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
+      
+    <li>Miscellaneous Commands</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/axis/misc.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="miscellaneous-commands">
+<h1>Miscellaneous Commands<a class="headerlink" href="#miscellaneous-commands" title="Permalink to this headline">¶</a></h1>
+<p>Some operations, including the type checker, can be made more verbose by
+giving the command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set verbose
+</pre></div>
+</div>
+<p>which remains in effect until a subsequent command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set quiet
+</pre></div>
+</div>
+<p>is given.</p>
+<p>One can ask the state of all known identifiers by typing:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">showall</span>
+</pre></div>
+</div>
+<p>which prints the type and value of every defined function and variable. If one
+just needs to know the type of one expression, one can type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype expr
+</pre></div>
+</div>
+<p>This performs type analysis of the expression and prints the result, but does
+not evaluate anything. Overloaded function names by themselves are not a valid
+expressions, so this form cannot be used to find out function overloading.
+However by suffixing a question mark to the command, it will print the types
+of all overloads of the given (function or operator) symbol:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype + ?
+Overloaded instances of +
+  (int,int)-&gt;int
+  (rat,int)-&gt;rat
+  (rat,rat)-&gt;rat
+  (vec,vec)-&gt;vec
+  (ratvec,ratvec)-&gt;ratvec
+  (mat,int)-&gt;mat
+  (int,mat)-&gt;mat
+  (mat,mat)-&gt;mat
+  (Split,Split)-&gt;Split
+  (ParamPol,Param)-&gt;ParamPol
+  (ParamPol,(Split,Param))-&gt;ParamPol
+  (ParamPol,[(Split,Param)])-&gt;ParamPol
+  (ParamPol,ParamPol)-&gt;ParamPol
+  (string,string)-&gt;string
+  (string,int)-&gt;string
+  (int,string)-&gt;string
+  (string,(int,int))-&gt;string
+  Split-&gt;int
+</pre></div>
+</div>
+<p>Finally when you get tired of using atlas, type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; quit
+Bye.
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="summary.html" class="btn btn-neutral float-right" title="Syntax Summary" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="in_out_redir.html" class="btn btn-neutral" title="Output, Input, and Redirection" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  test change Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

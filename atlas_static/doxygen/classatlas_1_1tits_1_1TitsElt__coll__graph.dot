@@ -1,0 +1,12 @@
+digraph "atlas::tits::TitsElt"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="atlas::tits::TitsElt",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_t" ,fontname="Helvetica"];
+  Node2 [label="BitVector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" d_w" ,fontname="Helvetica"];
+  Node3 [label="atlas::weyl::TI_Entry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1weyl_1_1TI__Entry.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TwistedInvolution",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1weyl_1_1WeylElt.html",tooltip="Element of a Weyl group. "];
+}

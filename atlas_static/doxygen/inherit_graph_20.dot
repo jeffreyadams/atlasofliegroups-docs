@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="atlas::blocks::Block_base",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1blocks_1_1Block__base.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="atlas::blocks::Block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1blocks_1_1Block.html",tooltip="Represents a block of representations of an inner form of G. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="atlas::blocks::param\l_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1blocks_1_1param__block.html"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="atlas::blocks::non\l_integral_block",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1blocks_1_1non__integral__block.html"];
+}

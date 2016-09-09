@@ -1,0 +1,27 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="exception",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="atlas::interpreter\l::error_base",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1error__base.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="atlas::interpreter\l::logic_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1logic__error.html"];
+  Node3 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="atlas::interpreter\l::function_return",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1function__return.html"];
+  Node3 -> Node5 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="atlas::interpreter\l::loop_break",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1loop__break.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="atlas::interpreter\l::program_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1program__error.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="atlas::interpreter\l::expr_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1expr__error.html"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="atlas::interpreter\l::balance_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1balance__error.html"];
+  Node7 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="atlas::interpreter\l::type_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1type__error.html"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="atlas::interpreter\l::runtime_error",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1runtime__error.html"];
+  Node2 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="atlas::interpreter\l::user_interrupt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structatlas_1_1interpreter_1_1user__interrupt.html"];
+}

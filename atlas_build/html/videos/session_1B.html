@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Online Training Session 1, Part B &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../index.html"/>
+        <link rel="up" title="Online Training Videos" href="online_training.html"/>
+        <link rel="next" title="Online Training Session 2, Part A" href="session_2A.html"/>
+        <link rel="prev" title="Online Training Session 1, Part A" href="session_1A.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../atlas_lib.html">atlas Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../videos.html">Videos</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="online_training.html">Online Training Videos</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="session_1A.html">Online Training Session 1, Part A</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Online Training Session 1, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#questions-from-part-a">1. Questions from Part A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-types-root-datum">2. Data Types, Root Datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#more-about-lie-groups">3. More about Lie Groups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fundamental-weight-coordinates">4. Fundamental Weight Coordinates, <span class="math">\(Sp(8,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simple-roots-of">5. Simple Roots of <span class="math">\(SL(5,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#more-on-coordinates">6. More on Coordinates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-atlas-functions-help-file">7. The atlas-functions.help File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-lie-groups-information">8. Get Lie Groups Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-forms">9. Real Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-class">10. Inner Class</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="session_2A.html">Online Training Session 2, Part A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="session_2B.html">Online Training Session 2, Part B</a></li>
+<li class="toctree-l3"><a class="reference internal" href="session_3A.html">Online Training Session 3, Part A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="session_3B.html">Online Training Session 3, Part B</a></li>
+<li class="toctree-l3"><a class="reference internal" href="session_4A.html">Online Training Session 4, Part A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="session_4B.html">Online Training Session 4, Part B</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html">Miscellaneous Videos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../videos.html">Videos</a> &raquo;</li>
+      
+          <li><a href="online_training.html">Online Training Videos</a> &raquo;</li>
+      
+    <li>Online Training Session 1, Part B</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/videos/session_1B.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="online-training-session-1-part-b">
+<span id="session-1b"></span><h1>Online Training Session 1, Part B<a class="headerlink" href="#online-training-session-1-part-b" title="Permalink to this headline">¶</a></h1>
+<p>Defining groups and structure theory.</p>
+<div class="section" id="questions-from-part-a">
+<h2>1. Questions from Part A<a class="headerlink" href="#questions-from-part-a" title="Permalink to this headline">¶</a></h2>
+<p>Welcome back. Questions from previous hour. Function arguments/outputs queries: <code class="docutils literal"><span class="pre">whattype</span> <span class="pre">&quot;function&quot;</span> <span class="pre">?</span></code>, <code class="docutils literal"><span class="pre">&quot;function&quot;&#64;(&quot;input&quot;)</span></code>, inputs/outputs for the + function, e.g. <code class="docutils literal"><span class="pre">+&#64;(mat,int)</span></code></p>
+<video width="440" height="330" controls>
+<source src="../_static/1B_1.mp4">
+</video>
+
+<p> Right click to <a href="../_static/1B_1.mp4">download</a> this video </p></div>
+<div class="section" id="data-types-root-datum">
+<h2>2. Data Types, Root Datum<a class="headerlink" href="#data-types-root-datum" title="Permalink to this headline">¶</a></h2>
+<p>Data type: LieType, atlas functions: <code class="docutils literal"><span class="pre">simply_connected</span></code>, <code class="docutils literal"><span class="pre">adjoint</span></code>, <code class="docutils literal"><span class="pre">simple_roots</span></code>, <code class="docutils literal"><span class="pre">simple_coroots</span></code>. Root datum in atlas, isogenies; <span class="math">\(SL(2)\)</span>, <span class="math">\(GL(2)\)</span>, <span class="math">\(PSL(2)\)</span></p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_2.mp4">
+</video></div>
+<div class="section" id="more-about-lie-groups">
+<h2>3. More about Lie Groups<a class="headerlink" href="#more-about-lie-groups" title="Permalink to this headline">¶</a></h2>
+<p>More Lie groups, The file groups.at, realform data type, GL(2,R), Sp(4,R), <code class="docutils literal"><span class="pre">posroots</span></code>, <code class="docutils literal"><span class="pre">poscorrots</span></code>, <code class="docutils literal"><span class="pre">rho</span></code>, <code class="docutils literal"><span class="pre">GL(3,R)</span></code>, <code class="docutils literal"><span class="pre">SL(3,R)</span></code></p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_3.mp4">
+</video></div>
+<div class="section" id="fundamental-weight-coordinates">
+<h2>4. Fundamental Weight Coordinates, <span class="math">\(Sp(8,\mathbb{R})\)</span><a class="headerlink" href="#fundamental-weight-coordinates" title="Permalink to this headline">¶</a></h2>
+<p>The file lietypes.at, strings, type C4, fundamental weight coordinates, <span class="math">\(Sp(8,\mathbb{R})\)</span></p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_4.mp4">
+</video></div>
+<div class="section" id="simple-roots-of">
+<h2>5. Simple Roots of <span class="math">\(SL(5,\mathbb{R})\)</span><a class="headerlink" href="#simple-roots-of" title="Permalink to this headline">¶</a></h2>
+<p>Simple roots of <span class="math">\(SL(5,\mathbb{R})\)</span>, atlas coordinates.</p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_5.mp4">
+</video></div>
+<div class="section" id="more-on-coordinates">
+<h2>6. More on Coordinates<a class="headerlink" href="#more-on-coordinates" title="Permalink to this headline">¶</a></h2>
+<p>More on atlas&#8217; choice of coordinates, help files.</p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_6.mp4">
+</video></div>
+<div class="section" id="the-atlas-functions-help-file">
+<h2>7. The atlas-functions.help File<a class="headerlink" href="#the-atlas-functions-help-file" title="Permalink to this headline">¶</a></h2>
+<p>The file atlas-functions.help</p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_7.mp4">
+</video></div>
+<div class="section" id="get-lie-groups-information">
+<h2>8. Get Lie Groups Information<a class="headerlink" href="#get-lie-groups-information" title="Permalink to this headline">¶</a></h2>
+<p>More Lie group information, Lie algebra, connectednes, root datum, split, quasisplit, adjoint; <code class="docutils literal"><span class="pre">nr_of_Cartan_classes</span></code>, <code class="docutils literal"><span class="pre">print_cartan_info</span></code> (for a real torus), imaginary, real and complex roots</p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_8.mp4">
+</video></div>
+<div class="section" id="real-forms">
+<h2>9. Real Forms<a class="headerlink" href="#real-forms" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">real_forms</span></code>, for loop to print real forms, cartan classes along realforms, sp(4)</p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_9.mp4">
+</video></div>
+<div class="section" id="inner-class">
+<h2>10. Inner Class<a class="headerlink" href="#inner-class" title="Permalink to this headline">¶</a></h2>
+<p>real forms in an inner class. <span class="math">\(SL(5,\mathbb{R})\)</span>, distinguished involution, outer outomorphisms</p>
+<video width="320" height="240" controls>
+<source src="../_static/1B_10.mp4">
+</video></div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="session_2A.html" class="btn btn-neutral float-right" title="Online Training Session 2, Part A" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="session_1A.html" class="btn btn-neutral" title="Online Training Session 1, Part A" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  test change Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

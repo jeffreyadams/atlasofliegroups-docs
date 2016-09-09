@@ -1,0 +1,389 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Implicit Conversions &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="The Axis Language" href="../axis.html"/>
+        <link rel="next" title="Defining and Modifying Identifiers" href="def_mod_identifiers.html"/>
+        <link rel="prev" title="Tuple Displays and Pattern Matching" href="tuple_pattern.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../axis.html">The Axis Language</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="design_principles.html">Design Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="types.html">Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="array.html">Array</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Implicit Conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usr_defined_functions.html">User Defined Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
+      
+    <li>Implicit Conversions</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/axis/implicit_conversion.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="implicit-conversions">
+<span id="implicit-conversion"></span><h1>Implicit Conversions<a class="headerlink" href="#implicit-conversions" title="Permalink to this headline">¶</a></h1>
+<p>When types do not match exactly, axis will sometimes insert implicit type
+conversions that are ac companied by conversions of the corresponding values.
+For instance, although the &#8216;vec&#8217; type, which functions of the Atlas library
+use, models the same values as &#8216;[int]&#8217; (pronounced &#8220;row of int&#8221;; this is the
+general row-of construction applied for component type int), the two types
+have different internal representations (that of &#8216;vec&#8217; is a bit more compact).
+The row display syntax will always produce a value of row-of type, so it can
+only be used to produce a &#8216;[int]&#8217; value. What makes it nevertheless possible
+to provide &#8216;vec&#8217; values to functions that need it is the fact that atlas will
+convert between &#8216;[int]&#8217; and &#8216;vec&#8217; when the context that require this. In
+particular one can write a row display as argument to a function in a position
+that takes a &#8216;vec&#8217; value. Inversely where a &#8216;[int]&#8217; value is required, a
+function call returning &#8216;vec&#8217; will be accepted, and its result converted.</p>
+<p>Not all conversions are bidirectional; in some cases like conversion of
+integers into rational numbers no conversion in the opposite direction is
+provided. One could take the integer part (floor) of a rational number, but
+since this is not the only reasonable option, the call of an explicit function
+will be required for this conversion. Since the user has no control over
+implicit conversions (neither the set of such conversions, nor the details of
+each conversion), they only have been defined in cases where there appears to
+be no doubt about the natural (injective) way to map one type to the other.
+For similar reasons implicit conversions are defined conservatively: when for
+certain values there is no obvious conversion, an error is produced rather than
+making a guess about the desired value; the user who wishes more liberal
+treatment is invited to write and use an explicit conversion that defines it.
+For instance an implicit conversion from &#8216;[vec]&#8217; to &#8216;mat&#8217; is provided (it is
+essential for entering matrix values); a choice is built into atlas that the
+vectors will become columns (rather than rows) of the matrix, but the
+conversion will produce an error when applied to vectors of different lengths
+(rather than padding in some way), and also when applied to an empty row of
+vectors (since there is no way to know the number of rows that the resulting
+empty matrix should have). The latter point causes this implicit conversion to
+often be the wrong choice in programming situations where a row of vectors all
+of known size (but possibly without any vectors at all) needs to be converted
+into a matrix; a built-in operator &#8216;#&#8217; of signature &#8216;(int,[vec]-&gt;mat)&#8217; is
+provided that allows explicitly specifying the size of the vectors, and thus
+producing a correct result even when the row of vectors is empty.</p>
+<p>Here is a list of all implicit type conversions:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>vec       &lt;-&gt; [int]
+mat       &lt;-&gt; [vec]    (vectors are columns of the matrix)
+mat       &lt;-&gt; [[int]]  (inner arrays are columns of the matrix)
+int        -&gt; rat      (denominator 1)
+ratvec    &lt;-&gt; [rat]    (ratvec has least common denominator)
+vec        -&gt; ratvec   (denominator 1)
+[int]      -&gt; ratvec
+int        -&gt; Split
+string     -&gt; LieType  (applies Lie_type function)
+InnerClass -&gt; RootDatum
+RealForm   -&gt; InnerClass
+RealForm   -&gt; RootDatum
+Param      -&gt; ParamPol (parameter is converted to final parameter(s) first)
+</pre></div>
+</div>
+<p>At most one implicit conversion is applied to a given subexpression, so there
+is for instance no implicit conversion from &#8216;[int]&#8217; to &#8216;[rat]&#8217; passing through
+the intermediate type &#8216;ratvec&#8217;; should this chain of implicit conversions be
+desired, writing a cast &#8216;ratvec:&#8217; will allow it (the first conversion no being
+inside the cast, the second applied to the result of the cast).</p>
+<p>The one-directional conversions int-&gt;rat and string-&gt;LieType are mainly a
+convenience to users, as these conversion could be written out explicitly:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; 3+1/7       { same as 3/1+1/7 }
+Value: 22/7
+atlas&gt; Cartan_matrix(&quot;E8&quot;)  { same as Cartan_matrix(LieType(&quot;E8&quot;)) }
+Value:
+|  2,  0, -1,  0,  0,  0,  0,  0 |
+|  0,  2,  0, -1,  0,  0,  0,  0 |
+| -1,  0,  2, -1,  0,  0,  0,  0 |
+|  0, -1, -1,  2, -1,  0,  0,  0 |
+|  0,  0,  0, -1,  2, -1,  0,  0 |
+|  0,  0,  0,  0, -1,  2, -1,  0 |
+|  0,  0,  0,  0,  0, -1,  2, -1 |
+|  0,  0,  0,  0,  0,  0, -1,  2 |
+</pre></div>
+</div>
+<p>If desired, a context requiring a given type can be created by a cast: writing
+the desired type name followed by a colon and the expression. So while one
+(currently, this may change in the future) gets an error for:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; [1,1/2,1/3,1/4]
+Error during analysis of expression at &lt;standard input&gt;:...
+Type error:
+  Subexpression /(1,2) at &lt;standard input&gt;:...
+  has wrong type: found rat while int was needed.
+Type check failed
+</pre></div>
+</div>
+<p>this can be repaired by asking for a list of &#8216;rat&#8217;:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; [rat]: [1,1/2,1/3,1/4]
+Value: [1/1,1/2,1/3,1/4]
+</pre></div>
+</div>
+<p>Alternatively this input could be turned into a &#8216;ratvec&#8217;:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; ratvec: [1,1/2,1/3,1/4]
+Value: [ 12,  6,  4,  3 ]/12
+</pre></div>
+</div>
+<p>Note that here in addition to the conversion of the initial &#8216;1&#8217; from integer
+to rational, a conversion of the row from &#8216;[rat]&#8217; to &#8216;ratvec&#8217; is inserted.</p>
+<p>This conversion is applied whenever a list of rationals (or integers) is given
+in place of a &#8216;ratvec&#8217;; for instance inner_class takes a list of &#8216;ratvec&#8217;
+values as second &#8220;kernel generators&#8221; argument, and they can be specified as:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; inner_class (&quot;D4.A3&quot;,[ratvec]:[[0,1/2,1/4],[0,0,1/2]],&quot;ss&quot;)
+Value: Complex reductive group of type D4.A3, with involution defining
+inner class of type &#39;cs&#39;, with 10 real forms and 15 dual real forms
+</pre></div>
+</div>
+<p>Note that the cast &#8216;[ratvec]:&#8217; to a row of rational vectors is needed because
+(1) the call to &#8216;inner_class&#8217; is overloaded, so atlas cannot know beforehand
+that the second argument is of type &#8216;[ratvec]&#8217;, and (2) in isolation the row
+display &#8216;[[0,1/2,1/4],[0,0,1/2]]&#8217; would give a type error, similarly to the
+example just above. But once the cast is written, atlas knows that each of
+the two sub-displays in the row display must have type &#8216;ratvec&#8217;, so it is not
+necessary to separately cast those, or to cast the constants &#8216;0&#8217; to &#8216;rat&#8217;.</p>
+<p>In this call there could be one kernel generator, &#8216;[ratvec]:[[0,1/2,1/4]]&#8217;, or
+none at all &#8216;ratvec:[]&#8217; (for an empty row argument a cast is always necessary
+in order to resolve overloading). However &#8216;ratvec:[0,1/2,1/4]&#8217; will not be
+accepted, since a row of rational vectors is required, and atlas will not
+turn a single value into a singleton row automatically. (One could on the
+other hand admit such an argument by defining an additional overload of
+&#8216;inner_class&#8217; that accepts a single &#8216;ratvec&#8217; and builds a singleton row from
+it with which it then calls the built-in version of &#8216;inner_class&#8217;.)</p>
+<p>Matrices can be built from lists of columns by requiring type &#8216;mat&#8217;:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; mat: [[1,2,4],[3,5,7]]
+Value:
+| 1, 3 |
+| 2, 5 |
+| 4, 7 |
+</pre></div>
+</div>
+<p>Each list of integers giving a column is in fact first converted to a vector,
+and one could also use a vector-valued expression in its place (for instance
+an identifier bound to a vector value).</p>
+<p>For specifying a matrix by rows, a special syntax is provided:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; [ 1,2,4 | 3,5,7 | 0,-1,6 ]
+Value:
+| 1,  2, 4 |
+| 3,  5, 7 |
+| 0, -1, 6 |
+</pre></div>
+</div>
+<p>Note that &#8216;mat:&#8217; is not required here, the syntax itself forces a matrix
+result. On the other hand it will not accept &#8216;vec&#8217; values as lines; to
+construct a matrix from its row vectors, write &#8216;^[r_0,r_1,...]&#8217;, where &#8216;^&#8217; is
+a prefix operator indicating matrix transposition. Here the argument is
+implicitly converted from &#8216;[vec]&#8217; to &#8216;mat&#8217;, illustrating that although
+overloaded calls (here of the operator &#8216;^&#8217;) do not impose any type on their
+argument, they do match when an argument is found with a type (here &#8216;[vec]&#8217;)
+sufficiently close to one (here &#8216;mat&#8217;) for which an overload is defined. In
+case the list of rows is given by an expression other than a row display, and
+it could return an empty list, it is better to write &#8216;n^rows&#8217; rather than
+just &#8216;^rows&#8217;, where &#8216;n&#8217; is the constant size of the rows, as it then returns
+an n times 0 empty matrix rather than an error when &#8216;rows&#8217; is an empty list.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="def_mod_identifiers.html" class="btn btn-neutral float-right" title="Defining and Modifying Identifiers" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tuple_pattern.html" class="btn btn-neutral" title="Tuple Displays and Pattern Matching" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  test change Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
