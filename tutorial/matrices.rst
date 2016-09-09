@@ -2,7 +2,7 @@ Matrices
 =========
 
 A matrix is represented in atlas using the data type ``mat``. As with
-vectors, we define a matrix using ``=:`` and listing the entries as sets of n-tuples
+vectors, we define a matrix using ``:`` as illustrated below, and listing the entries as sets of n-tuples
 in order by columns. Note, as for vectors, the ``:`` distinguishes the matrix
 from an array of integers. For example::
 
@@ -83,7 +83,7 @@ inverse of ``A`` and ``d=1``::
 	  atlas> 
 
 
-The second command ``inverse(A) `` is not in the initial software commands. It is defined in the supplementary file ``basic.at``.
+The second command ``inverse(A)`` is not in the initial software commands. It is defined in the supplementary file ``basic.at``.
 
 
 Recall that to tell ``atlas`` where to find the ``.at`` files, you need to launch your software using the command ``./atlas --path=atlas-scripts``. If you have not done this yet, you can quit the software and launch it again with this command. 
