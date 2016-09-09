@@ -5,7 +5,7 @@ Helpful unix tools
 -------------------
 
 
-One useful tool you can use is hitting the ``TAB`` key twice. Hitting it once does command cmpletion which helps you finish a command if you dont remember how it ends. Hitting it twice does command completion on the empty string and it will tell you all possible completions::
+One useful tool you can use is hitting the ``TAB`` key twice. Hitting it once does command completion which helps you finish a command if you don't remember how it ends. Hitting it twice does command completion on the empty string and it will tell you all possible completions::
 
         atlas> {TAB,TAB}
         Display all 204 possibilities? (y or n)
@@ -18,7 +18,8 @@ Here the curly brackets mean a comment. In this case it means that you hit the k
    null         null_module
    atlas> null
 
-Note, if you try this on your version of ``atlas`` and it does not work it may be because the readline is not working, since it is by the readline library that command completion is implemented. It is reccommended that you get that fixed.
+If this does not work on your version of ``atlas`` it may be that the appropriate ``readline`` library is not installed on your computer: command completion is implemented by ``readline. Addressing this problem is worth the effort!
+
 Another useful unix command is ``ctrl-p`` which helps you find the previous command you typed. For example::
 
    atlas> set y=2
@@ -28,12 +29,12 @@ Another useful unix command is ``ctrl-p`` which helps you find the previous comm
 
 So, you can easily scroll back to the previous commands that you have typed by repeating this step. This is also useful for editing the commands without having to type them all again, as we could do in the above example by changing ``y=2`` to ``y=3`` after recalling our previous command.
 
-A simpler way to do this is to hit the up/down arrow keys. This also lets you scroll forward as well as backward.
+The same result can be gotten by hitting the up/down arrow keys. This also lets you scroll forward as well as backward.
 
 Back to Basic ``atlas`` Operations
 -----------------------------------
 
-Redifining a variable. 
+Redefining a variable. 
 
 Another useful way to redefine a variable is using the command ``:=``. However this works as long as the new variable is of the same data type as the old one. Note in the example below, that if we don't use this command we get a message "hiding previous one of type ...." ::
 
@@ -52,7 +53,7 @@ Another useful way to redefine a variable is using the command ``:=``. However t
 	atlas>
 
 
-We can set different variables to be different types of data and the software will most of the time compute operations on different data types as long as they are well defined::
+The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity:
 
    atlas> y:=3
    Identifier y: int
@@ -65,13 +66,13 @@ We can set different variables to be different types of data and the software wi
    atlas>
 
 
-This works in most cases. However, there are some exceptions when the software does not switch to the appropriate datatype. 
+This works in most cases. However, there are some exceptions when the software does not switch to the appropriate data type. 
 
 Division, ``/``; rounding down, ``\``; remainder, ``%``; n-tuples.
 ------------------------------------------------------------------
 
 
-``atlas`` also performs operations on non-integers and outputs integers or integer tupples. For example you could ask the software to round down to the the largest integer less than a number, to compute the remainder, or to exppress a rational as a pair:: 
+``atlas`` also performs operations on non-integers and outputs integers or integer tuples. For example you could ask the software to round down to the the largest integer less than a number, to compute the remainder, or to exppress a rational as a pair:: 
 
 	  atlas> x:=13
 	  Value: 13

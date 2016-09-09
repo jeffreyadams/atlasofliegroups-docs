@@ -153,7 +153,7 @@
 <h1>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="helpful-unix-tools">
 <h2>Helpful unix tools<a class="headerlink" href="#helpful-unix-tools" title="Permalink to this headline">¶</a></h2>
-<p>One useful tool you can use is hitting the <code class="docutils literal"><span class="pre">TAB</span></code> key twice. Hitting it once does command cmpletion which helps you finish a command if you dont remember how it ends. Hitting it twice does command completion on the empty string and it will tell you all possible completions:</p>
+<p>One useful tool you can use is hitting the <code class="docutils literal"><span class="pre">TAB</span></code> key twice. Hitting it once does command completion which helps you finish a command if you don&#8217;t remember how it ends. Hitting it twice does command completion on the empty string and it will tell you all possible completions:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; {TAB,TAB}
 Display all 204 possibilities? (y or n)
 </pre></div>
@@ -166,8 +166,8 @@ null         null_module
 atlas&gt; null
 </pre></div>
 </div>
-<p>Note, if you try this on your version of <code class="docutils literal"><span class="pre">atlas</span></code> and it does not work it may be because the readline is not working, since it is by the readline library that command completion is implemented. It is reccommended that you get that fixed.
-Another useful unix command is <code class="docutils literal"><span class="pre">ctrl-p</span></code> which helps you find the previous command you typed. For example:</p>
+<p>If this does not work on your version of <code class="docutils literal"><span class="pre">atlas</span></code> it may be that the appropriate <code class="docutils literal"><span class="pre">readline</span></code> library is not installed on your computer: command completion is implemented by <a href="#id1"><span class="problematic" id="id2">``</span></a>readline. Addressing this problem is worth the effort!</p>
+<p>Another useful unix command is <code class="docutils literal"><span class="pre">ctrl-p</span></code> which helps you find the previous command you typed. For example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set y=2
 Identifier y: int
 atlas&gt; {ctrl-p}
@@ -175,11 +175,11 @@ atlas&gt; set y=2
 </pre></div>
 </div>
 <p>So, you can easily scroll back to the previous commands that you have typed by repeating this step. This is also useful for editing the commands without having to type them all again, as we could do in the above example by changing <code class="docutils literal"><span class="pre">y=2</span></code> to <code class="docutils literal"><span class="pre">y=3</span></code> after recalling our previous command.</p>
-<p>A simpler way to do this is to hit the up/down arrow keys. This also lets you scroll forward as well as backward.</p>
+<p>The same result can be gotten by hitting the up/down arrow keys. This also lets you scroll forward as well as backward.</p>
 </div>
 <div class="section" id="back-to-basic-atlas-operations">
 <h2>Back to Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations<a class="headerlink" href="#back-to-basic-atlas-operations" title="Permalink to this headline">¶</a></h2>
-<p>Redifining a variable.</p>
+<p>Redefining a variable.</p>
 <p>Another useful way to redefine a variable is using the command <code class="docutils literal"><span class="pre">:=</span></code>. However this works as long as the new variable is of the same data type as the old one. Note in the example below, that if we don&#8217;t use this command we get a message &#8220;hiding previous one of type ....&#8221;</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=2
 Identifier x: int (hiding previous one of type int)
@@ -196,8 +196,9 @@ Type check failed
 atlas&gt;
 </pre></div>
 </div>
-<p>We can set different variables to be different types of data and the software will most of the time compute operations on different data types as long as they are well defined:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; y:=3
+<p>The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity:</p>
+<blockquote>
+<div>atlas&gt; y:=3
 Identifier y: int
 atlas&gt; set z=3/2
 Identifier z: rat
@@ -205,14 +206,12 @@ atlas&gt; y+z
 Value: 9/2
 atlas&gt; whattype(y+z)
 type: rat
-atlas&gt;
-</pre></div>
-</div>
-<p>This works in most cases. However, there are some exceptions when the software does not switch to the appropriate datatype.</p>
+atlas&gt;</div></blockquote>
+<p>This works in most cases. However, there are some exceptions when the software does not switch to the appropriate data type.</p>
 </div>
 <div class="section" id="division-rounding-down-remainder-n-tuples">
 <h2>Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code>; n-tuples.<a class="headerlink" href="#division-rounding-down-remainder-n-tuples" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal"><span class="pre">atlas</span></code> also performs operations on non-integers and outputs integers or integer tupples. For example you could ask the software to round down to the the largest integer less than a number, to compute the remainder, or to exppress a rational as a pair:</p>
+<p><code class="docutils literal"><span class="pre">atlas</span></code> also performs operations on non-integers and outputs integers or integer tuples. For example you could ask the software to round down to the the largest integer less than a number, to compute the remainder, or to exppress a rational as a pair:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; x:=13
 Value: 13
 atlas&gt; x\5

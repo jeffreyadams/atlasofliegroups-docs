@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; atlas 0.6 documentation</title>
+  <title>Matrices &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -118,11 +118,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>&lt;no title&gt;</li>
+    <li>Matrices</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/tutorial/data_type.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tutorial/matrices.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -132,7 +132,90 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="section" id="matrices">
+<h1>Matrices<a class="headerlink" href="#matrices" title="Permalink to this headline">¶</a></h1>
+<p>A matrix is represented in atlas using the data type <code class="docutils literal"><span class="pre">mat</span></code>. As with
+vectors, we define a matrix using <code class="docutils literal"><span class="pre">:</span></code> as illustrated below, and listing the entries as sets of n-tuples
+in order by columns. Note, as for vectors, the <code class="docutils literal"><span class="pre">:</span></code> distinguishes the matrix
+from an array of integers. For example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set A=mat:[[1,2],[3,4]]
+Identifier A: mat
+atlas&gt; A
+Value:
+| 1, 3 |
+| 2, 4 |
+
+atlas&gt; set B=[[1,2],[3,4]]
+Identifier B: [[int]]
+atlas&gt;
+atlas&gt; B
+Value: [[1,2],[3,4]]
+atlas&gt;
+</pre></div>
+</div>
+<p>Note what happens if we add <code class="docutils literal"><span class="pre">A</span></code> and <code class="docutils literal"><span class="pre">B</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A+B
+Internal error: forced value is no vector
+Evaluation aborted.
+atlas&gt;
+</pre></div>
+</div>
+<div class="section" id="operations-on-matrices">
+<h2>Operations on Matrices<a class="headerlink" href="#operations-on-matrices" title="Permalink to this headline">¶</a></h2>
+<p>Multiplication on the left, resp. on the right of <code class="docutils literal"><span class="pre">A</span></code> by a vector automatically converts the product into the product of <code class="docutils literal"><span class="pre">A</span></code> by column or row vector respectively.   The transpose of A is obtained using <code class="docutils literal"><span class="pre">^A</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A*[1,1]
+Value: [ 4, 6 ]
+atlas&gt; [1,1]*A
+Value: [ 3, 7 ]
+atlas&gt; ^A
+Value:
+| 1, 2 |
+| 3, 4 |
+
+atlas&gt;
+</pre></div>
+</div>
+<p><code class="docutils literal"><span class="pre">atlas</span></code> has two commands related to the inverse: The first one, <code class="docutils literal"><span class="pre">invert(A)</span></code> gives
+a pair <code class="docutils literal"><span class="pre">(B,d)</span></code> Where <code class="docutils literal"><span class="pre">B</span></code> is an integral multiple, <code class="docutils literal"><span class="pre">d</span></code> of the inverse of
+<code class="docutils literal"><span class="pre">A</span></code>. If <code class="docutils literal"><span class="pre">A</span></code> is invertible over the integers then <code class="docutils literal"><span class="pre">B</span></code> is the
+inverse of <code class="docutils literal"><span class="pre">A</span></code> and <code class="docutils literal"><span class="pre">d=1</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set (B,d)=invert(A)
+Identifiers B: mat (hiding previous one of type [[int]]), d: int
+atlas&gt; B
+Value:
+| -4,  3 |
+|  2, -1 |
+
+atlas&gt; d
+Value: 2
+atlas&gt; A*B
+Value:
+| 2, 0 |
+| 0, 2 |
+
+atlas&gt;
+
+
+atlas&gt; set C=mat:[[1,0],[1,1]]
+Identifier C: mat
+atlas&gt; C
+Value:
+| 1, 1 |
+| 0, 1 |
+atlas&gt; invert(C)
+Value: (
+| 1, -1 |
+| 0,  1 |
+,1)
+atlas&gt;
+</pre></div>
+</div>
+<p>The second command <code class="docutils literal"><span class="pre">inverse(A)</span></code> is not in the initial software commands. It is defined in the supplementary file <code class="docutils literal"><span class="pre">basic.at</span></code>.</p>
+<p>Recall that to tell <code class="docutils literal"><span class="pre">atlas</span></code> where to find the <code class="docutils literal"><span class="pre">.at</span></code> files, you need to launch your software using the command <code class="docutils literal"><span class="pre">./atlas</span> <span class="pre">--path=atlas-scripts</span></code>. If you have not done this yet, you can quit the software and launch it again with this command.</p>
+<p>You can then input the file <code class="docutils literal"><span class="pre">basic.at</span></code> and continue.</p>
+</div>
+</div>
+
 
            </div>
           </div>
