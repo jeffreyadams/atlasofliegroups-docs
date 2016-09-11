@@ -156,7 +156,7 @@ the output is not a ``vec``, but rather an array of ``vecs``. In this
 case, only one ``vec``. 
 
 Note that the general solution of this matrix equation is a one
-dimensional vector space. ``atlas`` just chooses a single integral
+dimensional vector space. ``atlas`` just chooses a single integer
 solution of the equation. To find all the solutions you need to find the kernel.
 
 If we try to solve an equation with no solutions we would get the empty array::
@@ -191,9 +191,7 @@ Now let's calculate the kernel of our singular matrix. We use the function ``ker
     | -2 |
     
 
-Note this is a matrix. We can multiply it by A and get 0. However,
-    ``atlas`` will not think of it as a vector solution to the matrix
-    equation. In fact, if we call this matrix w, look what happens when we try to multiply ``v+w`` by A::
+Note this is a matrix. We can multiply it by A and get 0. However, ``atlas`` will not think of it as a vector solution to the matrix equation. In fact, if we call this matrix w, look what happens when we try to multiply ``v+w`` by A::
 
     atlas> set w= kernel (A) 
     Identifier w: mat 
@@ -222,17 +220,17 @@ They are all solutions of our matrix equation as was expected.
 
 Let's try another matrix::
 
-atlas>  A:=[[1,0,0],[0,0,0],[0,0,0]]
-Value: 
-| 1, 0, 0 |
-| 0, 0, 0 |
-| 0, 0, 0 |
-
-atlas> kernel (A)
-Value: 
-| 0, 0 |
-| 0, 1 |
-| 1, 0 |
+      atlas>  A:=[[1,0,0],[0,0,0],[0,0,0]]
+      Value: 
+      | 1, 0, 0 |
+      | 0, 0, 0 |
+      | 0, 0, 0 |
+      
+      atlas> kernel (A)
+      Value: 
+      | 0, 0 |
+      | 0, 1 |
+      | 1, 0 |
 
 
 
