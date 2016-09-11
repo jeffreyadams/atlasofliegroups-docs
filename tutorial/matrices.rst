@@ -182,21 +182,58 @@ call this vector ``v``::
        atlas>
 
 
-Now let's calculate the kernel of a singular matrix. We use the function ``kernel`` with input a matrix and output another matrix whose columns are a basis of the kernel::
+Now let's calculate the kernel of our singular matrix. We use the function ``kernel`` with input a matrix and output another matrix whose columns are a basis of the kernel::
 
-    atlas>  A:=[[1,0,0],[0,0,0],[0,0,0]]
-    Value: 
-    | 1, 0, 0 |
-    | 0, 0, 0 |
-    | 0, 0, 0 |
-    
     atlas> kernel (A)
     Value: 
-    | 0, 0 |
-    | 0, 1 |
-    | 1, 0 |
+    |  2 |
+    |  1 |
+    | -2 |
     
+
+Note this is a matrix. We can multiply it by A and get 0. However,
+    ``atlas`` will not think of it as a vector solution to the matrix
+    equation. In fact, if we call this matrix w, look what happens when we try to multiply ``v+w`` by A::
+
+    atlas> set w= kernel (A) 
+    Identifier w: mat 
+    atlas> A*(v+w) 
+    Error in expression +(v,w) at <standard input>:36:3-6 
+      Failed to match '+' with argument type (vec,mat) 
+    Type check failed 
+    
+We need to rename the column vector of ``w``::
+
+    atlas> set u=w[0] 
+    Identifier u: vec 
+    atlas> u 
+    Value: [ 2, 1, -2 ] 
+    atlas>
+    
+    atlas> A*(v+u)
+    Value: [ 3, 4, 0 ]
     atlas> 
+    
+    atlas> A*(v+3*u)
+    Value: [ 3, 4, 0 ]
+    atlas> 
+
+They are all solutions of our matrix equation as was expected.
+
+Let's try another matrix::
+
+atlas>  A:=[[1,0,0],[0,0,0],[0,0,0]]
+Value: 
+| 1, 0, 0 |
+| 0, 0, 0 |
+| 0, 0, 0 |
+
+atlas> kernel (A)
+Value: 
+| 0, 0 |
+| 0, 1 |
+| 1, 0 |
+
 
 
  
