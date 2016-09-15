@@ -65,7 +65,12 @@ Slides, continued: Finiteness of K\G/B. Parameter set for K\G/B.
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/egcXm4iC7ak?start=3160&end=3600" frameborder="0" allowfullscreen></iframe>
 
-8. Slides: 
+8. Slides: continued
+-------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/egcXm4iC7ak?start=3600" frameborder="0" allowfullscreen></iframe>
 
 
 

@@ -11,4 +11,4 @@ Tutorial
    tutorial/atlas_help_files
    tutorial/basic_commands.rst
    tutorial/vectors.rst   
-
+   tutorial/matrices.rst
