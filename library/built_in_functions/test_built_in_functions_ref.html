@@ -1,0 +1,2243 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Built-In Function References &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
+        <link rel="next" title="User Defined Functions" href="../usr_defined_functions.html"/>
+        <link rel="prev" title="Built-In Function Index" href="test_built_in_functions.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about_atlas.html">About the Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../download_and_install.html">Download and Install</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../download_and_install.html#linux">Linux</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../download_and_install.html#download-the-software">Download the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../download_and_install.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../download_and_install.html#mac">Mac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../download_and_install.html#windows">Windows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../download_and_install.html#download">Download</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../download_and_install.html#id5">Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../run_atlas.html">Run atlas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../run_atlas.html#get-atlas-running">Get atlas running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../run_atlas.html#load-scripts">Load scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../run_atlas.html#quit-atlas">Quit atlas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../help_git.html">Help with git</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#primary-commands">Primary commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#branches">Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#other-helpful-commands">Other helpful commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#getting-unstuck">Getting unstuck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#more-on-git-objects">More on git objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#tagging-and-branches">Tagging and branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#git-references">Git references</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/welcome.html">Welcome</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1A/intro.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1A/files_directories.html">Files and Directories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1A/software_basics.html">Software Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1A/helpfiles.html">Help Files</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/basics.html">Getting started using the software</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/basics.html#the-basic-at-file">The <code class="docutils literal"><span class="pre">basic.at</span></code> file</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/atlas_help_files.html">Help files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/atlas_help_files.html#atlas-help"><code class="docutils literal"><span class="pre">atlas.help</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/atlas_help_files.html#atlas-functions-help"><code class="docutils literal"><span class="pre">atlas.functions.help</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/atlas_help_files.html#scripts-help"><code class="docutils literal"><span class="pre">scripts.help</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/basic_commands.html">Basic Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/basic_commands.html#n-tupples">n-tupples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/vectors.html">Vectors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/vectors.html#operations-and-coordinates">Operations and coordinates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/matrices.html">Matrices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/matrices.html#operations-on-matrices">Operations on Matrices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/matrices.html#basic-linear-algebra-operations">Basic Linear Algebra operations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../axis.html">The Axis Language</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../axis/design_principles.html">Design Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/types.html">Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../axis/types.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/types.html#primitive-types">Primitive Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/types.html#composite-types">Composite Types</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/array.html">Array</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../axis/array.html#array-displays">Array Displays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/array.html#array-selection">Array Selection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/array.html#array-slicing">Array Slicing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/array.html#other-array-like-types">Other Array-Like Types</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/implicit_conversion.html">Implicit Conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/control_structures.html">Control Structures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../axis/control_structures.html#sequenced-expressions">Sequenced expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/control_structures.html#conditional-expressions-and-case-expressions">Conditional expressions and case expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/control_structures.html#loops">Loops</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/misc.html">Miscellaneous Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../axis/summary.html">Syntax Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../axis/summary.html#command-level">Command level</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/summary.html#quaternary-expressions-let-anonymous-functions-casts-sequences">Quaternary expressions: &#8216;let&#8217;, anonymous functions, casts, sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/summary.html#tertiary-expressions-assignments">Tertiary expressions: assignments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/summary.html#secondary-expressions-formulas">Secondary expressions: formulas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/summary.html#primary-expressions-subscriptions-function-calls-atomic-expressions">Primary expressions: subscriptions, function calls, atomic expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/summary.html#closed-expressions-displays-and-groupings-conditionals-loops">Closed expressions: displays and groupings, conditionals, loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/summary.html#identifier-patterns">Identifier patterns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../axis/summary.html#types">Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../operators.html">Basic Operators</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="basic_functions.html">Basic Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#flex">flex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#convolve">convolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#stack-rows">stack_rows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#error">error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#int-format">int_format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#to-string">to_string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#print">print</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#prints">prints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#ascii">ascii</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#ascii2">ascii</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#null">null</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basic_functions.html#null2">null</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matrix.html">Matrix Manipulating Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#id-mat">id_mat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#diagonal">diagonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#swiss-matix-knife">swiss_matix_knife</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#echelon">echelon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#diagonalize">diagonalize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#adapted-basis">adapted_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#kernel">kernel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#eigen-lattice">eigen_lattice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#row-saturate">row_saturate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#inv-fact">inv_fact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#smith-basis">Smith_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#smith">Smith</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#invert">invert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#mod2-section">mod2_section</a></li>
+<li class="toctree-l4"><a class="reference internal" href="matrix.html#subspace-normal">subspace_normal</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="lie_basics.html">Lie Group Basics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#lie-type">Lie_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#lie-type2">Lie_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#cartan-matrix">Cartan_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#cartan-matrix2">Cartan_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#cartan-matrix-type">Cartan_matrix_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#rank">rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#semisimple-rank">semisimple_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#operator">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#id9">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#smith-cartan">Smith_Cartan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#filter-units">filter_units</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#ann-mod">ann_mod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#replace-gen">replace_gen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#involution2">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#root-datum">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#root-datum2">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#root-datum3">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#root-datum4">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#quotient-basis">quotient_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#simply-connected">simply_connected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#adjoint">adjoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#dual">dual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#derived-info">derived_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#mod-central-torus-info">mod_central_torus_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#rank2">rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lie_basics.html#semisimple-rank2">semisimple_rank</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="roots_weights.html">Roots and Weights</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#simple-roots">simple_roots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#simple-coroots">simple_coroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#posroots">posroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#poscoroots">poscoroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#roots">roots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#coroots">coroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#root-coradical">root_coradical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#coroot-radical">coroot_radical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#fundamental-weight">fundamental_weight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#fundamental-coweight">fundamental_coweight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#nr-of-posroots">nr_of_posroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#root-index">root_index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#coroot-index">coroot_index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#integrality-datum">integrality_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="roots_weights.html#integrality-points">integrality_points</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="kgb_related.html">KGB Related</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#kgb">KGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#operator-2">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#cartan-class">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#length">length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#status">status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#status2">status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#cross">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#cayley">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#twist">twist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#torus-factor">torus_factor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#torus-bits">torus_bits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#kgb-elt">KGB_elt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#operator-3">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#block">block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#id13">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#id15">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#element">element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#index">index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#dual">dual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kgb_related.html#status3">status</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="param.html">Parameter, KL, print, etc.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="param.html#param">param</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#operator-4">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#real-form">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#infinitesimal-character">infinitesimal_character</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#is-standard">is_standard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#is-zero">is_zero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#is-final">is_final</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#dominant">dominant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#id7">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#cross">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#cayley">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#inv-cayley">inv_Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#cross3">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#cayley3">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#twist">twist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#orientation-nr">orientation_nr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#reducibility-points">reducibility_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#print-block">print_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#block">block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#partial-block">partial_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#length">length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#kl-block">KL_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="param.html#partial-kl-block">partial_KL_block</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="more_advanced.html">More Advanced Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#classify-involution">classify_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#inner-class">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#twisted-involution">twisted_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#inner-class2">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#inner-class3">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#operator">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#nr-of-real-forms">nr_of_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#nr-of-dual-real-forms">nr_of_dual_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#nr-of-cartan-classes">nr_of_Cartan_classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#block-sizes">block_sizes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#form-names">form_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#dual-form-names">dual_form_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#occurrence-matrix">occurrence_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#dual-occurrence-matrix">dual_occurrence_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#real-form">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#form-number">form_number</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#quasisplit-form">quasisplit_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#components-rank">components_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#count-cartans">count_Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#operator-2">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#kgb-size">KGB_size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#base-grading-vector">base_grading_vector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#cartan-order">Cartan_order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#dual-real-form">dual_real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#dual-quasisplit-form">dual_quasisplit_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#cartan-class">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#cartan-class2">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#most-split-cartan">most_split_Cartan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#cartan-info">Cartan_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#real-forms">real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#dual-real-forms">dual_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#square-classes">square_classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#fiber-partition">fiber_partition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#real-form2">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#central-fiber">central_fiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_advanced.html#initial-torus-bits">initial_torus_bits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="test_built_in_functions.html">Built-In Function Index</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Built-In Function References</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#int-int-int">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rat-int-rat">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rat-rat-rat">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-vec-vec">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-ratvec-ratvec">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mat-int-mat">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-mat-mat">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mat-mat-mat">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#split-split-split">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parampol-param-parampol">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parampol-split-param-parampol">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parampol-parampol-parampol">+</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-int">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id20">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rat-rat">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id23">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-vec">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id26">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-ratvec">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id29">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id31">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id33">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id35">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#split-split">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id38">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id40">-</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id42">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id44">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id46">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-int-vec">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-int-ratvec">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-rat-ratvec">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-vec-int">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mat-vec-vec">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mat-ratvec-ratvec">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id54">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-mat-vec">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-mat-ratvec">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id58">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-parampol-parampol">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#split-parampol-parampol">*</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id63">\</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id65">\</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id66">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rat-int-int">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id69">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id71">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id73">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-vec-int">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id76">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lietype-lietype">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kgbelt-realform-int">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block-realform-realform">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#param-kgbelt-vec-ratvec">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#split-int-int">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-int-int-int">\%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id84">^</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id86">^</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-mat">^</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mat-mat">^</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-vec-mat">^</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-int-rat">/</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id92">/</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id94">/</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id96">/</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-int-ratvec">/</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id99">/</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id101">/</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-int-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rat-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rat-rat-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bool-bool-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#string-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#string-string-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-vec-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-ratvec-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mat-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mat-mat-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#realform-realform-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#innerclass-innerclass-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kgbelt-kgbelt-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#param-param-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#split-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#split-split-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parampol-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parampol-parampol-bool">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id124">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id126">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id128">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id130">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id132">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id134">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id136">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id138">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id140">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id142">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id144">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id146">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id148">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id150">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id152">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id154">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id156">!=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id158">&gt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id160">&gt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id162">&gt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id164">&gt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id166">&gt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id168">&gt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id170">&gt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id172">&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id174">&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id176">&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id178">&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id180">&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id182">&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id184">&gt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id186">&lt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id188">&lt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id190">&lt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id192">&lt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id194">&lt;=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id196">&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id198">&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id200">&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id202">&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id204">&lt;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#string-string-string">##</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#string-string">##</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id208">##</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id210">##</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-format">int_format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ascii">ascii</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ascii-int-string">ascii</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#string-int">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vec-int">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratvec-int">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mat-int-int">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id217">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#int-vec-vec">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id220">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lietype-int">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block-int">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parampol-int">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flex-add">flex_add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flex-sub">flex_sub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#convolve">convolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#null">null</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#null-int-int-mat">null</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transpose">transpose</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id-mat-int-mat">id_mat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#diagonal">diagonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stack-rows">stack_rows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#swiss-matrix-knife">swiss_matrix_knife</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#matrix-slicer">matrix slicer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#echelon">echelon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#diagonalize">diagonalize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adapted-basis">adapted_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kernel">kernel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#eigen-lattice">eigen_lattice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#row-saturate">row_saturate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inv-fact">inv_fact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smith-basis">Smith_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smith">Smith</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invert">invert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mod2-section">mod2_section</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#subspace-normal">subspace_normal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lie-type">Lie_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lie-type-rootdatum-lietype">Lie_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-matrix">Cartan_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-matrix-rootdatum-mat">Cartan_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-matrix-type">Cartan_matrix_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rank">rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rank-rootdatum-int">rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#semisimple-rank">semisimple_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#semisimple-rank-rootdatum-int">semisimple_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#str">str</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smith-cartan">Smith_Cartan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filter-units">filter_units</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ann-mod">ann_mod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#replace-gen">replace_gen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quotient-basis">quotient_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#involution-lietype-mat-string-mat">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#involution-cartanclass-mat">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#involution-kgbelt-mat">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-datum">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-datum-lietype-mat-rootdatum">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-datum-rootdatum-mat-rootdatum">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-datum-innerclass-rootdatum">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simply-connected">simply_connected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adjoint">adjoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root">root</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#coroot">coroot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simple-roots">simple_roots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simple-coroots">simple_coroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#posroots">posroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#poscoroots">poscoroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-coradical">root_coradical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#coroot-radical">coroot_radical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fundamental-weight">fundamental_weight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fundamental-coweight">fundamental_coweight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual">dual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-rootdatum-rootdatum">dual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-block-block">dual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#derived-info">derived_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mod-central-torus-info">mod_central_torus_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nr-of-posroots">nr_of_posroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#root-index">root_index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#coroot-index">coroot_index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#integrality-datum">integrality_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#integrality-points">integrality_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#classify-involution">classify_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-class">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-class-lietype-ratvec-string-innerclass">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-class-rootdatum-string-innerclass">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-class-realform-innerclass">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twisted-involution">twisted_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#distinguished-involution">distinguished_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#form-names">form_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-form-names">dual_form_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nr-of-real-forms">nr_of_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nr-of-dual-real-forms">nr_of_dual_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nr-of-cartan-classes">nr_of_Cartan_classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block-sizes">block_sizes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#occurrence-matrix">occurrence_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-occurrence-matrix">dual_occurrence_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-form">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-form-innerclass-mat-ratvec-realform">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-form-param-realform">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-form-parampol-realform">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#form-number">form_number</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#quasisplit-form">quasisplit_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#components-rank">components_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#count-cartans">count_Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kgb-size">KGB_size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#base-grading-vector">base_grading_vector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-order">Cartan_order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-real-form">dual_real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-quasisplit-form">dual_quasisplit_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#central-fiber">central_fiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#initial-torus-bits">initial_torus_bits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-class">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-class-innerclass-int-cartanclass">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-class-kgbelt-cartanclass">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#most-split-cartan">most_split_Cartan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-info">Cartan_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#real-forms">real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-real-forms">dual_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fiber-partition">fiber_partition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#square-classes">square_classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kgb">KGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cross">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cross-int-block-int-int">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cross-int-param-param">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cross-vec-param-param">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cayley">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cayley-int-block-int-int">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cayley-int-param-param">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cayley-vec-param-param">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#status">status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#status-int-block-int-int">status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kgb-elt">KGB_elt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twist">twist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#twist-param-param">twist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#length">length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#length-param-int">length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#torus-bits">torus_bits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#torus-factor">torus_factor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block">block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#block-param-param-int">block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#element">element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#index">index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inverse-cayley">inverse_Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#param">param</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#is-standard">is_standard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#is-zero">is_zero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#is-final">is_final</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dominant">dominant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inv-cayley">inv_Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#orientation-nr">orientation_nr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reducibility-points">reducibility_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-block">print_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-block-block">print_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#partial-block">partial_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kl-block">KL_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#partial-kl-block">partial_KL_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#null-module">null_module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#last-term">last_term</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#first-term">first_term</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#k-type-formula">K_type_formula</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#branch">branch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#to-canonical">to_canonical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#height">height</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deform">deform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#full-deform">full_deform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kl-sum-at-s">KL_sum_at_s</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#raw-kl">raw_KL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dual-kl">dual_KL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-gradings">print_gradings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-real-weyl">print_real_Weyl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-strong-real">print_strong_real</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-blocku">print_blocku</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-blockd">print_blockd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-blockstabilizer">print_blockstabilizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-kgb">print_KGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-x">print_X</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-kl-basis">print_KL_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-prim-kl">print_prim_KL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-kl-list">print_KL_list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-w-cells">print_W_cells</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#print-w-graph">print_W_graph</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input-path">input_path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#prelude-log">prelude_log</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../usr_defined_functions.html">User Defined Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../videos/online_training.html">Online Training Videos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_1A.html">Online Training Session 1, Part A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#introduction">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#basics">2. Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#first-command">3. First Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#atlas-scripts">4. atlas Scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#more-commands-and-shortcuts">5. More Commands and Shortcuts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#redefining-variables-vector-operations">6. Redefining Variables, Vector Operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#operator-and-booleans">7. Operator $, %, and booleans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#matrix-operations">8. Matrix Operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#loading-files">9. Loading Files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#inverse">10. Inverse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#file-output">11. File Output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#solving-matrix-equations">12. Solving Matrix Equations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#functions-types-etc">13. Functions, Types, etc.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#loops">14. Loops</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_1B.html">Online Training Session 1, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#questions-from-part-a">1. Questions from Part A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#data-types-root-datum">2. Data Types, Root Datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#more-about-lie-groups">3. More about Lie Groups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#fundamental-weight-coordinates">4. Fundamental Weight Coordinates, <span class="math">\(Sp(8,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#simple-roots-of">5. Simple Roots of <span class="math">\(SL(5,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#more-on-coordinates">6. More on Coordinates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#the-atlas-functions-help-file">7. The atlas-functions.help File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#get-lie-groups-information">8. Get Lie Groups Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#real-forms">9. Real Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#inner-class">10. Inner Class</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_2A.html">Online Training Session 2, Part A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#new-features-on-website">1. New Features on Website</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#questions-from-session-1">2. Questions from Session 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#cartans">3. Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#parameters">4. Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#example">5. Example: <span class="math">\(SL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#characters-of-tori">6. Characters of Tori</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#id1">7. <span class="math">\(T = \mathbb{R}^x\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#id2">8. <span class="math">\(T = \mathbb{C}^x\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#differential">9. Differential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#trivial-representation-of">10. Trivial Representation of <span class="math">\(SL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#preview-kgb-orbits">11. Preview: KGB Orbits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_2B.html">Online Training Session 2, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#summary-of-session-2-part-a">1. Summary of Session 2 Part A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#minimal-principle-series-of-split-groups">2. Minimal Principle Series of Split Groups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#more-functions">3. More Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#id1">4. <span class="math">\(G=PSL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#id2">5. <span class="math">\(G=Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#characters-on-disconnected-part">6. Characters on Disconnected Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#lowest-k-types">7. Lowest K Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#id3">8. <span class="math">\(G = SO(3,2)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#more-on">9. More on <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#id4">10. <span class="math">\(E8\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_3A.html">Online Training Session 3, Part A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#welcome-back">1. Welcome Back</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#more-on-software-syntax">2. More on Software Syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#more-principle-series-examples">3. More Principle Series Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#representations-attached-to-given-cartans">4. Representations Attached to Given Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#slides-kgb-parameters">5. Slides: KGB Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#slides-finiteness-of-kgb">6. Slides: Finiteness of KGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#slides-example">7. Slides: <span class="math">\(SL(2,\mathbb{R})\)</span> Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#slides-continued">8. Slides: continued</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_3B.html">Online Training Session 3, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#questions">1. Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#more-slides">2. More Slides</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#examples-using-the-software">3. Examples Using the Software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#id1">4. <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#id2">5. <span class="math">\(Sp(6,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#kgb-on-other-cartans">6. KGB on other Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#preview-for-next-time">7. Preview for Next Time</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_4A.html">Online Training Session 4, Part A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#welcome-back">1. Welcome Back</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#new-atlas-version">2. New atlas Version</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#review-of">3. Review of <span class="math">\(SL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#id1">4. <span class="math">\(G = PGL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#id2">5. <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#kgbelt-x-5">6. <span class="math">\(Sp(4,\mathbb{R})\)</span>, KGBElt x=5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#more-on">7. : More on <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#representations-of">8. Representations of <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#print-block">9. print_block</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_4B.html">Online Training Session 4, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id1">1. <span class="math">\(SO(4,2)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id2">2. <span class="math">\(SO(5,1)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id3">3. <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id4">4. <span class="math">\(SL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id5">5. <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id6">6. <span class="math">\(SO(4,4)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id7">7. <span class="math">\(PSO(4,4)\)</span>, <span class="math">\(Spin(4,4)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id8">8. <span class="math">\(Sp(8,\mathbb{R})\)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../videos/misc.html">Miscellaneous Videos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/atlas_startup.html">Atlas Startup Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/change_coor.html">Change Coordinates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ts-install.html">Installation &#8211; Trouble Shooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#the-readline-package">The readline package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#ctanglex-error">ctanglex error</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#compiler-error">Compiler error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
+      
+          <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
+      
+    <li>Built-In Function References</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/library/built_in_functions/test_built_in_functions_ref.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="../usr_defined_functions.html" class="btn btn-neutral float-right" title="User Defined Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="test_built_in_functions.html" class="btn btn-neutral float-right" title="Built-In Function Index" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
+            
+  <div class="section" id="built-in-function-references">
+<h1>Built-In Function References<a class="headerlink" href="#built-in-function-references" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="int-int-int">
+<span id="id1"></span><h2>+<a class="headerlink" href="#int-int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(int,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="rat-int-rat">
+<span id="id2"></span><h2>+<a class="headerlink" href="#rat-int-rat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(rat,int-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="rat-rat-rat">
+<span id="id3"></span><h2>+<a class="headerlink" href="#rat-rat-rat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(rat,rat-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="vec-vec-vec">
+<span id="id4"></span><h2>+<a class="headerlink" href="#vec-vec-vec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(vec,vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="ratvec-ratvec-ratvec">
+<span id="id5"></span><h2>+<a class="headerlink" href="#ratvec-ratvec-ratvec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(ratvec,ratvec-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="mat-int-mat">
+<span id="id6"></span><h2>+<a class="headerlink" href="#mat-int-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(mat,int-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="int-mat-mat">
+<span id="id7"></span><h2>+<a class="headerlink" href="#int-mat-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(int,mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="mat-mat-mat">
+<span id="id8"></span><h2>+<a class="headerlink" href="#mat-mat-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(mat,mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="split-split-split">
+<span id="id9"></span><h2>+<a class="headerlink" href="#split-split-split" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(Split,Split-&gt;Split)</span></code></p>
+</div>
+<div class="section" id="parampol-param-parampol">
+<span id="id10"></span><h2>+<a class="headerlink" href="#parampol-param-parampol" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(ParamPol,Param-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="parampol-split-param-parampol">
+<span id="id11"></span><h2>+<a class="headerlink" href="#parampol-split-param-parampol" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(ParamPol,(Split,Param)-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="id12">
+<span id="id13"></span><h2>+<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(ParamPol,[(Split,Param)]-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="parampol-parampol-parampol">
+<span id="id14"></span><h2>+<a class="headerlink" href="#parampol-parampol-parampol" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">+:</span> <span class="pre">(ParamPol,ParamPol-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="id15">
+<span id="id16"></span><h2>-<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(int,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="int-int">
+<span id="id17"></span><h2>-<a class="headerlink" href="#int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="id18">
+<span id="id19"></span><h2>-<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(rat,int-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="id20">
+<span id="id21"></span><h2>-<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(rat,rat-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="rat-rat">
+<span id="id22"></span><h2>-<a class="headerlink" href="#rat-rat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(rat-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="id23">
+<span id="id24"></span><h2>-<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(vec,vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="vec-vec">
+<span id="id25"></span><h2>-<a class="headerlink" href="#vec-vec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="id26">
+<span id="id27"></span><h2>-<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(ratvec,ratvec-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="ratvec-ratvec">
+<span id="id28"></span><h2>-<a class="headerlink" href="#ratvec-ratvec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(ratvec-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="id29">
+<span id="id30"></span><h2>-<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(mat,int-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="id31">
+<span id="id32"></span><h2>-<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(int,mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="id33">
+<span id="id34"></span><h2>-<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(mat,mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="id35">
+<span id="id36"></span><h2>-<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(Split,Split-&gt;Split)</span></code></p>
+</div>
+<div class="section" id="split-split">
+<span id="id37"></span><h2>-<a class="headerlink" href="#split-split" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(Split-&gt;Split)</span></code></p>
+</div>
+<div class="section" id="id38">
+<span id="id39"></span><h2>-<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(ParamPol,Param-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="id40">
+<span id="id41"></span><h2>-<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">-:</span> <span class="pre">(ParamPol,ParamPol-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="id42">
+<span id="id43"></span><h2>*<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(int,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="id44">
+<span id="id45"></span><h2>*<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(rat,int-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="id46">
+<span id="id47"></span><h2>*<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(rat,rat-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="vec-int-vec">
+<span id="id48"></span><h2>*<a class="headerlink" href="#vec-int-vec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(vec,int-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="ratvec-int-ratvec">
+<span id="id49"></span><h2>*<a class="headerlink" href="#ratvec-int-ratvec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(ratvec,int-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="ratvec-rat-ratvec">
+<span id="id50"></span><h2>*<a class="headerlink" href="#ratvec-rat-ratvec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(ratvec,rat-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="vec-vec-int">
+<span id="id51"></span><h2>*<a class="headerlink" href="#vec-vec-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(vec,vec-&gt;int)</span></code></p>
+</div>
+<div class="section" id="mat-vec-vec">
+<span id="id52"></span><h2>*<a class="headerlink" href="#mat-vec-vec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(mat,vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="mat-ratvec-ratvec">
+<span id="id53"></span><h2>*<a class="headerlink" href="#mat-ratvec-ratvec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(mat,ratvec-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="id54">
+<span id="id55"></span><h2>*<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(mat,mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="vec-mat-vec">
+<span id="id56"></span><h2>*<a class="headerlink" href="#vec-mat-vec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(vec,mat-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="ratvec-mat-ratvec">
+<span id="id57"></span><h2>*<a class="headerlink" href="#ratvec-mat-ratvec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(ratvec,mat-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="id58">
+<span id="id59"></span><h2>*<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(Split,Split-&gt;Split)</span></code></p>
+</div>
+<div class="section" id="int-parampol-parampol">
+<span id="id60"></span><h2>*<a class="headerlink" href="#int-parampol-parampol" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(int,ParamPol-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="split-parampol-parampol">
+<span id="id61"></span><h2>*<a class="headerlink" href="#split-parampol-parampol" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">*:</span> <span class="pre">(Split,ParamPol-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="id63">
+<h2>\<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">\:</span> <span class="pre">(int,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="id65">
+<h2>\<a class="headerlink" href="#id65" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">\:</span> <span class="pre">(vec,int-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="id66">
+<span id="id67"></span><h2>%<a class="headerlink" href="#id66" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(int,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="rat-int-int">
+<span id="id68"></span><h2>%<a class="headerlink" href="#rat-int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(rat-&gt;int,int)</span></code></p>
+</div>
+<div class="section" id="id69">
+<span id="id70"></span><h2>%<a class="headerlink" href="#id69" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(rat,int-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="id71">
+<span id="id72"></span><h2>%<a class="headerlink" href="#id71" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(rat,rat-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="id73">
+<span id="id74"></span><h2>%<a class="headerlink" href="#id73" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(vec,int-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="ratvec-vec-int">
+<span id="id75"></span><h2>%<a class="headerlink" href="#ratvec-vec-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(ratvec-&gt;vec,int)</span></code></p>
+</div>
+<div class="section" id="id76">
+<span id="id77"></span><h2>%<a class="headerlink" href="#id76" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(ratvec,int-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="lietype-lietype">
+<span id="id78"></span><h2>%<a class="headerlink" href="#lietype-lietype" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(LieType-&gt;[LieType])</span></code></p>
+</div>
+<div class="section" id="kgbelt-realform-int">
+<span id="id79"></span><h2>%<a class="headerlink" href="#kgbelt-realform-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(KGBElt-&gt;RealForm,int)</span></code></p>
+</div>
+<div class="section" id="block-realform-realform">
+<span id="id80"></span><h2>%<a class="headerlink" href="#block-realform-realform" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(Block-&gt;RealForm,RealForm)</span></code></p>
+</div>
+<div class="section" id="param-kgbelt-vec-ratvec">
+<span id="id81"></span><h2>%<a class="headerlink" href="#param-kgbelt-vec-ratvec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(Param-&gt;KGBElt,vec,ratvec)</span></code></p>
+</div>
+<div class="section" id="split-int-int">
+<span id="id82"></span><h2>%<a class="headerlink" href="#split-int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">%:</span> <span class="pre">(Split-&gt;int,int)</span></code></p>
+</div>
+<div class="section" id="int-int-int-int">
+<span id="id83"></span><h2>\%<a class="headerlink" href="#int-int-int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">\%:</span> <span class="pre">(int,int-&gt;int,int)</span></code></p>
+</div>
+<div class="section" id="id84">
+<span id="id85"></span><h2>^<a class="headerlink" href="#id84" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">^:</span> <span class="pre">(int,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="id86">
+<span id="id87"></span><h2>^<a class="headerlink" href="#id86" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">^:</span> <span class="pre">(rat,int-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="vec-mat">
+<span id="id88"></span><h2>^<a class="headerlink" href="#vec-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">^:</span> <span class="pre">(vec-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="mat-mat">
+<span id="id89"></span><h2>^<a class="headerlink" href="#mat-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">^:</span> <span class="pre">(mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="int-vec-mat">
+<span id="id90"></span><h2>^<a class="headerlink" href="#int-vec-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">^:</span> <span class="pre">(int,[vec]-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="int-int-rat">
+<span id="id91"></span><h2>/<a class="headerlink" href="#int-int-rat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">/:</span> <span class="pre">(int,int-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="id92">
+<span id="id93"></span><h2>/<a class="headerlink" href="#id92" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">/:</span> <span class="pre">(rat,int-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="id94">
+<span id="id95"></span><h2>/<a class="headerlink" href="#id94" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">/:</span> <span class="pre">(rat,rat-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="id96">
+<span id="id97"></span><h2>/<a class="headerlink" href="#id96" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">/:</span> <span class="pre">(rat-&gt;rat)</span></code></p>
+</div>
+<div class="section" id="vec-int-ratvec">
+<span id="id98"></span><h2>/<a class="headerlink" href="#vec-int-ratvec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">/:</span> <span class="pre">(vec,int-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="id99">
+<span id="id100"></span><h2>/<a class="headerlink" href="#id99" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">/:</span> <span class="pre">(ratvec,int-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="id101">
+<span id="id102"></span><h2>/<a class="headerlink" href="#id101" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">/:</span> <span class="pre">(ratvec,rat-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="int-bool">
+<span id="id103"></span><h2>=<a class="headerlink" href="#int-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="int-int-bool">
+<span id="id104"></span><h2>=<a class="headerlink" href="#int-int-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(int,int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="rat-bool">
+<span id="id105"></span><h2>=<a class="headerlink" href="#rat-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="rat-rat-bool">
+<span id="id106"></span><h2>=<a class="headerlink" href="#rat-rat-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(rat,rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="bool-bool-bool">
+<span id="id107"></span><h2>=<a class="headerlink" href="#bool-bool-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(bool,bool-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="string-bool">
+<span id="id108"></span><h2>=<a class="headerlink" href="#string-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(string-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="string-string-bool">
+<span id="id109"></span><h2>=<a class="headerlink" href="#string-string-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(string,string-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="vec-bool">
+<span id="id110"></span><h2>=<a class="headerlink" href="#vec-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(vec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="vec-vec-bool">
+<span id="id111"></span><h2>=<a class="headerlink" href="#vec-vec-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(vec,vec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="ratvec-bool">
+<span id="id112"></span><h2>=<a class="headerlink" href="#ratvec-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(ratvec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="ratvec-ratvec-bool">
+<span id="id113"></span><h2>=<a class="headerlink" href="#ratvec-ratvec-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(ratvec,ratvec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="mat-bool">
+<span id="id114"></span><h2>=<a class="headerlink" href="#mat-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(mat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="mat-mat-bool">
+<span id="id115"></span><h2>=<a class="headerlink" href="#mat-mat-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(mat,mat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="realform-realform-bool">
+<span id="id116"></span><h2>=<a class="headerlink" href="#realform-realform-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(RealForm,RealForm-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="innerclass-innerclass-bool">
+<span id="id117"></span><h2>=<a class="headerlink" href="#innerclass-innerclass-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(InnerClass,InnerClass-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="kgbelt-kgbelt-bool">
+<span id="id118"></span><h2>=<a class="headerlink" href="#kgbelt-kgbelt-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(KGBElt,KGBElt-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="param-param-bool">
+<span id="id119"></span><h2>=<a class="headerlink" href="#param-param-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(Param,Param-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="split-bool">
+<span id="id120"></span><h2>=<a class="headerlink" href="#split-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(Split-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="split-split-bool">
+<span id="id121"></span><h2>=<a class="headerlink" href="#split-split-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(Split,Split-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="parampol-bool">
+<span id="id122"></span><h2>=<a class="headerlink" href="#parampol-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(ParamPol-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="parampol-parampol-bool">
+<span id="id123"></span><h2>=<a class="headerlink" href="#parampol-parampol-bool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">=:</span> <span class="pre">(ParamPol,ParamPol-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id124">
+<span id="id125"></span><h2>!=<a class="headerlink" href="#id124" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id126">
+<span id="id127"></span><h2>!=<a class="headerlink" href="#id126" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(int,int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id128">
+<span id="id129"></span><h2>!=<a class="headerlink" href="#id128" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id130">
+<span id="id131"></span><h2>!=<a class="headerlink" href="#id130" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(rat,rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id132">
+<span id="id133"></span><h2>!=<a class="headerlink" href="#id132" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(bool,bool-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id134">
+<span id="id135"></span><h2>!=<a class="headerlink" href="#id134" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(string-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id136">
+<span id="id137"></span><h2>!=<a class="headerlink" href="#id136" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(string,string-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id138">
+<span id="id139"></span><h2>!=<a class="headerlink" href="#id138" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(vec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id140">
+<span id="id141"></span><h2>!=<a class="headerlink" href="#id140" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(vec,vec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id142">
+<span id="id143"></span><h2>!=<a class="headerlink" href="#id142" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(ratvec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id144">
+<span id="id145"></span><h2>!=<a class="headerlink" href="#id144" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(ratvec,ratvec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id146">
+<span id="id147"></span><h2>!=<a class="headerlink" href="#id146" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(mat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id148">
+<span id="id149"></span><h2>!=<a class="headerlink" href="#id148" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(mat,mat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id150">
+<span id="id151"></span><h2>!=<a class="headerlink" href="#id150" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(Split-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id152">
+<span id="id153"></span><h2>!=<a class="headerlink" href="#id152" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(Split,Split-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id154">
+<span id="id155"></span><h2>!=<a class="headerlink" href="#id154" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(ParamPol-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id156">
+<span id="id157"></span><h2>!=<a class="headerlink" href="#id156" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">!=:</span> <span class="pre">(ParamPol,ParamPol-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id158">
+<span id="id159"></span><h2>&gt;=<a class="headerlink" href="#id158" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;=:</span> <span class="pre">(int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id160">
+<span id="id161"></span><h2>&gt;=<a class="headerlink" href="#id160" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;=:</span> <span class="pre">(int,int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id162">
+<span id="id163"></span><h2>&gt;=<a class="headerlink" href="#id162" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;=:</span> <span class="pre">(rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id164">
+<span id="id165"></span><h2>&gt;=<a class="headerlink" href="#id164" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;=:</span> <span class="pre">(rat,rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id166">
+<span id="id167"></span><h2>&gt;=<a class="headerlink" href="#id166" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;=:</span> <span class="pre">(string,string-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id168">
+<span id="id169"></span><h2>&gt;=<a class="headerlink" href="#id168" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;=:</span> <span class="pre">(vec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id170">
+<span id="id171"></span><h2>&gt;=<a class="headerlink" href="#id170" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;=:</span> <span class="pre">(ratvec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id172">
+<span id="id173"></span><h2>&gt;<a class="headerlink" href="#id172" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;:</span> <span class="pre">(int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id174">
+<span id="id175"></span><h2>&gt;<a class="headerlink" href="#id174" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;:</span> <span class="pre">(int,int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id176">
+<span id="id177"></span><h2>&gt;<a class="headerlink" href="#id176" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;:</span> <span class="pre">(rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id178">
+<span id="id179"></span><h2>&gt;<a class="headerlink" href="#id178" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;:</span> <span class="pre">(rat,rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id180">
+<span id="id181"></span><h2>&gt;<a class="headerlink" href="#id180" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;:</span> <span class="pre">(string,string-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id182">
+<span id="id183"></span><h2>&gt;<a class="headerlink" href="#id182" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;:</span> <span class="pre">(vec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id184">
+<span id="id185"></span><h2>&gt;<a class="headerlink" href="#id184" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&gt;:</span> <span class="pre">(ratvec-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id186">
+<span id="id187"></span><h2>&lt;=<a class="headerlink" href="#id186" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;=:</span> <span class="pre">(int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id188">
+<span id="id189"></span><h2>&lt;=<a class="headerlink" href="#id188" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;=:</span> <span class="pre">(int,int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id190">
+<span id="id191"></span><h2>&lt;=<a class="headerlink" href="#id190" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;=:</span> <span class="pre">(rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id192">
+<span id="id193"></span><h2>&lt;=<a class="headerlink" href="#id192" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;=:</span> <span class="pre">(rat,rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id194">
+<span id="id195"></span><h2>&lt;=<a class="headerlink" href="#id194" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;=:</span> <span class="pre">(string,string-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id196">
+<span id="id197"></span><h2>&lt;<a class="headerlink" href="#id196" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;:</span> <span class="pre">(int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id198">
+<span id="id199"></span><h2>&lt;<a class="headerlink" href="#id198" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;:</span> <span class="pre">(int,int-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id200">
+<span id="id201"></span><h2>&lt;<a class="headerlink" href="#id200" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;:</span> <span class="pre">(rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id202">
+<span id="id203"></span><h2>&lt;<a class="headerlink" href="#id202" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;:</span> <span class="pre">(rat,rat-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="id204">
+<span id="id205"></span><h2>&lt;<a class="headerlink" href="#id204" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">&lt;:</span> <span class="pre">(string,string-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="string-string-string">
+<span id="id206"></span><h2>##<a class="headerlink" href="#string-string-string" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">##:</span> <span class="pre">(string,string-&gt;string)</span></code></p>
+</div>
+<div class="section" id="string-string">
+<span id="id207"></span><h2>##<a class="headerlink" href="#string-string" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">##:</span> <span class="pre">([string]-&gt;string)</span></code></p>
+</div>
+<div class="section" id="id208">
+<span id="id209"></span><h2>##<a class="headerlink" href="#id208" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">##:</span> <span class="pre">(vec,vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="id210">
+<span id="id211"></span><h2>##<a class="headerlink" href="#id210" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">##:</span> <span class="pre">([vec]-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="int-format">
+<span id="int-format-int-string"></span><h2>int_format<a class="headerlink" href="#int-format" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">int_format:</span> <span class="pre">(int-&gt;string)</span></code></p>
+</div>
+<div class="section" id="ascii">
+<span id="ascii-string-int"></span><h2>ascii<a class="headerlink" href="#ascii" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">ascii:</span> <span class="pre">(string-&gt;int)</span></code></p>
+</div>
+<div class="section" id="ascii-int-string">
+<span id="id212"></span><h2>ascii<a class="headerlink" href="#ascii-int-string" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">ascii:</span> <span class="pre">(int-&gt;string)</span></code></p>
+</div>
+<div class="section" id="string-int">
+<span id="id213"></span><h2>#<a class="headerlink" href="#string-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(string-&gt;int)</span></code></p>
+</div>
+<div class="section" id="vec-int">
+<span id="id214"></span><h2>#<a class="headerlink" href="#vec-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(vec-&gt;int)</span></code></p>
+</div>
+<div class="section" id="ratvec-int">
+<span id="id215"></span><h2>#<a class="headerlink" href="#ratvec-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(ratvec-&gt;int)</span></code></p>
+</div>
+<div class="section" id="mat-int-int">
+<span id="id216"></span><h2>#<a class="headerlink" href="#mat-int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(mat-&gt;int,int)</span></code></p>
+</div>
+<div class="section" id="id217">
+<span id="id218"></span><h2>#<a class="headerlink" href="#id217" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(vec,int-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="int-vec-vec">
+<span id="id219"></span><h2>#<a class="headerlink" href="#int-vec-vec" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(int,vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="id220">
+<span id="id221"></span><h2>#<a class="headerlink" href="#id220" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(int,[vec]-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="lietype-int">
+<span id="id222"></span><h2>#<a class="headerlink" href="#lietype-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(LieType-&gt;int)</span></code></p>
+</div>
+<div class="section" id="block-int">
+<span id="id223"></span><h2>#<a class="headerlink" href="#block-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(Block-&gt;int)</span></code></p>
+</div>
+<div class="section" id="parampol-int">
+<span id="id224"></span><h2>#<a class="headerlink" href="#parampol-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">#:</span> <span class="pre">(ParamPol-&gt;int)</span></code></p>
+</div>
+<div class="section" id="flex-add">
+<span id="flex-add-vec-vec-vec"></span><h2>flex_add<a class="headerlink" href="#flex-add" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">flex_add:</span> <span class="pre">(vec,vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="flex-sub">
+<span id="flex-sub-vec-vec-vec"></span><h2>flex_sub<a class="headerlink" href="#flex-sub" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">flex_sub:</span> <span class="pre">(vec,vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="convolve">
+<span id="convolve-vec-vec-vec"></span><h2>convolve<a class="headerlink" href="#convolve" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">convolve:</span> <span class="pre">(vec,vec-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="null">
+<span id="null-int-vec"></span><h2>null<a class="headerlink" href="#null" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">null:</span> <span class="pre">(int-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="null-int-int-mat">
+<span id="id225"></span><h2>null<a class="headerlink" href="#null-int-int-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">null:</span> <span class="pre">(int,int-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="transpose">
+<span id="transpose-mat-mat"></span><h2>transpose<a class="headerlink" href="#transpose" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">transpose</span> <span class="pre">:</span> <span class="pre">(mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="id-mat-int-mat">
+<span id="id-mat"></span><h2>id_mat<a class="headerlink" href="#id-mat-int-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">id_mat:</span> <span class="pre">(int-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="diagonal">
+<span id="diagonal-vec-mat"></span><h2>diagonal<a class="headerlink" href="#diagonal" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">diagonal:</span> <span class="pre">(vec-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="stack-rows">
+<span id="stack-rows-vec-mat"></span><h2>stack_rows<a class="headerlink" href="#stack-rows" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">stack_rows:</span> <span class="pre">([vec]-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="swiss-matrix-knife">
+<span id="swiss-matrix-knife-int-mat-int-int-int-int-mat"></span><h2>swiss_matrix_knife<a class="headerlink" href="#swiss-matrix-knife" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">swiss_matrix_knife:</span> <span class="pre">(int,mat,int,int,int,int-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="matrix-slicer">
+<span id="matrix-slicer-int-mat-int-int-int-int-mat"></span><h2>matrix slicer<a class="headerlink" href="#matrix-slicer" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">matrix</span> <span class="pre">slicer:</span> <span class="pre">(int,mat,int,int,int,int-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="echelon">
+<span id="echelon-mat-mat-int"></span><h2>echelon<a class="headerlink" href="#echelon" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">echelon:</span> <span class="pre">(mat-&gt;mat,[int])</span></code></p>
+</div>
+<div class="section" id="diagonalize">
+<span id="diagonalize-mat-vec-mat-mat"></span><h2>diagonalize<a class="headerlink" href="#diagonalize" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">diagonalize:</span> <span class="pre">(mat-&gt;vec,mat,mat)</span></code></p>
+</div>
+<div class="section" id="adapted-basis">
+<span id="adapted-basis-mat-mat-vec"></span><h2>adapted_basis<a class="headerlink" href="#adapted-basis" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">adapted_basis:</span> <span class="pre">(mat-&gt;mat,vec)</span></code></p>
+</div>
+<div class="section" id="kernel">
+<span id="kernel-mat-mat"></span><h2>kernel<a class="headerlink" href="#kernel" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">kernel:</span> <span class="pre">(mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="eigen-lattice">
+<span id="eigen-lattice-mat-int-mat"></span><h2>eigen_lattice<a class="headerlink" href="#eigen-lattice" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">eigen_lattice:</span> <span class="pre">(mat,int-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="row-saturate">
+<span id="row-saturate-mat-mat"></span><h2>row_saturate<a class="headerlink" href="#row-saturate" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">row_saturate:</span> <span class="pre">(mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="inv-fact">
+<span id="inv-fact-mat-vec"></span><h2>inv_fact<a class="headerlink" href="#inv-fact" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">inv_fact:</span> <span class="pre">(mat-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="smith-basis">
+<span id="smith-basis-mat-mat"></span><h2>Smith_basis<a class="headerlink" href="#smith-basis" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Smith_basis:</span> <span class="pre">(mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="smith">
+<span id="smith-mat-mat-vec"></span><h2>Smith<a class="headerlink" href="#smith" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Smith:</span> <span class="pre">(mat-&gt;mat,vec)</span></code></p>
+</div>
+<div class="section" id="invert">
+<span id="invert-mat-mat-int"></span><h2>invert<a class="headerlink" href="#invert" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">invert:</span> <span class="pre">(mat-&gt;mat,int)</span></code></p>
+</div>
+<div class="section" id="mod2-section">
+<span id="mod2-section-mat-mat"></span><h2>mod2_section<a class="headerlink" href="#mod2-section" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">mod2_section:</span> <span class="pre">(mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="subspace-normal">
+<span id="subspace-normal-mat-mat-mat-mat-int"></span><h2>subspace_normal<a class="headerlink" href="#subspace-normal" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">subspace_normal:</span> <span class="pre">(mat-&gt;mat,mat,mat,[int])</span></code></p>
+</div>
+<div class="section" id="lie-type">
+<span id="lie-type-string-lietype"></span><h2>Lie_type<a class="headerlink" href="#lie-type" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Lie_type:</span> <span class="pre">(string-&gt;LieType)</span></code></p>
+</div>
+<div class="section" id="lie-type-rootdatum-lietype">
+<span id="id226"></span><h2>Lie_type<a class="headerlink" href="#lie-type-rootdatum-lietype" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Lie_type:</span> <span class="pre">(RootDatum-&gt;LieType)</span></code></p>
+</div>
+<div class="section" id="cartan-matrix">
+<span id="cartan-matrix-lietype-mat"></span><h2>Cartan_matrix<a class="headerlink" href="#cartan-matrix" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cartan_matrix:</span> <span class="pre">(LieType-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="cartan-matrix-rootdatum-mat">
+<span id="id227"></span><h2>Cartan_matrix<a class="headerlink" href="#cartan-matrix-rootdatum-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cartan_matrix:</span> <span class="pre">(RootDatum-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="cartan-matrix-type">
+<span id="cartan-matrix-type-mat-lietype-vec"></span><h2>Cartan_matrix_type<a class="headerlink" href="#cartan-matrix-type" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cartan_matrix_type:</span> <span class="pre">(mat-&gt;LieType,vec)</span></code></p>
+</div>
+<div class="section" id="rank">
+<span id="rank-lietype-int"></span><h2>rank<a class="headerlink" href="#rank" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">rank:</span> <span class="pre">(LieType-&gt;int)</span></code></p>
+</div>
+<div class="section" id="rank-rootdatum-int">
+<span id="id228"></span><h2>rank<a class="headerlink" href="#rank-rootdatum-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">rank:</span> <span class="pre">(RootDatum-&gt;int)</span></code></p>
+</div>
+<div class="section" id="semisimple-rank">
+<span id="semisimple-rank-lietype-int"></span><h2>semisimple_rank<a class="headerlink" href="#semisimple-rank" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">semisimple_rank:</span> <span class="pre">(LieType-&gt;int)</span></code></p>
+</div>
+<div class="section" id="semisimple-rank-rootdatum-int">
+<span id="id229"></span><h2>semisimple_rank<a class="headerlink" href="#semisimple-rank-rootdatum-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">semisimple_rank:</span> <span class="pre">(RootDatum-&gt;int)</span></code></p>
+</div>
+<div class="section" id="str">
+<span id="str-lietype-string"></span><h2>str<a class="headerlink" href="#str" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">str:</span> <span class="pre">(LieType-&gt;string)</span></code></p>
+</div>
+<div class="section" id="smith-cartan">
+<span id="smith-cartan-lietype-mat-vec"></span><h2>Smith_Cartan<a class="headerlink" href="#smith-cartan" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Smith_Cartan:</span> <span class="pre">(LieType-&gt;mat,vec)</span></code></p>
+</div>
+<div class="section" id="filter-units">
+<span id="filter-units-mat-vec-mat-vec"></span><h2>filter_units<a class="headerlink" href="#filter-units" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">filter_units:</span> <span class="pre">(mat,vec-&gt;mat,vec)</span></code></p>
+</div>
+<div class="section" id="ann-mod">
+<span id="ann-mod-mat-int-mat"></span><h2>ann_mod<a class="headerlink" href="#ann-mod" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">ann_mod:</span> <span class="pre">(mat,int-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="replace-gen">
+<span id="replace-gen-mat-vec-mat-mat"></span><h2>replace_gen<a class="headerlink" href="#replace-gen" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">replace_gen:</span> <span class="pre">((mat,vec),mat-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="quotient-basis">
+<span id="quotient-basis-lietype-ratvec-mat"></span><h2>quotient_basis<a class="headerlink" href="#quotient-basis" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">quotient_basis:</span> <span class="pre">(LieType,[ratvec]-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="involution">
+<span id="involution-lietype-string-mat"></span><h2>involution<a class="headerlink" href="#involution" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">involution:</span> <span class="pre">(LieType,string-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="involution-lietype-mat-string-mat">
+<span id="id230"></span><h2>involution<a class="headerlink" href="#involution-lietype-mat-string-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">involution:</span> <span class="pre">(LieType,mat,string-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="involution-cartanclass-mat">
+<span id="id231"></span><h2>involution<a class="headerlink" href="#involution-cartanclass-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">involution:</span> <span class="pre">(CartanClass-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="involution-kgbelt-mat">
+<span id="id232"></span><h2>involution<a class="headerlink" href="#involution-kgbelt-mat" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">involution:</span> <span class="pre">(KGBElt-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="root-datum">
+<span id="root-datum-mat-mat-rootdatum"></span><h2>root_datum<a class="headerlink" href="#root-datum" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">root_datum:</span> <span class="pre">(mat,mat-&gt;RootDatum)</span></code></p>
+</div>
+<div class="section" id="root-datum-lietype-mat-rootdatum">
+<span id="id233"></span><h2>root_datum<a class="headerlink" href="#root-datum-lietype-mat-rootdatum" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">root_datum:</span> <span class="pre">(LieType,mat-&gt;RootDatum)</span></code></p>
+</div>
+<div class="section" id="root-datum-rootdatum-mat-rootdatum">
+<span id="id234"></span><h2>root_datum<a class="headerlink" href="#root-datum-rootdatum-mat-rootdatum" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">root_datum:</span> <span class="pre">(RootDatum,mat-&gt;RootDatum)</span></code></p>
+</div>
+<div class="section" id="root-datum-innerclass-rootdatum">
+<span id="id235"></span><h2>root_datum<a class="headerlink" href="#root-datum-innerclass-rootdatum" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">root_datum:</span> <span class="pre">(InnerClass-&gt;RootDatum)</span></code></p>
+</div>
+<div class="section" id="simply-connected">
+<span id="simply-connected-lietype-rootdatum"></span><h2>simply_connected<a class="headerlink" href="#simply-connected" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">simply_connected:</span> <span class="pre">(LieType-&gt;RootDatum)</span></code></p>
+</div>
+<div class="section" id="adjoint">
+<span id="adjoint-lietype-rootdatum"></span><h2>adjoint<a class="headerlink" href="#adjoint" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">adjoint:</span> <span class="pre">(LieType-&gt;RootDatum)</span></code></p>
+</div>
+<div class="section" id="root">
+<span id="root-rootdatum-int-vec"></span><h2>root<a class="headerlink" href="#root" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">root:</span> <span class="pre">(RootDatum,int-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="coroot">
+<span id="coroot-rootdatum-int-vec"></span><h2>coroot<a class="headerlink" href="#coroot" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">coroot:</span> <span class="pre">(RootDatum,int-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="simple-roots">
+<span id="simple-roots-rootdatum-mat"></span><h2>simple_roots<a class="headerlink" href="#simple-roots" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">simple_roots:</span> <span class="pre">(RootDatum-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="simple-coroots">
+<span id="simple-coroots-rootdatum-mat"></span><h2>simple_coroots<a class="headerlink" href="#simple-coroots" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">simple_coroots:</span> <span class="pre">(RootDatum-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="posroots">
+<span id="posroots-rootdatum-mat"></span><h2>posroots<a class="headerlink" href="#posroots" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">posroots:</span> <span class="pre">(RootDatum-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="poscoroots">
+<span id="poscoroots-rootdatum-mat"></span><h2>poscoroots<a class="headerlink" href="#poscoroots" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">poscoroots:</span> <span class="pre">(RootDatum-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="root-coradical">
+<span id="root-coradical-rootdatum-mat"></span><h2>root_coradical<a class="headerlink" href="#root-coradical" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">root_coradical:</span> <span class="pre">(RootDatum-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="coroot-radical">
+<span id="coroot-radical-rootdatum-mat"></span><h2>coroot_radical<a class="headerlink" href="#coroot-radical" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">coroot_radical:</span> <span class="pre">(RootDatum-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="fundamental-weight">
+<span id="fundamental-weight-rootdatum-int-ratvec"></span><h2>fundamental_weight<a class="headerlink" href="#fundamental-weight" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">fundamental_weight:</span> <span class="pre">(RootDatum,int-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="fundamental-coweight">
+<span id="fundamental-coweight-rootdatum-int-ratvec"></span><h2>fundamental_coweight<a class="headerlink" href="#fundamental-coweight" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">fundamental_coweight:</span> <span class="pre">(RootDatum,int-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="dual">
+<span id="dual-innerclass-innerclass"></span><h2>dual<a class="headerlink" href="#dual" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual:</span> <span class="pre">(InnerClass-&gt;InnerClass)</span></code></p>
+</div>
+<div class="section" id="dual-rootdatum-rootdatum">
+<span id="id236"></span><h2>dual<a class="headerlink" href="#dual-rootdatum-rootdatum" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual:</span> <span class="pre">(RootDatum-&gt;RootDatum)</span></code></p>
+</div>
+<div class="section" id="dual-block-block">
+<span id="id237"></span><h2>dual<a class="headerlink" href="#dual-block-block" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual:</span> <span class="pre">(Block-&gt;Block)</span></code></p>
+</div>
+<div class="section" id="derived-info">
+<span id="derived-info-rootdatum-rootdatum-mat"></span><h2>derived_info<a class="headerlink" href="#derived-info" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">derived_info:</span> <span class="pre">(RootDatum-&gt;RootDatum,mat)</span></code></p>
+</div>
+<div class="section" id="mod-central-torus-info">
+<span id="mod-central-torus-info-rootdatum-rootdatum-mat"></span><h2>mod_central_torus_info<a class="headerlink" href="#mod-central-torus-info" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">mod_central_torus_info:</span> <span class="pre">(RootDatum-&gt;RootDatum,mat)</span></code></p>
+</div>
+<div class="section" id="nr-of-posroots">
+<span id="nr-of-posroots-rootdatum-int"></span><h2>nr_of_posroots<a class="headerlink" href="#nr-of-posroots" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">nr_of_posroots:</span> <span class="pre">(RootDatum-&gt;int)</span></code></p>
+</div>
+<div class="section" id="root-index">
+<span id="root-index-rootdatum-vec-int"></span><h2>root_index<a class="headerlink" href="#root-index" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">root_index:</span> <span class="pre">(RootDatum,vec-&gt;int)</span></code></p>
+</div>
+<div class="section" id="coroot-index">
+<span id="coroot-index-rootdatum-vec-int"></span><h2>coroot_index<a class="headerlink" href="#coroot-index" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">coroot_index:</span> <span class="pre">(RootDatum,vec-&gt;int)</span></code></p>
+</div>
+<div class="section" id="integrality-datum">
+<span id="integrality-datum-rootdatum-ratvec-rootdatum"></span><h2>integrality_datum<a class="headerlink" href="#integrality-datum" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">integrality_datum:</span> <span class="pre">(RootDatum,ratvec-&gt;RootDatum)</span></code></p>
+</div>
+<div class="section" id="integrality-points">
+<span id="integrality-points-rootdatum-ratvec-rat"></span><h2>integrality_points<a class="headerlink" href="#integrality-points" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">integrality_points:</span> <span class="pre">(RootDatum,ratvec-&gt;[rat])</span></code></p>
+</div>
+<div class="section" id="classify-involution">
+<span id="classify-involution-mat-int-int-int"></span><h2>classify_involution<a class="headerlink" href="#classify-involution" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">classify_involution:</span> <span class="pre">(mat-&gt;int,int,int)</span></code></p>
+</div>
+<div class="section" id="inner-class">
+<span id="inner-class-rootdatum-mat-innerclass"></span><h2>inner_class<a class="headerlink" href="#inner-class" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">inner_class:</span> <span class="pre">(RootDatum,mat-&gt;InnerClass)</span></code></p>
+</div>
+<div class="section" id="inner-class-lietype-ratvec-string-innerclass">
+<span id="id238"></span><h2>inner_class<a class="headerlink" href="#inner-class-lietype-ratvec-string-innerclass" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">inner_class:</span> <span class="pre">(LieType,[ratvec],string-&gt;InnerClass)</span></code></p>
+</div>
+<div class="section" id="inner-class-rootdatum-string-innerclass">
+<span id="id239"></span><h2>inner_class<a class="headerlink" href="#inner-class-rootdatum-string-innerclass" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">inner_class:</span> <span class="pre">(RootDatum,string-&gt;InnerClass)</span></code></p>
+</div>
+<div class="section" id="inner-class-realform-innerclass">
+<span id="id240"></span><h2>inner_class<a class="headerlink" href="#inner-class-realform-innerclass" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">inner_class:</span> <span class="pre">(RealForm-&gt;InnerClass)</span></code></p>
+</div>
+<div class="section" id="twisted-involution">
+<span id="twisted-involution-rootdatum-mat-innerclass-vec"></span><h2>twisted_involution<a class="headerlink" href="#twisted-involution" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">twisted_involution:</span> <span class="pre">(RootDatum,mat-&gt;InnerClass,vec)</span></code></p>
+</div>
+<div class="section" id="distinguished-involution">
+<span id="distinguished-involution-innerclass-mat"></span><h2>distinguished_involution<a class="headerlink" href="#distinguished-involution" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">distinguished_involution:</span> <span class="pre">(InnerClass-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="form-names">
+<span id="form-names-innerclass-string"></span><h2>form_names<a class="headerlink" href="#form-names" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">form_names:</span> <span class="pre">(InnerClass-&gt;[string])</span></code></p>
+</div>
+<div class="section" id="dual-form-names">
+<span id="dual-form-names-innerclass-string"></span><h2>dual_form_names<a class="headerlink" href="#dual-form-names" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual_form_names:</span> <span class="pre">(InnerClass-&gt;[string])</span></code></p>
+</div>
+<div class="section" id="nr-of-real-forms">
+<span id="nr-of-real-forms-innerclass-int"></span><h2>nr_of_real_forms<a class="headerlink" href="#nr-of-real-forms" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">nr_of_real_forms:</span> <span class="pre">(InnerClass-&gt;int)</span></code></p>
+</div>
+<div class="section" id="nr-of-dual-real-forms">
+<span id="nr-of-dual-real-forms-innerclass-int"></span><h2>nr_of_dual_real_forms<a class="headerlink" href="#nr-of-dual-real-forms" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">nr_of_dual_real_forms:</span> <span class="pre">(InnerClass-&gt;int)</span></code></p>
+</div>
+<div class="section" id="nr-of-cartan-classes">
+<span id="nr-of-cartan-classes-innerclass-int"></span><h2>nr_of_Cartan_classes<a class="headerlink" href="#nr-of-cartan-classes" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">nr_of_Cartan_classes:</span> <span class="pre">(InnerClass-&gt;int)</span></code></p>
+</div>
+<div class="section" id="block-sizes">
+<span id="block-sizes-innerclass-mat"></span><h2>block_sizes<a class="headerlink" href="#block-sizes" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">block_sizes:</span> <span class="pre">(InnerClass-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="occurrence-matrix">
+<span id="occurrence-matrix-innerclass-mat"></span><h2>occurrence_matrix<a class="headerlink" href="#occurrence-matrix" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">occurrence_matrix:</span> <span class="pre">(InnerClass-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="dual-occurrence-matrix">
+<span id="dual-occurrence-matrix-innerclass-mat"></span><h2>dual_occurrence_matrix<a class="headerlink" href="#dual-occurrence-matrix" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual_occurrence_matrix:</span> <span class="pre">(InnerClass-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="real-form">
+<span id="real-form-innerclass-int-realform"></span><h2>real_form<a class="headerlink" href="#real-form" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">real_form:</span> <span class="pre">(InnerClass,int-&gt;RealForm)</span></code></p>
+</div>
+<div class="section" id="real-form-innerclass-mat-ratvec-realform">
+<span id="id241"></span><h2>real_form<a class="headerlink" href="#real-form-innerclass-mat-ratvec-realform" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">real_form:</span> <span class="pre">(InnerClass,mat,ratvec-&gt;RealForm)</span></code></p>
+</div>
+<div class="section" id="real-form-param-realform">
+<span id="id242"></span><h2>real_form<a class="headerlink" href="#real-form-param-realform" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">real_form:</span> <span class="pre">(Param-&gt;RealForm)</span></code></p>
+</div>
+<div class="section" id="real-form-parampol-realform">
+<span id="id243"></span><h2>real_form<a class="headerlink" href="#real-form-parampol-realform" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">real_form:</span> <span class="pre">(ParamPol-&gt;RealForm)</span></code></p>
+</div>
+<div class="section" id="form-number">
+<span id="form-number-realform-int"></span><h2>form_number<a class="headerlink" href="#form-number" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">form_number:</span> <span class="pre">(RealForm-&gt;int)</span></code></p>
+</div>
+<div class="section" id="quasisplit-form">
+<span id="quasisplit-form-innerclass-realform"></span><h2>quasisplit_form<a class="headerlink" href="#quasisplit-form" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">quasisplit_form:</span> <span class="pre">(InnerClass-&gt;RealForm)</span></code></p>
+</div>
+<div class="section" id="components-rank">
+<span id="components-rank-realform-int"></span><h2>components_rank<a class="headerlink" href="#components-rank" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">components_rank:</span> <span class="pre">(RealForm-&gt;int)</span></code></p>
+</div>
+<div class="section" id="count-cartans">
+<span id="count-cartans-realform-int"></span><h2>count_Cartans<a class="headerlink" href="#count-cartans" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">count_Cartans:</span> <span class="pre">(RealForm-&gt;int)</span></code></p>
+</div>
+<div class="section" id="kgb-size">
+<span id="kgb-size-realform-int"></span><h2>KGB_size<a class="headerlink" href="#kgb-size" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">KGB_size:</span> <span class="pre">(RealForm-&gt;int)</span></code></p>
+</div>
+<div class="section" id="base-grading-vector">
+<span id="base-grading-vector-realform-ratvec"></span><h2>base_grading_vector<a class="headerlink" href="#base-grading-vector" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">base_grading_vector:</span> <span class="pre">(RealForm-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="cartan-order">
+<span id="cartan-order-realform-mat"></span><h2>Cartan_order<a class="headerlink" href="#cartan-order" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cartan_order:</span> <span class="pre">(RealForm-&gt;mat)</span></code></p>
+</div>
+<div class="section" id="dual-real-form">
+<span id="dual-real-form-innerclass-int-realform"></span><h2>dual_real_form<a class="headerlink" href="#dual-real-form" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual_real_form:</span> <span class="pre">(InnerClass,int-&gt;RealForm)</span></code></p>
+</div>
+<div class="section" id="dual-quasisplit-form">
+<span id="dual-quasisplit-form-innerclass-realform"></span><h2>dual_quasisplit_form<a class="headerlink" href="#dual-quasisplit-form" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual_quasisplit_form:</span> <span class="pre">(InnerClass-&gt;RealForm)</span></code></p>
+</div>
+<div class="section" id="central-fiber">
+<span id="central-fiber-realform-vec"></span><h2>central_fiber<a class="headerlink" href="#central-fiber" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">central_fiber:</span> <span class="pre">(RealForm-&gt;[vec])</span></code></p>
+</div>
+<div class="section" id="initial-torus-bits">
+<span id="initial-torus-bits-realform-vec"></span><h2>initial_torus_bits<a class="headerlink" href="#initial-torus-bits" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">initial_torus_bits:</span> <span class="pre">(RealForm-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="cartan-class">
+<span id="cartan-class-realform-int-cartanclass"></span><h2>Cartan_class<a class="headerlink" href="#cartan-class" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cartan_class:</span> <span class="pre">(RealForm,int-&gt;CartanClass)</span></code></p>
+</div>
+<div class="section" id="cartan-class-innerclass-int-cartanclass">
+<span id="id244"></span><h2>Cartan_class<a class="headerlink" href="#cartan-class-innerclass-int-cartanclass" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cartan_class:</span> <span class="pre">(InnerClass,int-&gt;CartanClass)</span></code></p>
+</div>
+<div class="section" id="cartan-class-kgbelt-cartanclass">
+<span id="id245"></span><h2>Cartan_class<a class="headerlink" href="#cartan-class-kgbelt-cartanclass" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cartan_class:</span> <span class="pre">(KGBElt-&gt;CartanClass)</span></code></p>
+</div>
+<div class="section" id="most-split-cartan">
+<span id="most-split-cartan-realform-cartanclass"></span><h2>most_split_Cartan<a class="headerlink" href="#most-split-cartan" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">most_split_Cartan:</span> <span class="pre">(RealForm-&gt;CartanClass)</span></code></p>
+</div>
+<div class="section" id="cartan-info">
+<span id="cartan-info-cartanclass-int-int-int-vec-int-int-lietype-lietype-lietype"></span><h2>Cartan_info<a class="headerlink" href="#cartan-info" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cartan_info:</span> <span class="pre">(CartanClass-&gt;(int,int,int),vec,(int,int),(LieType,LieType,LieType))</span></code></p>
+</div>
+<div class="section" id="real-forms">
+<span id="real-forms-cartanclass-realform"></span><h2>real_forms<a class="headerlink" href="#real-forms" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">real_forms:</span> <span class="pre">(CartanClass-&gt;[RealForm])</span></code></p>
+</div>
+<div class="section" id="dual-real-forms">
+<span id="dual-real-forms-cartanclass-realform"></span><h2>dual_real_forms<a class="headerlink" href="#dual-real-forms" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual_real_forms:</span> <span class="pre">(CartanClass-&gt;[RealForm])</span></code></p>
+</div>
+<div class="section" id="fiber-partition">
+<span id="fiber-partition-cartanclass-realform-int"></span><h2>fiber_partition<a class="headerlink" href="#fiber-partition" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">fiber_partition:</span> <span class="pre">(CartanClass,RealForm-&gt;[int])</span></code></p>
+</div>
+<div class="section" id="square-classes">
+<span id="square-classes-cartanclass-int"></span><h2>square_classes<a class="headerlink" href="#square-classes" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">square_classes:</span> <span class="pre">(CartanClass-&gt;[[int]])</span></code></p>
+</div>
+<div class="section" id="kgb">
+<span id="kgb-realform-int-kgbelt"></span><h2>KGB<a class="headerlink" href="#kgb" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">KGB:</span> <span class="pre">(RealForm,int-&gt;KGBElt)</span></code></p>
+</div>
+<div class="section" id="cross">
+<span id="cross-int-kgbelt-kgbelt"></span><h2>cross<a class="headerlink" href="#cross" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">cross:</span> <span class="pre">(int,KGBElt-&gt;KGBElt)</span></code></p>
+</div>
+<div class="section" id="cross-int-block-int-int">
+<span id="id246"></span><h2>cross<a class="headerlink" href="#cross-int-block-int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">cross:</span> <span class="pre">(int,Block,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="cross-int-param-param">
+<span id="id247"></span><h2>cross<a class="headerlink" href="#cross-int-param-param" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">cross:</span> <span class="pre">(int,Param-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="cross-vec-param-param">
+<span id="id248"></span><h2>cross<a class="headerlink" href="#cross-vec-param-param" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">cross:</span> <span class="pre">(vec,Param-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="cayley">
+<span id="cayley-int-kgbelt-kgbelt"></span><h2>Cayley<a class="headerlink" href="#cayley" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cayley:</span> <span class="pre">(int,KGBElt-&gt;KGBElt)</span></code></p>
+</div>
+<div class="section" id="cayley-int-block-int-int">
+<span id="id249"></span><h2>Cayley<a class="headerlink" href="#cayley-int-block-int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cayley:</span> <span class="pre">(int,Block,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="cayley-int-param-param">
+<span id="id250"></span><h2>Cayley<a class="headerlink" href="#cayley-int-param-param" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cayley:</span> <span class="pre">(int,Param-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="cayley-vec-param-param">
+<span id="id251"></span><h2>Cayley<a class="headerlink" href="#cayley-vec-param-param" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">Cayley:</span> <span class="pre">(vec,Param-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="status">
+<span id="status-int-kgbelt-int"></span><h2>status<a class="headerlink" href="#status" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">status:</span> <span class="pre">(int,KGBElt-&gt;int)</span></code></p>
+</div>
+<div class="section" id="status-int-block-int-int">
+<span id="id252"></span><h2>status<a class="headerlink" href="#status-int-block-int-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">status:</span> <span class="pre">(int,Block,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="kgb-elt">
+<span id="kgb-elt-realform-mat-ratvec-kgbelt"></span><h2>KGB_elt<a class="headerlink" href="#kgb-elt" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">KGB_elt:</span> <span class="pre">(RealForm,mat,ratvec-&gt;KGBElt)</span></code></p>
+</div>
+<div class="section" id="twist">
+<span id="twist-kgbelt-kgbelt"></span><h2>twist<a class="headerlink" href="#twist" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">twist:</span> <span class="pre">(KGBElt-&gt;KGBElt)</span></code></p>
+</div>
+<div class="section" id="twist-param-param">
+<span id="id253"></span><h2>twist<a class="headerlink" href="#twist-param-param" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">twist:</span> <span class="pre">(Param-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="length">
+<span id="length-kgbelt-int"></span><h2>length<a class="headerlink" href="#length" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">length:</span> <span class="pre">(KGBElt-&gt;int)</span></code></p>
+</div>
+<div class="section" id="length-param-int">
+<span id="id254"></span><h2>length<a class="headerlink" href="#length-param-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">length:</span> <span class="pre">(Param-&gt;int)</span></code></p>
+</div>
+<div class="section" id="torus-bits">
+<span id="torus-bits-kgbelt-vec"></span><h2>torus_bits<a class="headerlink" href="#torus-bits" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">torus_bits:</span> <span class="pre">(KGBElt-&gt;vec)</span></code></p>
+</div>
+<div class="section" id="torus-factor">
+<span id="torus-factor-kgbelt-ratvec"></span><h2>torus_factor<a class="headerlink" href="#torus-factor" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">torus_factor:</span> <span class="pre">(KGBElt-&gt;ratvec)</span></code></p>
+</div>
+<div class="section" id="block">
+<span id="block-realform-realform-block"></span><h2>block<a class="headerlink" href="#block" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">block:</span> <span class="pre">(RealForm,RealForm-&gt;Block)</span></code></p>
+</div>
+<div class="section" id="block-param-param-int">
+<span id="id255"></span><h2>block<a class="headerlink" href="#block-param-param-int" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">block:</span> <span class="pre">(Param-&gt;[Param],int)</span></code></p>
+</div>
+<div class="section" id="element">
+<span id="element-block-int-kgbelt-kgbelt"></span><h2>element<a class="headerlink" href="#element" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">element:</span> <span class="pre">(Block,int-&gt;KGBElt,KGBElt)</span></code></p>
+</div>
+<div class="section" id="index">
+<span id="index-block-kgbelt-kgbelt-int"></span><h2>index<a class="headerlink" href="#index" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">index:</span> <span class="pre">(Block,KGBElt,KGBElt-&gt;int)</span></code></p>
+</div>
+<div class="section" id="inverse-cayley">
+<span id="inverse-cayley-int-block-int-int"></span><h2>inverse_Cayley<a class="headerlink" href="#inverse-cayley" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">inverse_Cayley:</span> <span class="pre">(int,Block,int-&gt;int)</span></code></p>
+</div>
+<div class="section" id="param">
+<span id="param-kgbelt-vec-ratvec-param"></span><h2>param<a class="headerlink" href="#param" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">param:</span> <span class="pre">(KGBElt,vec,ratvec-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="is-standard">
+<span id="is-standard-param-bool"></span><h2>is_standard<a class="headerlink" href="#is-standard" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">is_standard:</span> <span class="pre">(Param-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="is-zero">
+<span id="is-zero-param-bool"></span><h2>is_zero<a class="headerlink" href="#is-zero" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">is_zero:</span> <span class="pre">(Param-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="is-final">
+<span id="is-final-param-bool"></span><h2>is_final<a class="headerlink" href="#is-final" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">is_final:</span> <span class="pre">(Param-&gt;bool)</span></code></p>
+</div>
+<div class="section" id="dominant">
+<span id="dominant-param-param"></span><h2>dominant<a class="headerlink" href="#dominant" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dominant:</span> <span class="pre">(Param-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="inv-cayley">
+<span id="inv-cayley-int-param-param"></span><h2>inv_Cayley<a class="headerlink" href="#inv-cayley" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">inv_Cayley:</span> <span class="pre">(int,Param-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="orientation-nr">
+<span id="orientation-nr-param-int"></span><h2>orientation_nr<a class="headerlink" href="#orientation-nr" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">orientation_nr:</span> <span class="pre">(Param-&gt;int)</span></code></p>
+</div>
+<div class="section" id="reducibility-points">
+<span id="reducibility-points-param-rat"></span><h2>reducibility_points<a class="headerlink" href="#reducibility-points" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">reducibility_points:</span> <span class="pre">(Param-&gt;[rat])</span></code></p>
+</div>
+<div class="section" id="print-block">
+<span id="print-block-param"></span><h2>print_block<a class="headerlink" href="#print-block" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_block:</span> <span class="pre">(Param-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-block-block">
+<span id="id256"></span><h2>print_block<a class="headerlink" href="#print-block-block" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_block:</span> <span class="pre">(Block-&gt;)</span></code></p>
+</div>
+<div class="section" id="partial-block">
+<span id="partial-block-param-param"></span><h2>partial_block<a class="headerlink" href="#partial-block" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">partial_block:</span> <span class="pre">(Param-&gt;[Param])</span></code></p>
+</div>
+<div class="section" id="kl-block">
+<span id="kl-block-param-param-int-mat-vec-vec-vec-mat"></span><h2>KL_block<a class="headerlink" href="#kl-block" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">KL_block:</span> <span class="pre">(Param-&gt;[Param],int,mat,[vec],vec,vec,mat)</span></code></p>
+</div>
+<div class="section" id="partial-kl-block">
+<span id="partial-kl-block-param-param-mat-vec-vec-vec-mat"></span><h2>partial_KL_block<a class="headerlink" href="#partial-kl-block" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">partial_KL_block:</span> <span class="pre">(Param-&gt;[Param],mat,[vec],vec,vec,mat)</span></code></p>
+</div>
+<div class="section" id="null-module">
+<span id="null-module-realform-parampol"></span><h2>null_module<a class="headerlink" href="#null-module" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">null_module:</span> <span class="pre">(RealForm-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="last-term">
+<span id="last-term-parampol-split-param"></span><h2>last_term<a class="headerlink" href="#last-term" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">last_term:</span> <span class="pre">(ParamPol-&gt;Split,Param)</span></code></p>
+</div>
+<div class="section" id="first-term">
+<span id="first-term-parampol-split-param"></span><h2>first_term<a class="headerlink" href="#first-term" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">first_term:</span> <span class="pre">(ParamPol-&gt;Split,Param)</span></code></p>
+</div>
+<div class="section" id="k-type-formula">
+<span id="k-type-formula-param-parampol"></span><h2>K_type_formula<a class="headerlink" href="#k-type-formula" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">K_type_formula:</span> <span class="pre">(Param-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="branch">
+<span id="branch-param-int-parampol"></span><h2>branch<a class="headerlink" href="#branch" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">branch:</span> <span class="pre">(Param,int-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="to-canonical">
+<span id="to-canonical-param-param"></span><h2>to_canonical<a class="headerlink" href="#to-canonical" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">to_canonical:</span> <span class="pre">(Param-&gt;Param)</span></code></p>
+</div>
+<div class="section" id="height">
+<span id="height-param-int"></span><h2>height<a class="headerlink" href="#height" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">height:</span> <span class="pre">(Param-&gt;int)</span></code></p>
+</div>
+<div class="section" id="deform">
+<span id="deform-param-parampol"></span><h2>deform<a class="headerlink" href="#deform" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">deform:</span> <span class="pre">(Param-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="full-deform">
+<span id="full-deform-param-parampol"></span><h2>full_deform<a class="headerlink" href="#full-deform" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">full_deform:</span> <span class="pre">(Param-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="kl-sum-at-s">
+<span id="kl-sum-at-s-param-parampol"></span><h2>KL_sum_at_s<a class="headerlink" href="#kl-sum-at-s" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">KL_sum_at_s:</span> <span class="pre">(Param-&gt;ParamPol)</span></code></p>
+</div>
+<div class="section" id="raw-kl">
+<span id="raw-kl-block-mat-vec-vec"></span><h2>raw_KL<a class="headerlink" href="#raw-kl" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">raw_KL:</span> <span class="pre">(Block-&gt;mat,[vec],vec)</span></code></p>
+</div>
+<div class="section" id="dual-kl">
+<span id="dual-kl-block-mat-vec-vec"></span><h2>dual_KL<a class="headerlink" href="#dual-kl" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">dual_KL:</span> <span class="pre">(Block-&gt;mat,[vec],vec)</span></code></p>
+</div>
+<div class="section" id="print-gradings">
+<span id="print-gradings-cartanclass-realform"></span><h2>print_gradings<a class="headerlink" href="#print-gradings" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_gradings:</span> <span class="pre">(CartanClass,RealForm-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-real-weyl">
+<span id="print-real-weyl-realform-cartanclass"></span><h2>print_real_Weyl<a class="headerlink" href="#print-real-weyl" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_real_Weyl:</span> <span class="pre">(RealForm,CartanClass-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-strong-real">
+<span id="print-strong-real-cartanclass"></span><h2>print_strong_real<a class="headerlink" href="#print-strong-real" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_strong_real:</span> <span class="pre">(CartanClass-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-blocku">
+<span id="print-blocku-block"></span><h2>print_blocku<a class="headerlink" href="#print-blocku" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_blocku:</span> <span class="pre">(Block-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-blockd">
+<span id="print-blockd-block"></span><h2>print_blockd<a class="headerlink" href="#print-blockd" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_blockd:</span> <span class="pre">(Block-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-blockstabilizer">
+<span id="print-blockstabilizer-block-cartanclass"></span><h2>print_blockstabilizer<a class="headerlink" href="#print-blockstabilizer" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_blockstabilizer:</span> <span class="pre">(Block,CartanClass-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-kgb">
+<span id="print-kgb-realform"></span><h2>print_KGB<a class="headerlink" href="#print-kgb" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_KGB:</span> <span class="pre">(RealForm-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-x">
+<span id="print-x-innerclass"></span><h2>print_X<a class="headerlink" href="#print-x" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_X:</span> <span class="pre">(InnerClass-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-kl-basis">
+<span id="print-kl-basis-block"></span><h2>print_KL_basis<a class="headerlink" href="#print-kl-basis" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_KL_basis:</span> <span class="pre">(Block-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-prim-kl">
+<span id="print-prim-kl-block"></span><h2>print_prim_KL<a class="headerlink" href="#print-prim-kl" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_prim_KL:</span> <span class="pre">(Block-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-kl-list">
+<span id="print-kl-list-block"></span><h2>print_KL_list<a class="headerlink" href="#print-kl-list" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_KL_list:</span> <span class="pre">(Block-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-w-cells">
+<span id="print-w-cells-block"></span><h2>print_W_cells<a class="headerlink" href="#print-w-cells" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_W_cells:</span> <span class="pre">(Block-&gt;)</span></code></p>
+</div>
+<div class="section" id="print-w-graph">
+<span id="print-w-graph-block"></span><h2>print_W_graph<a class="headerlink" href="#print-w-graph" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">print_W_graph:</span> <span class="pre">(Block-&gt;)</span></code></p>
+</div>
+<div class="section" id="input-path">
+<span id="input-path-string"></span><h2>input_path<a class="headerlink" href="#input-path" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">input_path:</span> <span class="pre">[string]</span></code></p>
+</div>
+<div class="section" id="prelude-log">
+<span id="prelude-log-string"></span><h2>prelude_log<a class="headerlink" href="#prelude-log" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">prelude_log:</span> <span class="pre">[string]</span></code></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../usr_defined_functions.html" class="btn btn-neutral float-right" title="User Defined Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="test_built_in_functions.html" class="btn btn-neutral float-right" title="Built-In Function Index" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, atlasofliegroups.org.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

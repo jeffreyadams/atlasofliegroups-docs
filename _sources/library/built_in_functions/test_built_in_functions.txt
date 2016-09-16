@@ -1,5 +1,5 @@
-atlas Built-In Operators and Functions
-==============================================
+Built-In Function Index
+====================================================
 
 .. list-table::
    :widths: 10 20
@@ -7,643 +7,643 @@ atlas Built-In Operators and Functions
 
    * - Function
      - Argument(s) -> Results
-   * - \+
+   * - :ref:`\+_(int,int->int)`
      - (int,int->int)
-   * - \+
+   * - :ref:`\+_(rat,int->rat)`
      - (rat,int->rat)
-   * - \+
+   * - :ref:`\+_(rat,rat->rat)`
      - (rat,rat->rat)
-   * - \+
+   * - :ref:`\+_(vec,vec->vec)`
      - (vec,vec->vec)
-   * - \+
+   * - :ref:`\+_(ratvec,ratvec->ratvec)`
      - (ratvec,ratvec->ratvec)
-   * - \+
+   * - :ref:`\+_(mat,int->mat)`
      - (mat,int->mat)
-   * - \+
+   * - :ref:`\+_(int,mat->mat)`
      - (int,mat->mat)
-   * - \+
+   * - :ref:`\+_(mat,mat->mat)`
      - (mat,mat->mat)
-   * - \+
+   * - :ref:`\+_(Split,Split->Split)`
      - (Split,Split->Split)
-   * - \+
+   * - :ref:`\+_(ParamPol,Param->ParamPol)`
      - (ParamPol,Param->ParamPol)
-   * - \+
+   * - :ref:`\+_(ParamPol,(Split,Param)->ParamPol)`
      - (ParamPol,(Split,Param)->ParamPol)
-   * - \+
+   * - :ref:`\+_(ParamPol,[(Split,Param)]->ParamPol)`
      - (ParamPol,[(Split,Param)]->ParamPol)
-   * - \+
+   * - :ref:`\+_(ParamPol,ParamPol->ParamPol)`
      - (ParamPol,ParamPol->ParamPol)
-   * - \-
+   * - :ref:`\-_(int,int->int)`
      - (int,int->int)
-   * - \-
+   * - :ref:`\-_(int->int)`
      - (int->int)
-   * - \-
+   * - :ref:`\-_(rat,int->rat)`
      - (rat,int->rat)
-   * - \-
+   * - :ref:`\-_(rat,rat->rat)`
      - (rat,rat->rat)
-   * - \-
+   * - :ref:`\-_(rat->rat)`
      - (rat->rat)
-   * - \-
+   * - :ref:`\-_(vec,vec->vec)`
      - (vec,vec->vec)
-   * - \-
+   * - :ref:`\-_(vec->vec)`
      - (vec->vec)
-   * - \-
+   * - :ref:`\-_(ratvec,ratvec->ratvec)`
      - (ratvec,ratvec->ratvec)
-   * - \-
+   * - :ref:`\-_(ratvec->ratvec)`
      - (ratvec->ratvec)
-   * - \-
+   * - :ref:`\-_(mat,int->mat)`
      - (mat,int->mat)
-   * - \-
+   * - :ref:`\-_(int,mat->mat)`
      - (int,mat->mat)
-   * - \-
+   * - :ref:`\-_(mat,mat->mat)`
      - (mat,mat->mat)
-   * - \-
+   * - :ref:`\-_(Split,Split->Split)`
      - (Split,Split->Split)
-   * - \-
+   * - :ref:`\-_(Split->Split)`
      - (Split->Split)
-   * - \-
+   * - :ref:`\-_(ParamPol,Param->ParamPol)`
      - (ParamPol,Param->ParamPol)
-   * - \-
+   * - :ref:`\-_(ParamPol,ParamPol->ParamPol)`
      - (ParamPol,ParamPol->ParamPol)
-   * - \*
+   * - :ref:`\*_(int,int->int)`
      - (int,int->int)
-   * - \*
+   * - :ref:`\*_(rat,int->rat)`
      - (rat,int->rat)
-   * - \*
+   * - :ref:`\*_(rat,rat->rat)`
      - (rat,rat->rat)
-   * - \*
+   * - :ref:`\*_(vec,int->vec)`
      - (vec,int->vec)
-   * - \*
+   * - :ref:`\*_(ratvec,int->ratvec)`
      - (ratvec,int->ratvec)
-   * - \*
+   * - :ref:`\*_(ratvec,rat->ratvec)`
      - (ratvec,rat->ratvec)
-   * - \*
+   * - :ref:`\*_(vec,vec->int)`
      - (vec,vec->int)
-   * - \*
+   * - :ref:`\*_(mat,vec->vec)`
      - (mat,vec->vec)
-   * - \*
+   * - :ref:`\*_(mat,ratvec->ratvec)`
      - (mat,ratvec->ratvec)
-   * - \*
+   * - :ref:`\*_(mat,mat->mat)`
      - (mat,mat->mat)
-   * - \*
+   * - :ref:`\*_(vec,mat->vec)`
      - (vec,mat->vec)
-   * - \*
+   * - :ref:`\*_(ratvec,mat->ratvec)`
      - (ratvec,mat->ratvec)
-   * - \*
+   * - :ref:`\*_(Split,Split->Split)`
      - (Split,Split->Split)
-   * - \*
+   * - :ref:`\*_(int,ParamPol->ParamPol)`
      - (int,ParamPol->ParamPol)
-   * - \*
+   * - :ref:`\*_(Split,ParamPol->ParamPol)`
      - (Split,ParamPol->ParamPol)
-   * - \\
+   * - :ref:`\\_(int,int->int)`
      - (int,int->int)
-   * - \\
+   * - :ref:`\\_(vec,int->vec)`
      - (vec,int->vec)
-   * - %
+   * - :ref:`%_(int,int->int)`
      - (int,int->int)
-   * - %
+   * - :ref:`%_(rat->int,int)`
      - (rat->int,int)
-   * - %
+   * - :ref:`%_(rat,int->rat)`
      - (rat,int->rat)
-   * - %
+   * - :ref:`%_(rat,rat->rat)`
      - (rat,rat->rat)
-   * - %
+   * - :ref:`%_(vec,int->vec)`
      - (vec,int->vec)
-   * - %
+   * - :ref:`%_(ratvec->vec,int)`
      - (ratvec->vec,int)
-   * - %
+   * - :ref:`%_(ratvec,int->ratvec)`
      - (ratvec,int->ratvec)
-   * - %
+   * - :ref:`%_(LieType->[LieType])`
      - (LieType->[LieType])
-   * - %
+   * - :ref:`%_(KGBElt->RealForm,int)`
      - (KGBElt->RealForm,int)
-   * - %
+   * - :ref:`%_(Block->RealForm,RealForm)`
      - (Block->RealForm,RealForm)
-   * - %
+   * - :ref:`%_(Param->KGBElt,vec,ratvec)`
      - (Param->KGBElt,vec,ratvec)
-   * - %
+   * - :ref:`%_(Split->int,int)`
      - (Split->int,int)
-   * - \%
+   * - :ref:`\%_(int,int->int,int)`
      - (int,int->int,int)
-   * - ^
+   * - :ref:`^_(int,int->int)`
      - (int,int->int)
-   * - ^
+   * - :ref:`^_(rat,int->rat)`
      - (rat,int->rat)
-   * - ^
+   * - :ref:`^_(vec->mat)`
      - (vec->mat)
-   * - ^
+   * - :ref:`^_(mat->mat)`
      - (mat->mat)
-   * - ^
+   * - :ref:`^_(int,[vec]->mat)`
      - (int,[vec]->mat)
-   * - /
+   * - :ref:`/_(int,int->rat)`
      - (int,int->rat)
-   * - /
+   * - :ref:`/_(rat,int->rat)`
      - (rat,int->rat)
-   * - /
+   * - :ref:`/_(rat,rat->rat)`
      - (rat,rat->rat)
-   * - /
+   * - :ref:`/_(rat->rat)`
      - (rat->rat)
-   * - /
+   * - :ref:`/_(vec,int->ratvec)`
      - (vec,int->ratvec)
-   * - /
+   * - :ref:`/_(ratvec,int->ratvec)`
      - (ratvec,int->ratvec)
-   * - /
+   * - :ref:`/_(ratvec,rat->ratvec)`
      - (ratvec,rat->ratvec)
-   * - =
+   * - :ref:`=_(int->bool)`
      - (int->bool)
-   * - =
+   * - :ref:`=_(int,int->bool)`
      - (int,int->bool)
-   * - =
+   * - :ref:`=_(rat->bool)`
      - (rat->bool)
-   * - =
+   * - :ref:`=_(rat,rat->bool)`
      - (rat,rat->bool)
-   * - =
+   * - :ref:`=_(bool,bool->bool)`
      - (bool,bool->bool)
-   * - =
+   * - :ref:`=_(string->bool)`
      - (string->bool)
-   * - =
+   * - :ref:`=_(string,string->bool)`
      - (string,string->bool)
-   * - =
+   * - :ref:`=_(vec->bool)`
      - (vec->bool)
-   * - =
+   * - :ref:`=_(vec,vec->bool)`
      - (vec,vec->bool)
-   * - =
+   * - :ref:`=_(ratvec->bool)`
      - (ratvec->bool)
-   * - =
+   * - :ref:`=_(ratvec,ratvec->bool)`
      - (ratvec,ratvec->bool)
-   * - =
+   * - :ref:`=_(mat->bool)`
      - (mat->bool)
-   * - =
+   * - :ref:`=_(mat,mat->bool)`
      - (mat,mat->bool)
-   * - =
+   * - :ref:`=_(RealForm,RealForm->bool)`
      - (RealForm,RealForm->bool)
-   * - =
+   * - :ref:`=_(InnerClass,InnerClass->bool)`
      - (InnerClass,InnerClass->bool)
-   * - =
+   * - :ref:`=_(KGBElt,KGBElt->bool)`
      - (KGBElt,KGBElt->bool)
-   * - =
+   * - :ref:`=_(Param,Param->bool)`
      - (Param,Param->bool)
-   * - =
+   * - :ref:`=_(Split->bool)`
      - (Split->bool)
-   * - =
+   * - :ref:`=_(Split,Split->bool)`
      - (Split,Split->bool)
-   * - =
+   * - :ref:`=_(ParamPol->bool)`
      - (ParamPol->bool)
-   * - =
+   * - :ref:`=_(ParamPol,ParamPol->bool)`
      - (ParamPol,ParamPol->bool)
-   * - !=
+   * - :ref:`!=_(int->bool)`
      - (int->bool)
-   * - !=
+   * - :ref:`!=_(int,int->bool)`
      - (int,int->bool)
-   * - !=
+   * - :ref:`!=_(rat->bool)`
      - (rat->bool)
-   * - !=
+   * - :ref:`!=_(rat,rat->bool)`
      - (rat,rat->bool)
-   * - !=
+   * - :ref:`!=_(bool,bool->bool)`
      - (bool,bool->bool)
-   * - !=
+   * - :ref:`!=_(string->bool)`
      - (string->bool)
-   * - !=
+   * - :ref:`!=_(string,string->bool)`
      - (string,string->bool)
-   * - !=
+   * - :ref:`!=_(vec->bool)`
      - (vec->bool)
-   * - !=
+   * - :ref:`!=_(vec,vec->bool)`
      - (vec,vec->bool)
-   * - !=
+   * - :ref:`!=_(ratvec->bool)`
      - (ratvec->bool)
-   * - !=
+   * - :ref:`!=_(ratvec,ratvec->bool)`
      - (ratvec,ratvec->bool)
-   * - !=
+   * - :ref:`!=_(mat->bool)`
      - (mat->bool)
-   * - !=
+   * - :ref:`!=_(mat,mat->bool)`
      - (mat,mat->bool)
-   * - !=
+   * - :ref:`!=_(Split->bool)`
      - (Split->bool)
-   * - !=
+   * - :ref:`!=_(Split,Split->bool)`
      - (Split,Split->bool)
-   * - !=
+   * - :ref:`!=_(ParamPol->bool)`
      - (ParamPol->bool)
-   * - !=
+   * - :ref:`!=_(ParamPol,ParamPol->bool)`
      - (ParamPol,ParamPol->bool)
-   * - >=
+   * - :ref:`>=_(int->bool)`
      - (int->bool)
-   * - >=
+   * - :ref:`>=_(int,int->bool)`
      - (int,int->bool)
-   * - >=
+   * - :ref:`>=_(rat->bool)`
      - (rat->bool)
-   * - >=
+   * - :ref:`>=_(rat,rat->bool)`
      - (rat,rat->bool)
-   * - >=
+   * - :ref:`>=_(string,string->bool)`
      - (string,string->bool)
-   * - >=
+   * - :ref:`>=_(vec->bool)`
      - (vec->bool)
-   * - >=
+   * - :ref:`>=_(ratvec->bool)`
      - (ratvec->bool)
-   * - >
+   * - :ref:`>_(int->bool)`
      - (int->bool)
-   * - >
+   * - :ref:`>_(int,int->bool)`
      - (int,int->bool)
-   * - >
+   * - :ref:`>_(rat->bool)`
      - (rat->bool)
-   * - >
+   * - :ref:`>_(rat,rat->bool)`
      - (rat,rat->bool)
-   * - >
+   * - :ref:`>_(string,string->bool)`
      - (string,string->bool)
-   * - >
+   * - :ref:`>_(vec->bool)`
      - (vec->bool)
-   * - >
+   * - :ref:`>_(ratvec->bool)`
      - (ratvec->bool)
-   * - <=
+   * - :ref:`<=_(int->bool)`
      - (int->bool)
-   * - <=
+   * - :ref:`<=_(int,int->bool)`
      - (int,int->bool)
-   * - <=
+   * - :ref:`<=_(rat->bool)`
      - (rat->bool)
-   * - <=
+   * - :ref:`<=_(rat,rat->bool)`
      - (rat,rat->bool)
-   * - <=
+   * - :ref:`<=_(string,string->bool)`
      - (string,string->bool)
-   * - <
+   * - :ref:`<_(int->bool)`
      - (int->bool)
-   * - <
+   * - :ref:`<_(int,int->bool)`
      - (int,int->bool)
-   * - <
+   * - :ref:`<_(rat->bool)`
      - (rat->bool)
-   * - <
+   * - :ref:`<_(rat,rat->bool)`
      - (rat,rat->bool)
-   * - <
+   * - :ref:`<_(string,string->bool)`
      - (string,string->bool)
-   * - ##
+   * - :ref:`##_(string,string->string)`
      - (string,string->string)
-   * - ##
+   * - :ref:`##_([string]->string)`
      - ([string]->string)
-   * - ##
+   * - :ref:`##_(vec,vec->vec)`
      - (vec,vec->vec)
-   * - ##
+   * - :ref:`##_([vec]->vec)`
      - ([vec]->vec)
-   * - int_format
+   * - :ref:`int_format_(int->string)`
      - (int->string)
-   * - ascii
+   * - :ref:`ascii_(string->int)`
      - (string->int)
-   * - ascii
+   * - :ref:`ascii_(int->string)`
      - (int->string)
-   * - #
+   * - :ref:`#_(string->int)`
      - (string->int)
-   * - #
+   * - :ref:`#_(vec->int)`
      - (vec->int)
-   * - #
+   * - :ref:`#_(ratvec->int)`
      - (ratvec->int)
-   * - #
+   * - :ref:`#_(mat->int,int)`
      - (mat->int,int)
-   * - #
+   * - :ref:`#_(vec,int->vec)`
      - (vec,int->vec)
-   * - #
+   * - :ref:`#_(int,vec->vec)`
      - (int,vec->vec)
-   * - #
+   * - :ref:`#_(int,[vec]->mat)`
      - (int,[vec]->mat)
-   * - #
+   * - :ref:`#_(LieType->int)`
      - (LieType->int)
-   * - #
+   * - :ref:`#_(Block->int)`
      - (Block->int)
-   * - #
+   * - :ref:`#_(ParamPol->int)`
      - (ParamPol->int)
-   * - flex_add
+   * - :ref:`flex_add_(vec,vec->vec)`
      - (vec,vec->vec)
-   * - flex_sub
+   * - :ref:`flex_sub_(vec,vec->vec)`
      - (vec,vec->vec)
-   * - convolve
+   * - :ref:`convolve_(vec,vec->vec)`
      - (vec,vec->vec)
-   * - null
+   * - :ref:`null_(int->vec)`
      - (int->vec)
-   * - null
+   * - :ref:`null_(int,int->mat)`
      - (int,int->mat)
-   * - transpose 
+   * - :ref:`transpose _(mat->mat)`
      - (mat->mat)
-   * - id_mat
+   * - :ref:`id_mat_(int->mat)`
      - (int->mat)
-   * - diagonal
+   * - :ref:`diagonal_(vec->mat)`
      - (vec->mat)
-   * - stack_rows
+   * - :ref:`stack_rows_([vec]->mat)`
      - ([vec]->mat)
-   * - swiss_matrix_knife
+   * - :ref:`swiss_matrix_knife_(int,mat,int,int,int,int->mat)`
      - (int,mat,int,int,int,int->mat)
-   * - matrix slicer
+   * - :ref:`matrix slicer_(int,mat,int,int,int,int->mat)`
      - (int,mat,int,int,int,int->mat)
-   * - echelon
+   * - :ref:`echelon_(mat->mat,[int])`
      - (mat->mat,[int])
-   * - diagonalize
+   * - :ref:`diagonalize_(mat->vec,mat,mat)`
      - (mat->vec,mat,mat)
-   * - adapted_basis
+   * - :ref:`adapted_basis_(mat->mat,vec)`
      - (mat->mat,vec)
-   * - kernel
+   * - :ref:`kernel_(mat->mat)`
      - (mat->mat)
-   * - eigen_lattice
+   * - :ref:`eigen_lattice_(mat,int->mat)`
      - (mat,int->mat)
-   * - row_saturate
+   * - :ref:`row_saturate_(mat->mat)`
      - (mat->mat)
-   * - inv_fact
+   * - :ref:`inv_fact_(mat->vec)`
      - (mat->vec)
-   * - Smith_basis
+   * - :ref:`Smith_basis_(mat->mat)`
      - (mat->mat)
-   * - Smith
+   * - :ref:`Smith_(mat->mat,vec)`
      - (mat->mat,vec)
-   * - invert
+   * - :ref:`invert_(mat->mat,int)`
      - (mat->mat,int)
-   * - mod2_section
+   * - :ref:`mod2_section_(mat->mat)`
      - (mat->mat)
-   * - subspace_normal
+   * - :ref:`subspace_normal_(mat->mat,mat,mat,[int])`
      - (mat->mat,mat,mat,[int])
-   * - Lie_type
+   * - :ref:`Lie_type_(string->LieType)`
      - (string->LieType)
-   * - Lie_type
+   * - :ref:`Lie_type_(RootDatum->LieType)`
      - (RootDatum->LieType)
-   * - Cartan_matrix
+   * - :ref:`Cartan_matrix_(LieType->mat)`
      - (LieType->mat)
-   * - Cartan_matrix
+   * - :ref:`Cartan_matrix_(RootDatum->mat)`
      - (RootDatum->mat)
-   * - Cartan_matrix_type
+   * - :ref:`Cartan_matrix_type_(mat->LieType,vec)`
      - (mat->LieType,vec)
-   * - rank
+   * - :ref:`rank_(LieType->int)`
      - (LieType->int)
-   * - rank
+   * - :ref:`rank_(RootDatum->int)`
      - (RootDatum->int)
-   * - semisimple_rank
+   * - :ref:`semisimple_rank_(LieType->int)`
      - (LieType->int)
-   * - semisimple_rank
+   * - :ref:`semisimple_rank_(RootDatum->int)`
      - (RootDatum->int)
-   * - str
+   * - :ref:`str_(LieType->string)`
      - (LieType->string)
-   * - Smith_Cartan
+   * - :ref:`Smith_Cartan_(LieType->mat,vec)`
      - (LieType->mat,vec)
-   * - filter_units
+   * - :ref:`filter_units_(mat,vec->mat,vec)`
      - (mat,vec->mat,vec)
-   * - ann_mod
+   * - :ref:`ann_mod_(mat,int->mat)`
      - (mat,int->mat)
-   * - replace_gen
+   * - :ref:`replace_gen_((mat,vec),mat->mat)`
      - ((mat,vec),mat->mat)
-   * - quotient_basis
+   * - :ref:`quotient_basis_(LieType,[ratvec]->mat)`
      - (LieType,[ratvec]->mat)
-   * - involution
+   * - :ref:`involution_(LieType,string->mat)`
      - (LieType,string->mat)
-   * - involution
+   * - :ref:`involution_(LieType,mat,string->mat)`
      - (LieType,mat,string->mat)
-   * - involution
+   * - :ref:`involution_(CartanClass->mat)`
      - (CartanClass->mat)
-   * - involution
+   * - :ref:`involution_(KGBElt->mat)`
      - (KGBElt->mat)
-   * - root_datum
+   * - :ref:`root_datum_(mat,mat->RootDatum)`
      - (mat,mat->RootDatum)
-   * - root_datum
+   * - :ref:`root_datum_(LieType,mat->RootDatum)`
      - (LieType,mat->RootDatum)
-   * - root_datum
+   * - :ref:`root_datum_(RootDatum,mat->RootDatum)`
      - (RootDatum,mat->RootDatum)
-   * - root_datum
+   * - :ref:`root_datum_(InnerClass->RootDatum)`
      - (InnerClass->RootDatum)
-   * - simply_connected
+   * - :ref:`simply_connected_(LieType->RootDatum)`
      - (LieType->RootDatum)
-   * - adjoint
+   * - :ref:`adjoint_(LieType->RootDatum)`
      - (LieType->RootDatum)
-   * - root
+   * - :ref:`root_(RootDatum,int->vec)`
      - (RootDatum,int->vec)
-   * - coroot
+   * - :ref:`coroot_(RootDatum,int->vec)`
      - (RootDatum,int->vec)
-   * - simple_roots
+   * - :ref:`simple_roots_(RootDatum->mat)`
      - (RootDatum->mat)
-   * - simple_coroots
+   * - :ref:`simple_coroots_(RootDatum->mat)`
      - (RootDatum->mat)
-   * - posroots
+   * - :ref:`posroots_(RootDatum->mat)`
      - (RootDatum->mat)
-   * - poscoroots
+   * - :ref:`poscoroots_(RootDatum->mat)`
      - (RootDatum->mat)
-   * - root_coradical
+   * - :ref:`root_coradical_(RootDatum->mat)`
      - (RootDatum->mat)
-   * - coroot_radical
+   * - :ref:`coroot_radical_(RootDatum->mat)`
      - (RootDatum->mat)
-   * - fundamental_weight
+   * - :ref:`fundamental_weight_(RootDatum,int->ratvec)`
      - (RootDatum,int->ratvec)
-   * - fundamental_coweight
+   * - :ref:`fundamental_coweight_(RootDatum,int->ratvec)`
      - (RootDatum,int->ratvec)
-   * - dual
+   * - :ref:`dual_(InnerClass->InnerClass)`
      - (InnerClass->InnerClass)
-   * - dual
+   * - :ref:`dual_(RootDatum->RootDatum)`
      - (RootDatum->RootDatum)
-   * - dual
+   * - :ref:`dual_(Block->Block)`
      - (Block->Block)
-   * - derived_info
+   * - :ref:`derived_info_(RootDatum->RootDatum,mat)`
      - (RootDatum->RootDatum,mat)
-   * - mod_central_torus_info
+   * - :ref:`mod_central_torus_info_(RootDatum->RootDatum,mat)`
      - (RootDatum->RootDatum,mat)
-   * - nr_of_posroots
+   * - :ref:`nr_of_posroots_(RootDatum->int)`
      - (RootDatum->int)
-   * - root_index
+   * - :ref:`root_index_(RootDatum,vec->int)`
      - (RootDatum,vec->int)
-   * - coroot_index
+   * - :ref:`coroot_index_(RootDatum,vec->int)`
      - (RootDatum,vec->int)
-   * - integrality_datum
+   * - :ref:`integrality_datum_(RootDatum,ratvec->RootDatum)`
      - (RootDatum,ratvec->RootDatum)
-   * - integrality_points
+   * - :ref:`integrality_points_(RootDatum,ratvec->[rat])`
      - (RootDatum,ratvec->[rat])
-   * - classify_involution
+   * - :ref:`classify_involution_(mat->int,int,int)`
      - (mat->int,int,int)
-   * - inner_class
+   * - :ref:`inner_class_(RootDatum,mat->InnerClass)`
      - (RootDatum,mat->InnerClass)
-   * - inner_class
+   * - :ref:`inner_class_(LieType,[ratvec],string->InnerClass)`
      - (LieType,[ratvec],string->InnerClass)
-   * - inner_class
+   * - :ref:`inner_class_(RootDatum,string->InnerClass)`
      - (RootDatum,string->InnerClass)
-   * - inner_class
+   * - :ref:`inner_class_(RealForm->InnerClass)`
      - (RealForm->InnerClass)
-   * - twisted_involution
+   * - :ref:`twisted_involution_(RootDatum,mat->InnerClass,vec)`
      - (RootDatum,mat->InnerClass,vec)
-   * - distinguished_involution
+   * - :ref:`distinguished_involution_(InnerClass->mat)`
      - (InnerClass->mat)
-   * - form_names
+   * - :ref:`form_names_(InnerClass->[string])`
      - (InnerClass->[string])
-   * - dual_form_names
+   * - :ref:`dual_form_names_(InnerClass->[string])`
      - (InnerClass->[string])
-   * - nr_of_real_forms
+   * - :ref:`nr_of_real_forms_(InnerClass->int)`
      - (InnerClass->int)
-   * - nr_of_dual_real_forms
+   * - :ref:`nr_of_dual_real_forms_(InnerClass->int)`
      - (InnerClass->int)
-   * - nr_of_Cartan_classes
+   * - :ref:`nr_of_Cartan_classes_(InnerClass->int)`
      - (InnerClass->int)
-   * - block_sizes
+   * - :ref:`block_sizes_(InnerClass->mat)`
      - (InnerClass->mat)
-   * - occurrence_matrix
+   * - :ref:`occurrence_matrix_(InnerClass->mat)`
      - (InnerClass->mat)
-   * - dual_occurrence_matrix
+   * - :ref:`dual_occurrence_matrix_(InnerClass->mat)`
      - (InnerClass->mat)
-   * - real_form
+   * - :ref:`real_form_(InnerClass,int->RealForm)`
      - (InnerClass,int->RealForm)
-   * - real_form
+   * - :ref:`real_form_(InnerClass,mat,ratvec->RealForm)`
      - (InnerClass,mat,ratvec->RealForm)
-   * - real_form
+   * - :ref:`real_form_(Param->RealForm)`
      - (Param->RealForm)
-   * - real_form
+   * - :ref:`real_form_(ParamPol->RealForm)`
      - (ParamPol->RealForm)
-   * - form_number
+   * - :ref:`form_number_(RealForm->int)`
      - (RealForm->int)
-   * - quasisplit_form
+   * - :ref:`quasisplit_form_(InnerClass->RealForm)`
      - (InnerClass->RealForm)
-   * - components_rank
+   * - :ref:`components_rank_(RealForm->int)`
      - (RealForm->int)
-   * - count_Cartans
+   * - :ref:`count_Cartans_(RealForm->int)`
      - (RealForm->int)
-   * - KGB_size
+   * - :ref:`KGB_size_(RealForm->int)`
      - (RealForm->int)
-   * - base_grading_vector
+   * - :ref:`base_grading_vector_(RealForm->ratvec)`
      - (RealForm->ratvec)
-   * - Cartan_order
+   * - :ref:`Cartan_order_(RealForm->mat)`
      - (RealForm->mat)
-   * - dual_real_form
+   * - :ref:`dual_real_form_(InnerClass,int->RealForm)`
      - (InnerClass,int->RealForm)
-   * - dual_quasisplit_form
+   * - :ref:`dual_quasisplit_form_(InnerClass->RealForm)`
      - (InnerClass->RealForm)
-   * - central_fiber
+   * - :ref:`central_fiber_(RealForm->[vec])`
      - (RealForm->[vec])
-   * - initial_torus_bits
+   * - :ref:`initial_torus_bits_(RealForm->vec)`
      - (RealForm->vec)
-   * - Cartan_class
+   * - :ref:`Cartan_class_(RealForm,int->CartanClass)`
      - (RealForm,int->CartanClass)
-   * - Cartan_class
+   * - :ref:`Cartan_class_(InnerClass,int->CartanClass)`
      - (InnerClass,int->CartanClass)
-   * - Cartan_class
+   * - :ref:`Cartan_class_(KGBElt->CartanClass)`
      - (KGBElt->CartanClass)
-   * - most_split_Cartan
+   * - :ref:`most_split_Cartan_(RealForm->CartanClass)`
      - (RealForm->CartanClass)
-   * - Cartan_info
+   * - :ref:`Cartan_info_(CartanClass->(int,int,int),vec,(int,int),(LieType,LieType,LieType))`
      - (CartanClass->(int,int,int),vec,(int,int),(LieType,LieType,LieType))
-   * - real_forms
+   * - :ref:`real_forms_(CartanClass->[RealForm])`
      - (CartanClass->[RealForm])
-   * - dual_real_forms
+   * - :ref:`dual_real_forms_(CartanClass->[RealForm])`
      - (CartanClass->[RealForm])
-   * - fiber_partition
+   * - :ref:`fiber_partition_(CartanClass,RealForm->[int])`
      - (CartanClass,RealForm->[int])
-   * - square_classes
+   * - :ref:`square_classes_(CartanClass->[[int]])`
      - (CartanClass->[[int]])
-   * - KGB
+   * - :ref:`KGB_(RealForm,int->KGBElt)`
      - (RealForm,int->KGBElt)
-   * - cross
+   * - :ref:`cross_(int,KGBElt->KGBElt)`
      - (int,KGBElt->KGBElt)
-   * - cross
+   * - :ref:`cross_(int,Block,int->int)`
      - (int,Block,int->int)
-   * - cross
+   * - :ref:`cross_(int,Param->Param)`
      - (int,Param->Param)
-   * - cross
+   * - :ref:`cross_(vec,Param->Param)`
      - (vec,Param->Param)
-   * - Cayley
+   * - :ref:`Cayley_(int,KGBElt->KGBElt)`
      - (int,KGBElt->KGBElt)
-   * - Cayley
+   * - :ref:`Cayley_(int,Block,int->int)`
      - (int,Block,int->int)
-   * - Cayley
+   * - :ref:`Cayley_(int,Param->Param)`
      - (int,Param->Param)
-   * - Cayley
+   * - :ref:`Cayley_(vec,Param->Param)`
      - (vec,Param->Param)
-   * - status
+   * - :ref:`status_(int,KGBElt->int)`
      - (int,KGBElt->int)
-   * - status
+   * - :ref:`status_(int,Block,int->int)`
      - (int,Block,int->int)
-   * - KGB_elt
+   * - :ref:`KGB_elt_(RealForm,mat,ratvec->KGBElt)`
      - (RealForm,mat,ratvec->KGBElt)
-   * - twist
+   * - :ref:`twist_(KGBElt->KGBElt)`
      - (KGBElt->KGBElt)
-   * - twist
+   * - :ref:`twist_(Param->Param)`
      - (Param->Param)
-   * - length
+   * - :ref:`length_(KGBElt->int)`
      - (KGBElt->int)
-   * - length
+   * - :ref:`length_(Param->int)`
      - (Param->int)
-   * - torus_bits
+   * - :ref:`torus_bits_(KGBElt->vec)`
      - (KGBElt->vec)
-   * - torus_factor
+   * - :ref:`torus_factor_(KGBElt->ratvec)`
      - (KGBElt->ratvec)
-   * - block
+   * - :ref:`block_(RealForm,RealForm->Block)`
      - (RealForm,RealForm->Block)
-   * - block
+   * - :ref:`block_(Param->[Param],int)`
      - (Param->[Param],int)
-   * - element
+   * - :ref:`element_(Block,int->KGBElt,KGBElt)`
      - (Block,int->KGBElt,KGBElt)
-   * - index
+   * - :ref:`index_(Block,KGBElt,KGBElt->int)`
      - (Block,KGBElt,KGBElt->int)
-   * - inverse_Cayley
+   * - :ref:`inverse_Cayley_(int,Block,int->int)`
      - (int,Block,int->int)
-   * - param
+   * - :ref:`param_(KGBElt,vec,ratvec->Param)`
      - (KGBElt,vec,ratvec->Param)
-   * - is_standard
+   * - :ref:`is_standard_(Param->bool)`
      - (Param->bool)
-   * - is_zero
+   * - :ref:`is_zero_(Param->bool)`
      - (Param->bool)
-   * - is_final
+   * - :ref:`is_final_(Param->bool)`
      - (Param->bool)
-   * - dominant
+   * - :ref:`dominant_(Param->Param)`
      - (Param->Param)
-   * - inv_Cayley
+   * - :ref:`inv_Cayley_(int,Param->Param)`
      - (int,Param->Param)
-   * - orientation_nr
+   * - :ref:`orientation_nr_(Param->int)`
      - (Param->int)
-   * - reducibility_points
+   * - :ref:`reducibility_points_(Param->[rat])`
      - (Param->[rat])
-   * - print_block
+   * - :ref:`print_block_(Param->)`
      - (Param->)
-   * - print_block
+   * - :ref:`print_block_(Block->)`
      - (Block->)
-   * - partial_block
+   * - :ref:`partial_block_(Param->[Param])`
      - (Param->[Param])
-   * - KL_block
+   * - :ref:`KL_block_(Param->[Param],int,mat,[vec],vec,vec,mat)`
      - (Param->[Param],int,mat,[vec],vec,vec,mat)
-   * - partial_KL_block
+   * - :ref:`partial_KL_block_(Param->[Param],mat,[vec],vec,vec,mat)`
      - (Param->[Param],mat,[vec],vec,vec,mat)
-   * - null_module
+   * - :ref:`null_module_(RealForm->ParamPol)`
      - (RealForm->ParamPol)
-   * - last_term
+   * - :ref:`last_term_(ParamPol->Split,Param)`
      - (ParamPol->Split,Param)
-   * - first_term
+   * - :ref:`first_term_(ParamPol->Split,Param)`
      - (ParamPol->Split,Param)
-   * - K_type_formula
+   * - :ref:`K_type_formula_(Param->ParamPol)`
      - (Param->ParamPol)
-   * - branch
+   * - :ref:`branch_(Param,int->ParamPol)`
      - (Param,int->ParamPol)
-   * - to_canonical
+   * - :ref:`to_canonical_(Param->Param)`
      - (Param->Param)
-   * - height
+   * - :ref:`height_(Param->int)`
      - (Param->int)
-   * - deform
+   * - :ref:`deform_(Param->ParamPol)`
      - (Param->ParamPol)
-   * - full_deform
+   * - :ref:`full_deform_(Param->ParamPol)`
      - (Param->ParamPol)
-   * - KL_sum_at_s
+   * - :ref:`KL_sum_at_s_(Param->ParamPol)`
      - (Param->ParamPol)
-   * - raw_KL
+   * - :ref:`raw_KL_(Block->mat,[vec],vec)`
      - (Block->mat,[vec],vec)
-   * - dual_KL
+   * - :ref:`dual_KL_(Block->mat,[vec],vec)`
      - (Block->mat,[vec],vec)
-   * - print_gradings
+   * - :ref:`print_gradings_(CartanClass,RealForm->)`
      - (CartanClass,RealForm->)
-   * - print_real_Weyl
+   * - :ref:`print_real_Weyl_(RealForm,CartanClass->)`
      - (RealForm,CartanClass->)
-   * - print_strong_real
+   * - :ref:`print_strong_real_(CartanClass->)`
      - (CartanClass->)
-   * - print_blocku
+   * - :ref:`print_blocku_(Block->)`
      - (Block->)
-   * - print_blockd
+   * - :ref:`print_blockd_(Block->)`
      - (Block->)
-   * - print_blockstabilizer
+   * - :ref:`print_blockstabilizer_(Block,CartanClass->)`
      - (Block,CartanClass->)
-   * - print_KGB
+   * - :ref:`print_KGB_(RealForm->)`
      - (RealForm->)
-   * - print_X
+   * - :ref:`print_X_(InnerClass->)`
      - (InnerClass->)
-   * - print_KL_basis
+   * - :ref:`print_KL_basis_(Block->)`
      - (Block->)
-   * - print_prim_KL
+   * - :ref:`print_prim_KL_(Block->)`
      - (Block->)
-   * - print_KL_list
+   * - :ref:`print_KL_list_(Block->)`
      - (Block->)
-   * - print_W_cells
+   * - :ref:`print_W_cells_(Block->)`
      - (Block->)
-   * - print_W_graph
+   * - :ref:`print_W_graph_(Block->)`
      - (Block->)
-   * - input_path
+   * - :ref:`input_path_[string]`
      - [string]
-   * - prelude_log
+   * - :ref:`prelude_log_[string]`
      - [string]
