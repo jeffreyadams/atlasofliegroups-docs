@@ -100,7 +100,10 @@ So, in general, if we use the standard real form notation for the groups, atlas 
     | 1, 0 |
     | -1, 1 |
 
-These are the usual simple roots for Sp(4). So, using these pre-defined groups to define our ral form gives us, in most cases, the familiar coordinates to work with. So we can look at all the positive roots and coroots::
+These are the usual simple roots for Sp(4). So, using these
+pre-defined groups to define our real form gives us, in most cases, the
+familiar coordinates to work with. So we can look at all the positive
+roots and coroots::
 
      atlas> posroots(rd)
      Value:
