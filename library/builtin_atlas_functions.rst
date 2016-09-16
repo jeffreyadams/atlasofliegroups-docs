@@ -17,7 +17,7 @@ Built-in functions are those functions that are available before you load any ``
    built_in_functions/more_advanced
    built_in_functions/test_built_in_functions
    built_in_functions/test_built_in_functions_ref
-   built_in_functions/basic_index
+
 
 
 
