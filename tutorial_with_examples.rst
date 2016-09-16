@@ -12,3 +12,4 @@ Tutorial
    tutorial/basic_commands.rst
    tutorial/vectors.rst   
    tutorial/matrices.rst
+   tutorial/functions_and_loops.rst
