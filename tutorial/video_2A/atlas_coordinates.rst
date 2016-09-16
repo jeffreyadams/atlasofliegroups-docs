@@ -113,7 +113,7 @@ easier to work with::
 
 Notice this is a version of the root_datum command that we had not seen. It says `please give me the root datum for the following set of simple roots and coroots'. That is what a root datum is in atlas. So you can define the root datum by giving the matrices you want for the simple roots and coroots and atlas will accept them as a root datum. It is not clear which of the three isomorphism classes of root data for this type this one is.
 
-Now lets look at a another example.
+Now lets look at a another example::
 
     atlas> set rd=simply_connected (C4)
     Identifier rd: RootDatum (hiding previous one of type RootDatum)
