@@ -78,6 +78,7 @@ On the other hand if we type::
    | 0, 1 |
    atlas>
 
+
 Which makes sense since ``SL(2,C)`` is the real Lie group with complexified ie algebra equal to ``A2 x A2``, 
 
 
@@ -99,7 +100,7 @@ So, in general, if we use the standard real form notation for the groups, atlas 
     | 1, 0 |
     | -1, 1 |
 
-This are the usual simple roots for Sp(4). So, using these pre-defined groups to define our ral form gives us, in most cases, the familiar coordinates to work with. So we can look at all the positive roots and coroots::
+These are the usual simple roots for Sp(4). So, using these pre-defined groups to define our ral form gives us, in most cases, the familiar coordinates to work with. So we can look at all the positive roots and coroots::
 
      atlas> posroots(rd)
      Value:
@@ -131,7 +132,9 @@ Again the pairing between these sets is the usual dot product::
       atlas> alpha*alpha_check
       Value: 2
 
-This is the natural way of pairing roots with coroots::
+This is the natural way of pairing roots with coroots. Pairing roots with roots is not too meaningful in the theory. 
+
+Also, the rho is given in the usual coordinates.::
 
       atlas> rho(rd)
       Value: [ 2, 1 ]/1
@@ -181,7 +184,7 @@ Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are
 
 Unfortunately these are not the usual coordinates for this group. Nevertheless the Cartan matrix is the usual one.
 
-There is also a function called Cartan_matrix. The possible arguments are given below::
+There is also a function called Cartan_matrix. The possible arguments and outputs are given below::
 
       atlas> whattype Cartan_matrix ?
       Overloaded instances of 'Cartan_matrix'
@@ -222,7 +225,9 @@ Now let's try a larger group::
     atlas> 
 
 
-These are also not the usual coordinates for ``C4``. But again we get the usual Cartan matrix. And in this case it equals to the matrix of the simple roots. So these are good coordinates, called the fundamentatl weight coordinates. In these corrdinates ``rho`` is::
+These are also not the usual coordinates for ``C4``. But again we get
+the usual Cartan matrix. And in this case it equals to the matrix of
+the simple roots. So these are good coordinates; the fundamental weight coordinates. In these corrdinates ``rho`` is::
 
       atlas> rho(rd)
       Value: [ 1, 1, 1, 1 ]/1
@@ -245,7 +250,5 @@ But now, if we use  the defined real form ``Sp(8)``, we get root data in the usu
     Value: [ 4, 3, 2, 1 ]/1
     atlas>
 
-These are isomorphic root data. They are equal up to a change of
-coordinates. One thing that takes getting used to is we need to
-understand which coordinates ``atlas`` is using.
+These are isomorphic root data. They are equal up to a change of coordinates. It just takes getting used to understanding which coordinates ``atlas`` is using.
 
