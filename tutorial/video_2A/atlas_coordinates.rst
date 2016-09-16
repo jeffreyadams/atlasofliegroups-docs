@@ -62,17 +62,21 @@ But look what happens when we type::
 If you want to ask atlas about a vector in the Cartan or say an
 infinitesimal character, you need to write it in terms of the simple
 roots. Then the software will give you the vector in terms of the ``atlas``
-coordinates. For example::
+coordinates. You then have to understand which coordinates the software is using to both ask the question and interpret the answer. For example, it is useful to know what rho is in the coordinates the software is using::
 
 	     atlas> rho(rd)
 	     Value: [ 1, 1, 1, 1 ]/1
 	     atlas> rho(G)
 	     Value: [ 4, 3, 2, 1 ]/1
+
 	     atlas> sum(simple_roots (G))
 	     Value: [ 2, 1, 1, 1 ]
 	     atlas>sum(simple_roots (rd))
 	     Value: [ 1, 0, 0, 1 ]
 	     atlas> 
+
+Note the expression in the case when ``G=SL(5,R)``. ``atlas`` is using only four coordinates when it is costumary to use five coordinates to describe the weights in ``G``.
+
 Alternatively, you can try to phrase the question in a way that atlas will use coordinates you are familiar with:: 
 	
        atlas> set G= GL(5,R)
@@ -84,6 +88,7 @@ Alternatively, you can try to phrase the question in a way that atlas will use c
        | 0, -1, 1, 0 |
        | 0, 0, -1, 1 |
        | 0, 0, 0, -1 |
+       
        atlas> rho(G)
        Value: [ 2, 1, 0, -1, -2 ]/1
 
@@ -111,7 +116,20 @@ easier to work with::
        Value: simply connected root datum of Lie type 'A1.T1'
        atlas>
 
-Notice this is a version of the root_datum command that we had not seen. It says `please give me the root datum for the following set of simple roots and coroots'. That is what a root datum is in atlas. So you can define the root datum by giving the matrices you want for the simple roots and coroots and atlas will accept them as a root datum. It is not clear which of the three isomorphism classes of root data for this type this one is.
+So this is a root datum of the above Lie type and with some ridiculous coordinates. It is not clear which group it is. There are three isomorphism classes of root data of this type. But once we recognize the Lie Type we can redefine it so that it looks nicer::
+
+   atlas> set rd_new=root_datum ([[1,-1]],[[1,-1]])
+   Identifier rd_new: RootDatum
+   atlas> rd_new
+   Value: simply connected adjoint root datum of Lie type 'A1.T1'
+   atlas>
+
+Notice this is a version of the root_datum command that we had not
+seen. It says `please give me the root datum for the following set of
+simple roots and coroots'. That is what a root datum is in atlas. So
+you can define the root datum by giving the matrices you want for the
+simple roots and coroots and atlas will accept them as a root
+datum. 
 
 Now lets look at a another example::
 
@@ -122,7 +140,7 @@ Now lets look at a another example::
     |  2, -1,  0,  0 |
     | -1,  2, -1,  0 |
     |  0, -1,  2, -2 |
-    |  0,  0, -1,  2 |
+   |  0,  0, -1,  2 |
 
     atlas> simple_coroots (rd)
     Value:
