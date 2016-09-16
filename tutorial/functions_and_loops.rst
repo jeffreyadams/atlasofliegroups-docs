@@ -2,6 +2,7 @@ Functions and Loops
 ===================
 
 To define a function we specify the argument, variable and the operation(s) performed on the argument using the following format "set f(<data type> <variable name>)=operation".The software then tells us what type of output the function gives. We can also ask the software what type of input and output has been specified for the function  ``f``.  For example::
+
    atlas> set f(int x)=x^2
    Defined f: (int->int)
    atlas> whattype f?
@@ -75,4 +76,7 @@ second part defines an empty vector rv. The third part is the loop that
 says that for each vector v in the matrix A, append it to what you
 have in rv. The last part says, do it for all the vectors in A and print the final result.
 
-There are several kinds of loops which are explained in the ``atlas.help`` file. However, sometimes it is easier to look at some of the scripts in the ``.at`` files and see how the loops are used to define functions. IN particular the ``basic.at`` file can be useful. 
+There are several kinds of loops which are explained in the
+``atlas.help`` file. However, sometimes it is easier to look at some
+of the scripts in the ``.at`` files and see how the loops are used to
+define functions. In particular the ``basic.at`` file can be useful.
