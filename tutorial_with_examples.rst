@@ -6,10 +6,10 @@ Tutorial
 .. toctree::
    :maxdepth: 2
    
-   tutorial/welcome
-   tutorial/basics
-   tutorial/atlas_help_files
-   tutorial/basic_commands.rst
-   tutorial/vectors.rst   
-   tutorial/matrices.rst
-   tutorial/functions_and_loops.rst
+   tutorial/preliminaries
+   tutorial/structure_theory
+   tutorial/coordinates_characters
+   tutorial/principal_series
+   tutorial/syntax_minimalps
+   tutorial/general_parameters
+   
