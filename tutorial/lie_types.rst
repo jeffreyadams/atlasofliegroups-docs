@@ -1,8 +1,7 @@
 Root Data and Lie Types
 ========================
 
-    To start let's talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types.
-    By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type as follows.::
+To start let's talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types. By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type as follows.::
 
     atlas> set g=LieType:"A1T1"
     Identifier g: LieType
@@ -36,7 +35,7 @@ Recall that a root datum consists of two lattices,``X^*``,  ``X_*``, with a perf
        
        atlas> 
 
-    In atlas, a root datum is a pair of m×n integral matrices (A,B) such that ^{T}AB is the Cartan matrix for the Lie algebra g of the given Lie Type, m= rank of g, and n= semisimple rank of g. In the above example the rank is 2 and the semisimple rank is 1. And we have::
+In atlas, a root datum is a pair of m×n integral matrices (A,B) such that ^{T}AB is the Cartan matrix for the Lie algebra g of the given Lie Type, m= rank of g, and n= semisimple rank of g. In the above example the rank is 2 and the semisimple rank is 1. And we have::
 
     atlas> set A=simple_roots (rd)
     Identifier A: mat (hiding previous one of type mat)
@@ -121,7 +120,7 @@ Another useful .at filethat lets you put in Lie types without the quotation mark
 	atlas>whattype A1
 	type: string
 	
-And now we can type:
+And now we can type::
 
     atlas> set g=LieType :A1
     Identifier g: LieType (hiding previous one of type string)
@@ -130,7 +129,7 @@ And now we can type:
     atlas> whattype A1
     type: string
     
-Or we can say
+Or we can say::
 
    atlas> set rd=simply_connected (A1)
    Identifier rd: RootDatum (hiding previous one of type RootDatum)
