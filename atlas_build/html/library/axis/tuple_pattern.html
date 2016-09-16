@@ -158,7 +158,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/lie_types.html">Root Data and Lie Types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/real_groups.html">Real Forms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a></li>
@@ -1283,18 +1286,6 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="array.html" class="btn btn-neutral float-right" title="Array" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="tuple-displays-and-pattern-matching">
 <h1>Tuple Displays and Pattern Matching<a class="headerlink" href="#tuple-displays-and-pattern-matching" title="Permalink to this headline">¶</a></h1>
@@ -1318,7 +1309,7 @@ One could even for instance multiply the components of &#8216;z&#8217; by writin
 (giving 12 in the example); indeed the expression <code class="docutils literal"><span class="pre">3*4</span></code> is transformed by the
 parser into <code class="docutils literal"><span class="pre">*(3,4)</span></code>, and (currently) this form is also used in error
 messages, for instance in:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; GL(10/2)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; GL(10/2)
 Error in expression GL(/(10,2)) at &lt;standard input&gt;:...
   Failed to match &#39;GL&#39; with argument type rat
 Type check failed
@@ -1330,19 +1321,19 @@ ignoring the remainder one should write 102 instead).</p>
 an identifier can be introduced, one may also specify a tuple of identifiers,
 if the type of the value is appropriate, and the components will be bound to
 the corresponding identifiers. So whereas:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x = E
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set x = E
 </pre></div>
 </div>
 <p>introduces the identifier &#8216;x&#8217; whose value (and type) are set to that of the
 expression &#8216;E&#8217;, one can alternatively say</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>atlas&gt; set (x,y) = E
+<div class="highlight-none"><div class="highlight"><pre>atlas&gt; set (x,y) = E
 </pre></div>
 </div>
 <p>provided that E produces a pair (some value of some 2-tuple type), and the
 variable &#8216;x&#8217; will be set to the first component of the pair, and &#8216;y&#8217; to the
 second component. In either case, the types of the variables introduced will
 be reported, as in:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set (q,r) = 22 \% 7   { Euclidean division with remainder }
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set (q,r) = 22 \% 7   { Euclidean division with remainder }
 Identifiers q: int, r: int
 atlas&gt; q    { quotient }
 Value: 3
@@ -1356,12 +1347,12 @@ local variables one uses a syntax like that of &#8216;set&#8217; used above, but
 &#8216;let&#8217; instead of &#8216;set&#8217;, and followed by &#8216;in&#8217; and the &#8220;body&#8221; if the
 let-expression, the expression where the local variable is in scope. So to
 compute a value from the components of &#8216;z&#8217;, one could say:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>atlas&gt; let (x,y) = z in 3*y-x
+<div class="highlight-none"><div class="highlight"><pre>atlas&gt; let (x,y) = z in 3*y-x
 </pre></div>
 </div>
 <p>If only the first component is needed, there is no need to give a name to the
 other one, so for the projection to the first component one can write:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>atlas&gt; let (x,)=z in x
+<div class="highlight-none"><div class="highlight"><pre>atlas&gt; let (x,)=z in x
 </pre></div>
 </div>
 <p>Local variables get their value and type from the expression between &#8216;=&#8217; and
@@ -1372,7 +1363,7 @@ longer refer to the local name outside the expression following &#8216;in&#8217;
 cases references to them made from inside that expression may survive though.)</p>
 <p>Using a local variable, the initial example could have been given in a form
 that does not permanently bind the identifier &#8216;ic&#8217;:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let ic = inner_class(&quot;B5.A3.T1&quot;,[[1/2,0,0],[0,1/2,1/2]],&quot;scc&quot;)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; let ic = inner_class(&quot;B5.A3.T1&quot;,[[1/2,0,0],[0,1/2,1/2]],&quot;scc&quot;)
 L &gt; in block_sizes(ic)
 Value:
 | 0,  0,   0,  0,   0,    0,    0,     1 |
@@ -1409,7 +1400,7 @@ first line, changing the prompt to &#8216;L &gt;&#8217; in the second line to in
         <a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="array.html" class="btn btn-neutral float-right" title="Array" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="array.html" class="btn btn-neutral" title="Array" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

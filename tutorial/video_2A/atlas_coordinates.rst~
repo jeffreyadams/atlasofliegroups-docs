@@ -93,23 +93,83 @@ redefine the group in a different way so that atlas' coordinates are
 easier to work with::
 
        atlas> set rd=root_datum ([[6,2]],[[1,-2]])
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas> simple_roots(rd)
-Value:
-| 6 |
-| 2 |
-atlas> simple_coroots(rd)
-Value:
-| 1 |
-| -2 |
-atlas> rho (rd)
-Value: [ 3, 1 ]/1
-atlas> ^simple_roots(rd)*simple_coroots(rd)
-Value:
-| 2 |
-atlas> rd
-Value: simply connected root datum of Lie type 'A1.T1'
-atlas>
+       Identifier rd: RootDatum (hiding previous one of type RootDatum)
+       atlas> simple_roots(rd)
+       Value:
+       | 6 |
+       | 2 |
+       atlas> simple_coroots(rd)
+       Value:
+       | 1 |
+       | -2 |
+       atlas> rho (rd)
+       Value: [ 3, 1 ]/1
+       atlas> ^simple_roots(rd)*simple_coroots(rd)
+       Value:
+       | 2 |
+       atlas> rd
+       Value: simply connected root datum of Lie type 'A1.T1'
+       atlas>
 
-    Notice this is a version of the root_datum command that we had not seen. It says `please give me the root datum for the following set of simple roots and coroots'. That is what a root datum is in atlas. So you can define the root datum by giving the matrices you want for the simple roots and coroots and atlas will accept them as a root datum. It is not clear which of the three isomorphism classes of root data for this type this one is.
-    Now lets look at a another example.
+Notice this is a version of the root_datum command that we had not seen. It says `please give me the root datum for the following set of simple roots and coroots'. That is what a root datum is in atlas. So you can define the root datum by giving the matrices you want for the simple roots and coroots and atlas will accept them as a root datum. It is not clear which of the three isomorphism classes of root data for this type this one is.
+
+Now lets look at a another example.
+
+    atlas> set rd=simply_connected (C4)
+    Identifier rd: RootDatum (hiding previous one of type RootDatum)
+    atlas> simple_roots (rd)
+    Value:
+    |  2, -1,  0,  0 |
+    | -1,  2, -1,  0 |
+    |  0, -1,  2, -2 |
+    |  0,  0, -1,  2 |
+
+    atlas> simple_coroots (rd)
+    Value:
+    | 1, 0, 0, 0 |
+    | 0, 1, 0, 0 |
+    | 0, 0, 1, 0 |
+    | 0, 0, 0, 1 |
+
+    atlas> ^simple_roots (rd)*simple_coroots (rd)
+    Value:
+    |  2, -1,  0,  0 |
+    | -1,  2, -1,  0 |
+    |  0, -1,  2, -1 |
+    |  0,  0, -2,  2 |
+    
+    atlas>
+
+Again these are not the usual simple roots and corroots. But as you
+can see we get the Cartan matrix with the above product. These are the fundamental weights coordinates. Observe also that the simple coroots (resp. simple roots) give the identity matrix (resp. the Cartan matrix), which you would expect for the simply connected group of type ``C4``.
+
+In these corrdinates ``rho`` is::
+
+      atlas> rho(rd)
+      Value: [ 1, 1, 1, 1 ]/1
+      atlas>
+
+So, in fundamental weight coordinates, the coordinates of ``rho`` are all ``1``.
+You can also check that if you use the adjoint root datum for ``C4``, the simple
+roots matrix will be the identity etc.
+
+But now, if we use  the defined real form ``Sp(8)``, we get root data in the usual coordinates::
+
+    atlas> G:=Sp(8,R)
+    Value: connected split real group with Lie algebra 'sp(8,R)'
+    atlas> simple_roots (G)
+    Value:
+    |  1,  0,  0, 0 |
+    | -1,  1,  0, 0 |
+    |  0, -1,  1, 0 |
+    |  0,  0, -1, 2 |
+
+    atlas> rho(G)
+    Value: [ 4, 3, 2, 1 ]/1
+    atlas>
+
+These are isomorphic root data. They are equal up to a change of
+coordinates. It just takes getting used to understanding which
+coordinates ``atlas`` is using.
+
+

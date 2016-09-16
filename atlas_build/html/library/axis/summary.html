@@ -158,7 +158,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/lie_types.html">Root Data and Lie Types</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/real_groups.html">Real Forms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a></li>
@@ -1283,18 +1286,6 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="../operators.html" class="btn btn-neutral float-right" title="Basic Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="syntax-summary">
 <h1>Syntax Summary<a class="headerlink" href="#syntax-summary" title="Permalink to this headline">¶</a></h1>
@@ -1426,7 +1417,7 @@ corresponding to different operator precedences. This structure is not very
 clear from the formal grammar (because precedence is largely handled by
 formula restructuring inside parser actions), but the operators, ordered by
 increasing precedence, are:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>or
+<div class="highlight-python"><div class="highlight"><pre>or
 and
 not         (prefix use only)
 =,  !=,  &lt;,  &gt;,  &lt;=,  &gt;=
@@ -1447,7 +1438,7 @@ symbol has the same precedence as a dyadic (infix) use of the same symbol,
 except that a monadic operator symbol that is immediately preceded by a dyadic
 one, thereby effectively gets the highest possible precedence (the latter
 stipulation is needed to ensure consistency of precedence rules).</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>-x+y    is parsed as    (-x)+y
+<div class="highlight-python"><div class="highlight"><pre>-x+y    is parsed as    (-x)+y
 -a%p    is parsed as    -(a%p)
 -a^b    is parsed as    -(a^b)
 a+-b^c  is parsed as    a+((-b)^c)
@@ -1546,7 +1537,7 @@ parameter lists, one cannot use &#8216;()&#8217; to designate this 0-tuple type.
         <a href="../operators.html" class="btn btn-neutral float-right" title="Basic Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="misc.html" class="btn btn-neutral" title="Miscellaneous Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
