@@ -6,8 +6,10 @@ basic.at References
 \+
 ---------------------------------------------
 
-``+: (string,int->string)``
+``\+: (string,int->string)``
+
 Function defined at basic.at:114:0-51
+
 (s,i): +@(string,string)(s,int_format@int(i))
 
 
@@ -16,8 +18,10 @@ Function defined at basic.at:114:0-51
 \+
 ---------------------------------------------
 
-``+: (int,string->string)``
+``\+: (int,string->string)``
+
 Function defined at basic.at:115:0-51
+
 (i,s): +@(string,string)(int_format@int(i),s)
 
 
@@ -26,8 +30,10 @@ Function defined at basic.at:115:0-51
 \+
 ---------------------------------------------
 
-``+: (string,(int,int)->string)``
+``\+: (string,(int,int)->string)``
+
 Function defined at basic.at:117:0-63
+
 (s,(x,y)): +@(string,string)(+@(string,int)(+@(string,string)(+@(string,int)(+@(string,string)(s,"("),x),","),y),")")
 
 
@@ -36,8 +42,10 @@ Function defined at basic.at:117:0-63
 \+
 ---------------------------------------------
 
-``+: (Split->int)``
+``\+: (Split->int)``
+
 Function defined at basic.at:406:4-46
+
 (x):  let (r,)=%@Split(x) in r
 
 
@@ -46,8 +54,10 @@ Function defined at basic.at:406:4-46
 \-
 ---------------------------------------------
 
-``-: (mat->mat)``
+``\-: (mat->mat)``
+
 Function defined at basic.at:222:0--223:36
+
 (m): swiss_matrix_knife@(int,mat,int,int,int,int)(164,m,0,0,0,0)
 
 
@@ -56,8 +66,10 @@ Function defined at basic.at:222:0--223:36
 \-
 ---------------------------------------------
 
-``-: (ParamPol->ParamPol)``
+``\-: (ParamPol->ParamPol)``
+
 Function defined at basic.at:1018:0-37
+
 (P): *@(int,ParamPol)(-@int(1),P)
 
 
@@ -66,8 +78,10 @@ Function defined at basic.at:1018:0-37
 \-
 ---------------------------------------------
 
-``-: (ParamPol,(Split,Param)->ParamPol)``
+``\-: (ParamPol,(Split,Param)->ParamPol)``
+
 Function defined at basic.at:1027:0-61
+
 (a,(c,p)): +@(ParamPol,(Split,Param))(a,(-@Split(c),p))
 
 
@@ -76,8 +90,10 @@ Function defined at basic.at:1027:0-61
 \*
 ---------------------------------------------
 
-``*: (string,int->string)``
+``\*: (string,int->string)``
+
 Function defined at basic.at:112:5-61
+
 (s,n):  if <=@int(n) then "" else rep(s,n) fi
 
 
@@ -86,8 +102,10 @@ Function defined at basic.at:112:5-61
 \*
 ---------------------------------------------
 
-``*: (int,vec->vec)``
+``\*: (int,vec->vec)``
+
 Function defined at basic.at:150:0-31
+
 (c,v): *@(vec,int)(v,c)
 
 
@@ -96,8 +114,10 @@ Function defined at basic.at:150:0-31
 \*
 ---------------------------------------------
 
-``*: (int,mat->mat)``
+``\*: (int,mat->mat)``
+
 Function defined at basic.at:221:0-55
+
 (c,m): (map_on@mat(m))((e): *@(int,int)(c,e))
 
 
@@ -106,8 +126,10 @@ Function defined at basic.at:221:0-55
 \*
 ---------------------------------------------
 
-``*: (int,ratvec->ratvec)``
+``\*: (int,ratvec->ratvec)``
+
 Function defined at basic.at:346:0-37
+
 (i,v): *@(ratvec,int)(v,i)
 
 
@@ -116,8 +138,10 @@ Function defined at basic.at:346:0-37
 \*
 ---------------------------------------------
 
-``*: (rat,ratvec->ratvec)``
+``\*: (rat,ratvec->ratvec)``
+
 Function defined at basic.at:347:0-37
+
 (r,v): *@(ratvec,rat)(v,r)
 
 
@@ -126,8 +150,10 @@ Function defined at basic.at:347:0-37
 \*
 ---------------------------------------------
 
-``*: ([ratvec],ratvec->ratvec)``
+``\*: ([ratvec],ratvec->ratvec)``
+
 Function defined at basic.at:361:0--365:9
+
 (M,v):  let m=#@[ratvec](M) in assert@(bool,string)( if !=@int(m) then =@(int,int)(m,#@ratvec(v)) else false fi ,"size mismatch"); let result=/@(vec,int)(null@int(#@ratvec(M[0])),1) in voided: for col@j in M do result:=+@(ratvec,ratvec)(result,*@(ratvec,rat)(col,v[j])) od ;result
 
 
@@ -136,8 +162,10 @@ Function defined at basic.at:361:0--365:9
 \*
 ---------------------------------------------
 
-``*: (vec,ratvec->rat)``
+``\*: (vec,ratvec->rat)``
+
 Function defined at basic.at:372:0-76
+
 (v,w):  let (nw,dw)=%@ratvec(w) in /@(int,int)(*@(vec,vec)(v,nw),dw)
 
 
@@ -146,8 +174,10 @@ Function defined at basic.at:372:0-76
 \*
 ---------------------------------------------
 
-``*: (ratvec,ratvec->rat)``
+``\*: (ratvec,ratvec->rat)``
+
 Function defined at basic.at:370:0-77
+
 (v,w):  let ((nv,dv),(nw,dw))=(%@ratvec(v),%@ratvec(w)) in /@(int,int)(*@(vec,vec)(nv,nw),*@(int,int)(dv,dw))
 
 
@@ -156,8 +186,10 @@ Function defined at basic.at:370:0-77
 \*
 ---------------------------------------------
 
-``*: (Param,rat->Param)``
+``\*: (Param,rat->Param)``
+
 Function defined at basic.at:913:0--914:61
+
 (p,f):  let (x,lambda_rho,gamma)=%@Param(p) in param@(KGBElt,vec,ratvec)(x,lambda_rho,*@(ratvec,rat)(gamma,f))
 
 
@@ -166,8 +198,10 @@ Function defined at basic.at:913:0--914:61
 \*
 ---------------------------------------------
 
-``*: (ParamPol,rat->ParamPol)``
+``\*: (ParamPol,rat->ParamPol)``
+
 Function defined at basic.at:1030:0-71
+
 (P,f): +@(ParamPol,[(Split,Param)])(*@(int,ParamPol)(0,P), for c@q in P do (c,*@(Param,rat)(q,f)) od )
 
 
@@ -176,8 +210,10 @@ Function defined at basic.at:1030:0-71
 \\
 ---------------------------------------------
 
-``\: (rat,int->int)``
+``\\: (rat,int->int)``
+
 Function defined at basic.at:86:0-36
+
 (p): floor@rat(/@(rat,int)(p))
 
 
@@ -186,8 +222,10 @@ Function defined at basic.at:86:0-36
 \\
 ---------------------------------------------
 
-``\: (rat,rat->int)``
+``\\: (rat,rat->int)``
+
 Function defined at basic.at:87:0-36
+
 (p): floor@rat(/@(rat,rat)(p))
 
 
@@ -196,8 +234,10 @@ Function defined at basic.at:87:0-36
 \\
 ---------------------------------------------
 
-``\: (mat,int->mat)``
+``\\: (mat,int->mat)``
+
 Function defined at basic.at:226:0-55
+
 (m,d): (map_on@mat(m))((e): \@(int,int)(e,d))
 
 
@@ -206,8 +246,10 @@ Function defined at basic.at:226:0-55
 \\
 ---------------------------------------------
 
-``\: (ratvec,int->vec)``
+``\\: (ratvec,int->vec)``
+
 Function defined at basic.at:376:0-55
+
 (v,k):  let (n,d)=%@ratvec(v) in \@(vec,int)(n,*@(int,int)(k,d))
 
 
@@ -217,7 +259,9 @@ Function defined at basic.at:376:0-55
 ----------------------------------------------
 
 ``%: (mat,int->mat)``
+
 Function defined at basic.at:229:0-55
+
 (m,d): (map_on@mat(m))((e): %@(int,int)(e,d))
 
 
@@ -227,7 +271,9 @@ Function defined at basic.at:229:0-55
 ----------------------------------------------
 
 ``\%: (rat,int->int,rat)``
+
 Function defined at basic.at:88:0-78
+
 (p): (\@(rat,int)(p),%@(rat,int)(p))
 
 
@@ -237,7 +283,9 @@ Function defined at basic.at:88:0-78
 ----------------------------------------------
 
 ``\%: (rat,rat->int,rat)``
+
 Function defined at basic.at:89:0-41
+
 (p): (\@(rat,rat)(p),%@(rat,rat)(p))
 
 
@@ -247,7 +295,9 @@ Function defined at basic.at:89:0-41
 ----------------------------------------------
 
 ``^: (mat,vec->mat)``
+
 Function defined at basic.at:203:0-58
+
 (m,v): ^@(int,[vec])(n_columns@mat(m),#@([T],T)([V]M:^@mat(m),v))
 
 
@@ -257,7 +307,9 @@ Function defined at basic.at:203:0-58
 ----------------------------------------------
 
 ``^: (vec,mat->mat)``
+
 Function defined at basic.at:204:0-58
+
 (v,m): ^@(int,[vec])(n_columns@mat(m),#@(T,[T])(v,[V]M:^@mat(m)))
 
 
@@ -267,7 +319,9 @@ Function defined at basic.at:204:0-58
 ----------------------------------------------
 
 ``^: (mat,mat->mat)``
+
 Function defined at basic.at:208:0--209:43
+
 (A,B): ^@(int,[vec])(n_columns@mat(B),##@([T],[T])([V]M:^@mat(A),[V]M:^@mat(B)))
 
 
@@ -277,7 +331,9 @@ Function defined at basic.at:208:0--209:43
 ----------------------------------------------
 
 ``^: (mat,int->mat)``
+
 Function defined at basic.at:241:4--249:8
+
 (m,n): assert@(bool,string)(=@(int,int)(#@mat(m)),"Non square matrix in exponentiation"); if >@(int,int)(n,0) then matrix_power(m,n) elif =@int(n) then id_mat@int(n_rows@mat(m)) else  let (m1,d)=invert@mat(m) in  if =@(int,int)(d,1) then matrix_power(m1,-@int(n)) elif =@int(d) then error@string("Negative power of singular matrix") else error@string("Negative power of matrix not invertible over Z") fi  fi
 
 
@@ -287,7 +343,9 @@ Function defined at basic.at:241:4--249:8
 ----------------------------------------------
 
 ``^: (Split->int)``
+
 Function defined at basic.at:407:4-44
+
 (x):  let (,y)=%@Split(x) in y
 
 
@@ -297,7 +355,9 @@ Function defined at basic.at:407:4-44
 ----------------------------------------------
 
 ``^: (Split,int->Split)``
+
 Function defined at basic.at:435:17--440:6
+
 (x,n):  if >@(int,int)(n,0) then split_power(x,n) elif =@int(n) then Sp(I,I):(1,0) elif  let (a,b)=%@Split(x) in =@(int,int)(+@(int,int)(abs@int(a),abs@int(b)),1) then  if is_even@int(n) then SpI:1 else x fi  else error@string(+@(string,string)(+@(string,string)(+@(string,int)("Negative power ",n)," of split integer "),split_format@Split(x))) fi
 
 
@@ -307,7 +367,9 @@ Function defined at basic.at:435:17--440:6
 ----------------------------------------------
 
 ``=: ((int,int),(int,int)->bool)``
+
 Function defined at basic.at:68:0-67
+
 ((x0,y0),(x1,y1)):  if =@(int,int)(x0,x1) then =@(int,int)(y0,y1) else false fi
 
 
@@ -317,7 +379,9 @@ Function defined at basic.at:68:0-67
 ----------------------------------------------
 
 ``=: (mat,int->bool)``
+
 Function defined at basic.at:196:0-35
+
 (m,k): =@mat(-@(mat,int)(m,k))
 
 
@@ -327,7 +391,9 @@ Function defined at basic.at:196:0-35
 ----------------------------------------------
 
 ``=: (CartanClass,CartanClass->bool)``
+
 Function defined at basic.at:709:0--711:56
+
 (H,J):  let ((,theta_H,,),(,theta_J,,))=(Cartan_info@CartanClass(H),Cartan_info@CartanClass(J)) in =@(vec,vec)(theta_H,theta_J)
 
 
@@ -337,7 +403,9 @@ Function defined at basic.at:709:0--711:56
 ----------------------------------------------
 
 ``!=: ((int,int),(int,int)->bool)``
+
 Function defined at basic.at:69:0-68
+
 ((x0,y0),(x1,y1)):  if !=@(int,int)(x0,x1) then true else !=@(int,int)(y0,y1) fi
 
 
@@ -347,7 +415,9 @@ Function defined at basic.at:69:0-68
 ----------------------------------------------
 
 ``!=: (Param,Param->bool)``
+
 Function defined at basic.at:904:0-42
+
 (x,y): not@bool(=@(Param,Param)(x,y))
 
 
@@ -357,7 +427,9 @@ Function defined at basic.at:904:0-42
 ----------------------------------------------
 
 ``!=: (RealForm,RealForm->bool)``
+
 Function defined at basic.at:719:0-49
+
 (f,g): not@bool(=@(RealForm,RealForm)(f,g))
 
 
@@ -367,7 +439,9 @@ Function defined at basic.at:719:0-49
 ----------------------------------------------
 
 ``!=: (InnerClass,InnerClass->bool)``
+
 Function defined at basic.at:661:0-52
+
 (x,y): not@bool(=@(InnerClass,InnerClass)(x,y))
 
 
@@ -377,7 +451,9 @@ Function defined at basic.at:661:0-52
 ----------------------------------------------
 
 ``!=: (KGBElt,KGBElt->bool)``
+
 Function defined at basic.at:752:0-44
+
 (x,y): not@bool(=@(KGBElt,KGBElt)(x,y))
 
 
@@ -387,7 +463,9 @@ Function defined at basic.at:752:0-44
 ----------------------------------------------
 
 ``>=: (mat->bool)``
+
 Function defined at basic.at:295:0--296:63
+
 (m):  let j=-@(int,int)(n_columns@mat(m),1) in voided: while  if >=@int(j) then >=@vec(m[j]) else false fi  do j:=-@(int,int)(j,1) od ;<@int(j)
 
 
@@ -397,7 +475,9 @@ Function defined at basic.at:295:0--296:63
 ----------------------------------------------
 
 ``>: (mat->bool)``
+
 Function defined at basic.at:297:0--298:62
+
 (m):  let j=-@(int,int)(n_columns@mat(m),1) in voided: while  if >=@int(j) then >@vec(m[j]) else false fi  do j:=-@(int,int)(j,1) od ;<@int(j)
 
 
@@ -407,7 +487,9 @@ Function defined at basic.at:297:0--298:62
 ----------------------------------------------
 
 ``<=: (vec->bool)``
+
 Function defined at basic.at:162:0-79
+
 (v): >=@vec(-@vec(v))
 
 
@@ -417,7 +499,9 @@ Function defined at basic.at:162:0-79
 ----------------------------------------------
 
 ``<=: (mat->bool)``
+
 Function defined at basic.at:299:0-28
+
 (m): >=@mat(-@mat(m))
 
 
@@ -427,7 +511,9 @@ Function defined at basic.at:299:0-28
 ----------------------------------------------
 
 ``<=: (ratvec->bool)``
+
 Function defined at basic.at:391:0-37
+
 (v): <=@vec(numer@ratvec(v))
 
 
@@ -437,7 +523,9 @@ Function defined at basic.at:391:0-37
 ----------------------------------------------
 
 ``<: (vec->bool)``
+
 Function defined at basic.at:163:0-55
+
 (v): >@vec(-@vec(v))
 
 
@@ -447,7 +535,9 @@ Function defined at basic.at:163:0-55
 ----------------------------------------------
 
 ``<: (mat->bool)``
+
 Function defined at basic.at:300:0-26
+
 (m): >@mat(-@mat(m))
 
 
@@ -457,7 +547,9 @@ Function defined at basic.at:300:0-26
 ----------------------------------------------
 
 ``<: (ratvec->bool)``
+
 Function defined at basic.at:392:0-37
+
 (v): <@vec(numer@ratvec(v))
 
 
@@ -467,7 +559,9 @@ Function defined at basic.at:392:0-37
 ----------------------------------------------
 
 ``##: (mat,mat->mat)``
+
 Function defined at basic.at:206:0--207:38
+
 (A,B): #@(int,[vec])(n_rows@mat(B),##@([T],[T])([V]M:A,[V]M:B))
 
 
@@ -477,7 +571,9 @@ Function defined at basic.at:206:0--207:38
 ----------------------------------------------
 
 ``##: (int,[mat]->mat)``
+
 Function defined at basic.at:212:0--213:34
+
 (n,L): #@(int,[vec])(n,##@([[T]])( for M in L do [V]M:M od ))
 
 
@@ -487,7 +583,9 @@ Function defined at basic.at:212:0--213:34
 ----------------------------------------------
 
 ``##: (ratvec,ratvec->ratvec)``
+
 Function defined at basic.at:350:0-57
+
 (a,b): Qv[Q]:##@([T],[T])([Q]Qv:a,[Q]Qv:b)
 
 
@@ -497,7 +595,9 @@ Function defined at basic.at:350:0-57
 ----------------------------------------------
 
 ``##: ([ratvec]->ratvec)``
+
 Function defined at basic.at:351:0-60
+
 (rs): Qv[Q]:##@([[T]])( for r in rs do [Q]Qv:r od )
 
 
@@ -507,7 +607,9 @@ Function defined at basic.at:351:0-60
 ----------------------------------------------
 
 ``#: (ratvec->int)``
+
 Function defined at basic.at:3:0-55
+
 (v):  let (n,)=%@ratvec(v) in #@vec(n)
 
 
@@ -517,7 +619,9 @@ Function defined at basic.at:3:0-55
 ----------------------------------------------
 
 ``#: (int->[int])``
+
 Function defined at basic.at:1:0-62
+
 (n):  for i: n do i od
 
 
@@ -527,7 +631,9 @@ Function defined at basic.at:1:0-62
 ----------------------------------------------
 
 ``#: (bool->int)``
+
 Function defined at basic.at:2:0-63
+
 (b):  if b then 1 else 0 fi
 
 
@@ -537,7 +643,9 @@ Function defined at basic.at:2:0-63
 ----------------------------------------------
 
 ``#: (mat,vec->mat)``
+
 Function defined at basic.at:199:0-77
+
 (m,v): #@(int,[vec])(n_rows@mat(m),#@([T],T)([V]M:m,v))
 
 
@@ -547,7 +655,9 @@ Function defined at basic.at:199:0-77
 ----------------------------------------------
 
 ``#: (vec,mat->mat)``
+
 Function defined at basic.at:200:0-77
+
 (v,m): #@(int,[vec])(n_rows@mat(m),#@(T,[T])(v,[V]M:m))
 
 
@@ -557,7 +667,9 @@ Function defined at basic.at:200:0-77
 ----------------------------------------------
 
 ``#: (KGBElt->int)``
+
 Function defined at basic.at:754:0-38
+
 (x):  let (,n)=%@KGBElt(x) in n
 
 
@@ -567,7 +679,9 @@ Function defined at basic.at:754:0-38
 ----------------------------------------------
 
 ``involution: (Param->mat)``
+
 Function defined at basic.at:923:4-41
+
 (p): involution@KGBElt(x@Param(p))
 
 
@@ -577,7 +691,9 @@ Function defined at basic.at:923:4-41
 ----------------------------------------------
 
 ``root_datum: ([vec],[vec],int->RootDatum)``
+
 Function defined at basic.at:446:4--447:45
+
 (simple_roots,simple_coroots,r): root_datum@(mat,mat)(#@(int,[vec])(r,simple_roots),#@(int,[vec])(r,simple_coroots))
 
 
@@ -587,7 +703,9 @@ Function defined at basic.at:446:4--447:45
 ----------------------------------------------
 
 ``root_datum: (LieType,[ratvec]->RootDatum)``
+
 Function defined at basic.at:449:4--450:38
+
 (t,gens): root_datum@(LieType,mat)(t,quotient_basis@(LieType,[ratvec])(t,gens))
 
 
@@ -597,7 +715,9 @@ Function defined at basic.at:449:4--450:38
 ----------------------------------------------
 
 ``root_datum: (LieType,ratvec->RootDatum)``
+
 Function defined at basic.at:453:4-71
+
 (t,gen): root_datum@(LieType,[ratvec])(t,[gen])
 
 
@@ -607,7 +727,9 @@ Function defined at basic.at:453:4-71
 ----------------------------------------------
 
 ``root_datum: (KGBElt->RootDatum)``
+
 Function defined at basic.at:755:4-51
+
 (x): RdRf:real_form@KGBElt(x)
 
 
@@ -617,7 +739,9 @@ Function defined at basic.at:755:4-51
 ----------------------------------------------
 
 ``root_datum: (Param->RootDatum)``
+
 Function defined at basic.at:906:4-50
+
 (p): RdRf:real_form@Param(p)
 
 
@@ -627,7 +751,9 @@ Function defined at basic.at:906:4-50
 ----------------------------------------------
 
 ``root_datum: (ParamPol->RootDatum)``
+
 Function defined at basic.at:1033:4-53
+
 (P): RdRf:real_form@ParamPol(P)
 
 
@@ -637,7 +763,9 @@ Function defined at basic.at:1033:4-53
 ----------------------------------------------
 
 ``adjoint: (RootDatum->RootDatum)``
+
 Function defined at basic.at:639:4--640:59
+
 (rd): root_datum@(mat,mat)(id_mat@int(semisimple_rank@RootDatum(rd)),Cartan_matrix@RootDatum(rd))
 
 
@@ -647,7 +775,9 @@ Function defined at basic.at:639:4--640:59
 ----------------------------------------------
 
 ``root: (RootDatum,vec->vec)``
+
 Function defined at basic.at:525:4-77
+
 (rd,alpha_v): root@(RootDatum,int)(rd,coroot_index@(RootDatum,vec)(rd,alpha_v))
 
 
@@ -657,7 +787,9 @@ Function defined at basic.at:525:4-77
 ----------------------------------------------
 
 ``coroot: (RootDatum,vec->vec)``
+
 Function defined at basic.at:526:4-75
+
 (rd,alpha): coroot@(RootDatum,int)(rd,root_index@(RootDatum,vec)(rd,alpha))
 
 
@@ -667,7 +799,9 @@ Function defined at basic.at:526:4-75
 ----------------------------------------------
 
 ``integrality_datum: (Param->RootDatum)``
+
 Function defined at basic.at:925:4--926:61
+
 (p): integrality_datum@(RootDatum,ratvec)(root_datum@Param(p),infinitesimal_character@Param(p))
 
 
@@ -677,7 +811,9 @@ Function defined at basic.at:925:4--926:61
 ----------------------------------------------
 
 ``inner_class: (KGBElt->InnerClass)``
+
 Function defined at basic.at:756:4-53
+
 (x): IcRf:real_form@KGBElt(x)
 
 
@@ -687,7 +823,9 @@ Function defined at basic.at:756:4-53
 ----------------------------------------------
 
 ``inner_class: (Param->InnerClass)``
+
 Function defined at basic.at:907:4-52
+
 (p): IcRf:real_form@Param(p)
 
 
@@ -697,7 +835,9 @@ Function defined at basic.at:907:4-52
 ----------------------------------------------
 
 ``real_form: (KGBElt->RealForm)``
+
 Function defined at basic.at:753:4-47
+
 (x):  let (rf,)=%@KGBElt(x) in rf
 
 
@@ -707,7 +847,9 @@ Function defined at basic.at:753:4-47
 ----------------------------------------------
 
 ``Cartan_class: (InnerClass,mat->CartanClass)``
+
 Function defined at basic.at:775:4--776:55
+
 (ic,theta): Cartan_class@KGBElt(KGB_elt@(InnerClass,mat,ratvec)(ic,theta,QvV:null@int(rank@RootDatum(RdIc:ic))))
 
 
@@ -717,7 +859,9 @@ Function defined at basic.at:775:4--776:55
 ----------------------------------------------
 
 ``Cartan_class: (Param->CartanClass)``
+
 Function defined at basic.at:921:4-60
+
 (p): Cartan_class@KGBElt(x@Param(p))
 
 
@@ -727,7 +871,9 @@ Function defined at basic.at:921:4-60
 ----------------------------------------------
 
 ``most_split_Cartan: (InnerClass->CartanClass)``
+
 Function defined at basic.at:695:4--696:45
+
 (ic): Cartan_class@(InnerClass,int)(ic,-@(int,int)(nr_of_Cartan_classes@InnerClass(ic),1))
 
 
@@ -737,7 +883,9 @@ Function defined at basic.at:695:4--696:45
 ----------------------------------------------
 
 ``real_forms: (InnerClass->[RealForm])``
+
 Function defined at basic.at:723:4--724:36
+
 (ic): real_forms@CartanClass(fundamental_Cartan@InnerClass(ic))
 
 
@@ -747,7 +895,9 @@ Function defined at basic.at:723:4--724:36
 ----------------------------------------------
 
 ``dual_real_forms: (InnerClass->[RealForm])``
+
 Function defined at basic.at:725:4--726:40
+
 (ic): dual_real_forms@CartanClass(most_split_Cartan@InnerClass(ic))
 
 
@@ -757,7 +907,9 @@ Function defined at basic.at:725:4--726:40
 ----------------------------------------------
 
 ``KGB: (RealForm->[KGBElt])``
+
 Function defined at basic.at:758:4-68
+
 (rf):  for i: KGB_size@RealForm(rf) do KGB@(RealForm,int)(rf,i) od
 
 
@@ -767,7 +919,9 @@ Function defined at basic.at:758:4-68
 ----------------------------------------------
 
 ``KGB: (CartanClass,RealForm->[KGBElt])``
+
 Function defined at basic.at:761:4--763:71
+
 (H,G):  let result=[] in voided: for x in KGB@RealForm(G) do  if =@(CartanClass,CartanClass)(Cartan_class@KGBElt(x),H) then result:=#@([T],T)(result,x) else () fi  od ;result
 
 
@@ -777,7 +931,9 @@ Function defined at basic.at:761:4--763:71
 ----------------------------------------------
 
 ``cross: (vec,KGBElt->KGBElt)``
+
 Function defined at basic.at:782:4--783:42
+
 (alpha,x): cross@(int,KGBElt)(root_index@(RootDatum,vec)(root_datum@KGBElt(x),alpha),x)
 
 
@@ -787,7 +943,9 @@ Function defined at basic.at:782:4--783:42
 ----------------------------------------------
 
 ``Cayley: (vec,KGBElt->KGBElt)``
+
 Function defined at basic.at:784:4--785:42
+
 (alpha,x): Cayley@(int,KGBElt)(root_index@(RootDatum,vec)(RdRf:real_form@KGBElt(x),alpha),x)
 
 
@@ -797,7 +955,9 @@ Function defined at basic.at:784:4--785:42
 ----------------------------------------------
 
 ``status: (vec,KGBElt->int)``
+
 Function defined at basic.at:780:4-79
+
 (alpha,x): status@(int,KGBElt)(root_index@(RootDatum,vec)(RdRf:real_form@KGBElt(x),alpha),x)
 
 
@@ -807,7 +967,9 @@ Function defined at basic.at:780:4-79
 ----------------------------------------------
 
 ``status: (vec,Param->int)``
+
 Function defined at basic.at:974:4--980:4
+
 (alpha,p):  let st=status@(vec,KGBElt)(alpha,x@Param(p)) in  if  if <=@(int,int)(st,1) then true else =@(int,int)(st,4) fi  then st elif =@(int,int)(st,3) then +@(int,int)(5,imaginary_type@(vec,Param)(alpha,p)) elif =@(Param,Param)(Cayley@(vec,Param)(alpha,p),p) then 5 else +@(int,int)(1,real_type@(vec,Param)(alpha,p)) fi
 
 
@@ -817,7 +979,9 @@ Function defined at basic.at:974:4--980:4
 ----------------------------------------------
 
 ``status: (int,Param->int)``
+
 Function defined at basic.at:982:4--983:40
+
 (s,p): status@(vec,Param)(root@(RootDatum,int)(integrality_datum@Param(p),s),p)
 
 
@@ -827,7 +991,9 @@ Function defined at basic.at:982:4--983:40
 ----------------------------------------------
 
 ``KGB_elt: (InnerClass,mat,ratvec->KGBElt)``
+
 Function defined at basic.at:765:4--767:24
+
 ((,theta,v):all):  let rf=real_form@(InnerClass,mat,ratvec)(all) in KGB_elt@(RealForm,mat,ratvec)(rf,theta,v)
 
 
@@ -837,7 +1003,9 @@ Function defined at basic.at:765:4--767:24
 ----------------------------------------------
 
 ``KGB_elt: (RootDatum,mat,ratvec->KGBElt)``
+
 Function defined at basic.at:770:4--773:24
+
 (rd,theta,v):  let ic=inner_class@(RootDatum,mat)(rd,theta) in  let rf=real_form@(InnerClass,mat,ratvec)(ic,theta,v) in KGB_elt@(RealForm,mat,ratvec)(rf,theta,v)
 
 
@@ -847,7 +1015,9 @@ Function defined at basic.at:770:4--773:24
 ----------------------------------------------
 
 ``print_block: (RealForm,RealForm->)``
+
 Function defined at basic.at:892:4-71
+
 (p): print_block@Block(block@(RealForm,RealForm)(p))
 
 
@@ -857,7 +1027,9 @@ Function defined at basic.at:892:4-71
 ----------------------------------------------
 
 ``null_module: (Param->ParamPol)``
+
 Function defined at basic.at:909:4--910:27
+
 (p): null_module@RealForm(real_form@Param(p))
 
 
@@ -867,7 +1039,9 @@ Function defined at basic.at:909:4--910:27
 ----------------------------------------------
 
 ``null_module: (ParamPol->ParamPol)``
+
 Function defined at basic.at:1017:4-44
+
 (P): *@(int,ParamPol)(0,P)
 
 
@@ -877,7 +1051,9 @@ Function defined at basic.at:1017:4-44
 ----------------------------------------------
 
 ``raw_KL: (RealForm,RealForm->mat,[vec],vec)``
+
 Function defined at basic.at:889:4-71
+
 (p): raw_KL@Block(block@(RealForm,RealForm)(p))
 
 
@@ -887,7 +1063,9 @@ Function defined at basic.at:889:4-71
 ----------------------------------------------
 
 ``dual_KL: (RealForm,RealForm->mat,[vec],vec)``
+
 Function defined at basic.at:890:4-72
+
 (p): dual_KL@Block(block@(RealForm,RealForm)(p))
 
 
@@ -897,7 +1075,9 @@ Function defined at basic.at:890:4-72
 ----------------------------------------------
 
 ``print_blocku: (RealForm,RealForm->)``
+
 Function defined at basic.at:893:4-71
+
 (p): print_blocku@Block(block@(RealForm,RealForm)(p))
 
 
@@ -907,7 +1087,9 @@ Function defined at basic.at:893:4-71
 ----------------------------------------------
 
 ``print_blockd: (RealForm,RealForm->)``
+
 Function defined at basic.at:894:4-71
+
 (p): print_blockd@Block(block@(RealForm,RealForm)(p))
 
 
@@ -917,7 +1099,9 @@ Function defined at basic.at:894:4-71
 ----------------------------------------------
 
 ``print_KGB: (KGBElt->)``
+
 Function defined at basic.at:870:4--872:27
+
 (x): prints@void();prints@(string,int,string)("Element is number ",#@KGBElt(x)," in following KGB set");print_KGB@RealForm(real_form@KGBElt(x))
 
 
@@ -927,7 +1111,9 @@ Function defined at basic.at:870:4--872:27
 ----------------------------------------------
 
 ``print_KL_basis: (RealForm,RealForm->)``
+
 Function defined at basic.at:895:4-75
+
 (p): print_KL_basis@Block(block@(RealForm,RealForm)(p))
 
 
@@ -937,7 +1123,9 @@ Function defined at basic.at:895:4-75
 ----------------------------------------------
 
 ``print_prim_KL: (RealForm,RealForm->)``
+
 Function defined at basic.at:896:4-74
+
 (p): print_prim_KL@Block(block@(RealForm,RealForm)(p))
 
 
@@ -947,7 +1135,9 @@ Function defined at basic.at:896:4-74
 ----------------------------------------------
 
 ``print_KL_list: (RealForm,RealForm->)``
+
 Function defined at basic.at:897:4-74
+
 (p): print_KL_list@Block(block@(RealForm,RealForm)(p))
 
 
@@ -957,7 +1147,9 @@ Function defined at basic.at:897:4-74
 ----------------------------------------------
 
 ``print_W_cells: (RealForm,RealForm->)``
+
 Function defined at basic.at:898:4-74
+
 (p): print_W_cells@Block(block@(RealForm,RealForm)(p))
 
 
@@ -967,7 +1159,9 @@ Function defined at basic.at:898:4-74
 ----------------------------------------------
 
 ``print_W_graph: (RealForm,RealForm->)``
+
 Function defined at basic.at:899:4-74
+
 (p): print_W_cells@Block(block@(RealForm,RealForm)(p))
 
 
@@ -977,7 +1171,9 @@ Function defined at basic.at:899:4-74
 ----------------------------------------------
 
 ``assert: (bool,string->)``
+
 Function defined at basic.at:7:4-74
+
 (b,message):  if b then () else error@string(message) fi
 
 
@@ -987,7 +1183,9 @@ Function defined at basic.at:7:4-74
 ----------------------------------------------
 
 ``assert: (bool->)``
+
 Function defined at basic.at:8:4-56
+
 (b): assert@(bool,string)(b,"assertion failed")
 
 
@@ -997,7 +1195,9 @@ Function defined at basic.at:8:4-56
 ----------------------------------------------
 
 ``list: ((int->bool),int->[int])``
+
 Function defined at basic.at:12:4--13:55
+
 (filter,limit): ##@([[T]])( for i: limit do  if filter(i) then [i] else [] fi  od )
 
 
@@ -1007,7 +1207,9 @@ Function defined at basic.at:12:4--13:55
 ----------------------------------------------
 
 ``complement: ((int->bool),int->[int])``
+
 Function defined at basic.at:14:4--15:55
+
 (filter,limit): ##@([[T]])( for i: limit do  if filter(i) then [] else [i] fi  od )
 
 
@@ -1017,7 +1219,9 @@ Function defined at basic.at:14:4--15:55
 ----------------------------------------------
 
 ``count: ((int->bool),int->int)``
+
 Function defined at basic.at:17:4--18:60
+
 (filter,limit):  let c=0 in voided: for i: limit do  if filter(i) then c:=+@(int,int)(c,1) else () fi  od ;c
 
 
@@ -1027,7 +1231,9 @@ Function defined at basic.at:17:4--18:60
 ----------------------------------------------
 
 ``all: ([bool]->bool)``
+
 Function defined at basic.at:20:4--21:54
+
 (p): voided: for x in p do  if x then () else  return false fi  od ;true
 
 
@@ -1037,7 +1243,9 @@ Function defined at basic.at:20:4--21:54
 ----------------------------------------------
 
 ``all: (int,(int->bool)->bool)``
+
 Function defined at basic.at:29:4--30:63
+
 (limit,filter): voided: for i: limit do  if filter(i) then () else  return false fi  od ;true
 
 
@@ -1047,7 +1255,9 @@ Function defined at basic.at:29:4--30:63
 ----------------------------------------------
 
 ``all: ([(->bool)]->bool)``
+
 Function defined at basic.at:39:4--40:56
+
 (p): voided: for x in p do  if x() then () else  return false fi  od ;true
 
 
@@ -1057,7 +1267,9 @@ Function defined at basic.at:39:4--40:56
 ----------------------------------------------
 
 ``all: (mat,(vec->bool)->bool)``
+
 Function defined at basic.at:269:4--270:68
+
 (M,filter):  let j=-@(int,int)(n_columns@mat(M),1) in voided: while  if >=@int(j) then filter(M[j]) else false fi  do j:=-@(int,int)(j,1) od ;<@int(j)
 
 
@@ -1067,7 +1279,9 @@ Function defined at basic.at:269:4--270:68
 ----------------------------------------------
 
 ``x: (Param->KGBElt)``
+
 Function defined at basic.at:916:4-44
+
 (p):  let (x,,)=%@Param(p) in x
 
 
@@ -1077,7 +1291,9 @@ Function defined at basic.at:916:4-44
 ----------------------------------------------
 
 ``none: ([bool]->bool)``
+
 Function defined at basic.at:22:4--23:50
+
 (p): voided: for x in p do  if x then  return false else () fi  od ;true
 
 
@@ -1087,7 +1303,9 @@ Function defined at basic.at:22:4--23:50
 ----------------------------------------------
 
 ``none: (int,(int->bool)->bool)``
+
 Function defined at basic.at:31:4--32:59
+
 (limit,filter): voided: for i: limit do  if filter(i) then  return false else () fi  od ;true
 
 
@@ -1097,7 +1315,9 @@ Function defined at basic.at:31:4--32:59
 ----------------------------------------------
 
 ``none: ([(->bool)]->bool)``
+
 Function defined at basic.at:41:4--42:52
+
 (p): voided: for x in p do  if x() then  return false else () fi  od ;true
 
 
@@ -1107,7 +1327,9 @@ Function defined at basic.at:41:4--42:52
 ----------------------------------------------
 
 ``none: (mat,(vec->bool)->bool)``
+
 Function defined at basic.at:271:4--272:72
+
 (M,filter):  let j=-@(int,int)(n_columns@mat(M),1) in voided: while  if >=@int(j) then not@bool(filter(M[j])) else false fi  do j:=-@(int,int)(j,1) od ;<@int(j)
 
 
@@ -1117,7 +1339,9 @@ Function defined at basic.at:271:4--272:72
 ----------------------------------------------
 
 ``first: ([bool]->int)``
+
 Function defined at basic.at:24:4--25:46
+
 (p): voided: for x@i in p do  if x then  return i else () fi  od ;-@int(1)
 
 
@@ -1127,7 +1351,9 @@ Function defined at basic.at:24:4--25:46
 ----------------------------------------------
 
 ``first: (int,(int->bool)->int)``
+
 Function defined at basic.at:33:4--34:53
+
 (limit,filter): voided: for i: limit do  if filter(i) then  return i else () fi  od ;-@int(1)
 
 
@@ -1137,7 +1363,9 @@ Function defined at basic.at:33:4--34:53
 ----------------------------------------------
 
 ``first: ([(->bool)]->int)``
+
 Function defined at basic.at:43:4--44:48
+
 (p): voided: for x@i in p do  if x() then  return i else () fi  od ;-@int(1)
 
 
@@ -1147,7 +1375,9 @@ Function defined at basic.at:43:4--44:48
 ----------------------------------------------
 
 ``first: (mat,(vec->bool)->int)``
+
 Function defined at basic.at:273:4--275:69
+
 (M,filter):  let (j,n)=(0,n_columns@mat(M)) in voided: while  if <@(int,int)(j,n) then filter(M[j]) else false fi  do j:=+@(int,int)(j,1) od ; if =@(int,int)(j,n) then -@int(1) else j fi
 
 
@@ -1157,7 +1387,9 @@ Function defined at basic.at:273:4--275:69
 ----------------------------------------------
 
 ``last: ([bool]->int)``
+
 Function defined at basic.at:26:4--27:53
+
 (p):  let i=-@(int,int)(#@[bool](p),1) in voided: while  if >=@int(i) then not@bool(p[i]) else false fi  do i:=-@(int,int)(i,1) od ;i
 
 
@@ -1167,7 +1399,9 @@ Function defined at basic.at:26:4--27:53
 ----------------------------------------------
 
 ``last: (int,(int->bool)->int)``
+
 Function defined at basic.at:35:4--36:54
+
 (limit,filter): voided: for i: limit ~do  if filter(i) then  return i else () fi  od ;-@int(1)
 
 
@@ -1177,7 +1411,9 @@ Function defined at basic.at:35:4--36:54
 ----------------------------------------------
 
 ``last: ([(->bool)]->int)``
+
 Function defined at basic.at:45:4--46:55
+
 (p):  let i=-@(int,int)(#@[(->bool)](p),1) in voided: while  if >=@int(i) then not@bool((p[i])()) else false fi  do i:=-@(int,int)(i,1) od ;i
 
 
@@ -1187,7 +1423,9 @@ Function defined at basic.at:45:4--46:55
 ----------------------------------------------
 
 ``last: (mat,(vec->bool)->int)``
+
 Function defined at basic.at:276:4--277:67
+
 (M,filter):  let j=-@(int,int)(n_columns@mat(M),1) in voided: while  if >=@int(j) then filter(M[j]) else false fi  do j:=-@(int,int)(j,1) od ;j
 
 
@@ -1197,7 +1435,9 @@ Function defined at basic.at:276:4--277:67
 ----------------------------------------------
 
 ``abs: (int->int)``
+
 Function defined at basic.at:52:4-45
+
 (k):  if <@int(k) then -@int(k) else k fi
 
 
@@ -1207,7 +1447,9 @@ Function defined at basic.at:52:4-45
 ----------------------------------------------
 
 ``abs: (rat->rat)``
+
 Function defined at basic.at:81:4-29
+
 (a): *@(rat,rat)(QI:sign@rat(a),a)
 
 
@@ -1217,7 +1459,9 @@ Function defined at basic.at:81:4-29
 ----------------------------------------------
 
 ``sign: (int->int)``
+
 Function defined at basic.at:53:4-61
+
 (k):  if >@int(k) then 1 elif <@int(k) then -@int(1) else 0 fi
 
 
@@ -1227,7 +1471,9 @@ Function defined at basic.at:53:4-61
 ----------------------------------------------
 
 ``sign: (rat->int)``
+
 Function defined at basic.at:79:4-37
+
 (a): sign@int(numer@rat(a))
 
 
@@ -1237,7 +1483,9 @@ Function defined at basic.at:79:4-37
 ----------------------------------------------
 
 ``is_odd: (int->bool)``
+
 Function defined at basic.at:55:4-33
+
 (n): =@(int,int)(%@(int,int)(n,2),1)
 
 
@@ -1247,7 +1495,9 @@ Function defined at basic.at:55:4-33
 ----------------------------------------------
 
 ``is_even: (int->bool)``
+
 Function defined at basic.at:56:4-33
+
 (n): =@(int,int)(%@(int,int)(n,2),0)
 
 
@@ -1257,7 +1507,9 @@ Function defined at basic.at:56:4-33
 ----------------------------------------------
 
 ``min: (int,int->int)``
+
 Function defined at basic.at:58:4-53
+
 (k,l):  if <@(int,int)(k,l) then k else l fi
 
 
@@ -1267,7 +1519,9 @@ Function defined at basic.at:58:4-53
 ----------------------------------------------
 
 ``min: ([int]->int)``
+
 Function defined at basic.at:61:4--62:61
+
 (a):  let l=#@[int](a) in assert@(bool,string)(>=@(int,int)(l,1),"Minimum of an empty list"); let m=a~[0] in voided: for i: -@(int,int)(l,1) do  if <@(int,int)(a[i],m) then m:=a[i] else () fi  od ;m
 
 
@@ -1277,7 +1531,9 @@ Function defined at basic.at:61:4--62:61
 ----------------------------------------------
 
 ``max: (int,int->int)``
+
 Function defined at basic.at:59:4-53
+
 (k,l):  if <@(int,int)(k,l) then l else k fi
 
 
@@ -1287,7 +1543,9 @@ Function defined at basic.at:59:4-53
 ----------------------------------------------
 
 ``max: ([int]->int)``
+
 Function defined at basic.at:63:4--64:61
+
 (a):  let l=#@[int](a) in assert@(bool,string)(>=@(int,int)(l,1),"Maximum of an empty list"); let m=a~[0] in voided: for i: -@(int,int)(l,1) do  if >@(int,int)(a[i],m) then m:=a[i] else () fi  od ;m
 
 
@@ -1297,7 +1555,9 @@ Function defined at basic.at:63:4--64:61
 ----------------------------------------------
 
 ``lcm: ([int]->int)``
+
 Function defined at basic.at:66:4-76
+
 (list):  let (,d)=%@ratvec(Qv[Q]: for x in list do /@rat(QI:x) od ) in d
 
 
@@ -1307,7 +1567,9 @@ Function defined at basic.at:66:4-76
 ----------------------------------------------
 
 ``numer: (rat->int)``
+
 Function defined at basic.at:75:4-36
+
 (a):  let (n,)=%@rat(a) in n
 
 
@@ -1317,7 +1579,9 @@ Function defined at basic.at:75:4-36
 ----------------------------------------------
 
 ``numer: (ratvec->vec)``
+
 Function defined at basic.at:342:4-44
+
 (a):  let (n,)=%@ratvec(a) in n
 
 
@@ -1327,7 +1591,9 @@ Function defined at basic.at:342:4-44
 ----------------------------------------------
 
 ``denom: (rat->int)``
+
 Function defined at basic.at:76:4-36
+
 (a):  let (,d)=%@rat(a) in d
 
 
@@ -1337,7 +1603,9 @@ Function defined at basic.at:76:4-36
 ----------------------------------------------
 
 ``denom: (ratvec->int)``
+
 Function defined at basic.at:343:4-44
+
 (a):  let (,d)=%@ratvec(a) in d
 
 
@@ -1347,7 +1615,9 @@ Function defined at basic.at:343:4-44
 ----------------------------------------------
 
 ``is_integer: (rat->bool)``
+
 Function defined at basic.at:78:4-41
+
 (r): =@(int,int)(denom@rat(r),1)
 
 
@@ -1357,7 +1627,9 @@ Function defined at basic.at:78:4-41
 ----------------------------------------------
 
 ``is_integer: (ratvec->bool)``
+
 Function defined at basic.at:367:4-52
+
 (v):  let (,d)=%@ratvec(v) in =@(int,int)(d,1)
 
 
@@ -1367,7 +1639,9 @@ Function defined at basic.at:367:4-52
 ----------------------------------------------
 
 ``floor: (rat->int)``
+
 Function defined at basic.at:83:4-29
+
 (a): \@(int,int)(%@rat(a))
 
 
@@ -1377,7 +1651,9 @@ Function defined at basic.at:83:4-29
 ----------------------------------------------
 
 ``floor: ([rat]->vec)``
+
 Function defined at basic.at:92:4-52
+
 (v): V[I]: for a in v do floor@rat(a) od
 
 
@@ -1387,7 +1663,9 @@ Function defined at basic.at:92:4-52
 ----------------------------------------------
 
 ``ceil: (rat->int)``
+
 Function defined at basic.at:84:4-31
+
 (a): -@int(\@(int,int)(%@rat(-@rat(a))))
 
 
@@ -1397,7 +1675,9 @@ Function defined at basic.at:84:4-31
 ----------------------------------------------
 
 ``ceil: ([rat]->vec)``
+
 Function defined at basic.at:93:4-52
+
 (v): V[I]: for a in v do ceil@rat(a) od
 
 
@@ -1407,7 +1687,9 @@ Function defined at basic.at:93:4-52
 ----------------------------------------------
 
 ``rat_as_int: (rat->int)``
+
 Function defined at basic.at:97:4--98:63
+
 (r):  let (n,d)=%@rat(r) in  if =@(int,int)(d,1) then n else error@string("Not an integer") fi
 
 
@@ -1417,7 +1699,9 @@ Function defined at basic.at:97:4--98:63
 ----------------------------------------------
 
 ``plural: (int->string)``
+
 Function defined at basic.at:119:4-55
+
 (n):  if =@(int,int)(n,1) then "" else "s" fi
 
 
@@ -1427,7 +1711,9 @@ Function defined at basic.at:119:4-55
 ----------------------------------------------
 
 ``split_lines: (string->[string])``
+
 Function defined at basic.at:123:4--127:12
+
 (text):  let (result,a,last)=([], for c in text do c od ,0) in voided: for c@i in a do  if =@(string,string)(c,new_line) then result:=#@([T],T)(result,concat@[string](a[last:i]));last:=+@(int,int)(i,1) else () fi  od ;result
 
 
@@ -1437,7 +1723,9 @@ Function defined at basic.at:123:4--127:12
 ----------------------------------------------
 
 ``is_substring: (string,string->bool)``
+
 Function defined at basic.at:129:4--131:64
+
 (s,text):  let (s0,t0)=( for c in s do c od , for c in text do c od ) in >=@int(last@(int,(int->bool))(-@(int,int)(#@[string](t0),#@[string](s0)),(start): all@(int,(int->bool))(#@[string](s0),(i): =@(string,string)(t0[+@(int,int)(start,i)],s0[i]))))
 
 
@@ -1447,7 +1735,9 @@ Function defined at basic.at:129:4--131:64
 ----------------------------------------------
 
 ``fgrep: (string,string->[string])``
+
 Function defined at basic.at:133:4--137:12
+
 (s,text):  let result=[] in voided: for line in split_lines@string(text) do  if is_substring@(string,string)(s,line) then result:=#@([T],T)(result,line) else () fi  od ;result
 
 
@@ -1457,7 +1747,9 @@ Function defined at basic.at:133:4--137:12
 ----------------------------------------------
 
 ``vector: (int,(int->int)->vec)``
+
 Function defined at basic.at:141:4-56
+
 (n,f): V[I]: for i: n do f(i) od
 
 
@@ -1467,7 +1759,9 @@ Function defined at basic.at:141:4-56
 ----------------------------------------------
 
 ``ones: (int->vec)``
+
 Function defined at basic.at:143:4-38
+
 (n): V[I]: for i: n do 1 od
 
 
@@ -1477,7 +1771,9 @@ Function defined at basic.at:143:4-38
 ----------------------------------------------
 
 ``gcd: ([int]->int)``
+
 Function defined at basic.at:146:4--147:63
+
 (v):  let f=inv_fact@mat(stack_rows@[vec][V[I]:v]) in  if =@int(#@vec(f)) then 0 else f[0] fi
 
 
@@ -1487,7 +1783,9 @@ Function defined at basic.at:146:4--147:63
 ----------------------------------------------
 
 ``sum: (vec->int)``
+
 Function defined at basic.at:153:4-56
+
 (v): *@(vec,vec)( let one=1 in V[I]: for x in v do one od ,v)
 
 
@@ -1497,7 +1795,9 @@ Function defined at basic.at:153:4-56
 ----------------------------------------------
 
 ``sum: (mat->vec)``
+
 Function defined at basic.at:308:4-42
+
 (m): *@(mat,vec)(m,ones@int(n_columns@mat(m)))
 
 
@@ -1507,7 +1807,9 @@ Function defined at basic.at:308:4-42
 ----------------------------------------------
 
 ``sum: ([ratvec],int->ratvec)``
+
 Function defined at basic.at:353:4--355:40
+
 (list,l):  let result=QvV:null@int(l) in voided: for v in list do result:=+@(ratvec,ratvec)(result,v) od ;result
 
 
@@ -1517,7 +1819,9 @@ Function defined at basic.at:353:4--355:40
 ----------------------------------------------
 
 ``sum: (ratvec->rat)``
+
 Function defined at basic.at:389:4-50
+
 (v):  let (n,d)=%@ratvec(v) in /@(int,int)(sum@vec(n),d)
 
 
@@ -1527,7 +1831,9 @@ Function defined at basic.at:389:4-50
 ----------------------------------------------
 
 ``product: (vec->int)``
+
 Function defined at basic.at:154:4-57
+
 (v):  let s=1 in voided: for e in v do s:=*@(int,int)(s,e) od ;s
 
 
@@ -1537,7 +1843,9 @@ Function defined at basic.at:154:4-57
 ----------------------------------------------
 
 ``reverse: (vec->vec)``
+
 Function defined at basic.at:156:4-31
+
 (v): v~[0:0~]
 
 
@@ -1547,7 +1855,9 @@ Function defined at basic.at:156:4-31
 ----------------------------------------------
 
 ``reverse: (ratvec->ratvec)``
+
 Function defined at basic.at:382:4-37
+
 (v): v~[0:0~]
 
 
@@ -1557,7 +1867,9 @@ Function defined at basic.at:382:4-37
 ----------------------------------------------
 
 ``lower: (int,vec->vec)``
+
 Function defined at basic.at:157:4-35
+
 (k,v): v[0:k]
 
 
@@ -1567,7 +1879,9 @@ Function defined at basic.at:157:4-35
 ----------------------------------------------
 
 ``lower: (int,ratvec->ratvec)``
+
 Function defined at basic.at:383:4-41
+
 (k,v): v[0:k]
 
 
@@ -1577,7 +1891,9 @@ Function defined at basic.at:383:4-41
 ----------------------------------------------
 
 ``upper: (int,vec->vec)``
+
 Function defined at basic.at:158:4-36
+
 (k,v): v[k~:0~]
 
 
@@ -1587,7 +1903,9 @@ Function defined at basic.at:158:4-36
 ----------------------------------------------
 
 ``upper: (int,ratvec->ratvec)``
+
 Function defined at basic.at:384:4-42
+
 (k,v): v[k~:0~]
 
 
@@ -1597,7 +1915,9 @@ Function defined at basic.at:384:4-42
 ----------------------------------------------
 
 ``drop_lower: (int,vec->vec)``
+
 Function defined at basic.at:159:4-40
+
 (k,v): v[k:0~]
 
 
@@ -1607,7 +1927,9 @@ Function defined at basic.at:159:4-40
 ----------------------------------------------
 
 ``drop_lower: (int,ratvec->ratvec)``
+
 Function defined at basic.at:385:4-46
+
 (k,v): v[k:0~]
 
 
@@ -1617,7 +1939,9 @@ Function defined at basic.at:385:4-46
 ----------------------------------------------
 
 ``drop_upper: (int,vec->vec)``
+
 Function defined at basic.at:160:4-41
+
 (k,v): v[0:k~]
 
 
@@ -1627,7 +1951,9 @@ Function defined at basic.at:160:4-41
 ----------------------------------------------
 
 ``drop_upper: (int,ratvec->ratvec)``
+
 Function defined at basic.at:386:4-47
+
 (k,v): v[0:k~]
 
 
@@ -1637,7 +1963,9 @@ Function defined at basic.at:386:4-47
 ----------------------------------------------
 
 ``is_member: ([int]->(int->bool))``
+
 Function defined at basic.at:165:4--167:75
+
 (v):  let !start=-@(int,int)(#@[int](v),1) in (val):  let i=start in voided: while  if >=@int(i) then !=@(int,int)(v[i],val) else false fi  do i:=-@(int,int)(i,1) od ;>=@int(i)
 
 
@@ -1647,7 +1975,9 @@ Function defined at basic.at:165:4--167:75
 ----------------------------------------------
 
 ``contains: (int->([int]->bool))``
+
 Function defined at basic.at:169:4-72
+
 (val): (v): (is_member@[int](v))(val)
 
 
@@ -1657,7 +1987,9 @@ Function defined at basic.at:169:4-72
 ----------------------------------------------
 
 ``all_0_1_vecs: (int->[vec])``
+
 Function defined at basic.at:171:4--175:4
+
 (n):  if <=@(int,int)(n,0) then [null@int(0)] else  let list=all_0_1_vecs(-@(int,int)(n,1)) in ##@([T],[T])( for v in list do #@(vec,int)(v,0) od , for v in list do #@(vec,int)(v,1) od ) fi
 
 
@@ -1667,7 +1999,9 @@ Function defined at basic.at:171:4--175:4
 ----------------------------------------------
 
 ``power_set: (int->[[int]])``
+
 Function defined at basic.at:177:4--178:77
+
 (n):  if =@int(n) then [[]] else  let p=power_set(n:=-@(int,int)(n,1)) in ##@([T],[T])(p, for S in p do #@([T],T)(S,n) od ) fi
 
 
@@ -1677,7 +2011,9 @@ Function defined at basic.at:177:4--178:77
 ----------------------------------------------
 
 ``power_set: ([int]->[[int]])``
+
 Function defined at basic.at:179:4--180:56
+
 (S):  for inx in power_set@int(#@[int](S)) do  for i in inx do S[i] od  od
 
 
@@ -1687,7 +2023,9 @@ Function defined at basic.at:179:4--180:56
 ----------------------------------------------
 
 ``matrix: ((int,int),(int,int->int)->mat)``
+
 Function defined at basic.at:186:4--187:38
+
 ((r,c),f): #@(int,[vec])(r, for j: c do V[I]: for i: r do f(i,j) od  od )
 
 
@@ -1697,7 +2035,9 @@ Function defined at basic.at:186:4--187:38
 ----------------------------------------------
 
 ``n_rows: (mat->int)``
+
 Function defined at basic.at:189:4-41
+
 (m):  let (r,)=#@mat(m) in r
 
 
@@ -1707,7 +2047,9 @@ Function defined at basic.at:189:4-41
 ----------------------------------------------
 
 ``n_columns: (mat->int)``
+
 Function defined at basic.at:190:4-44
+
 (m):  let (,c)=#@mat(m) in c
 
 
@@ -1717,7 +2059,9 @@ Function defined at basic.at:190:4-44
 ----------------------------------------------
 
 ``column: (vec->mat)``
+
 Function defined at basic.at:192:4-29
+
 (v): M[V]:[v]
 
 
@@ -1727,7 +2071,9 @@ Function defined at basic.at:192:4-29
 ----------------------------------------------
 
 ``row: (vec->mat)``
+
 Function defined at basic.at:193:4-28
+
 (v): ^@vec(v)
 
 
@@ -1737,7 +2083,9 @@ Function defined at basic.at:193:4-28
 ----------------------------------------------
 
 ``map_on: (mat->((int->int)->mat))``
+
 Function defined at basic.at:216:4--218:67
+
 (m):  let nr=n_rows@mat(m) in (f): #@(int,[vec])(nr, for c in m do V[I]: for e in c do f(e) od  od )
 
 
@@ -1747,7 +2095,9 @@ Function defined at basic.at:216:4--218:67
 ----------------------------------------------
 
 ``inverse: (mat->mat)``
+
 Function defined at basic.at:252:4--254:74
+
 (M):  let (inv,d)=invert@mat(M) in  if =@(int,int)(d,1) then inv else error@string("Matrix not invertible over the integers") fi
 
 
@@ -1757,7 +2107,9 @@ Function defined at basic.at:252:4--254:74
 ----------------------------------------------
 
 ``det: (mat->int)``
+
 Function defined at basic.at:256:4--262:1
+
 (M):  let ((diag,,),(n,):shape)=(diagonalize@mat(M),#@mat(M)) in assert@(bool,string)(=@(int,int)(shape),"Determinant of non-square matrix"); if <@(int,int)(#@vec(diag),n) then 0 else product@vec(diag) fi
 
 
@@ -1767,7 +2119,9 @@ Function defined at basic.at:256:4--262:1
 ----------------------------------------------
 
 ``saturated_span: (mat->bool)``
+
 Function defined at basic.at:264:4--266:24
+
 (M):  let inv_f=inv_fact@mat(M) in  if =@int(#@vec(inv_f)) then true else =@(int,int)(inv_f~[0],1) fi
 
 
@@ -1777,7 +2131,9 @@ Function defined at basic.at:264:4--266:24
 ----------------------------------------------
 
 ``columns_with: ((int,vec->bool),mat->mat)``
+
 Function defined at basic.at:279:4--281:69
+
 (p,m):  let res=[] in voided: for col@j in m do  if p(j,col) then res:=#@([T],T)(res,col) else () fi  od ;#@(int,[vec])(n_rows@mat(m),res)
 
 
@@ -1787,7 +2143,9 @@ Function defined at basic.at:279:4--281:69
 ----------------------------------------------
 
 ``columns_with: ((vec->bool),mat->mat)``
+
 Function defined at basic.at:282:4--283:47
+
 (p,m): columns_with@((int,vec->bool),mat)((,col): p(col),m)
 
 
@@ -1797,7 +2155,9 @@ Function defined at basic.at:282:4--283:47
 ----------------------------------------------
 
 ``columns_with: ((int->bool),mat->mat)``
+
 Function defined at basic.at:284:4--285:43
+
 (p,m): columns_with@((int,vec->bool),mat)((j,): p(j),m)
 
 
@@ -1807,7 +2167,9 @@ Function defined at basic.at:284:4--285:43
 ----------------------------------------------
 
 ``rows_with: ((int,vec->bool),mat->mat)``
+
 Function defined at basic.at:287:4--289:73
+
 (p,m):  let res=[] in voided: for row@i in ^@mat(m) do  if p(i,row) then res:=#@([T],T)(res,row) else () fi  od ;^@(int,[vec])(n_columns@mat(m),res)
 
 
@@ -1817,7 +2179,9 @@ Function defined at basic.at:287:4--289:73
 ----------------------------------------------
 
 ``rows_with: ((vec->bool),mat->mat)``
+
 Function defined at basic.at:290:4--291:44
+
 (p,m): rows_with@((int,vec->bool),mat)((,row): p(row),m)
 
 
@@ -1827,7 +2191,9 @@ Function defined at basic.at:290:4--291:44
 ----------------------------------------------
 
 ``rows_with: ((int->bool),mat->mat)``
+
 Function defined at basic.at:292:4--293:40
+
 (p,m): rows_with@((int,vec->bool),mat)((i,): p(i),m)
 
 
@@ -1837,7 +2203,9 @@ Function defined at basic.at:292:4--293:40
 ----------------------------------------------
 
 ``lookup_column: (vec,mat->int)``
+
 Function defined at basic.at:302:4--303:62
+
 (v,m):  let i=-@(int,int)(n_columns@mat(m),1) in voided: while  if >=@int(i) then !=@(vec,vec)(m[i],v) else false fi  do i:=-@(int,int)(i,1) od ;i
 
 
@@ -1847,7 +2215,9 @@ Function defined at basic.at:302:4--303:62
 ----------------------------------------------
 
 ``lookup_row: (vec,mat->int)``
+
 Function defined at basic.at:304:4--305:21
+
 (v,m): lookup_column@(vec,mat)(v,^@mat(m))
 
 
@@ -1857,7 +2227,9 @@ Function defined at basic.at:304:4--305:21
 ----------------------------------------------
 
 ``solve: (mat,vec->[vec])``
+
 Function defined at basic.at:328:2--330:78
+
 (A,b):  let (ds,L,R)=diagonalize@mat(A) in  for sol in divide_factors(*@(mat,vec)(L,b),ds) do *@(mat,vec)(columns_with@((int->bool),mat)((j): <@(int,int)(j,#@vec(sol)),R),sol) od
 
 
@@ -1867,7 +2239,9 @@ Function defined at basic.at:328:2--330:78
 ----------------------------------------------
 
 ``solve: (mat,ratvec->[ratvec])``
+
 Function defined at basic.at:395:4--399:4
+
 (A,b):  let ((ds,L,R),(v,denom))=(diagonalize@mat(A),%@ratvec(b)) in  let (d,target)=(#@vec(ds),*@(mat,vec)(L,v)) in  if !=@vec(target[d:0~]) then [] else [*@(mat,ratvec)(columns_with@((int->bool),mat)((j): <@(int,int)(j,d),R),Qv[Q]: for d@i in *@(vec,int)(ds,denom) do /@(int,int)(target[i],d) od )] fi
 
 
@@ -1877,7 +2251,9 @@ Function defined at basic.at:395:4--399:4
 ----------------------------------------------
 
 ``order: (mat->int)``
+
 Function defined at basic.at:333:4--336:44
+
 (!!M):  let (n,):p=#@mat(M) in assert@(bool,string)(=@(int,int)(p),"Matrix is not square"); let (N,order,I)=(M,1,id_mat@int(n)) in voided: while !=@(mat,mat)(N,I) do N:=*@(mat,mat)(N,M);order:=+@(int,int)(order,1) od ;order
 
 
@@ -1887,7 +2263,9 @@ Function defined at basic.at:333:4--336:44
 ----------------------------------------------
 
 ``ratvec_as_vec: (ratvec->vec)``
+
 Function defined at basic.at:379:4--380:56
+
 (v):  let (w,d)=%@ratvec(v) in assert@(bool,string)(=@(int,int)(d,1),"Not an integer vector");w
 
 
@@ -1897,7 +2275,9 @@ Function defined at basic.at:379:4--380:56
 ----------------------------------------------
 
 ``int_part: (Split->int)``
+
 Function defined at basic.at:406:4-46
+
 (x):  let (r,)=%@Split(x) in r
 
 
@@ -1907,7 +2287,9 @@ Function defined at basic.at:406:4-46
 ----------------------------------------------
 
 ``s_part: (Split->int)``
+
 Function defined at basic.at:407:4-44
+
 (x):  let (,y)=%@Split(x) in y
 
 
@@ -1917,7 +2299,9 @@ Function defined at basic.at:407:4-44
 ----------------------------------------------
 
 ``s_to_1: (Split->int)``
+
 Function defined at basic.at:412:4-31
+
 (x): +@(int,int)(%@Split(x))
 
 
@@ -1927,7 +2311,9 @@ Function defined at basic.at:412:4-31
 ----------------------------------------------
 
 ``s_to_1: (ParamPol->ParamPol)``
+
 Function defined at basic.at:1023:4-74
+
 (P): +@(ParamPol,[(Split,Param)])(*@(int,ParamPol)(0,P), for x@q in P do (SpI:+@(int,int)(%@Split(x)),q) od )
 
 
@@ -1937,7 +2323,9 @@ Function defined at basic.at:1023:4-74
 ----------------------------------------------
 
 ``s_to_minus_1: (Split->int)``
+
 Function defined at basic.at:413:4-37
+
 (x): -@(int,int)(%@Split(x))
 
 
@@ -1947,7 +2335,9 @@ Function defined at basic.at:413:4-37
 ----------------------------------------------
 
 ``s_to_minus_1: (ParamPol->ParamPol)``
+
 Function defined at basic.at:1024:4-74
+
 (P): +@(ParamPol,[(Split,Param)])(*@(int,ParamPol)(0,P), for x@q in P do (SpI:-@(int,int)(%@Split(x)),q) od )
 
 
@@ -1957,7 +2347,9 @@ Function defined at basic.at:1024:4-74
 ----------------------------------------------
 
 ``split_as_int: (Split->int)``
+
 Function defined at basic.at:415:4--416:57
+
 (x):  let (r,y)=%@Split(x) in assert@(bool,string)(=@int(y),"split is not an integer");r
 
 
@@ -1967,7 +2359,9 @@ Function defined at basic.at:415:4--416:57
 ----------------------------------------------
 
 ``split_format: (Split->string)``
+
 Function defined at basic.at:419:4--427:4
+
 (w):  let (a,b)=%@Split(w) in  if  if =@int(a) then !=@int(b) else false fi  then +@(string,string)( if >@(int,int)(abs@int(b),1) then int_format@int(b) elif =@(int,int)(b,1) then "" else "-" fi ,"s") else +@(string,string)(int_format@int(a), if >@(int,int)(abs@int(b),1) then +@(string,string)(+@(string,string)( if <@int(b) then "" else "+" fi ,int_format@int(b)),"s") elif =@int(b) then "" elif =@(int,int)(b,1) then "+s" else "-s" fi ) fi
 
 
@@ -1977,7 +2371,9 @@ Function defined at basic.at:419:4--427:4
 ----------------------------------------------
 
 ``is_root: (RootDatum,vec->bool)``
+
 Function defined at basic.at:456:4--457:34
+
 ((rd,):p): <@(int,int)(root_index@(RootDatum,vec)(p),nr_of_posroots@RootDatum(rd))
 
 
@@ -1987,7 +2383,9 @@ Function defined at basic.at:456:4--457:34
 ----------------------------------------------
 
 ``is_coroot: (RootDatum,vec->bool)``
+
 Function defined at basic.at:458:4--459:36
+
 ((rd,):p): <@(int,int)(coroot_index@(RootDatum,vec)(p),nr_of_posroots@RootDatum(rd))
 
 
@@ -1997,7 +2395,9 @@ Function defined at basic.at:458:4--459:36
 ----------------------------------------------
 
 ``is_posroot: (RootDatum,vec->bool)``
+
 Function defined at basic.at:460:4--461:56
+
 ((rd,):p):  let ri=root_index@(RootDatum,vec)(p) in  if >=@int(ri) then <@(int,int)(ri,nr_of_posroots@RootDatum(rd)) else false fi
 
 
@@ -2007,7 +2407,9 @@ Function defined at basic.at:460:4--461:56
 ----------------------------------------------
 
 ``is_poscoroot: (RootDatum,vec->bool)``
+
 Function defined at basic.at:462:4--463:61
+
 ((rd,):p):  let cri=coroot_index@(RootDatum,vec)(p) in  if >=@int(cri) then <@(int,int)(cri,nr_of_posroots@RootDatum(rd)) else false fi
 
 
@@ -2017,7 +2419,9 @@ Function defined at basic.at:462:4--463:61
 ----------------------------------------------
 
 ``posroot_index: (RootDatum,vec->int)``
+
 Function defined at basic.at:465:4--466:50
+
 (p):  let i=root_index@(RootDatum,vec)(p) in  if <@int(i) then -@(int,int)(-@int(1),i) else i fi
 
 
@@ -2027,7 +2431,9 @@ Function defined at basic.at:465:4--466:50
 ----------------------------------------------
 
 ``poscoroot_index: (RootDatum,vec->int)``
+
 Function defined at basic.at:467:4--468:52
+
 (p):  let i=coroot_index@(RootDatum,vec)(p) in  if <@int(i) then -@(int,int)(-@int(1),i) else i fi
 
 
@@ -2037,7 +2443,9 @@ Function defined at basic.at:467:4--468:52
 ----------------------------------------------
 
 ``rho: (RootDatum->ratvec)``
+
 Function defined at basic.at:471:4--473:74
+
 (rd):  let res=QvV:null@int(rank@RootDatum(rd)) in voided: for i: semisimple_rank@RootDatum(rd) do res:=+@(ratvec,ratvec)(res,fundamental_weight@(RootDatum,int)(rd,i)) od ;res
 
 
@@ -2047,7 +2455,9 @@ Function defined at basic.at:471:4--473:74
 ----------------------------------------------
 
 ``rho_as_vec: (RootDatum->vec)``
+
 Function defined at basic.at:477:4-56
+
 (r): ratvec_as_vec@ratvec(rho@RootDatum(r))
 
 
@@ -2057,7 +2467,9 @@ Function defined at basic.at:477:4-56
 ----------------------------------------------
 
 ``rho_check: (RootDatum->ratvec)``
+
 Function defined at basic.at:479:4--481:76
+
 (rd):  let res=QvV:null@int(rank@RootDatum(rd)) in voided: for i: semisimple_rank@RootDatum(rd) do res:=+@(ratvec,ratvec)(res,fundamental_coweight@(RootDatum,int)(rd,i)) od ;res
 
 
@@ -2067,7 +2479,9 @@ Function defined at basic.at:479:4--481:76
 ----------------------------------------------
 
 ``is_positive_root: (RootDatum->(vec->bool))``
+
 Function defined at basic.at:486:4--487:55
+
 (rd):  let rc=rho_check@RootDatum(rd) in (alpha): >@rat(*@(ratvec,ratvec)(rc,QvV:alpha))
 
 
@@ -2077,7 +2491,9 @@ Function defined at basic.at:486:4--487:55
 ----------------------------------------------
 
 ``is_positive_root: (RootDatum,vec->bool)``
+
 Function defined at basic.at:495:4--496:29
+
 (rd,alpha): (is_positive_root@RootDatum(rd))(alpha)
 
 
@@ -2087,7 +2503,9 @@ Function defined at basic.at:495:4--496:29
 ----------------------------------------------
 
 ``is_positive_coroot: (RootDatum->(vec->bool))``
+
 Function defined at basic.at:488:4--489:53
+
 (rd):  let rho=rho@RootDatum(rd) in (alphav): >@rat(*@(vec,ratvec)(alphav,rho))
 
 
@@ -2097,7 +2515,9 @@ Function defined at basic.at:488:4--489:53
 ----------------------------------------------
 
 ``is_positive_coroot: (RootDatum,vec->bool)``
+
 Function defined at basic.at:497:4--498:32
+
 (rd,alphav): (is_positive_coroot@RootDatum(rd))(alphav)
 
 
@@ -2107,7 +2527,9 @@ Function defined at basic.at:497:4--498:32
 ----------------------------------------------
 
 ``is_negative_root: (RootDatum->(vec->bool))``
+
 Function defined at basic.at:490:4--491:55
+
 (rd):  let rc=rho_check@RootDatum(rd) in (alpha): <@rat(*@(ratvec,ratvec)(rc,QvV:alpha))
 
 
@@ -2117,7 +2539,9 @@ Function defined at basic.at:490:4--491:55
 ----------------------------------------------
 
 ``is_negative_root: (RootDatum,vec->bool)``
+
 Function defined at basic.at:499:4--500:29
+
 (rd,alpha): (is_negative_root@RootDatum(rd))(alpha)
 
 
@@ -2127,7 +2551,9 @@ Function defined at basic.at:499:4--500:29
 ----------------------------------------------
 
 ``is_negative_coroot: (RootDatum->(vec->bool))``
+
 Function defined at basic.at:492:4--493:53
+
 (rd):  let rho=rho@RootDatum(rd) in (alphav): <@rat(*@(vec,ratvec)(alphav,rho))
 
 
@@ -2137,7 +2563,9 @@ Function defined at basic.at:492:4--493:53
 ----------------------------------------------
 
 ``is_negative_coroot: (RootDatum,vec->bool)``
+
 Function defined at basic.at:501:4--502:32
+
 (rd,alphav): (is_negative_coroot@RootDatum(rd))(alphav)
 
 
@@ -2147,7 +2575,9 @@ Function defined at basic.at:501:4--502:32
 ----------------------------------------------
 
 ``roots_all_positive: (RootDatum->(mat->bool))``
+
 Function defined at basic.at:505:4--506:76
+
 (rd):  let are_pos=is_positive_root@RootDatum(rd) in (roots): all@(mat,(vec->bool))(roots,are_pos)
 
 
@@ -2157,7 +2587,9 @@ Function defined at basic.at:505:4--506:76
 ----------------------------------------------
 
 ``roots: (RootDatum->mat)``
+
 Function defined at basic.at:519:4--520:50
+
 (rd):  let pr=posroots@RootDatum(rd) in ##@(mat,mat)(negative_system@mat(pr),pr)
 
 
@@ -2167,7 +2599,9 @@ Function defined at basic.at:519:4--520:50
 ----------------------------------------------
 
 ``coroots_all_positive: (RootDatum->(mat->bool))``
+
 Function defined at basic.at:507:4--509:42
+
 (rd):  let are_pos=is_positive_coroot@RootDatum(rd) in (coroots): all@(mat,(vec->bool))(coroots,are_pos)
 
 
@@ -2177,7 +2611,9 @@ Function defined at basic.at:507:4--509:42
 ----------------------------------------------
 
 ``coroots: (RootDatum->mat)``
+
 Function defined at basic.at:521:4--522:55
+
 (rd):  let pcr=poscoroots@RootDatum(rd) in ##@(mat,mat)(negative_system@mat(pcr),pcr)
 
 
@@ -2187,7 +2623,9 @@ Function defined at basic.at:521:4--522:55
 ----------------------------------------------
 
 ``among_posroots: (RootDatum->(mat->bool))``
+
 Function defined at basic.at:510:4--511:38
+
 (rd): (M): all@(mat,(vec->bool))(M,(v): is_posroot@(RootDatum,vec)(rd,v))
 
 
@@ -2197,7 +2635,9 @@ Function defined at basic.at:510:4--511:38
 ----------------------------------------------
 
 ``among_poscoroots: (RootDatum->(mat->bool))``
+
 Function defined at basic.at:512:4--513:40
+
 (rd): (M): all@(mat,(vec->bool))(M,(v): is_poscoroot@(RootDatum,vec)(rd,v))
 
 
@@ -2207,7 +2647,9 @@ Function defined at basic.at:512:4--513:40
 ----------------------------------------------
 
 ``negative_system: (mat->mat)``
+
 Function defined at basic.at:515:4--516:42
+
 (posroots): swiss_matrix_knife@(int,mat,int,int,int,int)(172,posroots,0,0,0,0)
 
 
@@ -2217,7 +2659,9 @@ Function defined at basic.at:515:4--516:42
 ----------------------------------------------
 
 ``reflection: (RootDatum,int->mat)``
+
 Function defined at basic.at:529:4--530:42
+
 (rd,i): -@(int,mat)(1,*@(mat,mat)(column@vec(root@(RootDatum,int)(rd,i)),row@vec(coroot@(RootDatum,int)(rd,i))))
 
 
@@ -2227,7 +2671,9 @@ Function defined at basic.at:529:4--530:42
 ----------------------------------------------
 
 ``reflection: (RootDatum,vec->mat)``
+
 Function defined at basic.at:531:4--532:30
+
 ((rd,):p): reflection@(RootDatum,int)(rd,root_index@(RootDatum,vec)(p))
 
 
@@ -2237,7 +2683,9 @@ Function defined at basic.at:531:4--532:30
 ----------------------------------------------
 
 ``coreflection: (RootDatum,int->mat)``
+
 Function defined at basic.at:533:4--534:42
+
 (rd,i): -@(int,mat)(1,*@(mat,mat)(column@vec(coroot@(RootDatum,int)(rd,i)),row@vec(root@(RootDatum,int)(rd,i))))
 
 
@@ -2247,7 +2695,9 @@ Function defined at basic.at:533:4--534:42
 ----------------------------------------------
 
 ``coreflection: (RootDatum,vec->mat)``
+
 Function defined at basic.at:535:4--536:32
+
 ((rd,):p): coreflection@(RootDatum,int)(rd,root_index@(RootDatum,vec)(p))
 
 
@@ -2257,7 +2707,9 @@ Function defined at basic.at:535:4--536:32
 ----------------------------------------------
 
 ``reflect: (RootDatum,int,vec->vec)``
+
 Function defined at basic.at:537:4--538:37
+
 (rd,i,v): v:=-@(vec,vec)(v,*@(vec,int)(root@(RootDatum,int)(rd,i),*@(vec,vec)(coroot@(RootDatum,int)(rd,i),v)))
 
 
@@ -2267,7 +2719,9 @@ Function defined at basic.at:537:4--538:37
 ----------------------------------------------
 
 ``reflect: (RootDatum,vec,vec->vec)``
+
 Function defined at basic.at:539:4--540:36
+
 (rd,alpha,v): v:=-@(vec,vec)(v,*@(vec,int)(alpha,*@(vec,vec)(coroot@(RootDatum,vec)(rd,alpha),v)))
 
 
@@ -2277,7 +2731,9 @@ Function defined at basic.at:539:4--540:36
 ----------------------------------------------
 
 ``reflect: (RootDatum,int,ratvec->ratvec)``
+
 Function defined at basic.at:546:4--547:37
+
 (rd,i,v):  let (n,d)=%@ratvec(v) in /@(vec,int)(reflect@(RootDatum,int,vec)(rd,i,n),d)
 
 
@@ -2287,7 +2743,9 @@ Function defined at basic.at:546:4--547:37
 ----------------------------------------------
 
 ``reflect: (RootDatum,vec,ratvec->ratvec)``
+
 Function defined at basic.at:548:4--549:41
+
 (rd,alpha,v):  let (n,d)=%@ratvec(v) in /@(vec,int)(reflect@(RootDatum,vec,vec)(rd,alpha,n),d)
 
 
@@ -2297,7 +2755,9 @@ Function defined at basic.at:548:4--549:41
 ----------------------------------------------
 
 ``coreflect: (RootDatum,vec,int->vec)``
+
 Function defined at basic.at:541:4--542:37
+
 (rd,v,i): v:=-@(vec,vec)(v,*@(int,vec)(*@(vec,vec)(v,root@(RootDatum,int)(rd,i)),coroot@(RootDatum,int)(rd,i)))
 
 
@@ -2307,7 +2767,9 @@ Function defined at basic.at:541:4--542:37
 ----------------------------------------------
 
 ``coreflect: (RootDatum,vec,vec->vec)``
+
 Function defined at basic.at:543:4--544:36
+
 (rd,v,alpha): v:=-@(vec,vec)(v,*@(int,vec)(*@(vec,vec)(v,alpha),coroot@(RootDatum,vec)(rd,alpha)))
 
 
@@ -2317,7 +2779,9 @@ Function defined at basic.at:543:4--544:36
 ----------------------------------------------
 
 ``coreflect: (RootDatum,ratvec,int->ratvec)``
+
 Function defined at basic.at:550:4--551:39
+
 (rd,v,i):  let (n,d)=%@ratvec(v) in /@(vec,int)(coreflect@(RootDatum,vec,int)(rd,n,i),d)
 
 
@@ -2327,7 +2791,9 @@ Function defined at basic.at:550:4--551:39
 ----------------------------------------------
 
 ``coreflect: (RootDatum,ratvec,vec->ratvec)``
+
 Function defined at basic.at:552:4--553:43
+
 (rd,v,alpha):  let (n,d)=%@ratvec(v) in /@(vec,int)(coreflect@(RootDatum,vec,vec)(rd,n,alpha),d)
 
 
@@ -2337,7 +2803,9 @@ Function defined at basic.at:552:4--553:43
 ----------------------------------------------
 
 ``left_reflect: (RootDatum,int,mat->mat)``
+
 Function defined at basic.at:556:4--557:46
+
 (rd,i,M): #@(int,[vec])(n_rows@mat(M), for v in M do reflect@(RootDatum,int,vec)(rd,i,v) od )
 
 
@@ -2347,7 +2815,9 @@ Function defined at basic.at:556:4--557:46
 ----------------------------------------------
 
 ``left_reflect: (RootDatum,vec,mat->mat)``
+
 Function defined at basic.at:558:4--559:41
+
 (rd,alpha,M): left_reflect@(RootDatum,int,mat)(rd,root_index@(RootDatum,vec)(rd,alpha),M)
 
 
@@ -2357,7 +2827,9 @@ Function defined at basic.at:558:4--559:41
 ----------------------------------------------
 
 ``right_reflect: (RootDatum,mat,int->mat)``
+
 Function defined at basic.at:560:4--561:56
+
 (rd,M,i): ^@(int,[vec])(n_columns@mat(M), for row in ^@mat(M) do coreflect@(RootDatum,vec,int)(rd,row,i) od )
 
 
@@ -2367,7 +2839,9 @@ Function defined at basic.at:560:4--561:56
 ----------------------------------------------
 
 ``right_reflect: (RootDatum,mat,vec->mat)``
+
 Function defined at basic.at:562:4--563:42
+
 (rd,M,alpha): right_reflect@(RootDatum,mat,int)(rd,M,root_index@(RootDatum,vec)(rd,alpha))
 
 
@@ -2377,7 +2851,9 @@ Function defined at basic.at:562:4--563:42
 ----------------------------------------------
 
 ``conjugate: (RootDatum,int,mat->mat)``
+
 Function defined at basic.at:565:4--566:42
+
 (rd,i,M): left_reflect@(RootDatum,int,mat)(rd,i,right_reflect@(RootDatum,mat,int)(rd,M,i))
 
 
@@ -2387,7 +2863,9 @@ Function defined at basic.at:565:4--566:42
 ----------------------------------------------
 
 ``conjugate: (RootDatum,vec,mat->mat)``
+
 Function defined at basic.at:567:4--568:38
+
 (rd,alpha,M): conjugate@(RootDatum,int,mat)(rd,root_index@(RootDatum,vec)(rd,alpha),M)
 
 
@@ -2397,7 +2875,9 @@ Function defined at basic.at:567:4--568:38
 ----------------------------------------------
 
 ``singular_simple_indices: (RootDatum,ratvec->[int])``
+
 Function defined at basic.at:571:4--573:69
+
 (rd,v):  let rv=[] in voided: for a@j in simple_coroots@RootDatum(rd) do  if =@rat(*@(vec,ratvec)(a,v)) then rv:=#@([T],T)(rv,j) else () fi  od ;rv
 
 
@@ -2407,7 +2887,9 @@ Function defined at basic.at:571:4--573:69
 ----------------------------------------------
 
 ``is_imaginary: (mat->(vec->bool))``
+
 Function defined at basic.at:575:4-74
+
 (theta): (alpha): =@(vec,vec)(*@(mat,vec)(theta,alpha),alpha)
 
 
@@ -2417,7 +2899,9 @@ Function defined at basic.at:575:4-74
 ----------------------------------------------
 
 ``is_imaginary: (int,KGBElt->bool)``
+
 Function defined at basic.at:796:4-48
+
 (p): =@(int,int)(%@(int,int)(status@(int,KGBElt)(p),2),1)
 
 
@@ -2427,7 +2911,9 @@ Function defined at basic.at:796:4-48
 ----------------------------------------------
 
 ``is_imaginary: (KGBElt->(vec->bool))``
+
 Function defined at basic.at:805:4-70
+
 (x): is_imaginary@mat(involution@KGBElt(x))
 
 
@@ -2437,7 +2923,9 @@ Function defined at basic.at:805:4-70
 ----------------------------------------------
 
 ``is_imaginary: (vec,KGBElt->bool)``
+
 Function defined at basic.at:863:4-60
+
 (v,x): (is_imaginary@KGBElt(x))(v)
 
 
@@ -2447,7 +2935,9 @@ Function defined at basic.at:863:4-60
 ----------------------------------------------
 
 ``is_real: (mat->(vec->bool))``
+
 Function defined at basic.at:576:4-75
+
 (theta): (alpha): =@(vec,vec)(*@(mat,vec)(theta,alpha),-@vec(alpha))
 
 
@@ -2457,7 +2947,9 @@ Function defined at basic.at:576:4-75
 ----------------------------------------------
 
 ``is_real: (int,KGBElt->bool)``
+
 Function defined at basic.at:795:4-41
+
 (p): =@(int,int)(status@(int,KGBElt)(p),2)
 
 
@@ -2467,7 +2959,9 @@ Function defined at basic.at:795:4-41
 ----------------------------------------------
 
 ``is_real: (KGBElt->(vec->bool))``
+
 Function defined at basic.at:806:4-65
+
 (x): is_real@mat(involution@KGBElt(x))
 
 
@@ -2477,7 +2971,9 @@ Function defined at basic.at:806:4-65
 ----------------------------------------------
 
 ``is_real: (vec,KGBElt->bool)``
+
 Function defined at basic.at:864:4-55
+
 (v,x): (is_real@KGBElt(x))(v)
 
 
@@ -2487,7 +2983,9 @@ Function defined at basic.at:864:4-55
 ----------------------------------------------
 
 ``is_complex: (mat->(vec->bool))``
+
 Function defined at basic.at:577:4--578:50
+
 (theta): (alpha):  let ta=*@(mat,vec)(theta,alpha) in  if !=@(vec,vec)(ta,alpha) then !=@(vec,vec)(ta,-@vec(alpha)) else false fi
 
 
@@ -2497,7 +2995,9 @@ Function defined at basic.at:577:4--578:50
 ----------------------------------------------
 
 ``is_complex: (int,KGBElt->bool)``
+
 Function defined at basic.at:794:4-46
+
 (p): =@(int,int)(%@(int,int)(status@(int,KGBElt)(p),4),0)
 
 
@@ -2507,7 +3007,9 @@ Function defined at basic.at:794:4-46
 ----------------------------------------------
 
 ``is_complex: (KGBElt->(vec->bool))``
+
 Function defined at basic.at:807:4-68
+
 (x): is_complex@mat(involution@KGBElt(x))
 
 
@@ -2517,7 +3019,9 @@ Function defined at basic.at:807:4-68
 ----------------------------------------------
 
 ``is_complex: (vec,KGBElt->bool)``
+
 Function defined at basic.at:865:4-58
+
 (v,x): (is_complex@KGBElt(x))(v)
 
 
@@ -2527,7 +3031,9 @@ Function defined at basic.at:865:4-58
 ----------------------------------------------
 
 ``imaginary_roots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:581:4--582:45
+
 (rd,theta): columns_with@((vec->bool),mat)(is_imaginary@mat(theta),roots@RootDatum(rd))
 
 
@@ -2537,7 +3043,9 @@ Function defined at basic.at:581:4--582:45
 ----------------------------------------------
 
 ``real_roots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:583:4--584:40
+
 (rd,theta): columns_with@((vec->bool),mat)(is_real@mat(theta),roots@RootDatum(rd))
 
 
@@ -2547,7 +3055,9 @@ Function defined at basic.at:583:4--584:40
 ----------------------------------------------
 
 ``imaginary_coroots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:587:4--588:48
+
 (rd,theta): columns_with@((vec->bool),mat)(is_imaginary@mat(^@mat(theta)),coroots@RootDatum(rd))
 
 
@@ -2557,7 +3067,9 @@ Function defined at basic.at:587:4--588:48
 ----------------------------------------------
 
 ``real_coroots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:589:4--590:43
+
 (rd,theta): columns_with@((vec->bool),mat)(is_real@mat(^@mat(theta)),coroots@RootDatum(rd))
 
 
@@ -2567,7 +3079,9 @@ Function defined at basic.at:589:4--590:43
 ----------------------------------------------
 
 ``imaginary_posroots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:593:4--594:48
+
 (rd,theta): columns_with@((vec->bool),mat)(is_imaginary@mat(theta),posroots@RootDatum(rd))
 
 
@@ -2577,7 +3091,9 @@ Function defined at basic.at:593:4--594:48
 ----------------------------------------------
 
 ``imaginary_posroots: (KGBElt->mat)``
+
 Function defined at basic.at:810:4--811:49
+
 (x): imaginary_posroots@(RootDatum,mat)(root_datum@KGBElt(x),involution@KGBElt(x))
 
 
@@ -2587,7 +3103,9 @@ Function defined at basic.at:810:4--811:49
 ----------------------------------------------
 
 ``real_posroots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:595:4--596:43
+
 (rd,theta): columns_with@((vec->bool),mat)(is_real@mat(theta),posroots@RootDatum(rd))
 
 
@@ -2597,7 +3115,9 @@ Function defined at basic.at:595:4--596:43
 ----------------------------------------------
 
 ``real_posroots: (KGBElt->mat)``
+
 Function defined at basic.at:812:4--813:44
+
 (x): real_posroots@(RootDatum,mat)(root_datum@KGBElt(x),involution@KGBElt(x))
 
 
@@ -2607,7 +3127,9 @@ Function defined at basic.at:812:4--813:44
 ----------------------------------------------
 
 ``imaginary_poscoroots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:597:4--598:51
+
 (rd,theta): columns_with@((vec->bool),mat)(is_imaginary@mat(^@mat(theta)),poscoroots@RootDatum(rd))
 
 
@@ -2617,7 +3139,9 @@ Function defined at basic.at:597:4--598:51
 ----------------------------------------------
 
 ``imaginary_poscoroots: (KGBElt->mat)``
+
 Function defined at basic.at:814:4--815:51
+
 (x): imaginary_poscoroots@(RootDatum,mat)(root_datum@KGBElt(x),involution@KGBElt(x))
 
 
@@ -2627,7 +3151,9 @@ Function defined at basic.at:814:4--815:51
 ----------------------------------------------
 
 ``real_poscoroots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:599:4--600:46
+
 (rd,theta): columns_with@((vec->bool),mat)(is_real@mat(^@mat(theta)),poscoroots@RootDatum(rd))
 
 
@@ -2637,7 +3163,9 @@ Function defined at basic.at:599:4--600:46
 ----------------------------------------------
 
 ``real_poscoroots: (KGBElt->mat)``
+
 Function defined at basic.at:816:4--817:46
+
 (x): real_poscoroots@(RootDatum,mat)(root_datum@KGBElt(x),involution@KGBElt(x))
 
 
@@ -2647,7 +3175,9 @@ Function defined at basic.at:816:4--817:46
 ----------------------------------------------
 
 ``imaginary_sys: (RootDatum,mat->mat,mat)``
+
 Function defined at basic.at:601:4--602:49
+
 (p): (imaginary_posroots@(RootDatum,mat)(p),imaginary_poscoroots@(RootDatum,mat)(p))
 
 
@@ -2657,7 +3187,9 @@ Function defined at basic.at:601:4--602:49
 ----------------------------------------------
 
 ``imaginary_sys: (KGBElt->mat,mat)``
+
 Function defined at basic.at:818:4--820:52
+
 (x):  let p=(root_datum@KGBElt(x),involution@KGBElt(x)) in (imaginary_posroots@(RootDatum,mat)(p),imaginary_poscoroots@(RootDatum,mat)(p))
 
 
@@ -2667,7 +3199,9 @@ Function defined at basic.at:818:4--820:52
 ----------------------------------------------
 
 ``real_sys: (RootDatum,mat->mat,mat)``
+
 Function defined at basic.at:603:4--604:39
+
 (p): (real_posroots@(RootDatum,mat)(p),real_poscoroots@(RootDatum,mat)(p))
 
 
@@ -2677,7 +3211,9 @@ Function defined at basic.at:603:4--604:39
 ----------------------------------------------
 
 ``real_sys: (KGBElt->mat,mat)``
+
 Function defined at basic.at:821:4--823:42
+
 (x):  let p=(root_datum@KGBElt(x),involution@KGBElt(x)) in (real_posroots@(RootDatum,mat)(p),real_poscoroots@(RootDatum,mat)(p))
 
 
@@ -2687,7 +3223,9 @@ Function defined at basic.at:821:4--823:42
 ----------------------------------------------
 
 ``is_dominant: (RootDatum,ratvec->bool)``
+
 Function defined at basic.at:607:4--608:33
+
 (rd,v): >=@vec(*@(vec,mat)(numer@ratvec(v),simple_coroots@RootDatum(rd)))
 
 
@@ -2697,7 +3235,9 @@ Function defined at basic.at:607:4--608:33
 ----------------------------------------------
 
 ``is_strictly_dominant: (RootDatum,ratvec->bool)``
+
 Function defined at basic.at:609:4--610:32
+
 (rd,v): >@vec(*@(vec,mat)(numer@ratvec(v),simple_coroots@RootDatum(rd)))
 
 
@@ -2707,7 +3247,9 @@ Function defined at basic.at:609:4--610:32
 ----------------------------------------------
 
 ``is_regular: (RootDatum,ratvec->bool)``
+
 Function defined at basic.at:611:4--612:49
+
 (rd,v): all@[bool]( for x in *@(vec,mat)(numer@ratvec(v),poscoroots@RootDatum(rd)) do !=@int(x) od )
 
 
@@ -2717,7 +3259,9 @@ Function defined at basic.at:611:4--612:49
 ----------------------------------------------
 
 ``is_regular: (Param->bool)``
+
 Function defined at basic.at:928:4--929:54
+
 (p): is_regular@(RootDatum,ratvec)(root_datum@Param(p),infinitesimal_character@Param(p))
 
 
@@ -2727,7 +3271,9 @@ Function defined at basic.at:928:4--929:54
 ----------------------------------------------
 
 ``is_integral: (RootDatum,ratvec->bool)``
+
 Function defined at basic.at:613:4--614:27
+
 (rd,v): =@ratvec(%@(ratvec,int)(*@(ratvec,mat)(v,simple_coroots@RootDatum(rd)),1))
 
 
@@ -2737,7 +3283,9 @@ Function defined at basic.at:613:4--614:27
 ----------------------------------------------
 
 ``radical_basis: (RootDatum->mat)``
+
 Function defined at basic.at:617:4--618:44
+
 (rd): matrix slicer@(int,mat,int,int,int,int)(36,coroot_radical@RootDatum(rd),0,0,semisimple_rank@RootDatum(rd),0)
 
 
@@ -2747,7 +3295,9 @@ Function defined at basic.at:617:4--618:44
 ----------------------------------------------
 
 ``coradical_basis: (RootDatum->mat)``
+
 Function defined at basic.at:619:4--620:44
+
 (rd): matrix slicer@(int,mat,int,int,int,int)(36,root_coradical@RootDatum(rd),0,0,semisimple_rank@RootDatum(rd),0)
 
 
@@ -2757,7 +3307,9 @@ Function defined at basic.at:619:4--620:44
 ----------------------------------------------
 
 ``is_semisimple: (RootDatum->bool)``
+
 Function defined at basic.at:622:4-71
+
 (rd): =@(int,int)(semisimple_rank@RootDatum(rd),rank@RootDatum(rd))
 
 
@@ -2767,7 +3319,9 @@ Function defined at basic.at:622:4-71
 ----------------------------------------------
 
 ``derived_is_simply_connected: (RootDatum->bool)``
+
 Function defined at basic.at:624:4--625:36
+
 (rd): saturated_span@mat(simple_coroots@RootDatum(rd))
 
 
@@ -2777,7 +3331,9 @@ Function defined at basic.at:624:4--625:36
 ----------------------------------------------
 
 ``has_connected_center: (RootDatum->bool)``
+
 Function defined at basic.at:626:4--627:34
+
 (rd): saturated_span@mat(simple_roots@RootDatum(rd))
 
 
@@ -2787,7 +3343,9 @@ Function defined at basic.at:626:4--627:34
 ----------------------------------------------
 
 ``is_simply_connected: (RootDatum->bool)``
+
 Function defined at basic.at:628:4--629:55
+
 (rd):  if is_semisimple@RootDatum(rd) then derived_is_simply_connected@RootDatum(rd) else false fi
 
 
@@ -2797,7 +3355,9 @@ Function defined at basic.at:628:4--629:55
 ----------------------------------------------
 
 ``is_adjoint: (RootDatum->bool)``
+
 Function defined at basic.at:630:4--631:48
+
 (rd):  if is_semisimple@RootDatum(rd) then has_connected_center@RootDatum(rd) else false fi
 
 
@@ -2807,7 +3367,9 @@ Function defined at basic.at:630:4--631:48
 ----------------------------------------------
 
 ``derived: (RootDatum->RootDatum)``
+
 Function defined at basic.at:636:4-70
+
 (rd):  let (d,)=derived_info@RootDatum(rd) in d
 
 
@@ -2817,7 +3379,9 @@ Function defined at basic.at:636:4-70
 ----------------------------------------------
 
 ``mod_central_torus: (RootDatum->RootDatum)``
+
 Function defined at basic.at:637:4--638:42
+
 (rd):  let (d,)=mod_central_torus_info@RootDatum(rd) in d
 
 
@@ -2827,7 +3391,9 @@ Function defined at basic.at:637:4--638:42
 ----------------------------------------------
 
 ``is_simple_for: (vec->(vec->bool))``
+
 Function defined at basic.at:643:4--644:35
+
 (dual_two_rho): (alpha): =@(int,int)(*@(vec,vec)(dual_two_rho,alpha),2)
 
 
@@ -2837,7 +3403,9 @@ Function defined at basic.at:643:4--644:35
 ----------------------------------------------
 
 ``simple_from_positive: (mat,mat->mat,mat)``
+
 Function defined at basic.at:647:4--650:3
+
 (posroots,poscoroots): (columns_with@((vec->bool),mat)(is_simple_for@vec(sum@mat(poscoroots)),posroots),columns_with@((vec->bool),mat)(is_simple_for@vec(sum@mat(posroots)),poscoroots))
 
 
@@ -2847,7 +3415,9 @@ Function defined at basic.at:647:4--650:3
 ----------------------------------------------
 
 ``fundamental_weights: (RootDatum->[ratvec])``
+
 Function defined at basic.at:652:4--653:58
+
 (rd):  for i: semisimple_rank@RootDatum(rd) do fundamental_weight@(RootDatum,int)(rd,i) od
 
 
@@ -2857,7 +3427,9 @@ Function defined at basic.at:652:4--653:58
 ----------------------------------------------
 
 ``fundamental_coweights: (RootDatum->[ratvec])``
+
 Function defined at basic.at:654:4--655:60
+
 (rd):  for i: semisimple_rank@RootDatum(rd) do fundamental_coweight@(RootDatum,int)(rd,i) od
 
 
@@ -2867,7 +3439,9 @@ Function defined at basic.at:654:4--655:60
 ----------------------------------------------
 
 ``dual_integral: (InnerClass,ratvec->InnerClass)``
+
 Function defined at basic.at:664:4--665:79
+
 (ic,gamma): inner_class@(RootDatum,mat)(dual@RootDatum(integrality_datum@(RootDatum,ratvec)(RdIc:ic,gamma)),-@mat(^@mat(distinguished_involution@InnerClass(ic))))
 
 
@@ -2877,7 +3451,9 @@ Function defined at basic.at:664:4--665:79
 ----------------------------------------------
 
 ``Cartan_classes: (InnerClass->[CartanClass])``
+
 Function defined at basic.at:670:4--671:57
+
 (ic):  for i: nr_of_Cartan_classes@InnerClass(ic) do Cartan_class@(InnerClass,int)(ic,i) od
 
 
@@ -2887,7 +3463,9 @@ Function defined at basic.at:670:4--671:57
 ----------------------------------------------
 
 ``print_Cartan_info: (CartanClass->)``
+
 Function defined at basic.at:673:4--690:5
+
 (cc):  let (show,((cr,Cr,sr),ww,(orbit_size,fiber_size),(i_tp,r_tp,C_tp)))=((s):  if =@(string,string)(s,"") then "empty" else s fi ,Cartan_info@CartanClass(cc)) in prints@(string,int,string,int,string,int)("compact: ",cr,", complex: ",Cr,", split: ",sr); let str="canonical twisted involution: " in  if =@int(#@vec(ww)) then str:=+@(string,string)(str,"e") else voided: for s@i in ww do  if =@int(i) then str:=+@(string,int)(str,+@(int,int)(s,1)) else str:=+@(string,string)(str,+@(string,int)(",",+@(int,int)(s,1))) fi  od  fi ;prints@string(str);prints@(string,int,string,int,string,int)("twisted involution orbit size: ",orbit_size,"; fiber size: ",fiber_size,"; strong inv: ",*@(int,int)(orbit_size,fiber_size));prints@(string,string)("imaginary root system: ",show(str@LieType(i_tp)));prints@(string,string)("real root system: ",show(str@LieType(r_tp)));prints@(string,string)("complex factor: ",show(str@LieType(C_tp)))
 
 
@@ -2897,7 +3475,9 @@ Function defined at basic.at:673:4--690:5
 ----------------------------------------------
 
 ``fundamental_Cartan: (InnerClass->CartanClass)``
+
 Function defined at basic.at:693:4-72
+
 (ic): Cartan_class@(InnerClass,int)(ic,0)
 
 
@@ -2907,7 +3487,9 @@ Function defined at basic.at:693:4-72
 ----------------------------------------------
 
 ``compact_rank: (CartanClass->int)``
+
 Function defined at basic.at:700:4--701:42
+
 (cc):  let ((c,C,),,,)=Cartan_info@CartanClass(cc) in +@(int,int)(c,C)
 
 
@@ -2917,7 +3499,9 @@ Function defined at basic.at:700:4--701:42
 ----------------------------------------------
 
 ``compact_rank: (InnerClass->int)``
+
 Function defined at basic.at:705:4-74
+
 (G): compact_rank@CartanClass(fundamental_Cartan@InnerClass(G))
 
 
@@ -2927,7 +3511,9 @@ Function defined at basic.at:705:4-74
 ----------------------------------------------
 
 ``split_rank: (CartanClass->int)``
+
 Function defined at basic.at:702:4--703:42
+
 (cc):  let ((,C,s),,,)=Cartan_info@CartanClass(cc) in +@(int,int)(C,s)
 
 
@@ -2937,7 +3523,9 @@ Function defined at basic.at:702:4--703:42
 ----------------------------------------------
 
 ``split_rank: (RealForm->int)``
+
 Function defined at basic.at:706:4-71
+
 (G): split_rank@CartanClass(most_split_Cartan@RealForm(G))
 
 
@@ -2947,7 +3535,9 @@ Function defined at basic.at:706:4-71
 ----------------------------------------------
 
 ``number: (CartanClass,RealForm->int)``
+
 Function defined at basic.at:714:4--715:65
+
 (H,G): last@(int,(int->bool))(nr_of_Cartan_classes@InnerClass(IcRf:G),(i): =@(CartanClass,CartanClass)(Cartan_class@(RealForm,int)(G,i),H))
 
 
@@ -2957,7 +3547,9 @@ Function defined at basic.at:714:4--715:65
 ----------------------------------------------
 
 ``form_name: (RealForm->string)``
+
 Function defined at basic.at:721:4-66
+
 (f): form_names@InnerClass(IcRf:f)[form_number@RealForm(f)]
 
 
@@ -2967,7 +3559,9 @@ Function defined at basic.at:721:4-66
 ----------------------------------------------
 
 ``is_quasisplit: (RealForm->bool)``
+
 Function defined at basic.at:728:4-75
+
 (G): =@(int,int)(form_number@RealForm(G),-@(int,int)(nr_of_real_forms@InnerClass(IcRf:G),1))
 
 
@@ -2977,7 +3571,9 @@ Function defined at basic.at:728:4-75
 ----------------------------------------------
 
 ``is_quasicompact: (RealForm->bool)``
+
 Function defined at basic.at:729:4-57
+
 (G): =@(int,int)(form_number@RealForm(G),0)
 
 
@@ -2987,7 +3583,9 @@ Function defined at basic.at:729:4-57
 ----------------------------------------------
 
 ``split_form: (RootDatum->RealForm)``
+
 Function defined at basic.at:731:4--732:50
+
 (r): quasisplit_form@InnerClass(inner_class@(RootDatum,mat)(r,-@mat(id_mat@int(rank@RootDatum(r)))))
 
 
@@ -2997,7 +3595,9 @@ Function defined at basic.at:731:4--732:50
 ----------------------------------------------
 
 ``split_form: (LieType->RealForm)``
+
 Function defined at basic.at:735:4-70
+
 (t): split_form@RootDatum(simply_connected@LieType(t))
 
 
@@ -3007,7 +3607,9 @@ Function defined at basic.at:735:4-70
 ----------------------------------------------
 
 ``quasicompact_form: (InnerClass->RealForm)``
+
 Function defined at basic.at:737:4-65
+
 (ic): real_form@(InnerClass,int)(ic,0)
 
 
@@ -3017,7 +3619,9 @@ Function defined at basic.at:737:4-65
 ----------------------------------------------
 
 ``is_compatible: (RealForm,RealForm->bool)``
+
 Function defined at basic.at:740:4--743:68
+
 (f,g):  let ic=inner_class@RealForm(f) in  let oc=*@(mat,mat)(occurrence_matrix@InnerClass(ic),^@mat(dual_occurrence_matrix@InnerClass(ic))) in  if =@(InnerClass,InnerClass)(inner_class@RealForm(g),dual@InnerClass(ic)) then >@(int,int)(oc[form_number@RealForm(f),form_number@RealForm(g)],0) else false fi
 
 
@@ -3027,7 +3631,9 @@ Function defined at basic.at:740:4--743:68
 ----------------------------------------------
 
 ``is_compact: (RealForm->bool)``
+
 Function defined at basic.at:745:4--746:49
+
 (G):  if =@(int,int)(KGB_size@RealForm(G),1) then =@(mat,int)(distinguished_involution@InnerClass(IcRf:G),1) else false fi
 
 
@@ -3037,7 +3643,9 @@ Function defined at basic.at:745:4--746:49
 ----------------------------------------------
 
 ``is_compact: (int,KGBElt->bool)``
+
 Function defined at basic.at:798:4-44
+
 (p): =@(int,int)(status@(int,KGBElt)(p),1)
 
 
@@ -3047,7 +3655,9 @@ Function defined at basic.at:798:4-44
 ----------------------------------------------
 
 ``is_compact: (KGBElt->(vec->bool))``
+
 Function defined at basic.at:840:4--842:64
+
 (x):  let (coweight,is_im)=(+@(ratvec,ratvec)(rho_check_i@KGBElt(x),torus_factor@KGBElt(x)),is_imaginary@KGBElt(x)) in (alpha): assert@bool(is_im(alpha));=@rat(%@(rat,int)(*@(ratvec,ratvec)(coweight,QvV:alpha),2))
 
 
@@ -3057,7 +3667,9 @@ Function defined at basic.at:840:4--842:64
 ----------------------------------------------
 
 ``KGB_status_text: (int->string)``
+
 Function defined at basic.at:787:4-67
+
 (i): ["C-","ic","r ","nc","C+"][i]
 
 
@@ -3067,7 +3679,9 @@ Function defined at basic.at:787:4-67
 ----------------------------------------------
 
 ``status_text: (int,KGBElt->string)``
+
 Function defined at basic.at:789:4-68
+
 (p): KGB_status_text@int(status@(int,KGBElt)(p))
 
 
@@ -3077,7 +3691,9 @@ Function defined at basic.at:789:4-68
 ----------------------------------------------
 
 ``status_text: (vec,KGBElt->string)``
+
 Function defined at basic.at:790:4-68
+
 (p): KGB_status_text@int(status@(vec,KGBElt)(p))
 
 
@@ -3087,7 +3703,9 @@ Function defined at basic.at:790:4-68
 ----------------------------------------------
 
 ``status_text: (int,Param->string)``
+
 Function defined at basic.at:988:4-72
+
 (s,p): block_status_text@int(status@(int,Param)(s,p))
 
 
@@ -3097,7 +3715,9 @@ Function defined at basic.at:988:4-72
 ----------------------------------------------
 
 ``status_text: (vec,Param->string)``
+
 Function defined at basic.at:992:4-72
+
 (ap): block_status_text@int(status@(vec,Param)(ap))
 
 
@@ -3107,7 +3727,9 @@ Function defined at basic.at:992:4-72
 ----------------------------------------------
 
 ``status_texts: (KGBElt->[string])``
+
 Function defined at basic.at:791:4--792:60
+
 (x):  for s: semisimple_rank@RootDatum(RdRf:real_form@KGBElt(x)) do status_text@(int,KGBElt)(s,x) od
 
 
@@ -3117,7 +3739,9 @@ Function defined at basic.at:791:4--792:60
 ----------------------------------------------
 
 ``status_texts: (Param->[string])``
+
 Function defined at basic.at:989:4--990:60
+
 (p):  for s: semisimple_rank@RootDatum(RdRf:real_form@Param(p)) do status_text@(int,Param)(s,p) od
 
 
@@ -3127,7 +3751,9 @@ Function defined at basic.at:989:4--990:60
 ----------------------------------------------
 
 ``is_noncompact: (int,KGBElt->bool)``
+
 Function defined at basic.at:797:4-47
+
 (p): =@(int,int)(status@(int,KGBElt)(p),3)
 
 
@@ -3137,7 +3763,9 @@ Function defined at basic.at:797:4-47
 ----------------------------------------------
 
 ``is_noncompact: (KGBElt->(vec->bool))``
+
 Function defined at basic.at:843:4--845:65
+
 (x):  let (coweight,is_im)=(+@(ratvec,ratvec)(rho_check_i@KGBElt(x),torus_factor@KGBElt(x)),is_imaginary@KGBElt(x)) in (alpha): assert@bool(is_im(alpha));!=@rat(%@(rat,int)(*@(ratvec,ratvec)(coweight,QvV:alpha),2))
 
 
@@ -3147,7 +3775,9 @@ Function defined at basic.at:843:4--845:65
 ----------------------------------------------
 
 ``is_descent: (int,KGBElt->bool)``
+
 Function defined at basic.at:799:4-44
+
 (p): <@(int,int)(status@(int,KGBElt)(p),3)
 
 
@@ -3157,7 +3787,9 @@ Function defined at basic.at:799:4-44
 ----------------------------------------------
 
 ``is_descent: (int,Param->bool)``
+
 Function defined at basic.at:1001:4-52
+
 (s,p): <@(int,int)(status@(int,Param)(s,p),4)
 
 
@@ -3167,7 +3799,9 @@ Function defined at basic.at:1001:4-52
 ----------------------------------------------
 
 ``is_descent: (vec,Param->bool)``
+
 Function defined at basic.at:1008:4-52
+
 (ap): <@(int,int)(status@(vec,Param)(ap),4)
 
 
@@ -3177,7 +3811,9 @@ Function defined at basic.at:1008:4-52
 ----------------------------------------------
 
 ``is_ascent: (int,KGBElt->bool)``
+
 Function defined at basic.at:800:4-44
+
 (p): >=@(int,int)(status@(int,KGBElt)(p),3)
 
 
@@ -3187,7 +3823,9 @@ Function defined at basic.at:800:4-44
 ----------------------------------------------
 
 ``is_strict_descent: (int,KGBElt->bool)``
+
 Function defined at basic.at:801:4-75
+
 (p):  if is_descent@(int,KGBElt)(p) then not@bool(is_compact@(int,KGBElt)(p)) else false fi
 
 
@@ -3197,7 +3835,9 @@ Function defined at basic.at:801:4-75
 ----------------------------------------------
 
 ``rho_i: (KGBElt->ratvec)``
+
 Function defined at basic.at:825:4-59
+
 (x): /@(vec,int)(sum@mat(imaginary_posroots@KGBElt(x)),2)
 
 
@@ -3207,7 +3847,9 @@ Function defined at basic.at:825:4-59
 ----------------------------------------------
 
 ``rho_i: (RootDatum,mat->ratvec)``
+
 Function defined at basic.at:830:4--831:37
+
 (rd_theta): /@(vec,int)(sum@mat(imaginary_posroots@(RootDatum,mat)(rd_theta)),2)
 
 
@@ -3217,7 +3859,9 @@ Function defined at basic.at:830:4--831:37
 ----------------------------------------------
 
 ``rho_r: (KGBElt->ratvec)``
+
 Function defined at basic.at:826:4-54
+
 (x): /@(vec,int)(sum@mat(real_posroots@KGBElt(x)),2)
 
 
@@ -3227,7 +3871,9 @@ Function defined at basic.at:826:4-54
 ----------------------------------------------
 
 ``rho_r: (RootDatum,mat->ratvec)``
+
 Function defined at basic.at:832:4--833:32
+
 (rd_theta): /@(vec,int)(sum@mat(real_posroots@(RootDatum,mat)(rd_theta)),2)
 
 
@@ -3237,7 +3883,9 @@ Function defined at basic.at:832:4--833:32
 ----------------------------------------------
 
 ``rho_check_i: (KGBElt->ratvec)``
+
 Function defined at basic.at:827:4-67
+
 (x): /@(vec,int)(sum@mat(imaginary_poscoroots@KGBElt(x)),2)
 
 
@@ -3247,7 +3895,9 @@ Function defined at basic.at:827:4-67
 ----------------------------------------------
 
 ``rho_check_i: (RootDatum,mat->ratvec)``
+
 Function defined at basic.at:834:4--835:39
+
 (rd_theta): /@(vec,int)(sum@mat(imaginary_poscoroots@(RootDatum,mat)(rd_theta)),2)
 
 
@@ -3257,7 +3907,9 @@ Function defined at basic.at:834:4--835:39
 ----------------------------------------------
 
 ``rho_check_r: (KGBElt->ratvec)``
+
 Function defined at basic.at:828:4-62
+
 (x): /@(vec,int)(sum@mat(real_poscoroots@KGBElt(x)),2)
 
 
@@ -3267,7 +3919,9 @@ Function defined at basic.at:828:4-62
 ----------------------------------------------
 
 ``rho_check_r: (RootDatum,mat->ratvec)``
+
 Function defined at basic.at:836:4--837:34
+
 (rd_theta): /@(vec,int)(sum@mat(real_poscoroots@(RootDatum,mat)(rd_theta)),2)
 
 
@@ -3277,7 +3931,9 @@ Function defined at basic.at:836:4--837:34
 ----------------------------------------------
 
 ``is_compact_imaginary: (KGBElt->(vec->bool))``
+
 Function defined at basic.at:848:4--850:44
+
 (x):  let (p,q)=(is_imaginary@KGBElt(x),is_compact@KGBElt(x)) in (alpha):  if p(alpha) then q(alpha) else false fi
 
 
@@ -3287,7 +3943,9 @@ Function defined at basic.at:848:4--850:44
 ----------------------------------------------
 
 ``is_compact_imaginary: (vec,KGBElt->bool)``
+
 Function defined at basic.at:866:4-76
+
 (v,x): (is_compact_imaginary@KGBElt(x))(v)
 
 
@@ -3297,7 +3955,9 @@ Function defined at basic.at:866:4-76
 ----------------------------------------------
 
 ``is_noncompact_imaginary: (KGBElt->(vec->bool))``
+
 Function defined at basic.at:851:4--853:44
+
 (x):  let (p,q)=(is_imaginary@KGBElt(x),is_noncompact@KGBElt(x)) in (alpha):  if p(alpha) then q(alpha) else false fi
 
 
@@ -3307,7 +3967,9 @@ Function defined at basic.at:851:4--853:44
 ----------------------------------------------
 
 ``is_noncompact_imaginary: (vec,KGBElt->bool)``
+
 Function defined at basic.at:867:4--868:31
+
 (v,x): (is_noncompact_imaginary@KGBElt(x))(v)
 
 
@@ -3317,7 +3979,9 @@ Function defined at basic.at:867:4--868:31
 ----------------------------------------------
 
 ``compact_posroots: (KGBElt->mat)``
+
 Function defined at basic.at:855:4--856:51
+
 (x): columns_with@((vec->bool),mat)(is_compact@KGBElt(x),imaginary_posroots@KGBElt(x))
 
 
@@ -3327,7 +3991,9 @@ Function defined at basic.at:855:4--856:51
 ----------------------------------------------
 
 ``noncompact_posroots: (KGBElt->mat)``
+
 Function defined at basic.at:857:4--858:54
+
 (x): columns_with@((vec->bool),mat)(is_noncompact@KGBElt(x),imaginary_posroots@KGBElt(x))
 
 
@@ -3337,7 +4003,9 @@ Function defined at basic.at:857:4--858:54
 ----------------------------------------------
 
 ``rho_ci: (KGBElt->ratvec)``
+
 Function defined at basic.at:860:4-59
+
 (x): /@(vec,int)(sum@mat(compact_posroots@KGBElt(x)),2)
 
 
@@ -3347,7 +4015,9 @@ Function defined at basic.at:860:4-59
 ----------------------------------------------
 
 ``rho_nci: (KGBElt->ratvec)``
+
 Function defined at basic.at:861:4-62
+
 (x): /@(vec,int)(sum@mat(noncompact_posroots@KGBElt(x)),2)
 
 
@@ -3357,7 +4027,9 @@ Function defined at basic.at:861:4-62
 ----------------------------------------------
 
 ``no_Cminus_roots: (KGBElt->bool)``
+
 Function defined at basic.at:874:4--875:64
+
 (x): none@(int,(int->bool))(semisimple_rank@RootDatum(RdRf:real_form@KGBElt(x)),(i): =@int(status@(int,KGBElt)(i,x)))
 
 
@@ -3367,7 +4039,9 @@ Function defined at basic.at:874:4--875:64
 ----------------------------------------------
 
 ``no_Cplus_roots: (KGBElt->bool)``
+
 Function defined at basic.at:876:4--877:65
+
 (x): none@(int,(int->bool))(semisimple_rank@RootDatum(RdRf:real_form@KGBElt(x)),(i): =@(int,int)(status@(int,KGBElt)(i,x),4))
 
 
@@ -3377,7 +4051,9 @@ Function defined at basic.at:876:4--877:65
 ----------------------------------------------
 
 ``blocks: (InnerClass->[Block])``
+
 Function defined at basic.at:881:4--887:12
+
 (ic):  let result=[] in voided: for rf in real_forms@InnerClass(ic) do voided: for drf in dual_real_forms@InnerClass(ic) do  if is_compatible@(RealForm,RealForm)(rf,drf) then result:=#@([T],T)(result,block@(RealForm,RealForm)(rf,drf)) else () fi  od  od ;result
 
 
@@ -3387,7 +4063,9 @@ Function defined at basic.at:881:4--887:12
 ----------------------------------------------
 
 ``lambda_minus_rho: (Param->vec)``
+
 Function defined at basic.at:917:4-74
+
 (p):  let (,lambda_rho,)=%@Param(p) in lambda_rho
 
 
@@ -3397,7 +4075,9 @@ Function defined at basic.at:917:4-74
 ----------------------------------------------
 
 ``lambda: (Param->ratvec)``
+
 Function defined at basic.at:918:4-68
+
 (p): +@(ratvec,ratvec)(QvV:lambda_minus_rho@Param(p),rho@RootDatum(RdRf:real_form@Param(p)))
 
 
@@ -3407,7 +4087,9 @@ Function defined at basic.at:918:4-68
 ----------------------------------------------
 
 ``infinitesimal_character: (Param->ratvec)``
+
 Function defined at basic.at:919:4-74
+
 (p):  let (,,gamma)=%@Param(p) in gamma
 
 
@@ -3417,7 +4099,9 @@ Function defined at basic.at:919:4-74
 ----------------------------------------------
 
 ``infinitesimal_character: (ParamPol->ratvec)``
+
 Function defined at basic.at:1046:4--1052:11
+
 (P): assert@(bool,string)(!=@ParamPol(P),"empty polynomial has no infinitesimal character"); let (,,gamma)=%@Param(first_param@ParamPol(P)) in voided: for @p in P do assert@(bool,string)(=@(ratvec,ratvec)(infinitesimal_character@Param(p),gamma),"infinitesimal character not unique") od ;gamma
 
 
@@ -3427,7 +4111,9 @@ Function defined at basic.at:1046:4--1052:11
 ----------------------------------------------
 
 ``nu: (Param->ratvec)``
+
 Function defined at basic.at:920:4-74
+
 (p):  let (x,,gamma)=%@Param(p) in /@(ratvec,int)(*@(mat,ratvec)(-@(int,mat)(1,involution@KGBElt(x)),gamma),2)
 
 
@@ -3437,7 +4123,9 @@ Function defined at basic.at:920:4-74
 ----------------------------------------------
 
 ``trivial: (RealForm->Param)``
+
 Function defined at basic.at:931:4--932:50
+
 (G): param@(KGBElt,vec,ratvec)(KGB@(RealForm,int)(G,-@(int,int)(KGB_size@RealForm(G),1)),null@int(rank@RootDatum(RdRf:G)),rho@RootDatum(RdRf:G))
 
 
@@ -3447,7 +4135,9 @@ Function defined at basic.at:931:4--932:50
 ----------------------------------------------
 
 ``parameter: (RealForm,int,ratvec,ratvec->Param)``
+
 Function defined at basic.at:937:4--938:49
+
 (G,x,lambda,nu): param@(KGBElt,vec,ratvec)(KGB@(RealForm,int)(G,x),ratvec_as_vec@ratvec(-@(ratvec,ratvec)(lambda,rho@RootDatum(RdRf:G))),nu)
 
 
@@ -3457,7 +4147,9 @@ Function defined at basic.at:937:4--938:49
 ----------------------------------------------
 
 ``parameter: (KGBElt,ratvec,ratvec->Param)``
+
 Function defined at basic.at:939:4--940:53
+
 (x,lambda,nu): param@(KGBElt,vec,ratvec)(x,ratvec_as_vec@ratvec(-@(ratvec,ratvec)(lambda,rho@RootDatum(RdRf:real_form@KGBElt(x)))),nu)
 
 
@@ -3467,7 +4159,9 @@ Function defined at basic.at:939:4--940:53
 ----------------------------------------------
 
 ``parameter_gamma: (KGBElt,ratvec,ratvec->Param)``
+
 Function defined at basic.at:943:4--946:57
+
 (x,lambda,gamma):  let ((G,nx),theta)=(%@KGBElt(x),involution@KGBElt(x)) in parameter@(RealForm,int,ratvec,ratvec)(G,nx,+@(ratvec,ratvec)(/@(ratvec,int)(*@(mat,ratvec)(+@(int,mat)(1,theta),-@(ratvec,ratvec)(gamma,lambda)),2),lambda),gamma)
 
 
@@ -3477,7 +4171,9 @@ Function defined at basic.at:943:4--946:57
 ----------------------------------------------
 
 ``block_of: (Param->[Param])``
+
 Function defined at basic.at:949:4-66
+
 (p):  let (params,)=block@Param(p) in params
 
 
@@ -3487,7 +4183,9 @@ Function defined at basic.at:949:4-66
 ----------------------------------------------
 
 ``imaginary_type: (int,Param->int)``
+
 Function defined at basic.at:953:4-75
+
 (s,p):  if =@(Param,Param)(cross@(int,Param)(s,p),p) then 2 else 1 fi
 
 
@@ -3497,7 +4195,9 @@ Function defined at basic.at:953:4-75
 ----------------------------------------------
 
 ``imaginary_type: (vec,Param->int)``
+
 Function defined at basic.at:956:4--957:38
+
 (alpha,p):  if =@(Param,Param)(cross@(vec,Param)(alpha,p),p) then 2 else 1 fi
 
 
@@ -3507,7 +4207,9 @@ Function defined at basic.at:956:4--957:38
 ----------------------------------------------
 
 ``real_type: (int,Param->int)``
+
 Function defined at basic.at:954:4-69
+
 (s,p):  if =@(Param,Param)(cross@(int,Param)(s,p),p) then 1 else 2 fi
 
 
@@ -3517,7 +4219,9 @@ Function defined at basic.at:954:4-69
 ----------------------------------------------
 
 ``real_type: (vec,Param->int)``
+
 Function defined at basic.at:958:4--959:38
+
 (alpha,p):  if =@(Param,Param)(cross@(vec,Param)(alpha,p),p) then 1 else 2 fi
 
 
@@ -3527,7 +4231,9 @@ Function defined at basic.at:958:4--959:38
 ----------------------------------------------
 
 ``is_nonparity: (int,Param->bool)``
+
 Function defined at basic.at:966:4-72
+
 (s,p):  if is_real@(int,KGBElt)(s,x@Param(p)) then =@(Param,Param)(Cayley@(int,Param)(s,p),p) else false fi
 
 
@@ -3537,7 +4243,9 @@ Function defined at basic.at:966:4-72
 ----------------------------------------------
 
 ``is_nonparity: (vec,Param->bool)``
+
 Function defined at basic.at:969:4--970:43
+
 (alpha,p):  if is_real@(vec,KGBElt)(alpha,x@Param(p)) then =@(Param,Param)(Cayley@(vec,Param)(alpha,p),p) else false fi
 
 
@@ -3547,7 +4255,9 @@ Function defined at basic.at:969:4--970:43
 ----------------------------------------------
 
 ``is_parity: (int,Param->bool)``
+
 Function defined at basic.at:967:4-71
+
 (s,p):  if is_real@(int,KGBElt)(s,x@Param(p)) then !=@(Param,Param)(Cayley@(int,Param)(s,p),p) else false fi
 
 
@@ -3557,7 +4267,9 @@ Function defined at basic.at:967:4-71
 ----------------------------------------------
 
 ``is_parity: (vec,Param->bool)``
+
 Function defined at basic.at:971:4--972:44
+
 (alpha,p):  if is_real@(vec,KGBElt)(alpha,x@Param(p)) then !=@(Param,Param)(Cayley@(vec,Param)(alpha,p),p) else false fi
 
 
@@ -3567,7 +4279,9 @@ Function defined at basic.at:971:4--972:44
 ----------------------------------------------
 
 ``block_status_text: (int->string)``
+
 Function defined at basic.at:985:4--986:56
+
 (i):  case i in "C-", "ic", "r1", "r2", "C+", "rn", "i1", "i2" esac
 
 
@@ -3577,7 +4291,9 @@ Function defined at basic.at:985:4--986:56
 ----------------------------------------------
 
 ``parity_poscoroots: (Param->mat)``
+
 Function defined at basic.at:994:4--996:64
+
 (p):  let (alpha,real_poscoroots)=real_sys@KGBElt(x@Param(p)) in columns_with@((int->bool),mat)((i): !=@(int,int)(status@(vec,Param)(alpha[i],p),5),real_poscoroots)
 
 
@@ -3587,7 +4303,9 @@ Function defined at basic.at:994:4--996:64
 ----------------------------------------------
 
 ``nonparity_poscoroots: (Param->mat)``
+
 Function defined at basic.at:997:4--999:63
+
 (p):  let (alpha,real_poscoroots)=real_sys@KGBElt(x@Param(p)) in columns_with@((int->bool),mat)((i): =@(int,int)(status@(vec,Param)(alpha[i],p),5),real_poscoroots)
 
 
@@ -3597,7 +4315,9 @@ Function defined at basic.at:997:4--999:63
 ----------------------------------------------
 
 ``tau_bitset: (Param->(int->bool),int)``
+
 Function defined at basic.at:1002:4--1003:59
+
 (p): ((s): is_descent@(int,Param)(s,p),semisimple_rank@RootDatum(RdRf:real_form@Param(p)))
 
 
@@ -3607,7 +4327,9 @@ Function defined at basic.at:1002:4--1003:59
 ----------------------------------------------
 
 ``tau: (Param->[int])``
+
 Function defined at basic.at:1005:4-57
+
 (p): list@((int->bool),int)(tau_bitset@Param(p))
 
 
@@ -3617,7 +4339,9 @@ Function defined at basic.at:1005:4-57
 ----------------------------------------------
 
 ``tau_complement: (Param->[int])``
+
 Function defined at basic.at:1006:4-63
+
 (p): complement@((int->bool),int)(tau_bitset@Param(p))
 
 
@@ -3627,7 +4351,9 @@ Function defined at basic.at:1006:4-63
 ----------------------------------------------
 
 ``lookup: (Param,[Param]->int)``
+
 Function defined at basic.at:1010:4--1011:60
+
 (p,block):  let i=-@(int,int)(#@[Param](block),1) in voided: while  if >=@int(i) then !=@(Param,Param)(block[i],p) else false fi  do i:=-@(int,int)(i,1) od ;i
 
 
@@ -3637,7 +4363,9 @@ Function defined at basic.at:1010:4--1011:60
 ----------------------------------------------
 
 ``first_param: (ParamPol->Param)``
+
 Function defined at basic.at:1020:4-65
+
 (P):  let (,p)=first_term@ParamPol(P) in p
 
 
@@ -3647,7 +4375,9 @@ Function defined at basic.at:1020:4-65
 ----------------------------------------------
 
 ``last_param: (ParamPol->Param)``
+
 Function defined at basic.at:1021:4-64
+
 (P):  let (,p)=last_term@ParamPol(P) in p
 
 
@@ -3657,7 +4387,9 @@ Function defined at basic.at:1021:4-64
 ----------------------------------------------
 
 ``virtual: (Param->ParamPol)``
+
 Function defined at basic.at:1035:4-35
+
 (p): PolP:p
 
 
@@ -3667,7 +4399,9 @@ Function defined at basic.at:1035:4-35
 ----------------------------------------------
 
 ``virtual: (RealForm,[Param]->ParamPol)``
+
 Function defined at basic.at:1036:4--1037:65
+
 (G,ps):  let one=Sp(I,I):(1,0) in +@(ParamPol,[(Split,Param)])(null_module@RealForm(G), for p in ps do (one,p) od )
 
 
@@ -3677,7 +4411,9 @@ Function defined at basic.at:1036:4--1037:65
 ----------------------------------------------
 
 ``pol_format: (ParamPol->)``
+
 Function defined at basic.at:1041:4--1043:74
+
 (P): voided: for w@p in P do prints@(string,string,string,Param,string,ratvec)("(",split_format@Split(w),")*",p,", ",infinitesimal_character@Param(p)) od
 
 
@@ -3687,7 +4423,9 @@ Function defined at basic.at:1041:4--1043:74
 ----------------------------------------------
 
 ``separate_by_infinitesimal_character: (ParamPol->[(ratvec,ParamPol)])``
+
 Function defined at basic.at:1055:4--1063:38
+
 (P):  let M=[] in  let insert=((,p):term):  let (inserted,gamma)=(false,infinitesimal_character@Param(p)) in voided: for (key,P)@i in M do  if =@(ratvec,ratvec)(key,gamma) then M[i]:=(key,+@(ParamPol,(Split,Param))(P,term));inserted:=true else () fi  od ; if inserted then () else M:=#@([T],T)(M,(gamma,PolP:p)) fi  in voided: for c@p in P do insert(c,p) od ;M
 
 
@@ -3697,7 +4435,9 @@ Function defined at basic.at:1055:4--1063:38
 ----------------------------------------------
 
 ``in_string_list: (string,[string]->bool)``
+
 Function defined at basic.at:1067:4--1068:54
+
 (s,S):  let i=-@(int,int)(#@[string](S),1) in voided: while  if >=@int(i) then !=@(string,string)(S[i],s) else false fi  do i:=-@(int,int)(i,1) od ;>=@int(i)
 
 
@@ -3707,7 +4447,9 @@ Function defined at basic.at:1067:4--1068:54
 ----------------------------------------------
 
 ``positive_imaginary_roots_and_coroots: (RootDatum,mat->mat,mat)``
+
 Function defined at basic.at:601:4--602:49
+
 (p): (imaginary_posroots@(RootDatum,mat)(p),imaginary_poscoroots@(RootDatum,mat)(p))
 
 
@@ -3717,7 +4459,9 @@ Function defined at basic.at:601:4--602:49
 ----------------------------------------------
 
 ``positive_imaginary_roots_and_coroots: (KGBElt->mat,mat)``
+
 Function defined at basic.at:818:4--820:52
+
 (x):  let p=(root_datum@KGBElt(x),involution@KGBElt(x)) in (imaginary_posroots@(RootDatum,mat)(p),imaginary_poscoroots@(RootDatum,mat)(p))
 
 
@@ -3727,7 +4471,9 @@ Function defined at basic.at:818:4--820:52
 ----------------------------------------------
 
 ``imaginary_roots_and_coroots: (RootDatum,mat->mat,mat)``
+
 Function defined at basic.at:1073:4--1074:78
+
 (p):  let (a,b)=imaginary_sys@(RootDatum,mat)(p) in (##@(mat,mat)(negative_system@mat(a),a),##@(mat,mat)(negative_system@mat(b),b))
 
 
@@ -3737,7 +4483,9 @@ Function defined at basic.at:1073:4--1074:78
 ----------------------------------------------
 
 ``imaginary_roots_and_coroots: (KGBElt->mat,mat)``
+
 Function defined at basic.at:1075:4--1076:70
+
 (x): imaginary_roots_and_coroots@(RootDatum,mat)(root_datum@InnerClass(IcRf:real_form@KGBElt(x)),involution@KGBElt(x))
 
 
@@ -3747,7 +4495,9 @@ Function defined at basic.at:1075:4--1076:70
 ----------------------------------------------
 
 ``positive_real_roots_and_coroots: (RootDatum,mat->mat,mat)``
+
 Function defined at basic.at:603:4--604:39
+
 (p): (real_posroots@(RootDatum,mat)(p),real_poscoroots@(RootDatum,mat)(p))
 
 
@@ -3757,7 +4507,9 @@ Function defined at basic.at:603:4--604:39
 ----------------------------------------------
 
 ``positive_real_roots_and_coroots: (KGBElt->mat,mat)``
+
 Function defined at basic.at:821:4--823:42
+
 (x):  let p=(root_datum@KGBElt(x),involution@KGBElt(x)) in (real_posroots@(RootDatum,mat)(p),real_poscoroots@(RootDatum,mat)(p))
 
 
@@ -3767,7 +4519,9 @@ Function defined at basic.at:821:4--823:42
 ----------------------------------------------
 
 ``real_roots_and_coroots: (RootDatum,mat->mat,mat)``
+
 Function defined at basic.at:1081:4--1082:73
+
 (p):  let (a,b)=real_sys@(RootDatum,mat)(p) in (##@(mat,mat)(negative_system@mat(a),a),##@(mat,mat)(negative_system@mat(b),b))
 
 
@@ -3777,7 +4531,9 @@ Function defined at basic.at:1081:4--1082:73
 ----------------------------------------------
 
 ``real_roots_and_coroots: (KGBElt->mat,mat)``
+
 Function defined at basic.at:1083:4--1084:65
+
 (x): real_roots_and_coroots@(RootDatum,mat)(root_datum@InnerClass(IcRf:real_form@KGBElt(x)),involution@KGBElt(x))
 
 
@@ -3787,7 +4543,9 @@ Function defined at basic.at:1083:4--1084:65
 ----------------------------------------------
 
 ``complex_posroots: (RootDatum,mat->mat)``
+
 Function defined at basic.at:1086:4--1087:46
+
 (rd,theta): columns_with@((vec->bool),mat)(is_complex@mat(theta),posroots@RootDatum(rd))
 
 
@@ -3797,7 +4555,9 @@ Function defined at basic.at:1086:4--1087:46
 ----------------------------------------------
 
 ``complex_posroots: (KGBElt->mat)``
+
 Function defined at basic.at:1088:4--1089:47
+
 (x): complex_posroots@(RootDatum,mat)(root_datum@KGBElt(x),involution@KGBElt(x))
 
 
@@ -3807,7 +4567,9 @@ Function defined at basic.at:1088:4--1089:47
 ----------------------------------------------
 
 ``monomials: (ParamPol->[Param])``
+
 Function defined at basic.at:1095:4-58
+
 (P):  for c@p in P do p od
 
 
@@ -3817,7 +4579,9 @@ Function defined at basic.at:1095:4-58
 ----------------------------------------------
 
 ``monomial: (ParamPol,int->Param)``
+
 Function defined at basic.at:1096:4-57
+
 (P,i): monomials@ParamPol(P)[i]
 
 
@@ -3827,7 +4591,9 @@ Function defined at basic.at:1096:4-57
 ----------------------------------------------
 
 ``delete: ([int],int->[int])``
+
 Function defined at basic.at:1099:4-58
+
 (v,k): ##@([T],[T])(v[0:k],v[+@(int,int)(k,1):0~])
 
 
@@ -3837,7 +4603,9 @@ Function defined at basic.at:1099:4-58
 ----------------------------------------------
 
 ``delete: ([vec],int->[vec])``
+
 Function defined at basic.at:1100:4-58
+
 (v,k): ##@([T],[T])(v[0:k],v[+@(int,int)(k,1):0~])
 
 
@@ -3847,7 +4615,9 @@ Function defined at basic.at:1100:4-58
 ----------------------------------------------
 
 ``delete: ([ratvec],int->[ratvec])``
+
 Function defined at basic.at:1101:4-58
+
 (v,k): ##@([T],[T])(v[0:k],v[+@(int,int)(k,1):0~])
 
 
@@ -3857,7 +4627,9 @@ Function defined at basic.at:1101:4-58
 ----------------------------------------------
 
 ``delete: ([[vec]],int->[[vec]])``
+
 Function defined at basic.at:1103:4-58
+
 (v,k): ##@([T],[T])(v[0:k],v[+@(int,int)(k,1):0~])
 
 
@@ -3867,7 +4639,9 @@ Function defined at basic.at:1103:4-58
 ----------------------------------------------
 
 ``delete: ([[ratvec]],int->[[ratvec]])``
+
 Function defined at basic.at:1102:4-58
+
 (v,k): ##@([T],[T])(v[0:k],v[+@(int,int)(k,1):0~])
 
 
@@ -3877,7 +4651,9 @@ Function defined at basic.at:1102:4-58
 ----------------------------------------------
 
 ``delete: ([ParamPol],int->[ParamPol])``
+
 Function defined at basic.at:1104:4-58
+
 (P,k): ##@([T],[T])(P[0:k],P[+@(int,int)(k,1):0~])
 
 
@@ -3887,7 +4663,9 @@ Function defined at basic.at:1104:4-58
 ----------------------------------------------
 
 ``find: ([int],int->int)``
+
 Function defined at basic.at:1110:4-63
+
 (v,k): first@(int,(int->bool))(#@[int](v),(i): =@(int,int)(v[i],k))
 
 
@@ -3897,7 +4675,9 @@ Function defined at basic.at:1110:4-63
 ----------------------------------------------
 
 ``find: ([Param],Param->int)``
+
 Function defined at basic.at:1111:4-63
+
 (P,p): first@(int,(int->bool))(#@[Param](P),(i): =@(Param,Param)(P[i],p))
 
 
@@ -3907,7 +4687,9 @@ Function defined at basic.at:1111:4-63
 ----------------------------------------------
 
 ``find: ([KGBElt],KGBElt->int)``
+
 Function defined at basic.at:1112:4-63
+
 (S,x): first@(int,(int->bool))(#@[KGBElt](S),(i): =@(KGBElt,KGBElt)(S[i],x))
 
 
@@ -3917,7 +4699,9 @@ Function defined at basic.at:1112:4-63
 ----------------------------------------------
 
 ``find: ([[int]],[int]->int)``
+
 Function defined at basic.at:1115:4-61
+
 (S,v): first@(int,(int->bool))(#@[[int]](S),(i): =@(vec,vec)(V[I]:S[i],V[I]:v))
 
 
@@ -3927,7 +4711,9 @@ Function defined at basic.at:1115:4-61
 ----------------------------------------------
 
 ``find_vec: ([vec],vec->int)``
+
 Function defined at basic.at:1118:4-60
+
 (S,v): first@(int,(int->bool))(#@[vec](S),(i): =@(vec,vec)(S[i],v))
 
 
@@ -3937,7 +4723,9 @@ Function defined at basic.at:1118:4-60
 ----------------------------------------------
 
 ``pad: (string,int->string)``
+
 Function defined at basic.at:1121:4-84
+
 (s,padding):  let rv=s in voided: for i: -@(int,int)(padding,#@string(s)) do rv:=+@(string,string)(rv," ") od ;rv
 
 
