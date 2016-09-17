@@ -21,7 +21,10 @@ To start let's talk a bit about Lie types. A Lie type is a product of Complex Li
 
 This is what ``atlas`` understands as a root datum. The command `simply_connected' applied to a Lie type gives you a root datum. This is a set of simple roots and simple coroots.
 
-Recall that a root datum consists of two lattices,``X^*``,  ``X_*``, with a perfect pairing: ``X^* x X_*->Z  (which  in these coordinates corresponds to the dot product ) and  subsets of simple roots and simple coroots. In the above example we have::
+Recall that a root datum consists of two lattices, ``X^*``, ``X_*``,
+with a perfect pairing: ``X^* x X_*->Z`` (which in these coordinates
+corresponds to the dot product ) and subsets of simple roots and
+simple coroots. In the above example we have::
 
        atlas> simple_roots (rd)
        Value: 
