@@ -7,8 +7,8 @@ K_highest_weights.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`=_(KHighestWeight , KHighestWeight ->bool)`
-     - (KHighestWeight , KHighestWeight ->bool)
+   * - :ref:`\=_(KHighestWeight,KHighestWeight->bool)`
+     - (KHighestWeight,KHighestWeight->bool)
    * - :ref:`is_split_spherical_(Param->bool)`
      - (Param->bool)
    * - :ref:`is_split_spherical_(K_Type->bool)`
@@ -51,8 +51,8 @@ K_highest_weights.at Function Index
      - (K_Type->[K_Type])
    * - :ref:`all_G_spherical_same_differential_(Param->[K_Type])`
      - (Param->[K_Type])
-   * - :ref:`parabolic_(KHighestWeight ->Parabolic)`
-     - (KHighestWeight ->Parabolic)
+   * - :ref:`parabolic_(KHighestWeight->Parabolic)`
+     - (KHighestWeight->Parabolic)
    * - :ref:`K_types_(KHighestWeight->[K_Type])`
      - (KHighestWeight->[K_Type])
    * - :ref:`K_type_(KHighestWeight->K_Type)`
