@@ -5,11 +5,9 @@ K.at Function Index
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-:ref:`matrix.at<matrix.at>`
-
-
+| :ref:`basic.at<basic.at>`
+| :ref:`matrix.at<matrix.at>`
+|
 
 .. list-table::
    :widths: 10 20

@@ -5,11 +5,9 @@ canonical_x_K.at Function Index
 
 This script imported the following .at files:
 
-:ref:`Weylgroup.at<Weylgroup.at>`
-
-:ref:`misc.at<misc.at>`
-
-
+| :ref:`Weylgroup.at<Weylgroup.at>`
+| :ref:`misc.at<misc.at>`
+|
 
 .. list-table::
    :widths: 10 20

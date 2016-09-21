@@ -5,11 +5,9 @@
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-:ref:`extended.at<extended.at>`
-
-
+| :ref:`basic.at<basic.at>`
+| :ref:`extended.at<extended.at>`
+|
 
 .. list-table::
    :widths: 10 20

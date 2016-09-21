@@ -5,15 +5,11 @@ group_operations.at Function Index
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-:ref:`misc.at<misc.at>`
-
-:ref:`lattice.at<lattice.at>`
-
-:ref:`torus.at<torus.at>`
-
-
+| :ref:`basic.at<basic.at>`
+| :ref:`misc.at<misc.at>`
+| :ref:`lattice.at<lattice.at>`
+| :ref:`torus.at<torus.at>`
+|
 
 .. list-table::
    :widths: 10 20

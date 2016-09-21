@@ -5,13 +5,10 @@ hermitian.at Function Index
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-:ref:`representations.at<representations.at>`
-
-:ref:`kl.at<kl.at>`
-
-
+| :ref:`basic.at<basic.at>`
+| :ref:`representations.at<representations.at>`
+| :ref:`kl.at<kl.at>`
+|
 
 .. list-table::
    :widths: 10 20

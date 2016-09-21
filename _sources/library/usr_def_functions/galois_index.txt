@@ -5,13 +5,10 @@ galois.at Function Index
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-:ref:`groups.at<groups.at>`
-
-:ref:`generate_groups.at<generate_groups.at>`
-
-
+| :ref:`basic.at<basic.at>`
+| :ref:`groups.at<groups.at>`
+| :ref:`generate_groups.at<generate_groups.at>`
+|
 
 .. list-table::
    :widths: 10 20

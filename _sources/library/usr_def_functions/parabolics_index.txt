@@ -5,11 +5,9 @@ parabolics.at Function Index
 
 This script imported the following .at files:
 
-:ref:`kgp.at<kgp.at>`
-
-:ref:`Weylgroup.at<Weylgroup.at>`
-
-
+| :ref:`kgp.at<kgp.at>`
+| :ref:`Weylgroup.at<Weylgroup.at>`
+|
 
 .. list-table::
    :widths: 10 20

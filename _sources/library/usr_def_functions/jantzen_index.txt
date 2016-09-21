@@ -5,9 +5,8 @@ jantzen.at Function Index
 
 This script imported the following .at files:
 
-:ref:`dual.at<dual.at>`
-
-
+| :ref:`dual.at<dual.at>`
+|
 
 .. list-table::
    :widths: 10 20

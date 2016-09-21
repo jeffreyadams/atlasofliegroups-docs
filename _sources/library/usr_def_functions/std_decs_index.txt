@@ -5,7 +5,7 @@ std_decs.at Function Index
 
 This script imported the following .at files:
 
-
+|
 
 .. list-table::
    :widths: 10 20
