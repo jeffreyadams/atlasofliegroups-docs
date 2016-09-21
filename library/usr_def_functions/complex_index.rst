@@ -5,9 +5,8 @@ complex.at Function Index
 
 This script imported the following .at files:
 
-:ref:`LKT.at<LKT.at>`
-
-
+| :ref:`LKT.at<LKT.at>`
+|
 
 .. list-table::
    :widths: 10 20

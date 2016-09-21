@@ -5,13 +5,10 @@ Wdelta.at Function Index
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-:ref:`K.at<K.at>`
-
-:ref:`Weylgroup.at<Weylgroup.at>`
-
-
+| :ref:`basic.at<basic.at>`
+| :ref:`K.at<K.at>`
+| :ref:`Weylgroup.at<Weylgroup.at>`
+|
 
 .. list-table::
    :widths: 10 20

@@ -5,11 +5,9 @@ kl.at Function Index
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-:ref:`polynomial.at<polynomial.at>`
-
-
+| :ref:`basic.at<basic.at>`
+| :ref:`polynomial.at<polynomial.at>`
+|
 
 .. list-table::
    :widths: 10 20

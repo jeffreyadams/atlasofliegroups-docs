@@ -5,13 +5,10 @@ representations.at Function Index
 
 This script imported the following .at files:
 
-:ref:`misc.at<misc.at>`
-
-:ref:`group_operations.at<group_operations.at>`
-
-:ref:`cross_W_orbit.at<cross_W_orbit.at>`
-
-
+| :ref:`misc.at<misc.at>`
+| :ref:`group_operations.at<group_operations.at>`
+| :ref:`cross_W_orbit.at<cross_W_orbit.at>`
+|
 
 .. list-table::
    :widths: 10 20

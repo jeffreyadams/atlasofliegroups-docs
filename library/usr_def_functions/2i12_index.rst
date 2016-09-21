@@ -5,15 +5,11 @@
 
 This script imported the following .at files:
 
-:ref:`extended.at<extended.at>`
-
-:ref:`hecke.at<hecke.at>`
-
-:ref:`nonintegral.at<nonintegral.at>`
-
-:ref:`dual.at<dual.at>`
-
-
+| :ref:`extended.at<extended.at>`
+| :ref:`hecke.at<hecke.at>`
+| :ref:`nonintegral.at<nonintegral.at>`
+| :ref:`dual.at<dual.at>`
+|
 
 .. list-table::
    :widths: 10 20

@@ -5,9 +5,8 @@ extParamPol.at Function Index
 
 This script imported the following .at files:
 
-:ref:`extended.at<extended.at>`
-
-
+| :ref:`extended.at<extended.at>`
+|
 
 .. list-table::
    :widths: 10 20

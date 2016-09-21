@@ -5,11 +5,9 @@ Weylgroup.at Function Index
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-:ref:`center.at<center.at>`
-
-
+| :ref:`basic.at<basic.at>`
+| :ref:`center.at<center.at>`
+|
 
 .. list-table::
    :widths: 10 20

@@ -5,9 +5,8 @@ center.at Function Index
 
 This script imported the following .at files:
 
-:ref:`basic.at<basic.at>`
-
-
+| :ref:`basic.at<basic.at>`
+|
 
 .. list-table::
    :widths: 10 20
