@@ -1,0 +1,870 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>atlas choice of coordinates &mdash; atlas 0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="Structure Theory" href="../structure_theory.html"/>
+        <link rel="next" title="Coordinates and Characters" href="../coordinates_characters.html"/>
+        <link rel="prev" title="Real Forms" href="real_forms.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> atlas
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about_atlas.html">About the Software</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../download_and_install.html">Download and Install</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../download_and_install.html#linux">Linux</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../download_and_install.html#download-the-software">Download the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../download_and_install.html#installation">Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../download_and_install.html#mac">Mac</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../download_and_install.html#windows">Windows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../download_and_install.html#download">Download</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../download_and_install.html#id5">Installation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../run_atlas.html">Run atlas</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../run_atlas.html#get-atlas-running">Get atlas running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../run_atlas.html#load-scripts">Load scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../run_atlas.html#quit-atlas">Quit atlas</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../help_git.html">Help with git</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#primary-commands">Primary commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#branches">Branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#other-helpful-commands">Other helpful commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#getting-unstuck">Getting unstuck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#more-on-git-objects">More on git objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#tagging-and-branches">Tagging and branches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../help_git.html#git-references">Git references</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../preliminaries.html">Preliminaries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/basics.html">Getting started using the software</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/basics.html#the-basic-at-file">The <code class="docutils literal"><span class="pre">basic.at</span></code> file</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/atlas_help_files.html">Help files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#atlas-help"><code class="docutils literal"><span class="pre">atlas.help</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#atlas-functions-help"><code class="docutils literal"><span class="pre">atlas.functions.help</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#scripts-help"><code class="docutils literal"><span class="pre">scripts.help</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/basic_commands.html">Basic Commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tupples">n-tupples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/vectors.html">Vectors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/vectors.html#operations-and-coordinates">Operations and coordinates</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/matrices.html">Matrices</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/matrices.html#operations-on-matrices">Operations on Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/matrices.html#basic-linear-algebra-operations">Basic Linear Algebra operations</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/functions_and_loops.html">Functions and Loops</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/functions_and_loops.html#loops">Loops</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="lie_types.html">Root Data and Lie Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="real_forms.html">Real Forms</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../syntax_minimalps.html">Minimal Principle Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../library/intro.html">A Brief Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../library/axis.html">The Axis Language</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/design_principles.html">Design Principles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/types.html">Types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/types.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/types.html#primitive-types">Primitive Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/types.html#composite-types">Composite Types</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/array.html">Array</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/array.html#array-displays">Array Displays</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/array.html#array-selection">Array Selection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/array.html#array-slicing">Array Slicing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/array.html#other-array-like-types">Other Array-Like Types</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/implicit_conversion.html">Implicit Conversions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/def_func_op.html">Defining Functions and Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/control_structures.html">Control Structures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/control_structures.html#sequenced-expressions">Sequenced expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/control_structures.html#conditional-expressions-and-case-expressions">Conditional expressions and case expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/control_structures.html#loops">Loops</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/recursion.html">Recursion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/split_comm.html">Splitting Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/in_out_redir.html">Output, Input, and Redirection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/misc.html">Miscellaneous Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/axis/summary.html">Syntax Summary</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/summary.html#command-level">Command level</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/summary.html#quaternary-expressions-let-anonymous-functions-casts-sequences">Quaternary expressions: &#8216;let&#8217;, anonymous functions, casts, sequences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/summary.html#tertiary-expressions-assignments">Tertiary expressions: assignments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/summary.html#secondary-expressions-formulas">Secondary expressions: formulas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/summary.html#primary-expressions-subscriptions-function-calls-atomic-expressions">Primary expressions: subscriptions, function calls, atomic expressions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/summary.html#closed-expressions-displays-and-groupings-conditionals-loops">Closed expressions: displays and groupings, conditionals, loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/summary.html#identifier-patterns">Identifier patterns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/axis/summary.html#types">Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../library/operators.html">Basic Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../library/builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html">Basic Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#flex">flex</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#convolve">convolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#stack-rows">stack_rows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#error">error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#int-format">int_format</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#to-string">to_string</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#print">print</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#prints">prints</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#ascii">ascii</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#ascii2">ascii</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#null">null</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/basic_functions.html#null2">null</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/built_in_functions/matrix.html">Matrix Manipulating Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#id-mat">id_mat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#diagonal">diagonal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#swiss-matix-knife">swiss_matix_knife</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#echelon">echelon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#diagonalize">diagonalize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#adapted-basis">adapted_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#kernel">kernel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#eigen-lattice">eigen_lattice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#row-saturate">row_saturate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#inv-fact">inv_fact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#smith-basis">Smith_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#smith">Smith</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#invert">invert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#mod2-section">mod2_section</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/matrix.html#subspace-normal">subspace_normal</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html">Lie Group Basics</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#lie-type">Lie_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#lie-type2">Lie_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#cartan-matrix">Cartan_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#cartan-matrix2">Cartan_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#cartan-matrix-type">Cartan_matrix_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#rank">rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#semisimple-rank">semisimple_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#operator">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#id9">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#smith-cartan">Smith_Cartan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#filter-units">filter_units</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#ann-mod">ann_mod</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#replace-gen">replace_gen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#involution2">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#root-datum">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#root-datum2">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#root-datum3">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#root-datum4">root_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#quotient-basis">quotient_basis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#simply-connected">simply_connected</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#adjoint">adjoint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#dual">dual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#derived-info">derived_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#mod-central-torus-info">mod_central_torus_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#rank2">rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/lie_basics.html#semisimple-rank2">semisimple_rank</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html">Roots and Weights</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#simple-roots">simple_roots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#simple-coroots">simple_coroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#posroots">posroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#poscoroots">poscoroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#roots">roots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#coroots">coroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#root-coradical">root_coradical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#coroot-radical">coroot_radical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#fundamental-weight">fundamental_weight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#fundamental-coweight">fundamental_coweight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#nr-of-posroots">nr_of_posroots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#root-index">root_index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#coroot-index">coroot_index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#integrality-datum">integrality_datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/roots_weights.html#integrality-points">integrality_points</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html">KGB Related</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#kgb">KGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#operator-2">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#cartan-class">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#length">length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#status">status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#status2">status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#cross">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#cayley">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#twist">twist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#torus-factor">torus_factor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#torus-bits">torus_bits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#kgb-elt">KGB_elt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#operator-3">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#block">block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#id13">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#id15">#</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#element">element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#index">index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#dual">dual</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/kgb_related.html#status3">status</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/built_in_functions/param.html">Parameter, KL, print, etc.</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#param">param</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#operator-4">%</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#real-form">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#infinitesimal-character">infinitesimal_character</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#is-standard">is_standard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#is-zero">is_zero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#is-final">is_final</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#dominant">dominant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#id7">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#cross">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#cayley">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#inv-cayley">inv_Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#cross3">cross</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#cayley3">Cayley</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#twist">twist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#orientation-nr">orientation_nr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#reducibility-points">reducibility_points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#print-block">print_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#block">block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#partial-block">partial_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#length">length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#kl-block">KL_block</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/param.html#partial-kl-block">partial_KL_block</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html">More Advanced Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#classify-involution">classify_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#inner-class">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#twisted-involution">twisted_involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#inner-class2">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#inner-class3">inner_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#operator">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#nr-of-real-forms">nr_of_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#nr-of-dual-real-forms">nr_of_dual_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#nr-of-cartan-classes">nr_of_Cartan_classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#block-sizes">block_sizes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#form-names">form_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#dual-form-names">dual_form_names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#occurrence-matrix">occurrence_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#dual-occurrence-matrix">dual_occurrence_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#real-form">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#form-number">form_number</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#quasisplit-form">quasisplit_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#components-rank">components_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#count-cartans">count_Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#operator-2">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#kgb-size">KGB_size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#base-grading-vector">base_grading_vector</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#cartan-order">Cartan_order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#dual-real-form">dual_real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#dual-quasisplit-form">dual_quasisplit_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#cartan-class">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#cartan-class2">Cartan_class</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#most-split-cartan">most_split_Cartan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#involution">involution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#cartan-info">Cartan_info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#real-forms">real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#dual-real-forms">dual_real_forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#square-classes">square_classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#fiber-partition">fiber_partition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#real-form2">real_form</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#central-fiber">central_fiber</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/built_in_functions/more_advanced.html#initial-torus-bits">initial_torus_bits</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../library/usr_defined_functions.html">User Defined Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights.html">K_highest_weights.at Function Index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at References</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#id1">=</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#is-split-spherical">is_split_spherical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#is-split-spherical-k-type-bool">is_split_spherical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weight-split-spherical">highest_weight_split_spherical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weight-split-spherical-param-khighestweight">highest_weight_split_spherical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weight-split-spherical-k-type-kgbelt-khighestweight">highest_weight_split_spherical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weight-split-spherical-param-kgbelt-khighestweight">highest_weight_split_spherical</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weight-one">highest_weight_one</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weight-one-k-type-kgbelt-khighestweight">highest_weight_one</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weights">highest_weights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weights-k-type-kgbelt-khighestweight">highest_weights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weights-param-khighestweight">highest_weights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weights-param-kgbelt-khighestweight">highest_weights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weight">highest_weight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#highest-weight-param-khighestweight">highest_weight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#centralizer">centralizer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#find-nci-root">find_nci_root</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#project-on-dominant-cone">project_on_dominant_cone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#project-on-dominant-cone-kgbelt-vec-kgbelt-ratvec-ratvec">project_on_dominant_cone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#characters-order-2">characters_order_2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#all-g-spherical-same-differential">all_G_spherical_same_differential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#all-g-spherical-same-differential-param-k-type">all_G_spherical_same_differential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#parabolic">parabolic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#k-types">K_types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#k-type">K_type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#k0-highest-weight">K0_highest_weight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#dimension">dimension</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html#dimension-k-type-int">dimension</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../videos.html">Videos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../videos/online_training.html">Online Training Videos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_1A.html">Online Training Session 1, Part A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#introduction">1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#basics">2. Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#first-command">3. First Command</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#atlas-scripts">4. atlas Scripts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#more-commands-and-shortcuts">5. More Commands and Shortcuts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#redefining-variables-vector-operations">6. Redefining Variables, Vector Operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#operator-and-booleans">7. Operator $, %, and booleans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#matrix-operations">8. Matrix Operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#loading-files">9. Loading Files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#inverse">10. Inverse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#file-output">11. File Output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#solving-matrix-equations">12. Solving Matrix Equations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#functions-types-etc">13. Functions, Types, etc.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1A.html#loops">14. Loops</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_1B.html">Online Training Session 1, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#questions-from-part-a">1. Questions from Part A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#data-types-root-datum">2. Data Types, Root Datum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#more-about-lie-groups">3. More about Lie Groups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#fundamental-weight-coordinates">4. Fundamental Weight Coordinates, <span class="math">\(Sp(8,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#simple-roots-of">5. Simple Roots of <span class="math">\(SL(5,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#more-on-coordinates">6. More on Coordinates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#the-atlas-functions-help-file">7. The atlas-functions.help File</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#get-lie-groups-information">8. Get Lie Groups Information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#real-forms">9. Real Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_1B.html#inner-class">10. Inner Class</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_2A.html">Online Training Session 2, Part A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#new-features-on-website">1. New Features on Website</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#questions-from-session-1">2. Questions from Session 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#cartans">3. Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#parameters">4. Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#example">5. Example: <span class="math">\(SL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#characters-of-tori">6. Characters of Tori</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#id1">7. <span class="math">\(T = \mathbb{R}^x\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#id2">8. <span class="math">\(T = \mathbb{C}^x\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#differential">9. Differential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#trivial-representation-of">10. Trivial Representation of <span class="math">\(SL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2A.html#preview-kgb-orbits">11. Preview: KGB Orbits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_2B.html">Online Training Session 2, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#summary-of-session-2-part-a">1. Summary of Session 2 Part A</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#minimal-principle-series-of-split-groups">2. Minimal Principle Series of Split Groups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#more-functions">3. More Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#id1">4. <span class="math">\(G=PSL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#id2">5. <span class="math">\(G=Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#characters-on-disconnected-part">6. Characters on Disconnected Part</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#lowest-k-types">7. Lowest K Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#id3">8. <span class="math">\(G = SO(3,2)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#more-on">9. More on <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_2B.html#id4">10. <span class="math">\(E8\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_3A.html">Online Training Session 3, Part A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#welcome-back">1. Welcome Back</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#more-on-software-syntax">2. More on Software Syntax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#more-principle-series-examples">3. More Principle Series Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#representations-attached-to-given-cartans">4. Representations Attached to Given Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#slides-kgb-parameters">5. Slides: KGB Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#slides-finiteness-of-kgb">6. Slides: Finiteness of KGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#slides-example">7. Slides: <span class="math">\(SL(2,\mathbb{R})\)</span> Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3A.html#slides-continued">8. Slides: continued</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_3B.html">Online Training Session 3, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#questions">1. Questions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#more-slides">2. More Slides</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#examples-using-the-software">3. Examples Using the Software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#id1">4. <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#id2">5. <span class="math">\(Sp(6,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#kgb-on-other-cartans">6. KGB on other Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_3B.html#preview-for-next-time">7. Preview for Next Time</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_4A.html">Online Training Session 4, Part A</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#welcome-back">1. Welcome Back</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#new-atlas-version">2. New atlas Version</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#review-of">3. Review of <span class="math">\(SL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#id1">4. <span class="math">\(G = PGL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#id2">5. <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#kgbelt-x-5">6. <span class="math">\(Sp(4,\mathbb{R})\)</span>, KGBElt x=5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#more-on">7. : More on <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#representations-of">8. Representations of <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4A.html#print-block">9. print_block</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/session_4B.html">Online Training Session 4, Part B</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id1">1. <span class="math">\(SO(4,2)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id2">2. <span class="math">\(SO(5,1)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id3">3. <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id4">4. <span class="math">\(SL(2,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id5">5. <span class="math">\(Sp(4,\mathbb{R})\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id6">6. <span class="math">\(SO(4,4)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id7">7. <span class="math">\(PSO(4,4)\)</span>, <span class="math">\(Spin(4,4)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../videos/session_4B.html#id8">8. <span class="math">\(Sp(8,\mathbb{R})\)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../videos/misc.html">Miscellaneous Videos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/atlas_startup.html">Atlas Startup Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../videos/change_coor.html">Change Coordinates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../ts-install.html">Installation &#8211; Trouble Shooting</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#the-readline-package">The readline package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#ctanglex-error">ctanglex error</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#compiler-error">Compiler error</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../index.html">atlas</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
+      
+          <li><a href="../structure_theory.html">Structure Theory</a> &raquo;</li>
+      
+    <li><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/tutorial/video_1B/atlas_coordinates.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="real_forms.html" class="btn btn-neutral float-right" title="Real Forms" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
+            
+  <div class="section" id="atlas-choice-of-coordinates">
+<h1><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates<a class="headerlink" href="#atlas-choice-of-coordinates" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="simple-roots-for-sl-5-r">
+<h2>Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code><a class="headerlink" href="#simple-roots-for-sl-5-r" title="Permalink to this headline">¶</a></h2>
+<p>How do we interpret the way the software writes the simple roots for <code class="docutils literal"><span class="pre">SL(n,R)</span></code>? Let us look at an example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G= SL(5,R)
+Identifier G: RealForm (hiding previous one of type RealForm)
+atlas&gt; simple_roots(G)
+Value:
+| 1, 0, 0, 1 |
+| -1, 1, 0, 1 |
+| 0, -1, 1, 1 |
+| 0, 0, -1, 2 |
+atlas&gt; simple_coroots(G)
+Value:
+| 1, 0, 0, 0 |
+| -1, 1, 0, 0 |
+| 0, -1, 1, 0 |
+| 0, 0, -1, 1 |
+atlas&gt; rho(G)
+Value: [ 4, 3, 2, 1 ]/1
+atlas&gt;sum(simple_roots(G))
+Value: [ 2, 1, 1, 1 ]
+atlas&gt;
+</pre></div>
+</div>
+<p>So, atlas chooses a set of coordinates to work with. They were chosen
+in the &#8220;roots.at&#8221; file so that the matrix of the simple_coroots for
+the simply connected group is the identity matrix:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set g=LieType: A4
+Identifier g: LieType (hiding previous one of type LieType)
+atlas&gt; set rd=simply_connected(A4)
+Identifier rd: RootDatum (hiding previous one of type RootDatum)
+atlas&gt; rd
+Value: simply connected root datum of Lie type &#39;A4&#39;
+
+atlas&gt; simple_coroots (rd)
+Value:
+| 1, 0, 0, 0 |
+| 0, 1, 0, 0 |
+| 0, 0, 1, 0 |
+| 0, 0, 0, 1 |
+
+atlas&gt;
+</pre></div>
+</div>
+<p>But look what happens when we type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SU(5)
+Value: compact connected real group with Lie algebra &#39;su(5)&#39;
+atlas&gt; simple_coroots (G)
+Value:
+|  1,  0,  0, 0 |
+| -1,  1,  0, 0 |
+|  0, -1,  1, 0 |
+|  0,  0, -1, 1 |
+
+atlas&gt;
+</pre></div>
+</div>
+<p>If you want to ask atlas about a vector in the Cartan or say an
+infinitesimal character, you need to write it in terms of the simple
+roots. Then the software will give you the vector in terms of the <code class="docutils literal"><span class="pre">atlas</span></code>
+coordinates. You then have to understand which coordinates the software is using to both ask the question and interpret the answer. For example, it is useful to know what rho is in the coordinates the software is using:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rho(rd)
+Value: [ 1, 1, 1, 1 ]/1
+atlas&gt; rho(G)
+Value: [ 4, 3, 2, 1 ]/1
+
+atlas&gt; sum(simple_roots (G))
+Value: [ 2, 1, 1, 1 ]
+atlas&gt;sum(simple_roots (rd))
+Value: [ 1, 0, 0, 1 ]
+atlas&gt;
+</pre></div>
+</div>
+<p>Note the expression in the case when <code class="docutils literal"><span class="pre">G=SL(5,R)</span></code>. <code class="docutils literal"><span class="pre">atlas</span></code> is using only four coordinates when it is costumary to use five coordinates to describe the weights in <code class="docutils literal"><span class="pre">G</span></code>.</p>
+<p>Alternatively, you can try to phrase the question in a way that atlas will use coordinates you are familiar with:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G= GL(5,R)
+Identifier G: RealForm (hiding previous one of type RealForm)
+atlas&gt; simple_coroots(G)
+Value:
+| 1, 0, 0, 0 |
+| -1, 1, 0, 0 |
+| 0, -1, 1, 0 |
+| 0, 0, -1, 1 |
+| 0, 0, 0, -1 |
+
+atlas&gt; rho(G)
+Value: [ 2, 1, 0, -1, -2 ]/1
+</pre></div>
+</div>
+<p>Remark: Once you defined a root datum or group atlas fixes some
+coordinates. However, as we have seen, it is often possible to
+redefine the group in a different way so that atlas&#8217; coordinates are
+easier to work with:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=root_datum ([[6,2]],[[1,-2]])
+Identifier rd: RootDatum (hiding previous one of type RootDatum)
+atlas&gt; simple_roots(rd)
+Value:
+| 6 |
+| 2 |
+atlas&gt; simple_coroots(rd)
+Value:
+| 1 |
+| -2 |
+atlas&gt; rho (rd)
+Value: [ 3, 1 ]/1
+atlas&gt; ^simple_roots(rd)*simple_coroots(rd)
+Value:
+| 2 |
+atlas&gt; rd
+Value: simply connected root datum of Lie type &#39;A1.T1&#39;
+atlas&gt;
+</pre></div>
+</div>
+<p>So this is a root datum of the above Lie type and with some ridiculous coordinates. It is not clear which group it is. There are three isomorphism classes of root data of this type. But once we recognize the Lie Type we can redefine it so that it looks nicer:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd_new=root_datum ([[1,-1]],[[1,-1]])
+Identifier rd_new: RootDatum
+atlas&gt; rd_new
+Value: simply connected adjoint root datum of Lie type &#39;A1.T1&#39;
+atlas&gt;
+</pre></div>
+</div>
+<p>Notice this is a version of the root_datum command that we had not
+seen. It says <a href="#id1"><span class="problematic" id="id2">`</span></a>please give me the root datum for the following set of
+simple roots and coroots&#8217;. That is what a root datum is in atlas. So
+you can define the root datum by giving the matrices you want for the
+simple roots and coroots and atlas will accept them as a root
+datum.</p>
+<p>Now lets look at a another example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span> atlas&gt; set rd=simply_connected (C4)
+ Identifier rd: RootDatum (hiding previous one of type RootDatum)
+ atlas&gt; simple_roots (rd)
+ Value:
+ |  2, -1,  0,  0 |
+ | -1,  2, -1,  0 |
+ |  0, -1,  2, -2 |
+|  0,  0, -1,  2 |
+
+ atlas&gt; simple_coroots (rd)
+ Value:
+ | 1, 0, 0, 0 |
+ | 0, 1, 0, 0 |
+ | 0, 0, 1, 0 |
+ | 0, 0, 0, 1 |
+
+ atlas&gt; ^simple_roots (rd)*simple_coroots (rd)
+ Value:
+ |  2, -1,  0,  0 |
+ | -1,  2, -1,  0 |
+ |  0, -1,  2, -1 |
+ |  0,  0, -2,  2 |
+
+ atlas&gt;
+</pre></div>
+</div>
+<p>Again these are not the usual simple roots and corroots. But as you
+can see we get the Cartan matrix with the above product. These are the fundamental weights coordinates. Observe also that the simple coroots (resp. simple roots) give the identity matrix (resp. the Cartan matrix), which you would expect for the simply connected group of type <code class="docutils literal"><span class="pre">C4</span></code>.</p>
+<p>In these corrdinates <code class="docutils literal"><span class="pre">rho</span></code> is:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rho(rd)
+Value: [ 1, 1, 1, 1 ]/1
+atlas&gt;
+</pre></div>
+</div>
+<p>So, in fundamental weight coordinates, the coordinates of <code class="docutils literal"><span class="pre">rho</span></code> are all <code class="docutils literal"><span class="pre">1</span></code>.
+You can also check that if you use the adjoint root datum for <code class="docutils literal"><span class="pre">C4</span></code>, the simple
+roots matrix will be the identity etc.</p>
+<p>But now, if we use  the defined real form <code class="docutils literal"><span class="pre">Sp(8)</span></code>, we get root data in the usual coordinates:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=Sp(8,R)
+Value: connected split real group with Lie algebra &#39;sp(8,R)&#39;
+atlas&gt; simple_roots (G)
+Value:
+|  1,  0,  0, 0 |
+| -1,  1,  0, 0 |
+|  0, -1,  1, 0 |
+|  0,  0, -1, 2 |
+
+atlas&gt; rho(G)
+Value: [ 4, 3, 2, 1 ]/1
+atlas&gt;
+</pre></div>
+</div>
+<p>These are isomorphic root data. They are equal up to a change of
+coordinates. It just takes getting used to understanding which
+coordinates <code class="docutils literal"><span class="pre">atlas</span></code> is using.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="real_forms.html" class="btn btn-neutral float-right" title="Real Forms" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, liegroups.org.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
