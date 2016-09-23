@@ -1,10 +1,7 @@
-.. _sp4.at:
+.. _sp4.at_index:
 
 sp4.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
 |
 
 .. list-table::

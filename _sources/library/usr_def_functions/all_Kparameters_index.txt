@@ -1,13 +1,7 @@
-.. _all_Kparameters.at:
+.. _all_Kparameters.at_index:
 
 all_Kparameters.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`K_parameters.at<K_parameters.at>`
-| :ref:`lattice.at<lattice.at>`
 |
 
 .. list-table::

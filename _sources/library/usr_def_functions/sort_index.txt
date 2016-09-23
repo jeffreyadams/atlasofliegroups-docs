@@ -1,11 +1,7 @@
-.. _sort.at:
+.. _sort.at_index:
 
 sort.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

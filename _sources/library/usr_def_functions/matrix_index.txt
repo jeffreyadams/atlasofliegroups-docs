@@ -1,11 +1,7 @@
-.. _matrix.at:
+.. _matrix.at_index:
 
 matrix.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

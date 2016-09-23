@@ -1,11 +1,7 @@
-.. _elliptic_elements.at:
+.. _elliptic_elements.at_index:
 
 elliptic_elements.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`Weylgroup.at<Weylgroup.at>`
 |
 
 .. list-table::

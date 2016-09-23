@@ -1,11 +1,7 @@
-.. _jantzen.at:
+.. _jantzen.at_index:
 
 jantzen.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`dual.at<dual.at>`
 |
 
 .. list-table::

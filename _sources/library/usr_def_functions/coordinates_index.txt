@@ -1,11 +1,7 @@
-.. _coordinates.at:
+.. _coordinates.at_index:
 
 coordinates.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`ratmat.at<ratmat.at>`
 |
 
 .. list-table::

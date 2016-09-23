@@ -1,12 +1,7 @@
-.. _translate.at:
+.. _translate.at_index:
 
 translate.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`hermitian.at<hermitian.at>`
 |
 
 .. list-table::

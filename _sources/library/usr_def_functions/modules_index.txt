@@ -1,13 +1,7 @@
-.. _modules.at:
+.. _modules.at_index:
 
 modules.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`misc.at<misc.at>`
-| :ref:`kl.at<kl.at>`
 |
 
 .. list-table::
