@@ -158,11 +158,13 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/lie_types.html">Root Data and Lie Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a></li>
@@ -980,18 +982,6 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="../preliminaries.html" class="btn btn-neutral float-right" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="getting-started-using-the-software">
 <h1>Getting started using the software<a class="headerlink" href="#getting-started-using-the-software" title="Permalink to this headline">¶</a></h1>
@@ -1001,23 +991,23 @@
 <p>The <code class="docutils literal"><span class="pre">atlas</span></code> software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that``atlas`` uses to store and give information on Lie groups structure and representations.</p>
 <p>You can ask the software to compute basic operations on the different data types.</p>
 <p>To set up a variable, for example <code class="docutils literal"><span class="pre">x=1</span></code>, type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=1
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set x=1
 Identifier x: int
 atlas&gt;
 </pre></div>
 </div>
 <p>The second line is <code class="docutils literal"><span class="pre">atlas</span></code> telling us that it recognizes x as an integer. We can verify we typed the correct variable by typing just x:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; x
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; x
 Value: 1
 </pre></div>
 </div>
 <p>Sometimes we want to ask atlas to repeat the previous value. We use <code class="docutils literal"><span class="pre">$</span></code> for that:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; $
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; $
 Value: 1
 </pre></div>
 </div>
 <p>Another useful command is whattype:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype x
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; whattype x
 type: int
 atlas&gt;
 </pre></div>
@@ -1044,7 +1034,7 @@ information about this. (Make sure you are in the directory
 where you downloaded <code class="docutils literal"><span class="pre">atlas</span></code> and type <code class="docutils literal"><span class="pre">ls</span></code> to verify that the <code class="docutils literal"><span class="pre">atlas-scripts</span></code> directory is there).</p>
 <p>You can also <code class="docutils literal"><span class="pre">cd</span></code> into that directory to see all the supplementary files available. These are all the <code class="docutils literal"><span class="pre">.at</span></code> files listed there.</p>
 <p>After you launched the file with the path information, you can load the file <code class="docutils literal"><span class="pre">basic.at</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;basic.at
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &lt;basic.at
 Starting to read from file &#39;atlas-scripts/basic.at&#39;.
 </pre></div>
 </div>
@@ -1064,7 +1054,7 @@ file that are now added to the built-in commands. You can see what you have now 
         <a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../preliminaries.html" class="btn btn-neutral float-right" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../preliminaries.html" class="btn btn-neutral" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

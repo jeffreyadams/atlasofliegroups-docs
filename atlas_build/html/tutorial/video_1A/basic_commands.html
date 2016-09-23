@@ -158,11 +158,13 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/lie_types.html">Root Data and Lie Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a></li>
@@ -980,25 +982,13 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="vectors.html" class="btn btn-neutral float-right" title="Vectors" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="basic-commands">
 <h1>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="helpful-unix-tools">
 <h2>Helpful unix tools<a class="headerlink" href="#helpful-unix-tools" title="Permalink to this headline">¶</a></h2>
 <p>One useful tool you can use is hitting the <code class="docutils literal"><span class="pre">TAB</span></code> key twice. Hitting it once does command completion which helps you finish a command if you don&#8217;t remember how it ends. Hitting it twice does command completion on the empty string and it will tell you all possible completions:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; {TAB,TAB}
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; {TAB,TAB}
 Display all 204 possibilities? (y or n)
 </pre></div>
 </div>
@@ -1009,7 +999,7 @@ so you can scroll through them to find the command you need.</p>
 <p>You can also use <code class="docutils literal"><span class="pre">TAB</span></code> to find more than one possible command completions. For
 example, typing <code class="docutils literal"><span class="pre">nu</span></code> and then <code class="docutils literal"><span class="pre">TAB</span></code> completes to null. Typing
 <code class="docutils literal"><span class="pre">TAB</span></code> again gives the possible commands that start with null:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; nu{TAB}
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; nu{TAB}
 atlas&gt; null
 {TAB}
 null         null_module
@@ -1018,7 +1008,7 @@ atlas&gt; null
 </div>
 <p>If this does not work on your version of <code class="docutils literal"><span class="pre">atlas</span></code> it may be that the appropriate <code class="docutils literal"><span class="pre">readline</span></code> library is not installed on your computer: command completion is implemented by <code class="docutils literal"><span class="pre">readline</span></code>. Addressing this problem is worth the effort!</p>
 <p>Another useful unix command is <code class="docutils literal"><span class="pre">ctrl-p</span></code> which helps you find the previous command you typed. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set y=2
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set y=2
 Identifier y: int
 atlas&gt; {ctrl-p}
 atlas&gt; set y=2
@@ -1034,7 +1024,7 @@ atlas&gt; set y=2
 <code class="docutils literal"><span class="pre">:=</span></code>. However this works as long as the new variable is of the same
 data type as the old one. You may notice in the example below that, if we don&#8217;t
 use this way of redefining our variable, we get a message &#8220;hiding previous one of type ....&#8221;</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=2
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set x=2
 Identifier x: int (hiding previous one of type int)
 atlas&gt; x
 Value: 2
@@ -1050,7 +1040,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; y:=3
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; y:=3
 Identifier y: int
 atlas&gt; set z=3/2
 Identifier z: rat
@@ -1066,7 +1056,7 @@ atlas&gt;
 <div class="section" id="division-rounding-down-remainder">
 <h2>Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code><a class="headerlink" href="#division-rounding-down-remainder" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal"><span class="pre">atlas</span></code> also performs operations on non-integers and outputs integers or integer tuples. For example you could ask the software to round down to the the largest integer less than a number, to compute the remainder, or to exppress a rational as a pair:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; x:=13
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; x:=13
 Value: 13
 atlas&gt; x\5
 Value: 2
@@ -1079,7 +1069,7 @@ Value: (13,5)
 </pre></div>
 </div>
 <p>We can also work with each part of the pair separately:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set s=%z
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set s=%z
 Identifier s: (int,int)
 atlas&gt; set (num,denom)=s
 Identifiers num: int, denom: int
@@ -1095,7 +1085,7 @@ atlas&gt;
 <h2>n-tupples<a class="headerlink" href="#n-tupples" title="Permalink to this headline">¶</a></h2>
 <p>The above pair of integers belongs to the more general data type, tupples, which could consist of integers, rationals, vectors, strings or a combination of a variety of data types:</p>
 <p>A string can be any string of characters in quotes such as:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=&quot;hello world&quot;
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set x=&quot;hello world&quot;
 Identifier x: string
 atlas&gt; x
 Value: &quot;hello world&quot;
@@ -1107,7 +1097,7 @@ hello world
 </pre></div>
 </div>
 <p>We use the command <code class="docutils literal"><span class="pre">prints</span></code> which means print string, to print without quotes. And we can form the 3-tuple of different data types:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>set z=(1,2/3,x)
+<div class="highlight-python"><div class="highlight"><pre>set z=(1,2/3,x)
 Identifier z: (int,rat,string)
 atlas&gt; z
 Value: (1,2/3,&quot;hello world&quot;)
@@ -1126,7 +1116,7 @@ Value: (1,2/3,&quot;hello world&quot;)
         <a href="vectors.html" class="btn btn-neutral float-right" title="Vectors" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="atlas_help_files.html" class="btn btn-neutral" title="Help files" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

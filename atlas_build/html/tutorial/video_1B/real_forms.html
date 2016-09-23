@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Real Forms &mdash; atlas 0.6 documentation</title>
+  <title>Real Forms of a Complex Group &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -158,11 +158,13 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="lie_types.html">Root Data and Lie Types</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Real Forms</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Real Forms of a Complex Group</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Real Forms of a Complex Group</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a></li>
@@ -967,7 +969,7 @@
       
           <li><a href="../structure_theory.html">Structure Theory</a> &raquo;</li>
       
-    <li>Real Forms</li>
+    <li>Real Forms of a Complex Group</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -980,205 +982,139 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="lie_types.html" class="btn btn-neutral float-right" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
-  <div class="section" id="real-forms">
-<h1>Real Forms<a class="headerlink" href="#real-forms" title="Permalink to this headline">¶</a></h1>
-<p>Now we can load another file called <code class="docutils literal"><span class="pre">groups.at</span></code>. After doing this
-you can scroll up and see the list of all the real forms of all the
-familiar complex reductive Lie groups that are defined. This way you
-can work with a particular group that you are interested in. For
-example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; simple_roots(G)
-Value:
-| 2 |
-atlas&gt;simple_coroots(G)
-Value:
-| 1 |
+  <div class="section" id="real-forms-of-a-complex-group">
+<h1>Real Forms of a Complex Group<a class="headerlink" href="#real-forms-of-a-complex-group" title="Permalink to this headline">¶</a></h1>
+<p>We can also find out what are all the real forms of a Lie group. By this we mean the real forms of the complex Lie group of a given Lie type:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=Sp(4,R)
+Identifier G: RealForm
+atlas&gt; set rf=real_forms(G)
+Identifier rf: [RealForm]
+atlas&gt;
+atlas&gt; #rf
+Value: 3
+atlas&gt; for H in rf do prints(H) od
+compact connected real group with Lie algebra &#39;sp(2)&#39;
+connected real group with Lie algebra &#39;sp(1,1)&#39;
+connected split real group with Lie algebra &#39;sp(4,R)&#39;
+Value: [(),(),()]
 atlas&gt;
 </pre></div>
 </div>
-<p>These is a real Lie group , so the data type is a RealForm. Again the underlying root datum of G, which is the one for the simply connected group of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=root_datum (G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;A1&#39;
+<p>So for <code class="docutils literal"><span class="pre">G=Sp(4,R)</span></code>, there are three real Lie algebras which are real forms of <code class="docutils literal"><span class="pre">sp(2,C)</span></code>, which is the complexified Lie algebra of type <code class="docutils literal"><span class="pre">C2</span></code>: the compact Lie algebra <code class="docutils literal"><span class="pre">sp(2)</span></code>; a real Lie algebra <code class="docutils literal"><span class="pre">sp(1,1)</span></code> and a split real Lie algebra <code class="docutils literal"><span class="pre">sp(4,R)</span></code>. For each one of these Lie algebras there is a real Lie group which is a real form of <code class="docutils literal"><span class="pre">Sp(4,C)</span></code>, the complex Lie group of type <code class="docutils literal"><span class="pre">C2</span></code>.</p>
+<p>Now something interesting about real forms and Cartan classes is that The Cartan classes are the same across all real forms of the same complex group. In fact even though within the compact Cartan there is only one conjugacy class of Cartans (within the compact group). We will have the same Cartan classes for G=Sp(2) than for G=Sp(4,R):</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; rf[0]
+Value: compact connected real group with Lie algebra &#39;sp(2)&#39;
+atlas&gt; nr_of_Cartan_classes (rf[0])
+Value: 4
+atlas&gt;
+set G0=rf[0]
+Identifier G0: RealForm
+atlas&gt; G0
+Value: compact connected real group with Lie algebra &#39;sp(2)&#39;
+atlas&gt; Cartan_classes (G0)[0]
+Value: Cartan class #0, occurring for 3 real forms and for 1 dual real form
+atlas&gt; Cartan_classes (G0)[1]
+Value: Cartan class #1, occurring for 2 real forms and for 1 dual real form
+atlas&gt; Cartan_classes (G0)[3]
+Value: Cartan class #3, occurring for 1 real form and for 3 dual real forms
+atlas&gt;
 </pre></div>
 </div>
-<p>Note that SL(2,R) is NOT simply connected. However, it is the Lie group whose complexified Lie algebra is is type A1 and its root datum corresponds to the the roots of the simply connected complex group SL(2,C).</p>
-<p>Now let&#8217;s take the non semisimple Lie group GL(2,R). We can define it
-in two ways. Note the different type of information we obtain:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
-Identifier G: RealForm
-atlas&gt; set rd=root_datum (G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;A1&#39;
-atlas&gt; G:=GL(2,R)
-Value: disconnected split real group with Lie algebra &#39;sl(2,R).gl(1,R)&#39;
-
+<p>Now let&#8217;s look at the real forms of G=SL(5,R). It turns out there is only one: G itself:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(5,R)
+Identifier G: RealForm (hiding previous one of type RealForm)
+atlas&gt; set rf =real_forms(G)
+Identifier rf: [RealForm] (hiding previous one of type [RealForm])
+atlas&gt;
+atlas&gt; #rf
+Value: 1
+atlas&gt; rf[0]
+Value: connected split real group with Lie algebra &#39;sl(5,R)&#39;
+atlas&gt;
+</pre></div>
+</div>
+<p>Note that the complexified Lie algebra of <code class="docutils literal"><span class="pre">G</span></code>, <code class="docutils literal"><span class="pre">g_{C}=sl(5,C)</span></code>. Has other real forms. However, associated to <code class="docutils literal"><span class="pre">G</span></code>, there is only one. This is because atlas thinks always in terms of inner classes. That is a real form is a real form in a given inner class. And there is a distinquished involution in <code class="docutils literal"><span class="pre">G</span></code> which is non trivial and which atlas uses to determine the inner class of the group <code class="docutils literal"><span class="pre">G</span></code>, and there is only one real form in this inner class.:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; distinguished_involution(G)
+Value:
+| 1, 0, 0, 0 |
+| 1, 0, 0, -1 |
+| 1, 0, -1, 0 |
+| 1, -1, 0, 0 |
+atlas&gt;
+</pre></div>
+</div>
+<p>Let&#8217;s look at another real form of <code class="docutils literal"><span class="pre">g_{C}</span></code>, namely <code class="docutils literal"><span class="pre">su(3,2)</span></code>. THis gives us another inner class. it turns out this inner class has the rest of the real forms of <code class="docutils literal"><span class="pre">g_{C}</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; H
+Value: connected quasisplit real group with Lie algebra &#39;su(3,2)&#39;
+atlas&gt; set rfH=real_forms (H)
+Identifier rfH: [RealForm]
+atlas&gt; #rfH
+Value: 3
+atlas&gt; for a in rfH do prints(a) od
+compact connected real group with Lie algebra &#39;su(5)&#39;
+connected real group with Lie algebra &#39;su(4,1)&#39;
+connected quasisplit real group with Lie algebra &#39;su(3,2)&#39;
+Value: [(),(),()]
+atlas&gt;
+</pre></div>
+</div>
+<p>So, these three real groups are grouped together because they are all in the same inner class. Note that they all have a compact Cartan, whereas <code class="docutils literal"><span class="pre">SL(5,R)</span></code> does not. The distinguished involution or <code class="docutils literal"><span class="pre">H=SU(3,2)</span></code> is the identity:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; distinguished_involution (H)
+Value:
+| 1, 0, 0, 0 |
+| 0, 1, 0, 0 |
+| 0, 0, 1, 0 |
+| 0, 0, 0, 1 |
+atlas&gt;
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Inner classes are associated with outer involutions. That is a diagram automorphism. So for G=SU(p,q) the inner forms are associated with the trivial automorphism of the Dynkin diagram of A_{p+q}; and for G=SL(p+q,R), with the non trivial diagram automorphism.</dt>
+<dd><p class="first">So what will happen for G=SL(6,R)? We can see in the following example that there is another real form in the same inner class as SL(6,C). This will be true whenever p+q=2n, namely SL(n,H):</p>
+<p class="last">atlas&gt; set G=SL(6,R)
+Identifier G: RealForm (hiding previous one of type RealForm)
+atlas&gt; set rf=real_forms (G)
+Identifier rf: [RealForm] (hiding previous one of type [RealForm])
+atlas&gt; #rf
+Value: 2
+atlas&gt;
+atlas&gt; for a in rf do prints(a) od
+connected real group with Lie algebra &#8216;sl(3,H)&#8217;
+connected split real group with Lie algebra &#8216;sl(6,R)&#8217;
+Value: [(),()]
+atlas&gt;</p>
+</dd>
+</dl>
+<p>In fact the distinguished involution is the one attached to the non trivial diagram automorphism. And in this case it flips all the roots except the central root:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set delta=distinguished_involution (G)
+Identifier delta: mat
+atlas&gt; delta
+Value:
+| 1, 0, 0, 0, 0 |
+| 1, 0, 0, 0, -1 |
+| 1, 0, 0, -1, 0 |
+| 1, 0, -1, 0, 0 |
+| 1, -1, 0, 0, 0 |
+atlas&gt;
 atlas&gt; simple_roots (G)
 Value:
-|  1 |
-| -1 |
-
-atlas&gt; simple_coroots (G)
+| 1, 0, 0, 0, 1 |
+| -1, 1, 0, 0, 1 |
+| 0, -1, 1, 0, 1 |
+| 0, 0, -1, 1, 1 |
+| 0, 0, 0, -1, 2 |
+atlas&gt; delta*simple_roots (G)
 Value:
-|  1 |
-| -1 |
-
+| 1, 0, 0, 0, 1 |
+| 1, 0, 0, 1, -1 |
+| 1, 0, 1, -1, 0 |
+| 1, 1, -1, 0, 0 |
+| 2, -1, 0, 0, 0 |
 atlas&gt;
 </pre></div>
 </div>
-<p>These are the roots in the basis {e_1, e_2} of the torus T.</p>
-<p>Now for PSL(2,R) we have:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=PSL(2,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; simple_roots(G)
-Value:
-| 1 |
-atlas&gt; simple_coroots(G)
-Value:
-| 2 |
-atlas&gt;
-</pre></div>
-</div>
-<p>On the other hand if we type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,C)
-Identifier G: RealForm
-atlas&gt; simple_roots(G)
-Value:
-| 2, 0 |
-| 0, 2 |
-atlas&gt; simple_coroots(G)
-Value:
-| 1, 0 |
-| 0, 1 |
-atlas&gt;
-</pre></div>
-</div>
-<p>Which makes sense since <code class="docutils literal"><span class="pre">SL(2,C)</span></code> is the real Lie group with complexified Lie algebra of type <code class="docutils literal"><span class="pre">A2</span> <span class="pre">x</span> <span class="pre">A2</span></code>,</p>
-<p>So, in general, if we use the standard real form notation for the groups, atlas normally gives the usual coordinates. So we can for example do things like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=Sp(4,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; set rd=root_datum(G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;C2&#39;
-atlas&gt; simple_roots(rd)
-Value:
-| 1, 0 |
-| -1, 2 |
-atlas&gt; simple_coroots(rd)
-Value:
-| 1, 0 |
-| -1, 1 |
-</pre></div>
-</div>
-<p>These are the usual simple roots for Sp(4). So, using these
-pre-defined groups to define our real form gives us, in most cases, the
-familiar coordinates to work with. So we can look at all the positive
-roots and coroots and rho:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; posroots(rd)
-Value:
-| 1, 0, 1, 2 |
-| -1, 2, 1, 0 |
-atlas&gt; poscoroots(rd)
-Value:
-| 1, 0, 1, 1 |
-| -1, 1, 1, 0 |
-
-
-atlas&gt; rho(rd)
-Value: [ 2, 1 ]/1
-atlas&gt;
-</pre></div>
-</div>
-<p>Again the pairing between these sets is the usual dot product:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set alpha=posroots(rd)[0]
-Identifier alpha: vec
-atlas&gt; alpha
-Value: [ 1, -1 ]
-atlas&gt; set alpha_check=poscoroots(rd)[0]
-Identifier alpha_check: vec
-atlas&gt; alpha_check
-Value: [ 1, -1 ]
-atlas&gt; alpha_check
-Value: [ 1, -1 ]
-atlas&gt; alpha*alpha_check
-Value: 2
-</pre></div>
-</div>
-<p>This is the natural way of pairing roots with coroots. Pairing roots with roots is not too meaningful in the theory.</p>
-<p>Now let us try  G=GL(3,R):</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=GL(3,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; set rd=root_datum(G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected adjoint root datum of Lie type &#39;A2.T1&#39;
-atlas&gt; simple_roots(rd)
-Value:
-| 1, 0 |
-| -1, 1 |
-| 0, -1 |
-atlas&gt; simple_coroots(rd)
-Value:
-| 1, 0 |
-| -1, 1 |
-| 0, -1 |
-atlas&gt;
-</pre></div>
-</div>
-<p>Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are expressed again in the usual coordinates. However look what happens for SL(3,R):</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(3,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; set rd=root_datum(G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;A2&#39;
-atlas&gt; simple_roots(rd)
-Value:
-| 1, 1 |
-| -1, 2 |
-atlas&gt; simple_coroots(rd)
-Value:
-| 1, 0 |
-| -1, 1 |
-atlas&gt; ^simple_roots(G)*simple_coroots(G)
-Value:
-| 2, -1 |
-| -1, 2 |
-atlas&gt;
-</pre></div>
-</div>
-<p>Unfortunately these are not the usual coordinates for this group. Nevertheless the Cartan matrix is the usual one.</p>
-<p>There is also a function called Cartan_matrix. The possible arguments and outputs are given below:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype Cartan_matrix ?
-Overloaded instances of &#39;Cartan_matrix&#39;
-LieType-&gt;mat
-RootDatum-&gt;mat
-(int,int)-&gt;mat
-&lt;example/&gt;atlas&gt; Cartan_matrix(rd)
-Value:
-| 2, -1 |
-| -1, 2 |
-</pre></div>
-</div>
-<p>We will see more about <code class="docutils literal"><span class="pre">atlas</span></code> coordinates in the next section.</p>
+<p>In other words, delta exchanges <code class="docutils literal"><span class="pre">alpha[0]</span></code> and <code class="docutils literal"><span class="pre">alpha[4]</span></code>; <code class="docutils literal"><span class="pre">alpha[1]</span></code> and <code class="docutils literal"><span class="pre">alpha[3]</span></code> and fixes <code class="docutils literal"><span class="pre">alpha[2]</span></code>.</p>
 </div>
 
 
@@ -1191,7 +1127,7 @@ Value:
         <a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="lie_types.html" class="btn btn-neutral float-right" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="lie_types.html" class="btn btn-neutral" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
