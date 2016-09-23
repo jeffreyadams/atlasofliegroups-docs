@@ -1,10 +1,7 @@
-.. _lietypes.at:
+.. _lietypes.at_index:
 
 lietypes.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
 |
 
 .. list-table::

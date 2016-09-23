@@ -1,13 +1,7 @@
-.. _extended_cross.at:
+.. _extended_cross.at_index:
 
 extended_cross.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`extended_misc.at<extended_misc.at>`
-| :ref:`extended_types.at<extended_types.at>`
 |
 
 .. list-table::

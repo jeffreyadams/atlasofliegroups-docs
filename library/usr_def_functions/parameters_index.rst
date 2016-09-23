@@ -1,11 +1,7 @@
-.. _parameters.at:
+.. _parameters.at_index:
 
 parameters.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

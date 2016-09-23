@@ -1,12 +1,7 @@
-.. _K_norm.at:
+.. _K_norm.at_index:
 
 K_norm.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`K_parameters.at<K_parameters.at>`
 |
 
 .. list-table::

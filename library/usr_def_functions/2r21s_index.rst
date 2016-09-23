@@ -1,12 +1,7 @@
-.. _2r21s.at:
+.. _2r21s.at_index:
 
 2r21s.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`extended.at<extended.at>`
 |
 
 .. list-table::

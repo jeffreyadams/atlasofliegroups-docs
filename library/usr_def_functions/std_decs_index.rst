@@ -1,10 +1,7 @@
-.. _std_decs.at:
+.. _std_decs.at_index:
 
 std_decs.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
 |
 
 .. list-table::

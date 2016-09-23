@@ -1,15 +1,7 @@
-.. _ext_deform.at:
+.. _ext_deform.at_index:
 
 ext_deform.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`extended.at<extended.at>`
-| :ref:`inverse.at<inverse.at>`
-| :ref:`polynomial.at<polynomial.at>`
-| :ref:`dual.at<dual.at>`
 |
 
 .. list-table::

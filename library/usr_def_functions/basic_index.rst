@@ -1,10 +1,7 @@
-.. _basic.at:
+.. _basic.at_index:
 
 basic.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
 |
 
 .. list-table::

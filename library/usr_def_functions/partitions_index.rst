@@ -1,11 +1,7 @@
-.. _partitions.at:
+.. _partitions.at_index:
 
 partitions.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

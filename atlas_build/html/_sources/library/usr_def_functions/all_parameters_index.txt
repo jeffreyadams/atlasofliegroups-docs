@@ -1,14 +1,7 @@
-.. _all_parameters.at:
+.. _all_parameters.at_index:
 
 all_parameters.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`lattice.at<lattice.at>`
-| :ref:`group_operations.at<group_operations.at>`
-| :ref:`representations.at<representations.at>`
 |
 
 .. list-table::

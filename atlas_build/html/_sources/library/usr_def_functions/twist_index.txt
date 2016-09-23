@@ -1,12 +1,7 @@
-.. _twist.at:
+.. _twist.at_index:
 
 twist.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`lattice.at<lattice.at>`
 |
 
 .. list-table::

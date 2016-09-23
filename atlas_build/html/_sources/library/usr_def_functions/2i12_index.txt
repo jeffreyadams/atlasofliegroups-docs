@@ -1,14 +1,7 @@
-.. _2i12.at:
+.. _2i12.at_index:
 
 2i12.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`extended.at<extended.at>`
-| :ref:`hecke.at<hecke.at>`
-| :ref:`nonintegral.at<nonintegral.at>`
-| :ref:`dual.at<dual.at>`
 |
 
 .. list-table::

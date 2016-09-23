@@ -1,11 +1,7 @@
-.. _complex.at:
+.. _complex.at_index:
 
 complex.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`LKT.at<LKT.at>`
 |
 
 .. list-table::

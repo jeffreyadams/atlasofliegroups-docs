@@ -1,12 +1,7 @@
-.. _stable.at:
+.. _stable.at_index:
 
 stable.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`dual.at<dual.at>`
-| :ref:`modules.at<modules.at>`
 |
 
 .. list-table::

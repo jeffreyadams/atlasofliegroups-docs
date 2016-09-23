@@ -1,11 +1,7 @@
-.. _extParamPol.at:
+.. _extParamPol.at_index:
 
 extParamPol.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`extended.at<extended.at>`
 |
 
 .. list-table::

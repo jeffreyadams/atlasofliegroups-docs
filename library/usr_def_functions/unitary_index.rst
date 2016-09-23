@@ -1,10 +1,7 @@
-.. _unitary.at:
+.. _unitary.at_index:
 
 unitary.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
 |
 
 .. list-table::

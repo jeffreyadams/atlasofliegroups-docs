@@ -1,12 +1,7 @@
-.. _LKT.at:
+.. _LKT.at_index:
 
 LKT.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`misc.at<misc.at>`
-| :ref:`K_parameters.at<K_parameters.at>`
 |
 
 .. list-table::

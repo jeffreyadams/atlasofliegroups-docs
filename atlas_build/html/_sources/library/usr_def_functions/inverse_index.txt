@@ -1,12 +1,7 @@
-.. _inverse.at:
+.. _inverse.at_index:
 
 inverse.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`polynomial.at<polynomial.at>`
 |
 
 .. list-table::
