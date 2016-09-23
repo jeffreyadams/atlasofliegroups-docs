@@ -1,13 +1,7 @@
-.. _finite_dimensional.at:
+.. _finite_dimensional.at_index:
 
 finite_dimensional.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`Weylgroup.at<Weylgroup.at>`
-| :ref:`hermitian.at<hermitian.at>`
 |
 
 .. list-table::

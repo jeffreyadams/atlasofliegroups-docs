@@ -1,11 +1,7 @@
-.. _ratmat.at:
+.. _ratmat.at_index:
 
 ratmat.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

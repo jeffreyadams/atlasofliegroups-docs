@@ -1,12 +1,7 @@
-.. _extended_types.at:
+.. _extended_types.at_index:
 
 extended_types.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`extended_misc.at<extended_misc.at>`
 |
 
 .. list-table::

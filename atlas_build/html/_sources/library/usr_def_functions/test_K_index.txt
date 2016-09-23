@@ -1,10 +1,7 @@
-.. _test_K.at:
+.. _test_K.at_index:
 
 test_K.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
 |
 
 .. list-table::

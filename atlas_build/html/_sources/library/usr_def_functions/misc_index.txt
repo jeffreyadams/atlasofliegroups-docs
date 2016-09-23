@@ -1,11 +1,7 @@
-.. _misc.at:
+.. _misc.at_index:
 
 misc.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

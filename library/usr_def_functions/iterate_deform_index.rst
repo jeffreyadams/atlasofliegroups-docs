@@ -1,11 +1,7 @@
-.. _iterate_deform.at:
+.. _iterate_deform.at_index:
 
 iterate_deform.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

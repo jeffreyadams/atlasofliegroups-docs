@@ -1,11 +1,7 @@
-.. _torus.at:
+.. _torus.at_index:
 
 torus.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

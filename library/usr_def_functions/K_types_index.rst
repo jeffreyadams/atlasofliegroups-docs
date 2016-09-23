@@ -1,14 +1,7 @@
-.. _K_types.at:
+.. _K_types.at_index:
 
 K_types.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`LKT.at<LKT.at>`
-| :ref:`hermitian.at<hermitian.at>`
-| :ref:`K_highest_weights.at<K_highest_weights.at>`
 |
 
 .. list-table::

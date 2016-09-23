@@ -1,12 +1,7 @@
-.. _cross_W_orbit.at:
+.. _cross_W_orbit.at_index:
 
 cross_W_orbit.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`Weylgroup.at<Weylgroup.at>`
 |
 
 .. list-table::

@@ -1,12 +1,7 @@
-.. _K.at:
+.. _K.at_index:
 
 K.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`matrix.at<matrix.at>`
 |
 
 .. list-table::

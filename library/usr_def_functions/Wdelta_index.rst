@@ -1,13 +1,7 @@
-.. _Wdelta.at:
+.. _Wdelta.at_index:
 
 Wdelta.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
-| :ref:`K.at<K.at>`
-| :ref:`Weylgroup.at<Weylgroup.at>`
 |
 
 .. list-table::

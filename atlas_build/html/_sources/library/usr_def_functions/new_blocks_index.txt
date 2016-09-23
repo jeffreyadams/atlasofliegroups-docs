@@ -1,10 +1,7 @@
-.. _new_blocks.at:
+.. _new_blocks.at_index:
 
 new_blocks.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
 |
 
 .. list-table::

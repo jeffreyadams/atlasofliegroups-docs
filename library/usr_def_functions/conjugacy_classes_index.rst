@@ -1,12 +1,7 @@
-.. _conjugacy_classes.at:
+.. _conjugacy_classes.at_index:
 
 conjugacy_classes.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`Weylgroup.at<Weylgroup.at>`
-| :ref:`W_orbit.at<W_orbit.at>`
 |
 
 .. list-table::

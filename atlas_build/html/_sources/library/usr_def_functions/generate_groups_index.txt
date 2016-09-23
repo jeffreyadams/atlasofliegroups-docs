@@ -1,11 +1,7 @@
-.. _generate_groups.at:
+.. _generate_groups.at_index:
 
 generate_groups.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

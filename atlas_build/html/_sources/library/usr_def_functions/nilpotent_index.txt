@@ -1,11 +1,7 @@
-.. _nilpotent.at:
+.. _nilpotent.at_index:
 
 nilpotent.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`basic.at<basic.at>`
 |
 
 .. list-table::

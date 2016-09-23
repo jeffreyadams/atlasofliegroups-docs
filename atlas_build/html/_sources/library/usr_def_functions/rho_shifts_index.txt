@@ -1,11 +1,7 @@
-.. _rho_shifts.at:
+.. _rho_shifts.at_index:
 
 rho_shifts.at Function Index
 =======================================================
-
-This script imported the following .at files:
-
-| :ref:`misc.at<misc.at>`
 |
 
 .. list-table::
