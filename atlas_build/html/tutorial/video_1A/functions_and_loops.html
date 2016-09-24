@@ -985,7 +985,11 @@
             
   <div class="section" id="functions-and-loops">
 <h1>Functions and Loops<a class="headerlink" href="#functions-and-loops" title="Permalink to this headline">¶</a></h1>
-<p>To define a function we specify the argument, variable and the operation(s) performed on the argument using the following format &#8220;set f(&lt;data type&gt; &lt;variable name&gt;)=operation&#8221;.The software then tells us what type of output the function gives. We can also ask the software what type of input and output has been specified for the function  <code class="docutils literal"><span class="pre">f</span></code>.  For example:</p>
+<p>To define a function we specify the argument, variable and the
+operation(s) performed on the argument. The software then tells us
+what type of output the function gives. We can also ask the software
+what type of input and output has been specified for the function
+<code class="docutils literal"><span class="pre">f</span></code>.  For example:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set f(int x)=x^2
 Defined f: (int-&gt;int)
 atlas&gt; whattype f?
@@ -1036,10 +1040,11 @@ atlas&gt;
 </div>
 <p>Which takes the elements of v, squares them and lists them as an
 array of integers.</p>
-<p>Now using this type of  simple <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code> we can, for example, define  the <a href="#id1"><span class="problematic" id="id2">`</span></a>flattening&#8217; function which takes the columns of a matrix and writes them concatenated into a single row:</p>
+<p>Now using this type of simple <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code> we can, for example, define
+the &#8220;flattening&#8221; function which takes the columns of a matrix and
+writes them concatenated into a single row:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set f(mat A)=vec: let rv=vec:[] in for v in A do rv#:=v od;rv
 Added definition [3] of f: (mat-&gt;vec)
-
 atlas&gt; A:=[[1,2],[3,4]]
 Value:
 | 1, 3 |
@@ -1052,9 +1057,9 @@ atlas&gt;
 </div>
 <p>Note that the command above that does this is a loop. The first part
 says that the function takes a matrix and outputs a vector.  The
-second part defines an empty vector rv. The third part is the loop that
+second part defines an empty vector <code class="docutils literal"><span class="pre">rv</span></code>. The third part is the loop that
 says that for each vector v in the matrix A, append it to what you
-have in rv. The last part says, do it for all the vectors in A and print the final result.</p>
+have in <code class="docutils literal"><span class="pre">rv</span></code>. The last part says, do it for all the vectors in A and print the final result.</p>
 <p>There are several kinds of loops which are explained in the
 <code class="docutils literal"><span class="pre">atlas.help</span></code> file. However, sometimes it is easier to look at some
 of the scripts in the <code class="docutils literal"><span class="pre">.at</span></code> files and see how the loops are used to
