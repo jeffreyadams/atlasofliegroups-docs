@@ -9,7 +9,7 @@ Help files
 To know more about the different data types you can quit ``atlas`` and go to the directory atlas-scripts and look for the help file atlas.help. This file gives an introduction of the software and how to install it. If you go to "#3. Design principles of ``axis`` language, and current limitations," scrolling down you will find information about the details covered in the present document including the list of data types used by the software. Some of them are ``bool`` for boolean, ``int`` for integer, ``rat`` for rational, etc.; and some are related to Lie groups, like LieType, RootDatum, etc. that we will see later in these notes.
 
 
-``atlas.functions.help``
+``atlas-functions.help``
 ------------------------
 
 
