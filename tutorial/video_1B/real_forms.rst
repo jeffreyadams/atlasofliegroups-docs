@@ -88,8 +88,9 @@ So, these three real groups are grouped together because they are all in the sam
     | 0, 0, 0, 1 |
     atlas>
 
-Inner classes are associated with outer involutions. That is a diagram automorphism. So for G=SU(p,q) the inner forms are associated with the trivial automorphism of the Dynkin diagram of A_{p+q}; and for G=SL(p+q,R), with the non trivial diagram automorphism.
-    So what will happen for G=SL(6,R)? We can see in the following example that there is another real form in the same inner class as SL(6,C). This will be true whenever p+q=2n, namely SL(n,H)::
+Inner classes are associated with outer involutions. That is a diagram automorphism. So, for ``G=SU(p,q)`` the inner forms are associated with the trivial automorphism of the Dynkin diagram of ``A_{p+q-1}``; and for ``G=SL(p+q,R)``, with the non trivial diagram automorphism.
+
+So what will happen for G=SL(6,R)? We can see in the following example that there is another real form in the same inner class as SL(6,C). This will be true whenever p+q=2n, namely SL(n,H)::
 
     atlas> set G=SL(6,R)
     Identifier G: RealForm (hiding previous one of type RealForm)
