@@ -1069,10 +1069,9 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<dl class="docutils">
-<dt>Inner classes are associated with outer involutions. That is a diagram automorphism. So for G=SU(p,q) the inner forms are associated with the trivial automorphism of the Dynkin diagram of A_{p+q}; and for G=SL(p+q,R), with the non trivial diagram automorphism.</dt>
-<dd><p class="first">So what will happen for G=SL(6,R)? We can see in the following example that there is another real form in the same inner class as SL(6,C). This will be true whenever p+q=2n, namely SL(n,H):</p>
-<p class="last">atlas&gt; set G=SL(6,R)
+<p>Inner classes are associated with outer involutions. That is a diagram automorphism. So, for <code class="docutils literal"><span class="pre">G=SU(p,q)</span></code> the inner forms are associated with the trivial automorphism of the Dynkin diagram of <code class="docutils literal"><span class="pre">A_{p+q-1}</span></code>; and for <code class="docutils literal"><span class="pre">G=SL(p+q,R)</span></code>, with the non trivial diagram automorphism.</p>
+<p>So what will happen for G=SL(6,R)? We can see in the following example that there is another real form in the same inner class as SL(6,C). This will be true whenever p+q=2n, namely SL(n,H):</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(6,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rf=real_forms (G)
 Identifier rf: [RealForm] (hiding previous one of type [RealForm])
@@ -1080,12 +1079,12 @@ atlas&gt; #rf
 Value: 2
 atlas&gt;
 atlas&gt; for a in rf do prints(a) od
-connected real group with Lie algebra &#8216;sl(3,H)&#8217;
-connected split real group with Lie algebra &#8216;sl(6,R)&#8217;
+connected real group with Lie algebra &#39;sl(3,H)&#39;
+connected split real group with Lie algebra &#39;sl(6,R)&#39;
 Value: [(),()]
-atlas&gt;</p>
-</dd>
-</dl>
+atlas&gt;
+</pre></div>
+</div>
 <p>In fact the distinguished involution is the one attached to the non trivial diagram automorphism. And in this case it flips all the roots except the central root:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set delta=distinguished_involution (G)
 Identifier delta: mat
