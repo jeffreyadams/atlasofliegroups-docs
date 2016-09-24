@@ -138,7 +138,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#n-tupples">n-tupples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#n-tuples">n-tuples</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="vectors.html">Vectors</a><ul>
@@ -1016,6 +1016,7 @@ atlas&gt; set y=2
 </div>
 <p>So, you can easily scroll back to the previous commands that you have typed by repeating this step. This is also useful for editing the commands without having to type them all again, as we could do in the above example by changing <code class="docutils literal"><span class="pre">y=2</span></code> to <code class="docutils literal"><span class="pre">y=3</span></code> after recalling our previous command.</p>
 <p>The same result can be obtained by hitting the up/down arrow keys. This also lets you scroll forward as well as backward.</p>
+<p>The commands <code class="docutils literal"><span class="pre">ctrl-a</span></code> and <code class="docutils literal"><span class="pre">ctrl-e</span></code> move you to the start and end of a line respectively and the command <code class="docutils literal"><span class="pre">option-left/right-arrow</span></code> move you left or right to the start/end of the next word.</p>
 </div>
 <div class="section" id="basic-atlas-operations">
 <h2>Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations<a class="headerlink" href="#basic-atlas-operations" title="Permalink to this headline">¶</a></h2>
@@ -1081,10 +1082,12 @@ atlas&gt;
 </pre></div>
 </div>
 </div>
-<div class="section" id="n-tupples">
-<h2>n-tupples<a class="headerlink" href="#n-tupples" title="Permalink to this headline">¶</a></h2>
-<p>The above pair of integers belongs to the more general data type, tupples, which could consist of integers, rationals, vectors, strings or a combination of a variety of data types:</p>
-<p>A string can be any string of characters in quotes such as:</p>
+<div class="section" id="n-tuples">
+<h2>n-tuples<a class="headerlink" href="#n-tuples" title="Permalink to this headline">¶</a></h2>
+<p>The above pair of integers belongs to the more general data type,
+tuples, which could consist of integers, rationals, vectors, strings
+or a combination of a variety of data types. A string can be any
+string of characters in quotes such as:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set x=&quot;hello world&quot;
 Identifier x: string
 atlas&gt; x
@@ -1096,7 +1099,9 @@ atlas&gt; prints(x)
 hello world
 </pre></div>
 </div>
-<p>We use the command <code class="docutils literal"><span class="pre">prints</span></code> which means print string, to print without quotes. And we can form the 3-tuple of different data types:</p>
+<p>Here we use the command <code class="docutils literal"><span class="pre">prints</span></code> which means print string, to print
+without quotes.</p>
+<p>Now we can form the 3-tuple of different data types:</p>
 <div class="highlight-python"><div class="highlight"><pre>set z=(1,2/3,x)
 Identifier z: (int,rat,string)
 atlas&gt; z
