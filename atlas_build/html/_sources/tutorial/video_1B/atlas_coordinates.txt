@@ -27,7 +27,7 @@ How do we interpret the way the software writes the simple roots for ``SL(n,R)``
     atlas>
 
 So, atlas chooses a set of coordinates to work with. They were chosen
-in the "roots.at" file so that the matrix of the simple_coroots for
+in the ``roots.at`` file so that the matrix of the simple_coroots for
 the simply connected group is the identity matrix::
 
     atlas> set g=LieType: A4
@@ -61,8 +61,11 @@ But look what happens when we type::
 
 If you want to ask atlas about a vector in the Cartan or say an
 infinitesimal character, you need to write it in terms of the simple
-roots. Then the software will give you the vector in terms of the ``atlas``
-coordinates. You then have to understand which coordinates the software is using to both ask the question and interpret the answer. For example, it is useful to know what rho is in the coordinates the software is using::
+roots. Then the software will give you the vector in terms of the
+``atlas`` coordinates. You then have to understand which coordinates
+the software is using in order to both, ask the question and interpret the
+answer. For example, it is useful to know what rho is in the
+coordinates the software is using::
 
 	     atlas> rho(rd)
 	     Value: [ 1, 1, 1, 1 ]/1
@@ -92,9 +95,9 @@ Alternatively, you can try to phrase the question in a way that atlas will use c
        atlas> rho(G)
        Value: [ 2, 1, 0, -1, -2 ]/1
 
-Remark: Once you defined a root datum or group atlas fixes some
+Remark: Once you defined a root datum or group, ``atlas`` fixes some
 coordinates. However, as we have seen, it is often possible to
-redefine the group in a different way so that atlas' coordinates are
+redefine the group in a different way so that the coordinates are
 easier to work with::
 
        atlas> set rd=root_datum ([[6,2]],[[1,-2]])
@@ -125,8 +128,8 @@ So this is a root datum of the above Lie type and with some ridiculous coordinat
    atlas>
 
 Notice this is a version of the root_datum command that we had not
-seen. It says `please give me the root datum for the following set of
-simple roots and coroots'. That is what a root datum is in atlas. So
+seen. It says asks for the root datum for the given set of
+simple roots and coroots. That is what a root datum is in atlas. So
 you can define the root datum by giving the matrices you want for the
 simple roots and coroots and atlas will accept them as a root
 datum. 
@@ -159,7 +162,11 @@ Now lets look at a another example::
     atlas>
 
 Again these are not the usual simple roots and corroots. But as you
-can see we get the Cartan matrix with the above product. These are the fundamental weights coordinates. Observe also that the simple coroots (resp. simple roots) give the identity matrix (resp. the Cartan matrix), which you would expect for the simply connected group of type ``C4``.
+can see we get the Cartan matrix with the above product. These are the
+fundamental weight coordinates. Observe also that the simple coroots
+(resp. simple roots) give the identity matrix (resp. the Cartan
+matrix), which you would expect for the simply connected group of type
+``C4``.
 
 In these corrdinates ``rho`` is::
 
@@ -171,7 +178,7 @@ So, in fundamental weight coordinates, the coordinates of ``rho`` are all ``1``.
 You can also check that if you use the adjoint root datum for ``C4``, the simple
 roots matrix will be the identity etc.
 
-But now, if we use  the defined real form ``Sp(8)``, we get root data in the usual coordinates::
+But now, if we use the defined real form ``Sp(8)``, we get root data in the usual coordinates::
 
     atlas> G:=Sp(8,R)
     Value: connected split real group with Lie algebra 'sp(8,R)'
@@ -187,7 +194,6 @@ But now, if we use  the defined real form ``Sp(8)``, we get root data in the usu
     atlas>
 
 These are isomorphic root data. They are equal up to a change of
-coordinates. It just takes getting used to understanding which
-coordinates ``atlas`` is using.
+coordinates. We just need to be aware of which coordinates ``atlas`` is using.
 
 

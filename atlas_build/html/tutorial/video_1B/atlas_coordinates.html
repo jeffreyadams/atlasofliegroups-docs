@@ -1010,7 +1010,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>So, atlas chooses a set of coordinates to work with. They were chosen
-in the &#8220;roots.at&#8221; file so that the matrix of the simple_coroots for
+in the <code class="docutils literal"><span class="pre">roots.at</span></code> file so that the matrix of the simple_coroots for
 the simply connected group is the identity matrix:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set g=LieType: A4
 Identifier g: LieType (hiding previous one of type LieType)
@@ -1044,8 +1044,11 @@ atlas&gt;
 </div>
 <p>If you want to ask atlas about a vector in the Cartan or say an
 infinitesimal character, you need to write it in terms of the simple
-roots. Then the software will give you the vector in terms of the <code class="docutils literal"><span class="pre">atlas</span></code>
-coordinates. You then have to understand which coordinates the software is using to both ask the question and interpret the answer. For example, it is useful to know what rho is in the coordinates the software is using:</p>
+roots. Then the software will give you the vector in terms of the
+<code class="docutils literal"><span class="pre">atlas</span></code> coordinates. You then have to understand which coordinates
+the software is using in order to both, ask the question and interpret the
+answer. For example, it is useful to know what rho is in the
+coordinates the software is using:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; rho(rd)
 Value: [ 1, 1, 1, 1 ]/1
 atlas&gt; rho(G)
@@ -1074,9 +1077,9 @@ atlas&gt; rho(G)
 Value: [ 2, 1, 0, -1, -2 ]/1
 </pre></div>
 </div>
-<p>Remark: Once you defined a root datum or group atlas fixes some
+<p>Remark: Once you defined a root datum or group, <code class="docutils literal"><span class="pre">atlas</span></code> fixes some
 coordinates. However, as we have seen, it is often possible to
-redefine the group in a different way so that atlas&#8217; coordinates are
+redefine the group in a different way so that the coordinates are
 easier to work with:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set rd=root_datum ([[6,2]],[[1,-2]])
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
@@ -1107,8 +1110,8 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Notice this is a version of the root_datum command that we had not
-seen. It says <a href="#id1"><span class="problematic" id="id2">`</span></a>please give me the root datum for the following set of
-simple roots and coroots&#8217;. That is what a root datum is in atlas. So
+seen. It says asks for the root datum for the given set of
+simple roots and coroots. That is what a root datum is in atlas. So
 you can define the root datum by giving the matrices you want for the
 simple roots and coroots and atlas will accept them as a root
 datum.</p>
@@ -1140,7 +1143,11 @@ datum.</p>
 </pre></div>
 </div>
 <p>Again these are not the usual simple roots and corroots. But as you
-can see we get the Cartan matrix with the above product. These are the fundamental weights coordinates. Observe also that the simple coroots (resp. simple roots) give the identity matrix (resp. the Cartan matrix), which you would expect for the simply connected group of type <code class="docutils literal"><span class="pre">C4</span></code>.</p>
+can see we get the Cartan matrix with the above product. These are the
+fundamental weight coordinates. Observe also that the simple coroots
+(resp. simple roots) give the identity matrix (resp. the Cartan
+matrix), which you would expect for the simply connected group of type
+<code class="docutils literal"><span class="pre">C4</span></code>.</p>
 <p>In these corrdinates <code class="docutils literal"><span class="pre">rho</span></code> is:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; rho(rd)
 Value: [ 1, 1, 1, 1 ]/1
@@ -1150,7 +1157,7 @@ atlas&gt;
 <p>So, in fundamental weight coordinates, the coordinates of <code class="docutils literal"><span class="pre">rho</span></code> are all <code class="docutils literal"><span class="pre">1</span></code>.
 You can also check that if you use the adjoint root datum for <code class="docutils literal"><span class="pre">C4</span></code>, the simple
 roots matrix will be the identity etc.</p>
-<p>But now, if we use  the defined real form <code class="docutils literal"><span class="pre">Sp(8)</span></code>, we get root data in the usual coordinates:</p>
+<p>But now, if we use the defined real form <code class="docutils literal"><span class="pre">Sp(8)</span></code>, we get root data in the usual coordinates:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; G:=Sp(8,R)
 Value: connected split real group with Lie algebra &#39;sp(8,R)&#39;
 atlas&gt; simple_roots (G)
@@ -1166,8 +1173,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>These are isomorphic root data. They are equal up to a change of
-coordinates. It just takes getting used to understanding which
-coordinates <code class="docutils literal"><span class="pre">atlas</span></code> is using.</p>
+coordinates. We just need to be aware of which coordinates <code class="docutils literal"><span class="pre">atlas</span></code> is using.</p>
 </div>
 </div>
 
