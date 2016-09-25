@@ -995,7 +995,8 @@ Value: disconnected split real group with Lie algebra &#39;sl(2,R)&#39;
 atlas&gt;
 </pre></div>
 </div>
-<p>Recall that H=SO(2,1). Now, one of the main structural facts about a group is what its Cartan subgroups are. For that we can type the following sequence of commands:</p>
+<p>Recall that H=SO(2,1).</p>
+<p>Now, one of the main structural facts about a group is what its Cartan subgroups are. For that we can type the following sequence of commands:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; nr_of_Cartan_classes (G)
 Value: 2
 atlas&gt; set cartans =Cartan_classes (G)
@@ -1018,10 +1019,21 @@ complex factor: empty
 atlas&gt;
 </pre></div>
 </div>
-<p>Wich gives us the number of conjugacy classes of Cartan subgroups of G and choosing one of those subgroups atlas gives more information about the Cartan.</p>
-<p>So this says that the first Cartan is is a real cartan subgroup, meaning a connected complex torus. It is defined over R. So, its real points form a real torus which can be written as a product of (S¹)^{a}, (C^{x})^{b} and (R^{x})^{c} factors. So, atlas gives the numbers (a,b,c). In this case the first Cartan is just a=1 circle, b=0 complex factors and c=0 real factors.</p>
-<p>It also tells us the type of roots it has: imaginary, complex or real. Since the Cartan is compact, we only have imaginary roots. And these roots form a system of type A₁.</p>
-<p>Note that we also see that this Cartan occurs in different real forms of complex groups of type A₁. The information about twisted involutions we will discuss later.</p>
+<p>Wich gives us the number of conjugacy classes of Cartan subgroups of G
+and choosing one of those subgroups atlas gives more information about
+the Cartan. The function <code class="docutils literal"><span class="pre">print_Cartan_info</span></code> takes a Cartan class in
+<code class="docutils literal"><span class="pre">G</span></code> and provides the basic structural data of any representative
+in the Cartan class.</p>
+<p>So this says that the first Cartan is a real cartan subgroup, meaning
+a connected complex torus. It is defined over <code class="docutils literal"><span class="pre">R</span></code>. So, its real points
+form a real torus which can be written as a product of <code class="docutils literal"><span class="pre">(S^1)^a</span></code>,
+<code class="docutils literal"><span class="pre">(C^x)^b</span></code> and <code class="docutils literal"><span class="pre">(R^x)^c</span></code> factors. So, atlas gives the numbers
+<code class="docutils literal"><span class="pre">(a,b,c)</span></code>. In this case the first Cartan is just <code class="docutils literal"><span class="pre">a=1</span></code> circle, <code class="docutils literal"><span class="pre">b=0</span></code> complex
+factors and <code class="docutils literal"><span class="pre">c=0</span></code> real factors.</p>
+<p>It also tells us the type of roots it has: imaginary, complex or real. Since the Cartan is compact, we only have imaginary roots. And these roots form a system of type <code class="docutils literal"><span class="pre">A1</span></code>.</p>
+<p>Note that we also see that this Cartan occurs in different real forms
+of complex groups of type <code class="docutils literal"><span class="pre">A1</span></code>.</p>
+<p>The information about twisted involutions will be discussed later.</p>
 <p>Now for information about the second Cartan subgroup:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set A=cartans[1]
 Identifier A: CartanClass
@@ -1037,7 +1049,9 @@ complex factor: empty
 atlas&gt;
 </pre></div>
 </div>
-<p>Here, the Cartan has just 1 copy of R^{x} and no complex or circle factors. And it just has real roots of type A₁.We will discuss later the information about involutions.</p>
+<p>Here, the Cartan has just 1 copy of <code class="docutils literal"><span class="pre">R^x</span></code> and no complex or circle
+factors. And it just has real roots of type <code class="docutils literal"><span class="pre">A₁</span></code>. We will discuss later
+the information about involutions.</p>
 <p>In contrast, the group SL(2,C) has only one conjugacy class of cartans:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G2=SL(2,C)
 Identifier G2: RealForm (hiding previous one of type string)
@@ -1057,16 +1071,15 @@ real root system: empty
 complex factor: A1
 </pre></div>
 </div>
-<p>Now for a larger group like Sp(4,R), for example, we will have a
-compact cartan which is a product of two circles and all its roots are compact; a split cartan, that
-is, a product of R^{x}×R^{x} with all roots real; and two intermediate cartans; one complex
-isomorphic to C^{x}.This is sometimes called the short root
-Cartan. This is the one associated to a Levi factor Gl(2). finally,
-the other Cartan is isomorphic to S¹×R^{x}. The distinction between
+<p>Now for a larger group like <code class="docutils literal"><span class="pre">Sp(4,R)</span></code>, for example, we will have a
+compact cartan which is a product of two circles and all its roots are imaginary; a split cartan, that is, a product of <code class="docutils literal"><span class="pre">(R^x)×(R^x)</span></code> with all roots real; and two intermediate cartans; one complex
+isomorphic to <code class="docutils literal"><span class="pre">C^x</span></code>. This is sometimes called the short root
+Cartan. This is the one associated to a Levi factor <code class="docutils literal"><span class="pre">Gl(2)</span></code>. Finally,
+the other Cartan is isomorphic to <code class="docutils literal"><span class="pre">S^1×R^x</span></code>. The distinction between
 these two Cartans is subtle. Locally they are both isomorphic rank one
-Cartans and look like S¹×R^{x}. But, one is C^{x} and atlas can
+Cartans and look like <code class="docutils literal"><span class="pre">S^1×R^x</span></code>. But, one is <code class="docutils literal"><span class="pre">C^x</span></code> and atlas can
 distinguish the two.</p>
-<p>The root systems also transform accordingly:</p>
+<p>The root systems of these intermediate Cartans also transform accordingly. For the Compact Cartan we have an imaginary root system of type <code class="docutils literal"><span class="pre">C2</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G1=Sp(4,R)
 Identifier G1: RealForm
 atlas&gt; G1
@@ -1076,7 +1089,28 @@ Value: 4
 atlas&gt; set cartans =Cartan_classes (G1)
 Identifier cartans: [CartanClass] (hiding previous one of type [CartanClass])
 atlas&gt;
-atlas&gt; cartans[1]
+atlas&gt; print_Cartan_info (cartans[0])
+compact: 2, complex: 0, split: 0
+canonical twisted involution: e
+twisted involution orbit size: 1; fiber size: 4; strong inv: 4
+imaginary root system: C2
+real root system: empty
+complex factor: empty
+</pre></div>
+</div>
+<p>Now for the most split Cartan, the last one, all of the roots are real:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; print_Cartan_info (cartans[3])
+compact: 0, complex: 0, split: 2
+canonical twisted involution: 2,1,2,1
+twisted involution orbit size: 1; fiber size: 1; strong inv: 1
+imaginary root system: empty
+real root system: C2
+complex factor: empty
+atlas&gt;
+</pre></div>
+</div>
+<p>For the complex intermidiate Cartan, we have an imaginary root system and a real root system, both of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; cartans[1]
 Value: Cartan class #1, occurring for 2 real forms and for 1 dual real form
 atlas&gt; print_Cartan_info (cartans[1])
 compact: 0, complex: 1, split: 0
@@ -1086,7 +1120,10 @@ imaginary root system: A1
 real root system: A1
 complex factor: empty
 atlas&gt;
-atlas&gt; cartans[2]
+</pre></div>
+</div>
+<p>Lastly, the other intermidiate Cartan has also an imaginary and a real root system of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; cartans[2]
 Value: Cartan class #2, occurring for 1 real form and for 2 dual real forms
 atlas&gt; print_Cartan_info (cartans[2])
 compact: 1, complex: 0, split: 1
@@ -1098,6 +1135,7 @@ complex factor: empty
 atlas&gt;
 </pre></div>
 </div>
+<p>So the distinction between these last two is burried in the extra information. More about this later.</p>
 </div>
 
 
