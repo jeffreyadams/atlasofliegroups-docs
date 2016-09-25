@@ -164,7 +164,11 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Real Forms of a Complex Group</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a></li>
@@ -985,7 +989,8 @@
             
   <div class="section" id="real-forms-of-a-complex-group">
 <h1>Real Forms of a Complex Group<a class="headerlink" href="#real-forms-of-a-complex-group" title="Permalink to this headline">¶</a></h1>
-<p>We can also find out what are all the real forms of a Lie group. By this we mean the real forms of the complex Lie group of a given Lie type:</p>
+<p>We can also find out what are all the real forms of a Lie group.</p>
+<p>{COMMENT: I THINK AN EXPLANATION IS NEEDED FOR A WIDER AUDIENCE AS TO WHY WE TALK ABOUT REAL FORMS OF A NON-COMPLEX GROUP AND WHY THE REAL FORMS OF Sp(4,C) ARE DIFFERENT. I THINK THIS WAS NOT COVERED LATER IN THE VIDEOS}:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=Sp(4,R)
 Identifier G: RealForm
 atlas&gt; set rf=real_forms(G)
@@ -1001,26 +1006,39 @@ Value: [(),(),()]
 atlas&gt;
 </pre></div>
 </div>
-<p>So for <code class="docutils literal"><span class="pre">G=Sp(4,R)</span></code>, there are three real Lie algebras which are real forms of <code class="docutils literal"><span class="pre">sp(2,C)</span></code>, which is the complexified Lie algebra of type <code class="docutils literal"><span class="pre">C2</span></code>: the compact Lie algebra <code class="docutils literal"><span class="pre">sp(2)</span></code>; a real Lie algebra <code class="docutils literal"><span class="pre">sp(1,1)</span></code> and a split real Lie algebra <code class="docutils literal"><span class="pre">sp(4,R)</span></code>. For each one of these Lie algebras there is a real Lie group which is a real form of <code class="docutils literal"><span class="pre">Sp(4,C)</span></code>, the complex Lie group of type <code class="docutils literal"><span class="pre">C2</span></code>.</p>
-<p>Now something interesting about real forms and Cartan classes is that The Cartan classes are the same across all real forms of the same complex group. In fact even though within the compact Cartan there is only one conjugacy class of Cartans (within the compact group). We will have the same Cartan classes for G=Sp(2) than for G=Sp(4,R):</p>
+<p>Note the <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code> that uses the command <code class="docutils literal"><span class="pre">prints</span></code> discussed
+earlier in the section of basic <code class="docutils literal"><span class="pre">atlas</span></code> commands. It tells the software to go through the string of real forms of <code class="docutils literal"><span class="pre">G</span></code> and print the list.</p>
+<p>So, for <code class="docutils literal"><span class="pre">G=Sp(4,R)</span></code>, we have a list of three real forms: the compact
+real form <code class="docutils literal"><span class="pre">Sp(2)=Sp(2,0)</span></code>, an intermediate real form <code class="docutils literal"><span class="pre">Sp(1,1)</span></code> and
+the split real form <code class="docutils literal"><span class="pre">Sp(4,R)</span></code>. One corresponding to each Lie algebra
+above.</p>
+<div class="section" id="cartan-classes-accross-real-forms">
+<h2>Cartan Classes Accross Real Forms<a class="headerlink" href="#cartan-classes-accross-real-forms" title="Permalink to this headline">¶</a></h2>
+<p>Now something interesting about real forms and Cartan classes is that
+The Cartan classes are the same across all real forms of the same
+complex group. In fact even though within the compact Cartan there is
+only one conjugacy class of Cartans (within the compact group). We
+will have the same Cartan classes for <code class="docutils literal"><span class="pre">G=Sp(2)</span></code> than for <code class="docutils literal"><span class="pre">G=Sp(4,R)</span></code>.:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; rf[0]
 Value: compact connected real group with Lie algebra &#39;sp(2)&#39;
 atlas&gt; nr_of_Cartan_classes (rf[0])
 Value: 4
-atlas&gt;
-set G0=rf[0]
-Identifier G0: RealForm
-atlas&gt; G0
+atlas&gt;set Gc=rf[0]
+Identifier Gc: RealForm
+atlas&gt; Gc
 Value: compact connected real group with Lie algebra &#39;sp(2)&#39;
-atlas&gt; Cartan_classes (G0)[0]
+atlas&gt; Cartan_classes (Gc)[0]
 Value: Cartan class #0, occurring for 3 real forms and for 1 dual real form
-atlas&gt; Cartan_classes (G0)[1]
+atlas&gt; Cartan_classes (Gc)[1]
 Value: Cartan class #1, occurring for 2 real forms and for 1 dual real form
-atlas&gt; Cartan_classes (G0)[3]
+atlas&gt; Cartan_classes (Gc)[3]
 Value: Cartan class #3, occurring for 1 real form and for 3 dual real forms
 atlas&gt;
 </pre></div>
 </div>
+</div>
+<div class="section" id="inner-classes-and-outer-involutions">
+<h2>Inner Classes and Outer Involutions<a class="headerlink" href="#inner-classes-and-outer-involutions" title="Permalink to this headline">¶</a></h2>
 <p>Now let&#8217;s look at the real forms of G=SL(5,R). It turns out there is only one: G itself:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(5,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
@@ -1034,7 +1052,7 @@ Value: connected split real group with Lie algebra &#39;sl(5,R)&#39;
 atlas&gt;
 </pre></div>
 </div>
-<p>Note that the complexified Lie algebra of <code class="docutils literal"><span class="pre">G</span></code>, <code class="docutils literal"><span class="pre">g_{C}=sl(5,C)</span></code>. Has other real forms. However, associated to <code class="docutils literal"><span class="pre">G</span></code>, there is only one. This is because atlas thinks always in terms of inner classes. That is a real form is a real form in a given inner class. And there is a distinquished involution in <code class="docutils literal"><span class="pre">G</span></code> which is non trivial and which atlas uses to determine the inner class of the group <code class="docutils literal"><span class="pre">G</span></code>, and there is only one real form in this inner class.:</p>
+<p>Note that the complexified Lie algebra of <code class="docutils literal"><span class="pre">G</span></code>, <code class="docutils literal"><span class="pre">sl(5,C)</span></code>. Has other real forms. However, associated to <code class="docutils literal"><span class="pre">G</span></code>, there is only one. This is because atlas thinks always in terms of inner classes. That is a real form is a real form in a given inner class. And there is a distinquished involution in <code class="docutils literal"><span class="pre">G</span></code> which is non trivial and which atlas uses to determine the inner class of the group <code class="docutils literal"><span class="pre">G</span></code>, and there is only one real form in this inner class.:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; distinguished_involution(G)
 Value:
 | 1, 0, 0, 0 |
@@ -1044,8 +1062,8 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>Let&#8217;s look at another real form of <code class="docutils literal"><span class="pre">g_{C}</span></code>, namely <code class="docutils literal"><span class="pre">su(3,2)</span></code>. THis gives us another inner class. it turns out this inner class has the rest of the real forms of <code class="docutils literal"><span class="pre">g_{C}</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; H
+<p>Let&#8217;s look at another real form of type <code class="docutils literal"><span class="pre">A4</span></code>, namely <code class="docutils literal"><span class="pre">su(3,2)</span></code>. THis gives us another inner class. it turns out this inner class has the rest of the real forms of <code class="docutils literal"><span class="pre">sl(5,C)</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; H:=SU(3,2)
 Value: connected quasisplit real group with Lie algebra &#39;su(3,2)&#39;
 atlas&gt; set rfH=real_forms (H)
 Identifier rfH: [RealForm]
@@ -1069,8 +1087,13 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>Inner classes are associated with outer involutions. That is a diagram automorphism. So, for <code class="docutils literal"><span class="pre">G=SU(p,q)</span></code> the inner forms are associated with the trivial automorphism of the Dynkin diagram of <code class="docutils literal"><span class="pre">A_{p+q-1}</span></code>; and for <code class="docutils literal"><span class="pre">G=SL(p+q,R)</span></code>, with the non trivial diagram automorphism.</p>
-<p>So what will happen for G=SL(6,R)? We can see in the following example that there is another real form in the same inner class as SL(6,C). This will be true whenever p+q=2n, namely SL(n,H):</p>
+<p>Inner classes are associated with outer involutions. That is a diagram
+automorphism. So, for <code class="docutils literal"><span class="pre">SU(p,q)</span></code> the inner forms are associated
+with the trivial automorphism of the Dynkin diagram of <code class="docutils literal"><span class="pre">A{p+q-1}</span></code>;
+and for <code class="docutils literal"><span class="pre">SL(p+q,R)</span></code>, with the non trivial diagram automorphism.</p>
+<p>So what will happen for G=SL(6,R)? We can see in the following example
+that there is another real form in the same inner class as
+SL(6,C). This will be true whenever p+q=2n, namely SL(n,H):</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(6,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rf=real_forms (G)
@@ -1085,6 +1108,7 @@ Value: [(),()]
 atlas&gt;
 </pre></div>
 </div>
+<p>More generally, for <code class="docutils literal"><span class="pre">Sl(2n,R)</span></code> has another real form in this inner class, the group SL(n,H).</p>
 <p>In fact the distinguished involution is the one attached to the non trivial diagram automorphism. And in this case it flips all the roots except the central root:</p>
 <div class="highlight-python"><div class="highlight"><pre>atlas&gt; set delta=distinguished_involution (G)
 Identifier delta: mat
@@ -1113,7 +1137,9 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>In other words, delta exchanges <code class="docutils literal"><span class="pre">alpha[0]</span></code> and <code class="docutils literal"><span class="pre">alpha[4]</span></code>; <code class="docutils literal"><span class="pre">alpha[1]</span></code> and <code class="docutils literal"><span class="pre">alpha[3]</span></code> and fixes <code class="docutils literal"><span class="pre">alpha[2]</span></code>.</p>
+<p>In other words, <code class="docutils literal"><span class="pre">delta</span></code> is the outer automorphism that exchanges <code class="docutils literal"><span class="pre">alpha[0]</span></code> and <code class="docutils literal"><span class="pre">alpha[4]</span></code>; <code class="docutils literal"><span class="pre">alpha[1]</span></code> and <code class="docutils literal"><span class="pre">alpha[3]</span></code> and fixes <code class="docutils literal"><span class="pre">alpha[2]</span></code>.</p>
+<p>This gives another way of thinking about coordinates. That is trying to understand the automorphism <code class="docutils literal"><span class="pre">delta</span></code> by looking at what it does to the simple roots.</p>
+</div>
 </div>
 
 

@@ -1,8 +1,9 @@
 Real Forms of a Complex Group
 ==============================
 
+We can also find out what are all the real forms of a Lie group. 
 
-We can also find out what are all the real forms of a Lie group. By this we mean the real forms of the complex Lie group of a given Lie type::
+{COMMENT: I THINK AN EXPLANATION IS NEEDED FOR A WIDER AUDIENCE AS TO WHY WE TALK ABOUT REAL FORMS OF A NON-COMPLEX GROUP AND WHY THE REAL FORMS OF Sp(4,C) ARE DIFFERENT. I THINK THIS WAS NOT COVERED LATER IN THE VIDEOS}::
 
     atlas> set G=Sp(4,R)
     Identifier G: RealForm
@@ -18,27 +19,43 @@ We can also find out what are all the real forms of a Lie group. By this we mean
     Value: [(),(),()]
     atlas>
 
-So for ``G=Sp(4,R)``, there are three real Lie algebras which are real forms of ``sp(2,C)``, which is the complexified Lie algebra of type ``C2``: the compact Lie algebra ``sp(2)``; a real Lie algebra ``sp(1,1)`` and a split real Lie algebra ``sp(4,R)``. For each one of these Lie algebras there is a real Lie group which is a real form of ``Sp(4,C)``, the complex Lie group of type ``C2``.
+Note the ``for loop`` that uses the command ``prints`` discussed
+earlier in the section of basic ``atlas`` commands. It tells the software to go through the string of real forms of ``G`` and print the list.
 
-Now something interesting about real forms and Cartan classes is that The Cartan classes are the same across all real forms of the same complex group. In fact even though within the compact Cartan there is only one conjugacy class of Cartans (within the compact group). We will have the same Cartan classes for G=Sp(2) than for G=Sp(4,R)::
+So, for ``G=Sp(4,R)``, we have a list of three real forms: the compact
+real form ``Sp(2)=Sp(2,0)``, an intermediate real form ``Sp(1,1)`` and
+the split real form ``Sp(4,R)``. One corresponding to each Lie algebra
+above.
+
+
+Cartan Classes Accross Real Forms
+----------------------------------
+
+Now something interesting about real forms and Cartan classes is that
+The Cartan classes are the same across all real forms of the same
+complex group. In fact even though within the compact Cartan there is
+only one conjugacy class of Cartans (within the compact group). We
+will have the same Cartan classes for ``G=Sp(2)`` than for ``G=Sp(4,R)``.::
 
 
     atlas> rf[0]
     Value: compact connected real group with Lie algebra 'sp(2)'
     atlas> nr_of_Cartan_classes (rf[0])
     Value: 4
-    atlas>
-    set G0=rf[0]
-    Identifier G0: RealForm
-    atlas> G0
+    atlas>set Gc=rf[0]
+    Identifier Gc: RealForm
+    atlas> Gc
     Value: compact connected real group with Lie algebra 'sp(2)'
-    atlas> Cartan_classes (G0)[0]
+    atlas> Cartan_classes (Gc)[0]
     Value: Cartan class #0, occurring for 3 real forms and for 1 dual real form
-    atlas> Cartan_classes (G0)[1]
+    atlas> Cartan_classes (Gc)[1]
     Value: Cartan class #1, occurring for 2 real forms and for 1 dual real form
-    atlas> Cartan_classes (G0)[3]
+    atlas> Cartan_classes (Gc)[3]
     Value: Cartan class #3, occurring for 1 real form and for 3 dual real forms
     atlas>
+
+Inner Classes and Outer Involutions
+------------------------------------
 
 Now let's look at the real forms of G=SL(5,R). It turns out there is only one: G itself::
 
@@ -53,7 +70,7 @@ Now let's look at the real forms of G=SL(5,R). It turns out there is only one: G
     Value: connected split real group with Lie algebra 'sl(5,R)'
     atlas>
 
-Note that the complexified Lie algebra of ``G``, ``g_{C}=sl(5,C)``. Has other real forms. However, associated to ``G``, there is only one. This is because atlas thinks always in terms of inner classes. That is a real form is a real form in a given inner class. And there is a distinquished involution in ``G`` which is non trivial and which atlas uses to determine the inner class of the group ``G``, and there is only one real form in this inner class.::
+Note that the complexified Lie algebra of ``G``, ``sl(5,C)``. Has other real forms. However, associated to ``G``, there is only one. This is because atlas thinks always in terms of inner classes. That is a real form is a real form in a given inner class. And there is a distinquished involution in ``G`` which is non trivial and which atlas uses to determine the inner class of the group ``G``, and there is only one real form in this inner class.::
 
     atlas> distinguished_involution(G)
     Value:
@@ -63,9 +80,9 @@ Note that the complexified Lie algebra of ``G``, ``g_{C}=sl(5,C)``. Has other re
     | 1, -1, 0, 0 |
     atlas>
 
-Let's look at another real form of ``g_{C}``, namely ``su(3,2)``. THis gives us another inner class. it turns out this inner class has the rest of the real forms of ``g_{C}``::
+Let's look at another real form of type ``A4``, namely ``su(3,2)``. THis gives us another inner class. it turns out this inner class has the rest of the real forms of ``sl(5,C)``::
 
-    atlas> H
+    atlas> H:=SU(3,2)
     Value: connected quasisplit real group with Lie algebra 'su(3,2)'
     atlas> set rfH=real_forms (H)
     Identifier rfH: [RealForm]
@@ -88,9 +105,14 @@ So, these three real groups are grouped together because they are all in the sam
     | 0, 0, 0, 1 |
     atlas>
 
-Inner classes are associated with outer involutions. That is a diagram automorphism. So, for ``G=SU(p,q)`` the inner forms are associated with the trivial automorphism of the Dynkin diagram of ``A_{p+q-1}``; and for ``G=SL(p+q,R)``, with the non trivial diagram automorphism.
+Inner classes are associated with outer involutions. That is a diagram
+automorphism. So, for ``SU(p,q)`` the inner forms are associated
+with the trivial automorphism of the Dynkin diagram of ``A{p+q-1}``;
+and for ``SL(p+q,R)``, with the non trivial diagram automorphism.
 
-So what will happen for G=SL(6,R)? We can see in the following example that there is another real form in the same inner class as SL(6,C). This will be true whenever p+q=2n, namely SL(n,H)::
+So what will happen for G=SL(6,R)? We can see in the following example
+that there is another real form in the same inner class as
+SL(6,C). This will be true whenever p+q=2n, namely SL(n,H)::
 
     atlas> set G=SL(6,R)
     Identifier G: RealForm (hiding previous one of type RealForm)
@@ -104,6 +126,8 @@ So what will happen for G=SL(6,R)? We can see in the following example that ther
     connected split real group with Lie algebra 'sl(6,R)'
     Value: [(),()]
     atlas>
+
+More generally, for ``Sl(2n,R)`` has another real form in this inner class, the group SL(n,H).
 
 In fact the distinguished involution is the one attached to the non trivial diagram automorphism. And in this case it flips all the roots except the central root::
 
@@ -133,5 +157,8 @@ In fact the distinguished involution is the one attached to the non trivial diag
     | 2, -1, 0, 0, 0 |
     atlas>
 
-In other words, delta exchanges ``alpha[0]`` and ``alpha[4]``; ``alpha[1]`` and ``alpha[3]`` and fixes ``alpha[2]``.
+In other words, ``delta`` is the outer automorphism that exchanges ``alpha[0]`` and ``alpha[4]``; ``alpha[1]`` and ``alpha[3]`` and fixes ``alpha[2]``.
+
+This gives another way of thinking about coordinates. That is trying to understand the automorphism ``delta`` by looking at what it does to the simple roots.
+
 
