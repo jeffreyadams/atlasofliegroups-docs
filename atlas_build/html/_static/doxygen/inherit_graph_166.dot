@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="atlas::size::PrimesMax\l\< 64 \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1size_1_1PrimesMax_3_0164_01_4.html",tooltip="Position on the list of primes of the largest possible prime factor of a Weyl group of rank at most 6..."];
+}

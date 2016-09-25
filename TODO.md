@@ -1,6 +1,10 @@
 # Todo List
 
 ## Short term
-* Add video links.
-* Add information about what the software does
-* Transfer example page from http://www.liegroups.org/software/examples/
+* put command completion examples in atlas library.
+* Fix video links. Link to YouTube video timeline.
+
+
+## Medium term
+
+* write script (Python?) to generate .rst files from .at scripts.

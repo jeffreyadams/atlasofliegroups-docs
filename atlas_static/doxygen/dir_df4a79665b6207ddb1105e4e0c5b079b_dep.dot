@@ -1,0 +1,9 @@
+digraph "/home/ran/atlas_project/latest_branch_07182016/sources/error" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_9423311babe90635fab29e5efa88abf4 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="sources" fontname="Helvetica", fontsize="10", URL="dir_9423311babe90635fab29e5efa88abf4.html"]
+  dir_df4a79665b6207ddb1105e4e0c5b079b [shape=box, label="error", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_df4a79665b6207ddb1105e4e0c5b079b.html"];
+  }
+}

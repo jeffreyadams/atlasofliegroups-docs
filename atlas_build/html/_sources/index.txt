@@ -6,76 +6,34 @@
 Welcome to atlas' Documentation Page!
 =====================================
 
-.. note:: This site is under construction, we are adding new content every day! For information that you cannot find here, please go to `liegroups.org <liegroups.org>`_.
+.. raw:: html
 
-The `Atlas of Lie Groups and Representations`_ is a project to make available information about representations of reductive Lie groups over real and p-adic fields. Of particular importance is the problem of the unitary dual: classifying all of the irreducible `unitary representations`_ of a given Lie group.
+        <div align="right">
+            <h3>Back home to <a href="http://liegroups.org/">liegroups.org</a> </h3>
+        </div>
+        
 
-The Atlas consists in part of a project to compute the unitary dual, by mathematical and computational methods. We are also planning to make information about Lie groups and representation theory, in particular unitary representations, available to the general mathematical public.
+The `Atlas of Lie Groups and Representations`_ is a project to make available information about representations of reductive Lie groups over real and p-adic fields. Of particular importance is the problem of the unitary dual: classifying all of the irreducible `unitary representations`_ of a given reductive Lie group.
 
+The Atlas consists in part of a project to determine the unitary dual, by mathematical and computational methods. The open-source software developed for this project now provides information about the structure and representation theory of general real reductive Lie groups. It is designed to be a tool for learning the subject, for testing conjectures, for constructing examples; that is, for doing mathematics.
+
+.. We are also planning to make information about Lie groups and representation theory, in particular unitary representations, available to the general mathematical public.
+
+.. _atlas' website: http://liegroups.org/
 .. _Atlas of Lie Groups and Representations: http://liegroups.org/
 .. _unitary representations: https://en.wikipedia.org/wiki/Unitary_representation
 
-The main documentation is organized by these sections:
 
-* :ref:`general_info`
-* :ref:`getting_started`
-* :ref:`tutorial_with_examples`
-* :ref:`library`
-* :ref:`resources`
-* :ref:`trouble_shooting`
-
-.. _general_info:
 
 .. toctree::
    :maxdepth: 2
-   :caption: General Information
+   :caption: Table of Contents
    
-   about_us
-   about_atlas
-
-
-.. _getting_started:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Getting Started
-   
-   download_and_install
-   run_atlas
-   help_git
-   
-   
-.. _tutorial_with_examples:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Tutorial
-   
-   basics
-   data_type
-   
-   
-.. _library:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: atlas Function Library
-   
-   
-.. _resources:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Online Resources
-   
+   gen_info
+   getting_started
+   tutorial_with_examples
+   atlas_lib
+   source_library
    videos
-   training
-   
+   trouble_shooting
 
-.. _trouble_shooting:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Trouble Shooting
-   
-   ts-install

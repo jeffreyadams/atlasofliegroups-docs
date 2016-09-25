@@ -1,0 +1,11 @@
+digraph "/home/ran/atlas_project/latest_branch_07182016" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6c3c7928da1cdc197ab3853ddad7be41 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6c3c7928da1cdc197ab3853ddad7be41.html"];
+    dir_6c3c7928da1cdc197ab3853ddad7be41 [shape=plaintext label="latest_branch_07182016"];
+    dir_2386468dca0b76e436654c1f637e340b [shape=box label="cwebx" color="black" fillcolor="white" style="filled" URL="dir_2386468dca0b76e436654c1f637e340b.html"];
+    dir_9423311babe90635fab29e5efa88abf4 [shape=box label="sources" color="red" fillcolor="white" style="filled" URL="dir_9423311babe90635fab29e5efa88abf4.html"];
+  }
+}

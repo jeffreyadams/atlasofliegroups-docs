@@ -1,0 +1,17 @@
+digraph "atlas::matrix::Matrix_base&lt; C &gt;"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="atlas::matrix::Matrix\l_base\< C \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="atlas::matrix::Matrix\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1Matrix.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="atlas::matrix::PID\l_Matrix\< C \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1PID__Matrix.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PID_Matrix\< int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1PID__Matrix.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PID_Matrix\< LatticeCoeff \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1PID__Matrix.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PID_Matrix\< unsigned\l long \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1matrix_1_1PID__Matrix.html"];
+}
