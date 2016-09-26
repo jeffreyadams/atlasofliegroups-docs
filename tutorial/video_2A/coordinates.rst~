@@ -3,7 +3,7 @@ Change of Coordinates
 
 For this and following sessions you want to download the files ``basic.at``, ``groups.at`` and ``lietypes.at``.
 
-To change ``atlas`` coordinates for roots and other weights to your
+To change atlas' coordinates for roots and other weights to your
 prefered coordinate system you can also download the file ``coordinates.at`` (included in the all.at file) and do the following::
 
 
@@ -51,8 +51,8 @@ prefered coordinate system you can also download the file ``coordinates.at`` (in
      
      atlas> 
 
-So, ``C`` is the change of basis matrix and you can change, in the usual way, any vector like ``rho``
-written in the original basis, into one expressed in terms of the new basis using the matrix ``C``.
+So, ``C`` is the change of basis matrix and you can change any vector
+written in the original basis like ``rho``into one expressed in terms of the basis you want in the ususal way using the matrix ``C``.
 
 Now, for this example this was not so necessary since we can use the real form expression of the group::
 
@@ -62,10 +62,7 @@ Now, for this example this was not so necessary since we can use the real form e
     | -1, 2 | 
     atlas> 
 
-However, the change of basis matrix is needed for example for
-``SL(3,R)``. Moreover, in this case we do not get integral matrices. So
-we need a more general command::
-
+However, this matrix is needed for example for G=SL(3,R). However, in this case we do not get integral matrices. So we need a more general command::
 	 atlas> set G=SL(3,R) 
 	 Identifier G: RealForm (hiding previous one of type RealForm)
 	 atlas> sr:=simple_roots (G) 
@@ -84,8 +81,7 @@ we need a more general command::
 	 atlas> C 
 	 Value: 
 	 [[ 2, -1, -1 ]/3,[ -1, 2, -1 ]/3] 
-	
-	atlas> C*sr 
+	 atlas> C*sr 
 	 Value: 
 	 [[ 1, -1, 0 ]/1,[ 0, 1, -1 ]/1] 
 	 atlas> make_integral(C*sr)
