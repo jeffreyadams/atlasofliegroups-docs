@@ -4,7 +4,7 @@ synthetic_aux.at Function References
 =======================================================
 |
 
-.. _my_posroot_cross_(int,Param->Param):
+.. _my_posroot_cross_(int,Param->Param)1:
 
 my_posroot_cross
 -------------------------------------------------
@@ -12,7 +12,7 @@ my_posroot_cross
 | 
 
 
-.. _simpleroot_cross_(int,KGBElt->KGBElt):
+.. _simpleroot_cross_(int,KGBElt->KGBElt)1:
 
 simpleroot_cross
 -------------------------------------------------
@@ -20,7 +20,7 @@ simpleroot_cross
 | 
 
 
-.. _Wword_cross_((RootDatum,[int]),KGBElt->KGBElt):
+.. _Wword_cross_((RootDatum,[int]),KGBElt->KGBElt)1:
 
 Wword_cross
 -------------------------------------------------
@@ -28,7 +28,7 @@ Wword_cross
 | 
 
 
-.. _my_posroot_Cayley_(int,Param->Param):
+.. _my_posroot_Cayley_(int,Param->Param)1:
 
 my_posroot_Cayley
 -------------------------------------------------
@@ -36,7 +36,7 @@ my_posroot_Cayley
 | 
 
 
-.. _my_posroot_inv_Cayley_(int,Param->Param):
+.. _my_posroot_inv_Cayley_(int,Param->Param)1:
 
 my_posroot_inv_Cayley
 -------------------------------------------------
@@ -44,7 +44,7 @@ my_posroot_inv_Cayley
 | 
 
 
-.. _my_new_block_line_([Param],int->string):
+.. _my_new_block_line_([Param],int->string)1:
 
 my_new_block_line
 -------------------------------------------------
@@ -52,7 +52,7 @@ my_new_block_line
 | 
 
 
-.. _test_cayleys_(Param->):
+.. _test_cayleys_(Param->)1:
 
 test_cayleys
 -------------------------------------------------
@@ -60,7 +60,7 @@ test_cayleys
 | 
 
 
-.. _test_cayleys_2_(Param->):
+.. _test_cayleys_2_(Param->)1:
 
 test_cayleys_2
 -------------------------------------------------

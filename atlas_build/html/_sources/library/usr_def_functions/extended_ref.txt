@@ -4,7 +4,7 @@ extended.at Function References
 =======================================================
 |
 
-.. _assert_(bool,(->string)->):
+.. _assert_(bool,(->string)->)1:
 
 assert
 -------------------------------------------------
@@ -12,7 +12,7 @@ assert
 | 
 
 
-.. _E_(mat,KGBElt,ratvec,ratvec,ratvec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec):
+.. _E_(mat,KGBElt,ratvec,ratvec,ratvec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
 
 E
 -------------------------------------------------
@@ -20,7 +20,7 @@ E
 | 
 
 
-.. _E_(mat,ratvec,KGBElt,ratvec,(InnerClass,mat,ratvec)->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec):
+.. _E_(mat,ratvec,KGBElt,ratvec,(InnerClass,mat,ratvec)->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
 
 E
 -------------------------------------------------
@@ -28,7 +28,7 @@ E
 | 
 
 
-.. _E_(mat,Param,ratvec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec):
+.. _E_(mat,Param,ratvec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
 
 E
 -------------------------------------------------
@@ -36,7 +36,7 @@ E
 | 
 
 
-.. _E_(mat,Param->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec):
+.. _E_(mat,Param->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
 
 E
 -------------------------------------------------
@@ -44,7 +44,7 @@ E
 | 
 
 
-.. _E_(mat->(Param->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)):
+.. _E_(mat->(Param->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))1:
 
 E
 -------------------------------------------------
@@ -52,7 +52,7 @@ E
 | 
 
 
-.. _torus_factor_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec):
+.. _torus_factor_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec)1:
 
 torus_factor
 -------------------------------------------------
@@ -60,7 +60,7 @@ torus_factor
 | 
 
 
-.. _dual_torus_factor_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec):
+.. _dual_torus_factor_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec)1:
 
 dual_torus_factor
 -------------------------------------------------
@@ -68,7 +68,7 @@ dual_torus_factor
 | 
 
 
-.. _nu_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec):
+.. _nu_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec)1:
 
 nu
 -------------------------------------------------
@@ -76,7 +76,7 @@ nu
 | 
 
 
-.. _length_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->int):
+.. _length_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->int)1:
 
 length
 -------------------------------------------------
@@ -84,7 +84,7 @@ length
 | 
 
 
-.. _sign_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _sign_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 sign
 -------------------------------------------------
@@ -92,7 +92,7 @@ sign
 | 
 
 
-.. _sign_verbose_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _sign_verbose_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 sign_verbose
 -------------------------------------------------
@@ -100,7 +100,7 @@ sign_verbose
 | 
 
 
-.. _dual_sign_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _dual_sign_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 dual_sign
 -------------------------------------------------
@@ -108,7 +108,7 @@ dual_sign
 | 
 
 
-.. _sign_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))->int):
+.. _sign_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))->int)1:
 
 sign
 -------------------------------------------------
@@ -116,7 +116,7 @@ sign
 | 
 
 
-.. _sign_(((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _sign_(((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 sign
 -------------------------------------------------
@@ -124,7 +124,7 @@ sign
 | 
 
 
-.. _default_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec):
+.. _default_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
 
 default
 -------------------------------------------------
@@ -132,7 +132,7 @@ default
 | 
 
 
-.. _sign_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->int):
+.. _sign_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->int)1:
 
 sign
 -------------------------------------------------
@@ -140,7 +140,7 @@ sign
 | 
 
 
-.. _dual_sign_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->int):
+.. _dual_sign_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->int)1:
 
 dual_sign
 -------------------------------------------------
@@ -148,7 +148,7 @@ dual_sign
 | 
 
 
-.. _\=_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->bool):
+.. _\=_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->bool)1:
 
 \=
 -------------------------------------------------
@@ -156,7 +156,7 @@ dual_sign
 | 
 
 
-.. _is_default_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->bool):
+.. _is_default_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->bool)1:
 
 is_default
 -------------------------------------------------
@@ -164,7 +164,7 @@ is_default
 | 
 
 
-.. _z_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->rat):
+.. _z_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->rat)1:
 
 z
 -------------------------------------------------
@@ -172,7 +172,7 @@ z
 | 
 
 
-.. _z_quot_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _z_quot_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 z_quot
 -------------------------------------------------
@@ -180,7 +180,7 @@ z_quot
 | 
 
 
-.. _ext_print_block_(mat,[Param]->):
+.. _ext_print_block_(mat,[Param]->)1:
 
 ext_print_block
 -------------------------------------------------
@@ -188,7 +188,7 @@ ext_print_block
 | 
 
 
-.. _ext_print_block_(mat,Param->):
+.. _ext_print_block_(mat,Param->)1:
 
 ext_print_block
 -------------------------------------------------
@@ -196,7 +196,7 @@ ext_print_block
 | 
 
 
-.. _ext_print_block_(Param->):
+.. _ext_print_block_(Param->)1:
 
 ext_print_block
 -------------------------------------------------
@@ -204,7 +204,7 @@ ext_print_block
 | 
 
 
-.. _print_ext_block_(mat,[Param]->):
+.. _print_ext_block_(mat,[Param]->)1:
 
 print_ext_block
 -------------------------------------------------
@@ -212,7 +212,7 @@ print_ext_block
 | 
 
 
-.. _print_ext_block_(mat,Param->):
+.. _print_ext_block_(mat,Param->)1:
 
 print_ext_block
 -------------------------------------------------
@@ -220,7 +220,7 @@ print_ext_block
 | 
 
 
-.. _print_ext_block_(Param->):
+.. _print_ext_block_(Param->)1:
 
 print_ext_block
 -------------------------------------------------
@@ -228,7 +228,7 @@ print_ext_block
 | 
 
 
-.. _ext_block_of_(mat,Param,ratvec->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]):
+.. _ext_block_of_(mat,Param,ratvec->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1:
 
 ext_block_of
 -------------------------------------------------
@@ -236,7 +236,7 @@ ext_block_of
 | 
 
 
-.. _ext_block_of_(mat,Param->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]):
+.. _ext_block_of_(mat,Param->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1:
 
 ext_block_of
 -------------------------------------------------
@@ -244,7 +244,7 @@ ext_block_of
 | 
 
 
-.. _ext_block_of_(Param->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]):
+.. _ext_block_of_(Param->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1:
 
 ext_block_of
 -------------------------------------------------
@@ -252,7 +252,7 @@ ext_block_of
 | 
 
 
-.. _ext_block_(mat,Param,ratvec->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],int):
+.. _ext_block_(mat,Param,ratvec->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],int)1:
 
 ext_block
 -------------------------------------------------
@@ -260,7 +260,7 @@ ext_block
 | 
 
 
-.. _ext_block_(mat,Param->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],int):
+.. _ext_block_(mat,Param->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],int)1:
 
 ext_block
 -------------------------------------------------
@@ -268,7 +268,7 @@ ext_block
 | 
 
 
-.. _ext_block_(Param->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],int):
+.. _ext_block_(Param->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],int)1:
 
 ext_block
 -------------------------------------------------
@@ -276,7 +276,7 @@ ext_block
 | 
 
 
-.. _sign_find_([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int,int):
+.. _sign_find_([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int,int)1:
 
 sign_find
 -------------------------------------------------
@@ -284,7 +284,7 @@ sign_find
 | 
 
 
-.. _sign_find_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]->int,int):
+.. _sign_find_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]->int,int)1:
 
 sign_find
 -------------------------------------------------
@@ -292,7 +292,7 @@ sign_find
 | 
 
 
-.. _find_([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _find_([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 find
 -------------------------------------------------
@@ -300,7 +300,7 @@ find
 | 
 
 
-.. _find_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]->int):
+.. _find_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]->int)1:
 
 find
 -------------------------------------------------
@@ -308,7 +308,7 @@ find
 | 
 
 
-.. _ext_basic_(RealForm->mat,[Param],ratvec):
+.. _ext_basic_(RealForm->mat,[Param],ratvec)1:
 
 ext_basic
 -------------------------------------------------
@@ -316,7 +316,7 @@ ext_basic
 | 
 
 
-.. _folded_bracket_(RootDatum,mat,int,int->int):
+.. _folded_bracket_(RootDatum,mat,int,int->int)1:
 
 folded_bracket
 -------------------------------------------------
@@ -324,7 +324,7 @@ folded_bracket
 | 
 
 
-.. _folded_m_(RootDatum,mat,int,int->int):
+.. _folded_m_(RootDatum,mat,int,int->int)1:
 
 folded_m
 -------------------------------------------------
@@ -332,7 +332,7 @@ folded_m
 | 
 
 
-.. _folded_order_(RootDatum,mat,int,int->int):
+.. _folded_order_(RootDatum,mat,int,int->int)1:
 
 folded_order
 -------------------------------------------------

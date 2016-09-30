@@ -4,7 +4,7 @@ thetastable.at Function References
 =======================================================
 |
 
-.. _u_(KGBElt->mat):
+.. _u_(KGBElt->mat)1:
 
 u
 -------------------------------------------------
@@ -12,7 +12,7 @@ u
 | 
 
 
-.. _rho_u_cx_([int],KGBElt->ratvec):
+.. _rho_u_cx_([int],KGBElt->ratvec)1:
 
 rho_u_cx
 -------------------------------------------------
@@ -20,7 +20,7 @@ rho_u_cx
 | 
 
 
-.. _rho_u_cx_T_([int],KGBElt->vec):
+.. _rho_u_cx_T_([int],KGBElt->vec)1:
 
 rho_u_cx_T
 -------------------------------------------------
@@ -28,7 +28,7 @@ rho_u_cx_T
 | 
 
 
-.. _rho_u_ic_([int],KGBElt->ratvec):
+.. _rho_u_ic_([int],KGBElt->ratvec)1:
 
 rho_u_ic
 -------------------------------------------------
@@ -36,7 +36,7 @@ rho_u_ic
 | 
 
 
-.. _two_rho_u_cap_k_([int],KGBElt->vec):
+.. _two_rho_u_cap_k_([int],KGBElt->vec)1:
 
 two_rho_u_cap_k
 -------------------------------------------------
@@ -44,7 +44,7 @@ two_rho_u_cap_k
 | 
 
 
-.. _two_rho_u_cap_s_([int],KGBElt->vec):
+.. _two_rho_u_cap_s_([int],KGBElt->vec)1:
 
 two_rho_u_cap_s
 -------------------------------------------------
@@ -52,7 +52,7 @@ two_rho_u_cap_s
 | 
 
 
-.. _rho_u_cap_k_([int],KGBElt->ratvec):
+.. _rho_u_cap_k_([int],KGBElt->ratvec)1:
 
 rho_u_cap_k
 -------------------------------------------------
@@ -60,7 +60,7 @@ rho_u_cap_k
 | 
 
 
-.. _rho_u_cap_s_([int],KGBElt->ratvec):
+.. _rho_u_cap_s_([int],KGBElt->ratvec)1:
 
 rho_u_cap_s
 -------------------------------------------------
@@ -68,7 +68,7 @@ rho_u_cap_s
 | 
 
 
-.. _dim_u_cap_k_([int],KGBElt->int):
+.. _dim_u_cap_k_([int],KGBElt->int)1:
 
 dim_u_cap_k
 -------------------------------------------------
@@ -76,7 +76,7 @@ dim_u_cap_k
 | 
 
 
-.. _dim_u_cap_k_(KGBElt->int):
+.. _dim_u_cap_k_(KGBElt->int)1:
 
 dim_u_cap_k
 -------------------------------------------------
@@ -84,7 +84,7 @@ dim_u_cap_k
 | 
 
 
-.. _dim_u_cap_p_([int],KGBElt->int):
+.. _dim_u_cap_p_([int],KGBElt->int)1:
 
 dim_u_cap_p
 -------------------------------------------------
@@ -92,7 +92,7 @@ dim_u_cap_p
 | 
 
 
-.. _dim_u_cap_p_(KGBElt->int):
+.. _dim_u_cap_p_(KGBElt->int)1:
 
 dim_u_cap_p
 -------------------------------------------------
@@ -100,7 +100,7 @@ dim_u_cap_p
 | 
 
 
-.. _dim_u_cap_p_(ratvec,KGBElt->int):
+.. _dim_u_cap_p_(ratvec,KGBElt->int)1:
 
 dim_u_cap_p
 -------------------------------------------------
@@ -108,7 +108,7 @@ dim_u_cap_p
 | 
 
 
-.. _dim_u_cap_k_2_(([int],KGBElt),ratvec->int):
+.. _dim_u_cap_k_2_(([int],KGBElt),ratvec->int)1:
 
 dim_u_cap_k_2
 -------------------------------------------------
@@ -116,7 +116,7 @@ dim_u_cap_k_2
 | 
 
 
-.. _dim_u_cap_k_ge2_(([int],KGBElt),ratvec->int):
+.. _dim_u_cap_k_ge2_(([int],KGBElt),ratvec->int)1:
 
 dim_u_cap_k_ge2
 -------------------------------------------------
@@ -124,7 +124,7 @@ dim_u_cap_k_ge2
 | 
 
 
-.. _dim_u_cap_p_ge2_(([int],KGBElt),ratvec->int):
+.. _dim_u_cap_p_ge2_(([int],KGBElt),ratvec->int)1:
 
 dim_u_cap_p_ge2
 -------------------------------------------------
@@ -132,7 +132,7 @@ dim_u_cap_p_ge2
 | 
 
 
-.. _dim_u_cap_k_1_(([int],KGBElt),ratvec->int):
+.. _dim_u_cap_k_1_(([int],KGBElt),ratvec->int)1:
 
 dim_u_cap_k_1
 -------------------------------------------------
@@ -140,7 +140,7 @@ dim_u_cap_k_1
 | 
 
 
-.. _dim_u_cap_p_1_(([int],KGBElt),ratvec->int):
+.. _dim_u_cap_p_1_(([int],KGBElt),ratvec->int)1:
 
 dim_u_cap_p_1
 -------------------------------------------------
@@ -148,7 +148,7 @@ dim_u_cap_p_1
 | 
 
 
-.. _dim_u_(ratvec,KGBElt->int):
+.. _dim_u_(ratvec,KGBElt->int)1:
 
 dim_u
 -------------------------------------------------
@@ -156,7 +156,7 @@ dim_u
 | 
 
 
-.. _make_dominant_(KGBElt,ratvec,ratvec->KGBElt,ratvec,ratvec):
+.. _make_dominant_(KGBElt,ratvec,ratvec->KGBElt,ratvec,ratvec)1:
 
 make_dominant
 -------------------------------------------------
@@ -164,7 +164,7 @@ make_dominant
 | 
 
 
-.. _Aq_param_pol_(KGBElt,ratvec,ratvec->ParamPol):
+.. _Aq_param_pol_(KGBElt,ratvec,ratvec->ParamPol)1:
 
 Aq_param_pol
 -------------------------------------------------
@@ -172,7 +172,7 @@ Aq_param_pol
 | 
 
 
-.. _Aq_(KGBElt,ratvec,ratvec->Param):
+.. _Aq_(KGBElt,ratvec,ratvec->Param)1:
 
 Aq
 -------------------------------------------------
@@ -180,7 +180,7 @@ Aq
 | 
 
 
-.. _Aq_(KGBElt,ratvec->Param):
+.. _Aq_(KGBElt,ratvec->Param)1:
 
 Aq
 -------------------------------------------------
@@ -188,7 +188,7 @@ Aq
 | 
 
 
-.. _Aq_(RealForm,ratvec,ratvec->Param):
+.. _Aq_(RealForm,ratvec,ratvec->Param)1:
 
 Aq
 -------------------------------------------------
@@ -196,7 +196,7 @@ Aq
 | 
 
 
-.. _Aq_(RealForm,ratvec->Param):
+.. _Aq_(RealForm,ratvec->Param)1:
 
 Aq
 -------------------------------------------------
@@ -204,7 +204,7 @@ Aq
 | 
 
 
-.. _is_good_(Param,([int],KGBElt),RealForm->bool):
+.. _is_good_(Param,([int],KGBElt),RealForm->bool)1:
 
 is_good
 -------------------------------------------------
@@ -212,7 +212,7 @@ is_good
 | 
 
 
-.. _is_weakly_good_(Param,([int],KGBElt),RealForm->bool):
+.. _is_weakly_good_(Param,([int],KGBElt),RealForm->bool)1:
 
 is_weakly_good
 -------------------------------------------------
@@ -220,7 +220,7 @@ is_weakly_good
 | 
 
 
-.. _is_fair_(Param,([int],KGBElt),RealForm->bool):
+.. _is_fair_(Param,([int],KGBElt),RealForm->bool)1:
 
 is_fair
 -------------------------------------------------
@@ -228,7 +228,7 @@ is_fair
 | 
 
 
-.. _is_weakly_fair_(Param,([int],KGBElt),RealForm->bool):
+.. _is_weakly_fair_(Param,([int],KGBElt),RealForm->bool)1:
 
 is_weakly_fair
 -------------------------------------------------
@@ -236,7 +236,7 @@ is_weakly_fair
 | 
 
 
-.. _is_good_(KGBElt,ratvec,ratvec->bool):
+.. _is_good_(KGBElt,ratvec,ratvec->bool)1:
 
 is_good
 -------------------------------------------------
@@ -244,7 +244,7 @@ is_good
 | 
 
 
-.. _is_weakly_good_(KGBElt,ratvec,ratvec->bool):
+.. _is_weakly_good_(KGBElt,ratvec,ratvec->bool)1:
 
 is_weakly_good
 -------------------------------------------------
@@ -252,7 +252,7 @@ is_weakly_good
 | 
 
 
-.. _is_fair_(KGBElt,ratvec,ratvec->bool):
+.. _is_fair_(KGBElt,ratvec,ratvec->bool)1:
 
 is_fair
 -------------------------------------------------
@@ -260,7 +260,7 @@ is_fair
 | 
 
 
-.. _is_weakly_fair_(KGBElt,ratvec,ratvec->bool):
+.. _is_weakly_fair_(KGBElt,ratvec,ratvec->bool)1:
 
 is_weakly_fair
 -------------------------------------------------
@@ -268,7 +268,7 @@ is_weakly_fair
 | 
 
 
-.. _goodness_(Param,([int],KGBElt),RealForm->string):
+.. _goodness_(Param,([int],KGBElt),RealForm->string)1:
 
 goodness
 -------------------------------------------------
@@ -276,7 +276,7 @@ goodness
 | 
 
 
-.. _Aq_packet_(RealForm,(RootDatum,[int])->[Param]):
+.. _Aq_packet_(RealForm,(RootDatum,[int])->[Param])1:
 
 Aq_packet
 -------------------------------------------------
@@ -284,7 +284,7 @@ Aq_packet
 | 
 
 
-.. _Aq_packet_(RealForm,[int]->[Param]):
+.. _Aq_packet_(RealForm,[int]->[Param])1:
 
 Aq_packet
 -------------------------------------------------
@@ -292,7 +292,7 @@ Aq_packet
 | 
 
 
-.. _Aq_packet_(RealForm,[*]->[Param]):
+.. _Aq_packet_(RealForm,[*]->[Param])1:
 
 Aq_packet
 -------------------------------------------------
@@ -300,7 +300,7 @@ Aq_packet
 | 
 
 
-.. _is_good_(Param,RealForm->bool):
+.. _is_good_(Param,RealForm->bool)1:
 
 is_good
 -------------------------------------------------
@@ -308,7 +308,7 @@ is_good
 | 
 
 
-.. _is_weakly_good_(Param,RealForm->bool):
+.. _is_weakly_good_(Param,RealForm->bool)1:
 
 is_weakly_good
 -------------------------------------------------
@@ -316,7 +316,7 @@ is_weakly_good
 | 
 
 
-.. _is_fair_(Param,RealForm->bool):
+.. _is_fair_(Param,RealForm->bool)1:
 
 is_fair
 -------------------------------------------------
@@ -324,7 +324,7 @@ is_fair
 | 
 
 
-.. _is_weakly_fair_(Param,RealForm->bool):
+.. _is_weakly_fair_(Param,RealForm->bool)1:
 
 is_weakly_fair
 -------------------------------------------------
@@ -332,7 +332,7 @@ is_weakly_fair
 | 
 
 
-.. _goodness_(Param,RealForm->):
+.. _goodness_(Param,RealForm->)1:
 
 goodness
 -------------------------------------------------
@@ -340,7 +340,7 @@ goodness
 | 
 
 
-.. _goodness_(KGBElt,ratvec,ratvec->):
+.. _goodness_(KGBElt,ratvec,ratvec->)1:
 
 goodness
 -------------------------------------------------

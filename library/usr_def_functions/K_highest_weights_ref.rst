@@ -4,7 +4,7 @@ K_highest_weights.at Function References
 =======================================================
 |
 
-.. _\=_((KGBElt,vec),(KGBElt,vec)->bool):
+.. _\=_((KGBElt,vec),(KGBElt,vec)->bool)1:
 
 \=
 -------------------------------------------------
@@ -12,7 +12,7 @@ K_highest_weights.at Function References
 | 
 
 
-.. _is_split_spherical_(Param->bool):
+.. _is_split_spherical_(Param->bool)1:
 
 is_split_spherical
 -------------------------------------------------
@@ -20,7 +20,7 @@ is_split_spherical
 | 
 
 
-.. _is_split_spherical_(KGBElt,ratvec->bool):
+.. _is_split_spherical_(KGBElt,ratvec->bool)1:
 
 is_split_spherical
 -------------------------------------------------
@@ -28,7 +28,7 @@ is_split_spherical
 | 
 
 
-.. _highest_weight_split_spherical_(KGBElt,ratvec->KGBElt,vec):
+.. _highest_weight_split_spherical_(KGBElt,ratvec->KGBElt,vec)1:
 
 highest_weight_split_spherical
 -------------------------------------------------
@@ -36,7 +36,7 @@ highest_weight_split_spherical
 | 
 
 
-.. _highest_weight_split_spherical_(Param->KGBElt,vec):
+.. _highest_weight_split_spherical_(Param->KGBElt,vec)1:
 
 highest_weight_split_spherical
 -------------------------------------------------
@@ -44,7 +44,7 @@ highest_weight_split_spherical
 | 
 
 
-.. _highest_weight_split_spherical_((KGBElt,ratvec),KGBElt->KGBElt,vec):
+.. _highest_weight_split_spherical_((KGBElt,ratvec),KGBElt->KGBElt,vec)1:
 
 highest_weight_split_spherical
 -------------------------------------------------
@@ -52,7 +52,7 @@ highest_weight_split_spherical
 | 
 
 
-.. _highest_weight_split_spherical_(Param,KGBElt->KGBElt,vec):
+.. _highest_weight_split_spherical_(Param,KGBElt->KGBElt,vec)1:
 
 highest_weight_split_spherical
 -------------------------------------------------
@@ -60,7 +60,7 @@ highest_weight_split_spherical
 | 
 
 
-.. _highest_weight_one_(KGBElt,ratvec->KGBElt,vec):
+.. _highest_weight_one_(KGBElt,ratvec->KGBElt,vec)1:
 
 highest_weight_one
 -------------------------------------------------
@@ -68,7 +68,7 @@ highest_weight_one
 | 
 
 
-.. _highest_weight_one_((KGBElt,ratvec),KGBElt->KGBElt,vec):
+.. _highest_weight_one_((KGBElt,ratvec),KGBElt->KGBElt,vec)1:
 
 highest_weight_one
 -------------------------------------------------
@@ -76,7 +76,7 @@ highest_weight_one
 | 
 
 
-.. _highest_weights_(KGBElt,ratvec->[(KGBElt,vec)]):
+.. _highest_weights_(KGBElt,ratvec->[(KGBElt,vec)])1:
 
 highest_weights
 -------------------------------------------------
@@ -84,7 +84,7 @@ highest_weights
 | 
 
 
-.. _highest_weights_((KGBElt,ratvec),KGBElt->[(KGBElt,vec)]):
+.. _highest_weights_((KGBElt,ratvec),KGBElt->[(KGBElt,vec)])1:
 
 highest_weights
 -------------------------------------------------
@@ -92,7 +92,7 @@ highest_weights
 | 
 
 
-.. _highest_weights_(Param->[(KGBElt,vec)]):
+.. _highest_weights_(Param->[(KGBElt,vec)])1:
 
 highest_weights
 -------------------------------------------------
@@ -100,7 +100,7 @@ highest_weights
 | 
 
 
-.. _highest_weights_(Param,KGBElt->[(KGBElt,vec)]):
+.. _highest_weights_(Param,KGBElt->[(KGBElt,vec)])1:
 
 highest_weights
 -------------------------------------------------
@@ -108,7 +108,7 @@ highest_weights
 | 
 
 
-.. _highest_weight_(KGBElt,ratvec->KGBElt,vec):
+.. _highest_weight_(KGBElt,ratvec->KGBElt,vec)1:
 
 highest_weight
 -------------------------------------------------
@@ -116,7 +116,7 @@ highest_weight
 | 
 
 
-.. _highest_weight_(Param->KGBElt,vec):
+.. _highest_weight_(Param->KGBElt,vec)1:
 
 highest_weight
 -------------------------------------------------
@@ -124,7 +124,7 @@ highest_weight
 | 
 
 
-.. _centralizer_(KGBElt,ratvec->KGBElt,RootDatum):
+.. _centralizer_(KGBElt,ratvec->KGBElt,RootDatum)1:
 
 centralizer
 -------------------------------------------------
@@ -132,7 +132,7 @@ centralizer
 | 
 
 
-.. _find_nci_root_(KGBElt,ratvec->int):
+.. _find_nci_root_(KGBElt,ratvec->int)1:
 
 find_nci_root
 -------------------------------------------------
@@ -140,7 +140,7 @@ find_nci_root
 | 
 
 
-.. _project_on_dominant_cone_(KGBElt,ratvec->KGBElt,ratvec,ratvec):
+.. _project_on_dominant_cone_(KGBElt,ratvec->KGBElt,ratvec,ratvec)1:
 
 project_on_dominant_cone
 -------------------------------------------------
@@ -148,7 +148,7 @@ project_on_dominant_cone
 | 
 
 
-.. _project_on_dominant_cone_(KGBElt,vec->KGBElt,ratvec,ratvec):
+.. _project_on_dominant_cone_(KGBElt,vec->KGBElt,ratvec,ratvec)1:
 
 project_on_dominant_cone
 -------------------------------------------------
@@ -156,7 +156,7 @@ project_on_dominant_cone
 | 
 
 
-.. _characters_order_2_(KGBElt->[vec]):
+.. _characters_order_2_(KGBElt->[vec])1:
 
 characters_order_2
 -------------------------------------------------
@@ -164,7 +164,7 @@ characters_order_2
 | 
 
 
-.. _all_G_spherical_same_differential_(KGBElt,ratvec->[(KGBElt,ratvec)]):
+.. _all_G_spherical_same_differential_(KGBElt,ratvec->[(KGBElt,ratvec)])1:
 
 all_G_spherical_same_differential
 -------------------------------------------------
@@ -172,7 +172,7 @@ all_G_spherical_same_differential
 | 
 
 
-.. _all_G_spherical_same_differential_(Param->[(KGBElt,ratvec)]):
+.. _all_G_spherical_same_differential_(Param->[(KGBElt,ratvec)])1:
 
 all_G_spherical_same_differential
 -------------------------------------------------
@@ -180,7 +180,7 @@ all_G_spherical_same_differential
 | 
 
 
-.. _parabolic_(KGBElt,vec->[int],KGBElt):
+.. _parabolic_(KGBElt,vec->[int],KGBElt)1:
 
 parabolic
 -------------------------------------------------
@@ -188,7 +188,7 @@ parabolic
 | 
 
 
-.. _make_strongly_dominant_((KGBElt,vec),KGBElt->KGBElt,vec):
+.. _make_strongly_dominant_((KGBElt,vec),KGBElt->KGBElt,vec)1:
 
 make_strongly_dominant
 -------------------------------------------------
@@ -196,7 +196,7 @@ make_strongly_dominant
 | 
 
 
-.. _K_types_(KGBElt,vec->[(KGBElt,ratvec)]):
+.. _K_types_(KGBElt,vec->[(KGBElt,ratvec)])1:
 
 K_types
 -------------------------------------------------
@@ -204,7 +204,7 @@ K_types
 | 
 
 
-.. _K_type_(KGBElt,vec->KGBElt,ratvec):
+.. _K_type_(KGBElt,vec->KGBElt,ratvec)1:
 
 K_type
 -------------------------------------------------
@@ -212,7 +212,7 @@ K_type
 | 
 
 
-.. _K0_highest_weight_(KGBElt,vec->Param):
+.. _K0_highest_weight_(KGBElt,vec->Param)1:
 
 K0_highest_weight
 -------------------------------------------------
@@ -220,7 +220,7 @@ K0_highest_weight
 | 
 
 
-.. _dimension_(KGBElt,vec->int):
+.. _dimension_(KGBElt,vec->int)1:
 
 dimension
 -------------------------------------------------
@@ -228,7 +228,7 @@ dimension
 | 
 
 
-.. _dimension_(KGBElt,ratvec->int):
+.. _dimension_(KGBElt,ratvec->int)1:
 
 dimension
 -------------------------------------------------
@@ -236,7 +236,7 @@ dimension
 | 
 
 
-.. _H_weight_(KGBElt,vec->KGBElt,vec):
+.. _H_weight_(KGBElt,vec->KGBElt,vec)1:
 
 H_weight
 -------------------------------------------------
@@ -244,7 +244,7 @@ H_weight
 | 
 
 
-.. _fundamental_weights_K_H_(KGBElt->[ratvec]):
+.. _fundamental_weights_K_H_(KGBElt->[ratvec])1:
 
 fundamental_weights_K_H
 -------------------------------------------------
@@ -252,7 +252,7 @@ fundamental_weights_K_H
 | 
 
 
-.. _K0_param_((KGBElt,ratvec),KGBElt->Param):
+.. _K0_param_((KGBElt,ratvec),KGBElt->Param)1:
 
 K0_param
 -------------------------------------------------
@@ -260,7 +260,7 @@ K0_param
 | 
 
 
-.. _K0_param_(KGBElt,ratvec->Param):
+.. _K0_param_(KGBElt,ratvec->Param)1:
 
 K0_param
 -------------------------------------------------
@@ -268,7 +268,7 @@ K0_param
 | 
 
 
-.. _K0_params_(Param,KGBElt->[Param]):
+.. _K0_params_(Param,KGBElt->[Param])1:
 
 K0_params
 -------------------------------------------------
@@ -276,7 +276,7 @@ K0_params
 | 
 
 
-.. _K0_params_(Param->[Param]):
+.. _K0_params_(Param->[Param])1:
 
 K0_params
 -------------------------------------------------
@@ -284,7 +284,7 @@ K0_params
 | 
 
 
-.. _K0_param_(Param,KGBElt->Param):
+.. _K0_param_(Param,KGBElt->Param)1:
 
 K0_param
 -------------------------------------------------
@@ -292,7 +292,7 @@ K0_param
 | 
 
 
-.. _K0_param_(Param->Param):
+.. _K0_param_(Param->Param)1:
 
 K0_param
 -------------------------------------------------
@@ -300,7 +300,7 @@ K0_param
 | 
 
 
-.. _fundamental_weight_coordinates_(KGBElt,vec->vec):
+.. _fundamental_weight_coordinates_(KGBElt,vec->vec)1:
 
 fundamental_weight_coordinates
 -------------------------------------------------
@@ -308,7 +308,7 @@ fundamental_weight_coordinates
 | 
 
 
-.. _K_highest_weight_from_fundamental_weights_(KGBElt,vec->KGBElt,vec):
+.. _K_highest_weight_from_fundamental_weights_(KGBElt,vec->KGBElt,vec)1:
 
 K_highest_weight_from_fundamental_weights
 -------------------------------------------------
@@ -316,7 +316,7 @@ K_highest_weight_from_fundamental_weights
 | 
 
 
-.. _dimensions_(Param,KGBElt->[int]):
+.. _dimensions_(Param,KGBElt->[int])1:
 
 dimensions
 -------------------------------------------------
@@ -324,7 +324,7 @@ dimensions
 | 
 
 
-.. _dimensions_(Param->[int]):
+.. _dimensions_(Param->[int])1:
 
 dimensions
 -------------------------------------------------
@@ -332,7 +332,7 @@ dimensions
 | 
 
 
-.. _dimensions_([Param]->[[int]]):
+.. _dimensions_([Param]->[[int]])1:
 
 dimensions
 -------------------------------------------------
@@ -340,7 +340,7 @@ dimensions
 | 
 
 
-.. _LKT_verbose_bool:
+.. _LKT_verbose_bool1:
 
 LKT_verbose
 -------------------------------------------------

@@ -4,7 +4,7 @@ parameters.at Function References
 =======================================================
 |
 
-.. _unnormalized_torus_factor_(KGBElt->ratvec):
+.. _unnormalized_torus_factor_(KGBElt->ratvec)1:
 
 unnormalized_torus_factor
 -------------------------------------------------
@@ -12,7 +12,7 @@ unnormalized_torus_factor
 | 
 
 
-.. _square_unnormalized_(InnerClass,mat,ratvec->ratvec):
+.. _square_unnormalized_(InnerClass,mat,ratvec->ratvec)1:
 
 square_unnormalized
 -------------------------------------------------
@@ -20,7 +20,7 @@ square_unnormalized
 | 
 
 
-.. _square_normalized_(InnerClass,mat,ratvec->ratvec):
+.. _square_normalized_(InnerClass,mat,ratvec->ratvec)1:
 
 square_normalized
 -------------------------------------------------
@@ -28,7 +28,7 @@ square_normalized
 | 
 
 
-.. _square_(InnerClass,mat,ratvec->ratvec):
+.. _square_(InnerClass,mat,ratvec->ratvec)1:
 
 square
 -------------------------------------------------
@@ -36,7 +36,7 @@ square
 | 
 
 
-.. _square2_(InnerClass,mat,ratvec->ratvec):
+.. _square2_(InnerClass,mat,ratvec->ratvec)1:
 
 square2
 -------------------------------------------------
@@ -44,7 +44,7 @@ square2
 | 
 
 
-.. _square_(RealForm->ratvec):
+.. _square_(RealForm->ratvec)1:
 
 square
 -------------------------------------------------
@@ -52,7 +52,7 @@ square
 | 
 
 
-.. _square_(KGBElt->ratvec):
+.. _square_(KGBElt->ratvec)1:
 
 square
 -------------------------------------------------
@@ -60,7 +60,7 @@ square
 | 
 
 
-.. _square_is_central_(InnerClass,mat,ratvec->bool):
+.. _square_is_central_(InnerClass,mat,ratvec->bool)1:
 
 square_is_central
 -------------------------------------------------
@@ -68,7 +68,7 @@ square_is_central
 | 
 
 
-.. _parity_(Param,vec->bool):
+.. _parity_(Param,vec->bool)1:
 
 parity
 -------------------------------------------------
@@ -76,7 +76,7 @@ parity
 | 
 
 
-.. _dual_inner_class_(Param->InnerClass):
+.. _dual_inner_class_(Param->InnerClass)1:
 
 dual_inner_class
 -------------------------------------------------
@@ -84,7 +84,7 @@ dual_inner_class
 | 
 
 
-.. _lambda_(ratvec,mat,KGBElt->ratvec):
+.. _lambda_(ratvec,mat,KGBElt->ratvec)1:
 
 lambda
 -------------------------------------------------
@@ -92,7 +92,7 @@ lambda
 | 
 
 
-.. _lambda_(ratvec,KGBElt,KGBElt->ratvec):
+.. _lambda_(ratvec,KGBElt,KGBElt->ratvec)1:
 
 lambda
 -------------------------------------------------
@@ -100,7 +100,7 @@ lambda
 | 
 
 
-.. _nu_(ratvec,KGBElt->ratvec):
+.. _nu_(ratvec,KGBElt->ratvec)1:
 
 nu
 -------------------------------------------------
@@ -108,7 +108,7 @@ nu
 | 
 
 
-.. _nu_(ratvec,KGBElt,KGBElt->ratvec):
+.. _nu_(ratvec,KGBElt,KGBElt->ratvec)1:
 
 nu
 -------------------------------------------------
@@ -116,7 +116,7 @@ nu
 | 
 
 
-.. _make_regular_(RootDatum,ratvec->ratvec):
+.. _make_regular_(RootDatum,ratvec->ratvec)1:
 
 make_regular
 -------------------------------------------------
@@ -124,7 +124,7 @@ make_regular
 | 
 
 
-.. _choose_g_(RealForm,RootDatum->ratvec):
+.. _choose_g_(RealForm,RootDatum->ratvec)1:
 
 choose_g
 -------------------------------------------------
@@ -132,7 +132,7 @@ choose_g
 | 
 
 
-.. _choose_g_(KGBElt,KGBElt->ratvec):
+.. _choose_g_(KGBElt,KGBElt->ratvec)1:
 
 choose_g
 -------------------------------------------------
@@ -140,7 +140,7 @@ choose_g
 | 
 
 
-.. _choose_g_(Param->ratvec):
+.. _choose_g_(Param->ratvec)1:
 
 choose_g
 -------------------------------------------------
@@ -148,7 +148,7 @@ choose_g
 | 
 
 
-.. _parameter_(KGBElt,KGBElt,ratvec->Param):
+.. _parameter_(KGBElt,KGBElt,ratvec->Param)1:
 
 parameter
 -------------------------------------------------
@@ -156,7 +156,7 @@ parameter
 | 
 
 
-.. _parameter_(KGBElt,KGBElt->Param):
+.. _parameter_(KGBElt,KGBElt->Param)1:
 
 parameter
 -------------------------------------------------

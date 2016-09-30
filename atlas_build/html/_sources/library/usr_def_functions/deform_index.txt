@@ -10,19 +10,19 @@ deform.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`compress_([Param],mat,[vec],vec,vec,mat->[Param],mat,[int])`
+   * - :ref:`compress_([Param],mat,[vec],vec,vec,mat->[Param],mat,[int])1`
      - ``([Param],mat,[vec],vec,vec,mat->[Param],mat,[int])``
-   * - :ref:`deformation_terms_(Param->ParamPol)`
+   * - :ref:`deformation_terms_(Param->ParamPol)1`
      - ``(Param->ParamPol)``
-   * - :ref:`has_nu0_(Param->bool)`
+   * - :ref:`has_nu0_(Param->bool)1`
      - ``(Param->bool)``
-   * - :ref:`weak_lower_(Param->Param)`
+   * - :ref:`weak_lower_(Param->Param)1`
      - ``(Param->Param)``
-   * - :ref:`lower_(Param->Param)`
+   * - :ref:`lower_(Param->Param)1`
      - ``(Param->Param)``
-   * - :ref:`deformation_(Param->Param,ParamPol)`
+   * - :ref:`deformation_(Param->Param,ParamPol)1`
      - ``(Param->Param,ParamPol)``
-   * - :ref:`recursive_deform_(Param->ParamPol)`
+   * - :ref:`recursive_deform_(Param->ParamPol)1`
      - ``(Param->ParamPol)``
 
 
@@ -33,5 +33,5 @@ deform.at Function Index
 
    * - Variable
      - Data Type
-   * - :ref:`d_verbose_bool`
+   * - :ref:`d_verbose_bool1`
      - ``bool``

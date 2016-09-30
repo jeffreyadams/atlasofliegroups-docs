@@ -10,7 +10,7 @@ LKT.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`LKTs_(Param->[(KGBElt,ratvec)])`
+   * - :ref:`LKTs_(Param->[(KGBElt,ratvec)])1`
      - ``(Param->[(KGBElt,ratvec)])``
-   * - :ref:`LKT_(Param->KGBElt,ratvec)`
+   * - :ref:`LKT_(Param->KGBElt,ratvec)1`
      - ``(Param->KGBElt,ratvec)``

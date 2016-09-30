@@ -4,7 +4,7 @@ kgp.at Function References
 =======================================================
 |
 
-.. _sort_by_((KGBElt->int)->([KGBElt]->[KGBElt])):
+.. _sort_by_((KGBElt->int)->([KGBElt]->[KGBElt]))1:
 
 sort_by
 -------------------------------------------------
@@ -12,7 +12,7 @@ sort_by
 | 
 
 
-.. _sort_([KGBElt]->[KGBElt]):
+.. _sort_([KGBElt]->[KGBElt])1:
 
 sort
 -------------------------------------------------
@@ -20,7 +20,7 @@ sort
 | 
 
 
-.. _min_([KGBElt]->KGBElt):
+.. _min_([KGBElt]->KGBElt)1:
 
 min
 -------------------------------------------------
@@ -28,7 +28,7 @@ min
 | 
 
 
-.. _max_([KGBElt]->KGBElt):
+.. _max_([KGBElt]->KGBElt)1:
 
 max
 -------------------------------------------------
@@ -36,7 +36,7 @@ max
 | 
 
 
-.. _KGP_elt_([int],KGBElt->[int],KGBElt):
+.. _KGP_elt_([int],KGBElt->[int],KGBElt)1:
 
 KGP_elt
 -------------------------------------------------
@@ -44,7 +44,7 @@ KGP_elt
 | 
 
 
-.. _S_([int],KGBElt->[int]):
+.. _S_([int],KGBElt->[int])1:
 
 S
 -------------------------------------------------
@@ -52,7 +52,7 @@ S
 | 
 
 
-.. _root_datum_([int],KGBElt->RootDatum):
+.. _root_datum_([int],KGBElt->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -60,7 +60,7 @@ root_datum
 | 
 
 
-.. _real_form_([int],KGBElt->RealForm):
+.. _real_form_([int],KGBElt->RealForm)1:
 
 real_form
 -------------------------------------------------
@@ -68,7 +68,7 @@ real_form
 | 
 
 
-.. _complement_(int,[int]->[int]):
+.. _complement_(int,[int]->[int])1:
 
 complement
 -------------------------------------------------
@@ -76,7 +76,7 @@ complement
 | 
 
 
-.. _find_ascent_([int],KGBElt->[KGBElt]):
+.. _find_ascent_([int],KGBElt->[KGBElt])1:
 
 find_ascent
 -------------------------------------------------
@@ -84,7 +84,7 @@ find_ascent
 | 
 
 
-.. _down_neighbors_([int],KGBElt->[int]):
+.. _down_neighbors_([int],KGBElt->[int])1:
 
 down_neighbors
 -------------------------------------------------
@@ -92,7 +92,7 @@ down_neighbors
 | 
 
 
-.. _is_maximal_in_partial_order_([int],KGBElt->bool):
+.. _is_maximal_in_partial_order_([int],KGBElt->bool)1:
 
 is_maximal_in_partial_order
 -------------------------------------------------
@@ -100,7 +100,7 @@ is_maximal_in_partial_order
 | 
 
 
-.. _maxima_in_partial_order_(RealForm,[int]->[KGBElt]):
+.. _maxima_in_partial_order_(RealForm,[int]->[KGBElt])1:
 
 maxima_in_partial_order
 -------------------------------------------------
@@ -108,7 +108,7 @@ maxima_in_partial_order
 | 
 
 
-.. _maximal_([int],KGBElt->KGBElt):
+.. _maximal_([int],KGBElt->KGBElt)1:
 
 maximal
 -------------------------------------------------
@@ -116,7 +116,7 @@ maximal
 | 
 
 
-.. _canonical_representative_([int],KGBElt->[int],KGBElt):
+.. _canonical_representative_([int],KGBElt->[int],KGBElt)1:
 
 canonical_representative
 -------------------------------------------------
@@ -124,7 +124,7 @@ canonical_representative
 | 
 
 
-.. _x_([int],KGBElt->KGBElt):
+.. _x_([int],KGBElt->KGBElt)1:
 
 x
 -------------------------------------------------
@@ -132,7 +132,7 @@ x
 | 
 
 
-.. _\=_(([int],KGBElt),([int],KGBElt)->bool):
+.. _\=_(([int],KGBElt),([int],KGBElt)->bool)1:
 
 \=
 -------------------------------------------------
@@ -140,7 +140,7 @@ x
 | 
 
 
-.. _equivalence_class_of_([int],KGBElt->[KGBElt]):
+.. _equivalence_class_of_([int],KGBElt->[KGBElt])1:
 
 equivalence_class_of
 -------------------------------------------------
@@ -148,7 +148,7 @@ equivalence_class_of
 | 
 
 
-.. _x_min_([int],KGBElt->KGBElt):
+.. _x_min_([int],KGBElt->KGBElt)1:
 
 x_min
 -------------------------------------------------
@@ -156,7 +156,7 @@ x_min
 | 
 
 
-.. _KGP_(RealForm,[int]->[([int],KGBElt)]):
+.. _KGP_(RealForm,[int]->[([int],KGBElt)])1:
 
 KGP
 -------------------------------------------------
@@ -164,7 +164,7 @@ KGP
 | 
 
 
-.. _KGP_numbers_(RealForm,[int]->[int]):
+.. _KGP_numbers_(RealForm,[int]->[int])1:
 
 KGP_numbers
 -------------------------------------------------
@@ -172,7 +172,7 @@ KGP_numbers
 | 
 
 
-.. _is_open_([int],KGBElt->bool):
+.. _is_open_([int],KGBElt->bool)1:
 
 is_open
 -------------------------------------------------
@@ -180,7 +180,7 @@ is_open
 | 
 
 
-.. _is_closed_([int],KGBElt->bool):
+.. _is_closed_([int],KGBElt->bool)1:
 
 is_closed
 -------------------------------------------------
@@ -188,7 +188,7 @@ is_closed
 | 
 
 
-.. _KGP_elt_(ratvec,KGBElt->[int],KGBElt):
+.. _KGP_elt_(ratvec,KGBElt->[int],KGBElt)1:
 
 KGP_elt
 -------------------------------------------------

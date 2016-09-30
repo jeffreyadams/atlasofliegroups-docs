@@ -4,7 +4,7 @@ test_K.at Function References
 =======================================================
 |
 
-.. _all_reps_from_xy_blocks_(RealForm->[Param]):
+.. _all_reps_from_xy_blocks_(RealForm->[Param])1:
 
 all_reps_from_xy_blocks
 -------------------------------------------------
@@ -12,7 +12,7 @@ all_reps_from_xy_blocks
 | 
 
 
-.. _test_K_xy_(RealForm->[void]):
+.. _test_K_xy_(RealForm->[void])1:
 
 test_K_xy
 -------------------------------------------------
@@ -20,7 +20,7 @@ test_K_xy
 | 
 
 
-.. _test_K_([Param]->):
+.. _test_K_([Param]->)1:
 
 test_K
 -------------------------------------------------
@@ -28,7 +28,7 @@ test_K
 | 
 
 
-.. _G_RealForm:
+.. _G_RealForm3:
 
 G
 -------------------------------------------------
@@ -36,7 +36,7 @@ G
 | 
 
 
-.. _p_Param:
+.. _p_Param4:
 
 p
 -------------------------------------------------
@@ -44,7 +44,7 @@ p
 | 
 
 
-.. _B_[Param]:
+.. _B_[Param]4:
 
 B
 -------------------------------------------------

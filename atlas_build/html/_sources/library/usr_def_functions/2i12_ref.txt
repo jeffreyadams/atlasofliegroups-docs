@@ -4,7 +4,7 @@
 =======================================================
 |
 
-.. _rd_RootDatum:
+.. _rd_RootDatum1:
 
 rd
 -------------------------------------------------
@@ -12,7 +12,7 @@ rd
 | 
 
 
-.. _ic_InnerClass:
+.. _ic_InnerClass1:
 
 ic
 -------------------------------------------------
@@ -20,7 +20,7 @@ ic
 | 
 
 
-.. _G_RealForm:
+.. _G_RealForm1:
 
 G
 -------------------------------------------------
@@ -28,7 +28,7 @@ G
 | 
 
 
-.. _dual_rd_RootDatum:
+.. _dual_rd_RootDatum1:
 
 dual_rd
 -------------------------------------------------
@@ -36,7 +36,7 @@ dual_rd
 | 
 
 
-.. _dual_ic_InnerClass:
+.. _dual_ic_InnerClass1:
 
 dual_ic
 -------------------------------------------------
@@ -44,7 +44,7 @@ dual_ic
 | 
 
 
-.. _Gd_RealForm:
+.. _Gd_RealForm1:
 
 Gd
 -------------------------------------------------
@@ -52,7 +52,7 @@ Gd
 | 
 
 
-.. _delta_mat:
+.. _delta_mat1:
 
 delta
 -------------------------------------------------
@@ -60,7 +60,7 @@ delta
 | 
 
 
-.. _B_[Param]:
+.. _B_[Param]1:
 
 B
 -------------------------------------------------
@@ -68,7 +68,7 @@ B
 | 
 
 
-.. _EB_[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]:
+.. _EB_[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]1:
 
 EB
 -------------------------------------------------
@@ -76,7 +76,7 @@ EB
 | 
 
 
-.. _E_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec):
+.. _E_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
 
 E
 -------------------------------------------------
@@ -84,7 +84,7 @@ E
 | 
 
 
-.. _p_Param:
+.. _p_Param1:
 
 p
 -------------------------------------------------
@@ -92,7 +92,7 @@ p
 | 
 
 
-.. _gamma_ratvec:
+.. _gamma_ratvec1:
 
 gamma
 -------------------------------------------------
@@ -100,7 +100,7 @@ gamma
 | 
 
 
-.. _g_ratvec:
+.. _g_ratvec1:
 
 g
 -------------------------------------------------
@@ -108,7 +108,7 @@ g
 | 
 
 
-.. _x_KGBElt:
+.. _x_KGBElt1:
 
 x
 -------------------------------------------------
@@ -116,7 +116,7 @@ x
 | 
 
 
-.. _y_KGBElt:
+.. _y_KGBElt1:
 
 y
 -------------------------------------------------
@@ -124,7 +124,7 @@ y
 | 
 
 
-.. _id_RootDatum:
+.. _id_RootDatum1:
 
 id
 -------------------------------------------------
@@ -132,7 +132,7 @@ id
 | 
 
 
-.. _y_gen_(InnerClass,mat,ratvec):
+.. _y_gen_(InnerClass,mat,ratvec)1:
 
 y_gen
 -------------------------------------------------
@@ -140,7 +140,7 @@ y_gen
 | 
 
 
-.. _E_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec):
+.. _E_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)2:
 
 E
 -------------------------------------------------
@@ -148,7 +148,7 @@ E
 | 
 
 
-.. _bases_[[(KGBElt,(InnerClass,mat,ratvec))]]:
+.. _bases_[[(KGBElt,(InnerClass,mat,ratvec))]]1:
 
 bases
 -------------------------------------------------
@@ -156,7 +156,7 @@ bases
 | 
 
 
-.. _n_int:
+.. _n_int1:
 
 n
 -------------------------------------------------
@@ -164,7 +164,7 @@ n
 | 
 
 
-.. _sizes_[int]:
+.. _sizes_[int]1:
 
 sizes
 -------------------------------------------------
@@ -172,7 +172,7 @@ sizes
 | 
 
 
-.. _basis_[(KGBElt,(InnerClass,mat,ratvec))]:
+.. _basis_[(KGBElt,(InnerClass,mat,ratvec))]1:
 
 basis
 -------------------------------------------------

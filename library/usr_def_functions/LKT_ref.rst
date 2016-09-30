@@ -4,7 +4,7 @@ LKT.at Function References
 =======================================================
 |
 
-.. _LKTs_(Param->[(KGBElt,ratvec)]):
+.. _LKTs_(Param->[(KGBElt,ratvec)])1:
 
 LKTs
 -------------------------------------------------
@@ -12,7 +12,7 @@ LKTs
 | 
 
 
-.. _LKT_(Param->KGBElt,ratvec):
+.. _LKT_(Param->KGBElt,ratvec)1:
 
 LKT
 -------------------------------------------------

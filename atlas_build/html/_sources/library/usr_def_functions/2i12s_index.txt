@@ -11,33 +11,33 @@
 
    * - Variable
      - Data Type
-   * - :ref:`lt_LieType`
+   * - :ref:`lt_LieType1`
      - ``LieType``
-   * - :ref:`P_mat`
+   * - :ref:`P_mat1`
      - ``mat``
-   * - :ref:`Pinv_mat`
+   * - :ref:`Pinv_mat1`
      - ``mat``
-   * - :ref:`Pdenom_int`
+   * - :ref:`Pdenom_int1`
      - ``int``
-   * - :ref:`rd_RootDatum`
+   * - :ref:`rd_RootDatum2`
      - ``RootDatum``
-   * - :ref:`xi_mat`
+   * - :ref:`xi_mat1`
      - ``mat``
-   * - :ref:`delta_mat`
+   * - :ref:`delta_mat2`
      - ``mat``
-   * - :ref:`ic_InnerClass`
+   * - :ref:`ic_InnerClass2`
      - ``InnerClass``
-   * - :ref:`t_ratvec`
+   * - :ref:`t_ratvec1`
      - ``ratvec``
-   * - :ref:`tf_ratvec`
+   * - :ref:`tf_ratvec1`
      - ``ratvec``
-   * - :ref:`rf_RealForm`
+   * - :ref:`rf_RealForm1`
      - ``RealForm``
-   * - :ref:`x_KGBElt`
+   * - :ref:`x_KGBElt2`
      - ``KGBElt``
-   * - :ref:`p_Param`
+   * - :ref:`p_Param2`
      - ``Param``
-   * - :ref:`B_[Param]`
+   * - :ref:`B_[Param]2`
      - ``[Param]``
-   * - :ref:`E2i12s_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)`
+   * - :ref:`E2i12s_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1`
      - ``(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``

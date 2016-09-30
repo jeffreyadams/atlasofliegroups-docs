@@ -4,7 +4,7 @@ polynomial.at Function References
 =======================================================
 |
 
-.. _fix_add_(vec,vec->vec):
+.. _fix_add_(vec,vec->vec)1:
 
 fix_add
 -------------------------------------------------
@@ -12,7 +12,7 @@ fix_add
 | 
 
 
-.. _fix_sub_(vec,vec->vec):
+.. _fix_sub_(vec,vec->vec)1:
 
 fix_sub
 -------------------------------------------------
@@ -20,7 +20,7 @@ fix_sub
 | 
 
 
-.. _dot_product_(vec,vec->int):
+.. _dot_product_(vec,vec->int)1:
 
 dot_product
 -------------------------------------------------
@@ -28,7 +28,7 @@ dot_product
 | 
 
 
-.. _\+_(vec,vec->vec):
+.. _\+_(vec,vec->vec)3:
 
 \+
 -------------------------------------------------
@@ -36,7 +36,7 @@ dot_product
 | 
 
 
-.. _\-_(vec,vec->vec):
+.. _\-_(vec,vec->vec)3:
 
 \-
 -------------------------------------------------
@@ -44,7 +44,7 @@ dot_product
 | 
 
 
-.. _\*_(vec,vec->vec):
+.. _\*_(vec,vec->vec)2:
 
 \*
 -------------------------------------------------
@@ -52,7 +52,7 @@ dot_product
 | 
 
 
-.. _poly_product_(vec,vec->vec):
+.. _poly_product_(vec,vec->vec)1:
 
 poly_product
 -------------------------------------------------
@@ -60,7 +60,7 @@ poly_product
 | 
 
 
-.. _strip_(vec->vec):
+.. _strip_(vec->vec)1:
 
 strip
 -------------------------------------------------
@@ -68,7 +68,7 @@ strip
 | 
 
 
-.. _evaluate_at_1_(vec->int):
+.. _evaluate_at_1_(vec->int)1:
 
 evaluate_at_1
 -------------------------------------------------
@@ -76,7 +76,7 @@ evaluate_at_1
 | 
 
 
-.. _eval_(vec,int->int):
+.. _eval_(vec,int->int)1:
 
 eval
 -------------------------------------------------
@@ -84,7 +84,7 @@ eval
 | 
 
 
-.. _eval_(vec,Split->Split):
+.. _eval_(vec,Split->Split)1:
 
 eval
 -------------------------------------------------
@@ -92,7 +92,7 @@ eval
 | 
 
 
-.. _at_s_(vec->Split):
+.. _at_s_(vec->Split)1:
 
 at_s
 -------------------------------------------------
@@ -100,7 +100,7 @@ at_s
 | 
 
 
-.. _transpose_([[vec]]->[[vec]]):
+.. _transpose_([[vec]]->[[vec]])1:
 
 transpose
 -------------------------------------------------
@@ -108,7 +108,7 @@ transpose
 | 
 
 
-.. _dot_product_([vec],[vec]->vec):
+.. _dot_product_([vec],[vec]->vec)1:
 
 dot_product
 -------------------------------------------------
@@ -116,7 +116,7 @@ dot_product
 | 
 
 
-.. _\*_([[vec]],[[vec]]->[[vec]]):
+.. _\*_([[vec]],[[vec]]->[[vec]])1:
 
 \*
 -------------------------------------------------
@@ -124,7 +124,7 @@ dot_product
 | 
 
 
-.. _poly_list_add_([vec],[vec]->[vec]):
+.. _poly_list_add_([vec],[vec]->[vec])1:
 
 poly_list_add
 -------------------------------------------------
@@ -132,7 +132,7 @@ poly_list_add
 | 
 
 
-.. _poly_list_sub_([vec],[vec]->[vec]):
+.. _poly_list_sub_([vec],[vec]->[vec])1:
 
 poly_list_sub
 -------------------------------------------------
@@ -140,7 +140,7 @@ poly_list_sub
 | 
 
 
-.. _\-_([[vec]]->[[vec]]):
+.. _\-_([[vec]]->[[vec]])1:
 
 \-
 -------------------------------------------------
@@ -148,7 +148,7 @@ poly_list_sub
 | 
 
 
-.. _\+_([[vec]],[[vec]]->[[vec]]):
+.. _\+_([[vec]],[[vec]]->[[vec]])1:
 
 \+
 -------------------------------------------------
@@ -156,7 +156,7 @@ poly_list_sub
 | 
 
 
-.. _\-_([[vec]],[[vec]]->[[vec]]):
+.. _\-_([[vec]],[[vec]]->[[vec]])1:
 
 \-
 -------------------------------------------------
@@ -164,7 +164,7 @@ poly_list_sub
 | 
 
 
-.. _scalar_multiply_([vec],vec->[vec]):
+.. _scalar_multiply_([vec],vec->[vec])1:
 
 scalar_multiply
 -------------------------------------------------
@@ -172,7 +172,7 @@ scalar_multiply
 | 
 
 
-.. _\*_(vec,[[vec]]->[[vec]]):
+.. _\*_(vec,[[vec]]->[[vec]])1:
 
 \*
 -------------------------------------------------
@@ -180,7 +180,7 @@ scalar_multiply
 | 
 
 
-.. _\*_(int,[[vec]]->[[vec]]):
+.. _\*_(int,[[vec]]->[[vec]])1:
 
 \*
 -------------------------------------------------
@@ -188,7 +188,7 @@ scalar_multiply
 | 
 
 
-.. _update_row_([vec],int,vec->[vec]):
+.. _update_row_([vec],int,vec->[vec])1:
 
 update_row
 -------------------------------------------------
@@ -196,7 +196,7 @@ update_row
 | 
 
 
-.. _update_matrix_row_([[vec]],int,[vec]->[[vec]]):
+.. _update_matrix_row_([[vec]],int,[vec]->[[vec]])1:
 
 update_matrix_row
 -------------------------------------------------
@@ -204,7 +204,7 @@ update_matrix_row
 | 
 
 
-.. _update_matrix_entry_([[vec]],int,int,vec->[[vec]]):
+.. _update_matrix_entry_([[vec]],int,int,vec->[[vec]])1:
 
 update_matrix_entry
 -------------------------------------------------
@@ -212,7 +212,7 @@ update_matrix_entry
 | 
 
 
-.. _zero_poly_row_(int->[vec]):
+.. _zero_poly_row_(int->[vec])1:
 
 zero_poly_row
 -------------------------------------------------
@@ -220,7 +220,7 @@ zero_poly_row
 | 
 
 
-.. _zero_poly_matrix_(int->[[vec]]):
+.. _zero_poly_matrix_(int->[[vec]])1:
 
 zero_poly_matrix
 -------------------------------------------------
@@ -228,7 +228,7 @@ zero_poly_matrix
 | 
 
 
-.. _scalar_poly_matrix_(int,int->[[vec]]):
+.. _scalar_poly_matrix_(int,int->[[vec]])1:
 
 scalar_poly_matrix
 -------------------------------------------------
@@ -236,7 +236,7 @@ scalar_poly_matrix
 | 
 
 
-.. _identity_poly_matrix_(int->[[vec]]):
+.. _identity_poly_matrix_(int->[[vec]])1:
 
 identity_poly_matrix
 -------------------------------------------------
@@ -244,7 +244,7 @@ identity_poly_matrix
 | 
 
 
-.. _\+_([[vec]],vec->[[vec]]):
+.. _\+_([[vec]],vec->[[vec]])1:
 
 \+
 -------------------------------------------------
@@ -252,7 +252,7 @@ identity_poly_matrix
 | 
 
 
-.. _\-_([[vec]],vec->[[vec]]):
+.. _\-_([[vec]],vec->[[vec]])1:
 
 \-
 -------------------------------------------------
@@ -260,7 +260,7 @@ identity_poly_matrix
 | 
 
 
-.. _\^_(vec,int->vec):
+.. _\^_(vec,int->vec)1:
 
 \^
 -------------------------------------------------
@@ -268,7 +268,7 @@ identity_poly_matrix
 | 
 
 
-.. _\=_([[vec]],[[vec]]->bool):
+.. _\=_([[vec]],[[vec]]->bool)1:
 
 \=
 -------------------------------------------------
@@ -276,7 +276,7 @@ identity_poly_matrix
 | 
 
 
-.. _is_zero_([[vec]]->bool):
+.. _is_zero_([[vec]]->bool)1:
 
 is_zero
 -------------------------------------------------
@@ -284,7 +284,7 @@ is_zero
 | 
 
 
-.. _upper_unitriangluar_inverse_([[vec]]->[[vec]]):
+.. _upper_unitriangluar_inverse_([[vec]]->[[vec]])1:
 
 upper_unitriangluar_inverse
 -------------------------------------------------
@@ -292,7 +292,7 @@ upper_unitriangluar_inverse
 | 
 
 
-.. _poly_permute_basis_(vec,[[vec]]->[[vec]]):
+.. _poly_permute_basis_(vec,[[vec]]->[[vec]])1:
 
 poly_permute_basis
 -------------------------------------------------
@@ -300,7 +300,7 @@ poly_permute_basis
 | 
 
 
-.. _stringPoly_(vec,string->string):
+.. _stringPoly_(vec,string->string)1:
 
 stringPoly
 -------------------------------------------------
@@ -308,7 +308,7 @@ stringPoly
 | 
 
 
-.. _printPoly_(vec->):
+.. _printPoly_(vec->)1:
 
 printPoly
 -------------------------------------------------
@@ -316,7 +316,7 @@ printPoly
 | 
 
 
-.. _printPolyMatrix_([[vec]],int->):
+.. _printPolyMatrix_([[vec]],int->)1:
 
 printPolyMatrix
 -------------------------------------------------
@@ -324,7 +324,7 @@ printPolyMatrix
 | 
 
 
-.. _printPolyMatrix_([[vec]]->):
+.. _printPolyMatrix_([[vec]]->)1:
 
 printPolyMatrix
 -------------------------------------------------
@@ -332,7 +332,7 @@ printPolyMatrix
 | 
 
 
-.. _\+_(vec,vec->vec):
+.. _\+_(vec,vec->vec)4:
 
 \+
 -------------------------------------------------
@@ -340,7 +340,7 @@ printPolyMatrix
 | 
 
 
-.. _\-_(vec,vec->vec):
+.. _\-_(vec,vec->vec)4:
 
 \-
 -------------------------------------------------
@@ -348,7 +348,7 @@ printPolyMatrix
 | 
 
 
-.. _\*_(vec,vec->int):
+.. _\*_(vec,vec->int)2:
 
 \*
 -------------------------------------------------
@@ -356,7 +356,7 @@ printPolyMatrix
 | 
 
 
-.. _sgn_poly_(int->vec):
+.. _sgn_poly_(int->vec)1:
 
 sgn_poly
 -------------------------------------------------

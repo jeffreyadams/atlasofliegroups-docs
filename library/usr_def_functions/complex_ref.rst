@@ -4,7 +4,7 @@ complex.at Function References
 =======================================================
 |
 
-.. _left_(vec->vec):
+.. _left_(vec->vec)1:
 
 left
 -------------------------------------------------
@@ -12,7 +12,7 @@ left
 | 
 
 
-.. _right_(vec->vec):
+.. _right_(vec->vec)1:
 
 right
 -------------------------------------------------
@@ -20,7 +20,7 @@ right
 | 
 
 
-.. _left_(ratvec->ratvec):
+.. _left_(ratvec->ratvec)1:
 
 left
 -------------------------------------------------
@@ -28,7 +28,7 @@ left
 | 
 
 
-.. _right_(ratvec->ratvec):
+.. _right_(ratvec->ratvec)1:
 
 right
 -------------------------------------------------
@@ -36,7 +36,7 @@ right
 | 
 
 
-.. _concatenate_(ratvec,ratvec->ratvec):
+.. _concatenate_(ratvec,ratvec->ratvec)1:
 
 concatenate
 -------------------------------------------------
@@ -44,7 +44,7 @@ concatenate
 | 
 
 
-.. _up_right_corner_(mat->mat):
+.. _up_right_corner_(mat->mat)1:
 
 up_right_corner
 -------------------------------------------------
@@ -52,7 +52,7 @@ up_right_corner
 | 
 
 
-.. _left_w_(KGBElt->mat):
+.. _left_w_(KGBElt->mat)1:
 
 left_w
 -------------------------------------------------
@@ -60,7 +60,7 @@ left_w
 | 
 
 
-.. _mu_C_(Param->vec):
+.. _mu_C_(Param->vec)1:
 
 mu_C
 -------------------------------------------------
@@ -68,7 +68,7 @@ mu_C
 | 
 
 
-.. _nu_C_(Param->ratvec):
+.. _nu_C_(Param->ratvec)1:
 
 nu_C
 -------------------------------------------------
@@ -76,7 +76,7 @@ nu_C
 | 
 
 
-.. _gamma_L_(Param->ratvec):
+.. _gamma_L_(Param->ratvec)1:
 
 gamma_L
 -------------------------------------------------
@@ -84,7 +84,7 @@ gamma_L
 | 
 
 
-.. _gamma_R_(Param->ratvec):
+.. _gamma_R_(Param->ratvec)1:
 
 gamma_R
 -------------------------------------------------
@@ -92,7 +92,7 @@ gamma_R
 | 
 
 
-.. _gparameter_(RealForm,ratvec,ratvec->Param):
+.. _gparameter_(RealForm,ratvec,ratvec->Param)1:
 
 gparameter
 -------------------------------------------------
@@ -100,7 +100,7 @@ gparameter
 | 
 
 
-.. _mparameter_(RealForm,vec,ratvec->Param):
+.. _mparameter_(RealForm,vec,ratvec->Param)1:
 
 mparameter
 -------------------------------------------------

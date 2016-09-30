@@ -4,7 +4,7 @@ misc.at Function References
 =======================================================
 |
 
-.. _is_nonnegative_(vec->bool):
+.. _is_nonnegative_(vec->bool)1:
 
 is_nonnegative
 -------------------------------------------------
@@ -12,7 +12,7 @@ is_nonnegative
 | 
 
 
-.. _is_positive_(vec->bool):
+.. _is_positive_(vec->bool)1:
 
 is_positive
 -------------------------------------------------
@@ -20,7 +20,7 @@ is_positive
 | 
 
 
-.. _is_positive_(ratvec->bool):
+.. _is_positive_(ratvec->bool)1:
 
 is_positive
 -------------------------------------------------
@@ -28,7 +28,7 @@ is_positive
 | 
 
 
-.. _is_nonnegative_(ratvec->bool):
+.. _is_nonnegative_(ratvec->bool)1:
 
 is_nonnegative
 -------------------------------------------------
@@ -36,7 +36,7 @@ is_nonnegative
 | 
 
 
-.. _%_(ParamPol->[(Split,Param)]):
+.. _%_(ParamPol->[(Split,Param)])1:
 
 %
 -------------------------------------------------
@@ -44,7 +44,7 @@ is_nonnegative
 | 
 
 
-.. _integer_part_(ParamPol->ParamPol):
+.. _integer_part_(ParamPol->ParamPol)1:
 
 integer_part
 -------------------------------------------------
@@ -52,7 +52,7 @@ integer_part
 | 
 
 
-.. _s_part_(ParamPol->ParamPol):
+.. _s_part_(ParamPol->ParamPol)1:
 
 s_part
 -------------------------------------------------
@@ -60,7 +60,7 @@ s_part
 | 
 
 
-.. _parts_(ParamPol->ParamPol,ParamPol):
+.. _parts_(ParamPol->ParamPol,ParamPol)1:
 
 parts
 -------------------------------------------------
@@ -68,7 +68,7 @@ parts
 | 
 
 
-.. _param_(RealForm,int,vec,ratvec->Param):
+.. _param_(RealForm,int,vec,ratvec->Param)1:
 
 param
 -------------------------------------------------
@@ -76,7 +76,7 @@ param
 | 
 
 
-.. _finalize_(Param->[Param]):
+.. _finalize_(Param->[Param])1:
 
 finalize
 -------------------------------------------------
@@ -84,7 +84,7 @@ finalize
 | 
 
 
-.. _finalize_(ParamPol->ParamPol):
+.. _finalize_(ParamPol->ParamPol)1:
 
 finalize
 -------------------------------------------------
@@ -92,7 +92,7 @@ finalize
 | 
 
 
-.. _\#_(Split,int->int):
+.. _\#_(Split,int->int)1:
 
 \#
 -------------------------------------------------
@@ -100,7 +100,7 @@ finalize
 | 
 
 
-.. _\#_(Split,rat->rat):
+.. _\#_(Split,rat->rat)1:
 
 \#
 -------------------------------------------------
@@ -108,7 +108,7 @@ finalize
 | 
 
 
-.. _\#_(ParamPol,int->ParamPol):
+.. _\#_(ParamPol,int->ParamPol)1:
 
 \#
 -------------------------------------------------
@@ -116,7 +116,7 @@ finalize
 | 
 
 
-.. _fiber_partition_(RealForm->[int]):
+.. _fiber_partition_(RealForm->[int])1:
 
 fiber_partition
 -------------------------------------------------
@@ -124,7 +124,7 @@ fiber_partition
 | 
 
 
-.. _in_distinguished_fiber_(KGBElt->bool):
+.. _in_distinguished_fiber_(KGBElt->bool)1:
 
 in_distinguished_fiber
 -------------------------------------------------
@@ -132,7 +132,7 @@ in_distinguished_fiber
 | 
 
 
-.. _distinguished_fiber_(RealForm->[int]):
+.. _distinguished_fiber_(RealForm->[int])1:
 
 distinguished_fiber
 -------------------------------------------------
@@ -140,7 +140,7 @@ distinguished_fiber
 | 
 
 
-.. _ss_rank_(RootDatum->int):
+.. _ss_rank_(RootDatum->int)1:
 
 ss_rank
 -------------------------------------------------
@@ -148,7 +148,7 @@ ss_rank
 | 
 
 
-.. _dimension_(RootDatum->int):
+.. _dimension_(RootDatum->int)1:
 
 dimension
 -------------------------------------------------
@@ -156,7 +156,7 @@ dimension
 | 
 
 
-.. _root_length_(RootDatum,vec->int):
+.. _root_length_(RootDatum,vec->int)1:
 
 root_length
 -------------------------------------------------
@@ -164,7 +164,7 @@ root_length
 | 
 
 
-.. _is_simple_root_(RootDatum,[int]->bool):
+.. _is_simple_root_(RootDatum,[int]->bool)1:
 
 is_simple_root
 -------------------------------------------------
@@ -172,7 +172,7 @@ is_simple_root
 | 
 
 
-.. _simple_imaginary_subsystem_(KGBElt->mat,mat):
+.. _simple_imaginary_subsystem_(KGBElt->mat,mat)1:
 
 simple_imaginary_subsystem
 -------------------------------------------------
@@ -180,7 +180,7 @@ simple_imaginary_subsystem
 | 
 
 
-.. _simple_real_subsystem_(KGBElt->mat,mat):
+.. _simple_real_subsystem_(KGBElt->mat,mat)1:
 
 simple_real_subsystem
 -------------------------------------------------
@@ -188,7 +188,7 @@ simple_real_subsystem
 | 
 
 
-.. _to_binary_(int,int->vec):
+.. _to_binary_(int,int->vec)1:
 
 to_binary
 -------------------------------------------------
@@ -196,7 +196,7 @@ to_binary
 | 
 
 
-.. _generate_all_binary_(int->[vec]):
+.. _generate_all_binary_(int->[vec])1:
 
 generate_all_binary
 -------------------------------------------------
@@ -204,7 +204,7 @@ generate_all_binary
 | 
 
 
-.. _generate_all_subsets_([int]->[[int]]):
+.. _generate_all_subsets_([int]->[[int]])1:
 
 generate_all_subsets
 -------------------------------------------------
@@ -212,7 +212,7 @@ generate_all_subsets
 | 
 
 
-.. _prettyPrint_(Split->string):
+.. _prettyPrint_(Split->string)1:
 
 prettyPrint
 -------------------------------------------------
@@ -220,7 +220,7 @@ prettyPrint
 | 
 
 
-.. _prettyPrint_(ParamPol->):
+.. _prettyPrint_(ParamPol->)1:
 
 prettyPrint
 -------------------------------------------------

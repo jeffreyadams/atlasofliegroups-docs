@@ -4,7 +4,7 @@ ratmat.at Function References
 =======================================================
 |
 
-.. _gcd_(mat->int):
+.. _gcd_(mat->int)1:
 
 gcd
 -------------------------------------------------
@@ -12,7 +12,7 @@ gcd
 | 
 
 
-.. _simplify_(mat,string,int->mat,string,int):
+.. _simplify_(mat,string,int->mat,string,int)1:
 
 simplify
 -------------------------------------------------
@@ -20,7 +20,7 @@ simplify
 | 
 
 
-.. _/_(mat,int->mat,string,int):
+.. _/_(mat,int->mat,string,int)1:
 
 /
 -------------------------------------------------
@@ -28,7 +28,7 @@ simplify
 | 
 
 
-.. _\*_(rat,mat->mat,string,int):
+.. _\*_(rat,mat->mat,string,int)1:
 
 \*
 -------------------------------------------------
@@ -36,7 +36,7 @@ simplify
 | 
 
 
-.. _/_(mat,rat->mat,string,int):
+.. _/_(mat,rat->mat,string,int)1:
 
 /
 -------------------------------------------------
@@ -44,7 +44,7 @@ simplify
 | 
 
 
-.. _entry_((mat,string,int),int,int->rat):
+.. _entry_((mat,string,int),int,int->rat)1:
 
 entry
 -------------------------------------------------
@@ -52,7 +52,7 @@ entry
 | 
 
 
-.. _matrix_((int,int),(int,int->rat)->mat,string,int):
+.. _matrix_((int,int),(int,int->rat)->mat,string,int)1:
 
 matrix
 -------------------------------------------------
@@ -60,7 +60,7 @@ matrix
 | 
 
 
-.. _n_rows_(mat,string,int->int):
+.. _n_rows_(mat,string,int->int)1:
 
 n_rows
 -------------------------------------------------
@@ -68,7 +68,7 @@ n_rows
 | 
 
 
-.. _n_columns_(mat,string,int->int):
+.. _n_columns_(mat,string,int->int)1:
 
 n_columns
 -------------------------------------------------
@@ -76,7 +76,7 @@ n_columns
 | 
 
 
-.. _columns_(mat,string,int->[ratvec]):
+.. _columns_(mat,string,int->[ratvec])1:
 
 columns
 -------------------------------------------------
@@ -84,7 +84,7 @@ columns
 | 
 
 
-.. _rows_(mat,string,int->[ratvec]):
+.. _rows_(mat,string,int->[ratvec])1:
 
 rows
 -------------------------------------------------
@@ -92,7 +92,7 @@ rows
 | 
 
 
-.. _column_((mat,string,int),int->ratvec):
+.. _column_((mat,string,int),int->ratvec)1:
 
 column
 -------------------------------------------------
@@ -100,7 +100,7 @@ column
 | 
 
 
-.. _row_((mat,string,int),int->ratvec):
+.. _row_((mat,string,int),int->ratvec)1:
 
 row
 -------------------------------------------------
@@ -108,7 +108,7 @@ row
 | 
 
 
-.. _columns_with_((int,ratvec->bool),(mat,string,int)->mat,string,int):
+.. _columns_with_((int,ratvec->bool),(mat,string,int)->mat,string,int)1:
 
 columns_with
 -------------------------------------------------
@@ -116,7 +116,7 @@ columns_with
 | 
 
 
-.. _columns_with_((ratvec->bool),(mat,string,int)->mat,string,int):
+.. _columns_with_((ratvec->bool),(mat,string,int)->mat,string,int)1:
 
 columns_with
 -------------------------------------------------
@@ -124,7 +124,7 @@ columns_with
 | 
 
 
-.. _columns_with_((int->bool),(mat,string,int)->mat,string,int):
+.. _columns_with_((int->bool),(mat,string,int)->mat,string,int)1:
 
 columns_with
 -------------------------------------------------
@@ -132,7 +132,7 @@ columns_with
 | 
 
 
-.. _rows_with_((int,ratvec->bool),(mat,string,int)->mat,string,int):
+.. _rows_with_((int,ratvec->bool),(mat,string,int)->mat,string,int)1:
 
 rows_with
 -------------------------------------------------
@@ -140,7 +140,7 @@ rows_with
 | 
 
 
-.. _rows_with_((ratvec->bool),(mat,string,int)->mat,string,int):
+.. _rows_with_((ratvec->bool),(mat,string,int)->mat,string,int)1:
 
 rows_with
 -------------------------------------------------
@@ -148,7 +148,7 @@ rows_with
 | 
 
 
-.. _rows_with_((int->bool),(mat,string,int)->mat,string,int):
+.. _rows_with_((int->bool),(mat,string,int)->mat,string,int)1:
 
 rows_with
 -------------------------------------------------
@@ -156,7 +156,7 @@ rows_with
 | 
 
 
-.. _det_(mat,string,int->rat):
+.. _det_(mat,string,int->rat)1:
 
 det
 -------------------------------------------------
@@ -164,7 +164,7 @@ det
 | 
 
 
-.. _\^_(mat,string,int->mat,string,int):
+.. _\^_(mat,string,int->mat,string,int)1:
 
 \^
 -------------------------------------------------
@@ -172,7 +172,7 @@ det
 | 
 
 
-.. _\+_((mat,string,int),(mat,string,int)->mat,string,int):
+.. _\+_((mat,string,int),(mat,string,int)->mat,string,int)1:
 
 \+
 -------------------------------------------------
@@ -180,7 +180,7 @@ det
 | 
 
 
-.. _\-_((mat,string,int),(mat,string,int)->mat,string,int):
+.. _\-_((mat,string,int),(mat,string,int)->mat,string,int)1:
 
 \-
 -------------------------------------------------
@@ -188,7 +188,7 @@ det
 | 
 
 
-.. _\-_(mat,string,int->mat,int,void):
+.. _\-_(mat,string,int->mat,int,void)1:
 
 \-
 -------------------------------------------------
@@ -196,7 +196,7 @@ det
 | 
 
 
-.. _\*_(ratvec,(mat,string,int)->ratvec):
+.. _\*_(ratvec,(mat,string,int)->ratvec)1:
 
 \*
 -------------------------------------------------
@@ -204,7 +204,7 @@ det
 | 
 
 
-.. _\*_((mat,string,int),ratvec->ratvec):
+.. _\*_((mat,string,int),ratvec->ratvec)1:
 
 \*
 -------------------------------------------------
@@ -212,7 +212,7 @@ det
 | 
 
 
-.. _\*_((mat,string,int),mat->mat,string,int):
+.. _\*_((mat,string,int),mat->mat,string,int)1:
 
 \*
 -------------------------------------------------
@@ -220,7 +220,7 @@ det
 | 
 
 
-.. _\*_(mat,(mat,string,int)->mat,string,int):
+.. _\*_(mat,(mat,string,int)->mat,string,int)1:
 
 \*
 -------------------------------------------------
@@ -228,7 +228,7 @@ det
 | 
 
 
-.. _\*_((mat,string,int),(mat,string,int)->mat,string,int):
+.. _\*_((mat,string,int),(mat,string,int)->mat,string,int)1:
 
 \*
 -------------------------------------------------
@@ -236,7 +236,7 @@ det
 | 
 
 
-.. _/_(mat,string,int->mat,string,int):
+.. _/_(mat,string,int->mat,string,int)1:
 
 /
 -------------------------------------------------
@@ -244,7 +244,7 @@ det
 | 
 
 
-.. _\^_((mat,string,int),int->mat,string,int):
+.. _\^_((mat,string,int),int->mat,string,int)1:
 
 \^
 -------------------------------------------------
@@ -252,7 +252,7 @@ det
 | 
 
 
-.. _ratmat_as_mat_(mat,string,int->mat):
+.. _ratmat_as_mat_(mat,string,int->mat)1:
 
 ratmat_as_mat
 -------------------------------------------------
@@ -260,7 +260,7 @@ ratmat_as_mat
 | 
 
 
-.. _mat_as_ratmat_(mat->mat,string,int):
+.. _mat_as_ratmat_(mat->mat,string,int)1:
 
 mat_as_ratmat
 -------------------------------------------------
@@ -268,7 +268,7 @@ mat_as_ratmat
 | 
 
 
-.. _diagonal_(ratvec->mat,string,int):
+.. _diagonal_(ratvec->mat,string,int)1:
 
 diagonal
 -------------------------------------------------
@@ -276,7 +276,7 @@ diagonal
 | 
 
 
-.. _ratvecs_as_ratmat_([ratvec]->mat,string,int):
+.. _ratvecs_as_ratmat_([ratvec]->mat,string,int)1:
 
 ratvecs_as_ratmat
 -------------------------------------------------
@@ -284,7 +284,7 @@ ratvecs_as_ratmat
 | 
 
 
-.. _det_([ratvec]->rat):
+.. _det_([ratvec]->rat)1:
 
 det
 -------------------------------------------------
@@ -292,7 +292,7 @@ det
 | 
 
 
-.. _\^_([ratvec]->mat,string,int):
+.. _\^_([ratvec]->mat,string,int)1:
 
 \^
 -------------------------------------------------
@@ -300,7 +300,7 @@ det
 | 
 
 
-.. _\*_([ratvec],(mat,string,int)->mat,string,int):
+.. _\*_([ratvec],(mat,string,int)->mat,string,int)1:
 
 \*
 -------------------------------------------------
@@ -308,7 +308,7 @@ det
 | 
 
 
-.. _\*_((mat,string,int),[ratvec]->mat,string,int):
+.. _\*_((mat,string,int),[ratvec]->mat,string,int)1:
 
 \*
 -------------------------------------------------
@@ -316,7 +316,7 @@ det
 | 
 
 
-.. _\+_([ratvec],(mat,string,int)->mat,string,int):
+.. _\+_([ratvec],(mat,string,int)->mat,string,int)1:
 
 \+
 -------------------------------------------------
@@ -324,7 +324,7 @@ det
 | 
 
 
-.. _\+_((mat,string,int),[ratvec]->mat,string,int):
+.. _\+_((mat,string,int),[ratvec]->mat,string,int)1:
 
 \+
 -------------------------------------------------
@@ -332,7 +332,7 @@ det
 | 
 
 
-.. _\-_([ratvec],(mat,string,int)->mat,string,int):
+.. _\-_([ratvec],(mat,string,int)->mat,string,int)1:
 
 \-
 -------------------------------------------------
@@ -340,7 +340,7 @@ det
 | 
 
 
-.. _\-_((mat,string,int),[ratvec]->mat,string,int):
+.. _\-_((mat,string,int),[ratvec]->mat,string,int)1:
 
 \-
 -------------------------------------------------
@@ -348,7 +348,7 @@ det
 | 
 
 
-.. _inverse_(mat,string,int->mat,string,int):
+.. _inverse_(mat,string,int->mat,string,int)1:
 
 inverse
 -------------------------------------------------
@@ -356,7 +356,7 @@ inverse
 | 
 
 
-.. _\*_([ratvec],mat->mat,string,int):
+.. _\*_([ratvec],mat->mat,string,int)1:
 
 \*
 -------------------------------------------------
@@ -364,7 +364,7 @@ inverse
 | 
 
 
-.. _\*_(mat,[ratvec]->mat,string,int):
+.. _\*_(mat,[ratvec]->mat,string,int)1:
 
 \*
 -------------------------------------------------
@@ -372,7 +372,7 @@ inverse
 | 
 
 
-.. _\+_([ratvec],mat->mat,string,int):
+.. _\+_([ratvec],mat->mat,string,int)1:
 
 \+
 -------------------------------------------------
@@ -380,7 +380,7 @@ inverse
 | 
 
 
-.. _\+_(mat,[ratvec]->mat,string,int):
+.. _\+_(mat,[ratvec]->mat,string,int)1:
 
 \+
 -------------------------------------------------
@@ -388,7 +388,7 @@ inverse
 | 
 
 
-.. _\-_([ratvec],mat->mat,string,int):
+.. _\-_([ratvec],mat->mat,string,int)1:
 
 \-
 -------------------------------------------------
@@ -396,7 +396,7 @@ inverse
 | 
 
 
-.. _\-_(mat,[ratvec]->mat,string,int):
+.. _\-_(mat,[ratvec]->mat,string,int)1:
 
 \-
 -------------------------------------------------
@@ -404,7 +404,7 @@ inverse
 | 
 
 
-.. _rational_inverse_(mat->mat,string,int):
+.. _rational_inverse_(mat->mat,string,int)1:
 
 rational_inverse
 -------------------------------------------------
@@ -412,7 +412,7 @@ rational_inverse
 | 
 
 
-.. _ratvec_to_string_(ratvec->string):
+.. _ratvec_to_string_(ratvec->string)1:
 
 ratvec_to_string
 -------------------------------------------------
@@ -420,7 +420,7 @@ ratvec_to_string
 | 
 
 
-.. _show_(mat,string,int->):
+.. _show_(mat,string,int->)1:
 
 show
 -------------------------------------------------
@@ -428,7 +428,7 @@ show
 | 
 
 
-.. _save_s_Split:
+.. _save_s_Split1:
 
 save_s
 -------------------------------------------------
@@ -436,7 +436,7 @@ save_s
 | 
 
 
-.. _s_Split:
+.. _s_Split1:
 
 s
 -------------------------------------------------

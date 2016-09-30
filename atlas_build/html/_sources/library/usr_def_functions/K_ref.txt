@@ -4,7 +4,7 @@ K.at Function References
 =======================================================
 |
 
-.. _cocharacter_lattice_K_(InnerClass->mat):
+.. _cocharacter_lattice_K_(InnerClass->mat)1:
 
 cocharacter_lattice_K
 -------------------------------------------------
@@ -12,7 +12,7 @@ cocharacter_lattice_K
 | 
 
 
-.. _is_fundamental_Cartan_(KGBElt->bool):
+.. _is_fundamental_Cartan_(KGBElt->bool)1:
 
 is_fundamental_Cartan
 -------------------------------------------------
@@ -20,7 +20,7 @@ is_fundamental_Cartan
 | 
 
 
-.. _cocharacter_lattice_K_(KGBElt->mat):
+.. _cocharacter_lattice_K_(KGBElt->mat)1:
 
 cocharacter_lattice_K
 -------------------------------------------------
@@ -28,7 +28,7 @@ cocharacter_lattice_K
 | 
 
 
-.. _projection_to_K_matrix_(InnerClass->mat):
+.. _projection_to_K_matrix_(InnerClass->mat)1:
 
 projection_to_K_matrix
 -------------------------------------------------
@@ -36,7 +36,7 @@ projection_to_K_matrix
 | 
 
 
-.. _projection_to_K_matrix_(KGBElt->mat):
+.. _projection_to_K_matrix_(KGBElt->mat)1:
 
 projection_to_K_matrix
 -------------------------------------------------
@@ -44,7 +44,7 @@ projection_to_K_matrix
 | 
 
 
-.. _project_K_(InnerClass,vec->vec):
+.. _project_K_(InnerClass,vec->vec)1:
 
 project_K
 -------------------------------------------------
@@ -52,7 +52,7 @@ project_K
 | 
 
 
-.. _project_K_(KGBElt,vec->vec):
+.. _project_K_(KGBElt,vec->vec)1:
 
 project_K
 -------------------------------------------------
@@ -60,7 +60,7 @@ project_K
 | 
 
 
-.. _project_K_(InnerClass,ratvec->vec):
+.. _project_K_(InnerClass,ratvec->vec)1:
 
 project_K
 -------------------------------------------------
@@ -68,7 +68,7 @@ project_K
 | 
 
 
-.. _project_K_(KGBElt,ratvec->vec):
+.. _project_K_(KGBElt,ratvec->vec)1:
 
 project_K
 -------------------------------------------------
@@ -76,7 +76,7 @@ project_K
 | 
 
 
-.. _injection_from_K_matrix_(InnerClass->mat):
+.. _injection_from_K_matrix_(InnerClass->mat)1:
 
 injection_from_K_matrix
 -------------------------------------------------
@@ -84,7 +84,7 @@ injection_from_K_matrix
 | 
 
 
-.. _injection_from_K_matrix_(KGBElt->mat):
+.. _injection_from_K_matrix_(KGBElt->mat)1:
 
 injection_from_K_matrix
 -------------------------------------------------
@@ -92,7 +92,7 @@ injection_from_K_matrix
 | 
 
 
-.. _inject_K_(InnerClass,ratvec->vec):
+.. _inject_K_(InnerClass,ratvec->vec)1:
 
 inject_K
 -------------------------------------------------
@@ -100,7 +100,7 @@ inject_K
 | 
 
 
-.. _inject_K_(KGBElt,ratvec->vec):
+.. _inject_K_(KGBElt,ratvec->vec)1:
 
 inject_K
 -------------------------------------------------
@@ -108,7 +108,7 @@ inject_K
 | 
 
 
-.. _coinject_from_K_(InnerClass,ratvec->ratvec):
+.. _coinject_from_K_(InnerClass,ratvec->ratvec)1:
 
 coinject_from_K
 -------------------------------------------------
@@ -116,7 +116,7 @@ coinject_from_K
 | 
 
 
-.. _coinject_from_K_(KGBElt,ratvec->ratvec):
+.. _coinject_from_K_(KGBElt,ratvec->ratvec)1:
 
 coinject_from_K
 -------------------------------------------------
@@ -124,7 +124,7 @@ coinject_from_K
 | 
 
 
-.. _rank_K_(InnerClass->int):
+.. _rank_K_(InnerClass->int)1:
 
 rank_K
 -------------------------------------------------
@@ -132,7 +132,7 @@ rank_K
 | 
 
 
-.. _G_K_roots_and_coroots_raw_(KGBElt->(mat,mat),(mat,mat)):
+.. _G_K_roots_and_coroots_raw_(KGBElt->(mat,mat),(mat,mat))1:
 
 G_K_roots_and_coroots_raw
 -------------------------------------------------
@@ -140,7 +140,7 @@ G_K_roots_and_coroots_raw
 | 
 
 
-.. _G_K_roots_and_coroots_(KGBElt->mat,mat):
+.. _G_K_roots_and_coroots_(KGBElt->mat,mat)1:
 
 G_K_roots_and_coroots
 -------------------------------------------------
@@ -148,7 +148,7 @@ G_K_roots_and_coroots
 | 
 
 
-.. _G_K_simple_roots_and_coroots_(KGBElt->mat,mat):
+.. _G_K_simple_roots_and_coroots_(KGBElt->mat,mat)1:
 
 G_K_simple_roots_and_coroots
 -------------------------------------------------
@@ -156,7 +156,7 @@ G_K_simple_roots_and_coroots
 | 
 
 
-.. _rank_K_(RealForm->int):
+.. _rank_K_(RealForm->int)1:
 
 rank_K
 -------------------------------------------------
@@ -164,7 +164,7 @@ rank_K
 | 
 
 
-.. _K_root_datum_(KGBElt->RootDatum):
+.. _K_root_datum_(KGBElt->RootDatum)1:
 
 K_root_datum
 -------------------------------------------------
@@ -172,7 +172,7 @@ K_root_datum
 | 
 
 
-.. _K_0_(KGBElt->RealForm):
+.. _K_0_(KGBElt->RealForm)1:
 
 K_0
 -------------------------------------------------
@@ -180,7 +180,7 @@ K_0
 | 
 
 
-.. _K_0_(RealForm->RealForm):
+.. _K_0_(RealForm->RealForm)1:
 
 K_0
 -------------------------------------------------
@@ -188,7 +188,7 @@ K_0
 | 
 
 
-.. _rho_K_(KGBElt->ratvec):
+.. _rho_K_(KGBElt->ratvec)1:
 
 rho_K
 -------------------------------------------------
@@ -196,7 +196,7 @@ rho_K
 | 
 
 
-.. _rho_K_(RealForm->ratvec):
+.. _rho_K_(RealForm->ratvec)1:
 
 rho_K
 -------------------------------------------------
@@ -204,7 +204,7 @@ rho_K
 | 
 
 
-.. _rho_c_(KGBElt->ratvec):
+.. _rho_c_(KGBElt->ratvec)1:
 
 rho_c
 -------------------------------------------------
@@ -212,7 +212,7 @@ rho_c
 | 
 
 
-.. _rho_c_(RealForm->ratvec):
+.. _rho_c_(RealForm->ratvec)1:
 
 rho_c
 -------------------------------------------------
@@ -220,7 +220,7 @@ rho_c
 | 
 
 
-.. _tworho_c_(KGBElt->ratvec):
+.. _tworho_c_(KGBElt->ratvec)1:
 
 tworho_c
 -------------------------------------------------
@@ -228,7 +228,7 @@ tworho_c
 | 
 
 
-.. _tworho_c_(RealForm->ratvec):
+.. _tworho_c_(RealForm->ratvec)1:
 
 tworho_c
 -------------------------------------------------
@@ -236,7 +236,7 @@ tworho_c
 | 
 
 
-.. _convert_K_type_(RealForm,vec,vec,int->Param):
+.. _convert_K_type_(RealForm,vec,vec,int->Param)1:
 
 convert_K_type
 -------------------------------------------------
@@ -244,7 +244,7 @@ convert_K_type
 | 
 
 
-.. _convert_K_type_(RealForm,(vec,vec,int)->Param):
+.. _convert_K_type_(RealForm,(vec,vec,int)->Param)1:
 
 convert_K_type
 -------------------------------------------------

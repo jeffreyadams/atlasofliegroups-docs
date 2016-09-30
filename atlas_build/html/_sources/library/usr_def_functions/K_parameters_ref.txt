@@ -4,7 +4,7 @@ K_parameters.at Function References
 =======================================================
 |
 
-.. _x_(KGBElt,ratvec->KGBElt):
+.. _x_(KGBElt,ratvec->KGBElt)1:
 
 x
 -------------------------------------------------
@@ -12,7 +12,7 @@ x
 | 
 
 
-.. _lambda_(KGBElt,ratvec->ratvec):
+.. _lambda_(KGBElt,ratvec->ratvec)1:
 
 lambda
 -------------------------------------------------
@@ -20,7 +20,7 @@ lambda
 | 
 
 
-.. _root_datum_(KGBElt,ratvec->RootDatum):
+.. _root_datum_(KGBElt,ratvec->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -28,7 +28,7 @@ root_datum
 | 
 
 
-.. _real_form_(KGBElt,ratvec->RealForm):
+.. _real_form_(KGBElt,ratvec->RealForm)1:
 
 real_form
 -------------------------------------------------
@@ -36,7 +36,7 @@ real_form
 | 
 
 
-.. _real_form_(KGBElt,vec->RealForm):
+.. _real_form_(KGBElt,vec->RealForm)1:
 
 real_form
 -------------------------------------------------
@@ -44,7 +44,7 @@ real_form
 | 
 
 
-.. _K_0_(KGBElt,vec->RealForm):
+.. _K_0_(KGBElt,vec->RealForm)1:
 
 K_0
 -------------------------------------------------
@@ -52,7 +52,7 @@ K_0
 | 
 
 
-.. _dlambda_(KGBElt,ratvec->ratvec):
+.. _dlambda_(KGBElt,ratvec->ratvec)1:
 
 dlambda
 -------------------------------------------------
@@ -60,7 +60,7 @@ dlambda
 | 
 
 
-.. _dlambda_(Param->ratvec):
+.. _dlambda_(Param->ratvec)1:
 
 dlambda
 -------------------------------------------------
@@ -68,7 +68,7 @@ dlambda
 | 
 
 
-.. _K_type_(Param->KGBElt,ratvec):
+.. _K_type_(Param->KGBElt,ratvec)1:
 
 K_type
 -------------------------------------------------
@@ -76,7 +76,7 @@ K_type
 | 
 
 
-.. _parameter_(KGBElt,ratvec->Param):
+.. _parameter_(KGBElt,ratvec->Param)1:
 
 parameter
 -------------------------------------------------
@@ -84,7 +84,7 @@ parameter
 | 
 
 
-.. _\=_((KGBElt,ratvec),(KGBElt,ratvec)->bool):
+.. _\=_((KGBElt,ratvec),(KGBElt,ratvec)->bool)1:
 
 \=
 -------------------------------------------------
@@ -92,7 +92,7 @@ parameter
 | 
 
 
-.. _make_no_Cminus_(KGBElt,ratvec->KGBElt,ratvec):
+.. _make_no_Cminus_(KGBElt,ratvec->KGBElt,ratvec)1:
 
 make_no_Cminus
 -------------------------------------------------
@@ -100,7 +100,7 @@ make_no_Cminus
 | 
 
 
-.. _length_(KGBElt,vec->rat):
+.. _length_(KGBElt,vec->rat)1:
 
 length
 -------------------------------------------------

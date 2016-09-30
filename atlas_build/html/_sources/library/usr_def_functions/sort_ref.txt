@@ -4,7 +4,7 @@ sort.at Function References
 =======================================================
 |
 
-.. _merge_([int],[int]->[int]):
+.. _merge_([int],[int]->[int])1:
 
 merge
 -------------------------------------------------
@@ -12,7 +12,7 @@ merge
 | 
 
 
-.. _sort_([int]->[int]):
+.. _sort_([int]->[int])1:
 
 sort
 -------------------------------------------------
@@ -20,7 +20,7 @@ sort
 | 
 
 
-.. _reverse_sort_([int]->[int]):
+.. _reverse_sort_([int]->[int])1:
 
 reverse_sort
 -------------------------------------------------
@@ -28,7 +28,7 @@ reverse_sort
 | 
 
 
-.. _sort_u_([int]->[int]):
+.. _sort_u_([int]->[int])1:
 
 sort_u
 -------------------------------------------------
@@ -36,7 +36,7 @@ sort_u
 | 
 
 
-.. _inv_standardisation_([int]->[int]):
+.. _inv_standardisation_([int]->[int])1:
 
 inv_standardisation
 -------------------------------------------------
@@ -44,7 +44,7 @@ inv_standardisation
 | 
 
 
-.. _sort_by_((Param->int)->([Param]->[Param])):
+.. _sort_by_((Param->int)->([Param]->[Param]))1:
 
 sort_by
 -------------------------------------------------
@@ -52,7 +52,7 @@ sort_by
 | 
 
 
-.. _sort_by_((KGBElt,ratvec->int)->([(KGBElt,ratvec)]->[(KGBElt,ratvec)])):
+.. _sort_by_((KGBElt,ratvec->int)->([(KGBElt,ratvec)]->[(KGBElt,ratvec)]))1:
 
 sort_by
 -------------------------------------------------
@@ -60,7 +60,7 @@ sort_by
 | 
 
 
-.. _sort_by_((Param,bool->int)->([(Param,bool)]->[(Param,bool)])):
+.. _sort_by_((Param,bool->int)->([(Param,bool)]->[(Param,bool)]))1:
 
 sort_by
 -------------------------------------------------
@@ -68,7 +68,7 @@ sort_by
 | 
 
 
-.. _sort_by_((Split,Param->int)->([(Split,Param)]->[(Split,Param)])):
+.. _sort_by_((Split,Param->int)->([(Split,Param)]->[(Split,Param)]))1:
 
 sort_by
 -------------------------------------------------
@@ -76,7 +76,7 @@ sort_by
 | 
 
 
-.. _sort_by_((Split,(KGBElt,ratvec)->int)->([(Split,(KGBElt,ratvec))]->[(Split,(KGBElt,ratvec))])):
+.. _sort_by_((Split,(KGBElt,ratvec)->int)->([(Split,(KGBElt,ratvec))]->[(Split,(KGBElt,ratvec))]))1:
 
 sort_by
 -------------------------------------------------
@@ -84,7 +84,7 @@ sort_by
 | 
 
 
-.. _sort_([rat]->[rat]):
+.. _sort_([rat]->[rat])1:
 
 sort
 -------------------------------------------------
@@ -92,7 +92,7 @@ sort
 | 
 
 
-.. _inv_standardisation_([rat]->[int]):
+.. _inv_standardisation_([rat]->[int])1:
 
 inv_standardisation
 -------------------------------------------------
@@ -100,7 +100,7 @@ inv_standardisation
 | 
 
 
-.. _sort_by_reducibility_points_([(Param,bool)]->[(Param,bool)]):
+.. _sort_by_reducibility_points_([(Param,bool)]->[(Param,bool)])1:
 
 sort_by_reducibility_points
 -------------------------------------------------
@@ -108,7 +108,7 @@ sort_by_reducibility_points
 | 
 
 
-.. _sort_by_reducibility_([Param]->[Param]):
+.. _sort_by_reducibility_([Param]->[Param])1:
 
 sort_by_reducibility
 -------------------------------------------------
@@ -116,7 +116,7 @@ sort_by_reducibility
 | 
 
 
-.. _sort_by_height_([Param]->[Param]):
+.. _sort_by_height_([Param]->[Param])1:
 
 sort_by_height
 -------------------------------------------------
@@ -124,7 +124,7 @@ sort_by_height
 | 
 
 
-.. _sort_by_height_([(Split,Param)]->[(Split,Param)]):
+.. _sort_by_height_([(Split,Param)]->[(Split,Param)])1:
 
 sort_by_height
 -------------------------------------------------

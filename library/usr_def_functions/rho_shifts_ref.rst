@@ -4,7 +4,7 @@ rho_shifts.at Function References
 =======================================================
 |
 
-.. _makeS_(mat,RootDatum->mat):
+.. _makeS_(mat,RootDatum->mat)1:
 
 makeS
 -------------------------------------------------
@@ -12,7 +12,7 @@ makeS
 | 
 
 
-.. _makeS_(KGBElt->mat):
+.. _makeS_(KGBElt->mat)1:
 
 makeS
 -------------------------------------------------
@@ -20,7 +20,7 @@ makeS
 | 
 
 
-.. _rho_S_(mat,RootDatum->ratvec):
+.. _rho_S_(mat,RootDatum->ratvec)1:
 
 rho_S
 -------------------------------------------------
@@ -28,7 +28,7 @@ rho_S
 | 
 
 
-.. _rho_S_(KGBElt->ratvec):
+.. _rho_S_(KGBElt->ratvec)1:
 
 rho_S
 -------------------------------------------------
@@ -36,7 +36,7 @@ rho_S
 | 
 
 
-.. _makeS_typeCplus_(mat,RootDatum->mat):
+.. _makeS_typeCplus_(mat,RootDatum->mat)1:
 
 makeS_typeCplus
 -------------------------------------------------
@@ -44,7 +44,7 @@ makeS_typeCplus
 | 
 
 
-.. _makeS_typeCplus_(KGBElt->mat):
+.. _makeS_typeCplus_(KGBElt->mat)1:
 
 makeS_typeCplus
 -------------------------------------------------
@@ -52,7 +52,7 @@ makeS_typeCplus
 | 
 
 
-.. _rho_S_typeCplus_(mat,RootDatum->ratvec):
+.. _rho_S_typeCplus_(mat,RootDatum->ratvec)1:
 
 rho_S_typeCplus
 -------------------------------------------------
@@ -60,7 +60,7 @@ rho_S_typeCplus
 | 
 
 
-.. _rho_S_typeCplus_(KGBElt->ratvec):
+.. _rho_S_typeCplus_(KGBElt->ratvec)1:
 
 rho_S_typeCplus
 -------------------------------------------------
@@ -68,7 +68,7 @@ rho_S_typeCplus
 | 
 
 
-.. _rho_k_(KGBElt->ratvec):
+.. _rho_k_(KGBElt->ratvec)2:
 
 rho_k
 -------------------------------------------------
@@ -76,7 +76,7 @@ rho_k
 | 
 
 
-.. _rho_s_(KGBElt->ratvec):
+.. _rho_s_(KGBElt->ratvec)2:
 
 rho_s
 -------------------------------------------------
@@ -84,7 +84,7 @@ rho_s
 | 
 
 
-.. _tworho_K_(KGBElt->vec):
+.. _tworho_K_(KGBElt->vec)1:
 
 tworho_K
 -------------------------------------------------
@@ -92,7 +92,7 @@ tworho_K
 | 
 
 
-.. _tworho_K_fixed_(KGBElt->ratvec):
+.. _tworho_K_fixed_(KGBElt->ratvec)1:
 
 tworho_K_fixed
 -------------------------------------------------
@@ -100,7 +100,7 @@ tworho_K_fixed
 | 
 
 
-.. _tworho_Kr_(KGBElt,KGBElt->vec):
+.. _tworho_Kr_(KGBElt,KGBElt->vec)1:
 
 tworho_Kr
 -------------------------------------------------

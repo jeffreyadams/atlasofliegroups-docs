@@ -4,7 +4,7 @@ complex_nilpotent_orbits.at Function References
 =======================================================
 |
 
-.. _root_datum_of_(RootDatum,vec->RootDatum):
+.. _root_datum_of_(RootDatum,vec->RootDatum)1:
 
 root_datum_of
 -------------------------------------------------
@@ -12,7 +12,7 @@ root_datum_of
 | 
 
 
-.. _semisimple_element_(RootDatum,vec->vec):
+.. _semisimple_element_(RootDatum,vec->vec)1:
 
 semisimple_element
 -------------------------------------------------
@@ -20,7 +20,7 @@ semisimple_element
 | 
 
 
-.. _dim_nilpotent_(RootDatum,ratvec->int):
+.. _dim_nilpotent_(RootDatum,ratvec->int)1:
 
 dim_nilpotent
 -------------------------------------------------
@@ -28,7 +28,7 @@ dim_nilpotent
 | 
 
 
-.. _diagram_(RootDatum,vec->[int]):
+.. _diagram_(RootDatum,vec->[int])1:
 
 diagram
 -------------------------------------------------
@@ -36,7 +36,7 @@ diagram
 | 
 
 
-.. _dim_nilpotent_(RootDatum,vec->int):
+.. _dim_nilpotent_(RootDatum,vec->int)1:
 
 dim_nilpotent
 -------------------------------------------------
@@ -44,7 +44,7 @@ dim_nilpotent
 | 
 
 
-.. _dim_eigenspace_(RootDatum,ratvec,int->int):
+.. _dim_eigenspace_(RootDatum,ratvec,int->int)1:
 
 dim_eigenspace
 -------------------------------------------------
@@ -52,7 +52,7 @@ dim_eigenspace
 | 
 
 
-.. _max_eigenspace_(RootDatum,ratvec->int):
+.. _max_eigenspace_(RootDatum,ratvec->int)1:
 
 max_eigenspace
 -------------------------------------------------
@@ -60,7 +60,7 @@ max_eigenspace
 | 
 
 
-.. _all_eigenspaces_(RootDatum,ratvec->[int]):
+.. _all_eigenspaces_(RootDatum,ratvec->[int])1:
 
 all_eigenspaces
 -------------------------------------------------
@@ -68,7 +68,7 @@ all_eigenspaces
 | 
 
 
-.. _extract_even_([int]->[int]):
+.. _extract_even_([int]->[int])1:
 
 extract_even
 -------------------------------------------------
@@ -76,7 +76,7 @@ extract_even
 | 
 
 
-.. _extract_odd_([int]->[int]):
+.. _extract_odd_([int]->[int])1:
 
 extract_odd
 -------------------------------------------------
@@ -84,7 +84,7 @@ extract_odd
 | 
 
 
-.. _is_decreasing_([int]->bool):
+.. _is_decreasing_([int]->bool)1:
 
 is_decreasing
 -------------------------------------------------
@@ -92,7 +92,7 @@ is_decreasing
 | 
 
 
-.. _even_eigenspaces_(RootDatum,ratvec->[int]):
+.. _even_eigenspaces_(RootDatum,ratvec->[int])1:
 
 even_eigenspaces
 -------------------------------------------------
@@ -100,7 +100,7 @@ even_eigenspaces
 | 
 
 
-.. _odd_eigenspaces_(RootDatum,ratvec->[int]):
+.. _odd_eigenspaces_(RootDatum,ratvec->[int])1:
 
 odd_eigenspaces
 -------------------------------------------------
@@ -108,7 +108,7 @@ odd_eigenspaces
 | 
 
 
-.. _support_(KGBElt->[int]):
+.. _support_(KGBElt->[int])1:
 
 support
 -------------------------------------------------
@@ -116,7 +116,7 @@ support
 | 
 
 
-.. _support_(Param->[int]):
+.. _support_(Param->[int])1:
 
 support
 -------------------------------------------------
@@ -124,7 +124,7 @@ support
 | 
 
 
-.. _blocku_(RealForm->[Param]):
+.. _blocku_(RealForm->[Param])1:
 
 blocku
 -------------------------------------------------
@@ -132,7 +132,7 @@ blocku
 | 
 
 
-.. _sort_by_((vec,rat->rat)->([(vec,rat)]->[(vec,rat)])):
+.. _sort_by_((vec,rat->rat)->([(vec,rat)]->[(vec,rat)]))1:
 
 sort_by
 -------------------------------------------------
@@ -140,7 +140,7 @@ sort_by
 | 
 
 
-.. _sort_by_length_([(vec,rat)]->[(vec,rat)]):
+.. _sort_by_length_([(vec,rat)]->[(vec,rat)])1:
 
 sort_by_length
 -------------------------------------------------
@@ -148,7 +148,7 @@ sort_by_length
 | 
 
 
-.. _smash_([int],[[int]]->[[int]]):
+.. _smash_([int],[[int]]->[[int]])1:
 
 smash
 -------------------------------------------------
@@ -156,7 +156,7 @@ smash
 | 
 
 
-.. _box_(int,int->[[int]]):
+.. _box_(int,int->[[int]])1:
 
 box
 -------------------------------------------------
@@ -164,7 +164,7 @@ box
 | 
 
 
-.. _box_([int]->[[int]]):
+.. _box_([int]->[[int]])1:
 
 box
 -------------------------------------------------
@@ -172,7 +172,7 @@ box
 | 
 
 
-.. _flatten_([[int]]->[int]):
+.. _flatten_([[int]]->[int])1:
 
 flatten
 -------------------------------------------------
@@ -180,7 +180,7 @@ flatten
 | 
 
 
-.. _all_H_(RootDatum->[(vec,rat)]):
+.. _all_H_(RootDatum->[(vec,rat)])1:
 
 all_H
 -------------------------------------------------
@@ -188,7 +188,7 @@ all_H
 | 
 
 
-.. _all_H_dimensions_(RootDatum->[int]):
+.. _all_H_dimensions_(RootDatum->[int])1:
 
 all_H_dimensions
 -------------------------------------------------
@@ -196,7 +196,7 @@ all_H_dimensions
 | 
 
 
-.. _sort_by_((ratvec,[vec]->int)->([(ratvec,[vec])]->[(ratvec,[vec])])):
+.. _sort_by_((ratvec,[vec]->int)->([(ratvec,[vec])]->[(ratvec,[vec])]))1:
 
 sort_by
 -------------------------------------------------
@@ -204,7 +204,7 @@ sort_by
 | 
 
 
-.. _sort_by_dimension_of_2_eigenspace_([(ratvec,[vec])]->[(ratvec,[vec])]):
+.. _sort_by_dimension_of_2_eigenspace_([(ratvec,[vec])]->[(ratvec,[vec])])1:
 
 sort_by_dimension_of_2_eigenspace
 -------------------------------------------------
@@ -212,7 +212,7 @@ sort_by_dimension_of_2_eigenspace
 | 
 
 
-.. _find_H_([int],KGBElt->[(vec,[vec])]):
+.. _find_H_([int],KGBElt->[(vec,[vec])])1:
 
 find_H
 -------------------------------------------------
@@ -220,7 +220,7 @@ find_H
 | 
 
 
-.. _max_only_([(vec,[vec])]->[(vec,[vec])]):
+.. _max_only_([(vec,[vec])]->[(vec,[vec])])1:
 
 max_only
 -------------------------------------------------
@@ -228,7 +228,7 @@ max_only
 | 
 
 
-.. _<=_([int],[int]->bool):
+.. _<=_([int],[int]->bool)1:
 
 <=
 -------------------------------------------------
@@ -236,7 +236,7 @@ max_only
 | 
 
 
-.. _<_([int],[int]->bool):
+.. _<_([int],[int]->bool)1:
 
 <
 -------------------------------------------------
@@ -244,7 +244,7 @@ max_only
 | 
 
 
-.. _principal_block_(RealForm->Block):
+.. _principal_block_(RealForm->Block)1:
 
 principal_block
 -------------------------------------------------
@@ -252,7 +252,7 @@ principal_block
 | 
 
 
-.. _convert_(Block,ratvec->[Param]):
+.. _convert_(Block,ratvec->[Param])1:
 
 convert
 -------------------------------------------------
@@ -260,7 +260,7 @@ convert
 | 
 
 
-.. _convert_(Block,[int],ratvec->[Param]):
+.. _convert_(Block,[int],ratvec->[Param])1:
 
 convert
 -------------------------------------------------
@@ -268,7 +268,7 @@ convert
 | 
 
 
-.. _real_form_(Block->RealForm):
+.. _real_form_(Block->RealForm)1:
 
 real_form
 -------------------------------------------------
@@ -276,7 +276,7 @@ real_form
 | 
 
 
-.. _rho_(Block->ratvec):
+.. _rho_(Block->ratvec)1:
 
 rho
 -------------------------------------------------
@@ -284,7 +284,7 @@ rho
 | 
 
 
-.. _choose_gamma_(KGBElt,KGBElt->ratvec):
+.. _choose_gamma_(KGBElt,KGBElt->ratvec)1:
 
 choose_gamma
 -------------------------------------------------
@@ -292,7 +292,7 @@ choose_gamma
 | 
 
 
-.. _choose_gamma_(Block->ratvec):
+.. _choose_gamma_(Block->ratvec)1:
 
 choose_gamma
 -------------------------------------------------
@@ -300,7 +300,7 @@ choose_gamma
 | 
 
 
-.. _convert_(Block->[Param]):
+.. _convert_(Block->[Param])1:
 
 convert
 -------------------------------------------------
@@ -308,7 +308,7 @@ convert
 | 
 
 
-.. _convert_(Block,[int]->[Param]):
+.. _convert_(Block,[int]->[Param])1:
 
 convert
 -------------------------------------------------
@@ -316,7 +316,7 @@ convert
 | 
 
 
-.. _convert_list_W_cells_(Block,ratvec,[[int]]->[[Param]]):
+.. _convert_list_W_cells_(Block,ratvec,[[int]]->[[Param]])1:
 
 convert_list_W_cells
 -------------------------------------------------
@@ -324,7 +324,7 @@ convert_list_W_cells
 | 
 
 
-.. _tau_invariants_(Block->[[int]]):
+.. _tau_invariants_(Block->[[int]])1:
 
 tau_invariants
 -------------------------------------------------
@@ -332,7 +332,7 @@ tau_invariants
 | 
 
 
-.. _tau_invariants_of_cell_(Block,[int]->[(int,[int])]):
+.. _tau_invariants_of_cell_(Block,[int]->[(int,[int])])1:
 
 tau_invariants_of_cell
 -------------------------------------------------
@@ -340,7 +340,7 @@ tau_invariants_of_cell
 | 
 
 
-.. _tau_invariants_of_cell_raw_(Block,[int]->[[int]]):
+.. _tau_invariants_of_cell_raw_(Block,[int]->[[int]])1:
 
 tau_invariants_of_cell_raw
 -------------------------------------------------
@@ -348,7 +348,7 @@ tau_invariants_of_cell_raw
 | 
 
 
-.. _tau_containing_(Block,[int]->[int]):
+.. _tau_containing_(Block,[int]->[int])1:
 
 tau_containing
 -------------------------------------------------
@@ -356,7 +356,7 @@ tau_containing
 | 
 
 
-.. _is_Aq_(Param->bool):
+.. _is_Aq_(Param->bool)1:
 
 is_Aq
 -------------------------------------------------
@@ -364,7 +364,7 @@ is_Aq
 | 
 
 
-.. _is_Aq_(KGBElt,KGBElt->bool):
+.. _is_Aq_(KGBElt,KGBElt->bool)1:
 
 is_Aq
 -------------------------------------------------
@@ -372,7 +372,7 @@ is_Aq
 | 
 
 
-.. _Blocku_(RealForm->[int]):
+.. _Blocku_(RealForm->[int])1:
 
 Blocku
 -------------------------------------------------
@@ -380,7 +380,7 @@ Blocku
 | 
 
 
-.. _is_Aq_cell_(Block,[int]->bool):
+.. _is_Aq_cell_(Block,[int]->bool)1:
 
 is_Aq_cell
 -------------------------------------------------
@@ -388,7 +388,7 @@ is_Aq_cell
 | 
 
 
-.. _is_Aq_(Block,int->bool):
+.. _is_Aq_(Block,int->bool)1:
 
 is_Aq
 -------------------------------------------------
@@ -396,7 +396,7 @@ is_Aq
 | 
 
 
-.. _Aq_cells_(Block,[[int]]->[[int]]):
+.. _Aq_cells_(Block,[[int]]->[[int]])1:
 
 Aq_cells
 -------------------------------------------------
@@ -404,7 +404,7 @@ Aq_cells
 | 
 
 
-.. _Aq_reps_(Block,[int]->[int]):
+.. _Aq_reps_(Block,[int]->[int])1:
 
 Aq_reps
 -------------------------------------------------
@@ -412,7 +412,7 @@ Aq_reps
 | 
 
 
-.. _Aq_cells_(RealForm,[[int]]->[[int]]):
+.. _Aq_cells_(RealForm,[[int]]->[[int]])1:
 
 Aq_cells
 -------------------------------------------------

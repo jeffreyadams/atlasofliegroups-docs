@@ -10,9 +10,9 @@ induction_sp4.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`p_long_((rat,int),(rat,int)->Param)`
+   * - :ref:`p_long_((rat,int),(rat,int)->Param)1`
      - ``((rat,int),(rat,int)->Param)``
-   * - :ref:`p_short_((rat,rat),(int,int)->Param)`
+   * - :ref:`p_short_((rat,rat),(int,int)->Param)1`
      - ``((rat,rat),(int,int)->Param)``
 
 
@@ -23,17 +23,17 @@ induction_sp4.at Function Index
 
    * - Variable
      - Data Type
-   * - :ref:`G_RealForm`
+   * - :ref:`G_RealForm2`
      - ``RealForm``
-   * - :ref:`L_short_RealForm`
+   * - :ref:`L_short_RealForm1`
      - ``RealForm``
-   * - :ref:`L_long_RealForm`
+   * - :ref:`L_long_RealForm1`
      - ``RealForm``
-   * - :ref:`p_1_Param`
+   * - :ref:`p_1_Param1`
      - ``Param``
-   * - :ref:`p_2_Param`
+   * - :ref:`p_2_Param1`
      - ``Param``
-   * - :ref:`p_3_Param`
+   * - :ref:`p_3_Param1`
      - ``Param``
-   * - :ref:`p_4_Param`
+   * - :ref:`p_4_Param1`
      - ``Param``

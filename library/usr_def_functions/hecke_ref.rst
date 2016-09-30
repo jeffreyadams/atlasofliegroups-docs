@@ -4,7 +4,7 @@ hecke.at Function References
 =======================================================
 |
 
-.. _\=_((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool):
+.. _\=_((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)1:
 
 \=
 -------------------------------------------------
@@ -12,7 +12,7 @@ hecke.at Function References
 | 
 
 
-.. _!=_((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool):
+.. _!=_((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)1:
 
 !=
 -------------------------------------------------
@@ -20,7 +20,7 @@ hecke.at Function References
 | 
 
 
-.. _y_gen_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec):
+.. _y_gen_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec)1:
 
 y_gen
 -------------------------------------------------
@@ -28,7 +28,7 @@ y_gen
 | 
 
 
-.. _y_gen_(Param->InnerClass,mat,ratvec):
+.. _y_gen_(Param->InnerClass,mat,ratvec)1:
 
 y_gen
 -------------------------------------------------
@@ -36,7 +36,7 @@ y_gen
 | 
 
 
-.. _index_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->int):
+.. _index_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->int)1:
 
 index
 -------------------------------------------------
@@ -44,7 +44,7 @@ index
 | 
 
 
-.. _find_pair_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->bool):
+.. _find_pair_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->bool)1:
 
 find_pair
 -------------------------------------------------
@@ -52,7 +52,7 @@ find_pair
 | 
 
 
-.. _add_pair_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _add_pair_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 add_pair
 -------------------------------------------------
@@ -60,7 +60,7 @@ add_pair
 | 
 
 
-.. _index_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->int):
+.. _index_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->int)1:
 
 index
 -------------------------------------------------
@@ -68,7 +68,7 @@ index
 | 
 
 
-.. _neighbors_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]):
+.. _neighbors_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1:
 
 neighbors
 -------------------------------------------------
@@ -76,7 +76,7 @@ neighbors
 | 
 
 
-.. _kgb_sort_([KGBElt]->[KGBElt]):
+.. _kgb_sort_([KGBElt]->[KGBElt])1:
 
 kgb_sort
 -------------------------------------------------
@@ -84,7 +84,7 @@ kgb_sort
 | 
 
 
-.. _x_sort_([(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _x_sort_([(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 x_sort
 -------------------------------------------------
@@ -92,7 +92,7 @@ x_sort
 | 
 
 
-.. _xy_neighbors_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _xy_neighbors_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 xy_neighbors
 -------------------------------------------------
@@ -100,7 +100,7 @@ xy_neighbors
 | 
 
 
-.. _xy_neighbors_(int,mat,Param,ratvec->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _xy_neighbors_(int,mat,Param,ratvec->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 xy_neighbors
 -------------------------------------------------
@@ -108,7 +108,7 @@ xy_neighbors
 | 
 
 
-.. _xy_neighbors_(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _xy_neighbors_(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 xy_neighbors
 -------------------------------------------------
@@ -116,7 +116,7 @@ xy_neighbors
 | 
 
 
-.. _generate_subspace_(int,int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _generate_subspace_(int,int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 generate_subspace
 -------------------------------------------------
@@ -124,7 +124,7 @@ generate_subspace
 | 
 
 
-.. _generate_subspace_(int,int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _generate_subspace_(int,int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 generate_subspace
 -------------------------------------------------
@@ -132,7 +132,7 @@ generate_subspace
 | 
 
 
-.. _generate_subspace_(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _generate_subspace_(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 generate_subspace
 -------------------------------------------------
@@ -140,7 +140,7 @@ generate_subspace
 | 
 
 
-.. _generate_subspace_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))]):
+.. _generate_subspace_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1:
 
 generate_subspace
 -------------------------------------------------
@@ -148,7 +148,7 @@ generate_subspace
 | 
 
 
-.. _decompose_(int,int,mat,[Param],ratvec->[[(KGBElt,(InnerClass,mat,ratvec))]],int,[int]):
+.. _decompose_(int,int,mat,[Param],ratvec->[[(KGBElt,(InnerClass,mat,ratvec))]],int,[int])1:
 
 decompose
 -------------------------------------------------
@@ -156,7 +156,7 @@ decompose
 | 
 
 
-.. _sign_2i12_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _sign_2i12_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 sign_2i12
 -------------------------------------------------
@@ -164,7 +164,7 @@ sign_2i12
 | 
 
 
-.. _sign_2i12_old_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _sign_2i12_old_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 sign_2i12_old
 -------------------------------------------------
@@ -172,7 +172,7 @@ sign_2i12_old
 | 
 
 
-.. _sign_2r21_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _sign_2r21_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 sign_2r21
 -------------------------------------------------
@@ -180,7 +180,7 @@ sign_2r21
 | 
 
 
-.. _sign_2Ci_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _sign_2Ci_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 sign_2Ci
 -------------------------------------------------
@@ -188,7 +188,7 @@ sign_2Ci
 | 
 
 
-.. _sign_2Cr_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int):
+.. _sign_2Cr_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
 
 sign_2Cr
 -------------------------------------------------
@@ -196,7 +196,7 @@ sign_2Cr
 | 
 
 
-.. _signs_1i1_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int,int):
+.. _signs_1i1_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int,int)1:
 
 signs_1i1
 -------------------------------------------------
@@ -204,7 +204,7 @@ signs_1i1
 | 
 
 
-.. _\+_(vec,vec->vec):
+.. _\+_(vec,vec->vec)1:
 
 \+
 -------------------------------------------------
@@ -212,7 +212,7 @@ signs_1i1
 | 
 
 
-.. _\-_(vec,vec->vec):
+.. _\-_(vec,vec->vec)1:
 
 \-
 -------------------------------------------------
@@ -220,7 +220,7 @@ signs_1i1
 | 
 
 
-.. _\*_(vec,vec->vec):
+.. _\*_(vec,vec->vec)1:
 
 \*
 -------------------------------------------------
@@ -228,7 +228,7 @@ signs_1i1
 | 
 
 
-.. _hecke_row_(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[vec]):
+.. _hecke_row_(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])1:
 
 hecke_row
 -------------------------------------------------
@@ -236,7 +236,7 @@ hecke_row
 | 
 
 
-.. _\+_(vec,vec->vec):
+.. _\+_(vec,vec->vec)2:
 
 \+
 -------------------------------------------------
@@ -244,7 +244,7 @@ hecke_row
 | 
 
 
-.. _\-_(vec,vec->vec):
+.. _\-_(vec,vec->vec)2:
 
 \-
 -------------------------------------------------
@@ -252,7 +252,7 @@ hecke_row
 | 
 
 
-.. _\*_(vec,vec->int):
+.. _\*_(vec,vec->int)1:
 
 \*
 -------------------------------------------------
@@ -260,7 +260,7 @@ hecke_row
 | 
 
 
-.. _hecke_row_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->[vec]):
+.. _hecke_row_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])1:
 
 hecke_row
 -------------------------------------------------
@@ -268,7 +268,7 @@ hecke_row
 | 
 
 
-.. _hecke_matrix_(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[[vec]]):
+.. _hecke_matrix_(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[[vec]])1:
 
 hecke_matrix
 -------------------------------------------------
@@ -276,7 +276,7 @@ hecke_matrix
 | 
 
 
-.. _quadratic_([[vec]],int,bool->bool):
+.. _quadratic_([[vec]],int,bool->bool)1:
 
 quadratic
 -------------------------------------------------
@@ -284,7 +284,7 @@ quadratic
 | 
 
 
-.. _quadratic_([[vec]],int->bool):
+.. _quadratic_([[vec]],int->bool)1:
 
 quadratic
 -------------------------------------------------
@@ -292,7 +292,7 @@ quadratic
 | 
 
 
-.. _braid_([[vec]],[[vec]],int,bool->bool):
+.. _braid_([[vec]],[[vec]],int,bool->bool)1:
 
 braid
 -------------------------------------------------
@@ -300,7 +300,7 @@ braid
 | 
 
 
-.. _braid_([[vec]],[[vec]],int->bool):
+.. _braid_([[vec]],[[vec]],int->bool)1:
 
 braid
 -------------------------------------------------
@@ -308,7 +308,7 @@ braid
 | 
 
 
-.. _modify_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),vec,vec,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec):
+.. _modify_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),vec,vec,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
 
 modify
 -------------------------------------------------
@@ -316,7 +316,7 @@ modify
 | 
 
 
-.. _test_hecke_(int,int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool):
+.. _test_hecke_(int,int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)1:
 
 test_hecke
 -------------------------------------------------
@@ -324,7 +324,7 @@ test_hecke
 | 
 
 
-.. _test_hecke_(int,int,mat,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool):
+.. _test_hecke_(int,int,mat,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)1:
 
 test_hecke
 -------------------------------------------------
@@ -332,7 +332,7 @@ test_hecke
 | 
 
 
-.. _test_hecke_(int,int,mat,[Param],ratvec->bool):
+.. _test_hecke_(int,int,mat,[Param],ratvec->bool)1:
 
 test_hecke
 -------------------------------------------------
@@ -340,7 +340,7 @@ test_hecke
 | 
 
 
-.. _test_hecke_(int,int,mat,[Param]->bool):
+.. _test_hecke_(int,int,mat,[Param]->bool)1:
 
 test_hecke
 -------------------------------------------------
@@ -348,7 +348,7 @@ test_hecke
 | 
 
 
-.. _test_hecke_(int,int,mat,Param->bool):
+.. _test_hecke_(int,int,mat,Param->bool)1:
 
 test_hecke
 -------------------------------------------------
@@ -356,7 +356,7 @@ test_hecke
 | 
 
 
-.. _test_hecke_(int,int,Param,ratvec->bool):
+.. _test_hecke_(int,int,Param,ratvec->bool)1:
 
 test_hecke
 -------------------------------------------------
@@ -364,7 +364,7 @@ test_hecke
 | 
 
 
-.. _test_hecke_(int,int,Param->bool):
+.. _test_hecke_(int,int,Param->bool)1:
 
 test_hecke
 -------------------------------------------------

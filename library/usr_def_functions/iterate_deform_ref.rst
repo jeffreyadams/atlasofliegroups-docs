@@ -4,7 +4,7 @@ iterate_deform.at Function References
 =======================================================
 |
 
-.. _null_wt_(int->ratvec):
+.. _null_wt_(int->ratvec)2:
 
 null_wt
 -------------------------------------------------
@@ -12,7 +12,7 @@ null_wt
 | 
 
 
-.. _has_nu0_(Param->bool):
+.. _has_nu0_(Param->bool)3:
 
 has_nu0
 -------------------------------------------------
@@ -20,7 +20,7 @@ has_nu0
 | 
 
 
-.. _weak_lower_(Param->Param):
+.. _weak_lower_(Param->Param)2:
 
 weak_lower
 -------------------------------------------------
@@ -28,7 +28,7 @@ weak_lower
 | 
 
 
-.. _lower_(Param->Param):
+.. _lower_(Param->Param)2:
 
 lower
 -------------------------------------------------
@@ -36,7 +36,7 @@ lower
 | 
 
 
-.. _deformation_(Param->Param,ParamPol):
+.. _deformation_(Param->Param,ParamPol)2:
 
 deformation
 -------------------------------------------------
@@ -44,7 +44,7 @@ deformation
 | 
 
 
-.. _iterate_deform_(Param->(Param,ParamPol),int):
+.. _iterate_deform_(Param->(Param,ParamPol),int)1:
 
 iterate_deform
 -------------------------------------------------
@@ -52,7 +52,7 @@ iterate_deform
 | 
 
 
-.. _recursive_deform_(Param->Param,ParamPol):
+.. _recursive_deform_(Param->Param,ParamPol)1:
 
 recursive_deform
 -------------------------------------------------
@@ -60,7 +60,7 @@ recursive_deform
 | 
 
 
-.. _rec_def_(Param->Param,ParamPol):
+.. _rec_def_(Param->Param,ParamPol)1:
 
 rec_def
 -------------------------------------------------
@@ -68,7 +68,7 @@ rec_def
 | 
 
 
-.. _iterate_deform_debug_bool:
+.. _iterate_deform_debug_bool1:
 
 iterate_deform_debug
 -------------------------------------------------

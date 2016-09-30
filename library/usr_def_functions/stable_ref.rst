@@ -4,7 +4,7 @@ stable.at Function References
 =======================================================
 |
 
-.. _indices_([Param],[Param]->[int]):
+.. _indices_([Param],[Param]->[int])1:
 
 indices
 -------------------------------------------------
@@ -12,7 +12,7 @@ indices
 | 
 
 
-.. _evaluate_at_1_([vec]->vec):
+.. _evaluate_at_1_([vec]->vec)1:
 
 evaluate_at_1
 -------------------------------------------------
@@ -20,7 +20,7 @@ evaluate_at_1
 | 
 
 
-.. _evaluate_at_1_([[vec]]->mat):
+.. _evaluate_at_1_([[vec]]->mat)1:
 
 evaluate_at_1
 -------------------------------------------------
@@ -28,7 +28,7 @@ evaluate_at_1
 | 
 
 
-.. _number_(KGBElt->int):
+.. _number_(KGBElt->int)1:
 
 number
 -------------------------------------------------
@@ -36,7 +36,7 @@ number
 | 
 
 
-.. _left_kernel_(mat->mat):
+.. _left_kernel_(mat->mat)1:
 
 left_kernel
 -------------------------------------------------
@@ -44,7 +44,7 @@ left_kernel
 | 
 
 
-.. _column_([[vec]],int->[vec]):
+.. _column_([[vec]],int->[vec])1:
 
 column
 -------------------------------------------------
@@ -52,7 +52,7 @@ column
 | 
 
 
-.. _null_poly_mat_(int,int->[[vec]]):
+.. _null_poly_mat_(int,int->[[vec]])1:
 
 null_poly_mat
 -------------------------------------------------
@@ -60,7 +60,7 @@ null_poly_mat
 | 
 
 
-.. _mat_as_poly_mat_(mat->[[vec]]):
+.. _mat_as_poly_mat_(mat->[[vec]])1:
 
 mat_as_poly_mat
 -------------------------------------------------
@@ -68,7 +68,7 @@ mat_as_poly_mat
 | 
 
 
-.. _\*_(mat,[[vec]]->[[vec]]):
+.. _\*_(mat,[[vec]]->[[vec]])1:
 
 \*
 -------------------------------------------------
@@ -76,7 +76,7 @@ mat_as_poly_mat
 | 
 
 
-.. _has_infinitesimal_character_([Param]->bool):
+.. _has_infinitesimal_character_([Param]->bool)1:
 
 has_infinitesimal_character
 -------------------------------------------------
@@ -84,7 +84,7 @@ has_infinitesimal_character
 | 
 
 
-.. _make_regular_(Param->Param):
+.. _make_regular_(Param->Param)1:
 
 make_regular
 -------------------------------------------------
@@ -92,7 +92,7 @@ make_regular
 | 
 
 
-.. _make_param_pol_([int],[Param]->ParamPol):
+.. _make_param_pol_([int],[Param]->ParamPol)1:
 
 make_param_pol
 -------------------------------------------------
@@ -100,7 +100,7 @@ make_param_pol
 | 
 
 
-.. _inverse_permutation_([int]->[int]):
+.. _inverse_permutation_([int]->[int])1:
 
 inverse_permutation
 -------------------------------------------------
@@ -108,7 +108,7 @@ inverse_permutation
 | 
 
 
-.. _permutation_matrix_([int]->mat):
+.. _permutation_matrix_([int]->mat)1:
 
 permutation_matrix
 -------------------------------------------------
@@ -116,7 +116,7 @@ permutation_matrix
 | 
 
 
-.. _permutation_matrix_([int],[int]->mat):
+.. _permutation_matrix_([int],[int]->mat)1:
 
 permutation_matrix
 -------------------------------------------------
@@ -124,7 +124,7 @@ permutation_matrix
 | 
 
 
-.. _permutation_matrix_sort_([int]->mat):
+.. _permutation_matrix_sort_([int]->mat)1:
 
 permutation_matrix_sort
 -------------------------------------------------
@@ -132,7 +132,7 @@ permutation_matrix_sort
 | 
 
 
-.. _in_tau_(int,Param->bool):
+.. _in_tau_(int,Param->bool)1:
 
 in_tau
 -------------------------------------------------
@@ -140,7 +140,7 @@ in_tau
 | 
 
 
-.. _in_tau_([int],Param->bool):
+.. _in_tau_([int],Param->bool)1:
 
 in_tau
 -------------------------------------------------
@@ -148,7 +148,7 @@ in_tau
 | 
 
 
-.. _in_tau_([*],Param->bool):
+.. _in_tau_([*],Param->bool)1:
 
 in_tau
 -------------------------------------------------
@@ -156,7 +156,7 @@ in_tau
 | 
 
 
-.. _in_tau_complement_(int,Param->bool):
+.. _in_tau_complement_(int,Param->bool)1:
 
 in_tau_complement
 -------------------------------------------------
@@ -164,7 +164,7 @@ in_tau_complement
 | 
 
 
-.. _in_tau_complement_([int],Param->bool):
+.. _in_tau_complement_([int],Param->bool)1:
 
 in_tau_complement
 -------------------------------------------------
@@ -172,7 +172,7 @@ in_tau_complement
 | 
 
 
-.. _in_tau_complement_([*],Param->bool):
+.. _in_tau_complement_([*],Param->bool)1:
 
 in_tau_complement
 -------------------------------------------------
@@ -180,7 +180,7 @@ in_tau_complement
 | 
 
 
-.. _Psi_([Param],[int]->[Param]):
+.. _Psi_([Param],[int]->[Param])1:
 
 Psi
 -------------------------------------------------
@@ -188,7 +188,7 @@ Psi
 | 
 
 
-.. _parameters_tau_containing_([int],[Param]->[int]):
+.. _parameters_tau_containing_([int],[Param]->[int])1:
 
 parameters_tau_containing
 -------------------------------------------------
@@ -196,7 +196,7 @@ parameters_tau_containing
 | 
 
 
-.. _parameters_tau_containing_([*],[Param]->[int]):
+.. _parameters_tau_containing_([*],[Param]->[int])1:
 
 parameters_tau_containing
 -------------------------------------------------
@@ -204,7 +204,7 @@ parameters_tau_containing
 | 
 
 
-.. _parameters_tau_contained_in_complement_([int],[Param]->[int]):
+.. _parameters_tau_contained_in_complement_([int],[Param]->[int])1:
 
 parameters_tau_contained_in_complement
 -------------------------------------------------
@@ -212,7 +212,7 @@ parameters_tau_contained_in_complement
 | 
 
 
-.. _parameters_tau_contained_in_complement_([*],[Param]->[int]):
+.. _parameters_tau_contained_in_complement_([*],[Param]->[int])1:
 
 parameters_tau_contained_in_complement
 -------------------------------------------------
@@ -220,7 +220,7 @@ parameters_tau_contained_in_complement
 | 
 
 
-.. _permutation_([Param]->[int]):
+.. _permutation_([Param]->[int])1:
 
 permutation
 -------------------------------------------------
@@ -228,7 +228,7 @@ permutation
 | 
 
 
-.. _dual_parameters_([int],[Param]->[int]):
+.. _dual_parameters_([int],[Param]->[int])1:
 
 dual_parameters
 -------------------------------------------------
@@ -236,7 +236,7 @@ dual_parameters
 | 
 
 
-.. _dual_parameters_([*],[Param]->[int]):
+.. _dual_parameters_([*],[Param]->[int])1:
 
 dual_parameters
 -------------------------------------------------
@@ -244,7 +244,7 @@ dual_parameters
 | 
 
 
-.. _parameters_([int],[Param]->[int]):
+.. _parameters_([int],[Param]->[int])1:
 
 parameters
 -------------------------------------------------
@@ -252,7 +252,7 @@ parameters
 | 
 
 
-.. _parameters_([*],[Param]->[int]):
+.. _parameters_([*],[Param]->[int])1:
 
 parameters
 -------------------------------------------------
@@ -260,7 +260,7 @@ parameters
 | 
 
 
-.. _parameters_singular_([int],[Param]->[Param]):
+.. _parameters_singular_([int],[Param]->[Param])1:
 
 parameters_singular
 -------------------------------------------------
@@ -268,7 +268,7 @@ parameters_singular
 | 
 
 
-.. _parameters_singular_([*],[Param]->[Param]):
+.. _parameters_singular_([*],[Param]->[Param])1:
 
 parameters_singular
 -------------------------------------------------
@@ -276,7 +276,7 @@ parameters_singular
 | 
 
 
-.. _lengths_signs_([Param]->[int]):
+.. _lengths_signs_([Param]->[int])1:
 
 lengths_signs
 -------------------------------------------------
@@ -284,7 +284,7 @@ lengths_signs
 | 
 
 
-.. _lengths_signs_matrix_([Param]->mat):
+.. _lengths_signs_matrix_([Param]->mat)1:
 
 lengths_signs_matrix
 -------------------------------------------------
@@ -292,7 +292,7 @@ lengths_signs_matrix
 | 
 
 
-.. _lengths_signs_([int],[Param]->[int]):
+.. _lengths_signs_([int],[Param]->[int])1:
 
 lengths_signs
 -------------------------------------------------
@@ -300,7 +300,7 @@ lengths_signs
 | 
 
 
-.. _lengths_signs_([*],[Param]->[int]):
+.. _lengths_signs_([*],[Param]->[int])1:
 
 lengths_signs
 -------------------------------------------------
@@ -308,7 +308,7 @@ lengths_signs
 | 
 
 
-.. _lengths_signs_matrix_([int],[Param]->mat):
+.. _lengths_signs_matrix_([int],[Param]->mat)1:
 
 lengths_signs_matrix
 -------------------------------------------------
@@ -316,7 +316,7 @@ lengths_signs_matrix
 | 
 
 
-.. _lengths_signs_matrix_([*],[Param]->mat):
+.. _lengths_signs_matrix_([*],[Param]->mat)1:
 
 lengths_signs_matrix
 -------------------------------------------------
@@ -324,7 +324,7 @@ lengths_signs_matrix
 | 
 
 
-.. _dual_parameters_matrix_([int],[Param]->mat):
+.. _dual_parameters_matrix_([int],[Param]->mat)1:
 
 dual_parameters_matrix
 -------------------------------------------------
@@ -332,7 +332,7 @@ dual_parameters_matrix
 | 
 
 
-.. _dual_parameters_matrix_([*],[Param]->mat):
+.. _dual_parameters_matrix_([*],[Param]->mat)1:
 
 dual_parameters_matrix
 -------------------------------------------------
@@ -340,7 +340,7 @@ dual_parameters_matrix
 | 
 
 
-.. _dual_parameters_matrix_([Param]->mat):
+.. _dual_parameters_matrix_([Param]->mat)1:
 
 dual_parameters_matrix
 -------------------------------------------------
@@ -348,7 +348,7 @@ dual_parameters_matrix
 | 
 
 
-.. _dual_parameters_matrix_([Param],[int]->mat):
+.. _dual_parameters_matrix_([Param],[int]->mat)1:
 
 dual_parameters_matrix
 -------------------------------------------------
@@ -356,7 +356,7 @@ dual_parameters_matrix
 | 
 
 
-.. _dual_parameters_standard_basis_poly_mat_([Param]->[[vec]]):
+.. _dual_parameters_standard_basis_poly_mat_([Param]->[[vec]])1:
 
 dual_parameters_standard_basis_poly_mat
 -------------------------------------------------
@@ -364,7 +364,7 @@ dual_parameters_standard_basis_poly_mat
 | 
 
 
-.. _dual_parameters_standard_basis_([Param]->mat):
+.. _dual_parameters_standard_basis_([Param]->mat)1:
 
 dual_parameters_standard_basis
 -------------------------------------------------
@@ -372,7 +372,7 @@ dual_parameters_standard_basis
 | 
 
 
-.. _dual_parameters_standard_basis_([int],[Param]->mat):
+.. _dual_parameters_standard_basis_([int],[Param]->mat)1:
 
 dual_parameters_standard_basis
 -------------------------------------------------
@@ -380,7 +380,7 @@ dual_parameters_standard_basis
 | 
 
 
-.. _dual_parameters_standard_basis_([*],[Param]->mat):
+.. _dual_parameters_standard_basis_([*],[Param]->mat)1:
 
 dual_parameters_standard_basis
 -------------------------------------------------
@@ -388,7 +388,7 @@ dual_parameters_standard_basis
 | 
 
 
-.. _get_y_([Param]->[int]):
+.. _get_y_([Param]->[int])1:
 
 get_y
 -------------------------------------------------
@@ -396,7 +396,7 @@ get_y
 | 
 
 
-.. _stable_at_regular_([Param]->mat):
+.. _stable_at_regular_([Param]->mat)1:
 
 stable_at_regular
 -------------------------------------------------
@@ -404,7 +404,7 @@ stable_at_regular
 | 
 
 
-.. _vanishing_([int],[Param]->mat):
+.. _vanishing_([int],[Param]->mat)1:
 
 vanishing
 -------------------------------------------------
@@ -412,7 +412,7 @@ vanishing
 | 
 
 
-.. _vanishing_([*],[Param]->mat):
+.. _vanishing_([*],[Param]->mat)1:
 
 vanishing
 -------------------------------------------------
@@ -420,7 +420,7 @@ vanishing
 | 
 
 
-.. _kernel_vanishing_([int],[Param]->mat):
+.. _kernel_vanishing_([int],[Param]->mat)1:
 
 kernel_vanishing
 -------------------------------------------------
@@ -428,7 +428,7 @@ kernel_vanishing
 | 
 
 
-.. _kernel_vanishing_([*],[Param]->mat):
+.. _kernel_vanishing_([*],[Param]->mat)1:
 
 kernel_vanishing
 -------------------------------------------------
@@ -436,7 +436,7 @@ kernel_vanishing
 | 
 
 
-.. _stable_at_singular_unsorted_([int],[Param]->mat,[Param]):
+.. _stable_at_singular_unsorted_([int],[Param]->mat,[Param])1:
 
 stable_at_singular_unsorted
 -------------------------------------------------
@@ -444,7 +444,7 @@ stable_at_singular_unsorted
 | 
 
 
-.. _stable_at_singular_unsorted_([*],[Param]->mat,[Param]):
+.. _stable_at_singular_unsorted_([*],[Param]->mat,[Param])1:
 
 stable_at_singular_unsorted
 -------------------------------------------------
@@ -452,7 +452,7 @@ stable_at_singular_unsorted
 | 
 
 
-.. _stable_at_singular_([int],[Param]->mat,[Param]):
+.. _stable_at_singular_([int],[Param]->mat,[Param])1:
 
 stable_at_singular
 -------------------------------------------------
@@ -460,7 +460,7 @@ stable_at_singular
 | 
 
 
-.. _stable_at_singular_([*],[Param]->mat,[Param]):
+.. _stable_at_singular_([*],[Param]->mat,[Param])1:
 
 stable_at_singular
 -------------------------------------------------
@@ -468,7 +468,7 @@ stable_at_singular
 | 
 
 
-.. _print_stable_at_singular_unsorted_([int],[Param]->):
+.. _print_stable_at_singular_unsorted_([int],[Param]->)1:
 
 print_stable_at_singular_unsorted
 -------------------------------------------------
@@ -476,7 +476,7 @@ print_stable_at_singular_unsorted
 | 
 
 
-.. _print_stable_at_singular_unsorted_([*],[Param]->):
+.. _print_stable_at_singular_unsorted_([*],[Param]->)1:
 
 print_stable_at_singular_unsorted
 -------------------------------------------------
@@ -484,7 +484,7 @@ print_stable_at_singular_unsorted
 | 
 
 
-.. _print_stable_at_singular_([int],[Param]->):
+.. _print_stable_at_singular_([int],[Param]->)1:
 
 print_stable_at_singular
 -------------------------------------------------
@@ -492,7 +492,7 @@ print_stable_at_singular
 | 
 
 
-.. _print_stable_at_singular_([*],[Param]->):
+.. _print_stable_at_singular_([*],[Param]->)1:
 
 print_stable_at_singular
 -------------------------------------------------
@@ -500,7 +500,7 @@ print_stable_at_singular
 | 
 
 
-.. _subspace_injection_matrix_([Param],[Param]->mat):
+.. _subspace_injection_matrix_([Param],[Param]->mat)1:
 
 subspace_injection_matrix
 -------------------------------------------------
@@ -508,7 +508,7 @@ subspace_injection_matrix
 | 
 
 
-.. _stable_at_singular_([int],[Param],[Param]->mat,[Param]):
+.. _stable_at_singular_([int],[Param],[Param]->mat,[Param])1:
 
 stable_at_singular
 -------------------------------------------------
@@ -516,7 +516,7 @@ stable_at_singular
 | 
 
 
-.. _stable_at_singular_([*],[Param],[Param]->mat,[Param]):
+.. _stable_at_singular_([*],[Param],[Param]->mat,[Param])1:
 
 stable_at_singular
 -------------------------------------------------
@@ -524,7 +524,7 @@ stable_at_singular
 | 
 
 
-.. _print_stable_at_singular_([int],[Param],[Param]->):
+.. _print_stable_at_singular_([int],[Param],[Param]->)1:
 
 print_stable_at_singular
 -------------------------------------------------
@@ -532,7 +532,7 @@ print_stable_at_singular
 | 
 
 
-.. _print_stable_at_singular_([*],[Param],[Param]->):
+.. _print_stable_at_singular_([*],[Param],[Param]->)1:
 
 print_stable_at_singular
 -------------------------------------------------
@@ -540,7 +540,7 @@ print_stable_at_singular
 | 
 
 
-.. _stable_([Param]->mat,[Param]):
+.. _stable_([Param]->mat,[Param])1:
 
 stable
 -------------------------------------------------
@@ -548,7 +548,7 @@ stable
 | 
 
 
-.. _print_stable_([Param]->):
+.. _print_stable_([Param]->)1:
 
 print_stable
 -------------------------------------------------
@@ -556,7 +556,7 @@ print_stable
 | 
 
 
-.. _stable_test_Aq_packet_(RealForm,(RootDatum,[int])->):
+.. _stable_test_Aq_packet_(RealForm,(RootDatum,[int])->)1:
 
 stable_test_Aq_packet
 -------------------------------------------------
@@ -564,7 +564,7 @@ stable_test_Aq_packet
 | 
 
 
-.. _stable_test_Aq_packet_(RealForm,[int]->):
+.. _stable_test_Aq_packet_(RealForm,[int]->)1:
 
 stable_test_Aq_packet
 -------------------------------------------------
@@ -572,7 +572,7 @@ stable_test_Aq_packet
 | 
 
 
-.. _stable_test_Aq_packet_(RealForm,[*]->):
+.. _stable_test_Aq_packet_(RealForm,[*]->)1:
 
 stable_test_Aq_packet
 -------------------------------------------------

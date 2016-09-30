@@ -4,7 +4,7 @@ coherent.at Function References
 =======================================================
 |
 
-.. _nci_Cayley_(int,Param->ParamPol):
+.. _nci_Cayley_(int,Param->ParamPol)1:
 
 nci_Cayley
 -------------------------------------------------
@@ -12,7 +12,7 @@ nci_Cayley
 | 
 
 
-.. _r1_Cayley_(int,Param->ParamPol):
+.. _r1_Cayley_(int,Param->ParamPol)1:
 
 r1_Cayley
 -------------------------------------------------
@@ -20,7 +20,7 @@ r1_Cayley
 | 
 
 
-.. _coherent_std_reg_(Param,int->ParamPol):
+.. _coherent_std_reg_(Param,int->ParamPol)1:
 
 coherent_std_reg
 -------------------------------------------------
@@ -28,7 +28,7 @@ coherent_std_reg
 | 
 
 
-.. _coherent_std_reg_(ParamPol,int->ParamPol):
+.. _coherent_std_reg_(ParamPol,int->ParamPol)1:
 
 coherent_std_reg
 -------------------------------------------------
@@ -36,7 +36,7 @@ coherent_std_reg
 | 
 
 
-.. _coherent_std_reg_(Param,[int]->ParamPol):
+.. _coherent_std_reg_(Param,[int]->ParamPol)1:
 
 coherent_std_reg
 -------------------------------------------------
@@ -44,7 +44,7 @@ coherent_std_reg
 | 
 
 
-.. _coherent_std_(Param,int->ParamPol):
+.. _coherent_std_(Param,int->ParamPol)1:
 
 coherent_std
 -------------------------------------------------
@@ -52,7 +52,7 @@ coherent_std
 | 
 
 
-.. _coherent_std_(Param,[int]->ParamPol):
+.. _coherent_std_(Param,[int]->ParamPol)1:
 
 coherent_std
 -------------------------------------------------
@@ -60,7 +60,7 @@ coherent_std
 | 
 
 
-.. _coherent_std_(ParamPol,int->ParamPol):
+.. _coherent_std_(ParamPol,int->ParamPol)1:
 
 coherent_std
 -------------------------------------------------
@@ -68,7 +68,7 @@ coherent_std
 | 
 
 
-.. _coherent_std_(ParamPol,[int]->ParamPol):
+.. _coherent_std_(ParamPol,[int]->ParamPol)1:
 
 coherent_std
 -------------------------------------------------
@@ -76,7 +76,7 @@ coherent_std
 | 
 
 
-.. _coherent_std_((RootDatum,[int]),Param->ParamPol):
+.. _coherent_std_((RootDatum,[int]),Param->ParamPol)1:
 
 coherent_std
 -------------------------------------------------
@@ -84,7 +84,7 @@ coherent_std
 | 
 
 
-.. _coherent_std_((RootDatum,[int]),ParamPol->ParamPol):
+.. _coherent_std_((RootDatum,[int]),ParamPol->ParamPol)1:
 
 coherent_std
 -------------------------------------------------
@@ -92,7 +92,7 @@ coherent_std
 | 
 
 
-.. _coherent_irr_(Param,int->ParamPol):
+.. _coherent_irr_(Param,int->ParamPol)1:
 
 coherent_irr
 -------------------------------------------------
@@ -100,7 +100,7 @@ coherent_irr
 | 
 
 
-.. _coherent_irr_(Param,[int]->ParamPol):
+.. _coherent_irr_(Param,[int]->ParamPol)1:
 
 coherent_irr
 -------------------------------------------------
@@ -108,7 +108,7 @@ coherent_irr
 | 
 
 
-.. _coherent_irr_(ParamPol,int->ParamPol):
+.. _coherent_irr_(ParamPol,int->ParamPol)1:
 
 coherent_irr
 -------------------------------------------------
@@ -116,7 +116,7 @@ coherent_irr
 | 
 
 
-.. _coherent_irr_(ParamPol,[int]->ParamPol):
+.. _coherent_irr_(ParamPol,[int]->ParamPol)1:
 
 coherent_irr
 -------------------------------------------------
@@ -124,7 +124,7 @@ coherent_irr
 | 
 
 
-.. _coherent_family_irr_(ParamPol,ratvec->ParamPol):
+.. _coherent_family_irr_(ParamPol,ratvec->ParamPol)1:
 
 coherent_family_irr
 -------------------------------------------------

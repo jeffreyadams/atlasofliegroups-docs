@@ -4,7 +4,7 @@ kl.at Function References
 =======================================================
 |
 
-.. _character_formula_(Param->ParamPol):
+.. _character_formula_(Param->ParamPol)1:
 
 character_formula
 -------------------------------------------------
@@ -12,7 +12,7 @@ character_formula
 | 
 
 
-.. _character_formula_(ParamPol->ParamPol):
+.. _character_formula_(ParamPol->ParamPol)1:
 
 character_formula
 -------------------------------------------------
@@ -20,7 +20,7 @@ character_formula
 | 
 
 
-.. _composition_series_(Param->ParamPol):
+.. _composition_series_(Param->ParamPol)1:
 
 composition_series
 -------------------------------------------------
@@ -28,7 +28,7 @@ composition_series
 | 
 
 
-.. _composition_series_(ParamPol->ParamPol):
+.. _composition_series_(ParamPol->ParamPol)1:
 
 composition_series
 -------------------------------------------------
@@ -36,7 +36,7 @@ composition_series
 | 
 
 
-.. _tabulate_at_1_([Param],(Param->ParamPol)->mat):
+.. _tabulate_at_1_([Param],(Param->ParamPol)->mat)1:
 
 tabulate_at_1
 -------------------------------------------------
@@ -44,7 +44,7 @@ tabulate_at_1
 | 
 
 
-.. _signed_KL_mat_at_1_(Param->mat):
+.. _signed_KL_mat_at_1_(Param->mat)1:
 
 signed_KL_mat_at_1
 -------------------------------------------------
@@ -52,7 +52,7 @@ signed_KL_mat_at_1
 | 
 
 
-.. _KL_inverse_mat_at_1_(Param->mat):
+.. _KL_inverse_mat_at_1_(Param->mat)1:
 
 KL_inverse_mat_at_1
 -------------------------------------------------
@@ -60,7 +60,7 @@ KL_inverse_mat_at_1
 | 
 
 
-.. _full_signed_KL_mat_at_1_(Param->mat):
+.. _full_signed_KL_mat_at_1_(Param->mat)1:
 
 full_signed_KL_mat_at_1
 -------------------------------------------------
@@ -68,7 +68,7 @@ full_signed_KL_mat_at_1
 | 
 
 
-.. _full_KL_inverse_mat_at_1_(Param->mat):
+.. _full_KL_inverse_mat_at_1_(Param->mat)1:
 
 full_KL_inverse_mat_at_1
 -------------------------------------------------
@@ -76,7 +76,7 @@ full_KL_inverse_mat_at_1
 | 
 
 
-.. _print_formatted_(ParamPol->):
+.. _print_formatted_(ParamPol->)1:
 
 print_formatted
 -------------------------------------------------
@@ -84,7 +84,7 @@ print_formatted
 | 
 
 
-.. _print_character_formula_(Param->):
+.. _print_character_formula_(Param->)1:
 
 print_character_formula
 -------------------------------------------------
@@ -92,7 +92,7 @@ print_character_formula
 | 
 
 
-.. _print_composition_series_(Param->):
+.. _print_composition_series_(Param->)1:
 
 print_composition_series
 -------------------------------------------------

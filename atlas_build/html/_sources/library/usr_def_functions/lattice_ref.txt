@@ -4,7 +4,7 @@ lattice.at Function References
 =======================================================
 |
 
-.. _submodule_basis_(mat->mat):
+.. _submodule_basis_(mat->mat)1:
 
 submodule_basis
 -------------------------------------------------
@@ -12,7 +12,7 @@ submodule_basis
 | 
 
 
-.. _Q_submodule_basis_(mat->mat):
+.. _Q_submodule_basis_(mat->mat)1:
 
 Q_submodule_basis
 -------------------------------------------------
@@ -20,7 +20,7 @@ Q_submodule_basis
 | 
 
 
-.. _quotient_module_basis_(mat->mat):
+.. _quotient_module_basis_(mat->mat)1:
 
 quotient_module_basis
 -------------------------------------------------
@@ -28,7 +28,7 @@ quotient_module_basis
 | 
 
 
-.. _saturation_quotient_module_basis_(mat->mat):
+.. _saturation_quotient_module_basis_(mat->mat)1:
 
 saturation_quotient_module_basis
 -------------------------------------------------
@@ -36,7 +36,7 @@ saturation_quotient_module_basis
 | 
 
 
-.. _Q_quotient_module_basis_(mat->mat):
+.. _Q_quotient_module_basis_(mat->mat)1:
 
 Q_quotient_module_basis
 -------------------------------------------------
@@ -44,7 +44,7 @@ Q_quotient_module_basis
 | 
 
 
-.. _projection_mod_image_(mat->mat):
+.. _projection_mod_image_(mat->mat)1:
 
 projection_mod_image
 -------------------------------------------------
@@ -52,7 +52,7 @@ projection_mod_image
 | 
 
 
-.. _projection_to_image_(mat->mat):
+.. _projection_to_image_(mat->mat)1:
 
 projection_to_image
 -------------------------------------------------
@@ -60,7 +60,7 @@ projection_to_image
 | 
 
 
-.. _projection_to_image_(mat,ratvec->ratvec):
+.. _projection_to_image_(mat,ratvec->ratvec)1:
 
 projection_to_image
 -------------------------------------------------
@@ -68,7 +68,7 @@ projection_to_image
 | 
 
 
-.. _decompose_(mat,ratvec->ratvec,ratvec):
+.. _decompose_(mat,ratvec->ratvec,ratvec)1:
 
 decompose
 -------------------------------------------------
@@ -76,7 +76,7 @@ decompose
 | 
 
 
-.. _sub_matrix_(mat,mat->mat):
+.. _sub_matrix_(mat,mat->mat)1:
 
 sub_matrix
 -------------------------------------------------
@@ -84,7 +84,7 @@ sub_matrix
 | 
 
 
-.. _restrict_action_(mat,mat->mat):
+.. _restrict_action_(mat,mat->mat)1:
 
 restrict_action
 -------------------------------------------------
@@ -92,7 +92,7 @@ restrict_action
 | 
 
 
-.. _corestrict_action_(mat,mat->mat):
+.. _corestrict_action_(mat,mat->mat)1:
 
 corestrict_action
 -------------------------------------------------
@@ -100,7 +100,7 @@ corestrict_action
 | 
 
 
-.. _quotient_matrix_(mat,mat->mat):
+.. _quotient_matrix_(mat,mat->mat)1:
 
 quotient_matrix
 -------------------------------------------------
@@ -108,7 +108,7 @@ quotient_matrix
 | 
 
 
-.. _solve_ratvec_(mat,vec->ratvec):
+.. _solve_ratvec_(mat,vec->ratvec)1:
 
 solve_ratvec
 -------------------------------------------------
@@ -116,7 +116,7 @@ solve_ratvec
 | 
 
 
-.. _in_lattice_(mat,ratvec->bool):
+.. _in_lattice_(mat,ratvec->bool)1:
 
 in_lattice
 -------------------------------------------------
@@ -124,7 +124,7 @@ in_lattice
 | 
 
 
-.. _vec_solve_(mat,ratvec->[vec]):
+.. _vec_solve_(mat,ratvec->[vec])1:
 
 vec_solve
 -------------------------------------------------
@@ -132,7 +132,7 @@ vec_solve
 | 
 
 
-.. _solve_vec_(mat,vec->vec):
+.. _solve_vec_(mat,vec->vec)1:
 
 solve_vec
 -------------------------------------------------
@@ -140,7 +140,7 @@ solve_vec
 | 
 
 
-.. _in_lattice_basis_(mat,mat->mat):
+.. _in_lattice_basis_(mat,mat->mat)1:
 
 in_lattice_basis
 -------------------------------------------------
@@ -148,7 +148,7 @@ in_lattice_basis
 | 
 
 
-.. _solve_in_lattice_([vec],vec->vec):
+.. _solve_in_lattice_([vec],vec->vec)1:
 
 solve_in_lattice
 -------------------------------------------------

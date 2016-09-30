@@ -4,7 +4,7 @@ modules.at Function References
 =======================================================
 |
 
-.. _I_(Param->Param,string):
+.. _I_(Param->Param,string)1:
 
 I
 -------------------------------------------------
@@ -12,7 +12,7 @@ I
 | 
 
 
-.. _J_(Param->Param,string):
+.. _J_(Param->Param,string)1:
 
 J
 -------------------------------------------------
@@ -20,7 +20,7 @@ J
 | 
 
 
-.. _to_str_(Param->string):
+.. _to_str_(Param->string)1:
 
 to_str
 -------------------------------------------------
@@ -28,7 +28,7 @@ to_str
 | 
 
 
-.. _to_str_std_(Param->string):
+.. _to_str_std_(Param->string)1:
 
 to_str_std
 -------------------------------------------------
@@ -36,7 +36,7 @@ to_str_std
 | 
 
 
-.. _to_str_irr_(Param->string):
+.. _to_str_irr_(Param->string)1:
 
 to_str_irr
 -------------------------------------------------
@@ -44,7 +44,7 @@ to_str_irr
 | 
 
 
-.. _to_str_K_types_(Param->string):
+.. _to_str_K_types_(Param->string)1:
 
 to_str_K_types
 -------------------------------------------------
@@ -52,7 +52,7 @@ to_str_K_types
 | 
 
 
-.. _to_str_(Param,string->string):
+.. _to_str_(Param,string->string)1:
 
 to_str
 -------------------------------------------------
@@ -60,7 +60,7 @@ to_str
 | 
 
 
-.. _to_str_(ParamPol->[string]):
+.. _to_str_(ParamPol->[string])1:
 
 to_str
 -------------------------------------------------
@@ -68,7 +68,7 @@ to_str
 | 
 
 
-.. _to_str_(ParamPol,string->[string]):
+.. _to_str_(ParamPol,string->[string])1:
 
 to_str
 -------------------------------------------------
@@ -76,7 +76,7 @@ to_str
 | 
 
 
-.. _array_prints_([string]->):
+.. _array_prints_([string]->)1:
 
 array_prints
 -------------------------------------------------
@@ -84,7 +84,7 @@ array_prints
 | 
 
 
-.. _composition_series_(Param,string->ParamPol,string):
+.. _composition_series_(Param,string->ParamPol,string)1:
 
 composition_series
 -------------------------------------------------
@@ -92,7 +92,7 @@ composition_series
 | 
 
 
-.. _composition_series_(ParamPol,string->ParamPol,string):
+.. _composition_series_(ParamPol,string->ParamPol,string)1:
 
 composition_series
 -------------------------------------------------
@@ -100,7 +100,7 @@ composition_series
 | 
 
 
-.. _character_formula_(Param,string->ParamPol,string):
+.. _character_formula_(Param,string->ParamPol,string)1:
 
 character_formula
 -------------------------------------------------
@@ -108,7 +108,7 @@ character_formula
 | 
 
 
-.. _character_formula_(ParamPol,string->ParamPol,string):
+.. _character_formula_(ParamPol,string->ParamPol,string)1:
 
 character_formula
 -------------------------------------------------
@@ -116,7 +116,7 @@ character_formula
 | 
 
 
-.. _show_(ParamPol->):
+.. _show_(ParamPol->)1:
 
 show
 -------------------------------------------------
@@ -124,7 +124,7 @@ show
 | 
 
 
-.. _show_(ParamPol,string->):
+.. _show_(ParamPol,string->)1:
 
 show
 -------------------------------------------------
@@ -132,7 +132,7 @@ show
 | 
 
 
-.. _show_(Param,string->):
+.. _show_(Param,string->)1:
 
 show
 -------------------------------------------------
@@ -140,7 +140,7 @@ show
 | 
 
 
-.. _show_(KGBElt,ratvec->):
+.. _show_(KGBElt,ratvec->)1:
 
 show
 -------------------------------------------------
@@ -148,7 +148,7 @@ show
 | 
 
 
-.. _virtual_(Param,string->ParamPol,string):
+.. _virtual_(Param,string->ParamPol,string)1:
 
 virtual
 -------------------------------------------------
@@ -156,7 +156,7 @@ virtual
 | 
 
 
-.. _\=_((Param,string),(Param,string)->bool):
+.. _\=_((Param,string),(Param,string)->bool)1:
 
 \=
 -------------------------------------------------
@@ -164,7 +164,7 @@ virtual
 | 
 
 
-.. _character_(ParamPol,string->ParamPol):
+.. _character_(ParamPol,string->ParamPol)1:
 
 character
 -------------------------------------------------
@@ -172,7 +172,7 @@ character
 | 
 
 
-.. _\=_((ParamPol,string),(ParamPol,string)->bool):
+.. _\=_((ParamPol,string),(ParamPol,string)->bool)1:
 
 \=
 -------------------------------------------------
@@ -180,7 +180,7 @@ character
 | 
 
 
-.. _\+_((ParamPol,string),(ParamPol,string)->ParamPol,string):
+.. _\+_((ParamPol,string),(ParamPol,string)->ParamPol,string)1:
 
 \+
 -------------------------------------------------
@@ -188,7 +188,7 @@ character
 | 
 
 
-.. _\+_((Param,string),(Param,string)->ParamPol,string):
+.. _\+_((Param,string),(Param,string)->ParamPol,string)1:
 
 \+
 -------------------------------------------------
@@ -196,7 +196,7 @@ character
 | 
 
 
-.. _\+_((ParamPol,string),(Param,string)->ParamPol,string):
+.. _\+_((ParamPol,string),(Param,string)->ParamPol,string)1:
 
 \+
 -------------------------------------------------
@@ -204,7 +204,7 @@ character
 | 
 
 
-.. _\-_(ParamPol,string->ParamPol,string):
+.. _\-_(ParamPol,string->ParamPol,string)1:
 
 \-
 -------------------------------------------------
@@ -212,7 +212,7 @@ character
 | 
 
 
-.. _\-_(Param,string->ParamPol,string):
+.. _\-_(Param,string->ParamPol,string)1:
 
 \-
 -------------------------------------------------
@@ -220,7 +220,7 @@ character
 | 
 
 
-.. _\-_((ParamPol,string),(ParamPol,string)->ParamPol,string):
+.. _\-_((ParamPol,string),(ParamPol,string)->ParamPol,string)1:
 
 \-
 -------------------------------------------------
@@ -228,7 +228,7 @@ character
 | 
 
 
-.. _\-_((Param,string),(ParamPol,string)->ParamPol,string):
+.. _\-_((Param,string),(ParamPol,string)->ParamPol,string)1:
 
 \-
 -------------------------------------------------
@@ -236,7 +236,7 @@ character
 | 
 
 
-.. _\-_((Param,string),(Param,string)->ParamPol,string):
+.. _\-_((Param,string),(Param,string)->ParamPol,string)1:
 
 \-
 -------------------------------------------------
@@ -244,7 +244,7 @@ character
 | 
 
 
-.. _\*_(Split,(ParamPol,string)->ParamPol,string):
+.. _\*_(Split,(ParamPol,string)->ParamPol,string)1:
 
 \*
 -------------------------------------------------
@@ -252,7 +252,7 @@ character
 | 
 
 
-.. _\*_(Split,(Param,string)->ParamPol,string):
+.. _\*_(Split,(Param,string)->ParamPol,string)1:
 
 \*
 -------------------------------------------------
@@ -260,7 +260,7 @@ character
 | 
 
 
-.. _\=_((ParamPol,string),(Param,string)->bool):
+.. _\=_((ParamPol,string),(Param,string)->bool)1:
 
 \=
 -------------------------------------------------
@@ -268,7 +268,7 @@ character
 | 
 
 
-.. _infinitesimal_character_(Param,string->ratvec):
+.. _infinitesimal_character_(Param,string->ratvec)1:
 
 infinitesimal_character
 -------------------------------------------------
@@ -276,7 +276,7 @@ infinitesimal_character
 | 
 
 
-.. _has_infinitesimal_character_(ParamPol->bool):
+.. _has_infinitesimal_character_(ParamPol->bool)1:
 
 has_infinitesimal_character
 -------------------------------------------------
@@ -284,7 +284,7 @@ has_infinitesimal_character
 | 
 
 
-.. _infinitesimal_character_(ParamPol,string->ratvec):
+.. _infinitesimal_character_(ParamPol,string->ratvec)1:
 
 infinitesimal_character
 -------------------------------------------------
@@ -292,7 +292,7 @@ infinitesimal_character
 | 
 
 
-.. _tau_(Param,string->[int]):
+.. _tau_(Param,string->[int])1:
 
 tau
 -------------------------------------------------
@@ -300,7 +300,7 @@ tau
 | 
 
 
-.. _in_tau_(int,(Param,string)->bool):
+.. _in_tau_(int,(Param,string)->bool)1:
 
 in_tau
 -------------------------------------------------
@@ -308,7 +308,7 @@ in_tau
 | 
 
 
-.. _in_tau_complement_(int,(Param,string)->bool):
+.. _in_tau_complement_(int,(Param,string)->bool)1:
 
 in_tau_complement
 -------------------------------------------------
@@ -316,7 +316,7 @@ in_tau_complement
 | 
 
 
-.. _tau_complement_(Param,string->[int]):
+.. _tau_complement_(Param,string->[int])1:
 
 tau_complement
 -------------------------------------------------
@@ -324,7 +324,7 @@ tau_complement
 | 
 
 
-.. _status_(int,(Param,string)->int):
+.. _status_(int,(Param,string)->int)1:
 
 status
 -------------------------------------------------
@@ -332,7 +332,7 @@ status
 | 
 
 
-.. _branch_((Param,string),int->ParamPol,string):
+.. _branch_((Param,string),int->ParamPol,string)1:
 
 branch
 -------------------------------------------------

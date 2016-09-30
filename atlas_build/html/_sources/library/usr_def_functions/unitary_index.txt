@@ -11,9 +11,9 @@ unitary.at Function Index
 
    * - Variable
      - Data Type
-   * - :ref:`F4_spherical_unitary_[ratvec]`
+   * - :ref:`F4_spherical_unitary_[ratvec]1`
      - ``[ratvec]``
-   * - :ref:`D4_spherical_unitary_[ratvec]`
+   * - :ref:`D4_spherical_unitary_[ratvec]1`
      - ``[ratvec]``
-   * - :ref:`E7_spherical_unitary_[ratvec]`
+   * - :ref:`E7_spherical_unitary_[ratvec]1`
      - ``[ratvec]``

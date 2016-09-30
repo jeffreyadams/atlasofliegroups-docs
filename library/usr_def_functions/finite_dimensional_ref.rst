@@ -4,7 +4,7 @@ finite_dimensional.at Function References
 =======================================================
 |
 
-.. _is_finite_dimensional_(Param->bool):
+.. _is_finite_dimensional_(Param->bool)1:
 
 is_finite_dimensional
 -------------------------------------------------
@@ -12,7 +12,7 @@ is_finite_dimensional
 | 
 
 
-.. _fd_only_(Param->Param):
+.. _fd_only_(Param->Param)1:
 
 fd_only
 -------------------------------------------------
@@ -20,7 +20,7 @@ fd_only
 | 
 
 
-.. _dimension_(RootDatum,vec->int):
+.. _dimension_(RootDatum,vec->int)1:
 
 dimension
 -------------------------------------------------
@@ -28,7 +28,7 @@ dimension
 | 
 
 
-.. _highest_weight_finite_dimensional_(Param->vec):
+.. _highest_weight_finite_dimensional_(Param->vec)1:
 
 highest_weight_finite_dimensional
 -------------------------------------------------
@@ -36,7 +36,7 @@ highest_weight_finite_dimensional
 | 
 
 
-.. _dimension_(Param->int):
+.. _dimension_(Param->int)1:
 
 dimension
 -------------------------------------------------
@@ -44,7 +44,7 @@ dimension
 | 
 
 
-.. _fundamental_weight_coordinates_(Param->vec):
+.. _fundamental_weight_coordinates_(Param->vec)1:
 
 fundamental_weight_coordinates
 -------------------------------------------------
@@ -52,7 +52,7 @@ fundamental_weight_coordinates
 | 
 
 
-.. _complex_LKT_(Param->vec):
+.. _complex_LKT_(Param->vec)1:
 
 complex_LKT
 -------------------------------------------------
@@ -60,7 +60,7 @@ complex_LKT
 | 
 
 
-.. _testcomplex_(RealForm->):
+.. _testcomplex_(RealForm->)1:
 
 testcomplex
 -------------------------------------------------

@@ -4,7 +4,7 @@ nilpotent.at Function References
 =======================================================
 |
 
-.. _get_type_(LieType->int):
+.. _get_type_(LieType->int)1:
 
 get_type
 -------------------------------------------------
@@ -12,7 +12,7 @@ get_type
 | 
 
 
-.. _get_type_(RootDatum->int):
+.. _get_type_(RootDatum->int)1:
 
 get_type
 -------------------------------------------------
@@ -20,7 +20,7 @@ get_type
 | 
 
 
-.. _get_type_(RealForm->int):
+.. _get_type_(RealForm->int)1:
 
 get_type
 -------------------------------------------------
@@ -28,7 +28,7 @@ get_type
 | 
 
 
-.. _partitions_(int->[[int]]):
+.. _partitions_(int->[[int]])1:
 
 partitions
 -------------------------------------------------
@@ -36,7 +36,7 @@ partitions
 | 
 
 
-.. _partition_multiplicities_([int]->vec):
+.. _partition_multiplicities_([int]->vec)1:
 
 partition_multiplicities
 -------------------------------------------------
@@ -44,7 +44,7 @@ partition_multiplicities
 | 
 
 
-.. _partitions_parity_(int,int->[[int]]):
+.. _partitions_parity_(int,int->[[int]])1:
 
 partitions_parity
 -------------------------------------------------
@@ -52,7 +52,7 @@ partitions_parity
 | 
 
 
-.. _nilpotent_orbits_(LieType->[[int]]):
+.. _nilpotent_orbits_(LieType->[[int]])1:
 
 nilpotent_orbits
 -------------------------------------------------
@@ -60,7 +60,7 @@ nilpotent_orbits
 | 
 
 
-.. _nilpotent_orbits_(RootDatum->[[int]]):
+.. _nilpotent_orbits_(RootDatum->[[int]])1:
 
 nilpotent_orbits
 -------------------------------------------------
@@ -68,7 +68,7 @@ nilpotent_orbits
 | 
 
 
-.. _nilpotent_orbits_(RealForm->[[int]]):
+.. _nilpotent_orbits_(RealForm->[[int]])1:
 
 nilpotent_orbits
 -------------------------------------------------
@@ -76,7 +76,7 @@ nilpotent_orbits
 | 
 
 
-.. _is_valid_(string,[int]->bool):
+.. _is_valid_(string,[int]->bool)1:
 
 is_valid
 -------------------------------------------------
@@ -84,7 +84,7 @@ is_valid
 | 
 
 
-.. _is_valid_(LieType,[int]->bool):
+.. _is_valid_(LieType,[int]->bool)1:
 
 is_valid
 -------------------------------------------------
@@ -92,7 +92,7 @@ is_valid
 | 
 
 
-.. _dual_nilpotent_orbits_(RootDatum->[[int]]):
+.. _dual_nilpotent_orbits_(RootDatum->[[int]])1:
 
 dual_nilpotent_orbits
 -------------------------------------------------
@@ -100,7 +100,7 @@ dual_nilpotent_orbits
 | 
 
 
-.. _dual_nilpotent_orbits_(RealForm->[[int]]):
+.. _dual_nilpotent_orbits_(RealForm->[[int]])1:
 
 dual_nilpotent_orbits
 -------------------------------------------------
@@ -108,7 +108,7 @@ dual_nilpotent_orbits
 | 
 
 
-.. _rho_(int->[rat]):
+.. _rho_(int->[rat])1:
 
 rho
 -------------------------------------------------
@@ -116,7 +116,7 @@ rho
 | 
 
 
-.. _String_(int->[rat]):
+.. _String_(int->[rat])1:
 
 String
 -------------------------------------------------
@@ -124,7 +124,7 @@ String
 | 
 
 
-.. _nilpotent_lambda_(LieType,[int]->ratvec):
+.. _nilpotent_lambda_(LieType,[int]->ratvec)1:
 
 nilpotent_lambda
 -------------------------------------------------
@@ -132,7 +132,7 @@ nilpotent_lambda
 | 
 
 
-.. _nilpotent_lambda_(RootDatum,[int]->ratvec):
+.. _nilpotent_lambda_(RootDatum,[int]->ratvec)1:
 
 nilpotent_lambda
 -------------------------------------------------
@@ -140,7 +140,7 @@ nilpotent_lambda
 | 
 
 
-.. _nilpotent_lambdas_E_(int->[ratvec]):
+.. _nilpotent_lambdas_E_(int->[ratvec])1:
 
 nilpotent_lambdas_E
 -------------------------------------------------
@@ -148,7 +148,7 @@ nilpotent_lambdas_E
 | 
 
 
-.. _nilpotent_lambdas_(RootDatum->[ratvec]):
+.. _nilpotent_lambdas_(RootDatum->[ratvec])1:
 
 nilpotent_lambdas
 -------------------------------------------------
@@ -156,7 +156,7 @@ nilpotent_lambdas
 | 
 
 
-.. _nilpotent_lambdas_(RealForm->[ratvec]):
+.. _nilpotent_lambdas_(RealForm->[ratvec])1:
 
 nilpotent_lambdas
 -------------------------------------------------
@@ -164,7 +164,7 @@ nilpotent_lambdas
 | 
 
 
-.. _nilpotent_lambdas_G2_[ratvec]:
+.. _nilpotent_lambdas_G2_[ratvec]1:
 
 nilpotent_lambdas_G2
 -------------------------------------------------
@@ -172,7 +172,7 @@ nilpotent_lambdas_G2
 | 
 
 
-.. _nilpotent_lambdas_F4_[ratvec]:
+.. _nilpotent_lambdas_F4_[ratvec]1:
 
 nilpotent_lambdas_F4
 -------------------------------------------------
@@ -180,7 +180,7 @@ nilpotent_lambdas_F4
 | 
 
 
-.. _nilpotent_lambdas_E6_[ratvec]:
+.. _nilpotent_lambdas_E6_[ratvec]1:
 
 nilpotent_lambdas_E6
 -------------------------------------------------
@@ -188,7 +188,7 @@ nilpotent_lambdas_E6
 | 
 
 
-.. _nilpotent_lambdas_E7_[ratvec]:
+.. _nilpotent_lambdas_E7_[ratvec]1:
 
 nilpotent_lambdas_E7
 -------------------------------------------------
@@ -196,7 +196,7 @@ nilpotent_lambdas_E7
 | 
 
 
-.. _nilpotent_lambdas_E8_[ratvec]:
+.. _nilpotent_lambdas_E8_[ratvec]1:
 
 nilpotent_lambdas_E8
 -------------------------------------------------

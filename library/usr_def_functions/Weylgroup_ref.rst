@@ -4,7 +4,7 @@ Weylgroup.at Function References
 =======================================================
 |
 
-.. _root_datum_(RootDatum,[int]->RootDatum):
+.. _root_datum_(RootDatum,[int]->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -12,7 +12,7 @@ root_datum
 | 
 
 
-.. _word_(RootDatum,[int]->[int]):
+.. _word_(RootDatum,[int]->[int])1:
 
 word
 -------------------------------------------------
@@ -20,7 +20,7 @@ word
 | 
 
 
-.. _\#_(RootDatum,[int]->int):
+.. _\#_(RootDatum,[int]->int)1:
 
 \#
 -------------------------------------------------
@@ -28,7 +28,7 @@ word
 | 
 
 
-.. _act_((RootDatum,[int]),vec->vec):
+.. _act_((RootDatum,[int]),vec->vec)1:
 
 act
 -------------------------------------------------
@@ -36,7 +36,7 @@ act
 | 
 
 
-.. _act_((RootDatum,[int]),ratvec->ratvec):
+.. _act_((RootDatum,[int]),ratvec->ratvec)1:
 
 act
 -------------------------------------------------
@@ -44,7 +44,7 @@ act
 | 
 
 
-.. _co_act_(vec,(RootDatum,[int])->ratvec):
+.. _co_act_(vec,(RootDatum,[int])->ratvec)1:
 
 co_act
 -------------------------------------------------
@@ -52,7 +52,7 @@ co_act
 | 
 
 
-.. _co_act_(ratvec,(RootDatum,[int])->ratvec):
+.. _co_act_(ratvec,(RootDatum,[int])->ratvec)1:
 
 co_act
 -------------------------------------------------
@@ -60,7 +60,7 @@ co_act
 | 
 
 
-.. _w_matrix_(RootDatum,[int]->mat):
+.. _w_matrix_(RootDatum,[int]->mat)1:
 
 w_matrix
 -------------------------------------------------
@@ -68,7 +68,7 @@ w_matrix
 | 
 
 
-.. _equal_((RootDatum,[int]),(RootDatum,[int])->bool):
+.. _equal_((RootDatum,[int]),(RootDatum,[int])->bool)1:
 
 equal
 -------------------------------------------------
@@ -76,7 +76,7 @@ equal
 | 
 
 
-.. _inverse_(RootDatum,[int]->RootDatum,[int]):
+.. _inverse_(RootDatum,[int]->RootDatum,[int])1:
 
 inverse
 -------------------------------------------------
@@ -84,7 +84,7 @@ inverse
 | 
 
 
-.. _non_dominant_index_(RootDatum,vec->int):
+.. _non_dominant_index_(RootDatum,vec->int)1:
 
 non_dominant_index
 -------------------------------------------------
@@ -92,7 +92,7 @@ non_dominant_index
 | 
 
 
-.. _dual_non_dominant_index_(RootDatum,vec->int):
+.. _dual_non_dominant_index_(RootDatum,vec->int)1:
 
 dual_non_dominant_index
 -------------------------------------------------
@@ -100,7 +100,7 @@ dual_non_dominant_index
 | 
 
 
-.. _make_dominant_(RootDatum,vec->vec,(RootDatum,[int])):
+.. _make_dominant_(RootDatum,vec->vec,(RootDatum,[int]))1:
 
 make_dominant
 -------------------------------------------------
@@ -108,7 +108,7 @@ make_dominant
 | 
 
 
-.. _dual_make_dominant_(RootDatum,vec->vec,(RootDatum,[int])):
+.. _dual_make_dominant_(RootDatum,vec->vec,(RootDatum,[int]))1:
 
 dual_make_dominant
 -------------------------------------------------
@@ -116,7 +116,7 @@ dual_make_dominant
 | 
 
 
-.. _make_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int])):
+.. _make_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int]))1:
 
 make_dominant
 -------------------------------------------------
@@ -124,7 +124,7 @@ make_dominant
 | 
 
 
-.. _dual_make_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int])):
+.. _dual_make_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int]))1:
 
 dual_make_dominant
 -------------------------------------------------
@@ -132,7 +132,7 @@ dual_make_dominant
 | 
 
 
-.. _rho_(RootDatum,ratvec->ratvec):
+.. _rho_(RootDatum,ratvec->ratvec)1:
 
 rho
 -------------------------------------------------
@@ -140,7 +140,7 @@ rho
 | 
 
 
-.. _dual_rho_(RootDatum,ratvec->ratvec):
+.. _dual_rho_(RootDatum,ratvec->ratvec)1:
 
 dual_rho
 -------------------------------------------------
@@ -148,7 +148,7 @@ dual_rho
 | 
 
 
-.. _w_long_(RootDatum->RootDatum,[int]):
+.. _w_long_(RootDatum->RootDatum,[int])1:
 
 w_long
 -------------------------------------------------
@@ -156,7 +156,7 @@ w_long
 | 
 
 
-.. _dominant_(RootDatum,vec->vec):
+.. _dominant_(RootDatum,vec->vec)1:
 
 dominant
 -------------------------------------------------
@@ -164,7 +164,7 @@ dominant
 | 
 
 
-.. _dominant_(RootDatum,ratvec->ratvec):
+.. _dominant_(RootDatum,ratvec->ratvec)1:
 
 dominant
 -------------------------------------------------
@@ -172,7 +172,7 @@ dominant
 | 
 
 
-.. _word_(RootDatum,mat->RootDatum,[int]):
+.. _word_(RootDatum,mat->RootDatum,[int])1:
 
 word
 -------------------------------------------------
@@ -180,7 +180,7 @@ word
 | 
 
 
-.. _word_(RootDatum,mat,mat->RootDatum,[int]):
+.. _word_(RootDatum,mat,mat->RootDatum,[int])1:
 
 word
 -------------------------------------------------
@@ -188,7 +188,7 @@ word
 | 
 
 
-.. _length_(RootDatum,mat->int):
+.. _length_(RootDatum,mat->int)1:
 
 length
 -------------------------------------------------
@@ -196,7 +196,7 @@ length
 | 
 
 
-.. _length_(RootDatum,[int]->int):
+.. _length_(RootDatum,[int]->int)1:
 
 length
 -------------------------------------------------
@@ -204,7 +204,7 @@ length
 | 
 
 
-.. _lengthens_(RootDatum,mat,int->bool):
+.. _lengthens_(RootDatum,mat,int->bool)1:
 
 lengthens
 -------------------------------------------------
@@ -212,7 +212,7 @@ lengthens
 | 
 
 
-.. _lengthens_(RootDatum,int,mat->bool):
+.. _lengthens_(RootDatum,int,mat->bool)1:
 
 lengthens
 -------------------------------------------------
@@ -220,7 +220,7 @@ lengthens
 | 
 
 
-.. _make_simple_sequence_(RootDatum,vec->(RootDatum,[int]),int):
+.. _make_simple_sequence_(RootDatum,vec->(RootDatum,[int]),int)1:
 
 make_simple_sequence
 -------------------------------------------------
@@ -228,7 +228,7 @@ make_simple_sequence
 | 
 
 
-.. _make_simple_(RootDatum,vec->mat,int):
+.. _make_simple_(RootDatum,vec->mat,int)1:
 
 make_simple
 -------------------------------------------------
@@ -236,7 +236,7 @@ make_simple
 | 
 
 
-.. _reduce_(RootDatum,[int]->RootDatum,[int]):
+.. _reduce_(RootDatum,[int]->RootDatum,[int])1:
 
 reduce
 -------------------------------------------------
@@ -244,7 +244,7 @@ reduce
 | 
 
 
-.. _cross_((RootDatum,[int]),KGBElt->KGBElt):
+.. _cross_((RootDatum,[int]),KGBElt->KGBElt)1:
 
 cross
 -------------------------------------------------
@@ -252,7 +252,7 @@ cross
 | 
 
 
-.. _cross_((RootDatum,[int]),Param->Param):
+.. _cross_((RootDatum,[int]),Param->Param)1:
 
 cross
 -------------------------------------------------
@@ -260,7 +260,7 @@ cross
 | 
 
 
-.. _make_dominant_using_roots_(RootDatum,ratvec->ratvec,vec):
+.. _make_dominant_using_roots_(RootDatum,ratvec->ratvec,vec)1:
 
 make_dominant_using_roots
 -------------------------------------------------
@@ -268,7 +268,7 @@ make_dominant_using_roots
 | 
 
 
-.. _make_dominant_using_roots_(RootDatum,vec->vec,vec):
+.. _make_dominant_using_roots_(RootDatum,vec->vec,vec)1:
 
 make_dominant_using_roots
 -------------------------------------------------
@@ -276,7 +276,7 @@ make_dominant_using_roots
 | 
 
 
-.. _translate_to_dominant_(Param->Param,vec):
+.. _translate_to_dominant_(Param->Param,vec)1:
 
 translate_to_dominant
 -------------------------------------------------
@@ -284,7 +284,7 @@ translate_to_dominant
 | 
 
 
-.. _make_integrally_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int])):
+.. _make_integrally_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int]))1:
 
 make_integrally_dominant
 -------------------------------------------------
@@ -292,7 +292,7 @@ make_integrally_dominant
 | 
 
 
-.. _int_dom_act_((RootDatum,[int]),ratvec->ratvec):
+.. _int_dom_act_((RootDatum,[int]),ratvec->ratvec)1:
 
 int_dom_act
 -------------------------------------------------
@@ -300,7 +300,7 @@ int_dom_act
 | 
 
 
-.. _left_mult_(int,(RootDatum,[int])->RootDatum,[int]):
+.. _left_mult_(int,(RootDatum,[int])->RootDatum,[int])1:
 
 left_mult
 -------------------------------------------------
@@ -308,7 +308,7 @@ left_mult
 | 
 
 
-.. _right_mult_(int,(RootDatum,[int])->RootDatum,[int]):
+.. _right_mult_(int,(RootDatum,[int])->RootDatum,[int])1:
 
 right_mult
 -------------------------------------------------
@@ -316,7 +316,7 @@ right_mult
 | 
 
 
-.. _conjugate_(int,(RootDatum,[int])->RootDatum,[int]):
+.. _conjugate_(int,(RootDatum,[int])->RootDatum,[int])1:
 
 conjugate
 -------------------------------------------------
@@ -324,7 +324,7 @@ conjugate
 | 
 
 
-.. _multiply_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int]):
+.. _multiply_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])1:
 
 multiply
 -------------------------------------------------
@@ -332,7 +332,7 @@ multiply
 | 
 
 
-.. _\*_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int]):
+.. _\*_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])1:
 
 \*
 -------------------------------------------------
@@ -340,7 +340,7 @@ multiply
 | 
 
 
-.. _conjugate_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int]):
+.. _conjugate_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])1:
 
 conjugate
 -------------------------------------------------
@@ -348,7 +348,7 @@ conjugate
 | 
 
 
-.. _\^_((RootDatum,[int]),int->RootDatum,[int]):
+.. _\^_((RootDatum,[int]),int->RootDatum,[int])1:
 
 \^
 -------------------------------------------------
@@ -356,7 +356,7 @@ conjugate
 | 
 
 
-.. _involution_(InnerClass,(RootDatum,[int])->mat):
+.. _involution_(InnerClass,(RootDatum,[int])->mat)1:
 
 involution
 -------------------------------------------------
@@ -364,7 +364,7 @@ involution
 | 
 
 
-.. _imaginary_roots_(InnerClass,(RootDatum,[int])->mat):
+.. _imaginary_roots_(InnerClass,(RootDatum,[int])->mat)1:
 
 imaginary_roots
 -------------------------------------------------
@@ -372,7 +372,7 @@ imaginary_roots
 | 
 
 
-.. _real_roots_(InnerClass,(RootDatum,[int])->mat):
+.. _real_roots_(InnerClass,(RootDatum,[int])->mat)1:
 
 real_roots
 -------------------------------------------------
@@ -380,7 +380,7 @@ real_roots
 | 
 
 
-.. _imaginary_coroots_(InnerClass,(RootDatum,[int])->mat):
+.. _imaginary_coroots_(InnerClass,(RootDatum,[int])->mat)1:
 
 imaginary_coroots
 -------------------------------------------------
@@ -388,7 +388,7 @@ imaginary_coroots
 | 
 
 
-.. _real_coroots_(InnerClass,(RootDatum,[int])->mat):
+.. _real_coroots_(InnerClass,(RootDatum,[int])->mat)1:
 
 real_coroots
 -------------------------------------------------
@@ -396,7 +396,7 @@ real_coroots
 | 
 
 
-.. _invariant_form_(RootDatum->mat):
+.. _invariant_form_(RootDatum->mat)1:
 
 invariant_form
 -------------------------------------------------
@@ -404,7 +404,7 @@ invariant_form
 | 
 
 
-.. _invariant_form_(RootDatum,ratvec,ratvec->rat):
+.. _invariant_form_(RootDatum,ratvec,ratvec->rat)1:
 
 invariant_form
 -------------------------------------------------
@@ -412,7 +412,7 @@ invariant_form
 | 
 
 
-.. _nondegenerate_invariant_form_(RootDatum,ratvec,ratvec->rat):
+.. _nondegenerate_invariant_form_(RootDatum,ratvec,ratvec->rat)1:
 
 nondegenerate_invariant_form
 -------------------------------------------------
@@ -420,7 +420,7 @@ nondegenerate_invariant_form
 | 
 
 
-.. _co_invariant_form_(RootDatum->mat):
+.. _co_invariant_form_(RootDatum->mat)1:
 
 co_invariant_form
 -------------------------------------------------
@@ -428,7 +428,7 @@ co_invariant_form
 | 
 
 
-.. _co_invariant_form_(RootDatum,ratvec,ratvec->rat):
+.. _co_invariant_form_(RootDatum,ratvec,ratvec->rat)1:
 
 co_invariant_form
 -------------------------------------------------
@@ -436,7 +436,7 @@ co_invariant_form
 | 
 
 
-.. _delete_([(RootDatum,[int])],int->[(RootDatum,[int])]):
+.. _delete_([(RootDatum,[int])],int->[(RootDatum,[int])])1:
 
 delete
 -------------------------------------------------
@@ -444,7 +444,7 @@ delete
 | 
 
 
-.. _order_(RootDatum,[int]->int):
+.. _order_(RootDatum,[int]->int)1:
 
 order
 -------------------------------------------------
@@ -452,7 +452,7 @@ order
 | 
 
 
-.. _is_elliptic_(RootDatum,[int]->bool):
+.. _is_elliptic_(RootDatum,[int]->bool)1:
 
 is_elliptic
 -------------------------------------------------
@@ -460,7 +460,7 @@ is_elliptic
 | 
 
 
-.. _is_regular_(RootDatum,[int]->bool):
+.. _is_regular_(RootDatum,[int]->bool)1:
 
 is_regular
 -------------------------------------------------
@@ -468,7 +468,7 @@ is_regular
 | 
 
 
-.. _move_towards_no_Cminus_(KGBElt->KGBElt,int):
+.. _move_towards_no_Cminus_(KGBElt->KGBElt,int)1:
 
 move_towards_no_Cminus
 -------------------------------------------------
@@ -476,7 +476,7 @@ move_towards_no_Cminus
 | 
 
 
-.. _make_no_Cminus_(KGBElt->KGBElt,(RootDatum,[int])):
+.. _make_no_Cminus_(KGBElt->KGBElt,(RootDatum,[int]))1:
 
 make_no_Cminus
 -------------------------------------------------
@@ -484,7 +484,7 @@ make_no_Cminus
 | 
 
 
-.. _move_towards_no_Cplus_(KGBElt->KGBElt,int):
+.. _move_towards_no_Cplus_(KGBElt->KGBElt,int)1:
 
 move_towards_no_Cplus
 -------------------------------------------------
@@ -492,7 +492,7 @@ move_towards_no_Cplus
 | 
 
 
-.. _make_no_Cplus_(KGBElt->KGBElt,(RootDatum,[int])):
+.. _make_no_Cplus_(KGBElt->KGBElt,(RootDatum,[int]))1:
 
 make_no_Cplus
 -------------------------------------------------
@@ -500,7 +500,7 @@ make_no_Cplus
 | 
 
 
-.. _make_no_Cminus_(Param->Param):
+.. _make_no_Cminus_(Param->Param)1:
 
 make_no_Cminus
 -------------------------------------------------
@@ -508,7 +508,7 @@ make_no_Cminus
 | 
 
 
-.. _make_no_Cplus_(Param->Param):
+.. _make_no_Cplus_(Param->Param)1:
 
 make_no_Cplus
 -------------------------------------------------

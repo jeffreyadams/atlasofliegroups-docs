@@ -4,7 +4,7 @@ all_Kparameters.at Function References
 =======================================================
 |
 
-.. _reduce_([Param]->[Param]):
+.. _reduce_([Param]->[Param])1:
 
 reduce
 -------------------------------------------------
@@ -12,7 +12,7 @@ reduce
 | 
 
 
-.. _reduce_([(KGBElt,ratvec)]->[(KGBElt,ratvec)]):
+.. _reduce_([(KGBElt,ratvec)]->[(KGBElt,ratvec)])1:
 
 reduce
 -------------------------------------------------
@@ -20,7 +20,7 @@ reduce
 | 
 
 
-.. _cone_(rat,[rat]->mat):
+.. _cone_(rat,[rat]->mat)1:
 
 cone
 -------------------------------------------------
@@ -28,7 +28,7 @@ cone
 | 
 
 
-.. _basis_lambda_differential_0_(KGBElt->mat):
+.. _basis_lambda_differential_0_(KGBElt->mat)1:
 
 basis_lambda_differential_0
 -------------------------------------------------
@@ -36,7 +36,7 @@ basis_lambda_differential_0
 | 
 
 
-.. _all_lambda_differential_0_(KGBElt->[vec]):
+.. _all_lambda_differential_0_(KGBElt->[vec])1:
 
 all_lambda_differential_0
 -------------------------------------------------
@@ -44,7 +44,7 @@ all_lambda_differential_0
 | 
 
 
-.. _all_equal_dlambda_K_parameters_(KGBElt,ratvec->[(KGBElt,ratvec)]):
+.. _all_equal_dlambda_K_parameters_(KGBElt,ratvec->[(KGBElt,ratvec)])1:
 
 all_equal_dlambda_K_parameters
 -------------------------------------------------
@@ -52,7 +52,7 @@ all_equal_dlambda_K_parameters
 | 
 
 
-.. _all_parameters_(Param->[Param]):
+.. _all_parameters_(Param->[Param])1:
 
 all_parameters
 -------------------------------------------------
@@ -60,7 +60,7 @@ all_parameters
 | 
 
 
-.. _all_parameters_gamma_(RealForm,ratvec->[Param]):
+.. _all_parameters_gamma_(RealForm,ratvec->[Param])1:
 
 all_parameters_gamma
 -------------------------------------------------
@@ -68,7 +68,7 @@ all_parameters_gamma
 | 
 
 
-.. _all_dominant_norm_upto_(InnerClass,ratvec,int->mat):
+.. _all_dominant_norm_upto_(InnerClass,ratvec,int->mat)1:
 
 all_dominant_norm_upto
 -------------------------------------------------
@@ -76,7 +76,7 @@ all_dominant_norm_upto
 | 
 
 
-.. _lambda_rho_from_dominant_norm_upto_(KGBElt,ratvec,int->mat):
+.. _lambda_rho_from_dominant_norm_upto_(KGBElt,ratvec,int->mat)1:
 
 lambda_rho_from_dominant_norm_upto
 -------------------------------------------------
@@ -84,7 +84,7 @@ lambda_rho_from_dominant_norm_upto
 | 
 
 
-.. _K_parameters_norm_upto_(KGBElt,ratvec,int->[(KGBElt,ratvec)]):
+.. _K_parameters_norm_upto_(KGBElt,ratvec,int->[(KGBElt,ratvec)])1:
 
 K_parameters_norm_upto
 -------------------------------------------------

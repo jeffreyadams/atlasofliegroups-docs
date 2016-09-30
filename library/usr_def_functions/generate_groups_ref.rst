@@ -4,7 +4,7 @@ generate_groups.at Function References
 =======================================================
 |
 
-.. _all_simple_root_systems_given_rank_(int->[string]):
+.. _all_simple_root_systems_given_rank_(int->[string])1:
 
 all_simple_root_systems_given_rank
 -------------------------------------------------
@@ -12,7 +12,7 @@ all_simple_root_systems_given_rank
 | 
 
 
-.. _all_inner_classes_(string->[string]):
+.. _all_inner_classes_(string->[string])1:
 
 all_inner_classes
 -------------------------------------------------
@@ -20,7 +20,7 @@ all_inner_classes
 | 
 
 
-.. _all_simple_given_isogeny_and_rank_(string,int->[RealForm]):
+.. _all_simple_given_isogeny_and_rank_(string,int->[RealForm])1:
 
 all_simple_given_isogeny_and_rank
 -------------------------------------------------
@@ -28,7 +28,7 @@ all_simple_given_isogeny_and_rank
 | 
 
 
-.. _all_simple_(string,int->[RealForm]):
+.. _all_simple_(string,int->[RealForm])1:
 
 all_simple
 -------------------------------------------------
@@ -36,7 +36,7 @@ all_simple
 | 
 
 
-.. _all_simple_simply_connected_rank_(int->[RealForm]):
+.. _all_simple_simply_connected_rank_(int->[RealForm])1:
 
 all_simple_simply_connected_rank
 -------------------------------------------------
@@ -44,7 +44,7 @@ all_simple_simply_connected_rank
 | 
 
 
-.. _all_simple_adjoint_rank_(int->[RealForm]):
+.. _all_simple_adjoint_rank_(int->[RealForm])1:
 
 all_simple_adjoint_rank
 -------------------------------------------------

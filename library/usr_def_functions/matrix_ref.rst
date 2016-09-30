@@ -4,7 +4,7 @@ matrix.at Function References
 =======================================================
 |
 
-.. _row_(mat,int->vec):
+.. _row_(mat,int->vec)1:
 
 row
 -------------------------------------------------
@@ -12,7 +12,7 @@ row
 | 
 
 
-.. _column_(mat,int->vec):
+.. _column_(mat,int->vec)1:
 
 column
 -------------------------------------------------
@@ -20,7 +20,7 @@ column
 | 
 
 
-.. _block_matrix_(mat,mat->mat):
+.. _block_matrix_(mat,mat->mat)1:
 
 block_matrix
 -------------------------------------------------
@@ -28,7 +28,7 @@ block_matrix
 | 
 
 
-.. _minor_(mat,[int]->mat):
+.. _minor_(mat,[int]->mat)1:
 
 minor
 -------------------------------------------------
@@ -36,7 +36,7 @@ minor
 | 
 
 
-.. _principal_minor_(mat,int,int->mat):
+.. _principal_minor_(mat,int,int->mat)1:
 
 principal_minor
 -------------------------------------------------
@@ -44,7 +44,7 @@ principal_minor
 | 
 
 
-.. _principal_minor_(mat,int->mat):
+.. _principal_minor_(mat,int->mat)1:
 
 principal_minor
 -------------------------------------------------
@@ -52,7 +52,7 @@ principal_minor
 | 
 
 
-.. _right_inverse_(mat->mat):
+.. _right_inverse_(mat->mat)1:
 
 right_inverse
 -------------------------------------------------
@@ -60,7 +60,7 @@ right_inverse
 | 
 
 
-.. _left_inverse_(mat->mat):
+.. _left_inverse_(mat->mat)1:
 
 left_inverse
 -------------------------------------------------
@@ -68,7 +68,7 @@ left_inverse
 | 
 
 
-.. _weak_left_inverse_(mat->int,mat):
+.. _weak_left_inverse_(mat->int,mat)1:
 
 weak_left_inverse
 -------------------------------------------------
@@ -76,7 +76,7 @@ weak_left_inverse
 | 
 
 
-.. _reduce_(mat->mat):
+.. _reduce_(mat->mat)1:
 
 reduce
 -------------------------------------------------

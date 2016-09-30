@@ -4,7 +4,7 @@ Vogan-dual.at Function References
 =======================================================
 |
 
-.. _fixed_lift_(mat,ratvec->ratvec,(vec,mat,mat)):
+.. _fixed_lift_(mat,ratvec->ratvec,(vec,mat,mat))1:
 
 fixed_lift
 -------------------------------------------------
@@ -12,7 +12,7 @@ fixed_lift
 | 
 
 
-.. _integral_shift_(ratvec,mat,(vec,mat,mat)->vec):
+.. _integral_shift_(ratvec,mat,(vec,mat,mat)->vec)1:
 
 integral_shift
 -------------------------------------------------
@@ -20,7 +20,7 @@ integral_shift
 | 
 
 
-.. _dual_KGB_(Param,InnerClass->KGBElt):
+.. _dual_KGB_(Param,InnerClass->KGBElt)1:
 
 dual_KGB
 -------------------------------------------------
@@ -28,7 +28,7 @@ dual_KGB
 | 
 
 
-.. _central_cocharacter_(RealForm->ratvec):
+.. _central_cocharacter_(RealForm->ratvec)1:
 
 central_cocharacter
 -------------------------------------------------
@@ -36,7 +36,7 @@ central_cocharacter
 | 
 
 
-.. _dual_shift_(RootDatum,ratvec->ratvec):
+.. _dual_shift_(RootDatum,ratvec->ratvec)1:
 
 dual_shift
 -------------------------------------------------
@@ -44,7 +44,7 @@ dual_shift
 | 
 
 
-.. _ell_(KGBElt->vec):
+.. _ell_(KGBElt->vec)1:
 
 ell
 -------------------------------------------------
@@ -52,7 +52,7 @@ ell
 | 
 
 
-.. _dual_gamma_(Param->ratvec):
+.. _dual_gamma_(Param->ratvec)1:
 
 dual_gamma
 -------------------------------------------------
@@ -60,7 +60,7 @@ dual_gamma
 | 
 
 
-.. _dual_lambda_(Param->ratvec):
+.. _dual_lambda_(Param->ratvec)1:
 
 dual_lambda
 -------------------------------------------------
@@ -68,7 +68,7 @@ dual_lambda
 | 
 
 
-.. _check_dual_lambda_(Param->bool):
+.. _check_dual_lambda_(Param->bool)1:
 
 check_dual_lambda
 -------------------------------------------------
@@ -76,7 +76,7 @@ check_dual_lambda
 | 
 
 
-.. _dual_(Param,InnerClass->Param):
+.. _dual_(Param,InnerClass->Param)1:
 
 dual
 -------------------------------------------------
@@ -84,7 +84,7 @@ dual
 | 
 
 
-.. _dual_(KGBElt,KGBElt,ratvec->Param):
+.. _dual_(KGBElt,KGBElt,ratvec->Param)1:
 
 dual
 -------------------------------------------------
@@ -92,7 +92,7 @@ dual
 | 
 
 
-.. _dual_(KGBElt,KGBElt->Param):
+.. _dual_(KGBElt,KGBElt->Param)1:
 
 dual
 -------------------------------------------------
@@ -100,7 +100,7 @@ dual
 | 
 
 
-.. _test1_(Param->[bool]):
+.. _test1_(Param->[bool])1:
 
 test1
 -------------------------------------------------
@@ -108,7 +108,7 @@ test1
 | 
 
 
-.. _test2_(Param->[bool]):
+.. _test2_(Param->[bool])1:
 
 test2
 -------------------------------------------------

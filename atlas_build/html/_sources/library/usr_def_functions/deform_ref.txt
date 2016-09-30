@@ -4,7 +4,7 @@ deform.at Function References
 =======================================================
 |
 
-.. _compress_([Param],mat,[vec],vec,vec,mat->[Param],mat,[int]):
+.. _compress_([Param],mat,[vec],vec,vec,mat->[Param],mat,[int])1:
 
 compress
 -------------------------------------------------
@@ -12,7 +12,7 @@ compress
 | 
 
 
-.. _deformation_terms_(Param->ParamPol):
+.. _deformation_terms_(Param->ParamPol)1:
 
 deformation_terms
 -------------------------------------------------
@@ -20,7 +20,7 @@ deformation_terms
 | 
 
 
-.. _has_nu0_(Param->bool):
+.. _has_nu0_(Param->bool)1:
 
 has_nu0
 -------------------------------------------------
@@ -28,7 +28,7 @@ has_nu0
 | 
 
 
-.. _weak_lower_(Param->Param):
+.. _weak_lower_(Param->Param)1:
 
 weak_lower
 -------------------------------------------------
@@ -36,7 +36,7 @@ weak_lower
 | 
 
 
-.. _lower_(Param->Param):
+.. _lower_(Param->Param)1:
 
 lower
 -------------------------------------------------
@@ -44,7 +44,7 @@ lower
 | 
 
 
-.. _deformation_(Param->Param,ParamPol):
+.. _deformation_(Param->Param,ParamPol)1:
 
 deformation
 -------------------------------------------------
@@ -52,7 +52,7 @@ deformation
 | 
 
 
-.. _recursive_deform_(Param->ParamPol):
+.. _recursive_deform_(Param->ParamPol)1:
 
 recursive_deform
 -------------------------------------------------
@@ -60,7 +60,7 @@ recursive_deform
 | 
 
 
-.. _d_verbose_bool:
+.. _d_verbose_bool1:
 
 d_verbose
 -------------------------------------------------

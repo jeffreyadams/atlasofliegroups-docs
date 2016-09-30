@@ -4,7 +4,7 @@ hermitian.at Function References
 =======================================================
 |
 
-.. _make_nu0_([Param]->[Param]):
+.. _make_nu0_([Param]->[Param])1:
 
 make_nu0
 -------------------------------------------------
@@ -12,7 +12,7 @@ make_nu0
 | 
 
 
-.. _make_nu0_(ParamPol->ParamPol):
+.. _make_nu0_(ParamPol->ParamPol)1:
 
 make_nu0
 -------------------------------------------------
@@ -20,7 +20,7 @@ make_nu0
 | 
 
 
-.. _orientation_nr_term_(int,Param->Split):
+.. _orientation_nr_term_(int,Param->Split)1:
 
 orientation_nr_term
 -------------------------------------------------
@@ -28,7 +28,7 @@ orientation_nr_term
 | 
 
 
-.. _c_form_std_(Param->ParamPol):
+.. _c_form_std_(Param->ParamPol)1:
 
 c_form_std
 -------------------------------------------------
@@ -36,7 +36,7 @@ c_form_std
 | 
 
 
-.. _c_form_std_delta_(Param->ParamPol):
+.. _c_form_std_delta_(Param->ParamPol)1:
 
 c_form_std_delta
 -------------------------------------------------
@@ -44,7 +44,7 @@ c_form_std_delta
 | 
 
 
-.. _c_form_irreducible_long_(Param->ParamPol,[(Param,Split,ParamPol)]):
+.. _c_form_irreducible_long_(Param->ParamPol,[(Param,Split,ParamPol)])1:
 
 c_form_irreducible_long
 -------------------------------------------------
@@ -52,7 +52,7 @@ c_form_irreducible_long
 | 
 
 
-.. _c_form_irreducible_(Param->ParamPol):
+.. _c_form_irreducible_(Param->ParamPol)1:
 
 c_form_irreducible
 -------------------------------------------------
@@ -60,7 +60,7 @@ c_form_irreducible
 | 
 
 
-.. _c_form_irreducible_delta_(Param->ParamPol):
+.. _c_form_irreducible_delta_(Param->ParamPol)1:
 
 c_form_irreducible_delta
 -------------------------------------------------
@@ -68,7 +68,7 @@ c_form_irreducible_delta
 | 
 
 
-.. _print_c_form_irreducible_long_(Param->):
+.. _print_c_form_irreducible_long_(Param->)1:
 
 print_c_form_irreducible_long
 -------------------------------------------------
@@ -76,7 +76,7 @@ print_c_form_irreducible_long
 | 
 
 
-.. _mixed_(Split->bool):
+.. _mixed_(Split->bool)1:
 
 mixed
 -------------------------------------------------
@@ -84,7 +84,7 @@ mixed
 | 
 
 
-.. _analyse_(ParamPol->):
+.. _analyse_(ParamPol->)1:
 
 analyse
 -------------------------------------------------
@@ -92,7 +92,7 @@ analyse
 | 
 
 
-.. _lambda_plus_rho_res_T_(KGBElt,ratvec->ratvec):
+.. _lambda_plus_rho_res_T_(KGBElt,ratvec->ratvec)1:
 
 lambda_plus_rho_res_T
 -------------------------------------------------
@@ -100,7 +100,7 @@ lambda_plus_rho_res_T
 | 
 
 
-.. _mu_(Param->rat):
+.. _mu_(Param->rat)1:
 
 mu
 -------------------------------------------------
@@ -108,7 +108,7 @@ mu
 | 
 
 
-.. _convert_cform_hermitian_(ParamPol->ParamPol):
+.. _convert_cform_hermitian_(ParamPol->ParamPol)1:
 
 convert_cform_hermitian
 -------------------------------------------------
@@ -116,7 +116,7 @@ convert_cform_hermitian
 | 
 
 
-.. _hermitian_form_irreducible_(Param->ParamPol):
+.. _hermitian_form_irreducible_(Param->ParamPol)1:
 
 hermitian_form_irreducible
 -------------------------------------------------
@@ -124,7 +124,7 @@ hermitian_form_irreducible
 | 
 
 
-.. _print_hermitian_form_irreducible_(Param->):
+.. _print_hermitian_form_irreducible_(Param->)1:
 
 print_hermitian_form_irreducible
 -------------------------------------------------
@@ -132,7 +132,7 @@ print_hermitian_form_irreducible
 | 
 
 
-.. _print_hermitian_form_irreducible_([Param]->):
+.. _print_hermitian_form_irreducible_([Param]->)1:
 
 print_hermitian_form_irreducible
 -------------------------------------------------
@@ -140,7 +140,7 @@ print_hermitian_form_irreducible
 | 
 
 
-.. _is_unitary_(ParamPol->bool):
+.. _is_unitary_(ParamPol->bool)1:
 
 is_unitary
 -------------------------------------------------
@@ -148,7 +148,7 @@ is_unitary
 | 
 
 
-.. _is_unitary_(Param->bool):
+.. _is_unitary_(Param->bool)1:
 
 is_unitary
 -------------------------------------------------
@@ -156,7 +156,7 @@ is_unitary
 | 
 
 
-.. _test_line_(Param->):
+.. _test_line_(Param->)1:
 
 test_line
 -------------------------------------------------
@@ -164,7 +164,7 @@ test_line
 | 
 
 
-.. _hermitian_debug_bool:
+.. _hermitian_debug_bool1:
 
 hermitian_debug
 -------------------------------------------------

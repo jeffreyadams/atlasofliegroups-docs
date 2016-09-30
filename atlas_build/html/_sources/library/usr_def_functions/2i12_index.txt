@@ -11,47 +11,47 @@
 
    * - Variable
      - Data Type
-   * - :ref:`rd_RootDatum`
+   * - :ref:`rd_RootDatum1`
      - ``RootDatum``
-   * - :ref:`ic_InnerClass`
+   * - :ref:`ic_InnerClass1`
      - ``InnerClass``
-   * - :ref:`G_RealForm`
+   * - :ref:`G_RealForm1`
      - ``RealForm``
-   * - :ref:`dual_rd_RootDatum`
+   * - :ref:`dual_rd_RootDatum1`
      - ``RootDatum``
-   * - :ref:`dual_ic_InnerClass`
+   * - :ref:`dual_ic_InnerClass1`
      - ``InnerClass``
-   * - :ref:`Gd_RealForm`
+   * - :ref:`Gd_RealForm1`
      - ``RealForm``
-   * - :ref:`delta_mat`
+   * - :ref:`delta_mat1`
      - ``mat``
-   * - :ref:`B_[Param]`
+   * - :ref:`B_[Param]1`
      - ``[Param]``
-   * - :ref:`EB_[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]`
+   * - :ref:`EB_[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]1`
      - ``[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]``
-   * - :ref:`E_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)`
+   * - :ref:`E_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1`
      - ``(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``
-   * - :ref:`p_Param`
+   * - :ref:`p_Param1`
      - ``Param``
-   * - :ref:`gamma_ratvec`
+   * - :ref:`gamma_ratvec1`
      - ``ratvec``
-   * - :ref:`g_ratvec`
+   * - :ref:`g_ratvec1`
      - ``ratvec``
-   * - :ref:`x_KGBElt`
+   * - :ref:`x_KGBElt1`
      - ``KGBElt``
-   * - :ref:`y_KGBElt`
+   * - :ref:`y_KGBElt1`
      - ``KGBElt``
-   * - :ref:`id_RootDatum`
+   * - :ref:`id_RootDatum1`
      - ``RootDatum``
-   * - :ref:`y_gen_(InnerClass,mat,ratvec)`
+   * - :ref:`y_gen_(InnerClass,mat,ratvec)1`
      - ``(InnerClass,mat,ratvec)``
-   * - :ref:`E_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)`
+   * - :ref:`E_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)2`
      - ``(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``
-   * - :ref:`bases_[[(KGBElt,(InnerClass,mat,ratvec))]]`
+   * - :ref:`bases_[[(KGBElt,(InnerClass,mat,ratvec))]]1`
      - ``[[(KGBElt,(InnerClass,mat,ratvec))]]``
-   * - :ref:`n_int`
+   * - :ref:`n_int1`
      - ``int``
-   * - :ref:`sizes_[int]`
+   * - :ref:`sizes_[int]1`
      - ``[int]``
-   * - :ref:`basis_[(KGBElt,(InnerClass,mat,ratvec))]`
+   * - :ref:`basis_[(KGBElt,(InnerClass,mat,ratvec))]1`
      - ``[(KGBElt,(InnerClass,mat,ratvec))]``

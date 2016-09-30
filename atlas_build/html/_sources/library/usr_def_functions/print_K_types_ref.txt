@@ -4,7 +4,7 @@ print_K_types.at Function References
 =======================================================
 |
 
-.. _print_branch_irr_(ParamPol,KGBElt,int->):
+.. _print_branch_irr_(ParamPol,KGBElt,int->)1:
 
 print_branch_irr
 -------------------------------------------------
@@ -12,7 +12,7 @@ print_branch_irr
 | 
 
 
-.. _print_branch_irr_(ParamPol,int->):
+.. _print_branch_irr_(ParamPol,int->)1:
 
 print_branch_irr
 -------------------------------------------------
@@ -20,7 +20,7 @@ print_branch_irr
 | 
 
 
-.. _print_branch_irr_long_(ParamPol,KGBElt,int->):
+.. _print_branch_irr_long_(ParamPol,KGBElt,int->)1:
 
 print_branch_irr_long
 -------------------------------------------------
@@ -28,7 +28,7 @@ print_branch_irr_long
 | 
 
 
-.. _print_branch_irr_long_(ParamPol,int->):
+.. _print_branch_irr_long_(ParamPol,int->)1:
 
 print_branch_irr_long
 -------------------------------------------------
@@ -36,7 +36,7 @@ print_branch_irr_long
 | 
 
 
-.. _print_branch_irr_(Param,KGBElt,int->):
+.. _print_branch_irr_(Param,KGBElt,int->)1:
 
 print_branch_irr
 -------------------------------------------------
@@ -44,7 +44,7 @@ print_branch_irr
 | 
 
 
-.. _print_branch_irr_(Param,int->):
+.. _print_branch_irr_(Param,int->)1:
 
 print_branch_irr
 -------------------------------------------------
@@ -52,7 +52,7 @@ print_branch_irr
 | 
 
 
-.. _print_branch_irr_long_(Param,KGBElt,int->):
+.. _print_branch_irr_long_(Param,KGBElt,int->)1:
 
 print_branch_irr_long
 -------------------------------------------------
@@ -60,7 +60,7 @@ print_branch_irr_long
 | 
 
 
-.. _print_branch_irr_long_(Param,int->):
+.. _print_branch_irr_long_(Param,int->)1:
 
 print_branch_irr_long
 -------------------------------------------------
@@ -68,7 +68,7 @@ print_branch_irr_long
 | 
 
 
-.. _print_branch_std_(ParamPol,KGBElt,int->):
+.. _print_branch_std_(ParamPol,KGBElt,int->)1:
 
 print_branch_std
 -------------------------------------------------
@@ -76,7 +76,7 @@ print_branch_std
 | 
 
 
-.. _print_branch_std_(ParamPol,int->):
+.. _print_branch_std_(ParamPol,int->)1:
 
 print_branch_std
 -------------------------------------------------
@@ -84,7 +84,7 @@ print_branch_std
 | 
 
 
-.. _print_branch_std_long_(ParamPol,KGBElt,int->):
+.. _print_branch_std_long_(ParamPol,KGBElt,int->)1:
 
 print_branch_std_long
 -------------------------------------------------
@@ -92,7 +92,7 @@ print_branch_std_long
 | 
 
 
-.. _print_branch_std_long_(ParamPol,int->):
+.. _print_branch_std_long_(ParamPol,int->)1:
 
 print_branch_std_long
 -------------------------------------------------
@@ -100,7 +100,7 @@ print_branch_std_long
 | 
 
 
-.. _print_branch_std_(Param,KGBElt,int->):
+.. _print_branch_std_(Param,KGBElt,int->)1:
 
 print_branch_std
 -------------------------------------------------
@@ -108,7 +108,7 @@ print_branch_std
 | 
 
 
-.. _print_branch_std_(Param,int->):
+.. _print_branch_std_(Param,int->)1:
 
 print_branch_std
 -------------------------------------------------
@@ -116,7 +116,7 @@ print_branch_std
 | 
 
 
-.. _print_branch_std_long_(Param,KGBElt,int->):
+.. _print_branch_std_long_(Param,KGBElt,int->)1:
 
 print_branch_std_long
 -------------------------------------------------
@@ -124,7 +124,7 @@ print_branch_std_long
 | 
 
 
-.. _print_branch_std_long_(Param,int->):
+.. _print_branch_std_long_(Param,int->)1:
 
 print_branch_std_long
 -------------------------------------------------
@@ -132,7 +132,7 @@ print_branch_std_long
 | 
 
 
-.. _print_K_signature_irr_(Param,KGBElt,int->):
+.. _print_K_signature_irr_(Param,KGBElt,int->)1:
 
 print_K_signature_irr
 -------------------------------------------------
@@ -140,7 +140,7 @@ print_K_signature_irr
 | 
 
 
-.. _print_K_signature_irr_(Param,int->):
+.. _print_K_signature_irr_(Param,int->)1:
 
 print_K_signature_irr
 -------------------------------------------------

@@ -4,7 +4,7 @@ group_operations.at Function References
 =======================================================
 |
 
-.. _inner_forms_(RealForm->[RealForm]):
+.. _inner_forms_(RealForm->[RealForm])1:
 
 inner_forms
 -------------------------------------------------
@@ -12,7 +12,7 @@ inner_forms
 | 
 
 
-.. _print_real_forms_(InnerClass->):
+.. _print_real_forms_(InnerClass->)1:
 
 print_real_forms
 -------------------------------------------------
@@ -20,7 +20,7 @@ print_real_forms
 | 
 
 
-.. _print_inner_forms_(RealForm->):
+.. _print_inner_forms_(RealForm->)1:
 
 print_inner_forms
 -------------------------------------------------
@@ -28,7 +28,7 @@ print_inner_forms
 | 
 
 
-.. _split_form_(InnerClass->RealForm):
+.. _split_form_(InnerClass->RealForm)1:
 
 split_form
 -------------------------------------------------
@@ -36,7 +36,7 @@ split_form
 | 
 
 
-.. _\*_(RootDatum,RootDatum->RootDatum):
+.. _\*_(RootDatum,RootDatum->RootDatum)1:
 
 \*
 -------------------------------------------------
@@ -44,7 +44,7 @@ split_form
 | 
 
 
-.. _\*_(InnerClass,InnerClass->InnerClass):
+.. _\*_(InnerClass,InnerClass->InnerClass)1:
 
 \*
 -------------------------------------------------
@@ -52,7 +52,7 @@ split_form
 | 
 
 
-.. _\*_(RealForm,RealForm->RealForm):
+.. _\*_(RealForm,RealForm->RealForm)1:
 
 \*
 -------------------------------------------------
@@ -60,7 +60,7 @@ split_form
 | 
 
 
-.. _radical_(RootDatum->RootDatum):
+.. _radical_(RootDatum->RootDatum)1:
 
 radical
 -------------------------------------------------
@@ -68,7 +68,7 @@ radical
 | 
 
 
-.. _radical_(InnerClass->RealForm):
+.. _radical_(InnerClass->RealForm)1:
 
 radical
 -------------------------------------------------
@@ -76,7 +76,7 @@ radical
 | 
 
 
-.. _maximal_central_torus_(RootDatum->RootDatum):
+.. _maximal_central_torus_(RootDatum->RootDatum)1:
 
 maximal_central_torus
 -------------------------------------------------
@@ -84,7 +84,7 @@ maximal_central_torus
 | 
 
 
-.. _maximal_central_torus_(InnerClass->RealForm):
+.. _maximal_central_torus_(InnerClass->RealForm)1:
 
 maximal_central_torus
 -------------------------------------------------
@@ -92,7 +92,7 @@ maximal_central_torus
 | 
 
 
-.. _derived_(InnerClass->InnerClass):
+.. _derived_(InnerClass->InnerClass)1:
 
 derived
 -------------------------------------------------
@@ -100,7 +100,7 @@ derived
 | 
 
 
-.. _mod_central_torus_(InnerClass->InnerClass):
+.. _mod_central_torus_(InnerClass->InnerClass)1:
 
 mod_central_torus
 -------------------------------------------------
@@ -108,7 +108,7 @@ mod_central_torus
 | 
 
 
-.. _adjoint_transform_(RootDatum,mat->mat):
+.. _adjoint_transform_(RootDatum,mat->mat)1:
 
 adjoint_transform
 -------------------------------------------------
@@ -116,7 +116,7 @@ adjoint_transform
 | 
 
 
-.. _adjoint_(InnerClass->InnerClass):
+.. _adjoint_(InnerClass->InnerClass)1:
 
 adjoint
 -------------------------------------------------
@@ -124,7 +124,7 @@ adjoint
 | 
 
 
-.. _derived_(RealForm->RealForm):
+.. _derived_(RealForm->RealForm)1:
 
 derived
 -------------------------------------------------
@@ -132,7 +132,7 @@ derived
 | 
 
 
-.. _adjoint_(RealForm->RealForm):
+.. _adjoint_(RealForm->RealForm)1:
 
 adjoint
 -------------------------------------------------
@@ -140,7 +140,7 @@ adjoint
 | 
 
 
-.. _is_equal_rank_(InnerClass->bool):
+.. _is_equal_rank_(InnerClass->bool)1:
 
 is_equal_rank
 -------------------------------------------------
@@ -148,7 +148,7 @@ is_equal_rank
 | 
 
 
-.. _is_split_(RealForm->bool):
+.. _is_split_(RealForm->bool)1:
 
 is_split
 -------------------------------------------------
@@ -156,7 +156,7 @@ is_split
 | 
 
 
-.. _is_relatively_split_(RealForm->bool):
+.. _is_relatively_split_(RealForm->bool)1:
 
 is_relatively_split
 -------------------------------------------------

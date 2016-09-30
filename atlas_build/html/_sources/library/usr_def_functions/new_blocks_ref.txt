@@ -4,7 +4,7 @@ new_blocks.at Function References
 =======================================================
 |
 
-.. _old_block_(Param->[Param],int):
+.. _old_block_(Param->[Param],int)1:
 
 old_block
 -------------------------------------------------
@@ -12,7 +12,7 @@ old_block
 | 
 
 
-.. _cross_(int,Param->Param):
+.. _cross_(int,Param->Param)2:
 
 cross
 -------------------------------------------------
@@ -20,7 +20,7 @@ cross
 | 
 
 
-.. _Cayley_(int,Param->Param):
+.. _Cayley_(int,Param->Param)2:
 
 Cayley
 -------------------------------------------------
@@ -28,7 +28,7 @@ Cayley
 | 
 
 
-.. _inv_Cayley_(int,Param->Param):
+.. _inv_Cayley_(int,Param->Param)2:
 
 inv_Cayley
 -------------------------------------------------
@@ -36,7 +36,7 @@ inv_Cayley
 | 
 
 
-.. _block_(Param->[Param],int):
+.. _block_(Param->[Param],int)1:
 
 block
 -------------------------------------------------

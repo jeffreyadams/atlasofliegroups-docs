@@ -4,7 +4,7 @@ ext_deform.at Function References
 =======================================================
 |
 
-.. _null_wt_(int->ratvec):
+.. _null_wt_(int->ratvec)1:
 
 null_wt
 -------------------------------------------------
@@ -12,7 +12,7 @@ null_wt
 | 
 
 
-.. _has_nu0_(Param->bool):
+.. _has_nu0_(Param->bool)2:
 
 has_nu0
 -------------------------------------------------
@@ -20,7 +20,7 @@ has_nu0
 | 
 
 
-.. _KL_P_polynomials_([Param],mat->[[vec]]):
+.. _KL_P_polynomials_([Param],mat->[[vec]])1:
 
 KL_P_polynomials
 -------------------------------------------------
@@ -28,7 +28,7 @@ KL_P_polynomials
 | 
 
 
-.. _KL_P_signed_polynomials_([Param],mat->[[vec]]):
+.. _KL_P_signed_polynomials_([Param],mat->[[vec]])1:
 
 KL_P_signed_polynomials
 -------------------------------------------------
@@ -36,7 +36,7 @@ KL_P_signed_polynomials
 | 
 
 
-.. _KL_Q_polynomials_([Param],mat->[[vec]]):
+.. _KL_Q_polynomials_([Param],mat->[[vec]])1:
 
 KL_Q_polynomials
 -------------------------------------------------
@@ -44,7 +44,7 @@ KL_Q_polynomials
 | 
 
 
-.. _deform_(Param,mat->ParamPol):
+.. _deform_(Param,mat->ParamPol)1:
 
 deform
 -------------------------------------------------
@@ -52,7 +52,7 @@ deform
 | 
 
 
-.. _rec_def_(Param,mat->Param,ParamPol):
+.. _rec_def_(Param,mat->Param,ParamPol)1:
 
 rec_def
 -------------------------------------------------
@@ -60,7 +60,7 @@ rec_def
 | 
 
 
-.. _deformation_terms_(Param,mat->ParamPol):
+.. _deformation_terms_(Param,mat->ParamPol)1:
 
 deformation_terms
 -------------------------------------------------
@@ -68,7 +68,7 @@ deformation_terms
 | 
 
 
-.. _recursive_deform_(Param,mat->ParamPol):
+.. _recursive_deform_(Param,mat->ParamPol)1:
 
 recursive_deform
 -------------------------------------------------
@@ -76,7 +76,7 @@ recursive_deform
 | 
 
 
-.. _full_deform_(Param,mat->ParamPol):
+.. _full_deform_(Param,mat->ParamPol)1:
 
 full_deform
 -------------------------------------------------
@@ -84,7 +84,7 @@ full_deform
 | 
 
 
-.. _c_form_std_(Param,mat->ParamPol):
+.. _c_form_std_(Param,mat->ParamPol)1:
 
 c_form_std
 -------------------------------------------------
@@ -92,7 +92,7 @@ c_form_std
 | 
 
 
-.. _ed_verbose_bool:
+.. _ed_verbose_bool1:
 
 ed_verbose
 -------------------------------------------------
@@ -100,7 +100,7 @@ ed_verbose
 | 
 
 
-.. _ed_verbose2_bool:
+.. _ed_verbose2_bool1:
 
 ed_verbose2
 -------------------------------------------------
