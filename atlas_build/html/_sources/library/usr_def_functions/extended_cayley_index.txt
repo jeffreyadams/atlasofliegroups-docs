@@ -10,5 +10,13 @@ extended_cayley.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - some function name
-     - some arguments
+   * - :ref:`test_ext_cayley_(Param,int,string,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->)`
+     - ``(Param,int,string,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->)``
+   * - :ref:`ext_Cayley_1_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])`
+     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
+   * - :ref:`ext_Cayley_2_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])`
+     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
+   * - :ref:`ext_Cayley_3_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])`
+     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
+   * - :ref:`ext_Cayley_simple_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])`
+     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``

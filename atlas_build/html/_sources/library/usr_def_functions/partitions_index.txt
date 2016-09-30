@@ -10,5 +10,15 @@ partitions.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - some function name
-     - some arguments
+   * - :ref:`fac_(int->int)`
+     - ``(int->int)``
+   * - :ref:`transpose_([int]->[int])`
+     - ``([int]->[int])``
+   * - :ref:`size_([int]->int)`
+     - ``([int]->int)``
+   * - :ref:`hook_length_([int],int,int->int)`
+     - ``([int],int,int->int)``
+   * - :ref:`dim_rep_([int]->int)`
+     - ``([int]->int)``
+   * - :ref:`compositions_le_(int,int->[[int]])`
+     - ``(int,int->[[int]])``

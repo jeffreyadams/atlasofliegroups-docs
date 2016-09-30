@@ -171,7 +171,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/general_parameters.html">General Parameters</a></li>
@@ -423,11 +425,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/all_Kparameters_ref.html">all_Kparameters.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/all_parameters.html">all_parameters.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/all_parameters_index.html">all_parameters.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/all_parameters_ref.html">all_parameters.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/basic_ref.html">basic.at Function References</a></li>
@@ -595,7 +592,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/K_highest_weights.html">K_highest_weights.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/K_highest_weights_index.html">K_highest_weights.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/K_norm.html">K_norm.at</a><ul>
@@ -666,11 +663,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/nonintegral.html">nonintegral.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/nonintegral_index.html">nonintegral.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/nonintegral_ref.html">nonintegral.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/orbits.html">orbits.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/orbits_index.html">orbits.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/orbits_ref.html">orbits.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/parabolics.html">parabolics.at</a><ul>
@@ -986,6 +978,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="../operators.html" class="btn btn-neutral float-right" title="Basic Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="syntax-summary">
 <h1>Syntax Summary<a class="headerlink" href="#syntax-summary" title="Permalink to this headline">¶</a></h1>
@@ -1117,7 +1121,7 @@ corresponding to different operator precedences. This structure is not very
 clear from the formal grammar (because precedence is largely handled by
 formula restructuring inside parser actions), but the operators, ordered by
 increasing precedence, are:</p>
-<div class="highlight-python"><div class="highlight"><pre>or
+<div class="highlight-python"><div class="highlight"><pre><span></span>or
 and
 not         (prefix use only)
 =,  !=,  &lt;,  &gt;,  &lt;=,  &gt;=
@@ -1138,7 +1142,7 @@ symbol has the same precedence as a dyadic (infix) use of the same symbol,
 except that a monadic operator symbol that is immediately preceded by a dyadic
 one, thereby effectively gets the highest possible precedence (the latter
 stipulation is needed to ensure consistency of precedence rules).</p>
-<div class="highlight-python"><div class="highlight"><pre>-x+y    is parsed as    (-x)+y
+<div class="highlight-python"><div class="highlight"><pre><span></span>-x+y    is parsed as    (-x)+y
 -a%p    is parsed as    -(a%p)
 -a^b    is parsed as    -(a^b)
 a+-b^c  is parsed as    a+((-b)^c)
@@ -1237,7 +1241,7 @@ parameter lists, one cannot use &#8216;()&#8217; to designate this 0-tuple type.
         <a href="../operators.html" class="btn btn-neutral float-right" title="Basic Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="misc.html" class="btn btn-neutral" title="Miscellaneous Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

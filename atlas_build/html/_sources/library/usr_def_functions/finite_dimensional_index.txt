@@ -10,5 +10,19 @@ finite_dimensional.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - some function name
-     - some arguments
+   * - :ref:`is_finite_dimensional_(Param->bool)`
+     - ``(Param->bool)``
+   * - :ref:`fd_only_(Param->Param)`
+     - ``(Param->Param)``
+   * - :ref:`dimension_(RootDatum,vec->int)`
+     - ``(RootDatum,vec->int)``
+   * - :ref:`highest_weight_finite_dimensional_(Param->vec)`
+     - ``(Param->vec)``
+   * - :ref:`dimension_(Param->int)`
+     - ``(Param->int)``
+   * - :ref:`fundamental_weight_coordinates_(Param->vec)`
+     - ``(Param->vec)``
+   * - :ref:`complex_LKT_(Param->vec)`
+     - ``(Param->vec)``
+   * - :ref:`testcomplex_(RealForm->)`
+     - ``(RealForm->)``

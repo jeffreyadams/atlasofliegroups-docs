@@ -6,7 +6,7 @@ print_K_types.at
 
 This script imported the following .at files:
 
-| :ref:`K_highest_weights.at<K_highest_weights.at>`
+| :ref:`K_types.at<K_types.at>`
 | :ref:`basic.at<basic.at>`
 | :ref:`LKT.at<LKT.at>`
 | :ref:`hermitian.at<hermitian.at>`

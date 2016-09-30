@@ -171,7 +171,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/general_parameters.html">General Parameters</a></li>
@@ -423,11 +425,6 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_ref.html">all_Kparameters.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="all_parameters.html">all_parameters.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="all_parameters_index.html">all_parameters.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="all_parameters_ref.html">all_parameters.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
@@ -595,7 +592,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="K_highest_weights.html">K_highest_weights.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="K_highest_weights_index.html">K_highest_weights.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="K_highest_weights_ref.html">K_highest_weights.at References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="K_highest_weights_ref.html">K_highest_weights.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="K_norm.html">K_norm.at</a><ul>
@@ -666,11 +663,6 @@
 <li class="toctree-l3"><a class="reference internal" href="nonintegral.html">nonintegral.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="nonintegral_index.html">nonintegral.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="nonintegral_ref.html">nonintegral.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="orbits.html">orbits.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="orbits_index.html">orbits.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="orbits_ref.html">orbits.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="parabolics.html">parabolics.at</a><ul>
@@ -988,9 +980,689 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="hecke.html" class="btn btn-neutral float-right" title="hecke.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="groups_index.html" class="btn btn-neutral float-right" title="groups.at Function Index" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="groups-at-function-references">
 <span id="groups-at-ref"></span><h1>groups.at Function References<a class="headerlink" href="#groups-at-function-references" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="section" id="cartan-dispatch">
+<span id="cartan-dispatch-int-int-int-int-bool-int"></span><h2>Cartan_dispatch<a class="headerlink" href="#cartan-dispatch" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Cartan_dispatch:(int,int,int,int,bool-&gt;int)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="cartan-entry">
+<span id="cartan-entry-int-int-int-int-int"></span><h2>Cartan_entry<a class="headerlink" href="#cartan-entry" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Cartan_entry:(int,int,int,int-&gt;int)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="cartan-matrix">
+<span id="cartan-matrix-int-int-mat"></span><h2>Cartan_matrix<a class="headerlink" href="#cartan-matrix" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Cartan_matrix:(int,int-&gt;mat)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="lie-type">
+<span id="lie-type-int-int-lietype"></span><h2>Lie_type<a class="headerlink" href="#lie-type" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Lie_type:(int,int-&gt;LieType)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="block-repeat">
+<span id="block-repeat-mat-int-mat"></span><h2>block_repeat<a class="headerlink" href="#block-repeat" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">block_repeat:(mat,int-&gt;mat)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="complex">
+<span id="complex-rootdatum-realform"></span><h2>complex<a class="headerlink" href="#complex" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">complex:(RootDatum-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="complexification">
+<span id="complexification-rootdatum-realform"></span><h2>complexification<a class="headerlink" href="#complexification" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">complexification:(RootDatum-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gl-roots">
+<span id="gl-roots-int-mat"></span><h2>GL_roots<a class="headerlink" href="#gl-roots" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GL_roots:(int-&gt;mat)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sl-coroots">
+<span id="sl-coroots-int-mat"></span><h2>SL_coroots<a class="headerlink" href="#sl-coroots" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SL_coroots:(int-&gt;mat)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sl-roots">
+<span id="sl-roots-int-mat"></span><h2>SL_roots<a class="headerlink" href="#sl-roots" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SL_roots:(int-&gt;mat)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gl">
+<span id="gl-int-rootdatum"></span><h2>GL<a class="headerlink" href="#gl" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GL:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sl">
+<span id="sl-int-rootdatum"></span><h2>SL<a class="headerlink" href="#sl" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SL:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psl">
+<span id="psl-int-rootdatum"></span><h2>PSL<a class="headerlink" href="#psl" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSL:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="type-b-roots">
+<span id="type-b-roots-int-mat"></span><h2>type_B_roots<a class="headerlink" href="#type-b-roots" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">type_B_roots:(int-&gt;mat)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="type-c-roots">
+<span id="type-c-roots-int-mat"></span><h2>type_C_roots<a class="headerlink" href="#type-c-roots" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">type_C_roots:(int-&gt;mat)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="type-d-roots">
+<span id="type-d-roots-int-mat"></span><h2>type_D_roots<a class="headerlink" href="#type-d-roots" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">type_D_roots:(int-&gt;mat)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sp">
+<span id="sp-int-rootdatum"></span><h2>Sp<a class="headerlink" href="#sp" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Sp:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psp">
+<span id="psp-int-rootdatum"></span><h2>PSp<a class="headerlink" href="#psp" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSp:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gsp">
+<span id="gsp-int-rootdatum"></span><h2>GSp<a class="headerlink" href="#gsp" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GSp:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="so">
+<span id="so-int-rootdatum"></span><h2>SO<a class="headerlink" href="#so" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SO:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="so-lie-type">
+<span id="so-lie-type-int-lietype"></span><h2>SO_Lie_type<a class="headerlink" href="#so-lie-type" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SO_Lie_type:(int-&gt;LieType)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="spin">
+<span id="spin-int-rootdatum"></span><h2>Spin<a class="headerlink" href="#spin" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Spin:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="pso">
+<span id="pso-int-rootdatum"></span><h2>PSO<a class="headerlink" href="#pso" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSO:(int-&gt;RootDatum)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="su">
+<span id="su-int-int-rootdatum-realform"></span><h2>SU<a class="headerlink" href="#su" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SU:(int,int,RootDatum-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="su-int-int-realform">
+<span id="id1"></span><h2>SU<a class="headerlink" href="#su-int-int-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SU:(int,int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psu">
+<span id="psu-int-int-realform"></span><h2>PSU<a class="headerlink" href="#psu" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSU:(int,int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="su-int-realform">
+<span id="id2"></span><h2>SU<a class="headerlink" href="#su-int-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SU:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psu-int-realform">
+<span id="id3"></span><h2>PSU<a class="headerlink" href="#psu-int-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSU:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="u">
+<span id="u-int-int-realform"></span><h2>U<a class="headerlink" href="#u" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">U:(int,int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sl-r">
+<span id="sl-r-int-realform"></span><h2>SL_R<a class="headerlink" href="#sl-r" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SL_R:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psl-r">
+<span id="psl-r-int-realform"></span><h2>PSL_R<a class="headerlink" href="#psl-r" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSL_R:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="pgl-r">
+<span id="pgl-r-int-realform"></span><h2>PGL_R<a class="headerlink" href="#pgl-r" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PGL_R:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sl-c">
+<span id="sl-c-int-realform"></span><h2>SL_C<a class="headerlink" href="#sl-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SL_C:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psl-c">
+<span id="psl-c-int-realform"></span><h2>PSL_C<a class="headerlink" href="#psl-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSL_C:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="pgl-c">
+<span id="pgl-c-int-realform"></span><h2>PGL_C<a class="headerlink" href="#pgl-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PGL_C:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sl-h">
+<span id="sl-h-int-realform"></span><h2>SL_H<a class="headerlink" href="#sl-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SL_H:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psl-h">
+<span id="psl-h-int-realform"></span><h2>PSL_H<a class="headerlink" href="#psl-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSL_H:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="pgl-h">
+<span id="pgl-h-int-realform"></span><h2>PGL_H<a class="headerlink" href="#pgl-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PGL_H:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gl-r">
+<span id="gl-r-int-realform"></span><h2>GL_R<a class="headerlink" href="#gl-r" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GL_R:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gl-c">
+<span id="gl-c-int-realform"></span><h2>GL_C<a class="headerlink" href="#gl-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GL_C:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gl-h">
+<span id="gl-h-int-realform"></span><h2>GL_H<a class="headerlink" href="#gl-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GL_H:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="by-field">
+<span id="by-field-int-realform-int-realform-int-realform-string-int-realform"></span><h2>by_field<a class="headerlink" href="#by-field" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">by_field:((int-&gt;RealForm),(int-&gt;RealForm),(int-&gt;RealForm)-&gt;(string-&gt;(int-&gt;RealForm)))</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sl-int-string-realform">
+<span id="id4"></span><h2>SL<a class="headerlink" href="#sl-int-string-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SL:(int,string-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gl-int-string-realform">
+<span id="id5"></span><h2>GL<a class="headerlink" href="#gl-int-string-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GL:(int,string-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psl-int-string-realform">
+<span id="id6"></span><h2>PSL<a class="headerlink" href="#psl-int-string-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSL:(int,string-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="pgl">
+<span id="pgl-int-string-realform"></span><h2>PGL<a class="headerlink" href="#pgl" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PGL:(int,string-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sp-r">
+<span id="sp-r-int-realform"></span><h2>Sp_R<a class="headerlink" href="#sp-r" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Sp_R:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psp-r">
+<span id="psp-r-int-realform"></span><h2>PSp_R<a class="headerlink" href="#psp-r" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSp_R:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gsp-r">
+<span id="gsp-r-int-realform"></span><h2>GSp_R<a class="headerlink" href="#gsp-r" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GSp_R:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sp-int-int-realform">
+<span id="id7"></span><h2>Sp<a class="headerlink" href="#sp-int-int-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Sp:(int,int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psp-int-int-realform">
+<span id="id8"></span><h2>PSp<a class="headerlink" href="#psp-int-int-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSp:(int,int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sp-c">
+<span id="sp-c-int-realform"></span><h2>Sp_C<a class="headerlink" href="#sp-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Sp_C:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sp-h">
+<span id="sp-h-int-realform"></span><h2>Sp_H<a class="headerlink" href="#sp-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Sp_H:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psp-c">
+<span id="psp-c-int-realform"></span><h2>PSp_C<a class="headerlink" href="#psp-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSp_C:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psp-h">
+<span id="psp-h-int-realform"></span><h2>PSp_H<a class="headerlink" href="#psp-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSp_H:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gsp-c">
+<span id="gsp-c-int-realform"></span><h2>GSp_C<a class="headerlink" href="#gsp-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GSp_C:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gsp-h">
+<span id="gsp-h-int-realform"></span><h2>GSp_H<a class="headerlink" href="#gsp-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GSp_H:(int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sp-int-string-realform">
+<span id="id9"></span><h2>Sp<a class="headerlink" href="#sp-int-string-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Sp:(int,string-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="psp-int-string-realform">
+<span id="id10"></span><h2>PSp<a class="headerlink" href="#psp-int-string-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSp:(int,string-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="gsp-int-string-realform">
+<span id="id11"></span><h2>GSp<a class="headerlink" href="#gsp-int-string-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">GSp:(int,string-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="so-inner-class">
+<span id="so-inner-class-int-int-string"></span><h2>SO_inner_class<a class="headerlink" href="#so-inner-class" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SO_inner_class:(int,int-&gt;string)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="so-real-form-number">
+<span id="so-real-form-number-int-int-int"></span><h2>SO_real_form_number<a class="headerlink" href="#so-real-form-number" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SO_real_form_number:(int,int-&gt;int)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="so-int-int-rootdatum-realform">
+<span id="id12"></span><h2>SO<a class="headerlink" href="#so-int-int-rootdatum-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SO:(int,int,RootDatum-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="spin-int-int-realform">
+<span id="id13"></span><h2>Spin<a class="headerlink" href="#spin-int-int-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">Spin:(int,int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="so-int-int-realform">
+<span id="id14"></span><h2>SO<a class="headerlink" href="#so-int-int-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">SO:(int,int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="pso-int-int-realform">
+<span id="id15"></span><h2>PSO<a class="headerlink" href="#pso-int-int-realform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">PSO:(int,int-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e8-ic">
+<span id="e8-ic-innerclass"></span><h2>E8_ic<a class="headerlink" href="#e8-ic" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E8_ic:(-&gt;InnerClass)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e8-c">
+<span id="e8-c-realform"></span><h2>E8_c<a class="headerlink" href="#e8-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E8_c:(-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e8-q">
+<span id="e8-q-realform"></span><h2>E8_q<a class="headerlink" href="#e8-q" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E8_q:(-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e8-s">
+<span id="e8-s-realform"></span><h2>E8_s<a class="headerlink" href="#e8-s" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E8_s:(-&gt;RealForm)</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="g2-ic">
+<span id="g2-ic-innerclass"></span><h2>G2_ic<a class="headerlink" href="#g2-ic" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">G2_ic:InnerClass</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="g2-c">
+<span id="g2-c-realform"></span><h2>G2_c<a class="headerlink" href="#g2-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">G2_c:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="g2-s">
+<span id="g2-s-realform"></span><h2>G2_s<a class="headerlink" href="#g2-s" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">G2_s:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="f4-ic">
+<span id="f4-ic-innerclass"></span><h2>F4_ic<a class="headerlink" href="#f4-ic" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">F4_ic:InnerClass</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="f4-c">
+<span id="f4-c-realform"></span><h2>F4_c<a class="headerlink" href="#f4-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">F4_c:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="f4-b4">
+<span id="f4-b4-realform"></span><h2>F4_B4<a class="headerlink" href="#f4-b4" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">F4_B4:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="f4-s">
+<span id="f4-s-realform"></span><h2>F4_s<a class="headerlink" href="#f4-s" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">F4_s:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-ic-e">
+<span id="e6-ic-e-innerclass"></span><h2>E6_ic_e<a class="headerlink" href="#e6-ic-e" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_ic_e:InnerClass</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-c">
+<span id="e6-c-realform"></span><h2>E6_c<a class="headerlink" href="#e6-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_c:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-h">
+<span id="e6-h-realform"></span><h2>E6_h<a class="headerlink" href="#e6-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_h:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-d5t">
+<span id="e6-d5t-realform"></span><h2>E6_D5T<a class="headerlink" href="#e6-d5t" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_D5T:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-q">
+<span id="e6-q-realform"></span><h2>E6_q<a class="headerlink" href="#e6-q" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_q:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-ic-s">
+<span id="e6-ic-s-innerclass"></span><h2>E6_ic_s<a class="headerlink" href="#e6-ic-s" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_ic_s:InnerClass</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-f4">
+<span id="e6-f4-realform"></span><h2>E6_F4<a class="headerlink" href="#e6-f4" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_F4:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-s">
+<span id="e6-s-realform"></span><h2>E6_s<a class="headerlink" href="#e6-s" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_s:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e6-c4">
+<span id="e6-c4-realform"></span><h2>E6_C4<a class="headerlink" href="#e6-c4" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E6_C4:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-ic-e">
+<span id="e7-ic-e-innerclass"></span><h2>E7_ic_e<a class="headerlink" href="#e7-ic-e" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_ic_e:InnerClass</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-ic">
+<span id="e7-ic-innerclass"></span><h2>E7_ic<a class="headerlink" href="#e7-ic" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_ic:InnerClass</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-c">
+<span id="e7-c-realform"></span><h2>E7_c<a class="headerlink" href="#e7-c" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_c:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-h">
+<span id="e7-h-realform"></span><h2>E7_h<a class="headerlink" href="#e7-h" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_h:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-e6t">
+<span id="e7-e6t-realform"></span><h2>E7_E6T<a class="headerlink" href="#e7-e6t" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_E6T:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-q">
+<span id="e7-q-realform"></span><h2>E7_q<a class="headerlink" href="#e7-q" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_q:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-d6a1">
+<span id="e7-d6a1-realform"></span><h2>E7_D6A1<a class="headerlink" href="#e7-d6a1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_D6A1:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-s">
+<span id="e7-s-realform"></span><h2>E7_s<a class="headerlink" href="#e7-s" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_s:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="e7-a7">
+<span id="e7-a7-realform"></span><h2>E7_A7<a class="headerlink" href="#e7-a7" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">E7_A7:RealForm</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
 </div>
 
 
@@ -1003,7 +1675,7 @@
         <a href="hecke.html" class="btn btn-neutral float-right" title="hecke.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="groups_index.html" class="btn btn-neutral" title="groups.at Function Index" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="groups_index.html" class="btn btn-neutral float-right" title="groups.at Function Index" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

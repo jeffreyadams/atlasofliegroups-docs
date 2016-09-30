@@ -171,7 +171,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/general_parameters.html">General Parameters</a></li>
@@ -423,11 +425,6 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_ref.html">all_Kparameters.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="all_parameters.html">all_parameters.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="all_parameters_index.html">all_parameters.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="all_parameters_ref.html">all_parameters.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
@@ -595,7 +592,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="K_highest_weights.html">K_highest_weights.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="K_highest_weights_index.html">K_highest_weights.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="K_highest_weights_ref.html">K_highest_weights.at References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="K_highest_weights_ref.html">K_highest_weights.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="K_norm.html">K_norm.at</a><ul>
@@ -666,11 +663,6 @@
 <li class="toctree-l3"><a class="reference internal" href="nonintegral.html">nonintegral.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="nonintegral_index.html">nonintegral.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="nonintegral_ref.html">nonintegral.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="orbits.html">orbits.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="orbits_index.html">orbits.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="orbits_ref.html">orbits.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="parabolics.html">parabolics.at</a><ul class="current">
@@ -988,6 +980,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="parabolics_ref.html" class="btn btn-neutral float-right" title="parabolics.at Function References" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="parabolics.html" class="btn btn-neutral float-right" title="parabolics.at" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="parabolics-at-function-index">
 <span id="parabolics-at-index"></span><h1>parabolics.at Function Index<a class="headerlink" href="#parabolics-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1005,8 +1009,110 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>some function name</td>
-<td>some arguments</td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#complex-parabolic-int-kgbelt-rootdatum-int"><span>complex_parabolic</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;RootDatum,[int])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#complex-levi-rootdatum-int-bool-rootdatum"><span>complex_Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,(int-&gt;bool)-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#complex-levi-rootdatum-int-rootdatum"><span>complex_Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,[int]-&gt;RootDatum)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#is-levi-theta-stable-int-kgbelt-bool"><span>is_Levi_theta_stable</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;bool)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#levi-int-kgbelt-realform"><span>Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#is-parabolic-theta-stable-int-kgbelt-bool"><span>is_parabolic_theta_stable</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;bool)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#is-parabolic-real-int-kgbelt-bool"><span>is_parabolic_real</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;bool)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#rho-u-rootdatum-int-ratvec"><span>rho_u</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,[int]-&gt;ratvec)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#rho-u-int-kgbelt-ratvec"><span>rho_u</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;ratvec)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#rho-l-int-kgbelt-ratvec"><span>rho_l</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;ratvec)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#nilrad-int-kgbelt-mat"><span>nilrad</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#nilrad-roots-int-kgbelt-mat"><span>nilrad_roots</span></a></td>
+<td><code class="docutils literal"><span class="pre">([int],KGBElt-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#zero-simple-coroots-rootdatum-vec-int"><span>zero_simple_coroots</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,vec-&gt;[int])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#parabolic-ratvec-kgbelt-int-kgbelt"><span>parabolic</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;[int],KGBElt)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#levi-ratvec-kgbelt-realform"><span>Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#nilrad-ratvec-kgbelt-mat"><span>nilrad</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#nilrad-roots-ratvec-kgbelt-mat"><span>nilrad_roots</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#rho-u-ratvec-kgbelt-ratvec"><span>rho_u</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;ratvec)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#zero-simple-roots-rootdatum-vec-int"><span>zero_simple_roots</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,vec-&gt;[int])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#parabolic-alt-ratvec-kgbelt-int-kgbelt"><span>parabolic_alt</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;[int],KGBElt)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#levi-alt-ratvec-kgbelt-realform"><span>Levi_alt</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#nilrad-alt-ratvec-kgbelt-mat"><span>nilrad_alt</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#nilrad-roots-alt-ratvec-kgbelt-mat"><span>nilrad_roots_alt</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;mat)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#rho-u-alt-ratvec-kgbelt-ratvec"><span>rho_u_alt</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;ratvec)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#rho-levi-alt-ratvec-kgbelt-ratvec"><span>rho_Levi_alt</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ratvec,KGBElt-&gt;ratvec)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#real-parabolic-kgbelt-int-kgbelt"><span>real_parabolic</span></a></td>
+<td><code class="docutils literal"><span class="pre">(KGBElt-&gt;[int],KGBElt)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolic-kgbelt-int-kgbelt"><span>theta_stable_parabolic</span></a></td>
+<td><code class="docutils literal"><span class="pre">(KGBElt-&gt;[int],KGBElt)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#real-levi-kgbelt-realform"><span>real_Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">(KGBElt-&gt;RealForm)</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#kgp-realform-rootdatum-int-int-kgbelt"><span>KGP</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm,(RootDatum,[int])-&gt;[([int],KGBElt)])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#parabolics-realform-rootdatum-int-int-kgbelt"><span>parabolics</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm,(RootDatum,[int])-&gt;[([int],KGBElt)])</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-rootdatum-int-int-kgbelt"><span>theta_stable_parabolics</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm,(RootDatum,[int])-&gt;[([int],KGBElt)])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-int-kgbelt"><span>theta_stable_parabolics</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;[([int],KGBElt)])</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-type-realform-int-int-kgbelt"><span>theta_stable_parabolics_type</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm,[int]-&gt;[([int],KGBElt)])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#all-rel-split-theta-stable-parabolics-realform-int-kgbelt"><span>all_rel_split_theta_stable_parabolics</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;[([int],KGBElt)])</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#print-theta-stable-parabolics-realform"><span>print_theta_stable_parabolics</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RealForm-&gt;)</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -1022,7 +1128,7 @@
         <a href="parabolics_ref.html" class="btn btn-neutral float-right" title="parabolics.at Function References" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="parabolics.html" class="btn btn-neutral" title="parabolics.at" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="parabolics.html" class="btn btn-neutral float-right" title="parabolics.at" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

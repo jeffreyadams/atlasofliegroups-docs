@@ -10,5 +10,23 @@ matrix.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - some function name
-     - some arguments
+   * - :ref:`row_(mat,int->vec)`
+     - ``(mat,int->vec)``
+   * - :ref:`column_(mat,int->vec)`
+     - ``(mat,int->vec)``
+   * - :ref:`block_matrix_(mat,mat->mat)`
+     - ``(mat,mat->mat)``
+   * - :ref:`minor_(mat,[int]->mat)`
+     - ``(mat,[int]->mat)``
+   * - :ref:`principal_minor_(mat,int,int->mat)`
+     - ``(mat,int,int->mat)``
+   * - :ref:`principal_minor_(mat,int->mat)`
+     - ``(mat,int->mat)``
+   * - :ref:`right_inverse_(mat->mat)`
+     - ``(mat->mat)``
+   * - :ref:`left_inverse_(mat->mat)`
+     - ``(mat->mat)``
+   * - :ref:`weak_left_inverse_(mat->int,mat)`
+     - ``(mat->int,mat)``
+   * - :ref:`reduce_(mat->mat)`
+     - ``(mat->mat)``

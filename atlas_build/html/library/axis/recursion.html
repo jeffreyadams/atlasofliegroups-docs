@@ -171,7 +171,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/general_parameters.html">General Parameters</a></li>
@@ -423,11 +425,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/all_Kparameters_ref.html">all_Kparameters.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/all_parameters.html">all_parameters.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/all_parameters_index.html">all_parameters.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/all_parameters_ref.html">all_parameters.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/basic_ref.html">basic.at Function References</a></li>
@@ -595,7 +592,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/K_highest_weights.html">K_highest_weights.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/K_highest_weights_index.html">K_highest_weights.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/K_norm.html">K_norm.at</a><ul>
@@ -666,11 +663,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/nonintegral.html">nonintegral.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/nonintegral_index.html">nonintegral.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/nonintegral_ref.html">nonintegral.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/orbits.html">orbits.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/orbits_index.html">orbits.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/orbits_ref.html">orbits.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/parabolics.html">parabolics.at</a><ul>
@@ -986,6 +978,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="control_structures.html" class="btn btn-neutral float-right" title="Control Structures" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="recursion">
 <h1>Recursion<a class="headerlink" href="#recursion" title="Permalink to this headline">¶</a></h1>
@@ -1003,7 +1007,7 @@ type must be explicitly specified (while it is option for ordinary functions);
 failing to do so after rec_fun will result in a syntax error.</p>
 <p>Here is the classical (but silly, as using a loop would do quite as well)
 example of the factorial function &#8216;fac&#8217;:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set rec_fun fac (int n) = int: { return type int is specified }
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rec_fun fac (int n) = int: { return type int is specified }
   if n&lt;=0 then 1 else n*fac(n-1) fi
 Defined fac: (int-&gt;int)
 atlas&gt; fac(7)
@@ -1017,7 +1021,7 @@ call. For instance if in the above definition one wants to signal negative
 arguments as errors rather than returning the (mathematically meaningless)
 value 1 for them, this can be done as follows (the example also shows that the
 recursive function need not have the same name as the global one:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set fac (int n) = { no return type needed here }
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac (int n) = { no return type needed here }
 if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not defined&quot;) fi;
 let rec_fun f(int n) = int: { return type required here }
             if n&lt;=0 then 1 else n*f(n-1) fi
@@ -1026,7 +1030,7 @@ in f(n)
 </div>
 <p>Since the local function f is defined only to be immediately called, one can
 even make the recursive function anonymous to the outside, as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set fac (int n) = { no return type needed here }
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac (int n) = { no return type needed here }
 if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not defined&quot;) fi;
 (rec_fun f(int n) = int: if n&lt;=0 then 1 else n*f(n-1) fi) (n) { call it! }
 </pre></div>
@@ -1034,7 +1038,7 @@ if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not d
 <p>Finally, one could avoid making a new (local) recursive function each time the
 global function is called by postponing the introduction of its arguments;
 this gives the following (optimal though maybe not optimally readable) style:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set fac = { no arguments yet }
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac = { no arguments yet }
 let rec_fun f(int n) = int: if n&lt;=0 then 1 else n*f(n-1) fi { build once }
 in { now comes that actual definition of fac, an anonymous function }
 (int n): { introduce argument of fac }
@@ -1055,7 +1059,7 @@ in { now comes that actual definition of fac, an anonymous function }
         <a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="control_structures.html" class="btn btn-neutral" title="Control Structures" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="control_structures.html" class="btn btn-neutral float-right" title="Control Structures" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

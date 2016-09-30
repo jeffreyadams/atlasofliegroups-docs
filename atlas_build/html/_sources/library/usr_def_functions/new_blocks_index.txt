@@ -10,5 +10,13 @@ new_blocks.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - some function name
-     - some arguments
+   * - :ref:`old_block_(Param->[Param],int)`
+     - ``(Param->[Param],int)``
+   * - :ref:`cross_(int,Param->Param)`
+     - ``(int,Param->Param)``
+   * - :ref:`Cayley_(int,Param->Param)`
+     - ``(int,Param->Param)``
+   * - :ref:`inv_Cayley_(int,Param->Param)`
+     - ``(int,Param->Param)``
+   * - :ref:`block_(Param->[Param],int)`
+     - ``(Param->[Param],int)``

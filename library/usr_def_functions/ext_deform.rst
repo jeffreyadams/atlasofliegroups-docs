@@ -8,7 +8,7 @@ This script imported the following .at files:
 
 | :ref:`basic.at<basic.at>`
 | :ref:`extended.at<extended.at>`
-| :ref:`inverse.at<inverse.at>`
+| :ref:`extended_misc.at<extended_misc.at>`
 | :ref:`polynomial.at<polynomial.at>`
 | :ref:`dual.at<dual.at>`
 |

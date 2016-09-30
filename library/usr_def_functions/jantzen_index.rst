@@ -10,5 +10,17 @@ jantzen.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - some function name
-     - some arguments
+   * - :ref:`graded_multiplicities_([Param],[[vec]],Param,Param->vec)`
+     - ``([Param],[[vec]],Param,Param->vec)``
+   * - :ref:`graded_multiplicities_([Param],Param,Param->vec)`
+     - ``([Param],Param,Param->vec)``
+   * - :ref:`graded_multiplicities_(Param,Param->vec)`
+     - ``(Param,Param->vec)``
+   * - :ref:`graded_composition_series_([Param],[[vec]],Param->[(Param,vec)])`
+     - ``([Param],[[vec]],Param->[(Param,vec)])``
+   * - :ref:`graded_composition_series_([Param],Param->[(Param,vec)])`
+     - ``([Param],Param->[(Param,vec)])``
+   * - :ref:`graded_composition_series_(Param->[(Param,vec)])`
+     - ``(Param->[(Param,vec)])``
+   * - :ref:`print_graded_composition_series_(Param->)`
+     - ``(Param->)``

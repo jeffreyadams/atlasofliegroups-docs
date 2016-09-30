@@ -171,7 +171,9 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/coordinates_characters.html">Coordinates and Characters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/principal_series.html">Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/general_parameters.html">General Parameters</a></li>
@@ -423,11 +425,6 @@
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/all_Kparameters_ref.html">all_Kparameters.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/all_parameters.html">all_parameters.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/all_parameters_index.html">all_parameters.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/all_parameters_ref.html">all_parameters.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/basic_ref.html">basic.at Function References</a></li>
@@ -595,7 +592,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/K_highest_weights.html">K_highest_weights.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/K_highest_weights_index.html">K_highest_weights.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/K_norm.html">K_norm.at</a><ul>
@@ -666,11 +663,6 @@
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/nonintegral.html">nonintegral.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/nonintegral_index.html">nonintegral.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/nonintegral_ref.html">nonintegral.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/orbits.html">orbits.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/orbits_index.html">orbits.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/orbits_ref.html">orbits.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/parabolics.html">parabolics.at</a><ul>
@@ -984,6 +976,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="getting_started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="download-and-install">
 <span id="id1"></span><h1>Download and Install<a class="headerlink" href="#download-and-install" title="Permalink to this headline">¶</a></h1>
@@ -1007,11 +1011,11 @@
 <span id="id3"></span><h4>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h4>
 <p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span>Help with git</span></a> to get started with git.</p>
 <p>If you choose to use git, you can get the most up-to-date version of the software. Make sure your git client is relatively new. Version 1.7.0.4 and above should work. To check your git version, do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
 </pre></div>
 </div>
 <p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
-<div class="highlight-python"><div class="highlight"><pre>git clone https://github.com/jeffreyadams/atlasofliegroups.git
+<div class="highlight-python"><div class="highlight"><pre><span></span>git clone https://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
 <p>This creates a subdirectory &#8220;atlasofliegroups&#8221; and stores the files there.</p>
@@ -1083,11 +1087,11 @@ and rx-scripts directory (scripts for realex, and also some realex help files).<
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <p><strong>Source code</strong></p>
 <p>Assuming you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">make</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">make</span>
 </pre></div>
 </div>
 <p>You can choose turn on the verbose option by typing:</p>
-<div class="highlight-python"><div class="highlight"><pre>make verbose=true
+<div class="highlight-python"><div class="highlight"><pre><span></span>make verbose=true
 </pre></div>
 </div>
 <p>This will show you the details of the commands your compiler is using to compile and link the codes.</p>
@@ -1095,11 +1099,11 @@ and rx-scripts directory (scripts for realex, and also some realex help files).<
 <p><strong>Executables</strong></p>
 <p>Assuming you have downloaded the executables from the provided links, after you unzip the files you are pretty much good to go. Proceed to <a class="reference internal" href="run_atlas.html#run-atlas"><span>Run atlas</span></a>.</p>
 <p>If you want to create <a class="reference external" href="https://en.wikipedia.org/wiki/Symbolic_link">symlinks</a> for atlas, you can do:</p>
-<div class="highlight-python"><div class="highlight"><pre>make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
 </pre></div>
 </div>
 <p>For example, if you want to install the executables in /home/userid/software/atlas, and symlinks in /home/userid/bin, type:</p>
-<div class="highlight-python"><div class="highlight"><pre>make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
 </pre></div>
 </div>
 <div class="admonition note">
@@ -1157,7 +1161,7 @@ and rx-scripts directory (scripts for realex, and also some realex help files).<
         <a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="getting_started.html" class="btn btn-neutral" title="Getting Started" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
