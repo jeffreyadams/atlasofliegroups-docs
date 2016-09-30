@@ -1004,6 +1004,11 @@
 <div class="line"><code class="docutils literal"><span class="pre">#:(int-&gt;[int])</span></code></div>
 <div class="line"><br /></div>
 </div>
+<p>Generate an array of given length, starting from 0.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; #(10)
+Value: [0,1,2,3,4,5,6,7,8,9]
+</pre></div>
+</div>
 </div>
 <div class="section" id="bool-int-1">
 <span id="id2"></span><h2>#<a class="headerlink" href="#bool-int-1" title="Permalink to this headline">¶</a></h2>
@@ -1011,12 +1016,26 @@
 <div class="line"><code class="docutils literal"><span class="pre">#:(bool-&gt;int)</span></code></div>
 <div class="line"><br /></div>
 </div>
+<p>Output integers 0 or 1 from boolean values.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; #(true)
+Value: 1
+atlas&gt; #(false)
+Value: 0
+</pre></div>
+</div>
 </div>
 <div class="section" id="bool-bool-bool-1">
 <span id="id3"></span><h2>^<a class="headerlink" href="#bool-bool-bool-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">^:(bool,bool-&gt;bool)</span></code></div>
 <div class="line"><br /></div>
+</div>
+<p>The xor operator.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; true^false
+Value: true
+atlas&gt; true^true
+Value: false
+</pre></div>
 </div>
 </div>
 <div class="section" id="assert">
