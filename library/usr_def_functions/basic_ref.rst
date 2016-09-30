@@ -11,6 +11,14 @@ basic.at Function References
 | ``#:(int->[int])``
 | 
 
+Generate an array of given length, starting from 0.
+
+::
+
+    atlas> #(10)
+    Value: [0,1,2,3,4,5,6,7,8,9]
+
+
 
 .. _\#_(bool->int)1:
 
@@ -18,6 +26,15 @@ basic.at Function References
 -------------------------------------------------
 | ``#:(bool->int)``
 | 
+
+Output integers 0 or 1 from boolean values.
+
+::
+
+    atlas> #(true)
+    Value: 1
+    atlas> #(false)
+    Value: 0
 
 
 .. _\^_(bool,bool->bool)1:
@@ -27,6 +44,15 @@ basic.at Function References
 | ``^:(bool,bool->bool)``
 | 
 
+The xor operator.
+
+::
+
+    atlas> true^false
+    Value: true
+    atlas> true^true
+    Value: false
+    
 
 .. _assert_(bool,string->)1:
 
