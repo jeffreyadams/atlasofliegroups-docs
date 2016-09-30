@@ -9,7 +9,6 @@ User Defined Functions
    usr_def_functions/2r21s
    usr_def_functions/all
    usr_def_functions/all_Kparameters
-   usr_def_functions/all_parameters
    usr_def_functions/basic
    usr_def_functions/canonical_x_K
    usr_def_functions/center
@@ -58,7 +57,6 @@ User Defined Functions
    usr_def_functions/new_blocks
    usr_def_functions/nilpotent
    usr_def_functions/nonintegral
-   usr_def_functions/orbits
    usr_def_functions/parabolics
    usr_def_functions/parameters
    usr_def_functions/partitions

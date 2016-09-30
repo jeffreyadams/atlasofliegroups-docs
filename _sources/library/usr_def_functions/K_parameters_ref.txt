@@ -2,3 +2,109 @@
 
 K_parameters.at Function References
 =======================================================
+|
+
+.. _x_(KGBElt,ratvec->KGBElt):
+
+x
+-------------------------------------------------
+| ``x:(KGBElt,ratvec->KGBElt)``
+| 
+
+
+.. _lambda_(KGBElt,ratvec->ratvec):
+
+lambda
+-------------------------------------------------
+| ``lambda:(KGBElt,ratvec->ratvec)``
+| 
+
+
+.. _root_datum_(KGBElt,ratvec->RootDatum):
+
+root_datum
+-------------------------------------------------
+| ``root_datum:(KGBElt,ratvec->RootDatum)``
+| 
+
+
+.. _real_form_(KGBElt,ratvec->RealForm):
+
+real_form
+-------------------------------------------------
+| ``real_form:(KGBElt,ratvec->RealForm)``
+| 
+
+
+.. _real_form_(KGBElt,vec->RealForm):
+
+real_form
+-------------------------------------------------
+| ``real_form:(KGBElt,vec->RealForm)``
+| 
+
+
+.. _K_0_(KGBElt,vec->RealForm):
+
+K_0
+-------------------------------------------------
+| ``K_0:(KGBElt,vec->RealForm)``
+| 
+
+
+.. _dlambda_(KGBElt,ratvec->ratvec):
+
+dlambda
+-------------------------------------------------
+| ``dlambda:(KGBElt,ratvec->ratvec)``
+| 
+
+
+.. _dlambda_(Param->ratvec):
+
+dlambda
+-------------------------------------------------
+| ``dlambda:(Param->ratvec)``
+| 
+
+
+.. _K_type_(Param->KGBElt,ratvec):
+
+K_type
+-------------------------------------------------
+| ``K_type:(Param->KGBElt,ratvec)``
+| 
+
+
+.. _parameter_(KGBElt,ratvec->Param):
+
+parameter
+-------------------------------------------------
+| ``parameter:(KGBElt,ratvec->Param)``
+| 
+
+
+.. _\=_((KGBElt,ratvec),(KGBElt,ratvec)->bool):
+
+\=
+-------------------------------------------------
+| ``=:((KGBElt,ratvec),(KGBElt,ratvec)->bool)``
+| 
+
+
+.. _make_no_Cminus_(KGBElt,ratvec->KGBElt,ratvec):
+
+make_no_Cminus
+-------------------------------------------------
+| ``make_no_Cminus:(KGBElt,ratvec->KGBElt,ratvec)``
+| 
+
+
+.. _length_(KGBElt,vec->rat):
+
+length
+-------------------------------------------------
+| ``length:(KGBElt,vec->rat)``
+| 
+
+

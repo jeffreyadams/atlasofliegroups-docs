@@ -1,7 +1,11 @@
 Functions and Loops
 ===================
 
-To define a function we specify the argument, variable and the operation(s) performed on the argument using the following format "set f(<data type> <variable name>)=operation".The software then tells us what type of output the function gives. We can also ask the software what type of input and output has been specified for the function  ``f``.  For example::
+To define a function we specify the argument, variable and the
+operation(s) performed on the argument. The software then tells us
+what type of output the function gives. We can also ask the software
+what type of input and output has been specified for the function
+``f``.  For example::
 
    atlas> set f(int x)=x^2
    Defined f: (int->int)
@@ -56,11 +60,12 @@ Another example is::
 Which takes the elements of v, squares them and lists them as an
 array of integers.
 
-Now using this type of  simple ``for loop`` we can, for example, define  the `flattening' function which takes the columns of a matrix and writes them concatenated into a single row::
+Now using this type of simple ``for loop`` we can, for example, define
+the "flattening" function which takes the columns of a matrix and
+writes them concatenated into a single row::
 
    atlas> set f(mat A)=vec: let rv=vec:[] in for v in A do rv#:=v od;rv
    Added definition [3] of f: (mat->vec)
-   
    atlas> A:=[[1,2],[3,4]]
    Value: 
    | 1, 3 |
@@ -72,9 +77,9 @@ Now using this type of  simple ``for loop`` we can, for example, define  the `fl
 
 Note that the command above that does this is a loop. The first part
 says that the function takes a matrix and outputs a vector.  The
-second part defines an empty vector rv. The third part is the loop that
+second part defines an empty vector ``rv``. The third part is the loop that
 says that for each vector v in the matrix A, append it to what you
-have in rv. The last part says, do it for all the vectors in A and print the final result.
+have in ``rv``. The last part says, do it for all the vectors in A and print the final result.
 
 There are several kinds of loops which are explained in the
 ``atlas.help`` file. However, sometimes it is easier to look at some

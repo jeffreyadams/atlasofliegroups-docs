@@ -1,311 +1,350 @@
-K_highest_weights.at References
-====================================================
+.. _K_highest_weights.at_ref:
 
-.. _\=_(KHighestWeight,KHighestWeight->bool):
+K_highest_weights.at Function References
+=======================================================
+|
+
+.. _\=_((KGBElt,vec),(KGBElt,vec)->bool):
 
 \=
--------------------------------------------------------------------
-
-| ``=: (KHighestWeight,KHighestWeight->bool)``
-| Usage: equality of KHighestWeights.
-| Defined in line number 59.
-|
+-------------------------------------------------
+| ``=:((KGBElt,vec),(KGBElt,vec)->bool)``
+| 
 
 
 .. _is_split_spherical_(Param->bool):
 
 is_split_spherical
--------------------------------------------------------------------
-
-| ``is_split_spherical: (Param->bool)``
-| Usage: test if p is G-spherical: G rel. split, all roots in tau(p)
-| Defined in line number 99.
-|
+-------------------------------------------------
+| ``is_split_spherical:(Param->bool)``
+| 
 
 
-.. _is_split_spherical_(K_Type->bool):
+.. _is_split_spherical_(KGBElt,ratvec->bool):
 
 is_split_spherical
--------------------------------------------------------------------
-
-| ``is_split_spherical: (K_Type->bool)``
-| Usage: test if a K-type is G-spherical: LKT of G-spherical p
-| Defined in line number 108.
-|
+-------------------------------------------------
+| ``is_split_spherical:(KGBElt,ratvec->bool)``
+| 
 
 
-.. _highest_weight_split_spherical_(K_Type->KHighestWeight):
+.. _highest_weight_split_spherical_(KGBElt,ratvec->KGBElt,vec):
 
 highest_weight_split_spherical
--------------------------------------------------------------------
-
-| ``highest_weight_split_spherical: (K_Type->KHighestWeight)``
-| Usage: highest weight of a G-spherical K-type (is unique)
-| Defined in line number 113.
-|
+-------------------------------------------------
+| ``highest_weight_split_spherical:(KGBElt,ratvec->KGBElt,vec)``
+| 
 
 
-.. _highest_weight_split_spherical_(Param->KHighestWeight):
+.. _highest_weight_split_spherical_(Param->KGBElt,vec):
 
 highest_weight_split_spherical
--------------------------------------------------------------------
-
-| ``highest_weight_split_spherical: (Param->KHighestWeight)``
-| Usage: highest weight of LKT of a G-spherical parameter (is unique)
-| Defined in line number 127.
-|
+-------------------------------------------------
+| ``highest_weight_split_spherical:(Param->KGBElt,vec)``
+| 
 
 
-.. _highest_weight_split_spherical_(K_Type,KGBElt->KHighestWeight):
+.. _highest_weight_split_spherical_((KGBElt,ratvec),KGBElt->KGBElt,vec):
 
 highest_weight_split_spherical
--------------------------------------------------------------------
-
-| ``highest_weight_split_spherical: (K_Type,KGBElt->KHighestWeight)``
-| Usage: highest weight of LKT of G-spherical K-type wrt x_K (is unique)
-| Defined in line number 131.
-|
+-------------------------------------------------
+| ``highest_weight_split_spherical:((KGBElt,ratvec),KGBElt->KGBElt,vec)``
+| 
 
 
-.. _highest_weight_split_spherical_(Param,KGBElt->KHighestWeight):
+.. _highest_weight_split_spherical_(Param,KGBElt->KGBElt,vec):
 
 highest_weight_split_spherical
--------------------------------------------------------------------
-
-| ``highest_weight_split_spherical: (Param,KGBElt->KHighestWeight)``
-| Usage: highest weight of LKT of a G-spherical parameter wrt x_K (is unique)
-| Defined in line number 135.
-|
+-------------------------------------------------
+| ``highest_weight_split_spherical:(Param,KGBElt->KGBElt,vec)``
+| 
 
 
-.. _highest_weight_one_(K_Type->KHighestWeight):
+.. _highest_weight_one_(KGBElt,ratvec->KGBElt,vec):
 
 highest_weight_one
--------------------------------------------------------------------
-
-| ``highest_weight_one: (K_Type->KHighestWeight)``
-| Usage: one KHighestWeight of a K-type
-| Defined in line number 144.
-|
+-------------------------------------------------
+| ``highest_weight_one:(KGBElt,ratvec->KGBElt,vec)``
+| 
 
 
-.. _highest_weight_one_(K_Type,KGBElt->KHighestWeight):
+.. _highest_weight_one_((KGBElt,ratvec),KGBElt->KGBElt,vec):
 
 highest_weight_one
--------------------------------------------------------------------
-
-| ``highest_weight_one: (K_Type,KGBElt->KHighestWeight)``
-| Usage: one KHighestWeight of a K-type wrt x_K
-| Defined in line number 163.
-|
+-------------------------------------------------
+| ``highest_weight_one:((KGBElt,ratvec),KGBElt->KGBElt,vec)``
+| 
 
 
-.. _highest_weights_(K_Type->[KHighestWeight]):
+.. _highest_weights_(KGBElt,ratvec->[(KGBElt,vec)]):
 
 highest_weights
--------------------------------------------------------------------
-
-| ``highest_weights: (K_Type->[KHighestWeight])``
-| Usage: all highest weights of a K-type
-| Defined in line number 171.
-|
+-------------------------------------------------
+| ``highest_weights:(KGBElt,ratvec->[(KGBElt,vec)])``
+| 
 
 
-.. _highest_weights_(K_Type,KGBElt->[KHighestWeight]):
+.. _highest_weights_((KGBElt,ratvec),KGBElt->[(KGBElt,vec)]):
 
 highest_weights
--------------------------------------------------------------------
-
-| ``highest_weights: (K_Type,KGBElt->[KHighestWeight])``
-| Usage: all highest weights of a K-type wrt x_K
-| Defined in line number 175.
-|
+-------------------------------------------------
+| ``highest_weights:((KGBElt,ratvec),KGBElt->[(KGBElt,vec)])``
+| 
 
 
-.. _highest_weights_(Param->[KHighestWeight]):
+.. _highest_weights_(Param->[(KGBElt,vec)]):
 
 highest_weights
--------------------------------------------------------------------
-
-| ``highest_weights: (Param->[KHighestWeight])``
-| Usage: all highest weights of all LKTs of a parameter
-| Defined in line number 180.
-|
+-------------------------------------------------
+| ``highest_weights:(Param->[(KGBElt,vec)])``
+| 
 
 
-.. _highest_weights_(Param,KGBElt->[KHighestWeight]):
+.. _highest_weights_(Param,KGBElt->[(KGBElt,vec)]):
 
 highest_weights
--------------------------------------------------------------------
-
-| ``highest_weights: (Param,KGBElt->[KHighestWeight])``
-| Usage: all highest weights of all LKTs of a parameter wrt x_K
-| Defined in line number 186.
-|
+-------------------------------------------------
+| ``highest_weights:(Param,KGBElt->[(KGBElt,vec)])``
+| 
 
 
-.. _highest_weight_(K_Type->KHighestWeight):
+.. _highest_weight_(KGBElt,ratvec->KGBElt,vec):
 
 highest_weight
--------------------------------------------------------------------
-
-| ``highest_weight: (K_Type->KHighestWeight)``
-| Usage: unique highest weight of a K-type (or error if not unique)
-| Defined in line number 192.
-|
+-------------------------------------------------
+| ``highest_weight:(KGBElt,ratvec->KGBElt,vec)``
+| 
 
 
-.. _highest_weight_(Param->KHighestWeight):
+.. _highest_weight_(Param->KGBElt,vec):
 
 highest_weight
--------------------------------------------------------------------
-
-| ``highest_weight: (Param->KHighestWeight)``
-| Usage: unique highest weight of a parameter (or error if not unique)
-| Defined in line number 198.
-|
+-------------------------------------------------
+| ``highest_weight:(Param->KGBElt,vec)``
+| 
 
 
-.. _centralizer_(KGBElt,ratvec->(KGBElt,RootDatum)):
+.. _centralizer_(KGBElt,ratvec->KGBElt,RootDatum):
 
 centralizer
--------------------------------------------------------------------
-
-| ``centralizer: (KGBElt,ratvec->(KGBElt,RootDatum))``
-| Usage: (internal function)
-| Defined in line number 217.
-|
+-------------------------------------------------
+| ``centralizer:(KGBElt,ratvec->KGBElt,RootDatum)``
+| 
 
 
 .. _find_nci_root_(KGBElt,ratvec->int):
 
 find_nci_root
--------------------------------------------------------------------
-
-| ``find_nci_root: (KGBElt,ratvec->int)``
-| Usage: (internal function)
-| Defined in line number 227.
-|
+-------------------------------------------------
+| ``find_nci_root:(KGBElt,ratvec->int)``
+| 
 
 
-.. _project_on_dominant_cone_(KGBElt,ratvec->(KGBElt,ratvec,ratvec)):
+.. _project_on_dominant_cone_(KGBElt,ratvec->KGBElt,ratvec,ratvec):
 
 project_on_dominant_cone
--------------------------------------------------------------------
-
-| ``project_on_dominant_cone: (KGBElt,ratvec->(KGBElt,ratvec,ratvec))``
-| Usage: Vogan algorithm to project KHighestWeight on dominant cone
-| Defined in line number 261.
-|
+-------------------------------------------------
+| ``project_on_dominant_cone:(KGBElt,ratvec->KGBElt,ratvec,ratvec)``
+| 
 
 
-.. _project_on_dominant_cone_(KGBElt,vec->(KGBElt,ratvec,ratvec)):
+.. _project_on_dominant_cone_(KGBElt,vec->KGBElt,ratvec,ratvec):
 
 project_on_dominant_cone
--------------------------------------------------------------------
-
-| ``project_on_dominant_cone: (KGBElt,vec->(KGBElt,ratvec,ratvec))``
-| Usage: Vogan algorithm to project KHighestWeight on dominant cone
-| Defined in line number 305.
-|
+-------------------------------------------------
+| ``project_on_dominant_cone:(KGBElt,vec->KGBElt,ratvec,ratvec)``
+| 
 
 
 .. _characters_order_2_(KGBElt->[vec]):
 
 characters_order_2
--------------------------------------------------------------------
-
-| ``characters_order_2: (KGBElt->[vec])``
-| Usage: (internal function)
-| Defined in line number 320.
-|
+-------------------------------------------------
+| ``characters_order_2:(KGBElt->[vec])``
+| 
 
 
-.. _all_G_spherical_same_differential_(K_Type->[K_Type]):
+.. _all_G_spherical_same_differential_(KGBElt,ratvec->[(KGBElt,ratvec)]):
 
 all_G_spherical_same_differential
--------------------------------------------------------------------
-
-| ``all_G_spherical_same_differential: (K_Type->[K_Type])``
-| Usage: all G-spherical K-types with same differential as given one
-| Defined in line number 340.
-|
+-------------------------------------------------
+| ``all_G_spherical_same_differential:(KGBElt,ratvec->[(KGBElt,ratvec)])``
+| 
 
 
-.. _all_G_spherical_same_differential_(Param->[K_Type]):
+.. _all_G_spherical_same_differential_(Param->[(KGBElt,ratvec)]):
 
 all_G_spherical_same_differential
--------------------------------------------------------------------
-
-| ``all_G_spherical_same_differential: (Param->[K_Type])``
-| Usage: all G-spherical K-types with same differential as LKT of p
-| Defined in line number 357.
-|
+-------------------------------------------------
+| ``all_G_spherical_same_differential:(Param->[(KGBElt,ratvec)])``
+| 
 
 
-.. _parabolic_(KHighestWeight->Parabolic):
+.. _parabolic_(KGBElt,vec->[int],KGBElt):
 
 parabolic
--------------------------------------------------------------------
-
-| ``parabolic: (KHighestWeight->Parabolic)``
-| Usage: parabolic attached to KHighestWeight by Vogan algorithm
-| Defined in line number 369.
-|
+-------------------------------------------------
+| ``parabolic:(KGBElt,vec->[int],KGBElt)``
+| 
 
 
-.. _K_types_(KHighestWeight->[K_Type]):
+.. _make_strongly_dominant_((KGBElt,vec),KGBElt->KGBElt,vec):
+
+make_strongly_dominant
+-------------------------------------------------
+| ``make_strongly_dominant:((KGBElt,vec),KGBElt->KGBElt,vec)``
+| 
+
+
+.. _K_types_(KGBElt,vec->[(KGBElt,ratvec)]):
 
 K_types
--------------------------------------------------------------------
-
-| ``K_types: (KHighestWeight->[K_Type])``
-| Usage: KHighestWeight -> array of K-types
-| Defined in line number 391.
-|
+-------------------------------------------------
+| ``K_types:(KGBElt,vec->[(KGBElt,ratvec)])``
+| 
 
 
-.. _K_type_(KHighestWeight->K_Type):
+.. _K_type_(KGBElt,vec->KGBElt,ratvec):
 
 K_type
--------------------------------------------------------------------
-
-| ``K_type: (KHighestWeight->K_Type)``
-| Usage: KHighestWeight -> unique K-type if unique (or error)
-| Defined in line number 428.
-|
+-------------------------------------------------
+| ``K_type:(KGBElt,vec->KGBElt,ratvec)``
+| 
 
 
-.. _K0_highest_weight_(KHighestWeight->Param):
+.. _K0_highest_weight_(KGBElt,vec->Param):
 
 K0_highest_weight
--------------------------------------------------------------------
-
-| ``K0_highest_weight: (KHighestWeight->Param)``
-| Usage: highest weight for K_0 to KHighestWeight
-| Defined in line number 437.
-|
+-------------------------------------------------
+| ``K0_highest_weight:(KGBElt,vec->Param)``
+| 
 
 
-.. _dimension_(KHighestWeight->int):
+.. _dimension_(KGBElt,vec->int):
 
 dimension
--------------------------------------------------------------------
-
-| ``dimension: (KHighestWeight->int)``
-| Usage: dimension of KHighestWeight
-| Defined in line number 445.
-|
+-------------------------------------------------
+| ``dimension:(KGBElt,vec->int)``
+| 
 
 
-.. _dimension_(K_Type->int):
+.. _dimension_(KGBElt,ratvec->int):
 
 dimension
--------------------------------------------------------------------
+-------------------------------------------------
+| ``dimension:(KGBElt,ratvec->int)``
+| 
 
-| ``dimension: (K_Type->int)``
-| Usage: dimension of K-type
-| Defined in line number 448.
-|
+
+.. _H_weight_(KGBElt,vec->KGBElt,vec):
+
+H_weight
+-------------------------------------------------
+| ``H_weight:(KGBElt,vec->KGBElt,vec)``
+| 
+
+
+.. _fundamental_weights_K_H_(KGBElt->[ratvec]):
+
+fundamental_weights_K_H
+-------------------------------------------------
+| ``fundamental_weights_K_H:(KGBElt->[ratvec])``
+| 
+
+
+.. _K0_param_((KGBElt,ratvec),KGBElt->Param):
+
+K0_param
+-------------------------------------------------
+| ``K0_param:((KGBElt,ratvec),KGBElt->Param)``
+| 
+
+
+.. _K0_param_(KGBElt,ratvec->Param):
+
+K0_param
+-------------------------------------------------
+| ``K0_param:(KGBElt,ratvec->Param)``
+| 
+
+
+.. _K0_params_(Param,KGBElt->[Param]):
+
+K0_params
+-------------------------------------------------
+| ``K0_params:(Param,KGBElt->[Param])``
+| 
+
+
+.. _K0_params_(Param->[Param]):
+
+K0_params
+-------------------------------------------------
+| ``K0_params:(Param->[Param])``
+| 
+
+
+.. _K0_param_(Param,KGBElt->Param):
+
+K0_param
+-------------------------------------------------
+| ``K0_param:(Param,KGBElt->Param)``
+| 
+
+
+.. _K0_param_(Param->Param):
+
+K0_param
+-------------------------------------------------
+| ``K0_param:(Param->Param)``
+| 
+
+
+.. _fundamental_weight_coordinates_(KGBElt,vec->vec):
+
+fundamental_weight_coordinates
+-------------------------------------------------
+| ``fundamental_weight_coordinates:(KGBElt,vec->vec)``
+| 
+
+
+.. _K_highest_weight_from_fundamental_weights_(KGBElt,vec->KGBElt,vec):
+
+K_highest_weight_from_fundamental_weights
+-------------------------------------------------
+| ``K_highest_weight_from_fundamental_weights:(KGBElt,vec->KGBElt,vec)``
+| 
+
+
+.. _dimensions_(Param,KGBElt->[int]):
+
+dimensions
+-------------------------------------------------
+| ``dimensions:(Param,KGBElt->[int])``
+| 
+
+
+.. _dimensions_(Param->[int]):
+
+dimensions
+-------------------------------------------------
+| ``dimensions:(Param->[int])``
+| 
+
+
+.. _dimensions_([Param]->[[int]]):
+
+dimensions
+-------------------------------------------------
+| ``dimensions:([Param]->[[int]])``
+| 
+
+
+.. _LKT_verbose_bool:
+
+LKT_verbose
+-------------------------------------------------
+| ``LKT_verbose:bool``
+| 
 
 

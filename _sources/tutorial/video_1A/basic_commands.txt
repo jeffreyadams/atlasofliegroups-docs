@@ -38,6 +38,8 @@ So, you can easily scroll back to the previous commands that you have typed by r
 
 The same result can be obtained by hitting the up/down arrow keys. This also lets you scroll forward as well as backward.
 
+The commands ``ctrl-a`` and ``ctrl-e`` move you to the start and end of a line respectively and the command ``option-left/right-arrow`` move you left or right to the start/end of the next word. 
+
 Basic ``atlas`` Operations
 ---------------------------
 
@@ -108,12 +110,13 @@ We can also work with each part of the pair separately::
    atlas> 
 
 
-n-tupples
+n-tuples
 ---------
 
-The above pair of integers belongs to the more general data type, tupples, which could consist of integers, rationals, vectors, strings or a combination of a variety of data types::
-
-A string can be any string of characters in quotes such as::
+The above pair of integers belongs to the more general data type,
+tuples, which could consist of integers, rationals, vectors, strings
+or a combination of a variety of data types. A string can be any
+string of characters in quotes such as::
 
     atlas> set x="hello world"
     Identifier x: string
@@ -126,7 +129,10 @@ A string can be any string of characters in quotes such as::
     hello world
   
 
-We use the command ``prints`` which means print string, to print without quotes. And we can form the 3-tuple of different data types::
+Here we use the command ``prints`` which means print string, to print
+without quotes. 
+
+Now we can form the 3-tuple of different data types::
 
    set z=(1,2/3,x)
    Identifier z: (int,rat,string)

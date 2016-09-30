@@ -33,7 +33,7 @@
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Structure Theory" href="../structure_theory.html"/>
         <link rel="next" title="Cartan Subgroups" href="cartan_classes.html"/>
-        <link rel="prev" title="Root Data and Lie Types" href="lie_types.html"/> 
+        <link rel="prev" title="Real Groups" href="real_groups.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -130,7 +130,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/atlas_help_files.html">Help files</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#atlas-help"><code class="docutils literal"><span class="pre">atlas.help</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#atlas-functions-help"><code class="docutils literal"><span class="pre">atlas.functions.help</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#atlas-functions-help"><code class="docutils literal"><span class="pre">atlas-functions.help</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#scripts-help"><code class="docutils literal"><span class="pre">scripts.help</span></code></a></li>
 </ul>
 </li>
@@ -138,7 +138,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tupples">n-tupples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tuples">n-tuples</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/vectors.html">Vectors</a><ul>
@@ -158,14 +158,22 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="lie_types.html">Root Data and Lie Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="real_groups.html">Real Groups</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="real_forms.html">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="real_forms.html#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
@@ -417,11 +425,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_Kparameters_ref.html">all_Kparameters.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/all_parameters.html">all_parameters.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_parameters_index.html">all_parameters.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_parameters_ref.html">all_parameters.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_ref.html">basic.at Function References</a></li>
@@ -589,7 +592,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights.html">K_highest_weights.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_index.html">K_highest_weights.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/K_norm.html">K_norm.at</a><ul>
@@ -660,11 +663,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/nonintegral.html">nonintegral.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/nonintegral_index.html">nonintegral.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/nonintegral_ref.html">nonintegral.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/orbits.html">orbits.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/orbits_index.html">orbits.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/orbits_ref.html">orbits.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/parabolics.html">parabolics.at</a><ul>
@@ -987,7 +985,7 @@
 			<a href="cartan_classes.html" class="btn btn-neutral float-right" title="Cartan Subgroups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
 		      
 		      
-			<a href="lie_types.html" class="btn btn-neutral float-right" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+			<a href="real_groups.html" class="btn btn-neutral float-right" title="Real Groups" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
 		      
 		    </div>
 		  
@@ -1020,7 +1018,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>So, atlas chooses a set of coordinates to work with. They were chosen
-in the &#8220;roots.at&#8221; file so that the matrix of the simple_coroots for
+in the <code class="docutils literal"><span class="pre">roots.at</span></code> file so that the matrix of the simple_coroots for
 the simply connected group is the identity matrix:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set g=LieType: A4
 Identifier g: LieType (hiding previous one of type LieType)
@@ -1054,8 +1052,11 @@ atlas&gt;
 </div>
 <p>If you want to ask atlas about a vector in the Cartan or say an
 infinitesimal character, you need to write it in terms of the simple
-roots. Then the software will give you the vector in terms of the <code class="docutils literal"><span class="pre">atlas</span></code>
-coordinates. You then have to understand which coordinates the software is using to both ask the question and interpret the answer. For example, it is useful to know what rho is in the coordinates the software is using:</p>
+roots. Then the software will give you the vector in terms of the
+<code class="docutils literal"><span class="pre">atlas</span></code> coordinates. You then have to understand which coordinates
+the software is using in order to both, ask the question and interpret the
+answer. For example, it is useful to know what rho is in the
+coordinates the software is using:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rho(rd)
 Value: [ 1, 1, 1, 1 ]/1
 atlas&gt; rho(G)
@@ -1084,9 +1085,9 @@ atlas&gt; rho(G)
 Value: [ 2, 1, 0, -1, -2 ]/1
 </pre></div>
 </div>
-<p>Remark: Once you defined a root datum or group atlas fixes some
+<p>Remark: Once you defined a root datum or group, <code class="docutils literal"><span class="pre">atlas</span></code> fixes some
 coordinates. However, as we have seen, it is often possible to
-redefine the group in a different way so that atlas&#8217; coordinates are
+redefine the group in a different way so that the coordinates are
 easier to work with:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=root_datum ([[6,2]],[[1,-2]])
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
@@ -1117,8 +1118,8 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Notice this is a version of the root_datum command that we had not
-seen. It says <a href="#id1"><span class="problematic" id="id2">`</span></a>please give me the root datum for the following set of
-simple roots and coroots&#8217;. That is what a root datum is in atlas. So
+seen. It says asks for the root datum for the given set of
+simple roots and coroots. That is what a root datum is in atlas. So
 you can define the root datum by giving the matrices you want for the
 simple roots and coroots and atlas will accept them as a root
 datum.</p>
@@ -1150,7 +1151,11 @@ datum.</p>
 </pre></div>
 </div>
 <p>Again these are not the usual simple roots and corroots. But as you
-can see we get the Cartan matrix with the above product. These are the fundamental weights coordinates. Observe also that the simple coroots (resp. simple roots) give the identity matrix (resp. the Cartan matrix), which you would expect for the simply connected group of type <code class="docutils literal"><span class="pre">C4</span></code>.</p>
+can see we get the Cartan matrix with the above product. These are the
+fundamental weight coordinates. Observe also that the simple coroots
+(resp. simple roots) give the identity matrix (resp. the Cartan
+matrix), which you would expect for the simply connected group of type
+<code class="docutils literal"><span class="pre">C4</span></code>.</p>
 <p>In these corrdinates <code class="docutils literal"><span class="pre">rho</span></code> is:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rho(rd)
 Value: [ 1, 1, 1, 1 ]/1
@@ -1160,7 +1165,7 @@ atlas&gt;
 <p>So, in fundamental weight coordinates, the coordinates of <code class="docutils literal"><span class="pre">rho</span></code> are all <code class="docutils literal"><span class="pre">1</span></code>.
 You can also check that if you use the adjoint root datum for <code class="docutils literal"><span class="pre">C4</span></code>, the simple
 roots matrix will be the identity etc.</p>
-<p>But now, if we use  the defined real form <code class="docutils literal"><span class="pre">Sp(8)</span></code>, we get root data in the usual coordinates:</p>
+<p>But now, if we use the defined real form <code class="docutils literal"><span class="pre">Sp(8)</span></code>, we get root data in the usual coordinates:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=Sp(8,R)
 Value: connected split real group with Lie algebra &#39;sp(8,R)&#39;
 atlas&gt; simple_roots (G)
@@ -1176,8 +1181,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>These are isomorphic root data. They are equal up to a change of
-coordinates. It just takes getting used to understanding which
-coordinates <code class="docutils literal"><span class="pre">atlas</span></code> is using.</p>
+coordinates. We just need to be aware of which coordinates <code class="docutils literal"><span class="pre">atlas</span></code> is using.</p>
 </div>
 </div>
 
@@ -1191,7 +1195,7 @@ coordinates <code class="docutils literal"><span class="pre">atlas</span></code>
         <a href="cartan_classes.html" class="btn btn-neutral float-right" title="Cartan Subgroups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="lie_types.html" class="btn btn-neutral float-right" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="real_groups.html" class="btn btn-neutral float-right" title="Real Groups" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

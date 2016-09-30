@@ -32,7 +32,7 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Structure Theory" href="../structure_theory.html"/>
-        <link rel="next" title="atlas choice of coordinates" href="atlas_coordinates.html"/>
+        <link rel="next" title="Real Groups" href="real_groups.html"/>
         <link rel="prev" title="Structure Theory" href="../structure_theory.html"/> 
 
   
@@ -130,7 +130,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/atlas_help_files.html">Help files</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#atlas-help"><code class="docutils literal"><span class="pre">atlas.help</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#atlas-functions-help"><code class="docutils literal"><span class="pre">atlas.functions.help</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#atlas-functions-help"><code class="docutils literal"><span class="pre">atlas-functions.help</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/atlas_help_files.html#scripts-help"><code class="docutils literal"><span class="pre">scripts.help</span></code></a></li>
 </ul>
 </li>
@@ -138,7 +138,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tupples">n-tupples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tuples">n-tuples</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/vectors.html">Vectors</a><ul>
@@ -158,14 +158,22 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="">Root Data and Lie Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="real_groups.html">Real Groups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="real_forms.html">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="real_forms.html#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
@@ -417,11 +425,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_Kparameters_ref.html">all_Kparameters.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/all_parameters.html">all_parameters.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_parameters_index.html">all_parameters.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_parameters_ref.html">all_parameters.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_ref.html">basic.at Function References</a></li>
@@ -589,7 +592,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights.html">K_highest_weights.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_index.html">K_highest_weights.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/K_highest_weights_ref.html">K_highest_weights.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/K_norm.html">K_norm.at</a><ul>
@@ -660,11 +663,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/nonintegral.html">nonintegral.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/nonintegral_index.html">nonintegral.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/nonintegral_ref.html">nonintegral.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/orbits.html">orbits.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/orbits_index.html">orbits.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/orbits_ref.html">orbits.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/parabolics.html">parabolics.at</a><ul>
@@ -984,7 +982,7 @@
 		  
 		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
 		      
-			<a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+			<a href="real_groups.html" class="btn btn-neutral float-right" title="Real Groups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
 		      
 		      
 			<a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -995,7 +993,7 @@
             
   <div class="section" id="root-data-and-lie-types">
 <h1>Root Data and Lie Types<a class="headerlink" href="#root-data-and-lie-types" title="Permalink to this headline">¶</a></h1>
-<p>To start let&#8217;s talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types. By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type as follows.:</p>
+<p>To start let us talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types. By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type as follows:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set g=LieType:&quot;A1T1&quot;
 Identifier g: LieType
 atlas&gt; g
@@ -1008,15 +1006,14 @@ atlas&gt;
 atlas&gt; whattype simply_connected ?
 Overloaded instances of &#39;simply_connected&#39;
 LieType-&gt;RootDatum
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;A1.T1&#39;
+atlas&gt;
 </pre></div>
 </div>
-<p>This is what <code class="docutils literal"><span class="pre">atlas</span></code> understands as a root datum. The command <a href="#id1"><span class="problematic" id="id2">`</span></a>simply_connected&#8217; applied to a Lie type gives you a root datum. This is a set of simple roots and simple coroots.</p>
+<p>This is what <code class="docutils literal"><span class="pre">atlas</span></code> understands as a root datum. The function <code class="docutils literal"><span class="pre">simply_connected</span></code> applied to a Lie type gives you a root datum. This is a set of simple roots and simple coroots.</p>
 <p>Recall that a root datum consists of two lattices, <code class="docutils literal"><span class="pre">X^*</span></code>, <code class="docutils literal"><span class="pre">X_*</span></code>,
 with a perfect pairing: <code class="docutils literal"><span class="pre">X^*</span> <span class="pre">x</span> <span class="pre">X_*-&gt;Z</span></code> (which in these coordinates
 corresponds to the dot product ) and subsets of simple roots and
-simple coroots. In the above example we have:</p>
+simple coroots respectively. In the above example we have:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; simple_roots (rd)
 Value:
 | 2 |
@@ -1030,31 +1027,30 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>In atlas, a root datum is a pair of m×n integral matrices (A,B) such that ^{T}AB is the Cartan matrix for the Lie algebra g of the given Lie Type, m= rank of g, and n= semisimple rank of g. In the above example the rank is 2 and the semisimple rank is 1. And we have:</p>
+<p>In atlas, a root datum is a pair of <code class="docutils literal"><span class="pre">m×n</span></code> integral matrices
+<code class="docutils literal"><span class="pre">(A,B)</span></code> such that <code class="docutils literal"><span class="pre">^AB</span></code> is the Cartan matrix for the Lie algebra
+<code class="docutils literal"><span class="pre">g</span></code> of the given Lie Type, <code class="docutils literal"><span class="pre">m</span></code> is the rank of <code class="docutils literal"><span class="pre">g</span></code>, and <code class="docutils literal"><span class="pre">n</span></code> is
+the semisimple rank of <code class="docutils literal"><span class="pre">g</span></code>. In the above example, the rank is 2 and
+the semisimple rank is 1. And we have:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set A=simple_roots (rd)
 Identifier A: mat (hiding previous one of type mat)
 atlas&gt; A
 Value:
 | 2 |
 | 0 |
+
 atlas&gt; set B=simple_coroots (rd)
 Identifier B: mat (hiding previous one of type mat)
 atlas&gt; B
 Value:
 | 1 |
 | 0 |
-atlas&gt; set A=simple_roots (rd)
-Identifier A: mat (hiding previous one of type mat)
-atlas&gt; A
+
+atlas&gt; ^A*B
 Value:
 | 2 |
-| 0 |
-atlas&gt; set B=simple_coroots (rd)
-Identifier B: mat (hiding previous one of type mat)
-atlas&gt; B
-Value:
-| 1 |
-| 0 |
+
+atlas&gt;
 </pre></div>
 </div>
 <p>These are not necessarily the usual coordinates of this group.
@@ -1099,11 +1095,11 @@ Value:
 | 2 |
 </pre></div>
 </div>
-<p>Here the coordinates of the simple roots and coroots are exchanged. In
-these coordinates, in the simply connected case, this means that <code class="docutils literal"><span class="pre">X^*</span> <span class="pre">=Z</span></code> and the simple root is <code class="docutils literal"><span class="pre">alpha=[2]</span></code>, so <code class="docutils literal"><span class="pre">alpha/2=[1]</span></code> is in X^*``</p>
+<p>Here the coordinates of the simple roots and coroots are interchanged. In
+these coordinates, for the simply connected case, this means that <code class="docutils literal"><span class="pre">X^*</span> <span class="pre">=Z</span></code> and the simple root is <code class="docutils literal"><span class="pre">alpha=[2]</span></code>, so <code class="docutils literal"><span class="pre">alpha/2=[1]</span></code> is in X^*``</p>
 <p>On the other hand, for the adjoint group, we have that <code class="docutils literal"><span class="pre">X^*</span></code> is still <code class="docutils literal"><span class="pre">Z</span></code>, the root <code class="docutils literal"><span class="pre">alpha=[1]</span></code>  and <code class="docutils literal"><span class="pre">[1]/2</span></code> is NOT in <code class="docutils literal"><span class="pre">X^*</span></code></p>
 <p>In general X^* and X_* by definition are Z^n. Where the roots and coroots lie in them has to do with isogenies of the group.</p>
-<p>Another useful .at filethat lets you put in Lie types without the quotation marks is the file &#8220;lietypes.at&#8221;. It is also included in the all.at file. This file just defines the Lie types as striings:</p>
+<p>Another useful <code class="docutils literal"><span class="pre">.at</span></code> file that lets you put in Lie types without the quotation marks is the file &#8220;lietypes.at&#8221;. It is also included in the all.at file. This file just defines the Lie types as striings:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A1
 Value: &quot;A1&quot;
 atlas&gt;whattype A1
@@ -1136,7 +1132,7 @@ atlas&gt;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="real_groups.html" class="btn btn-neutral float-right" title="Real Groups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
