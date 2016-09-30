@@ -4,7 +4,7 @@ Wdelta.at Function References
 =======================================================
 |
 
-.. _delta_fixed_root_datum_(InnerClass->RootDatum):
+.. _delta_fixed_root_datum_(InnerClass->RootDatum)1:
 
 delta_fixed_root_datum
 -------------------------------------------------
@@ -12,7 +12,7 @@ delta_fixed_root_datum
 | 
 
 
-.. _delta_fixed_root_datum_(RootDatum,mat->RootDatum):
+.. _delta_fixed_root_datum_(RootDatum,mat->RootDatum)1:
 
 delta_fixed_root_datum
 -------------------------------------------------
@@ -20,7 +20,7 @@ delta_fixed_root_datum
 | 
 
 
-.. _translate_Wdelta_generators_(InnerClass->[[int]]):
+.. _translate_Wdelta_generators_(InnerClass->[[int]])1:
 
 translate_Wdelta_generators
 -------------------------------------------------
@@ -28,7 +28,7 @@ translate_Wdelta_generators
 | 
 
 
-.. _translate_Wdelta_generators_(RootDatum,mat->[[int]]):
+.. _translate_Wdelta_generators_(RootDatum,mat->[[int]])1:
 
 translate_Wdelta_generators
 -------------------------------------------------
@@ -36,7 +36,7 @@ translate_Wdelta_generators
 | 
 
 
-.. _length_(RootDatum,int->int):
+.. _length_(RootDatum,int->int)1:
 
 length
 -------------------------------------------------
@@ -44,7 +44,7 @@ length
 | 
 
 
-.. _length_(RootDatum,int,int->int):
+.. _length_(RootDatum,int,int->int)1:
 
 length
 -------------------------------------------------
@@ -52,7 +52,7 @@ length
 | 
 
 
-.. _rewrite_word_Wdelta_to_W_(InnerClass,(RootDatum,[int])->RootDatum,[int]):
+.. _rewrite_word_Wdelta_to_W_(InnerClass,(RootDatum,[int])->RootDatum,[int])1:
 
 rewrite_word_Wdelta_to_W
 -------------------------------------------------
@@ -60,7 +60,7 @@ rewrite_word_Wdelta_to_W
 | 
 
 
-.. _rewrite_word_Wdelta_to_W_(RootDatum,mat,(RootDatum,[int])->RootDatum,[int]):
+.. _rewrite_word_Wdelta_to_W_(RootDatum,mat,(RootDatum,[int])->RootDatum,[int])1:
 
 rewrite_word_Wdelta_to_W
 -------------------------------------------------
@@ -68,7 +68,7 @@ rewrite_word_Wdelta_to_W
 | 
 
 
-.. _conjugate_to_simple_by_Wdelta_(RootDatum,mat,int->(RootDatum,[int]),vec):
+.. _conjugate_to_simple_by_Wdelta_(RootDatum,mat,int->(RootDatum,[int]),vec)1:
 
 conjugate_to_simple_by_Wdelta
 -------------------------------------------------

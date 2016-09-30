@@ -4,7 +4,7 @@ W_orbit.at Function References
 =======================================================
 |
 
-.. _generate_from_dom_([(vec->vec)],vec->[[int]],[vec]):
+.. _generate_from_dom_([(vec->vec)],vec->[[int]],[vec])1:
 
 generate_from_dom
 -------------------------------------------------
@@ -12,7 +12,7 @@ generate_from_dom
 | 
 
 
-.. _generate_from_dom_(RootDatum,[(vec->vec)],vec->[(RootDatum,[int])],[vec]):
+.. _generate_from_dom_(RootDatum,[(vec->vec)],vec->[(RootDatum,[int])],[vec])1:
 
 generate_from_dom
 -------------------------------------------------
@@ -20,7 +20,7 @@ generate_from_dom
 | 
 
 
-.. _generate_from_dom_(RootDatum,[int],vec->[(RootDatum,[int])],[vec]):
+.. _generate_from_dom_(RootDatum,[int],vec->[(RootDatum,[int])],[vec])1:
 
 generate_from_dom
 -------------------------------------------------
@@ -28,7 +28,7 @@ generate_from_dom
 | 
 
 
-.. _W_orbit_(RootDatum,[int],vec->[vec]):
+.. _W_orbit_(RootDatum,[int],vec->[vec])1:
 
 W_orbit
 -------------------------------------------------
@@ -36,7 +36,7 @@ W_orbit
 | 
 
 
-.. _W_orbit_W_elements_(RootDatum,[int],vec->[(RootDatum,[int])]):
+.. _W_orbit_W_elements_(RootDatum,[int],vec->[(RootDatum,[int])])1:
 
 W_orbit_W_elements
 -------------------------------------------------
@@ -44,7 +44,7 @@ W_orbit_W_elements
 | 
 
 
-.. _generate_from_dom_(RootDatum,vec->[(RootDatum,[int])],[vec]):
+.. _generate_from_dom_(RootDatum,vec->[(RootDatum,[int])],[vec])1:
 
 generate_from_dom
 -------------------------------------------------
@@ -52,7 +52,7 @@ generate_from_dom
 | 
 
 
-.. _W_orbit_(RootDatum,vec->[vec]):
+.. _W_orbit_(RootDatum,vec->[vec])1:
 
 W_orbit
 -------------------------------------------------
@@ -60,7 +60,7 @@ W_orbit
 | 
 
 
-.. _W_orbit_W_elements_(RootDatum,vec->[(RootDatum,[int])]):
+.. _W_orbit_W_elements_(RootDatum,vec->[(RootDatum,[int])])1:
 
 W_orbit_W_elements
 -------------------------------------------------
@@ -68,7 +68,7 @@ W_orbit_W_elements
 | 
 
 
-.. _generate_W_(RootDatum->[(RootDatum,[int])]):
+.. _generate_W_(RootDatum->[(RootDatum,[int])])1:
 
 generate_W
 -------------------------------------------------
@@ -76,7 +76,7 @@ generate_W
 | 
 
 
-.. _generate_([(vec->vec)],vec->[[int]],[vec]):
+.. _generate_([(vec->vec)],vec->[[int]],[vec])1:
 
 generate
 -------------------------------------------------
@@ -84,7 +84,7 @@ generate
 | 
 
 
-.. _generate_([(RootDatum,[int])],vec->[[int]],[vec]):
+.. _generate_([(RootDatum,[int])],vec->[[int]],[vec])1:
 
 generate
 -------------------------------------------------
@@ -92,7 +92,7 @@ generate
 | 
 
 
-.. _conjugate_to_([(RootDatum,[int])],vec,vec->bool,[int]):
+.. _conjugate_to_([(RootDatum,[int])],vec,vec->bool,[int])1:
 
 conjugate_to
 -------------------------------------------------

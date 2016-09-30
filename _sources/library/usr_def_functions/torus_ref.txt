@@ -4,7 +4,7 @@ torus.at Function References
 =======================================================
 |
 
-.. _torus_involution_(int,int,int->mat):
+.. _torus_involution_(int,int,int->mat)1:
 
 torus_involution
 -------------------------------------------------
@@ -12,7 +12,7 @@ torus_involution
 | 
 
 
-.. _torus_(int,int,int->RealForm):
+.. _torus_(int,int,int->RealForm)1:
 
 torus
 -------------------------------------------------
@@ -20,7 +20,7 @@ torus
 | 
 
 
-.. _compact_torus_(int->RealForm):
+.. _compact_torus_(int->RealForm)1:
 
 compact_torus
 -------------------------------------------------
@@ -28,7 +28,7 @@ compact_torus
 | 
 
 
-.. _complex_torus_(int->RealForm):
+.. _complex_torus_(int->RealForm)1:
 
 complex_torus
 -------------------------------------------------
@@ -36,7 +36,7 @@ complex_torus
 | 
 
 
-.. _split_torus_(int->RealForm):
+.. _split_torus_(int->RealForm)1:
 
 split_torus
 -------------------------------------------------
@@ -44,7 +44,7 @@ split_torus
 | 
 
 
-.. _torus_(CartanClass->RealForm):
+.. _torus_(CartanClass->RealForm)1:
 
 torus
 -------------------------------------------------

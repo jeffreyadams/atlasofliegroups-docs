@@ -4,7 +4,7 @@ parabolics.at Function References
 =======================================================
 |
 
-.. _complex_parabolic_([int],KGBElt->RootDatum,[int]):
+.. _complex_parabolic_([int],KGBElt->RootDatum,[int])1:
 
 complex_parabolic
 -------------------------------------------------
@@ -12,7 +12,7 @@ complex_parabolic
 | 
 
 
-.. _complex_Levi_(RootDatum,(int->bool)->RootDatum):
+.. _complex_Levi_(RootDatum,(int->bool)->RootDatum)1:
 
 complex_Levi
 -------------------------------------------------
@@ -20,7 +20,7 @@ complex_Levi
 | 
 
 
-.. _complex_Levi_(RootDatum,[int]->RootDatum):
+.. _complex_Levi_(RootDatum,[int]->RootDatum)1:
 
 complex_Levi
 -------------------------------------------------
@@ -28,7 +28,7 @@ complex_Levi
 | 
 
 
-.. _is_Levi_theta_stable_([int],KGBElt->bool):
+.. _is_Levi_theta_stable_([int],KGBElt->bool)1:
 
 is_Levi_theta_stable
 -------------------------------------------------
@@ -36,7 +36,7 @@ is_Levi_theta_stable
 | 
 
 
-.. _Levi_([int],KGBElt->RealForm):
+.. _Levi_([int],KGBElt->RealForm)1:
 
 Levi
 -------------------------------------------------
@@ -44,7 +44,7 @@ Levi
 | 
 
 
-.. _is_parabolic_theta_stable_([int],KGBElt->bool):
+.. _is_parabolic_theta_stable_([int],KGBElt->bool)1:
 
 is_parabolic_theta_stable
 -------------------------------------------------
@@ -52,7 +52,7 @@ is_parabolic_theta_stable
 | 
 
 
-.. _is_parabolic_real_([int],KGBElt->bool):
+.. _is_parabolic_real_([int],KGBElt->bool)1:
 
 is_parabolic_real
 -------------------------------------------------
@@ -60,7 +60,7 @@ is_parabolic_real
 | 
 
 
-.. _rho_u_(RootDatum,[int]->ratvec):
+.. _rho_u_(RootDatum,[int]->ratvec)1:
 
 rho_u
 -------------------------------------------------
@@ -68,7 +68,7 @@ rho_u
 | 
 
 
-.. _rho_u_([int],KGBElt->ratvec):
+.. _rho_u_([int],KGBElt->ratvec)1:
 
 rho_u
 -------------------------------------------------
@@ -76,7 +76,7 @@ rho_u
 | 
 
 
-.. _rho_l_([int],KGBElt->ratvec):
+.. _rho_l_([int],KGBElt->ratvec)1:
 
 rho_l
 -------------------------------------------------
@@ -84,7 +84,7 @@ rho_l
 | 
 
 
-.. _nilrad_([int],KGBElt->mat):
+.. _nilrad_([int],KGBElt->mat)1:
 
 nilrad
 -------------------------------------------------
@@ -92,7 +92,7 @@ nilrad
 | 
 
 
-.. _nilrad_roots_([int],KGBElt->mat):
+.. _nilrad_roots_([int],KGBElt->mat)1:
 
 nilrad_roots
 -------------------------------------------------
@@ -100,7 +100,7 @@ nilrad_roots
 | 
 
 
-.. _zero_simple_coroots_(RootDatum,vec->[int]):
+.. _zero_simple_coroots_(RootDatum,vec->[int])1:
 
 zero_simple_coroots
 -------------------------------------------------
@@ -108,7 +108,7 @@ zero_simple_coroots
 | 
 
 
-.. _parabolic_(ratvec,KGBElt->[int],KGBElt):
+.. _parabolic_(ratvec,KGBElt->[int],KGBElt)1:
 
 parabolic
 -------------------------------------------------
@@ -116,7 +116,7 @@ parabolic
 | 
 
 
-.. _Levi_(ratvec,KGBElt->RealForm):
+.. _Levi_(ratvec,KGBElt->RealForm)1:
 
 Levi
 -------------------------------------------------
@@ -124,7 +124,7 @@ Levi
 | 
 
 
-.. _nilrad_(ratvec,KGBElt->mat):
+.. _nilrad_(ratvec,KGBElt->mat)1:
 
 nilrad
 -------------------------------------------------
@@ -132,7 +132,7 @@ nilrad
 | 
 
 
-.. _nilrad_roots_(ratvec,KGBElt->mat):
+.. _nilrad_roots_(ratvec,KGBElt->mat)1:
 
 nilrad_roots
 -------------------------------------------------
@@ -140,7 +140,7 @@ nilrad_roots
 | 
 
 
-.. _rho_u_(ratvec,KGBElt->ratvec):
+.. _rho_u_(ratvec,KGBElt->ratvec)1:
 
 rho_u
 -------------------------------------------------
@@ -148,7 +148,7 @@ rho_u
 | 
 
 
-.. _zero_simple_roots_(RootDatum,vec->[int]):
+.. _zero_simple_roots_(RootDatum,vec->[int])1:
 
 zero_simple_roots
 -------------------------------------------------
@@ -156,7 +156,7 @@ zero_simple_roots
 | 
 
 
-.. _parabolic_alt_(ratvec,KGBElt->[int],KGBElt):
+.. _parabolic_alt_(ratvec,KGBElt->[int],KGBElt)1:
 
 parabolic_alt
 -------------------------------------------------
@@ -164,7 +164,7 @@ parabolic_alt
 | 
 
 
-.. _Levi_alt_(ratvec,KGBElt->RealForm):
+.. _Levi_alt_(ratvec,KGBElt->RealForm)1:
 
 Levi_alt
 -------------------------------------------------
@@ -172,7 +172,7 @@ Levi_alt
 | 
 
 
-.. _nilrad_alt_(ratvec,KGBElt->mat):
+.. _nilrad_alt_(ratvec,KGBElt->mat)1:
 
 nilrad_alt
 -------------------------------------------------
@@ -180,7 +180,7 @@ nilrad_alt
 | 
 
 
-.. _nilrad_roots_alt_(ratvec,KGBElt->mat):
+.. _nilrad_roots_alt_(ratvec,KGBElt->mat)1:
 
 nilrad_roots_alt
 -------------------------------------------------
@@ -188,7 +188,7 @@ nilrad_roots_alt
 | 
 
 
-.. _rho_u_alt_(ratvec,KGBElt->ratvec):
+.. _rho_u_alt_(ratvec,KGBElt->ratvec)1:
 
 rho_u_alt
 -------------------------------------------------
@@ -196,7 +196,7 @@ rho_u_alt
 | 
 
 
-.. _rho_Levi_alt_(ratvec,KGBElt->ratvec):
+.. _rho_Levi_alt_(ratvec,KGBElt->ratvec)1:
 
 rho_Levi_alt
 -------------------------------------------------
@@ -204,7 +204,7 @@ rho_Levi_alt
 | 
 
 
-.. _real_parabolic_(KGBElt->[int],KGBElt):
+.. _real_parabolic_(KGBElt->[int],KGBElt)1:
 
 real_parabolic
 -------------------------------------------------
@@ -212,7 +212,7 @@ real_parabolic
 | 
 
 
-.. _theta_stable_parabolic_(KGBElt->[int],KGBElt):
+.. _theta_stable_parabolic_(KGBElt->[int],KGBElt)1:
 
 theta_stable_parabolic
 -------------------------------------------------
@@ -220,7 +220,7 @@ theta_stable_parabolic
 | 
 
 
-.. _real_Levi_(KGBElt->RealForm):
+.. _real_Levi_(KGBElt->RealForm)1:
 
 real_Levi
 -------------------------------------------------
@@ -228,7 +228,7 @@ real_Levi
 | 
 
 
-.. _KGP_(RealForm,(RootDatum,[int])->[([int],KGBElt)]):
+.. _KGP_(RealForm,(RootDatum,[int])->[([int],KGBElt)])1:
 
 KGP
 -------------------------------------------------
@@ -236,7 +236,7 @@ KGP
 | 
 
 
-.. _parabolics_(RealForm,(RootDatum,[int])->[([int],KGBElt)]):
+.. _parabolics_(RealForm,(RootDatum,[int])->[([int],KGBElt)])1:
 
 parabolics
 -------------------------------------------------
@@ -244,7 +244,7 @@ parabolics
 | 
 
 
-.. _theta_stable_parabolics_(RealForm,(RootDatum,[int])->[([int],KGBElt)]):
+.. _theta_stable_parabolics_(RealForm,(RootDatum,[int])->[([int],KGBElt)])1:
 
 theta_stable_parabolics
 -------------------------------------------------
@@ -252,7 +252,7 @@ theta_stable_parabolics
 | 
 
 
-.. _theta_stable_parabolics_(RealForm->[([int],KGBElt)]):
+.. _theta_stable_parabolics_(RealForm->[([int],KGBElt)])1:
 
 theta_stable_parabolics
 -------------------------------------------------
@@ -260,7 +260,7 @@ theta_stable_parabolics
 | 
 
 
-.. _theta_stable_parabolics_type_(RealForm,[int]->[([int],KGBElt)]):
+.. _theta_stable_parabolics_type_(RealForm,[int]->[([int],KGBElt)])1:
 
 theta_stable_parabolics_type
 -------------------------------------------------
@@ -268,7 +268,7 @@ theta_stable_parabolics_type
 | 
 
 
-.. _all_rel_split_theta_stable_parabolics_(RealForm->[([int],KGBElt)]):
+.. _all_rel_split_theta_stable_parabolics_(RealForm->[([int],KGBElt)])1:
 
 all_rel_split_theta_stable_parabolics
 -------------------------------------------------
@@ -276,7 +276,7 @@ all_rel_split_theta_stable_parabolics
 | 
 
 
-.. _print_theta_stable_parabolics_(RealForm->):
+.. _print_theta_stable_parabolics_(RealForm->)1:
 
 print_theta_stable_parabolics
 -------------------------------------------------

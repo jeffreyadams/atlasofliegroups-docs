@@ -4,7 +4,7 @@ conjugacy_classes.at Function References
 =======================================================
 |
 
-.. _conjugacy_class_extra_(RootDatum,[int]->[(RootDatum,[int])],[(RootDatum,[int])]):
+.. _conjugacy_class_extra_(RootDatum,[int]->[(RootDatum,[int])],[(RootDatum,[int])])1:
 
 conjugacy_class_extra
 -------------------------------------------------
@@ -12,7 +12,7 @@ conjugacy_class_extra
 | 
 
 
-.. _conjugacy_class_(RootDatum,[int]->[(RootDatum,[int])]):
+.. _conjugacy_class_(RootDatum,[int]->[(RootDatum,[int])])1:
 
 conjugacy_class
 -------------------------------------------------
@@ -20,7 +20,7 @@ conjugacy_class
 | 
 
 
-.. _size_of_conjugacy_class_(RootDatum,[int]->int):
+.. _size_of_conjugacy_class_(RootDatum,[int]->int)1:
 
 size_of_conjugacy_class
 -------------------------------------------------
@@ -28,7 +28,7 @@ size_of_conjugacy_class
 | 
 
 
-.. _order_([(RootDatum,[int])]->int):
+.. _order_([(RootDatum,[int])]->int)1:
 
 order
 -------------------------------------------------
@@ -36,7 +36,7 @@ order
 | 
 
 
-.. _delete_((RootDatum,[int]),[(RootDatum,[int])]->[(RootDatum,[int])]):
+.. _delete_((RootDatum,[int]),[(RootDatum,[int])]->[(RootDatum,[int])])1:
 
 delete
 -------------------------------------------------
@@ -44,7 +44,7 @@ delete
 | 
 
 
-.. _conjugacy_classes_(RootDatum->[[(RootDatum,[int])]]):
+.. _conjugacy_classes_(RootDatum->[[(RootDatum,[int])]])1:
 
 conjugacy_classes
 -------------------------------------------------

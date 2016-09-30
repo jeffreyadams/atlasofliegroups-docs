@@ -10,39 +10,39 @@ print_K_types.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`print_branch_irr_(ParamPol,KGBElt,int->)`
+   * - :ref:`print_branch_irr_(ParamPol,KGBElt,int->)1`
      - ``(ParamPol,KGBElt,int->)``
-   * - :ref:`print_branch_irr_(ParamPol,int->)`
+   * - :ref:`print_branch_irr_(ParamPol,int->)1`
      - ``(ParamPol,int->)``
-   * - :ref:`print_branch_irr_long_(ParamPol,KGBElt,int->)`
+   * - :ref:`print_branch_irr_long_(ParamPol,KGBElt,int->)1`
      - ``(ParamPol,KGBElt,int->)``
-   * - :ref:`print_branch_irr_long_(ParamPol,int->)`
+   * - :ref:`print_branch_irr_long_(ParamPol,int->)1`
      - ``(ParamPol,int->)``
-   * - :ref:`print_branch_irr_(Param,KGBElt,int->)`
+   * - :ref:`print_branch_irr_(Param,KGBElt,int->)1`
      - ``(Param,KGBElt,int->)``
-   * - :ref:`print_branch_irr_(Param,int->)`
+   * - :ref:`print_branch_irr_(Param,int->)1`
      - ``(Param,int->)``
-   * - :ref:`print_branch_irr_long_(Param,KGBElt,int->)`
+   * - :ref:`print_branch_irr_long_(Param,KGBElt,int->)1`
      - ``(Param,KGBElt,int->)``
-   * - :ref:`print_branch_irr_long_(Param,int->)`
+   * - :ref:`print_branch_irr_long_(Param,int->)1`
      - ``(Param,int->)``
-   * - :ref:`print_branch_std_(ParamPol,KGBElt,int->)`
+   * - :ref:`print_branch_std_(ParamPol,KGBElt,int->)1`
      - ``(ParamPol,KGBElt,int->)``
-   * - :ref:`print_branch_std_(ParamPol,int->)`
+   * - :ref:`print_branch_std_(ParamPol,int->)1`
      - ``(ParamPol,int->)``
-   * - :ref:`print_branch_std_long_(ParamPol,KGBElt,int->)`
+   * - :ref:`print_branch_std_long_(ParamPol,KGBElt,int->)1`
      - ``(ParamPol,KGBElt,int->)``
-   * - :ref:`print_branch_std_long_(ParamPol,int->)`
+   * - :ref:`print_branch_std_long_(ParamPol,int->)1`
      - ``(ParamPol,int->)``
-   * - :ref:`print_branch_std_(Param,KGBElt,int->)`
+   * - :ref:`print_branch_std_(Param,KGBElt,int->)1`
      - ``(Param,KGBElt,int->)``
-   * - :ref:`print_branch_std_(Param,int->)`
+   * - :ref:`print_branch_std_(Param,int->)1`
      - ``(Param,int->)``
-   * - :ref:`print_branch_std_long_(Param,KGBElt,int->)`
+   * - :ref:`print_branch_std_long_(Param,KGBElt,int->)1`
      - ``(Param,KGBElt,int->)``
-   * - :ref:`print_branch_std_long_(Param,int->)`
+   * - :ref:`print_branch_std_long_(Param,int->)1`
      - ``(Param,int->)``
-   * - :ref:`print_K_signature_irr_(Param,KGBElt,int->)`
+   * - :ref:`print_K_signature_irr_(Param,KGBElt,int->)1`
      - ``(Param,KGBElt,int->)``
-   * - :ref:`print_K_signature_irr_(Param,int->)`
+   * - :ref:`print_K_signature_irr_(Param,int->)1`
      - ``(Param,int->)``

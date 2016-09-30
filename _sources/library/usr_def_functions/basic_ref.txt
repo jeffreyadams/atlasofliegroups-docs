@@ -4,7 +4,7 @@ basic.at Function References
 =======================================================
 |
 
-.. _\#_(int->[int]):
+.. _\#_(int->[int])1:
 
 \#
 -------------------------------------------------
@@ -12,7 +12,7 @@ basic.at Function References
 | 
 
 
-.. _\#_(bool->int):
+.. _\#_(bool->int)1:
 
 \#
 -------------------------------------------------
@@ -20,7 +20,7 @@ basic.at Function References
 | 
 
 
-.. _\^_(bool,bool->bool):
+.. _\^_(bool,bool->bool)1:
 
 \^
 -------------------------------------------------
@@ -28,7 +28,7 @@ basic.at Function References
 | 
 
 
-.. _assert_(bool,string->):
+.. _assert_(bool,string->)1:
 
 assert
 -------------------------------------------------
@@ -36,7 +36,7 @@ assert
 | 
 
 
-.. _assert_(bool->):
+.. _assert_(bool->)1:
 
 assert
 -------------------------------------------------
@@ -44,7 +44,7 @@ assert
 | 
 
 
-.. _list_((int->bool),int->[int]):
+.. _list_((int->bool),int->[int])1:
 
 list
 -------------------------------------------------
@@ -52,7 +52,7 @@ list
 | 
 
 
-.. _complement_((int->bool),int->[int]):
+.. _complement_((int->bool),int->[int])1:
 
 complement
 -------------------------------------------------
@@ -60,7 +60,7 @@ complement
 | 
 
 
-.. _count_((int->bool),int->int):
+.. _count_((int->bool),int->int)1:
 
 count
 -------------------------------------------------
@@ -68,7 +68,7 @@ count
 | 
 
 
-.. _all_([bool]->bool):
+.. _all_([bool]->bool)1:
 
 all
 -------------------------------------------------
@@ -76,7 +76,7 @@ all
 | 
 
 
-.. _none_([bool]->bool):
+.. _none_([bool]->bool)1:
 
 none
 -------------------------------------------------
@@ -84,7 +84,7 @@ none
 | 
 
 
-.. _first_([bool]->int):
+.. _first_([bool]->int)1:
 
 first
 -------------------------------------------------
@@ -92,7 +92,7 @@ first
 | 
 
 
-.. _last_([bool]->int):
+.. _last_([bool]->int)1:
 
 last
 -------------------------------------------------
@@ -100,7 +100,7 @@ last
 | 
 
 
-.. _all_(int,(int->bool)->bool):
+.. _all_(int,(int->bool)->bool)1:
 
 all
 -------------------------------------------------
@@ -108,7 +108,7 @@ all
 | 
 
 
-.. _none_(int,(int->bool)->bool):
+.. _none_(int,(int->bool)->bool)1:
 
 none
 -------------------------------------------------
@@ -116,7 +116,7 @@ none
 | 
 
 
-.. _first_(int,(int->bool)->int):
+.. _first_(int,(int->bool)->int)1:
 
 first
 -------------------------------------------------
@@ -124,7 +124,7 @@ first
 | 
 
 
-.. _last_(int,(int->bool)->int):
+.. _last_(int,(int->bool)->int)1:
 
 last
 -------------------------------------------------
@@ -132,7 +132,7 @@ last
 | 
 
 
-.. _all_([(->bool)]->bool):
+.. _all_([(->bool)]->bool)1:
 
 all
 -------------------------------------------------
@@ -140,7 +140,7 @@ all
 | 
 
 
-.. _none_([(->bool)]->bool):
+.. _none_([(->bool)]->bool)1:
 
 none
 -------------------------------------------------
@@ -148,7 +148,7 @@ none
 | 
 
 
-.. _first_([(->bool)]->int):
+.. _first_([(->bool)]->int)1:
 
 first
 -------------------------------------------------
@@ -156,7 +156,7 @@ first
 | 
 
 
-.. _last_([(->bool)]->int):
+.. _last_([(->bool)]->int)1:
 
 last
 -------------------------------------------------
@@ -164,7 +164,7 @@ last
 | 
 
 
-.. _abs_(int->int):
+.. _abs_(int->int)1:
 
 abs
 -------------------------------------------------
@@ -172,7 +172,7 @@ abs
 | 
 
 
-.. _sign_(int->int):
+.. _sign_(int->int)1:
 
 sign
 -------------------------------------------------
@@ -180,7 +180,7 @@ sign
 | 
 
 
-.. _is_odd_(int->bool):
+.. _is_odd_(int->bool)1:
 
 is_odd
 -------------------------------------------------
@@ -188,7 +188,7 @@ is_odd
 | 
 
 
-.. _is_even_(int->bool):
+.. _is_even_(int->bool)1:
 
 is_even
 -------------------------------------------------
@@ -196,7 +196,7 @@ is_even
 | 
 
 
-.. _min_(int,int->int):
+.. _min_(int,int->int)1:
 
 min
 -------------------------------------------------
@@ -204,7 +204,7 @@ min
 | 
 
 
-.. _max_(int,int->int):
+.. _max_(int,int->int)1:
 
 max
 -------------------------------------------------
@@ -212,7 +212,7 @@ max
 | 
 
 
-.. _min_([int]->int):
+.. _min_([int]->int)1:
 
 min
 -------------------------------------------------
@@ -220,7 +220,7 @@ min
 | 
 
 
-.. _max_([int]->int):
+.. _max_([int]->int)1:
 
 max
 -------------------------------------------------
@@ -228,7 +228,7 @@ max
 | 
 
 
-.. _min_loc_([int]->int):
+.. _min_loc_([int]->int)1:
 
 min_loc
 -------------------------------------------------
@@ -236,7 +236,7 @@ min_loc
 | 
 
 
-.. _max_loc_([int]->int):
+.. _max_loc_([int]->int)1:
 
 max_loc
 -------------------------------------------------
@@ -244,7 +244,7 @@ max_loc
 | 
 
 
-.. _min_(int->([int]->int)):
+.. _min_(int->([int]->int))1:
 
 min
 -------------------------------------------------
@@ -252,7 +252,7 @@ min
 | 
 
 
-.. _max_(int->([int]->int)):
+.. _max_(int->([int]->int))1:
 
 max
 -------------------------------------------------
@@ -260,7 +260,7 @@ max
 | 
 
 
-.. _lcm_([int]->int):
+.. _lcm_([int]->int)1:
 
 lcm
 -------------------------------------------------
@@ -268,7 +268,7 @@ lcm
 | 
 
 
-.. _\=_((int,int),(int,int)->bool):
+.. _\=_((int,int),(int,int)->bool)1:
 
 \=
 -------------------------------------------------
@@ -276,7 +276,7 @@ lcm
 | 
 
 
-.. _!=_((int,int),(int,int)->bool):
+.. _!=_((int,int),(int,int)->bool)1:
 
 !=
 -------------------------------------------------
@@ -284,7 +284,7 @@ lcm
 | 
 
 
-.. _numer_(rat->int):
+.. _numer_(rat->int)1:
 
 numer
 -------------------------------------------------
@@ -292,7 +292,7 @@ numer
 | 
 
 
-.. _denom_(rat->int):
+.. _denom_(rat->int)1:
 
 denom
 -------------------------------------------------
@@ -300,7 +300,7 @@ denom
 | 
 
 
-.. _is_integer_(rat->bool):
+.. _is_integer_(rat->bool)1:
 
 is_integer
 -------------------------------------------------
@@ -308,7 +308,7 @@ is_integer
 | 
 
 
-.. _sign_(rat->int):
+.. _sign_(rat->int)1:
 
 sign
 -------------------------------------------------
@@ -316,7 +316,7 @@ sign
 | 
 
 
-.. _abs_(rat->rat):
+.. _abs_(rat->rat)1:
 
 abs
 -------------------------------------------------
@@ -324,7 +324,7 @@ abs
 | 
 
 
-.. _floor_(rat->int):
+.. _floor_(rat->int)1:
 
 floor
 -------------------------------------------------
@@ -332,7 +332,7 @@ floor
 | 
 
 
-.. _ceil_(rat->int):
+.. _ceil_(rat->int)1:
 
 ceil
 -------------------------------------------------
@@ -340,7 +340,7 @@ ceil
 | 
 
 
-.. _\\_(rat,int->int):
+.. _\\_(rat,int->int)1:
 
 \\
 -------------------------------------------------
@@ -348,7 +348,7 @@ ceil
 | 
 
 
-.. _\\_(rat,rat->int):
+.. _\\_(rat,rat->int)1:
 
 \\
 -------------------------------------------------
@@ -356,7 +356,7 @@ ceil
 | 
 
 
-.. _\%_(rat,int->int,rat):
+.. _\%_(rat,int->int,rat)1:
 
 \%
 -------------------------------------------------
@@ -364,7 +364,7 @@ ceil
 | 
 
 
-.. _\%_(rat,rat->int,rat):
+.. _\%_(rat,rat->int,rat)1:
 
 \%
 -------------------------------------------------
@@ -372,7 +372,7 @@ ceil
 | 
 
 
-.. _floor_([rat]->vec):
+.. _floor_([rat]->vec)1:
 
 floor
 -------------------------------------------------
@@ -380,7 +380,7 @@ floor
 | 
 
 
-.. _ceil_([rat]->vec):
+.. _ceil_([rat]->vec)1:
 
 ceil
 -------------------------------------------------
@@ -388,7 +388,7 @@ ceil
 | 
 
 
-.. _rat_as_int_(rat->int):
+.. _rat_as_int_(rat->int)1:
 
 rat_as_int
 -------------------------------------------------
@@ -396,7 +396,7 @@ rat_as_int
 | 
 
 
-.. _\+_(string,string->string):
+.. _\+_(string,string->string)1:
 
 \+
 -------------------------------------------------
@@ -404,7 +404,7 @@ rat_as_int
 | 
 
 
-.. _\*_(string,int->string):
+.. _\*_(string,int->string)1:
 
 \*
 -------------------------------------------------
@@ -412,7 +412,7 @@ rat_as_int
 | 
 
 
-.. _\*_(int,string->string):
+.. _\*_(int,string->string)1:
 
 \*
 -------------------------------------------------
@@ -420,7 +420,7 @@ rat_as_int
 | 
 
 
-.. _\+_(string,int->string):
+.. _\+_(string,int->string)1:
 
 \+
 -------------------------------------------------
@@ -428,7 +428,7 @@ rat_as_int
 | 
 
 
-.. _\+_(int,string->string):
+.. _\+_(int,string->string)1:
 
 \+
 -------------------------------------------------
@@ -436,7 +436,7 @@ rat_as_int
 | 
 
 
-.. _\+_(string,(int,int)->string):
+.. _\+_(string,(int,int)->string)1:
 
 \+
 -------------------------------------------------
@@ -444,7 +444,7 @@ rat_as_int
 | 
 
 
-.. _plural_(int->string):
+.. _plural_(int->string)1:
 
 plural
 -------------------------------------------------
@@ -452,7 +452,7 @@ plural
 | 
 
 
-.. _plural_(int,string->string):
+.. _plural_(int,string->string)1:
 
 plural
 -------------------------------------------------
@@ -460,7 +460,7 @@ plural
 | 
 
 
-.. _concat_([string]->string):
+.. _concat_([string]->string)1:
 
 concat
 -------------------------------------------------
@@ -468,7 +468,7 @@ concat
 | 
 
 
-.. _l_adjust_(int,string->string):
+.. _l_adjust_(int,string->string)1:
 
 l_adjust
 -------------------------------------------------
@@ -476,7 +476,7 @@ l_adjust
 | 
 
 
-.. _r_adjust_(int,string->string):
+.. _r_adjust_(int,string->string)1:
 
 r_adjust
 -------------------------------------------------
@@ -484,7 +484,7 @@ r_adjust
 | 
 
 
-.. _c_adjust_(int,string->string):
+.. _c_adjust_(int,string->string)1:
 
 c_adjust
 -------------------------------------------------
@@ -492,7 +492,7 @@ c_adjust
 | 
 
 
-.. _width_(int->int):
+.. _width_(int->int)1:
 
 width
 -------------------------------------------------
@@ -500,7 +500,7 @@ width
 | 
 
 
-.. _split_lines_(string->[string]):
+.. _split_lines_(string->[string])1:
 
 split_lines
 -------------------------------------------------
@@ -508,7 +508,7 @@ split_lines
 | 
 
 
-.. _is_substring_(string,string->bool):
+.. _is_substring_(string,string->bool)1:
 
 is_substring
 -------------------------------------------------
@@ -516,7 +516,7 @@ is_substring
 | 
 
 
-.. _fgrep_(string,string->[string]):
+.. _fgrep_(string,string->[string])1:
 
 fgrep
 -------------------------------------------------
@@ -524,7 +524,7 @@ fgrep
 | 
 
 
-.. _vector_(int,(int->int)->vec):
+.. _vector_(int,(int->int)->vec)1:
 
 vector
 -------------------------------------------------
@@ -532,7 +532,7 @@ vector
 | 
 
 
-.. _ones_(int->vec):
+.. _ones_(int->vec)1:
 
 ones
 -------------------------------------------------
@@ -540,7 +540,7 @@ ones
 | 
 
 
-.. _gcd_([int]->int):
+.. _gcd_([int]->int)1:
 
 gcd
 -------------------------------------------------
@@ -548,7 +548,7 @@ gcd
 | 
 
 
-.. _\*_(int,vec->vec):
+.. _\*_(int,vec->vec)1:
 
 \*
 -------------------------------------------------
@@ -556,7 +556,7 @@ gcd
 | 
 
 
-.. _sum_(vec->int):
+.. _sum_(vec->int)1:
 
 sum
 -------------------------------------------------
@@ -564,7 +564,7 @@ sum
 | 
 
 
-.. _product_(vec->int):
+.. _product_(vec->int)1:
 
 product
 -------------------------------------------------
@@ -572,7 +572,7 @@ product
 | 
 
 
-.. _reverse_(vec->vec):
+.. _reverse_(vec->vec)1:
 
 reverse
 -------------------------------------------------
@@ -580,7 +580,7 @@ reverse
 | 
 
 
-.. _lower_(int,vec->vec):
+.. _lower_(int,vec->vec)1:
 
 lower
 -------------------------------------------------
@@ -588,7 +588,7 @@ lower
 | 
 
 
-.. _upper_(int,vec->vec):
+.. _upper_(int,vec->vec)1:
 
 upper
 -------------------------------------------------
@@ -596,7 +596,7 @@ upper
 | 
 
 
-.. _drop_lower_(int,vec->vec):
+.. _drop_lower_(int,vec->vec)1:
 
 drop_lower
 -------------------------------------------------
@@ -604,7 +604,7 @@ drop_lower
 | 
 
 
-.. _drop_upper_(int,vec->vec):
+.. _drop_upper_(int,vec->vec)1:
 
 drop_upper
 -------------------------------------------------
@@ -612,7 +612,7 @@ drop_upper
 | 
 
 
-.. _<=_(vec->bool):
+.. _<=_(vec->bool)1:
 
 <=
 -------------------------------------------------
@@ -620,7 +620,7 @@ drop_upper
 | 
 
 
-.. _<_(vec->bool):
+.. _<_(vec->bool)1:
 
 <
 -------------------------------------------------
@@ -628,7 +628,7 @@ drop_upper
 | 
 
 
-.. _is_member_([int]->(int->bool)):
+.. _is_member_([int]->(int->bool))1:
 
 is_member
 -------------------------------------------------
@@ -636,7 +636,7 @@ is_member
 | 
 
 
-.. _contains_(int->([int]->bool)):
+.. _contains_(int->([int]->bool))1:
 
 contains
 -------------------------------------------------
@@ -644,7 +644,7 @@ contains
 | 
 
 
-.. _all_0_1_vecs_(int->[vec]):
+.. _all_0_1_vecs_(int->[vec])1:
 
 all_0_1_vecs
 -------------------------------------------------
@@ -652,7 +652,7 @@ all_0_1_vecs
 | 
 
 
-.. _power_set_(int->[[int]]):
+.. _power_set_(int->[[int]])1:
 
 power_set
 -------------------------------------------------
@@ -660,7 +660,7 @@ power_set
 | 
 
 
-.. _power_set_([int]->[[int]]):
+.. _power_set_([int]->[[int]])1:
 
 power_set
 -------------------------------------------------
@@ -668,7 +668,7 @@ power_set
 | 
 
 
-.. _matrix_((int,int),(int,int->int)->mat):
+.. _matrix_((int,int),(int,int->int)->mat)1:
 
 matrix
 -------------------------------------------------
@@ -676,7 +676,7 @@ matrix
 | 
 
 
-.. _n_rows_(mat->int):
+.. _n_rows_(mat->int)1:
 
 n_rows
 -------------------------------------------------
@@ -684,7 +684,7 @@ n_rows
 | 
 
 
-.. _n_columns_(mat->int):
+.. _n_columns_(mat->int)1:
 
 n_columns
 -------------------------------------------------
@@ -692,7 +692,7 @@ n_columns
 | 
 
 
-.. _column_(vec->mat):
+.. _column_(vec->mat)1:
 
 column
 -------------------------------------------------
@@ -700,7 +700,7 @@ column
 | 
 
 
-.. _row_(vec->mat):
+.. _row_(vec->mat)1:
 
 row
 -------------------------------------------------
@@ -708,7 +708,7 @@ row
 | 
 
 
-.. _\=_(mat,int->bool):
+.. _\=_(mat,int->bool)1:
 
 \=
 -------------------------------------------------
@@ -716,7 +716,7 @@ row
 | 
 
 
-.. _\#_(mat,vec->mat):
+.. _\#_(mat,vec->mat)1:
 
 \#
 -------------------------------------------------
@@ -724,7 +724,7 @@ row
 | 
 
 
-.. _\#_(vec,mat->mat):
+.. _\#_(vec,mat->mat)1:
 
 \#
 -------------------------------------------------
@@ -732,7 +732,7 @@ row
 | 
 
 
-.. _\^_(mat,vec->mat):
+.. _\^_(mat,vec->mat)1:
 
 \^
 -------------------------------------------------
@@ -740,7 +740,7 @@ row
 | 
 
 
-.. _\^_(vec,mat->mat):
+.. _\^_(vec,mat->mat)1:
 
 \^
 -------------------------------------------------
@@ -748,7 +748,7 @@ row
 | 
 
 
-.. _##_(mat,mat->mat):
+.. _##_(mat,mat->mat)1:
 
 ##
 -------------------------------------------------
@@ -756,7 +756,7 @@ row
 | 
 
 
-.. _\^_(mat,mat->mat):
+.. _\^_(mat,mat->mat)1:
 
 \^
 -------------------------------------------------
@@ -764,7 +764,7 @@ row
 | 
 
 
-.. _##_(int,[mat]->mat):
+.. _##_(int,[mat]->mat)1:
 
 ##
 -------------------------------------------------
@@ -772,7 +772,7 @@ row
 | 
 
 
-.. _map_on_(mat->((int->int)->mat)):
+.. _map_on_(mat->((int->int)->mat))1:
 
 map_on
 -------------------------------------------------
@@ -780,7 +780,7 @@ map_on
 | 
 
 
-.. _\*_(int,mat->mat):
+.. _\*_(int,mat->mat)1:
 
 \*
 -------------------------------------------------
@@ -788,7 +788,7 @@ map_on
 | 
 
 
-.. _\-_(mat->mat):
+.. _\-_(mat->mat)1:
 
 \-
 -------------------------------------------------
@@ -796,7 +796,7 @@ map_on
 | 
 
 
-.. _\\_(mat,int->mat):
+.. _\\_(mat,int->mat)1:
 
 \\
 -------------------------------------------------
@@ -804,7 +804,7 @@ map_on
 | 
 
 
-.. _%_(mat,int->mat):
+.. _%_(mat,int->mat)1:
 
 %
 -------------------------------------------------
@@ -812,7 +812,7 @@ map_on
 | 
 
 
-.. _\^_(mat,int->mat):
+.. _\^_(mat,int->mat)1:
 
 \^
 -------------------------------------------------
@@ -820,7 +820,7 @@ map_on
 | 
 
 
-.. _inverse_(mat->mat):
+.. _inverse_(mat->mat)1:
 
 inverse
 -------------------------------------------------
@@ -828,7 +828,7 @@ inverse
 | 
 
 
-.. _det_(mat->int):
+.. _det_(mat->int)1:
 
 det
 -------------------------------------------------
@@ -836,7 +836,7 @@ det
 | 
 
 
-.. _saturated_span_(mat->bool):
+.. _saturated_span_(mat->bool)1:
 
 saturated_span
 -------------------------------------------------
@@ -844,7 +844,7 @@ saturated_span
 | 
 
 
-.. _all_(mat,(vec->bool)->bool):
+.. _all_(mat,(vec->bool)->bool)1:
 
 all
 -------------------------------------------------
@@ -852,7 +852,7 @@ all
 | 
 
 
-.. _none_(mat,(vec->bool)->bool):
+.. _none_(mat,(vec->bool)->bool)1:
 
 none
 -------------------------------------------------
@@ -860,7 +860,7 @@ none
 | 
 
 
-.. _first_(mat,(vec->bool)->int):
+.. _first_(mat,(vec->bool)->int)1:
 
 first
 -------------------------------------------------
@@ -868,7 +868,7 @@ first
 | 
 
 
-.. _last_(mat,(vec->bool)->int):
+.. _last_(mat,(vec->bool)->int)1:
 
 last
 -------------------------------------------------
@@ -876,7 +876,7 @@ last
 | 
 
 
-.. _columns_with_((int,vec->bool),mat->mat):
+.. _columns_with_((int,vec->bool),mat->mat)1:
 
 columns_with
 -------------------------------------------------
@@ -884,7 +884,7 @@ columns_with
 | 
 
 
-.. _columns_with_((vec->bool),mat->mat):
+.. _columns_with_((vec->bool),mat->mat)1:
 
 columns_with
 -------------------------------------------------
@@ -892,7 +892,7 @@ columns_with
 | 
 
 
-.. _columns_with_((int->bool),mat->mat):
+.. _columns_with_((int->bool),mat->mat)1:
 
 columns_with
 -------------------------------------------------
@@ -900,7 +900,7 @@ columns_with
 | 
 
 
-.. _rows_with_((int,vec->bool),mat->mat):
+.. _rows_with_((int,vec->bool),mat->mat)1:
 
 rows_with
 -------------------------------------------------
@@ -908,7 +908,7 @@ rows_with
 | 
 
 
-.. _rows_with_((vec->bool),mat->mat):
+.. _rows_with_((vec->bool),mat->mat)1:
 
 rows_with
 -------------------------------------------------
@@ -916,7 +916,7 @@ rows_with
 | 
 
 
-.. _rows_with_((int->bool),mat->mat):
+.. _rows_with_((int->bool),mat->mat)1:
 
 rows_with
 -------------------------------------------------
@@ -924,7 +924,7 @@ rows_with
 | 
 
 
-.. _>=_(mat->bool):
+.. _>=_(mat->bool)1:
 
 >=
 -------------------------------------------------
@@ -932,7 +932,7 @@ rows_with
 | 
 
 
-.. _>_(mat->bool):
+.. _>_(mat->bool)1:
 
 >
 -------------------------------------------------
@@ -940,7 +940,7 @@ rows_with
 | 
 
 
-.. _<=_(mat->bool):
+.. _<=_(mat->bool)1:
 
 <=
 -------------------------------------------------
@@ -948,7 +948,7 @@ rows_with
 | 
 
 
-.. _<_(mat->bool):
+.. _<_(mat->bool)1:
 
 <
 -------------------------------------------------
@@ -956,7 +956,7 @@ rows_with
 | 
 
 
-.. _lookup_column_(vec,mat->int):
+.. _lookup_column_(vec,mat->int)1:
 
 lookup_column
 -------------------------------------------------
@@ -964,7 +964,7 @@ lookup_column
 | 
 
 
-.. _lookup_row_(vec,mat->int):
+.. _lookup_row_(vec,mat->int)1:
 
 lookup_row
 -------------------------------------------------
@@ -972,7 +972,7 @@ lookup_row
 | 
 
 
-.. _sum_(mat->vec):
+.. _sum_(mat->vec)1:
 
 sum
 -------------------------------------------------
@@ -980,7 +980,7 @@ sum
 | 
 
 
-.. _solve_(mat,vec->[vec]):
+.. _solve_(mat,vec->[vec])1:
 
 solve
 -------------------------------------------------
@@ -988,7 +988,7 @@ solve
 | 
 
 
-.. _order_(mat->int):
+.. _order_(mat->int)1:
 
 order
 -------------------------------------------------
@@ -996,7 +996,7 @@ order
 | 
 
 
-.. _numer_(ratvec->vec):
+.. _numer_(ratvec->vec)1:
 
 numer
 -------------------------------------------------
@@ -1004,7 +1004,7 @@ numer
 | 
 
 
-.. _denom_(ratvec->int):
+.. _denom_(ratvec->int)1:
 
 denom
 -------------------------------------------------
@@ -1012,7 +1012,7 @@ denom
 | 
 
 
-.. _\*_(int,ratvec->ratvec):
+.. _\*_(int,ratvec->ratvec)1:
 
 \*
 -------------------------------------------------
@@ -1020,7 +1020,7 @@ denom
 | 
 
 
-.. _\*_(rat,ratvec->ratvec):
+.. _\*_(rat,ratvec->ratvec)1:
 
 \*
 -------------------------------------------------
@@ -1028,7 +1028,7 @@ denom
 | 
 
 
-.. _##_(ratvec,ratvec->ratvec):
+.. _##_(ratvec,ratvec->ratvec)1:
 
 ##
 -------------------------------------------------
@@ -1036,7 +1036,7 @@ denom
 | 
 
 
-.. _##_([ratvec]->ratvec):
+.. _##_([ratvec]->ratvec)1:
 
 ##
 -------------------------------------------------
@@ -1044,7 +1044,7 @@ denom
 | 
 
 
-.. _sum_([ratvec],int->ratvec):
+.. _sum_([ratvec],int->ratvec)1:
 
 sum
 -------------------------------------------------
@@ -1052,7 +1052,7 @@ sum
 | 
 
 
-.. _\*_([ratvec],ratvec->ratvec):
+.. _\*_([ratvec],ratvec->ratvec)1:
 
 \*
 -------------------------------------------------
@@ -1060,7 +1060,7 @@ sum
 | 
 
 
-.. _is_integer_(ratvec->bool):
+.. _is_integer_(ratvec->bool)1:
 
 is_integer
 -------------------------------------------------
@@ -1068,7 +1068,7 @@ is_integer
 | 
 
 
-.. _\*_(ratvec,ratvec->rat):
+.. _\*_(ratvec,ratvec->rat)1:
 
 \*
 -------------------------------------------------
@@ -1076,7 +1076,7 @@ is_integer
 | 
 
 
-.. _\*_(vec,ratvec->rat):
+.. _\*_(vec,ratvec->rat)1:
 
 \*
 -------------------------------------------------
@@ -1084,7 +1084,7 @@ is_integer
 | 
 
 
-.. _\\_(ratvec,int->vec):
+.. _\\_(ratvec,int->vec)1:
 
 \\
 -------------------------------------------------
@@ -1092,7 +1092,7 @@ is_integer
 | 
 
 
-.. _ratvec_as_vec_(ratvec->vec):
+.. _ratvec_as_vec_(ratvec->vec)1:
 
 ratvec_as_vec
 -------------------------------------------------
@@ -1100,7 +1100,7 @@ ratvec_as_vec
 | 
 
 
-.. _reverse_(ratvec->ratvec):
+.. _reverse_(ratvec->ratvec)1:
 
 reverse
 -------------------------------------------------
@@ -1108,7 +1108,7 @@ reverse
 | 
 
 
-.. _lower_(int,ratvec->ratvec):
+.. _lower_(int,ratvec->ratvec)1:
 
 lower
 -------------------------------------------------
@@ -1116,7 +1116,7 @@ lower
 | 
 
 
-.. _upper_(int,ratvec->ratvec):
+.. _upper_(int,ratvec->ratvec)1:
 
 upper
 -------------------------------------------------
@@ -1124,7 +1124,7 @@ upper
 | 
 
 
-.. _drop_lower_(int,ratvec->ratvec):
+.. _drop_lower_(int,ratvec->ratvec)1:
 
 drop_lower
 -------------------------------------------------
@@ -1132,7 +1132,7 @@ drop_lower
 | 
 
 
-.. _drop_upper_(int,ratvec->ratvec):
+.. _drop_upper_(int,ratvec->ratvec)1:
 
 drop_upper
 -------------------------------------------------
@@ -1140,7 +1140,7 @@ drop_upper
 | 
 
 
-.. _sum_(ratvec->rat):
+.. _sum_(ratvec->rat)1:
 
 sum
 -------------------------------------------------
@@ -1148,7 +1148,7 @@ sum
 | 
 
 
-.. _<=_(ratvec->bool):
+.. _<=_(ratvec->bool)1:
 
 <=
 -------------------------------------------------
@@ -1156,7 +1156,7 @@ sum
 | 
 
 
-.. _<_(ratvec->bool):
+.. _<_(ratvec->bool)1:
 
 <
 -------------------------------------------------
@@ -1164,7 +1164,7 @@ sum
 | 
 
 
-.. _solve_(mat,ratvec->[ratvec]):
+.. _solve_(mat,ratvec->[ratvec])1:
 
 solve
 -------------------------------------------------
@@ -1172,7 +1172,7 @@ solve
 | 
 
 
-.. _int_part_(Split->int):
+.. _int_part_(Split->int)1:
 
 int_part
 -------------------------------------------------
@@ -1180,7 +1180,7 @@ int_part
 | 
 
 
-.. _s_part_(Split->int):
+.. _s_part_(Split->int)1:
 
 s_part
 -------------------------------------------------
@@ -1188,7 +1188,7 @@ s_part
 | 
 
 
-.. _\+_(Split->int):
+.. _\+_(Split->int)1:
 
 \+
 -------------------------------------------------
@@ -1196,7 +1196,7 @@ s_part
 | 
 
 
-.. _\^_(Split->int):
+.. _\^_(Split->int)1:
 
 \^
 -------------------------------------------------
@@ -1204,7 +1204,7 @@ s_part
 | 
 
 
-.. _s_to_1_(Split->int):
+.. _s_to_1_(Split->int)1:
 
 s_to_1
 -------------------------------------------------
@@ -1212,7 +1212,7 @@ s_to_1
 | 
 
 
-.. _s_to_minus_1_(Split->int):
+.. _s_to_minus_1_(Split->int)1:
 
 s_to_minus_1
 -------------------------------------------------
@@ -1220,7 +1220,7 @@ s_to_minus_1
 | 
 
 
-.. _split_as_int_(Split->int):
+.. _split_as_int_(Split->int)1:
 
 split_as_int
 -------------------------------------------------
@@ -1228,7 +1228,7 @@ split_as_int
 | 
 
 
-.. _\%_(Split,int->Split,Split):
+.. _\%_(Split,int->Split,Split)1:
 
 \%
 -------------------------------------------------
@@ -1236,7 +1236,7 @@ split_as_int
 | 
 
 
-.. _split_format_(Split->string):
+.. _split_format_(Split->string)1:
 
 split_format
 -------------------------------------------------
@@ -1244,7 +1244,7 @@ split_format
 | 
 
 
-.. _\^_(Split,int->Split):
+.. _\^_(Split,int->Split)1:
 
 \^
 -------------------------------------------------
@@ -1252,7 +1252,7 @@ split_format
 | 
 
 
-.. _root_datum_([vec],[vec],int->RootDatum):
+.. _root_datum_([vec],[vec],int->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -1260,7 +1260,7 @@ root_datum
 | 
 
 
-.. _root_datum_(LieType,[ratvec]->RootDatum):
+.. _root_datum_(LieType,[ratvec]->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -1268,7 +1268,7 @@ root_datum
 | 
 
 
-.. _root_datum_(LieType,ratvec->RootDatum):
+.. _root_datum_(LieType,ratvec->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -1276,7 +1276,7 @@ root_datum
 | 
 
 
-.. _is_root_(RootDatum,vec->bool):
+.. _is_root_(RootDatum,vec->bool)1:
 
 is_root
 -------------------------------------------------
@@ -1284,7 +1284,7 @@ is_root
 | 
 
 
-.. _is_coroot_(RootDatum,vec->bool):
+.. _is_coroot_(RootDatum,vec->bool)1:
 
 is_coroot
 -------------------------------------------------
@@ -1292,7 +1292,7 @@ is_coroot
 | 
 
 
-.. _is_posroot_(RootDatum,vec->bool):
+.. _is_posroot_(RootDatum,vec->bool)1:
 
 is_posroot
 -------------------------------------------------
@@ -1300,7 +1300,7 @@ is_posroot
 | 
 
 
-.. _is_poscoroot_(RootDatum,vec->bool):
+.. _is_poscoroot_(RootDatum,vec->bool)1:
 
 is_poscoroot
 -------------------------------------------------
@@ -1308,7 +1308,7 @@ is_poscoroot
 | 
 
 
-.. _posroot_index_(RootDatum,vec->int):
+.. _posroot_index_(RootDatum,vec->int)1:
 
 posroot_index
 -------------------------------------------------
@@ -1316,7 +1316,7 @@ posroot_index
 | 
 
 
-.. _poscoroot_index_(RootDatum,vec->int):
+.. _poscoroot_index_(RootDatum,vec->int)1:
 
 poscoroot_index
 -------------------------------------------------
@@ -1324,7 +1324,7 @@ poscoroot_index
 | 
 
 
-.. _rho_(RootDatum->ratvec):
+.. _rho_(RootDatum->ratvec)1:
 
 rho
 -------------------------------------------------
@@ -1332,7 +1332,7 @@ rho
 | 
 
 
-.. _rho_as_vec_(RootDatum->vec):
+.. _rho_as_vec_(RootDatum->vec)1:
 
 rho_as_vec
 -------------------------------------------------
@@ -1340,7 +1340,7 @@ rho_as_vec
 | 
 
 
-.. _rho_check_(RootDatum->ratvec):
+.. _rho_check_(RootDatum->ratvec)1:
 
 rho_check
 -------------------------------------------------
@@ -1348,7 +1348,7 @@ rho_check
 | 
 
 
-.. _is_positive_root_(RootDatum->(vec->bool)):
+.. _is_positive_root_(RootDatum->(vec->bool))1:
 
 is_positive_root
 -------------------------------------------------
@@ -1356,7 +1356,7 @@ is_positive_root
 | 
 
 
-.. _is_positive_coroot_(RootDatum->(vec->bool)):
+.. _is_positive_coroot_(RootDatum->(vec->bool))1:
 
 is_positive_coroot
 -------------------------------------------------
@@ -1364,7 +1364,7 @@ is_positive_coroot
 | 
 
 
-.. _is_negative_root_(RootDatum->(vec->bool)):
+.. _is_negative_root_(RootDatum->(vec->bool))1:
 
 is_negative_root
 -------------------------------------------------
@@ -1372,7 +1372,7 @@ is_negative_root
 | 
 
 
-.. _is_negative_coroot_(RootDatum->(vec->bool)):
+.. _is_negative_coroot_(RootDatum->(vec->bool))1:
 
 is_negative_coroot
 -------------------------------------------------
@@ -1380,7 +1380,7 @@ is_negative_coroot
 | 
 
 
-.. _is_positive_root_(RootDatum,vec->bool):
+.. _is_positive_root_(RootDatum,vec->bool)1:
 
 is_positive_root
 -------------------------------------------------
@@ -1388,7 +1388,7 @@ is_positive_root
 | 
 
 
-.. _is_positive_coroot_(RootDatum,vec->bool):
+.. _is_positive_coroot_(RootDatum,vec->bool)1:
 
 is_positive_coroot
 -------------------------------------------------
@@ -1396,7 +1396,7 @@ is_positive_coroot
 | 
 
 
-.. _is_negative_root_(RootDatum,vec->bool):
+.. _is_negative_root_(RootDatum,vec->bool)1:
 
 is_negative_root
 -------------------------------------------------
@@ -1404,7 +1404,7 @@ is_negative_root
 | 
 
 
-.. _is_negative_coroot_(RootDatum,vec->bool):
+.. _is_negative_coroot_(RootDatum,vec->bool)1:
 
 is_negative_coroot
 -------------------------------------------------
@@ -1412,7 +1412,7 @@ is_negative_coroot
 | 
 
 
-.. _roots_all_positive_(RootDatum->(mat->bool)):
+.. _roots_all_positive_(RootDatum->(mat->bool))1:
 
 roots_all_positive
 -------------------------------------------------
@@ -1420,7 +1420,7 @@ roots_all_positive
 | 
 
 
-.. _coroots_all_positive_(RootDatum->(mat->bool)):
+.. _coroots_all_positive_(RootDatum->(mat->bool))1:
 
 coroots_all_positive
 -------------------------------------------------
@@ -1428,7 +1428,7 @@ coroots_all_positive
 | 
 
 
-.. _among_posroots_(RootDatum->(mat->bool)):
+.. _among_posroots_(RootDatum->(mat->bool))1:
 
 among_posroots
 -------------------------------------------------
@@ -1436,7 +1436,7 @@ among_posroots
 | 
 
 
-.. _among_poscoroots_(RootDatum->(mat->bool)):
+.. _among_poscoroots_(RootDatum->(mat->bool))1:
 
 among_poscoroots
 -------------------------------------------------
@@ -1444,7 +1444,7 @@ among_poscoroots
 | 
 
 
-.. _negative_system_(mat->mat):
+.. _negative_system_(mat->mat)1:
 
 negative_system
 -------------------------------------------------
@@ -1452,7 +1452,7 @@ negative_system
 | 
 
 
-.. _roots_(RootDatum->mat):
+.. _roots_(RootDatum->mat)1:
 
 roots
 -------------------------------------------------
@@ -1460,7 +1460,7 @@ roots
 | 
 
 
-.. _coroots_(RootDatum->mat):
+.. _coroots_(RootDatum->mat)1:
 
 coroots
 -------------------------------------------------
@@ -1468,7 +1468,7 @@ coroots
 | 
 
 
-.. _root_(RootDatum,vec->vec):
+.. _root_(RootDatum,vec->vec)1:
 
 root
 -------------------------------------------------
@@ -1476,7 +1476,7 @@ root
 | 
 
 
-.. _coroot_(RootDatum,vec->vec):
+.. _coroot_(RootDatum,vec->vec)1:
 
 coroot
 -------------------------------------------------
@@ -1484,7 +1484,7 @@ coroot
 | 
 
 
-.. _reflection_(RootDatum,int->mat):
+.. _reflection_(RootDatum,int->mat)1:
 
 reflection
 -------------------------------------------------
@@ -1492,7 +1492,7 @@ reflection
 | 
 
 
-.. _reflection_(RootDatum,vec->mat):
+.. _reflection_(RootDatum,vec->mat)1:
 
 reflection
 -------------------------------------------------
@@ -1500,7 +1500,7 @@ reflection
 | 
 
 
-.. _coreflection_(RootDatum,int->mat):
+.. _coreflection_(RootDatum,int->mat)1:
 
 coreflection
 -------------------------------------------------
@@ -1508,7 +1508,7 @@ coreflection
 | 
 
 
-.. _coreflection_(RootDatum,vec->mat):
+.. _coreflection_(RootDatum,vec->mat)1:
 
 coreflection
 -------------------------------------------------
@@ -1516,7 +1516,7 @@ coreflection
 | 
 
 
-.. _reflect_(RootDatum,int,vec->vec):
+.. _reflect_(RootDatum,int,vec->vec)1:
 
 reflect
 -------------------------------------------------
@@ -1524,7 +1524,7 @@ reflect
 | 
 
 
-.. _reflect_(RootDatum,vec,vec->vec):
+.. _reflect_(RootDatum,vec,vec->vec)1:
 
 reflect
 -------------------------------------------------
@@ -1532,7 +1532,7 @@ reflect
 | 
 
 
-.. _coreflect_(RootDatum,vec,int->vec):
+.. _coreflect_(RootDatum,vec,int->vec)1:
 
 coreflect
 -------------------------------------------------
@@ -1540,7 +1540,7 @@ coreflect
 | 
 
 
-.. _coreflect_(RootDatum,vec,vec->vec):
+.. _coreflect_(RootDatum,vec,vec->vec)1:
 
 coreflect
 -------------------------------------------------
@@ -1548,7 +1548,7 @@ coreflect
 | 
 
 
-.. _reflect_(RootDatum,int,ratvec->ratvec):
+.. _reflect_(RootDatum,int,ratvec->ratvec)1:
 
 reflect
 -------------------------------------------------
@@ -1556,7 +1556,7 @@ reflect
 | 
 
 
-.. _reflect_(RootDatum,vec,ratvec->ratvec):
+.. _reflect_(RootDatum,vec,ratvec->ratvec)1:
 
 reflect
 -------------------------------------------------
@@ -1564,7 +1564,7 @@ reflect
 | 
 
 
-.. _coreflect_(RootDatum,ratvec,int->ratvec):
+.. _coreflect_(RootDatum,ratvec,int->ratvec)1:
 
 coreflect
 -------------------------------------------------
@@ -1572,7 +1572,7 @@ coreflect
 | 
 
 
-.. _coreflect_(RootDatum,ratvec,vec->ratvec):
+.. _coreflect_(RootDatum,ratvec,vec->ratvec)1:
 
 coreflect
 -------------------------------------------------
@@ -1580,7 +1580,7 @@ coreflect
 | 
 
 
-.. _left_reflect_(RootDatum,int,mat->mat):
+.. _left_reflect_(RootDatum,int,mat->mat)1:
 
 left_reflect
 -------------------------------------------------
@@ -1588,7 +1588,7 @@ left_reflect
 | 
 
 
-.. _left_reflect_(RootDatum,vec,mat->mat):
+.. _left_reflect_(RootDatum,vec,mat->mat)1:
 
 left_reflect
 -------------------------------------------------
@@ -1596,7 +1596,7 @@ left_reflect
 | 
 
 
-.. _right_reflect_(RootDatum,mat,int->mat):
+.. _right_reflect_(RootDatum,mat,int->mat)1:
 
 right_reflect
 -------------------------------------------------
@@ -1604,7 +1604,7 @@ right_reflect
 | 
 
 
-.. _right_reflect_(RootDatum,mat,vec->mat):
+.. _right_reflect_(RootDatum,mat,vec->mat)1:
 
 right_reflect
 -------------------------------------------------
@@ -1612,7 +1612,7 @@ right_reflect
 | 
 
 
-.. _conjugate_(RootDatum,int,mat->mat):
+.. _conjugate_(RootDatum,int,mat->mat)1:
 
 conjugate
 -------------------------------------------------
@@ -1620,7 +1620,7 @@ conjugate
 | 
 
 
-.. _conjugate_(RootDatum,vec,mat->mat):
+.. _conjugate_(RootDatum,vec,mat->mat)1:
 
 conjugate
 -------------------------------------------------
@@ -1628,7 +1628,7 @@ conjugate
 | 
 
 
-.. _singular_simple_indices_(RootDatum,ratvec->[int]):
+.. _singular_simple_indices_(RootDatum,ratvec->[int])1:
 
 singular_simple_indices
 -------------------------------------------------
@@ -1636,7 +1636,7 @@ singular_simple_indices
 | 
 
 
-.. _is_imaginary_(mat->(vec->bool)):
+.. _is_imaginary_(mat->(vec->bool))1:
 
 is_imaginary
 -------------------------------------------------
@@ -1644,7 +1644,7 @@ is_imaginary
 | 
 
 
-.. _is_real_(mat->(vec->bool)):
+.. _is_real_(mat->(vec->bool))1:
 
 is_real
 -------------------------------------------------
@@ -1652,7 +1652,7 @@ is_real
 | 
 
 
-.. _is_complex_(mat->(vec->bool)):
+.. _is_complex_(mat->(vec->bool))1:
 
 is_complex
 -------------------------------------------------
@@ -1660,7 +1660,7 @@ is_complex
 | 
 
 
-.. _imaginary_roots_(RootDatum,mat->mat):
+.. _imaginary_roots_(RootDatum,mat->mat)1:
 
 imaginary_roots
 -------------------------------------------------
@@ -1668,7 +1668,7 @@ imaginary_roots
 | 
 
 
-.. _real_roots_(RootDatum,mat->mat):
+.. _real_roots_(RootDatum,mat->mat)1:
 
 real_roots
 -------------------------------------------------
@@ -1676,7 +1676,7 @@ real_roots
 | 
 
 
-.. _imaginary_coroots_(RootDatum,mat->mat):
+.. _imaginary_coroots_(RootDatum,mat->mat)1:
 
 imaginary_coroots
 -------------------------------------------------
@@ -1684,7 +1684,7 @@ imaginary_coroots
 | 
 
 
-.. _real_coroots_(RootDatum,mat->mat):
+.. _real_coroots_(RootDatum,mat->mat)1:
 
 real_coroots
 -------------------------------------------------
@@ -1692,7 +1692,7 @@ real_coroots
 | 
 
 
-.. _imaginary_posroots_(RootDatum,mat->mat):
+.. _imaginary_posroots_(RootDatum,mat->mat)1:
 
 imaginary_posroots
 -------------------------------------------------
@@ -1700,7 +1700,7 @@ imaginary_posroots
 | 
 
 
-.. _real_posroots_(RootDatum,mat->mat):
+.. _real_posroots_(RootDatum,mat->mat)1:
 
 real_posroots
 -------------------------------------------------
@@ -1708,7 +1708,7 @@ real_posroots
 | 
 
 
-.. _imaginary_poscoroots_(RootDatum,mat->mat):
+.. _imaginary_poscoroots_(RootDatum,mat->mat)1:
 
 imaginary_poscoroots
 -------------------------------------------------
@@ -1716,7 +1716,7 @@ imaginary_poscoroots
 | 
 
 
-.. _real_poscoroots_(RootDatum,mat->mat):
+.. _real_poscoroots_(RootDatum,mat->mat)1:
 
 real_poscoroots
 -------------------------------------------------
@@ -1724,7 +1724,7 @@ real_poscoroots
 | 
 
 
-.. _imaginary_sys_(RootDatum,mat->mat,mat):
+.. _imaginary_sys_(RootDatum,mat->mat,mat)1:
 
 imaginary_sys
 -------------------------------------------------
@@ -1732,7 +1732,7 @@ imaginary_sys
 | 
 
 
-.. _real_sys_(RootDatum,mat->mat,mat):
+.. _real_sys_(RootDatum,mat->mat,mat)1:
 
 real_sys
 -------------------------------------------------
@@ -1740,7 +1740,7 @@ real_sys
 | 
 
 
-.. _is_dominant_(RootDatum,ratvec->bool):
+.. _is_dominant_(RootDatum,ratvec->bool)1:
 
 is_dominant
 -------------------------------------------------
@@ -1748,7 +1748,7 @@ is_dominant
 | 
 
 
-.. _is_strictly_dominant_(RootDatum,ratvec->bool):
+.. _is_strictly_dominant_(RootDatum,ratvec->bool)1:
 
 is_strictly_dominant
 -------------------------------------------------
@@ -1756,7 +1756,7 @@ is_strictly_dominant
 | 
 
 
-.. _is_regular_(RootDatum,ratvec->bool):
+.. _is_regular_(RootDatum,ratvec->bool)1:
 
 is_regular
 -------------------------------------------------
@@ -1764,7 +1764,7 @@ is_regular
 | 
 
 
-.. _is_integral_(RootDatum,ratvec->bool):
+.. _is_integral_(RootDatum,ratvec->bool)1:
 
 is_integral
 -------------------------------------------------
@@ -1772,7 +1772,7 @@ is_integral
 | 
 
 
-.. _radical_basis_(RootDatum->mat):
+.. _radical_basis_(RootDatum->mat)1:
 
 radical_basis
 -------------------------------------------------
@@ -1780,7 +1780,7 @@ radical_basis
 | 
 
 
-.. _coradical_basis_(RootDatum->mat):
+.. _coradical_basis_(RootDatum->mat)1:
 
 coradical_basis
 -------------------------------------------------
@@ -1788,7 +1788,7 @@ coradical_basis
 | 
 
 
-.. _is_semisimple_(RootDatum->bool):
+.. _is_semisimple_(RootDatum->bool)1:
 
 is_semisimple
 -------------------------------------------------
@@ -1796,7 +1796,7 @@ is_semisimple
 | 
 
 
-.. _derived_is_simply_connected_(RootDatum->bool):
+.. _derived_is_simply_connected_(RootDatum->bool)1:
 
 derived_is_simply_connected
 -------------------------------------------------
@@ -1804,7 +1804,7 @@ derived_is_simply_connected
 | 
 
 
-.. _has_connected_center_(RootDatum->bool):
+.. _has_connected_center_(RootDatum->bool)1:
 
 has_connected_center
 -------------------------------------------------
@@ -1812,7 +1812,7 @@ has_connected_center
 | 
 
 
-.. _is_simply_connected_(RootDatum->bool):
+.. _is_simply_connected_(RootDatum->bool)1:
 
 is_simply_connected
 -------------------------------------------------
@@ -1820,7 +1820,7 @@ is_simply_connected
 | 
 
 
-.. _is_adjoint_(RootDatum->bool):
+.. _is_adjoint_(RootDatum->bool)1:
 
 is_adjoint
 -------------------------------------------------
@@ -1828,7 +1828,7 @@ is_adjoint
 | 
 
 
-.. _derived_(RootDatum->RootDatum):
+.. _derived_(RootDatum->RootDatum)1:
 
 derived
 -------------------------------------------------
@@ -1836,7 +1836,7 @@ derived
 | 
 
 
-.. _mod_central_torus_(RootDatum->RootDatum):
+.. _mod_central_torus_(RootDatum->RootDatum)1:
 
 mod_central_torus
 -------------------------------------------------
@@ -1844,7 +1844,7 @@ mod_central_torus
 | 
 
 
-.. _adjoint_(RootDatum->RootDatum):
+.. _adjoint_(RootDatum->RootDatum)1:
 
 adjoint
 -------------------------------------------------
@@ -1852,7 +1852,7 @@ adjoint
 | 
 
 
-.. _is_simple_for_(vec->(vec->bool)):
+.. _is_simple_for_(vec->(vec->bool))1:
 
 is_simple_for
 -------------------------------------------------
@@ -1860,7 +1860,7 @@ is_simple_for
 | 
 
 
-.. _simple_from_positive_(mat,mat->mat,mat):
+.. _simple_from_positive_(mat,mat->mat,mat)1:
 
 simple_from_positive
 -------------------------------------------------
@@ -1868,7 +1868,7 @@ simple_from_positive
 | 
 
 
-.. _fundamental_weights_(RootDatum->[ratvec]):
+.. _fundamental_weights_(RootDatum->[ratvec])1:
 
 fundamental_weights
 -------------------------------------------------
@@ -1876,7 +1876,7 @@ fundamental_weights
 | 
 
 
-.. _fundamental_coweights_(RootDatum->[ratvec]):
+.. _fundamental_coweights_(RootDatum->[ratvec])1:
 
 fundamental_coweights
 -------------------------------------------------
@@ -1884,7 +1884,7 @@ fundamental_coweights
 | 
 
 
-.. _!=_(InnerClass,InnerClass->bool):
+.. _!=_(InnerClass,InnerClass->bool)1:
 
 !=
 -------------------------------------------------
@@ -1892,7 +1892,7 @@ fundamental_coweights
 | 
 
 
-.. _dual_integral_(InnerClass,ratvec->InnerClass):
+.. _dual_integral_(InnerClass,ratvec->InnerClass)1:
 
 dual_integral
 -------------------------------------------------
@@ -1900,7 +1900,7 @@ dual_integral
 | 
 
 
-.. _Cartan_classes_(InnerClass->[CartanClass]):
+.. _Cartan_classes_(InnerClass->[CartanClass])1:
 
 Cartan_classes
 -------------------------------------------------
@@ -1908,7 +1908,7 @@ Cartan_classes
 | 
 
 
-.. _print_Cartan_info_(CartanClass->):
+.. _print_Cartan_info_(CartanClass->)1:
 
 print_Cartan_info
 -------------------------------------------------
@@ -1916,7 +1916,7 @@ print_Cartan_info
 | 
 
 
-.. _fundamental_Cartan_(InnerClass->CartanClass):
+.. _fundamental_Cartan_(InnerClass->CartanClass)1:
 
 fundamental_Cartan
 -------------------------------------------------
@@ -1924,7 +1924,7 @@ fundamental_Cartan
 | 
 
 
-.. _most_split_Cartan_(InnerClass->CartanClass):
+.. _most_split_Cartan_(InnerClass->CartanClass)1:
 
 most_split_Cartan
 -------------------------------------------------
@@ -1932,7 +1932,7 @@ most_split_Cartan
 | 
 
 
-.. _compact_rank_(CartanClass->int):
+.. _compact_rank_(CartanClass->int)1:
 
 compact_rank
 -------------------------------------------------
@@ -1940,7 +1940,7 @@ compact_rank
 | 
 
 
-.. _split_rank_(CartanClass->int):
+.. _split_rank_(CartanClass->int)1:
 
 split_rank
 -------------------------------------------------
@@ -1948,7 +1948,7 @@ split_rank
 | 
 
 
-.. _compact_rank_(InnerClass->int):
+.. _compact_rank_(InnerClass->int)1:
 
 compact_rank
 -------------------------------------------------
@@ -1956,7 +1956,7 @@ compact_rank
 | 
 
 
-.. _split_rank_(RealForm->int):
+.. _split_rank_(RealForm->int)1:
 
 split_rank
 -------------------------------------------------
@@ -1964,7 +1964,7 @@ split_rank
 | 
 
 
-.. _\=_(CartanClass,CartanClass->bool):
+.. _\=_(CartanClass,CartanClass->bool)1:
 
 \=
 -------------------------------------------------
@@ -1972,7 +1972,7 @@ split_rank
 | 
 
 
-.. _number_(CartanClass,RealForm->int):
+.. _number_(CartanClass,RealForm->int)1:
 
 number
 -------------------------------------------------
@@ -1980,7 +1980,7 @@ number
 | 
 
 
-.. _!=_(RealForm,RealForm->bool):
+.. _!=_(RealForm,RealForm->bool)1:
 
 !=
 -------------------------------------------------
@@ -1988,7 +1988,7 @@ number
 | 
 
 
-.. _form_name_(RealForm->string):
+.. _form_name_(RealForm->string)1:
 
 form_name
 -------------------------------------------------
@@ -1996,7 +1996,7 @@ form_name
 | 
 
 
-.. _real_forms_(InnerClass->[RealForm]):
+.. _real_forms_(InnerClass->[RealForm])1:
 
 real_forms
 -------------------------------------------------
@@ -2004,7 +2004,7 @@ real_forms
 | 
 
 
-.. _dual_real_forms_(InnerClass->[RealForm]):
+.. _dual_real_forms_(InnerClass->[RealForm])1:
 
 dual_real_forms
 -------------------------------------------------
@@ -2012,7 +2012,7 @@ dual_real_forms
 | 
 
 
-.. _is_quasisplit_(RealForm->bool):
+.. _is_quasisplit_(RealForm->bool)1:
 
 is_quasisplit
 -------------------------------------------------
@@ -2020,7 +2020,7 @@ is_quasisplit
 | 
 
 
-.. _is_quasicompact_(RealForm->bool):
+.. _is_quasicompact_(RealForm->bool)1:
 
 is_quasicompact
 -------------------------------------------------
@@ -2028,7 +2028,7 @@ is_quasicompact
 | 
 
 
-.. _split_form_(RootDatum->RealForm):
+.. _split_form_(RootDatum->RealForm)1:
 
 split_form
 -------------------------------------------------
@@ -2036,7 +2036,7 @@ split_form
 | 
 
 
-.. _split_form_(LieType->RealForm):
+.. _split_form_(LieType->RealForm)1:
 
 split_form
 -------------------------------------------------
@@ -2044,7 +2044,7 @@ split_form
 | 
 
 
-.. _quasicompact_form_(InnerClass->RealForm):
+.. _quasicompact_form_(InnerClass->RealForm)1:
 
 quasicompact_form
 -------------------------------------------------
@@ -2052,7 +2052,7 @@ quasicompact_form
 | 
 
 
-.. _is_compatible_(RealForm,RealForm->bool):
+.. _is_compatible_(RealForm,RealForm->bool)1:
 
 is_compatible
 -------------------------------------------------
@@ -2060,7 +2060,7 @@ is_compatible
 | 
 
 
-.. _is_compact_(RealForm->bool):
+.. _is_compact_(RealForm->bool)1:
 
 is_compact
 -------------------------------------------------
@@ -2068,7 +2068,7 @@ is_compact
 | 
 
 
-.. _!=_(KGBElt,KGBElt->bool):
+.. _!=_(KGBElt,KGBElt->bool)1:
 
 !=
 -------------------------------------------------
@@ -2076,7 +2076,7 @@ is_compact
 | 
 
 
-.. _real_form_(KGBElt->RealForm):
+.. _real_form_(KGBElt->RealForm)1:
 
 real_form
 -------------------------------------------------
@@ -2084,7 +2084,7 @@ real_form
 | 
 
 
-.. _\#_(KGBElt->int):
+.. _\#_(KGBElt->int)1:
 
 \#
 -------------------------------------------------
@@ -2092,7 +2092,7 @@ real_form
 | 
 
 
-.. _root_datum_(KGBElt->RootDatum):
+.. _root_datum_(KGBElt->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -2100,7 +2100,7 @@ root_datum
 | 
 
 
-.. _inner_class_(KGBElt->InnerClass):
+.. _inner_class_(KGBElt->InnerClass)1:
 
 inner_class
 -------------------------------------------------
@@ -2108,7 +2108,7 @@ inner_class
 | 
 
 
-.. _KGB_(RealForm->[KGBElt]):
+.. _KGB_(RealForm->[KGBElt])1:
 
 KGB
 -------------------------------------------------
@@ -2116,7 +2116,7 @@ KGB
 | 
 
 
-.. _KGB_(CartanClass,RealForm->[KGBElt]):
+.. _KGB_(CartanClass,RealForm->[KGBElt])1:
 
 KGB
 -------------------------------------------------
@@ -2124,7 +2124,7 @@ KGB
 | 
 
 
-.. _KGB_elt_(InnerClass,mat,ratvec->KGBElt):
+.. _KGB_elt_(InnerClass,mat,ratvec->KGBElt)1:
 
 KGB_elt
 -------------------------------------------------
@@ -2132,7 +2132,7 @@ KGB_elt
 | 
 
 
-.. _KGB_elt_(RootDatum,mat,ratvec->KGBElt):
+.. _KGB_elt_(RootDatum,mat,ratvec->KGBElt)1:
 
 KGB_elt
 -------------------------------------------------
@@ -2140,7 +2140,7 @@ KGB_elt
 | 
 
 
-.. _Cartan_class_(InnerClass,mat->CartanClass):
+.. _Cartan_class_(InnerClass,mat->CartanClass)1:
 
 Cartan_class
 -------------------------------------------------
@@ -2148,7 +2148,7 @@ Cartan_class
 | 
 
 
-.. _status_(vec,KGBElt->int):
+.. _status_(vec,KGBElt->int)1:
 
 status
 -------------------------------------------------
@@ -2156,7 +2156,7 @@ status
 | 
 
 
-.. _cross_(vec,KGBElt->KGBElt):
+.. _cross_(vec,KGBElt->KGBElt)1:
 
 cross
 -------------------------------------------------
@@ -2164,7 +2164,7 @@ cross
 | 
 
 
-.. _Cayley_(vec,KGBElt->KGBElt):
+.. _Cayley_(vec,KGBElt->KGBElt)1:
 
 Cayley
 -------------------------------------------------
@@ -2172,7 +2172,7 @@ Cayley
 | 
 
 
-.. _W_cross_([int],KGBElt->KGBElt):
+.. _W_cross_([int],KGBElt->KGBElt)1:
 
 W_cross
 -------------------------------------------------
@@ -2180,7 +2180,7 @@ W_cross
 | 
 
 
-.. _KGB_status_text_(int->string):
+.. _KGB_status_text_(int->string)1:
 
 KGB_status_text
 -------------------------------------------------
@@ -2188,7 +2188,7 @@ KGB_status_text
 | 
 
 
-.. _status_text_(int,KGBElt->string):
+.. _status_text_(int,KGBElt->string)1:
 
 status_text
 -------------------------------------------------
@@ -2196,7 +2196,7 @@ status_text
 | 
 
 
-.. _status_text_(vec,KGBElt->string):
+.. _status_text_(vec,KGBElt->string)1:
 
 status_text
 -------------------------------------------------
@@ -2204,7 +2204,7 @@ status_text
 | 
 
 
-.. _status_texts_(KGBElt->[string]):
+.. _status_texts_(KGBElt->[string])1:
 
 status_texts
 -------------------------------------------------
@@ -2212,7 +2212,7 @@ status_texts
 | 
 
 
-.. _is_complex_(int,KGBElt->bool):
+.. _is_complex_(int,KGBElt->bool)1:
 
 is_complex
 -------------------------------------------------
@@ -2220,7 +2220,7 @@ is_complex
 | 
 
 
-.. _is_real_(int,KGBElt->bool):
+.. _is_real_(int,KGBElt->bool)1:
 
 is_real
 -------------------------------------------------
@@ -2228,7 +2228,7 @@ is_real
 | 
 
 
-.. _is_imaginary_(int,KGBElt->bool):
+.. _is_imaginary_(int,KGBElt->bool)1:
 
 is_imaginary
 -------------------------------------------------
@@ -2236,7 +2236,7 @@ is_imaginary
 | 
 
 
-.. _is_noncompact_(int,KGBElt->bool):
+.. _is_noncompact_(int,KGBElt->bool)1:
 
 is_noncompact
 -------------------------------------------------
@@ -2244,7 +2244,7 @@ is_noncompact
 | 
 
 
-.. _is_compact_(int,KGBElt->bool):
+.. _is_compact_(int,KGBElt->bool)1:
 
 is_compact
 -------------------------------------------------
@@ -2252,7 +2252,7 @@ is_compact
 | 
 
 
-.. _is_descent_(int,KGBElt->bool):
+.. _is_descent_(int,KGBElt->bool)1:
 
 is_descent
 -------------------------------------------------
@@ -2260,7 +2260,7 @@ is_descent
 | 
 
 
-.. _is_ascent_(int,KGBElt->bool):
+.. _is_ascent_(int,KGBElt->bool)1:
 
 is_ascent
 -------------------------------------------------
@@ -2268,7 +2268,7 @@ is_ascent
 | 
 
 
-.. _is_strict_descent_(int,KGBElt->bool):
+.. _is_strict_descent_(int,KGBElt->bool)1:
 
 is_strict_descent
 -------------------------------------------------
@@ -2276,7 +2276,7 @@ is_strict_descent
 | 
 
 
-.. _is_imaginary_(KGBElt->(vec->bool)):
+.. _is_imaginary_(KGBElt->(vec->bool))1:
 
 is_imaginary
 -------------------------------------------------
@@ -2284,7 +2284,7 @@ is_imaginary
 | 
 
 
-.. _is_real_(KGBElt->(vec->bool)):
+.. _is_real_(KGBElt->(vec->bool))1:
 
 is_real
 -------------------------------------------------
@@ -2292,7 +2292,7 @@ is_real
 | 
 
 
-.. _is_complex_(KGBElt->(vec->bool)):
+.. _is_complex_(KGBElt->(vec->bool))1:
 
 is_complex
 -------------------------------------------------
@@ -2300,7 +2300,7 @@ is_complex
 | 
 
 
-.. _imaginary_posroots_(KGBElt->mat):
+.. _imaginary_posroots_(KGBElt->mat)1:
 
 imaginary_posroots
 -------------------------------------------------
@@ -2308,7 +2308,7 @@ imaginary_posroots
 | 
 
 
-.. _real_posroots_(KGBElt->mat):
+.. _real_posroots_(KGBElt->mat)1:
 
 real_posroots
 -------------------------------------------------
@@ -2316,7 +2316,7 @@ real_posroots
 | 
 
 
-.. _imaginary_poscoroots_(KGBElt->mat):
+.. _imaginary_poscoroots_(KGBElt->mat)1:
 
 imaginary_poscoroots
 -------------------------------------------------
@@ -2324,7 +2324,7 @@ imaginary_poscoroots
 | 
 
 
-.. _real_poscoroots_(KGBElt->mat):
+.. _real_poscoroots_(KGBElt->mat)1:
 
 real_poscoroots
 -------------------------------------------------
@@ -2332,7 +2332,7 @@ real_poscoroots
 | 
 
 
-.. _imaginary_sys_(KGBElt->mat,mat):
+.. _imaginary_sys_(KGBElt->mat,mat)1:
 
 imaginary_sys
 -------------------------------------------------
@@ -2340,7 +2340,7 @@ imaginary_sys
 | 
 
 
-.. _real_sys_(KGBElt->mat,mat):
+.. _real_sys_(KGBElt->mat,mat)1:
 
 real_sys
 -------------------------------------------------
@@ -2348,7 +2348,7 @@ real_sys
 | 
 
 
-.. _rho_i_(KGBElt->ratvec):
+.. _rho_i_(KGBElt->ratvec)1:
 
 rho_i
 -------------------------------------------------
@@ -2356,7 +2356,7 @@ rho_i
 | 
 
 
-.. _rho_r_(KGBElt->ratvec):
+.. _rho_r_(KGBElt->ratvec)1:
 
 rho_r
 -------------------------------------------------
@@ -2364,7 +2364,7 @@ rho_r
 | 
 
 
-.. _rho_check_i_(KGBElt->ratvec):
+.. _rho_check_i_(KGBElt->ratvec)1:
 
 rho_check_i
 -------------------------------------------------
@@ -2372,7 +2372,7 @@ rho_check_i
 | 
 
 
-.. _rho_check_r_(KGBElt->ratvec):
+.. _rho_check_r_(KGBElt->ratvec)1:
 
 rho_check_r
 -------------------------------------------------
@@ -2380,7 +2380,7 @@ rho_check_r
 | 
 
 
-.. _rho_i_(RootDatum,mat->ratvec):
+.. _rho_i_(RootDatum,mat->ratvec)1:
 
 rho_i
 -------------------------------------------------
@@ -2388,7 +2388,7 @@ rho_i
 | 
 
 
-.. _rho_r_(RootDatum,mat->ratvec):
+.. _rho_r_(RootDatum,mat->ratvec)1:
 
 rho_r
 -------------------------------------------------
@@ -2396,7 +2396,7 @@ rho_r
 | 
 
 
-.. _rho_check_i_(RootDatum,mat->ratvec):
+.. _rho_check_i_(RootDatum,mat->ratvec)1:
 
 rho_check_i
 -------------------------------------------------
@@ -2404,7 +2404,7 @@ rho_check_i
 | 
 
 
-.. _rho_check_r_(RootDatum,mat->ratvec):
+.. _rho_check_r_(RootDatum,mat->ratvec)1:
 
 rho_check_r
 -------------------------------------------------
@@ -2412,7 +2412,7 @@ rho_check_r
 | 
 
 
-.. _is_compact_(KGBElt->(vec->bool)):
+.. _is_compact_(KGBElt->(vec->bool))1:
 
 is_compact
 -------------------------------------------------
@@ -2420,7 +2420,7 @@ is_compact
 | 
 
 
-.. _is_noncompact_(KGBElt->(vec->bool)):
+.. _is_noncompact_(KGBElt->(vec->bool))1:
 
 is_noncompact
 -------------------------------------------------
@@ -2428,7 +2428,7 @@ is_noncompact
 | 
 
 
-.. _is_compact_imaginary_(KGBElt->(vec->bool)):
+.. _is_compact_imaginary_(KGBElt->(vec->bool))1:
 
 is_compact_imaginary
 -------------------------------------------------
@@ -2436,7 +2436,7 @@ is_compact_imaginary
 | 
 
 
-.. _is_noncompact_imaginary_(KGBElt->(vec->bool)):
+.. _is_noncompact_imaginary_(KGBElt->(vec->bool))1:
 
 is_noncompact_imaginary
 -------------------------------------------------
@@ -2444,7 +2444,7 @@ is_noncompact_imaginary
 | 
 
 
-.. _compact_posroots_(KGBElt->mat):
+.. _compact_posroots_(KGBElt->mat)1:
 
 compact_posroots
 -------------------------------------------------
@@ -2452,7 +2452,7 @@ compact_posroots
 | 
 
 
-.. _noncompact_posroots_(KGBElt->mat):
+.. _noncompact_posroots_(KGBElt->mat)1:
 
 noncompact_posroots
 -------------------------------------------------
@@ -2460,7 +2460,7 @@ noncompact_posroots
 | 
 
 
-.. _rho_ci_(KGBElt->ratvec):
+.. _rho_ci_(KGBElt->ratvec)1:
 
 rho_ci
 -------------------------------------------------
@@ -2468,7 +2468,7 @@ rho_ci
 | 
 
 
-.. _rho_nci_(KGBElt->ratvec):
+.. _rho_nci_(KGBElt->ratvec)1:
 
 rho_nci
 -------------------------------------------------
@@ -2476,7 +2476,7 @@ rho_nci
 | 
 
 
-.. _is_imaginary_(vec,KGBElt->bool):
+.. _is_imaginary_(vec,KGBElt->bool)1:
 
 is_imaginary
 -------------------------------------------------
@@ -2484,7 +2484,7 @@ is_imaginary
 | 
 
 
-.. _is_real_(vec,KGBElt->bool):
+.. _is_real_(vec,KGBElt->bool)1:
 
 is_real
 -------------------------------------------------
@@ -2492,7 +2492,7 @@ is_real
 | 
 
 
-.. _is_complex_(vec,KGBElt->bool):
+.. _is_complex_(vec,KGBElt->bool)1:
 
 is_complex
 -------------------------------------------------
@@ -2500,7 +2500,7 @@ is_complex
 | 
 
 
-.. _is_compact_imaginary_(vec,KGBElt->bool):
+.. _is_compact_imaginary_(vec,KGBElt->bool)1:
 
 is_compact_imaginary
 -------------------------------------------------
@@ -2508,7 +2508,7 @@ is_compact_imaginary
 | 
 
 
-.. _is_noncompact_imaginary_(vec,KGBElt->bool):
+.. _is_noncompact_imaginary_(vec,KGBElt->bool)1:
 
 is_noncompact_imaginary
 -------------------------------------------------
@@ -2516,7 +2516,7 @@ is_noncompact_imaginary
 | 
 
 
-.. _print_KGB_(KGBElt->):
+.. _print_KGB_(KGBElt->)1:
 
 print_KGB
 -------------------------------------------------
@@ -2524,7 +2524,7 @@ print_KGB
 | 
 
 
-.. _no_Cminus_roots_(KGBElt->bool):
+.. _no_Cminus_roots_(KGBElt->bool)1:
 
 no_Cminus_roots
 -------------------------------------------------
@@ -2532,7 +2532,7 @@ no_Cminus_roots
 | 
 
 
-.. _no_Cplus_roots_(KGBElt->bool):
+.. _no_Cplus_roots_(KGBElt->bool)1:
 
 no_Cplus_roots
 -------------------------------------------------
@@ -2540,7 +2540,7 @@ no_Cplus_roots
 | 
 
 
-.. _blocks_(InnerClass->[Block]):
+.. _blocks_(InnerClass->[Block])1:
 
 blocks
 -------------------------------------------------
@@ -2548,7 +2548,7 @@ blocks
 | 
 
 
-.. _raw_KL_(RealForm,RealForm->mat,[vec],vec):
+.. _raw_KL_(RealForm,RealForm->mat,[vec],vec)1:
 
 raw_KL
 -------------------------------------------------
@@ -2556,7 +2556,7 @@ raw_KL
 | 
 
 
-.. _dual_KL_(RealForm,RealForm->mat,[vec],vec):
+.. _dual_KL_(RealForm,RealForm->mat,[vec],vec)1:
 
 dual_KL
 -------------------------------------------------
@@ -2564,7 +2564,7 @@ dual_KL
 | 
 
 
-.. _print_block_(RealForm,RealForm->):
+.. _print_block_(RealForm,RealForm->)1:
 
 print_block
 -------------------------------------------------
@@ -2572,7 +2572,7 @@ print_block
 | 
 
 
-.. _print_blocku_(RealForm,RealForm->):
+.. _print_blocku_(RealForm,RealForm->)1:
 
 print_blocku
 -------------------------------------------------
@@ -2580,7 +2580,7 @@ print_blocku
 | 
 
 
-.. _print_blockd_(RealForm,RealForm->):
+.. _print_blockd_(RealForm,RealForm->)1:
 
 print_blockd
 -------------------------------------------------
@@ -2588,7 +2588,7 @@ print_blockd
 | 
 
 
-.. _print_KL_basis_(RealForm,RealForm->):
+.. _print_KL_basis_(RealForm,RealForm->)1:
 
 print_KL_basis
 -------------------------------------------------
@@ -2596,7 +2596,7 @@ print_KL_basis
 | 
 
 
-.. _print_prim_KL_(RealForm,RealForm->):
+.. _print_prim_KL_(RealForm,RealForm->)1:
 
 print_prim_KL
 -------------------------------------------------
@@ -2604,7 +2604,7 @@ print_prim_KL
 | 
 
 
-.. _print_KL_list_(RealForm,RealForm->):
+.. _print_KL_list_(RealForm,RealForm->)1:
 
 print_KL_list
 -------------------------------------------------
@@ -2612,7 +2612,7 @@ print_KL_list
 | 
 
 
-.. _print_W_cells_(RealForm,RealForm->):
+.. _print_W_cells_(RealForm,RealForm->)1:
 
 print_W_cells
 -------------------------------------------------
@@ -2620,7 +2620,7 @@ print_W_cells
 | 
 
 
-.. _print_W_graph_(RealForm,RealForm->):
+.. _print_W_graph_(RealForm,RealForm->)1:
 
 print_W_graph
 -------------------------------------------------
@@ -2628,7 +2628,7 @@ print_W_graph
 | 
 
 
-.. _!=_(Param,Param->bool):
+.. _!=_(Param,Param->bool)1:
 
 !=
 -------------------------------------------------
@@ -2636,7 +2636,7 @@ print_W_graph
 | 
 
 
-.. _root_datum_(Param->RootDatum):
+.. _root_datum_(Param->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -2644,7 +2644,7 @@ root_datum
 | 
 
 
-.. _inner_class_(Param->InnerClass):
+.. _inner_class_(Param->InnerClass)1:
 
 inner_class
 -------------------------------------------------
@@ -2652,7 +2652,7 @@ inner_class
 | 
 
 
-.. _null_module_(Param->ParamPol):
+.. _null_module_(Param->ParamPol)1:
 
 null_module
 -------------------------------------------------
@@ -2660,7 +2660,7 @@ null_module
 | 
 
 
-.. _\*_(Param,rat->Param):
+.. _\*_(Param,rat->Param)1:
 
 \*
 -------------------------------------------------
@@ -2668,7 +2668,7 @@ null_module
 | 
 
 
-.. _x_(Param->KGBElt):
+.. _x_(Param->KGBElt)1:
 
 x
 -------------------------------------------------
@@ -2676,7 +2676,7 @@ x
 | 
 
 
-.. _lambda_minus_rho_(Param->vec):
+.. _lambda_minus_rho_(Param->vec)1:
 
 lambda_minus_rho
 -------------------------------------------------
@@ -2684,7 +2684,7 @@ lambda_minus_rho
 | 
 
 
-.. _lambda_(Param->ratvec):
+.. _lambda_(Param->ratvec)1:
 
 lambda
 -------------------------------------------------
@@ -2692,7 +2692,7 @@ lambda
 | 
 
 
-.. _infinitesimal_character_(Param->ratvec):
+.. _infinitesimal_character_(Param->ratvec)1:
 
 infinitesimal_character
 -------------------------------------------------
@@ -2700,7 +2700,7 @@ infinitesimal_character
 | 
 
 
-.. _nu_(Param->ratvec):
+.. _nu_(Param->ratvec)1:
 
 nu
 -------------------------------------------------
@@ -2708,7 +2708,7 @@ nu
 | 
 
 
-.. _Cartan_class_(Param->CartanClass):
+.. _Cartan_class_(Param->CartanClass)1:
 
 Cartan_class
 -------------------------------------------------
@@ -2716,7 +2716,7 @@ Cartan_class
 | 
 
 
-.. _involution_(Param->mat):
+.. _involution_(Param->mat)1:
 
 involution
 -------------------------------------------------
@@ -2724,7 +2724,7 @@ involution
 | 
 
 
-.. _integrality_datum_(Param->RootDatum):
+.. _integrality_datum_(Param->RootDatum)1:
 
 integrality_datum
 -------------------------------------------------
@@ -2732,7 +2732,7 @@ integrality_datum
 | 
 
 
-.. _is_regular_(Param->bool):
+.. _is_regular_(Param->bool)1:
 
 is_regular
 -------------------------------------------------
@@ -2740,7 +2740,7 @@ is_regular
 | 
 
 
-.. _trivial_(RealForm->Param):
+.. _trivial_(RealForm->Param)1:
 
 trivial
 -------------------------------------------------
@@ -2748,7 +2748,7 @@ trivial
 | 
 
 
-.. _W_cross_([int],Param->Param):
+.. _W_cross_([int],Param->Param)1:
 
 W_cross
 -------------------------------------------------
@@ -2756,7 +2756,7 @@ W_cross
 | 
 
 
-.. _parameter_(RealForm,int,ratvec,ratvec->Param):
+.. _parameter_(RealForm,int,ratvec,ratvec->Param)1:
 
 parameter
 -------------------------------------------------
@@ -2764,7 +2764,7 @@ parameter
 | 
 
 
-.. _parameter_(KGBElt,ratvec,ratvec->Param):
+.. _parameter_(KGBElt,ratvec,ratvec->Param)1:
 
 parameter
 -------------------------------------------------
@@ -2772,7 +2772,7 @@ parameter
 | 
 
 
-.. _parameter_gamma_(KGBElt,ratvec,ratvec->Param):
+.. _parameter_gamma_(KGBElt,ratvec,ratvec->Param)1:
 
 parameter_gamma
 -------------------------------------------------
@@ -2780,7 +2780,7 @@ parameter_gamma
 | 
 
 
-.. _block_of_(Param->[Param]):
+.. _block_of_(Param->[Param])1:
 
 block_of
 -------------------------------------------------
@@ -2788,7 +2788,7 @@ block_of
 | 
 
 
-.. _imaginary_type_(int,Param->int):
+.. _imaginary_type_(int,Param->int)1:
 
 imaginary_type
 -------------------------------------------------
@@ -2796,7 +2796,7 @@ imaginary_type
 | 
 
 
-.. _real_type_(int,Param->int):
+.. _real_type_(int,Param->int)1:
 
 real_type
 -------------------------------------------------
@@ -2804,7 +2804,7 @@ real_type
 | 
 
 
-.. _imaginary_type_(vec,Param->int):
+.. _imaginary_type_(vec,Param->int)1:
 
 imaginary_type
 -------------------------------------------------
@@ -2812,7 +2812,7 @@ imaginary_type
 | 
 
 
-.. _real_type_(vec,Param->int):
+.. _real_type_(vec,Param->int)1:
 
 real_type
 -------------------------------------------------
@@ -2820,7 +2820,7 @@ real_type
 | 
 
 
-.. _is_nonparity_(int,Param->bool):
+.. _is_nonparity_(int,Param->bool)1:
 
 is_nonparity
 -------------------------------------------------
@@ -2828,7 +2828,7 @@ is_nonparity
 | 
 
 
-.. _is_parity_(int,Param->bool):
+.. _is_parity_(int,Param->bool)1:
 
 is_parity
 -------------------------------------------------
@@ -2836,7 +2836,7 @@ is_parity
 | 
 
 
-.. _is_nonparity_(vec,Param->bool):
+.. _is_nonparity_(vec,Param->bool)1:
 
 is_nonparity
 -------------------------------------------------
@@ -2844,7 +2844,7 @@ is_nonparity
 | 
 
 
-.. _is_parity_(vec,Param->bool):
+.. _is_parity_(vec,Param->bool)1:
 
 is_parity
 -------------------------------------------------
@@ -2852,7 +2852,7 @@ is_parity
 | 
 
 
-.. _status_(vec,Param->int):
+.. _status_(vec,Param->int)1:
 
 status
 -------------------------------------------------
@@ -2860,7 +2860,7 @@ status
 | 
 
 
-.. _status_(int,Param->int):
+.. _status_(int,Param->int)1:
 
 status
 -------------------------------------------------
@@ -2868,7 +2868,7 @@ status
 | 
 
 
-.. _block_status_text_(int->string):
+.. _block_status_text_(int->string)1:
 
 block_status_text
 -------------------------------------------------
@@ -2876,7 +2876,7 @@ block_status_text
 | 
 
 
-.. _status_text_(int,Param->string):
+.. _status_text_(int,Param->string)1:
 
 status_text
 -------------------------------------------------
@@ -2884,7 +2884,7 @@ status_text
 | 
 
 
-.. _status_texts_(Param->[string]):
+.. _status_texts_(Param->[string])1:
 
 status_texts
 -------------------------------------------------
@@ -2892,7 +2892,7 @@ status_texts
 | 
 
 
-.. _status_text_(vec,Param->string):
+.. _status_text_(vec,Param->string)1:
 
 status_text
 -------------------------------------------------
@@ -2900,7 +2900,7 @@ status_text
 | 
 
 
-.. _parity_poscoroots_(Param->mat):
+.. _parity_poscoroots_(Param->mat)1:
 
 parity_poscoroots
 -------------------------------------------------
@@ -2908,7 +2908,7 @@ parity_poscoroots
 | 
 
 
-.. _nonparity_poscoroots_(Param->mat):
+.. _nonparity_poscoroots_(Param->mat)1:
 
 nonparity_poscoroots
 -------------------------------------------------
@@ -2916,7 +2916,7 @@ nonparity_poscoroots
 | 
 
 
-.. _is_descent_(int,Param->bool):
+.. _is_descent_(int,Param->bool)1:
 
 is_descent
 -------------------------------------------------
@@ -2924,7 +2924,7 @@ is_descent
 | 
 
 
-.. _tau_bitset_(Param->(int->bool),int):
+.. _tau_bitset_(Param->(int->bool),int)1:
 
 tau_bitset
 -------------------------------------------------
@@ -2932,7 +2932,7 @@ tau_bitset
 | 
 
 
-.. _tau_(Param->[int]):
+.. _tau_(Param->[int])1:
 
 tau
 -------------------------------------------------
@@ -2940,7 +2940,7 @@ tau
 | 
 
 
-.. _tau_complement_(Param->[int]):
+.. _tau_complement_(Param->[int])1:
 
 tau_complement
 -------------------------------------------------
@@ -2948,7 +2948,7 @@ tau_complement
 | 
 
 
-.. _is_descent_(vec,Param->bool):
+.. _is_descent_(vec,Param->bool)1:
 
 is_descent
 -------------------------------------------------
@@ -2956,7 +2956,7 @@ is_descent
 | 
 
 
-.. _lookup_(Param,[Param]->int):
+.. _lookup_(Param,[Param]->int)1:
 
 lookup
 -------------------------------------------------
@@ -2964,7 +2964,7 @@ lookup
 | 
 
 
-.. _has_double_extended_Cayley_(int->bool):
+.. _has_double_extended_Cayley_(int->bool)1:
 
 has_double_extended_Cayley
 -------------------------------------------------
@@ -2972,7 +2972,7 @@ has_double_extended_Cayley
 | 
 
 
-.. _print_extended_block_(Param,mat->):
+.. _print_extended_block_(Param,mat->)1:
 
 print_extended_block
 -------------------------------------------------
@@ -2980,7 +2980,7 @@ print_extended_block
 | 
 
 
-.. _null_module_(ParamPol->ParamPol):
+.. _null_module_(ParamPol->ParamPol)1:
 
 null_module
 -------------------------------------------------
@@ -2988,7 +2988,7 @@ null_module
 | 
 
 
-.. _\-_(ParamPol->ParamPol):
+.. _\-_(ParamPol->ParamPol)1:
 
 \-
 -------------------------------------------------
@@ -2996,7 +2996,7 @@ null_module
 | 
 
 
-.. _first_param_(ParamPol->Param):
+.. _first_param_(ParamPol->Param)1:
 
 first_param
 -------------------------------------------------
@@ -3004,7 +3004,7 @@ first_param
 | 
 
 
-.. _last_param_(ParamPol->Param):
+.. _last_param_(ParamPol->Param)1:
 
 last_param
 -------------------------------------------------
@@ -3012,7 +3012,7 @@ last_param
 | 
 
 
-.. _s_to_1_(ParamPol->ParamPol):
+.. _s_to_1_(ParamPol->ParamPol)1:
 
 s_to_1
 -------------------------------------------------
@@ -3020,7 +3020,7 @@ s_to_1
 | 
 
 
-.. _s_to_minus_1_(ParamPol->ParamPol):
+.. _s_to_minus_1_(ParamPol->ParamPol)1:
 
 s_to_minus_1
 -------------------------------------------------
@@ -3028,7 +3028,7 @@ s_to_minus_1
 | 
 
 
-.. _\-_(ParamPol,(Split,Param)->ParamPol):
+.. _\-_(ParamPol,(Split,Param)->ParamPol)1:
 
 \-
 -------------------------------------------------
@@ -3036,7 +3036,7 @@ s_to_minus_1
 | 
 
 
-.. _\*_(ParamPol,rat->ParamPol):
+.. _\*_(ParamPol,rat->ParamPol)1:
 
 \*
 -------------------------------------------------
@@ -3044,7 +3044,7 @@ s_to_minus_1
 | 
 
 
-.. _divide_by_(int,ParamPol->ParamPol):
+.. _divide_by_(int,ParamPol->ParamPol)1:
 
 divide_by
 -------------------------------------------------
@@ -3052,7 +3052,7 @@ divide_by
 | 
 
 
-.. _root_datum_(ParamPol->RootDatum):
+.. _root_datum_(ParamPol->RootDatum)1:
 
 root_datum
 -------------------------------------------------
@@ -3060,7 +3060,7 @@ root_datum
 | 
 
 
-.. _virtual_(Param->ParamPol):
+.. _virtual_(Param->ParamPol)1:
 
 virtual
 -------------------------------------------------
@@ -3068,7 +3068,7 @@ virtual
 | 
 
 
-.. _virtual_(RealForm,[Param]->ParamPol):
+.. _virtual_(RealForm,[Param]->ParamPol)1:
 
 virtual
 -------------------------------------------------
@@ -3076,7 +3076,7 @@ virtual
 | 
 
 
-.. _pol_format_(ParamPol->):
+.. _pol_format_(ParamPol->)1:
 
 pol_format
 -------------------------------------------------
@@ -3084,7 +3084,7 @@ pol_format
 | 
 
 
-.. _infinitesimal_character_(ParamPol->ratvec):
+.. _infinitesimal_character_(ParamPol->ratvec)1:
 
 infinitesimal_character
 -------------------------------------------------
@@ -3092,7 +3092,7 @@ infinitesimal_character
 | 
 
 
-.. _separate_by_infinitesimal_character_(ParamPol->[(ratvec,ParamPol)]):
+.. _separate_by_infinitesimal_character_(ParamPol->[(ratvec,ParamPol)])1:
 
 separate_by_infinitesimal_character
 -------------------------------------------------
@@ -3100,7 +3100,7 @@ separate_by_infinitesimal_character
 | 
 
 
-.. _in_string_list_(string,[string]->bool):
+.. _in_string_list_(string,[string]->bool)1:
 
 in_string_list
 -------------------------------------------------
@@ -3108,7 +3108,7 @@ in_string_list
 | 
 
 
-.. _positive_imaginary_roots_and_coroots_(RootDatum,mat->mat,mat):
+.. _positive_imaginary_roots_and_coroots_(RootDatum,mat->mat,mat)1:
 
 positive_imaginary_roots_and_coroots
 -------------------------------------------------
@@ -3116,7 +3116,7 @@ positive_imaginary_roots_and_coroots
 | 
 
 
-.. _positive_imaginary_roots_and_coroots_(KGBElt->mat,mat):
+.. _positive_imaginary_roots_and_coroots_(KGBElt->mat,mat)1:
 
 positive_imaginary_roots_and_coroots
 -------------------------------------------------
@@ -3124,7 +3124,7 @@ positive_imaginary_roots_and_coroots
 | 
 
 
-.. _imaginary_roots_and_coroots_(RootDatum,mat->mat,mat):
+.. _imaginary_roots_and_coroots_(RootDatum,mat->mat,mat)1:
 
 imaginary_roots_and_coroots
 -------------------------------------------------
@@ -3132,7 +3132,7 @@ imaginary_roots_and_coroots
 | 
 
 
-.. _imaginary_roots_and_coroots_(KGBElt->mat,mat):
+.. _imaginary_roots_and_coroots_(KGBElt->mat,mat)1:
 
 imaginary_roots_and_coroots
 -------------------------------------------------
@@ -3140,7 +3140,7 @@ imaginary_roots_and_coroots
 | 
 
 
-.. _positive_real_roots_and_coroots_(RootDatum,mat->mat,mat):
+.. _positive_real_roots_and_coroots_(RootDatum,mat->mat,mat)1:
 
 positive_real_roots_and_coroots
 -------------------------------------------------
@@ -3148,7 +3148,7 @@ positive_real_roots_and_coroots
 | 
 
 
-.. _positive_real_roots_and_coroots_(KGBElt->mat,mat):
+.. _positive_real_roots_and_coroots_(KGBElt->mat,mat)1:
 
 positive_real_roots_and_coroots
 -------------------------------------------------
@@ -3156,7 +3156,7 @@ positive_real_roots_and_coroots
 | 
 
 
-.. _real_roots_and_coroots_(RootDatum,mat->mat,mat):
+.. _real_roots_and_coroots_(RootDatum,mat->mat,mat)1:
 
 real_roots_and_coroots
 -------------------------------------------------
@@ -3164,7 +3164,7 @@ real_roots_and_coroots
 | 
 
 
-.. _real_roots_and_coroots_(KGBElt->mat,mat):
+.. _real_roots_and_coroots_(KGBElt->mat,mat)1:
 
 real_roots_and_coroots
 -------------------------------------------------
@@ -3172,7 +3172,7 @@ real_roots_and_coroots
 | 
 
 
-.. _complex_posroots_(RootDatum,mat->mat):
+.. _complex_posroots_(RootDatum,mat->mat)1:
 
 complex_posroots
 -------------------------------------------------
@@ -3180,7 +3180,7 @@ complex_posroots
 | 
 
 
-.. _complex_posroots_(KGBElt->mat):
+.. _complex_posroots_(KGBElt->mat)1:
 
 complex_posroots
 -------------------------------------------------
@@ -3188,7 +3188,7 @@ complex_posroots
 | 
 
 
-.. _monomials_(ParamPol->[Param]):
+.. _monomials_(ParamPol->[Param])1:
 
 monomials
 -------------------------------------------------
@@ -3196,7 +3196,7 @@ monomials
 | 
 
 
-.. _monomial_(ParamPol,int->Param):
+.. _monomial_(ParamPol,int->Param)1:
 
 monomial
 -------------------------------------------------
@@ -3204,7 +3204,7 @@ monomial
 | 
 
 
-.. _delete_([int],int->[int]):
+.. _delete_([int],int->[int])1:
 
 delete
 -------------------------------------------------
@@ -3212,7 +3212,7 @@ delete
 | 
 
 
-.. _delete_([vec],int->[vec]):
+.. _delete_([vec],int->[vec])1:
 
 delete
 -------------------------------------------------
@@ -3220,7 +3220,7 @@ delete
 | 
 
 
-.. _delete_([ratvec],int->[ratvec]):
+.. _delete_([ratvec],int->[ratvec])1:
 
 delete
 -------------------------------------------------
@@ -3228,7 +3228,7 @@ delete
 | 
 
 
-.. _delete_([[ratvec]],int->[[ratvec]]):
+.. _delete_([[ratvec]],int->[[ratvec]])1:
 
 delete
 -------------------------------------------------
@@ -3236,7 +3236,7 @@ delete
 | 
 
 
-.. _delete_([[vec]],int->[[vec]]):
+.. _delete_([[vec]],int->[[vec]])1:
 
 delete
 -------------------------------------------------
@@ -3244,7 +3244,7 @@ delete
 | 
 
 
-.. _delete_([ParamPol],int->[ParamPol]):
+.. _delete_([ParamPol],int->[ParamPol])1:
 
 delete
 -------------------------------------------------
@@ -3252,7 +3252,7 @@ delete
 | 
 
 
-.. _find_([int],int->int):
+.. _find_([int],int->int)1:
 
 find
 -------------------------------------------------
@@ -3260,7 +3260,7 @@ find
 | 
 
 
-.. _find_([Param],Param->int):
+.. _find_([Param],Param->int)1:
 
 find
 -------------------------------------------------
@@ -3268,7 +3268,7 @@ find
 | 
 
 
-.. _find_([KGBElt],KGBElt->int):
+.. _find_([KGBElt],KGBElt->int)1:
 
 find
 -------------------------------------------------
@@ -3276,7 +3276,7 @@ find
 | 
 
 
-.. _find_([[int]],[int]->int):
+.. _find_([[int]],[int]->int)1:
 
 find
 -------------------------------------------------
@@ -3284,7 +3284,7 @@ find
 | 
 
 
-.. _find_vec_([vec],vec->int):
+.. _find_vec_([vec],vec->int)1:
 
 find_vec
 -------------------------------------------------
@@ -3292,7 +3292,7 @@ find_vec
 | 
 
 
-.. _pad_(string,int->string):
+.. _pad_(string,int->string)1:
 
 pad
 -------------------------------------------------
@@ -3300,7 +3300,7 @@ pad
 | 
 
 
-.. _extended_status_texts_[string]:
+.. _extended_status_texts_[string]1:
 
 extended_status_texts
 -------------------------------------------------

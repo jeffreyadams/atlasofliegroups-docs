@@ -4,7 +4,7 @@ groups.at Function References
 =======================================================
 |
 
-.. _Cartan_dispatch_(int,int,int,int,bool->int):
+.. _Cartan_dispatch_(int,int,int,int,bool->int)1:
 
 Cartan_dispatch
 -------------------------------------------------
@@ -12,7 +12,7 @@ Cartan_dispatch
 | 
 
 
-.. _Cartan_entry_(int,int,int,int->int):
+.. _Cartan_entry_(int,int,int,int->int)1:
 
 Cartan_entry
 -------------------------------------------------
@@ -20,7 +20,7 @@ Cartan_entry
 | 
 
 
-.. _Cartan_matrix_(int,int->mat):
+.. _Cartan_matrix_(int,int->mat)1:
 
 Cartan_matrix
 -------------------------------------------------
@@ -28,7 +28,7 @@ Cartan_matrix
 | 
 
 
-.. _Lie_type_(int,int->LieType):
+.. _Lie_type_(int,int->LieType)1:
 
 Lie_type
 -------------------------------------------------
@@ -36,7 +36,7 @@ Lie_type
 | 
 
 
-.. _block_repeat_(mat,int->mat):
+.. _block_repeat_(mat,int->mat)1:
 
 block_repeat
 -------------------------------------------------
@@ -44,7 +44,7 @@ block_repeat
 | 
 
 
-.. _complex_(RootDatum->RealForm):
+.. _complex_(RootDatum->RealForm)1:
 
 complex
 -------------------------------------------------
@@ -52,7 +52,7 @@ complex
 | 
 
 
-.. _complexification_(RootDatum->RealForm):
+.. _complexification_(RootDatum->RealForm)1:
 
 complexification
 -------------------------------------------------
@@ -60,7 +60,7 @@ complexification
 | 
 
 
-.. _GL_roots_(int->mat):
+.. _GL_roots_(int->mat)1:
 
 GL_roots
 -------------------------------------------------
@@ -68,7 +68,7 @@ GL_roots
 | 
 
 
-.. _SL_coroots_(int->mat):
+.. _SL_coroots_(int->mat)1:
 
 SL_coroots
 -------------------------------------------------
@@ -76,7 +76,7 @@ SL_coroots
 | 
 
 
-.. _SL_roots_(int->mat):
+.. _SL_roots_(int->mat)1:
 
 SL_roots
 -------------------------------------------------
@@ -84,7 +84,7 @@ SL_roots
 | 
 
 
-.. _GL_(int->RootDatum):
+.. _GL_(int->RootDatum)1:
 
 GL
 -------------------------------------------------
@@ -92,7 +92,7 @@ GL
 | 
 
 
-.. _SL_(int->RootDatum):
+.. _SL_(int->RootDatum)1:
 
 SL
 -------------------------------------------------
@@ -100,7 +100,7 @@ SL
 | 
 
 
-.. _PSL_(int->RootDatum):
+.. _PSL_(int->RootDatum)1:
 
 PSL
 -------------------------------------------------
@@ -108,7 +108,7 @@ PSL
 | 
 
 
-.. _type_B_roots_(int->mat):
+.. _type_B_roots_(int->mat)1:
 
 type_B_roots
 -------------------------------------------------
@@ -116,7 +116,7 @@ type_B_roots
 | 
 
 
-.. _type_C_roots_(int->mat):
+.. _type_C_roots_(int->mat)1:
 
 type_C_roots
 -------------------------------------------------
@@ -124,7 +124,7 @@ type_C_roots
 | 
 
 
-.. _type_D_roots_(int->mat):
+.. _type_D_roots_(int->mat)1:
 
 type_D_roots
 -------------------------------------------------
@@ -132,7 +132,7 @@ type_D_roots
 | 
 
 
-.. _Sp_(int->RootDatum):
+.. _Sp_(int->RootDatum)1:
 
 Sp
 -------------------------------------------------
@@ -140,7 +140,7 @@ Sp
 | 
 
 
-.. _PSp_(int->RootDatum):
+.. _PSp_(int->RootDatum)1:
 
 PSp
 -------------------------------------------------
@@ -148,7 +148,7 @@ PSp
 | 
 
 
-.. _GSp_(int->RootDatum):
+.. _GSp_(int->RootDatum)1:
 
 GSp
 -------------------------------------------------
@@ -156,7 +156,7 @@ GSp
 | 
 
 
-.. _SO_(int->RootDatum):
+.. _SO_(int->RootDatum)1:
 
 SO
 -------------------------------------------------
@@ -164,7 +164,7 @@ SO
 | 
 
 
-.. _SO_Lie_type_(int->LieType):
+.. _SO_Lie_type_(int->LieType)1:
 
 SO_Lie_type
 -------------------------------------------------
@@ -172,7 +172,7 @@ SO_Lie_type
 | 
 
 
-.. _Spin_(int->RootDatum):
+.. _Spin_(int->RootDatum)1:
 
 Spin
 -------------------------------------------------
@@ -180,7 +180,7 @@ Spin
 | 
 
 
-.. _PSO_(int->RootDatum):
+.. _PSO_(int->RootDatum)1:
 
 PSO
 -------------------------------------------------
@@ -188,7 +188,7 @@ PSO
 | 
 
 
-.. _SU_(int,int,RootDatum->RealForm):
+.. _SU_(int,int,RootDatum->RealForm)1:
 
 SU
 -------------------------------------------------
@@ -196,7 +196,7 @@ SU
 | 
 
 
-.. _SU_(int,int->RealForm):
+.. _SU_(int,int->RealForm)1:
 
 SU
 -------------------------------------------------
@@ -204,7 +204,7 @@ SU
 | 
 
 
-.. _PSU_(int,int->RealForm):
+.. _PSU_(int,int->RealForm)1:
 
 PSU
 -------------------------------------------------
@@ -212,7 +212,7 @@ PSU
 | 
 
 
-.. _SU_(int->RealForm):
+.. _SU_(int->RealForm)1:
 
 SU
 -------------------------------------------------
@@ -220,7 +220,7 @@ SU
 | 
 
 
-.. _PSU_(int->RealForm):
+.. _PSU_(int->RealForm)1:
 
 PSU
 -------------------------------------------------
@@ -228,7 +228,7 @@ PSU
 | 
 
 
-.. _U_(int,int->RealForm):
+.. _U_(int,int->RealForm)1:
 
 U
 -------------------------------------------------
@@ -236,7 +236,7 @@ U
 | 
 
 
-.. _SL_R_(int->RealForm):
+.. _SL_R_(int->RealForm)1:
 
 SL_R
 -------------------------------------------------
@@ -244,7 +244,7 @@ SL_R
 | 
 
 
-.. _PSL_R_(int->RealForm):
+.. _PSL_R_(int->RealForm)1:
 
 PSL_R
 -------------------------------------------------
@@ -252,7 +252,7 @@ PSL_R
 | 
 
 
-.. _PGL_R_(int->RealForm):
+.. _PGL_R_(int->RealForm)1:
 
 PGL_R
 -------------------------------------------------
@@ -260,7 +260,7 @@ PGL_R
 | 
 
 
-.. _SL_C_(int->RealForm):
+.. _SL_C_(int->RealForm)1:
 
 SL_C
 -------------------------------------------------
@@ -268,7 +268,7 @@ SL_C
 | 
 
 
-.. _PSL_C_(int->RealForm):
+.. _PSL_C_(int->RealForm)1:
 
 PSL_C
 -------------------------------------------------
@@ -276,7 +276,7 @@ PSL_C
 | 
 
 
-.. _PGL_C_(int->RealForm):
+.. _PGL_C_(int->RealForm)1:
 
 PGL_C
 -------------------------------------------------
@@ -284,7 +284,7 @@ PGL_C
 | 
 
 
-.. _SL_H_(int->RealForm):
+.. _SL_H_(int->RealForm)1:
 
 SL_H
 -------------------------------------------------
@@ -292,7 +292,7 @@ SL_H
 | 
 
 
-.. _PSL_H_(int->RealForm):
+.. _PSL_H_(int->RealForm)1:
 
 PSL_H
 -------------------------------------------------
@@ -300,7 +300,7 @@ PSL_H
 | 
 
 
-.. _PGL_H_(int->RealForm):
+.. _PGL_H_(int->RealForm)1:
 
 PGL_H
 -------------------------------------------------
@@ -308,7 +308,7 @@ PGL_H
 | 
 
 
-.. _GL_R_(int->RealForm):
+.. _GL_R_(int->RealForm)1:
 
 GL_R
 -------------------------------------------------
@@ -316,7 +316,7 @@ GL_R
 | 
 
 
-.. _GL_C_(int->RealForm):
+.. _GL_C_(int->RealForm)1:
 
 GL_C
 -------------------------------------------------
@@ -324,7 +324,7 @@ GL_C
 | 
 
 
-.. _GL_H_(int->RealForm):
+.. _GL_H_(int->RealForm)1:
 
 GL_H
 -------------------------------------------------
@@ -332,7 +332,7 @@ GL_H
 | 
 
 
-.. _by_field_((int->RealForm),(int->RealForm),(int->RealForm)->(string->(int->RealForm))):
+.. _by_field_((int->RealForm),(int->RealForm),(int->RealForm)->(string->(int->RealForm)))1:
 
 by_field
 -------------------------------------------------
@@ -340,7 +340,7 @@ by_field
 | 
 
 
-.. _SL_(int,string->RealForm):
+.. _SL_(int,string->RealForm)1:
 
 SL
 -------------------------------------------------
@@ -348,7 +348,7 @@ SL
 | 
 
 
-.. _GL_(int,string->RealForm):
+.. _GL_(int,string->RealForm)1:
 
 GL
 -------------------------------------------------
@@ -356,7 +356,7 @@ GL
 | 
 
 
-.. _PSL_(int,string->RealForm):
+.. _PSL_(int,string->RealForm)1:
 
 PSL
 -------------------------------------------------
@@ -364,7 +364,7 @@ PSL
 | 
 
 
-.. _PGL_(int,string->RealForm):
+.. _PGL_(int,string->RealForm)1:
 
 PGL
 -------------------------------------------------
@@ -372,7 +372,7 @@ PGL
 | 
 
 
-.. _Sp_R_(int->RealForm):
+.. _Sp_R_(int->RealForm)1:
 
 Sp_R
 -------------------------------------------------
@@ -380,7 +380,7 @@ Sp_R
 | 
 
 
-.. _PSp_R_(int->RealForm):
+.. _PSp_R_(int->RealForm)1:
 
 PSp_R
 -------------------------------------------------
@@ -388,7 +388,7 @@ PSp_R
 | 
 
 
-.. _GSp_R_(int->RealForm):
+.. _GSp_R_(int->RealForm)1:
 
 GSp_R
 -------------------------------------------------
@@ -396,7 +396,7 @@ GSp_R
 | 
 
 
-.. _Sp_(int,int->RealForm):
+.. _Sp_(int,int->RealForm)1:
 
 Sp
 -------------------------------------------------
@@ -404,7 +404,7 @@ Sp
 | 
 
 
-.. _PSp_(int,int->RealForm):
+.. _PSp_(int,int->RealForm)1:
 
 PSp
 -------------------------------------------------
@@ -412,7 +412,7 @@ PSp
 | 
 
 
-.. _Sp_C_(int->RealForm):
+.. _Sp_C_(int->RealForm)1:
 
 Sp_C
 -------------------------------------------------
@@ -420,7 +420,7 @@ Sp_C
 | 
 
 
-.. _Sp_H_(int->RealForm):
+.. _Sp_H_(int->RealForm)1:
 
 Sp_H
 -------------------------------------------------
@@ -428,7 +428,7 @@ Sp_H
 | 
 
 
-.. _PSp_C_(int->RealForm):
+.. _PSp_C_(int->RealForm)1:
 
 PSp_C
 -------------------------------------------------
@@ -436,7 +436,7 @@ PSp_C
 | 
 
 
-.. _PSp_H_(int->RealForm):
+.. _PSp_H_(int->RealForm)1:
 
 PSp_H
 -------------------------------------------------
@@ -444,7 +444,7 @@ PSp_H
 | 
 
 
-.. _GSp_C_(int->RealForm):
+.. _GSp_C_(int->RealForm)1:
 
 GSp_C
 -------------------------------------------------
@@ -452,7 +452,7 @@ GSp_C
 | 
 
 
-.. _GSp_H_(int->RealForm):
+.. _GSp_H_(int->RealForm)1:
 
 GSp_H
 -------------------------------------------------
@@ -460,7 +460,7 @@ GSp_H
 | 
 
 
-.. _Sp_(int,string->RealForm):
+.. _Sp_(int,string->RealForm)1:
 
 Sp
 -------------------------------------------------
@@ -468,7 +468,7 @@ Sp
 | 
 
 
-.. _PSp_(int,string->RealForm):
+.. _PSp_(int,string->RealForm)1:
 
 PSp
 -------------------------------------------------
@@ -476,7 +476,7 @@ PSp
 | 
 
 
-.. _GSp_(int,string->RealForm):
+.. _GSp_(int,string->RealForm)1:
 
 GSp
 -------------------------------------------------
@@ -484,7 +484,7 @@ GSp
 | 
 
 
-.. _SO_inner_class_(int,int->string):
+.. _SO_inner_class_(int,int->string)1:
 
 SO_inner_class
 -------------------------------------------------
@@ -492,7 +492,7 @@ SO_inner_class
 | 
 
 
-.. _SO_real_form_number_(int,int->int):
+.. _SO_real_form_number_(int,int->int)1:
 
 SO_real_form_number
 -------------------------------------------------
@@ -500,7 +500,7 @@ SO_real_form_number
 | 
 
 
-.. _SO_(int,int,RootDatum->RealForm):
+.. _SO_(int,int,RootDatum->RealForm)1:
 
 SO
 -------------------------------------------------
@@ -508,7 +508,7 @@ SO
 | 
 
 
-.. _Spin_(int,int->RealForm):
+.. _Spin_(int,int->RealForm)1:
 
 Spin
 -------------------------------------------------
@@ -516,7 +516,7 @@ Spin
 | 
 
 
-.. _SO_(int,int->RealForm):
+.. _SO_(int,int->RealForm)1:
 
 SO
 -------------------------------------------------
@@ -524,7 +524,7 @@ SO
 | 
 
 
-.. _PSO_(int,int->RealForm):
+.. _PSO_(int,int->RealForm)1:
 
 PSO
 -------------------------------------------------
@@ -532,7 +532,7 @@ PSO
 | 
 
 
-.. _E8_ic_(->InnerClass):
+.. _E8_ic_(->InnerClass)1:
 
 E8_ic
 -------------------------------------------------
@@ -540,7 +540,7 @@ E8_ic
 | 
 
 
-.. _E8_c_(->RealForm):
+.. _E8_c_(->RealForm)1:
 
 E8_c
 -------------------------------------------------
@@ -548,7 +548,7 @@ E8_c
 | 
 
 
-.. _E8_q_(->RealForm):
+.. _E8_q_(->RealForm)1:
 
 E8_q
 -------------------------------------------------
@@ -556,7 +556,7 @@ E8_q
 | 
 
 
-.. _E8_s_(->RealForm):
+.. _E8_s_(->RealForm)1:
 
 E8_s
 -------------------------------------------------
@@ -564,7 +564,7 @@ E8_s
 | 
 
 
-.. _G2_ic_InnerClass:
+.. _G2_ic_InnerClass1:
 
 G2_ic
 -------------------------------------------------
@@ -572,7 +572,7 @@ G2_ic
 | 
 
 
-.. _G2_c_RealForm:
+.. _G2_c_RealForm1:
 
 G2_c
 -------------------------------------------------
@@ -580,7 +580,7 @@ G2_c
 | 
 
 
-.. _G2_s_RealForm:
+.. _G2_s_RealForm1:
 
 G2_s
 -------------------------------------------------
@@ -588,7 +588,7 @@ G2_s
 | 
 
 
-.. _F4_ic_InnerClass:
+.. _F4_ic_InnerClass1:
 
 F4_ic
 -------------------------------------------------
@@ -596,7 +596,7 @@ F4_ic
 | 
 
 
-.. _F4_c_RealForm:
+.. _F4_c_RealForm1:
 
 F4_c
 -------------------------------------------------
@@ -604,7 +604,7 @@ F4_c
 | 
 
 
-.. _F4_B4_RealForm:
+.. _F4_B4_RealForm1:
 
 F4_B4
 -------------------------------------------------
@@ -612,7 +612,7 @@ F4_B4
 | 
 
 
-.. _F4_s_RealForm:
+.. _F4_s_RealForm1:
 
 F4_s
 -------------------------------------------------
@@ -620,7 +620,7 @@ F4_s
 | 
 
 
-.. _E6_ic_e_InnerClass:
+.. _E6_ic_e_InnerClass1:
 
 E6_ic_e
 -------------------------------------------------
@@ -628,7 +628,7 @@ E6_ic_e
 | 
 
 
-.. _E6_c_RealForm:
+.. _E6_c_RealForm1:
 
 E6_c
 -------------------------------------------------
@@ -636,7 +636,7 @@ E6_c
 | 
 
 
-.. _E6_h_RealForm:
+.. _E6_h_RealForm1:
 
 E6_h
 -------------------------------------------------
@@ -644,7 +644,7 @@ E6_h
 | 
 
 
-.. _E6_D5T_RealForm:
+.. _E6_D5T_RealForm1:
 
 E6_D5T
 -------------------------------------------------
@@ -652,7 +652,7 @@ E6_D5T
 | 
 
 
-.. _E6_q_RealForm:
+.. _E6_q_RealForm1:
 
 E6_q
 -------------------------------------------------
@@ -660,7 +660,7 @@ E6_q
 | 
 
 
-.. _E6_ic_s_InnerClass:
+.. _E6_ic_s_InnerClass1:
 
 E6_ic_s
 -------------------------------------------------
@@ -668,7 +668,7 @@ E6_ic_s
 | 
 
 
-.. _E6_F4_RealForm:
+.. _E6_F4_RealForm1:
 
 E6_F4
 -------------------------------------------------
@@ -676,7 +676,7 @@ E6_F4
 | 
 
 
-.. _E6_s_RealForm:
+.. _E6_s_RealForm1:
 
 E6_s
 -------------------------------------------------
@@ -684,7 +684,7 @@ E6_s
 | 
 
 
-.. _E6_C4_RealForm:
+.. _E6_C4_RealForm1:
 
 E6_C4
 -------------------------------------------------
@@ -692,7 +692,7 @@ E6_C4
 | 
 
 
-.. _E7_ic_e_InnerClass:
+.. _E7_ic_e_InnerClass1:
 
 E7_ic_e
 -------------------------------------------------
@@ -700,7 +700,7 @@ E7_ic_e
 | 
 
 
-.. _E7_ic_InnerClass:
+.. _E7_ic_InnerClass1:
 
 E7_ic
 -------------------------------------------------
@@ -708,7 +708,7 @@ E7_ic
 | 
 
 
-.. _E7_c_RealForm:
+.. _E7_c_RealForm1:
 
 E7_c
 -------------------------------------------------
@@ -716,7 +716,7 @@ E7_c
 | 
 
 
-.. _E7_h_RealForm:
+.. _E7_h_RealForm1:
 
 E7_h
 -------------------------------------------------
@@ -724,7 +724,7 @@ E7_h
 | 
 
 
-.. _E7_E6T_RealForm:
+.. _E7_E6T_RealForm1:
 
 E7_E6T
 -------------------------------------------------
@@ -732,7 +732,7 @@ E7_E6T
 | 
 
 
-.. _E7_q_RealForm:
+.. _E7_q_RealForm1:
 
 E7_q
 -------------------------------------------------
@@ -740,7 +740,7 @@ E7_q
 | 
 
 
-.. _E7_D6A1_RealForm:
+.. _E7_D6A1_RealForm1:
 
 E7_D6A1
 -------------------------------------------------
@@ -748,7 +748,7 @@ E7_D6A1
 | 
 
 
-.. _E7_s_RealForm:
+.. _E7_s_RealForm1:
 
 E7_s
 -------------------------------------------------
@@ -756,7 +756,7 @@ E7_s
 | 
 
 
-.. _E7_A7_RealForm:
+.. _E7_A7_RealForm1:
 
 E7_A7
 -------------------------------------------------

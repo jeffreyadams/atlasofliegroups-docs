@@ -4,7 +4,7 @@ translate.at Function References
 =======================================================
 |
 
-.. _translate_by_(Param,vec->Param):
+.. _translate_by_(Param,vec->Param)1:
 
 translate_by
 -------------------------------------------------
@@ -12,7 +12,7 @@ translate_by
 | 
 
 
-.. _T_(Param,ratvec->Param):
+.. _T_(Param,ratvec->Param)1:
 
 T
 -------------------------------------------------
@@ -20,7 +20,7 @@ T
 | 
 
 
-.. _T_(ParamPol,ratvec->ParamPol):
+.. _T_(ParamPol,ratvec->ParamPol)1:
 
 T
 -------------------------------------------------
@@ -28,7 +28,7 @@ T
 | 
 
 
-.. _to_wall_(RootDatum,int,ratvec->vec):
+.. _to_wall_(RootDatum,int,ratvec->vec)1:
 
 to_wall
 -------------------------------------------------
@@ -36,7 +36,7 @@ to_wall
 | 
 
 
-.. _Psi_(Param,int->Param):
+.. _Psi_(Param,int->Param)1:
 
 Psi
 -------------------------------------------------
@@ -44,7 +44,7 @@ Psi
 | 
 
 
-.. _Psi_(ParamPol,int->ParamPol):
+.. _Psi_(ParamPol,int->ParamPol)1:
 
 Psi
 -------------------------------------------------
@@ -52,7 +52,7 @@ Psi
 | 
 
 
-.. _Psi_(ParamPol,ratvec,int->ParamPol):
+.. _Psi_(ParamPol,ratvec,int->ParamPol)1:
 
 Psi
 -------------------------------------------------
@@ -60,7 +60,7 @@ Psi
 | 
 
 
-.. _Psi_(Param,[int]->Param):
+.. _Psi_(Param,[int]->Param)1:
 
 Psi
 -------------------------------------------------
@@ -68,7 +68,7 @@ Psi
 | 
 
 
-.. _Psi_(ParamPol,[int]->ParamPol):
+.. _Psi_(ParamPol,[int]->ParamPol)1:
 
 Psi
 -------------------------------------------------
@@ -76,7 +76,7 @@ Psi
 | 
 
 
-.. _Psi_(ParamPol,ratvec,[int]->ParamPol):
+.. _Psi_(ParamPol,ratvec,[int]->ParamPol)1:
 
 Psi
 -------------------------------------------------
@@ -84,7 +84,7 @@ Psi
 | 
 
 
-.. _T_irr_(ParamPol,ratvec->ParamPol):
+.. _T_irr_(ParamPol,ratvec->ParamPol)1:
 
 T_irr
 -------------------------------------------------
@@ -92,7 +92,7 @@ T_irr
 | 
 
 
-.. _Psi_irr_(ParamPol,int->ParamPol):
+.. _Psi_irr_(ParamPol,int->ParamPol)1:
 
 Psi_irr
 -------------------------------------------------
@@ -100,7 +100,7 @@ Psi_irr
 | 
 
 
-.. _pseudo_tau_bitset_(Param->(int->bool),int):
+.. _pseudo_tau_bitset_(Param->(int->bool),int)1:
 
 pseudo_tau_bitset
 -------------------------------------------------
@@ -108,7 +108,7 @@ pseudo_tau_bitset
 | 
 
 
-.. _pseudo_tau_(Param->[int]):
+.. _pseudo_tau_(Param->[int])1:
 
 pseudo_tau
 -------------------------------------------------
@@ -116,7 +116,7 @@ pseudo_tau
 | 
 
 
-.. _pseudo_tau_complement_(Param->[int]):
+.. _pseudo_tau_complement_(Param->[int])1:
 
 pseudo_tau_complement
 -------------------------------------------------
@@ -124,7 +124,7 @@ pseudo_tau_complement
 | 
 
 
-.. _make_maximally_singular_(Param->Param):
+.. _make_maximally_singular_(Param->Param)1:
 
 make_maximally_singular
 -------------------------------------------------
@@ -132,7 +132,7 @@ make_maximally_singular
 | 
 
 
-.. _test_even_unipotent_(Param->):
+.. _test_even_unipotent_(Param->)1:
 
 test_even_unipotent
 -------------------------------------------------
@@ -140,7 +140,7 @@ test_even_unipotent
 | 
 
 
-.. _test_even_unipotent_([Param]->):
+.. _test_even_unipotent_([Param]->)1:
 
 test_even_unipotent
 -------------------------------------------------
@@ -148,7 +148,7 @@ test_even_unipotent
 | 
 
 
-.. _translate_debug_bool:
+.. _translate_debug_bool1:
 
 translate_debug
 -------------------------------------------------

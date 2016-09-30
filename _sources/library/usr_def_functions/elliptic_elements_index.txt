@@ -10,9 +10,9 @@ elliptic_elements.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`elliptic_elements_(string->[[int]])`
+   * - :ref:`elliptic_elements_(string->[[int]])1`
      - ``(string->[[int]])``
-   * - :ref:`elliptic_elements_(RealForm,[[int]]->[(RootDatum,[int])])`
+   * - :ref:`elliptic_elements_(RealForm,[[int]]->[(RootDatum,[int])])1`
      - ``(RealForm,[[int]]->[(RootDatum,[int])])``
 
 
@@ -23,15 +23,15 @@ elliptic_elements.at Function Index
 
    * - Variable
      - Data Type
-   * - :ref:`G2_elliptic_[[int]]`
+   * - :ref:`G2_elliptic_[[int]]1`
      - ``[[int]]``
-   * - :ref:`E6_elliptic_[[int]]`
+   * - :ref:`E6_elliptic_[[int]]1`
      - ``[[int]]``
-   * - :ref:`E7_elliptic_[[int]]`
+   * - :ref:`E7_elliptic_[[int]]1`
      - ``[[int]]``
-   * - :ref:`E8_elliptic_[[int]]`
+   * - :ref:`E8_elliptic_[[int]]1`
      - ``[[int]]``
-   * - :ref:`F4_elliptic_[[int]]`
+   * - :ref:`F4_elliptic_[[int]]1`
      - ``[[int]]``
-   * - :ref:`E8_elliptic_regular_[[int]]`
+   * - :ref:`E8_elliptic_regular_[[int]]1`
      - ``[[int]]``

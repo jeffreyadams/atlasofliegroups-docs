@@ -10,37 +10,37 @@ galois.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`square_classes_(InnerClass->[[int]])`
+   * - :ref:`square_classes_(InnerClass->[[int]])1`
      - ``(InnerClass->[[int]])``
-   * - :ref:`print_strong_real_(RealForm->)`
+   * - :ref:`print_strong_real_(RealForm->)1`
      - ``(RealForm->)``
-   * - :ref:`real_forms_(RealForm->[RealForm])`
+   * - :ref:`real_forms_(RealForm->[RealForm])1`
      - ``(RealForm->[RealForm])``
-   * - :ref:`SOstar_(int->RealForm)`
+   * - :ref:`SOstar_(int->RealForm)1`
      - ``(int->RealForm)``
-   * - :ref:`Spinstar_(int->RealForm)`
+   * - :ref:`Spinstar_(int->RealForm)1`
      - ``(int->RealForm)``
-   * - :ref:`PSOstar_(int->RealForm)`
+   * - :ref:`PSOstar_(int->RealForm)1`
      - ``(int->RealForm)``
-   * - :ref:`find_([[int]],int->int)`
+   * - :ref:`find_([[int]],int->int)1`
      - ``([[int]],int->int)``
-   * - :ref:`part_containing_(int->([[int]]->[int]))`
+   * - :ref:`part_containing_(int->([[int]]->[int]))1`
      - ``(int->([[int]]->[int]))``
-   * - :ref:`central_invariant_(InnerClass,int->int)`
+   * - :ref:`central_invariant_(InnerClass,int->int)1`
      - ``(InnerClass,int->int)``
-   * - :ref:`central_invariant_(RealForm->int)`
+   * - :ref:`central_invariant_(RealForm->int)1`
      - ``(RealForm->int)``
-   * - :ref:`strong_real_forms_same_type_(InnerClass,int->[int])`
+   * - :ref:`strong_real_forms_same_type_(InnerClass,int->[int])1`
      - ``(InnerClass,int->[int])``
-   * - :ref:`strong_real_forms_same_type_(RealForm->[int])`
+   * - :ref:`strong_real_forms_same_type_(RealForm->[int])1`
      - ``(RealForm->[int])``
-   * - :ref:`H1_(RealForm->int)`
+   * - :ref:`H1_(RealForm->int)1`
      - ``(RealForm->int)``
-   * - :ref:`iterate_H1_(int,int->)`
+   * - :ref:`iterate_H1_(int,int->)1`
      - ``(int,int->)``
-   * - :ref:`pi0_(RealForm->int)`
+   * - :ref:`pi0_(RealForm->int)1`
      - ``(RealForm->int)``
-   * - :ref:`iterate_H1_(int->)`
+   * - :ref:`iterate_H1_(int->)1`
      - ``(int->)``
-   * - :ref:`iterate_H1_(->)`
+   * - :ref:`iterate_H1_(->)1`
      - ``(->)``

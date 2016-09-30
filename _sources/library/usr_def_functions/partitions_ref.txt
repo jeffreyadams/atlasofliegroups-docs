@@ -4,7 +4,7 @@ partitions.at Function References
 =======================================================
 |
 
-.. _fac_(int->int):
+.. _fac_(int->int)1:
 
 fac
 -------------------------------------------------
@@ -12,7 +12,7 @@ fac
 | 
 
 
-.. _transpose_([int]->[int]):
+.. _transpose_([int]->[int])1:
 
 transpose
 -------------------------------------------------
@@ -20,7 +20,7 @@ transpose
 | 
 
 
-.. _size_([int]->int):
+.. _size_([int]->int)1:
 
 size
 -------------------------------------------------
@@ -28,7 +28,7 @@ size
 | 
 
 
-.. _hook_length_([int],int,int->int):
+.. _hook_length_([int],int,int->int)1:
 
 hook_length
 -------------------------------------------------
@@ -36,7 +36,7 @@ hook_length
 | 
 
 
-.. _dim_rep_([int]->int):
+.. _dim_rep_([int]->int)1:
 
 dim_rep
 -------------------------------------------------
@@ -44,7 +44,7 @@ dim_rep
 | 
 
 
-.. _compositions_le_(int,int->[[int]]):
+.. _compositions_le_(int,int->[[int]])1:
 
 compositions_le
 -------------------------------------------------

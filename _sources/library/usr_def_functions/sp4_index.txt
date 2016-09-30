@@ -10,25 +10,25 @@ sp4.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`do_block_((Param->)->(Param->))`
+   * - :ref:`do_block_((Param->)->(Param->))1`
      - ``((Param->)->(Param->))``
-   * - :ref:`show_block_(Param->)`
+   * - :ref:`show_block_(Param->)1`
      - ``(Param->)``
-   * - :ref:`ds0_(int,int->Param)`
+   * - :ref:`ds0_(int,int->Param)1`
      - ``(int,int->Param)``
-   * - :ref:`ds1_(int,int->Param)`
+   * - :ref:`ds1_(int,int->Param)1`
      - ``(int,int->Param)``
-   * - :ref:`hds_(int,int->Param)`
+   * - :ref:`hds_(int,int->Param)1`
      - ``(int,int->Param)``
-   * - :ref:`ads_(int,int->Param)`
+   * - :ref:`ads_(int,int->Param)1`
      - ``(int,int->Param)``
-   * - :ref:`c1_(int,rat->Param)`
+   * - :ref:`c1_(int,rat->Param)1`
      - ``(int,rat->Param)``
-   * - :ref:`c2a_(int,int,rat->Param)`
+   * - :ref:`c2a_(int,int,rat->Param)1`
      - ``(int,int,rat->Param)``
-   * - :ref:`c2b_(int,int,rat->Param)`
+   * - :ref:`c2b_(int,int,rat->Param)1`
      - ``(int,int,rat->Param)``
-   * - :ref:`c3_(int,int,rat,rat->Param)`
+   * - :ref:`c3_(int,int,rat,rat->Param)1`
      - ``(int,int,rat,rat->Param)``
 
 
@@ -39,17 +39,17 @@ sp4.at Function Index
 
    * - Variable
      - Data Type
-   * - :ref:`simple_roots_mat`
+   * - :ref:`simple_roots_mat1`
      - ``mat``
-   * - :ref:`simple_coroots_mat`
+   * - :ref:`simple_coroots_mat1`
      - ``mat``
-   * - :ref:`sp4_RootDatum`
+   * - :ref:`sp4_RootDatum1`
      - ``RootDatum``
-   * - :ref:`sp4c_InnerClass`
+   * - :ref:`sp4c_InnerClass1`
      - ``InnerClass``
-   * - :ref:`sp4R_RealForm`
+   * - :ref:`sp4R_RealForm1`
      - ``RealForm``
-   * - :ref:`x_[KGBElt]`
+   * - :ref:`x_[KGBElt]1`
      - ``[KGBElt]``
-   * - :ref:`triv_Param`
+   * - :ref:`triv_Param1`
      - ``Param``

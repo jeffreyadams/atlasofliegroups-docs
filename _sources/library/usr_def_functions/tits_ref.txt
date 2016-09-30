@@ -4,7 +4,7 @@ tits.at Function References
 =======================================================
 |
 
-.. _\=_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool):
+.. _\=_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)1:
 
 \=
 -------------------------------------------------
@@ -12,7 +12,7 @@ tits.at Function References
 | 
 
 
-.. _!=_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool):
+.. _!=_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)1:
 
 !=
 -------------------------------------------------
@@ -20,7 +20,7 @@ tits.at Function References
 | 
 
 
-.. _tits_identity_(RootDatum->RootDatum,ratvec,mat):
+.. _tits_identity_(RootDatum->RootDatum,ratvec,mat)1:
 
 tits_identity
 -------------------------------------------------
@@ -28,7 +28,7 @@ tits_identity
 | 
 
 
-.. _tits_delta_(RootDatum,mat->RootDatum,ratvec,mat):
+.. _tits_delta_(RootDatum,mat->RootDatum,ratvec,mat)1:
 
 tits_delta
 -------------------------------------------------
@@ -36,7 +36,7 @@ tits_delta
 | 
 
 
-.. _tits_delta_(RealForm->RootDatum,ratvec,mat):
+.. _tits_delta_(RealForm->RootDatum,ratvec,mat)1:
 
 tits_delta
 -------------------------------------------------
@@ -44,7 +44,7 @@ tits_delta
 | 
 
 
-.. _left_(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat):
+.. _left_(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
 
 left
 -------------------------------------------------
@@ -52,7 +52,7 @@ left
 | 
 
 
-.. _right_((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat):
+.. _right_((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)1:
 
 right
 -------------------------------------------------
@@ -60,7 +60,7 @@ right
 | 
 
 
-.. _left_((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat):
+.. _left_((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
 
 left
 -------------------------------------------------
@@ -68,7 +68,7 @@ left
 | 
 
 
-.. _right_((RootDatum,ratvec,mat),(RootDatum,[int])->RootDatum,ratvec,mat):
+.. _right_((RootDatum,ratvec,mat),(RootDatum,[int])->RootDatum,ratvec,mat)1:
 
 right
 -------------------------------------------------
@@ -76,7 +76,7 @@ right
 | 
 
 
-.. _left_((ratvec,int),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat):
+.. _left_((ratvec,int),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
 
 left
 -------------------------------------------------
@@ -84,7 +84,7 @@ left
 | 
 
 
-.. _right_((RootDatum,ratvec,mat),(ratvec,int)->RootDatum,ratvec,mat):
+.. _right_((RootDatum,ratvec,mat),(ratvec,int)->RootDatum,ratvec,mat)1:
 
 right
 -------------------------------------------------
@@ -92,7 +92,7 @@ right
 | 
 
 
-.. _conjugate_(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat):
+.. _conjugate_(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
 
 conjugate
 -------------------------------------------------
@@ -100,7 +100,7 @@ conjugate
 | 
 
 
-.. _conjugate_((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat):
+.. _conjugate_((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
 
 conjugate
 -------------------------------------------------
@@ -108,7 +108,7 @@ conjugate
 | 
 
 
-.. _multiply_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat):
+.. _multiply_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
 
 multiply
 -------------------------------------------------
@@ -116,7 +116,7 @@ multiply
 | 
 
 
-.. _\*_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat):
+.. _\*_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
 
 \*
 -------------------------------------------------
@@ -124,7 +124,7 @@ multiply
 | 
 
 
-.. _inverse_(RootDatum,ratvec,mat->RootDatum,ratvec,mat):
+.. _inverse_(RootDatum,ratvec,mat->RootDatum,ratvec,mat)1:
 
 inverse
 -------------------------------------------------
@@ -132,7 +132,7 @@ inverse
 | 
 
 
-.. _lift_(RootDatum,[int]->RootDatum,ratvec,mat):
+.. _lift_(RootDatum,[int]->RootDatum,ratvec,mat)1:
 
 lift
 -------------------------------------------------
@@ -140,7 +140,7 @@ lift
 | 
 
 
-.. _lift_(mat,(RootDatum,[int])->RootDatum,ratvec,mat):
+.. _lift_(mat,(RootDatum,[int])->RootDatum,ratvec,mat)1:
 
 lift
 -------------------------------------------------
@@ -148,7 +148,7 @@ lift
 | 
 
 
-.. _lift_(RealForm,(RootDatum,[int])->RootDatum,ratvec,mat):
+.. _lift_(RealForm,(RootDatum,[int])->RootDatum,ratvec,mat)1:
 
 lift
 -------------------------------------------------
@@ -156,7 +156,7 @@ lift
 | 
 
 
-.. _\^_((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat):
+.. _\^_((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)1:
 
 \^
 -------------------------------------------------
@@ -164,7 +164,7 @@ lift
 | 
 
 
-.. _order_(RootDatum,ratvec,mat->int):
+.. _order_(RootDatum,ratvec,mat->int)1:
 
 order
 -------------------------------------------------

@@ -4,7 +4,7 @@ canonical_x_K.at Function References
 =======================================================
 |
 
-.. _map_into_distinguished_fiber_(KGBElt->KGBElt):
+.. _map_into_distinguished_fiber_(KGBElt->KGBElt)1:
 
 map_into_distinguished_fiber
 -------------------------------------------------
@@ -12,7 +12,7 @@ map_into_distinguished_fiber
 | 
 
 
-.. _strong_map_into_distinguished_fiber_(KGBElt->KGBElt):
+.. _strong_map_into_distinguished_fiber_(KGBElt->KGBElt)1:
 
 strong_map_into_distinguished_fiber
 -------------------------------------------------
@@ -20,7 +20,7 @@ strong_map_into_distinguished_fiber
 | 
 
 
-.. _canonical_x_K_(KGBElt->KGBElt):
+.. _canonical_x_K_(KGBElt->KGBElt)1:
 
 canonical_x_K
 -------------------------------------------------
@@ -28,7 +28,7 @@ canonical_x_K
 | 
 
 
-.. _canonical_x_K_(Param->KGBElt):
+.. _canonical_x_K_(Param->KGBElt)1:
 
 canonical_x_K
 -------------------------------------------------

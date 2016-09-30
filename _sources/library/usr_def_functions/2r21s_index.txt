@@ -10,7 +10,7 @@
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`go_(->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)`
+   * - :ref:`go_(->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1`
      - ``(->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``
 
 
@@ -21,33 +21,33 @@
 
    * - Variable
      - Data Type
-   * - :ref:`lt_LieType`
+   * - :ref:`lt_LieType2`
      - ``LieType``
-   * - :ref:`P_mat`
+   * - :ref:`P_mat2`
      - ``mat``
-   * - :ref:`Pinv_mat`
+   * - :ref:`Pinv_mat2`
      - ``mat``
-   * - :ref:`Pdenom_int`
+   * - :ref:`Pdenom_int2`
      - ``int``
-   * - :ref:`rd_RootDatum`
+   * - :ref:`rd_RootDatum3`
      - ``RootDatum``
-   * - :ref:`xi_mat`
+   * - :ref:`xi_mat2`
      - ``mat``
-   * - :ref:`delta_mat`
+   * - :ref:`delta_mat3`
      - ``mat``
-   * - :ref:`ic_InnerClass`
+   * - :ref:`ic_InnerClass3`
      - ``InnerClass``
-   * - :ref:`t_ratvec`
+   * - :ref:`t_ratvec2`
      - ``ratvec``
-   * - :ref:`tf_ratvec`
+   * - :ref:`tf_ratvec2`
      - ``ratvec``
-   * - :ref:`rf_RealForm`
+   * - :ref:`rf_RealForm2`
      - ``RealForm``
-   * - :ref:`x_KGBElt`
+   * - :ref:`x_KGBElt3`
      - ``KGBElt``
-   * - :ref:`p_Param`
+   * - :ref:`p_Param3`
      - ``Param``
-   * - :ref:`B_[Param]`
+   * - :ref:`B_[Param]3`
      - ``[Param]``
-   * - :ref:`E2r21s_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)`
+   * - :ref:`E2r21s_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1`
      - ``(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``

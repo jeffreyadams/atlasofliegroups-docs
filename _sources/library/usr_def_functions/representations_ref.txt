@@ -4,7 +4,7 @@ representations.at Function References
 =======================================================
 |
 
-.. _finite_dimensional_(RealForm,vec->Param):
+.. _finite_dimensional_(RealForm,vec->Param)1:
 
 finite_dimensional
 -------------------------------------------------
@@ -12,7 +12,7 @@ finite_dimensional
 | 
 
 
-.. _finite_dimensional_fundamental_weight_coordinates_(RealForm,vec->Param):
+.. _finite_dimensional_fundamental_weight_coordinates_(RealForm,vec->Param)1:
 
 finite_dimensional_fundamental_weight_coordinates
 -------------------------------------------------
@@ -20,7 +20,7 @@ finite_dimensional_fundamental_weight_coordinates
 | 
 
 
-.. _trivial_block_(RealForm->[Param]):
+.. _trivial_block_(RealForm->[Param])1:
 
 trivial_block
 -------------------------------------------------
@@ -28,7 +28,7 @@ trivial_block
 | 
 
 
-.. _large_fundamental_series_(RealForm,ratvec->Param):
+.. _large_fundamental_series_(RealForm,ratvec->Param)1:
 
 large_fundamental_series
 -------------------------------------------------
@@ -36,7 +36,7 @@ large_fundamental_series
 | 
 
 
-.. _large_fundamental_series_(RealForm->Param):
+.. _large_fundamental_series_(RealForm->Param)1:
 
 large_fundamental_series
 -------------------------------------------------
@@ -44,7 +44,7 @@ large_fundamental_series
 | 
 
 
-.. _large_discrete_series_(RealForm,ratvec->Param):
+.. _large_discrete_series_(RealForm,ratvec->Param)1:
 
 large_discrete_series
 -------------------------------------------------
@@ -52,7 +52,7 @@ large_discrete_series
 | 
 
 
-.. _large_discrete_series_(RealForm->Param):
+.. _large_discrete_series_(RealForm->Param)1:
 
 large_discrete_series
 -------------------------------------------------
@@ -60,7 +60,7 @@ large_discrete_series
 | 
 
 
-.. _minimal_principal_series_(RealForm,ratvec,ratvec->Param):
+.. _minimal_principal_series_(RealForm,ratvec,ratvec->Param)1:
 
 minimal_principal_series
 -------------------------------------------------
@@ -68,7 +68,7 @@ minimal_principal_series
 | 
 
 
-.. _minimal_principal_series_(RealForm->Param):
+.. _minimal_principal_series_(RealForm->Param)1:
 
 minimal_principal_series
 -------------------------------------------------
@@ -76,7 +76,7 @@ minimal_principal_series
 | 
 
 
-.. _minimal_spherical_principal_series_(RealForm,ratvec->Param):
+.. _minimal_spherical_principal_series_(RealForm,ratvec->Param)1:
 
 minimal_spherical_principal_series
 -------------------------------------------------
@@ -84,7 +84,7 @@ minimal_spherical_principal_series
 | 
 
 
-.. _minimal_spherical_principal_series_(RealForm->Param):
+.. _minimal_spherical_principal_series_(RealForm->Param)1:
 
 minimal_spherical_principal_series
 -------------------------------------------------
@@ -92,7 +92,7 @@ minimal_spherical_principal_series
 | 
 
 
-.. _hc_parameter_(Param,KGBElt->ratvec):
+.. _hc_parameter_(Param,KGBElt->ratvec)1:
 
 hc_parameter
 -------------------------------------------------
@@ -100,7 +100,7 @@ hc_parameter
 | 
 
 
-.. _hc_parameter_(Param->ratvec):
+.. _hc_parameter_(Param->ratvec)1:
 
 hc_parameter
 -------------------------------------------------
@@ -108,7 +108,7 @@ hc_parameter
 | 
 
 
-.. _discrete_series_(KGBElt,ratvec->Param):
+.. _discrete_series_(KGBElt,ratvec->Param)1:
 
 discrete_series
 -------------------------------------------------
@@ -116,7 +116,7 @@ discrete_series
 | 
 
 
-.. _discrete_series_(RealForm,ratvec->Param):
+.. _discrete_series_(RealForm,ratvec->Param)1:
 
 discrete_series
 -------------------------------------------------
