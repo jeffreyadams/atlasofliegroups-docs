@@ -137,7 +137,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/basic_commands.html">Basic Commands</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tuples">n-tuples</a></li>
 </ul>
 </li>
@@ -978,18 +977,6 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="lie_types.html" class="btn btn-neutral float-right" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="real-groups">
 <h1>Real Groups<a class="headerlink" href="#real-groups" title="Permalink to this headline">¶</a></h1>
@@ -998,7 +985,7 @@ you can scroll up and see the list of all the real forms of all the
 familiar complex reductive Lie groups that are defined. This way you
 can work with a particular group that you are interested in. For
 example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(2,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; simple_roots(G)
 Value:
@@ -1010,7 +997,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>These is a real Lie group , so the data type is a RealForm. Again the underlying root datum of G, which is the one for the simply connected group of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=root_datum (G)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set rd=root_datum (G)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
 atlas&gt; rd
 Value: simply connected root datum of Lie type &#39;A1&#39;
@@ -1019,7 +1006,7 @@ Value: simply connected root datum of Lie type &#39;A1&#39;
 <p>Note that SL(2,R) is NOT simply connected. However, it is the Lie group whose complexified Lie algebra is is type A1 and its root datum corresponds to the the roots of the simply connected complex group SL(2,C).</p>
 <p>Now let&#8217;s take the non semisimple Lie group GL(2,R). We can define it
 in two ways. Note the different type of information we obtain:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(2,R)
 Identifier G: RealForm
 atlas&gt; set rd=root_datum (G)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
@@ -1043,7 +1030,7 @@ atlas&gt;
 </div>
 <p>These are the roots in the basis {e_1, e_2} of the torus T.</p>
 <p>Now for PSL(2,R) we have:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=PSL(2,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=PSL(2,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; simple_roots(G)
 Value:
@@ -1055,7 +1042,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>On the other hand if we type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,C)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(2,C)
 Identifier G: RealForm
 atlas&gt; simple_roots(G)
 Value:
@@ -1070,7 +1057,7 @@ atlas&gt;
 </div>
 <p>Which makes sense since <code class="docutils literal"><span class="pre">SL(2,C)</span></code> is the real Lie group with complexified Lie algebra of type <code class="docutils literal"><span class="pre">A2</span> <span class="pre">x</span> <span class="pre">A2</span></code>,</p>
 <p>So, in general, if we use the standard real form notation for the groups, atlas normally gives the usual coordinates. So we can for example do things like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=Sp(4,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=Sp(4,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rd=root_datum(G)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
@@ -1090,7 +1077,7 @@ Value:
 pre-defined groups to define our real form gives us, in most cases, the
 familiar coordinates to work with. So we can look at all the positive
 roots and coroots and rho:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; posroots(rd)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; posroots(rd)
 Value:
 | 1, 0, 1, 2 |
 | -1, 2, 1, 0 |
@@ -1106,7 +1093,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Again the pairing between these sets is the usual dot product:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set alpha=posroots(rd)[0]
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set alpha=posroots(rd)[0]
 Identifier alpha: vec
 atlas&gt; alpha
 Value: [ 1, -1 ]
@@ -1122,7 +1109,7 @@ Value: 2
 </div>
 <p>This is the natural way of pairing roots with coroots. Pairing roots with roots is not too meaningful in the theory.</p>
 <p>Now let us try  G=GL(3,R):</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=GL(3,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=GL(3,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rd=root_datum(G)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
@@ -1142,7 +1129,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are expressed again in the usual coordinates. However look what happens for SL(3,R):</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(3,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(3,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rd=root_datum(G)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
@@ -1165,7 +1152,7 @@ atlas&gt;
 </div>
 <p>Unfortunately these are not the usual coordinates for this group. Nevertheless the Cartan matrix is the usual one.</p>
 <p>There is also a function called Cartan_matrix. The possible arguments and outputs are given below:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype Cartan_matrix ?
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; whattype Cartan_matrix ?
 Overloaded instances of &#39;Cartan_matrix&#39;
 LieType-&gt;mat
 RootDatum-&gt;mat
@@ -1189,7 +1176,7 @@ Value:
         <a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="lie_types.html" class="btn btn-neutral float-right" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="lie_types.html" class="btn btn-neutral" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -6,7 +6,7 @@ This document will tell you about how to get started using ``atlas``. To learn a
 
 To quit ``atlas`` just type ``quit`` 
 
-(Or type ``^Z`` to quit it momentarily and put it in the background. Then type ``^fg`` to get it back in the foreground)
+(Or type ``^Z`` to quit it momentarily and put it in the background. Then type ``fg`` to get it back in the foreground)
 
 The ``atlas`` software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that``atlas`` uses to store and give information on Lie groups structure and representations.
 
@@ -19,16 +19,57 @@ To set up a variable, for example ``x=1``, type::
    Identifier x: int
    atlas>
 
-The second line is ``atlas`` telling us that it recognizes x as an integer. We can verify we typed the correct variable by typing just x::
+The second line is ``atlas`` telling us that it recognizes ``x`` as an integer. ``atlas`` assigns a memory location in the computer for future operations involving the value assigned to that variable. We can verify we assigned the correct value to the variable by typing just ``x``::
 
     atlas> x
     Value: 1
 
 
-Sometimes we want to ask atlas to repeat the previous value. We use ``$`` for that::
+Sometimes we want to ask ``atlas`` to repeat the previous value or to use it to perform an operation on it. We use ``$`` for this::
 
     atlas> $
     Value: 1
+    atlas> $+2
+    Value: 3
+    atlas>
+
+A useful way to change the value assigned to a variable is using the
+command ``:=``. However this works as long as the new value is of the
+same data type as the old one. You may also  notice in the example below
+that, if we don't use this way of assigning a new value to the variable, we get a
+message "hiding previous one of type ...." ::
+
+	atlas> set x=2 
+	Identifier x: int (hiding previous one of type int) 
+	atlas> x 
+	Value: 2 
+	atlas> x:=5 
+	Value: 5 
+	atlas> x:=2/3
+        Error during analysis of expression at <standard input>:33:0-6
+        Type error: 
+  	  Subexpression /(2,3) at <standard input>:33:3-6
+	  has wrong type: found rat while int was needed.  
+	Type check failed 
+	atlas>
+
+
+The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity::
+
+
+   atlas> y:=3
+   Identifier y: int
+   atlas> set z=3/2
+   Identifier z: rat
+   atlas> y+z
+   Value: 9/2
+   atlas> whattype(y+z)
+   type: rat
+   atlas>
+
+
+This works in most cases. However, there are some exceptions when the software does not switch to the appropriate data type.
+
 
 Another useful command is whattype::
 	
@@ -36,7 +77,7 @@ Another useful command is whattype::
         type: int
         atlas>
 
-This tells us the data type (int) of the variable x. For more information on data types go to :ref:`basic_commands` 
+This tells us the data type (int) of the variable x. For more information on data types go to :ref:`basic_commands`` 
 
 The ``basic.at`` file
 ----------------------
@@ -73,7 +114,7 @@ After you launched the file with the path information, you can load the file ``b
 
 
 After this the software will list all the scripts included in the ``basic.at``
-file that are now added to the built-in commands. You can see what you have now by scrolling back on your screen. As we cover more features of the subject we will need other ``.at`` files loaded.
+file that are now added to the built-in commands. You can see what you have now by scrolling back on your screen. As we cover more features of the subject we will need to load other ``.at`` files.
 
 For more detail on the commands included in any ``.at`` file you can go to the file itself using ``more`` or ``emacs``.
 

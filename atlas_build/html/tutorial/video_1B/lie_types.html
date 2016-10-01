@@ -137,7 +137,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/basic_commands.html">Basic Commands</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tuples">n-tuples</a></li>
 </ul>
 </li>
@@ -978,23 +977,11 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="real_groups.html" class="btn btn-neutral float-right" title="Real Groups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="root-data-and-lie-types">
 <h1>Root Data and Lie Types<a class="headerlink" href="#root-data-and-lie-types" title="Permalink to this headline">¶</a></h1>
 <p>To start let us talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types. By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set g=LieType:&quot;A1T1&quot;
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set g=LieType:&quot;A1T1&quot;
 Identifier g: LieType
 atlas&gt; g
 Value: Lie type &#39;A1.T1&#39;
@@ -1014,7 +1001,7 @@ atlas&gt;
 with a perfect pairing: <code class="docutils literal"><span class="pre">X^*</span> <span class="pre">x</span> <span class="pre">X_*-&gt;Z</span></code> (which in these coordinates
 corresponds to the dot product ) and subsets of simple roots and
 simple coroots respectively. In the above example we have:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; simple_roots (rd)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; simple_roots (rd)
 Value:
 | 2 |
 | 0 |
@@ -1032,7 +1019,7 @@ atlas&gt;
 <code class="docutils literal"><span class="pre">g</span></code> of the given Lie Type, <code class="docutils literal"><span class="pre">m</span></code> is the rank of <code class="docutils literal"><span class="pre">g</span></code>, and <code class="docutils literal"><span class="pre">n</span></code> is
 the semisimple rank of <code class="docutils literal"><span class="pre">g</span></code>. In the above example, the rank is 2 and
 the semisimple rank is 1. And we have:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set A=simple_roots (rd)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set A=simple_roots (rd)
 Identifier A: mat (hiding previous one of type mat)
 atlas&gt; A
 Value:
@@ -1055,7 +1042,7 @@ atlas&gt;
 </div>
 <p>These are not necessarily the usual coordinates of this group.
 Another example is the Lie Type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; g:=&quot;A1&quot;
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; g:=&quot;A1&quot;
 Value: Lie type &#39;A1&#39;
 atlas&gt; g
 Value: Lie type &#39;A1&#39;
@@ -1080,7 +1067,7 @@ Value:
 <p>In this case we have the usual coordinates and the cartan matrix for
 <code class="docutils literal"><span class="pre">A1</span></code> On the other hand, if we work with the adjoint group, we have
 the following situation:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rd:=adjoint (g)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; rd:=adjoint (g)
 Value: adjoint root datum of Lie type &#39;A1&#39;
 atlas&gt; simple_roots (rd)
 Value:
@@ -1100,14 +1087,14 @@ these coordinates, for the simply connected case, this means that <code class="d
 <p>On the other hand, for the adjoint group, we have that <code class="docutils literal"><span class="pre">X^*</span></code> is still <code class="docutils literal"><span class="pre">Z</span></code>, the root <code class="docutils literal"><span class="pre">alpha=[1]</span></code>  and <code class="docutils literal"><span class="pre">[1]/2</span></code> is NOT in <code class="docutils literal"><span class="pre">X^*</span></code></p>
 <p>In general X^* and X_* by definition are Z^n. Where the roots and coroots lie in them has to do with isogenies of the group.</p>
 <p>Another useful <code class="docutils literal"><span class="pre">.at</span></code> file that lets you put in Lie types without the quotation marks is the file &#8220;lietypes.at&#8221;. It is also included in the all.at file. This file just defines the Lie types as striings:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A1
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; A1
 Value: &quot;A1&quot;
 atlas&gt;whattype A1
 type: string
 </pre></div>
 </div>
 <p>And now we can type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set g=LieType :A1
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set g=LieType :A1
 Identifier g: LieType (hiding previous one of type string)
 atlas&gt; g
 Value: Lie type &#39;A1&#39;
@@ -1116,7 +1103,7 @@ type: string
 </pre></div>
 </div>
 <p>Or we can say:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=simply_connected (A1)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set rd=simply_connected (A1)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
 atlas&gt; rd
 Value: simply connected root datum of Lie type &#39;A1&#39;
@@ -1135,7 +1122,7 @@ atlas&gt;
         <a href="real_groups.html" class="btn btn-neutral float-right" title="Real Groups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../structure_theory.html" class="btn btn-neutral" title="Structure Theory" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

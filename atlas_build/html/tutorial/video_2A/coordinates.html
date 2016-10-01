@@ -134,7 +134,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/basic_commands.html">Basic Commands</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tuples">n-tuples</a></li>
 </ul>
 </li>
@@ -971,16 +970,13 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-<!--endtest-->
             
   <div class="section" id="change-of-coordinates">
 <h1>Change of Coordinates<a class="headerlink" href="#change-of-coordinates" title="Permalink to this headline">¶</a></h1>
 <p>For this and following sessions you want to download the files <code class="docutils literal"><span class="pre">basic.at</span></code>, <code class="docutils literal"><span class="pre">groups.at</span></code> and <code class="docutils literal"><span class="pre">lietypes.at</span></code>.</p>
 <p>To change <code class="docutils literal"><span class="pre">atlas</span></code> coordinates for roots and other weights to your
 prefered coordinate system you can also download the file <code class="docutils literal"><span class="pre">coordinates.at</span></code> (included in the all.at file) and do the following:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=simply_connected(C2)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set rd=simply_connected(C2)
 Identifier rd: RootDatum
 atlas&gt; simple_roots(rd)
 Value:
@@ -1028,7 +1024,7 @@ atlas&gt;
 <p>So, <code class="docutils literal"><span class="pre">C</span></code> is the change of basis matrix and you can change, in the usual way, any vector like <code class="docutils literal"><span class="pre">rho</span></code>
 written in the original basis, into one expressed in terms of the new basis using the matrix <code class="docutils literal"><span class="pre">C</span></code>.</p>
 <p>Now, for this example this was not so necessary since we can use the real form expression of the group:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; simple_roots(Sp(4,R))
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; simple_roots(Sp(4,R))
 Value:
 | 1, 0 |
 | -1, 2 |
@@ -1038,7 +1034,7 @@ atlas&gt;
 <p>However, the change of basis matrix is needed for example for
 <code class="docutils literal"><span class="pre">SL(3,R)</span></code>. Moreover, in this case we do not get integral matrices. So
 we need a more general command:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span> atlas&gt; set G=SL(3,R)
+<div class="highlight-python"><div class="highlight"><pre> atlas&gt; set G=SL(3,R)
  Identifier G: RealForm (hiding previous one of type RealForm)
  atlas&gt; sr:=simple_roots (G)
  Value:
@@ -1075,7 +1071,7 @@ atlas&gt; C*sr
 </div>
 <p>Note the use of the new command:<code class="docutils literal"><span class="pre">make_integral</span></code>. Since the end result is an integral matrix, <code class="docutils literal"><span class="pre">atlas</span></code> can re-write it as such.</p>
 <p>Now to translate things back to atlas&#8217; coordinates we use the inverse change of coordinates matrix:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set D=inverse_change_basis(SL(3,R),A)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set D=inverse_change_basis(SL(3,R),A)
 Identifier D:[ratvec]
 atlas&gt; D
 Value:

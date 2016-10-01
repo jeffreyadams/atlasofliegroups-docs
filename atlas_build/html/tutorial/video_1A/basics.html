@@ -137,7 +137,6 @@
 <li class="toctree-l3"><a class="reference internal" href="basic_commands.html">Basic Commands</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_commands.html#n-tuples">n-tuples</a></li>
 </ul>
 </li>
@@ -978,49 +977,73 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="../preliminaries.html" class="btn btn-neutral float-right" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="getting-started-using-the-software">
 <h1>Getting started using the software<a class="headerlink" href="#getting-started-using-the-software" title="Permalink to this headline">¶</a></h1>
 <p>This document will tell you about how to get started using <code class="docutils literal"><span class="pre">atlas</span></code>. To learn about how to launch <code class="code docutils literal"><span class="pre">atlas</span></code> see <a class="reference internal" href="../../run_atlas.html#run-atlas"><span>Run atlas</span></a>.</p>
 <p>To quit <code class="docutils literal"><span class="pre">atlas</span></code> just type <code class="docutils literal"><span class="pre">quit</span></code></p>
-<p>(Or type <code class="docutils literal"><span class="pre">^Z</span></code> to quit it momentarily and put it in the background. Then type <code class="docutils literal"><span class="pre">^fg</span></code> to get it back in the foreground)</p>
+<p>(Or type <code class="docutils literal"><span class="pre">^Z</span></code> to quit it momentarily and put it in the background. Then type <code class="docutils literal"><span class="pre">fg</span></code> to get it back in the foreground)</p>
 <p>The <code class="docutils literal"><span class="pre">atlas</span></code> software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that``atlas`` uses to store and give information on Lie groups structure and representations.</p>
 <p>You can ask the software to compute basic operations on the different data types.</p>
 <p>To set up a variable, for example <code class="docutils literal"><span class="pre">x=1</span></code>, type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=1
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set x=1
 Identifier x: int
 atlas&gt;
 </pre></div>
 </div>
-<p>The second line is <code class="docutils literal"><span class="pre">atlas</span></code> telling us that it recognizes x as an integer. We can verify we typed the correct variable by typing just x:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; x
+<p>The second line is <code class="docutils literal"><span class="pre">atlas</span></code> telling us that it recognizes <code class="docutils literal"><span class="pre">x</span></code> as an integer. <code class="docutils literal"><span class="pre">atlas</span></code> assigns a memory location in the computer for future operations involving the value assigned to that variable. We can verify we assigned the correct value to the variable by typing just <code class="docutils literal"><span class="pre">x</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; x
 Value: 1
 </pre></div>
 </div>
-<p>Sometimes we want to ask atlas to repeat the previous value. We use <code class="docutils literal"><span class="pre">$</span></code> for that:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; $
+<p>Sometimes we want to ask <code class="docutils literal"><span class="pre">atlas</span></code> to repeat the previous value or to use it to perform an operation on it. We use <code class="docutils literal"><span class="pre">$</span></code> for this:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; $
 Value: 1
+atlas&gt; $+2
+Value: 3
+atlas&gt;
 </pre></div>
 </div>
+<p>A useful way to change the value assigned to a variable is using the
+command <code class="docutils literal"><span class="pre">:=</span></code>. However this works as long as the new value is of the
+same data type as the old one. You may also  notice in the example below
+that, if we don&#8217;t use this way of assigning a new value to the variable, we get a
+message &#8220;hiding previous one of type ....&#8221;</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set x=2
+Identifier x: int (hiding previous one of type int)
+atlas&gt; x
+Value: 2
+atlas&gt; x:=5
+Value: 5
+atlas&gt; x:=2/3
+Error during analysis of expression at &lt;standard input&gt;:33:0-6
+Type error:
+  Subexpression /(2,3) at &lt;standard input&gt;:33:3-6
+  has wrong type: found rat while int was needed.
+Type check failed
+atlas&gt;
+</pre></div>
+</div>
+<p>The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity:</p>
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; y:=3
+Identifier y: int
+atlas&gt; set z=3/2
+Identifier z: rat
+atlas&gt; y+z
+Value: 9/2
+atlas&gt; whattype(y+z)
+type: rat
+atlas&gt;
+</pre></div>
+</div>
+<p>This works in most cases. However, there are some exceptions when the software does not switch to the appropriate data type.</p>
 <p>Another useful command is whattype:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype x
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; whattype x
 type: int
 atlas&gt;
 </pre></div>
 </div>
-<p>This tells us the data type (int) of the variable x. For more information on data types go to <span class="xref std std-ref">basic_commands</span></p>
+<p>This tells us the data type (int) of the variable x. For more information on data types go to <span class="xref std std-ref">basic_commands`</span></p>
 <div class="section" id="the-basic-at-file">
 <h2>The <code class="docutils literal"><span class="pre">basic.at</span></code> file<a class="headerlink" href="#the-basic-at-file" title="Permalink to this headline">¶</a></h2>
 <p>When you launch <code class="docutils literal"><span class="pre">atlas</span></code> with the standard built-in commands only,
@@ -1042,12 +1065,12 @@ information about this. (Make sure you are in the directory
 where you downloaded <code class="docutils literal"><span class="pre">atlas</span></code> and type <code class="docutils literal"><span class="pre">ls</span></code> to verify that the <code class="docutils literal"><span class="pre">atlas-scripts</span></code> directory is there).</p>
 <p>You can also <code class="docutils literal"><span class="pre">cd</span></code> into that directory to see all the supplementary files available. These are all the <code class="docutils literal"><span class="pre">.at</span></code> files listed there.</p>
 <p>After you launched the file with the path information, you can load the file <code class="docutils literal"><span class="pre">basic.at</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;basic.at
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &lt;basic.at
 Starting to read from file &#39;atlas-scripts/basic.at&#39;.
 </pre></div>
 </div>
 <p>After this the software will list all the scripts included in the <code class="docutils literal"><span class="pre">basic.at</span></code>
-file that are now added to the built-in commands. You can see what you have now by scrolling back on your screen. As we cover more features of the subject we will need other <code class="docutils literal"><span class="pre">.at</span></code> files loaded.</p>
+file that are now added to the built-in commands. You can see what you have now by scrolling back on your screen. As we cover more features of the subject we will need to load other <code class="docutils literal"><span class="pre">.at</span></code> files.</p>
 <p>For more detail on the commands included in any <code class="docutils literal"><span class="pre">.at</span></code> file you can go to the file itself using <code class="docutils literal"><span class="pre">more</span></code> or <code class="docutils literal"><span class="pre">emacs</span></code>.</p>
 </div>
 </div>
@@ -1062,7 +1085,7 @@ file that are now added to the built-in commands. You can see what you have now 
         <a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../preliminaries.html" class="btn btn-neutral float-right" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../preliminaries.html" class="btn btn-neutral" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

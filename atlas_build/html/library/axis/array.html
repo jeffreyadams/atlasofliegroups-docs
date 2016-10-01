@@ -137,7 +137,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1A/basic_commands.html">Basic Commands</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_1A/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_1A/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_1A/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_1A/basic_commands.html#n-tuples">n-tuples</a></li>
 </ul>
 </li>
@@ -978,18 +977,6 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="tuple_pattern.html" class="btn btn-neutral float-right" title="Tuple Displays and Pattern Matching" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="types.html" class="btn btn-neutral float-right" title="Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="array">
 <h1>Array<a class="headerlink" href="#array" title="Permalink to this headline">¶</a></h1>
@@ -1008,7 +995,7 @@ subscripting, as in <code class="docutils literal"><span class="pre">v[i]</span>
 the first element of v is <code class="docutils literal"><span class="pre">v[0]</span></code>, and the last is <code class="docutils literal"><span class="pre">v[#v-1]</span></code> (for meaning of <code class="docutils literal"><span class="pre">#</span></code>, see <a class="reference internal" href="../operators.html#operators"><span>Basic Operators</span></a>). However, one can also
 index counting from the end by prefixing the <code class="docutils literal"><span class="pre">[</span></code> by <code class="docutils literal"><span class="pre">~</span></code>, so the last element
 is also <code class="docutils literal"><span class="pre">v~[0]</span></code>, and the before-last <code class="docutils literal"><span class="pre">v~[1]</span></code> and so on.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set v = [1,2,3,4]
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set v = [1,2,3,4]
 Variable v: [int]
 atlas&gt; v[0]
 Value: 1
@@ -1031,7 +1018,7 @@ one at the given index and at an index one less; the slice then selects all
 elements between the lower separator and the upper separator. This means that
 in a <code class="docutils literal"><span class="pre">v[a:b]</span></code> <strong>includes</strong> the element <code class="docutils literal"><span class="pre">v[a]</span></code> but <strong>excludes</strong> <code class="docutils literal"><span class="pre">v[b]</span></code>, and therefore selects
 b-a elements in all.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set v = [0,1,2,3,4,5]
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set v = [0,1,2,3,4,5]
 Variable v: [int]
 atlas&gt; v[1:3]
 Value: [1,2]
@@ -1041,7 +1028,7 @@ Value: [1,2]
 type as <code class="docutils literal"><span class="pre">v</span></code> (having a=b is normal, having a&gt;b is allowed but rarely useful). It
 is an error if the lower bound is negative, or if the upper bound exceeds the
 size of the array.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; v[3:1]
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; v[3:1]
 Value: []
 </pre></div>
 </div>
@@ -1051,7 +1038,7 @@ is, closer to the end) then the element the index would reversely select. As a
 convenience a completely omitted lower bound means 0 (from the beginning) and
 an omitted upper bound means 0~ (up to the end). Finally one can (like for
 subscription) select from the reverses array by prefixing the &#8216;[&#8216; by &#8216;~&#8217;.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; v~[1:3]
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; v~[1:3]
 Value: [4,3]
 </pre></div>
 </div>
@@ -1112,7 +1099,7 @@ number, vector (column of the matrix) or a one-character string (the selection
 can also cause an error, if the index is out of bounds). They can also be used
 in slicing, in which case they return a value of the same type as what was
 selected from. For instance <code class="docutils literal"><span class="pre">&quot;reverse</span> <span class="pre">me!&quot;~[:]</span></code> gives <code class="docutils literal"><span class="pre">&quot;!em</span> <span class="pre">esrever&quot;</span></code> and</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; id_mat(6)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; id_mat(6)
 Value:
 | 1, 0, 0, 0, 0, 0 |
 | 0, 1, 0, 0, 0, 0 |
@@ -1165,7 +1152,7 @@ reversal in associative arrays, so the syntax <code class="docutils literal"><sp
         <a href="tuple_pattern.html" class="btn btn-neutral float-right" title="Tuple Displays and Pattern Matching" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="types.html" class="btn btn-neutral float-right" title="Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="types.html" class="btn btn-neutral" title="Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

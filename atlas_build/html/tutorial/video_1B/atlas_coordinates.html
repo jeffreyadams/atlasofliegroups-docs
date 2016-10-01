@@ -137,7 +137,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/basic_commands.html">Basic Commands</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#helpful-unix-tools">Helpful unix tools</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#basic-atlas-operations">Basic <code class="docutils literal"><span class="pre">atlas</span></code> Operations</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#division-rounding-down-remainder">Division, <code class="docutils literal"><span class="pre">/</span></code>; rounding down, <code class="docutils literal"><span class="pre">\</span></code>; remainder, <code class="docutils literal"><span class="pre">%</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basic_commands.html#n-tuples">n-tuples</a></li>
 </ul>
 </li>
@@ -978,25 +977,13 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="cartan_classes.html" class="btn btn-neutral float-right" title="Cartan Subgroups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="real_groups.html" class="btn btn-neutral float-right" title="Real Groups" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="atlas-choice-of-coordinates">
 <h1><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates<a class="headerlink" href="#atlas-choice-of-coordinates" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="simple-roots-for-sl-5-r">
 <h2>Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code><a class="headerlink" href="#simple-roots-for-sl-5-r" title="Permalink to this headline">¶</a></h2>
 <p>How do we interpret the way the software writes the simple roots for <code class="docutils literal"><span class="pre">SL(n,R)</span></code>? Let us look at an example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G= SL(5,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G= SL(5,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; simple_roots(G)
 Value:
@@ -1020,7 +1007,7 @@ atlas&gt;
 <p>So, atlas chooses a set of coordinates to work with. They were chosen
 in the <code class="docutils literal"><span class="pre">roots.at</span></code> file so that the matrix of the simple_coroots for
 the simply connected group is the identity matrix:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set g=LieType: A4
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set g=LieType: A4
 Identifier g: LieType (hiding previous one of type LieType)
 atlas&gt; set rd=simply_connected(A4)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
@@ -1038,7 +1025,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>But look what happens when we type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SU(5)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; G:=SU(5)
 Value: compact connected real group with Lie algebra &#39;su(5)&#39;
 atlas&gt; simple_coroots (G)
 Value:
@@ -1057,7 +1044,7 @@ roots. Then the software will give you the vector in terms of the
 the software is using in order to both, ask the question and interpret the
 answer. For example, it is useful to know what rho is in the
 coordinates the software is using:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rho(rd)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; rho(rd)
 Value: [ 1, 1, 1, 1 ]/1
 atlas&gt; rho(G)
 Value: [ 4, 3, 2, 1 ]/1
@@ -1071,7 +1058,7 @@ atlas&gt;
 </div>
 <p>Note the expression in the case when <code class="docutils literal"><span class="pre">G=SL(5,R)</span></code>. <code class="docutils literal"><span class="pre">atlas</span></code> is using only four coordinates when it is costumary to use five coordinates to describe the weights in <code class="docutils literal"><span class="pre">G</span></code>.</p>
 <p>Alternatively, you can try to phrase the question in a way that atlas will use coordinates you are familiar with:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G= GL(5,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G= GL(5,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; simple_coroots(G)
 Value:
@@ -1089,7 +1076,7 @@ Value: [ 2, 1, 0, -1, -2 ]/1
 coordinates. However, as we have seen, it is often possible to
 redefine the group in a different way so that the coordinates are
 easier to work with:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=root_datum ([[6,2]],[[1,-2]])
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set rd=root_datum ([[6,2]],[[1,-2]])
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
 atlas&gt; simple_roots(rd)
 Value:
@@ -1110,7 +1097,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>So this is a root datum of the above Lie type and with some ridiculous coordinates. It is not clear which group it is. There are three isomorphism classes of root data of this type. But once we recognize the Lie Type we can redefine it so that it looks nicer:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd_new=root_datum ([[1,-1]],[[1,-1]])
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set rd_new=root_datum ([[1,-1]],[[1,-1]])
 Identifier rd_new: RootDatum
 atlas&gt; rd_new
 Value: simply connected adjoint root datum of Lie type &#39;A1.T1&#39;
@@ -1124,7 +1111,7 @@ you can define the root datum by giving the matrices you want for the
 simple roots and coroots and atlas will accept them as a root
 datum.</p>
 <p>Now lets look at a another example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span> atlas&gt; set rd=simply_connected (C4)
+<div class="highlight-python"><div class="highlight"><pre> atlas&gt; set rd=simply_connected (C4)
  Identifier rd: RootDatum (hiding previous one of type RootDatum)
  atlas&gt; simple_roots (rd)
  Value:
@@ -1157,7 +1144,7 @@ fundamental weight coordinates. Observe also that the simple coroots
 matrix), which you would expect for the simply connected group of type
 <code class="docutils literal"><span class="pre">C4</span></code>.</p>
 <p>In these corrdinates <code class="docutils literal"><span class="pre">rho</span></code> is:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rho(rd)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; rho(rd)
 Value: [ 1, 1, 1, 1 ]/1
 atlas&gt;
 </pre></div>
@@ -1166,7 +1153,7 @@ atlas&gt;
 You can also check that if you use the adjoint root datum for <code class="docutils literal"><span class="pre">C4</span></code>, the simple
 roots matrix will be the identity etc.</p>
 <p>But now, if we use the defined real form <code class="docutils literal"><span class="pre">Sp(8)</span></code>, we get root data in the usual coordinates:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=Sp(8,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; G:=Sp(8,R)
 Value: connected split real group with Lie algebra &#39;sp(8,R)&#39;
 atlas&gt; simple_roots (G)
 Value:
@@ -1195,7 +1182,7 @@ coordinates. We just need to be aware of which coordinates <code class="docutils
         <a href="cartan_classes.html" class="btn btn-neutral float-right" title="Cartan Subgroups" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="real_groups.html" class="btn btn-neutral float-right" title="Real Groups" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="real_groups.html" class="btn btn-neutral" title="Real Groups" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
