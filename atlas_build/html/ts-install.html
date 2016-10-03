@@ -169,7 +169,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2A/coordinates.html">Change of Coordinates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/principal_series.html">Principal Series</a></li>
@@ -974,6 +975,16 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+		      
+			<a href="trouble_shooting.html" class="btn btn-neutral float-right" title="Trouble Shooting" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="installation-trouble-shooting">
 <span id="installation-troubleshooting"></span><h1>Installation &#8211; Trouble Shooting<a class="headerlink" href="#installation-trouble-shooting" title="Permalink to this headline">¶</a></h1>
@@ -988,15 +999,15 @@
 <p>If you see an error about readline, you probably need to install the readline package.</p>
 <p>The software uses the readline package to provide very useful command line tools, including CTRL-p for previous line, tab completion, etc.</p>
 <p>To compile atlas with readline you need the development version of readline. To install this under <strong>Linux</strong> Debian-based systems (including Ubuntu), do:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install libreadline-dev
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get install libreadline-dev
 </pre></div>
 </div>
 <p>On <strong>redhat</strong>-like systems do:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo yum install libreadline-dev
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo yum install libreadline-dev
 </pre></div>
 </div>
 <p>This line in the makefile tells the software where to find the readline library:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">rlincludes</span> <span class="o">=</span> <span class="o">-</span><span class="n">lreadline</span> <span class="o">-</span><span class="n">lcurses</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">rlincludes</span> <span class="o">=</span> <span class="o">-</span><span class="n">lreadline</span> <span class="o">-</span><span class="n">lcurses</span>
 </pre></div>
 </div>
 <p>On some systems it is necessary to replace <code class="docutils literal"><span class="pre">-lcurses</span></code> with <code class="docutils literal"><span class="pre">-lncurses</span></code>.</p>
@@ -1008,7 +1019,7 @@
 <div class="section" id="ctanglex-error">
 <span id="ctanglex"></span><h2>ctanglex error<a class="headerlink" href="#ctanglex-error" title="Permalink to this headline">¶</a></h2>
 <p>If you see:</p>
-<div class="highlight-python"><div class="highlight"><pre>ctanglex: Command not found
+<div class="highlight-python"><div class="highlight"><pre><span></span>ctanglex: Command not found
 </pre></div>
 </div>
 <p>this means you need to install <a class="reference external" href="http://wwwmathlabo.univ-poitiers.fr/~maavl/CWEBx/">CWEBx</a>. It is included in our distribution of atlas. You can find the subdirectory &#8220;cwebx&#8221;. Running <code class="docutils literal"><span class="pre">make</span></code> under that directory should compile cwebx and generate cwebx/ctanglex and cwebx/cweavex.</p>
@@ -1020,11 +1031,11 @@
 <div class="section" id="compiler-error">
 <span id="compiler"></span><h2>Compiler error<a class="headerlink" href="#compiler-error" title="Permalink to this headline">¶</a></h2>
 <p>Your g++ version should be newer than version 4.4. To check your g++ version, do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">g</span><span class="o">++</span> <span class="o">--</span><span class="n">version</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">++</span> <span class="o">--</span><span class="n">version</span>
 </pre></div>
 </div>
 <p>If you are using a C++ compiler that&#8217;s not g++, you need to edit Makefile. Find the line:</p>
-<div class="highlight-python"><div class="highlight"><pre>C++ = g++
+<div class="highlight-python"><div class="highlight"><pre><span></span>C++ = g++
 </pre></div>
 </div>
 <p>replace g++ with your C++ compiler.</p>
@@ -1039,7 +1050,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="trouble_shooting.html" class="btn btn-neutral" title="Trouble Shooting" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="trouble_shooting.html" class="btn btn-neutral float-right" title="Trouble Shooting" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/> 
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
+        <link rel="next" title="Principal Series" href="../principal_series.html"/>
+        <link rel="prev" title="Coordinates and Characters" href="../coordinates_characters.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -80,7 +83,7 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../about_atlas.html">About the Software</a></li>
@@ -119,7 +122,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../preliminaries.html">Preliminaries</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/basics.html">Getting started using the software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basics.html#the-basic-at-file">The <code class="docutils literal"><span class="pre">basic.at</span></code> file</a></li>
@@ -167,7 +170,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+<li class="toctree-l2 current"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">Change of Coordinates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
@@ -957,6 +961,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../index.html">Docs</a> &raquo;</li>
       
+          <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
+      
+          <li><a href="../coordinates_characters.html">Coordinates and Characters</a> &raquo;</li>
+      
     <li>Change of Coordinates</li>
       <li class="wy-breadcrumbs-aside">
         
@@ -970,13 +978,25 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="change-of-coordinates">
 <h1>Change of Coordinates<a class="headerlink" href="#change-of-coordinates" title="Permalink to this headline">¶</a></h1>
 <p>For this and following sessions you want to download the files <code class="docutils literal"><span class="pre">basic.at</span></code>, <code class="docutils literal"><span class="pre">groups.at</span></code> and <code class="docutils literal"><span class="pre">lietypes.at</span></code>.</p>
 <p>To change <code class="docutils literal"><span class="pre">atlas</span></code> coordinates for roots and other weights to your
 prefered coordinate system you can also download the file <code class="docutils literal"><span class="pre">coordinates.at</span></code> (included in the all.at file) and do the following:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set rd=simply_connected(C2)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=simply_connected(C2)
 Identifier rd: RootDatum
 atlas&gt; simple_roots(rd)
 Value:
@@ -1024,7 +1044,7 @@ atlas&gt;
 <p>So, <code class="docutils literal"><span class="pre">C</span></code> is the change of basis matrix and you can change, in the usual way, any vector like <code class="docutils literal"><span class="pre">rho</span></code>
 written in the original basis, into one expressed in terms of the new basis using the matrix <code class="docutils literal"><span class="pre">C</span></code>.</p>
 <p>Now, for this example this was not so necessary since we can use the real form expression of the group:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; simple_roots(Sp(4,R))
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; simple_roots(Sp(4,R))
 Value:
 | 1, 0 |
 | -1, 2 |
@@ -1034,7 +1054,7 @@ atlas&gt;
 <p>However, the change of basis matrix is needed for example for
 <code class="docutils literal"><span class="pre">SL(3,R)</span></code>. Moreover, in this case we do not get integral matrices. So
 we need a more general command:</p>
-<div class="highlight-python"><div class="highlight"><pre> atlas&gt; set G=SL(3,R)
+<div class="highlight-python"><div class="highlight"><pre><span></span> atlas&gt; set G=SL(3,R)
  Identifier G: RealForm (hiding previous one of type RealForm)
  atlas&gt; sr:=simple_roots (G)
  Value:
@@ -1071,7 +1091,7 @@ atlas&gt; C*sr
 </div>
 <p>Note the use of the new command:<code class="docutils literal"><span class="pre">make_integral</span></code>. Since the end result is an integral matrix, <code class="docutils literal"><span class="pre">atlas</span></code> can re-write it as such.</p>
 <p>Now to translate things back to atlas&#8217; coordinates we use the inverse change of coordinates matrix:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set D=inverse_change_basis(SL(3,R),A)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set D=inverse_change_basis(SL(3,R),A)
 Identifier D:[ratvec]
 atlas&gt; D
 Value:
@@ -1096,6 +1116,15 @@ atlas&gt;
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

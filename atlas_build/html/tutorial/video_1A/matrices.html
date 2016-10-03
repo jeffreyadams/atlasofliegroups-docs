@@ -170,7 +170,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/coordinates.html">Change of Coordinates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
@@ -977,6 +978,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="functions_and_loops.html" class="btn btn-neutral float-right" title="Functions and Loops" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="vectors.html" class="btn btn-neutral float-right" title="Vectors" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="matrices">
 <h1>Matrices<a class="headerlink" href="#matrices" title="Permalink to this headline">¶</a></h1>
@@ -984,7 +997,7 @@
 vectors, we define a matrix using <code class="docutils literal"><span class="pre">:</span></code> as illustrated below, and listing the entries as sets of n-tuples
 in order by columns. Note, as for vectors, the <code class="docutils literal"><span class="pre">:</span></code> distinguishes the matrix
 from an array of integers. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set A=mat:[[1,2],[3,4]]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set A=mat:[[1,2],[3,4]]
 Identifier A: mat
 atlas&gt; A
 Value:
@@ -1000,7 +1013,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Note what happens if we add <code class="docutils literal"><span class="pre">A</span></code> and <code class="docutils literal"><span class="pre">B</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; A+B
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A+B
 Internal error: forced value is no vector
 Evaluation aborted.
 atlas&gt;
@@ -1009,7 +1022,7 @@ atlas&gt;
 <div class="section" id="operations-on-matrices">
 <h2>Operations on Matrices<a class="headerlink" href="#operations-on-matrices" title="Permalink to this headline">¶</a></h2>
 <p>Multiplication on the left, resp. on the right of <code class="docutils literal"><span class="pre">A</span></code> by a vector automatically converts the product into the product of <code class="docutils literal"><span class="pre">A</span></code> by column or row vector respectively.   The transpose of A is obtained using <code class="docutils literal"><span class="pre">^A</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; A*[1,1]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A*[1,1]
 Value: [ 4, 6 ]
 atlas&gt; [1,1]*A
 Value: [ 3, 7 ]
@@ -1025,7 +1038,7 @@ atlas&gt;
 a pair <code class="docutils literal"><span class="pre">(B,d)</span></code> Where <code class="docutils literal"><span class="pre">B</span></code> is an integral multiple, <code class="docutils literal"><span class="pre">d</span></code> of the inverse of
 <code class="docutils literal"><span class="pre">A</span></code>. If <code class="docutils literal"><span class="pre">A</span></code> is invertible over the integers then <code class="docutils literal"><span class="pre">B</span></code> is the
 inverse of <code class="docutils literal"><span class="pre">A</span></code> and <code class="docutils literal"><span class="pre">d=1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; invert(A)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; invert(A)
 Value: (
 | -4,  3 |
 |  2, -1 |
@@ -1066,7 +1079,7 @@ atlas&gt;
 <p>Recall that to tell <code class="docutils literal"><span class="pre">atlas</span></code> where to find the <code class="docutils literal"><span class="pre">.at</span></code> files, you need to launch your software using the command <code class="docutils literal"><span class="pre">./atlas</span> <span class="pre">--path=atlas-scripts</span></code>. If you have not done this yet, you can quit the software and launch it again with this command.</p>
 <p>You can then input the file <code class="docutils literal"><span class="pre">basic.at</span></code> and continue.</p>
 <p>Now we can see if we can calculate the inverse of these matrices over the integers:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; A
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A
 Value:
 | 1, 3 |
 | 2, 4 |
@@ -1103,7 +1116,7 @@ atlas&gt;
 <p>Now lets use a new matrix and try to solve a linear equation. We use
 the function <code class="docutils literal"><span class="pre">solve</span></code>, that has as input, a matrix and a vector; and as output,
 and array of vectors:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt;  A:=[[1,0,0],[0,2,0],[1,1,0]]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;  A:=[[1,0,0],[0,2,0],[1,1,0]]
 Value:
 | 1, 0, 1 |
 | 0, 2, 1 |
@@ -1123,7 +1136,7 @@ case, only one <code class="docutils literal"><span class="pre">vec</span></code
 dimensional vector space. <code class="docutils literal"><span class="pre">atlas</span></code> just chooses a single integer
 solution of the equation. To find all the solutions you need to find the kernel.</p>
 <p>If we try to solve an equation with no solutions we would get the empty array:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; solve(A,[0,0,1])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; solve(A,[0,0,1])
 Value: []
 atlas&gt;
 </pre></div>
@@ -1131,7 +1144,7 @@ atlas&gt;
 <p>Now we can check our answer. We can do that by identifying the 0th
 entry of our array as the vector solution of the linear equation. We
 call this vector <code class="docutils literal"><span class="pre">v</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set answer=solve(A,[3,4,0])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set answer=solve(A,[3,4,0])
 Identifier answer: [vec]
 atlas&gt; answer
 Value: [[ -1,  0,  4 ]]
@@ -1143,7 +1156,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Now let&#8217;s calculate the kernel of our singular matrix. We use the function <code class="docutils literal"><span class="pre">kernel</span></code> with input a matrix and output another matrix whose columns are a basis of the kernel:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; kernel (A)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; kernel (A)
 Value:
 |  2 |
 |  1 |
@@ -1151,7 +1164,7 @@ Value:
 </pre></div>
 </div>
 <p>Note this is a matrix. We can multiply it by A and get 0. However, <code class="docutils literal"><span class="pre">atlas</span></code> will not think of it as a vector solution to the matrix equation. In fact, if we call this matrix w, look what happens when we try to multiply <code class="docutils literal"><span class="pre">v+w</span></code> by A:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set w= kernel (A)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set w= kernel (A)
 Identifier w: mat
 atlas&gt; A*(v+w)
 Error in expression +(v,w) at &lt;standard input&gt;:36:3-6
@@ -1160,7 +1173,7 @@ Type check failed
 </pre></div>
 </div>
 <p>We need to rename the column vector of <code class="docutils literal"><span class="pre">w</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set u=w[0]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set u=w[0]
 Identifier u: vec
 atlas&gt; u
 Value: [ 2, 1, -2 ]
@@ -1177,7 +1190,7 @@ atlas&gt;
 </div>
 <p>They are all solutions of our matrix equation as was expected.</p>
 <p>Let&#8217;s try another matrix:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt;  A:=[[1,0,0],[0,0,0],[0,0,0]]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;  A:=[[1,0,0],[0,0,0],[0,0,0]]
 Value:
 | 1, 0, 0 |
 | 0, 0, 0 |
@@ -1203,7 +1216,7 @@ Value:
         <a href="functions_and_loops.html" class="btn btn-neutral float-right" title="Functions and Loops" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="vectors.html" class="btn btn-neutral" title="Vectors" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="vectors.html" class="btn btn-neutral float-right" title="Vectors" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

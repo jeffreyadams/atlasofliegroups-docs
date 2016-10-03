@@ -170,7 +170,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/coordinates.html">Change of Coordinates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
@@ -977,6 +978,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="output-input-and-redirection">
 <h1>Output, Input, and Redirection<a class="headerlink" href="#output-input-and-redirection" title="Permalink to this headline">¶</a></h1>
@@ -994,7 +1007,7 @@ case it can contain spaces); all terminal output will be redirected to that
 file for the duration of the command. In case of &#8220;&gt;&#8221; a new file will be
 created, in case of &#8220;&gt;&gt;&#8221; the output is appended to an existing file. For
 instance:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &gt; output_file block_sizes(ic)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &gt; output_file block_sizes(ic)
 atlas&gt; &gt;&gt;output_file print_KGB(real_form(ic,2))
 atlas&gt; &gt;&gt;output_file print_KL_list(real_form(ic,2),dual_quasisplit_form(ic))
 </pre></div>
@@ -1002,7 +1015,7 @@ atlas&gt; &gt;&gt;output_file print_KL_list(real_form(ic,2),dual_quasisplit_form
 <p>will produce in the current directory the file &#8216;output_file&#8217; with the results
 of the indicated calls to block_sizes&#8217;, &#8216;print_KGB&#8217;, and &#8216;print_KL_list&#8217;.</p>
 <p>One can also redirect command input from a file. Simply type:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &lt;filename
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;filename
 </pre></div>
 </div>
 <p>on a line by itself to execute the contents of &#8216;filename&#8217; as a series of
@@ -1023,7 +1036,7 @@ suppresses subsequent attempts to read that file as input. This is so that
 scripts can freely start by including other scripts whose definitions they
 depend on, without having multiple dependencies on the same script result in
 it being executed many times. The user can circumvent this check by writing:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &lt;&lt;filename
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;&lt;filename
 </pre></div>
 </div>
 <p>in which case the file will be read as input, even if it had been before. This
@@ -1061,7 +1074,7 @@ is usually pointless to continue); then control is given back to the terminal.</
         <a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="split_comm.html" class="btn btn-neutral" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -170,7 +170,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/coordinates.html">Change of Coordinates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
@@ -977,6 +978,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="recursion.html" class="btn btn-neutral float-right" title="Recursion" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="overload_redef_conflicts.html" class="btn btn-neutral float-right" title="Overloading v.s. Redefining, and Conflicts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="control-structures">
 <span id="control-struc"></span><h1>Control Structures<a class="headerlink" href="#control-structures" title="Permalink to this headline">¶</a></h1>
@@ -1025,11 +1038,11 @@ large sequences of expressions separated by semicolon with the keywords
 <div class="section" id="conditional-expressions-and-case-expressions">
 <h2>Conditional expressions and case expressions<a class="headerlink" href="#conditional-expressions-and-case-expressions" title="Permalink to this headline">¶</a></h2>
 <p>Conditional expressions take the form:</p>
-<div class="highlight-python"><div class="highlight"><pre>if ... then ... else ... fi
+<div class="highlight-python"><div class="highlight"><pre><span></span>if ... then ... else ... fi
 </pre></div>
 </div>
 <p>for a simple 2-way branch, or a more elaborate multi-way branch:</p>
-<div class="highlight-python"><div class="highlight"><pre>if   ... then ...
+<div class="highlight-python"><div class="highlight"><pre><span></span>if   ... then ...
 elif ... then ...
 elif ... then ...
 ...
@@ -1041,7 +1054,7 @@ fi
 <p>If the selection is determined by an integral expression &#8216;I&#8217; with values in the
 range 0,1,...,n-1 (for instance the result of a reduction modulo n), then the
 multi-way branching is better done using a case-expressions, of the form:</p>
-<div class="highlight-python"><div class="highlight"><pre>case I
+<div class="highlight-python"><div class="highlight"><pre><span></span>case I
 in E_0
 , E_1
 , ...
@@ -1076,7 +1089,7 @@ axis will rewrite internally to an equivalent expression without &#8216;not&#821
 <p>Loops come in various flavors, each one returning a row value with one
 component for each iteration of the loop (however for loops in voided context,
 no result is constructed). There are simple while loops:</p>
-<div class="highlight-python"><div class="highlight"><pre>while ... do ... od
+<div class="highlight-python"><div class="highlight"><pre><span></span>while ... do ... od
 </pre></div>
 </div>
 <p>with as usual a continuation condition after &#8216;while&#8217;. This condition is
@@ -1088,13 +1101,13 @@ the evaluations of the loop body for, in order, the components of the row
 value returned by the loop. Obviously evaluating the loop body (or maybe of the
 condition itself) must potentially involve a a side effect susceptible of
 changing the loop condition, if the loop is ever to terminate. So the loop in:</p>
-<div class="highlight-python"><div class="highlight"><pre>let i=0 in while i&lt;=n do i+:=1 od
+<div class="highlight-python"><div class="highlight"><pre><span></span>let i=0 in while i&lt;=n do i+:=1 od
 </pre></div>
 </div>
 <p>will produce a row [1,2,...,n]. Often the side effect is required to
 take place after a component to the row result is contributed; to that end and
 expression sequenced by &#8216;next&#8217; can be used. So for instance the variation:</p>
-<div class="highlight-python"><div class="highlight"><pre>let i=0 in while i&lt;=n do i next i+:=i od
+<div class="highlight-python"><div class="highlight"><pre><span></span>let i=0 in while i&lt;=n do i next i+:=i od
 </pre></div>
 </div>
 <p>produces the row [0,1,...,n-1].</p>
@@ -1116,29 +1129,29 @@ iteration count is interpreted as no iterations). The iteration count is
 preceded by &#8216;:&#8217;, the direction by the keyword &#8216;from&#8217; (increasing) or &#8216;downto&#8217;
 (decreasing), and the lower bound follows. In the common case of increasing
 iteration starting at 0, the part &#8216;from 0&#8217; may be omitted. So:</p>
-<div class="highlight-python"><div class="highlight"><pre>for i : n from 0 do i od
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 0 do i od
 </pre></div>
 </div>
 <p>is an alternative way to produce [0,1,...,n-1], and it may be abbreviated:</p>
-<div class="highlight-python"><div class="highlight"><pre>for i : n do i od .
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n do i od .
 </pre></div>
 </div>
 <p>To obtain a more traditional range [1,2,...,n], one may say:</p>
-<div class="highlight-python"><div class="highlight"><pre>for i : n from 1 do i od .
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 1 do i od .
 </pre></div>
 </div>
 <p>For the reverse list [n-1,...,1,0] use &#8216;~&#8217; as in:</p>
-<div class="highlight-python"><div class="highlight"><pre>for i : n ~ do i od
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n ~ do i od
 </pre></div>
 </div>
 <p>and the shifted reversed list [n,...,1] is produced by:</p>
-<div class="highlight-python"><div class="highlight"><pre>for i : n from 1 ~ do i od
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 1 ~ do i od
 </pre></div>
 </div>
 <p>(This used to be written as &#8216;for i : n downto 1 do i od&#8217;, but this syntax is
 redundant given the new more flexible tilde syntax, and is now deprecated.)</p>
 <p>If something is just to be repeated n times, the loop index can be omitted:</p>
-<div class="highlight-python"><div class="highlight"><pre>for :n do 1 od { generate a list of n ones }
+<div class="highlight-python"><div class="highlight"><pre><span></span>for :n do 1 od { generate a list of n ones }
 </pre></div>
 </div>
 </div>
@@ -1147,14 +1160,14 @@ redundant given the new more flexible tilde syntax, and is now deprecated.)</p>
 <p>Rather than counted iteration, it is often convenient to use iteration over an
 existing composite value. If V is a row value, or vector, rational vector
 string or matrix then:</p>
-<div class="highlight-python"><div class="highlight"><pre>for e in V do ... od
+<div class="highlight-python"><div class="highlight"><pre><span></span>for e in V do ... od
 </pre></div>
 </div>
 <p>iterates over the components of V (for a string these components are
 one-character strings; for a matrix they are its columns), setting e to such a
 component before evaluating the loop body. For instance, one can produce the
 scalar multiple by 3 of a vector V using:</p>
-<div class="highlight-python"><div class="highlight"><pre>vec: for e in V do 3*e od
+<div class="highlight-python"><div class="highlight"><pre><span></span>vec: for e in V do 3*e od
 </pre></div>
 </div>
 <p>(the &#8216;vec:&#8217; serves to assemble the entries in a vector rather than a list).
@@ -1162,12 +1175,12 @@ In some cases it is useful to know the index of the component taken as well
 inside the loop body, in other words the iteration count starting from 0; this
 can be accessed by writing &#8216;&#64; index&#8217; before &#8216;in&#8217; where &#8216;index&#8217; is an
 identifier used to bind the index to, This explains the vector addition above:</p>
-<div class="highlight-python"><div class="highlight"><pre>set +(vec v,vec w) = vec: for vi@i in v do vi+w[i] od
+<div class="highlight-python"><div class="highlight"><pre><span></span>set +(vec v,vec w) = vec: for vi@i in v do vi+w[i] od
 </pre></div>
 </div>
 <p>where the index i is needed to select the corresponding entry from the other
 vector. These value-returning loops are quite flexible, for instance:</p>
-<div class="highlight-python"><div class="highlight"><pre>mat: for j = n do for i = m do if i=j then 1 else 0 fi od od
+<div class="highlight-python"><div class="highlight"><pre><span></span>mat: for j = n do for i = m do if i=j then 1 else 0 fi od od
 </pre></div>
 </div>
 <p>produces an m*n matrix with unit diagonal entries and zeroes elsewhere. Of
@@ -1180,7 +1193,7 @@ to a value of type &#8216;mat&#8217;; but all these conventions are &#8220;colum
 compatibility.) To add such a matrix to an existing matrix M it suffices to
 write (with again columns being traversed in the outer loop and rows in the
 inner loop):</p>
-<div class="highlight-python"><div class="highlight"><pre>for col@j in M do for entry@i in col do entry+if i=j then 1 else 0 fi od od
+<div class="highlight-python"><div class="highlight"><pre><span></span>for col@j in M do for entry@i in col do entry+if i=j then 1 else 0 fi od od
 </pre></div>
 </div>
 <p>By the way the standard definitions in basic.at allow replacing the expression
@@ -1203,7 +1216,7 @@ coefficient associated in the ParamPol &#8216;pol&#8217; to the Param value &#82
 written as &#8216;pol[p]&#8217;. Then iterating over a &#8216;pol&#8217;, a term with Param &#8216;p&#8217; and
 coefficient &#8216;c&#8217; is presented as a component &#8216;c&#8217; stored at index &#8216;p&#8217;. Therefore
 a loop over such terms will take the form:</p>
-<div class="highlight-python"><div class="highlight"><pre>for c@p in pol do ... od
+<div class="highlight-python"><div class="highlight"><pre><span></span>for c@p in pol do ... od
 </pre></div>
 </div>
 <p>During execution, each time &#8216;c&#8217; will be a nonzero &#8216;Split&#8217; coefficient, and &#8216;p&#8217;
@@ -1242,7 +1255,7 @@ one really needs a modified version of an iteration value, copy it to a local
 variable and modify that.) In fact the loop variables are distinct for each
 iteration: if one captures them in functions, each one stays at its initial
 value; so to create a list of functions that add respectively 1,3,6, doing:</p>
-<div class="highlight-python"><div class="highlight"><pre>functions := for x in [1,3,6] do (int n): n+x od
+<div class="highlight-python"><div class="highlight"><pre><span></span>functions := for x in [1,3,6] do (int n): n+x od
 </pre></div>
 </div>
 <p>has the desired effect (functions[1] adds 3, not the &#8220;final value&#8221; 6 of &#8216;x&#8217;).</p>
@@ -1260,7 +1273,7 @@ value; so to create a list of functions that add respectively 1,3,6, doing:</p>
         <a href="recursion.html" class="btn btn-neutral float-right" title="Recursion" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="overload_redef_conflicts.html" class="btn btn-neutral" title="Overloading v.s. Redefining, and Conflicts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="overload_redef_conflicts.html" class="btn btn-neutral float-right" title="Overloading v.s. Redefining, and Conflicts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

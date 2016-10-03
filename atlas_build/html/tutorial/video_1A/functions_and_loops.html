@@ -170,7 +170,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/coordinates.html">Change of Coordinates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
@@ -977,6 +978,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="matrices.html" class="btn btn-neutral float-right" title="Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="functions-and-loops">
 <h1>Functions and Loops<a class="headerlink" href="#functions-and-loops" title="Permalink to this headline">¶</a></h1>
@@ -985,7 +998,7 @@ operation(s) performed on the argument. The software then tells us
 what type of output the function gives. We can also ask the software
 what type of input and output has been specified for the function
 <code class="docutils literal"><span class="pre">f</span></code>.  For example:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set f(int x)=x^2
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set f(int x)=x^2
 Defined f: (int-&gt;int)
 atlas&gt; whattype f?
 Overloaded instances of &#39;f&#39;
@@ -996,7 +1009,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>We can also specify what the output will be by including it in the definition of the function:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set f(int x)=int:x^2
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set f(int x)=int:x^2
 Redefined f: (int-&gt;int)
 atlas&gt;
 
@@ -1011,7 +1024,7 @@ atlas&gt;
 <div class="section" id="loops">
 <h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
 <p>We can define some functions using loops. For example, one basic loop lists the column vectors of a matrix as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; A:=[[1,2],[3,4]]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A:=[[1,2],[3,4]]
 Value:
 | 1, 3 |
 | 2, 4 |
@@ -1023,7 +1036,7 @@ atlas&gt;
 </div>
 <p>This is an example of a <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code>. Which tells the software that for each v in A you return something. Here od tells <code class="docutils literal"><span class="pre">atlas</span></code> to end the loop once all the vectors of A were listed.</p>
 <p>Another example is:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; v:=[1,2,3,4]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; v:=[1,2,3,4]
 Value: [1,2,3,4]
 atlas&gt; for a in v do a^2 od
 atlas&gt;
@@ -1038,7 +1051,7 @@ array of integers.</p>
 <p>Now using this type of simple <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code> we can, for example, define
 the &#8220;flattening&#8221; function which takes the columns of a matrix and
 writes them concatenated into a single row:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set f(mat A)=vec: let rv=vec:[] in for v in A do rv#:=v od;rv
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set f(mat A)=vec: let rv=vec:[] in for v in A do rv#:=v od;rv
 Added definition [3] of f: (mat-&gt;vec)
 atlas&gt; A:=[[1,2],[3,4]]
 Value:
@@ -1072,7 +1085,7 @@ define functions. In particular the <code class="docutils literal"><span class="
         <a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="matrices.html" class="btn btn-neutral" title="Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="matrices.html" class="btn btn-neutral float-right" title="Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -170,7 +170,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2A/coordinates.html">Change of Coordinates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/principal_series.html">Principal Series</a></li>
@@ -975,6 +976,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="help_git.html" class="btn btn-neutral float-right" title="Help with git" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="download_and_install.html" class="btn btn-neutral float-right" title="Download and Install" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="run-atlas">
 <span id="id1"></span><h1>Run atlas<a class="headerlink" href="#run-atlas" title="Permalink to this headline">¶</a></h1>
@@ -983,22 +996,22 @@
 <h2>Get atlas running<a class="headerlink" href="#get-atlas-running" title="Permalink to this headline">¶</a></h2>
 <p>Let&#8217;s say you compiled the software in a directory atlasofliegroups, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. It should contain the executable files Fokko and atlas, and subdirectories &#8220;messages&#8221; (help files for Fokko) and &#8220;atlas-scripts&#8221; (auxiliary and help files for atlas).</p>
 <p>Once you are there, depending on your setting, do either:</p>
-<div class="highlight-python"><div class="highlight"><pre>./atlas --path=atlas-scripts
+<div class="highlight-python"><div class="highlight"><pre><span></span>./atlas --path=atlas-scripts
 </pre></div>
 </div>
 <p>or:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
 </pre></div>
 </div>
 <p>You should then see something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre>This is &#39;atlas&#39; (version 0.6, axis language version 0.9),
+<div class="highlight-python"><div class="highlight"><pre><span></span>This is &#39;atlas&#39; (version 0.6, axis language version 0.9),
 the Atlas of Lie Groups and Representations interpreter,
 compiled on Jan 19 2016 at 02:21:55.   http://www.liegroups.org/
 atlas&gt;
 </pre></div>
 </div>
 <p>Alternatively, you can cd into the atlas-scripts folder, then do:</p>
-<div class="highlight-python"><div class="highlight"><pre>../atlas
+<div class="highlight-python"><div class="highlight"><pre><span></span>../atlas
 </pre></div>
 </div>
 </div>
@@ -1006,11 +1019,11 @@ atlas&gt;
 <h2>Load scripts<a class="headerlink" href="#load-scripts" title="Permalink to this headline">¶</a></h2>
 <p>The folder atlas-scripts includes scripts, like &#8220;basics.at&#8221;, that define a collection of functions complementing the primitive functions built into atlas.</p>
 <p>Assuming you are in the atlas environment (when you see <code class="docutils literal"><span class="pre">atlas&gt;</span></code> in your terminal), here is how to load some scripts. For example, to load the file &#8220;basic.at&#8221; do:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &lt;basic
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;basic
 </pre></div>
 </div>
 <p>You will see atlas output:</p>
-<div class="highlight-python"><div class="highlight"><pre>Starting to read from file &#39;atlas-scripts//basic.at&#39;.
+<div class="highlight-python"><div class="highlight"><pre><span></span>Starting to read from file &#39;atlas-scripts//basic.at&#39;.
 Added definition [12] of #: (int-&gt;[int])
 Added definition [13] of #: (bool-&gt;int)
 ...
@@ -1018,18 +1031,18 @@ Added definition [13] of #: (bool-&gt;int)
 </div>
 <p>The symbol &#8220;&lt;&#8221; means read a file. If this doesn&#8217;t work, please see <a class="reference internal" href="trouble_shooting.html#trouble-shooting"><span>Trouble Shooting</span></a>. Also, there is a <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">video</a> explaining how to launch atlas so that it finds the necessary .at files.</p>
 <p>Once this is working, you can and should load other files. Load &#8220;all.at&#8221; to get a recommended set of files:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; &lt;all
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;all
 [... some atlas output ...]
 atlas&gt;
 </pre></div>
 </div>
 <p>To check if readline (command completion, recalling previous commands, etc.) is working, hit <strong>TAB</strong> on your keyboard twice. You should see something like:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt;
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;
 Display all 902 possibilities? (y or n)
 </pre></div>
 </div>
 <p>This indicates that command completion is working. Now do a few simple commands:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; 1+1
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; 1+1
 Value: 2
 atlas&gt; set G=SL(2,R)
 Identifier G: RealForm
@@ -1058,7 +1071,7 @@ Parameter defines element 2 of the following block:
         <a href="help_git.html" class="btn btn-neutral float-right" title="Help with git" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="download_and_install.html" class="btn btn-neutral" title="Download and Install" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="download_and_install.html" class="btn btn-neutral float-right" title="Download and Install" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

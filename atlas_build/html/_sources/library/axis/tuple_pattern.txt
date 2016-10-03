@@ -29,7 +29,7 @@ messages, for instance in::
   Type check failed
 
 (The operator '/' on integers produces a rational number; for integer division
-ignoring the remainder one should write 10\2 instead).
+ignoring the remainder one should write 10\\2 instead).
 
 To decompose tuples, a simple form of pattern matching is provided: wherever
 an identifier can be introduced, one may also specify a tuple of identifiers,
