@@ -10,87 +10,85 @@ modules.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`I_(Param->Param,string)1`
-     - ``(Param->Param,string)``
-   * - :ref:`J_(Param->Param,string)1`
-     - ``(Param->Param,string)``
-   * - :ref:`to_str_(Param->string)1`
-     - ``(Param->string)``
-   * - :ref:`to_str_std_(Param->string)1`
-     - ``(Param->string)``
-   * - :ref:`to_str_irr_(Param->string)1`
-     - ``(Param->string)``
-   * - :ref:`to_str_K_types_(Param->string)1`
-     - ``(Param->string)``
-   * - :ref:`to_str_(Param,string->string)1`
-     - ``(Param,string->string)``
-   * - :ref:`to_str_(ParamPol->[string])1`
-     - ``(ParamPol->[string])``
-   * - :ref:`to_str_(ParamPol,string->[string])1`
-     - ``(ParamPol,string->[string])``
-   * - :ref:`array_prints_([string]->)1`
-     - ``([string]->)``
-   * - :ref:`composition_series_(Param,string->ParamPol,string)1`
-     - ``(Param,string->ParamPol,string)``
-   * - :ref:`composition_series_(ParamPol,string->ParamPol,string)1`
-     - ``(ParamPol,string->ParamPol,string)``
-   * - :ref:`character_formula_(Param,string->ParamPol,string)1`
-     - ``(Param,string->ParamPol,string)``
-   * - :ref:`character_formula_(ParamPol,string->ParamPol,string)1`
-     - ``(ParamPol,string->ParamPol,string)``
-   * - :ref:`show_(ParamPol->)1`
-     - ``(ParamPol->)``
-   * - :ref:`show_(ParamPol,string->)1`
-     - ``(ParamPol,string->)``
-   * - :ref:`show_(Param,string->)1`
-     - ``(Param,string->)``
-   * - :ref:`show_(KGBElt,ratvec->)1`
-     - ``(KGBElt,ratvec->)``
-   * - :ref:`virtual_(Param,string->ParamPol,string)1`
-     - ``(Param,string->ParamPol,string)``
-   * - :ref:`\=_((Param,string),(Param,string)->bool)1`
-     - ``((Param,string),(Param,string)->bool)``
-   * - :ref:`character_(ParamPol,string->ParamPol)1`
-     - ``(ParamPol,string->ParamPol)``
-   * - :ref:`\=_((ParamPol,string),(ParamPol,string)->bool)1`
-     - ``((ParamPol,string),(ParamPol,string)->bool)``
-   * - :ref:`\+_((ParamPol,string),(ParamPol,string)->ParamPol,string)1`
-     - ``((ParamPol,string),(ParamPol,string)->ParamPol,string)``
-   * - :ref:`\+_((Param,string),(Param,string)->ParamPol,string)1`
-     - ``((Param,string),(Param,string)->ParamPol,string)``
-   * - :ref:`\+_((ParamPol,string),(Param,string)->ParamPol,string)1`
-     - ``((ParamPol,string),(Param,string)->ParamPol,string)``
-   * - :ref:`\-_(ParamPol,string->ParamPol,string)1`
-     - ``(ParamPol,string->ParamPol,string)``
-   * - :ref:`\-_(Param,string->ParamPol,string)1`
-     - ``(Param,string->ParamPol,string)``
-   * - :ref:`\-_((ParamPol,string),(ParamPol,string)->ParamPol,string)1`
-     - ``((ParamPol,string),(ParamPol,string)->ParamPol,string)``
-   * - :ref:`\-_((Param,string),(ParamPol,string)->ParamPol,string)1`
-     - ``((Param,string),(ParamPol,string)->ParamPol,string)``
-   * - :ref:`\-_((Param,string),(Param,string)->ParamPol,string)1`
-     - ``((Param,string),(Param,string)->ParamPol,string)``
-   * - :ref:`\*_(Split,(ParamPol,string)->ParamPol,string)1`
-     - ``(Split,(ParamPol,string)->ParamPol,string)``
-   * - :ref:`\*_(Split,(Param,string)->ParamPol,string)1`
-     - ``(Split,(Param,string)->ParamPol,string)``
-   * - :ref:`\=_((ParamPol,string),(Param,string)->bool)1`
-     - ``((ParamPol,string),(Param,string)->bool)``
-   * - :ref:`infinitesimal_character_(Param,string->ratvec)1`
-     - ``(Param,string->ratvec)``
-   * - :ref:`has_infinitesimal_character_(ParamPol->bool)1`
-     - ``(ParamPol->bool)``
-   * - :ref:`infinitesimal_character_(ParamPol,string->ratvec)1`
-     - ``(ParamPol,string->ratvec)``
-   * - :ref:`tau_(Param,string->[int])1`
-     - ``(Param,string->[int])``
-   * - :ref:`in_tau_(int,(Param,string)->bool)1`
-     - ``(int,(Param,string)->bool)``
-   * - :ref:`in_tau_complement_(int,(Param,string)->bool)1`
-     - ``(int,(Param,string)->bool)``
-   * - :ref:`tau_complement_(Param,string->[int])1`
-     - ``(Param,string->[int])``
-   * - :ref:`status_(int,(Param,string)->int)1`
-     - ``(int,(Param,string)->int)``
-   * - :ref:`branch_((Param,string),int->ParamPol,string)1`
-     - ``((Param,string),int->ParamPol,string)``
+   * - :ref:`i_param_p->tag_param1`
+     - ``Param p->tag_Param``
+   * - :ref:`j_param_p->tag_param1`
+     - ``Param p->tag_Param``
+   * - :ref:`to_str_param_p->string1`
+     - ``Param p->string``
+   * - :ref:`to_str_std_param_p->string1`
+     - ``Param p->string``
+   * - :ref:`to_str_irr_param_p->string1`
+     - ``Param p->string``
+   * - :ref:`to_str_k_types_param_p->string1`
+     - ``Param p->string``
+   * - :ref:`to_str_tag_param(p,type)->string1`
+     - ``tag_Param(p,type)->string``
+   * - :ref:`to_str_parampol_p->[string]1`
+     - ``ParamPol P->[string]``
+   * - :ref:`to_str_parampol_p,string_type->[string]1`
+     - ``ParamPol P,string type->[string]``
+   * - :ref:`array_prints_[string]_a->void1`
+     - ``[string] A->void``
+   * - :ref:`composition_series_param_p,string_type->tag_parampol1`
+     - ``Param p,string type->tag_ParamPol``
+   * - :ref:`composition_series_tag_parampol(p,type)->tag_parampol1`
+     - ``tag_ParamPol(P,type)->tag_ParamPol``
+   * - :ref:`character_formula_tag_param(p,type)->tag_parampol1`
+     - ``tag_Param(p,type)->tag_ParamPol``
+   * - :ref:`character_formula_tag_parampol(p,type)->tag_parampol1`
+     - ``tag_ParamPol(P,type)->tag_ParamPol``
+   * - :ref:`show_parampol_p->void1`
+     - ``ParamPol P->void``
+   * - :ref:`show_tag_parampol(,type):tp->void1`
+     - ``tag_ParamPol(,type):tP->void``
+   * - :ref:`show_tag_param_tp->void1`
+     - ``tag_Param tp->void``
+   * - :ref:`show_kgbelt_x,ratvec_lambda->void1`
+     - ``KGBElt x,ratvec lambda->void``
+   * - :ref:`virtual_tag_param(p,type)->tag_parampol1`
+     - ``tag_Param(p,type)->tag_ParamPol``
+   * - :ref:`\=_tag_param(p,type_p),tag_param(q,type_q)->bool1`
+     - ``tag_Param(p,type_p),tag_Param(q,type_q)->bool``
+   * - :ref:`character_tag_parampol_(p,type)->parampol1`
+     - ``tag_ParamPol (P,type)->ParamPol``
+   * - :ref:`\=_tag_parampol(p,type_p):tp,tag_parampol(q,type_q):tq->bool1`
+     - ``tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->bool``
+   * - :ref:`\+_tag_parampol(p,type_p):tp,tag_parampol(q,type_q):tq->tag_parampol1`
+     - ``tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->tag_ParamPol``
+   * - :ref:`\+_tag_param(p,type_p),tag_param(q,type_q)->tag_parampol1`
+     - ``tag_Param(p,type_p),tag_Param(q,type_q)->tag_ParamPol``
+   * - :ref:`\+_tag_parampol(p,type_p),tag_param(q,typeq)->tag_parampol1`
+     - ``tag_ParamPol(P,type_P),tag_Param(q,typeq)->tag_ParamPol``
+   * - :ref:`\-_tag_parampol(p,type)->tag_parampol1`
+     - ``tag_ParamPol(P,type)->tag_ParamPol``
+   * - :ref:`\-_tag_param(p,type)->tag_parampol1`
+     - ``tag_Param(p,type)->tag_ParamPol``
+   * - :ref:`\-_tag_parampol(p,type_p),tag_parampol(q,type_q)->tag_parampol1`
+     - ``tag_ParamPol(P,type_P),tag_ParamPol(Q,type_Q)->tag_ParamPol``
+   * - :ref:`\-_tag_param(p,typep),tag_parampol(q,type_q)->tag_parampol1`
+     - ``tag_Param(p,typep),tag_ParamPol(Q,type_Q)->tag_ParamPol``
+   * - :ref:`\-_tag_param(p,typep),tag_param(q,typeq)->tag_parampol1`
+     - ``tag_Param(p,typep),tag_Param(q,typeq)->tag_ParamPol``
+   * - :ref:`\*_split_w,tag_parampol(p,type)->tag_parampol1`
+     - ``Split w,tag_ParamPol(P,type)->tag_ParamPol``
+   * - :ref:`\*_split_w,tag_param(p,type)->tag_parampol1`
+     - ``Split w,tag_Param(p,type)->tag_ParamPol``
+   * - :ref:`\=_tag_parampol(p,type_p),tag_param(q,typeq)->bool1`
+     - ``tag_ParamPol(P,type_P),tag_Param(q,typeq)->bool``
+   * - :ref:`infinitesimal_character_param_p,string_type->ratvec1`
+     - ``Param p,string type->ratvec``
+   * - :ref:`has_infinitesimal_character_parampol_p->bool1`
+     - ``ParamPol P->bool``
+   * - :ref:`infinitesimal_character_parampol_p,_string_type->ratvec1`
+     - ``ParamPol P, string type->ratvec``
+   * - :ref:`tau_param_p,string_type->[int]1`
+     - ``Param p,string type->[int]``
+   * - :ref:`in_tau_int_s,tag_param(p,type)->bool1`
+     - ``int s,tag_Param(p,type)->bool``
+   * - :ref:`in_tau_complement_int_s,tag_param_ps->bool1`
+     - ``int s,tag_Param ps->bool``
+   * - :ref:`status_int_s,tag_param_(p,type)->int1`
+     - ``int s,tag_Param (p,type)->int``
+   * - :ref:`branch_(param_p,string_type),_int_bound->(parampol,string)1`
+     - ``(Param p,string type), int bound->(ParamPol,string)``

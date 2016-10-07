@@ -4,515 +4,570 @@ Weylgroup.at Function References
 =======================================================
 |
 
-.. _root_datum_(RootDatum,[int]->RootDatum)1:
+.. _root_datum_w_word(rd,)->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:(RootDatum,[int]->RootDatum)``
+| ``root_datum:W_word(rd,)->RootDatum``
+| 
+| Defined in Weylgroup.at line number 8.
 | 
 
-
-.. _word_(RootDatum,[int]->[int])1:
+.. _word_w_word(,w)->[int]1:
 
 word
 -------------------------------------------------
-| ``word:(RootDatum,[int]->[int])``
+| ``word:W_word(,w)->[int]``
+| 
+| Defined in Weylgroup.at line number 9.
 | 
 
-
-.. _\#_(RootDatum,[int]->int)1:
+.. _\#_w_word(,w)->int1:
 
 \#
 -------------------------------------------------
-| ``#:(RootDatum,[int]->int)``
+| ``#:W_word(,w)->int``
+| 
+| Defined in Weylgroup.at line number 10.
 | 
 
-
-.. _act_((RootDatum,[int]),vec->vec)1:
+.. _act_w_word(rd,w),_vec_v->vec1:
 
 act
 -------------------------------------------------
-| ``act:((RootDatum,[int]),vec->vec)``
+| ``act:W_word(rd,w), vec v->vec``
+| 
+| Defined in Weylgroup.at line number 14.
 | 
 
-
-.. _act_((RootDatum,[int]),ratvec->ratvec)1:
+.. _act_w_word_ww,_ratvec_rv->ratvec1:
 
 act
 -------------------------------------------------
-| ``act:((RootDatum,[int]),ratvec->ratvec)``
+| ``act:W_word ww, ratvec rv->ratvec``
+| 
+| Defined in Weylgroup.at line number 18.
 | 
 
-
-.. _co_act_(vec,(RootDatum,[int])->ratvec)1:
+.. _co_act_vec_cowt,_w_word(rd,w)->ratvec1:
 
 co_act
 -------------------------------------------------
-| ``co_act:(vec,(RootDatum,[int])->ratvec)``
+| ``co_act:vec cowt, W_word(rd,w)->ratvec``
+| 
+| Defined in Weylgroup.at line number 21.
 | 
 
-
-.. _co_act_(ratvec,(RootDatum,[int])->ratvec)1:
+.. _co_act_ratvec_rcv,_w_word_ww->ratvec1:
 
 co_act
 -------------------------------------------------
-| ``co_act:(ratvec,(RootDatum,[int])->ratvec)``
+| ``co_act:ratvec rcv, W_word ww->ratvec``
+| 
+| Defined in Weylgroup.at line number 25.
 | 
 
-
-.. _w_matrix_(RootDatum,[int]->mat)1:
+.. _w_matrix_w_word(rd,w)->mat1:
 
 w_matrix
 -------------------------------------------------
-| ``w_matrix:(RootDatum,[int]->mat)``
+| ``w_matrix:W_word(rd,w)->mat``
+| 
+| Defined in Weylgroup.at line number 28.
 | 
 
-
-.. _equal_((RootDatum,[int]),(RootDatum,[int])->bool)1:
+.. _equal_w_word_w,_w_word_u->bool1:
 
 equal
 -------------------------------------------------
-| ``equal:((RootDatum,[int]),(RootDatum,[int])->bool)``
+| ``equal:W_word w, W_word u->bool``
+| 
+| Defined in Weylgroup.at line number 33.
 | 
 
-
-.. _inverse_(RootDatum,[int]->RootDatum,[int])1:
+.. _inverse_w_word(rd,w)->w_word:__(rd,w~[1:
 
 inverse
 -------------------------------------------------
-| ``inverse:(RootDatum,[int]->RootDatum,[int])``
+| ``inverse:W_word(rd,w)->W_word:  (rd,w~[``
+| 
+| Defined in Weylgroup.at line number 35.
 | 
 
-
-.. _non_dominant_index_(RootDatum,vec->int)1:
+.. _non_dominant_index_rootdatum_rd,_vec_v->int1:
 
 non_dominant_index
 -------------------------------------------------
-| ``non_dominant_index:(RootDatum,vec->int)``
+| ``non_dominant_index:RootDatum rd, vec v->int``
+| 
+| Defined in Weylgroup.at line number 39.
 | 
 
-
-.. _dual_non_dominant_index_(RootDatum,vec->int)1:
+.. _dual_non_dominant_index_rootdatum_rd,_vec_cowt->int1:
 
 dual_non_dominant_index
 -------------------------------------------------
-| ``dual_non_dominant_index:(RootDatum,vec->int)``
+| ``dual_non_dominant_index:RootDatum rd, vec cowt->int``
+| 
+| Defined in Weylgroup.at line number 42.
 | 
 
-
-.. _make_dominant_(RootDatum,vec->vec,(RootDatum,[int]))1:
+.. _make_dominant_rootdatum_rd,_vec_v->(vec,w_word)1:
 
 make_dominant
 -------------------------------------------------
-| ``make_dominant:(RootDatum,vec->vec,(RootDatum,[int]))``
+| ``make_dominant:RootDatum rd, vec v->(vec,W_word)``
+| 
+| Defined in Weylgroup.at line number 48.
 | 
 
-
-.. _dual_make_dominant_(RootDatum,vec->vec,(RootDatum,[int]))1:
+.. _dual_make_dominant_rootdatum_rd,_vec_cowt->(vec,w_word)1:
 
 dual_make_dominant
 -------------------------------------------------
-| ``dual_make_dominant:(RootDatum,vec->vec,(RootDatum,[int]))``
+| ``dual_make_dominant:RootDatum rd, vec cowt->(vec,W_word)``
+| 
+| Defined in Weylgroup.at line number 57.
 | 
 
-
-.. _make_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int]))1:
+.. _make_dominant_rootdatum_rd,_ratvec_v->(ratvec,w_word)1:
 
 make_dominant
 -------------------------------------------------
-| ``make_dominant:(RootDatum,ratvec->ratvec,(RootDatum,[int]))``
+| ``make_dominant:RootDatum rd, ratvec v->(ratvec,W_word)``
+| 
+| Defined in Weylgroup.at line number 64.
 | 
 
-
-.. _dual_make_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int]))1:
+.. _dual_make_dominant_rootdatum_rd,_ratvec_cowt->(ratvec,w_word)1:
 
 dual_make_dominant
 -------------------------------------------------
-| ``dual_make_dominant:(RootDatum,ratvec->ratvec,(RootDatum,[int]))``
+| ``dual_make_dominant:RootDatum rd, ratvec cowt->(ratvec,W_word)``
+| 
+| Defined in Weylgroup.at line number 67.
 | 
 
-
-.. _rho_(RootDatum,ratvec->ratvec)1:
+.. _rho_rootdatum_rd,_ratvec_v->ratvec1:
 
 rho
 -------------------------------------------------
-| ``rho:(RootDatum,ratvec->ratvec)``
+| ``rho:RootDatum rd, ratvec v->ratvec``
+| 
+| Defined in Weylgroup.at line number 71.
 | 
 
-
-.. _dual_rho_(RootDatum,ratvec->ratvec)1:
+.. _dual_rho_rootdatum_rd,_ratvec_cowt->ratvec1:
 
 dual_rho
 -------------------------------------------------
-| ``dual_rho:(RootDatum,ratvec->ratvec)``
+| ``dual_rho:RootDatum rd, ratvec cowt->ratvec``
+| 
+| Defined in Weylgroup.at line number 73.
 | 
 
-
-.. _w_long_(RootDatum->RootDatum,[int])1:
+.. _w_long_rootdatum_rd->w_word1:
 
 w_long
 -------------------------------------------------
-| ``w_long:(RootDatum->RootDatum,[int])``
+| ``w_long:RootDatum rd->W_word``
+| 
+| Defined in Weylgroup.at line number 76.
 | 
 
-
-.. _dominant_(RootDatum,vec->vec)1:
+.. _dominant_rootdatum_rd,_vec_v->vec1:
 
 dominant
 -------------------------------------------------
-| ``dominant:(RootDatum,vec->vec)``
+| ``dominant:RootDatum rd, vec v->vec``
+| 
+| Defined in Weylgroup.at line number 80.
 | 
 
-
-.. _dominant_(RootDatum,ratvec->ratvec)1:
+.. _dominant_rootdatum_rd,_ratvec_v->ratvec1:
 
 dominant
 -------------------------------------------------
-| ``dominant:(RootDatum,ratvec->ratvec)``
+| ``dominant:RootDatum rd, ratvec v->ratvec``
+| 
+| Defined in Weylgroup.at line number 82.
 | 
 
-
-.. _word_(RootDatum,mat->RootDatum,[int])1:
+.. _word_rootdatum_rd,_mat_m->w_word1:
 
 word
 -------------------------------------------------
-| ``word:(RootDatum,mat->RootDatum,[int])``
+| ``word:RootDatum rd, mat M->W_word``
+| 
+| Defined in Weylgroup.at line number 86.
 | 
 
-
-.. _word_(RootDatum,mat,mat->RootDatum,[int])1:
+.. _word_rootdatum_rd,mat_delta,_mat_m->w_word1:
 
 word
 -------------------------------------------------
-| ``word:(RootDatum,mat,mat->RootDatum,[int])``
+| ``word:RootDatum rd,mat delta, mat M->W_word``
+| 
+| Defined in Weylgroup.at line number 91.
 | 
 
-
-.. _length_(RootDatum,mat->int)1:
+.. _length_rootdatum_rd,_mat_m->int1:
 
 length
 -------------------------------------------------
-| ``length:(RootDatum,mat->int)``
+| ``length:RootDatum rd, mat M->int``
+| 
+| Defined in Weylgroup.at line number 94.
 | 
 
-
-.. _length_(RootDatum,[int]->int)1:
+.. _length_w_word_(rd,):ww->int1:
 
 length
 -------------------------------------------------
-| ``length:(RootDatum,[int]->int)``
+| ``length:W_word (rd,):ww->int``
+| 
+| Defined in Weylgroup.at line number 98.
 | 
 
-
-.. _lengthens_(RootDatum,mat,int->bool)1:
+.. _lengthens_rootdatum_rd,_mat_m,_int_s->bool1:
 
 lengthens
 -------------------------------------------------
-| ``lengthens:(RootDatum,mat,int->bool)``
+| ``lengthens:RootDatum rd, mat M, int s->bool``
+| 
+| Defined in Weylgroup.at line number 101.
 | 
 
-
-.. _lengthens_(RootDatum,int,mat->bool)1:
+.. _lengthens_rootdatum_rd,_int_s,_mat_m->bool1:
 
 lengthens
 -------------------------------------------------
-| ``lengthens:(RootDatum,int,mat->bool)``
+| ``lengthens:RootDatum rd, int s, mat M->bool``
+| 
+| Defined in Weylgroup.at line number 103.
 | 
 
-
-.. _make_simple_sequence_(RootDatum,vec->(RootDatum,[int]),int)1:
+.. _make_simple_sequence_rootdatum_rd,_vec_!root->(w_word,_int)1:
 
 make_simple_sequence
 -------------------------------------------------
-| ``make_simple_sequence:(RootDatum,vec->(RootDatum,[int]),int)``
+| ``make_simple_sequence:RootDatum rd, vec !root->(W_word, int)``
+| 
+| Defined in Weylgroup.at line number 110.
 | 
 
-
-.. _make_simple_(RootDatum,vec->mat,int)1:
+.. _make_simple_rootdatum_rd,_vec_root->(mat,_int)1:
 
 make_simple
 -------------------------------------------------
-| ``make_simple:(RootDatum,vec->mat,int)``
+| ``make_simple:RootDatum rd, vec root->(mat, int)``
+| 
+| Defined in Weylgroup.at line number 121.
 | 
 
-
-.. _reduce_(RootDatum,[int]->RootDatum,[int])1:
+.. _reduce_w_word_(rd,):w->w_word1:
 
 reduce
 -------------------------------------------------
-| ``reduce:(RootDatum,[int]->RootDatum,[int])``
+| ``reduce:W_word (rd,):w->W_word``
+| 
+| Defined in Weylgroup.at line number 126.
 | 
 
-
-.. _cross_((RootDatum,[int]),KGBElt->KGBElt)1:
+.. _cross_w_word_(,w),kgbelt_x->kgbelt1:
 
 cross
 -------------------------------------------------
-| ``cross:((RootDatum,[int]),KGBElt->KGBElt)``
+| ``cross:W_word (,w),KGBElt x->KGBElt``
+| 
+| Defined in Weylgroup.at line number 130.
 | 
 
-
-.. _cross_((RootDatum,[int]),Param->Param)1:
+.. _cross_w_word_(,w),param_p->param1:
 
 cross
 -------------------------------------------------
-| ``cross:((RootDatum,[int]),Param->Param)``
+| ``cross:W_word (,w),Param p->Param``
+| 
+| Defined in Weylgroup.at line number 132.
 | 
 
-
-.. _make_dominant_using_roots_(RootDatum,ratvec->ratvec,vec)1:
+.. _make_dominant_using_roots_rootdatum_rd,_ratvec_gamma->(ratvec,vec)1:
 
 make_dominant_using_roots
 -------------------------------------------------
-| ``make_dominant_using_roots:(RootDatum,ratvec->ratvec,vec)``
+| ``make_dominant_using_roots:RootDatum rd, ratvec gamma->(ratvec,vec)``
+| 
+| Defined in Weylgroup.at line number 145.
 | 
 
-
-.. _make_dominant_using_roots_(RootDatum,vec->vec,vec)1:
+.. _make_dominant_using_roots_rootdatum_rd,_vec_v->(vec,vec)1:
 
 make_dominant_using_roots
 -------------------------------------------------
-| ``make_dominant_using_roots:(RootDatum,vec->vec,vec)``
+| ``make_dominant_using_roots:RootDatum rd, vec v->(vec,vec)``
+| 
+| Defined in Weylgroup.at line number 153.
 | 
 
-
-.. _translate_to_dominant_(Param->Param,vec)1:
+.. _translate_to_dominant_param_p->(param,vec)1:
 
 translate_to_dominant
 -------------------------------------------------
-| ``translate_to_dominant:(Param->Param,vec)``
+| ``translate_to_dominant:Param p->(Param,vec)``
+| 
+| Defined in Weylgroup.at line number 160.
 | 
 
-
-.. _make_integrally_dominant_(RootDatum,ratvec->ratvec,(RootDatum,[int]))1:
+.. _make_integrally_dominant_rootdatum_rd,ratvec_v->(ratvec,w_word)1:
 
 make_integrally_dominant
 -------------------------------------------------
-| ``make_integrally_dominant:(RootDatum,ratvec->ratvec,(RootDatum,[int]))``
+| ``make_integrally_dominant:RootDatum rd,ratvec v->(ratvec,W_word)``
+| 
+| Defined in Weylgroup.at line number 170.
 | 
 
-
-.. _int_dom_act_((RootDatum,[int]),ratvec->ratvec)1:
+.. _int_dom_act_w_word(rd,):ww,ratvec_v->ratvec1:
 
 int_dom_act
 -------------------------------------------------
-| ``int_dom_act:((RootDatum,[int]),ratvec->ratvec)``
+| ``int_dom_act:W_word(rd,):ww,ratvec v->ratvec``
+| 
+| Defined in Weylgroup.at line number 174.
 | 
 
-
-.. _left_mult_(int,(RootDatum,[int])->RootDatum,[int])1:
+.. _left_mult_int_i,w_word(rd,w)->w_word1:
 
 left_mult
 -------------------------------------------------
-| ``left_mult:(int,(RootDatum,[int])->RootDatum,[int])``
+| ``left_mult:int i,W_word(rd,w)->W_word``
+| 
+| Defined in Weylgroup.at line number 179.
 | 
 
-
-.. _right_mult_(int,(RootDatum,[int])->RootDatum,[int])1:
+.. _right_mult_int_i,w_word(rd,w)->w_word1:
 
 right_mult
 -------------------------------------------------
-| ``right_mult:(int,(RootDatum,[int])->RootDatum,[int])``
+| ``right_mult:int i,W_word(rd,w)->W_word``
+| 
+| Defined in Weylgroup.at line number 180.
 | 
 
-
-.. _conjugate_(int,(RootDatum,[int])->RootDatum,[int])1:
+.. _conjugate_int_i,_w_word(rd,w)->w_word1:
 
 conjugate
 -------------------------------------------------
-| ``conjugate:(int,(RootDatum,[int])->RootDatum,[int])``
+| ``conjugate:int i, W_word(rd,w)->W_word``
+| 
+| Defined in Weylgroup.at line number 181.
 | 
 
-
-.. _multiply_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])1:
+.. _multiply_w_word(rd,v),_w_word(,w)->w_word1:
 
 multiply
 -------------------------------------------------
-| ``multiply:((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])``
+| ``multiply:W_word(rd,v), W_word(,w)->W_word``
+| 
+| Defined in Weylgroup.at line number 183.
 | 
 
-
-.. _\*_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])1:
-
-\*
--------------------------------------------------
-| ``*:((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])``
-| 
-
-
-.. _conjugate_((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])1:
+.. _conjugate_w_word(rd,v),_w_word(,w)->w_word1:
 
 conjugate
 -------------------------------------------------
-| ``conjugate:((RootDatum,[int]),(RootDatum,[int])->RootDatum,[int])``
+| ``conjugate:W_word(rd,v), W_word(,w)->W_word``
+| 
+| Defined in Weylgroup.at line number 186.
 | 
 
-
-.. _\^_((RootDatum,[int]),int->RootDatum,[int])1:
+.. _\^_w_word_(!rd,w),_int_n->w_word1:
 
 \^
 -------------------------------------------------
-| ``^:((RootDatum,[int]),int->RootDatum,[int])``
+| ``^:W_word (!rd,w), int n->W_word``
+| 
+| Defined in Weylgroup.at line number 190.
 | 
 
-
-.. _involution_(InnerClass,(RootDatum,[int])->mat)1:
+.. _involution_innerclass_ic,_w_word(,w)->mat1:
 
 involution
 -------------------------------------------------
-| ``involution:(InnerClass,(RootDatum,[int])->mat)``
+| ``involution:InnerClass ic, W_word(,w)->mat``
+| 
+| Defined in Weylgroup.at line number 199.
 | 
 
-
-.. _imaginary_roots_(InnerClass,(RootDatum,[int])->mat)1:
+.. _imaginary_roots_innerclass_ic,_w_word_tw->mat1:
 
 imaginary_roots
 -------------------------------------------------
-| ``imaginary_roots:(InnerClass,(RootDatum,[int])->mat)``
+| ``imaginary_roots:InnerClass ic, W_word tw->mat``
+| 
+| Defined in Weylgroup.at line number 204.
 | 
 
-
-.. _real_roots_(InnerClass,(RootDatum,[int])->mat)1:
+.. _real_roots_innerclass_ic,_w_word_tw->mat1:
 
 real_roots
 -------------------------------------------------
-| ``real_roots:(InnerClass,(RootDatum,[int])->mat)``
+| ``real_roots:InnerClass ic, W_word tw->mat``
+| 
+| Defined in Weylgroup.at line number 206.
 | 
 
-
-.. _imaginary_coroots_(InnerClass,(RootDatum,[int])->mat)1:
+.. _imaginary_coroots_innerclass_ic,_w_word_tw->mat1:
 
 imaginary_coroots
 -------------------------------------------------
-| ``imaginary_coroots:(InnerClass,(RootDatum,[int])->mat)``
+| ``imaginary_coroots:InnerClass ic, W_word tw->mat``
+| 
+| Defined in Weylgroup.at line number 208.
 | 
 
-
-.. _real_coroots_(InnerClass,(RootDatum,[int])->mat)1:
+.. _real_coroots_innerclass_ic,_w_word_tw->mat1:
 
 real_coroots
 -------------------------------------------------
-| ``real_coroots:(InnerClass,(RootDatum,[int])->mat)``
+| ``real_coroots:InnerClass ic, W_word tw->mat``
+| 
+| Defined in Weylgroup.at line number 210.
 | 
 
-
-.. _invariant_form_(RootDatum->mat)1:
+.. _invariant_form_rootdatum_rd->mat1:
 
 invariant_form
 -------------------------------------------------
-| ``invariant_form:(RootDatum->mat)``
+| ``invariant_form:RootDatum rd->mat``
+| 
+| Defined in Weylgroup.at line number 220.
 | 
 
-
-.. _invariant_form_(RootDatum,ratvec,ratvec->rat)1:
+.. _invariant_form_rootdatum_rd,_ratvec_v,_ratvec_w->rat1:
 
 invariant_form
 -------------------------------------------------
-| ``invariant_form:(RootDatum,ratvec,ratvec->rat)``
+| ``invariant_form:RootDatum rd, ratvec v, ratvec w->rat``
+| 
+| Defined in Weylgroup.at line number 221.
 | 
 
-
-.. _nondegenerate_invariant_form_(RootDatum,ratvec,ratvec->rat)1:
+.. _nondegenerate_invariant_form_(rootdatum,ratvec,ratvec)(rd,v,):args->rat1:
 
 nondegenerate_invariant_form
 -------------------------------------------------
-| ``nondegenerate_invariant_form:(RootDatum,ratvec,ratvec->rat)``
+| ``nondegenerate_invariant_form:(RootDatum,ratvec,ratvec)(rd,v,):args->rat``
+| 
+| Defined in Weylgroup.at line number 224.
 | 
 
-
-.. _co_invariant_form_(RootDatum->mat)1:
+.. _co_invariant_form_rootdatum_rd->mat1:
 
 co_invariant_form
 -------------------------------------------------
-| ``co_invariant_form:(RootDatum->mat)``
+| ``co_invariant_form:RootDatum rd->mat``
+| 
+| Defined in Weylgroup.at line number 228.
 | 
 
-
-.. _co_invariant_form_(RootDatum,ratvec,ratvec->rat)1:
+.. _co_invariant_form_rootdatum_rd,_ratvec_v,_ratvec_w->rat1:
 
 co_invariant_form
 -------------------------------------------------
-| ``co_invariant_form:(RootDatum,ratvec,ratvec->rat)``
+| ``co_invariant_form:RootDatum rd, ratvec v, ratvec w->rat``
+| 
+| Defined in Weylgroup.at line number 229.
 | 
 
-
-.. _delete_([(RootDatum,[int])],int->[(RootDatum,[int])])1:
+.. _delete_[w_word]_list,_int_k->[w_word]:_list[:k]##list[k+11:
 
 delete
 -------------------------------------------------
-| ``delete:([(RootDatum,[int])],int->[(RootDatum,[int])])``
+| ``delete:[W_word] list, int k->[W_word]: list[:k]##list[k+1``
+| 
+| Defined in Weylgroup.at line number 233.
 | 
 
-
-.. _order_(RootDatum,[int]->int)1:
+.. _order_w_word_w->int1:
 
 order
 -------------------------------------------------
-| ``order:(RootDatum,[int]->int)``
+| ``order:W_word w->int``
+| 
+| Defined in Weylgroup.at line number 236.
 | 
 
-
-.. _is_elliptic_(RootDatum,[int]->bool)1:
+.. _is_elliptic_w_word_w->bool1:
 
 is_elliptic
 -------------------------------------------------
-| ``is_elliptic:(RootDatum,[int]->bool)``
+| ``is_elliptic:W_word w->bool``
+| 
+| Defined in Weylgroup.at line number 238.
 | 
 
-
-.. _is_regular_(RootDatum,[int]->bool)1:
+.. _is_regular_w_word_w->bool1:
 
 is_regular
 -------------------------------------------------
-| ``is_regular:(RootDatum,[int]->bool)``
+| ``is_regular:W_word w->bool``
+| 
+| Defined in Weylgroup.at line number 239.
 | 
 
-
-.. _move_towards_no_Cminus_(KGBElt->KGBElt,int)1:
+.. _move_towards_no_cminus_kgbelt_x->(kgbelt,int)1:
 
 move_towards_no_Cminus
 -------------------------------------------------
-| ``move_towards_no_Cminus:(KGBElt->KGBElt,int)``
+| ``move_towards_no_Cminus:KGBElt x->(KGBElt,int)``
+| 
+| Defined in Weylgroup.at line number 246.
 | 
 
-
-.. _make_no_Cminus_(KGBElt->KGBElt,(RootDatum,[int]))1:
+.. _make_no_cminus_kgbelt_x->(kgbelt,w_word)1:
 
 make_no_Cminus
 -------------------------------------------------
-| ``make_no_Cminus:(KGBElt->KGBElt,(RootDatum,[int]))``
+| ``make_no_Cminus:KGBElt x->(KGBElt,W_word)``
+| 
+| Defined in Weylgroup.at line number 250.
 | 
 
-
-.. _move_towards_no_Cplus_(KGBElt->KGBElt,int)1:
+.. _move_towards_no_cplus_kgbelt_x->(kgbelt,int)1:
 
 move_towards_no_Cplus
 -------------------------------------------------
-| ``move_towards_no_Cplus:(KGBElt->KGBElt,int)``
+| ``move_towards_no_Cplus:KGBElt x->(KGBElt,int)``
+| 
+| Defined in Weylgroup.at line number 257.
 | 
 
-
-.. _make_no_Cplus_(KGBElt->KGBElt,(RootDatum,[int]))1:
+.. _make_no_cplus_kgbelt_x->(kgbelt,w_word)1:
 
 make_no_Cplus
 -------------------------------------------------
-| ``make_no_Cplus:(KGBElt->KGBElt,(RootDatum,[int]))``
+| ``make_no_Cplus:KGBElt x->(KGBElt,W_word)``
+| 
+| Defined in Weylgroup.at line number 261.
 | 
 
-
-.. _make_no_Cminus_(Param->Param)1:
+.. _make_no_cminus_param_p->param1:
 
 make_no_Cminus
 -------------------------------------------------
-| ``make_no_Cminus:(Param->Param)``
+| ``make_no_Cminus:Param p->Param``
+| 
+| Defined in Weylgroup.at line number 268.
 | 
 
-
-.. _make_no_Cplus_(Param->Param)1:
+.. _make_no_cplus_param_p->param1:
 
 make_no_Cplus
 -------------------------------------------------
-| ``make_no_Cplus:(Param->Param)``
+| ``make_no_Cplus:Param p->Param``
 | 
-
+| Defined in Weylgroup.at line number 271.
+| 
 

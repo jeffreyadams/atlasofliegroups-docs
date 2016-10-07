@@ -10,93 +10,67 @@ polynomial.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`fix_add_(vec,vec->vec)1`
-     - ``(vec,vec->vec)``
-   * - :ref:`fix_sub_(vec,vec->vec)1`
-     - ``(vec,vec->vec)``
-   * - :ref:`dot_product_(vec,vec->int)1`
-     - ``(vec,vec->int)``
-   * - :ref:`\+_(vec,vec->vec)3`
-     - ``(vec,vec->vec)``
-   * - :ref:`\-_(vec,vec->vec)3`
-     - ``(vec,vec->vec)``
-   * - :ref:`\*_(vec,vec->vec)2`
-     - ``(vec,vec->vec)``
-   * - :ref:`poly_product_(vec,vec->vec)1`
-     - ``(vec,vec->vec)``
-   * - :ref:`strip_(vec->vec)1`
-     - ``(vec->vec)``
-   * - :ref:`evaluate_at_1_(vec->int)1`
-     - ``(vec->int)``
-   * - :ref:`eval_(vec,int->int)1`
-     - ``(vec,int->int)``
-   * - :ref:`eval_(vec,Split->Split)1`
-     - ``(vec,Split->Split)``
-   * - :ref:`at_s_(vec->Split)1`
-     - ``(vec->Split)``
-   * - :ref:`transpose_([[vec]]->[[vec]])1`
-     - ``([[vec]]->[[vec]])``
-   * - :ref:`dot_product_([vec],[vec]->vec)1`
-     - ``([vec],[vec]->vec)``
-   * - :ref:`\*_([[vec]],[[vec]]->[[vec]])1`
-     - ``([[vec]],[[vec]]->[[vec]])``
-   * - :ref:`poly_list_add_([vec],[vec]->[vec])1`
-     - ``([vec],[vec]->[vec])``
-   * - :ref:`poly_list_sub_([vec],[vec]->[vec])1`
-     - ``([vec],[vec]->[vec])``
-   * - :ref:`\-_([[vec]]->[[vec]])1`
-     - ``([[vec]]->[[vec]])``
-   * - :ref:`\+_([[vec]],[[vec]]->[[vec]])1`
-     - ``([[vec]],[[vec]]->[[vec]])``
-   * - :ref:`\-_([[vec]],[[vec]]->[[vec]])1`
-     - ``([[vec]],[[vec]]->[[vec]])``
-   * - :ref:`scalar_multiply_([vec],vec->[vec])1`
-     - ``([vec],vec->[vec])``
-   * - :ref:`\*_(vec,[[vec]]->[[vec]])1`
-     - ``(vec,[[vec]]->[[vec]])``
-   * - :ref:`\*_(int,[[vec]]->[[vec]])1`
-     - ``(int,[[vec]]->[[vec]])``
-   * - :ref:`update_row_([vec],int,vec->[vec])1`
-     - ``([vec],int,vec->[vec])``
-   * - :ref:`update_matrix_row_([[vec]],int,[vec]->[[vec]])1`
-     - ``([[vec]],int,[vec]->[[vec]])``
-   * - :ref:`update_matrix_entry_([[vec]],int,int,vec->[[vec]])1`
-     - ``([[vec]],int,int,vec->[[vec]])``
-   * - :ref:`zero_poly_row_(int->[vec])1`
-     - ``(int->[vec])``
-   * - :ref:`zero_poly_matrix_(int->[[vec]])1`
-     - ``(int->[[vec]])``
-   * - :ref:`scalar_poly_matrix_(int,int->[[vec]])1`
-     - ``(int,int->[[vec]])``
-   * - :ref:`identity_poly_matrix_(int->[[vec]])1`
-     - ``(int->[[vec]])``
-   * - :ref:`\+_([[vec]],vec->[[vec]])1`
-     - ``([[vec]],vec->[[vec]])``
-   * - :ref:`\-_([[vec]],vec->[[vec]])1`
-     - ``([[vec]],vec->[[vec]])``
-   * - :ref:`\^_(vec,int->vec)1`
-     - ``(vec,int->vec)``
-   * - :ref:`\=_([[vec]],[[vec]]->bool)1`
-     - ``([[vec]],[[vec]]->bool)``
-   * - :ref:`is_zero_([[vec]]->bool)1`
-     - ``([[vec]]->bool)``
-   * - :ref:`upper_unitriangluar_inverse_([[vec]]->[[vec]])1`
-     - ``([[vec]]->[[vec]])``
-   * - :ref:`poly_permute_basis_(vec,[[vec]]->[[vec]])1`
-     - ``(vec,[[vec]]->[[vec]])``
-   * - :ref:`stringPoly_(vec,string->string)1`
-     - ``(vec,string->string)``
-   * - :ref:`printPoly_(vec->)1`
-     - ``(vec->)``
-   * - :ref:`printPolyMatrix_([[vec]],int->)1`
-     - ``([[vec]],int->)``
-   * - :ref:`printPolyMatrix_([[vec]]->)1`
-     - ``([[vec]]->)``
-   * - :ref:`\+_(vec,vec->vec)4`
-     - ``(vec,vec->vec)``
-   * - :ref:`\-_(vec,vec->vec)4`
-     - ``(vec,vec->vec)``
-   * - :ref:`\*_(vec,vec->int)2`
-     - ``(vec,vec->int)``
-   * - :ref:`sgn_poly_(int->vec)1`
-     - ``(int->vec)``
+   * - :ref:`strip_poly_v->poly1`
+     - ``poly v->poly``
+   * - :ref:`eval_poly_v,int_k->int1`
+     - ``poly v,int k->int``
+   * - :ref:`eval_vec_v,split_w->split1`
+     - ``vec v,Split w->Split``
+   * - :ref:`at_s_vec_v->split:_eval(v,split1`
+     - ``vec v->Split: eval(v,Split``
+   * - :ref:`transpose_poly_mat_m->poly_mat1`
+     - ``poly_mat M->poly_mat``
+   * - :ref:`dot_product_[poly]_v,[poly]_w->poly1`
+     - ``[poly] v,[poly] w->poly``
+   * - :ref:`\*_poly_mat_a,poly_mat_b->poly_mat1`
+     - ``poly_mat A,poly_mat B->poly_mat``
+   * - :ref:`poly_list_add_[poly]_v,[poly]_w->[poly]1`
+     - ``[poly] v,[poly] w->[poly]``
+   * - :ref:`poly_list_sub_[poly]_v,[poly]_w->[poly]1`
+     - ``[poly] v,[poly] w->[poly]``
+   * - :ref:`\-_poly_mat_m->poly_mat1`
+     - ``poly_mat M->poly_mat``
+   * - :ref:`\+_poly_mat_a,poly_mat_b->poly_mat1`
+     - ``poly_mat A,poly_mat B->poly_mat``
+   * - :ref:`\-_poly_mat_a,poly_mat_b->poly_mat1`
+     - ``poly_mat A,poly_mat B->poly_mat``
+   * - :ref:`scalar_multiply_[poly]_v,poly_f->[poly]1`
+     - ``[poly] v,poly f->[poly]``
+   * - :ref:`\*_poly_f,poly_mat_m->poly_mat1`
+     - ``poly f,poly_mat M->poly_mat``
+   * - :ref:`\*_int_c,_poly_mat_m->poly_mat1`
+     - ``int c, poly_mat M->poly_mat``
+   * - :ref:`update_row_[poly]_r,_int_j,poly_v->[poly]:_r[j]1`
+     - ``[poly] R, int j,poly v->[poly]: R[j]``
+   * - :ref:`update_matrix_row_poly_mat_m,_int_i,_[poly]_row->poly_mat:_m[i]1`
+     - ``poly_mat M, int i, [poly] row->poly_mat: M[i]``
+   * - :ref:`update_matrix_entry_poly_mat_m,_int_i,_int_j,_poly_v->poly_mat1`
+     - ``poly_mat M, int i, int j, poly v->poly_mat``
+   * - :ref:`zero_poly_row_int_n->[poly]:_for_i1`
+     - ``int n->[poly]: for i``
+   * - :ref:`zero_poly_matrix_int_n->poly_mat1`
+     - ``int n->poly_mat``
+   * - :ref:`scalar_poly_matrix_int_n,_int_c->poly_mat1`
+     - ``int n, int c->poly_mat``
+   * - :ref:`\+_poly_mat_m,_poly_p->poly_mat1`
+     - ``poly_mat M, poly p->poly_mat``
+   * - :ref:`\-_poly_mat_m,_poly_p->poly_mat1`
+     - ``poly_mat M, poly p->poly_mat``
+   * - :ref:`\=_poly_mat_a,poly_mat_b->bool1`
+     - ``poly_mat A,poly_mat B->bool``
+   * - :ref:`is_zero_poly_mat_m->bool1`
+     - ``poly_mat M->bool``
+   * - :ref:`upper_unitriangluar_inverse_poly_mat_p->poly_mat1`
+     - ``poly_mat P->poly_mat``
+   * - :ref:`poly_permute_basis_poly_p,_poly_mat_a->poly_mat1`
+     - ``poly P, poly_mat A->poly_mat``
+   * - :ref:`stringpoly_poly_v,_string_q->string1`
+     - ``poly v, string q->string``
+   * - :ref:`printpoly_poly_v->void1`
+     - ``poly v->void``
+   * - :ref:`printpolymatrix_poly_mat_m,int_space_size->void1`
+     - ``poly_mat M,int space_size->void``
+   * - :ref:`printpolymatrix_poly_mat_m->void1`
+     - ``poly_mat M->void``
+   * - :ref:`sgn_poly_int_k->poly1`
+     - ``int k->poly``

@@ -10,37 +10,33 @@ galois.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`square_classes_(InnerClass->[[int]])1`
-     - ``(InnerClass->[[int]])``
-   * - :ref:`print_strong_real_(RealForm->)1`
-     - ``(RealForm->)``
-   * - :ref:`real_forms_(RealForm->[RealForm])1`
-     - ``(RealForm->[RealForm])``
-   * - :ref:`SOstar_(int->RealForm)1`
-     - ``(int->RealForm)``
-   * - :ref:`Spinstar_(int->RealForm)1`
-     - ``(int->RealForm)``
-   * - :ref:`PSOstar_(int->RealForm)1`
-     - ``(int->RealForm)``
-   * - :ref:`find_([[int]],int->int)1`
-     - ``([[int]],int->int)``
-   * - :ref:`part_containing_(int->([[int]]->[int]))1`
-     - ``(int->([[int]]->[int]))``
-   * - :ref:`central_invariant_(InnerClass,int->int)1`
-     - ``(InnerClass,int->int)``
-   * - :ref:`central_invariant_(RealForm->int)1`
-     - ``(RealForm->int)``
-   * - :ref:`strong_real_forms_same_type_(InnerClass,int->[int])1`
-     - ``(InnerClass,int->[int])``
-   * - :ref:`strong_real_forms_same_type_(RealForm->[int])1`
-     - ``(RealForm->[int])``
-   * - :ref:`H1_(RealForm->int)1`
-     - ``(RealForm->int)``
-   * - :ref:`iterate_H1_(int,int->)1`
-     - ``(int,int->)``
-   * - :ref:`pi0_(RealForm->int)1`
-     - ``(RealForm->int)``
-   * - :ref:`iterate_H1_(int->)1`
-     - ``(int->)``
-   * - :ref:`iterate_H1_(->)1`
-     - ``(->)``
+   * - :ref:`square_classes_innerclass_ic->[[int]]1`
+     - ``InnerClass ic->[[int]]``
+   * - :ref:`print_strong_real_realform_g->void1`
+     - ``RealForm G->void``
+   * - :ref:`real_forms_innerclass_ic->[realform]2`
+     - ``InnerClass ic->[RealForm]``
+   * - :ref:`real_forms_realform_g->[realform]1`
+     - ``RealForm G->[RealForm]``
+   * - :ref:`sostar_int_n->realform1`
+     - ``int n->RealForm``
+   * - :ref:`psostar_int_n->realform1`
+     - ``int n->RealForm``
+   * - :ref:`find_[[int]]_vecs,_int_k->int1`
+     - ``[[int]] vecs, int k->int``
+   * - :ref:`part_containing_int_k->([[int]]_parts)_[int]1`
+     - ``int k->([[int]] parts) [int]``
+   * - :ref:`central_invariant_innerclass_ic,_int_k->int1`
+     - ``InnerClass ic, int k->int``
+   * - :ref:`central_invariant_realform_g->int1`
+     - ``RealForm G->int``
+   * - :ref:`strong_real_forms_same_type_innerclass_ic,_int_k->[int]1`
+     - ``InnerClass ic, int k->[int]``
+   * - :ref:`h1_realform_g->int1`
+     - ``RealForm G->int``
+   * - :ref:`iterate_h1_int_min_rank,_int_max_rank->void1`
+     - ``int min_rank, int max_rank->void``
+   * - :ref:`pi0_realform_g->int1`
+     - ``RealForm G->int``
+   * - :ref:`iterate_h1_int_rank->void1`
+     - ``int rank->void``

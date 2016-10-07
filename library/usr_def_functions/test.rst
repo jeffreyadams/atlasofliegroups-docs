@@ -1,6 +1,6 @@
-.. _std_decs.at:
+.. _test.at:
 
-std_decs.at
+test.at
 =====================================
 
 
@@ -12,5 +12,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   std_decs_index
-   std_decs_ref
+   test_index
+   test_ref

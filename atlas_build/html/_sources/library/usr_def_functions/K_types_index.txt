@@ -10,25 +10,25 @@ K_types.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`sort_by_height_(ParamPol->[(Split,Param)])1`
-     - ``(ParamPol->[(Split,Param)])``
-   * - :ref:`branch_std_(Param,int->ParamPol)1`
-     - ``(Param,int->ParamPol)``
-   * - :ref:`branch_std_(ParamPol,int->ParamPol)1`
-     - ``(ParamPol,int->ParamPol)``
-   * - :ref:`branch_irr_(Param,int->ParamPol)1`
-     - ``(Param,int->ParamPol)``
-   * - :ref:`branch_irr_(ParamPol,int->ParamPol)1`
-     - ``(ParamPol,int->ParamPol)``
-   * - :ref:`mult_std_(Param,Param->int)1`
-     - ``(Param,Param->int)``
-   * - :ref:`mult_irr_(Param,Param->int)1`
-     - ``(Param,Param->int)``
-   * - :ref:`K_signature_irr_(Param,int->ParamPol,ParamPol)1`
-     - ``(Param,int->ParamPol,ParamPol)``
-   * - :ref:`signed_mult_(Param,Param->int,int)1`
-     - ``(Param,Param->int,int)``
-   * - :ref:`print_K_types_(ParamPol->)1`
-     - ``(ParamPol->)``
-   * - :ref:`print_K_types_(ParamPol,KGBElt->)1`
-     - ``(ParamPol,KGBElt->)``
+   * - :ref:`sort_by_height_parampol_p->[(split,param)]1`
+     - ``ParamPol P->[(Split,Param)]``
+   * - :ref:`branch_std_param_p,_int_bound->parampol1`
+     - ``Param p, int bound->ParamPol``
+   * - :ref:`branch_std_parampol_p,int_bound->parampol1`
+     - ``ParamPol P,int bound->ParamPol``
+   * - :ref:`branch_irr_param_p,_int_bound->parampol1`
+     - ``Param p, int bound->ParamPol``
+   * - :ref:`branch_irr_parampol_p,int_bound->parampol1`
+     - ``ParamPol P,int bound->ParamPol``
+   * - :ref:`mult_std_param_p_k,param_p->int1`
+     - ``Param p_K,Param p->int``
+   * - :ref:`mult_irr_param_p_k,param_p->int1`
+     - ``Param p_K,Param p->int``
+   * - :ref:`k_signature_irr_param_p,int_bound->(parampol,parampol)1`
+     - ``Param p,int bound->(ParamPol,ParamPol)``
+   * - :ref:`signed_mult_param_p_k,param_p->(int,int)1`
+     - ``Param p_K,Param p->(int,int)``
+   * - :ref:`print_k_types_parampol_p->void1`
+     - ``ParamPol P->void``
+   * - :ref:`print_k_types_parampol_p,_kgbelt_x_k->void1`
+     - ``ParamPol P, KGBElt x_K->void``

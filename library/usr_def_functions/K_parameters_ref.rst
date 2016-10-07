@@ -4,107 +4,84 @@ K_parameters.at Function References
 =======================================================
 |
 
-.. _x_(KGBElt,ratvec->KGBElt)1:
+.. _x_k_type_p->kgbelt1:
 
 x
 -------------------------------------------------
-| ``x:(KGBElt,ratvec->KGBElt)``
+| ``x:K_Type p->KGBElt``
+| 
+| Defined in K_parameters.at line number 33.
 | 
 
-
-.. _lambda_(KGBElt,ratvec->ratvec)1:
+.. _lambda_k_type_p->ratvec1:
 
 lambda
 -------------------------------------------------
-| ``lambda:(KGBElt,ratvec->ratvec)``
+| ``lambda:K_Type p->ratvec``
+| 
+| Defined in K_parameters.at line number 34.
 | 
 
-
-.. _root_datum_(KGBElt,ratvec->RootDatum)1:
-
-root_datum
--------------------------------------------------
-| ``root_datum:(KGBElt,ratvec->RootDatum)``
-| 
-
-
-.. _real_form_(KGBElt,ratvec->RealForm)1:
-
-real_form
--------------------------------------------------
-| ``real_form:(KGBElt,ratvec->RealForm)``
-| 
-
-
-.. _real_form_(KGBElt,vec->RealForm)1:
-
-real_form
--------------------------------------------------
-| ``real_form:(KGBElt,vec->RealForm)``
-| 
-
-
-.. _K_0_(KGBElt,vec->RealForm)1:
-
-K_0
--------------------------------------------------
-| ``K_0:(KGBElt,vec->RealForm)``
-| 
-
-
-.. _dlambda_(KGBElt,ratvec->ratvec)1:
+.. _dlambda_k_type_p->ratvec1:
 
 dlambda
 -------------------------------------------------
-| ``dlambda:(KGBElt,ratvec->ratvec)``
+| ``dlambda:K_Type p->ratvec``
+| 
+| Defined in K_parameters.at line number 41.
 | 
 
-
-.. _dlambda_(Param->ratvec)1:
+.. _dlambda_param_p->ratvec1:
 
 dlambda
 -------------------------------------------------
-| ``dlambda:(Param->ratvec)``
+| ``dlambda:Param p->ratvec``
+| 
+| Defined in K_parameters.at line number 42.
 | 
 
-
-.. _K_type_(Param->KGBElt,ratvec)1:
+.. _k_type_param_p->k_type1:
 
 K_type
 -------------------------------------------------
-| ``K_type:(Param->KGBElt,ratvec)``
+| ``K_type:Param p->K_Type``
+| 
+| Defined in K_parameters.at line number 44.
 | 
 
-
-.. _parameter_(KGBElt,ratvec->Param)1:
+.. _parameter_k_type_p->param1:
 
 parameter
 -------------------------------------------------
-| ``parameter:(KGBElt,ratvec->Param)``
+| ``parameter:K_Type p->Param``
+| 
+| Defined in K_parameters.at line number 46.
 | 
 
-
-.. _\=_((KGBElt,ratvec),(KGBElt,ratvec)->bool)1:
+.. _\=_k_type_p,k_type_q->bool1:
 
 \=
 -------------------------------------------------
-| ``=:((KGBElt,ratvec),(KGBElt,ratvec)->bool)``
+| ``=:K_Type p,K_Type q->bool``
+| 
+| Defined in K_parameters.at line number 50.
 | 
 
-
-.. _make_no_Cminus_(KGBElt,ratvec->KGBElt,ratvec)1:
+.. _make_no_cminus_k_type_p->k_type1:
 
 make_no_Cminus
 -------------------------------------------------
-| ``make_no_Cminus:(KGBElt,ratvec->KGBElt,ratvec)``
+| ``make_no_Cminus:K_Type p->K_Type``
+| 
+| Defined in K_parameters.at line number 52.
 | 
 
-
-.. _length_(KGBElt,vec->rat)1:
+.. _length_khighestweight_(x,mu)->rat1:
 
 length
 -------------------------------------------------
-| ``length:(KGBElt,vec->rat)``
+| ``length:KHighestWeight (x,mu)->rat``
 | 
-
+| Defined in K_parameters.at line number 60.
+| 
 

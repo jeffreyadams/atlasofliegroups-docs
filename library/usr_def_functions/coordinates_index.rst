@@ -10,27 +10,21 @@ coordinates.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`change_basis_(RootDatum,(mat,string,int)->mat,string,int)1`
-     - ``(RootDatum,(mat,string,int)->mat,string,int)``
-   * - :ref:`change_basis_(RootDatum,[ratvec]->mat,string,int)1`
-     - ``(RootDatum,[ratvec]->mat,string,int)``
-   * - :ref:`change_basis_(RootDatum,mat->mat,string,int)1`
-     - ``(RootDatum,mat->mat,string,int)``
-   * - :ref:`integral_change_basis_(RootDatum,(mat,string,int)->mat)1`
-     - ``(RootDatum,(mat,string,int)->mat)``
-   * - :ref:`integral_change_basis_(RootDatum,[ratvec]->mat)1`
-     - ``(RootDatum,[ratvec]->mat)``
-   * - :ref:`integral_change_basis_(RootDatum,mat->mat)1`
-     - ``(RootDatum,mat->mat)``
-   * - :ref:`inverse_change_basis_(RootDatum,(mat,string,int)->mat,string,int)1`
-     - ``(RootDatum,(mat,string,int)->mat,string,int)``
-   * - :ref:`inverse_change_basis_(RootDatum,[ratvec]->mat,string,int)1`
-     - ``(RootDatum,[ratvec]->mat,string,int)``
-   * - :ref:`inverse_change_basis_(RootDatum,mat->mat,string,int)1`
-     - ``(RootDatum,mat->mat,string,int)``
-   * - :ref:`integral_inverse_change_basis_(RootDatum,(mat,string,int)->mat)1`
-     - ``(RootDatum,(mat,string,int)->mat)``
-   * - :ref:`integral_inverse_change_basis_(RootDatum,[ratvec]->mat)1`
-     - ``(RootDatum,[ratvec]->mat)``
-   * - :ref:`integral_inverse_change_basis_(RootDatum,mat->mat)1`
-     - ``(RootDatum,mat->mat)``
+   * - :ref:`change_basis_rootdatum_rd,ratmat_my_roots->ratmat1`
+     - ``RootDatum rd,ratmat my_roots->ratmat``
+   * - :ref:`change_basis_rootdatum_rd,_[ratvec]_my_roots->ratmat1`
+     - ``RootDatum rd, [ratvec] my_roots->ratmat``
+   * - :ref:`change_basis_rootdatum_rd,_mat_my_roots->ratmat1`
+     - ``RootDatum rd, mat my_roots->ratmat``
+   * - :ref:`integral_change_basis_rootdatum_rd,ratmat_my_roots->mat1`
+     - ``RootDatum rd,ratmat my_roots->mat``
+   * - :ref:`integral_change_basis_rootdatum_rd,[ratvec]_my_roots->mat1`
+     - ``RootDatum rd,[ratvec] my_roots->mat``
+   * - :ref:`integral_change_basis_rootdatum_rd,mat_my_roots->mat1`
+     - ``RootDatum rd,mat my_roots->mat``
+   * - :ref:`integral_inverse_change_basis_rootdatum_rd,ratmat_my_roots->mat1`
+     - ``RootDatum rd,ratmat my_roots->mat``
+   * - :ref:`integral_inverse_change_basis_rootdatum_rd,[ratvec]_my_roots->mat1`
+     - ``RootDatum rd,[ratvec] my_roots->mat``
+   * - :ref:`integral_inverse_change_basis_rootdatum_rd,mat_my_roots->mat1`
+     - ``RootDatum rd,mat my_roots->mat``

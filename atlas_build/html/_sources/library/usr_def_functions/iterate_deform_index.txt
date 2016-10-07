@@ -10,30 +10,17 @@ iterate_deform.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`null_wt_(int->ratvec)2`
-     - ``(int->ratvec)``
-   * - :ref:`has_nu0_(Param->bool)3`
-     - ``(Param->bool)``
-   * - :ref:`weak_lower_(Param->Param)2`
-     - ``(Param->Param)``
-   * - :ref:`lower_(Param->Param)2`
-     - ``(Param->Param)``
-   * - :ref:`deformation_(Param->Param,ParamPol)2`
-     - ``(Param->Param,ParamPol)``
-   * - :ref:`iterate_deform_(Param->(Param,ParamPol),int)1`
-     - ``(Param->(Param,ParamPol),int)``
-   * - :ref:`recursive_deform_(Param->Param,ParamPol)1`
-     - ``(Param->Param,ParamPol)``
-   * - :ref:`rec_def_(Param->Param,ParamPol)1`
-     - ``(Param->Param,ParamPol)``
-
-
-
-.. list-table::
-   :widths: 10 20
-   :header-rows: 1
-
-   * - Variable
-     - Data Type
-   * - :ref:`iterate_deform_debug_bool1`
-     - ``bool``
+   * - :ref:`null_wt_int_r->ratvec2`
+     - ``int r->ratvec``
+   * - :ref:`has_nu0_param_p->bool3`
+     - ``Param p->bool``
+   * - :ref:`weak_lower_param_p->param2`
+     - ``Param p->Param``
+   * - :ref:`lower_param_p->param2`
+     - ``Param p->Param``
+   * - :ref:`deformation_param_p->(param,parampol)2`
+     - ``Param p->(Param,ParamPol)``
+   * - :ref:`recursive_deform_param_p->(param,parampol)1`
+     - ``Param p->(Param,ParamPol)``
+   * - :ref:`rec_def_param_p->(param,parampol)1`
+     - ``Param p->(Param,ParamPol)``

@@ -10,19 +10,15 @@ synthetic_aux.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`my_posroot_cross_(int,Param->Param)1`
-     - ``(int,Param->Param)``
-   * - :ref:`simpleroot_cross_(int,KGBElt->KGBElt)1`
-     - ``(int,KGBElt->KGBElt)``
-   * - :ref:`Wword_cross_((RootDatum,[int]),KGBElt->KGBElt)1`
-     - ``((RootDatum,[int]),KGBElt->KGBElt)``
-   * - :ref:`my_posroot_Cayley_(int,Param->Param)1`
-     - ``(int,Param->Param)``
-   * - :ref:`my_posroot_inv_Cayley_(int,Param->Param)1`
-     - ``(int,Param->Param)``
-   * - :ref:`my_new_block_line_([Param],int->string)1`
-     - ``([Param],int->string)``
-   * - :ref:`test_cayleys_(Param->)1`
-     - ``(Param->)``
-   * - :ref:`test_cayleys_2_(Param->)1`
-     - ``(Param->)``
+   * - :ref:`my_posroot_cross_int_i,_param_p->param1`
+     - ``int i, Param p->Param``
+   * - :ref:`wword_cross_w_word(rd,w),kgbelt_x->kgbelt1`
+     - ``W_word(rd,w),KGBElt x->KGBElt``
+   * - :ref:`my_posroot_cayley_int_i,_param_p->param1`
+     - ``int i, Param p->Param``
+   * - :ref:`my_posroot_inv_cayley_int_i,_param_p->param1`
+     - ``int i, Param p->Param``
+   * - :ref:`test_cayleys_param_p->void1`
+     - ``Param p->void``
+   * - :ref:`test_cayleys_2_param_p->void1`
+     - ``Param p->void``

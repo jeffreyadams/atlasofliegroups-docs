@@ -10,30 +10,7 @@ induction_sp4.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`p_long_((rat,int),(rat,int)->Param)1`
-     - ``((rat,int),(rat,int)->Param)``
-   * - :ref:`p_short_((rat,rat),(int,int)->Param)1`
-     - ``((rat,rat),(int,int)->Param)``
-
-
-
-.. list-table::
-   :widths: 10 20
-   :header-rows: 1
-
-   * - Variable
-     - Data Type
-   * - :ref:`G_RealForm2`
-     - ``RealForm``
-   * - :ref:`L_short_RealForm1`
-     - ``RealForm``
-   * - :ref:`L_long_RealForm1`
-     - ``RealForm``
-   * - :ref:`p_1_Param1`
-     - ``Param``
-   * - :ref:`p_2_Param1`
-     - ``Param``
-   * - :ref:`p_3_Param1`
-     - ``Param``
-   * - :ref:`p_4_Param1`
-     - ``Param``
+   * - :ref:`p_long_(rat_nu_gl1,int_epsilon_gl1),(rat_nu_sl2,int_epsilon_sl2)->param1`
+     - ``(rat nu_GL1,int epsilon_GL1),(rat nu_SL2,int epsilon_SL2)->Param``
+   * - :ref:`p_short_(rat_nu_1,rat_nu_2),(int_epsilon_1,int_epsilon_2)->param1`
+     - ``(rat nu_1,rat nu_2),(int epsilon_1,int epsilon_2)->Param``

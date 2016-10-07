@@ -4,763 +4,480 @@ groups.at Function References
 =======================================================
 |
 
-.. _Cartan_dispatch_(int,int,int,int,bool->int)1:
+.. _cartan_dispatch_int_type,_int_r,_int_min,_int_d,_bool_lower->int1:
 
 Cartan_dispatch
 -------------------------------------------------
-| ``Cartan_dispatch:(int,int,int,int,bool->int)``
+| ``Cartan_dispatch:int type, int r, int min, int d, bool lower->int``
+| 
+| Defined in groups.at line number 4.
 | 
 
-
-.. _Cartan_entry_(int,int,int,int->int)1:
+.. _cartan_entry_int_type,_int_r,int_i,_int_j->int1:
 
 Cartan_entry
 -------------------------------------------------
-| ``Cartan_entry:(int,int,int,int->int)``
+| ``Cartan_entry:int type, int r,int i, int j->int``
+| 
+| Defined in groups.at line number 17.
 | 
 
-
-.. _Cartan_matrix_(int,int->mat)1:
+.. _cartan_matrix_int_type,_int_r->mat1:
 
 Cartan_matrix
 -------------------------------------------------
-| ``Cartan_matrix:(int,int->mat)``
+| ``Cartan_matrix:int type, int r->mat``
+| 
+| Defined in groups.at line number 23.
 | 
 
-
-.. _Lie_type_(int,int->LieType)1:
+.. _lie_type_(int,int)_p->lietype1:
 
 Lie_type
 -------------------------------------------------
-| ``Lie_type:(int,int->LieType)``
+| ``Lie_type:(int,int) p->LieType``
+| 
+| Defined in groups.at line number 26.
 | 
 
-
-.. _block_repeat_(mat,int->mat)1:
+.. _block_repeat_mat_m,_int_n->mat1:
 
 block_repeat
 -------------------------------------------------
-| ``block_repeat:(mat,int->mat)``
+| ``block_repeat:mat m, int n->mat``
+| 
+| Defined in groups.at line number 29.
 | 
 
-
-.. _complex_(RootDatum->RealForm)1:
+.. _complex_rootdatum_rd->realform1:
 
 complex
 -------------------------------------------------
-| ``complex:(RootDatum->RealForm)``
+| ``complex:RootDatum rd->RealForm``
+| 
+| Defined in groups.at line number 36.
 | 
 
-
-.. _complexification_(RootDatum->RealForm)1:
-
-complexification
--------------------------------------------------
-| ``complexification:(RootDatum->RealForm)``
-| 
-
-
-.. _GL_roots_(int->mat)1:
+.. _gl_roots_int_n->mat1:
 
 GL_roots
 -------------------------------------------------
-| ``GL_roots:(int->mat)``
+| ``GL_roots:int n->mat``
+| 
+| Defined in groups.at line number 51.
 | 
 
-
-.. _SL_coroots_(int->mat)1:
+.. _sl_coroots_int_n->mat1:
 
 SL_coroots
 -------------------------------------------------
-| ``SL_coroots:(int->mat)``
+| ``SL_coroots:int n->mat``
+| 
+| Defined in groups.at line number 56.
 | 
 
-
-.. _SL_roots_(int->mat)1:
+.. _sl_roots_int_n->mat1:
 
 SL_roots
 -------------------------------------------------
-| ``SL_roots:(int->mat)``
+| ``SL_roots:int n->mat``
+| 
+| Defined in groups.at line number 61.
 | 
 
-
-.. _GL_(int->RootDatum)1:
+.. _gl_int_n->rootdatum1:
 
 GL
 -------------------------------------------------
-| ``GL:(int->RootDatum)``
+| ``GL:int n->RootDatum``
+| 
+| Defined in groups.at line number 64.
 | 
 
-
-.. _SL_(int->RootDatum)1:
+.. _sl_int_n->rootdatum1:
 
 SL
 -------------------------------------------------
-| ``SL:(int->RootDatum)``
+| ``SL:int n->RootDatum``
+| 
+| Defined in groups.at line number 65.
 | 
 
-
-.. _PSL_(int->RootDatum)1:
+.. _psl_int_n->rootdatum1:
 
 PSL
 -------------------------------------------------
-| ``PSL:(int->RootDatum)``
+| ``PSL:int n->RootDatum``
+| 
+| Defined in groups.at line number 66.
 | 
 
-
-.. _type_B_roots_(int->mat)1:
+.. _type_b_roots_int_n->mat1:
 
 type_B_roots
 -------------------------------------------------
-| ``type_B_roots:(int->mat)``
+| ``type_B_roots:int n->mat``
+| 
+| Defined in groups.at line number 70.
 | 
 
-
-.. _type_C_roots_(int->mat)1:
+.. _type_c_roots_int_n->mat1:
 
 type_C_roots
 -------------------------------------------------
-| ``type_C_roots:(int->mat)``
+| ``type_C_roots:int n->mat``
+| 
+| Defined in groups.at line number 73.
 | 
 
-
-.. _type_D_roots_(int->mat)1:
+.. _type_d_roots_int_n->mat1:
 
 type_D_roots
 -------------------------------------------------
-| ``type_D_roots:(int->mat)``
+| ``type_D_roots:int n->mat``
+| 
+| Defined in groups.at line number 77.
 | 
 
-
-.. _Sp_(int->RootDatum)1:
+.. _sp_int_n->rootdatum1:
 
 Sp
 -------------------------------------------------
-| ``Sp:(int->RootDatum)``
+| ``Sp:int n->RootDatum``
+| 
+| Defined in groups.at line number 85.
 | 
 
-
-.. _PSp_(int->RootDatum)1:
+.. _psp_int_n->rootdatum1:
 
 PSp
 -------------------------------------------------
-| ``PSp:(int->RootDatum)``
+| ``PSp:int n->RootDatum``
+| 
+| Defined in groups.at line number 89.
 | 
 
-
-.. _GSp_(int->RootDatum)1:
+.. _gsp_int_n->rootdatum1:
 
 GSp
 -------------------------------------------------
-| ``GSp:(int->RootDatum)``
+| ``GSp:int n->RootDatum``
+| 
+| Defined in groups.at line number 93.
 | 
 
-
-.. _SO_(int->RootDatum)1:
+.. _so_int_n->rootdatum1:
 
 SO
 -------------------------------------------------
-| ``SO:(int->RootDatum)``
+| ``SO:int n->RootDatum``
+| 
+| Defined in groups.at line number 102.
 | 
 
-
-.. _SO_Lie_type_(int->LieType)1:
+.. _so_lie_type_int_n->lietype1:
 
 SO_Lie_type
 -------------------------------------------------
-| ``SO_Lie_type:(int->LieType)``
+| ``SO_Lie_type:int n->LieType``
+| 
+| Defined in groups.at line number 108.
 | 
 
-
-.. _Spin_(int->RootDatum)1:
+.. _spin_int_n->rootdatum1:
 
 Spin
 -------------------------------------------------
-| ``Spin:(int->RootDatum)``
+| ``Spin:int n->RootDatum``
+| 
+| Defined in groups.at line number 117.
 | 
 
-
-.. _PSO_(int->RootDatum)1:
+.. _pso_int_n->rootdatum1:
 
 PSO
 -------------------------------------------------
-| ``PSO:(int->RootDatum)``
+| ``PSO:int n->RootDatum``
+| 
+| Defined in groups.at line number 118.
 | 
 
-
-.. _SU_(int,int,RootDatum->RealForm)1:
+.. _su_int_p,int_q,_rootdatum_rd->realform1:
 
 SU
 -------------------------------------------------
-| ``SU:(int,int,RootDatum->RealForm)``
+| ``SU:int p,int q, RootDatum rd->RealForm``
+| 
+| Defined in groups.at line number 125.
 | 
 
-
-.. _SU_(int,int->RealForm)1:
+.. _su_int_p,int_q->realform1:
 
 SU
 -------------------------------------------------
-| ``SU:(int,int->RealForm)``
+| ``SU:int p,int q->RealForm``
+| 
+| Defined in groups.at line number 129.
 | 
 
-
-.. _PSU_(int,int->RealForm)1:
+.. _psu_int_p,int_q->realform1:
 
 PSU
 -------------------------------------------------
-| ``PSU:(int,int->RealForm)``
+| ``PSU:int p,int q->RealForm``
+| 
+| Defined in groups.at line number 130.
 | 
 
-
-.. _SU_(int->RealForm)1:
+.. _su_int_n->realform1:
 
 SU
 -------------------------------------------------
-| ``SU:(int->RealForm)``
+| ``SU:int n->RealForm``
+| 
+| Defined in groups.at line number 131.
 | 
 
-
-.. _PSU_(int->RealForm)1:
+.. _psu_int_n->realform1:
 
 PSU
 -------------------------------------------------
-| ``PSU:(int->RealForm)``
+| ``PSU:int n->RealForm``
+| 
+| Defined in groups.at line number 132.
 | 
 
-
-.. _U_(int,int->RealForm)1:
+.. _u_int_p,int_q->realform1:
 
 U
 -------------------------------------------------
-| ``U:(int,int->RealForm)``
+| ``U:int p,int q->RealForm``
+| 
+| Defined in groups.at line number 135.
 | 
 
-
-.. _SL_R_(int->RealForm)1:
+.. _sl_r_int_n->realform1:
 
 SL_R
 -------------------------------------------------
-| ``SL_R:(int->RealForm)``
+| ``SL_R:int n->RealForm``
+| 
+| Defined in groups.at line number 138.
 | 
 
-
-.. _PSL_R_(int->RealForm)1:
+.. _psl_r_int_n->realform1:
 
 PSL_R
 -------------------------------------------------
-| ``PSL_R:(int->RealForm)``
+| ``PSL_R:int n->RealForm``
+| 
+| Defined in groups.at line number 139.
 | 
 
-
-.. _PGL_R_(int->RealForm)1:
+.. _pgl_r_int_n->realform1:
 
 PGL_R
 -------------------------------------------------
-| ``PGL_R:(int->RealForm)``
+| ``PGL_R:int n->RealForm``
+| 
+| Defined in groups.at line number 140.
 | 
 
-
-.. _SL_C_(int->RealForm)1:
+.. _sl_c_int_n->realform1:
 
 SL_C
 -------------------------------------------------
-| ``SL_C:(int->RealForm)``
+| ``SL_C:int n->RealForm``
+| 
+| Defined in groups.at line number 142.
 | 
 
-
-.. _PSL_C_(int->RealForm)1:
+.. _psl_c_int_n->realform1:
 
 PSL_C
 -------------------------------------------------
-| ``PSL_C:(int->RealForm)``
+| ``PSL_C:int n->RealForm``
+| 
+| Defined in groups.at line number 143.
 | 
 
-
-.. _PGL_C_(int->RealForm)1:
+.. _pgl_c_int_n->realform1:
 
 PGL_C
 -------------------------------------------------
-| ``PGL_C:(int->RealForm)``
+| ``PGL_C:int n->RealForm``
+| 
+| Defined in groups.at line number 144.
 | 
 
-
-.. _SL_H_(int->RealForm)1:
+.. _sl_h_int_n->realform1:
 
 SL_H
 -------------------------------------------------
-| ``SL_H:(int->RealForm)``
+| ``SL_H:int n->RealForm``
+| 
+| Defined in groups.at line number 146.
 | 
 
-
-.. _PSL_H_(int->RealForm)1:
+.. _psl_h_int_n->realform1:
 
 PSL_H
 -------------------------------------------------
-| ``PSL_H:(int->RealForm)``
+| ``PSL_H:int n->RealForm``
+| 
+| Defined in groups.at line number 147.
 | 
 
-
-.. _PGL_H_(int->RealForm)1:
+.. _pgl_h_int_n->realform1:
 
 PGL_H
 -------------------------------------------------
-| ``PGL_H:(int->RealForm)``
+| ``PGL_H:int n->RealForm``
+| 
+| Defined in groups.at line number 148.
 | 
 
-
-.. _GL_R_(int->RealForm)1:
+.. _gl_r_int_n->realform1:
 
 GL_R
 -------------------------------------------------
-| ``GL_R:(int->RealForm)``
+| ``GL_R:int n->RealForm``
+| 
+| Defined in groups.at line number 150.
 | 
 
-
-.. _GL_C_(int->RealForm)1:
+.. _gl_c_int_n->realform1:
 
 GL_C
 -------------------------------------------------
-| ``GL_C:(int->RealForm)``
+| ``GL_C:int n->RealForm``
+| 
+| Defined in groups.at line number 151.
 | 
 
-
-.. _GL_H_(int->RealForm)1:
+.. _gl_h_int_n->realform1:
 
 GL_H
 -------------------------------------------------
-| ``GL_H:(int->RealForm)``
+| ``GL_H:int n->RealForm``
+| 
+| Defined in groups.at line number 152.
 | 
 
-
-.. _by_field_((int->RealForm),(int->RealForm),(int->RealForm)->(string->(int->RealForm)))1:
-
-by_field
--------------------------------------------------
-| ``by_field:((int->RealForm),(int->RealForm),(int->RealForm)->(string->(int->RealForm)))``
-| 
-
-
-.. _SL_(int,string->RealForm)1:
-
-SL
--------------------------------------------------
-| ``SL:(int,string->RealForm)``
-| 
-
-
-.. _GL_(int,string->RealForm)1:
-
-GL
--------------------------------------------------
-| ``GL:(int,string->RealForm)``
-| 
-
-
-.. _PSL_(int,string->RealForm)1:
-
-PSL
--------------------------------------------------
-| ``PSL:(int,string->RealForm)``
-| 
-
-
-.. _PGL_(int,string->RealForm)1:
-
-PGL
--------------------------------------------------
-| ``PGL:(int,string->RealForm)``
-| 
-
-
-.. _Sp_R_(int->RealForm)1:
+.. _sp_r_int_n->realform1:
 
 Sp_R
 -------------------------------------------------
-| ``Sp_R:(int->RealForm)``
+| ``Sp_R:int n->RealForm``
+| 
+| Defined in groups.at line number 176.
 | 
 
-
-.. _PSp_R_(int->RealForm)1:
+.. _psp_r_int_n->realform1:
 
 PSp_R
 -------------------------------------------------
-| ``PSp_R:(int->RealForm)``
+| ``PSp_R:int n->RealForm``
+| 
+| Defined in groups.at line number 177.
 | 
 
-
-.. _GSp_R_(int->RealForm)1:
+.. _gsp_r_int_n->realform1:
 
 GSp_R
 -------------------------------------------------
-| ``GSp_R:(int->RealForm)``
+| ``GSp_R:int n->RealForm``
+| 
+| Defined in groups.at line number 178.
 | 
 
-
-.. _Sp_(int,int->RealForm)1:
-
-Sp
--------------------------------------------------
-| ``Sp:(int,int->RealForm)``
-| 
-
-
-.. _PSp_(int,int->RealForm)1:
-
-PSp
--------------------------------------------------
-| ``PSp:(int,int->RealForm)``
-| 
-
-
-.. _Sp_C_(int->RealForm)1:
-
-Sp_C
--------------------------------------------------
-| ``Sp_C:(int->RealForm)``
-| 
-
-
-.. _Sp_H_(int->RealForm)1:
+.. _sp_h_int_n->realform1:
 
 Sp_H
 -------------------------------------------------
-| ``Sp_H:(int->RealForm)``
+| ``Sp_H:int n->RealForm``
+| 
+| Defined in groups.at line number 188.
 | 
 
-
-.. _PSp_C_(int->RealForm)1:
-
-PSp_C
--------------------------------------------------
-| ``PSp_C:(int->RealForm)``
-| 
-
-
-.. _PSp_H_(int->RealForm)1:
+.. _psp_h_int_n->realform1:
 
 PSp_H
 -------------------------------------------------
-| ``PSp_H:(int->RealForm)``
+| ``PSp_H:int n->RealForm``
+| 
+| Defined in groups.at line number 191.
 | 
 
-
-.. _GSp_C_(int->RealForm)1:
-
-GSp_C
--------------------------------------------------
-| ``GSp_C:(int->RealForm)``
-| 
-
-
-.. _GSp_H_(int->RealForm)1:
+.. _gsp_h_int_n->realform1:
 
 GSp_H
 -------------------------------------------------
-| ``GSp_H:(int->RealForm)``
+| ``GSp_H:int n->RealForm``
+| 
+| Defined in groups.at line number 194.
 | 
 
-
-.. _Sp_(int,string->RealForm)1:
-
-Sp
--------------------------------------------------
-| ``Sp:(int,string->RealForm)``
-| 
-
-
-.. _PSp_(int,string->RealForm)1:
-
-PSp
--------------------------------------------------
-| ``PSp:(int,string->RealForm)``
-| 
-
-
-.. _GSp_(int,string->RealForm)1:
-
-GSp
--------------------------------------------------
-| ``GSp:(int,string->RealForm)``
-| 
-
-
-.. _SO_inner_class_(int,int->string)1:
+.. _so_inner_class_int_p,int_q->string1:
 
 SO_inner_class
 -------------------------------------------------
-| ``SO_inner_class:(int,int->string)``
+| ``SO_inner_class:int p,int q->string``
+| 
+| Defined in groups.at line number 202.
 | 
 
-
-.. _SO_real_form_number_(int,int->int)1:
+.. _so_real_form_number_int_p,int_q->int1:
 
 SO_real_form_number
 -------------------------------------------------
-| ``SO_real_form_number:(int,int->int)``
+| ``SO_real_form_number:int p,int q->int``
+| 
+| Defined in groups.at line number 211.
 | 
 
-
-.. _SO_(int,int,RootDatum->RealForm)1:
+.. _so_int_p,int_q,rootdatum_rd->realform1:
 
 SO
 -------------------------------------------------
-| ``SO:(int,int,RootDatum->RealForm)``
+| ``SO:int p,int q,RootDatum rd->RealForm``
+| 
+| Defined in groups.at line number 221.
 | 
 
-
-.. _Spin_(int,int->RealForm)1:
+.. _spin_int_p,int_q->realform1:
 
 Spin
 -------------------------------------------------
-| ``Spin:(int,int->RealForm)``
+| ``Spin:int p,int q->RealForm``
+| 
+| Defined in groups.at line number 224.
 | 
 
-
-.. _SO_(int,int->RealForm)1:
+.. _so_int_p,int_q->realform1:
 
 SO
 -------------------------------------------------
-| ``SO:(int,int->RealForm)``
+| ``SO:int p,int q->RealForm``
+| 
+| Defined in groups.at line number 225.
 | 
 
-
-.. _PSO_(int,int->RealForm)1:
+.. _pso_int_p,int_q->realform1:
 
 PSO
 -------------------------------------------------
-| ``PSO:(int,int->RealForm)``
+| ``PSO:int p,int q->RealForm``
+| 
+| Defined in groups.at line number 226.
 | 
 
+.. _e8_ic = let ic=inner_class_"t0",[ratvec]:[],""->true_in_@1:
 
-.. _E8_ic_(->InnerClass)1:
-
-E8_ic
+E8_ic = let ic=inner_class
 -------------------------------------------------
-| ``E8_ic:(->InnerClass)``
+| ``E8_ic = let ic=inner_class:"T0",[ratvec]:[],""->true in @``
 | 
-
-
-.. _E8_c_(->RealForm)1:
-
-E8_c
--------------------------------------------------
-| ``E8_c:(->RealForm)``
+| Defined in groups.at line number 264.
 | 
-
-
-.. _E8_q_(->RealForm)1:
-
-E8_q
--------------------------------------------------
-| ``E8_q:(->RealForm)``
-| 
-
-
-.. _E8_s_(->RealForm)1:
-
-E8_s
--------------------------------------------------
-| ``E8_s:(->RealForm)``
-| 
-
-
-.. _G2_ic_InnerClass1:
-
-G2_ic
--------------------------------------------------
-| ``G2_ic:InnerClass``
-| 
-
-
-.. _G2_c_RealForm1:
-
-G2_c
--------------------------------------------------
-| ``G2_c:RealForm``
-| 
-
-
-.. _G2_s_RealForm1:
-
-G2_s
--------------------------------------------------
-| ``G2_s:RealForm``
-| 
-
-
-.. _F4_ic_InnerClass1:
-
-F4_ic
--------------------------------------------------
-| ``F4_ic:InnerClass``
-| 
-
-
-.. _F4_c_RealForm1:
-
-F4_c
--------------------------------------------------
-| ``F4_c:RealForm``
-| 
-
-
-.. _F4_B4_RealForm1:
-
-F4_B4
--------------------------------------------------
-| ``F4_B4:RealForm``
-| 
-
-
-.. _F4_s_RealForm1:
-
-F4_s
--------------------------------------------------
-| ``F4_s:RealForm``
-| 
-
-
-.. _E6_ic_e_InnerClass1:
-
-E6_ic_e
--------------------------------------------------
-| ``E6_ic_e:InnerClass``
-| 
-
-
-.. _E6_c_RealForm1:
-
-E6_c
--------------------------------------------------
-| ``E6_c:RealForm``
-| 
-
-
-.. _E6_h_RealForm1:
-
-E6_h
--------------------------------------------------
-| ``E6_h:RealForm``
-| 
-
-
-.. _E6_D5T_RealForm1:
-
-E6_D5T
--------------------------------------------------
-| ``E6_D5T:RealForm``
-| 
-
-
-.. _E6_q_RealForm1:
-
-E6_q
--------------------------------------------------
-| ``E6_q:RealForm``
-| 
-
-
-.. _E6_ic_s_InnerClass1:
-
-E6_ic_s
--------------------------------------------------
-| ``E6_ic_s:InnerClass``
-| 
-
-
-.. _E6_F4_RealForm1:
-
-E6_F4
--------------------------------------------------
-| ``E6_F4:RealForm``
-| 
-
-
-.. _E6_s_RealForm1:
-
-E6_s
--------------------------------------------------
-| ``E6_s:RealForm``
-| 
-
-
-.. _E6_C4_RealForm1:
-
-E6_C4
--------------------------------------------------
-| ``E6_C4:RealForm``
-| 
-
-
-.. _E7_ic_e_InnerClass1:
-
-E7_ic_e
--------------------------------------------------
-| ``E7_ic_e:InnerClass``
-| 
-
-
-.. _E7_ic_InnerClass1:
-
-E7_ic
--------------------------------------------------
-| ``E7_ic:InnerClass``
-| 
-
-
-.. _E7_c_RealForm1:
-
-E7_c
--------------------------------------------------
-| ``E7_c:RealForm``
-| 
-
-
-.. _E7_h_RealForm1:
-
-E7_h
--------------------------------------------------
-| ``E7_h:RealForm``
-| 
-
-
-.. _E7_E6T_RealForm1:
-
-E7_E6T
--------------------------------------------------
-| ``E7_E6T:RealForm``
-| 
-
-
-.. _E7_q_RealForm1:
-
-E7_q
--------------------------------------------------
-| ``E7_q:RealForm``
-| 
-
-
-.. _E7_D6A1_RealForm1:
-
-E7_D6A1
--------------------------------------------------
-| ``E7_D6A1:RealForm``
-| 
-
-
-.. _E7_s_RealForm1:
-
-E7_s
--------------------------------------------------
-| ``E7_s:RealForm``
-| 
-
-
-.. _E7_A7_RealForm1:
-
-E7_A7
--------------------------------------------------
-| ``E7_A7:RealForm``
-| 
-
 

@@ -4,75 +4,21 @@ induction_sp4.at Function References
 =======================================================
 |
 
-.. _p_long_((rat,int),(rat,int)->Param)1:
+.. _p_long_(rat_nu_gl1,int_epsilon_gl1),(rat_nu_sl2,int_epsilon_sl2)->param1:
 
 p_long
 -------------------------------------------------
-| ``p_long:((rat,int),(rat,int)->Param)``
+| ``p_long:(rat nu_GL1,int epsilon_GL1),(rat nu_SL2,int epsilon_SL2)->Param``
+| 
+| Defined in induction_sp4.at line number 14.
 | 
 
-
-.. _p_short_((rat,rat),(int,int)->Param)1:
+.. _p_short_(rat_nu_1,rat_nu_2),(int_epsilon_1,int_epsilon_2)->param1:
 
 p_short
 -------------------------------------------------
-| ``p_short:((rat,rat),(int,int)->Param)``
+| ``p_short:(rat nu_1,rat nu_2),(int epsilon_1,int epsilon_2)->Param``
 | 
-
-
-.. _G_RealForm2:
-
-G
--------------------------------------------------
-| ``G:RealForm``
+| Defined in induction_sp4.at line number 25.
 | 
-
-
-.. _L_short_RealForm1:
-
-L_short
--------------------------------------------------
-| ``L_short:RealForm``
-| 
-
-
-.. _L_long_RealForm1:
-
-L_long
--------------------------------------------------
-| ``L_long:RealForm``
-| 
-
-
-.. _p_1_Param1:
-
-p_1
--------------------------------------------------
-| ``p_1:Param``
-| 
-
-
-.. _p_2_Param1:
-
-p_2
--------------------------------------------------
-| ``p_2:Param``
-| 
-
-
-.. _p_3_Param1:
-
-p_3
--------------------------------------------------
-| ``p_3:Param``
-| 
-
-
-.. _p_4_Param1:
-
-p_4
--------------------------------------------------
-| ``p_4:Param``
-| 
-
 

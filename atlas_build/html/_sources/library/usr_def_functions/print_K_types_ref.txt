@@ -4,147 +4,165 @@ print_K_types.at Function References
 =======================================================
 |
 
-.. _print_branch_irr_(ParamPol,KGBElt,int->)1:
+.. _print_branch_irr_parampol_p,kgbelt_x,int_bound->void1:
 
 print_branch_irr
 -------------------------------------------------
-| ``print_branch_irr:(ParamPol,KGBElt,int->)``
+| ``print_branch_irr:ParamPol P,KGBElt x,int bound->void``
+| 
+| Defined in print_K_types.at line number 22.
 | 
 
-
-.. _print_branch_irr_(ParamPol,int->)1:
+.. _print_branch_irr_parampol_p,int_bound->void1:
 
 print_branch_irr
 -------------------------------------------------
-| ``print_branch_irr:(ParamPol,int->)``
+| ``print_branch_irr:ParamPol P,int bound->void``
+| 
+| Defined in print_K_types.at line number 26.
 | 
 
-
-.. _print_branch_irr_long_(ParamPol,KGBElt,int->)1:
+.. _print_branch_irr_long_parampol_p,kgbelt_x,int_bound->void1:
 
 print_branch_irr_long
 -------------------------------------------------
-| ``print_branch_irr_long:(ParamPol,KGBElt,int->)``
+| ``print_branch_irr_long:ParamPol P,KGBElt x,int bound->void``
+| 
+| Defined in print_K_types.at line number 33.
 | 
 
-
-.. _print_branch_irr_long_(ParamPol,int->)1:
+.. _print_branch_irr_long_parampol_p,int_bound->void1:
 
 print_branch_irr_long
 -------------------------------------------------
-| ``print_branch_irr_long:(ParamPol,int->)``
+| ``print_branch_irr_long:ParamPol P,int bound->void``
+| 
+| Defined in print_K_types.at line number 40.
 | 
 
-
-.. _print_branch_irr_(Param,KGBElt,int->)1:
+.. _print_branch_irr_param_p,kgbelt_x,_int_bound->void1:
 
 print_branch_irr
 -------------------------------------------------
-| ``print_branch_irr:(Param,KGBElt,int->)``
+| ``print_branch_irr:Param p,KGBElt x, int bound->void``
+| 
+| Defined in print_K_types.at line number 45.
 | 
 
-
-.. _print_branch_irr_(Param,int->)1:
+.. _print_branch_irr_param_p,_int_bound->void1:
 
 print_branch_irr
 -------------------------------------------------
-| ``print_branch_irr:(Param,int->)``
+| ``print_branch_irr:Param p, int bound->void``
+| 
+| Defined in print_K_types.at line number 47.
 | 
 
-
-.. _print_branch_irr_long_(Param,KGBElt,int->)1:
+.. _print_branch_irr_long_param_p,kgbelt_x,_int_bound->void1:
 
 print_branch_irr_long
 -------------------------------------------------
-| ``print_branch_irr_long:(Param,KGBElt,int->)``
+| ``print_branch_irr_long:Param p,KGBElt x, int bound->void``
+| 
+| Defined in print_K_types.at line number 49.
 | 
 
-
-.. _print_branch_irr_long_(Param,int->)1:
+.. _print_branch_irr_long_param_p,_int_bound->void1:
 
 print_branch_irr_long
 -------------------------------------------------
-| ``print_branch_irr_long:(Param,int->)``
+| ``print_branch_irr_long:Param p, int bound->void``
+| 
+| Defined in print_K_types.at line number 51.
 | 
 
-
-.. _print_branch_std_(ParamPol,KGBElt,int->)1:
+.. _print_branch_std_parampol_p,kgbelt_x,int_bound->void1:
 
 print_branch_std
 -------------------------------------------------
-| ``print_branch_std:(ParamPol,KGBElt,int->)``
+| ``print_branch_std:ParamPol P,KGBElt x,int bound->void``
+| 
+| Defined in print_K_types.at line number 54.
 | 
 
-
-.. _print_branch_std_(ParamPol,int->)1:
+.. _print_branch_std_parampol_p,int_bound->void1:
 
 print_branch_std
 -------------------------------------------------
-| ``print_branch_std:(ParamPol,int->)``
+| ``print_branch_std:ParamPol P,int bound->void``
+| 
+| Defined in print_K_types.at line number 60.
 | 
 
-
-.. _print_branch_std_long_(ParamPol,KGBElt,int->)1:
+.. _print_branch_std_long_parampol_p,kgbelt_x,int_bound->void1:
 
 print_branch_std_long
 -------------------------------------------------
-| ``print_branch_std_long:(ParamPol,KGBElt,int->)``
+| ``print_branch_std_long:ParamPol P,KGBElt x,int bound->void``
+| 
+| Defined in print_K_types.at line number 67.
 | 
 
-
-.. _print_branch_std_long_(ParamPol,int->)1:
+.. _print_branch_std_long_parampol_p,int_bound->void1:
 
 print_branch_std_long
 -------------------------------------------------
-| ``print_branch_std_long:(ParamPol,int->)``
+| ``print_branch_std_long:ParamPol P,int bound->void``
+| 
+| Defined in print_K_types.at line number 76.
 | 
 
-
-.. _print_branch_std_(Param,KGBElt,int->)1:
+.. _print_branch_std_param_p,kgbelt_x,_int_bound->void1:
 
 print_branch_std
 -------------------------------------------------
-| ``print_branch_std:(Param,KGBElt,int->)``
+| ``print_branch_std:Param p,KGBElt x, int bound->void``
+| 
+| Defined in print_K_types.at line number 80.
 | 
 
-
-.. _print_branch_std_(Param,int->)1:
+.. _print_branch_std_param_p,_int_bound->void1:
 
 print_branch_std
 -------------------------------------------------
-| ``print_branch_std:(Param,int->)``
+| ``print_branch_std:Param p, int bound->void``
+| 
+| Defined in print_K_types.at line number 82.
 | 
 
-
-.. _print_branch_std_long_(Param,KGBElt,int->)1:
+.. _print_branch_std_long_param_p,kgbelt_x,_int_bound->void1:
 
 print_branch_std_long
 -------------------------------------------------
-| ``print_branch_std_long:(Param,KGBElt,int->)``
+| ``print_branch_std_long:Param p,KGBElt x, int bound->void``
+| 
+| Defined in print_K_types.at line number 84.
 | 
 
-
-.. _print_branch_std_long_(Param,int->)1:
+.. _print_branch_std_long_param_p,_int_bound->void1:
 
 print_branch_std_long
 -------------------------------------------------
-| ``print_branch_std_long:(Param,int->)``
+| ``print_branch_std_long:Param p, int bound->void``
+| 
+| Defined in print_K_types.at line number 86.
 | 
 
-
-.. _print_K_signature_irr_(Param,KGBElt,int->)1:
+.. _print_k_signature_irr_param_p,kgbelt_x,int_bound->void1:
 
 print_K_signature_irr
 -------------------------------------------------
-| ``print_K_signature_irr:(Param,KGBElt,int->)``
+| ``print_K_signature_irr:Param p,KGBElt x,int bound->void``
+| 
+| Defined in print_K_types.at line number 91.
 | 
 
-
-.. _print_K_signature_irr_(Param,int->)1:
+.. _print_k_signature_irr_param_p,int_bound->void1:
 
 print_K_signature_irr
 -------------------------------------------------
-| ``print_K_signature_irr:(Param,int->)``
+| ``print_K_signature_irr:Param p,int bound->void``
 | 
-
+| Defined in print_K_types.at line number 103.
+| 
 

@@ -4,75 +4,66 @@ Wdelta.at Function References
 =======================================================
 |
 
-.. _delta_fixed_root_datum_(InnerClass->RootDatum)1:
+.. _delta_fixed_root_datum_innerclass_ic->rootdatum1:
 
 delta_fixed_root_datum
 -------------------------------------------------
-| ``delta_fixed_root_datum:(InnerClass->RootDatum)``
+| ``delta_fixed_root_datum:InnerClass ic->RootDatum``
+| 
+| Defined in Wdelta.at line number 9.
 | 
 
-
-.. _delta_fixed_root_datum_(RootDatum,mat->RootDatum)1:
+.. _delta_fixed_root_datum_(rootdatum,mat)_pair->rootdatum1:
 
 delta_fixed_root_datum
 -------------------------------------------------
-| ``delta_fixed_root_datum:(RootDatum,mat->RootDatum)``
+| ``delta_fixed_root_datum:(RootDatum,mat) pair->RootDatum``
+| 
+| Defined in Wdelta.at line number 12.
 | 
 
-
-.. _translate_Wdelta_generators_(InnerClass->[[int]])1:
+.. _translate_wdelta_generators_innerclass_ic->[[int]]1:
 
 translate_Wdelta_generators
 -------------------------------------------------
-| ``translate_Wdelta_generators:(InnerClass->[[int]])``
+| ``translate_Wdelta_generators:InnerClass ic->[[int]]``
+| 
+| Defined in Wdelta.at line number 18.
 | 
 
-
-.. _translate_Wdelta_generators_(RootDatum,mat->[[int]])1:
+.. _translate_wdelta_generators_(rootdatum,mat)_pair->[[int]]1:
 
 translate_Wdelta_generators
 -------------------------------------------------
-| ``translate_Wdelta_generators:(RootDatum,mat->[[int]])``
+| ``translate_Wdelta_generators:(RootDatum,mat) pair->[[int]]``
+| 
+| Defined in Wdelta.at line number 33.
 | 
 
-
-.. _length_(RootDatum,int->int)1:
+.. _length_rootdatum_rd,_int_i,int_j->int1:
 
 length
 -------------------------------------------------
-| ``length:(RootDatum,int->int)``
+| ``length:RootDatum rd, int i,int j->int``
+| 
+| Defined in Wdelta.at line number 41.
 | 
 
-
-.. _length_(RootDatum,int,int->int)1:
-
-length
--------------------------------------------------
-| ``length:(RootDatum,int,int->int)``
-| 
-
-
-.. _rewrite_word_Wdelta_to_W_(InnerClass,(RootDatum,[int])->RootDatum,[int])1:
+.. _rewrite_word_wdelta_to_w_innerclass_ic,_w_word(,w)->w_word1:
 
 rewrite_word_Wdelta_to_W
 -------------------------------------------------
-| ``rewrite_word_Wdelta_to_W:(InnerClass,(RootDatum,[int])->RootDatum,[int])``
+| ``rewrite_word_Wdelta_to_W:InnerClass ic, W_word(,w)->W_word``
+| 
+| Defined in Wdelta.at line number 44.
 | 
 
-
-.. _rewrite_word_Wdelta_to_W_(RootDatum,mat,(RootDatum,[int])->RootDatum,[int])1:
+.. _rewrite_word_wdelta_to_w_rootdatum_rd,mat_delta,w_word_ww->w_word1:
 
 rewrite_word_Wdelta_to_W
 -------------------------------------------------
-| ``rewrite_word_Wdelta_to_W:(RootDatum,mat,(RootDatum,[int])->RootDatum,[int])``
+| ``rewrite_word_Wdelta_to_W:RootDatum rd,mat delta,W_word ww->W_word``
 | 
-
-
-.. _conjugate_to_simple_by_Wdelta_(RootDatum,mat,int->(RootDatum,[int]),vec)1:
-
-conjugate_to_simple_by_Wdelta
--------------------------------------------------
-| ``conjugate_to_simple_by_Wdelta:(RootDatum,mat,int->(RootDatum,[int]),vec)``
+| Defined in Wdelta.at line number 48.
 | 
-
 

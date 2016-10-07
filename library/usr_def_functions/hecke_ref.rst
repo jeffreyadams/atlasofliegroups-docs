@@ -4,371 +4,318 @@ hecke.at Function References
 =======================================================
 |
 
-.. _\=_((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)1:
+.. _\=_kgb_pair(x,y),_kgb_pair(z,w)->bool1:
 
 \=
 -------------------------------------------------
-| ``=:((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)``
+| ``=:KGB_pair(x,y), KGB_pair(z,w)->bool``
+| 
+| Defined in hecke.at line number 19.
 | 
 
+.. _\!=_kgb_pair(x,y),_kgb_pair(z,w)->bool1:
 
-.. _!=_((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)1:
-
-!=
+\!=
 -------------------------------------------------
-| ``!=:((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)``
+| ``!=:KGB_pair(x,y), KGB_pair(z,w)->bool``
+| 
+| Defined in hecke.at line number 20.
 | 
 
-
-.. _y_gen_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec)1:
+.. _y_gen_extended_param(ic,,gamma,lambda,,,,omega,,)->kgbelt_gen1:
 
 y_gen
 -------------------------------------------------
-| ``y_gen:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec)``
+| ``y_gen:extended_param(ic,,gamma,lambda,,,,omega,,)->KGBElt_gen``
+| 
+| Defined in hecke.at line number 26.
 | 
 
-
-.. _y_gen_(Param->InnerClass,mat,ratvec)1:
+.. _y_gen_param_p->kgbelt_gen1:
 
 y_gen
 -------------------------------------------------
-| ``y_gen:(Param->InnerClass,mat,ratvec)``
+| ``y_gen:Param p->KGBElt_gen``
+| 
+| Defined in hecke.at line number 30.
 | 
 
-
-.. _index_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->int)1:
+.. _index_kgb_pair_xy,_[kgb_pair]_xy_pairs->int1:
 
 index
 -------------------------------------------------
-| ``index:((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->int)``
+| ``index:KGB_pair xy, [KGB_pair] xy_pairs->int``
+| 
+| Defined in hecke.at line number 42.
 | 
 
-
-.. _find_pair_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->bool)1:
+.. _find_pair_(kgb_pair,[kgb_pair])_p->bool1:
 
 find_pair
 -------------------------------------------------
-| ``find_pair:((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->bool)``
+| ``find_pair:(KGB_pair,[KGB_pair]) p->bool``
+| 
+| Defined in hecke.at line number 46.
 | 
 
-
-.. _add_pair_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1:
+.. _add_pair_kgb_pair_xy,_[kgb_pair]_xy_pairs->[kgb_pair]1:
 
 add_pair
 -------------------------------------------------
-| ``add_pair:((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])``
+| ``add_pair:KGB_pair xy, [KGB_pair] xy_pairs->[KGB_pair]``
+| 
+| Defined in hecke.at line number 50.
 | 
 
-
-.. _index_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->int)1:
+.. _index_extended_param_ep,_[kgb_pair]_xy_pairs->int1:
 
 index
 -------------------------------------------------
-| ``index:((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->int)``
+| ``index:extended_param Ep, [KGB_pair] xy_pairs->int``
+| 
+| Defined in hecke.at line number 54.
 | 
 
-
-.. _neighbors_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1:
+.. _neighbors_int_j,_extended_param_ep->[extended_param]1:
 
 neighbors
 -------------------------------------------------
-| ``neighbors:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
+| ``neighbors:int j, extended_param Ep->[extended_param]``
+| 
+| Defined in hecke.at line number 68.
 | 
 
-
-.. _kgb_sort_([KGBElt]->[KGBElt])1:
+.. _kgb_sort_[kgbelt]_v->[kgbelt]1:
 
 kgb_sort
 -------------------------------------------------
-| ``kgb_sort:([KGBElt]->[KGBElt])``
+| ``kgb_sort:[KGBElt] v->[KGBElt]``
+| 
+| Defined in hecke.at line number 110.
 | 
 
-
-.. _x_sort_([(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1:
+.. _x_sort_[kgb_pair]_v->[kgb_pair]1:
 
 x_sort
 -------------------------------------------------
-| ``x_sort:([(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])``
+| ``x_sort:[KGB_pair] v->[KGB_pair]``
+| 
+| Defined in hecke.at line number 114.
 | 
 
-
-.. _xy_neighbors_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1:
+.. _xy_neighbors_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[kgb_pair]1:
 
 xy_neighbors
 -------------------------------------------------
-| ``xy_neighbors:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])``
+| ``xy_neighbors:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[KGB_pair]``
+| 
+| Defined in hecke.at line number 119.
 | 
 
-
-.. _xy_neighbors_(int,mat,Param,ratvec->[(KGBElt,(InnerClass,mat,ratvec))])1:
+.. _xy_neighbors_int_j,_mat_delta,param_p,_ratvec_g->[kgb_pair]1:
 
 xy_neighbors
 -------------------------------------------------
-| ``xy_neighbors:(int,mat,Param,ratvec->[(KGBElt,(InnerClass,mat,ratvec))])``
+| ``xy_neighbors:int j, mat delta,Param p, ratvec g->[KGB_pair]``
+| 
+| Defined in hecke.at line number 124.
 | 
 
-
-.. _xy_neighbors_(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1:
+.. _xy_neighbors_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_[kgb_pair]_xy_pairs->[kgb_pair]1:
 
 xy_neighbors
 -------------------------------------------------
-| ``xy_neighbors:(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])``
+| ``xy_neighbors:int j, mat delta, ratvec gamma, ratvec g, [KGB_pair] xy_pairs->[KGB_pair]``
+| 
+| Defined in hecke.at line number 140.
 | 
 
-
-.. _generate_subspace_(int,int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])1:
+.. _generate_subspace_int_i,_int_j,_extended_param_e->[kgb_pair]1:
 
 generate_subspace
 -------------------------------------------------
-| ``generate_subspace:(int,int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])``
+| ``generate_subspace:int i, int j, extended_param E->[KGB_pair]``
+| 
+| Defined in hecke.at line number 170.
 | 
 
-
-.. _generate_subspace_(int,int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1:
+.. _generate_subspace_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_p->[kgb_pair]1:
 
 generate_subspace
 -------------------------------------------------
-| ``generate_subspace:(int,int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])``
+| ``generate_subspace:int j, mat delta, ratvec gamma, ratvec g, KGB_pair p->[KGB_pair]``
+| 
+| Defined in hecke.at line number 174.
 | 
 
-
-.. _generate_subspace_(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])1:
+.. _generate_subspace_int_i_,extended_param_e->[kgb_pair]1:
 
 generate_subspace
 -------------------------------------------------
-| ``generate_subspace:(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])``
+| ``generate_subspace:int i ,extended_param E->[KGB_pair]``
+| 
+| Defined in hecke.at line number 178.
 | 
 
-
-.. _generate_subspace_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1:
-
-generate_subspace
--------------------------------------------------
-| ``generate_subspace:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])``
-| 
-
-
-.. _decompose_(int,int,mat,[Param],ratvec->[[(KGBElt,(InnerClass,mat,ratvec))]],int,[int])1:
-
-decompose
--------------------------------------------------
-| ``decompose:(int,int,mat,[Param],ratvec->[[(KGBElt,(InnerClass,mat,ratvec))]],int,[int])``
-| 
-
-
-.. _sign_2i12_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
+.. _sign_2i12_int_j,_extended_param_e,_extended_param_f->int2:
 
 sign_2i12
 -------------------------------------------------
-| ``sign_2i12:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
+| ``sign_2i12:int j, extended_param E, extended_param F->int``
+| 
+| Defined in hecke.at line number 240.
 | 
 
-
-.. _sign_2i12_old_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
+.. _sign_2i12_old_int_j,extended_param_e,extended_param_f->int2:
 
 sign_2i12_old
 -------------------------------------------------
-| ``sign_2i12_old:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
+| ``sign_2i12_old:int j,extended_param E,extended_param F->int``
+| 
+| Defined in hecke.at line number 249.
 | 
 
-
-.. _sign_2r21_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
+.. _sign_2r21_int_j,_extended_param_e,_extended_param_f->int2:
 
 sign_2r21
 -------------------------------------------------
-| ``sign_2r21:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
+| ``sign_2r21:int j, extended_param E, extended_param F->int``
+| 
+| Defined in hecke.at line number 316.
 | 
 
-
-.. _sign_2Ci_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
+.. _sign_2ci_int_j,extended_param_e->int2:
 
 sign_2Ci
 -------------------------------------------------
-| ``sign_2Ci:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
+| ``sign_2Ci:int j,extended_param E->int``
+| 
+| Defined in hecke.at line number 320.
 | 
 
-
-.. _sign_2Cr_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1:
+.. _sign_2cr_int_j,extended_param_e->int2:
 
 sign_2Cr
 -------------------------------------------------
-| ``sign_2Cr:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
+| ``sign_2Cr:int j,extended_param E->int``
+| 
+| Defined in hecke.at line number 328.
 | 
 
-
-.. _signs_1i1_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int,int)1:
-
-signs_1i1
--------------------------------------------------
-| ``signs_1i1:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int,int)``
-| 
-
-
-.. _\+_(vec,vec->vec)1:
-
-\+
--------------------------------------------------
-| ``+:(vec,vec->vec)``
-| 
-
-
-.. _\-_(vec,vec->vec)1:
-
-\-
--------------------------------------------------
-| ``-:(vec,vec->vec)``
-| 
-
-
-.. _\*_(vec,vec->vec)1:
-
-\*
--------------------------------------------------
-| ``*:(vec,vec->vec)``
-| 
-
-
-.. _hecke_row_(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])1:
+.. _hecke_row_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_pair,_[kgb_pair]_basis->[poly]1:
 
 hecke_row
 -------------------------------------------------
-| ``hecke_row:(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])``
+| ``hecke_row:int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]``
+| 
+| Defined in hecke.at line number 379.
 | 
 
-
-.. _\+_(vec,vec->vec)2:
-
-\+
--------------------------------------------------
-| ``+:(vec,vec->vec)``
-| 
-
-
-.. _\-_(vec,vec->vec)2:
-
-\-
--------------------------------------------------
-| ``-:(vec,vec->vec)``
-| 
-
-
-.. _\*_(vec,vec->int)1:
-
-\*
--------------------------------------------------
-| ``*:(vec,vec->int)``
-| 
-
-
-.. _hecke_row_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])1:
+.. _hecke_row_int_j,_extended_param(,delta,gamma,,,g,,,,):e,_[kgb_pair]_basis->[poly]1:
 
 hecke_row
 -------------------------------------------------
-| ``hecke_row:(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])``
+| ``hecke_row:int j, extended_param(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]``
+| 
+| Defined in hecke.at line number 549.
 | 
 
-
-.. _hecke_matrix_(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[[vec]])1:
+.. _hecke_matrix_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,[kgb_pair]_basis->poly_mat1:
 
 hecke_matrix
 -------------------------------------------------
-| ``hecke_matrix:(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[[vec]])``
+| ``hecke_matrix:int j, mat delta, ratvec gamma, ratvec g,[KGB_pair] basis->poly_mat``
+| 
+| Defined in hecke.at line number 557.
 | 
 
-
-.. _quadratic_([[vec]],int,bool->bool)1:
+.. _quadratic_poly_mat_m,_int_length,_bool_show->bool1:
 
 quadratic
 -------------------------------------------------
-| ``quadratic:([[vec]],int,bool->bool)``
+| ``quadratic:poly_mat M, int length, bool show->bool``
+| 
+| Defined in hecke.at line number 568.
 | 
 
-
-.. _quadratic_([[vec]],int->bool)1:
-
-quadratic
--------------------------------------------------
-| ``quadratic:([[vec]],int->bool)``
-| 
-
-
-.. _braid_([[vec]],[[vec]],int,bool->bool)1:
+.. _braid_poly_mat_m,poly_mat_n,_int_length,bool_show->bool1:
 
 braid
 -------------------------------------------------
-| ``braid:([[vec]],[[vec]],int,bool->bool)``
+| ``braid:poly_mat M,poly_mat N, int length,bool show->bool``
+| 
+| Defined in hecke.at line number 583.
 | 
 
-
-.. _braid_([[vec]],[[vec]],int->bool)1:
+.. _braid_poly_mat_m,poly_mat_n,_int_length->bool1:
 
 braid
 -------------------------------------------------
-| ``braid:([[vec]],[[vec]],int->bool)``
+| ``braid:poly_mat M,poly_mat N, int length->bool``
+| 
+| Defined in hecke.at line number 593.
 | 
 
-
-.. _modify_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),vec,vec,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
-
-modify
--------------------------------------------------
-| ``modify:((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),vec,vec,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``
-| 
-
-
-.. _test_hecke_(int,int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)1:
+.. _test_hecke_int_i,_int_j,mat_delta,_ratvec_gamma,_ratvec_g,_[kgb_pair]_basis->bool1:
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:(int,int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)``
+| ``test_hecke:int i, int j,mat delta, ratvec gamma, ratvec g, [KGB_pair] basis->bool``
+| 
+| Defined in hecke.at line number 606.
 | 
 
-
-.. _test_hecke_(int,int,mat,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)1:
+.. _test_hecke_int_i,_int_j,_mat_delta,_ratvec_gamma,_[kgb_pair]_basis->bool1:
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:(int,int,mat,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)``
+| ``test_hecke:int i, int j, mat delta, ratvec gamma, [KGB_pair] basis->bool``
+| 
+| Defined in hecke.at line number 626.
 | 
 
-
-.. _test_hecke_(int,int,mat,[Param],ratvec->bool)1:
+.. _test_hecke_int_i,_int_j,_mat_delta,_[param]_b,_ratvec_g->bool1:
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:(int,int,mat,[Param],ratvec->bool)``
+| ``test_hecke:int i, int j, mat delta, [Param] B, ratvec g->bool``
+| 
+| Defined in hecke.at line number 633.
 | 
 
-
-.. _test_hecke_(int,int,mat,[Param]->bool)1:
+.. _test_hecke_int_i,_int_j,_mat_delta,_[param]_b->bool1:
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:(int,int,mat,[Param]->bool)``
+| ``test_hecke:int i, int j, mat delta, [Param] B->bool``
+| 
+| Defined in hecke.at line number 647.
 | 
 
-
-.. _test_hecke_(int,int,mat,Param->bool)1:
+.. _test_hecke_int_i,int_j,_mat_delta,param_p->bool1:
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:(int,int,mat,Param->bool)``
+| ``test_hecke:int i,int j, mat delta,Param p->bool``
+| 
+| Defined in hecke.at line number 650.
 | 
 
-
-.. _test_hecke_(int,int,Param,ratvec->bool)1:
+.. _test_hecke_int_i,int_j,param_p,ratvec_g->bool1:
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:(int,int,Param,ratvec->bool)``
+| ``test_hecke:int i,int j,Param p,ratvec g->bool``
+| 
+| Defined in hecke.at line number 652.
 | 
 
-
-.. _test_hecke_(int,int,Param->bool)1:
+.. _test_hecke_int_i,int_j,param_p->bool1:
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:(int,int,Param->bool)``
+| ``test_hecke:int i,int j,Param p->bool``
 | 
-
+| Defined in hecke.at line number 654.
+| 
 

@@ -4,155 +4,165 @@ lattice.at Function References
 =======================================================
 |
 
-.. _submodule_basis_(mat->mat)1:
+.. _submodule_basis_mat_m->mat1:
 
 submodule_basis
 -------------------------------------------------
-| ``submodule_basis:(mat->mat)``
+| ``submodule_basis:mat M->mat``
+| 
+| Defined in lattice.at line number 5.
 | 
 
-
-.. _Q_submodule_basis_(mat->mat)1:
+.. _q_submodule_basis_mat_m->mat1:
 
 Q_submodule_basis
 -------------------------------------------------
-| ``Q_submodule_basis:(mat->mat)``
+| ``Q_submodule_basis:mat M->mat``
+| 
+| Defined in lattice.at line number 9.
 | 
 
-
-.. _quotient_module_basis_(mat->mat)1:
+.. _quotient_module_basis_mat_m->mat1:
 
 quotient_module_basis
 -------------------------------------------------
-| ``quotient_module_basis:(mat->mat)``
+| ``quotient_module_basis:mat M->mat``
+| 
+| Defined in lattice.at line number 14.
 | 
 
-
-.. _saturation_quotient_module_basis_(mat->mat)1:
+.. _saturation_quotient_module_basis_mat_m->mat1:
 
 saturation_quotient_module_basis
 -------------------------------------------------
-| ``saturation_quotient_module_basis:(mat->mat)``
+| ``saturation_quotient_module_basis:mat M->mat``
+| 
+| Defined in lattice.at line number 21.
 | 
 
-
-.. _Q_quotient_module_basis_(mat->mat)1:
+.. _q_quotient_module_basis_mat_m->mat1:
 
 Q_quotient_module_basis
 -------------------------------------------------
-| ``Q_quotient_module_basis:(mat->mat)``
+| ``Q_quotient_module_basis:mat M->mat``
+| 
+| Defined in lattice.at line number 25.
 | 
 
-
-.. _projection_mod_image_(mat->mat)1:
+.. _projection_mod_image_mat_m->mat1:
 
 projection_mod_image
 -------------------------------------------------
-| ``projection_mod_image:(mat->mat)``
+| ``projection_mod_image:mat M->mat``
+| 
+| Defined in lattice.at line number 30.
 | 
 
-
-.. _projection_to_image_(mat->mat)1:
+.. _projection_to_image_mat_m->mat1:
 
 projection_to_image
 -------------------------------------------------
-| ``projection_to_image:(mat->mat)``
+| ``projection_to_image:mat M->mat``
+| 
+| Defined in lattice.at line number 41.
 | 
 
-
-.. _projection_to_image_(mat,ratvec->ratvec)1:
+.. _projection_to_image_mat_m,_ratvec_v->ratvec1:
 
 projection_to_image
 -------------------------------------------------
-| ``projection_to_image:(mat,ratvec->ratvec)``
+| ``projection_to_image:mat M, ratvec v->ratvec``
+| 
+| Defined in lattice.at line number 45.
 | 
 
-
-.. _decompose_(mat,ratvec->ratvec,ratvec)1:
-
-decompose
--------------------------------------------------
-| ``decompose:(mat,ratvec->ratvec,ratvec)``
-| 
-
-
-.. _sub_matrix_(mat,mat->mat)1:
+.. _sub_matrix_mat_a,mat_m->mat1:
 
 sub_matrix
 -------------------------------------------------
-| ``sub_matrix:(mat,mat->mat)``
+| ``sub_matrix:mat A,mat M->mat``
+| 
+| Defined in lattice.at line number 67.
 | 
 
-
-.. _restrict_action_(mat,mat->mat)1:
+.. _restrict_action_mat_a,_mat_m->mat1:
 
 restrict_action
 -------------------------------------------------
-| ``restrict_action:(mat,mat->mat)``
+| ``restrict_action:mat A, mat M->mat``
+| 
+| Defined in lattice.at line number 78.
 | 
 
-
-.. _corestrict_action_(mat,mat->mat)1:
+.. _corestrict_action_mat_a,_mat_m->mat1:
 
 corestrict_action
 -------------------------------------------------
-| ``corestrict_action:(mat,mat->mat)``
+| ``corestrict_action:mat A, mat M->mat``
+| 
+| Defined in lattice.at line number 96.
 | 
 
-
-.. _quotient_matrix_(mat,mat->mat)1:
+.. _quotient_matrix_mat_m,mat_a->mat1:
 
 quotient_matrix
 -------------------------------------------------
-| ``quotient_matrix:(mat,mat->mat)``
+| ``quotient_matrix:mat M,mat A->mat``
+| 
+| Defined in lattice.at line number 103.
 | 
 
-
-.. _solve_ratvec_(mat,vec->ratvec)1:
+.. _solve_ratvec_mat_a,_vec_v->ratvec1:
 
 solve_ratvec
 -------------------------------------------------
-| ``solve_ratvec:(mat,vec->ratvec)``
+| ``solve_ratvec:mat A, vec v->ratvec``
+| 
+| Defined in lattice.at line number 110.
 | 
 
-
-.. _in_lattice_(mat,ratvec->bool)1:
+.. _in_lattice_mat_m,_ratvec_u->bool1:
 
 in_lattice
 -------------------------------------------------
-| ``in_lattice:(mat,ratvec->bool)``
+| ``in_lattice:mat M, ratvec u->bool``
+| 
+| Defined in lattice.at line number 119.
 | 
 
-
-.. _vec_solve_(mat,ratvec->[vec])1:
+.. _vec_solve_mat_a,_ratvec_u->[vec]1:
 
 vec_solve
 -------------------------------------------------
-| ``vec_solve:(mat,ratvec->[vec])``
+| ``vec_solve:mat A, ratvec u->[vec]``
+| 
+| Defined in lattice.at line number 123.
 | 
 
-
-.. _solve_vec_(mat,vec->vec)1:
+.. _solve_vec_mat_a,_vec_v->vec1:
 
 solve_vec
 -------------------------------------------------
-| ``solve_vec:(mat,vec->vec)``
+| ``solve_vec:mat A, vec v->vec``
+| 
+| Defined in lattice.at line number 127.
 | 
 
-
-.. _in_lattice_basis_(mat,mat->mat)1:
+.. _in_lattice_basis_mat_a,mat_m->mat1:
 
 in_lattice_basis
 -------------------------------------------------
-| ``in_lattice_basis:(mat,mat->mat)``
+| ``in_lattice_basis:mat A,mat M->mat``
+| 
+| Defined in lattice.at line number 136.
 | 
 
-
-.. _solve_in_lattice_([vec],vec->vec)1:
+.. _solve_in_lattice_[vec]_a,_vec_v->vec1:
 
 solve_in_lattice
 -------------------------------------------------
-| ``solve_in_lattice:([vec],vec->vec)``
+| ``solve_in_lattice:[vec] A, vec v->vec``
 | 
-
+| Defined in lattice.at line number 140.
+| 
 

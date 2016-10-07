@@ -10,29 +10,27 @@ complex.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`left_(vec->vec)1`
-     - ``(vec->vec)``
-   * - :ref:`right_(vec->vec)1`
-     - ``(vec->vec)``
-   * - :ref:`left_(ratvec->ratvec)1`
-     - ``(ratvec->ratvec)``
-   * - :ref:`right_(ratvec->ratvec)1`
-     - ``(ratvec->ratvec)``
-   * - :ref:`concatenate_(ratvec,ratvec->ratvec)1`
-     - ``(ratvec,ratvec->ratvec)``
-   * - :ref:`up_right_corner_(mat->mat)1`
-     - ``(mat->mat)``
-   * - :ref:`left_w_(KGBElt->mat)1`
-     - ``(KGBElt->mat)``
-   * - :ref:`mu_C_(Param->vec)1`
-     - ``(Param->vec)``
-   * - :ref:`nu_C_(Param->ratvec)1`
-     - ``(Param->ratvec)``
-   * - :ref:`gamma_L_(Param->ratvec)1`
-     - ``(Param->ratvec)``
-   * - :ref:`gamma_R_(Param->ratvec)1`
-     - ``(Param->ratvec)``
-   * - :ref:`gparameter_(RealForm,ratvec,ratvec->Param)1`
-     - ``(RealForm,ratvec,ratvec->Param)``
-   * - :ref:`mparameter_(RealForm,vec,ratvec->Param)1`
-     - ``(RealForm,vec,ratvec->Param)``
+   * - :ref:`left_vec_v->vec:_v[1`
+     - ``vec v->vec: v[``
+   * - :ref:`right_vec_v->vec:_v[#v\21`
+     - ``vec v->vec: v[#v\2``
+   * - :ref:`left_ratvec_v->ratvec:_v[1`
+     - ``ratvec v->ratvec: v[``
+   * - :ref:`right_ratvec_v->ratvec:_v[#v\21`
+     - ``ratvec v->ratvec: v[#v\2``
+   * - :ref:`up_right_corner_mat_m->mat1`
+     - ``mat M->mat``
+   * - :ref:`left_w_kgbelt_x->mat1`
+     - ``KGBElt x->mat``
+   * - :ref:`mu_c_param_p->vec1`
+     - ``Param p->vec``
+   * - :ref:`nu_c_param_p->ratvec1`
+     - ``Param p->ratvec``
+   * - :ref:`gamma_l_param_p->ratvec1`
+     - ``Param p->ratvec``
+   * - :ref:`gamma_r_param_p->ratvec1`
+     - ``Param p->ratvec``
+   * - :ref:`gparameter_realform_g,ratvec_gamma_l,_ratvec_gamma_r->param1`
+     - ``RealForm G,ratvec gamma_L, ratvec gamma_R->Param``
+   * - :ref:`mparameter_realform_g,_vec_mu,_ratvec_nu->param1`
+     - ``RealForm G, vec mu, ratvec nu->Param``

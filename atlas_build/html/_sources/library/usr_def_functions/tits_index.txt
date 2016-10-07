@@ -10,45 +10,43 @@ tits.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`\=_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)1`
-     - ``((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)``
-   * - :ref:`!=_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)1`
-     - ``((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)``
-   * - :ref:`tits_identity_(RootDatum->RootDatum,ratvec,mat)1`
-     - ``(RootDatum->RootDatum,ratvec,mat)``
-   * - :ref:`tits_delta_(RootDatum,mat->RootDatum,ratvec,mat)1`
-     - ``(RootDatum,mat->RootDatum,ratvec,mat)``
-   * - :ref:`tits_delta_(RealForm->RootDatum,ratvec,mat)1`
-     - ``(RealForm->RootDatum,ratvec,mat)``
-   * - :ref:`left_(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1`
-     - ``(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
-   * - :ref:`right_((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)1`
-     - ``((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)``
-   * - :ref:`left_((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1`
-     - ``((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
-   * - :ref:`right_((RootDatum,ratvec,mat),(RootDatum,[int])->RootDatum,ratvec,mat)1`
-     - ``((RootDatum,ratvec,mat),(RootDatum,[int])->RootDatum,ratvec,mat)``
-   * - :ref:`left_((ratvec,int),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1`
-     - ``((ratvec,int),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
-   * - :ref:`right_((RootDatum,ratvec,mat),(ratvec,int)->RootDatum,ratvec,mat)1`
-     - ``((RootDatum,ratvec,mat),(ratvec,int)->RootDatum,ratvec,mat)``
-   * - :ref:`conjugate_(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1`
-     - ``(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
-   * - :ref:`conjugate_((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1`
-     - ``((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
-   * - :ref:`multiply_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1`
-     - ``((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
-   * - :ref:`\*_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1`
-     - ``((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
-   * - :ref:`inverse_(RootDatum,ratvec,mat->RootDatum,ratvec,mat)1`
-     - ``(RootDatum,ratvec,mat->RootDatum,ratvec,mat)``
-   * - :ref:`lift_(RootDatum,[int]->RootDatum,ratvec,mat)1`
-     - ``(RootDatum,[int]->RootDatum,ratvec,mat)``
-   * - :ref:`lift_(mat,(RootDatum,[int])->RootDatum,ratvec,mat)1`
-     - ``(mat,(RootDatum,[int])->RootDatum,ratvec,mat)``
-   * - :ref:`lift_(RealForm,(RootDatum,[int])->RootDatum,ratvec,mat)1`
-     - ``(RealForm,(RootDatum,[int])->RootDatum,ratvec,mat)``
-   * - :ref:`\^_((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)1`
-     - ``((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)``
-   * - :ref:`order_(RootDatum,ratvec,mat->int)1`
-     - ``(RootDatum,ratvec,mat->int)``
+   * - :ref:`\=_tits_elt(,v,theta),tits_elt(,u,eta)->bool1`
+     - ``Tits_elt(,v,theta),Tits_elt(,u,eta)->bool``
+   * - :ref:`\!=_(tits_elt,tits_elt)p->bool1`
+     - ``(Tits_elt,Tits_elt)p->bool``
+   * - :ref:`tits_identity_rootdatum_rd->tits_elt1`
+     - ``RootDatum rd->Tits_elt``
+   * - :ref:`tits_delta_rootdatum_rd,mat_delta->tits_elt1`
+     - ``RootDatum rd,mat delta->Tits_elt``
+   * - :ref:`tits_delta_realform_g->tits_elt1`
+     - ``RealForm G->Tits_elt``
+   * - :ref:`left_int_s,tits_elt(rd,v,theta)->tits_elt1`
+     - ``int s,Tits_elt(rd,v,theta)->Tits_elt``
+   * - :ref:`right_tits_elt(rd,v,theta),_int_s->tits_elt1`
+     - ``Tits_elt(rd,v,theta), int s->Tits_elt``
+   * - :ref:`left_w_word(,w),tits_elt_xi->tits_elt1`
+     - ``W_word(,w),Tits_elt xi->Tits_elt``
+   * - :ref:`right_tits_elt_xi,_w_word(,w)->tits_elt1`
+     - ``Tits_elt xi, W_word(,w)->Tits_elt``
+   * - :ref:`left_(ratvec,int)(v,s),_tits_elt_xi->tits_elt1`
+     - ``(ratvec,int)(v,s), Tits_elt xi->Tits_elt``
+   * - :ref:`right_tits_elt_xi,_(ratvec,int)(v,s)->tits_elt1`
+     - ``Tits_elt xi, (ratvec,int)(v,s)->Tits_elt``
+   * - :ref:`conjugate_int_s,_tits_elt_xi->tits_elt1`
+     - ``int s, Tits_elt xi->Tits_elt``
+   * - :ref:`conjugate_w_word(,w),_tits_elt_xi->tits_elt1`
+     - ``W_word(,w), Tits_elt xi->Tits_elt``
+   * - :ref:`multiply_tits_elt(rd,v,theta),_tits_elt(,u,eta)->tits_elt1`
+     - ``Tits_elt(rd,v,theta), Tits_elt(,u,eta)->Tits_elt``
+   * - :ref:`inverse_tits_elt(rd,v,theta)->tits_elt1`
+     - ``Tits_elt(rd,v,theta)->Tits_elt``
+   * - :ref:`lift_w_word_w->tits_elt1`
+     - ``W_word w->Tits_elt``
+   * - :ref:`lift_mat_delta,_w_word_w->tits_elt1`
+     - ``mat delta, W_word w->Tits_elt``
+   * - :ref:`lift_realform_g,_w_word_w->tits_elt1`
+     - ``RealForm G, W_word w->Tits_elt``
+   * - :ref:`\^_tits_elt_!xi,_int_n->tits_elt1`
+     - ``Tits_elt !xi, int n->Tits_elt``
+   * - :ref:`order_tits_elt_xi->int1`
+     - ``Tits_elt xi->int``

@@ -4,3333 +4,3468 @@ basic.at Function References
 =======================================================
 |
 
-.. _\#_(int->[int])1:
+.. _\#_int_n->[int]:_for_i1:
 
 \#
 -------------------------------------------------
-| ``#:(int->[int])``
+| ``#:int n->[int]: for i``
+| 
+| Defined in basic.at line number 3.
 | 
 
-Generate an array of given length, starting from 0.
-
-::
-
-    atlas> #(10)
-    Value: [0,1,2,3,4,5,6,7,8,9]
-
-
-
-.. _\#_(bool->int)1:
+.. _\#_bool_b->int1:
 
 \#
 -------------------------------------------------
-| ``#:(bool->int)``
+| ``#:bool b->int``
+| 
+| Defined in basic.at line number 4.
 | 
 
-Output integers 0 or 1 from boolean values.
-
-::
-
-    atlas> #(true)
-    Value: 1
-    atlas> #(false)
-    Value: 0
-
-
-.. _\^_(bool,bool->bool)1:
-
-\^
--------------------------------------------------
-| ``^:(bool,bool->bool)``
-| 
-
-The xor operator.
-
-::
-
-    atlas> true^false
-    Value: true
-    atlas> true^true
-    Value: false
-    
-
-.. _assert_(bool,string->)1:
+.. _assert_bool_b,string_message->void1:
 
 assert
 -------------------------------------------------
-| ``assert:(bool,string->)``
+| ``assert:bool b,string message->void``
+| 
+| Defined in basic.at line number 8.
 | 
 
-
-.. _assert_(bool->)1:
+.. _assert_bool_b->void1:
 
 assert
 -------------------------------------------------
-| ``assert:(bool->)``
+| ``assert:bool b->void``
+| 
+| Defined in basic.at line number 9.
 | 
 
-
-.. _list_((int->bool),int->[int])1:
+.. _list_(int->bool)_filter,_int_limit->[int]1:
 
 list
 -------------------------------------------------
-| ``list:((int->bool),int->[int])``
+| ``list:(int->bool) filter, int limit->[int]``
+| 
+| Defined in basic.at line number 13.
 | 
 
-
-.. _complement_((int->bool),int->[int])1:
+.. _complement_(int->bool)_filter,_int_limit->[int]1:
 
 complement
 -------------------------------------------------
-| ``complement:((int->bool),int->[int])``
+| ``complement:(int->bool) filter, int limit->[int]``
+| 
+| Defined in basic.at line number 15.
 | 
 
-
-.. _count_((int->bool),int->int)1:
+.. _count_(int->bool)_filter,_int_limit->int1:
 
 count
 -------------------------------------------------
-| ``count:((int->bool),int->int)``
+| ``count:(int->bool) filter, int limit->int``
+| 
+| Defined in basic.at line number 18.
 | 
 
-
-.. _all_([bool]->bool)1:
+.. _all_[bool]_p->bool1:
 
 all
 -------------------------------------------------
-| ``all:([bool]->bool)``
+| ``all:[bool] p->bool``
+| 
+| Defined in basic.at line number 21.
 | 
 
-
-.. _none_([bool]->bool)1:
+.. _none_[bool]_p->bool1:
 
 none
 -------------------------------------------------
-| ``none:([bool]->bool)``
+| ``none:[bool] p->bool``
+| 
+| Defined in basic.at line number 23.
 | 
 
-
-.. _first_([bool]->int)1:
+.. _first_[bool]_p->int1:
 
 first
 -------------------------------------------------
-| ``first:([bool]->int)``
+| ``first:[bool] p->int``
+| 
+| Defined in basic.at line number 25.
 | 
 
-
-.. _last_([bool]->int)1:
+.. _last_[bool]_p->int1:
 
 last
 -------------------------------------------------
-| ``last:([bool]->int)``
+| ``last:[bool] p->int``
+| 
+| Defined in basic.at line number 27.
 | 
 
-
-.. _all_(int,(int->bool)->bool)1:
+.. _all_int_limit,(int->bool)_filter->bool1:
 
 all
 -------------------------------------------------
-| ``all:(int,(int->bool)->bool)``
+| ``all:int limit,(int->bool) filter->bool``
+| 
+| Defined in basic.at line number 30.
 | 
 
-
-.. _none_(int,(int->bool)->bool)1:
+.. _none_int_limit,(int->bool)_filter->bool1:
 
 none
 -------------------------------------------------
-| ``none:(int,(int->bool)->bool)``
+| ``none:int limit,(int->bool) filter->bool``
+| 
+| Defined in basic.at line number 32.
 | 
 
-
-.. _first_(int,(int->bool)->int)1:
+.. _first_int_limit,(int->bool)_filter->int1:
 
 first
 -------------------------------------------------
-| ``first:(int,(int->bool)->int)``
+| ``first:int limit,(int->bool) filter->int``
+| 
+| Defined in basic.at line number 34.
 | 
 
-
-.. _last_(int,(int->bool)->int)1:
+.. _last_int_limit,(int->bool)_filter->int1:
 
 last
 -------------------------------------------------
-| ``last:(int,(int->bool)->int)``
+| ``last:int limit,(int->bool) filter->int``
+| 
+| Defined in basic.at line number 36.
 | 
 
-
-.. _all_([(->bool)]->bool)1:
+.. _all_[(->bool)]_p->bool1:
 
 all
 -------------------------------------------------
-| ``all:([(->bool)]->bool)``
+| ``all:[(->bool)] p->bool``
+| 
+| Defined in basic.at line number 40.
 | 
 
-
-.. _none_([(->bool)]->bool)1:
+.. _none_[(->bool)]_p->bool1:
 
 none
 -------------------------------------------------
-| ``none:([(->bool)]->bool)``
+| ``none:[(->bool)] p->bool``
+| 
+| Defined in basic.at line number 42.
 | 
 
-
-.. _first_([(->bool)]->int)1:
+.. _first_[(->bool)]_p->int1:
 
 first
 -------------------------------------------------
-| ``first:([(->bool)]->int)``
+| ``first:[(->bool)] p->int``
+| 
+| Defined in basic.at line number 44.
 | 
 
-
-.. _last_([(->bool)]->int)1:
+.. _last_[(->bool)]_p->int1:
 
 last
 -------------------------------------------------
-| ``last:([(->bool)]->int)``
+| ``last:[(->bool)] p->int``
+| 
+| Defined in basic.at line number 46.
 | 
 
-
-.. _abs_(int->int)1:
+.. _abs_int_k->int1:
 
 abs
 -------------------------------------------------
-| ``abs:(int->int)``
+| ``abs:int k->int``
+| 
+| Defined in basic.at line number 53.
 | 
 
-
-.. _sign_(int->int)1:
+.. _sign_int_k->int1:
 
 sign
 -------------------------------------------------
-| ``sign:(int->int)``
+| ``sign:int k->int``
+| 
+| Defined in basic.at line number 54.
 | 
 
-
-.. _is_odd_(int->bool)1:
+.. _is_odd_int_n->bool1:
 
 is_odd
 -------------------------------------------------
-| ``is_odd:(int->bool)``
+| ``is_odd:int n->bool``
+| 
+| Defined in basic.at line number 56.
 | 
 
-
-.. _is_even_(int->bool)1:
+.. _is_even_int_n->bool1:
 
 is_even
 -------------------------------------------------
-| ``is_even:(int->bool)``
+| ``is_even:int n->bool``
+| 
+| Defined in basic.at line number 57.
 | 
 
-
-.. _min_(int,int->int)1:
+.. _min_int_k,_int_l->int1:
 
 min
 -------------------------------------------------
-| ``min:(int,int->int)``
+| ``min:int k, int l->int``
+| 
+| Defined in basic.at line number 59.
 | 
 
-
-.. _max_(int,int->int)1:
+.. _max_int_k,_int_l->int1:
 
 max
 -------------------------------------------------
-| ``max:(int,int->int)``
+| ``max:int k, int l->int``
+| 
+| Defined in basic.at line number 60.
 | 
 
-
-.. _min_([int]->int)1:
+.. _min_[int]_a->int1:
 
 min
 -------------------------------------------------
-| ``min:([int]->int)``
+| ``min:[int] a->int``
+| 
+| Defined in basic.at line number 62.
 | 
 
-
-.. _max_([int]->int)1:
+.. _max_[int]_a->int1:
 
 max
 -------------------------------------------------
-| ``max:([int]->int)``
+| ``max:[int] a->int``
+| 
+| Defined in basic.at line number 64.
 | 
 
-
-.. _min_loc_([int]->int)1:
+.. _min_loc_[int]_a->int1:
 
 min_loc
 -------------------------------------------------
-| ``min_loc:([int]->int)``
+| ``min_loc:[int] a->int``
+| 
+| Defined in basic.at line number 67.
 | 
 
-
-.. _max_loc_([int]->int)1:
+.. _max_loc_[int]_a->int1:
 
 max_loc
 -------------------------------------------------
-| ``max_loc:([int]->int)``
+| ``max_loc:[int] a->int``
+| 
+| Defined in basic.at line number 73.
 | 
 
-
-.. _min_(int->([int]->int))1:
+.. _min_int_!seed->([int]->int)1:
 
 min
 -------------------------------------------------
-| ``min:(int->([int]->int))``
+| ``min:int !seed->([int]->int)``
+| 
+| Defined in basic.at line number 81.
 | 
 
-
-.. _max_(int->([int]->int))1:
+.. _max_int_!seed->([int]->int)1:
 
 max
 -------------------------------------------------
-| ``max:(int->([int]->int))``
+| ``max:int !seed->([int]->int)``
+| 
+| Defined in basic.at line number 83.
 | 
 
-
-.. _lcm_([int]->int)1:
+.. _lcm_[int]_list)_=_let_(,d->%(ratvec1:
 
 lcm
 -------------------------------------------------
-| ``lcm:([int]->int)``
+| ``lcm:[int] list) = let (,d->%(ratvec``
+| 
+| Defined in basic.at line number 86.
 | 
 
-
-.. _\=_((int,int),(int,int)->bool)1:
+.. _\=_(int,int)(x0,y0),(int,int)(x1,y1)->bool1:
 
 \=
 -------------------------------------------------
-| ``=:((int,int),(int,int)->bool)``
+| ``=:(int,int)(x0,y0),(int,int)(x1,y1)->bool``
+| 
+| Defined in basic.at line number 88.
 | 
 
+.. _\!=_(int,int)(x0,y0),(int,int)(x1,y1)->bool1:
 
-.. _!=_((int,int),(int,int)->bool)1:
-
-!=
+\!=
 -------------------------------------------------
-| ``!=:((int,int),(int,int)->bool)``
+| ``!=:(int,int)(x0,y0),(int,int)(x1,y1)->bool``
+| 
+| Defined in basic.at line number 89.
 | 
 
-
-.. _numer_(rat->int)1:
+.. _numer_rat_a->int1:
 
 numer
 -------------------------------------------------
-| ``numer:(rat->int)``
+| ``numer:rat a->int``
+| 
+| Defined in basic.at line number 95.
 | 
 
-
-.. _denom_(rat->int)1:
+.. _denom_rat_a->int1:
 
 denom
 -------------------------------------------------
-| ``denom:(rat->int)``
+| ``denom:rat a->int``
+| 
+| Defined in basic.at line number 96.
 | 
 
-
-.. _is_integer_(rat->bool)1:
+.. _is_integer_rat_r->bool1:
 
 is_integer
 -------------------------------------------------
-| ``is_integer:(rat->bool)``
+| ``is_integer:rat r->bool``
+| 
+| Defined in basic.at line number 98.
 | 
 
-
-.. _sign_(rat->int)1:
+.. _sign_rat_a->int1:
 
 sign
 -------------------------------------------------
-| ``sign:(rat->int)``
+| ``sign:rat a->int``
+| 
+| Defined in basic.at line number 99.
 | 
 
-
-.. _abs_(rat->rat)1:
+.. _abs_rat_a->rat1:
 
 abs
 -------------------------------------------------
-| ``abs:(rat->rat)``
+| ``abs:rat a->rat``
+| 
+| Defined in basic.at line number 101.
 | 
 
-
-.. _floor_(rat->int)1:
+.. _floor_rat_a->int1:
 
 floor
 -------------------------------------------------
-| ``floor:(rat->int)``
+| ``floor:rat a->int``
+| 
+| Defined in basic.at line number 103.
 | 
 
-
-.. _ceil_(rat->int)1:
+.. _ceil_rat_a->int1:
 
 ceil
 -------------------------------------------------
-| ``ceil:(rat->int)``
+| ``ceil:rat a->int``
+| 
+| Defined in basic.at line number 104.
 | 
 
-
-.. _\\_(rat,int->int)1:
+.. _\\_(rat,int)p->int1:
 
 \\
 -------------------------------------------------
-| ``\:(rat,int->int)``
+| ``\:(rat,int)p->int``
+| 
+| Defined in basic.at line number 106.
 | 
 
-
-.. _\\_(rat,rat->int)1:
+.. _\\_(rat,rat)p->int1:
 
 \\
 -------------------------------------------------
-| ``\:(rat,rat->int)``
+| ``\:(rat,rat)p->int``
+| 
+| Defined in basic.at line number 107.
 | 
 
-
-.. _\%_(rat,int->int,rat)1:
+.. _\%_(rat,int)p->(int,rat)1:
 
 \%
 -------------------------------------------------
-| ``\%:(rat,int->int,rat)``
+| ``\%:(rat,int)p->(int,rat)``
+| 
+| Defined in basic.at line number 108.
 | 
 
-
-.. _\%_(rat,rat->int,rat)1:
+.. _\%_(rat,rat)p->(int,rat)1:
 
 \%
 -------------------------------------------------
-| ``\%:(rat,rat->int,rat)``
+| ``\%:(rat,rat)p->(int,rat)``
+| 
+| Defined in basic.at line number 109.
 | 
 
-
-.. _floor_([rat]->vec)1:
+.. _floor_[rat]_v->vec1:
 
 floor
 -------------------------------------------------
-| ``floor:([rat]->vec)``
+| ``floor:[rat] v->vec``
+| 
+| Defined in basic.at line number 112.
 | 
 
-
-.. _ceil_([rat]->vec)1:
+.. _ceil_[rat]_v->vec1:
 
 ceil
 -------------------------------------------------
-| ``ceil:([rat]->vec)``
+| ``ceil:[rat] v->vec``
+| 
+| Defined in basic.at line number 113.
 | 
 
-
-.. _rat_as_int_(rat->int)1:
+.. _rat_as_int_rat_r->int1:
 
 rat_as_int
 -------------------------------------------------
-| ``rat_as_int:(rat->int)``
+| ``rat_as_int:rat r->int``
+| 
+| Defined in basic.at line number 117.
 | 
 
-
-.. _\+_(string,string->string)1:
-
-\+
--------------------------------------------------
-| ``+:(string,string->string)``
-| 
-
-
-.. _\*_(string,int->string)1:
+.. _\*_int_n,string_s->string1:
 
 \*
 -------------------------------------------------
-| ``*:(string,int->string)``
+| ``*:int n,string s->string``
+| 
+| Defined in basic.at line number 133.
 | 
 
-
-.. _\*_(int,string->string)1:
-
-\*
--------------------------------------------------
-| ``*:(int,string->string)``
-| 
-
-
-.. _\+_(string,int->string)1:
+.. _\+_string_s,_int_i->string1:
 
 \+
 -------------------------------------------------
-| ``+:(string,int->string)``
+| ``+:string s, int i->string``
+| 
+| Defined in basic.at line number 135.
 | 
 
-
-.. _\+_(int,string->string)1:
+.. _\+_int_i,_string_s->string1:
 
 \+
 -------------------------------------------------
-| ``+:(int,string->string)``
+| ``+:int i, string s->string``
+| 
+| Defined in basic.at line number 136.
 | 
 
-
-.. _\+_(string,(int,int)->string)1:
-
-\+
--------------------------------------------------
-| ``+:(string,(int,int)->string)``
-| 
-
-
-.. _plural_(int->string)1:
+.. _plural_int_n->string1:
 
 plural
 -------------------------------------------------
-| ``plural:(int->string)``
+| ``plural:int n->string``
+| 
+| Defined in basic.at line number 140.
 | 
 
-
-.. _plural_(int,string->string)1:
+.. _plural_int_n,string_s->string1:
 
 plural
 -------------------------------------------------
-| ``plural:(int,string->string)``
+| ``plural:int n,string s->string``
+| 
+| Defined in basic.at line number 141.
 | 
 
-
-.. _concat_([string]->string)1:
-
-concat
--------------------------------------------------
-| ``concat:([string]->string)``
-| 
-
-
-.. _l_adjust_(int,string->string)1:
+.. _l_adjust_int_w,_string_s->string1:
 
 l_adjust
 -------------------------------------------------
-| ``l_adjust:(int,string->string)``
+| ``l_adjust:int w, string s->string``
+| 
+| Defined in basic.at line number 145.
 | 
 
-
-.. _r_adjust_(int,string->string)1:
+.. _r_adjust_int_w,_string_s->string1:
 
 r_adjust
 -------------------------------------------------
-| ``r_adjust:(int,string->string)``
+| ``r_adjust:int w, string s->string``
+| 
+| Defined in basic.at line number 147.
 | 
 
-
-.. _c_adjust_(int,string->string)1:
+.. _c_adjust_int_w,_string_s->string1:
 
 c_adjust
 -------------------------------------------------
-| ``c_adjust:(int,string->string)``
+| ``c_adjust:int w, string s->string``
+| 
+| Defined in basic.at line number 149.
 | 
 
-
-.. _width_(int->int)1:
+.. _width_int_n->int1:
 
 width
 -------------------------------------------------
-| ``width:(int->int)``
+| ``width:int n->int``
+| 
+| Defined in basic.at line number 152.
 | 
 
-
-.. _split_lines_(string->[string])1:
+.. _split_lines_string_text->[string]1:
 
 split_lines
 -------------------------------------------------
-| ``split_lines:(string->[string])``
+| ``split_lines:string text->[string]``
+| 
+| Defined in basic.at line number 154.
 | 
 
-
-.. _is_substring_(string,string->bool)1:
+.. _is_substring_string_s,_string_text->bool1:
 
 is_substring
 -------------------------------------------------
-| ``is_substring:(string,string->bool)``
+| ``is_substring:string s, string text->bool``
+| 
+| Defined in basic.at line number 160.
 | 
 
-
-.. _fgrep_(string,string->[string])1:
+.. _fgrep_string_s,_string_text->[string]1:
 
 fgrep
 -------------------------------------------------
-| ``fgrep:(string,string->[string])``
+| ``fgrep:string s, string text->[string]``
+| 
+| Defined in basic.at line number 164.
 | 
 
-
-.. _vector_(int,(int->int)->vec)1:
+.. _vector_int_n,(int->int)f->vec:_for_i1:
 
 vector
 -------------------------------------------------
-| ``vector:(int,(int->int)->vec)``
+| ``vector:int n,(int->int)f->vec: for i``
+| 
+| Defined in basic.at line number 172.
 | 
 
-
-.. _ones_(int->vec)1:
+.. _ones_int_n->vec:_for_i1:
 
 ones
 -------------------------------------------------
-| ``ones:(int->vec)``
+| ``ones:int n->vec: for i``
+| 
+| Defined in basic.at line number 174.
 | 
 
-
-.. _gcd_([int]->int)1:
+.. _gcd_[int]_v->int1:
 
 gcd
 -------------------------------------------------
-| ``gcd:([int]->int)``
+| ``gcd:[int] v->int``
+| 
+| Defined in basic.at line number 177.
 | 
 
-
-.. _\*_(int,vec->vec)1:
+.. _\*_int_c,vec_v->vec1:
 
 \*
 -------------------------------------------------
-| ``*:(int,vec->vec)``
+| ``*:int c,vec v->vec``
+| 
+| Defined in basic.at line number 181.
 | 
 
-
-.. _sum_(vec->int)1:
-
-sum
--------------------------------------------------
-| ``sum:(vec->int)``
-| 
-
-
-.. _product_(vec->int)1:
+.. _product_vec_v->1_in_for_e_in_v_do_s*1:
 
 product
 -------------------------------------------------
-| ``product:(vec->int)``
+| ``product:vec v->1 in for e in v do s*``
+| 
+| Defined in basic.at line number 185.
 | 
 
-
-.. _reverse_(vec->vec)1:
+.. _reverse_vec_v->vec:_v~[1:
 
 reverse
 -------------------------------------------------
-| ``reverse:(vec->vec)``
+| ``reverse:vec v->vec: v~[``
+| 
+| Defined in basic.at line number 187.
 | 
 
-
-.. _lower_(int,vec->vec)1:
+.. _lower_int_k,vec_v->vec:_v[1:
 
 lower
 -------------------------------------------------
-| ``lower:(int,vec->vec)``
+| ``lower:int k,vec v->vec: v[``
+| 
+| Defined in basic.at line number 188.
 | 
 
-
-.. _upper_(int,vec->vec)1:
+.. _upper_int_k,vec_v->vec:_v[k~1:
 
 upper
 -------------------------------------------------
-| ``upper:(int,vec->vec)``
+| ``upper:int k,vec v->vec: v[k~``
+| 
+| Defined in basic.at line number 189.
 | 
 
-
-.. _drop_lower_(int,vec->vec)1:
+.. _drop_lower_int_k,vec_v->vec:_v[k1:
 
 drop_lower
 -------------------------------------------------
-| ``drop_lower:(int,vec->vec)``
+| ``drop_lower:int k,vec v->vec: v[k``
+| 
+| Defined in basic.at line number 190.
 | 
 
-
-.. _drop_upper_(int,vec->vec)1:
+.. _drop_upper_int_k,vec_v->vec:_v[1:
 
 drop_upper
 -------------------------------------------------
-| ``drop_upper:(int,vec->vec)``
+| ``drop_upper:int k,vec v->vec: v[``
+| 
+| Defined in basic.at line number 191.
 | 
 
-
-.. _<=_(vec->bool)1:
+.. _<=_vec_v->bool1:
 
 <=
 -------------------------------------------------
-| ``<=:(vec->bool)``
+| ``<=:vec v->bool``
+| 
+| Defined in basic.at line number 193.
 | 
 
-
-.. _<_(vec->bool)1:
+.. _<_vec_v->bool1:
 
 <
 -------------------------------------------------
-| ``<:(vec->bool)``
+| ``<:vec v->bool``
+| 
+| Defined in basic.at line number 194.
 | 
 
-
-.. _is_member_([int]->(int->bool))1:
+.. _is_member_[int]_v->(int->bool)1:
 
 is_member
 -------------------------------------------------
-| ``is_member:([int]->(int->bool))``
+| ``is_member:[int] v->(int->bool)``
+| 
+| Defined in basic.at line number 196.
 | 
 
-
-.. _contains_(int->([int]->bool))1:
+.. _contains_int_val->([int]->bool):_([int]_v)bool1:
 
 contains
 -------------------------------------------------
-| ``contains:(int->([int]->bool))``
+| ``contains:int val->([int]->bool): ([int] v)bool``
+| 
+| Defined in basic.at line number 200.
 | 
 
+.. _rec_fun all_0_1_vecs_int_n->[vec]1:
 
-.. _all_0_1_vecs_(int->[vec])1:
-
-all_0_1_vecs
+rec_fun all_0_1_vecs
 -------------------------------------------------
-| ``all_0_1_vecs:(int->[vec])``
+| ``rec_fun all_0_1_vecs:int n->[vec]``
+| 
+| Defined in basic.at line number 202.
 | 
 
+.. _rec_fun power_set_int_n->[[int]]1:
 
-.. _power_set_(int->[[int]])1:
+rec_fun power_set
+-------------------------------------------------
+| ``rec_fun power_set:int n->[[int]]``
+| 
+| Defined in basic.at line number 208.
+| 
+
+.. _power_set_[int]_s->[[int]]1:
 
 power_set
 -------------------------------------------------
-| ``power_set:(int->[[int]])``
+| ``power_set:[int] S->[[int]]``
+| 
+| Defined in basic.at line number 210.
 | 
 
-
-.. _power_set_([int]->[[int]])1:
-
-power_set
--------------------------------------------------
-| ``power_set:([int]->[[int]])``
-| 
-
-
-.. _matrix_((int,int),(int,int->int)->mat)1:
+.. _matrix_(int,int)(r,c),(int,int->int)_f->mat1:
 
 matrix
 -------------------------------------------------
-| ``matrix:((int,int),(int,int->int)->mat)``
+| ``matrix:(int,int)(r,c),(int,int->int) f->mat``
+| 
+| Defined in basic.at line number 217.
 | 
 
-
-.. _n_rows_(mat->int)1:
+.. _n_rows_mat_m->int1:
 
 n_rows
 -------------------------------------------------
-| ``n_rows:(mat->int)``
+| ``n_rows:mat m->int``
+| 
+| Defined in basic.at line number 220.
 | 
 
-
-.. _n_columns_(mat->int)1:
+.. _n_columns_mat_m->int1:
 
 n_columns
 -------------------------------------------------
-| ``n_columns:(mat->int)``
+| ``n_columns:mat m->int``
+| 
+| Defined in basic.at line number 221.
 | 
 
-
-.. _column_(vec->mat)1:
+.. _column_vec_v->mat1:
 
 column
 -------------------------------------------------
-| ``column:(vec->mat)``
+| ``column:vec v->mat``
+| 
+| Defined in basic.at line number 223.
 | 
 
-
-.. _row_(vec->mat)1:
+.. _row_vec_v->mat1:
 
 row
 -------------------------------------------------
-| ``row:(vec->mat)``
+| ``row:vec v->mat``
+| 
+| Defined in basic.at line number 224.
 | 
 
-
-.. _\=_(mat,int->bool)1:
+.. _\=_mat_m,int_k->bool1:
 
 \=
 -------------------------------------------------
-| ``=:(mat,int->bool)``
+| ``=:mat m,int k->bool``
+| 
+| Defined in basic.at line number 227.
 | 
 
-
-.. _\#_(mat,vec->mat)1:
+.. _\#_mat_m,_vec_v->mat:_n_rows(m)__#_(([vec]1:
 
 \#
 -------------------------------------------------
-| ``#:(mat,vec->mat)``
+| ``#:mat m, vec v->mat: n_rows(m)  # (([vec]``
+| 
+| Defined in basic.at line number 230.
 | 
 
-
-.. _\#_(vec,mat->mat)1:
+.. _\#_vec_v,_mat_m->mat:_n_rows(m)__#_(v#([vec]1:
 
 \#
 -------------------------------------------------
-| ``#:(vec,mat->mat)``
+| ``#:vec v, mat m->mat: n_rows(m)  # (v#([vec]``
+| 
+| Defined in basic.at line number 231.
 | 
 
-
-.. _\^_(mat,vec->mat)1:
+.. _\^_mat_m,_vec_v->mat:_n_columns(m)_^_(([vec]1:
 
 \^
 -------------------------------------------------
-| ``^:(mat,vec->mat)``
+| ``^:mat m, vec v->mat: n_columns(m) ^ (([vec]``
+| 
+| Defined in basic.at line number 234.
 | 
 
-
-.. _\^_(vec,mat->mat)1:
+.. _\^_vec_v,_mat_m->mat:_n_columns(m)_^_(v#([vec]1:
 
 \^
 -------------------------------------------------
-| ``^:(vec,mat->mat)``
+| ``^:vec v, mat m->mat: n_columns(m) ^ (v#([vec]``
+| 
+| Defined in basic.at line number 235.
 | 
 
-
-.. _##_(mat,mat->mat)1:
+.. _##_mat_a,_mat_b->mat1:
 
 ##
 -------------------------------------------------
-| ``##:(mat,mat->mat)``
+| ``##:mat A, mat B->mat``
+| 
+| Defined in basic.at line number 237.
 | 
 
-
-.. _\^_(mat,mat->mat)1:
+.. _\^_mat_a,_mat_b->mat1:
 
 \^
 -------------------------------------------------
-| ``^:(mat,mat->mat)``
+| ``^:mat A, mat B->mat``
+| 
+| Defined in basic.at line number 239.
 | 
 
-
-.. _##_(int,[mat]->mat)1:
+.. _##_int_n,[mat]_l->mat1:
 
 ##
 -------------------------------------------------
-| ``##:(int,[mat]->mat)``
+| ``##:int n,[mat] L->mat``
+| 
+| Defined in basic.at line number 243.
 | 
 
-
-.. _map_on_(mat->((int->int)->mat))1:
+.. _map_on_mat_m->((int->int)->mat)1:
 
 map_on
 -------------------------------------------------
-| ``map_on:(mat->((int->int)->mat))``
+| ``map_on:mat m->((int->int)->mat)``
+| 
+| Defined in basic.at line number 247.
 | 
 
-
-.. _\*_(int,mat->mat)1:
+.. _\*_int_c,mat_m->mat:_map_on(m)((int_e)_int1:
 
 \*
 -------------------------------------------------
-| ``*:(int,mat->mat)``
+| ``*:int c,mat m->mat: map_on(m)((int e) int``
+| 
+| Defined in basic.at line number 252.
 | 
 
-
-.. _\-_(mat->mat)1:
+.. _\-_mat_m->mat1:
 
 \-
 -------------------------------------------------
-| ``-:(mat->mat)``
+| ``-:mat m->mat``
+| 
+| Defined in basic.at line number 253.
 | 
 
-
-.. _\\_(mat,int->mat)1:
+.. _\\_mat_m,int_d->mat:_map_on(m)((int_e)_int1:
 
 \\
 -------------------------------------------------
-| ``\:(mat,int->mat)``
+| ``\:mat m,int d->mat: map_on(m)((int e) int``
+| 
+| Defined in basic.at line number 257.
 | 
 
-
-.. _%_(mat,int->mat)1:
+.. _%_mat_m,int_d->mat:_map_on(m)((int_e)_int1:
 
 %
 -------------------------------------------------
-| ``%:(mat,int->mat)``
+| ``%:mat m,int d->mat: map_on(m)((int e) int``
+| 
+| Defined in basic.at line number 260.
 | 
 
-
-.. _\^_(mat,int->mat)1:
-
-\^
--------------------------------------------------
-| ``^:(mat,int->mat)``
-| 
-
-
-.. _inverse_(mat->mat)1:
+.. _inverse_mat_m->mat1:
 
 inverse
 -------------------------------------------------
-| ``inverse:(mat->mat)``
+| ``inverse:mat M->mat``
+| 
+| Defined in basic.at line number 283.
 | 
 
-
-.. _det_(mat->int)1:
+.. _det_mat_m->int1:
 
 det
 -------------------------------------------------
-| ``det:(mat->int)``
+| ``det:mat M->int``
+| 
+| Defined in basic.at line number 287.
 | 
 
-
-.. _saturated_span_(mat->bool)1:
+.. _saturated_span_mat_m->bool1:
 
 saturated_span
 -------------------------------------------------
-| ``saturated_span:(mat->bool)``
+| ``saturated_span:mat M->bool``
+| 
+| Defined in basic.at line number 295.
 | 
 
-
-.. _all_(mat,(vec->bool)->bool)1:
+.. _all_mat_m,(vec->bool)_filter->bool1:
 
 all
 -------------------------------------------------
-| ``all:(mat,(vec->bool)->bool)``
+| ``all:mat M,(vec->bool) filter->bool``
+| 
+| Defined in basic.at line number 300.
 | 
 
-
-.. _none_(mat,(vec->bool)->bool)1:
+.. _none_mat_m,(vec->bool)_filter->bool1:
 
 none
 -------------------------------------------------
-| ``none:(mat,(vec->bool)->bool)``
+| ``none:mat M,(vec->bool) filter->bool``
+| 
+| Defined in basic.at line number 302.
 | 
 
-
-.. _first_(mat,(vec->bool)->int)1:
+.. _first_mat_m,(vec->bool)_filter->int1:
 
 first
 -------------------------------------------------
-| ``first:(mat,(vec->bool)->int)``
+| ``first:mat M,(vec->bool) filter->int``
+| 
+| Defined in basic.at line number 304.
 | 
 
-
-.. _last_(mat,(vec->bool)->int)1:
+.. _last_mat_m,(vec->bool)_filter->int1:
 
 last
 -------------------------------------------------
-| ``last:(mat,(vec->bool)->int)``
+| ``last:mat M,(vec->bool) filter->int``
+| 
+| Defined in basic.at line number 307.
 | 
 
-
-.. _columns_with_((int,vec->bool),mat->mat)1:
+.. _columns_with_(int,vec->bool)_p,mat_m->mat1:
 
 columns_with
 -------------------------------------------------
-| ``columns_with:((int,vec->bool),mat->mat)``
+| ``columns_with:(int,vec->bool) p,mat m->mat``
+| 
+| Defined in basic.at line number 310.
 | 
 
-
-.. _columns_with_((vec->bool),mat->mat)1:
+.. _columns_with_(vec->bool)_p,mat_m->mat1:
 
 columns_with
 -------------------------------------------------
-| ``columns_with:((vec->bool),mat->mat)``
+| ``columns_with:(vec->bool) p,mat m->mat``
+| 
+| Defined in basic.at line number 313.
 | 
 
-
-.. _columns_with_((int->bool),mat->mat)1:
+.. _columns_with_(int->bool)_p,mat_m->mat1:
 
 columns_with
 -------------------------------------------------
-| ``columns_with:((int->bool),mat->mat)``
+| ``columns_with:(int->bool) p,mat m->mat``
+| 
+| Defined in basic.at line number 315.
 | 
 
-
-.. _rows_with_((int,vec->bool),mat->mat)1:
+.. _rows_with_(int,vec->bool)_p,mat_m->mat1:
 
 rows_with
 -------------------------------------------------
-| ``rows_with:((int,vec->bool),mat->mat)``
+| ``rows_with:(int,vec->bool) p,mat m->mat``
+| 
+| Defined in basic.at line number 318.
 | 
 
-
-.. _rows_with_((vec->bool),mat->mat)1:
+.. _rows_with_(vec->bool)_p,mat_m->mat1:
 
 rows_with
 -------------------------------------------------
-| ``rows_with:((vec->bool),mat->mat)``
+| ``rows_with:(vec->bool) p,mat m->mat``
+| 
+| Defined in basic.at line number 321.
 | 
 
-
-.. _rows_with_((int->bool),mat->mat)1:
+.. _rows_with_(int->bool)_p,mat_m->mat1:
 
 rows_with
 -------------------------------------------------
-| ``rows_with:((int->bool),mat->mat)``
+| ``rows_with:(int->bool) p,mat m->mat``
+| 
+| Defined in basic.at line number 323.
 | 
 
-
-.. _>=_(mat->bool)1:
+.. _>=_mat_m->bool1:
 
 >=
 -------------------------------------------------
-| ``>=:(mat->bool)``
+| ``>=:mat m->bool``
+| 
+| Defined in basic.at line number 326.
 | 
 
-
-.. _>_(mat->bool)1:
+.. _>_mat_m->bool1:
 
 >
 -------------------------------------------------
-| ``>:(mat->bool)``
+| ``>:mat m->bool``
+| 
+| Defined in basic.at line number 328.
 | 
 
-
-.. _<=_(mat->bool)1:
+.. _<=_mat_m->bool1:
 
 <=
 -------------------------------------------------
-| ``<=:(mat->bool)``
+| ``<=:mat m->bool``
+| 
+| Defined in basic.at line number 330.
 | 
 
-
-.. _<_(mat->bool)1:
+.. _<_mat_m->bool1:
 
 <
 -------------------------------------------------
-| ``<:(mat->bool)``
+| ``<:mat m->bool``
+| 
+| Defined in basic.at line number 331.
 | 
 
-
-.. _lookup_column_(vec,mat->int)1:
+.. _lookup_column_vec_v,mat_m->int1:
 
 lookup_column
 -------------------------------------------------
-| ``lookup_column:(vec,mat->int)``
+| ``lookup_column:vec v,mat m->int``
+| 
+| Defined in basic.at line number 333.
 | 
 
-
-.. _lookup_row_(vec,mat->int)1:
+.. _lookup_row_vec_v,mat_m->int1:
 
 lookup_row
 -------------------------------------------------
-| ``lookup_row:(vec,mat->int)``
+| ``lookup_row:vec v,mat m->int``
+| 
+| Defined in basic.at line number 335.
 | 
 
-
-.. _sum_(mat->vec)1:
+.. _sum_mat_m->vec1:
 
 sum
 -------------------------------------------------
-| ``sum:(mat->vec)``
+| ``sum:mat m->vec``
+| 
+| Defined in basic.at line number 339.
 | 
 
-
-.. _solve_(mat,vec->[vec])1:
-
-solve
--------------------------------------------------
-| ``solve:(mat,vec->[vec])``
-| 
-
-
-.. _order_(mat->int)1:
+.. _order_mat_!m->int1:
 
 order
 -------------------------------------------------
-| ``order:(mat->int)``
+| ``order:mat !M->int``
+| 
+| Defined in basic.at line number 364.
 | 
 
-
-.. _numer_(ratvec->vec)1:
+.. _numer_ratvec_a->vec1:
 
 numer
 -------------------------------------------------
-| ``numer:(ratvec->vec)``
+| ``numer:ratvec a->vec``
+| 
+| Defined in basic.at line number 373.
 | 
 
-
-.. _denom_(ratvec->int)1:
+.. _denom_ratvec_a->int1:
 
 denom
 -------------------------------------------------
-| ``denom:(ratvec->int)``
+| ``denom:ratvec a->int``
+| 
+| Defined in basic.at line number 374.
 | 
 
-
-.. _\*_(int,ratvec->ratvec)1:
+.. _\*_int_i,ratvec_v->ratvec1:
 
 \*
 -------------------------------------------------
-| ``*:(int,ratvec->ratvec)``
+| ``*:int i,ratvec v->ratvec``
+| 
+| Defined in basic.at line number 377.
 | 
 
-
-.. _\*_(rat,ratvec->ratvec)1:
+.. _\*_rat_r,ratvec_v->ratvec1:
 
 \*
 -------------------------------------------------
-| ``*:(rat,ratvec->ratvec)``
+| ``*:rat r,ratvec v->ratvec``
+| 
+| Defined in basic.at line number 378.
 | 
 
-
-.. _##_(ratvec,ratvec->ratvec)1:
+.. _##_ratvec_a,ratvec_b->ratvec:_##([rat]:a,[rat]1:
 
 ##
 -------------------------------------------------
-| ``##:(ratvec,ratvec->ratvec)``
+| ``##:ratvec a,ratvec b->ratvec: ##([rat]:a,[rat]``
+| 
+| Defined in basic.at line number 381.
 | 
 
-
-.. _##_([ratvec]->ratvec)1:
+.. _##_[ratvec]_rs->ratvec:_##_for_r_in_rs_do_[rat]1:
 
 ##
 -------------------------------------------------
-| ``##:([ratvec]->ratvec)``
+| ``##:[ratvec] rs->ratvec: ## for r in rs do [rat]``
+| 
+| Defined in basic.at line number 382.
 | 
 
-
-.. _sum_([ratvec],int->ratvec)1:
+.. _sum_[ratvec]_list,_int_l->ratvec1:
 
 sum
 -------------------------------------------------
-| ``sum:([ratvec],int->ratvec)``
+| ``sum:[ratvec] list, int l->ratvec``
+| 
+| Defined in basic.at line number 384.
 | 
 
-
-.. _\*_([ratvec],ratvec->ratvec)1:
+.. _\*_[ratvec]_m,ratvec_v->ratvec1:
 
 \*
 -------------------------------------------------
-| ``*:([ratvec],ratvec->ratvec)``
+| ``*:[ratvec] M,ratvec v->ratvec``
+| 
+| Defined in basic.at line number 392.
 | 
 
-
-.. _is_integer_(ratvec->bool)1:
+.. _is_integer_ratvec_v->bool1:
 
 is_integer
 -------------------------------------------------
-| ``is_integer:(ratvec->bool)``
+| ``is_integer:ratvec v->bool``
+| 
+| Defined in basic.at line number 398.
 | 
 
-
-.. _\*_(ratvec,ratvec->rat)1:
+.. _\*_ratvec_v,_ratvec_w->rat1:
 
 \*
 -------------------------------------------------
-| ``*:(ratvec,ratvec->rat)``
+| ``*:ratvec v, ratvec w->rat``
+| 
+| Defined in basic.at line number 401.
 | 
 
-
-.. _\*_(vec,ratvec->rat)1:
+.. _\*_vec_v,_ratvec_w->rat1:
 
 \*
 -------------------------------------------------
-| ``*:(vec,ratvec->rat)``
+| ``*:vec v, ratvec w->rat``
+| 
+| Defined in basic.at line number 403.
 | 
 
-
-.. _\\_(ratvec,int->vec)1:
+.. _\\_ratvec_v,_int_k->vec1:
 
 \\
 -------------------------------------------------
-| ``\:(ratvec,int->vec)``
+| ``\:ratvec v, int k->vec``
+| 
+| Defined in basic.at line number 407.
 | 
 
-
-.. _ratvec_as_vec_(ratvec->vec)1:
+.. _ratvec_as_vec_ratvec_v->vec1:
 
 ratvec_as_vec
 -------------------------------------------------
-| ``ratvec_as_vec:(ratvec->vec)``
+| ``ratvec_as_vec:ratvec v->vec``
+| 
+| Defined in basic.at line number 410.
 | 
 
-
-.. _reverse_(ratvec->ratvec)1:
+.. _reverse_ratvec_v->ratvec:_v~[1:
 
 reverse
 -------------------------------------------------
-| ``reverse:(ratvec->ratvec)``
+| ``reverse:ratvec v->ratvec: v~[``
+| 
+| Defined in basic.at line number 413.
 | 
 
-
-.. _lower_(int,ratvec->ratvec)1:
+.. _lower_int_k,ratvec_v->ratvec:_v[1:
 
 lower
 -------------------------------------------------
-| ``lower:(int,ratvec->ratvec)``
+| ``lower:int k,ratvec v->ratvec: v[``
+| 
+| Defined in basic.at line number 414.
 | 
 
-
-.. _upper_(int,ratvec->ratvec)1:
+.. _upper_int_k,ratvec_v->ratvec:_v[k~1:
 
 upper
 -------------------------------------------------
-| ``upper:(int,ratvec->ratvec)``
+| ``upper:int k,ratvec v->ratvec: v[k~``
+| 
+| Defined in basic.at line number 415.
 | 
 
-
-.. _drop_lower_(int,ratvec->ratvec)1:
+.. _drop_lower_int_k,ratvec_v->ratvec:_v[k1:
 
 drop_lower
 -------------------------------------------------
-| ``drop_lower:(int,ratvec->ratvec)``
+| ``drop_lower:int k,ratvec v->ratvec: v[k``
+| 
+| Defined in basic.at line number 416.
 | 
 
-
-.. _drop_upper_(int,ratvec->ratvec)1:
+.. _drop_upper_int_k,ratvec_v->ratvec:_v[1:
 
 drop_upper
 -------------------------------------------------
-| ``drop_upper:(int,ratvec->ratvec)``
+| ``drop_upper:int k,ratvec v->ratvec: v[``
+| 
+| Defined in basic.at line number 417.
 | 
 
-
-.. _sum_(ratvec->rat)1:
+.. _sum_ratvec_v->rat1:
 
 sum
 -------------------------------------------------
-| ``sum:(ratvec->rat)``
+| ``sum:ratvec v->rat``
+| 
+| Defined in basic.at line number 420.
 | 
 
-
-.. _<=_(ratvec->bool)1:
+.. _<=_ratvec_v->bool1:
 
 <=
 -------------------------------------------------
-| ``<=:(ratvec->bool)``
+| ``<=:ratvec v->bool``
+| 
+| Defined in basic.at line number 422.
 | 
 
-
-.. _<_(ratvec->bool)1:
+.. _<_ratvec_v->bool1:
 
 <
 -------------------------------------------------
-| ``<:(ratvec->bool)``
+| ``<:ratvec v->bool``
+| 
+| Defined in basic.at line number 423.
 | 
 
-
-.. _solve_(mat,ratvec->[ratvec])1:
+.. _solve_mat_a,_ratvec_b->[ratvec]1:
 
 solve
 -------------------------------------------------
-| ``solve:(mat,ratvec->[ratvec])``
+| ``solve:mat A, ratvec b->[ratvec]``
+| 
+| Defined in basic.at line number 426.
 | 
 
+.. _!one_minus_s = split:_1,-1->split1:
 
-.. _int_part_(Split->int)1:
+!one_minus_s = Split:
+-------------------------------------------------
+| ``!one_minus_s = Split::1,-1->Split``
+| 
+| Defined in basic.at line number 436.
+| 
+
+.. _int_part_split_x->int1:
 
 int_part
 -------------------------------------------------
-| ``int_part:(Split->int)``
+| ``int_part:Split x->int``
+| 
+| Defined in basic.at line number 438.
 | 
 
-
-.. _s_part_(Split->int)1:
+.. _s_part_split_x->int1:
 
 s_part
 -------------------------------------------------
-| ``s_part:(Split->int)``
+| ``s_part:Split x->int``
+| 
+| Defined in basic.at line number 439.
 | 
 
-
-.. _\+_(Split->int)1:
-
-\+
--------------------------------------------------
-| ``+:(Split->int)``
-| 
-
-
-.. _\^_(Split->int)1:
-
-\^
--------------------------------------------------
-| ``^:(Split->int)``
-| 
-
-
-.. _s_to_1_(Split->int)1:
+.. _s_to_1_split_x->int1:
 
 s_to_1
 -------------------------------------------------
-| ``s_to_1:(Split->int)``
+| ``s_to_1:Split x->int``
+| 
+| Defined in basic.at line number 444.
 | 
 
-
-.. _s_to_minus_1_(Split->int)1:
+.. _s_to_minus_1_split_x->int1:
 
 s_to_minus_1
 -------------------------------------------------
-| ``s_to_minus_1:(Split->int)``
+| ``s_to_minus_1:Split x->int``
+| 
+| Defined in basic.at line number 445.
 | 
 
-
-.. _split_as_int_(Split->int)1:
+.. _split_as_int_split_x->int1:
 
 split_as_int
 -------------------------------------------------
-| ``split_as_int:(Split->int)``
+| ``split_as_int:Split x->int``
+| 
+| Defined in basic.at line number 447.
 | 
 
-
-.. _\%_(Split,int->Split,Split)1:
+.. _\%_split_x,_int_n->(split,split)1:
 
 \%
 -------------------------------------------------
-| ``\%:(Split,int->Split,Split)``
+| ``\%:Split x, int n->(Split,Split)``
+| 
+| Defined in basic.at line number 449.
 | 
 
-
-.. _split_format_(Split->string)1:
+.. _split_format_split_w->string1:
 
 split_format
 -------------------------------------------------
-| ``split_format:(Split->string)``
+| ``split_format:Split w->string``
+| 
+| Defined in basic.at line number 453.
 | 
 
-
-.. _\^_(Split,int->Split)1:
-
-\^
--------------------------------------------------
-| ``^:(Split,int->Split)``
-| 
-
-
-.. _root_datum_([vec],[vec],int->RootDatum)1:
+.. _root_datum_[vec]_simple_roots,_[vec]_simple_coroots,_int_r->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:([vec],[vec],int->RootDatum)``
+| ``root_datum:[vec] simple_roots, [vec] simple_coroots, int r->RootDatum``
+| 
+| Defined in basic.at line number 480.
 | 
 
-
-.. _root_datum_(LieType,[ratvec]->RootDatum)1:
+.. _root_datum_lietype_t,_[ratvec]_gens->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:(LieType,[ratvec]->RootDatum)``
+| ``root_datum:LieType t, [ratvec] gens->RootDatum``
+| 
+| Defined in basic.at line number 483.
 | 
 
-
-.. _root_datum_(LieType,ratvec->RootDatum)1:
+.. _root_datum_lietype_t,_ratvec_gen->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:(LieType,ratvec->RootDatum)``
+| ``root_datum:LieType t, ratvec gen->RootDatum``
+| 
+| Defined in basic.at line number 487.
 | 
 
-
-.. _is_root_(RootDatum,vec->bool)1:
+.. _is_root_(rootdatum,vec)_(rd,):p->bool1:
 
 is_root
 -------------------------------------------------
-| ``is_root:(RootDatum,vec->bool)``
+| ``is_root:(RootDatum,vec) (rd,):p->bool``
+| 
+| Defined in basic.at line number 490.
 | 
 
-
-.. _is_coroot_(RootDatum,vec->bool)1:
+.. _is_coroot_(rootdatum,vec)_(rd,):p->bool1:
 
 is_coroot
 -------------------------------------------------
-| ``is_coroot:(RootDatum,vec->bool)``
+| ``is_coroot:(RootDatum,vec) (rd,):p->bool``
+| 
+| Defined in basic.at line number 492.
 | 
 
-
-.. _is_posroot_(RootDatum,vec->bool)1:
+.. _is_posroot_(rootdatum,vec)(rd,):p->bool1:
 
 is_posroot
 -------------------------------------------------
-| ``is_posroot:(RootDatum,vec->bool)``
+| ``is_posroot:(RootDatum,vec)(rd,):p->bool``
+| 
+| Defined in basic.at line number 494.
 | 
 
-
-.. _is_poscoroot_(RootDatum,vec->bool)1:
+.. _is_poscoroot_(rootdatum,vec)(rd,):p->bool1:
 
 is_poscoroot
 -------------------------------------------------
-| ``is_poscoroot:(RootDatum,vec->bool)``
+| ``is_poscoroot:(RootDatum,vec)(rd,):p->bool``
+| 
+| Defined in basic.at line number 496.
 | 
 
-
-.. _posroot_index_(RootDatum,vec->int)1:
+.. _posroot_index_(rootdatum,vec)p->int1:
 
 posroot_index
 -------------------------------------------------
-| ``posroot_index:(RootDatum,vec->int)``
+| ``posroot_index:(RootDatum,vec)p->int``
+| 
+| Defined in basic.at line number 499.
 | 
 
-
-.. _poscoroot_index_(RootDatum,vec->int)1:
+.. _poscoroot_index_(rootdatum,vec)p->int1:
 
 poscoroot_index
 -------------------------------------------------
-| ``poscoroot_index:(RootDatum,vec->int)``
+| ``poscoroot_index:(RootDatum,vec)p->int``
+| 
+| Defined in basic.at line number 501.
 | 
 
-
-.. _rho_(RootDatum->ratvec)1:
+.. _rho_rootdatum_rd->ratvec1:
 
 rho
 -------------------------------------------------
-| ``rho:(RootDatum->ratvec)``
+| ``rho:RootDatum rd->ratvec``
+| 
+| Defined in basic.at line number 505.
 | 
 
-
-.. _rho_as_vec_(RootDatum->vec)1:
+.. _rho_as_vec_rootdatum_r->vec1:
 
 rho_as_vec
 -------------------------------------------------
-| ``rho_as_vec:(RootDatum->vec)``
+| ``rho_as_vec:RootDatum r->vec``
+| 
+| Defined in basic.at line number 511.
 | 
 
-
-.. _rho_check_(RootDatum->ratvec)1:
+.. _rho_check_rootdatum_rd->ratvec1:
 
 rho_check
 -------------------------------------------------
-| ``rho_check:(RootDatum->ratvec)``
+| ``rho_check:RootDatum rd->ratvec``
+| 
+| Defined in basic.at line number 513.
 | 
 
-
-.. _is_positive_root_(RootDatum->(vec->bool))1:
+.. _is_positive_root_rootdatum_rd->(vec->bool)1:
 
 is_positive_root
 -------------------------------------------------
-| ``is_positive_root:(RootDatum->(vec->bool))``
+| ``is_positive_root:RootDatum rd->(vec->bool)``
+| 
+| Defined in basic.at line number 520.
 | 
 
-
-.. _is_positive_coroot_(RootDatum->(vec->bool))1:
+.. _is_positive_coroot_rootdatum_rd->(vec->bool)1:
 
 is_positive_coroot
 -------------------------------------------------
-| ``is_positive_coroot:(RootDatum->(vec->bool))``
+| ``is_positive_coroot:RootDatum rd->(vec->bool)``
+| 
+| Defined in basic.at line number 522.
 | 
 
-
-.. _is_negative_root_(RootDatum->(vec->bool))1:
+.. _is_negative_root_rootdatum_rd->(vec->bool)1:
 
 is_negative_root
 -------------------------------------------------
-| ``is_negative_root:(RootDatum->(vec->bool))``
+| ``is_negative_root:RootDatum rd->(vec->bool)``
+| 
+| Defined in basic.at line number 524.
 | 
 
-
-.. _is_negative_coroot_(RootDatum->(vec->bool))1:
+.. _is_negative_coroot_rootdatum_rd->(vec->bool)1:
 
 is_negative_coroot
 -------------------------------------------------
-| ``is_negative_coroot:(RootDatum->(vec->bool))``
+| ``is_negative_coroot:RootDatum rd->(vec->bool)``
+| 
+| Defined in basic.at line number 526.
 | 
 
-
-.. _is_positive_root_(RootDatum,vec->bool)1:
+.. _is_positive_root_rootdatum_rd,vec_alpha->bool1:
 
 is_positive_root
 -------------------------------------------------
-| ``is_positive_root:(RootDatum,vec->bool)``
+| ``is_positive_root:RootDatum rd,vec alpha->bool``
+| 
+| Defined in basic.at line number 529.
 | 
 
-
-.. _is_positive_coroot_(RootDatum,vec->bool)1:
+.. _is_positive_coroot_rootdatum_rd,vec_alphav->bool1:
 
 is_positive_coroot
 -------------------------------------------------
-| ``is_positive_coroot:(RootDatum,vec->bool)``
+| ``is_positive_coroot:RootDatum rd,vec alphav->bool``
+| 
+| Defined in basic.at line number 531.
 | 
 
-
-.. _is_negative_root_(RootDatum,vec->bool)1:
+.. _is_negative_root_rootdatum_rd,vec_alpha->bool1:
 
 is_negative_root
 -------------------------------------------------
-| ``is_negative_root:(RootDatum,vec->bool)``
+| ``is_negative_root:RootDatum rd,vec alpha->bool``
+| 
+| Defined in basic.at line number 533.
 | 
 
-
-.. _is_negative_coroot_(RootDatum,vec->bool)1:
+.. _is_negative_coroot_rootdatum_rd,vec_alphav->bool1:
 
 is_negative_coroot
 -------------------------------------------------
-| ``is_negative_coroot:(RootDatum,vec->bool)``
+| ``is_negative_coroot:RootDatum rd,vec alphav->bool``
+| 
+| Defined in basic.at line number 535.
 | 
 
-
-.. _roots_all_positive_(RootDatum->(mat->bool))1:
+.. _roots_all_positive_rootdatum_rd->(mat->bool)1:
 
 roots_all_positive
 -------------------------------------------------
-| ``roots_all_positive:(RootDatum->(mat->bool))``
+| ``roots_all_positive:RootDatum rd->(mat->bool)``
+| 
+| Defined in basic.at line number 539.
 | 
 
-
-.. _coroots_all_positive_(RootDatum->(mat->bool))1:
+.. _coroots_all_positive_rootdatum_rd->(mat->bool)1:
 
 coroots_all_positive
 -------------------------------------------------
-| ``coroots_all_positive:(RootDatum->(mat->bool))``
+| ``coroots_all_positive:RootDatum rd->(mat->bool)``
+| 
+| Defined in basic.at line number 541.
 | 
 
-
-.. _among_posroots_(RootDatum->(mat->bool))1:
+.. _among_posroots_rootdatum_rd->(mat_m)bool1:
 
 among_posroots
 -------------------------------------------------
-| ``among_posroots:(RootDatum->(mat->bool))``
+| ``among_posroots:RootDatum rd->(mat M)bool``
+| 
+| Defined in basic.at line number 544.
 | 
 
-
-.. _among_poscoroots_(RootDatum->(mat->bool))1:
+.. _among_poscoroots_rootdatum_rd->(mat_m)bool1:
 
 among_poscoroots
 -------------------------------------------------
-| ``among_poscoroots:(RootDatum->(mat->bool))``
+| ``among_poscoroots:RootDatum rd->(mat M)bool``
+| 
+| Defined in basic.at line number 546.
 | 
 
-
-.. _negative_system_(mat->mat)1:
-
-negative_system
--------------------------------------------------
-| ``negative_system:(mat->mat)``
-| 
-
-
-.. _roots_(RootDatum->mat)1:
+.. _roots_rootdatum_rd->mat1:
 
 roots
 -------------------------------------------------
-| ``roots:(RootDatum->mat)``
+| ``roots:RootDatum rd->mat``
+| 
+| Defined in basic.at line number 553.
 | 
 
-
-.. _coroots_(RootDatum->mat)1:
+.. _coroots_rootdatum_rd->mat1:
 
 coroots
 -------------------------------------------------
-| ``coroots:(RootDatum->mat)``
+| ``coroots:RootDatum rd->mat``
+| 
+| Defined in basic.at line number 555.
 | 
 
-
-.. _root_(RootDatum,vec->vec)1:
+.. _root_rootdatum_rd,_vec_alpha_v->vec1:
 
 root
 -------------------------------------------------
-| ``root:(RootDatum,vec->vec)``
+| ``root:RootDatum rd, vec alpha_v->vec``
+| 
+| Defined in basic.at line number 559.
 | 
 
-
-.. _coroot_(RootDatum,vec->vec)1:
+.. _coroot_rootdatum_rd,_vec_alpha->vec1:
 
 coroot
 -------------------------------------------------
-| ``coroot:(RootDatum,vec->vec)``
+| ``coroot:RootDatum rd, vec alpha->vec``
+| 
+| Defined in basic.at line number 560.
 | 
 
-
-.. _reflection_(RootDatum,int->mat)1:
+.. _reflection_rootdatum_rd,_int_i->mat1:
 
 reflection
 -------------------------------------------------
-| ``reflection:(RootDatum,int->mat)``
+| ``reflection:RootDatum rd, int i->mat``
+| 
+| Defined in basic.at line number 563.
 | 
 
-
-.. _reflection_(RootDatum,vec->mat)1:
+.. _reflection_(rootdatum,vec)(rd,):p->mat1:
 
 reflection
 -------------------------------------------------
-| ``reflection:(RootDatum,vec->mat)``
+| ``reflection:(RootDatum,vec)(rd,):p->mat``
+| 
+| Defined in basic.at line number 565.
 | 
 
-
-.. _coreflection_(RootDatum,int->mat)1:
+.. _coreflection_rootdatum_rd,_int_i->mat1:
 
 coreflection
 -------------------------------------------------
-| ``coreflection:(RootDatum,int->mat)``
+| ``coreflection:RootDatum rd, int i->mat``
+| 
+| Defined in basic.at line number 567.
 | 
 
-
-.. _coreflection_(RootDatum,vec->mat)1:
+.. _coreflection_(rootdatum,vec)(rd,):p->mat1:
 
 coreflection
 -------------------------------------------------
-| ``coreflection:(RootDatum,vec->mat)``
+| ``coreflection:(RootDatum,vec)(rd,):p->mat``
+| 
+| Defined in basic.at line number 569.
 | 
 
-
-.. _reflect_(RootDatum,int,vec->vec)1:
+.. _reflect_rootdatum_rd,_int_i,_vec_v->vec1:
 
 reflect
 -------------------------------------------------
-| ``reflect:(RootDatum,int,vec->vec)``
+| ``reflect:RootDatum rd, int i, vec v->vec``
+| 
+| Defined in basic.at line number 571.
 | 
 
-
-.. _reflect_(RootDatum,vec,vec->vec)1:
+.. _reflect_rootdatum_rd,_vec_alpha,_vec_v->vec1:
 
 reflect
 -------------------------------------------------
-| ``reflect:(RootDatum,vec,vec->vec)``
+| ``reflect:RootDatum rd, vec alpha, vec v->vec``
+| 
+| Defined in basic.at line number 573.
 | 
 
-
-.. _coreflect_(RootDatum,vec,int->vec)1:
+.. _coreflect_rootdatum_rd,_vec_v,_int_i->vec1:
 
 coreflect
 -------------------------------------------------
-| ``coreflect:(RootDatum,vec,int->vec)``
+| ``coreflect:RootDatum rd, vec v, int i->vec``
+| 
+| Defined in basic.at line number 575.
 | 
 
-
-.. _coreflect_(RootDatum,vec,vec->vec)1:
+.. _coreflect_rootdatum_rd,_vec_v,_vec_alpha->vec1:
 
 coreflect
 -------------------------------------------------
-| ``coreflect:(RootDatum,vec,vec->vec)``
+| ``coreflect:RootDatum rd, vec v, vec alpha->vec``
+| 
+| Defined in basic.at line number 577.
 | 
 
-
-.. _reflect_(RootDatum,int,ratvec->ratvec)1:
+.. _reflect_rootdatum_rd,_int_i,_ratvec_v->ratvec1:
 
 reflect
 -------------------------------------------------
-| ``reflect:(RootDatum,int,ratvec->ratvec)``
+| ``reflect:RootDatum rd, int i, ratvec v->ratvec``
+| 
+| Defined in basic.at line number 580.
 | 
 
-
-.. _reflect_(RootDatum,vec,ratvec->ratvec)1:
+.. _reflect_rootdatum_rd,_vec_alpha,_ratvec_v->ratvec1:
 
 reflect
 -------------------------------------------------
-| ``reflect:(RootDatum,vec,ratvec->ratvec)``
+| ``reflect:RootDatum rd, vec alpha, ratvec v->ratvec``
+| 
+| Defined in basic.at line number 582.
 | 
 
-
-.. _coreflect_(RootDatum,ratvec,int->ratvec)1:
+.. _coreflect_rootdatum_rd,_ratvec_v,_int_i->ratvec1:
 
 coreflect
 -------------------------------------------------
-| ``coreflect:(RootDatum,ratvec,int->ratvec)``
+| ``coreflect:RootDatum rd, ratvec v, int i->ratvec``
+| 
+| Defined in basic.at line number 584.
 | 
 
-
-.. _coreflect_(RootDatum,ratvec,vec->ratvec)1:
+.. _coreflect_rootdatum_rd,_ratvec_v,_vec_alpha->ratvec1:
 
 coreflect
 -------------------------------------------------
-| ``coreflect:(RootDatum,ratvec,vec->ratvec)``
+| ``coreflect:RootDatum rd, ratvec v, vec alpha->ratvec``
+| 
+| Defined in basic.at line number 586.
 | 
 
-
-.. _left_reflect_(RootDatum,int,mat->mat)1:
+.. _left_reflect_rootdatum_rd,_int_i,_mat_m->mat1:
 
 left_reflect
 -------------------------------------------------
-| ``left_reflect:(RootDatum,int,mat->mat)``
+| ``left_reflect:RootDatum rd, int i, mat M->mat``
+| 
+| Defined in basic.at line number 590.
 | 
 
-
-.. _left_reflect_(RootDatum,vec,mat->mat)1:
+.. _left_reflect_rootdatum_rd,_vec_alpha,_mat_m->mat1:
 
 left_reflect
 -------------------------------------------------
-| ``left_reflect:(RootDatum,vec,mat->mat)``
+| ``left_reflect:RootDatum rd, vec alpha, mat M->mat``
+| 
+| Defined in basic.at line number 592.
 | 
 
-
-.. _right_reflect_(RootDatum,mat,int->mat)1:
+.. _right_reflect_rootdatum_rd,_mat_m,_int_i->mat1:
 
 right_reflect
 -------------------------------------------------
-| ``right_reflect:(RootDatum,mat,int->mat)``
+| ``right_reflect:RootDatum rd, mat M, int i->mat``
+| 
+| Defined in basic.at line number 594.
 | 
 
-
-.. _right_reflect_(RootDatum,mat,vec->mat)1:
+.. _right_reflect_rootdatum_rd,_mat_m,_vec_alpha->mat1:
 
 right_reflect
 -------------------------------------------------
-| ``right_reflect:(RootDatum,mat,vec->mat)``
+| ``right_reflect:RootDatum rd, mat M, vec alpha->mat``
+| 
+| Defined in basic.at line number 596.
 | 
 
-
-.. _conjugate_(RootDatum,int,mat->mat)1:
+.. _conjugate_rootdatum_rd,_int_i,_mat_m->mat1:
 
 conjugate
 -------------------------------------------------
-| ``conjugate:(RootDatum,int,mat->mat)``
+| ``conjugate:RootDatum rd, int i, mat M->mat``
+| 
+| Defined in basic.at line number 599.
 | 
 
-
-.. _conjugate_(RootDatum,vec,mat->mat)1:
+.. _conjugate_rootdatum_rd,_vec_alpha,_mat_m->mat1:
 
 conjugate
 -------------------------------------------------
-| ``conjugate:(RootDatum,vec,mat->mat)``
+| ``conjugate:RootDatum rd, vec alpha, mat M->mat``
+| 
+| Defined in basic.at line number 601.
 | 
 
-
-.. _singular_simple_indices_(RootDatum,ratvec->[int])1:
+.. _singular_simple_indices_rootdatum_rd,ratvec_v->[int]1:
 
 singular_simple_indices
 -------------------------------------------------
-| ``singular_simple_indices:(RootDatum,ratvec->[int])``
+| ``singular_simple_indices:RootDatum rd,ratvec v->[int]``
+| 
+| Defined in basic.at line number 605.
 | 
 
-
-.. _is_imaginary_(mat->(vec->bool))1:
+.. _is_imaginary_mat_theta->(vec->bool):_(vec_alpha)1:
 
 is_imaginary
 -------------------------------------------------
-| ``is_imaginary:(mat->(vec->bool))``
+| ``is_imaginary:mat theta->(vec->bool): (vec alpha)``
+| 
+| Defined in basic.at line number 609.
 | 
 
-
-.. _is_real_(mat->(vec->bool))1:
+.. _is_real_mat_theta->(vec->bool):_(vec_alpha)1:
 
 is_real
 -------------------------------------------------
-| ``is_real:(mat->(vec->bool))``
+| ``is_real:mat theta->(vec->bool): (vec alpha)``
+| 
+| Defined in basic.at line number 610.
 | 
 
-
-.. _is_complex_(mat->(vec->bool))1:
+.. _is_complex_mat_theta->(vec->bool):_(vec_alpha)1:
 
 is_complex
 -------------------------------------------------
-| ``is_complex:(mat->(vec->bool))``
+| ``is_complex:mat theta->(vec->bool): (vec alpha)``
+| 
+| Defined in basic.at line number 611.
 | 
 
-
-.. _imaginary_roots_(RootDatum,mat->mat)1:
+.. _imaginary_roots_rootdatum_rd,_mat_theta->mat1:
 
 imaginary_roots
 -------------------------------------------------
-| ``imaginary_roots:(RootDatum,mat->mat)``
+| ``imaginary_roots:RootDatum rd, mat theta->mat``
+| 
+| Defined in basic.at line number 615.
 | 
 
-
-.. _real_roots_(RootDatum,mat->mat)1:
+.. _real_roots_rootdatum_rd,_mat_theta->mat1:
 
 real_roots
 -------------------------------------------------
-| ``real_roots:(RootDatum,mat->mat)``
+| ``real_roots:RootDatum rd, mat theta->mat``
+| 
+| Defined in basic.at line number 617.
 | 
 
-
-.. _imaginary_coroots_(RootDatum,mat->mat)1:
+.. _imaginary_coroots_rootdatum_rd,_mat_theta->mat1:
 
 imaginary_coroots
 -------------------------------------------------
-| ``imaginary_coroots:(RootDatum,mat->mat)``
+| ``imaginary_coroots:RootDatum rd, mat theta->mat``
+| 
+| Defined in basic.at line number 621.
 | 
 
-
-.. _real_coroots_(RootDatum,mat->mat)1:
+.. _real_coroots_rootdatum_rd,_mat_theta->mat1:
 
 real_coroots
 -------------------------------------------------
-| ``real_coroots:(RootDatum,mat->mat)``
+| ``real_coroots:RootDatum rd, mat theta->mat``
+| 
+| Defined in basic.at line number 623.
 | 
 
-
-.. _imaginary_posroots_(RootDatum,mat->mat)1:
+.. _imaginary_posroots_rootdatum_rd,mat_theta->mat1:
 
 imaginary_posroots
 -------------------------------------------------
-| ``imaginary_posroots:(RootDatum,mat->mat)``
+| ``imaginary_posroots:RootDatum rd,mat theta->mat``
+| 
+| Defined in basic.at line number 627.
 | 
 
-
-.. _real_posroots_(RootDatum,mat->mat)1:
+.. _real_posroots_rootdatum_rd,mat_theta->mat1:
 
 real_posroots
 -------------------------------------------------
-| ``real_posroots:(RootDatum,mat->mat)``
+| ``real_posroots:RootDatum rd,mat theta->mat``
+| 
+| Defined in basic.at line number 629.
 | 
 
-
-.. _imaginary_poscoroots_(RootDatum,mat->mat)1:
+.. _imaginary_poscoroots_rootdatum_rd,mat_theta->mat1:
 
 imaginary_poscoroots
 -------------------------------------------------
-| ``imaginary_poscoroots:(RootDatum,mat->mat)``
+| ``imaginary_poscoroots:RootDatum rd,mat theta->mat``
+| 
+| Defined in basic.at line number 631.
 | 
 
-
-.. _real_poscoroots_(RootDatum,mat->mat)1:
+.. _real_poscoroots_rootdatum_rd,mat_theta->mat1:
 
 real_poscoroots
 -------------------------------------------------
-| ``real_poscoroots:(RootDatum,mat->mat)``
+| ``real_poscoroots:RootDatum rd,mat theta->mat``
+| 
+| Defined in basic.at line number 633.
 | 
 
-
-.. _imaginary_sys_(RootDatum,mat->mat,mat)1:
+.. _imaginary_sys_(rootdatum,mat)p->(mat,mat)1:
 
 imaginary_sys
 -------------------------------------------------
-| ``imaginary_sys:(RootDatum,mat->mat,mat)``
+| ``imaginary_sys:(RootDatum,mat)p->(mat,mat)``
+| 
+| Defined in basic.at line number 635.
 | 
 
-
-.. _real_sys_(RootDatum,mat->mat,mat)1:
+.. _real_sys_(rootdatum,mat)p->(mat,mat)1:
 
 real_sys
 -------------------------------------------------
-| ``real_sys:(RootDatum,mat->mat,mat)``
+| ``real_sys:(RootDatum,mat)p->(mat,mat)``
+| 
+| Defined in basic.at line number 637.
 | 
 
-
-.. _is_dominant_(RootDatum,ratvec->bool)1:
+.. _is_dominant_rootdatum_rd,_ratvec_v->bool1:
 
 is_dominant
 -------------------------------------------------
-| ``is_dominant:(RootDatum,ratvec->bool)``
+| ``is_dominant:RootDatum rd, ratvec v->bool``
+| 
+| Defined in basic.at line number 641.
 | 
 
-
-.. _is_strictly_dominant_(RootDatum,ratvec->bool)1:
+.. _is_strictly_dominant_rootdatum_rd,_ratvec_v->bool1:
 
 is_strictly_dominant
 -------------------------------------------------
-| ``is_strictly_dominant:(RootDatum,ratvec->bool)``
+| ``is_strictly_dominant:RootDatum rd, ratvec v->bool``
+| 
+| Defined in basic.at line number 643.
 | 
 
-
-.. _is_regular_(RootDatum,ratvec->bool)1:
+.. _is_regular_rootdatum_rd,ratvec_v->bool1:
 
 is_regular
 -------------------------------------------------
-| ``is_regular:(RootDatum,ratvec->bool)``
+| ``is_regular:RootDatum rd,ratvec v->bool``
+| 
+| Defined in basic.at line number 645.
 | 
 
-
-.. _is_integral_(RootDatum,ratvec->bool)1:
+.. _is_integral_rootdatum_rd,_ratvec_v->bool1:
 
 is_integral
 -------------------------------------------------
-| ``is_integral:(RootDatum,ratvec->bool)``
+| ``is_integral:RootDatum rd, ratvec v->bool``
+| 
+| Defined in basic.at line number 647.
 | 
 
-
-.. _radical_basis_(RootDatum->mat)1:
+.. _radical_basis_rootdatum_rd->mat1:
 
 radical_basis
 -------------------------------------------------
-| ``radical_basis:(RootDatum->mat)``
+| ``radical_basis:RootDatum rd->mat``
+| 
+| Defined in basic.at line number 651.
 | 
 
-
-.. _coradical_basis_(RootDatum->mat)1:
+.. _coradical_basis_rootdatum_rd->mat1:
 
 coradical_basis
 -------------------------------------------------
-| ``coradical_basis:(RootDatum->mat)``
+| ``coradical_basis:RootDatum rd->mat``
+| 
+| Defined in basic.at line number 653.
 | 
 
-
-.. _is_semisimple_(RootDatum->bool)1:
+.. _is_semisimple_rootdatum_rd->bool1:
 
 is_semisimple
 -------------------------------------------------
-| ``is_semisimple:(RootDatum->bool)``
+| ``is_semisimple:RootDatum rd->bool``
+| 
+| Defined in basic.at line number 656.
 | 
 
-
-.. _derived_is_simply_connected_(RootDatum->bool)1:
+.. _derived_is_simply_connected_rootdatum_rd->bool1:
 
 derived_is_simply_connected
 -------------------------------------------------
-| ``derived_is_simply_connected:(RootDatum->bool)``
+| ``derived_is_simply_connected:RootDatum rd->bool``
+| 
+| Defined in basic.at line number 658.
 | 
 
-
-.. _has_connected_center_(RootDatum->bool)1:
+.. _has_connected_center_rootdatum_rd->bool1:
 
 has_connected_center
 -------------------------------------------------
-| ``has_connected_center:(RootDatum->bool)``
+| ``has_connected_center:RootDatum rd->bool``
+| 
+| Defined in basic.at line number 660.
 | 
 
-
-.. _is_simply_connected_(RootDatum->bool)1:
+.. _is_simply_connected_rootdatum_rd->bool1:
 
 is_simply_connected
 -------------------------------------------------
-| ``is_simply_connected:(RootDatum->bool)``
+| ``is_simply_connected:RootDatum rd->bool``
+| 
+| Defined in basic.at line number 662.
 | 
 
-
-.. _is_adjoint_(RootDatum->bool)1:
+.. _is_adjoint_rootdatum_rd->bool1:
 
 is_adjoint
 -------------------------------------------------
-| ``is_adjoint:(RootDatum->bool)``
+| ``is_adjoint:RootDatum rd->bool``
+| 
+| Defined in basic.at line number 664.
 | 
 
-
-.. _derived_(RootDatum->RootDatum)1:
+.. _derived_rootdatum_rd->rootdatum1:
 
 derived
 -------------------------------------------------
-| ``derived:(RootDatum->RootDatum)``
+| ``derived:RootDatum rd->RootDatum``
+| 
+| Defined in basic.at line number 670.
 | 
 
-
-.. _mod_central_torus_(RootDatum->RootDatum)1:
+.. _mod_central_torus_rootdatum_rd->rootdatum1:
 
 mod_central_torus
 -------------------------------------------------
-| ``mod_central_torus:(RootDatum->RootDatum)``
+| ``mod_central_torus:RootDatum rd->RootDatum``
+| 
+| Defined in basic.at line number 671.
 | 
 
-
-.. _adjoint_(RootDatum->RootDatum)1:
+.. _adjoint_rootdatum_rd->rootdatum1:
 
 adjoint
 -------------------------------------------------
-| ``adjoint:(RootDatum->RootDatum)``
+| ``adjoint:RootDatum rd->RootDatum``
+| 
+| Defined in basic.at line number 673.
 | 
 
-
-.. _is_simple_for_(vec->(vec->bool))1:
+.. _is_simple_for_vec_dual_two_rho->(vec->bool)1:
 
 is_simple_for
 -------------------------------------------------
-| ``is_simple_for:(vec->(vec->bool))``
+| ``is_simple_for:vec dual_two_rho->(vec->bool)``
+| 
+| Defined in basic.at line number 677.
 | 
 
-
-.. _simple_from_positive_(mat,mat->mat,mat)1:
+.. _simple_from_positive_mat_posroots,mat_poscoroots->(mat,mat)1:
 
 simple_from_positive
 -------------------------------------------------
-| ``simple_from_positive:(mat,mat->mat,mat)``
+| ``simple_from_positive:mat posroots,mat poscoroots->(mat,mat)``
+| 
+| Defined in basic.at line number 681.
 | 
 
-
-.. _fundamental_weights_(RootDatum->[ratvec])1:
+.. _fundamental_weights_rootdatum_rd->[ratvec]1:
 
 fundamental_weights
 -------------------------------------------------
-| ``fundamental_weights:(RootDatum->[ratvec])``
+| ``fundamental_weights:RootDatum rd->[ratvec]``
+| 
+| Defined in basic.at line number 686.
 | 
 
-
-.. _fundamental_coweights_(RootDatum->[ratvec])1:
+.. _fundamental_coweights_rootdatum_rd->[ratvec]1:
 
 fundamental_coweights
 -------------------------------------------------
-| ``fundamental_coweights:(RootDatum->[ratvec])``
+| ``fundamental_coweights:RootDatum rd->[ratvec]``
+| 
+| Defined in basic.at line number 688.
 | 
 
+.. _\!=_innerclass_x,innerclass_y->bool1:
 
-.. _!=_(InnerClass,InnerClass->bool)1:
-
-!=
+\!=
 -------------------------------------------------
-| ``!=:(InnerClass,InnerClass->bool)``
+| ``!=:InnerClass x,InnerClass y->bool``
+| 
+| Defined in basic.at line number 695.
 | 
 
-
-.. _dual_integral_(InnerClass,ratvec->InnerClass)1:
+.. _dual_integral_innerclass_ic,_ratvec_gamma->innerclass1:
 
 dual_integral
 -------------------------------------------------
-| ``dual_integral:(InnerClass,ratvec->InnerClass)``
+| ``dual_integral:InnerClass ic, ratvec gamma->InnerClass``
+| 
+| Defined in basic.at line number 698.
 | 
 
-
-.. _Cartan_classes_(InnerClass->[CartanClass])1:
+.. _cartan_classes_innerclass_ic->[cartanclass]1:
 
 Cartan_classes
 -------------------------------------------------
-| ``Cartan_classes:(InnerClass->[CartanClass])``
+| ``Cartan_classes:InnerClass ic->[CartanClass]``
+| 
+| Defined in basic.at line number 704.
 | 
 
-
-.. _print_Cartan_info_(CartanClass->)1:
+.. _print_cartan_info_cartanclass_cc->void1:
 
 print_Cartan_info
 -------------------------------------------------
-| ``print_Cartan_info:(CartanClass->)``
+| ``print_Cartan_info:CartanClass cc->void``
+| 
+| Defined in basic.at line number 707.
 | 
 
-
-.. _fundamental_Cartan_(InnerClass->CartanClass)1:
+.. _fundamental_cartan_innerclass_ic->cartanclass1:
 
 fundamental_Cartan
 -------------------------------------------------
-| ``fundamental_Cartan:(InnerClass->CartanClass)``
+| ``fundamental_Cartan:InnerClass ic->CartanClass``
+| 
+| Defined in basic.at line number 727.
 | 
 
-
-.. _most_split_Cartan_(InnerClass->CartanClass)1:
+.. _most_split_cartan_innerclass_ic->cartanclass1:
 
 most_split_Cartan
 -------------------------------------------------
-| ``most_split_Cartan:(InnerClass->CartanClass)``
+| ``most_split_Cartan:InnerClass ic->CartanClass``
+| 
+| Defined in basic.at line number 729.
 | 
 
-
-.. _compact_rank_(CartanClass->int)1:
+.. _compact_rank_cartanclass_cc->int1:
 
 compact_rank
 -------------------------------------------------
-| ``compact_rank:(CartanClass->int)``
+| ``compact_rank:CartanClass cc->int``
+| 
+| Defined in basic.at line number 734.
 | 
 
-
-.. _split_rank_(CartanClass->int)1:
+.. _split_rank_cartanclass_cc->int1:
 
 split_rank
 -------------------------------------------------
-| ``split_rank:(CartanClass->int)``
+| ``split_rank:CartanClass cc->int``
+| 
+| Defined in basic.at line number 736.
 | 
 
-
-.. _compact_rank_(InnerClass->int)1:
+.. _compact_rank_innerclass_g->int1:
 
 compact_rank
 -------------------------------------------------
-| ``compact_rank:(InnerClass->int)``
+| ``compact_rank:InnerClass G->int``
+| 
+| Defined in basic.at line number 739.
 | 
 
-
-.. _split_rank_(RealForm->int)1:
+.. _split_rank_realform_g->int1:
 
 split_rank
 -------------------------------------------------
-| ``split_rank:(RealForm->int)``
+| ``split_rank:RealForm G->int``
+| 
+| Defined in basic.at line number 740.
 | 
 
-
-.. _\=_(CartanClass,CartanClass->bool)1:
+.. _\=_cartanclass_h,cartanclass_j->bool1:
 
 \=
 -------------------------------------------------
-| ``=:(CartanClass,CartanClass->bool)``
+| ``=:CartanClass H,CartanClass J->bool``
+| 
+| Defined in basic.at line number 743.
 | 
 
-
-.. _number_(CartanClass,RealForm->int)1:
+.. _number_cartanclass_h,realform_g->int1:
 
 number
 -------------------------------------------------
-| ``number:(CartanClass,RealForm->int)``
+| ``number:CartanClass H,RealForm G->int``
+| 
+| Defined in basic.at line number 748.
 | 
 
+.. _\!=_realform_f,_realform_g->bool1:
 
-.. _!=_(RealForm,RealForm->bool)1:
-
-!=
+\!=
 -------------------------------------------------
-| ``!=:(RealForm,RealForm->bool)``
+| ``!=:RealForm f, RealForm g->bool``
+| 
+| Defined in basic.at line number 753.
 | 
 
-
-.. _form_name_(RealForm->string)1:
+.. _form_name_realform_f->string1:
 
 form_name
 -------------------------------------------------
-| ``form_name:(RealForm->string)``
+| ``form_name:RealForm f->string``
+| 
+| Defined in basic.at line number 755.
 | 
 
-
-.. _real_forms_(InnerClass->[RealForm])1:
+.. _real_forms_innerclass_ic->[realform]1:
 
 real_forms
 -------------------------------------------------
-| ``real_forms:(InnerClass->[RealForm])``
+| ``real_forms:InnerClass ic->[RealForm]``
+| 
+| Defined in basic.at line number 757.
 | 
 
-
-.. _dual_real_forms_(InnerClass->[RealForm])1:
+.. _dual_real_forms_innerclass_ic->[realform]1:
 
 dual_real_forms
 -------------------------------------------------
-| ``dual_real_forms:(InnerClass->[RealForm])``
+| ``dual_real_forms:InnerClass ic->[RealForm]``
+| 
+| Defined in basic.at line number 759.
 | 
 
-
-.. _is_quasisplit_(RealForm->bool)1:
+.. _is_quasisplit_realform_g->bool1:
 
 is_quasisplit
 -------------------------------------------------
-| ``is_quasisplit:(RealForm->bool)``
+| ``is_quasisplit:RealForm G->bool``
+| 
+| Defined in basic.at line number 762.
 | 
 
-
-.. _is_quasicompact_(RealForm->bool)1:
+.. _is_quasicompact_realform_g->bool1:
 
 is_quasicompact
 -------------------------------------------------
-| ``is_quasicompact:(RealForm->bool)``
+| ``is_quasicompact:RealForm G->bool``
+| 
+| Defined in basic.at line number 763.
 | 
 
-
-.. _split_form_(RootDatum->RealForm)1:
+.. _split_form_rootdatum_r->realform1:
 
 split_form
 -------------------------------------------------
-| ``split_form:(RootDatum->RealForm)``
+| ``split_form:RootDatum r->RealForm``
+| 
+| Defined in basic.at line number 765.
 | 
 
-
-.. _split_form_(LieType->RealForm)1:
+.. _split_form_lietype_t->realform1:
 
 split_form
 -------------------------------------------------
-| ``split_form:(LieType->RealForm)``
+| ``split_form:LieType t->RealForm``
+| 
+| Defined in basic.at line number 769.
 | 
 
-
-.. _quasicompact_form_(InnerClass->RealForm)1:
+.. _quasicompact_form_innerclass_ic->realform1:
 
 quasicompact_form
 -------------------------------------------------
-| ``quasicompact_form:(InnerClass->RealForm)``
+| ``quasicompact_form:InnerClass ic->RealForm``
+| 
+| Defined in basic.at line number 771.
 | 
 
-
-.. _is_compatible_(RealForm,RealForm->bool)1:
+.. _is_compatible_realform_f,_realform_g->bool1:
 
 is_compatible
 -------------------------------------------------
-| ``is_compatible:(RealForm,RealForm->bool)``
+| ``is_compatible:RealForm f, RealForm g->bool``
+| 
+| Defined in basic.at line number 774.
 | 
 
-
-.. _is_compact_(RealForm->bool)1:
+.. _is_compact_realform_g->bool1:
 
 is_compact
 -------------------------------------------------
-| ``is_compact:(RealForm->bool)``
+| ``is_compact:RealForm G->bool``
+| 
+| Defined in basic.at line number 779.
 | 
 
+.. _\!=_kgbelt_x,kgbelt_y->bool1:
 
-.. _!=_(KGBElt,KGBElt->bool)1:
-
-!=
+\!=
 -------------------------------------------------
-| ``!=:(KGBElt,KGBElt->bool)``
+| ``!=:KGBElt x,KGBElt y->bool``
+| 
+| Defined in basic.at line number 786.
 | 
 
-
-.. _real_form_(KGBElt->RealForm)1:
-
-real_form
--------------------------------------------------
-| ``real_form:(KGBElt->RealForm)``
-| 
-
-
-.. _\#_(KGBElt->int)1:
-
-\#
--------------------------------------------------
-| ``#:(KGBElt->int)``
-| 
-
-
-.. _root_datum_(KGBElt->RootDatum)1:
+.. _root_datum_kgbelt_x->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:(KGBElt->RootDatum)``
+| ``root_datum:KGBElt x->RootDatum``
+| 
+| Defined in basic.at line number 789.
 | 
 
-
-.. _inner_class_(KGBElt->InnerClass)1:
+.. _inner_class_kgbelt_x->innerclass1:
 
 inner_class
 -------------------------------------------------
-| ``inner_class:(KGBElt->InnerClass)``
+| ``inner_class:KGBElt x->InnerClass``
+| 
+| Defined in basic.at line number 790.
 | 
 
-
-.. _KGB_(RealForm->[KGBElt])1:
+.. _kgb_realform_rf->[kgbelt]:_for_i1:
 
 KGB
 -------------------------------------------------
-| ``KGB:(RealForm->[KGBElt])``
+| ``KGB:RealForm rf->[KGBElt]: for i``
+| 
+| Defined in basic.at line number 792.
 | 
 
-
-.. _KGB_(CartanClass,RealForm->[KGBElt])1:
+.. _kgb_cartanclass_h,realform_g->[kgbelt]1:
 
 KGB
 -------------------------------------------------
-| ``KGB:(CartanClass,RealForm->[KGBElt])``
+| ``KGB:CartanClass H,RealForm G->[KGBElt]``
+| 
+| Defined in basic.at line number 795.
 | 
 
-
-.. _KGB_elt_(InnerClass,mat,ratvec->KGBElt)1:
+.. _kgb_elt_(innerclass,_mat,_ratvec)_(,theta,v):all->kgbelt1:
 
 KGB_elt
 -------------------------------------------------
-| ``KGB_elt:(InnerClass,mat,ratvec->KGBElt)``
+| ``KGB_elt:(InnerClass, mat, ratvec) (,theta,v):all->KGBElt``
+| 
+| Defined in basic.at line number 798.
 | 
 
-
-.. _KGB_elt_(RootDatum,mat,ratvec->KGBElt)1:
+.. _kgb_elt_rootdatum_rd,_mat_theta,_ratvec_v->kgbelt1:
 
 KGB_elt
 -------------------------------------------------
-| ``KGB_elt:(RootDatum,mat,ratvec->KGBElt)``
+| ``KGB_elt:RootDatum rd, mat theta, ratvec v->KGBElt``
+| 
+| Defined in basic.at line number 803.
 | 
 
-
-.. _Cartan_class_(InnerClass,mat->CartanClass)1:
+.. _cartan_class_innerclass_ic,_mat_theta->cartanclass1:
 
 Cartan_class
 -------------------------------------------------
-| ``Cartan_class:(InnerClass,mat->CartanClass)``
+| ``Cartan_class:InnerClass ic, mat theta->CartanClass``
+| 
+| Defined in basic.at line number 808.
 | 
 
-
-.. _status_(vec,KGBElt->int)1:
+.. _status_vec_alpha,kgbelt_x->int1:
 
 status
 -------------------------------------------------
-| ``status:(vec,KGBElt->int)``
+| ``status:vec alpha,KGBElt x->int``
+| 
+| Defined in basic.at line number 813.
 | 
 
-
-.. _cross_(vec,KGBElt->KGBElt)1:
+.. _cross_vec_alpha,kgbelt_x->kgbelt1:
 
 cross
 -------------------------------------------------
-| ``cross:(vec,KGBElt->KGBElt)``
+| ``cross:vec alpha,KGBElt x->KGBElt``
+| 
+| Defined in basic.at line number 815.
 | 
 
-
-.. _Cayley_(vec,KGBElt->KGBElt)1:
+.. _cayley_vec_alpha,kgbelt_x->kgbelt1:
 
 Cayley
 -------------------------------------------------
-| ``Cayley:(vec,KGBElt->KGBElt)``
+| ``Cayley:vec alpha,KGBElt x->KGBElt``
+| 
+| Defined in basic.at line number 817.
 | 
 
-
-.. _W_cross_([int],KGBElt->KGBElt)1:
+.. _w_cross_[int]_w,kgbelt_x->kgbelt1:
 
 W_cross
 -------------------------------------------------
-| ``W_cross:([int],KGBElt->KGBElt)``
+| ``W_cross:[int] w,KGBElt x->KGBElt``
+| 
+| Defined in basic.at line number 821.
 | 
 
-
-.. _KGB_status_text_(int->string)1:
+.. _kgb_status_text_int_i->string1:
 
 KGB_status_text
 -------------------------------------------------
-| ``KGB_status_text:(int->string)``
+| ``KGB_status_text:int i->string``
+| 
+| Defined in basic.at line number 824.
 | 
 
-
-.. _status_text_(int,KGBElt->string)1:
+.. _status_text_(int,kgbelt)p->string1:
 
 status_text
 -------------------------------------------------
-| ``status_text:(int,KGBElt->string)``
+| ``status_text:(int,KGBElt)p->string``
+| 
+| Defined in basic.at line number 826.
 | 
 
-
-.. _status_text_(vec,KGBElt->string)1:
+.. _status_text_(vec,kgbelt)p->string1:
 
 status_text
 -------------------------------------------------
-| ``status_text:(vec,KGBElt->string)``
+| ``status_text:(vec,KGBElt)p->string``
+| 
+| Defined in basic.at line number 827.
 | 
 
-
-.. _status_texts_(KGBElt->[string])1:
+.. _status_texts_kgbelt_x->[string]1:
 
 status_texts
 -------------------------------------------------
-| ``status_texts:(KGBElt->[string])``
+| ``status_texts:KGBElt x->[string]``
+| 
+| Defined in basic.at line number 828.
 | 
 
-
-.. _is_complex_(int,KGBElt->bool)1:
-
-is_complex
--------------------------------------------------
-| ``is_complex:(int,KGBElt->bool)``
-| 
-
-
-.. _is_real_(int,KGBElt->bool)1:
-
-is_real
--------------------------------------------------
-| ``is_real:(int,KGBElt->bool)``
-| 
-
-
-.. _is_imaginary_(int,KGBElt->bool)1:
+.. _is_imaginary_kgbelt_x->(vec->bool)1:
 
 is_imaginary
 -------------------------------------------------
-| ``is_imaginary:(int,KGBElt->bool)``
+| ``is_imaginary:KGBElt x->(vec->bool)``
+| 
+| Defined in basic.at line number 842.
 | 
 
-
-.. _is_noncompact_(int,KGBElt->bool)1:
-
-is_noncompact
--------------------------------------------------
-| ``is_noncompact:(int,KGBElt->bool)``
-| 
-
-
-.. _is_compact_(int,KGBElt->bool)1:
-
-is_compact
--------------------------------------------------
-| ``is_compact:(int,KGBElt->bool)``
-| 
-
-
-.. _is_descent_(int,KGBElt->bool)1:
-
-is_descent
--------------------------------------------------
-| ``is_descent:(int,KGBElt->bool)``
-| 
-
-
-.. _is_ascent_(int,KGBElt->bool)1:
-
-is_ascent
--------------------------------------------------
-| ``is_ascent:(int,KGBElt->bool)``
-| 
-
-
-.. _is_strict_descent_(int,KGBElt->bool)1:
-
-is_strict_descent
--------------------------------------------------
-| ``is_strict_descent:(int,KGBElt->bool)``
-| 
-
-
-.. _is_imaginary_(KGBElt->(vec->bool))1:
-
-is_imaginary
--------------------------------------------------
-| ``is_imaginary:(KGBElt->(vec->bool))``
-| 
-
-
-.. _is_real_(KGBElt->(vec->bool))1:
+.. _is_real_kgbelt_x->(vec->bool)1:
 
 is_real
 -------------------------------------------------
-| ``is_real:(KGBElt->(vec->bool))``
+| ``is_real:KGBElt x->(vec->bool)``
+| 
+| Defined in basic.at line number 843.
 | 
 
-
-.. _is_complex_(KGBElt->(vec->bool))1:
+.. _is_complex_kgbelt_x->(vec->bool)1:
 
 is_complex
 -------------------------------------------------
-| ``is_complex:(KGBElt->(vec->bool))``
+| ``is_complex:KGBElt x->(vec->bool)``
+| 
+| Defined in basic.at line number 844.
 | 
 
-
-.. _imaginary_posroots_(KGBElt->mat)1:
+.. _imaginary_posroots_kgbelt_x->mat1:
 
 imaginary_posroots
 -------------------------------------------------
-| ``imaginary_posroots:(KGBElt->mat)``
+| ``imaginary_posroots:KGBElt x->mat``
+| 
+| Defined in basic.at line number 847.
 | 
 
-
-.. _real_posroots_(KGBElt->mat)1:
+.. _real_posroots_kgbelt_x->mat1:
 
 real_posroots
 -------------------------------------------------
-| ``real_posroots:(KGBElt->mat)``
+| ``real_posroots:KGBElt x->mat``
+| 
+| Defined in basic.at line number 849.
 | 
 
-
-.. _imaginary_poscoroots_(KGBElt->mat)1:
+.. _imaginary_poscoroots_kgbelt_x->mat1:
 
 imaginary_poscoroots
 -------------------------------------------------
-| ``imaginary_poscoroots:(KGBElt->mat)``
+| ``imaginary_poscoroots:KGBElt x->mat``
+| 
+| Defined in basic.at line number 851.
 | 
 
-
-.. _real_poscoroots_(KGBElt->mat)1:
+.. _real_poscoroots_kgbelt_x->mat1:
 
 real_poscoroots
 -------------------------------------------------
-| ``real_poscoroots:(KGBElt->mat)``
+| ``real_poscoroots:KGBElt x->mat``
+| 
+| Defined in basic.at line number 853.
 | 
 
-
-.. _imaginary_sys_(KGBElt->mat,mat)1:
+.. _imaginary_sys_kgbelt_x->(mat,mat)1:
 
 imaginary_sys
 -------------------------------------------------
-| ``imaginary_sys:(KGBElt->mat,mat)``
+| ``imaginary_sys:KGBElt x->(mat,mat)``
+| 
+| Defined in basic.at line number 855.
 | 
 
-
-.. _real_sys_(KGBElt->mat,mat)1:
+.. _real_sys_kgbelt_x->(mat,mat)1:
 
 real_sys
 -------------------------------------------------
-| ``real_sys:(KGBElt->mat,mat)``
+| ``real_sys:KGBElt x->(mat,mat)``
+| 
+| Defined in basic.at line number 858.
 | 
 
-
-.. _rho_i_(KGBElt->ratvec)1:
+.. _rho_i_kgbelt_x->ratvec1:
 
 rho_i
 -------------------------------------------------
-| ``rho_i:(KGBElt->ratvec)``
+| ``rho_i:KGBElt x->ratvec``
+| 
+| Defined in basic.at line number 862.
 | 
 
-
-.. _rho_r_(KGBElt->ratvec)1:
+.. _rho_r_kgbelt_x->ratvec1:
 
 rho_r
 -------------------------------------------------
-| ``rho_r:(KGBElt->ratvec)``
+| ``rho_r:KGBElt x->ratvec``
+| 
+| Defined in basic.at line number 863.
 | 
 
-
-.. _rho_check_i_(KGBElt->ratvec)1:
+.. _rho_check_i_kgbelt_x->ratvec1:
 
 rho_check_i
 -------------------------------------------------
-| ``rho_check_i:(KGBElt->ratvec)``
+| ``rho_check_i:KGBElt x->ratvec``
+| 
+| Defined in basic.at line number 864.
 | 
 
-
-.. _rho_check_r_(KGBElt->ratvec)1:
+.. _rho_check_r_kgbelt_x->ratvec1:
 
 rho_check_r
 -------------------------------------------------
-| ``rho_check_r:(KGBElt->ratvec)``
+| ``rho_check_r:KGBElt x->ratvec``
+| 
+| Defined in basic.at line number 865.
 | 
 
-
-.. _rho_i_(RootDatum,mat->ratvec)1:
+.. _rho_i_(rootdatum,mat)_rd_theta->ratvec1:
 
 rho_i
 -------------------------------------------------
-| ``rho_i:(RootDatum,mat->ratvec)``
+| ``rho_i:(RootDatum,mat) rd_theta->ratvec``
+| 
+| Defined in basic.at line number 867.
 | 
 
-
-.. _rho_r_(RootDatum,mat->ratvec)1:
+.. _rho_r_(rootdatum,mat)_rd_theta->ratvec1:
 
 rho_r
 -------------------------------------------------
-| ``rho_r:(RootDatum,mat->ratvec)``
+| ``rho_r:(RootDatum,mat) rd_theta->ratvec``
+| 
+| Defined in basic.at line number 869.
 | 
 
-
-.. _rho_check_i_(RootDatum,mat->ratvec)1:
+.. _rho_check_i_(rootdatum,mat)_rd_theta->ratvec1:
 
 rho_check_i
 -------------------------------------------------
-| ``rho_check_i:(RootDatum,mat->ratvec)``
+| ``rho_check_i:(RootDatum,mat) rd_theta->ratvec``
+| 
+| Defined in basic.at line number 871.
 | 
 
-
-.. _rho_check_r_(RootDatum,mat->ratvec)1:
+.. _rho_check_r_(rootdatum,mat)_rd_theta->ratvec1:
 
 rho_check_r
 -------------------------------------------------
-| ``rho_check_r:(RootDatum,mat->ratvec)``
+| ``rho_check_r:(RootDatum,mat) rd_theta->ratvec``
+| 
+| Defined in basic.at line number 873.
 | 
 
-
-.. _is_compact_(KGBElt->(vec->bool))1:
+.. _is_compact_kgbelt_x->(vec->bool)1:
 
 is_compact
 -------------------------------------------------
-| ``is_compact:(KGBElt->(vec->bool))``
+| ``is_compact:KGBElt x->(vec->bool)``
+| 
+| Defined in basic.at line number 877.
 | 
 
-
-.. _is_noncompact_(KGBElt->(vec->bool))1:
+.. _is_noncompact_kgbelt_x->(vec->bool)1:
 
 is_noncompact
 -------------------------------------------------
-| ``is_noncompact:(KGBElt->(vec->bool))``
+| ``is_noncompact:KGBElt x->(vec->bool)``
+| 
+| Defined in basic.at line number 880.
 | 
 
-
-.. _is_compact_imaginary_(KGBElt->(vec->bool))1:
+.. _is_compact_imaginary_kgbelt_x->(vec->bool)1:
 
 is_compact_imaginary
 -------------------------------------------------
-| ``is_compact_imaginary:(KGBElt->(vec->bool))``
+| ``is_compact_imaginary:KGBElt x->(vec->bool)``
+| 
+| Defined in basic.at line number 885.
 | 
 
-
-.. _is_noncompact_imaginary_(KGBElt->(vec->bool))1:
+.. _is_noncompact_imaginary_kgbelt_x->(vec->bool)1:
 
 is_noncompact_imaginary
 -------------------------------------------------
-| ``is_noncompact_imaginary:(KGBElt->(vec->bool))``
+| ``is_noncompact_imaginary:KGBElt x->(vec->bool)``
+| 
+| Defined in basic.at line number 888.
 | 
 
-
-.. _compact_posroots_(KGBElt->mat)1:
+.. _compact_posroots_kgbelt_x->mat1:
 
 compact_posroots
 -------------------------------------------------
-| ``compact_posroots:(KGBElt->mat)``
+| ``compact_posroots:KGBElt x->mat``
+| 
+| Defined in basic.at line number 892.
 | 
 
-
-.. _noncompact_posroots_(KGBElt->mat)1:
+.. _noncompact_posroots_kgbelt_x->mat1:
 
 noncompact_posroots
 -------------------------------------------------
-| ``noncompact_posroots:(KGBElt->mat)``
+| ``noncompact_posroots:KGBElt x->mat``
+| 
+| Defined in basic.at line number 894.
 | 
 
-
-.. _rho_ci_(KGBElt->ratvec)1:
+.. _rho_ci_kgbelt_x->ratvec1:
 
 rho_ci
 -------------------------------------------------
-| ``rho_ci:(KGBElt->ratvec)``
+| ``rho_ci:KGBElt x->ratvec``
+| 
+| Defined in basic.at line number 897.
 | 
 
-
-.. _rho_nci_(KGBElt->ratvec)1:
+.. _rho_nci_kgbelt_x->ratvec1:
 
 rho_nci
 -------------------------------------------------
-| ``rho_nci:(KGBElt->ratvec)``
+| ``rho_nci:KGBElt x->ratvec``
+| 
+| Defined in basic.at line number 898.
 | 
 
-
-.. _is_imaginary_(vec,KGBElt->bool)1:
+.. _is_imaginary_vec_v,kgbelt_x->bool1:
 
 is_imaginary
 -------------------------------------------------
-| ``is_imaginary:(vec,KGBElt->bool)``
+| ``is_imaginary:vec v,KGBElt x->bool``
+| 
+| Defined in basic.at line number 900.
 | 
 
-
-.. _is_real_(vec,KGBElt->bool)1:
+.. _is_real_vec_v,kgbelt_x->bool1:
 
 is_real
 -------------------------------------------------
-| ``is_real:(vec,KGBElt->bool)``
+| ``is_real:vec v,KGBElt x->bool``
+| 
+| Defined in basic.at line number 901.
 | 
 
-
-.. _is_complex_(vec,KGBElt->bool)1:
+.. _is_complex_vec_v,kgbelt_x->bool1:
 
 is_complex
 -------------------------------------------------
-| ``is_complex:(vec,KGBElt->bool)``
+| ``is_complex:vec v,KGBElt x->bool``
+| 
+| Defined in basic.at line number 902.
 | 
 
-
-.. _is_compact_imaginary_(vec,KGBElt->bool)1:
+.. _is_compact_imaginary_vec_v,kgbelt_x->bool1:
 
 is_compact_imaginary
 -------------------------------------------------
-| ``is_compact_imaginary:(vec,KGBElt->bool)``
+| ``is_compact_imaginary:vec v,KGBElt x->bool``
+| 
+| Defined in basic.at line number 903.
 | 
 
-
-.. _is_noncompact_imaginary_(vec,KGBElt->bool)1:
+.. _is_noncompact_imaginary_vec_v,kgbelt_x->bool1:
 
 is_noncompact_imaginary
 -------------------------------------------------
-| ``is_noncompact_imaginary:(vec,KGBElt->bool)``
+| ``is_noncompact_imaginary:vec v,KGBElt x->bool``
+| 
+| Defined in basic.at line number 904.
 | 
 
-
-.. _print_KGB_(KGBElt->)1:
+.. _print_kgb_kgbelt_x->void1:
 
 print_KGB
 -------------------------------------------------
-| ``print_KGB:(KGBElt->)``
+| ``print_KGB:KGBElt x->void``
+| 
+| Defined in basic.at line number 907.
 | 
 
-
-.. _no_Cminus_roots_(KGBElt->bool)1:
+.. _no_cminus_roots_kgbelt_x->bool1:
 
 no_Cminus_roots
 -------------------------------------------------
-| ``no_Cminus_roots:(KGBElt->bool)``
+| ``no_Cminus_roots:KGBElt x->bool``
+| 
+| Defined in basic.at line number 911.
 | 
 
-
-.. _no_Cplus_roots_(KGBElt->bool)1:
+.. _no_cplus_roots_kgbelt_x->bool1:
 
 no_Cplus_roots
 -------------------------------------------------
-| ``no_Cplus_roots:(KGBElt->bool)``
+| ``no_Cplus_roots:KGBElt x->bool``
+| 
+| Defined in basic.at line number 913.
 | 
 
-
-.. _blocks_(InnerClass->[Block])1:
+.. _blocks_innerclass_ic->[block]1:
 
 blocks
 -------------------------------------------------
-| ``blocks:(InnerClass->[Block])``
+| ``blocks:InnerClass ic->[Block]``
+| 
+| Defined in basic.at line number 918.
 | 
 
-
-.. _raw_KL_(RealForm,RealForm->mat,[vec],vec)1:
+.. _raw_kl_(realform,realform)_p->(mat,[vec],vec)1:
 
 raw_KL
 -------------------------------------------------
-| ``raw_KL:(RealForm,RealForm->mat,[vec],vec)``
+| ``raw_KL:(RealForm,RealForm) p->(mat,[vec],vec)``
+| 
+| Defined in basic.at line number 926.
 | 
 
-
-.. _dual_KL_(RealForm,RealForm->mat,[vec],vec)1:
+.. _dual_kl_(realform,realform)_p->(mat,[vec],vec)1:
 
 dual_KL
 -------------------------------------------------
-| ``dual_KL:(RealForm,RealForm->mat,[vec],vec)``
+| ``dual_KL:(RealForm,RealForm) p->(mat,[vec],vec)``
+| 
+| Defined in basic.at line number 927.
 | 
 
-
-.. _print_block_(RealForm,RealForm->)1:
+.. _print_block_(realform,realform)_p->void1:
 
 print_block
 -------------------------------------------------
-| ``print_block:(RealForm,RealForm->)``
+| ``print_block:(RealForm,RealForm) p->void``
+| 
+| Defined in basic.at line number 929.
 | 
 
-
-.. _print_blocku_(RealForm,RealForm->)1:
+.. _print_blocku_(realform,realform)_p->void1:
 
 print_blocku
 -------------------------------------------------
-| ``print_blocku:(RealForm,RealForm->)``
+| ``print_blocku:(RealForm,RealForm) p->void``
+| 
+| Defined in basic.at line number 930.
 | 
 
-
-.. _print_blockd_(RealForm,RealForm->)1:
+.. _print_blockd_(realform,realform)_p->void1:
 
 print_blockd
 -------------------------------------------------
-| ``print_blockd:(RealForm,RealForm->)``
+| ``print_blockd:(RealForm,RealForm) p->void``
+| 
+| Defined in basic.at line number 931.
 | 
 
-
-.. _print_KL_basis_(RealForm,RealForm->)1:
+.. _print_kl_basis_(realform,realform)_p->void1:
 
 print_KL_basis
 -------------------------------------------------
-| ``print_KL_basis:(RealForm,RealForm->)``
+| ``print_KL_basis:(RealForm,RealForm) p->void``
+| 
+| Defined in basic.at line number 932.
 | 
 
-
-.. _print_prim_KL_(RealForm,RealForm->)1:
+.. _print_prim_kl_(realform,realform)_p->void1:
 
 print_prim_KL
 -------------------------------------------------
-| ``print_prim_KL:(RealForm,RealForm->)``
+| ``print_prim_KL:(RealForm,RealForm) p->void``
+| 
+| Defined in basic.at line number 933.
 | 
 
-
-.. _print_KL_list_(RealForm,RealForm->)1:
+.. _print_kl_list_(realform,realform)_p->void1:
 
 print_KL_list
 -------------------------------------------------
-| ``print_KL_list:(RealForm,RealForm->)``
+| ``print_KL_list:(RealForm,RealForm) p->void``
+| 
+| Defined in basic.at line number 934.
 | 
 
-
-.. _print_W_cells_(RealForm,RealForm->)1:
+.. _print_w_cells_(realform,realform)_p->void1:
 
 print_W_cells
 -------------------------------------------------
-| ``print_W_cells:(RealForm,RealForm->)``
+| ``print_W_cells:(RealForm,RealForm) p->void``
+| 
+| Defined in basic.at line number 935.
 | 
 
-
-.. _print_W_graph_(RealForm,RealForm->)1:
+.. _print_w_graph_(realform,realform)_p->void1:
 
 print_W_graph
 -------------------------------------------------
-| ``print_W_graph:(RealForm,RealForm->)``
+| ``print_W_graph:(RealForm,RealForm) p->void``
+| 
+| Defined in basic.at line number 936.
 | 
 
+.. _\!=_param_x,param_y->bool1:
 
-.. _!=_(Param,Param->bool)1:
-
-!=
+\!=
 -------------------------------------------------
-| ``!=:(Param,Param->bool)``
+| ``!=:Param x,Param y->bool``
+| 
+| Defined in basic.at line number 941.
 | 
 
-
-.. _root_datum_(Param->RootDatum)1:
+.. _root_datum_param_p->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:(Param->RootDatum)``
+| ``root_datum:Param p->RootDatum``
+| 
+| Defined in basic.at line number 943.
 | 
 
-
-.. _inner_class_(Param->InnerClass)1:
+.. _inner_class_param_p->innerclass1:
 
 inner_class
 -------------------------------------------------
-| ``inner_class:(Param->InnerClass)``
+| ``inner_class:Param p->InnerClass``
+| 
+| Defined in basic.at line number 944.
 | 
 
-
-.. _null_module_(Param->ParamPol)1:
+.. _null_module_param_p->parampol1:
 
 null_module
 -------------------------------------------------
-| ``null_module:(Param->ParamPol)``
+| ``null_module:Param p->ParamPol``
+| 
+| Defined in basic.at line number 946.
 | 
 
-
-.. _\*_(Param,rat->Param)1:
+.. _\*_param_p,rat_f->param1:
 
 \*
 -------------------------------------------------
-| ``*:(Param,rat->Param)``
+| ``*:Param p,rat f->Param``
+| 
+| Defined in basic.at line number 950.
 | 
 
-
-.. _x_(Param->KGBElt)1:
+.. _x_param_p->kgbelt1:
 
 x
 -------------------------------------------------
-| ``x:(Param->KGBElt)``
+| ``x:Param p->KGBElt``
+| 
+| Defined in basic.at line number 953.
 | 
 
-
-.. _lambda_minus_rho_(Param->vec)1:
+.. _lambda_minus_rho_param_p->vec1:
 
 lambda_minus_rho
 -------------------------------------------------
-| ``lambda_minus_rho:(Param->vec)``
+| ``lambda_minus_rho:Param p->vec``
+| 
+| Defined in basic.at line number 954.
 | 
 
-
-.. _lambda_(Param->ratvec)1:
+.. _lambda_param_p->ratvec1:
 
 lambda
 -------------------------------------------------
-| ``lambda:(Param->ratvec)``
+| ``lambda:Param p->ratvec``
+| 
+| Defined in basic.at line number 955.
 | 
 
-
-.. _infinitesimal_character_(Param->ratvec)1:
+.. _infinitesimal_character_param_p->ratvec1:
 
 infinitesimal_character
 -------------------------------------------------
-| ``infinitesimal_character:(Param->ratvec)``
+| ``infinitesimal_character:Param p->ratvec``
+| 
+| Defined in basic.at line number 956.
 | 
 
-
-.. _nu_(Param->ratvec)1:
+.. _nu_param_p->ratvec1:
 
 nu
 -------------------------------------------------
-| ``nu:(Param->ratvec)``
+| ``nu:Param p->ratvec``
+| 
+| Defined in basic.at line number 957.
 | 
 
-
-.. _Cartan_class_(Param->CartanClass)1:
+.. _cartan_class_param_p->cartanclass1:
 
 Cartan_class
 -------------------------------------------------
-| ``Cartan_class:(Param->CartanClass)``
+| ``Cartan_class:Param p->CartanClass``
+| 
+| Defined in basic.at line number 958.
 | 
 
-
-.. _involution_(Param->mat)1:
-
-involution
--------------------------------------------------
-| ``involution:(Param->mat)``
-| 
-
-
-.. _integrality_datum_(Param->RootDatum)1:
+.. _integrality_datum_param_p->rootdatum1:
 
 integrality_datum
 -------------------------------------------------
-| ``integrality_datum:(Param->RootDatum)``
+| ``integrality_datum:Param p->RootDatum``
+| 
+| Defined in basic.at line number 962.
 | 
 
-
-.. _is_regular_(Param->bool)1:
+.. _is_regular_param_p->bool1:
 
 is_regular
 -------------------------------------------------
-| ``is_regular:(Param->bool)``
+| ``is_regular:Param p->bool``
+| 
+| Defined in basic.at line number 965.
 | 
 
-
-.. _trivial_(RealForm->Param)1:
+.. _trivial_realform_g->param1:
 
 trivial
 -------------------------------------------------
-| ``trivial:(RealForm->Param)``
+| ``trivial:RealForm G->Param``
+| 
+| Defined in basic.at line number 968.
 | 
 
-
-.. _W_cross_([int],Param->Param)1:
+.. _w_cross_[int]_w,param_p->param1:
 
 W_cross
 -------------------------------------------------
-| ``W_cross:([int],Param->Param)``
+| ``W_cross:[int] w,Param p->Param``
+| 
+| Defined in basic.at line number 972.
 | 
 
-
-.. _parameter_(RealForm,int,ratvec,ratvec->Param)1:
+.. _parameter_realform_g,int_x,ratvec_lambda,ratvec_nu->param1:
 
 parameter
 -------------------------------------------------
-| ``parameter:(RealForm,int,ratvec,ratvec->Param)``
+| ``parameter:RealForm G,int x,ratvec lambda,ratvec nu->Param``
+| 
+| Defined in basic.at line number 978.
 | 
 
-
-.. _parameter_(KGBElt,ratvec,ratvec->Param)1:
+.. _parameter_kgbelt_x,ratvec_lambda,ratvec_nu->param1:
 
 parameter
 -------------------------------------------------
-| ``parameter:(KGBElt,ratvec,ratvec->Param)``
+| ``parameter:KGBElt x,ratvec lambda,ratvec nu->Param``
+| 
+| Defined in basic.at line number 980.
 | 
 
-
-.. _parameter_gamma_(KGBElt,ratvec,ratvec->Param)1:
+.. _parameter_gamma_kgbelt_x,_ratvec_lambda,_ratvec_gamma->param1:
 
 parameter_gamma
 -------------------------------------------------
-| ``parameter_gamma:(KGBElt,ratvec,ratvec->Param)``
+| ``parameter_gamma:KGBElt x, ratvec lambda, ratvec gamma->Param``
+| 
+| Defined in basic.at line number 984.
 | 
 
-
-.. _block_of_(Param->[Param])1:
+.. _block_of_param_p->[param]1:
 
 block_of
 -------------------------------------------------
-| ``block_of:(Param->[Param])``
+| ``block_of:Param p->[Param]``
+| 
+| Defined in basic.at line number 990.
 | 
 
-
-.. _imaginary_type_(int,Param->int)1:
+.. _imaginary_type_int_s,_param_p->int1:
 
 imaginary_type
 -------------------------------------------------
-| ``imaginary_type:(int,Param->int)``
+| ``imaginary_type:int s, Param p->int``
+| 
+| Defined in basic.at line number 994.
 | 
 
-
-.. _real_type_(int,Param->int)1:
+.. _real_type_int_s,param_p->int1:
 
 real_type
 -------------------------------------------------
-| ``real_type:(int,Param->int)``
+| ``real_type:int s,Param p->int``
+| 
+| Defined in basic.at line number 995.
 | 
 
-
-.. _imaginary_type_(vec,Param->int)1:
+.. _imaginary_type_vec_alpha,_param_p->int1:
 
 imaginary_type
 -------------------------------------------------
-| ``imaginary_type:(vec,Param->int)``
+| ``imaginary_type:vec alpha, Param p->int``
+| 
+| Defined in basic.at line number 997.
 | 
 
-
-.. _real_type_(vec,Param->int)1:
+.. _real_type_vec_alpha,_param_p->int1:
 
 real_type
 -------------------------------------------------
-| ``real_type:(vec,Param->int)``
+| ``real_type:vec alpha, Param p->int``
+| 
+| Defined in basic.at line number 999.
 | 
 
-
-.. _is_nonparity_(int,Param->bool)1:
+.. _is_nonparity_int_s,param_p->bool1:
 
 is_nonparity
 -------------------------------------------------
-| ``is_nonparity:(int,Param->bool)``
+| ``is_nonparity:int s,Param p->bool``
+| 
+| Defined in basic.at line number 1002.
 | 
 
-
-.. _is_parity_(int,Param->bool)1:
+.. _is_parity_int_s,param_p->bool1:
 
 is_parity
 -------------------------------------------------
-| ``is_parity:(int,Param->bool)``
+| ``is_parity:int s,Param p->bool``
+| 
+| Defined in basic.at line number 1003.
 | 
 
-
-.. _is_nonparity_(vec,Param->bool)1:
+.. _is_nonparity_vec_alpha,param_p->bool1:
 
 is_nonparity
 -------------------------------------------------
-| ``is_nonparity:(vec,Param->bool)``
+| ``is_nonparity:vec alpha,Param p->bool``
+| 
+| Defined in basic.at line number 1005.
 | 
 
-
-.. _is_parity_(vec,Param->bool)1:
+.. _is_parity_vec_alpha,param_p->bool1:
 
 is_parity
 -------------------------------------------------
-| ``is_parity:(vec,Param->bool)``
+| ``is_parity:vec alpha,Param p->bool``
+| 
+| Defined in basic.at line number 1007.
 | 
 
-
-.. _status_(vec,Param->int)1:
+.. _status_vec_alpha,param_p->int1:
 
 status
 -------------------------------------------------
-| ``status:(vec,Param->int)``
+| ``status:vec alpha,Param p->int``
+| 
+| Defined in basic.at line number 1010.
 | 
 
-
-.. _status_(int,Param->int)1:
+.. _status_int_s,param_p->int1:
 
 status
 -------------------------------------------------
-| ``status:(int,Param->int)``
+| ``status:int s,Param p->int``
+| 
+| Defined in basic.at line number 1018.
 | 
 
-
-.. _block_status_text_(int->string)1:
+.. _block_status_text_int_i->string1:
 
 block_status_text
 -------------------------------------------------
-| ``block_status_text:(int->string)``
+| ``block_status_text:int i->string``
+| 
+| Defined in basic.at line number 1021.
 | 
 
-
-.. _status_text_(int,Param->string)1:
+.. _status_text_int_s,param_p->string1:
 
 status_text
 -------------------------------------------------
-| ``status_text:(int,Param->string)``
+| ``status_text:int s,Param p->string``
+| 
+| Defined in basic.at line number 1024.
 | 
 
-
-.. _status_texts_(Param->[string])1:
+.. _status_texts_param_p->[string]1:
 
 status_texts
 -------------------------------------------------
-| ``status_texts:(Param->[string])``
+| ``status_texts:Param p->[string]``
+| 
+| Defined in basic.at line number 1025.
 | 
 
-
-.. _status_text_(vec,Param->string)1:
+.. _status_text_(vec,param)_ap->string1:
 
 status_text
 -------------------------------------------------
-| ``status_text:(vec,Param->string)``
+| ``status_text:(vec,Param) ap->string``
+| 
+| Defined in basic.at line number 1028.
 | 
 
-
-.. _parity_poscoroots_(Param->mat)1:
+.. _parity_poscoroots_param_p->mat1:
 
 parity_poscoroots
 -------------------------------------------------
-| ``parity_poscoroots:(Param->mat)``
+| ``parity_poscoroots:Param p->mat``
+| 
+| Defined in basic.at line number 1030.
 | 
 
-
-.. _nonparity_poscoroots_(Param->mat)1:
+.. _nonparity_poscoroots_param_p->mat1:
 
 nonparity_poscoroots
 -------------------------------------------------
-| ``nonparity_poscoroots:(Param->mat)``
+| ``nonparity_poscoroots:Param p->mat``
+| 
+| Defined in basic.at line number 1033.
 | 
 
-
-.. _is_descent_(int,Param->bool)1:
+.. _is_descent_int_s,param_p->bool1:
 
 is_descent
 -------------------------------------------------
-| ``is_descent:(int,Param->bool)``
+| ``is_descent:int s,Param p->bool``
+| 
+| Defined in basic.at line number 1037.
 | 
 
-
-.. _tau_bitset_(Param->(int->bool),int)1:
+.. _tau_bitset_param_p->((int->bool),int)1:
 
 tau_bitset
 -------------------------------------------------
-| ``tau_bitset:(Param->(int->bool),int)``
+| ``tau_bitset:Param p->((int->bool),int)``
+| 
+| Defined in basic.at line number 1038.
 | 
 
-
-.. _tau_(Param->[int])1:
+.. _tau_param_p->[int]1:
 
 tau
 -------------------------------------------------
-| ``tau:(Param->[int])``
+| ``tau:Param p->[int]``
+| 
+| Defined in basic.at line number 1041.
 | 
 
-
-.. _tau_complement_(Param->[int])1:
+.. _tau_complement_param_p->[int]1:
 
 tau_complement
 -------------------------------------------------
-| ``tau_complement:(Param->[int])``
+| ``tau_complement:Param p->[int]``
+| 
+| Defined in basic.at line number 1042.
 | 
 
-
-.. _is_descent_(vec,Param->bool)1:
+.. _is_descent_(vec,param)_ap->bool1:
 
 is_descent
 -------------------------------------------------
-| ``is_descent:(vec,Param->bool)``
+| ``is_descent:(vec,Param) ap->bool``
+| 
+| Defined in basic.at line number 1044.
 | 
 
-
-.. _lookup_(Param,[Param]->int)1:
+.. _lookup_param_p,_[param]_block->int1:
 
 lookup
 -------------------------------------------------
-| ``lookup:(Param,[Param]->int)``
+| ``lookup:Param p, [Param] block->int``
+| 
+| Defined in basic.at line number 1046.
 | 
 
-
-.. _has_double_extended_Cayley_(int->bool)1:
-
-has_double_extended_Cayley
--------------------------------------------------
-| ``has_double_extended_Cayley:(int->bool)``
-| 
-
-
-.. _print_extended_block_(Param,mat->)1:
+.. _print_extended_block_param_p,_mat_delta->void1:
 
 print_extended_block
 -------------------------------------------------
-| ``print_extended_block:(Param,mat->)``
+| ``print_extended_block:Param p, mat delta->void``
+| 
+| Defined in basic.at line number 1062.
 | 
 
-
-.. _null_module_(ParamPol->ParamPol)1:
+.. _null_module_parampol_p->parampol1:
 
 null_module
 -------------------------------------------------
-| ``null_module:(ParamPol->ParamPol)``
+| ``null_module:ParamPol P->ParamPol``
+| 
+| Defined in basic.at line number 1101.
 | 
 
-
-.. _\-_(ParamPol->ParamPol)1:
+.. _\-_parampol_p->parampol1:
 
 \-
 -------------------------------------------------
-| ``-:(ParamPol->ParamPol)``
+| ``-:ParamPol P->ParamPol``
+| 
+| Defined in basic.at line number 1102.
 | 
 
-
-.. _first_param_(ParamPol->Param)1:
+.. _first_param_parampol_p->param1:
 
 first_param
 -------------------------------------------------
-| ``first_param:(ParamPol->Param)``
+| ``first_param:ParamPol P->Param``
+| 
+| Defined in basic.at line number 1104.
 | 
 
-
-.. _last_param_(ParamPol->Param)1:
+.. _last_param_parampol_p->param1:
 
 last_param
 -------------------------------------------------
-| ``last_param:(ParamPol->Param)``
+| ``last_param:ParamPol P->Param``
+| 
+| Defined in basic.at line number 1105.
 | 
 
-
-.. _s_to_1_(ParamPol->ParamPol)1:
+.. _s_to_1_parampol_p->parampol1:
 
 s_to_1
 -------------------------------------------------
-| ``s_to_1:(ParamPol->ParamPol)``
+| ``s_to_1:ParamPol P->ParamPol``
+| 
+| Defined in basic.at line number 1107.
 | 
 
-
-.. _s_to_minus_1_(ParamPol->ParamPol)1:
+.. _s_to_minus_1_parampol_p->parampol1:
 
 s_to_minus_1
 -------------------------------------------------
-| ``s_to_minus_1:(ParamPol->ParamPol)``
+| ``s_to_minus_1:ParamPol P->ParamPol``
+| 
+| Defined in basic.at line number 1108.
 | 
 
-
-.. _\-_(ParamPol,(Split,Param)->ParamPol)1:
+.. _\-_parampol_a,_(split,param)_(c,p)->parampol1:
 
 \-
 -------------------------------------------------
-| ``-:(ParamPol,(Split,Param)->ParamPol)``
+| ``-:ParamPol a, (Split,Param) (c,p)->ParamPol``
+| 
+| Defined in basic.at line number 1111.
 | 
 
-
-.. _\*_(ParamPol,rat->ParamPol)1:
+.. _\*_parampol_p,_rat_f->parampol1:
 
 \*
 -------------------------------------------------
-| ``*:(ParamPol,rat->ParamPol)``
+| ``*:ParamPol P, rat f->ParamPol``
+| 
+| Defined in basic.at line number 1114.
 | 
 
-
-.. _divide_by_(int,ParamPol->ParamPol)1:
+.. _divide_by_int_n,_parampol_p->parampol1:
 
 divide_by
 -------------------------------------------------
-| ``divide_by:(int,ParamPol->ParamPol)``
+| ``divide_by:int n, ParamPol P->ParamPol``
+| 
+| Defined in basic.at line number 1117.
 | 
 
-
-.. _root_datum_(ParamPol->RootDatum)1:
+.. _root_datum_parampol_p->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:(ParamPol->RootDatum)``
+| ``root_datum:ParamPol P->RootDatum``
+| 
+| Defined in basic.at line number 1121.
 | 
 
-
-.. _virtual_(Param->ParamPol)1:
+.. _virtual_param_p->parampol1:
 
 virtual
 -------------------------------------------------
-| ``virtual:(Param->ParamPol)``
+| ``virtual:Param p->ParamPol``
+| 
+| Defined in basic.at line number 1123.
 | 
 
-
-.. _virtual_(RealForm,[Param]->ParamPol)1:
+.. _virtual_realform_g,_[param]_ps->parampol1:
 
 virtual
 -------------------------------------------------
-| ``virtual:(RealForm,[Param]->ParamPol)``
+| ``virtual:RealForm G, [Param] ps->ParamPol``
+| 
+| Defined in basic.at line number 1124.
 | 
 
-
-.. _pol_format_(ParamPol->)1:
+.. _pol_format_parampol_p->void1:
 
 pol_format
 -------------------------------------------------
-| ``pol_format:(ParamPol->)``
+| ``pol_format:ParamPol P->void``
+| 
+| Defined in basic.at line number 1129.
 | 
 
-
-.. _infinitesimal_character_(ParamPol->ratvec)1:
+.. _infinitesimal_character_parampol_p->ratvec1:
 
 infinitesimal_character
 -------------------------------------------------
-| ``infinitesimal_character:(ParamPol->ratvec)``
+| ``infinitesimal_character:ParamPol P->ratvec``
+| 
+| Defined in basic.at line number 1134.
 | 
 
-
-.. _separate_by_infinitesimal_character_(ParamPol->[(ratvec,ParamPol)])1:
+.. _separate_by_infinitesimal_character_parampol_p->[(ratvec,parampol)]1:
 
 separate_by_infinitesimal_character
 -------------------------------------------------
-| ``separate_by_infinitesimal_character:(ParamPol->[(ratvec,ParamPol)])``
+| ``separate_by_infinitesimal_character:ParamPol P->[(ratvec,ParamPol)]``
+| 
+| Defined in basic.at line number 1143.
 | 
 
-
-.. _in_string_list_(string,[string]->bool)1:
+.. _in_string_list_string_s,[string]_s->bool1:
 
 in_string_list
 -------------------------------------------------
-| ``in_string_list:(string,[string]->bool)``
+| ``in_string_list:string s,[string] S->bool``
+| 
+| Defined in basic.at line number 1155.
 | 
 
-
-.. _positive_imaginary_roots_and_coroots_(RootDatum,mat->mat,mat)1:
-
-positive_imaginary_roots_and_coroots
--------------------------------------------------
-| ``positive_imaginary_roots_and_coroots:(RootDatum,mat->mat,mat)``
-| 
-
-
-.. _positive_imaginary_roots_and_coroots_(KGBElt->mat,mat)1:
-
-positive_imaginary_roots_and_coroots
--------------------------------------------------
-| ``positive_imaginary_roots_and_coroots:(KGBElt->mat,mat)``
-| 
-
-
-.. _imaginary_roots_and_coroots_(RootDatum,mat->mat,mat)1:
+.. _imaginary_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1:
 
 imaginary_roots_and_coroots
 -------------------------------------------------
-| ``imaginary_roots_and_coroots:(RootDatum,mat->mat,mat)``
+| ``imaginary_roots_and_coroots:(RootDatum, mat)p->(mat,mat)``
+| 
+| Defined in basic.at line number 1161.
 | 
 
-
-.. _imaginary_roots_and_coroots_(KGBElt->mat,mat)1:
+.. _imaginary_roots_and_coroots_kgbelt_x->(mat,mat)1:
 
 imaginary_roots_and_coroots
 -------------------------------------------------
-| ``imaginary_roots_and_coroots:(KGBElt->mat,mat)``
+| ``imaginary_roots_and_coroots:KGBElt x->(mat,mat)``
+| 
+| Defined in basic.at line number 1163.
 | 
 
-
-.. _positive_real_roots_and_coroots_(RootDatum,mat->mat,mat)1:
-
-positive_real_roots_and_coroots
--------------------------------------------------
-| ``positive_real_roots_and_coroots:(RootDatum,mat->mat,mat)``
-| 
-
-
-.. _positive_real_roots_and_coroots_(KGBElt->mat,mat)1:
-
-positive_real_roots_and_coroots
--------------------------------------------------
-| ``positive_real_roots_and_coroots:(KGBElt->mat,mat)``
-| 
-
-
-.. _real_roots_and_coroots_(RootDatum,mat->mat,mat)1:
+.. _real_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1:
 
 real_roots_and_coroots
 -------------------------------------------------
-| ``real_roots_and_coroots:(RootDatum,mat->mat,mat)``
+| ``real_roots_and_coroots:(RootDatum, mat)p->(mat,mat)``
+| 
+| Defined in basic.at line number 1169.
 | 
 
-
-.. _real_roots_and_coroots_(KGBElt->mat,mat)1:
+.. _real_roots_and_coroots_kgbelt_x->(mat,mat)1:
 
 real_roots_and_coroots
 -------------------------------------------------
-| ``real_roots_and_coroots:(KGBElt->mat,mat)``
+| ``real_roots_and_coroots:KGBElt x->(mat,mat)``
+| 
+| Defined in basic.at line number 1171.
 | 
 
-
-.. _complex_posroots_(RootDatum,mat->mat)1:
+.. _complex_posroots_rootdatum_rd,mat_theta->mat1:
 
 complex_posroots
 -------------------------------------------------
-| ``complex_posroots:(RootDatum,mat->mat)``
+| ``complex_posroots:RootDatum rd,mat theta->mat``
+| 
+| Defined in basic.at line number 1174.
 | 
 
-
-.. _complex_posroots_(KGBElt->mat)1:
+.. _complex_posroots_kgbelt_x->mat1:
 
 complex_posroots
 -------------------------------------------------
-| ``complex_posroots:(KGBElt->mat)``
+| ``complex_posroots:KGBElt x->mat``
+| 
+| Defined in basic.at line number 1176.
 | 
 
-
-.. _monomials_(ParamPol->[Param])1:
+.. _monomials_parampol_p->[param]1:
 
 monomials
 -------------------------------------------------
-| ``monomials:(ParamPol->[Param])``
+| ``monomials:ParamPol P->[Param]``
+| 
+| Defined in basic.at line number 1183.
 | 
 
-
-.. _monomial_(ParamPol,int->Param)1:
+.. _monomial_parampol_p,int_i->param1:
 
 monomial
 -------------------------------------------------
-| ``monomial:(ParamPol,int->Param)``
+| ``monomial:ParamPol P,int i->Param``
+| 
+| Defined in basic.at line number 1184.
 | 
 
-
-.. _delete_([int],int->[int])1:
+.. _delete_[int]_v,_int_k->[int]:_____v[:k]##v[k+11:
 
 delete
 -------------------------------------------------
-| ``delete:([int],int->[int])``
+| ``delete:[int] v, int k->[int]:     v[:k]##v[k+1``
+| 
+| Defined in basic.at line number 1187.
 | 
 
-
-.. _delete_([vec],int->[vec])1:
+.. _delete_[vec]_v,_int_k->[vec]:_____v[:k]##v[k+11:
 
 delete
 -------------------------------------------------
-| ``delete:([vec],int->[vec])``
+| ``delete:[vec] v, int k->[vec]:     v[:k]##v[k+1``
+| 
+| Defined in basic.at line number 1188.
 | 
 
-
-.. _delete_([ratvec],int->[ratvec])1:
+.. _delete_[ratvec]_v,_int_k->[ratvec]:__v[:k]##v[k+11:
 
 delete
 -------------------------------------------------
-| ``delete:([ratvec],int->[ratvec])``
+| ``delete:[ratvec] v, int k->[ratvec]:  v[:k]##v[k+1``
+| 
+| Defined in basic.at line number 1189.
 | 
 
-
-.. _delete_([[ratvec]],int->[[ratvec]])1:
+.. _delete_[[ratvec]]_v,_int_k->[[ratvec]]:v[:k]##v[k+11:
 
 delete
 -------------------------------------------------
-| ``delete:([[ratvec]],int->[[ratvec]])``
+| ``delete:[[ratvec]] v, int k->[[ratvec]]:v[:k]##v[k+1``
+| 
+| Defined in basic.at line number 1190.
 | 
 
-
-.. _delete_([[vec]],int->[[vec]])1:
+.. _delete_[[vec]]_v,_int_k->[[vec]]:___v[:k]##v[k+11:
 
 delete
 -------------------------------------------------
-| ``delete:([[vec]],int->[[vec]])``
+| ``delete:[[vec]] v, int k->[[vec]]:   v[:k]##v[k+1``
+| 
+| Defined in basic.at line number 1191.
 | 
 
-
-.. _delete_([ParamPol],int->[ParamPol])1:
+.. _delete_[parampol]_p,_int_k->[parampol]:p[:k]##p[k+11:
 
 delete
 -------------------------------------------------
-| ``delete:([ParamPol],int->[ParamPol])``
+| ``delete:[ParamPol] P, int k->[ParamPol]:P[:k]##P[k+1``
+| 
+| Defined in basic.at line number 1192.
 | 
 
-
-.. _find_([int],int->int)1:
+.. _find_[int]_v,_int_k->int:_____first(#v,(int_i)bool1:
 
 find
 -------------------------------------------------
-| ``find:([int],int->int)``
+| ``find:[int] v, int k->int:     first(#v,(int i)bool``
+| 
+| Defined in basic.at line number 1198.
 | 
 
-
-.. _find_([Param],Param->int)1:
+.. _find_[param]_p,param_p->int:__first(#p,(int_i)bool1:
 
 find
 -------------------------------------------------
-| ``find:([Param],Param->int)``
+| ``find:[Param] P,Param p->int:  first(#P,(int i)bool``
+| 
+| Defined in basic.at line number 1199.
 | 
 
-
-.. _find_([KGBElt],KGBElt->int)1:
+.. _find_[kgbelt]_s,kgbelt_x->int:first(#s,(int_i)bool1:
 
 find
 -------------------------------------------------
-| ``find:([KGBElt],KGBElt->int)``
+| ``find:[KGBElt] S,KGBElt x->int:first(#S,(int i)bool``
+| 
+| Defined in basic.at line number 1200.
 | 
 
-
-.. _find_([[int]],[int]->int)1:
+.. _find_[[int]]_s,[int]_v->int:first(#s,(int_i)bool1:
 
 find
 -------------------------------------------------
-| ``find:([[int]],[int]->int)``
+| ``find:[[int]] S,[int] v->int:first(#S,(int i)bool``
+| 
+| Defined in basic.at line number 1203.
 | 
 
-
-.. _find_vec_([vec],vec->int)1:
+.. _find_vec_[vec]_s,vec_v->int:first(#s,(int_i)bool1:
 
 find_vec
 -------------------------------------------------
-| ``find_vec:([vec],vec->int)``
+| ``find_vec:[vec] S,vec v->int:first(#S,(int i)bool``
+| 
+| Defined in basic.at line number 1206.
 | 
 
-
-.. _pad_(string,int->string)1:
+.. _pad_string_s,int_padding->string1:
 
 pad
 -------------------------------------------------
-| ``pad:(string,int->string)``
+| ``pad:string s,int padding->string``
 | 
-
-
-.. _extended_status_texts_[string]1:
-
-extended_status_texts
--------------------------------------------------
-| ``extended_status_texts:[string]``
+| Defined in basic.at line number 1209.
 | 
-
 

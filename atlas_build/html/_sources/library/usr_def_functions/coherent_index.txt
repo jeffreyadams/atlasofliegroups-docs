@@ -10,35 +10,31 @@ coherent.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`nci_Cayley_(int,Param->ParamPol)1`
-     - ``(int,Param->ParamPol)``
-   * - :ref:`r1_Cayley_(int,Param->ParamPol)1`
-     - ``(int,Param->ParamPol)``
-   * - :ref:`coherent_std_reg_(Param,int->ParamPol)1`
-     - ``(Param,int->ParamPol)``
-   * - :ref:`coherent_std_reg_(ParamPol,int->ParamPol)1`
-     - ``(ParamPol,int->ParamPol)``
-   * - :ref:`coherent_std_reg_(Param,[int]->ParamPol)1`
-     - ``(Param,[int]->ParamPol)``
-   * - :ref:`coherent_std_(Param,int->ParamPol)1`
-     - ``(Param,int->ParamPol)``
-   * - :ref:`coherent_std_(Param,[int]->ParamPol)1`
-     - ``(Param,[int]->ParamPol)``
-   * - :ref:`coherent_std_(ParamPol,int->ParamPol)1`
-     - ``(ParamPol,int->ParamPol)``
-   * - :ref:`coherent_std_(ParamPol,[int]->ParamPol)1`
-     - ``(ParamPol,[int]->ParamPol)``
-   * - :ref:`coherent_std_((RootDatum,[int]),Param->ParamPol)1`
-     - ``((RootDatum,[int]),Param->ParamPol)``
-   * - :ref:`coherent_std_((RootDatum,[int]),ParamPol->ParamPol)1`
-     - ``((RootDatum,[int]),ParamPol->ParamPol)``
-   * - :ref:`coherent_irr_(Param,int->ParamPol)1`
-     - ``(Param,int->ParamPol)``
-   * - :ref:`coherent_irr_(Param,[int]->ParamPol)1`
-     - ``(Param,[int]->ParamPol)``
-   * - :ref:`coherent_irr_(ParamPol,int->ParamPol)1`
-     - ``(ParamPol,int->ParamPol)``
-   * - :ref:`coherent_irr_(ParamPol,[int]->ParamPol)1`
-     - ``(ParamPol,[int]->ParamPol)``
-   * - :ref:`coherent_family_irr_(ParamPol,ratvec->ParamPol)1`
-     - ``(ParamPol,ratvec->ParamPol)``
+   * - :ref:`nci_cayley_int_k,param_p->parampol1`
+     - ``int k,Param p->ParamPol``
+   * - :ref:`r1_cayley_int_k,param_p->parampol1`
+     - ``int k,Param p->ParamPol``
+   * - :ref:`coherent_std_reg_param_p,int_s->parampol1`
+     - ``Param p,int s->ParamPol``
+   * - :ref:`coherent_std_reg_parampol_p,int_s->parampol1`
+     - ``ParamPol P,int s->ParamPol``
+   * - :ref:`coherent_std_reg_param_p,[int]_w->parampol1`
+     - ``Param p,[int] w->ParamPol``
+   * - :ref:`coherent_std_param_p,int_s->parampol1`
+     - ``Param p,int s->ParamPol``
+   * - :ref:`coherent_std_param_p,[int]_w->parampol1`
+     - ``Param p,[int] w->ParamPol``
+   * - :ref:`coherent_std_parampol_p,int_s->parampol1`
+     - ``ParamPol P,int s->ParamPol``
+   * - :ref:`coherent_std_parampol_p,[int]_w->parampol1`
+     - ``ParamPol P,[int] w->ParamPol``
+   * - :ref:`coherent_std_w_word_v,param_p->parampol1`
+     - ``W_word v,Param p->ParamPol``
+   * - :ref:`coherent_std_w_word_v,parampol_p->parampol1`
+     - ``W_word v,ParamPol P->ParamPol``
+   * - :ref:`coherent_irr_parampol_p,int_s->parampol1`
+     - ``ParamPol P,int s->ParamPol``
+   * - :ref:`coherent_irr_parampol_p,[int]_w->parampol1`
+     - ``ParamPol P,[int] w->ParamPol``
+   * - :ref:`coherent_family_irr_parampol_p,_ratvec_v->parampol1`
+     - ``ParamPol P, ratvec v->ParamPol``

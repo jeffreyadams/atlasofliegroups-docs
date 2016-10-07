@@ -10,19 +10,19 @@ finite_dimensional.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`is_finite_dimensional_(Param->bool)1`
-     - ``(Param->bool)``
-   * - :ref:`fd_only_(Param->Param)1`
-     - ``(Param->Param)``
-   * - :ref:`dimension_(RootDatum,vec->int)1`
-     - ``(RootDatum,vec->int)``
-   * - :ref:`highest_weight_finite_dimensional_(Param->vec)1`
-     - ``(Param->vec)``
-   * - :ref:`dimension_(Param->int)1`
-     - ``(Param->int)``
-   * - :ref:`fundamental_weight_coordinates_(Param->vec)1`
-     - ``(Param->vec)``
-   * - :ref:`complex_LKT_(Param->vec)1`
-     - ``(Param->vec)``
-   * - :ref:`testcomplex_(RealForm->)1`
-     - ``(RealForm->)``
+   * - :ref:`is_finite_dimensional_param_p->bool1`
+     - ``Param p->bool``
+   * - :ref:`fd_only_param_p->param1`
+     - ``Param p->Param``
+   * - :ref:`dimension_rootdatum_rd,_vec_lambda_in->int1`
+     - ``RootDatum rd, vec lambda_in->int``
+   * - :ref:`highest_weight_finite_dimensional_param_p->vec1`
+     - ``Param p->vec``
+   * - :ref:`dimension_param_p->int1`
+     - ``Param p->int``
+   * - :ref:`fundamental_weight_coordinates_param_p->vec1`
+     - ``Param p->vec``
+   * - :ref:`complex_lkt_param_p->vec1`
+     - ``Param p->vec``
+   * - :ref:`testcomplex_realform_g->void1`
+     - ``RealForm G->void``

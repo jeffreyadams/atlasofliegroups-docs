@@ -4,99 +4,66 @@ dual.at Function References
 =======================================================
 |
 
-.. _length_(int,vec->int)1:
+.. _length_int_i,_vec_stops->int1:
 
 length
 -------------------------------------------------
-| ``length:(int,vec->int)``
+| ``length:int i, vec stops->int``
+| 
+| Defined in dual.at line number 9.
 | 
 
-
-.. _length_diff_(int,int,vec->int)1:
+.. _length_diff_int_i,int_j,vec_stops->int1:
 
 length_diff
 -------------------------------------------------
-| ``length_diff:(int,int,vec->int)``
+| ``length_diff:int i,int j,vec stops->int``
+| 
+| Defined in dual.at line number 15.
 | 
 
-
-.. _permutation_([Param],[Param]->[int])1:
+.. _permutation_[param]_b1,_[param]_b2->[int]1:
 
 permutation
 -------------------------------------------------
-| ``permutation:([Param],[Param]->[int])``
+| ``permutation:[Param] B1, [Param] B2->[int]``
+| 
+| Defined in dual.at line number 26.
 | 
 
-
-.. _dual_block_([Param],InnerClass->[Param],[int])1:
+.. _dual_block_[param]_b,_innerclass_dual_inner_class->([param],[int])1:
 
 dual_block
 -------------------------------------------------
-| ``dual_block:([Param],InnerClass->[Param],[int])``
+| ``dual_block:[Param] B, InnerClass dual_inner_class->([Param],[int])``
+| 
+| Defined in dual.at line number 35.
 | 
 
-
-.. _dual_block_([Param]->[Param],[int])1:
+.. _dual_block_[param]_b->([param],[int])1:
 
 dual_block
 -------------------------------------------------
-| ``dual_block:([Param]->[Param],[int])``
+| ``dual_block:[Param] B->([Param],[int])``
+| 
+| Defined in dual.at line number 47.
 | 
 
-
-.. _dual_extended_parameter_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
+.. _dual_extended_parameter_extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t)->extended_param1:
 
 dual_extended_parameter
 -------------------------------------------------
-| ``dual_extended_parameter:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``
+| ``dual_extended_parameter:extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t)->extended_param``
+| 
+| Defined in dual.at line number 49.
 | 
 
-
-.. _KL_block_polynomials_([Param],bool->[[vec]])1:
-
-KL_block_polynomials
--------------------------------------------------
-| ``KL_block_polynomials:([Param],bool->[[vec]])``
-| 
-
-
-.. _KL_P_polynomials_([Param]->[[vec]])1:
-
-KL_P_polynomials
--------------------------------------------------
-| ``KL_P_polynomials:([Param]->[[vec]])``
-| 
-
-
-.. _KL_P_signed_polynomials_([Param]->[[vec]])1:
-
-KL_P_signed_polynomials
--------------------------------------------------
-| ``KL_P_signed_polynomials:([Param]->[[vec]])``
-| 
-
-
-.. _KL_Q_polynomials_([Param]->[[vec]])1:
-
-KL_Q_polynomials
--------------------------------------------------
-| ``KL_Q_polynomials:([Param]->[[vec]])``
-| 
-
-
-.. _KL_Q_polynomial_([Param],[[vec]],Param,Param->vec)1:
+.. _kl_q_polynomial_[param]_b,_poly_mat_q,param_irr,param_std->poly1:
 
 KL_Q_polynomial
 -------------------------------------------------
-| ``KL_Q_polynomial:([Param],[[vec]],Param,Param->vec)``
+| ``KL_Q_polynomial:[Param] B, poly_mat Q,Param irr,Param std->poly``
 | 
-
-
-.. _test_duality_(Param->[[vec]],[[vec]],bool)1:
-
-test_duality
--------------------------------------------------
-| ``test_duality:(Param->[[vec]],[[vec]],bool)``
+| Defined in dual.at line number 104.
 | 
-
 

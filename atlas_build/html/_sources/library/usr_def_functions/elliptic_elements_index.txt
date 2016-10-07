@@ -10,28 +10,7 @@ elliptic_elements.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`elliptic_elements_(string->[[int]])1`
-     - ``(string->[[int]])``
-   * - :ref:`elliptic_elements_(RealForm,[[int]]->[(RootDatum,[int])])1`
-     - ``(RealForm,[[int]]->[(RootDatum,[int])])``
-
-
-
-.. list-table::
-   :widths: 10 20
-   :header-rows: 1
-
-   * - Variable
-     - Data Type
-   * - :ref:`G2_elliptic_[[int]]1`
-     - ``[[int]]``
-   * - :ref:`E6_elliptic_[[int]]1`
-     - ``[[int]]``
-   * - :ref:`E7_elliptic_[[int]]1`
-     - ``[[int]]``
-   * - :ref:`E8_elliptic_[[int]]1`
-     - ``[[int]]``
-   * - :ref:`F4_elliptic_[[int]]1`
-     - ``[[int]]``
-   * - :ref:`E8_elliptic_regular_[[int]]1`
-     - ``[[int]]``
+   * - :ref:`elliptic_elements_string_type->[[int]]1`
+     - ``string type->[[int]]``
+   * - :ref:`elliptic_elements_realform_g,[[int]]_v->[w_word]1`
+     - ``RealForm G,[[int]] v->[W_word]``

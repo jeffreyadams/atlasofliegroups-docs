@@ -10,27 +10,17 @@ dual.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`length_(int,vec->int)1`
-     - ``(int,vec->int)``
-   * - :ref:`length_diff_(int,int,vec->int)1`
-     - ``(int,int,vec->int)``
-   * - :ref:`permutation_([Param],[Param]->[int])1`
-     - ``([Param],[Param]->[int])``
-   * - :ref:`dual_block_([Param],InnerClass->[Param],[int])1`
-     - ``([Param],InnerClass->[Param],[int])``
-   * - :ref:`dual_block_([Param]->[Param],[int])1`
-     - ``([Param]->[Param],[int])``
-   * - :ref:`dual_extended_parameter_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1`
-     - ``(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``
-   * - :ref:`KL_block_polynomials_([Param],bool->[[vec]])1`
-     - ``([Param],bool->[[vec]])``
-   * - :ref:`KL_P_polynomials_([Param]->[[vec]])1`
-     - ``([Param]->[[vec]])``
-   * - :ref:`KL_P_signed_polynomials_([Param]->[[vec]])1`
-     - ``([Param]->[[vec]])``
-   * - :ref:`KL_Q_polynomials_([Param]->[[vec]])1`
-     - ``([Param]->[[vec]])``
-   * - :ref:`KL_Q_polynomial_([Param],[[vec]],Param,Param->vec)1`
-     - ``([Param],[[vec]],Param,Param->vec)``
-   * - :ref:`test_duality_(Param->[[vec]],[[vec]],bool)1`
-     - ``(Param->[[vec]],[[vec]],bool)``
+   * - :ref:`length_int_i,_vec_stops->int1`
+     - ``int i, vec stops->int``
+   * - :ref:`length_diff_int_i,int_j,vec_stops->int1`
+     - ``int i,int j,vec stops->int``
+   * - :ref:`permutation_[param]_b1,_[param]_b2->[int]1`
+     - ``[Param] B1, [Param] B2->[int]``
+   * - :ref:`dual_block_[param]_b,_innerclass_dual_inner_class->([param],[int])1`
+     - ``[Param] B, InnerClass dual_inner_class->([Param],[int])``
+   * - :ref:`dual_block_[param]_b->([param],[int])1`
+     - ``[Param] B->([Param],[int])``
+   * - :ref:`dual_extended_parameter_extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t)->extended_param1`
+     - ``extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t)->extended_param``
+   * - :ref:`kl_q_polynomial_[param]_b,_poly_mat_q,param_irr,param_std->poly1`
+     - ``[Param] B, poly_mat Q,Param irr,Param std->poly``

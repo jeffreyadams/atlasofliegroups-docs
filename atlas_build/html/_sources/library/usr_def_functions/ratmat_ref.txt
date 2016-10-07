@@ -4,443 +4,471 @@ ratmat.at Function References
 =======================================================
 |
 
-.. _gcd_(mat->int)1:
+.. _gcd_mat_m->int1:
 
 gcd
 -------------------------------------------------
-| ``gcd:(mat->int)``
+| ``gcd:mat M->int``
+| 
+| Defined in ratmat.at line number 12.
 | 
 
-
-.. _simplify_(mat,string,int->mat,string,int)1:
+.. _simplify_ratmat(m,,d)->ratmat1:
 
 simplify
 -------------------------------------------------
-| ``simplify:(mat,string,int->mat,string,int)``
+| ``simplify:ratmat(M,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 15.
 | 
 
-
-.. _/_(mat,int->mat,string,int)1:
+.. _/_mat_m,int_d->ratmat1:
 
 /
 -------------------------------------------------
-| ``/:(mat,int->mat,string,int)``
+| ``/:mat M,int d->ratmat``
+| 
+| Defined in ratmat.at line number 18.
 | 
 
-
-.. _\*_(rat,mat->mat,string,int)1:
+.. _\*_rat_f,mat_m->ratmat1:
 
 \*
 -------------------------------------------------
-| ``*:(rat,mat->mat,string,int)``
+| ``*:rat f,mat M->ratmat``
+| 
+| Defined in ratmat.at line number 22.
 | 
 
-
-.. _/_(mat,rat->mat,string,int)1:
+.. _/_mat_m,rat_f->ratmat1:
 
 /
 -------------------------------------------------
-| ``/:(mat,rat->mat,string,int)``
+| ``/:mat M,rat f->ratmat``
+| 
+| Defined in ratmat.at line number 23.
 | 
 
-
-.. _entry_((mat,string,int),int,int->rat)1:
+.. _entry_ratmat(m,,d),int_i,int_j->rat1:
 
 entry
 -------------------------------------------------
-| ``entry:((mat,string,int),int,int->rat)``
+| ``entry:ratmat(M,,d),int i,int j->rat``
+| 
+| Defined in ratmat.at line number 25.
 | 
 
-
-.. _matrix_((int,int),(int,int->rat)->mat,string,int)1:
+.. _matrix_(int,int)(r,c),(int,int->rat)_f->ratmat1:
 
 matrix
 -------------------------------------------------
-| ``matrix:((int,int),(int,int->rat)->mat,string,int)``
+| ``matrix:(int,int)(r,c),(int,int->rat) f->ratmat``
+| 
+| Defined in ratmat.at line number 28.
 | 
 
-
-.. _n_rows_(mat,string,int->int)1:
+.. _n_rows_ratmat(m,,)->int1:
 
 n_rows
 -------------------------------------------------
-| ``n_rows:(mat,string,int->int)``
+| ``n_rows:ratmat(M,,)->int``
+| 
+| Defined in ratmat.at line number 33.
 | 
 
-
-.. _n_columns_(mat,string,int->int)1:
+.. _n_columns_ratmat(m,,)->int1:
 
 n_columns
 -------------------------------------------------
-| ``n_columns:(mat,string,int->int)``
+| ``n_columns:ratmat(M,,)->int``
+| 
+| Defined in ratmat.at line number 34.
 | 
 
-
-.. _columns_(mat,string,int->[ratvec])1:
+.. _columns_ratmat(m,,d)->[ratvec]1:
 
 columns
 -------------------------------------------------
-| ``columns:(mat,string,int->[ratvec])``
+| ``columns:ratmat(M,,d)->[ratvec]``
+| 
+| Defined in ratmat.at line number 36.
 | 
 
-
-.. _rows_(mat,string,int->[ratvec])1:
+.. _rows_ratmat(m,,d)->[ratvec]1:
 
 rows
 -------------------------------------------------
-| ``rows:(mat,string,int->[ratvec])``
+| ``rows:ratmat(M,,d)->[ratvec]``
+| 
+| Defined in ratmat.at line number 37.
 | 
 
-
-.. _column_((mat,string,int),int->ratvec)1:
+.. _column_ratmat(m,,d),int_j->ratvec1:
 
 column
 -------------------------------------------------
-| ``column:((mat,string,int),int->ratvec)``
+| ``column:ratmat(M,,d),int j->ratvec``
+| 
+| Defined in ratmat.at line number 38.
 | 
 
-
-.. _row_((mat,string,int),int->ratvec)1:
+.. _row_ratmat(m,,d),int_i->ratvec1:
 
 row
 -------------------------------------------------
-| ``row:((mat,string,int),int->ratvec)``
+| ``row:ratmat(M,,d),int i->ratvec``
+| 
+| Defined in ratmat.at line number 39.
 | 
 
-
-.. _columns_with_((int,ratvec->bool),(mat,string,int)->mat,string,int)1:
+.. _columns_with_(int,ratvec->bool)_p,ratmat(m,,d)->ratmat1:
 
 columns_with
 -------------------------------------------------
-| ``columns_with:((int,ratvec->bool),(mat,string,int)->mat,string,int)``
+| ``columns_with:(int,ratvec->bool) p,ratmat(M,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 41.
 | 
 
-
-.. _columns_with_((ratvec->bool),(mat,string,int)->mat,string,int)1:
+.. _columns_with_(ratvec->bool)_p,ratmat_t->ratmat1:
 
 columns_with
 -------------------------------------------------
-| ``columns_with:((ratvec->bool),(mat,string,int)->mat,string,int)``
+| ``columns_with:(ratvec->bool) p,ratmat T->ratmat``
+| 
+| Defined in ratmat.at line number 44.
 | 
 
-
-.. _columns_with_((int->bool),(mat,string,int)->mat,string,int)1:
+.. _columns_with_(int->bool)_p,ratmat(m,,d)->ratmat1:
 
 columns_with
 -------------------------------------------------
-| ``columns_with:((int->bool),(mat,string,int)->mat,string,int)``
+| ``columns_with:(int->bool) p,ratmat(M,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 46.
 | 
 
-
-.. _rows_with_((int,ratvec->bool),(mat,string,int)->mat,string,int)1:
+.. _rows_with_(int,ratvec->bool)_p,ratmat(m,,d)->ratmat1:
 
 rows_with
 -------------------------------------------------
-| ``rows_with:((int,ratvec->bool),(mat,string,int)->mat,string,int)``
+| ``rows_with:(int,ratvec->bool) p,ratmat(M,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 49.
 | 
 
-
-.. _rows_with_((ratvec->bool),(mat,string,int)->mat,string,int)1:
+.. _rows_with_(ratvec->bool)_p,ratmat_t->ratmat1:
 
 rows_with
 -------------------------------------------------
-| ``rows_with:((ratvec->bool),(mat,string,int)->mat,string,int)``
+| ``rows_with:(ratvec->bool) p,ratmat T->ratmat``
+| 
+| Defined in ratmat.at line number 52.
 | 
 
-
-.. _rows_with_((int->bool),(mat,string,int)->mat,string,int)1:
+.. _rows_with_(int->bool)_p,ratmat(m,,d)->ratmat1:
 
 rows_with
 -------------------------------------------------
-| ``rows_with:((int->bool),(mat,string,int)->mat,string,int)``
+| ``rows_with:(int->bool) p,ratmat(M,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 54.
 | 
 
-
-.. _det_(mat,string,int->rat)1:
+.. _det_ratmat(m,,d)->rat1:
 
 det
 -------------------------------------------------
-| ``det:(mat,string,int->rat)``
+| ``det:ratmat(M,,d)->rat``
+| 
+| Defined in ratmat.at line number 57.
 | 
 
-
-.. _\^_(mat,string,int->mat,string,int)1:
+.. _\^_ratmat(m,,d)->ratmat1:
 
 \^
 -------------------------------------------------
-| ``^:(mat,string,int->mat,string,int)``
+| ``^:ratmat(M,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 59.
 | 
 
-
-.. _\+_((mat,string,int),(mat,string,int)->mat,string,int)1:
+.. _\+_ratmat(m,,d),ratmat(mm,,dd)->ratmat1:
 
 \+
 -------------------------------------------------
-| ``+:((mat,string,int),(mat,string,int)->mat,string,int)``
+| ``+:ratmat(M,,d),ratmat(MM,,dd)->ratmat``
+| 
+| Defined in ratmat.at line number 61.
 | 
 
-
-.. _\-_((mat,string,int),(mat,string,int)->mat,string,int)1:
+.. _\-_ratmat(m,,d),ratmat(mm,,dd)->ratmat1:
 
 \-
 -------------------------------------------------
-| ``-:((mat,string,int),(mat,string,int)->mat,string,int)``
+| ``-:ratmat(M,,d),ratmat(MM,,dd)->ratmat``
+| 
+| Defined in ratmat.at line number 62.
 | 
 
-
-.. _\-_(mat,string,int->mat,int,void)1:
-
-\-
--------------------------------------------------
-| ``-:(mat,string,int->mat,int,void)``
-| 
-
-
-.. _\*_(ratvec,(mat,string,int)->ratvec)1:
+.. _\*_ratvec_v,ratmat(m,,d)->ratvec1:
 
 \*
 -------------------------------------------------
-| ``*:(ratvec,(mat,string,int)->ratvec)``
+| ``*:ratvec v,ratmat(M,,d)->ratvec``
+| 
+| Defined in ratmat.at line number 65.
 | 
 
-
-.. _\*_((mat,string,int),ratvec->ratvec)1:
+.. _\*_ratmat(m,,d),ratvec_v->ratvec1:
 
 \*
 -------------------------------------------------
-| ``*:((mat,string,int),ratvec->ratvec)``
+| ``*:ratmat(M,,d),ratvec v->ratvec``
+| 
+| Defined in ratmat.at line number 66.
 | 
 
-
-.. _\*_((mat,string,int),mat->mat,string,int)1:
+.. _\*_ratmat(m,,d),mat_mm->ratmat1:
 
 \*
 -------------------------------------------------
-| ``*:((mat,string,int),mat->mat,string,int)``
+| ``*:ratmat(M,,d),mat MM->ratmat``
+| 
+| Defined in ratmat.at line number 68.
 | 
 
-
-.. _\*_(mat,(mat,string,int)->mat,string,int)1:
+.. _\*_mat_m,ratmat(mm,,d)->ratmat1:
 
 \*
 -------------------------------------------------
-| ``*:(mat,(mat,string,int)->mat,string,int)``
+| ``*:mat M,ratmat(MM,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 69.
 | 
 
-
-.. _\*_((mat,string,int),(mat,string,int)->mat,string,int)1:
+.. _\*_ratmat(m,,d),ratmat(mm,,dd)->ratmat1:
 
 \*
 -------------------------------------------------
-| ``*:((mat,string,int),(mat,string,int)->mat,string,int)``
+| ``*:ratmat(M,,d),ratmat(MM,,dd)->ratmat``
+| 
+| Defined in ratmat.at line number 70.
 | 
 
-
-.. _/_(mat,string,int->mat,string,int)1:
+.. _/_ratmat(m,,d)->ratmat1:
 
 /
 -------------------------------------------------
-| ``/:(mat,string,int->mat,string,int)``
+| ``/:ratmat(M,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 72.
 | 
 
-
-.. _\^_((mat,string,int),int->mat,string,int)1:
+.. _\^_ratmat(m,,d):md,int_e->ratmat1:
 
 \^
 -------------------------------------------------
-| ``^:((mat,string,int),int->mat,string,int)``
+| ``^:ratmat(M,,d):Md,int e->ratmat``
+| 
+| Defined in ratmat.at line number 76.
 | 
 
-
-.. _ratmat_as_mat_(mat,string,int->mat)1:
+.. _ratmat_as_mat_ratmat(m,,d)->mat1:
 
 ratmat_as_mat
 -------------------------------------------------
-| ``ratmat_as_mat:(mat,string,int->mat)``
+| ``ratmat_as_mat:ratmat(M,,d)->mat``
+| 
+| Defined in ratmat.at line number 79.
 | 
 
-
-.. _mat_as_ratmat_(mat->mat,string,int)1:
+.. _mat_as_ratmat_mat_m->ratmat1:
 
 mat_as_ratmat
 -------------------------------------------------
-| ``mat_as_ratmat:(mat->mat,string,int)``
+| ``mat_as_ratmat:mat M->ratmat``
+| 
+| Defined in ratmat.at line number 80.
 | 
 
-
-.. _diagonal_(ratvec->mat,string,int)1:
+.. _diagonal_ratvec_v->ratmat1:
 
 diagonal
 -------------------------------------------------
-| ``diagonal:(ratvec->mat,string,int)``
+| ``diagonal:ratvec v->ratmat``
+| 
+| Defined in ratmat.at line number 81.
 | 
 
-
-.. _ratvecs_as_ratmat_([ratvec]->mat,string,int)1:
+.. _ratvecs_as_ratmat_[ratvec]_a->ratmat1:
 
 ratvecs_as_ratmat
 -------------------------------------------------
-| ``ratvecs_as_ratmat:([ratvec]->mat,string,int)``
+| ``ratvecs_as_ratmat:[ratvec] A->ratmat``
+| 
+| Defined in ratmat.at line number 84.
 | 
 
-
-.. _det_([ratvec]->rat)1:
+.. _det_[ratvec]_m->rat1:
 
 det
 -------------------------------------------------
-| ``det:([ratvec]->rat)``
+| ``det:[ratvec] M->rat``
+| 
+| Defined in ratmat.at line number 87.
 | 
 
-
-.. _\^_([ratvec]->mat,string,int)1:
+.. _\^_[ratvec]_m->ratmat1:
 
 \^
 -------------------------------------------------
-| ``^:([ratvec]->mat,string,int)``
+| ``^:[ratvec] M->ratmat``
+| 
+| Defined in ratmat.at line number 88.
 | 
 
-
-.. _\*_([ratvec],(mat,string,int)->mat,string,int)1:
+.. _\*_[ratvec]_m,ratmat_mm->ratmat1:
 
 \*
 -------------------------------------------------
-| ``*:([ratvec],(mat,string,int)->mat,string,int)``
+| ``*:[ratvec] M,ratmat MM->ratmat``
+| 
+| Defined in ratmat.at line number 89.
 | 
 
-
-.. _\*_((mat,string,int),[ratvec]->mat,string,int)1:
+.. _\*_ratmat_m,[ratvec]_mm->ratmat1:
 
 \*
 -------------------------------------------------
-| ``*:((mat,string,int),[ratvec]->mat,string,int)``
+| ``*:ratmat M,[ratvec] MM->ratmat``
+| 
+| Defined in ratmat.at line number 90.
 | 
 
-
-.. _\+_([ratvec],(mat,string,int)->mat,string,int)1:
+.. _\+_[ratvec]_m,ratmat_mm->ratmat1:
 
 \+
 -------------------------------------------------
-| ``+:([ratvec],(mat,string,int)->mat,string,int)``
+| ``+:[ratvec] M,ratmat MM->ratmat``
+| 
+| Defined in ratmat.at line number 91.
 | 
 
-
-.. _\+_((mat,string,int),[ratvec]->mat,string,int)1:
+.. _\+_ratmat_m,[ratvec]_mm->ratmat1:
 
 \+
 -------------------------------------------------
-| ``+:((mat,string,int),[ratvec]->mat,string,int)``
+| ``+:ratmat M,[ratvec] MM->ratmat``
+| 
+| Defined in ratmat.at line number 92.
 | 
 
-
-.. _\-_([ratvec],(mat,string,int)->mat,string,int)1:
+.. _\-_[ratvec]_m,ratmat_mm->ratmat1:
 
 \-
 -------------------------------------------------
-| ``-:([ratvec],(mat,string,int)->mat,string,int)``
+| ``-:[ratvec] M,ratmat MM->ratmat``
+| 
+| Defined in ratmat.at line number 93.
 | 
 
-
-.. _\-_((mat,string,int),[ratvec]->mat,string,int)1:
+.. _\-_ratmat_m,[ratvec]_mm->ratmat1:
 
 \-
 -------------------------------------------------
-| ``-:((mat,string,int),[ratvec]->mat,string,int)``
+| ``-:ratmat M,[ratvec] MM->ratmat``
+| 
+| Defined in ratmat.at line number 94.
 | 
 
-
-.. _inverse_(mat,string,int->mat,string,int)1:
+.. _inverse_ratmat(m,,d)->ratmat1:
 
 inverse
 -------------------------------------------------
-| ``inverse:(mat,string,int->mat,string,int)``
+| ``inverse:ratmat(M,,d)->ratmat``
+| 
+| Defined in ratmat.at line number 95.
 | 
 
-
-.. _\*_([ratvec],mat->mat,string,int)1:
+.. _\*_[ratvec]_m,mat_mm->ratmat1:
 
 \*
 -------------------------------------------------
-| ``*:([ratvec],mat->mat,string,int)``
+| ``*:[ratvec] M,mat MM->ratmat``
+| 
+| Defined in ratmat.at line number 98.
 | 
 
-
-.. _\*_(mat,[ratvec]->mat,string,int)1:
+.. _\*_mat_m,[ratvec]_mm->ratmat1:
 
 \*
 -------------------------------------------------
-| ``*:(mat,[ratvec]->mat,string,int)``
+| ``*:mat M,[ratvec] MM->ratmat``
+| 
+| Defined in ratmat.at line number 99.
 | 
 
-
-.. _\+_([ratvec],mat->mat,string,int)1:
+.. _\+_[ratvec]_m,mat_mm->ratmat1:
 
 \+
 -------------------------------------------------
-| ``+:([ratvec],mat->mat,string,int)``
+| ``+:[ratvec] M,mat MM->ratmat``
+| 
+| Defined in ratmat.at line number 100.
 | 
 
-
-.. _\+_(mat,[ratvec]->mat,string,int)1:
+.. _\+_mat_m,[ratvec]_mm->ratmat1:
 
 \+
 -------------------------------------------------
-| ``+:(mat,[ratvec]->mat,string,int)``
+| ``+:mat M,[ratvec] MM->ratmat``
+| 
+| Defined in ratmat.at line number 101.
 | 
 
-
-.. _\-_([ratvec],mat->mat,string,int)1:
+.. _\-_[ratvec]_m,mat_mm->ratmat1:
 
 \-
 -------------------------------------------------
-| ``-:([ratvec],mat->mat,string,int)``
+| ``-:[ratvec] M,mat MM->ratmat``
+| 
+| Defined in ratmat.at line number 102.
 | 
 
-
-.. _\-_(mat,[ratvec]->mat,string,int)1:
+.. _\-_mat_m,[ratvec]_mm->ratmat1:
 
 \-
 -------------------------------------------------
-| ``-:(mat,[ratvec]->mat,string,int)``
+| ``-:mat M,[ratvec] MM->ratmat``
+| 
+| Defined in ratmat.at line number 103.
 | 
 
-
-.. _rational_inverse_(mat->mat,string,int)1:
+.. _rational_inverse_mat_m->ratmat1:
 
 rational_inverse
 -------------------------------------------------
-| ``rational_inverse:(mat->mat,string,int)``
+| ``rational_inverse:mat M->ratmat``
+| 
+| Defined in ratmat.at line number 106.
 | 
 
-
-.. _ratvec_to_string_(ratvec->string)1:
+.. _ratvec_to_string_ratvec_v->string1:
 
 ratvec_to_string
 -------------------------------------------------
-| ``ratvec_to_string:(ratvec->string)``
+| ``ratvec_to_string:ratvec v->string``
+| 
+| Defined in ratmat.at line number 108.
 | 
 
-
-.. _show_(mat,string,int->)1:
+.. _show_ratmat(m,,d)->void1:
 
 show
 -------------------------------------------------
-| ``show:(mat,string,int->)``
+| ``show:ratmat(M,,d)->void``
 | 
-
-
-.. _save_s_Split1:
-
-save_s
--------------------------------------------------
-| ``save_s:Split``
+| Defined in ratmat.at line number 113.
 | 
-
-
-.. _s_Split1:
-
-s
--------------------------------------------------
-| ``s:Split``
-| 
-
 

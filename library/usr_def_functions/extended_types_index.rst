@@ -10,19 +10,19 @@ extended_types.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`ext_length_(RootDatum,mat,int->int)1`
-     - ``(RootDatum,mat,int->int)``
-   * - :ref:`ext_length_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
-   * - :ref:`ext_type_1_(mat,int,Param->string)1`
-     - ``(mat,int,Param->string)``
-   * - :ref:`ext_type_2_(mat,int,Param->string)1`
-     - ``(mat,int,Param->string)``
-   * - :ref:`ext_type_3_(mat,int,Param->string)1`
-     - ``(mat,int,Param->string)``
-   * - :ref:`ext_type_(mat,int,Param->string)1`
-     - ``(mat,int,Param->string)``
-   * - :ref:`ext_type_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->string)1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->string)``
-   * - :ref:`ext_types_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->[string])1`
-     - ``(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->[string])``
+   * - :ref:`ext_length_rootdatum_rd,mat_delta,_int_j->int1`
+     - ``RootDatum rd,mat delta, int j->int``
+   * - :ref:`ext_length_int_j,_extended_param_e->int1`
+     - ``int j, extended_param E->int``
+   * - :ref:`ext_type_1_mat_delta,int_j,param_p->string1`
+     - ``mat delta,int j,Param p->string``
+   * - :ref:`ext_type_2_mat_delta,int_j,param_p->string1`
+     - ``mat delta,int j,Param p->string``
+   * - :ref:`ext_type_3_mat_delta,int_j,param_p->string1`
+     - ``mat delta,int j,Param p->string``
+   * - :ref:`ext_type_mat_delta,int_j,param_p->string1`
+     - ``mat delta,int j,Param p->string``
+   * - :ref:`ext_type_int_j,extended_param_e->string1`
+     - ``int j,extended_param E->string``
+   * - :ref:`ext_types_extended_param_(ic,delta,,,,,,,,):e->[string]1`
+     - ``extended_param (ic,delta,,,,,,,,):E->[string]``

@@ -10,29 +10,21 @@ K_parameters.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`x_(KGBElt,ratvec->KGBElt)1`
-     - ``(KGBElt,ratvec->KGBElt)``
-   * - :ref:`lambda_(KGBElt,ratvec->ratvec)1`
-     - ``(KGBElt,ratvec->ratvec)``
-   * - :ref:`root_datum_(KGBElt,ratvec->RootDatum)1`
-     - ``(KGBElt,ratvec->RootDatum)``
-   * - :ref:`real_form_(KGBElt,ratvec->RealForm)1`
-     - ``(KGBElt,ratvec->RealForm)``
-   * - :ref:`real_form_(KGBElt,vec->RealForm)1`
-     - ``(KGBElt,vec->RealForm)``
-   * - :ref:`K_0_(KGBElt,vec->RealForm)1`
-     - ``(KGBElt,vec->RealForm)``
-   * - :ref:`dlambda_(KGBElt,ratvec->ratvec)1`
-     - ``(KGBElt,ratvec->ratvec)``
-   * - :ref:`dlambda_(Param->ratvec)1`
-     - ``(Param->ratvec)``
-   * - :ref:`K_type_(Param->KGBElt,ratvec)1`
-     - ``(Param->KGBElt,ratvec)``
-   * - :ref:`parameter_(KGBElt,ratvec->Param)1`
-     - ``(KGBElt,ratvec->Param)``
-   * - :ref:`\=_((KGBElt,ratvec),(KGBElt,ratvec)->bool)1`
-     - ``((KGBElt,ratvec),(KGBElt,ratvec)->bool)``
-   * - :ref:`make_no_Cminus_(KGBElt,ratvec->KGBElt,ratvec)1`
-     - ``(KGBElt,ratvec->KGBElt,ratvec)``
-   * - :ref:`length_(KGBElt,vec->rat)1`
-     - ``(KGBElt,vec->rat)``
+   * - :ref:`x_k_type_p->kgbelt1`
+     - ``K_Type p->KGBElt``
+   * - :ref:`lambda_k_type_p->ratvec1`
+     - ``K_Type p->ratvec``
+   * - :ref:`dlambda_k_type_p->ratvec1`
+     - ``K_Type p->ratvec``
+   * - :ref:`dlambda_param_p->ratvec1`
+     - ``Param p->ratvec``
+   * - :ref:`k_type_param_p->k_type1`
+     - ``Param p->K_Type``
+   * - :ref:`parameter_k_type_p->param1`
+     - ``K_Type p->Param``
+   * - :ref:`\=_k_type_p,k_type_q->bool1`
+     - ``K_Type p,K_Type q->bool``
+   * - :ref:`make_no_cminus_k_type_p->k_type1`
+     - ``K_Type p->K_Type``
+   * - :ref:`length_khighestweight_(x,mu)->rat1`
+     - ``KHighestWeight (x,mu)->rat``

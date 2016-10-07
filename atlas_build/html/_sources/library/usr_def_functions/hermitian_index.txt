@@ -10,54 +10,43 @@ hermitian.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`make_nu0_([Param]->[Param])1`
-     - ``([Param]->[Param])``
-   * - :ref:`make_nu0_(ParamPol->ParamPol)1`
-     - ``(ParamPol->ParamPol)``
-   * - :ref:`orientation_nr_term_(int,Param->Split)1`
-     - ``(int,Param->Split)``
-   * - :ref:`c_form_std_(Param->ParamPol)1`
-     - ``(Param->ParamPol)``
-   * - :ref:`c_form_std_delta_(Param->ParamPol)1`
-     - ``(Param->ParamPol)``
-   * - :ref:`c_form_irreducible_long_(Param->ParamPol,[(Param,Split,ParamPol)])1`
-     - ``(Param->ParamPol,[(Param,Split,ParamPol)])``
-   * - :ref:`c_form_irreducible_(Param->ParamPol)1`
-     - ``(Param->ParamPol)``
-   * - :ref:`c_form_irreducible_delta_(Param->ParamPol)1`
-     - ``(Param->ParamPol)``
-   * - :ref:`print_c_form_irreducible_long_(Param->)1`
-     - ``(Param->)``
-   * - :ref:`mixed_(Split->bool)1`
-     - ``(Split->bool)``
-   * - :ref:`analyse_(ParamPol->)1`
-     - ``(ParamPol->)``
-   * - :ref:`lambda_plus_rho_res_T_(KGBElt,ratvec->ratvec)1`
-     - ``(KGBElt,ratvec->ratvec)``
-   * - :ref:`mu_(Param->rat)1`
-     - ``(Param->rat)``
-   * - :ref:`convert_cform_hermitian_(ParamPol->ParamPol)1`
-     - ``(ParamPol->ParamPol)``
-   * - :ref:`hermitian_form_irreducible_(Param->ParamPol)1`
-     - ``(Param->ParamPol)``
-   * - :ref:`print_hermitian_form_irreducible_(Param->)1`
-     - ``(Param->)``
-   * - :ref:`print_hermitian_form_irreducible_([Param]->)1`
-     - ``([Param]->)``
-   * - :ref:`is_unitary_(ParamPol->bool)1`
-     - ``(ParamPol->bool)``
-   * - :ref:`is_unitary_(Param->bool)1`
-     - ``(Param->bool)``
-   * - :ref:`test_line_(Param->)1`
-     - ``(Param->)``
-
-
-
-.. list-table::
-   :widths: 10 20
-   :header-rows: 1
-
-   * - Variable
-     - Data Type
-   * - :ref:`hermitian_debug_bool1`
-     - ``bool``
+   * - :ref:`make_nu0_[param]_p->[param]1`
+     - ``[Param] P->[Param]``
+   * - :ref:`make_nu0_parampol_p->parampol1`
+     - ``ParamPol P->ParamPol``
+   * - :ref:`orientation_nr_term_int_ori_nr_p,param_q->split1`
+     - ``int ori_nr_p,Param q->Split``
+   * - :ref:`c_form_std_param_p->parampol1`
+     - ``Param p->ParamPol``
+   * - :ref:`c_form_std_delta_param_p->parampol1`
+     - ``Param p->ParamPol``
+   * - :ref:`c_form_irreducible_long_param_p->(parampol,[(param,split,parampol)])1`
+     - ``Param p->(ParamPol,[(Param,Split,ParamPol)])``
+   * - :ref:`c_form_irreducible_param_p->parampol1`
+     - ``Param p->ParamPol``
+   * - :ref:`c_form_irreducible_delta_param_p->parampol1`
+     - ``Param p->ParamPol``
+   * - :ref:`print_c_form_irreducible_long_param_p->void1`
+     - ``Param p->void``
+   * - :ref:`mixed_split_w->bool1`
+     - ``Split w->bool``
+   * - :ref:`analyse_parampol_p->void1`
+     - ``ParamPol P->void``
+   * - :ref:`lambda_plus_rho_res_t_kgbelt_x,ratvec_lambda->ratvec1`
+     - ``KGBElt x,ratvec lambda->ratvec``
+   * - :ref:`mu_param_p->rat1`
+     - ``Param p->rat``
+   * - :ref:`convert_cform_hermitian_parampol_p->parampol1`
+     - ``ParamPol P->ParamPol``
+   * - :ref:`hermitian_form_irreducible_param_p->parampol1`
+     - ``Param p->ParamPol``
+   * - :ref:`print_hermitian_form_irreducible_param_p->void1`
+     - ``Param p->void``
+   * - :ref:`print_hermitian_form_irreducible_[param]_p->void1`
+     - ``[Param] P->void``
+   * - :ref:`is_unitary_parampol_p->bool1`
+     - ``ParamPol P->bool``
+   * - :ref:`is_unitary_param_p->bool1`
+     - ``Param p->bool``
+   * - :ref:`test_line_param_p->void1`
+     - ``Param p->void``

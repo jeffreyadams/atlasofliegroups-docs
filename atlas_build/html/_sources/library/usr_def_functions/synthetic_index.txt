@@ -10,47 +10,47 @@ synthetic.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`grading_coweight_(KGBElt->ratvec)1`
-     - ``(KGBElt->ratvec)``
-   * - :ref:`make_KGB_(RealForm,mat,ratvec->KGBElt)1`
-     - ``(RealForm,mat,ratvec->KGBElt)``
-   * - :ref:`cross_(mat,KGBElt->KGBElt)1`
-     - ``(mat,KGBElt->KGBElt)``
-   * - :ref:`posroot_cross_(int,KGBElt->KGBElt)1`
-     - ``(int,KGBElt->KGBElt)``
-   * - :ref:`posroot_cross_(int,Param->Param)1`
-     - ``(int,Param->Param)``
-   * - :ref:`posroot_cross_(vec,Param->Param)1`
-     - ``(vec,Param->Param)``
-   * - :ref:`posroot_Cayley_(int,KGBElt->KGBElt)1`
-     - ``(int,KGBElt->KGBElt)``
-   * - :ref:`posroot_Cayley_(int,Param->Param)1`
-     - ``(int,Param->Param)``
-   * - :ref:`posroot_inv_Cayley_(int,Param->Param)1`
-     - ``(int,Param->Param)``
-   * - :ref:`find_posroot_(RootDatum,vec->int)1`
-     - ``(RootDatum,vec->int)``
-   * - :ref:`concat_([string],string,string,string->string)1`
-     - ``([string],string,string,string->string)``
-   * - :ref:`posroot_status_(int,Param->int)1`
-     - ``(int,Param->int)``
-   * - :ref:`new_block_line_([Param],int->string)1`
-     - ``([Param],int->string)``
-   * - :ref:`is_conjugate_(ratvec,ratvec,mat->bool)1`
-     - ``(ratvec,ratvec,mat->bool)``
-   * - :ref:`inner_class_(InnerClass,mat,ratvec->InnerClass)1`
-     - ``(InnerClass,mat,ratvec->InnerClass)``
-   * - :ref:`involution_(InnerClass,mat,ratvec->mat)1`
-     - ``(InnerClass,mat,ratvec->mat)``
-   * - :ref:`torus_factor_(InnerClass,mat,ratvec->ratvec)1`
-     - ``(InnerClass,mat,ratvec->ratvec)``
-   * - :ref:`unnormalized_torus_factor_(InnerClass,mat,ratvec->ratvec)1`
-     - ``(InnerClass,mat,ratvec->ratvec)``
-   * - :ref:`\=_((InnerClass,mat,ratvec),(InnerClass,mat,ratvec)->bool)1`
-     - ``((InnerClass,mat,ratvec),(InnerClass,mat,ratvec)->bool)``
-   * - :ref:`!=_((InnerClass,mat,ratvec),(InnerClass,mat,ratvec)->bool)1`
-     - ``((InnerClass,mat,ratvec),(InnerClass,mat,ratvec)->bool)``
-   * - :ref:`\*_(mat,(InnerClass,mat,ratvec)->InnerClass,mat,ratvec)1`
-     - ``(mat,(InnerClass,mat,ratvec)->InnerClass,mat,ratvec)``
-   * - :ref:`is_fixed_(mat,(InnerClass,mat,ratvec)->bool)1`
-     - ``(mat,(InnerClass,mat,ratvec)->bool)``
+   * - :ref:`grading_coweight_kgbelt_x->ratvec1`
+     - ``KGBElt x->ratvec``
+   * - :ref:`make_kgb_realform_g,_mat_theta,_ratvec_grading_cowt->kgbelt1`
+     - ``RealForm G, mat theta, ratvec grading_cowt->KGBElt``
+   * - :ref:`cross_mat_w,_kgbelt_x->kgbelt1`
+     - ``mat w, KGBElt x->KGBElt``
+   * - :ref:`posroot_cross_int_i,_kgbelt_x->kgbelt1`
+     - ``int i, KGBElt x->KGBElt``
+   * - :ref:`posroot_cross_int_i,_param_p->param1`
+     - ``int i, Param p->Param``
+   * - :ref:`posroot_cross_vec_alpha,_param_p->param1`
+     - ``vec alpha, Param p->Param``
+   * - :ref:`posroot_cayley_int_i,_kgbelt_x->kgbelt1`
+     - ``int i, KGBElt x->KGBElt``
+   * - :ref:`posroot_cayley_int_i,_param_p->param1`
+     - ``int i, Param p->Param``
+   * - :ref:`posroot_inv_cayley_int_i,_param_p->param1`
+     - ``int i, Param p->Param``
+   * - :ref:`find_posroot_rootdatum_rd,_vec_alpha->int1`
+     - ``RootDatum rd, vec alpha->int``
+   * - :ref:`concat_[string]_l,string_open,_string_sep,_string_close->string1`
+     - ``[string] l,string open, string sep, string close->string``
+   * - :ref:`posroot_status_int_i,_param_p->int1`
+     - ``int i, Param p->int``
+   * - :ref:`new_block_line_[param]_b,int_i->string1`
+     - ``[Param] B,int i->string``
+   * - :ref:`is_conjugate_ratvec_v,ratvec_w,mat_theta->bool1`
+     - ``ratvec v,ratvec w,mat theta->bool``
+   * - :ref:`inner_class_kgbelt_gen(ic,,)->innerclass1`
+     - ``KGBElt_gen(ic,,)->InnerClass``
+   * - :ref:`involution_kgbelt_gen(,theta,)->mat1`
+     - ``KGBElt_gen(,theta,)->mat``
+   * - :ref:`torus_factor_kgbelt_gen(,,t)->ratvec1`
+     - ``KGBElt_gen(,,t)->ratvec``
+   * - :ref:`unnormalized_torus_factor_kgbelt_gen(ic,,t)->ratvec1`
+     - ``KGBElt_gen(ic,,t)->ratvec``
+   * - :ref:`\=_kgbelt_gen_x1,kgbelt_gen_x2->bool1`
+     - ``KGBElt_gen x1,KGBElt_gen x2->bool``
+   * - :ref:`\!=_(kgbelt_gen,kgbelt_gen)p->bool1`
+     - ``(KGBElt_gen,KGBElt_gen)p->bool``
+   * - :ref:`\*_mat_delta,kgbelt_gen(ic,theta,t)->kgbelt_gen1`
+     - ``mat delta,KGBElt_gen(ic,theta,t)->KGBElt_gen``
+   * - :ref:`is_fixed_mat_delta,kgbelt_gen_y->bool1`
+     - ``mat delta,KGBElt_gen y->bool``

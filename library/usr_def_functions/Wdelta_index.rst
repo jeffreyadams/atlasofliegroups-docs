@@ -10,21 +10,17 @@ Wdelta.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`delta_fixed_root_datum_(InnerClass->RootDatum)1`
-     - ``(InnerClass->RootDatum)``
-   * - :ref:`delta_fixed_root_datum_(RootDatum,mat->RootDatum)1`
-     - ``(RootDatum,mat->RootDatum)``
-   * - :ref:`translate_Wdelta_generators_(InnerClass->[[int]])1`
-     - ``(InnerClass->[[int]])``
-   * - :ref:`translate_Wdelta_generators_(RootDatum,mat->[[int]])1`
-     - ``(RootDatum,mat->[[int]])``
-   * - :ref:`length_(RootDatum,int->int)1`
-     - ``(RootDatum,int->int)``
-   * - :ref:`length_(RootDatum,int,int->int)1`
-     - ``(RootDatum,int,int->int)``
-   * - :ref:`rewrite_word_Wdelta_to_W_(InnerClass,(RootDatum,[int])->RootDatum,[int])1`
-     - ``(InnerClass,(RootDatum,[int])->RootDatum,[int])``
-   * - :ref:`rewrite_word_Wdelta_to_W_(RootDatum,mat,(RootDatum,[int])->RootDatum,[int])1`
-     - ``(RootDatum,mat,(RootDatum,[int])->RootDatum,[int])``
-   * - :ref:`conjugate_to_simple_by_Wdelta_(RootDatum,mat,int->(RootDatum,[int]),vec)1`
-     - ``(RootDatum,mat,int->(RootDatum,[int]),vec)``
+   * - :ref:`delta_fixed_root_datum_innerclass_ic->rootdatum1`
+     - ``InnerClass ic->RootDatum``
+   * - :ref:`delta_fixed_root_datum_(rootdatum,mat)_pair->rootdatum1`
+     - ``(RootDatum,mat) pair->RootDatum``
+   * - :ref:`translate_wdelta_generators_innerclass_ic->[[int]]1`
+     - ``InnerClass ic->[[int]]``
+   * - :ref:`translate_wdelta_generators_(rootdatum,mat)_pair->[[int]]1`
+     - ``(RootDatum,mat) pair->[[int]]``
+   * - :ref:`length_rootdatum_rd,_int_i,int_j->int1`
+     - ``RootDatum rd, int i,int j->int``
+   * - :ref:`rewrite_word_wdelta_to_w_innerclass_ic,_w_word(,w)->w_word1`
+     - ``InnerClass ic, W_word(,w)->W_word``
+   * - :ref:`rewrite_word_wdelta_to_w_rootdatum_rd,mat_delta,w_word_ww->w_word1`
+     - ``RootDatum rd,mat delta,W_word ww->W_word``

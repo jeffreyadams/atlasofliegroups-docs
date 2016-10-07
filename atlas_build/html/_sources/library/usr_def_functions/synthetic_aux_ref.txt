@@ -4,67 +4,57 @@ synthetic_aux.at Function References
 =======================================================
 |
 
-.. _my_posroot_cross_(int,Param->Param)1:
+.. _my_posroot_cross_int_i,_param_p->param1:
 
 my_posroot_cross
 -------------------------------------------------
-| ``my_posroot_cross:(int,Param->Param)``
+| ``my_posroot_cross:int i, Param p->Param``
+| 
+| Defined in synthetic_aux.at line number 9.
 | 
 
-
-.. _simpleroot_cross_(int,KGBElt->KGBElt)1:
-
-simpleroot_cross
--------------------------------------------------
-| ``simpleroot_cross:(int,KGBElt->KGBElt)``
-| 
-
-
-.. _Wword_cross_((RootDatum,[int]),KGBElt->KGBElt)1:
+.. _wword_cross_w_word(rd,w),kgbelt_x->kgbelt1:
 
 Wword_cross
 -------------------------------------------------
-| ``Wword_cross:((RootDatum,[int]),KGBElt->KGBElt)``
+| ``Wword_cross:W_word(rd,w),KGBElt x->KGBElt``
+| 
+| Defined in synthetic_aux.at line number 20.
 | 
 
-
-.. _my_posroot_Cayley_(int,Param->Param)1:
+.. _my_posroot_cayley_int_i,_param_p->param1:
 
 my_posroot_Cayley
 -------------------------------------------------
-| ``my_posroot_Cayley:(int,Param->Param)``
+| ``my_posroot_Cayley:int i, Param p->Param``
+| 
+| Defined in synthetic_aux.at line number 31.
 | 
 
-
-.. _my_posroot_inv_Cayley_(int,Param->Param)1:
+.. _my_posroot_inv_cayley_int_i,_param_p->param1:
 
 my_posroot_inv_Cayley
 -------------------------------------------------
-| ``my_posroot_inv_Cayley:(int,Param->Param)``
+| ``my_posroot_inv_Cayley:int i, Param p->Param``
+| 
+| Defined in synthetic_aux.at line number 58.
 | 
 
-
-.. _my_new_block_line_([Param],int->string)1:
-
-my_new_block_line
--------------------------------------------------
-| ``my_new_block_line:([Param],int->string)``
-| 
-
-
-.. _test_cayleys_(Param->)1:
+.. _test_cayleys_param_p->void1:
 
 test_cayleys
 -------------------------------------------------
-| ``test_cayleys:(Param->)``
+| ``test_cayleys:Param p->void``
+| 
+| Defined in synthetic_aux.at line number 83.
 | 
 
-
-.. _test_cayleys_2_(Param->)1:
+.. _test_cayleys_2_param_p->void1:
 
 test_cayleys_2
 -------------------------------------------------
-| ``test_cayleys_2:(Param->)``
+| ``test_cayleys_2:Param p->void``
 | 
-
+| Defined in synthetic_aux.at line number 109.
+| 
 

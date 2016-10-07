@@ -4,10 +4,6 @@ User Defined Functions
 .. toctree::
    :maxdepth: 1
 
-   usr_def_functions/2i12
-   usr_def_functions/2i12s
-   usr_def_functions/2r21s
-   usr_def_functions/all
    usr_def_functions/all_Kparameters
    usr_def_functions/basic
    usr_def_functions/canonical_x_K
@@ -49,7 +45,6 @@ User Defined Functions
    usr_def_functions/kgp
    usr_def_functions/kl
    usr_def_functions/lattice
-   usr_def_functions/lietypes
    usr_def_functions/LKT
    usr_def_functions/matrix
    usr_def_functions/misc
@@ -66,11 +61,10 @@ User Defined Functions
    usr_def_functions/representations
    usr_def_functions/rho_shifts
    usr_def_functions/sort
-   usr_def_functions/sp4
    usr_def_functions/stable
-   usr_def_functions/std_decs
    usr_def_functions/synthetic
    usr_def_functions/synthetic_aux
+   usr_def_functions/test
    usr_def_functions/test_K
    usr_def_functions/test_unitarity
    usr_def_functions/thetastable
@@ -78,7 +72,6 @@ User Defined Functions
    usr_def_functions/torus
    usr_def_functions/translate
    usr_def_functions/twist
-   usr_def_functions/unitary
    usr_def_functions/Vogan-dual
    usr_def_functions/W_K
    usr_def_functions/W_orbit

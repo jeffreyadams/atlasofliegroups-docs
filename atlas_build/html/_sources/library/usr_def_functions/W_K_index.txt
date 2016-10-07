@@ -10,37 +10,35 @@ W_K.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`lift_action_(KGBElt,(RootDatum,[int])->mat)1`
-     - ``(KGBElt,(RootDatum,[int])->mat)``
-   * - :ref:`factor_action_(KGBElt,(RootDatum,[int])->mat)1`
-     - ``(KGBElt,(RootDatum,[int])->mat)``
-   * - :ref:`small_Levi_(KGBElt->RealForm)1`
-     - ``(KGBElt->RealForm)``
-   * - :ref:`small_Levi_coroots_K_(KGBElt->mat)1`
-     - ``(KGBElt->mat)``
-   * - :ref:`nice_choices_x_(RealForm->[KGBElt])1`
-     - ``(RealForm->[KGBElt])``
-   * - :ref:`nice_choice_x_(RealForm->KGBElt)1`
-     - ``(RealForm->KGBElt)``
-   * - :ref:`W_c_perp_(KGBElt->[(RootDatum,[int])])1`
-     - ``(KGBElt->[(RootDatum,[int])])``
-   * - :ref:`convert_W_word_((RootDatum,[int]),RootDatum->RootDatum,[int])1`
-     - ``((RootDatum,[int]),RootDatum->RootDatum,[int])``
-   * - :ref:`R_K_dom_(KGBElt->[(RootDatum,[int])])1`
-     - ``(KGBElt->[(RootDatum,[int])])``
-   * - :ref:`W_K_(KGBElt->RootDatum,[(RootDatum,[int])])1`
-     - ``(KGBElt->RootDatum,[(RootDatum,[int])])``
-   * - :ref:`move_weight_((KGBElt,vec),KGBElt->KGBElt,vec)1`
-     - ``((KGBElt,vec),KGBElt->KGBElt,vec)``
-   * - :ref:`R_K_dom_mu_orbit_(KGBElt,vec->[(KGBElt,vec)])1`
-     - ``(KGBElt,vec->[(KGBElt,vec)])``
-   * - :ref:`P_positive_test_coweight_(KGBElt,(RootDatum,[int])->vec)1`
-     - ``(KGBElt,(RootDatum,[int])->vec)``
-   * - :ref:`P_positive_test_coweights_(KGBElt->[vec])1`
-     - ``(KGBElt->[vec])``
-   * - :ref:`is_P_positive_(KGBElt,vec,[(RootDatum,[int])]->bool)1`
-     - ``(KGBElt,vec,[(RootDatum,[int])]->bool)``
-   * - :ref:`make_strongly_dominant_(KGBElt,vec->(KGBElt,vec),(RootDatum,[int]),(RootDatum,[int]),bool)1`
-     - ``(KGBElt,vec->(KGBElt,vec),(RootDatum,[int]),(RootDatum,[int]),bool)``
-   * - :ref:`R_K_dom_mu_(KGBElt,vec->[(RootDatum,[int])])1`
-     - ``(KGBElt,vec->[(RootDatum,[int])])``
+   * - :ref:`lift_action_kgbelt_x,_w_word_w->mat1`
+     - ``KGBElt x, W_word w->mat``
+   * - :ref:`factor_action_kgbelt_x,w_word_w->mat1`
+     - ``KGBElt x,W_word w->mat``
+   * - :ref:`small_levi_kgbelt_x->realform1`
+     - ``KGBElt x->RealForm``
+   * - :ref:`small_levi_coroots_k_kgbelt_x->mat1`
+     - ``KGBElt x->mat``
+   * - :ref:`nice_choices_x_realform_g->[kgbelt]1`
+     - ``RealForm G->[KGBElt]``
+   * - :ref:`nice_choice_x_realform_g->kgbelt1`
+     - ``RealForm G->KGBElt``
+   * - :ref:`w_c_perp_kgbelt_x->[(rootdatum,[int])]1`
+     - ``KGBElt x->[(RootDatum,[int])]``
+   * - :ref:`convert_w_word_(rootdatum_rd_l,[int]_w),rootdatum_rd_g->w_word1`
+     - ``(RootDatum rd_L,[int] w),RootDatum rd_G->W_word``
+   * - :ref:`r_k_dom_kgbelt_x->[w_word]1`
+     - ``KGBElt x->[W_word]``
+   * - :ref:`w_k_kgbelt_x->(rootdatum,[(rootdatum,[int])])1`
+     - ``KGBElt x->(RootDatum,[(RootDatum,[int])])``
+   * - :ref:`move_weight_(kgbelt_x,vec_mu),kgbelt_y->khighestweight1`
+     - ``(KGBElt x,vec mu),KGBElt y->KHighestWeight``
+   * - :ref:`r_k_dom_mu_orbit_khighestweight_(x,mu)->[khighestweight]1`
+     - ``KHighestWeight (x,mu)->[KHighestWeight]``
+   * - :ref:`p_positive_test_coweight_kgbelt_x,w_word_s->vec1`
+     - ``KGBElt x,W_word S->vec``
+   * - :ref:`p_positive_test_coweights_kgbelt_x->[vec]1`
+     - ``KGBElt x->[vec]``
+   * - :ref:`is_p_positive_kgbelt_x,vec_mu,[w_word]_s->bool1`
+     - ``KGBElt x,vec mu,[W_word] S->bool``
+   * - :ref:`r_k_dom_mu_kgbelt_x,vec_mu->[w_word]1`
+     - ``KGBElt x,vec mu->[W_word]``

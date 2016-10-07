@@ -4,131 +4,129 @@ coherent.at Function References
 =======================================================
 |
 
-.. _nci_Cayley_(int,Param->ParamPol)1:
+.. _nci_cayley_int_k,param_p->parampol1:
 
 nci_Cayley
 -------------------------------------------------
-| ``nci_Cayley:(int,Param->ParamPol)``
+| ``nci_Cayley:int k,Param p->ParamPol``
+| 
+| Defined in coherent.at line number 11.
 | 
 
-
-.. _r1_Cayley_(int,Param->ParamPol)1:
+.. _r1_cayley_int_k,param_p->parampol1:
 
 r1_Cayley
 -------------------------------------------------
-| ``r1_Cayley:(int,Param->ParamPol)``
+| ``r1_Cayley:int k,Param p->ParamPol``
+| 
+| Defined in coherent.at line number 16.
 | 
 
-
-.. _coherent_std_reg_(Param,int->ParamPol)1:
+.. _coherent_std_reg_param_p,int_s->parampol1:
 
 coherent_std_reg
 -------------------------------------------------
-| ``coherent_std_reg:(Param,int->ParamPol)``
+| ``coherent_std_reg:Param p,int s->ParamPol``
+| 
+| Defined in coherent.at line number 37.
 | 
 
-
-.. _coherent_std_reg_(ParamPol,int->ParamPol)1:
+.. _coherent_std_reg_parampol_p,int_s->parampol1:
 
 coherent_std_reg
 -------------------------------------------------
-| ``coherent_std_reg:(ParamPol,int->ParamPol)``
+| ``coherent_std_reg:ParamPol P,int s->ParamPol``
+| 
+| Defined in coherent.at line number 48.
 | 
 
-
-.. _coherent_std_reg_(Param,[int]->ParamPol)1:
+.. _coherent_std_reg_param_p,[int]_w->parampol1:
 
 coherent_std_reg
 -------------------------------------------------
-| ``coherent_std_reg:(Param,[int]->ParamPol)``
+| ``coherent_std_reg:Param p,[int] w->ParamPol``
+| 
+| Defined in coherent.at line number 59.
 | 
 
-
-.. _coherent_std_(Param,int->ParamPol)1:
+.. _coherent_std_param_p,int_s->parampol1:
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:(Param,int->ParamPol)``
+| ``coherent_std:Param p,int s->ParamPol``
+| 
+| Defined in coherent.at line number 80.
 | 
 
-
-.. _coherent_std_(Param,[int]->ParamPol)1:
+.. _coherent_std_param_p,[int]_w->parampol1:
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:(Param,[int]->ParamPol)``
+| ``coherent_std:Param p,[int] w->ParamPol``
+| 
+| Defined in coherent.at line number 90.
 | 
 
-
-.. _coherent_std_(ParamPol,int->ParamPol)1:
+.. _coherent_std_parampol_p,int_s->parampol1:
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:(ParamPol,int->ParamPol)``
+| ``coherent_std:ParamPol P,int s->ParamPol``
+| 
+| Defined in coherent.at line number 99.
 | 
 
-
-.. _coherent_std_(ParamPol,[int]->ParamPol)1:
+.. _coherent_std_parampol_p,[int]_w->parampol1:
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:(ParamPol,[int]->ParamPol)``
+| ``coherent_std:ParamPol P,[int] w->ParamPol``
+| 
+| Defined in coherent.at line number 104.
 | 
 
-
-.. _coherent_std_((RootDatum,[int]),Param->ParamPol)1:
+.. _coherent_std_w_word_v,param_p->parampol1:
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:((RootDatum,[int]),Param->ParamPol)``
+| ``coherent_std:W_word v,Param p->ParamPol``
+| 
+| Defined in coherent.at line number 107.
 | 
 
-
-.. _coherent_std_((RootDatum,[int]),ParamPol->ParamPol)1:
+.. _coherent_std_w_word_v,parampol_p->parampol1:
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:((RootDatum,[int]),ParamPol->ParamPol)``
+| ``coherent_std:W_word v,ParamPol P->ParamPol``
+| 
+| Defined in coherent.at line number 108.
 | 
 
-
-.. _coherent_irr_(Param,int->ParamPol)1:
+.. _coherent_irr_parampol_p,int_s->parampol1:
 
 coherent_irr
 -------------------------------------------------
-| ``coherent_irr:(Param,int->ParamPol)``
+| ``coherent_irr:ParamPol P,int s->ParamPol``
+| 
+| Defined in coherent.at line number 121.
 | 
 
-
-.. _coherent_irr_(Param,[int]->ParamPol)1:
+.. _coherent_irr_parampol_p,[int]_w->parampol1:
 
 coherent_irr
 -------------------------------------------------
-| ``coherent_irr:(Param,[int]->ParamPol)``
+| ``coherent_irr:ParamPol P,[int] w->ParamPol``
+| 
+| Defined in coherent.at line number 126.
 | 
 
-
-.. _coherent_irr_(ParamPol,int->ParamPol)1:
-
-coherent_irr
--------------------------------------------------
-| ``coherent_irr:(ParamPol,int->ParamPol)``
-| 
-
-
-.. _coherent_irr_(ParamPol,[int]->ParamPol)1:
-
-coherent_irr
--------------------------------------------------
-| ``coherent_irr:(ParamPol,[int]->ParamPol)``
-| 
-
-
-.. _coherent_family_irr_(ParamPol,ratvec->ParamPol)1:
+.. _coherent_family_irr_parampol_p,_ratvec_v->parampol1:
 
 coherent_family_irr
 -------------------------------------------------
-| ``coherent_family_irr:(ParamPol,ratvec->ParamPol)``
+| ``coherent_family_irr:ParamPol P, ratvec v->ParamPol``
 | 
-
+| Defined in coherent.at line number 131.
+| 
 

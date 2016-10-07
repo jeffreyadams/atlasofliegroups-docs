@@ -4,339 +4,372 @@ modules.at Function References
 =======================================================
 |
 
-.. _I_(Param->Param,string)1:
+.. _i_param_p->tag_param1:
 
 I
 -------------------------------------------------
-| ``I:(Param->Param,string)``
+| ``I:Param p->tag_Param``
+| 
+| Defined in modules.at line number 13.
 | 
 
-
-.. _J_(Param->Param,string)1:
+.. _j_param_p->tag_param1:
 
 J
 -------------------------------------------------
-| ``J:(Param->Param,string)``
+| ``J:Param p->tag_Param``
+| 
+| Defined in modules.at line number 15.
 | 
 
-
-.. _to_str_(Param->string)1:
+.. _to_str_param_p->string1:
 
 to_str
 -------------------------------------------------
-| ``to_str:(Param->string)``
+| ``to_str:Param p->string``
+| 
+| Defined in modules.at line number 22.
 | 
 
-
-.. _to_str_std_(Param->string)1:
+.. _to_str_std_param_p->string1:
 
 to_str_std
 -------------------------------------------------
-| ``to_str_std:(Param->string)``
+| ``to_str_std:Param p->string``
+| 
+| Defined in modules.at line number 25.
 | 
 
-
-.. _to_str_irr_(Param->string)1:
+.. _to_str_irr_param_p->string1:
 
 to_str_irr
 -------------------------------------------------
-| ``to_str_irr:(Param->string)``
+| ``to_str_irr:Param p->string``
+| 
+| Defined in modules.at line number 27.
 | 
 
-
-.. _to_str_K_types_(Param->string)1:
+.. _to_str_k_types_param_p->string1:
 
 to_str_K_types
 -------------------------------------------------
-| ``to_str_K_types:(Param->string)``
+| ``to_str_K_types:Param p->string``
+| 
+| Defined in modules.at line number 29.
 | 
 
-
-.. _to_str_(Param,string->string)1:
+.. _to_str_tag_param(p,type)->string1:
 
 to_str
 -------------------------------------------------
-| ``to_str:(Param,string->string)``
+| ``to_str:tag_Param(p,type)->string``
+| 
+| Defined in modules.at line number 32.
 | 
 
-
-.. _to_str_(ParamPol->[string])1:
+.. _to_str_parampol_p->[string]1:
 
 to_str
 -------------------------------------------------
-| ``to_str:(ParamPol->[string])``
+| ``to_str:ParamPol P->[string]``
+| 
+| Defined in modules.at line number 40.
 | 
 
-
-.. _to_str_(ParamPol,string->[string])1:
+.. _to_str_parampol_p,string_type->[string]1:
 
 to_str
 -------------------------------------------------
-| ``to_str:(ParamPol,string->[string])``
+| ``to_str:ParamPol P,string type->[string]``
+| 
+| Defined in modules.at line number 43.
 | 
 
-
-.. _array_prints_([string]->)1:
+.. _array_prints_[string]_a->void1:
 
 array_prints
 -------------------------------------------------
-| ``array_prints:([string]->)``
+| ``array_prints:[string] A->void``
+| 
+| Defined in modules.at line number 46.
 | 
 
-
-.. _composition_series_(Param,string->ParamPol,string)1:
+.. _composition_series_param_p,string_type->tag_parampol1:
 
 composition_series
 -------------------------------------------------
-| ``composition_series:(Param,string->ParamPol,string)``
+| ``composition_series:Param p,string type->tag_ParamPol``
+| 
+| Defined in modules.at line number 50.
 | 
 
-
-.. _composition_series_(ParamPol,string->ParamPol,string)1:
+.. _composition_series_tag_parampol(p,type)->tag_parampol1:
 
 composition_series
 -------------------------------------------------
-| ``composition_series:(ParamPol,string->ParamPol,string)``
+| ``composition_series:tag_ParamPol(P,type)->tag_ParamPol``
+| 
+| Defined in modules.at line number 55.
 | 
 
-
-.. _character_formula_(Param,string->ParamPol,string)1:
+.. _character_formula_tag_param(p,type)->tag_parampol1:
 
 character_formula
 -------------------------------------------------
-| ``character_formula:(Param,string->ParamPol,string)``
+| ``character_formula:tag_Param(p,type)->tag_ParamPol``
+| 
+| Defined in modules.at line number 60.
 | 
 
-
-.. _character_formula_(ParamPol,string->ParamPol,string)1:
+.. _character_formula_tag_parampol(p,type)->tag_parampol1:
 
 character_formula
 -------------------------------------------------
-| ``character_formula:(ParamPol,string->ParamPol,string)``
+| ``character_formula:tag_ParamPol(P,type)->tag_ParamPol``
+| 
+| Defined in modules.at line number 65.
 | 
 
-
-.. _show_(ParamPol->)1:
+.. _show_parampol_p->void1:
 
 show
 -------------------------------------------------
-| ``show:(ParamPol->)``
+| ``show:ParamPol P->void``
+| 
+| Defined in modules.at line number 69.
 | 
 
-
-.. _show_(ParamPol,string->)1:
+.. _show_tag_parampol(,type):tp->void1:
 
 show
 -------------------------------------------------
-| ``show:(ParamPol,string->)``
+| ``show:tag_ParamPol(,type):tP->void``
+| 
+| Defined in modules.at line number 70.
 | 
 
-
-.. _show_(Param,string->)1:
+.. _show_tag_param_tp->void1:
 
 show
 -------------------------------------------------
-| ``show:(Param,string->)``
+| ``show:tag_Param tp->void``
+| 
+| Defined in modules.at line number 73.
 | 
 
-
-.. _show_(KGBElt,ratvec->)1:
+.. _show_kgbelt_x,ratvec_lambda->void1:
 
 show
 -------------------------------------------------
-| ``show:(KGBElt,ratvec->)``
+| ``show:KGBElt x,ratvec lambda->void``
+| 
+| Defined in modules.at line number 76.
 | 
 
-
-.. _virtual_(Param,string->ParamPol,string)1:
+.. _virtual_tag_param(p,type)->tag_parampol1:
 
 virtual
 -------------------------------------------------
-| ``virtual:(Param,string->ParamPol,string)``
+| ``virtual:tag_Param(p,type)->tag_ParamPol``
+| 
+| Defined in modules.at line number 80.
 | 
 
-
-.. _\=_((Param,string),(Param,string)->bool)1:
+.. _\=_tag_param(p,type_p),tag_param(q,type_q)->bool1:
 
 \=
 -------------------------------------------------
-| ``=:((Param,string),(Param,string)->bool)``
+| ``=:tag_Param(p,type_p),tag_Param(q,type_q)->bool``
+| 
+| Defined in modules.at line number 85.
 | 
 
-
-.. _character_(ParamPol,string->ParamPol)1:
+.. _character_tag_parampol_(p,type)->parampol1:
 
 character
 -------------------------------------------------
-| ``character:(ParamPol,string->ParamPol)``
+| ``character:tag_ParamPol (P,type)->ParamPol``
+| 
+| Defined in modules.at line number 90.
 | 
 
-
-.. _\=_((ParamPol,string),(ParamPol,string)->bool)1:
+.. _\=_tag_parampol(p,type_p):tp,tag_parampol(q,type_q):tq->bool1:
 
 \=
 -------------------------------------------------
-| ``=:((ParamPol,string),(ParamPol,string)->bool)``
+| ``=:tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->bool``
+| 
+| Defined in modules.at line number 95.
 | 
 
-
-.. _\+_((ParamPol,string),(ParamPol,string)->ParamPol,string)1:
+.. _\+_tag_parampol(p,type_p):tp,tag_parampol(q,type_q):tq->tag_parampol1:
 
 \+
 -------------------------------------------------
-| ``+:((ParamPol,string),(ParamPol,string)->ParamPol,string)``
+| ``+:tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->tag_ParamPol``
+| 
+| Defined in modules.at line number 99.
 | 
 
-
-.. _\+_((Param,string),(Param,string)->ParamPol,string)1:
+.. _\+_tag_param(p,type_p),tag_param(q,type_q)->tag_parampol1:
 
 \+
 -------------------------------------------------
-| ``+:((Param,string),(Param,string)->ParamPol,string)``
+| ``+:tag_Param(p,type_p),tag_Param(q,type_q)->tag_ParamPol``
+| 
+| Defined in modules.at line number 105.
 | 
 
-
-.. _\+_((ParamPol,string),(Param,string)->ParamPol,string)1:
+.. _\+_tag_parampol(p,type_p),tag_param(q,typeq)->tag_parampol1:
 
 \+
 -------------------------------------------------
-| ``+:((ParamPol,string),(Param,string)->ParamPol,string)``
+| ``+:tag_ParamPol(P,type_P),tag_Param(q,typeq)->tag_ParamPol``
+| 
+| Defined in modules.at line number 108.
 | 
 
-
-.. _\-_(ParamPol,string->ParamPol,string)1:
+.. _\-_tag_parampol(p,type)->tag_parampol1:
 
 \-
 -------------------------------------------------
-| ``-:(ParamPol,string->ParamPol,string)``
+| ``-:tag_ParamPol(P,type)->tag_ParamPol``
+| 
+| Defined in modules.at line number 114.
 | 
 
-
-.. _\-_(Param,string->ParamPol,string)1:
+.. _\-_tag_param(p,type)->tag_parampol1:
 
 \-
 -------------------------------------------------
-| ``-:(Param,string->ParamPol,string)``
+| ``-:tag_Param(p,type)->tag_ParamPol``
+| 
+| Defined in modules.at line number 115.
 | 
 
-
-.. _\-_((ParamPol,string),(ParamPol,string)->ParamPol,string)1:
+.. _\-_tag_parampol(p,type_p),tag_parampol(q,type_q)->tag_parampol1:
 
 \-
 -------------------------------------------------
-| ``-:((ParamPol,string),(ParamPol,string)->ParamPol,string)``
+| ``-:tag_ParamPol(P,type_P),tag_ParamPol(Q,type_Q)->tag_ParamPol``
+| 
+| Defined in modules.at line number 118.
 | 
 
-
-.. _\-_((Param,string),(ParamPol,string)->ParamPol,string)1:
+.. _\-_tag_param(p,typep),tag_parampol(q,type_q)->tag_parampol1:
 
 \-
 -------------------------------------------------
-| ``-:((Param,string),(ParamPol,string)->ParamPol,string)``
+| ``-:tag_Param(p,typep),tag_ParamPol(Q,type_Q)->tag_ParamPol``
+| 
+| Defined in modules.at line number 120.
 | 
 
-
-.. _\-_((Param,string),(Param,string)->ParamPol,string)1:
+.. _\-_tag_param(p,typep),tag_param(q,typeq)->tag_parampol1:
 
 \-
 -------------------------------------------------
-| ``-:((Param,string),(Param,string)->ParamPol,string)``
+| ``-:tag_Param(p,typep),tag_Param(q,typeq)->tag_ParamPol``
+| 
+| Defined in modules.at line number 122.
 | 
 
-
-.. _\*_(Split,(ParamPol,string)->ParamPol,string)1:
+.. _\*_split_w,tag_parampol(p,type)->tag_parampol1:
 
 \*
 -------------------------------------------------
-| ``*:(Split,(ParamPol,string)->ParamPol,string)``
+| ``*:Split w,tag_ParamPol(P,type)->tag_ParamPol``
+| 
+| Defined in modules.at line number 125.
 | 
 
-
-.. _\*_(Split,(Param,string)->ParamPol,string)1:
+.. _\*_split_w,tag_param(p,type)->tag_parampol1:
 
 \*
 -------------------------------------------------
-| ``*:(Split,(Param,string)->ParamPol,string)``
+| ``*:Split w,tag_Param(p,type)->tag_ParamPol``
+| 
+| Defined in modules.at line number 126.
 | 
 
-
-.. _\=_((ParamPol,string),(Param,string)->bool)1:
+.. _\=_tag_parampol(p,type_p),tag_param(q,typeq)->bool1:
 
 \=
 -------------------------------------------------
-| ``=:((ParamPol,string),(Param,string)->bool)``
+| ``=:tag_ParamPol(P,type_P),tag_Param(q,typeq)->bool``
+| 
+| Defined in modules.at line number 128.
 | 
 
-
-.. _infinitesimal_character_(Param,string->ratvec)1:
+.. _infinitesimal_character_param_p,string_type->ratvec1:
 
 infinitesimal_character
 -------------------------------------------------
-| ``infinitesimal_character:(Param,string->ratvec)``
+| ``infinitesimal_character:Param p,string type->ratvec``
+| 
+| Defined in modules.at line number 131.
 | 
 
-
-.. _has_infinitesimal_character_(ParamPol->bool)1:
+.. _has_infinitesimal_character_parampol_p->bool1:
 
 has_infinitesimal_character
 -------------------------------------------------
-| ``has_infinitesimal_character:(ParamPol->bool)``
+| ``has_infinitesimal_character:ParamPol P->bool``
+| 
+| Defined in modules.at line number 134.
 | 
 
-
-.. _infinitesimal_character_(ParamPol,string->ratvec)1:
+.. _infinitesimal_character_parampol_p,_string_type->ratvec1:
 
 infinitesimal_character
 -------------------------------------------------
-| ``infinitesimal_character:(ParamPol,string->ratvec)``
+| ``infinitesimal_character:ParamPol P, string type->ratvec``
+| 
+| Defined in modules.at line number 140.
 | 
 
-
-.. _tau_(Param,string->[int])1:
+.. _tau_param_p,string_type->[int]1:
 
 tau
 -------------------------------------------------
-| ``tau:(Param,string->[int])``
+| ``tau:Param p,string type->[int]``
+| 
+| Defined in modules.at line number 143.
 | 
 
-
-.. _in_tau_(int,(Param,string)->bool)1:
+.. _in_tau_int_s,tag_param(p,type)->bool1:
 
 in_tau
 -------------------------------------------------
-| ``in_tau:(int,(Param,string)->bool)``
+| ``in_tau:int s,tag_Param(p,type)->bool``
+| 
+| Defined in modules.at line number 144.
 | 
 
-
-.. _in_tau_complement_(int,(Param,string)->bool)1:
+.. _in_tau_complement_int_s,tag_param_ps->bool1:
 
 in_tau_complement
 -------------------------------------------------
-| ``in_tau_complement:(int,(Param,string)->bool)``
+| ``in_tau_complement:int s,tag_Param ps->bool``
+| 
+| Defined in modules.at line number 146.
 | 
 
-
-.. _tau_complement_(Param,string->[int])1:
-
-tau_complement
--------------------------------------------------
-| ``tau_complement:(Param,string->[int])``
-| 
-
-
-.. _status_(int,(Param,string)->int)1:
+.. _status_int_s,tag_param_(p,type)->int1:
 
 status
 -------------------------------------------------
-| ``status:(int,(Param,string)->int)``
+| ``status:int s,tag_Param (p,type)->int``
+| 
+| Defined in modules.at line number 149.
 | 
 
-
-.. _branch_((Param,string),int->ParamPol,string)1:
+.. _branch_(param_p,string_type),_int_bound->(parampol,string)1:
 
 branch
 -------------------------------------------------
-| ``branch:((Param,string),int->ParamPol,string)``
+| ``branch:(Param p,string type), int bound->(ParamPol,string)``
 | 
-
+| Defined in modules.at line number 151.
+| 
 

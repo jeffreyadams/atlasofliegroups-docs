@@ -4,43 +4,30 @@ new_blocks.at Function References
 =======================================================
 |
 
-.. _old_block_(Param->[Param],int)1:
-
-old_block
--------------------------------------------------
-| ``old_block:(Param->[Param],int)``
-| 
-
-
-.. _cross_(int,Param->Param)2:
+.. _cross_int_s,param_p->param2:
 
 cross
 -------------------------------------------------
-| ``cross:(int,Param->Param)``
+| ``cross:int s,Param p->Param``
+| 
+| Defined in new_blocks.at line number 15.
 | 
 
-
-.. _Cayley_(int,Param->Param)2:
+.. _cayley_int_s,param_p->param2:
 
 Cayley
 -------------------------------------------------
-| ``Cayley:(int,Param->Param)``
+| ``Cayley:int s,Param p->Param``
+| 
+| Defined in new_blocks.at line number 20.
 | 
 
-
-.. _inv_Cayley_(int,Param->Param)2:
-
-inv_Cayley
--------------------------------------------------
-| ``inv_Cayley:(int,Param->Param)``
-| 
-
-
-.. _block_(Param->[Param],int)1:
+.. _block_param_p->([param],int)1:
 
 block
 -------------------------------------------------
-| ``block:(Param->[Param],int)``
+| ``block:Param p->([Param],int)``
 | 
-
+| Defined in new_blocks.at line number 27.
+| 
 

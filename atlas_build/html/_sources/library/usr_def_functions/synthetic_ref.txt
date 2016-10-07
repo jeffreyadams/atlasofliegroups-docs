@@ -4,179 +4,201 @@ synthetic.at Function References
 =======================================================
 |
 
-.. _grading_coweight_(KGBElt->ratvec)1:
+.. _grading_coweight_kgbelt_x->ratvec1:
 
 grading_coweight
 -------------------------------------------------
-| ``grading_coweight:(KGBElt->ratvec)``
+| ``grading_coweight:KGBElt x->ratvec``
+| 
+| Defined in synthetic.at line number 7.
 | 
 
-
-.. _make_KGB_(RealForm,mat,ratvec->KGBElt)1:
+.. _make_kgb_realform_g,_mat_theta,_ratvec_grading_cowt->kgbelt1:
 
 make_KGB
 -------------------------------------------------
-| ``make_KGB:(RealForm,mat,ratvec->KGBElt)``
+| ``make_KGB:RealForm G, mat theta, ratvec grading_cowt->KGBElt``
+| 
+| Defined in synthetic.at line number 10.
 | 
 
-
-.. _cross_(mat,KGBElt->KGBElt)1:
+.. _cross_mat_w,_kgbelt_x->kgbelt1:
 
 cross
 -------------------------------------------------
-| ``cross:(mat,KGBElt->KGBElt)``
+| ``cross:mat w, KGBElt x->KGBElt``
+| 
+| Defined in synthetic.at line number 15.
 | 
 
-
-.. _posroot_cross_(int,KGBElt->KGBElt)1:
+.. _posroot_cross_int_i,_kgbelt_x->kgbelt1:
 
 posroot_cross
 -------------------------------------------------
-| ``posroot_cross:(int,KGBElt->KGBElt)``
+| ``posroot_cross:int i, KGBElt x->KGBElt``
+| 
+| Defined in synthetic.at line number 19.
 | 
 
-
-.. _posroot_cross_(int,Param->Param)1:
+.. _posroot_cross_int_i,_param_p->param1:
 
 posroot_cross
 -------------------------------------------------
-| ``posroot_cross:(int,Param->Param)``
+| ``posroot_cross:int i, Param p->Param``
+| 
+| Defined in synthetic.at line number 22.
 | 
 
-
-.. _posroot_cross_(vec,Param->Param)1:
+.. _posroot_cross_vec_alpha,_param_p->param1:
 
 posroot_cross
 -------------------------------------------------
-| ``posroot_cross:(vec,Param->Param)``
+| ``posroot_cross:vec alpha, Param p->Param``
+| 
+| Defined in synthetic.at line number 28.
 | 
 
-
-.. _posroot_Cayley_(int,KGBElt->KGBElt)1:
+.. _posroot_cayley_int_i,_kgbelt_x->kgbelt1:
 
 posroot_Cayley
 -------------------------------------------------
-| ``posroot_Cayley:(int,KGBElt->KGBElt)``
+| ``posroot_Cayley:int i, KGBElt x->KGBElt``
+| 
+| Defined in synthetic.at line number 36.
 | 
 
-
-.. _posroot_Cayley_(int,Param->Param)1:
+.. _posroot_cayley_int_i,_param_p->param1:
 
 posroot_Cayley
 -------------------------------------------------
-| ``posroot_Cayley:(int,Param->Param)``
+| ``posroot_Cayley:int i, Param p->Param``
+| 
+| Defined in synthetic.at line number 53.
 | 
 
-
-.. _posroot_inv_Cayley_(int,Param->Param)1:
+.. _posroot_inv_cayley_int_i,_param_p->param1:
 
 posroot_inv_Cayley
 -------------------------------------------------
-| ``posroot_inv_Cayley:(int,Param->Param)``
+| ``posroot_inv_Cayley:int i, Param p->Param``
+| 
+| Defined in synthetic.at line number 69.
 | 
 
-
-.. _find_posroot_(RootDatum,vec->int)1:
+.. _find_posroot_rootdatum_rd,_vec_alpha->int1:
 
 find_posroot
 -------------------------------------------------
-| ``find_posroot:(RootDatum,vec->int)``
+| ``find_posroot:RootDatum rd, vec alpha->int``
+| 
+| Defined in synthetic.at line number 92.
 | 
 
-
-.. _concat_([string],string,string,string->string)1:
+.. _concat_[string]_l,string_open,_string_sep,_string_close->string1:
 
 concat
 -------------------------------------------------
-| ``concat:([string],string,string,string->string)``
+| ``concat:[string] l,string open, string sep, string close->string``
+| 
+| Defined in synthetic.at line number 96.
 | 
 
-
-.. _posroot_status_(int,Param->int)1:
+.. _posroot_status_int_i,_param_p->int1:
 
 posroot_status
 -------------------------------------------------
-| ``posroot_status:(int,Param->int)``
+| ``posroot_status:int i, Param p->int``
+| 
+| Defined in synthetic.at line number 99.
 | 
 
-
-.. _new_block_line_([Param],int->string)1:
+.. _new_block_line_[param]_b,int_i->string1:
 
 new_block_line
 -------------------------------------------------
-| ``new_block_line:([Param],int->string)``
+| ``new_block_line:[Param] B,int i->string``
+| 
+| Defined in synthetic.at line number 108.
 | 
 
-
-.. _is_conjugate_(ratvec,ratvec,mat->bool)1:
+.. _is_conjugate_ratvec_v,ratvec_w,mat_theta->bool1:
 
 is_conjugate
 -------------------------------------------------
-| ``is_conjugate:(ratvec,ratvec,mat->bool)``
+| ``is_conjugate:ratvec v,ratvec w,mat theta->bool``
+| 
+| Defined in synthetic.at line number 134.
 | 
 
-
-.. _inner_class_(InnerClass,mat,ratvec->InnerClass)1:
+.. _inner_class_kgbelt_gen(ic,,)->innerclass1:
 
 inner_class
 -------------------------------------------------
-| ``inner_class:(InnerClass,mat,ratvec->InnerClass)``
+| ``inner_class:KGBElt_gen(ic,,)->InnerClass``
+| 
+| Defined in synthetic.at line number 146.
 | 
 
-
-.. _involution_(InnerClass,mat,ratvec->mat)1:
+.. _involution_kgbelt_gen(,theta,)->mat1:
 
 involution
 -------------------------------------------------
-| ``involution:(InnerClass,mat,ratvec->mat)``
+| ``involution:KGBElt_gen(,theta,)->mat``
+| 
+| Defined in synthetic.at line number 147.
 | 
 
-
-.. _torus_factor_(InnerClass,mat,ratvec->ratvec)1:
+.. _torus_factor_kgbelt_gen(,,t)->ratvec1:
 
 torus_factor
 -------------------------------------------------
-| ``torus_factor:(InnerClass,mat,ratvec->ratvec)``
+| ``torus_factor:KGBElt_gen(,,t)->ratvec``
+| 
+| Defined in synthetic.at line number 148.
 | 
 
-
-.. _unnormalized_torus_factor_(InnerClass,mat,ratvec->ratvec)1:
+.. _unnormalized_torus_factor_kgbelt_gen(ic,,t)->ratvec1:
 
 unnormalized_torus_factor
 -------------------------------------------------
-| ``unnormalized_torus_factor:(InnerClass,mat,ratvec->ratvec)``
+| ``unnormalized_torus_factor:KGBElt_gen(ic,,t)->ratvec``
+| 
+| Defined in synthetic.at line number 149.
 | 
 
-
-.. _\=_((InnerClass,mat,ratvec),(InnerClass,mat,ratvec)->bool)1:
+.. _\=_kgbelt_gen_x1,kgbelt_gen_x2->bool1:
 
 \=
 -------------------------------------------------
-| ``=:((InnerClass,mat,ratvec),(InnerClass,mat,ratvec)->bool)``
+| ``=:KGBElt_gen x1,KGBElt_gen x2->bool``
+| 
+| Defined in synthetic.at line number 159.
 | 
 
+.. _\!=_(kgbelt_gen,kgbelt_gen)p->bool1:
 
-.. _!=_((InnerClass,mat,ratvec),(InnerClass,mat,ratvec)->bool)1:
-
-!=
+\!=
 -------------------------------------------------
-| ``!=:((InnerClass,mat,ratvec),(InnerClass,mat,ratvec)->bool)``
+| ``!=:(KGBElt_gen,KGBElt_gen)p->bool``
+| 
+| Defined in synthetic.at line number 166.
 | 
 
-
-.. _\*_(mat,(InnerClass,mat,ratvec)->InnerClass,mat,ratvec)1:
+.. _\*_mat_delta,kgbelt_gen(ic,theta,t)->kgbelt_gen1:
 
 \*
 -------------------------------------------------
-| ``*:(mat,(InnerClass,mat,ratvec)->InnerClass,mat,ratvec)``
+| ``*:mat delta,KGBElt_gen(ic,theta,t)->KGBElt_gen``
+| 
+| Defined in synthetic.at line number 174.
 | 
 
-
-.. _is_fixed_(mat,(InnerClass,mat,ratvec)->bool)1:
+.. _is_fixed_mat_delta,kgbelt_gen_y->bool1:
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:(mat,(InnerClass,mat,ratvec)->bool)``
+| ``is_fixed:mat delta,KGBElt_gen y->bool``
 | 
-
+| Defined in synthetic.at line number 177.
+| 
 

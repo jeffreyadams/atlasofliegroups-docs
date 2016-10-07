@@ -10,93 +10,85 @@ wreps_type_C.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`normalize_([int]->[int])1`
-     - ``([int]->[int])``
-   * - :ref:`expand_([int],int->[int])1`
-     - ``([int],int->[int])``
-   * - :ref:`normalize_([[int]]->[[int]])1`
-     - ``([[int]]->[[int]])``
-   * - :ref:`rank_([int]->int)1`
-     - ``([int]->int)``
-   * - :ref:`rank_([[int]]->int)1`
-     - ``([[int]]->int)``
-   * - :ref:`symbol_([int]->[[int]])1`
-     - ``([int]->[[int]])``
-   * - :ref:`wrep_([[int]]->[int],[int])1`
-     - ``([[int]]->[int],[int])``
-   * - :ref:`wrep_([int]->[int],[int])1`
-     - ``([int]->[int],[int])``
-   * - :ref:`orbit_([[int]]->[int])1`
-     - ``([[int]]->[int])``
-   * - :ref:`symbol_([int],[int]->[[int]])1`
-     - ``([int],[int]->[[int]])``
-   * - :ref:`orbit_([int],[int]->[int])1`
-     - ``([int],[int]->[int])``
-   * - :ref:`\=_(([int],[int]),([int],[int])->bool)1`
-     - ``(([int],[int]),([int],[int])->bool)``
-   * - :ref:`symbols_equal_([[int]],[[int]]->bool)1`
-     - ``([[int]],[[int]]->bool)``
-   * - :ref:`dimension_([int],[int]->int)1`
-     - ``([int],[int]->int)``
-   * - :ref:`all_reps_C_(int->[([int],[int])])1`
-     - ``(int->[([int],[int])])``
-   * - :ref:`is_special_([[int]]->bool)1`
-     - ``([[int]]->bool)``
-   * - :ref:`is_special_([int]->bool)1`
-     - ``([int]->bool)``
-   * - :ref:`is_special_([int],[int]->bool)1`
-     - ``([int],[int]->bool)``
-   * - :ref:`special_star_([[int]]->string)1`
-     - ``([[int]]->string)``
-   * - :ref:`special_star_([int]->string)1`
-     - ``([int]->string)``
-   * - :ref:`special_star_([int],[int]->string)1`
-     - ``([int],[int]->string)``
-   * - :ref:`symbols_(RootDatum->[[[int]]])1`
-     - ``(RootDatum->[[[int]]])``
-   * - :ref:`wreps_(RootDatum->[([int],[int])])1`
-     - ``(RootDatum->[([int],[int])])``
-   * - :ref:`cut_off_string_([int]->int,[int])1`
-     - ``([int]->int,[int])``
-   * - :ref:`cut_off_last_string_([int]->int,[int])1`
-     - ``([int]->int,[int])``
-   * - :ref:`extract_strings_([int]->[int])1`
-     - ``([int]->[int])``
-   * - :ref:`A_Levi_factor_(int,[int]->[int])1`
-     - ``(int,[int]->[int])``
-   * - :ref:`AC_Levi_factor_(int,[int]->int,[int])1`
-     - ``(int,[int]->int,[int])``
-   * - :ref:`is_max_([[int]],[int]->bool)1`
-     - ``([[int]],[int]->bool)``
-   * - :ref:`max_only_([[int]]->[[int]])1`
-     - ``([[int]]->[[int]])``
-   * - :ref:`Levi_signature_(int,[[int]]->[[int]],[(int,[int])])1`
-     - ``(int,[[int]]->[[int]],[(int,[int])])``
-   * - :ref:`my_max_([int]->int)1`
-     - ``([int]->int)``
-   * - :ref:`max_first_entry_([[int]]->int)1`
-     - ``([[int]]->int)``
-   * - :ref:`keep_by_first_entry_([[int]],int->[[int]])1`
-     - ``([[int]],int->[[int]])``
-   * - :ref:`keep_by_first_entry_and_truncate_([[int]],int->[[int]])1`
-     - ``([[int]],int->[[int]])``
-   * - :ref:`max_tagged_entry_([(int,[int])]->int)1`
-     - ``([(int,[int])]->int)``
-   * - :ref:`keep_by_first_entry_([(int,[int])],int->[(int,[int])])1`
-     - ``([(int,[int])],int->[(int,[int])])``
-   * - :ref:`keep_by_first_entry_and_truncate_([(int,[int])],int->[(int,[int])])1`
-     - ``([(int,[int])],int->[(int,[int])])``
-   * - :ref:`wrep_(int,[[int]]->[int],[int])1`
-     - ``(int,[[int]]->[int],[int])``
-   * - :ref:`wrep_(Block,[int]->[int],[int])1`
-     - ``(Block,[int]->[int],[int])``
-   * - :ref:`wreps_(Block,[[int]]->[([int],[int])])1`
-     - ``(Block,[[int]]->[([int],[int])])``
-   * - :ref:`print_wrep_cpt_(Block,[int]->)1`
-     - ``(Block,[int]->)``
-   * - :ref:`print_wrep_(Block,[int]->)1`
-     - ``(Block,[int]->)``
-   * - :ref:`print_wreps_cpt_(Block,[[int]]->)1`
-     - ``(Block,[[int]]->)``
-   * - :ref:`print_wreps_(Block,[[int]]->)1`
-     - ``(Block,[[int]]->)``
+   * - :ref:`normalize_[int]_v->[int]1`
+     - ``[int] v->[int]``
+   * - :ref:`expand_[int]_v,_int_r->[int]1`
+     - ``[int] v, int r->[int]``
+   * - :ref:`normalize_symbol_s->symbol1`
+     - ``Symbol S->Symbol``
+   * - :ref:`rank_[int]_f->int1`
+     - ``[int] f->int``
+   * - :ref:`rank_symbol_s->int1`
+     - ``Symbol S->int``
+   * - :ref:`symbol_orbit_p->symbol1`
+     - ``Orbit P->Symbol``
+   * - :ref:`wrep_symbol_s->wrep1`
+     - ``Symbol S->Wrep``
+   * - :ref:`wrep_orbit_p->wrep1`
+     - ``Orbit P->Wrep``
+   * - :ref:`orbit_symbol_s->orbit1`
+     - ``Symbol S->Orbit``
+   * - :ref:`symbol_wrep_sigma->symbol1`
+     - ``Wrep sigma->Symbol``
+   * - :ref:`orbit_wrep_sigma->orbit1`
+     - ``Wrep sigma->Orbit``
+   * - :ref:`\=_wrep__a,wrep_b->bool1`
+     - ``Wrep  a,Wrep b->bool``
+   * - :ref:`symbols_equal_symbol_a,symbol_b->bool1`
+     - ``Symbol a,Symbol b->bool``
+   * - :ref:`dimension_wrep_sigma->int1`
+     - ``Wrep sigma->int``
+   * - :ref:`is_special_symbol_s->bool1`
+     - ``Symbol S->bool``
+   * - :ref:`is_special_orbit_p->bool1`
+     - ``Orbit P->bool``
+   * - :ref:`is_special_wrep_sigma->bool1`
+     - ``Wrep sigma->bool``
+   * - :ref:`special_star_symbol_s->string1`
+     - ``Symbol S->string``
+   * - :ref:`special_star_orbit_p->string1`
+     - ``Orbit P->string``
+   * - :ref:`special_star_wrep_sigma->string1`
+     - ``Wrep sigma->string``
+   * - :ref:`symbols_rootdatum_rd->[symbol]1`
+     - ``RootDatum rd->[Symbol]``
+   * - :ref:`wreps_rootdatum_rd->[wrep]1`
+     - ``RootDatum rd->[Wrep]``
+   * - :ref:`cut_off_string_[int]_v)=(int,[int]->last(#v,_(int_i)bool1`
+     - ``[int] v)=(int,[int]->last(#v, (int i)bool``
+   * - :ref:`cut_off_last_string_[int]_v->(int,[int])1`
+     - ``[int] v->(int,[int])``
+   * - :ref:`extract_strings_[int]_v->[int]1`
+     - ``[int] v->[int]``
+   * - :ref:`a_levi_factor_int_rank,_[int]_tau->[int]1`
+     - ``int rank, [int] tau->[int]``
+   * - :ref:`ac_levi_factor_int_rank,_[int]_tau->(int,[int])1`
+     - ``int rank, [int] tau->(int,[int])``
+   * - :ref:`is_max_[[int]]_taus,[int]_tau->bool1`
+     - ``[[int]] taus,[int] tau->bool``
+   * - :ref:`max_only_[[int]]_taus->[[int]]1`
+     - ``[[int]] taus->[[int]]``
+   * - :ref:`levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])1`
+     - ``int rank,[[int]] tau_invariants->([[int]],[(int,[int])])``
+   * - :ref:`max_first_entry_[[int]]_v->int1`
+     - ``[[int]] v->int``
+   * - :ref:`keep_by_first_entry_[[int]]_v,int_k->[[int]]1`
+     - ``[[int]] v,int k->[[int]]``
+   * - :ref:`keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]1`
+     - ``[[int]] v,int k->[[int]]``
+   * - :ref:`max_tagged_entry_[(int,[int])]_v->int1`
+     - ``[(int,[int])] v->int``
+   * - :ref:`keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]1`
+     - ``[(int,[int])] v,int k->[(int,[int])]``
+   * - :ref:`keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]1`
+     - ``[(int,[int])] v,int k->[(int,[int])]``
+   * - :ref:`wrep_int_rank,[[int]]_tau_invariants->wrep1`
+     - ``int rank,[[int]] tau_invariants->Wrep``
+   * - :ref:`wrep_block_b,[int]_cell->wrep1`
+     - ``Block B,[int] cell->Wrep``
+   * - :ref:`wreps_block_b,[[int]]_cells->[wrep]1`
+     - ``Block B,[[int]] cells->[Wrep]``
+   * - :ref:`print_wreps_cpt_block_b,[[int]]_cells->void1`
+     - ``Block B,[[int]] cells->void``
+   * - :ref:`print_wreps_block_b,[[int]]_cells->void1`
+     - ``Block B,[[int]] cells->void``

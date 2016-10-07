@@ -4,67 +4,75 @@ finite_dimensional.at Function References
 =======================================================
 |
 
-.. _is_finite_dimensional_(Param->bool)1:
+.. _is_finite_dimensional_param_p->bool1:
 
 is_finite_dimensional
 -------------------------------------------------
-| ``is_finite_dimensional:(Param->bool)``
+| ``is_finite_dimensional:Param p->bool``
+| 
+| Defined in finite_dimensional.at line number 7.
 | 
 
-
-.. _fd_only_(Param->Param)1:
+.. _fd_only_param_p->param1:
 
 fd_only
 -------------------------------------------------
-| ``fd_only:(Param->Param)``
+| ``fd_only:Param p->Param``
+| 
+| Defined in finite_dimensional.at line number 12.
 | 
 
-
-.. _dimension_(RootDatum,vec->int)1:
+.. _dimension_rootdatum_rd,_vec_lambda_in->int1:
 
 dimension
 -------------------------------------------------
-| ``dimension:(RootDatum,vec->int)``
+| ``dimension:RootDatum rd, vec lambda_in->int``
+| 
+| Defined in finite_dimensional.at line number 16.
 | 
 
-
-.. _highest_weight_finite_dimensional_(Param->vec)1:
+.. _highest_weight_finite_dimensional_param_p->vec1:
 
 highest_weight_finite_dimensional
 -------------------------------------------------
-| ``highest_weight_finite_dimensional:(Param->vec)``
+| ``highest_weight_finite_dimensional:Param p->vec``
+| 
+| Defined in finite_dimensional.at line number 28.
 | 
 
-
-.. _dimension_(Param->int)1:
+.. _dimension_param_p->int1:
 
 dimension
 -------------------------------------------------
-| ``dimension:(Param->int)``
+| ``dimension:Param p->int``
+| 
+| Defined in finite_dimensional.at line number 31.
 | 
 
-
-.. _fundamental_weight_coordinates_(Param->vec)1:
+.. _fundamental_weight_coordinates_param_p->vec1:
 
 fundamental_weight_coordinates
 -------------------------------------------------
-| ``fundamental_weight_coordinates:(Param->vec)``
+| ``fundamental_weight_coordinates:Param p->vec``
+| 
+| Defined in finite_dimensional.at line number 34.
 | 
 
-
-.. _complex_LKT_(Param->vec)1:
+.. _complex_lkt_param_p->vec1:
 
 complex_LKT
 -------------------------------------------------
-| ``complex_LKT:(Param->vec)``
+| ``complex_LKT:Param p->vec``
+| 
+| Defined in finite_dimensional.at line number 38.
 | 
 
-
-.. _testcomplex_(RealForm->)1:
+.. _testcomplex_realform_g->void1:
 
 testcomplex
 -------------------------------------------------
-| ``testcomplex:(RealForm->)``
+| ``testcomplex:RealForm G->void``
 | 
-
+| Defined in finite_dimensional.at line number 46.
+| 
 

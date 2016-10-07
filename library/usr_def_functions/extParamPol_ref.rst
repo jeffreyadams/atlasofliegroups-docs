@@ -4,99 +4,102 @@ extParamPol.at Function References
 =======================================================
 |
 
-.. _splits_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[Split])1:
+.. _splits_extparampol_p->[split]1:
 
 splits
 -------------------------------------------------
-| ``splits:([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[Split])``
+| ``splits:extParamPol P->[Split]``
+| 
+| Defined in extParamPol.at line number 5.
 | 
 
-
-.. _ext_params_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1:
+.. _ext_params_extparampol_p->[extended_param]1:
 
 ext_params
 -------------------------------------------------
-| ``ext_params:([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
+| ``ext_params:extParamPol P->[extended_param]``
+| 
+| Defined in extParamPol.at line number 6.
 | 
 
-
-.. _collect_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1:
+.. _collect_extparampol_q->extparampol1:
 
 collect
 -------------------------------------------------
-| ``collect:([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
+| ``collect:extParamPol Q->extParamPol``
+| 
+| Defined in extParamPol.at line number 8.
 | 
 
-
-.. _\*_(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1:
+.. _\*_split_s,extended_param_e->extparampol1:
 
 \*
 -------------------------------------------------
-| ``*:(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
+| ``*:Split s,extended_param E->extParamPol``
+| 
+| Defined in extParamPol.at line number 23.
 | 
 
-
-.. _\*_(Split,[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1:
+.. _\*_split_s,extparampol_p->extparampol1:
 
 \*
 -------------------------------------------------
-| ``*:(Split,[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
+| ``*:Split s,extParamPol P->extParamPol``
+| 
+| Defined in extParamPol.at line number 24.
 | 
 
-
-.. _\#_([Split],[Split]->[Split])1:
+.. _\#_[split]_a,[split]_b->[split]:_for_x_in_b_do_a#1:
 
 \#
 -------------------------------------------------
-| ``#:([Split],[Split]->[Split])``
+| ``#:[Split] a,[Split] b->[Split]: for x in b do a#``
+| 
+| Defined in extParamPol.at line number 25.
 | 
 
-
-.. _\#_([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1:
+.. _\#_[extended_param]_a,[extended_param]_b->[extended_param]:_for_x_in_b_do_a#1:
 
 \#
 -------------------------------------------------
-| ``#:([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
+| ``#:[extended_param] a,[extended_param] b->[extended_param]: for x in b do a#``
+| 
+| Defined in extParamPol.at line number 26.
 | 
 
-
-.. _\+_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1:
+.. _\+_extparampol_p,extparampol_q->extparampol1:
 
 \+
 -------------------------------------------------
-| ``+:([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
+| ``+:extParamPol P,extParamPol Q->extParamPol``
+| 
+| Defined in extParamPol.at line number 28.
 | 
 
-
-.. _\+_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1:
+.. _\+_extparampol_p,extended_param_e->extparampol1:
 
 \+
 -------------------------------------------------
-| ``+:([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
+| ``+:extParamPol P,extended_param E->extParamPol``
+| 
+| Defined in extParamPol.at line number 33.
 | 
 
-
-.. _\-_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1:
+.. _\-_extparampol_p,extparampol_q->extparampol1:
 
 \-
 -------------------------------------------------
-| ``-:([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
+| ``-:extParamPol P,extParamPol Q->extParamPol``
+| 
+| Defined in extParamPol.at line number 35.
 | 
 
-
-.. _null_ext_module_(RealForm->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1:
+.. _null_ext_module_realform_g->extparampol1:
 
 null_ext_module
 -------------------------------------------------
-| ``null_ext_module:(RealForm->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
+| ``null_ext_module:RealForm G->extParamPol``
 | 
-
-
-.. _display_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[void])1:
-
-display
--------------------------------------------------
-| ``display:([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[void])``
+| Defined in extParamPol.at line number 37.
 | 
-
 

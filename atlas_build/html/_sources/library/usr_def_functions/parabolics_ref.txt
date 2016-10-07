@@ -4,283 +4,309 @@ parabolics.at Function References
 =======================================================
 |
 
-.. _complex_parabolic_([int],KGBElt->RootDatum,[int])1:
+.. _complex_parabolic_parabolic(s,x)->complexparabolic1:
 
 complex_parabolic
 -------------------------------------------------
-| ``complex_parabolic:([int],KGBElt->RootDatum,[int])``
+| ``complex_parabolic:Parabolic(S,x)->ComplexParabolic``
+| 
+| Defined in parabolics.at line number 24.
 | 
 
-
-.. _complex_Levi_(RootDatum,(int->bool)->RootDatum)1:
+.. _complex_levi_rootdatum_rd,_(int->bool)_select->rootdatum1:
 
 complex_Levi
 -------------------------------------------------
-| ``complex_Levi:(RootDatum,(int->bool)->RootDatum)``
+| ``complex_Levi:RootDatum rd, (int->bool) select->RootDatum``
+| 
+| Defined in parabolics.at line number 27.
 | 
 
-
-.. _complex_Levi_(RootDatum,[int]->RootDatum)1:
-
-complex_Levi
--------------------------------------------------
-| ``complex_Levi:(RootDatum,[int]->RootDatum)``
-| 
-
-
-.. _is_Levi_theta_stable_([int],KGBElt->bool)1:
+.. _is_levi_theta_stable_parabolic_(s,x)->bool1:
 
 is_Levi_theta_stable
 -------------------------------------------------
-| ``is_Levi_theta_stable:([int],KGBElt->bool)``
+| ``is_Levi_theta_stable:Parabolic (S,x)->bool``
+| 
+| Defined in parabolics.at line number 36.
 | 
 
-
-.. _Levi_([int],KGBElt->RealForm)1:
+.. _levi_parabolic(s,x):p->realform1:
 
 Levi
 -------------------------------------------------
-| ``Levi:([int],KGBElt->RealForm)``
+| ``Levi:Parabolic(S,x):P->RealForm``
+| 
+| Defined in parabolics.at line number 48.
 | 
 
-
-.. _is_parabolic_theta_stable_([int],KGBElt->bool)1:
+.. _is_parabolic_theta_stable_parabolic_(s,x):p->bool1:
 
 is_parabolic_theta_stable
 -------------------------------------------------
-| ``is_parabolic_theta_stable:([int],KGBElt->bool)``
+| ``is_parabolic_theta_stable:Parabolic (S,x):P->bool``
+| 
+| Defined in parabolics.at line number 59.
 | 
 
-
-.. _is_parabolic_real_([int],KGBElt->bool)1:
+.. _is_parabolic_real_parabolic_(s,x):p->bool1:
 
 is_parabolic_real
 -------------------------------------------------
-| ``is_parabolic_real:([int],KGBElt->bool)``
+| ``is_parabolic_real:Parabolic (S,x):P->bool``
+| 
+| Defined in parabolics.at line number 73.
 | 
 
-
-.. _rho_u_(RootDatum,[int]->ratvec)1:
+.. _rho_u_complexparabolic_p->ratvec1:
 
 rho_u
 -------------------------------------------------
-| ``rho_u:(RootDatum,[int]->ratvec)``
+| ``rho_u:ComplexParabolic P->ratvec``
+| 
+| Defined in parabolics.at line number 93.
 | 
 
-
-.. _rho_u_([int],KGBElt->ratvec)1:
+.. _rho_u_parabolic_p->ratvec1:
 
 rho_u
 -------------------------------------------------
-| ``rho_u:([int],KGBElt->ratvec)``
+| ``rho_u:Parabolic P->ratvec``
+| 
+| Defined in parabolics.at line number 94.
 | 
 
-
-.. _rho_l_([int],KGBElt->ratvec)1:
+.. _rho_l_parabolic_p->ratvec1:
 
 rho_l
 -------------------------------------------------
-| ``rho_l:([int],KGBElt->ratvec)``
+| ``rho_l:Parabolic P->ratvec``
+| 
+| Defined in parabolics.at line number 95.
 | 
 
-
-.. _nilrad_([int],KGBElt->mat)1:
+.. _nilrad_parabolic_p->mat1:
 
 nilrad
 -------------------------------------------------
-| ``nilrad:([int],KGBElt->mat)``
+| ``nilrad:Parabolic P->mat``
+| 
+| Defined in parabolics.at line number 97.
 | 
 
-
-.. _nilrad_roots_([int],KGBElt->mat)1:
+.. _nilrad_roots_parabolic_p->mat1:
 
 nilrad_roots
 -------------------------------------------------
-| ``nilrad_roots:([int],KGBElt->mat)``
+| ``nilrad_roots:Parabolic P->mat``
+| 
+| Defined in parabolics.at line number 101.
 | 
 
-
-.. _zero_simple_coroots_(RootDatum,vec->[int])1:
+.. _zero_simple_coroots_rootdatum_rd,_vec_lambda->[int]1:
 
 zero_simple_coroots
 -------------------------------------------------
-| ``zero_simple_coroots:(RootDatum,vec->[int])``
+| ``zero_simple_coroots:RootDatum rd, vec lambda->[int]``
+| 
+| Defined in parabolics.at line number 114.
 | 
 
-
-.. _parabolic_(ratvec,KGBElt->[int],KGBElt)1:
+.. _parabolic_ratvec_lambda,kgbelt_x->parabolic1:
 
 parabolic
 -------------------------------------------------
-| ``parabolic:(ratvec,KGBElt->[int],KGBElt)``
+| ``parabolic:ratvec lambda,KGBElt x->Parabolic``
+| 
+| Defined in parabolics.at line number 119.
 | 
 
-
-.. _Levi_(ratvec,KGBElt->RealForm)1:
+.. _levi_ratvec_lambda,kgbelt_x->realform1:
 
 Levi
 -------------------------------------------------
-| ``Levi:(ratvec,KGBElt->RealForm)``
+| ``Levi:ratvec lambda,KGBElt x->RealForm``
+| 
+| Defined in parabolics.at line number 123.
 | 
 
-
-.. _nilrad_(ratvec,KGBElt->mat)1:
+.. _nilrad_ratvec_lambda,kgbelt_x->mat1:
 
 nilrad
 -------------------------------------------------
-| ``nilrad:(ratvec,KGBElt->mat)``
+| ``nilrad:ratvec lambda,KGBElt x->mat``
+| 
+| Defined in parabolics.at line number 124.
 | 
 
-
-.. _nilrad_roots_(ratvec,KGBElt->mat)1:
+.. _nilrad_roots_ratvec_lambda,kgbelt_x->mat1:
 
 nilrad_roots
 -------------------------------------------------
-| ``nilrad_roots:(ratvec,KGBElt->mat)``
+| ``nilrad_roots:ratvec lambda,KGBElt x->mat``
+| 
+| Defined in parabolics.at line number 125.
 | 
 
-
-.. _rho_u_(ratvec,KGBElt->ratvec)1:
+.. _rho_u_ratvec_lambda,kgbelt_x->ratvec1:
 
 rho_u
 -------------------------------------------------
-| ``rho_u:(ratvec,KGBElt->ratvec)``
+| ``rho_u:ratvec lambda,KGBElt x->ratvec``
+| 
+| Defined in parabolics.at line number 127.
 | 
 
-
-.. _zero_simple_roots_(RootDatum,vec->[int])1:
+.. _zero_simple_roots_rootdatum_rd,_vec_cowt->[int]1:
 
 zero_simple_roots
 -------------------------------------------------
-| ``zero_simple_roots:(RootDatum,vec->[int])``
+| ``zero_simple_roots:RootDatum rd, vec cowt->[int]``
+| 
+| Defined in parabolics.at line number 130.
 | 
 
-
-.. _parabolic_alt_(ratvec,KGBElt->[int],KGBElt)1:
+.. _parabolic_alt_ratvec_h,kgbelt_x->parabolic1:
 
 parabolic_alt
 -------------------------------------------------
-| ``parabolic_alt:(ratvec,KGBElt->[int],KGBElt)``
+| ``parabolic_alt:ratvec H,KGBElt x->Parabolic``
+| 
+| Defined in parabolics.at line number 135.
 | 
 
-
-.. _Levi_alt_(ratvec,KGBElt->RealForm)1:
+.. _levi_alt_ratvec_h,kgbelt_x->realform1:
 
 Levi_alt
 -------------------------------------------------
-| ``Levi_alt:(ratvec,KGBElt->RealForm)``
+| ``Levi_alt:ratvec H,KGBElt x->RealForm``
+| 
+| Defined in parabolics.at line number 139.
 | 
 
-
-.. _nilrad_alt_(ratvec,KGBElt->mat)1:
+.. _nilrad_alt_ratvec_h,kgbelt_x->mat1:
 
 nilrad_alt
 -------------------------------------------------
-| ``nilrad_alt:(ratvec,KGBElt->mat)``
+| ``nilrad_alt:ratvec H,KGBElt x->mat``
+| 
+| Defined in parabolics.at line number 140.
 | 
 
-
-.. _nilrad_roots_alt_(ratvec,KGBElt->mat)1:
+.. _nilrad_roots_alt_ratvec_h,kgbelt_x->mat1:
 
 nilrad_roots_alt
 -------------------------------------------------
-| ``nilrad_roots_alt:(ratvec,KGBElt->mat)``
+| ``nilrad_roots_alt:ratvec H,KGBElt x->mat``
+| 
+| Defined in parabolics.at line number 141.
 | 
 
-
-.. _rho_u_alt_(ratvec,KGBElt->ratvec)1:
+.. _rho_u_alt_ratvec_h,kgbelt_x->ratvec1:
 
 rho_u_alt
 -------------------------------------------------
-| ``rho_u_alt:(ratvec,KGBElt->ratvec)``
+| ``rho_u_alt:ratvec H,KGBElt x->ratvec``
+| 
+| Defined in parabolics.at line number 143.
 | 
 
-
-.. _rho_Levi_alt_(ratvec,KGBElt->ratvec)1:
+.. _rho_levi_alt_ratvec_h,kgbelt_x->ratvec1:
 
 rho_Levi_alt
 -------------------------------------------------
-| ``rho_Levi_alt:(ratvec,KGBElt->ratvec)``
+| ``rho_Levi_alt:ratvec H,KGBElt x->ratvec``
+| 
+| Defined in parabolics.at line number 144.
 | 
 
-
-.. _real_parabolic_(KGBElt->[int],KGBElt)1:
+.. _real_parabolic_kgbelt_x->parabolic1:
 
 real_parabolic
 -------------------------------------------------
-| ``real_parabolic:(KGBElt->[int],KGBElt)``
+| ``real_parabolic:KGBElt x->Parabolic``
+| 
+| Defined in parabolics.at line number 155.
 | 
 
-
-.. _theta_stable_parabolic_(KGBElt->[int],KGBElt)1:
+.. _theta_stable_parabolic_kgbelt_x->parabolic1:
 
 theta_stable_parabolic
 -------------------------------------------------
-| ``theta_stable_parabolic:(KGBElt->[int],KGBElt)``
+| ``theta_stable_parabolic:KGBElt x->Parabolic``
+| 
+| Defined in parabolics.at line number 166.
 | 
 
-
-.. _real_Levi_(KGBElt->RealForm)1:
+.. _real_levi_kgbelt_x->realform1:
 
 real_Levi
 -------------------------------------------------
-| ``real_Levi:(KGBElt->RealForm)``
+| ``real_Levi:KGBElt x->RealForm``
+| 
+| Defined in parabolics.at line number 173.
 | 
 
-
-.. _KGP_(RealForm,(RootDatum,[int])->[([int],KGBElt)])1:
+.. _kgp_realform_g,complexparabolic_(rd,s)->[kgpelt]1:
 
 KGP
 -------------------------------------------------
-| ``KGP:(RealForm,(RootDatum,[int])->[([int],KGBElt)])``
+| ``KGP:RealForm G,ComplexParabolic (rd,S)->[KGPElt]``
+| 
+| Defined in parabolics.at line number 228.
 | 
 
-
-.. _parabolics_(RealForm,(RootDatum,[int])->[([int],KGBElt)])1:
+.. _parabolics_realform_g,complexparabolic_(rd,s)->[parabolic]1:
 
 parabolics
 -------------------------------------------------
-| ``parabolics:(RealForm,(RootDatum,[int])->[([int],KGBElt)])``
+| ``parabolics:RealForm G,ComplexParabolic (rd,S)->[Parabolic]``
+| 
+| Defined in parabolics.at line number 230.
 | 
 
-
-.. _theta_stable_parabolics_(RealForm,(RootDatum,[int])->[([int],KGBElt)])1:
+.. _theta_stable_parabolics_realform_g,complexparabolic_p->[parabolic]1:
 
 theta_stable_parabolics
 -------------------------------------------------
-| ``theta_stable_parabolics:(RealForm,(RootDatum,[int])->[([int],KGBElt)])``
+| ``theta_stable_parabolics:RealForm G,ComplexParabolic P->[Parabolic]``
+| 
+| Defined in parabolics.at line number 233.
 | 
 
-
-.. _theta_stable_parabolics_(RealForm->[([int],KGBElt)])1:
+.. _theta_stable_parabolics_realform_g->[parabolic]1:
 
 theta_stable_parabolics
 -------------------------------------------------
-| ``theta_stable_parabolics:(RealForm->[([int],KGBElt)])``
+| ``theta_stable_parabolics:RealForm G->[Parabolic]``
+| 
+| Defined in parabolics.at line number 238.
 | 
 
-
-.. _theta_stable_parabolics_type_(RealForm,[int]->[([int],KGBElt)])1:
+.. _theta_stable_parabolics_type_realform_g,[int]_p->[parabolic]1:
 
 theta_stable_parabolics_type
 -------------------------------------------------
-| ``theta_stable_parabolics_type:(RealForm,[int]->[([int],KGBElt)])``
+| ``theta_stable_parabolics_type:RealForm G,[int] P->[Parabolic]``
+| 
+| Defined in parabolics.at line number 245.
 | 
 
-
-.. _all_rel_split_theta_stable_parabolics_(RealForm->[([int],KGBElt)])1:
+.. _all_rel_split_theta_stable_parabolics_realform_g->[parabolic]1:
 
 all_rel_split_theta_stable_parabolics
 -------------------------------------------------
-| ``all_rel_split_theta_stable_parabolics:(RealForm->[([int],KGBElt)])``
+| ``all_rel_split_theta_stable_parabolics:RealForm G->[Parabolic]``
+| 
+| Defined in parabolics.at line number 251.
 | 
 
-
-.. _print_theta_stable_parabolics_(RealForm->)1:
+.. _print_theta_stable_parabolics_realform_g->void1:
 
 print_theta_stable_parabolics
 -------------------------------------------------
-| ``print_theta_stable_parabolics:(RealForm->)``
+| ``print_theta_stable_parabolics:RealForm G->void``
 | 
-
+| Defined in parabolics.at line number 259.
+| 
 

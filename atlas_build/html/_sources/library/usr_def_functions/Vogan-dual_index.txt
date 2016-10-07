@@ -10,31 +10,31 @@ Vogan-dual.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`fixed_lift_(mat,ratvec->ratvec,(vec,mat,mat))1`
-     - ``(mat,ratvec->ratvec,(vec,mat,mat))``
-   * - :ref:`integral_shift_(ratvec,mat,(vec,mat,mat)->vec)1`
-     - ``(ratvec,mat,(vec,mat,mat)->vec)``
-   * - :ref:`dual_KGB_(Param,InnerClass->KGBElt)1`
-     - ``(Param,InnerClass->KGBElt)``
-   * - :ref:`central_cocharacter_(RealForm->ratvec)1`
-     - ``(RealForm->ratvec)``
-   * - :ref:`dual_shift_(RootDatum,ratvec->ratvec)1`
-     - ``(RootDatum,ratvec->ratvec)``
-   * - :ref:`ell_(KGBElt->vec)1`
-     - ``(KGBElt->vec)``
-   * - :ref:`dual_gamma_(Param->ratvec)1`
-     - ``(Param->ratvec)``
-   * - :ref:`dual_lambda_(Param->ratvec)1`
-     - ``(Param->ratvec)``
-   * - :ref:`check_dual_lambda_(Param->bool)1`
-     - ``(Param->bool)``
-   * - :ref:`dual_(Param,InnerClass->Param)1`
-     - ``(Param,InnerClass->Param)``
-   * - :ref:`dual_(KGBElt,KGBElt,ratvec->Param)1`
-     - ``(KGBElt,KGBElt,ratvec->Param)``
-   * - :ref:`dual_(KGBElt,KGBElt->Param)1`
-     - ``(KGBElt,KGBElt->Param)``
-   * - :ref:`test1_(Param->[bool])1`
-     - ``(Param->[bool])``
-   * - :ref:`test2_(Param->[bool])1`
-     - ``(Param->[bool])``
+   * - :ref:`fixed_lift_mat_theta_1,ratvec_z->(ratvec,(vec,mat,mat))1`
+     - ``mat theta_1,ratvec z->(ratvec,(vec,mat,mat))``
+   * - :ref:`integral_shift_ratvec_v,_mat_simples,(vec_d,mat_l,mat_r)->vec1`
+     - ``ratvec v, mat simples,(vec d,mat L,mat R)->vec``
+   * - :ref:`dual_kgb_param_p,_innerclass_dual_int_ic->kgbelt1`
+     - ``Param p, InnerClass dual_int_ic->KGBElt``
+   * - :ref:`central_cocharacter_realform_g->ratvec1`
+     - ``RealForm G->ratvec``
+   * - :ref:`dual_shift_rootdatum_rd,_ratvec_gamma->ratvec1`
+     - ``RootDatum rd, ratvec gamma->ratvec``
+   * - :ref:`ell_kgbelt_x->vec1`
+     - ``KGBElt x->vec``
+   * - :ref:`dual_gamma_param_p->ratvec1`
+     - ``Param p->ratvec``
+   * - :ref:`dual_lambda_param_p->ratvec1`
+     - ``Param p->ratvec``
+   * - :ref:`check_dual_lambda_param_p->bool1`
+     - ``Param p->bool``
+   * - :ref:`dual_param_p,_innerclass_dual_integral_class->param1`
+     - ``Param p, InnerClass dual_integral_class->Param``
+   * - :ref:`dual_kgbelt_x,kgbelt_y,_ratvec_gamma->param1`
+     - ``KGBElt x,KGBElt y, ratvec gamma->Param``
+   * - :ref:`dual_kgbelt_x,kgbelt_y->param1`
+     - ``KGBElt x,KGBElt y->Param``
+   * - :ref:`test1_param_p->[bool]1`
+     - ``Param p->[bool]``
+   * - :ref:`test2_param_p->[bool]1`
+     - ``Param p->[bool]``

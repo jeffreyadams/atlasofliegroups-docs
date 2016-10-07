@@ -10,42 +10,15 @@ test_unitarity.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`test_([(Param,bool)]->bool)1`
-     - ``([(Param,bool)]->bool)``
-   * - :ref:`test_([Param]->bool)1`
-     - ``([Param]->bool)``
-   * - :ref:`test_one_(Param,bool->bool)1`
-     - ``(Param,bool->bool)``
-   * - :ref:`test_one_unitary_(Param->bool)1`
-     - ``(Param->bool)``
-   * - :ref:`spherical_unipotent_(RealForm->[Param])1`
-     - ``(RealForm->[Param])``
-   * - :ref:`test1_(->bool)1`
-     - ``(->bool)``
-   * - :ref:`test2_(->bool)1`
-     - ``(->bool)``
-   * - :ref:`test3_(->bool)1`
-     - ``(->bool)``
-   * - :ref:`test4_(->bool)1`
-     - ``(->bool)``
-   * - :ref:`test5_(->bool)1`
-     - ``(->bool)``
-   * - :ref:`test6_(->bool)1`
-     - ``(->bool)``
-   * - :ref:`test7_(->bool)1`
-     - ``(->bool)``
-   * - :ref:`test8_(->bool)1`
-     - ``(->bool)``
-   * - :ref:`test9_(->bool)1`
-     - ``(->bool)``
-
-
-
-.. list-table::
-   :widths: 10 20
-   :header-rows: 1
-
-   * - Variable
-     - Data Type
-   * - :ref:`new_test_bool1`
-     - ``bool``
+   * - :ref:`test_[(param,bool)]_parameters->bool1`
+     - ``[(Param,bool)] parameters->bool``
+   * - :ref:`test_[param]_parameters->bool1`
+     - ``[Param] parameters->bool``
+   * - :ref:`spherical_unipotent_realform_g->[param]1`
+     - ``RealForm G->[Param]``
+   * - :ref:`test7_->bool1`
+     - ``->bool``
+   * - :ref:`test8_->bool1`
+     - ``->bool``
+   * - :ref:`test9_->bool1`
+     - ``->bool``

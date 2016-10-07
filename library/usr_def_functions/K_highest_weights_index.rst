@@ -10,98 +10,85 @@ K_highest_weights.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`\=_((KGBElt,vec),(KGBElt,vec)->bool)1`
-     - ``((KGBElt,vec),(KGBElt,vec)->bool)``
-   * - :ref:`is_split_spherical_(Param->bool)1`
-     - ``(Param->bool)``
-   * - :ref:`is_split_spherical_(KGBElt,ratvec->bool)1`
-     - ``(KGBElt,ratvec->bool)``
-   * - :ref:`highest_weight_split_spherical_(KGBElt,ratvec->KGBElt,vec)1`
-     - ``(KGBElt,ratvec->KGBElt,vec)``
-   * - :ref:`highest_weight_split_spherical_(Param->KGBElt,vec)1`
-     - ``(Param->KGBElt,vec)``
-   * - :ref:`highest_weight_split_spherical_((KGBElt,ratvec),KGBElt->KGBElt,vec)1`
-     - ``((KGBElt,ratvec),KGBElt->KGBElt,vec)``
-   * - :ref:`highest_weight_split_spherical_(Param,KGBElt->KGBElt,vec)1`
-     - ``(Param,KGBElt->KGBElt,vec)``
-   * - :ref:`highest_weight_one_(KGBElt,ratvec->KGBElt,vec)1`
-     - ``(KGBElt,ratvec->KGBElt,vec)``
-   * - :ref:`highest_weight_one_((KGBElt,ratvec),KGBElt->KGBElt,vec)1`
-     - ``((KGBElt,ratvec),KGBElt->KGBElt,vec)``
-   * - :ref:`highest_weights_(KGBElt,ratvec->[(KGBElt,vec)])1`
-     - ``(KGBElt,ratvec->[(KGBElt,vec)])``
-   * - :ref:`highest_weights_((KGBElt,ratvec),KGBElt->[(KGBElt,vec)])1`
-     - ``((KGBElt,ratvec),KGBElt->[(KGBElt,vec)])``
-   * - :ref:`highest_weights_(Param->[(KGBElt,vec)])1`
-     - ``(Param->[(KGBElt,vec)])``
-   * - :ref:`highest_weights_(Param,KGBElt->[(KGBElt,vec)])1`
-     - ``(Param,KGBElt->[(KGBElt,vec)])``
-   * - :ref:`highest_weight_(KGBElt,ratvec->KGBElt,vec)1`
-     - ``(KGBElt,ratvec->KGBElt,vec)``
-   * - :ref:`highest_weight_(Param->KGBElt,vec)1`
-     - ``(Param->KGBElt,vec)``
-   * - :ref:`centralizer_(KGBElt,ratvec->KGBElt,RootDatum)1`
-     - ``(KGBElt,ratvec->KGBElt,RootDatum)``
-   * - :ref:`find_nci_root_(KGBElt,ratvec->int)1`
-     - ``(KGBElt,ratvec->int)``
-   * - :ref:`project_on_dominant_cone_(KGBElt,ratvec->KGBElt,ratvec,ratvec)1`
-     - ``(KGBElt,ratvec->KGBElt,ratvec,ratvec)``
-   * - :ref:`project_on_dominant_cone_(KGBElt,vec->KGBElt,ratvec,ratvec)1`
-     - ``(KGBElt,vec->KGBElt,ratvec,ratvec)``
-   * - :ref:`characters_order_2_(KGBElt->[vec])1`
-     - ``(KGBElt->[vec])``
-   * - :ref:`all_G_spherical_same_differential_(KGBElt,ratvec->[(KGBElt,ratvec)])1`
-     - ``(KGBElt,ratvec->[(KGBElt,ratvec)])``
-   * - :ref:`all_G_spherical_same_differential_(Param->[(KGBElt,ratvec)])1`
-     - ``(Param->[(KGBElt,ratvec)])``
-   * - :ref:`parabolic_(KGBElt,vec->[int],KGBElt)1`
-     - ``(KGBElt,vec->[int],KGBElt)``
-   * - :ref:`make_strongly_dominant_((KGBElt,vec),KGBElt->KGBElt,vec)1`
-     - ``((KGBElt,vec),KGBElt->KGBElt,vec)``
-   * - :ref:`K_types_(KGBElt,vec->[(KGBElt,ratvec)])1`
-     - ``(KGBElt,vec->[(KGBElt,ratvec)])``
-   * - :ref:`K_type_(KGBElt,vec->KGBElt,ratvec)1`
-     - ``(KGBElt,vec->KGBElt,ratvec)``
-   * - :ref:`K0_highest_weight_(KGBElt,vec->Param)1`
-     - ``(KGBElt,vec->Param)``
-   * - :ref:`dimension_(KGBElt,vec->int)1`
-     - ``(KGBElt,vec->int)``
-   * - :ref:`dimension_(KGBElt,ratvec->int)1`
-     - ``(KGBElt,ratvec->int)``
-   * - :ref:`H_weight_(KGBElt,vec->KGBElt,vec)1`
-     - ``(KGBElt,vec->KGBElt,vec)``
-   * - :ref:`fundamental_weights_K_H_(KGBElt->[ratvec])1`
-     - ``(KGBElt->[ratvec])``
-   * - :ref:`K0_param_((KGBElt,ratvec),KGBElt->Param)1`
-     - ``((KGBElt,ratvec),KGBElt->Param)``
-   * - :ref:`K0_param_(KGBElt,ratvec->Param)1`
-     - ``(KGBElt,ratvec->Param)``
-   * - :ref:`K0_params_(Param,KGBElt->[Param])1`
-     - ``(Param,KGBElt->[Param])``
-   * - :ref:`K0_params_(Param->[Param])1`
-     - ``(Param->[Param])``
-   * - :ref:`K0_param_(Param,KGBElt->Param)1`
-     - ``(Param,KGBElt->Param)``
-   * - :ref:`K0_param_(Param->Param)1`
-     - ``(Param->Param)``
-   * - :ref:`fundamental_weight_coordinates_(KGBElt,vec->vec)1`
-     - ``(KGBElt,vec->vec)``
-   * - :ref:`K_highest_weight_from_fundamental_weights_(KGBElt,vec->KGBElt,vec)1`
-     - ``(KGBElt,vec->KGBElt,vec)``
-   * - :ref:`dimensions_(Param,KGBElt->[int])1`
-     - ``(Param,KGBElt->[int])``
-   * - :ref:`dimensions_(Param->[int])1`
-     - ``(Param->[int])``
-   * - :ref:`dimensions_([Param]->[[int]])1`
-     - ``([Param]->[[int]])``
-
-
-
-.. list-table::
-   :widths: 10 20
-   :header-rows: 1
-
-   * - Variable
-     - Data Type
-   * - :ref:`LKT_verbose_bool1`
-     - ``bool``
+   * - :ref:`\=_khighestweight_(x,mu),_khighestweight_(y,tau)->bool1`
+     - ``KHighestWeight (x,mu), KHighestWeight (y,tau)->bool``
+   * - :ref:`is_split_spherical_param_p->bool1`
+     - ``Param p->bool``
+   * - :ref:`is_split_spherical_k_type_p->bool1`
+     - ``K_Type p->bool``
+   * - :ref:`highest_weight_split_spherical_k_type_p->khighestweight1`
+     - ``K_Type p->KHighestWeight``
+   * - :ref:`highest_weight_split_spherical_param_p->khighestweight1`
+     - ``Param p->KHighestWeight``
+   * - :ref:`highest_weight_split_spherical_k_type_p,kgbelt_x_k->khighestweight1`
+     - ``K_Type p,KGBElt x_K->KHighestWeight``
+   * - :ref:`highest_weight_split_spherical_param_p,kgbelt_x_k->khighestweight1`
+     - ``Param p,KGBElt x_K->KHighestWeight``
+   * - :ref:`highest_weight_one_k_type_p->khighestweight1`
+     - ``K_Type p->KHighestWeight``
+   * - :ref:`highest_weight_one_k_type_p,kgbelt_x_k->khighestweight1`
+     - ``K_Type p,KGBElt x_K->KHighestWeight``
+   * - :ref:`highest_weights_k_type_p->[khighestweight]1`
+     - ``K_Type p->[KHighestWeight]``
+   * - :ref:`highest_weights_k_type_p,kgbelt_x_k->[khighestweight]1`
+     - ``K_Type p,KGBElt x_K->[KHighestWeight]``
+   * - :ref:`highest_weights_param_p->[khighestweight]1`
+     - ``Param p->[KHighestWeight]``
+   * - :ref:`highest_weights_param_p,kgbelt_x_k->[khighestweight]1`
+     - ``Param p,KGBElt x_K->[KHighestWeight]``
+   * - :ref:`highest_weight_k_type_p->khighestweight1`
+     - ``K_Type p->KHighestWeight``
+   * - :ref:`highest_weight_param_p->khighestweight1`
+     - ``Param p->KHighestWeight``
+   * - :ref:`centralizer_kgbelt_x,ratvec_v->(kgbelt,rootdatum)1`
+     - ``KGBElt x,ratvec v->(KGBElt,RootDatum)``
+   * - :ref:`find_nci_root_kgbelt_x,ratvec_tau->int1`
+     - ``KGBElt x,ratvec tau->int``
+   * - :ref:`project_on_dominant_cone_kgbelt_x,_ratvec_mu->(kgbelt,ratvec,ratvec)1`
+     - ``KGBElt x, ratvec mu->(KGBElt,ratvec,ratvec)``
+   * - :ref:`project_on_dominant_cone_kgbelt_x,_vec_mu->(kgbelt,ratvec,ratvec)1`
+     - ``KGBElt x, vec mu->(KGBElt,ratvec,ratvec)``
+   * - :ref:`characters_order_2_kgbelt_x->[vec]1`
+     - ``KGBElt x->[vec]``
+   * - :ref:`all_g_spherical_same_differential_k_type_p->[k_type]1`
+     - ``K_Type p->[K_Type]``
+   * - :ref:`all_g_spherical_same_differential_param_p->[k_type]1`
+     - ``Param p->[K_Type]``
+   * - :ref:`parabolic_khighestweight_(x,mu)->parabolic1`
+     - ``KHighestWeight (x,mu)->Parabolic``
+   * - :ref:`make_strongly_dominant_khighestweight_mu,kgbelt_x_q->khighestweight1`
+     - ``KHighestWeight mu,KGBElt x_Q->KHighestWeight``
+   * - :ref:`k_types_khighestweight_mu_in->[k_type]1`
+     - ``KHighestWeight mu_in->[K_Type]``
+   * - :ref:`k_type_khighestweight(x,mu)->k_type1`
+     - ``KHighestWeight(x,mu)->K_Type``
+   * - :ref:`k0_highest_weight_khighestweight(x,mu)->param1`
+     - ``KHighestWeight(x,mu)->Param``
+   * - :ref:`dimension_khighestweight_mu->int1`
+     - ``KHighestWeight mu->int``
+   * - :ref:`dimension_k_type_p->int1`
+     - ``K_Type p->int``
+   * - :ref:`h_weight_kgbelt_x,vec_mu_k->khighestweight1`
+     - ``KGBElt x,vec mu_K->KHighestWeight``
+   * - :ref:`fundamental_weights_k_h_kgbelt_x->[ratvec]1`
+     - ``KGBElt x->[ratvec]``
+   * - :ref:`k0_param_k_type_p,kgbelt_x_k->param1`
+     - ``K_Type p,KGBElt x_K->Param``
+   * - :ref:`k0_param_k_type_p->param1`
+     - ``K_Type p->Param``
+   * - :ref:`k0_params_param_p,kgbelt_x_k->[param]1`
+     - ``Param p,KGBElt x_K->[Param]``
+   * - :ref:`k0_params_param_p->[param]1`
+     - ``Param p->[Param]``
+   * - :ref:`k0_param_param_p,kgbelt_x_k->param1`
+     - ``Param p,KGBElt x_K->Param``
+   * - :ref:`k0_param_param_p->param1`
+     - ``Param p->Param``
+   * - :ref:`fundamental_weight_coordinates_khighestweight_(x,mu)->vec1`
+     - ``KHighestWeight (x,mu)->vec``
+   * - :ref:`dimensions_param_p,_kgbelt_x_k->[int]1`
+     - ``Param p, KGBElt x_K->[int]``
+   * - :ref:`dimensions_param_p->[int]1`
+     - ``Param p->[int]``
+   * - :ref:`dimensions_[param]_b->[[int]]1`
+     - ``[Param] B->[[int]]``

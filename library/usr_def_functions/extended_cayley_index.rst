@@ -10,13 +10,13 @@ extended_cayley.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`test_ext_cayley_(Param,int,string,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->)1`
-     - ``(Param,int,string,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->)``
-   * - :ref:`ext_Cayley_1_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
-   * - :ref:`ext_Cayley_2_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
-   * - :ref:`ext_Cayley_3_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
-   * - :ref:`ext_Cayley_simple_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
+   * - :ref:`test_ext_cayley_param_p,_int_j,_string_ext_type,_extended_param_e->void1`
+     - ``Param p, int j, string ext_type, extended_param E->void``
+   * - :ref:`ext_cayley_1_int_j,_extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[extended_param]1`
+     - ``int j, extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]``
+   * - :ref:`ext_cayley_2_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[extended_param]1`
+     - ``int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]``
+   * - :ref:`ext_cayley_3_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[extended_param]1`
+     - ``int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]``
+   * - :ref:`ext_cayley_simple_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[extended_param]1`
+     - ``int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]``

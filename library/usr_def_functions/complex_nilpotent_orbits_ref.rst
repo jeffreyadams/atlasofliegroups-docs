@@ -4,419 +4,345 @@ complex_nilpotent_orbits.at Function References
 =======================================================
 |
 
-.. _root_datum_of_(RootDatum,vec->RootDatum)1:
+.. _root_datum_of_complexnilpotent_o->rootdatum1:
 
 root_datum_of
 -------------------------------------------------
-| ``root_datum_of:(RootDatum,vec->RootDatum)``
+| ``root_datum_of:ComplexNilpotent O->RootDatum``
+| 
+| Defined in complex_nilpotent_orbits.at line number 16.
 | 
 
-
-.. _semisimple_element_(RootDatum,vec->vec)1:
+.. _semisimple_element_complexnilpotent_o->vec1:
 
 semisimple_element
 -------------------------------------------------
-| ``semisimple_element:(RootDatum,vec->vec)``
+| ``semisimple_element:ComplexNilpotent O->vec``
+| 
+| Defined in complex_nilpotent_orbits.at line number 17.
 | 
 
-
-.. _dim_nilpotent_(RootDatum,ratvec->int)1:
+.. _dim_nilpotent_rootdatum_rd,ratvec_h->int1:
 
 dim_nilpotent
 -------------------------------------------------
-| ``dim_nilpotent:(RootDatum,ratvec->int)``
+| ``dim_nilpotent:RootDatum rd,ratvec H->int``
+| 
+| Defined in complex_nilpotent_orbits.at line number 19.
 | 
 
-
-.. _diagram_(RootDatum,vec->[int])1:
+.. _diagram_complexnilpotent_o->[int]1:
 
 diagram
 -------------------------------------------------
-| ``diagram:(RootDatum,vec->[int])``
+| ``diagram:ComplexNilpotent O->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 27.
 | 
 
-
-.. _dim_nilpotent_(RootDatum,vec->int)1:
-
-dim_nilpotent
--------------------------------------------------
-| ``dim_nilpotent:(RootDatum,vec->int)``
-| 
-
-
-.. _dim_eigenspace_(RootDatum,ratvec,int->int)1:
+.. _dim_eigenspace_rootdatum_rd,_ratvec_h,_int_k->int1:
 
 dim_eigenspace
 -------------------------------------------------
-| ``dim_eigenspace:(RootDatum,ratvec,int->int)``
+| ``dim_eigenspace:RootDatum rd, ratvec H, int k->int``
+| 
+| Defined in complex_nilpotent_orbits.at line number 33.
 | 
 
-
-.. _max_eigenspace_(RootDatum,ratvec->int)1:
+.. _max_eigenspace_rootdatum_rd,_ratvec_h->int1:
 
 max_eigenspace
 -------------------------------------------------
-| ``max_eigenspace:(RootDatum,ratvec->int)``
+| ``max_eigenspace:RootDatum rd, ratvec H->int``
+| 
+| Defined in complex_nilpotent_orbits.at line number 42.
 | 
 
-
-.. _all_eigenspaces_(RootDatum,ratvec->[int])1:
+.. _all_eigenspaces_rootdatum_rd,_ratvec_h->[int]1:
 
 all_eigenspaces
 -------------------------------------------------
-| ``all_eigenspaces:(RootDatum,ratvec->[int])``
+| ``all_eigenspaces:RootDatum rd, ratvec H->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 46.
 | 
 
-
-.. _extract_even_([int]->[int])1:
+.. _extract_even_[int]_v->for_i1:
 
 extract_even
 -------------------------------------------------
-| ``extract_even:([int]->[int])``
+| ``extract_even:[int] v->for i``
+| 
+| Defined in complex_nilpotent_orbits.at line number 56.
 | 
 
-
-.. _extract_odd_([int]->[int])1:
+.. _extract_odd_[int]_v->for_i1:
 
 extract_odd
 -------------------------------------------------
-| ``extract_odd:([int]->[int])``
+| ``extract_odd:[int] v->for i``
+| 
+| Defined in complex_nilpotent_orbits.at line number 57.
 | 
 
-
-.. _is_decreasing_([int]->bool)1:
-
-is_decreasing
--------------------------------------------------
-| ``is_decreasing:([int]->bool)``
-| 
-
-
-.. _even_eigenspaces_(RootDatum,ratvec->[int])1:
+.. _even_eigenspaces_rootdatum_rd,_ratvec_h->[int]1:
 
 even_eigenspaces
 -------------------------------------------------
-| ``even_eigenspaces:(RootDatum,ratvec->[int])``
+| ``even_eigenspaces:RootDatum rd, ratvec H->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 62.
 | 
 
-
-.. _odd_eigenspaces_(RootDatum,ratvec->[int])1:
+.. _odd_eigenspaces_rootdatum_rd,_ratvec_h->[int]1:
 
 odd_eigenspaces
 -------------------------------------------------
-| ``odd_eigenspaces:(RootDatum,ratvec->[int])``
+| ``odd_eigenspaces:RootDatum rd, ratvec H->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 63.
 | 
 
-
-.. _support_(KGBElt->[int])1:
+.. _support_kgbelt_x->[int]1:
 
 support
 -------------------------------------------------
-| ``support:(KGBElt->[int])``
+| ``support:KGBElt x->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 77.
 | 
 
-
-.. _support_(Param->[int])1:
+.. _support_param_p->[int]1:
 
 support
 -------------------------------------------------
-| ``support:(Param->[int])``
+| ``support:Param p->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 82.
 | 
 
-
-.. _blocku_(RealForm->[Param])1:
+.. _blocku_realform_g->[param]1:
 
 blocku
 -------------------------------------------------
-| ``blocku:(RealForm->[Param])``
+| ``blocku:RealForm G->[Param]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 84.
 | 
 
-
-.. _sort_by_((vec,rat->rat)->([(vec,rat)]->[(vec,rat)]))1:
+.. _sort_by_((vec,_rat)->_rat)_f->([(vec,rat)]_v)_[(vec,rat)]1:
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((vec,rat->rat)->([(vec,rat)]->[(vec,rat)]))``
+| ``sort_by:((vec, rat)-> rat) f->([(vec,rat)] v) [(vec,rat)]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 90.
 | 
 
-
-.. _sort_by_length_([(vec,rat)]->[(vec,rat)])1:
-
-sort_by_length
--------------------------------------------------
-| ``sort_by_length:([(vec,rat)]->[(vec,rat)])``
-| 
-
-
-.. _smash_([int],[[int]]->[[int]])1:
+.. _smash_[int]_v,[[int]]_a->[[int]]1:
 
 smash
 -------------------------------------------------
-| ``smash:([int],[[int]]->[[int]])``
+| ``smash:[int] v,[[int]] A->[[int]]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 97.
 | 
 
+.. _rec_fun box_int_height,_int_rank->[[int]]1:
 
-.. _box_(int,int->[[int]])1:
-
-box
+rec_fun box
 -------------------------------------------------
-| ``box:(int,int->[[int]])``
+| ``rec_fun box:int height, int rank->[[int]]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 102.
 | 
 
+.. _rec_fun box_[int]_heights->[[int]]1:
 
-.. _box_([int]->[[int]])1:
-
-box
+rec_fun box
 -------------------------------------------------
-| ``box:([int]->[[int]])``
+| ``rec_fun box:[int] heights->[[int]]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 106.
 | 
 
-
-.. _flatten_([[int]]->[int])1:
-
-flatten
--------------------------------------------------
-| ``flatten:([[int]]->[int])``
-| 
-
-
-.. _all_H_(RootDatum->[(vec,rat)])1:
+.. _all_h_rootdatum_rd->[(vec,rat)]1:
 
 all_H
 -------------------------------------------------
-| ``all_H:(RootDatum->[(vec,rat)])``
+| ``all_H:RootDatum rd->[(vec,rat)]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 115.
 | 
 
-
-.. _all_H_dimensions_(RootDatum->[int])1:
+.. _all_h_dimensions_rootdatum_rd->[int]1:
 
 all_H_dimensions
 -------------------------------------------------
-| ``all_H_dimensions:(RootDatum->[int])``
+| ``all_H_dimensions:RootDatum rd->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 128.
 | 
 
-
-.. _sort_by_((ratvec,[vec]->int)->([(ratvec,[vec])]->[(ratvec,[vec])]))1:
+.. _sort_by_((ratvec,_[vec])->_int)_f->([(ratvec,[vec])]_v)_[(ratvec,[vec])]1:
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((ratvec,[vec]->int)->([(ratvec,[vec])]->[(ratvec,[vec])]))``
+| ``sort_by:((ratvec, [vec])-> int) f->([(ratvec,[vec])] v) [(ratvec,[vec])]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 133.
 | 
 
-
-.. _sort_by_dimension_of_2_eigenspace_([(ratvec,[vec])]->[(ratvec,[vec])])1:
-
-sort_by_dimension_of_2_eigenspace
--------------------------------------------------
-| ``sort_by_dimension_of_2_eigenspace:([(ratvec,[vec])]->[(ratvec,[vec])])``
-| 
-
-
-.. _find_H_([int],KGBElt->[(vec,[vec])])1:
+.. _find_h_parabolic_p->[(vec,[vec])]1:
 
 find_H
 -------------------------------------------------
-| ``find_H:([int],KGBElt->[(vec,[vec])])``
+| ``find_H:Parabolic P->[(vec,[vec])]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 153.
 | 
 
-
-.. _max_only_([(vec,[vec])]->[(vec,[vec])])1:
+.. _max_only_[(vec,[vec])]_arg->[(vec,[vec])]1:
 
 max_only
 -------------------------------------------------
-| ``max_only:([(vec,[vec])]->[(vec,[vec])])``
+| ``max_only:[(vec,[vec])] arg->[(vec,[vec])]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 172.
 | 
 
-
-.. _<=_([int],[int]->bool)1:
+.. _<=_[int]_a,[int]_b->all(for_i1:
 
 <=
 -------------------------------------------------
-| ``<=:([int],[int]->bool)``
+| ``<=:[int] a,[int] b->all(for i``
+| 
+| Defined in complex_nilpotent_orbits.at line number 233.
 | 
 
-
-.. _<_([int],[int]->bool)1:
-
-<
--------------------------------------------------
-| ``<:([int],[int]->bool)``
-| 
-
-
-.. _principal_block_(RealForm->Block)1:
+.. _principal_block_realform_g->block1:
 
 principal_block
 -------------------------------------------------
-| ``principal_block:(RealForm->Block)``
+| ``principal_block:RealForm G->Block``
+| 
+| Defined in complex_nilpotent_orbits.at line number 236.
 | 
 
-
-.. _convert_(Block,ratvec->[Param])1:
-
-convert
--------------------------------------------------
-| ``convert:(Block,ratvec->[Param])``
-| 
-
-
-.. _convert_(Block,[int],ratvec->[Param])1:
-
-convert
--------------------------------------------------
-| ``convert:(Block,[int],ratvec->[Param])``
-| 
-
-
-.. _real_form_(Block->RealForm)1:
+.. _real_form_block_b->realform1:
 
 real_form
 -------------------------------------------------
-| ``real_form:(Block->RealForm)``
+| ``real_form:Block B->RealForm``
+| 
+| Defined in complex_nilpotent_orbits.at line number 256.
 | 
 
-
-.. _rho_(Block->ratvec)1:
+.. _rho_block_b->ratvec1:
 
 rho
 -------------------------------------------------
-| ``rho:(Block->ratvec)``
+| ``rho:Block B->ratvec``
+| 
+| Defined in complex_nilpotent_orbits.at line number 257.
 | 
 
-
-.. _choose_gamma_(KGBElt,KGBElt->ratvec)1:
+.. _choose_gamma_kgbelt_x,kgbelt_y->ratvec1:
 
 choose_gamma
 -------------------------------------------------
-| ``choose_gamma:(KGBElt,KGBElt->ratvec)``
+| ``choose_gamma:KGBElt x,KGBElt y->ratvec``
+| 
+| Defined in complex_nilpotent_orbits.at line number 260.
 | 
 
-
-.. _choose_gamma_(Block->ratvec)1:
+.. _choose_gamma_block_b->ratvec1:
 
 choose_gamma
 -------------------------------------------------
-| ``choose_gamma:(Block->ratvec)``
+| ``choose_gamma:Block B->ratvec``
+| 
+| Defined in complex_nilpotent_orbits.at line number 263.
 | 
 
-
-.. _convert_(Block->[Param])1:
-
-convert
--------------------------------------------------
-| ``convert:(Block->[Param])``
-| 
-
-
-.. _convert_(Block,[int]->[Param])1:
-
-convert
--------------------------------------------------
-| ``convert:(Block,[int]->[Param])``
-| 
-
-
-.. _convert_list_W_cells_(Block,ratvec,[[int]]->[[Param]])1:
+.. _convert_list_w_cells_block_b,ratvec_gamma,[[int]]_wcells->[[param]]1:
 
 convert_list_W_cells
 -------------------------------------------------
-| ``convert_list_W_cells:(Block,ratvec,[[int]]->[[Param]])``
+| ``convert_list_W_cells:Block B,ratvec gamma,[[int]] Wcells->[[Param]]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 269.
 | 
 
-
-.. _tau_invariants_(Block->[[int]])1:
+.. _tau_invariants_block_b->[[int]]1:
 
 tau_invariants
 -------------------------------------------------
-| ``tau_invariants:(Block->[[int]])``
+| ``tau_invariants:Block B->[[int]]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 277.
 | 
 
-
-.. _tau_invariants_of_cell_(Block,[int]->[(int,[int])])1:
+.. _tau_invariants_of_cell_block_b,_[int]_cell->[(int,[int])]1:
 
 tau_invariants_of_cell
 -------------------------------------------------
-| ``tau_invariants_of_cell:(Block,[int]->[(int,[int])])``
+| ``tau_invariants_of_cell:Block B, [int] cell->[(int,[int])]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 281.
 | 
 
-
-.. _tau_invariants_of_cell_raw_(Block,[int]->[[int]])1:
+.. _tau_invariants_of_cell_raw_block_b,_[int]_cell->[[int]]1:
 
 tau_invariants_of_cell_raw
 -------------------------------------------------
-| ``tau_invariants_of_cell_raw:(Block,[int]->[[int]])``
+| ``tau_invariants_of_cell_raw:Block B, [int] cell->[[int]]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 285.
 | 
 
-
-.. _tau_containing_(Block,[int]->[int])1:
+.. _tau_containing_block_b,[int]_p->[int]1:
 
 tau_containing
 -------------------------------------------------
-| ``tau_containing:(Block,[int]->[int])``
+| ``tau_containing:Block B,[int] P->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 289.
 | 
 
-
-.. _is_Aq_(Param->bool)1:
+.. _is_aq_param_p->bool1:
 
 is_Aq
 -------------------------------------------------
-| ``is_Aq:(Param->bool)``
+| ``is_Aq:Param p->bool``
+| 
+| Defined in complex_nilpotent_orbits.at line number 294.
 | 
 
-
-.. _is_Aq_(KGBElt,KGBElt->bool)1:
-
-is_Aq
--------------------------------------------------
-| ``is_Aq:(KGBElt,KGBElt->bool)``
-| 
-
-
-.. _Blocku_(RealForm->[int])1:
+.. _blocku_realform_g->[int]1:
 
 Blocku
 -------------------------------------------------
-| ``Blocku:(RealForm->[int])``
+| ``Blocku:RealForm G->[int]``
+| 
+| Defined in complex_nilpotent_orbits.at line number 304.
 | 
 
-
-.. _is_Aq_cell_(Block,[int]->bool)1:
+.. _is_aq_cell_block_b,[int]_c->bool1:
 
 is_Aq_cell
 -------------------------------------------------
-| ``is_Aq_cell:(Block,[int]->bool)``
+| ``is_Aq_cell:Block B,[int] C->bool``
+| 
+| Defined in complex_nilpotent_orbits.at line number 309.
 | 
 
-
-.. _is_Aq_(Block,int->bool)1:
+.. _is_aq_block_b,int_i->bool1:
 
 is_Aq
 -------------------------------------------------
-| ``is_Aq:(Block,int->bool)``
+| ``is_Aq:Block B,int i->bool``
 | 
-
-
-.. _Aq_cells_(Block,[[int]]->[[int]])1:
-
-Aq_cells
--------------------------------------------------
-| ``Aq_cells:(Block,[[int]]->[[int]])``
+| Defined in complex_nilpotent_orbits.at line number 312.
 | 
-
-
-.. _Aq_reps_(Block,[int]->[int])1:
-
-Aq_reps
--------------------------------------------------
-| ``Aq_reps:(Block,[int]->[int])``
-| 
-
-
-.. _Aq_cells_(RealForm,[[int]]->[[int]])1:
-
-Aq_cells
--------------------------------------------------
-| ``Aq_cells:(RealForm,[[int]]->[[int]])``
-| 
-
 

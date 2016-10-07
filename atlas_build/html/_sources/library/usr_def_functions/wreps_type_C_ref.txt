@@ -4,363 +4,372 @@ wreps_type_C.at Function References
 =======================================================
 |
 
-.. _normalize_([int]->[int])1:
+.. _normalize_[int]_v->[int]1:
 
 normalize
 -------------------------------------------------
-| ``normalize:([int]->[int])``
+| ``normalize:[int] v->[int]``
+| 
+| Defined in wreps_type_C.at line number 28.
 | 
 
-
-.. _expand_([int],int->[int])1:
+.. _expand_[int]_v,_int_r->[int]1:
 
 expand
 -------------------------------------------------
-| ``expand:([int],int->[int])``
+| ``expand:[int] v, int r->[int]``
+| 
+| Defined in wreps_type_C.at line number 34.
 | 
 
-
-.. _normalize_([[int]]->[[int]])1:
+.. _normalize_symbol_s->symbol1:
 
 normalize
 -------------------------------------------------
-| ``normalize:([[int]]->[[int]])``
+| ``normalize:Symbol S->Symbol``
+| 
+| Defined in wreps_type_C.at line number 37.
 | 
 
-
-.. _rank_([int]->int)1:
+.. _rank_[int]_f->int1:
 
 rank
 -------------------------------------------------
-| ``rank:([int]->int)``
+| ``rank:[int] f->int``
+| 
+| Defined in wreps_type_C.at line number 48.
 | 
 
-
-.. _rank_([[int]]->int)1:
+.. _rank_symbol_s->int1:
 
 rank
 -------------------------------------------------
-| ``rank:([[int]]->int)``
+| ``rank:Symbol S->int``
+| 
+| Defined in wreps_type_C.at line number 49.
 | 
 
-
-.. _symbol_([int]->[[int]])1:
+.. _symbol_orbit_p->symbol1:
 
 symbol
 -------------------------------------------------
-| ``symbol:([int]->[[int]])``
+| ``symbol:Orbit P->Symbol``
+| 
+| Defined in wreps_type_C.at line number 55.
 | 
 
-
-.. _wrep_([[int]]->[int],[int])1:
+.. _wrep_symbol_s->wrep1:
 
 wrep
 -------------------------------------------------
-| ``wrep:([[int]]->[int],[int])``
+| ``wrep:Symbol S->Wrep``
+| 
+| Defined in wreps_type_C.at line number 64.
 | 
 
-
-.. _wrep_([int]->[int],[int])1:
+.. _wrep_orbit_p->wrep1:
 
 wrep
 -------------------------------------------------
-| ``wrep:([int]->[int],[int])``
+| ``wrep:Orbit P->Wrep``
+| 
+| Defined in wreps_type_C.at line number 72.
 | 
 
-
-.. _orbit_([[int]]->[int])1:
+.. _orbit_symbol_s->orbit1:
 
 orbit
 -------------------------------------------------
-| ``orbit:([[int]]->[int])``
+| ``orbit:Symbol S->Orbit``
+| 
+| Defined in wreps_type_C.at line number 75.
 | 
 
-
-.. _symbol_([int],[int]->[[int]])1:
+.. _symbol_wrep_sigma->symbol1:
 
 symbol
 -------------------------------------------------
-| ``symbol:([int],[int]->[[int]])``
+| ``symbol:Wrep sigma->Symbol``
+| 
+| Defined in wreps_type_C.at line number 85.
 | 
 
-
-.. _orbit_([int],[int]->[int])1:
+.. _orbit_wrep_sigma->orbit1:
 
 orbit
 -------------------------------------------------
-| ``orbit:([int],[int]->[int])``
+| ``orbit:Wrep sigma->Orbit``
+| 
+| Defined in wreps_type_C.at line number 92.
 | 
 
-
-.. _\=_(([int],[int]),([int],[int])->bool)1:
+.. _\=_wrep__a,wrep_b->bool1:
 
 \=
 -------------------------------------------------
-| ``=:(([int],[int]),([int],[int])->bool)``
+| ``=:Wrep  a,Wrep b->bool``
+| 
+| Defined in wreps_type_C.at line number 95.
 | 
 
-
-.. _symbols_equal_([[int]],[[int]]->bool)1:
+.. _symbols_equal_symbol_a,symbol_b->bool1:
 
 symbols_equal
 -------------------------------------------------
-| ``symbols_equal:([[int]],[[int]]->bool)``
+| ``symbols_equal:Symbol a,Symbol b->bool``
+| 
+| Defined in wreps_type_C.at line number 98.
 | 
 
-
-.. _dimension_([int],[int]->int)1:
+.. _dimension_wrep_sigma->int1:
 
 dimension
 -------------------------------------------------
-| ``dimension:([int],[int]->int)``
+| ``dimension:Wrep sigma->int``
+| 
+| Defined in wreps_type_C.at line number 100.
 | 
 
-
-.. _all_reps_C_(int->[([int],[int])])1:
-
-all_reps_C
--------------------------------------------------
-| ``all_reps_C:(int->[([int],[int])])``
-| 
-
-
-.. _is_special_([[int]]->bool)1:
+.. _is_special_symbol_s->bool1:
 
 is_special
 -------------------------------------------------
-| ``is_special:([[int]]->bool)``
+| ``is_special:Symbol S->bool``
+| 
+| Defined in wreps_type_C.at line number 113.
 | 
 
-
-.. _is_special_([int]->bool)1:
+.. _is_special_orbit_p->bool1:
 
 is_special
 -------------------------------------------------
-| ``is_special:([int]->bool)``
+| ``is_special:Orbit P->bool``
+| 
+| Defined in wreps_type_C.at line number 117.
 | 
 
-
-.. _is_special_([int],[int]->bool)1:
+.. _is_special_wrep_sigma->bool1:
 
 is_special
 -------------------------------------------------
-| ``is_special:([int],[int]->bool)``
+| ``is_special:Wrep sigma->bool``
+| 
+| Defined in wreps_type_C.at line number 118.
 | 
 
-
-.. _special_star_([[int]]->string)1:
+.. _special_star_symbol_s->string1:
 
 special_star
 -------------------------------------------------
-| ``special_star:([[int]]->string)``
+| ``special_star:Symbol S->string``
+| 
+| Defined in wreps_type_C.at line number 120.
 | 
 
-
-.. _special_star_([int]->string)1:
+.. _special_star_orbit_p->string1:
 
 special_star
 -------------------------------------------------
-| ``special_star:([int]->string)``
+| ``special_star:Orbit P->string``
+| 
+| Defined in wreps_type_C.at line number 121.
 | 
 
-
-.. _special_star_([int],[int]->string)1:
+.. _special_star_wrep_sigma->string1:
 
 special_star
 -------------------------------------------------
-| ``special_star:([int],[int]->string)``
+| ``special_star:Wrep sigma->string``
+| 
+| Defined in wreps_type_C.at line number 122.
 | 
 
-
-.. _symbols_(RootDatum->[[[int]]])1:
+.. _symbols_rootdatum_rd->[symbol]1:
 
 symbols
 -------------------------------------------------
-| ``symbols:(RootDatum->[[[int]]])``
+| ``symbols:RootDatum rd->[Symbol]``
+| 
+| Defined in wreps_type_C.at line number 124.
 | 
 
-
-.. _wreps_(RootDatum->[([int],[int])])1:
+.. _wreps_rootdatum_rd->[wrep]1:
 
 wreps
 -------------------------------------------------
-| ``wreps:(RootDatum->[([int],[int])])``
+| ``wreps:RootDatum rd->[Wrep]``
+| 
+| Defined in wreps_type_C.at line number 125.
 | 
 
-
-.. _cut_off_string_([int]->int,[int])1:
+.. _cut_off_string_[int]_v)=(int,[int]->last(#v,_(int_i)bool1:
 
 cut_off_string
 -------------------------------------------------
-| ``cut_off_string:([int]->int,[int])``
+| ``cut_off_string:[int] v)=(int,[int]->last(#v, (int i)bool``
+| 
+| Defined in wreps_type_C.at line number 158.
 | 
 
-
-.. _cut_off_last_string_([int]->int,[int])1:
+.. _cut_off_last_string_[int]_v->(int,[int])1:
 
 cut_off_last_string
 -------------------------------------------------
-| ``cut_off_last_string:([int]->int,[int])``
+| ``cut_off_last_string:[int] v->(int,[int])``
+| 
+| Defined in wreps_type_C.at line number 169.
 | 
 
-
-.. _extract_strings_([int]->[int])1:
+.. _extract_strings_[int]_v->[int]1:
 
 extract_strings
 -------------------------------------------------
-| ``extract_strings:([int]->[int])``
+| ``extract_strings:[int] v->[int]``
+| 
+| Defined in wreps_type_C.at line number 176.
 | 
 
-
-.. _A_Levi_factor_(int,[int]->[int])1:
+.. _a_levi_factor_int_rank,_[int]_tau->[int]1:
 
 A_Levi_factor
 -------------------------------------------------
-| ``A_Levi_factor:(int,[int]->[int])``
+| ``A_Levi_factor:int rank, [int] tau->[int]``
+| 
+| Defined in wreps_type_C.at line number 181.
 | 
 
-
-.. _AC_Levi_factor_(int,[int]->int,[int])1:
+.. _ac_levi_factor_int_rank,_[int]_tau->(int,[int])1:
 
 AC_Levi_factor
 -------------------------------------------------
-| ``AC_Levi_factor:(int,[int]->int,[int])``
+| ``AC_Levi_factor:int rank, [int] tau->(int,[int])``
+| 
+| Defined in wreps_type_C.at line number 191.
 | 
 
-
-.. _is_max_([[int]],[int]->bool)1:
+.. _is_max_[[int]]_taus,[int]_tau->bool1:
 
 is_max
 -------------------------------------------------
-| ``is_max:([[int]],[int]->bool)``
+| ``is_max:[[int]] taus,[int] tau->bool``
+| 
+| Defined in wreps_type_C.at line number 199.
 | 
 
-
-.. _max_only_([[int]]->[[int]])1:
+.. _max_only_[[int]]_taus->[[int]]1:
 
 max_only
 -------------------------------------------------
-| ``max_only:([[int]]->[[int]])``
+| ``max_only:[[int]] taus->[[int]]``
+| 
+| Defined in wreps_type_C.at line number 203.
 | 
 
-
-.. _Levi_signature_(int,[[int]]->[[int]],[(int,[int])])1:
+.. _levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])1:
 
 Levi_signature
 -------------------------------------------------
-| ``Levi_signature:(int,[[int]]->[[int]],[(int,[int])])``
+| ``Levi_signature:int rank,[[int]] tau_invariants->([[int]],[(int,[int])])``
+| 
+| Defined in wreps_type_C.at line number 209.
 | 
 
-
-.. _my_max_([int]->int)1:
-
-my_max
--------------------------------------------------
-| ``my_max:([int]->int)``
-| 
-
-
-.. _max_first_entry_([[int]]->int)1:
+.. _max_first_entry_[[int]]_v->int1:
 
 max_first_entry
 -------------------------------------------------
-| ``max_first_entry:([[int]]->int)``
+| ``max_first_entry:[[int]] v->int``
+| 
+| Defined in wreps_type_C.at line number 226.
 | 
 
-
-.. _keep_by_first_entry_([[int]],int->[[int]])1:
+.. _keep_by_first_entry_[[int]]_v,int_k->[[int]]1:
 
 keep_by_first_entry
 -------------------------------------------------
-| ``keep_by_first_entry:([[int]],int->[[int]])``
+| ``keep_by_first_entry:[[int]] v,int k->[[int]]``
+| 
+| Defined in wreps_type_C.at line number 228.
 | 
 
-
-.. _keep_by_first_entry_and_truncate_([[int]],int->[[int]])1:
+.. _keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]1:
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
-| ``keep_by_first_entry_and_truncate:([[int]],int->[[int]])``
+| ``keep_by_first_entry_and_truncate:[[int]] v,int k->[[int]]``
+| 
+| Defined in wreps_type_C.at line number 232.
 | 
 
-
-.. _max_tagged_entry_([(int,[int])]->int)1:
+.. _max_tagged_entry_[(int,[int])]_v->int1:
 
 max_tagged_entry
 -------------------------------------------------
-| ``max_tagged_entry:([(int,[int])]->int)``
+| ``max_tagged_entry:[(int,[int])] v->int``
+| 
+| Defined in wreps_type_C.at line number 240.
 | 
 
-
-.. _keep_by_first_entry_([(int,[int])],int->[(int,[int])])1:
+.. _keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]1:
 
 keep_by_first_entry
 -------------------------------------------------
-| ``keep_by_first_entry:([(int,[int])],int->[(int,[int])])``
+| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]``
+| 
+| Defined in wreps_type_C.at line number 242.
 | 
 
-
-.. _keep_by_first_entry_and_truncate_([(int,[int])],int->[(int,[int])])1:
+.. _keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]1:
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
-| ``keep_by_first_entry_and_truncate:([(int,[int])],int->[(int,[int])])``
+| ``keep_by_first_entry_and_truncate:[(int,[int])] v,int k->[(int,[int])]``
+| 
+| Defined in wreps_type_C.at line number 245.
 | 
 
-
-.. _wrep_(int,[[int]]->[int],[int])1:
+.. _wrep_int_rank,[[int]]_tau_invariants->wrep1:
 
 wrep
 -------------------------------------------------
-| ``wrep:(int,[[int]]->[int],[int])``
+| ``wrep:int rank,[[int]] tau_invariants->Wrep``
+| 
+| Defined in wreps_type_C.at line number 257.
 | 
 
-
-.. _wrep_(Block,[int]->[int],[int])1:
+.. _wrep_block_b,[int]_cell->wrep1:
 
 wrep
 -------------------------------------------------
-| ``wrep:(Block,[int]->[int],[int])``
+| ``wrep:Block B,[int] cell->Wrep``
+| 
+| Defined in wreps_type_C.at line number 285.
 | 
 
-
-.. _wreps_(Block,[[int]]->[([int],[int])])1:
+.. _wreps_block_b,[[int]]_cells->[wrep]1:
 
 wreps
 -------------------------------------------------
-| ``wreps:(Block,[[int]]->[([int],[int])])``
+| ``wreps:Block B,[[int]] cells->[Wrep]``
+| 
+| Defined in wreps_type_C.at line number 288.
 | 
 
-
-.. _print_wrep_cpt_(Block,[int]->)1:
-
-print_wrep_cpt
--------------------------------------------------
-| ``print_wrep_cpt:(Block,[int]->)``
-| 
-
-
-.. _print_wrep_(Block,[int]->)1:
-
-print_wrep
--------------------------------------------------
-| ``print_wrep:(Block,[int]->)``
-| 
-
-
-.. _print_wreps_cpt_(Block,[[int]]->)1:
+.. _print_wreps_cpt_block_b,[[int]]_cells->void1:
 
 print_wreps_cpt
 -------------------------------------------------
-| ``print_wreps_cpt:(Block,[[int]]->)``
+| ``print_wreps_cpt:Block B,[[int]] cells->void``
+| 
+| Defined in wreps_type_C.at line number 308.
 | 
 
-
-.. _print_wreps_(Block,[[int]]->)1:
+.. _print_wreps_block_b,[[int]]_cells->void1:
 
 print_wreps
 -------------------------------------------------
-| ``print_wreps:(Block,[[int]]->)``
+| ``print_wreps:Block B,[[int]] cells->void``
 | 
-
+| Defined in wreps_type_C.at line number 312.
+| 
 
