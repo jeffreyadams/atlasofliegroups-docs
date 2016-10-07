@@ -10,15 +10,15 @@ torus.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`torus_involution_(int,int,int->mat)1`
-     - ``(int,int,int->mat)``
-   * - :ref:`torus_(int,int,int->RealForm)1`
-     - ``(int,int,int->RealForm)``
-   * - :ref:`compact_torus_(int->RealForm)1`
-     - ``(int->RealForm)``
-   * - :ref:`complex_torus_(int->RealForm)1`
-     - ``(int->RealForm)``
-   * - :ref:`split_torus_(int->RealForm)1`
-     - ``(int->RealForm)``
-   * - :ref:`torus_(CartanClass->RealForm)1`
-     - ``(CartanClass->RealForm)``
+   * - :ref:`torus_involution_int_a,int_b,int_c->mat1`
+     - ``int a,int b,int c->mat``
+   * - :ref:`torus_int_a,int_b,_int_c->realform1`
+     - ``int a,int b, int c->RealForm``
+   * - :ref:`compact_torus_int_k->realform1`
+     - ``int k->RealForm``
+   * - :ref:`complex_torus_int_k->realform1`
+     - ``int k->RealForm``
+   * - :ref:`split_torus_int_k->realform1`
+     - ``int k->RealForm``
+   * - :ref:`torus_cartanclass_c->realform1`
+     - ``CartanClass C->RealForm``

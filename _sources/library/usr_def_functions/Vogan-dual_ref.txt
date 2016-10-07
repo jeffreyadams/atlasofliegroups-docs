@@ -4,115 +4,129 @@ Vogan-dual.at Function References
 =======================================================
 |
 
-.. _fixed_lift_(mat,ratvec->ratvec,(vec,mat,mat))1:
+.. _fixed_lift_mat_theta_1,ratvec_z->(ratvec,(vec,mat,mat))1:
 
 fixed_lift
 -------------------------------------------------
-| ``fixed_lift:(mat,ratvec->ratvec,(vec,mat,mat))``
+| ``fixed_lift:mat theta_1,ratvec z->(ratvec,(vec,mat,mat))``
+| 
+| Defined in Vogan-dual.at line number 56.
 | 
 
-
-.. _integral_shift_(ratvec,mat,(vec,mat,mat)->vec)1:
+.. _integral_shift_ratvec_v,_mat_simples,(vec_d,mat_l,mat_r)->vec1:
 
 integral_shift
 -------------------------------------------------
-| ``integral_shift:(ratvec,mat,(vec,mat,mat)->vec)``
+| ``integral_shift:ratvec v, mat simples,(vec d,mat L,mat R)->vec``
+| 
+| Defined in Vogan-dual.at line number 84.
 | 
 
-
-.. _dual_KGB_(Param,InnerClass->KGBElt)1:
+.. _dual_kgb_param_p,_innerclass_dual_int_ic->kgbelt1:
 
 dual_KGB
 -------------------------------------------------
-| ``dual_KGB:(Param,InnerClass->KGBElt)``
+| ``dual_KGB:Param p, InnerClass dual_int_ic->KGBElt``
+| 
+| Defined in Vogan-dual.at line number 92.
 | 
 
-
-.. _central_cocharacter_(RealForm->ratvec)1:
+.. _central_cocharacter_realform_g->ratvec1:
 
 central_cocharacter
 -------------------------------------------------
-| ``central_cocharacter:(RealForm->ratvec)``
+| ``central_cocharacter:RealForm G->ratvec``
+| 
+| Defined in Vogan-dual.at line number 119.
 | 
 
-
-.. _dual_shift_(RootDatum,ratvec->ratvec)1:
+.. _dual_shift_rootdatum_rd,_ratvec_gamma->ratvec1:
 
 dual_shift
 -------------------------------------------------
-| ``dual_shift:(RootDatum,ratvec->ratvec)``
+| ``dual_shift:RootDatum rd, ratvec gamma->ratvec``
+| 
+| Defined in Vogan-dual.at line number 123.
 | 
 
-
-.. _ell_(KGBElt->vec)1:
+.. _ell_kgbelt_x->vec1:
 
 ell
 -------------------------------------------------
-| ``ell:(KGBElt->vec)``
+| ``ell:KGBElt x->vec``
+| 
+| Defined in Vogan-dual.at line number 134.
 | 
 
-
-.. _dual_gamma_(Param->ratvec)1:
+.. _dual_gamma_param_p->ratvec1:
 
 dual_gamma
 -------------------------------------------------
-| ``dual_gamma:(Param->ratvec)``
+| ``dual_gamma:Param p->ratvec``
+| 
+| Defined in Vogan-dual.at line number 139.
 | 
 
-
-.. _dual_lambda_(Param->ratvec)1:
+.. _dual_lambda_param_p->ratvec1:
 
 dual_lambda
 -------------------------------------------------
-| ``dual_lambda:(Param->ratvec)``
+| ``dual_lambda:Param p->ratvec``
+| 
+| Defined in Vogan-dual.at line number 142.
 | 
 
-
-.. _check_dual_lambda_(Param->bool)1:
+.. _check_dual_lambda_param_p->bool1:
 
 check_dual_lambda
 -------------------------------------------------
-| ``check_dual_lambda:(Param->bool)``
+| ``check_dual_lambda:Param p->bool``
+| 
+| Defined in Vogan-dual.at line number 145.
 | 
 
-
-.. _dual_(Param,InnerClass->Param)1:
+.. _dual_param_p,_innerclass_dual_integral_class->param1:
 
 dual
 -------------------------------------------------
-| ``dual:(Param,InnerClass->Param)``
+| ``dual:Param p, InnerClass dual_integral_class->Param``
+| 
+| Defined in Vogan-dual.at line number 149.
 | 
 
-
-.. _dual_(KGBElt,KGBElt,ratvec->Param)1:
+.. _dual_kgbelt_x,kgbelt_y,_ratvec_gamma->param1:
 
 dual
 -------------------------------------------------
-| ``dual:(KGBElt,KGBElt,ratvec->Param)``
+| ``dual:KGBElt x,KGBElt y, ratvec gamma->Param``
+| 
+| Defined in Vogan-dual.at line number 153.
 | 
 
-
-.. _dual_(KGBElt,KGBElt->Param)1:
+.. _dual_kgbelt_x,kgbelt_y->param1:
 
 dual
 -------------------------------------------------
-| ``dual:(KGBElt,KGBElt->Param)``
+| ``dual:KGBElt x,KGBElt y->Param``
+| 
+| Defined in Vogan-dual.at line number 155.
 | 
 
-
-.. _test1_(Param->[bool])1:
+.. _test1_param_p->[bool]1:
 
 test1
 -------------------------------------------------
-| ``test1:(Param->[bool])``
+| ``test1:Param p->[bool]``
+| 
+| Defined in Vogan-dual.at line number 167.
 | 
 
-
-.. _test2_(Param->[bool])1:
+.. _test2_param_p->[bool]1:
 
 test2
 -------------------------------------------------
-| ``test2:(Param->[bool])``
+| ``test2:Param p->[bool]``
 | 
-
+| Defined in Vogan-dual.at line number 171.
+| 
 

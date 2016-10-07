@@ -10,27 +10,25 @@ extParamPol.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`splits_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[Split])1`
-     - ``([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[Split])``
-   * - :ref:`ext_params_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1`
-     - ``([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
-   * - :ref:`collect_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1`
-     - ``([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
-   * - :ref:`\*_(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1`
-     - ``(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
-   * - :ref:`\*_(Split,[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1`
-     - ``(Split,[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
-   * - :ref:`\#_([Split],[Split]->[Split])1`
-     - ``([Split],[Split]->[Split])``
-   * - :ref:`\#_([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1`
-     - ``([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)]->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
-   * - :ref:`\+_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1`
-     - ``([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
-   * - :ref:`\+_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1`
-     - ``([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
-   * - :ref:`\-_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1`
-     - ``([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))],[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
-   * - :ref:`null_ext_module_(RealForm->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])1`
-     - ``(RealForm->[(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))])``
-   * - :ref:`display_([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[void])1`
-     - ``([(Split,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))]->[void])``
+   * - :ref:`splits_extparampol_p->[split]1`
+     - ``extParamPol P->[Split]``
+   * - :ref:`ext_params_extparampol_p->[extended_param]1`
+     - ``extParamPol P->[extended_param]``
+   * - :ref:`collect_extparampol_q->extparampol1`
+     - ``extParamPol Q->extParamPol``
+   * - :ref:`\*_split_s,extended_param_e->extparampol1`
+     - ``Split s,extended_param E->extParamPol``
+   * - :ref:`\*_split_s,extparampol_p->extparampol1`
+     - ``Split s,extParamPol P->extParamPol``
+   * - :ref:`\#_[split]_a,[split]_b->[split]:_for_x_in_b_do_a#1`
+     - ``[Split] a,[Split] b->[Split]: for x in b do a#``
+   * - :ref:`\#_[extended_param]_a,[extended_param]_b->[extended_param]:_for_x_in_b_do_a#1`
+     - ``[extended_param] a,[extended_param] b->[extended_param]: for x in b do a#``
+   * - :ref:`\+_extparampol_p,extparampol_q->extparampol1`
+     - ``extParamPol P,extParamPol Q->extParamPol``
+   * - :ref:`\+_extparampol_p,extended_param_e->extparampol1`
+     - ``extParamPol P,extended_param E->extParamPol``
+   * - :ref:`\-_extparampol_p,extparampol_q->extparampol1`
+     - ``extParamPol P,extParamPol Q->extParamPol``
+   * - :ref:`null_ext_module_realform_g->extparampol1`
+     - ``RealForm G->extParamPol``

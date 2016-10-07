@@ -10,43 +10,39 @@ group_operations.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`inner_forms_(RealForm->[RealForm])1`
-     - ``(RealForm->[RealForm])``
-   * - :ref:`print_real_forms_(InnerClass->)1`
-     - ``(InnerClass->)``
-   * - :ref:`print_inner_forms_(RealForm->)1`
-     - ``(RealForm->)``
-   * - :ref:`split_form_(InnerClass->RealForm)1`
-     - ``(InnerClass->RealForm)``
-   * - :ref:`\*_(RootDatum,RootDatum->RootDatum)1`
-     - ``(RootDatum,RootDatum->RootDatum)``
-   * - :ref:`\*_(InnerClass,InnerClass->InnerClass)1`
-     - ``(InnerClass,InnerClass->InnerClass)``
-   * - :ref:`\*_(RealForm,RealForm->RealForm)1`
-     - ``(RealForm,RealForm->RealForm)``
-   * - :ref:`radical_(RootDatum->RootDatum)1`
-     - ``(RootDatum->RootDatum)``
-   * - :ref:`radical_(InnerClass->RealForm)1`
-     - ``(InnerClass->RealForm)``
-   * - :ref:`maximal_central_torus_(RootDatum->RootDatum)1`
-     - ``(RootDatum->RootDatum)``
-   * - :ref:`maximal_central_torus_(InnerClass->RealForm)1`
-     - ``(InnerClass->RealForm)``
-   * - :ref:`derived_(InnerClass->InnerClass)1`
-     - ``(InnerClass->InnerClass)``
-   * - :ref:`mod_central_torus_(InnerClass->InnerClass)1`
-     - ``(InnerClass->InnerClass)``
-   * - :ref:`adjoint_transform_(RootDatum,mat->mat)1`
-     - ``(RootDatum,mat->mat)``
-   * - :ref:`adjoint_(InnerClass->InnerClass)1`
-     - ``(InnerClass->InnerClass)``
-   * - :ref:`derived_(RealForm->RealForm)1`
-     - ``(RealForm->RealForm)``
-   * - :ref:`adjoint_(RealForm->RealForm)1`
-     - ``(RealForm->RealForm)``
-   * - :ref:`is_equal_rank_(InnerClass->bool)1`
-     - ``(InnerClass->bool)``
-   * - :ref:`is_split_(RealForm->bool)1`
-     - ``(RealForm->bool)``
-   * - :ref:`is_relatively_split_(RealForm->bool)1`
-     - ``(RealForm->bool)``
+   * - :ref:`inner_forms_realform_g->real_forms(innerclass1`
+     - ``RealForm G->real_forms(InnerClass``
+   * - :ref:`print_real_forms_innerclass_ic->void1`
+     - ``InnerClass ic->void``
+   * - :ref:`print_inner_forms_realform_g->void1`
+     - ``RealForm G->void``
+   * - :ref:`split_form_innerclass_ic->realform1`
+     - ``InnerClass ic->RealForm``
+   * - :ref:`\*_rootdatum_r,rootdatum_s->rootdatum1`
+     - ``RootDatum R,RootDatum S->RootDatum``
+   * - :ref:`\*_innerclass_ic1,innerclass_ic2->innerclass1`
+     - ``InnerClass ic1,InnerClass ic2->InnerClass``
+   * - :ref:`\*_realform_g,realform_h->realform1`
+     - ``RealForm G,RealForm H->RealForm``
+   * - :ref:`radical_rootdatum_rd->rootdatum1`
+     - ``RootDatum rd->RootDatum``
+   * - :ref:`radical_innerclass_ic->realform1`
+     - ``InnerClass ic->RealForm``
+   * - :ref:`derived_innerclass_ic->innerclass1`
+     - ``InnerClass ic->InnerClass``
+   * - :ref:`mod_central_torus_innerclass_ic->innerclass1`
+     - ``InnerClass ic->InnerClass``
+   * - :ref:`adjoint_transform_rootdatum_rd,_mat_theta->mat1`
+     - ``RootDatum rd, mat theta->mat``
+   * - :ref:`adjoint_innerclass_ic->innerclass1`
+     - ``InnerClass ic->InnerClass``
+   * - :ref:`derived_realform_g->realform1`
+     - ``RealForm G->RealForm``
+   * - :ref:`adjoint_realform_g->realform1`
+     - ``RealForm G->RealForm``
+   * - :ref:`is_equal_rank_innerclass_g->bool1`
+     - ``InnerClass G->bool``
+   * - :ref:`is_split_realform_g->bool1`
+     - ``RealForm G->bool``
+   * - :ref:`is_relatively_split_realform_g->bool1`
+     - ``RealForm G->bool``

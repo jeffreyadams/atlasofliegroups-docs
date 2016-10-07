@@ -4,19 +4,21 @@ LKT.at Function References
 =======================================================
 |
 
-.. _LKTs_(Param->[(KGBElt,ratvec)])1:
+.. _lkts_param_p->[k_type]1:
 
 LKTs
 -------------------------------------------------
-| ``LKTs:(Param->[(KGBElt,ratvec)])``
+| ``LKTs:Param p->[K_Type]``
+| 
+| Defined in LKT.at line number 11.
 | 
 
-
-.. _LKT_(Param->KGBElt,ratvec)1:
+.. _lkt_param_p->k_type1:
 
 LKT
 -------------------------------------------------
-| ``LKT:(Param->KGBElt,ratvec)``
+| ``LKT:Param p->K_Type``
 | 
-
+| Defined in LKT.at line number 12.
+| 
 

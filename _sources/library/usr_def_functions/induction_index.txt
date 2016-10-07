@@ -10,50 +10,35 @@ induction.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`my_embed_KGB_(KGBElt,RealForm->KGBElt)1`
-     - ``(KGBElt,RealForm->KGBElt)``
-   * - :ref:`embed_KGB_(KGBElt,RealForm->KGBElt)1`
-     - ``(KGBElt,RealForm->KGBElt)``
-   * - :ref:`inverse_embed_KGB_(KGBElt,RealForm->KGBElt)1`
-     - ``(KGBElt,RealForm->KGBElt)``
-   * - :ref:`real_induce_standard_(Param,RealForm->Param)1`
-     - ``(Param,RealForm->Param)``
-   * - :ref:`real_induce_standard_(ParamPol,RealForm->ParamPol)1`
-     - ``(ParamPol,RealForm->ParamPol)``
-   * - :ref:`real_induce_irreducible_as_sum_of_standards_(Param,RealForm->ParamPol)1`
-     - ``(Param,RealForm->ParamPol)``
-   * - :ref:`real_induce_irreducible_(Param,RealForm->ParamPol)1`
-     - ``(Param,RealForm->ParamPol)``
-   * - :ref:`cuspidal_data_(Param->([int],KGBElt),Param)1`
-     - ``(Param->([int],KGBElt),Param)``
-   * - :ref:`theta_stable_data_(Param->([int],KGBElt),Param)1`
-     - ``(Param->([int],KGBElt),Param)``
-   * - :ref:`coherent_std_imaginary_((RootDatum,[int]),Param->ParamPol)1`
-     - ``((RootDatum,[int]),Param->ParamPol)``
-   * - :ref:`standardize_(Param->ParamPol)1`
-     - ``(Param->ParamPol)``
-   * - :ref:`standardize_(ParamPol->ParamPol)1`
-     - ``(ParamPol->ParamPol)``
-   * - :ref:`theta_induce_standard_(Param,RealForm->ParamPol)1`
-     - ``(Param,RealForm->ParamPol)``
-   * - :ref:`theta_induce_irreducible_as_sum_of_standards_(Param,RealForm->ParamPol)1`
-     - ``(Param,RealForm->ParamPol)``
-   * - :ref:`theta_induce_irreducible_(Param,RealForm->ParamPol)1`
-     - ``(Param,RealForm->ParamPol)``
-   * - :ref:`induce_standard_(Param,([int],KGBElt),RealForm->ParamPol)1`
-     - ``(Param,([int],KGBElt),RealForm->ParamPol)``
-   * - :ref:`induce_irreducible_(Param,([int],KGBElt),RealForm->ParamPol)1`
-     - ``(Param,([int],KGBElt),RealForm->ParamPol)``
-   * - :ref:`induce_standard_(ParamPol,([int],KGBElt),RealForm->ParamPol)1`
-     - ``(ParamPol,([int],KGBElt),RealForm->ParamPol)``
-
-
-
-.. list-table::
-   :widths: 10 20
-   :header-rows: 1
-
-   * - Variable
-     - Data Type
-   * - :ref:`verbose_bool1`
-     - ``bool``
+   * - :ref:`my_embed_kgb_kgbelt_x_l,realform_g->kgbelt1`
+     - ``KGBElt x_L,RealForm G->KGBElt``
+   * - :ref:`embed_kgb_kgbelt_x_l,realform_g->kgbelt1`
+     - ``KGBElt x_L,RealForm G->KGBElt``
+   * - :ref:`inverse_embed_kgb_kgbelt_x_g,realform_m->kgbelt1`
+     - ``KGBElt x_G,RealForm M->KGBElt``
+   * - :ref:`real_induce_standard_param_p_l,realform_g->param1`
+     - ``Param p_L,RealForm G->Param``
+   * - :ref:`real_induce_standard_parampol_p,realform_g->parampol1`
+     - ``ParamPol P,RealForm G->ParamPol``
+   * - :ref:`real_induce_irreducible_param_p_l,_realform_g->parampol1`
+     - ``Param p_L, RealForm G->ParamPol``
+   * - :ref:`cuspidal_data_param_p->(parabolic,param)1`
+     - ``Param p->(Parabolic,Param)``
+   * - :ref:`theta_stable_data_param_p->(parabolic,param)1`
+     - ``Param p->(Parabolic,Param)``
+   * - :ref:`coherent_std_imaginary_w_word_w,param_p->parampol1`
+     - ``W_word w,Param p->ParamPol``
+   * - :ref:`standardize_param_p->parampol1`
+     - ``Param p->ParamPol``
+   * - :ref:`standardize_parampol_p->parampol1`
+     - ``ParamPol P->ParamPol``
+   * - :ref:`theta_induce_standard_param_p_l,realform_g->parampol1`
+     - ``Param p_L,RealForm G->ParamPol``
+   * - :ref:`theta_induce_irreducible_param_p_l,_realform_g->parampol1`
+     - ``Param p_L, RealForm G->ParamPol``
+   * - :ref:`induce_standard_param_p_l,parabolic_p,realform_g->parampol1`
+     - ``Param p_L,Parabolic P,RealForm G->ParamPol``
+   * - :ref:`induce_irreducible_param_p_l,parabolic_p,realform_g->parampol1`
+     - ``Param p_L,Parabolic P,RealForm G->ParamPol``
+   * - :ref:`induce_standard_parampol_pol,parabolic_p,realform_g->parampol1`
+     - ``ParamPol pol,Parabolic P,RealForm G->ParamPol``

@@ -4,131 +4,66 @@ sort.at Function References
 =======================================================
 |
 
-.. _merge_([int],[int]->[int])1:
+.. _merge_[int]_a,_[int]_b->[int]1:
 
 merge
 -------------------------------------------------
-| ``merge:([int],[int]->[int])``
+| ``merge:[int] a, [int] b->[int]``
+| 
+| Defined in sort.at line number 3.
 | 
 
-
-.. _sort_([int]->[int])1:
-
-sort
--------------------------------------------------
-| ``sort:([int]->[int])``
-| 
-
-
-.. _reverse_sort_([int]->[int])1:
+.. _reverse_sort_[int]_v->[int]:_sort(v)~[1:
 
 reverse_sort
 -------------------------------------------------
-| ``reverse_sort:([int]->[int])``
+| ``reverse_sort:[int] v->[int]: sort(v)~[``
+| 
+| Defined in sort.at line number 22.
 | 
 
-
-.. _sort_u_([int]->[int])1:
+.. _sort_u_[int]_v->[int]1:
 
 sort_u
 -------------------------------------------------
-| ``sort_u:([int]->[int])``
+| ``sort_u:[int] v->[int]``
+| 
+| Defined in sort.at line number 25.
 | 
 
-
-.. _inv_standardisation_([int]->[int])1:
-
-inv_standardisation
--------------------------------------------------
-| ``inv_standardisation:([int]->[int])``
-| 
-
-
-.. _sort_by_((Param->int)->([Param]->[Param]))1:
+.. _sort_by_(param->int)_f->([param]_v)_[param]1:
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((Param->int)->([Param]->[Param]))``
+| ``sort_by:(Param->int) f->([Param] v) [Param]``
+| 
+| Defined in sort.at line number 64.
 | 
 
-
-.. _sort_by_((KGBElt,ratvec->int)->([(KGBElt,ratvec)]->[(KGBElt,ratvec)]))1:
+.. _sort_by_((param,bool)->int)_f->([(param,bool)]_v)_[(param,bool)]1:
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((KGBElt,ratvec->int)->([(KGBElt,ratvec)]->[(KGBElt,ratvec)]))``
+| ``sort_by:((Param,bool)->int) f->([(Param,bool)] v) [(Param,bool)]``
+| 
+| Defined in sort.at line number 72.
 | 
 
-
-.. _sort_by_((Param,bool->int)->([(Param,bool)]->[(Param,bool)]))1:
+.. _sort_by_(split,param->int)_f->([(split,param)]_v)_[(split,param)]1:
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((Param,bool->int)->([(Param,bool)]->[(Param,bool)]))``
+| ``sort_by:(Split,Param->int) f->([(Split,Param)] v) [(Split,Param)]``
+| 
+| Defined in sort.at line number 75.
 | 
 
-
-.. _sort_by_((Split,Param->int)->([(Split,Param)]->[(Split,Param)]))1:
-
-sort_by
--------------------------------------------------
-| ``sort_by:((Split,Param->int)->([(Split,Param)]->[(Split,Param)]))``
-| 
-
-
-.. _sort_by_((Split,(KGBElt,ratvec)->int)->([(Split,(KGBElt,ratvec))]->[(Split,(KGBElt,ratvec))]))1:
-
-sort_by
--------------------------------------------------
-| ``sort_by:((Split,(KGBElt,ratvec)->int)->([(Split,(KGBElt,ratvec))]->[(Split,(KGBElt,ratvec))]))``
-| 
-
-
-.. _sort_([rat]->[rat])1:
+.. _sort_[rat]_v->[rat]1:
 
 sort
 -------------------------------------------------
-| ``sort:([rat]->[rat])``
+| ``sort:[rat] v->[rat]``
 | 
-
-
-.. _inv_standardisation_([rat]->[int])1:
-
-inv_standardisation
--------------------------------------------------
-| ``inv_standardisation:([rat]->[int])``
+| Defined in sort.at line number 84.
 | 
-
-
-.. _sort_by_reducibility_points_([(Param,bool)]->[(Param,bool)])1:
-
-sort_by_reducibility_points
--------------------------------------------------
-| ``sort_by_reducibility_points:([(Param,bool)]->[(Param,bool)])``
-| 
-
-
-.. _sort_by_reducibility_([Param]->[Param])1:
-
-sort_by_reducibility
--------------------------------------------------
-| ``sort_by_reducibility:([Param]->[Param])``
-| 
-
-
-.. _sort_by_height_([Param]->[Param])1:
-
-sort_by_height
--------------------------------------------------
-| ``sort_by_height:([Param]->[Param])``
-| 
-
-
-.. _sort_by_height_([(Split,Param)]->[(Split,Param)])1:
-
-sort_by_height
--------------------------------------------------
-| ``sort_by_height:([(Split,Param)]->[(Split,Param)])``
-| 
-
 

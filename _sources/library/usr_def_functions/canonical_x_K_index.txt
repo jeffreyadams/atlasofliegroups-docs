@@ -10,11 +10,11 @@ canonical_x_K.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`map_into_distinguished_fiber_(KGBElt->KGBElt)1`
-     - ``(KGBElt->KGBElt)``
-   * - :ref:`strong_map_into_distinguished_fiber_(KGBElt->KGBElt)1`
-     - ``(KGBElt->KGBElt)``
-   * - :ref:`canonical_x_K_(KGBElt->KGBElt)1`
-     - ``(KGBElt->KGBElt)``
-   * - :ref:`canonical_x_K_(Param->KGBElt)1`
-     - ``(Param->KGBElt)``
+   * - :ref:`map_into_distinguished_fiber_kgbelt_x->kgbelt1`
+     - ``KGBElt x->KGBElt``
+   * - :ref:`strong_map_into_distinguished_fiber_kgbelt_x->kgbelt1`
+     - ``KGBElt x->KGBElt``
+   * - :ref:`canonical_x_k_kgbelt_x->kgbelt1`
+     - ``KGBElt x->KGBElt``
+   * - :ref:`canonical_x_k_param_p->kgbelt1`
+     - ``Param p->KGBElt``

@@ -4,107 +4,93 @@ ext_deform.at Function References
 =======================================================
 |
 
-.. _null_wt_(int->ratvec)1:
+.. _null_wt_int_r->ratvec1:
 
 null_wt
 -------------------------------------------------
-| ``null_wt:(int->ratvec)``
+| ``null_wt:int r->ratvec``
+| 
+| Defined in ext_deform.at line number 10.
 | 
 
-
-.. _has_nu0_(Param->bool)2:
+.. _has_nu0_param_p->bool2:
 
 has_nu0
 -------------------------------------------------
-| ``has_nu0:(Param->bool)``
+| ``has_nu0:Param p->bool``
+| 
+| Defined in ext_deform.at line number 11.
 | 
 
-
-.. _KL_P_polynomials_([Param],mat->[[vec]])1:
+.. _kl_p_polynomials_[param]_b_fixed,mat_delta->[[poly]]1:
 
 KL_P_polynomials
 -------------------------------------------------
-| ``KL_P_polynomials:([Param],mat->[[vec]])``
+| ``KL_P_polynomials:[Param] B_fixed,mat delta->[[poly]]``
+| 
+| Defined in ext_deform.at line number 17.
 | 
 
-
-.. _KL_P_signed_polynomials_([Param],mat->[[vec]])1:
+.. _kl_p_signed_polynomials_[param]_b_fixed,mat_delta->[[poly]]1:
 
 KL_P_signed_polynomials
 -------------------------------------------------
-| ``KL_P_signed_polynomials:([Param],mat->[[vec]])``
+| ``KL_P_signed_polynomials:[Param] B_fixed,mat delta->[[poly]]``
+| 
+| Defined in ext_deform.at line number 29.
 | 
 
-
-.. _KL_Q_polynomials_([Param],mat->[[vec]])1:
+.. _kl_q_polynomials_[param]_b_fixed,_mat_delta->[[poly]]1:
 
 KL_Q_polynomials
 -------------------------------------------------
-| ``KL_Q_polynomials:([Param],mat->[[vec]])``
+| ``KL_Q_polynomials:[Param] B_fixed, mat delta->[[poly]]``
+| 
+| Defined in ext_deform.at line number 41.
 | 
 
-
-.. _deform_(Param,mat->ParamPol)1:
+.. _deform_param_p,_mat_delta->parampol1:
 
 deform
 -------------------------------------------------
-| ``deform:(Param,mat->ParamPol)``
+| ``deform:Param p, mat delta->ParamPol``
+| 
+| Defined in ext_deform.at line number 44.
 | 
 
-
-.. _rec_def_(Param,mat->Param,ParamPol)1:
+.. _rec_def_param_p,mat_delta->(param,parampol)1:
 
 rec_def
 -------------------------------------------------
-| ``rec_def:(Param,mat->Param,ParamPol)``
+| ``rec_def:Param p,mat delta->(Param,ParamPol)``
+| 
+| Defined in ext_deform.at line number 86.
 | 
 
-
-.. _deformation_terms_(Param,mat->ParamPol)1:
+.. _deformation_terms_param_p,_mat_delta->parampol1:
 
 deformation_terms
 -------------------------------------------------
-| ``deformation_terms:(Param,mat->ParamPol)``
+| ``deformation_terms:Param p, mat delta->ParamPol``
+| 
+| Defined in ext_deform.at line number 124.
 | 
 
-
-.. _recursive_deform_(Param,mat->ParamPol)1:
+.. _recursive_deform_param_p,_mat_delta->parampol1:
 
 recursive_deform
 -------------------------------------------------
-| ``recursive_deform:(Param,mat->ParamPol)``
+| ``recursive_deform:Param p, mat delta->ParamPol``
+| 
+| Defined in ext_deform.at line number 153.
 | 
 
-
-.. _full_deform_(Param,mat->ParamPol)1:
-
-full_deform
--------------------------------------------------
-| ``full_deform:(Param,mat->ParamPol)``
-| 
-
-
-.. _c_form_std_(Param,mat->ParamPol)1:
+.. _c_form_std_param_p,mat_delta->parampol1:
 
 c_form_std
 -------------------------------------------------
-| ``c_form_std:(Param,mat->ParamPol)``
+| ``c_form_std:Param p,mat delta->ParamPol``
 | 
-
-
-.. _ed_verbose_bool1:
-
-ed_verbose
--------------------------------------------------
-| ``ed_verbose:bool``
+| Defined in ext_deform.at line number 196.
 | 
-
-
-.. _ed_verbose2_bool1:
-
-ed_verbose2
--------------------------------------------------
-| ``ed_verbose2:bool``
-| 
-
 

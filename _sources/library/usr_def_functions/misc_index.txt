@@ -10,59 +10,51 @@ misc.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`is_nonnegative_(vec->bool)1`
-     - ``(vec->bool)``
-   * - :ref:`is_positive_(vec->bool)1`
-     - ``(vec->bool)``
-   * - :ref:`is_positive_(ratvec->bool)1`
-     - ``(ratvec->bool)``
-   * - :ref:`is_nonnegative_(ratvec->bool)1`
-     - ``(ratvec->bool)``
-   * - :ref:`%_(ParamPol->[(Split,Param)])1`
-     - ``(ParamPol->[(Split,Param)])``
-   * - :ref:`integer_part_(ParamPol->ParamPol)1`
-     - ``(ParamPol->ParamPol)``
-   * - :ref:`s_part_(ParamPol->ParamPol)1`
-     - ``(ParamPol->ParamPol)``
-   * - :ref:`parts_(ParamPol->ParamPol,ParamPol)1`
-     - ``(ParamPol->ParamPol,ParamPol)``
-   * - :ref:`param_(RealForm,int,vec,ratvec->Param)1`
-     - ``(RealForm,int,vec,ratvec->Param)``
-   * - :ref:`finalize_(Param->[Param])1`
-     - ``(Param->[Param])``
-   * - :ref:`finalize_(ParamPol->ParamPol)1`
-     - ``(ParamPol->ParamPol)``
-   * - :ref:`\#_(Split,int->int)1`
-     - ``(Split,int->int)``
-   * - :ref:`\#_(Split,rat->rat)1`
-     - ``(Split,rat->rat)``
-   * - :ref:`\#_(ParamPol,int->ParamPol)1`
-     - ``(ParamPol,int->ParamPol)``
-   * - :ref:`fiber_partition_(RealForm->[int])1`
-     - ``(RealForm->[int])``
-   * - :ref:`in_distinguished_fiber_(KGBElt->bool)1`
-     - ``(KGBElt->bool)``
-   * - :ref:`distinguished_fiber_(RealForm->[int])1`
-     - ``(RealForm->[int])``
-   * - :ref:`ss_rank_(RootDatum->int)1`
-     - ``(RootDatum->int)``
-   * - :ref:`dimension_(RootDatum->int)1`
-     - ``(RootDatum->int)``
-   * - :ref:`root_length_(RootDatum,vec->int)1`
-     - ``(RootDatum,vec->int)``
-   * - :ref:`is_simple_root_(RootDatum,[int]->bool)1`
-     - ``(RootDatum,[int]->bool)``
-   * - :ref:`simple_imaginary_subsystem_(KGBElt->mat,mat)1`
-     - ``(KGBElt->mat,mat)``
-   * - :ref:`simple_real_subsystem_(KGBElt->mat,mat)1`
-     - ``(KGBElt->mat,mat)``
-   * - :ref:`to_binary_(int,int->vec)1`
-     - ``(int,int->vec)``
-   * - :ref:`generate_all_binary_(int->[vec])1`
-     - ``(int->[vec])``
-   * - :ref:`generate_all_subsets_([int]->[[int]])1`
-     - ``([int]->[[int]])``
-   * - :ref:`prettyPrint_(Split->string)1`
-     - ``(Split->string)``
-   * - :ref:`prettyPrint_(ParamPol->)1`
-     - ``(ParamPol->)``
+   * - :ref:`is_nonnegative_vec_v->bool1`
+     - ``vec v->bool``
+   * - :ref:`is_positive_vec_v->bool1`
+     - ``vec v->bool``
+   * - :ref:`is_positive_ratvec_v->bool1`
+     - ``ratvec v->bool``
+   * - :ref:`is_nonnegative_ratvec_v->bool1`
+     - ``ratvec v->bool``
+   * - :ref:`%_parampol_p->[(split,param)]1`
+     - ``ParamPol P->[(Split,Param)]``
+   * - :ref:`integer_part_parampol_p->parampol1`
+     - ``ParamPol P->ParamPol``
+   * - :ref:`s_part_parampol_p->parampol1`
+     - ``ParamPol P->ParamPol``
+   * - :ref:`param_realform_g,int_k,_vec_lambda_rho,ratvec_nu->param1`
+     - ``RealForm G,int k, vec lambda_rho,ratvec nu->Param``
+   * - :ref:`finalize_param_p->[param]:_for_c@q_in_parampol1`
+     - ``Param p->[Param]: for c@q in ParamPol``
+   * - :ref:`finalize_parampol_p->parampol1`
+     - ``ParamPol P->ParamPol``
+   * - :ref:`\#_split_w,int_t)=let_(a,b->%w_in_int1`
+     - ``Split w,int t)=let (a,b->%w in int``
+   * - :ref:`\#_split_w,rat_t)=let_(a,b->%w_in_rat1`
+     - ``Split w,rat t)=let (a,b->%w in rat``
+   * - :ref:`\#_parampol_p,int_t->parampol1`
+     - ``ParamPol P,int t->ParamPol``
+   * - :ref:`fiber_partition_realform_g->[int]1`
+     - ``RealForm G->[int]``
+   * - :ref:`in_distinguished_fiber_kgbelt_x->bool1`
+     - ``KGBElt x->bool``
+   * - :ref:`distinguished_fiber_realform_g->[int]1`
+     - ``RealForm G->[int]``
+   * - :ref:`root_length_rootdatum_rd,vec_alpha->int1`
+     - ``RootDatum rd,vec alpha->int``
+   * - :ref:`is_simple_root_rootdatum_rd,[int]_alpha->bool1`
+     - ``RootDatum rd,[int] alpha->bool``
+   * - :ref:`simple_imaginary_subsystem_kgbelt_x->(mat,mat)1`
+     - ``KGBElt x->(mat,mat)``
+   * - :ref:`simple_real_subsystem_kgbelt_x->(mat,mat)1`
+     - ``KGBElt x->(mat,mat)``
+   * - :ref:`to_binary_int_length,_int_n->vec1`
+     - ``int length, int n->vec``
+   * - :ref:`generate_all_subsets_[int]_s->[[int]]1`
+     - ``[int] S->[[int]]``
+   * - :ref:`prettyprint_split_w->string1`
+     - ``Split w->string``
+   * - :ref:`prettyprint_parampol_p->void1`
+     - ``ParamPol P->void``

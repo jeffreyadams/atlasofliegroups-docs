@@ -4,139 +4,138 @@ galois.at Function References
 =======================================================
 |
 
-.. _square_classes_(InnerClass->[[int]])1:
+.. _square_classes_innerclass_ic->[[int]]1:
 
 square_classes
 -------------------------------------------------
-| ``square_classes:(InnerClass->[[int]])``
+| ``square_classes:InnerClass ic->[[int]]``
+| 
+| Defined in galois.at line number 14.
 | 
 
-
-.. _print_strong_real_(RealForm->)1:
+.. _print_strong_real_realform_g->void1:
 
 print_strong_real
 -------------------------------------------------
-| ``print_strong_real:(RealForm->)``
+| ``print_strong_real:RealForm G->void``
+| 
+| Defined in galois.at line number 19.
 | 
 
-
-.. _real_forms_(RealForm->[RealForm])1:
+.. _real_forms_innerclass_ic->[realform]2:
 
 real_forms
 -------------------------------------------------
-| ``real_forms:(RealForm->[RealForm])``
+| ``real_forms:InnerClass ic->[RealForm]``
+| 
+| Defined in galois.at line number 25.
 | 
 
+.. _real_forms_realform_g->[realform]1:
 
-.. _SOstar_(int->RealForm)1:
+real_forms
+-------------------------------------------------
+| ``real_forms:RealForm G->[RealForm]``
+| 
+| Defined in galois.at line number 26.
+| 
+
+.. _sostar_int_n->realform1:
 
 SOstar
 -------------------------------------------------
-| ``SOstar:(int->RealForm)``
+| ``SOstar:int n->RealForm``
+| 
+| Defined in galois.at line number 29.
 | 
 
-
-.. _Spinstar_(int->RealForm)1:
-
-Spinstar
--------------------------------------------------
-| ``Spinstar:(int->RealForm)``
-| 
-
-
-.. _PSOstar_(int->RealForm)1:
+.. _psostar_int_n->realform1:
 
 PSOstar
 -------------------------------------------------
-| ``PSOstar:(int->RealForm)``
+| ``PSOstar:int n->RealForm``
+| 
+| Defined in galois.at line number 36.
 | 
 
-
-.. _find_([[int]],int->int)1:
+.. _find_[[int]]_vecs,_int_k->int1:
 
 find
 -------------------------------------------------
-| ``find:([[int]],int->int)``
+| ``find:[[int]] vecs, int k->int``
+| 
+| Defined in galois.at line number 43.
 | 
 
-
-.. _part_containing_(int->([[int]]->[int]))1:
+.. _part_containing_int_k->([[int]]_parts)_[int]1:
 
 part_containing
 -------------------------------------------------
-| ``part_containing:(int->([[int]]->[int]))``
+| ``part_containing:int k->([[int]] parts) [int]``
+| 
+| Defined in galois.at line number 45.
 | 
 
-
-.. _central_invariant_(InnerClass,int->int)1:
+.. _central_invariant_innerclass_ic,_int_k->int1:
 
 central_invariant
 -------------------------------------------------
-| ``central_invariant:(InnerClass,int->int)``
+| ``central_invariant:InnerClass ic, int k->int``
+| 
+| Defined in galois.at line number 60.
 | 
 
-
-.. _central_invariant_(RealForm->int)1:
+.. _central_invariant_realform_g->int1:
 
 central_invariant
 -------------------------------------------------
-| ``central_invariant:(RealForm->int)``
+| ``central_invariant:RealForm G->int``
+| 
+| Defined in galois.at line number 62.
 | 
 
-
-.. _strong_real_forms_same_type_(InnerClass,int->[int])1:
+.. _strong_real_forms_same_type_innerclass_ic,_int_k->[int]1:
 
 strong_real_forms_same_type
 -------------------------------------------------
-| ``strong_real_forms_same_type:(InnerClass,int->[int])``
+| ``strong_real_forms_same_type:InnerClass ic, int k->[int]``
+| 
+| Defined in galois.at line number 77.
 | 
 
-
-.. _strong_real_forms_same_type_(RealForm->[int])1:
-
-strong_real_forms_same_type
--------------------------------------------------
-| ``strong_real_forms_same_type:(RealForm->[int])``
-| 
-
-
-.. _H1_(RealForm->int)1:
+.. _h1_realform_g->int1:
 
 H1
 -------------------------------------------------
-| ``H1:(RealForm->int)``
+| ``H1:RealForm G->int``
+| 
+| Defined in galois.at line number 85.
 | 
 
-
-.. _iterate_H1_(int,int->)1:
+.. _iterate_h1_int_min_rank,_int_max_rank->void1:
 
 iterate_H1
 -------------------------------------------------
-| ``iterate_H1:(int,int->)``
+| ``iterate_H1:int min_rank, int max_rank->void``
+| 
+| Defined in galois.at line number 90.
 | 
 
-
-.. _pi0_(RealForm->int)1:
+.. _pi0_realform_g->int1:
 
 pi0
 -------------------------------------------------
-| ``pi0:(RealForm->int)``
+| ``pi0:RealForm G->int``
+| 
+| Defined in galois.at line number 106.
 | 
 
-
-.. _iterate_H1_(int->)1:
+.. _iterate_h1_int_rank->void1:
 
 iterate_H1
 -------------------------------------------------
-| ``iterate_H1:(int->)``
+| ``iterate_H1:int rank->void``
 | 
-
-
-.. _iterate_H1_(->)1:
-
-iterate_H1
--------------------------------------------------
-| ``iterate_H1:(->)``
+| Defined in galois.at line number 107.
 | 
-
 

@@ -8,6 +8,7 @@ This script imported the following .at files:
 
 | :ref:`kgp.at<kgp.at>`
 | :ref:`Weylgroup.at<Weylgroup.at>`
+| :ref:`group_operations<group_operations>`
 |
 
 

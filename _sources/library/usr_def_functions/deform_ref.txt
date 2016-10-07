@@ -4,67 +4,57 @@ deform.at Function References
 =======================================================
 |
 
-.. _compress_([Param],mat,[vec],vec,vec,mat->[Param],mat,[int])1:
-
-compress
--------------------------------------------------
-| ``compress:([Param],mat,[vec],vec,vec,mat->[Param],mat,[int])``
-| 
-
-
-.. _deformation_terms_(Param->ParamPol)1:
+.. _deformation_terms_param_p->parampol1:
 
 deformation_terms
 -------------------------------------------------
-| ``deformation_terms:(Param->ParamPol)``
+| ``deformation_terms:Param p->ParamPol``
+| 
+| Defined in deform.at line number 32.
 | 
 
-
-.. _has_nu0_(Param->bool)1:
+.. _has_nu0_param_p->bool1:
 
 has_nu0
 -------------------------------------------------
-| ``has_nu0:(Param->bool)``
+| ``has_nu0:Param p->bool``
+| 
+| Defined in deform.at line number 62.
 | 
 
-
-.. _weak_lower_(Param->Param)1:
+.. _weak_lower_param_p->param1:
 
 weak_lower
 -------------------------------------------------
-| ``weak_lower:(Param->Param)``
+| ``weak_lower:Param p->Param``
+| 
+| Defined in deform.at line number 66.
 | 
 
-
-.. _lower_(Param->Param)1:
+.. _lower_param_p->param1:
 
 lower
 -------------------------------------------------
-| ``lower:(Param->Param)``
+| ``lower:Param p->Param``
+| 
+| Defined in deform.at line number 72.
 | 
 
-
-.. _deformation_(Param->Param,ParamPol)1:
+.. _deformation_param_p->(param,parampol)1:
 
 deformation
 -------------------------------------------------
-| ``deformation:(Param->Param,ParamPol)``
+| ``deformation:Param p->(Param,ParamPol)``
+| 
+| Defined in deform.at line number 77.
 | 
 
-
-.. _recursive_deform_(Param->ParamPol)1:
+.. _recursive_deform_param_p->parampol1:
 
 recursive_deform
 -------------------------------------------------
-| ``recursive_deform:(Param->ParamPol)``
+| ``recursive_deform:Param p->ParamPol``
 | 
-
-
-.. _d_verbose_bool1:
-
-d_verbose
--------------------------------------------------
-| ``d_verbose:bool``
+| Defined in deform.at line number 80.
 | 
-
 

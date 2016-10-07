@@ -10,95 +10,73 @@ hecke.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`\=_((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)1`
-     - ``((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)``
-   * - :ref:`!=_((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)1`
-     - ``((KGBElt,(InnerClass,mat,ratvec)),(KGBElt,(InnerClass,mat,ratvec))->bool)``
-   * - :ref:`y_gen_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec)1`
-     - ``(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec)``
-   * - :ref:`y_gen_(Param->InnerClass,mat,ratvec)1`
-     - ``(Param->InnerClass,mat,ratvec)``
-   * - :ref:`index_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->int)1`
-     - ``((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->int)``
-   * - :ref:`find_pair_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->bool)1`
-     - ``((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->bool)``
-   * - :ref:`add_pair_((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``((KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`index_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->int)1`
-     - ``((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->int)``
-   * - :ref:`neighbors_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])``
-   * - :ref:`kgb_sort_([KGBElt]->[KGBElt])1`
-     - ``([KGBElt]->[KGBElt])``
-   * - :ref:`x_sort_([(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``([(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`xy_neighbors_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`xy_neighbors_(int,mat,Param,ratvec->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``(int,mat,Param,ratvec->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`xy_neighbors_(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`generate_subspace_(int,int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``(int,int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`generate_subspace_(int,int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``(int,int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`generate_subspace_(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec))->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`generate_subspace_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->[(KGBElt,(InnerClass,mat,ratvec))])``
-   * - :ref:`decompose_(int,int,mat,[Param],ratvec->[[(KGBElt,(InnerClass,mat,ratvec))]],int,[int])1`
-     - ``(int,int,mat,[Param],ratvec->[[(KGBElt,(InnerClass,mat,ratvec))]],int,[int])``
-   * - :ref:`sign_2i12_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
-   * - :ref:`sign_2i12_old_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
-   * - :ref:`sign_2r21_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
-   * - :ref:`sign_2Ci_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
-   * - :ref:`sign_2Cr_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int)``
-   * - :ref:`signs_1i1_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int,int)1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)->int,int)``
-   * - :ref:`\+_(vec,vec->vec)1`
-     - ``(vec,vec->vec)``
-   * - :ref:`\-_(vec,vec->vec)1`
-     - ``(vec,vec->vec)``
-   * - :ref:`\*_(vec,vec->vec)1`
-     - ``(vec,vec->vec)``
-   * - :ref:`hecke_row_(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])1`
-     - ``(int,mat,ratvec,ratvec,(KGBElt,(InnerClass,mat,ratvec)),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])``
-   * - :ref:`\+_(vec,vec->vec)2`
-     - ``(vec,vec->vec)``
-   * - :ref:`\-_(vec,vec->vec)2`
-     - ``(vec,vec->vec)``
-   * - :ref:`\*_(vec,vec->int)1`
-     - ``(vec,vec->int)``
-   * - :ref:`hecke_row_(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])1`
-     - ``(int,(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(KGBElt,(InnerClass,mat,ratvec))]->[vec])``
-   * - :ref:`hecke_matrix_(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[[vec]])1`
-     - ``(int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->[[vec]])``
-   * - :ref:`quadratic_([[vec]],int,bool->bool)1`
-     - ``([[vec]],int,bool->bool)``
-   * - :ref:`quadratic_([[vec]],int->bool)1`
-     - ``([[vec]],int->bool)``
-   * - :ref:`braid_([[vec]],[[vec]],int,bool->bool)1`
-     - ``([[vec]],[[vec]],int,bool->bool)``
-   * - :ref:`braid_([[vec]],[[vec]],int->bool)1`
-     - ``([[vec]],[[vec]],int->bool)``
-   * - :ref:`modify_((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),vec,vec,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1`
-     - ``((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),vec,vec,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``
-   * - :ref:`test_hecke_(int,int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)1`
-     - ``(int,int,mat,ratvec,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)``
-   * - :ref:`test_hecke_(int,int,mat,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)1`
-     - ``(int,int,mat,ratvec,[(KGBElt,(InnerClass,mat,ratvec))]->bool)``
-   * - :ref:`test_hecke_(int,int,mat,[Param],ratvec->bool)1`
-     - ``(int,int,mat,[Param],ratvec->bool)``
-   * - :ref:`test_hecke_(int,int,mat,[Param]->bool)1`
-     - ``(int,int,mat,[Param]->bool)``
-   * - :ref:`test_hecke_(int,int,mat,Param->bool)1`
-     - ``(int,int,mat,Param->bool)``
-   * - :ref:`test_hecke_(int,int,Param,ratvec->bool)1`
-     - ``(int,int,Param,ratvec->bool)``
-   * - :ref:`test_hecke_(int,int,Param->bool)1`
-     - ``(int,int,Param->bool)``
+   * - :ref:`\=_kgb_pair(x,y),_kgb_pair(z,w)->bool1`
+     - ``KGB_pair(x,y), KGB_pair(z,w)->bool``
+   * - :ref:`\!=_kgb_pair(x,y),_kgb_pair(z,w)->bool1`
+     - ``KGB_pair(x,y), KGB_pair(z,w)->bool``
+   * - :ref:`y_gen_extended_param(ic,,gamma,lambda,,,,omega,,)->kgbelt_gen1`
+     - ``extended_param(ic,,gamma,lambda,,,,omega,,)->KGBElt_gen``
+   * - :ref:`y_gen_param_p->kgbelt_gen1`
+     - ``Param p->KGBElt_gen``
+   * - :ref:`index_kgb_pair_xy,_[kgb_pair]_xy_pairs->int1`
+     - ``KGB_pair xy, [KGB_pair] xy_pairs->int``
+   * - :ref:`find_pair_(kgb_pair,[kgb_pair])_p->bool1`
+     - ``(KGB_pair,[KGB_pair]) p->bool``
+   * - :ref:`add_pair_kgb_pair_xy,_[kgb_pair]_xy_pairs->[kgb_pair]1`
+     - ``KGB_pair xy, [KGB_pair] xy_pairs->[KGB_pair]``
+   * - :ref:`index_extended_param_ep,_[kgb_pair]_xy_pairs->int1`
+     - ``extended_param Ep, [KGB_pair] xy_pairs->int``
+   * - :ref:`neighbors_int_j,_extended_param_ep->[extended_param]1`
+     - ``int j, extended_param Ep->[extended_param]``
+   * - :ref:`kgb_sort_[kgbelt]_v->[kgbelt]1`
+     - ``[KGBElt] v->[KGBElt]``
+   * - :ref:`x_sort_[kgb_pair]_v->[kgb_pair]1`
+     - ``[KGB_pair] v->[KGB_pair]``
+   * - :ref:`xy_neighbors_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[kgb_pair]1`
+     - ``int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[KGB_pair]``
+   * - :ref:`xy_neighbors_int_j,_mat_delta,param_p,_ratvec_g->[kgb_pair]1`
+     - ``int j, mat delta,Param p, ratvec g->[KGB_pair]``
+   * - :ref:`xy_neighbors_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_[kgb_pair]_xy_pairs->[kgb_pair]1`
+     - ``int j, mat delta, ratvec gamma, ratvec g, [KGB_pair] xy_pairs->[KGB_pair]``
+   * - :ref:`generate_subspace_int_i,_int_j,_extended_param_e->[kgb_pair]1`
+     - ``int i, int j, extended_param E->[KGB_pair]``
+   * - :ref:`generate_subspace_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_p->[kgb_pair]1`
+     - ``int j, mat delta, ratvec gamma, ratvec g, KGB_pair p->[KGB_pair]``
+   * - :ref:`generate_subspace_int_i_,extended_param_e->[kgb_pair]1`
+     - ``int i ,extended_param E->[KGB_pair]``
+   * - :ref:`sign_2i12_int_j,_extended_param_e,_extended_param_f->int2`
+     - ``int j, extended_param E, extended_param F->int``
+   * - :ref:`sign_2i12_old_int_j,extended_param_e,extended_param_f->int2`
+     - ``int j,extended_param E,extended_param F->int``
+   * - :ref:`sign_2r21_int_j,_extended_param_e,_extended_param_f->int2`
+     - ``int j, extended_param E, extended_param F->int``
+   * - :ref:`sign_2ci_int_j,extended_param_e->int2`
+     - ``int j,extended_param E->int``
+   * - :ref:`sign_2cr_int_j,extended_param_e->int2`
+     - ``int j,extended_param E->int``
+   * - :ref:`hecke_row_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_pair,_[kgb_pair]_basis->[poly]1`
+     - ``int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]``
+   * - :ref:`hecke_row_int_j,_extended_param(,delta,gamma,,,g,,,,):e,_[kgb_pair]_basis->[poly]1`
+     - ``int j, extended_param(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]``
+   * - :ref:`hecke_matrix_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,[kgb_pair]_basis->poly_mat1`
+     - ``int j, mat delta, ratvec gamma, ratvec g,[KGB_pair] basis->poly_mat``
+   * - :ref:`quadratic_poly_mat_m,_int_length,_bool_show->bool1`
+     - ``poly_mat M, int length, bool show->bool``
+   * - :ref:`braid_poly_mat_m,poly_mat_n,_int_length,bool_show->bool1`
+     - ``poly_mat M,poly_mat N, int length,bool show->bool``
+   * - :ref:`braid_poly_mat_m,poly_mat_n,_int_length->bool1`
+     - ``poly_mat M,poly_mat N, int length->bool``
+   * - :ref:`test_hecke_int_i,_int_j,mat_delta,_ratvec_gamma,_ratvec_g,_[kgb_pair]_basis->bool1`
+     - ``int i, int j,mat delta, ratvec gamma, ratvec g, [KGB_pair] basis->bool``
+   * - :ref:`test_hecke_int_i,_int_j,_mat_delta,_ratvec_gamma,_[kgb_pair]_basis->bool1`
+     - ``int i, int j, mat delta, ratvec gamma, [KGB_pair] basis->bool``
+   * - :ref:`test_hecke_int_i,_int_j,_mat_delta,_[param]_b,_ratvec_g->bool1`
+     - ``int i, int j, mat delta, [Param] B, ratvec g->bool``
+   * - :ref:`test_hecke_int_i,_int_j,_mat_delta,_[param]_b->bool1`
+     - ``int i, int j, mat delta, [Param] B->bool``
+   * - :ref:`test_hecke_int_i,int_j,_mat_delta,param_p->bool1`
+     - ``int i,int j, mat delta,Param p->bool``
+   * - :ref:`test_hecke_int_i,int_j,param_p,ratvec_g->bool1`
+     - ``int i,int j,Param p,ratvec g->bool``
+   * - :ref:`test_hecke_int_i,int_j,param_p->bool1`
+     - ``int i,int j,Param p->bool``

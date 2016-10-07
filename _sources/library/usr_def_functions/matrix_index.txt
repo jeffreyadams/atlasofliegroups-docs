@@ -10,23 +10,23 @@ matrix.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`row_(mat,int->vec)1`
-     - ``(mat,int->vec)``
-   * - :ref:`column_(mat,int->vec)1`
-     - ``(mat,int->vec)``
-   * - :ref:`block_matrix_(mat,mat->mat)1`
-     - ``(mat,mat->mat)``
-   * - :ref:`minor_(mat,[int]->mat)1`
-     - ``(mat,[int]->mat)``
-   * - :ref:`principal_minor_(mat,int,int->mat)1`
-     - ``(mat,int,int->mat)``
-   * - :ref:`principal_minor_(mat,int->mat)1`
-     - ``(mat,int->mat)``
-   * - :ref:`right_inverse_(mat->mat)1`
-     - ``(mat->mat)``
-   * - :ref:`left_inverse_(mat->mat)1`
-     - ``(mat->mat)``
-   * - :ref:`weak_left_inverse_(mat->int,mat)1`
-     - ``(mat->int,mat)``
-   * - :ref:`reduce_(mat->mat)1`
-     - ``(mat->mat)``
+   * - :ref:`row_mat_m,int_i->vec1`
+     - ``mat M,int i->vec``
+   * - :ref:`column_mat_m,int_i->vec1`
+     - ``mat M,int i->vec``
+   * - :ref:`block_matrix_mat_a,mat_b->mat1`
+     - ``mat A,mat B->mat``
+   * - :ref:`minor_mat_m,_[int]_s->mat1`
+     - ``mat M, [int] S->mat``
+   * - :ref:`principal_minor_mat_m,_int_size,_int_start->mat1`
+     - ``mat M, int size, int start->mat``
+   * - :ref:`principal_minor_mat_m,int_size->mat1`
+     - ``mat M,int size->mat``
+   * - :ref:`right_inverse_mat_a->mat1`
+     - ``mat A->mat``
+   * - :ref:`left_inverse_mat_a->mat1`
+     - ``mat A->mat``
+   * - :ref:`weak_left_inverse_mat_a->(int,mat)1`
+     - ``mat A->(int,mat)``
+   * - :ref:`reduce_mat_m->mat1`
+     - ``mat M->mat``

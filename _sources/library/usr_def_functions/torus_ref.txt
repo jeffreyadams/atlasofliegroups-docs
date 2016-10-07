@@ -4,51 +4,57 @@ torus.at Function References
 =======================================================
 |
 
-.. _torus_involution_(int,int,int->mat)1:
+.. _torus_involution_int_a,int_b,int_c->mat1:
 
 torus_involution
 -------------------------------------------------
-| ``torus_involution:(int,int,int->mat)``
+| ``torus_involution:int a,int b,int c->mat``
+| 
+| Defined in torus.at line number 4.
 | 
 
-
-.. _torus_(int,int,int->RealForm)1:
+.. _torus_int_a,int_b,_int_c->realform1:
 
 torus
 -------------------------------------------------
-| ``torus:(int,int,int->RealForm)``
+| ``torus:int a,int b, int c->RealForm``
+| 
+| Defined in torus.at line number 8.
 | 
 
-
-.. _compact_torus_(int->RealForm)1:
+.. _compact_torus_int_k->realform1:
 
 compact_torus
 -------------------------------------------------
-| ``compact_torus:(int->RealForm)``
+| ``compact_torus:int k->RealForm``
+| 
+| Defined in torus.at line number 12.
 | 
 
-
-.. _complex_torus_(int->RealForm)1:
+.. _complex_torus_int_k->realform1:
 
 complex_torus
 -------------------------------------------------
-| ``complex_torus:(int->RealForm)``
+| ``complex_torus:int k->RealForm``
+| 
+| Defined in torus.at line number 13.
 | 
 
-
-.. _split_torus_(int->RealForm)1:
+.. _split_torus_int_k->realform1:
 
 split_torus
 -------------------------------------------------
-| ``split_torus:(int->RealForm)``
+| ``split_torus:int k->RealForm``
+| 
+| Defined in torus.at line number 14.
 | 
 
-
-.. _torus_(CartanClass->RealForm)1:
+.. _torus_cartanclass_c->realform1:
 
 torus
 -------------------------------------------------
-| ``torus:(CartanClass->RealForm)``
+| ``torus:CartanClass C->RealForm``
 | 
-
+| Defined in torus.at line number 16.
+| 
 

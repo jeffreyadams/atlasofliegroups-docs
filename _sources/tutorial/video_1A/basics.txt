@@ -100,14 +100,14 @@ remember, you can type ``<basic.at`` for example. If you get an error
 saying it failed to input the file, you need to quit ``atlas`` for a moment to learn how to do that.
 
 The supplementary files are in the directory ``atlas-scripts``. But
-``atlas`` needs to know where they are. So you need to launch it again
-providing the path it needs to take. Go to :ref:`run_atlas` for
+``atlas`` needs to know where they are. So you need to launch ``atlas`` again
+providing the path for these files. Go to :ref:`run_atlas` for
 information about this. (Make sure you are in the directory
 where you downloaded ``atlas`` and type ``ls`` to verify that the ``atlas-scripts`` directory is there).
 
 You can also ``cd`` into that directory to see all the supplementary files available. These are all the ``.at`` files listed there. 
 
-After you launched the file with the path information, you can load the file ``basic.at``::
+After you launched the software with the path information, you can load the file ``basic.at``::
 
       atlas> <basic.at 
       Starting to read from file 'atlas-scripts/basic.at'.

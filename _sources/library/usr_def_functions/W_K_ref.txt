@@ -4,139 +4,147 @@ W_K.at Function References
 =======================================================
 |
 
-.. _lift_action_(KGBElt,(RootDatum,[int])->mat)1:
+.. _lift_action_kgbelt_x,_w_word_w->mat1:
 
 lift_action
 -------------------------------------------------
-| ``lift_action:(KGBElt,(RootDatum,[int])->mat)``
+| ``lift_action:KGBElt x, W_word w->mat``
+| 
+| Defined in W_K.at line number 33.
 | 
 
-
-.. _factor_action_(KGBElt,(RootDatum,[int])->mat)1:
+.. _factor_action_kgbelt_x,w_word_w->mat1:
 
 factor_action
 -------------------------------------------------
-| ``factor_action:(KGBElt,(RootDatum,[int])->mat)``
+| ``factor_action:KGBElt x,W_word w->mat``
+| 
+| Defined in W_K.at line number 59.
 | 
 
-
-.. _small_Levi_(KGBElt->RealForm)1:
+.. _small_levi_kgbelt_x->realform1:
 
 small_Levi
 -------------------------------------------------
-| ``small_Levi:(KGBElt->RealForm)``
+| ``small_Levi:KGBElt x->RealForm``
+| 
+| Defined in W_K.at line number 67.
 | 
 
-
-.. _small_Levi_coroots_K_(KGBElt->mat)1:
+.. _small_levi_coroots_k_kgbelt_x->mat1:
 
 small_Levi_coroots_K
 -------------------------------------------------
-| ``small_Levi_coroots_K:(KGBElt->mat)``
+| ``small_Levi_coroots_K:KGBElt x->mat``
+| 
+| Defined in W_K.at line number 83.
 | 
 
-
-.. _nice_choices_x_(RealForm->[KGBElt])1:
+.. _nice_choices_x_realform_g->[kgbelt]1:
 
 nice_choices_x
 -------------------------------------------------
-| ``nice_choices_x:(RealForm->[KGBElt])``
+| ``nice_choices_x:RealForm G->[KGBElt]``
+| 
+| Defined in W_K.at line number 88.
 | 
 
-
-.. _nice_choice_x_(RealForm->KGBElt)1:
+.. _nice_choice_x_realform_g->kgbelt1:
 
 nice_choice_x
 -------------------------------------------------
-| ``nice_choice_x:(RealForm->KGBElt)``
+| ``nice_choice_x:RealForm G->KGBElt``
+| 
+| Defined in W_K.at line number 95.
 | 
 
-
-.. _W_c_perp_(KGBElt->[(RootDatum,[int])])1:
+.. _w_c_perp_kgbelt_x->[(rootdatum,[int])]1:
 
 W_c_perp
 -------------------------------------------------
-| ``W_c_perp:(KGBElt->[(RootDatum,[int])])``
+| ``W_c_perp:KGBElt x->[(RootDatum,[int])]``
+| 
+| Defined in W_K.at line number 99.
 | 
 
-
-.. _convert_W_word_((RootDatum,[int]),RootDatum->RootDatum,[int])1:
+.. _convert_w_word_(rootdatum_rd_l,[int]_w),rootdatum_rd_g->w_word1:
 
 convert_W_word
 -------------------------------------------------
-| ``convert_W_word:((RootDatum,[int]),RootDatum->RootDatum,[int])``
+| ``convert_W_word:(RootDatum rd_L,[int] w),RootDatum rd_G->W_word``
+| 
+| Defined in W_K.at line number 107.
 | 
 
-
-.. _R_K_dom_(KGBElt->[(RootDatum,[int])])1:
+.. _r_k_dom_kgbelt_x->[w_word]1:
 
 R_K_dom
 -------------------------------------------------
-| ``R_K_dom:(KGBElt->[(RootDatum,[int])])``
+| ``R_K_dom:KGBElt x->[W_word]``
+| 
+| Defined in W_K.at line number 121.
 | 
 
-
-.. _W_K_(KGBElt->RootDatum,[(RootDatum,[int])])1:
+.. _w_k_kgbelt_x->(rootdatum,[(rootdatum,[int])])1:
 
 W_K
 -------------------------------------------------
-| ``W_K:(KGBElt->RootDatum,[(RootDatum,[int])])``
+| ``W_K:KGBElt x->(RootDatum,[(RootDatum,[int])])``
+| 
+| Defined in W_K.at line number 130.
 | 
 
-
-.. _move_weight_((KGBElt,vec),KGBElt->KGBElt,vec)1:
+.. _move_weight_(kgbelt_x,vec_mu),kgbelt_y->khighestweight1:
 
 move_weight
 -------------------------------------------------
-| ``move_weight:((KGBElt,vec),KGBElt->KGBElt,vec)``
+| ``move_weight:(KGBElt x,vec mu),KGBElt y->KHighestWeight``
+| 
+| Defined in W_K.at line number 132.
 | 
 
-
-.. _R_K_dom_mu_orbit_(KGBElt,vec->[(KGBElt,vec)])1:
+.. _r_k_dom_mu_orbit_khighestweight_(x,mu)->[khighestweight]1:
 
 R_K_dom_mu_orbit
 -------------------------------------------------
-| ``R_K_dom_mu_orbit:(KGBElt,vec->[(KGBElt,vec)])``
+| ``R_K_dom_mu_orbit:KHighestWeight (x,mu)->[KHighestWeight]``
+| 
+| Defined in W_K.at line number 138.
 | 
 
-
-.. _P_positive_test_coweight_(KGBElt,(RootDatum,[int])->vec)1:
+.. _p_positive_test_coweight_kgbelt_x,w_word_s->vec1:
 
 P_positive_test_coweight
 -------------------------------------------------
-| ``P_positive_test_coweight:(KGBElt,(RootDatum,[int])->vec)``
+| ``P_positive_test_coweight:KGBElt x,W_word S->vec``
+| 
+| Defined in W_K.at line number 169.
 | 
 
-
-.. _P_positive_test_coweights_(KGBElt->[vec])1:
+.. _p_positive_test_coweights_kgbelt_x->[vec]1:
 
 P_positive_test_coweights
 -------------------------------------------------
-| ``P_positive_test_coweights:(KGBElt->[vec])``
+| ``P_positive_test_coweights:KGBElt x->[vec]``
+| 
+| Defined in W_K.at line number 178.
 | 
 
-
-.. _is_P_positive_(KGBElt,vec,[(RootDatum,[int])]->bool)1:
+.. _is_p_positive_kgbelt_x,vec_mu,[w_word]_s->bool1:
 
 is_P_positive
 -------------------------------------------------
-| ``is_P_positive:(KGBElt,vec,[(RootDatum,[int])]->bool)``
+| ``is_P_positive:KGBElt x,vec mu,[W_word] S->bool``
+| 
+| Defined in W_K.at line number 182.
 | 
 
-
-.. _make_strongly_dominant_(KGBElt,vec->(KGBElt,vec),(RootDatum,[int]),(RootDatum,[int]),bool)1:
-
-make_strongly_dominant
--------------------------------------------------
-| ``make_strongly_dominant:(KGBElt,vec->(KGBElt,vec),(RootDatum,[int]),(RootDatum,[int]),bool)``
-| 
-
-
-.. _R_K_dom_mu_(KGBElt,vec->[(RootDatum,[int])])1:
+.. _r_k_dom_mu_kgbelt_x,vec_mu->[w_word]1:
 
 R_K_dom_mu
 -------------------------------------------------
-| ``R_K_dom_mu:(KGBElt,vec->[(RootDatum,[int])])``
+| ``R_K_dom_mu:KGBElt x,vec mu->[W_word]``
 | 
-
+| Defined in W_K.at line number 231.
+| 
 

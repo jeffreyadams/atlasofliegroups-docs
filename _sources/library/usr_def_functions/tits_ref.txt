@@ -4,171 +4,183 @@ tits.at Function References
 =======================================================
 |
 
-.. _\=_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)1:
+.. _\=_tits_elt(,v,theta),tits_elt(,u,eta)->bool1:
 
 \=
 -------------------------------------------------
-| ``=:((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)``
+| ``=:Tits_elt(,v,theta),Tits_elt(,u,eta)->bool``
+| 
+| Defined in tits.at line number 21.
 | 
 
+.. _\!=_(tits_elt,tits_elt)p->bool1:
 
-.. _!=_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)1:
-
-!=
+\!=
 -------------------------------------------------
-| ``!=:((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->bool)``
+| ``!=:(Tits_elt,Tits_elt)p->bool``
+| 
+| Defined in tits.at line number 22.
 | 
 
-
-.. _tits_identity_(RootDatum->RootDatum,ratvec,mat)1:
+.. _tits_identity_rootdatum_rd->tits_elt1:
 
 tits_identity
 -------------------------------------------------
-| ``tits_identity:(RootDatum->RootDatum,ratvec,mat)``
+| ``tits_identity:RootDatum rd->Tits_elt``
+| 
+| Defined in tits.at line number 25.
 | 
 
-
-.. _tits_delta_(RootDatum,mat->RootDatum,ratvec,mat)1:
+.. _tits_delta_rootdatum_rd,mat_delta->tits_elt1:
 
 tits_delta
 -------------------------------------------------
-| ``tits_delta:(RootDatum,mat->RootDatum,ratvec,mat)``
+| ``tits_delta:RootDatum rd,mat delta->Tits_elt``
+| 
+| Defined in tits.at line number 29.
 | 
 
-
-.. _tits_delta_(RealForm->RootDatum,ratvec,mat)1:
+.. _tits_delta_realform_g->tits_elt1:
 
 tits_delta
 -------------------------------------------------
-| ``tits_delta:(RealForm->RootDatum,ratvec,mat)``
+| ``tits_delta:RealForm G->Tits_elt``
+| 
+| Defined in tits.at line number 30.
 | 
 
-
-.. _left_(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
+.. _left_int_s,tits_elt(rd,v,theta)->tits_elt1:
 
 left
 -------------------------------------------------
-| ``left:(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
+| ``left:int s,Tits_elt(rd,v,theta)->Tits_elt``
+| 
+| Defined in tits.at line number 34.
 | 
 
-
-.. _right_((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)1:
+.. _right_tits_elt(rd,v,theta),_int_s->tits_elt1:
 
 right
 -------------------------------------------------
-| ``right:((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)``
+| ``right:Tits_elt(rd,v,theta), int s->Tits_elt``
+| 
+| Defined in tits.at line number 45.
 | 
 
-
-.. _left_((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
+.. _left_w_word(,w),tits_elt_xi->tits_elt1:
 
 left
 -------------------------------------------------
-| ``left:((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
+| ``left:W_word(,w),Tits_elt xi->Tits_elt``
+| 
+| Defined in tits.at line number 55.
 | 
 
-
-.. _right_((RootDatum,ratvec,mat),(RootDatum,[int])->RootDatum,ratvec,mat)1:
+.. _right_tits_elt_xi,_w_word(,w)->tits_elt1:
 
 right
 -------------------------------------------------
-| ``right:((RootDatum,ratvec,mat),(RootDatum,[int])->RootDatum,ratvec,mat)``
+| ``right:Tits_elt xi, W_word(,w)->Tits_elt``
+| 
+| Defined in tits.at line number 58.
 | 
 
-
-.. _left_((ratvec,int),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
+.. _left_(ratvec,int)(v,s),_tits_elt_xi->tits_elt1:
 
 left
 -------------------------------------------------
-| ``left:((ratvec,int),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
+| ``left:(ratvec,int)(v,s), Tits_elt xi->Tits_elt``
+| 
+| Defined in tits.at line number 62.
 | 
 
-
-.. _right_((RootDatum,ratvec,mat),(ratvec,int)->RootDatum,ratvec,mat)1:
+.. _right_tits_elt_xi,_(ratvec,int)(v,s)->tits_elt1:
 
 right
 -------------------------------------------------
-| ``right:((RootDatum,ratvec,mat),(ratvec,int)->RootDatum,ratvec,mat)``
+| ``right:Tits_elt xi, (ratvec,int)(v,s)->Tits_elt``
+| 
+| Defined in tits.at line number 66.
 | 
 
-
-.. _conjugate_(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
+.. _conjugate_int_s,_tits_elt_xi->tits_elt1:
 
 conjugate
 -------------------------------------------------
-| ``conjugate:(int,(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
+| ``conjugate:int s, Tits_elt xi->Tits_elt``
+| 
+| Defined in tits.at line number 70.
 | 
 
-
-.. _conjugate_((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
+.. _conjugate_w_word(,w),_tits_elt_xi->tits_elt1:
 
 conjugate
 -------------------------------------------------
-| ``conjugate:((RootDatum,[int]),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
+| ``conjugate:W_word(,w), Tits_elt xi->Tits_elt``
+| 
+| Defined in tits.at line number 74.
 | 
 
-
-.. _multiply_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
+.. _multiply_tits_elt(rd,v,theta),_tits_elt(,u,eta)->tits_elt1:
 
 multiply
 -------------------------------------------------
-| ``multiply:((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
+| ``multiply:Tits_elt(rd,v,theta), Tits_elt(,u,eta)->Tits_elt``
+| 
+| Defined in tits.at line number 91.
 | 
 
-
-.. _\*_((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)1:
-
-\*
--------------------------------------------------
-| ``*:((RootDatum,ratvec,mat),(RootDatum,ratvec,mat)->RootDatum,ratvec,mat)``
-| 
-
-
-.. _inverse_(RootDatum,ratvec,mat->RootDatum,ratvec,mat)1:
+.. _inverse_tits_elt(rd,v,theta)->tits_elt1:
 
 inverse
 -------------------------------------------------
-| ``inverse:(RootDatum,ratvec,mat->RootDatum,ratvec,mat)``
+| ``inverse:Tits_elt(rd,v,theta)->Tits_elt``
+| 
+| Defined in tits.at line number 110.
 | 
 
-
-.. _lift_(RootDatum,[int]->RootDatum,ratvec,mat)1:
+.. _lift_w_word_w->tits_elt1:
 
 lift
 -------------------------------------------------
-| ``lift:(RootDatum,[int]->RootDatum,ratvec,mat)``
+| ``lift:W_word w->Tits_elt``
+| 
+| Defined in tits.at line number 114.
 | 
 
-
-.. _lift_(mat,(RootDatum,[int])->RootDatum,ratvec,mat)1:
+.. _lift_mat_delta,_w_word_w->tits_elt1:
 
 lift
 -------------------------------------------------
-| ``lift:(mat,(RootDatum,[int])->RootDatum,ratvec,mat)``
+| ``lift:mat delta, W_word w->Tits_elt``
+| 
+| Defined in tits.at line number 117.
 | 
 
-
-.. _lift_(RealForm,(RootDatum,[int])->RootDatum,ratvec,mat)1:
+.. _lift_realform_g,_w_word_w->tits_elt1:
 
 lift
 -------------------------------------------------
-| ``lift:(RealForm,(RootDatum,[int])->RootDatum,ratvec,mat)``
+| ``lift:RealForm G, W_word w->Tits_elt``
+| 
+| Defined in tits.at line number 119.
 | 
 
-
-.. _\^_((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)1:
+.. _\^_tits_elt_!xi,_int_n->tits_elt1:
 
 \^
 -------------------------------------------------
-| ``^:((RootDatum,ratvec,mat),int->RootDatum,ratvec,mat)``
+| ``^:Tits_elt !xi, int n->Tits_elt``
+| 
+| Defined in tits.at line number 123.
 | 
 
-
-.. _order_(RootDatum,ratvec,mat->int)1:
+.. _order_tits_elt_xi->int1:
 
 order
 -------------------------------------------------
-| ``order:(RootDatum,ratvec,mat->int)``
+| ``order:Tits_elt xi->int``
 | 
-
+| Defined in tits.at line number 130.
+| 
 

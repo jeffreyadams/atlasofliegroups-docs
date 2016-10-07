@@ -4,323 +4,345 @@ extended_misc.at Function References
 =======================================================
 |
 
-.. _canonical_g_(RealForm->ratvec)1:
+.. _canonical_g_realform_g->ratvec1:
 
 canonical_g
 -------------------------------------------------
-| ``canonical_g:(RealForm->ratvec)``
+| ``canonical_g:RealForm G->ratvec``
+| 
+| Defined in extended_misc.at line number 12.
 | 
 
-
-.. _canonical_g_(KGBElt->ratvec)1:
+.. _canonical_g_kgbelt_x->ratvec1:
 
 canonical_g
 -------------------------------------------------
-| ``canonical_g:(KGBElt->ratvec)``
+| ``canonical_g:KGBElt x->ratvec``
+| 
+| Defined in extended_misc.at line number 13.
 | 
 
-
-.. _canonical_g_(Param->ratvec)1:
+.. _canonical_g_param_p->ratvec1:
 
 canonical_g
 -------------------------------------------------
-| ``canonical_g:(Param->ratvec)``
+| ``canonical_g:Param p->ratvec``
+| 
+| Defined in extended_misc.at line number 14.
 | 
 
-
-.. _cross_(int,Param->Param)1:
+.. _cross_int_s,param_p->param1:
 
 cross
 -------------------------------------------------
-| ``cross:(int,Param->Param)``
+| ``cross:int s,Param p->Param``
+| 
+| Defined in extended_misc.at line number 23.
 | 
 
-
-.. _Cayley_(int,Param->Param)1:
+.. _cayley_int_s,param_p->param1:
 
 Cayley
 -------------------------------------------------
-| ``Cayley:(int,Param->Param)``
+| ``Cayley:int s,Param p->Param``
+| 
+| Defined in extended_misc.at line number 28.
 | 
 
-
-.. _inv_Cayley_(int,Param->Param)1:
-
-inv_Cayley
--------------------------------------------------
-| ``inv_Cayley:(int,Param->Param)``
-| 
-
-
-.. _Cayley_set_(int,Param->[Param])1:
+.. _cayley_set_int_j,param_p->[param]1:
 
 Cayley_set
 -------------------------------------------------
-| ``Cayley_set:(int,Param->[Param])``
+| ``Cayley_set:int j,Param p->[Param]``
+| 
+| Defined in extended_misc.at line number 35.
 | 
 
-
-.. _Cayley_set_(int,int,Param->[Param])1:
+.. _cayley_set_int_j,_int_k,_param_p->[param]1:
 
 Cayley_set
 -------------------------------------------------
-| ``Cayley_set:(int,int,Param->[Param])``
+| ``Cayley_set:int j, int k, Param p->[Param]``
+| 
+| Defined in extended_misc.at line number 40.
 | 
 
-
-.. _Cayley_set_([int],Param->[Param])1:
+.. _cayley_set_[int]_kappa,_param_p->[param]1:
 
 Cayley_set
 -------------------------------------------------
-| ``Cayley_set:([int],Param->[Param])``
+| ``Cayley_set:[int] kappa, Param p->[Param]``
+| 
+| Defined in extended_misc.at line number 44.
 | 
 
-
-.. _twist_(mat,KGBElt->KGBElt)1:
+.. _twist_mat_delta,kgbelt_x->kgbelt1:
 
 twist
 -------------------------------------------------
-| ``twist:(mat,KGBElt->KGBElt)``
+| ``twist:mat delta,KGBElt x->KGBElt``
+| 
+| Defined in extended_misc.at line number 53.
 | 
 
-
-.. _twist_(mat,Param->Param)1:
-
-twist
--------------------------------------------------
-| ``twist:(mat,Param->Param)``
-| 
-
-
-.. _is_fixed_(mat,Param->bool)1:
+.. _is_fixed_mat_delta,_param_p->bool1:
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:(mat,Param->bool)``
+| ``is_fixed:mat delta, Param p->bool``
+| 
+| Defined in extended_misc.at line number 60.
 | 
 
-
-.. _is_fixed_(ratvec,mat,KGBElt,KGBElt->bool)1:
+.. _is_fixed_ratvec_gamma,_mat_delta,_kgbelt_x,kgbelt_y->bool1:
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:(ratvec,mat,KGBElt,KGBElt->bool)``
+| ``is_fixed:ratvec gamma, mat delta, KGBElt x,KGBElt y->bool``
+| 
+| Defined in extended_misc.at line number 63.
 | 
 
-
-.. _is_fixed_(mat,KGBElt->bool)1:
+.. _is_fixed_mat_delta,_kgbelt_x->bool1:
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:(mat,KGBElt->bool)``
+| ``is_fixed:mat delta, KGBElt x->bool``
+| 
+| Defined in extended_misc.at line number 67.
 | 
 
-
-.. _is_fixed_(mat,KGBElt,KGBElt->bool)1:
+.. _is_fixed_mat_delta,_kgbelt_x,_kgbelt_y->bool1:
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:(mat,KGBElt,KGBElt->bool)``
+| ``is_fixed:mat delta, KGBElt x, KGBElt y->bool``
+| 
+| Defined in extended_misc.at line number 68.
 | 
 
-
-.. _in_A_(ratvec,mat->bool)1:
+.. _in_a_x_rep(v,theta)->bool1:
 
 in_A
 -------------------------------------------------
-| ``in_A:(ratvec,mat->bool)``
+| ``in_A:x_rep(v,theta)->bool``
+| 
+| Defined in extended_misc.at line number 83.
 | 
 
-
-.. _is_equivalent_((ratvec,mat),(ratvec,mat)->bool)1:
+.. _is_equivalent_x_rep(v_1,theta_1),x_rep(v_2,theta_2)->bool1:
 
 is_equivalent
 -------------------------------------------------
-| ``is_equivalent:((ratvec,mat),(ratvec,mat)->bool)``
+| ``is_equivalent:x_rep(v_1,theta_1),x_rep(v_2,theta_2)->bool``
+| 
+| Defined in extended_misc.at line number 90.
 | 
 
-
-.. _square_is_central_(InnerClass,(ratvec,mat)->bool)1:
+.. _square_is_central_innerclass_ic,x_rep(v,theta)->bool1:
 
 square_is_central
 -------------------------------------------------
-| ``square_is_central:(InnerClass,(ratvec,mat)->bool)``
+| ``square_is_central:InnerClass ic,x_rep(v,theta)->bool``
+| 
+| Defined in extended_misc.at line number 93.
 | 
 
-
-.. _root_datum_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->RootDatum)1:
+.. _root_datum_extended_param_e->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->RootDatum)``
+| ``root_datum:extended_param E->RootDatum``
+| 
+| Defined in extended_misc.at line number 104.
 | 
 
-
-.. _rho_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec)1:
+.. _rho_extended_param_e->ratvec1:
 
 rho
 -------------------------------------------------
-| ``rho:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec)``
+| ``rho:extended_param E->ratvec``
+| 
+| Defined in extended_misc.at line number 105.
 | 
 
-
-.. _rho_check_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec)1:
+.. _rho_check_extended_param_e->ratvec1:
 
 rho_check
 -------------------------------------------------
-| ``rho_check:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->ratvec)``
+| ``rho_check:extended_param E->ratvec``
+| 
+| Defined in extended_misc.at line number 106.
 | 
 
-
-.. _dual_parameter_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)1:
+.. _dual_parameter_extended_param(ic,_delta,_gamma,_lambda,_theta,_g,_l,_omega,_tau,t)->extended_param1:
 
 dual_parameter
 -------------------------------------------------
-| ``dual_parameter:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)``
+| ``dual_parameter:extended_param(ic, delta, gamma, lambda, theta, g, l, omega, tau,t)->extended_param``
+| 
+| Defined in extended_misc.at line number 108.
 | 
 
-
-.. _log_z_(mat,vec,vec,vec,vec->rat)1:
+.. _log_z_mat_delta,_vec_lambda_rho,_vec_l,_vec_tau,vec_t->rat1:
 
 log_z
 -------------------------------------------------
-| ``log_z:(mat,vec,vec,vec,vec->rat)``
+| ``log_z:mat delta, vec lambda_rho, vec l, vec tau,vec t->rat``
+| 
+| Defined in extended_misc.at line number 115.
 | 
 
-
-.. _log_zeta_(mat,vec,vec,vec,vec->rat)1:
+.. _log_zeta_mat_delta,_vec_lambda,_vec_l,vec_tau,vec_t->rat1:
 
 log_zeta
 -------------------------------------------------
-| ``log_zeta:(mat,vec,vec,vec,vec->rat)``
+| ``log_zeta:mat delta, vec lambda, vec l,vec tau,vec t->rat``
+| 
+| Defined in extended_misc.at line number 117.
 | 
 
-
-.. _log_z_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->rat)1:
+.. _log_z_extended_param_e->rat1:
 
 log_z
 -------------------------------------------------
-| ``log_z:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->rat)``
+| ``log_z:extended_param E->rat``
+| 
+| Defined in extended_misc.at line number 120.
 | 
 
-
-.. _log_zeta_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->rat)1:
+.. _log_zeta_extended_param_e->rat1:
 
 log_zeta
 -------------------------------------------------
-| ``log_zeta:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->rat)``
+| ``log_zeta:extended_param E->rat``
+| 
+| Defined in extended_misc.at line number 122.
 | 
 
-
-.. _x_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->KGBElt)1:
+.. _x_extended_param_e->kgbelt1:
 
 x
 -------------------------------------------------
-| ``x:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->KGBElt)``
+| ``x:extended_param E->KGBElt``
+| 
+| Defined in extended_misc.at line number 127.
 | 
 
-
-.. _y_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->KGBElt)1:
+.. _y_extended_param_e->kgbelt1:
 
 y
 -------------------------------------------------
-| ``y:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->KGBElt)``
+| ``y:extended_param E->KGBElt``
+| 
+| Defined in extended_misc.at line number 130.
 | 
 
-
-.. _parameter_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->Param)1:
+.. _parameter_extended_param_e->param1:
 
 parameter
 -------------------------------------------------
-| ``parameter:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->Param)``
+| ``parameter:extended_param E->Param``
+| 
+| Defined in extended_misc.at line number 138.
 | 
 
-
-.. _integrality_datum_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->RootDatum)1:
+.. _integrality_datum_extended_param_e->rootdatum1:
 
 integrality_datum
 -------------------------------------------------
-| ``integrality_datum:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->RootDatum)``
+| ``integrality_datum:extended_param E->RootDatum``
+| 
+| Defined in extended_misc.at line number 140.
 | 
 
-
-.. _translate_to_dominant_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),vec)1:
+.. _translate_to_dominant_extended_param(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t):e->(extended_param,vec)1:
 
 translate_to_dominant
 -------------------------------------------------
-| ``translate_to_dominant:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),vec)``
+| ``translate_to_dominant:extended_param(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t):E->(extended_param,vec)``
+| 
+| Defined in extended_misc.at line number 151.
 | 
 
-
-.. _valid_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->bool)1:
+.. _valid_extended_param(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t)->bool1:
 
 valid
 -------------------------------------------------
-| ``valid:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->bool)``
+| ``valid:extended_param(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t)->bool``
+| 
+| Defined in extended_misc.at line number 160.
 | 
 
-
-.. _fixed_(mat,[Param]->[Param])1:
+.. _fixed_mat_delta,_[param]_b->[param]1:
 
 fixed
 -------------------------------------------------
-| ``fixed:(mat,[Param]->[Param])``
+| ``fixed:mat delta, [Param] B->[Param]``
+| 
+| Defined in extended_misc.at line number 182.
 | 
 
-
-.. _fixed_block_of_(mat,Param->[Param])1:
+.. _fixed_block_of_mat_delta,_param_p->[param]1:
 
 fixed_block_of
 -------------------------------------------------
-| ``fixed_block_of:(mat,Param->[Param])``
+| ``fixed_block_of:mat delta, Param p->[Param]``
+| 
+| Defined in extended_misc.at line number 186.
 | 
 
-
-.. _fixed_block_(mat,Param->[Param],int)1:
+.. _fixed_block_mat_delta,_param_p->([param],int)1:
 
 fixed_block
 -------------------------------------------------
-| ``fixed_block:(mat,Param->[Param],int)``
+| ``fixed_block:mat delta, Param p->([Param],int)``
+| 
+| Defined in extended_misc.at line number 188.
 | 
 
-
-.. _format_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->string)1:
+.. _format_extended_param_e->string1:
 
 format
 -------------------------------------------------
-| ``format:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->string)``
+| ``format:extended_param E->string``
+| 
+| Defined in extended_misc.at line number 191.
 | 
 
-
-.. _short_format_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->string)1:
+.. _short_format_extended_param_e->string1:
 
 short_format
 -------------------------------------------------
-| ``short_format:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->string)``
+| ``short_format:extended_param E->string``
+| 
+| Defined in extended_misc.at line number 202.
 | 
 
-
-.. _long_format_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->string)1:
+.. _long_format_extended_param_e->string1:
 
 long_format
 -------------------------------------------------
-| ``long_format:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->string)``
+| ``long_format:extended_param E->string``
+| 
+| Defined in extended_misc.at line number 204.
 | 
 
-
-.. _display_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->)1:
+.. _display_extended_param_e->void1:
 
 display
 -------------------------------------------------
-| ``display:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->)``
+| ``display:extended_param E->void``
+| 
+| Defined in extended_misc.at line number 207.
 | 
 
-
-.. _display_one_line_(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->)1:
+.. _display_one_line_extended_param_e->void1:
 
 display_one_line
 -------------------------------------------------
-| ``display_one_line:(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec->)``
+| ``display_one_line:extended_param E->void``
 | 
-
+| Defined in extended_misc.at line number 208.
+| 
 

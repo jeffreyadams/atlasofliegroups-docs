@@ -4,107 +4,111 @@ complex.at Function References
 =======================================================
 |
 
-.. _left_(vec->vec)1:
+.. _left_vec_v->vec:_v[1:
 
 left
 -------------------------------------------------
-| ``left:(vec->vec)``
+| ``left:vec v->vec: v[``
+| 
+| Defined in complex.at line number 4.
 | 
 
-
-.. _right_(vec->vec)1:
+.. _right_vec_v->vec:_v[#v\21:
 
 right
 -------------------------------------------------
-| ``right:(vec->vec)``
+| ``right:vec v->vec: v[#v\2``
+| 
+| Defined in complex.at line number 5.
 | 
 
-
-.. _left_(ratvec->ratvec)1:
+.. _left_ratvec_v->ratvec:_v[1:
 
 left
 -------------------------------------------------
-| ``left:(ratvec->ratvec)``
+| ``left:ratvec v->ratvec: v[``
+| 
+| Defined in complex.at line number 6.
 | 
 
-
-.. _right_(ratvec->ratvec)1:
+.. _right_ratvec_v->ratvec:_v[#v\21:
 
 right
 -------------------------------------------------
-| ``right:(ratvec->ratvec)``
+| ``right:ratvec v->ratvec: v[#v\2``
+| 
+| Defined in complex.at line number 7.
 | 
 
-
-.. _concatenate_(ratvec,ratvec->ratvec)1:
-
-concatenate
--------------------------------------------------
-| ``concatenate:(ratvec,ratvec->ratvec)``
-| 
-
-
-.. _up_right_corner_(mat->mat)1:
+.. _up_right_corner_mat_m->mat1:
 
 up_right_corner
 -------------------------------------------------
-| ``up_right_corner:(mat->mat)``
+| ``up_right_corner:mat M->mat``
+| 
+| Defined in complex.at line number 17.
 | 
 
-
-.. _left_w_(KGBElt->mat)1:
+.. _left_w_kgbelt_x->mat1:
 
 left_w
 -------------------------------------------------
-| ``left_w:(KGBElt->mat)``
+| ``left_w:KGBElt x->mat``
+| 
+| Defined in complex.at line number 21.
 | 
 
-
-.. _mu_C_(Param->vec)1:
+.. _mu_c_param_p->vec1:
 
 mu_C
 -------------------------------------------------
-| ``mu_C:(Param->vec)``
+| ``mu_C:Param p->vec``
+| 
+| Defined in complex.at line number 28.
 | 
 
-
-.. _nu_C_(Param->ratvec)1:
+.. _nu_c_param_p->ratvec1:
 
 nu_C
 -------------------------------------------------
-| ``nu_C:(Param->ratvec)``
+| ``nu_C:Param p->ratvec``
+| 
+| Defined in complex.at line number 35.
 | 
 
-
-.. _gamma_L_(Param->ratvec)1:
+.. _gamma_l_param_p->ratvec1:
 
 gamma_L
 -------------------------------------------------
-| ``gamma_L:(Param->ratvec)``
+| ``gamma_L:Param p->ratvec``
+| 
+| Defined in complex.at line number 39.
 | 
 
-
-.. _gamma_R_(Param->ratvec)1:
+.. _gamma_r_param_p->ratvec1:
 
 gamma_R
 -------------------------------------------------
-| ``gamma_R:(Param->ratvec)``
+| ``gamma_R:Param p->ratvec``
+| 
+| Defined in complex.at line number 40.
 | 
 
-
-.. _gparameter_(RealForm,ratvec,ratvec->Param)1:
+.. _gparameter_realform_g,ratvec_gamma_l,_ratvec_gamma_r->param1:
 
 gparameter
 -------------------------------------------------
-| ``gparameter:(RealForm,ratvec,ratvec->Param)``
+| ``gparameter:RealForm G,ratvec gamma_L, ratvec gamma_R->Param``
+| 
+| Defined in complex.at line number 45.
 | 
 
-
-.. _mparameter_(RealForm,vec,ratvec->Param)1:
+.. _mparameter_realform_g,_vec_mu,_ratvec_nu->param1:
 
 mparameter
 -------------------------------------------------
-| ``mparameter:(RealForm,vec,ratvec->Param)``
+| ``mparameter:RealForm G, vec mu, ratvec nu->Param``
 | 
-
+| Defined in complex.at line number 52.
+| 
 
