@@ -8,26 +8,23 @@ new_blocks.at Function References
 
 cross
 -------------------------------------------------
-| ``cross:int s,Param p->Param``
+| ``cross:int s,Param p->Param`` Defined in line number 15.
 | 
-| Defined in new_blocks.at line number 15.
 | 
 
 .. _cayley_int_s,param_p->param2:
 
 Cayley
 -------------------------------------------------
-| ``Cayley:int s,Param p->Param``
+| ``Cayley:int s,Param p->Param`` Defined in line number 20.
 | 
-| Defined in new_blocks.at line number 20.
 | 
 
 .. _block_param_p->([param],int)1:
 
 block
 -------------------------------------------------
-| ``block:Param p->([Param],int)``
+| ``block:Param p->([Param],int)`` Defined in line number 27.
 | 
-| Defined in new_blocks.at line number 27.
 | 
 

@@ -401,6 +401,26 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../usr_defined_functions.html">User Defined Functions</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="2i12.html">2i12.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="2i12_index.html">2i12.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="2i12_ref.html">2i12.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="2i12s.html">2i12s.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="2i12s_index.html">2i12s.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="2i12s_ref.html">2i12s.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="2r21s.html">2r21s.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="2r21s_index.html">2r21s.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="2r21s_ref.html">2r21s.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="all.html">all.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="all_index.html">all.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="all_ref.html">all.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="all_Kparameters.html">all_Kparameters.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_ref.html">all_Kparameters.at Function References</a></li>
@@ -606,6 +626,11 @@
 <li class="toctree-l4"><a class="reference internal" href="lattice_ref.html">lattice.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="lietypes.html">lietypes.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="lietypes_index.html">lietypes.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="lietypes_ref.html">lietypes.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="LKT.html">LKT.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="LKT_index.html">LKT.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="LKT_ref.html">LKT.at Function References</a></li>
@@ -686,9 +711,19 @@
 <li class="toctree-l4"><a class="reference internal" href="sort_ref.html">sort.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="sp4.html">sp4.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sp4_index.html">sp4.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sp4_ref.html">sp4.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="stable.html">stable.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="stable_index.html">stable.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="stable_ref.html">stable.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="std_decs.html">std_decs.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="std_decs_index.html">std_decs.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="std_decs_ref.html">std_decs.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="synthetic.html">synthetic.at</a><ul>
@@ -739,6 +774,11 @@
 <li class="toctree-l3"><a class="reference internal" href="twist.html">twist.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="twist_index.html">twist.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="twist_ref.html">twist.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="unitary.html">unitary.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unitary_index.html">unitary.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="unitary_ref.html">unitary.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Vogan-dual.html">Vogan-dual.at</a><ul>
@@ -967,180 +1007,160 @@
 <div class="section" id="k-norm">
 <span id="k-norm-ratvec-k-type-int-k-type-x-lambda-1"></span><h2>K_norm<a class="headerlink" href="#k-norm" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">_-&gt;(K_Type-&gt;int):</span> <span class="pre">(K_Type(x,lambda))</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">_-&gt;(K_Type-&gt;int):</span> <span class="pre">(K_Type(x,lambda))</span></code> Defined in line number 10.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 10.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-ratvec-v-k-type-p-int1">
 <span id="id1"></span><h2>K_norm<a class="headerlink" href="#k-norm-ratvec-v-k-type-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,K_Type</span> <span class="pre">p-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,K_Type</span> <span class="pre">p-&gt;int</span></code> Defined in line number 15.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 15.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-ratvec-v-param-p-int1">
 <span id="id2"></span><h2>K_norm<a class="headerlink" href="#k-norm-ratvec-v-param-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,Param</span> <span class="pre">p-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,Param</span> <span class="pre">p-&gt;int</span></code> Defined in line number 16.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 16.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-ratvec-v-split-s-k-type-p-int1">
 <span id="id3"></span><h2>K_norm<a class="headerlink" href="#k-norm-ratvec-v-split-s-k-type-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,Split</span> <span class="pre">s,K_Type</span> <span class="pre">p-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,Split</span> <span class="pre">s,K_Type</span> <span class="pre">p-&gt;int</span></code> Defined in line number 18.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 18.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-ratvec-v-split-s-param-p-int1">
 <span id="id4"></span><h2>K_norm<a class="headerlink" href="#k-norm-ratvec-v-split-s-param-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,Split</span> <span class="pre">s,Param</span> <span class="pre">p-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,Split</span> <span class="pre">s,Param</span> <span class="pre">p-&gt;int</span></code> Defined in line number 19.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 19.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-k-type-p-int1">
 <span id="id5"></span><h2>K_norm<a class="headerlink" href="#k-norm-k-type-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:K_Type</span> <span class="pre">p-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:K_Type</span> <span class="pre">p-&gt;int</span></code> Defined in line number 25.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 25.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-param-p-int1">
 <span id="id6"></span><h2>K_norm<a class="headerlink" href="#k-norm-param-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:Param</span> <span class="pre">p-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:Param</span> <span class="pre">p-&gt;int</span></code> Defined in line number 26.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 26.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-split-s-k-type-p-int1">
 <span id="id7"></span><h2>K_norm<a class="headerlink" href="#k-norm-split-s-k-type-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:Split</span> <span class="pre">s,K_Type</span> <span class="pre">p-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:Split</span> <span class="pre">s,K_Type</span> <span class="pre">p-&gt;int</span></code> Defined in line number 27.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 27.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norms">
 <span id="k-norms-ratvec-v-k-norm-v-in-k-type-pol-p-int-1"></span><h2>K_norms<a class="headerlink" href="#k-norms" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norms:ratvec</span> <span class="pre">v-&gt;K_norm(v)</span> <span class="pre">in</span> <span class="pre">(K_Type_Pol</span> <span class="pre">P)</span> <span class="pre">[int]</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norms:ratvec</span> <span class="pre">v-&gt;K_norm(v)</span> <span class="pre">in</span> <span class="pre">(K_Type_Pol</span> <span class="pre">P)</span> <span class="pre">[int]</span></code> Defined in line number 40.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 40.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norms-k-type-pol-p-int-1">
 <span id="id8"></span><h2>K_norms<a class="headerlink" href="#k-norms-k-type-pol-p-int-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norms:K_Type_Pol</span> <span class="pre">P-&gt;[int]</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norms:K_Type_Pol</span> <span class="pre">P-&gt;[int]</span></code> Defined in line number 43.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 43.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-ratvec-v-k-type-pol-p-int1">
 <span id="id9"></span><h2>K_norm<a class="headerlink" href="#k-norm-ratvec-v-k-type-pol-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,K_Type_Pol</span> <span class="pre">P-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:ratvec</span> <span class="pre">v,K_Type_Pol</span> <span class="pre">P-&gt;int</span></code> Defined in line number 45.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 45.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-norm-k-type-pol-p-int1">
 <span id="id10"></span><h2>K_norm<a class="headerlink" href="#k-norm-k-type-pol-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_norm:K_Type_Pol</span> <span class="pre">P-&gt;int</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">K_norm:K_Type_Pol</span> <span class="pre">P-&gt;int</span></code> Defined in line number 48.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 48.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="leading-terms">
 <span id="leading-terms-ratvec-v-k-norm-v-in-k-type-pol-p-k-type-pol1"></span><h2>leading_terms<a class="headerlink" href="#leading-terms" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">leading_terms:ratvec</span> <span class="pre">v-&gt;K_norm(v)</span> <span class="pre">in</span> <span class="pre">(K_Type_Pol</span> <span class="pre">P):</span> <span class="pre">K_Type_Pol</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">leading_terms:ratvec</span> <span class="pre">v-&gt;K_norm(v)</span> <span class="pre">in</span> <span class="pre">(K_Type_Pol</span> <span class="pre">P):</span> <span class="pre">K_Type_Pol</span></code> Defined in line number 50.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 50.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="all-k-norms">
 <span id="all-k-norms-ratvec-v-k-norm-v-in-k-type-pol-p-int-1"></span><h2>all_K_norms<a class="headerlink" href="#all-k-norms" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">all_K_norms:ratvec</span> <span class="pre">v-&gt;K_norm(v)</span> <span class="pre">in</span> <span class="pre">(K_Type_Pol</span> <span class="pre">P)</span> <span class="pre">[int]</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">all_K_norms:ratvec</span> <span class="pre">v-&gt;K_norm(v)</span> <span class="pre">in</span> <span class="pre">(K_Type_Pol</span> <span class="pre">P)</span> <span class="pre">[int]</span></code> Defined in line number 54.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 54.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="all-k-norms-k-type-pol-p-int-1">
 <span id="id11"></span><h2>all_K_norms<a class="headerlink" href="#all-k-norms-k-type-pol-p-int-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">all_K_norms:K_Type_Pol</span> <span class="pre">P-&gt;[int]</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">all_K_norms:K_Type_Pol</span> <span class="pre">P-&gt;[int]</span></code> Defined in line number 57.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 57.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="sort-by-k-norm">
 <span id="sort-by-k-norm-ratvec-v-k-type-k-type-1"></span><h2>sort_by_K_norm<a class="headerlink" href="#sort-by-k-norm" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">sort_by_K_norm:ratvec</span> <span class="pre">v-&gt;([K_Type]</span> <span class="pre">-&gt;</span> <span class="pre">[K_Type])</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">sort_by_K_norm:ratvec</span> <span class="pre">v-&gt;([K_Type]</span> <span class="pre">-&gt;</span> <span class="pre">[K_Type])</span></code> Defined in line number 60.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 60.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="print-by-k-norm">
 <span id="print-by-k-norm-ratvec-v-k-norm-v-in-k-type-pol-p-void1"></span><h2>print_by_K_norm<a class="headerlink" href="#print-by-k-norm" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">print_by_K_norm:ratvec</span> <span class="pre">v-&gt;K_norm(v)</span> <span class="pre">in</span> <span class="pre">(K_Type_Pol</span> <span class="pre">P)</span> <span class="pre">void</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">print_by_K_norm:ratvec</span> <span class="pre">v-&gt;K_norm(v)</span> <span class="pre">in</span> <span class="pre">(K_Type_Pol</span> <span class="pre">P)</span> <span class="pre">void</span></code> Defined in line number 69.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 69.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="print-by-k-norm-ratvec-v-k-type-pol-p-void1">
 <span id="id12"></span><h2>print_by_K_norm<a class="headerlink" href="#print-by-k-norm-ratvec-v-k-type-pol-p-void1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">print_by_K_norm:ratvec</span> <span class="pre">v,K_Type_Pol</span> <span class="pre">P-&gt;void</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">print_by_K_norm:ratvec</span> <span class="pre">v,K_Type_Pol</span> <span class="pre">P-&gt;void</span></code> Defined in line number 73.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 73.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="print-by-k-norm-k-type-pol-p-void1">
 <span id="id13"></span><h2>print_by_K_norm<a class="headerlink" href="#print-by-k-norm-k-type-pol-p-void1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">print_by_K_norm:K_Type_Pol</span> <span class="pre">P-&gt;void</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">print_by_K_norm:K_Type_Pol</span> <span class="pre">P-&gt;void</span></code> Defined in line number 75.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 75.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="leading-terms-k-type-pol-p-k-type-pol1">
 <span id="id14"></span><h2>leading_terms<a class="headerlink" href="#leading-terms-k-type-pol-p-k-type-pol1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">leading_terms:K_Type_Pol</span> <span class="pre">P-&gt;K_Type_Pol</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">leading_terms:K_Type_Pol</span> <span class="pre">P-&gt;K_Type_Pol</span></code> Defined in line number 78.</div>
 <div class="line"><br /></div>
-<div class="line">Defined in K_norm.at line number 78.</div>
 <div class="line"><br /></div>
 </div>
 </div>

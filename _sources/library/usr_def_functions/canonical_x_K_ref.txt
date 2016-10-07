@@ -8,35 +8,31 @@ canonical_x_K.at Function References
 
 map_into_distinguished_fiber
 -------------------------------------------------
-| ``map_into_distinguished_fiber:KGBElt x->KGBElt``
+| ``map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 23.
 | 
-| Defined in canonical_x_K.at line number 23.
 | 
 
 .. _strong_map_into_distinguished_fiber_kgbelt_x->kgbelt1:
 
 strong_map_into_distinguished_fiber
 -------------------------------------------------
-| ``strong_map_into_distinguished_fiber:KGBElt x->KGBElt``
+| ``strong_map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 39.
 | 
-| Defined in canonical_x_K.at line number 39.
 | 
 
 .. _canonical_x_k_kgbelt_x->kgbelt1:
 
 canonical_x_K
 -------------------------------------------------
-| ``canonical_x_K:KGBElt x->KGBElt``
+| ``canonical_x_K:KGBElt x->KGBElt`` Defined in line number 42.
 | 
-| Defined in canonical_x_K.at line number 42.
 | 
 
 .. _canonical_x_k_param_p->kgbelt1:
 
 canonical_x_K
 -------------------------------------------------
-| ``canonical_x_K:Param p->KGBElt``
+| ``canonical_x_K:Param p->KGBElt`` Defined in line number 43.
 | 
-| Defined in canonical_x_K.at line number 43.
 | 
 

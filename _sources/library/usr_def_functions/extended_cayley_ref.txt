@@ -8,44 +8,39 @@ extended_cayley.at Function References
 
 test_ext_cayley
 -------------------------------------------------
-| ``test_ext_cayley:Param p, int j, string ext_type, extended_param E->void``
+| ``test_ext_cayley:Param p, int j, string ext_type, extended_param E->void`` Defined in line number 6.
 | 
-| Defined in extended_cayley.at line number 6.
 | 
 
 .. _ext_cayley_1_int_j,_extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[extended_param]1:
 
 ext_Cayley_1
 -------------------------------------------------
-| ``ext_Cayley_1:int j, extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]``
+| ``ext_Cayley_1:int j, extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 36.
 | 
-| Defined in extended_cayley.at line number 36.
 | 
 
 .. _ext_cayley_2_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[extended_param]1:
 
 ext_Cayley_2
 -------------------------------------------------
-| ``ext_Cayley_2:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]``
+| ``ext_Cayley_2:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 109.
 | 
-| Defined in extended_cayley.at line number 109.
 | 
 
 .. _ext_cayley_3_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[extended_param]1:
 
 ext_Cayley_3
 -------------------------------------------------
-| ``ext_Cayley_3:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]``
+| ``ext_Cayley_3:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 287.
 | 
-| Defined in extended_cayley.at line number 287.
 | 
 
 .. _ext_cayley_simple_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[extended_param]1:
 
 ext_Cayley_simple
 -------------------------------------------------
-| ``ext_Cayley_simple:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]``
+| ``ext_Cayley_simple:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 302.
 | 
-| Defined in extended_cayley.at line number 302.
 | 
 
