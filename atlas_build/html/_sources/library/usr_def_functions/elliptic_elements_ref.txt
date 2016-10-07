@@ -8,17 +8,15 @@ elliptic_elements.at Function References
 
 elliptic_elements
 -------------------------------------------------
-| ``elliptic_elements:string type->[[int]]``
+| ``elliptic_elements:string type->[[int]]`` Defined in line number 73.
 | 
-| Defined in elliptic_elements.at line number 73.
 | 
 
 .. _elliptic_elements_realform_g,[[int]]_v->[w_word]1:
 
 elliptic_elements
 -------------------------------------------------
-| ``elliptic_elements:RealForm G,[[int]] v->[W_word]``
+| ``elliptic_elements:RealForm G,[[int]] v->[W_word]`` Defined in line number 97.
 | 
-| Defined in elliptic_elements.at line number 97.
 | 
 

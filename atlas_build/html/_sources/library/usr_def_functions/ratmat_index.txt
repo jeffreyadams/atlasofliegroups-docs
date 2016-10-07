@@ -14,11 +14,11 @@ ratmat.at Function Index
      - ``mat M->int``
    * - :ref:`simplify_ratmat(m,,d)->ratmat1`
      - ``ratmat(M,,d)->ratmat``
-   * - :ref:`/_mat_m,int_d->ratmat1`
+   * - :ref:`\/_mat_m,int_d->ratmat1`
      - ``mat M,int d->ratmat``
    * - :ref:`\*_rat_f,mat_m->ratmat1`
      - ``rat f,mat M->ratmat``
-   * - :ref:`/_mat_m,rat_f->ratmat1`
+   * - :ref:`\/_mat_m,rat_f->ratmat1`
      - ``mat M,rat f->ratmat``
    * - :ref:`entry_ratmat(m,,d),int_i,int_j->rat1`
      - ``ratmat(M,,d),int i,int j->rat``
@@ -66,7 +66,7 @@ ratmat.at Function Index
      - ``mat M,ratmat(MM,,d)->ratmat``
    * - :ref:`\*_ratmat(m,,d),ratmat(mm,,dd)->ratmat1`
      - ``ratmat(M,,d),ratmat(MM,,dd)->ratmat``
-   * - :ref:`/_ratmat(m,,d)->ratmat1`
+   * - :ref:`\/_ratmat(m,,d)->ratmat1`
      - ``ratmat(M,,d)->ratmat``
    * - :ref:`\^_ratmat(m,,d):md,int_e->ratmat1`
      - ``ratmat(M,,d):Md,int e->ratmat``

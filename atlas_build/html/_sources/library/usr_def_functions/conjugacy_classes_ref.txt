@@ -8,44 +8,39 @@ conjugacy_classes.at Function References
 
 conjugacy_class_extra
 -------------------------------------------------
-| ``conjugacy_class_extra:W_word x->([W_word],[W_word])``
+| ``conjugacy_class_extra:W_word x->([W_word],[W_word])`` Defined in line number 10.
 | 
-| Defined in conjugacy_classes.at line number 10.
 | 
 
 .. _conjugacy_class_w_word_x->[w_word]1:
 
 conjugacy_class
 -------------------------------------------------
-| ``conjugacy_class:W_word x->[W_word]``
+| ``conjugacy_class:W_word x->[W_word]`` Defined in line number 26.
 | 
-| Defined in conjugacy_classes.at line number 26.
 | 
 
 .. _size_of_conjugacy_class_w_word_x->int1:
 
 size_of_conjugacy_class
 -------------------------------------------------
-| ``size_of_conjugacy_class:W_word x->int``
+| ``size_of_conjugacy_class:W_word x->int`` Defined in line number 28.
 | 
-| Defined in conjugacy_classes.at line number 28.
 | 
 
 .. _delete_w_word_w,_[w_word]_w->[w_word]1:
 
 delete
 -------------------------------------------------
-| ``delete:W_word w, [W_word] W->[W_word]``
+| ``delete:W_word w, [W_word] W->[W_word]`` Defined in line number 32.
 | 
-| Defined in conjugacy_classes.at line number 32.
 | 
 
 .. _conjugacy_classes_rootdatum_rd->[[w_word]]1:
 
 conjugacy_classes
 -------------------------------------------------
-| ``conjugacy_classes:RootDatum rd->[[W_word]]``
+| ``conjugacy_classes:RootDatum rd->[[W_word]]`` Defined in line number 36.
 | 
-| Defined in conjugacy_classes.at line number 36.
 | 
 

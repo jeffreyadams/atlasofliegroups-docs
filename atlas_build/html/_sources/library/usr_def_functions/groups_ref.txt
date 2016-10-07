@@ -8,476 +8,423 @@ groups.at Function References
 
 Cartan_dispatch
 -------------------------------------------------
-| ``Cartan_dispatch:int type, int r, int min, int d, bool lower->int``
+| ``Cartan_dispatch:int type, int r, int min, int d, bool lower->int`` Defined in line number 4.
 | 
-| Defined in groups.at line number 4.
 | 
 
 .. _cartan_entry_int_type,_int_r,int_i,_int_j->int1:
 
 Cartan_entry
 -------------------------------------------------
-| ``Cartan_entry:int type, int r,int i, int j->int``
+| ``Cartan_entry:int type, int r,int i, int j->int`` Defined in line number 17.
 | 
-| Defined in groups.at line number 17.
 | 
 
 .. _cartan_matrix_int_type,_int_r->mat1:
 
 Cartan_matrix
 -------------------------------------------------
-| ``Cartan_matrix:int type, int r->mat``
+| ``Cartan_matrix:int type, int r->mat`` Defined in line number 23.
 | 
-| Defined in groups.at line number 23.
 | 
 
 .. _lie_type_(int,int)_p->lietype1:
 
 Lie_type
 -------------------------------------------------
-| ``Lie_type:(int,int) p->LieType``
+| ``Lie_type:(int,int) p->LieType`` Defined in line number 26.
 | 
-| Defined in groups.at line number 26.
 | 
 
 .. _block_repeat_mat_m,_int_n->mat1:
 
 block_repeat
 -------------------------------------------------
-| ``block_repeat:mat m, int n->mat``
+| ``block_repeat:mat m, int n->mat`` Defined in line number 29.
 | 
-| Defined in groups.at line number 29.
 | 
 
 .. _complex_rootdatum_rd->realform1:
 
 complex
 -------------------------------------------------
-| ``complex:RootDatum rd->RealForm``
+| ``complex:RootDatum rd->RealForm`` Defined in line number 36.
 | 
-| Defined in groups.at line number 36.
 | 
 
 .. _gl_roots_int_n->mat1:
 
 GL_roots
 -------------------------------------------------
-| ``GL_roots:int n->mat``
+| ``GL_roots:int n->mat`` Defined in line number 51.
 | 
-| Defined in groups.at line number 51.
 | 
 
 .. _sl_coroots_int_n->mat1:
 
 SL_coroots
 -------------------------------------------------
-| ``SL_coroots:int n->mat``
+| ``SL_coroots:int n->mat`` Defined in line number 56.
 | 
-| Defined in groups.at line number 56.
 | 
 
 .. _sl_roots_int_n->mat1:
 
 SL_roots
 -------------------------------------------------
-| ``SL_roots:int n->mat``
+| ``SL_roots:int n->mat`` Defined in line number 61.
 | 
-| Defined in groups.at line number 61.
 | 
 
 .. _gl_int_n->rootdatum1:
 
 GL
 -------------------------------------------------
-| ``GL:int n->RootDatum``
+| ``GL:int n->RootDatum`` Defined in line number 64.
 | 
-| Defined in groups.at line number 64.
 | 
 
 .. _sl_int_n->rootdatum1:
 
 SL
 -------------------------------------------------
-| ``SL:int n->RootDatum``
+| ``SL:int n->RootDatum`` Defined in line number 65.
 | 
-| Defined in groups.at line number 65.
 | 
 
 .. _psl_int_n->rootdatum1:
 
 PSL
 -------------------------------------------------
-| ``PSL:int n->RootDatum``
+| ``PSL:int n->RootDatum`` Defined in line number 66.
 | 
-| Defined in groups.at line number 66.
 | 
 
 .. _type_b_roots_int_n->mat1:
 
 type_B_roots
 -------------------------------------------------
-| ``type_B_roots:int n->mat``
+| ``type_B_roots:int n->mat`` Defined in line number 70.
 | 
-| Defined in groups.at line number 70.
 | 
 
 .. _type_c_roots_int_n->mat1:
 
 type_C_roots
 -------------------------------------------------
-| ``type_C_roots:int n->mat``
+| ``type_C_roots:int n->mat`` Defined in line number 73.
 | 
-| Defined in groups.at line number 73.
 | 
 
 .. _type_d_roots_int_n->mat1:
 
 type_D_roots
 -------------------------------------------------
-| ``type_D_roots:int n->mat``
+| ``type_D_roots:int n->mat`` Defined in line number 77.
 | 
-| Defined in groups.at line number 77.
 | 
 
 .. _sp_int_n->rootdatum1:
 
 Sp
 -------------------------------------------------
-| ``Sp:int n->RootDatum``
+| ``Sp:int n->RootDatum`` Defined in line number 85.
 | 
-| Defined in groups.at line number 85.
 | 
 
 .. _psp_int_n->rootdatum1:
 
 PSp
 -------------------------------------------------
-| ``PSp:int n->RootDatum``
+| ``PSp:int n->RootDatum`` Defined in line number 89.
 | 
-| Defined in groups.at line number 89.
 | 
 
 .. _gsp_int_n->rootdatum1:
 
 GSp
 -------------------------------------------------
-| ``GSp:int n->RootDatum``
+| ``GSp:int n->RootDatum`` Defined in line number 93.
 | 
-| Defined in groups.at line number 93.
 | 
 
 .. _so_int_n->rootdatum1:
 
 SO
 -------------------------------------------------
-| ``SO:int n->RootDatum``
+| ``SO:int n->RootDatum`` Defined in line number 102.
 | 
-| Defined in groups.at line number 102.
 | 
 
 .. _so_lie_type_int_n->lietype1:
 
 SO_Lie_type
 -------------------------------------------------
-| ``SO_Lie_type:int n->LieType``
+| ``SO_Lie_type:int n->LieType`` Defined in line number 108.
 | 
-| Defined in groups.at line number 108.
 | 
 
 .. _spin_int_n->rootdatum1:
 
 Spin
 -------------------------------------------------
-| ``Spin:int n->RootDatum``
+| ``Spin:int n->RootDatum`` Defined in line number 117.
 | 
-| Defined in groups.at line number 117.
 | 
 
 .. _pso_int_n->rootdatum1:
 
 PSO
 -------------------------------------------------
-| ``PSO:int n->RootDatum``
+| ``PSO:int n->RootDatum`` Defined in line number 118.
 | 
-| Defined in groups.at line number 118.
 | 
 
 .. _su_int_p,int_q,_rootdatum_rd->realform1:
 
 SU
 -------------------------------------------------
-| ``SU:int p,int q, RootDatum rd->RealForm``
+| ``SU:int p,int q, RootDatum rd->RealForm`` Defined in line number 125.
 | 
-| Defined in groups.at line number 125.
 | 
 
 .. _su_int_p,int_q->realform1:
 
 SU
 -------------------------------------------------
-| ``SU:int p,int q->RealForm``
+| ``SU:int p,int q->RealForm`` Defined in line number 129.
 | 
-| Defined in groups.at line number 129.
 | 
 
 .. _psu_int_p,int_q->realform1:
 
 PSU
 -------------------------------------------------
-| ``PSU:int p,int q->RealForm``
+| ``PSU:int p,int q->RealForm`` Defined in line number 130.
 | 
-| Defined in groups.at line number 130.
 | 
 
 .. _su_int_n->realform1:
 
 SU
 -------------------------------------------------
-| ``SU:int n->RealForm``
+| ``SU:int n->RealForm`` Defined in line number 131.
 | 
-| Defined in groups.at line number 131.
 | 
 
 .. _psu_int_n->realform1:
 
 PSU
 -------------------------------------------------
-| ``PSU:int n->RealForm``
+| ``PSU:int n->RealForm`` Defined in line number 132.
 | 
-| Defined in groups.at line number 132.
 | 
 
 .. _u_int_p,int_q->realform1:
 
 U
 -------------------------------------------------
-| ``U:int p,int q->RealForm``
+| ``U:int p,int q->RealForm`` Defined in line number 135.
 | 
-| Defined in groups.at line number 135.
 | 
 
 .. _sl_r_int_n->realform1:
 
 SL_R
 -------------------------------------------------
-| ``SL_R:int n->RealForm``
+| ``SL_R:int n->RealForm`` Defined in line number 138.
 | 
-| Defined in groups.at line number 138.
 | 
 
 .. _psl_r_int_n->realform1:
 
 PSL_R
 -------------------------------------------------
-| ``PSL_R:int n->RealForm``
+| ``PSL_R:int n->RealForm`` Defined in line number 139.
 | 
-| Defined in groups.at line number 139.
 | 
 
 .. _pgl_r_int_n->realform1:
 
 PGL_R
 -------------------------------------------------
-| ``PGL_R:int n->RealForm``
+| ``PGL_R:int n->RealForm`` Defined in line number 140.
 | 
-| Defined in groups.at line number 140.
 | 
 
 .. _sl_c_int_n->realform1:
 
 SL_C
 -------------------------------------------------
-| ``SL_C:int n->RealForm``
+| ``SL_C:int n->RealForm`` Defined in line number 142.
 | 
-| Defined in groups.at line number 142.
 | 
 
 .. _psl_c_int_n->realform1:
 
 PSL_C
 -------------------------------------------------
-| ``PSL_C:int n->RealForm``
+| ``PSL_C:int n->RealForm`` Defined in line number 143.
 | 
-| Defined in groups.at line number 143.
 | 
 
 .. _pgl_c_int_n->realform1:
 
 PGL_C
 -------------------------------------------------
-| ``PGL_C:int n->RealForm``
+| ``PGL_C:int n->RealForm`` Defined in line number 144.
 | 
-| Defined in groups.at line number 144.
 | 
 
 .. _sl_h_int_n->realform1:
 
 SL_H
 -------------------------------------------------
-| ``SL_H:int n->RealForm``
+| ``SL_H:int n->RealForm`` Defined in line number 146.
 | 
-| Defined in groups.at line number 146.
 | 
 
 .. _psl_h_int_n->realform1:
 
 PSL_H
 -------------------------------------------------
-| ``PSL_H:int n->RealForm``
+| ``PSL_H:int n->RealForm`` Defined in line number 147.
 | 
-| Defined in groups.at line number 147.
 | 
 
 .. _pgl_h_int_n->realform1:
 
 PGL_H
 -------------------------------------------------
-| ``PGL_H:int n->RealForm``
+| ``PGL_H:int n->RealForm`` Defined in line number 148.
 | 
-| Defined in groups.at line number 148.
 | 
 
 .. _gl_r_int_n->realform1:
 
 GL_R
 -------------------------------------------------
-| ``GL_R:int n->RealForm``
+| ``GL_R:int n->RealForm`` Defined in line number 150.
 | 
-| Defined in groups.at line number 150.
 | 
 
 .. _gl_c_int_n->realform1:
 
 GL_C
 -------------------------------------------------
-| ``GL_C:int n->RealForm``
+| ``GL_C:int n->RealForm`` Defined in line number 151.
 | 
-| Defined in groups.at line number 151.
 | 
 
 .. _gl_h_int_n->realform1:
 
 GL_H
 -------------------------------------------------
-| ``GL_H:int n->RealForm``
+| ``GL_H:int n->RealForm`` Defined in line number 152.
 | 
-| Defined in groups.at line number 152.
 | 
 
 .. _sp_r_int_n->realform1:
 
 Sp_R
 -------------------------------------------------
-| ``Sp_R:int n->RealForm``
+| ``Sp_R:int n->RealForm`` Defined in line number 176.
 | 
-| Defined in groups.at line number 176.
 | 
 
 .. _psp_r_int_n->realform1:
 
 PSp_R
 -------------------------------------------------
-| ``PSp_R:int n->RealForm``
+| ``PSp_R:int n->RealForm`` Defined in line number 177.
 | 
-| Defined in groups.at line number 177.
 | 
 
 .. _gsp_r_int_n->realform1:
 
 GSp_R
 -------------------------------------------------
-| ``GSp_R:int n->RealForm``
+| ``GSp_R:int n->RealForm`` Defined in line number 178.
 | 
-| Defined in groups.at line number 178.
 | 
 
 .. _sp_h_int_n->realform1:
 
 Sp_H
 -------------------------------------------------
-| ``Sp_H:int n->RealForm``
+| ``Sp_H:int n->RealForm`` Defined in line number 188.
 | 
-| Defined in groups.at line number 188.
 | 
 
 .. _psp_h_int_n->realform1:
 
 PSp_H
 -------------------------------------------------
-| ``PSp_H:int n->RealForm``
+| ``PSp_H:int n->RealForm`` Defined in line number 191.
 | 
-| Defined in groups.at line number 191.
 | 
 
 .. _gsp_h_int_n->realform1:
 
 GSp_H
 -------------------------------------------------
-| ``GSp_H:int n->RealForm``
+| ``GSp_H:int n->RealForm`` Defined in line number 194.
 | 
-| Defined in groups.at line number 194.
 | 
 
 .. _so_inner_class_int_p,int_q->string1:
 
 SO_inner_class
 -------------------------------------------------
-| ``SO_inner_class:int p,int q->string``
+| ``SO_inner_class:int p,int q->string`` Defined in line number 202.
 | 
-| Defined in groups.at line number 202.
 | 
 
 .. _so_real_form_number_int_p,int_q->int1:
 
 SO_real_form_number
 -------------------------------------------------
-| ``SO_real_form_number:int p,int q->int``
+| ``SO_real_form_number:int p,int q->int`` Defined in line number 211.
 | 
-| Defined in groups.at line number 211.
 | 
 
 .. _so_int_p,int_q,rootdatum_rd->realform1:
 
 SO
 -------------------------------------------------
-| ``SO:int p,int q,RootDatum rd->RealForm``
+| ``SO:int p,int q,RootDatum rd->RealForm`` Defined in line number 221.
 | 
-| Defined in groups.at line number 221.
 | 
 
 .. _spin_int_p,int_q->realform1:
 
 Spin
 -------------------------------------------------
-| ``Spin:int p,int q->RealForm``
+| ``Spin:int p,int q->RealForm`` Defined in line number 224.
 | 
-| Defined in groups.at line number 224.
 | 
 
 .. _so_int_p,int_q->realform1:
 
 SO
 -------------------------------------------------
-| ``SO:int p,int q->RealForm``
+| ``SO:int p,int q->RealForm`` Defined in line number 225.
 | 
-| Defined in groups.at line number 225.
 | 
 
 .. _pso_int_p,int_q->realform1:
 
 PSO
 -------------------------------------------------
-| ``PSO:int p,int q->RealForm``
+| ``PSO:int p,int q->RealForm`` Defined in line number 226.
 | 
-| Defined in groups.at line number 226.
 | 
 
 .. _e8_ic = let ic=inner_class_"t0",[ratvec]:[],""->true_in_@1:
 
 E8_ic = let ic=inner_class
 -------------------------------------------------
-| ``E8_ic = let ic=inner_class:"T0",[ratvec]:[],""->true in @``
+| ``E8_ic = let ic=inner_class:"T0",[ratvec]:[],""->true in @`` Defined in line number 264.
 | 
-| Defined in groups.at line number 264.
 | 
 

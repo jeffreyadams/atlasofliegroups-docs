@@ -8,161 +8,143 @@ group_operations.at Function References
 
 inner_forms
 -------------------------------------------------
-| ``inner_forms:RealForm G->real_forms(InnerClass``
+| ``inner_forms:RealForm G->real_forms(InnerClass`` Defined in line number 12.
 | 
-| Defined in group_operations.at line number 12.
 | 
 
 .. _print_real_forms_innerclass_ic->void1:
 
 print_real_forms
 -------------------------------------------------
-| ``print_real_forms:InnerClass ic->void``
+| ``print_real_forms:InnerClass ic->void`` Defined in line number 14.
 | 
-| Defined in group_operations.at line number 14.
 | 
 
 .. _print_inner_forms_realform_g->void1:
 
 print_inner_forms
 -------------------------------------------------
-| ``print_inner_forms:RealForm G->void``
+| ``print_inner_forms:RealForm G->void`` Defined in line number 17.
 | 
-| Defined in group_operations.at line number 17.
 | 
 
 .. _split_form_innerclass_ic->realform1:
 
 split_form
 -------------------------------------------------
-| ``split_form:InnerClass ic->RealForm``
+| ``split_form:InnerClass ic->RealForm`` Defined in line number 24.
 | 
-| Defined in group_operations.at line number 24.
 | 
 
 .. _\*_rootdatum_r,rootdatum_s->rootdatum1:
 
 \*
 -------------------------------------------------
-| ``*:RootDatum R,RootDatum S->RootDatum``
+| ``*:RootDatum R,RootDatum S->RootDatum`` Defined in line number 36.
 | 
-| Defined in group_operations.at line number 36.
 | 
 
 .. _\*_innerclass_ic1,innerclass_ic2->innerclass1:
 
 \*
 -------------------------------------------------
-| ``*:InnerClass ic1,InnerClass ic2->InnerClass``
+| ``*:InnerClass ic1,InnerClass ic2->InnerClass`` Defined in line number 40.
 | 
-| Defined in group_operations.at line number 40.
 | 
 
 .. _\*_realform_g,realform_h->realform1:
 
 \*
 -------------------------------------------------
-| ``*:RealForm G,RealForm H->RealForm``
+| ``*:RealForm G,RealForm H->RealForm`` Defined in line number 45.
 | 
-| Defined in group_operations.at line number 45.
 | 
 
 .. _radical_rootdatum_rd->rootdatum1:
 
 radical
 -------------------------------------------------
-| ``radical:RootDatum rd->RootDatum``
+| ``radical:RootDatum rd->RootDatum`` Defined in line number 56.
 | 
-| Defined in group_operations.at line number 56.
 | 
 
 .. _radical_innerclass_ic->realform1:
 
 radical
 -------------------------------------------------
-| ``radical:InnerClass ic->RealForm``
+| ``radical:InnerClass ic->RealForm`` Defined in line number 59.
 | 
-| Defined in group_operations.at line number 59.
 | 
 
 .. _derived_innerclass_ic->innerclass1:
 
 derived
 -------------------------------------------------
-| ``derived:InnerClass ic->InnerClass``
+| ``derived:InnerClass ic->InnerClass`` Defined in line number 69.
 | 
-| Defined in group_operations.at line number 69.
 | 
 
 .. _mod_central_torus_innerclass_ic->innerclass1:
 
 mod_central_torus
 -------------------------------------------------
-| ``mod_central_torus:InnerClass ic->InnerClass``
+| ``mod_central_torus:InnerClass ic->InnerClass`` Defined in line number 73.
 | 
-| Defined in group_operations.at line number 73.
 | 
 
 .. _adjoint_transform_rootdatum_rd,_mat_theta->mat1:
 
 adjoint_transform
 -------------------------------------------------
-| ``adjoint_transform:RootDatum rd, mat theta->mat``
+| ``adjoint_transform:RootDatum rd, mat theta->mat`` Defined in line number 78.
 | 
-| Defined in group_operations.at line number 78.
 | 
 
 .. _adjoint_innerclass_ic->innerclass1:
 
 adjoint
 -------------------------------------------------
-| ``adjoint:InnerClass ic->InnerClass``
+| ``adjoint:InnerClass ic->InnerClass`` Defined in line number 83.
 | 
-| Defined in group_operations.at line number 83.
 | 
 
 .. _derived_realform_g->realform1:
 
 derived
 -------------------------------------------------
-| ``derived:RealForm G->RealForm``
+| ``derived:RealForm G->RealForm`` Defined in line number 89.
 | 
-| Defined in group_operations.at line number 89.
 | 
 
 .. _adjoint_realform_g->realform1:
 
 adjoint
 -------------------------------------------------
-| ``adjoint:RealForm G->RealForm``
+| ``adjoint:RealForm G->RealForm`` Defined in line number 100.
 | 
-| Defined in group_operations.at line number 100.
 | 
 
 .. _is_equal_rank_innerclass_g->bool1:
 
 is_equal_rank
 -------------------------------------------------
-| ``is_equal_rank:InnerClass G->bool``
+| ``is_equal_rank:InnerClass G->bool`` Defined in line number 111.
 | 
-| Defined in group_operations.at line number 111.
 | 
 
 .. _is_split_realform_g->bool1:
 
 is_split
 -------------------------------------------------
-| ``is_split:RealForm G->bool``
+| ``is_split:RealForm G->bool`` Defined in line number 115.
 | 
-| Defined in group_operations.at line number 115.
 | 
 
 .. _is_relatively_split_realform_g->bool1:
 
 is_relatively_split
 -------------------------------------------------
-| ``is_relatively_split:RealForm G->bool``
+| ``is_relatively_split:RealForm G->bool`` Defined in line number 118.
 | 
-| Defined in group_operations.at line number 118.
 | 
 

@@ -92,9 +92,9 @@ basic.at Function Index
      - ``rat a->int``
    * - :ref:`ceil_rat_a->int1`
      - ``rat a->int``
-   * - :ref:`\\_(rat,int)p->int1`
+   * - :ref:`\_(rat,int)p->int1`
      - ``(rat,int)p->int``
-   * - :ref:`\\_(rat,rat)p->int1`
+   * - :ref:`\_(rat,rat)p->int1`
      - ``(rat,rat)p->int``
    * - :ref:`\%_(rat,int)p->(int,rat)1`
      - ``(rat,int)p->(int,rat)``
@@ -152,7 +152,7 @@ basic.at Function Index
      - ``int k,vec v->vec: v[``
    * - :ref:`<=_vec_v->bool1`
      - ``vec v->bool``
-   * - :ref:`<_vec_v->bool1`
+   * - :ref:`\<_vec_v->bool1`
      - ``vec v->bool``
    * - :ref:`is_member_[int]_v->(int->bool)1`
      - ``[int] v->(int->bool)``
@@ -184,11 +184,11 @@ basic.at Function Index
      - ``mat m, vec v->mat: n_columns(m) ^ (([vec]``
    * - :ref:`\^_vec_v,_mat_m->mat:_n_columns(m)_^_(v#([vec]1`
      - ``vec v, mat m->mat: n_columns(m) ^ (v#([vec]``
-   * - :ref:`##_mat_a,_mat_b->mat1`
+   * - :ref:`\##_mat_a,_mat_b->mat1`
      - ``mat A, mat B->mat``
    * - :ref:`\^_mat_a,_mat_b->mat1`
      - ``mat A, mat B->mat``
-   * - :ref:`##_int_n,[mat]_l->mat1`
+   * - :ref:`\##_int_n,[mat]_l->mat1`
      - ``int n,[mat] L->mat``
    * - :ref:`map_on_mat_m->((int->int)->mat)1`
      - ``mat m->((int->int)->mat)``
@@ -196,9 +196,9 @@ basic.at Function Index
      - ``int c,mat m->mat: map_on(m)((int e) int``
    * - :ref:`\-_mat_m->mat1`
      - ``mat m->mat``
-   * - :ref:`\\_mat_m,int_d->mat:_map_on(m)((int_e)_int1`
+   * - :ref:`\_mat_m,int_d->mat:_map_on(m)((int_e)_int1`
      - ``mat m,int d->mat: map_on(m)((int e) int``
-   * - :ref:`%_mat_m,int_d->mat:_map_on(m)((int_e)_int1`
+   * - :ref:`\%_mat_m,int_d->mat:_map_on(m)((int_e)_int1`
      - ``mat m,int d->mat: map_on(m)((int e) int``
    * - :ref:`inverse_mat_m->mat1`
      - ``mat M->mat``
@@ -228,11 +228,11 @@ basic.at Function Index
      - ``(int->bool) p,mat m->mat``
    * - :ref:`>=_mat_m->bool1`
      - ``mat m->bool``
-   * - :ref:`>_mat_m->bool1`
+   * - :ref:`\>_mat_m->bool1`
      - ``mat m->bool``
    * - :ref:`<=_mat_m->bool1`
      - ``mat m->bool``
-   * - :ref:`<_mat_m->bool1`
+   * - :ref:`\<_mat_m->bool1`
      - ``mat m->bool``
    * - :ref:`lookup_column_vec_v,mat_m->int1`
      - ``vec v,mat m->int``
@@ -250,9 +250,9 @@ basic.at Function Index
      - ``int i,ratvec v->ratvec``
    * - :ref:`\*_rat_r,ratvec_v->ratvec1`
      - ``rat r,ratvec v->ratvec``
-   * - :ref:`##_ratvec_a,ratvec_b->ratvec:_##([rat]:a,[rat]1`
+   * - :ref:`\##_ratvec_a,ratvec_b->ratvec:_##([rat]:a,[rat]1`
      - ``ratvec a,ratvec b->ratvec: ##([rat]:a,[rat]``
-   * - :ref:`##_[ratvec]_rs->ratvec:_##_for_r_in_rs_do_[rat]1`
+   * - :ref:`\##_[ratvec]_rs->ratvec:_##_for_r_in_rs_do_[rat]1`
      - ``[ratvec] rs->ratvec: ## for r in rs do [rat]``
    * - :ref:`sum_[ratvec]_list,_int_l->ratvec1`
      - ``[ratvec] list, int l->ratvec``
@@ -264,7 +264,7 @@ basic.at Function Index
      - ``ratvec v, ratvec w->rat``
    * - :ref:`\*_vec_v,_ratvec_w->rat1`
      - ``vec v, ratvec w->rat``
-   * - :ref:`\\_ratvec_v,_int_k->vec1`
+   * - :ref:`\_ratvec_v,_int_k->vec1`
      - ``ratvec v, int k->vec``
    * - :ref:`ratvec_as_vec_ratvec_v->vec1`
      - ``ratvec v->vec``
@@ -282,7 +282,7 @@ basic.at Function Index
      - ``ratvec v->rat``
    * - :ref:`<=_ratvec_v->bool1`
      - ``ratvec v->bool``
-   * - :ref:`<_ratvec_v->bool1`
+   * - :ref:`\<_ratvec_v->bool1`
      - ``ratvec v->bool``
    * - :ref:`solve_mat_a,_ratvec_b->[ratvec]1`
      - ``mat A, ratvec b->[ratvec]``

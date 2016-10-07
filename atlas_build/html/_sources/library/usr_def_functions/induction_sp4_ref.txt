@@ -8,17 +8,15 @@ induction_sp4.at Function References
 
 p_long
 -------------------------------------------------
-| ``p_long:(rat nu_GL1,int epsilon_GL1),(rat nu_SL2,int epsilon_SL2)->Param``
+| ``p_long:(rat nu_GL1,int epsilon_GL1),(rat nu_SL2,int epsilon_SL2)->Param`` Defined in line number 14.
 | 
-| Defined in induction_sp4.at line number 14.
 | 
 
 .. _p_short_(rat_nu_1,rat_nu_2),(int_epsilon_1,int_epsilon_2)->param1:
 
 p_short
 -------------------------------------------------
-| ``p_short:(rat nu_1,rat nu_2),(int epsilon_1,int epsilon_2)->Param``
+| ``p_short:(rat nu_1,rat nu_2),(int epsilon_1,int epsilon_2)->Param`` Defined in line number 25.
 | 
-| Defined in induction_sp4.at line number 25.
 | 
 

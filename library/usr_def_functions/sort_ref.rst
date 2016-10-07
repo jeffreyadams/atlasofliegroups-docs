@@ -8,62 +8,55 @@ sort.at Function References
 
 merge
 -------------------------------------------------
-| ``merge:[int] a, [int] b->[int]``
+| ``merge:[int] a, [int] b->[int]`` Defined in line number 3.
 | 
-| Defined in sort.at line number 3.
 | 
 
 .. _reverse_sort_[int]_v->[int]:_sort(v)~[1:
 
 reverse_sort
 -------------------------------------------------
-| ``reverse_sort:[int] v->[int]: sort(v)~[``
+| ``reverse_sort:[int] v->[int]: sort(v)~[`` Defined in line number 22.
 | 
-| Defined in sort.at line number 22.
 | 
 
 .. _sort_u_[int]_v->[int]1:
 
 sort_u
 -------------------------------------------------
-| ``sort_u:[int] v->[int]``
+| ``sort_u:[int] v->[int]`` Defined in line number 25.
 | 
-| Defined in sort.at line number 25.
 | 
 
 .. _sort_by_(param->int)_f->([param]_v)_[param]1:
 
 sort_by
 -------------------------------------------------
-| ``sort_by:(Param->int) f->([Param] v) [Param]``
+| ``sort_by:(Param->int) f->([Param] v) [Param]`` Defined in line number 64.
 | 
-| Defined in sort.at line number 64.
 | 
 
 .. _sort_by_((param,bool)->int)_f->([(param,bool)]_v)_[(param,bool)]1:
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((Param,bool)->int) f->([(Param,bool)] v) [(Param,bool)]``
+| ``sort_by:((Param,bool)->int) f->([(Param,bool)] v) [(Param,bool)]`` Defined in line number 72.
 | 
-| Defined in sort.at line number 72.
 | 
 
 .. _sort_by_(split,param->int)_f->([(split,param)]_v)_[(split,param)]1:
 
 sort_by
 -------------------------------------------------
-| ``sort_by:(Split,Param->int) f->([(Split,Param)] v) [(Split,Param)]``
+| ``sort_by:(Split,Param->int) f->([(Split,Param)] v) [(Split,Param)]`` Defined in line number 75.
 | 
-| Defined in sort.at line number 75.
 | 
 
 .. _sort_[rat]_v->[rat]1:
 
 sort
 -------------------------------------------------
-| ``sort:[rat] v->[rat]``
+| ``sort:[rat] v->[rat]`` Defined in line number 84.
 | 
-| Defined in sort.at line number 84.
 | 
 

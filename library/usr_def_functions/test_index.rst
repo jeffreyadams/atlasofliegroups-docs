@@ -14,3 +14,5 @@ test.at Function Index
      - ``int n, rat q->some data types``
    * - :ref:`\=_int_n->[ratvec]1`
      - ``int n->[ratvec]``
+   * - :ref:`\!=_int_n->something1`
+     - ``int n->something``

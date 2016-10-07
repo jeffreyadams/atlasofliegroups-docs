@@ -8,17 +8,15 @@ LKT.at Function References
 
 LKTs
 -------------------------------------------------
-| ``LKTs:Param p->[K_Type]``
+| ``LKTs:Param p->[K_Type]`` Defined in line number 11.
 | 
-| Defined in LKT.at line number 11.
 | 
 
 .. _lkt_param_p->k_type1:
 
 LKT
 -------------------------------------------------
-| ``LKT:Param p->K_Type``
+| ``LKT:Param p->K_Type`` Defined in line number 12.
 | 
-| Defined in LKT.at line number 12.
 | 
 
