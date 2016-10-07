@@ -8,8 +8,7 @@ test_K.at Function References
 
 test_K
 -------------------------------------------------
-| ``test_K:[Param] B->void``
+| ``test_K:[Param] B->void`` Defined in line number 16.
 | 
-| Defined in test_K.at line number 16.
 | 
 

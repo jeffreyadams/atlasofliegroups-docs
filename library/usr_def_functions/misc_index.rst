@@ -18,7 +18,7 @@ misc.at Function Index
      - ``ratvec v->bool``
    * - :ref:`is_nonnegative_ratvec_v->bool1`
      - ``ratvec v->bool``
-   * - :ref:`%_parampol_p->[(split,param)]1`
+   * - :ref:`\%_parampol_p->[(split,param)]1`
      - ``ParamPol P->[(Split,Param)]``
    * - :ref:`integer_part_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``

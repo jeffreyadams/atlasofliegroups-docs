@@ -8,62 +8,55 @@ Wdelta.at Function References
 
 delta_fixed_root_datum
 -------------------------------------------------
-| ``delta_fixed_root_datum:InnerClass ic->RootDatum``
+| ``delta_fixed_root_datum:InnerClass ic->RootDatum`` Defined in line number 9.
 | 
-| Defined in Wdelta.at line number 9.
 | 
 
 .. _delta_fixed_root_datum_(rootdatum,mat)_pair->rootdatum1:
 
 delta_fixed_root_datum
 -------------------------------------------------
-| ``delta_fixed_root_datum:(RootDatum,mat) pair->RootDatum``
+| ``delta_fixed_root_datum:(RootDatum,mat) pair->RootDatum`` Defined in line number 12.
 | 
-| Defined in Wdelta.at line number 12.
 | 
 
 .. _translate_wdelta_generators_innerclass_ic->[[int]]1:
 
 translate_Wdelta_generators
 -------------------------------------------------
-| ``translate_Wdelta_generators:InnerClass ic->[[int]]``
+| ``translate_Wdelta_generators:InnerClass ic->[[int]]`` Defined in line number 18.
 | 
-| Defined in Wdelta.at line number 18.
 | 
 
 .. _translate_wdelta_generators_(rootdatum,mat)_pair->[[int]]1:
 
 translate_Wdelta_generators
 -------------------------------------------------
-| ``translate_Wdelta_generators:(RootDatum,mat) pair->[[int]]``
+| ``translate_Wdelta_generators:(RootDatum,mat) pair->[[int]]`` Defined in line number 33.
 | 
-| Defined in Wdelta.at line number 33.
 | 
 
 .. _length_rootdatum_rd,_int_i,int_j->int1:
 
 length
 -------------------------------------------------
-| ``length:RootDatum rd, int i,int j->int``
+| ``length:RootDatum rd, int i,int j->int`` Defined in line number 41.
 | 
-| Defined in Wdelta.at line number 41.
 | 
 
 .. _rewrite_word_wdelta_to_w_innerclass_ic,_w_word(,w)->w_word1:
 
 rewrite_word_Wdelta_to_W
 -------------------------------------------------
-| ``rewrite_word_Wdelta_to_W:InnerClass ic, W_word(,w)->W_word``
+| ``rewrite_word_Wdelta_to_W:InnerClass ic, W_word(,w)->W_word`` Defined in line number 44.
 | 
-| Defined in Wdelta.at line number 44.
 | 
 
 .. _rewrite_word_wdelta_to_w_rootdatum_rd,mat_delta,w_word_ww->w_word1:
 
 rewrite_word_Wdelta_to_W
 -------------------------------------------------
-| ``rewrite_word_Wdelta_to_W:RootDatum rd,mat delta,W_word ww->W_word``
+| ``rewrite_word_Wdelta_to_W:RootDatum rd,mat delta,W_word ww->W_word`` Defined in line number 48.
 | 
-| Defined in Wdelta.at line number 48.
 | 
 

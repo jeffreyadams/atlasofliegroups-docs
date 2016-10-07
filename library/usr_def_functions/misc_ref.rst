@@ -8,215 +8,191 @@ misc.at Function References
 
 is_nonnegative
 -------------------------------------------------
-| ``is_nonnegative:vec v->bool``
+| ``is_nonnegative:vec v->bool`` Defined in line number 4.
 | 
-| Defined in misc.at line number 4.
 | 
 
 .. _is_positive_vec_v->bool1:
 
 is_positive
 -------------------------------------------------
-| ``is_positive:vec v->bool``
+| ``is_positive:vec v->bool`` Defined in line number 5.
 | 
-| Defined in misc.at line number 5.
 | 
 
 .. _is_positive_ratvec_v->bool1:
 
 is_positive
 -------------------------------------------------
-| ``is_positive:ratvec v->bool``
+| ``is_positive:ratvec v->bool`` Defined in line number 8.
 | 
-| Defined in misc.at line number 8.
 | 
 
 .. _is_nonnegative_ratvec_v->bool1:
 
 is_nonnegative
 -------------------------------------------------
-| ``is_nonnegative:ratvec v->bool``
+| ``is_nonnegative:ratvec v->bool`` Defined in line number 9.
 | 
-| Defined in misc.at line number 9.
 | 
 
-.. _%_parampol_p->[(split,param)]1:
+.. _\%_parampol_p->[(split,param)]1:
 
-%
+\%
 -------------------------------------------------
-| ``%:ParamPol P->[(Split,Param)]``
+| ``%:ParamPol P->[(Split,Param)]`` Defined in line number 12.
 | 
-| Defined in misc.at line number 12.
 | 
 
 .. _integer_part_parampol_p->parampol1:
 
 integer_part
 -------------------------------------------------
-| ``integer_part:ParamPol P->ParamPol``
+| ``integer_part:ParamPol P->ParamPol`` Defined in line number 15.
 | 
-| Defined in misc.at line number 15.
 | 
 
 .. _s_part_parampol_p->parampol1:
 
 s_part
 -------------------------------------------------
-| ``s_part:ParamPol P->ParamPol``
+| ``s_part:ParamPol P->ParamPol`` Defined in line number 17.
 | 
-| Defined in misc.at line number 17.
 | 
 
 .. _param_realform_g,int_k,_vec_lambda_rho,ratvec_nu->param1:
 
 param
 -------------------------------------------------
-| ``param:RealForm G,int k, vec lambda_rho,ratvec nu->Param``
+| ``param:RealForm G,int k, vec lambda_rho,ratvec nu->Param`` Defined in line number 23.
 | 
-| Defined in misc.at line number 23.
 | 
 
 .. _finalize_param_p->[param]:_for_c@q_in_parampol1:
 
 finalize
 -------------------------------------------------
-| ``finalize:Param p->[Param]: for c@q in ParamPol``
+| ``finalize:Param p->[Param]: for c@q in ParamPol`` Defined in line number 28.
 | 
-| Defined in misc.at line number 28.
 | 
 
 .. _finalize_parampol_p->parampol1:
 
 finalize
 -------------------------------------------------
-| ``finalize:ParamPol P->ParamPol``
+| ``finalize:ParamPol P->ParamPol`` Defined in line number 30.
 | 
-| Defined in misc.at line number 30.
 | 
 
 .. _\#_split_w,int_t)=let_(a,b->%w_in_int1:
 
 \#
 -------------------------------------------------
-| ``#:Split w,int t)=let (a,b->%w in int``
+| ``#:Split w,int t)=let (a,b->%w in int`` Defined in line number 37.
 | 
-| Defined in misc.at line number 37.
 | 
 
 .. _\#_split_w,rat_t)=let_(a,b->%w_in_rat1:
 
 \#
 -------------------------------------------------
-| ``#:Split w,rat t)=let (a,b->%w in rat``
+| ``#:Split w,rat t)=let (a,b->%w in rat`` Defined in line number 38.
 | 
-| Defined in misc.at line number 38.
 | 
 
 .. _\#_parampol_p,int_t->parampol1:
 
 \#
 -------------------------------------------------
-| ``#:ParamPol P,int t->ParamPol``
+| ``#:ParamPol P,int t->ParamPol`` Defined in line number 39.
 | 
-| Defined in misc.at line number 39.
 | 
 
 .. _fiber_partition_realform_g->[int]1:
 
 fiber_partition
 -------------------------------------------------
-| ``fiber_partition:RealForm G->[int]``
+| ``fiber_partition:RealForm G->[int]`` Defined in line number 44.
 | 
-| Defined in misc.at line number 44.
 | 
 
 .. _in_distinguished_fiber_kgbelt_x->bool1:
 
 in_distinguished_fiber
 -------------------------------------------------
-| ``in_distinguished_fiber:KGBElt x->bool``
+| ``in_distinguished_fiber:KGBElt x->bool`` Defined in line number 46.
 | 
-| Defined in misc.at line number 46.
 | 
 
 .. _distinguished_fiber_realform_g->[int]1:
 
 distinguished_fiber
 -------------------------------------------------
-| ``distinguished_fiber:RealForm G->[int]``
+| ``distinguished_fiber:RealForm G->[int]`` Defined in line number 49.
 | 
-| Defined in misc.at line number 49.
 | 
 
 .. _root_length_rootdatum_rd,vec_alpha->int1:
 
 root_length
 -------------------------------------------------
-| ``root_length:RootDatum rd,vec alpha->int``
+| ``root_length:RootDatum rd,vec alpha->int`` Defined in line number 57.
 | 
-| Defined in misc.at line number 57.
 | 
 
 .. _is_simple_root_rootdatum_rd,[int]_alpha->bool1:
 
 is_simple_root
 -------------------------------------------------
-| ``is_simple_root:RootDatum rd,[int] alpha->bool``
+| ``is_simple_root:RootDatum rd,[int] alpha->bool`` Defined in line number 58.
 | 
-| Defined in misc.at line number 58.
 | 
 
 .. _simple_imaginary_subsystem_kgbelt_x->(mat,mat)1:
 
 simple_imaginary_subsystem
 -------------------------------------------------
-| ``simple_imaginary_subsystem:KGBElt x->(mat,mat)``
+| ``simple_imaginary_subsystem:KGBElt x->(mat,mat)`` Defined in line number 60.
 | 
-| Defined in misc.at line number 60.
 | 
 
 .. _simple_real_subsystem_kgbelt_x->(mat,mat)1:
 
 simple_real_subsystem
 -------------------------------------------------
-| ``simple_real_subsystem:KGBElt x->(mat,mat)``
+| ``simple_real_subsystem:KGBElt x->(mat,mat)`` Defined in line number 63.
 | 
-| Defined in misc.at line number 63.
 | 
 
 .. _to_binary_int_length,_int_n->vec1:
 
 to_binary
 -------------------------------------------------
-| ``to_binary:int length, int n->vec``
+| ``to_binary:int length, int n->vec`` Defined in line number 66.
 | 
-| Defined in misc.at line number 66.
 | 
 
 .. _generate_all_subsets_[int]_s->[[int]]1:
 
 generate_all_subsets
 -------------------------------------------------
-| ``generate_all_subsets:[int] S->[[int]]``
+| ``generate_all_subsets:[int] S->[[int]]`` Defined in line number 72.
 | 
-| Defined in misc.at line number 72.
 | 
 
 .. _prettyprint_split_w->string1:
 
 prettyPrint
 -------------------------------------------------
-| ``prettyPrint:Split w->string``
+| ``prettyPrint:Split w->string`` Defined in line number 80.
 | 
-| Defined in misc.at line number 80.
 | 
 
 .. _prettyprint_parampol_p->void1:
 
 prettyPrint
 -------------------------------------------------
-| ``prettyPrint:ParamPol P->void``
+| ``prettyPrint:ParamPol P->void`` Defined in line number 93.
 | 
-| Defined in misc.at line number 93.
 | 
 
