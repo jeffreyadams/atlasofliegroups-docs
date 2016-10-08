@@ -9,6 +9,5 @@ Preliminaries
    video_1A/basic_commands
    video_1A/vectors
    video_1A/matrices
-   video_1A/change_coordinates
    video_1A/functions_and_loops
    
