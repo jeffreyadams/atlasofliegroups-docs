@@ -4,6 +4,8 @@ W_K.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -40,5 +42,7 @@ W_K.at Function Index
      - ``KGBElt x->[vec]``
    * - :ref:`is_p_positive_kgbelt_x,vec_mu,[w_word]_s->bool1`
      - ``KGBElt x,vec mu,[W_word] S->bool``
+   * - :ref:`make_strongly_dominant_kgbelt_x,vec_mu->((kgbelt,vec),w_word,w_word,bool)1`
+     - ``KGBElt x,vec mu->((KGBElt,vec),W_word,W_word,bool)``
    * - :ref:`r_k_dom_mu_kgbelt_x,vec_mu->[w_word]1`
      - ``KGBElt x,vec mu->[W_word]``

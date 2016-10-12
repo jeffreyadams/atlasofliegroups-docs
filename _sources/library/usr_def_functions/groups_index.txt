@@ -4,6 +4,8 @@ groups.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -90,6 +92,8 @@ groups.at Function Index
      - ``int n->RealForm``
    * - :ref:`gl_h_int_n->realform1`
      - ``int n->RealForm``
+   * - :ref:`by_field_(int->realform)_f_r,(int->realform)_f_c,(int->realform)_f_h->(string->(int->realform))1`
+     - ``(int->RealForm) f_R,(int->RealForm) f_C,(int->RealForm) f_H->(string->(int->RealForm))``
    * - :ref:`sp_r_int_n->realform1`
      - ``int n->RealForm``
    * - :ref:`psp_r_int_n->realform1`

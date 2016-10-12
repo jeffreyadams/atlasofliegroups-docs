@@ -56,7 +56,7 @@ deform
 
 rec_def
 -------------------------------------------------
-| ``rec_def:Param p,mat delta->(Param,ParamPol)`` Defined in line number 86.
+| ``rec_def:Param p,mat delta->(Param,ParamPol)`` Defined in line number 91.
 | 
 | 
 
@@ -64,7 +64,7 @@ rec_def
 
 deformation_terms
 -------------------------------------------------
-| ``deformation_terms:Param p, mat delta->ParamPol`` Defined in line number 124.
+| ``deformation_terms:Param p, mat delta->ParamPol`` Defined in line number 129.
 | 
 | 
 
@@ -72,7 +72,7 @@ deformation_terms
 
 recursive_deform
 -------------------------------------------------
-| ``recursive_deform:Param p, mat delta->ParamPol`` Defined in line number 153.
+| ``recursive_deform:Param p, mat delta->ParamPol`` Defined in line number 158.
 | 
 | 
 
@@ -80,7 +80,7 @@ recursive_deform
 
 c_form_std
 -------------------------------------------------
-| ``c_form_std:Param p,mat delta->ParamPol`` Defined in line number 196.
+| ``c_form_std:Param p,mat delta->ParamPol`` Defined in line number 201.
 | 
 | 
 

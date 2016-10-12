@@ -44,3 +44,11 @@ sign_2Cr
 | 
 | 
 
+.. _signs_1i1_int_j,_extended_param_e,_extended_param_e1,_extended_param_f->(int,int)1:
+
+signs_1i1
+-------------------------------------------------
+| ``signs_1i1:int j, extended_param E, extended_param E1, extended_param F->(int,int)`` Defined in line number 131.
+| 
+| 
+

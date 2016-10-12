@@ -24,7 +24,7 @@ ext_Cayley_1
 
 ext_Cayley_2
 -------------------------------------------------
-| ``ext_Cayley_2:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 109.
+| ``ext_Cayley_2:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 110.
 | 
 | 
 
@@ -32,7 +32,7 @@ ext_Cayley_2
 
 ext_Cayley_3
 -------------------------------------------------
-| ``ext_Cayley_3:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 287.
+| ``ext_Cayley_3:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 289.
 | 
 | 
 
@@ -40,7 +40,7 @@ ext_Cayley_3
 
 ext_Cayley_simple
 -------------------------------------------------
-| ``ext_Cayley_simple:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 302.
+| ``ext_Cayley_simple:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[extended_param]`` Defined in line number 305.
 | 
 | 
 

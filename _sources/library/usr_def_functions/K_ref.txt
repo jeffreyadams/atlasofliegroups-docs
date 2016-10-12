@@ -212,3 +212,19 @@ tworho_c
 | 
 | 
 
+.. _convert_k_type_realform_g,vec_two_lambda,_vec_torus_bits,_int_cartan->param1:
+
+convert_K_type
+-------------------------------------------------
+| ``convert_K_type:RealForm G,vec two_lambda, vec torus_bits, int cartan->Param`` Defined in line number 187.
+| 
+| 
+
+.. _convert_k_type_realform_g,(vec_two_lambda,_vec_torus_bits,_int_cartan)->param1:
+
+convert_K_type
+-------------------------------------------------
+| ``convert_K_type:RealForm G,(vec two_lambda, vec torus_bits, int cartan)->Param`` Defined in line number 194.
+| 
+| 
+

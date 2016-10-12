@@ -124,6 +124,14 @@ is_P_positive
 | 
 | 
 
+.. _make_strongly_dominant_kgbelt_x,vec_mu->((kgbelt,vec),w_word,w_word,bool)1:
+
+make_strongly_dominant
+-------------------------------------------------
+| ``make_strongly_dominant:KGBElt x,vec mu->((KGBElt,vec),W_word,W_word,bool)`` Defined in line number 195.
+| 
+| 
+
 .. _r_k_dom_mu_kgbelt_x,vec_mu->[w_word]1:
 
 R_K_dom_mu

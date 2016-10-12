@@ -4,6 +4,8 @@ polynomial.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -60,7 +62,7 @@ polynomial.at Function Index
      - ``poly_mat A,poly_mat B->bool``
    * - :ref:`is_zero_poly_mat_m->bool1`
      - ``poly_mat M->bool``
-   * - :ref:`upper_unitriangluar_inverse_poly_mat_p->poly_mat1`
+   * - :ref:`upper_unitriangular_inverse_poly_mat_p->poly_mat1`
      - ``poly_mat P->poly_mat``
    * - :ref:`poly_permute_basis_poly_p,_poly_mat_a->poly_mat1`
      - ``poly P, poly_mat A->poly_mat``
@@ -74,3 +76,5 @@ polynomial.at Function Index
      - ``poly_mat M->void``
    * - :ref:`sgn_poly_int_k->poly1`
      - ``int k->poly``
+   * - :ref:`divide_by_int_k,poly_v->poly1`
+     - ``int k,poly v->poly``

@@ -4,6 +4,8 @@ extended.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -12,6 +14,10 @@ extended.at Function Index
      - Argument(s) -> Results
    * - :ref:`assert_bool_b,_(->string)_mess->void1`
      - ``bool b, (->string) mess->void``
+   * - :ref:`e_mat_delta,_kgbelt_x,_ratvec_gamma,_ratvec_g,_ratvec_lambda->extended_param1`
+     - ``mat delta, KGBElt x, ratvec gamma, ratvec g, ratvec lambda->extended_param``
+   * - :ref:`e_mat_delta,_ratvec_gamma,_kgbelt_x,_ratvec_g,_kgbelt_gen_y->extended_param1`
+     - ``mat delta, ratvec gamma, KGBElt x, ratvec g, KGBElt_gen y->extended_param``
    * - :ref:`e_mat_delta,_param_p,_ratvec_g->extended_param1`
      - ``mat delta, Param p, ratvec g->extended_param``
    * - :ref:`e_mat_delta,_param_p->extended_param1`

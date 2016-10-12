@@ -4,6 +4,8 @@ basic.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -78,10 +80,6 @@ basic.at Function Index
      - ``(int,int)(x0,y0),(int,int)(x1,y1)->bool``
    * - :ref:`\!=_(int,int)(x0,y0),(int,int)(x1,y1)->bool1`
      - ``(int,int)(x0,y0),(int,int)(x1,y1)->bool``
-   * - :ref:`numer_rat_a->int1`
-     - ``rat a->int``
-   * - :ref:`denom_rat_a->int1`
-     - ``rat a->int``
    * - :ref:`is_integer_rat_r->bool1`
      - ``rat r->bool``
    * - :ref:`sign_rat_a->int1`
@@ -706,8 +704,6 @@ basic.at Function Index
      - ``(vec,Param) ap->bool``
    * - :ref:`lookup_param_p,_[param]_block->int1`
      - ``Param p, [Param] block->int``
-   * - :ref:`print_extended_block_param_p,_mat_delta->void1`
-     - ``Param p, mat delta->void``
    * - :ref:`null_module_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``
    * - :ref:`\-_parampol_p->parampol1`

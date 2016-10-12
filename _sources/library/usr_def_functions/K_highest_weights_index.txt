@@ -4,6 +4,8 @@ K_highest_weights.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -86,6 +88,8 @@ K_highest_weights.at Function Index
      - ``Param p->Param``
    * - :ref:`fundamental_weight_coordinates_khighestweight_(x,mu)->vec1`
      - ``KHighestWeight (x,mu)->vec``
+   * - :ref:`k_highest_weight_from_fundamental_weights_kgbelt_x,vec_tau->khighestweight1`
+     - ``KGBElt x,vec tau->KHighestWeight``
    * - :ref:`dimensions_param_p,_kgbelt_x_k->[int]1`
      - ``Param p, KGBElt x_K->[int]``
    * - :ref:`dimensions_param_p->[int]1`

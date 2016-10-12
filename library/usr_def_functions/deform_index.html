@@ -171,8 +171,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/coordinates.html">Change of Coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
@@ -429,6 +428,11 @@
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bigMatrices_index.html">bigMatrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bigMatrices_ref.html">bigMatrices.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="canonical_x_K.html">canonical_x_K.at</a><ul>
@@ -796,6 +800,11 @@
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_ref.html">W_orbit.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="W_reps_type_BC.html">W_reps_type_BC.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="W_reps_type_BC_index.html">W_reps_type_BC.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="W_reps_type_BC_ref.html">W_reps_type_BC.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Wdelta.html">Wdelta.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="Wdelta_index.html">Wdelta.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Wdelta_ref.html">Wdelta.at Function References</a></li>
@@ -1015,22 +1024,25 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="deform_ref.html#deformation-terms-param-p-parampol1"><span>deformation_terms</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="deform_ref.html#compress-param-b-mat-kl-mat-poly-polys-vec-stops-vec-survivors-mat-map-param-mat-int-1"><span>compress</span></a></td>
+<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B,</span> <span class="pre">mat</span> <span class="pre">KL_mat,</span> <span class="pre">[poly]</span> <span class="pre">polys,</span> <span class="pre">vec</span> <span class="pre">stops,</span> <span class="pre">vec</span> <span class="pre">survivors,</span> <span class="pre">mat</span> <span class="pre">map-&gt;([Param],</span> <span class="pre">mat,</span> <span class="pre">[int])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="deform_ref.html#deformation-terms-param-p-parampol1"><span>deformation_terms</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="deform_ref.html#has-nu0-param-p-bool1"><span>has_nu0</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="deform_ref.html#has-nu0-param-p-bool1"><span>has_nu0</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="deform_ref.html#weak-lower-param-p-param1"><span>weak_lower</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="deform_ref.html#weak-lower-param-p-param1"><span>weak_lower</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="deform_ref.html#lower-param-p-param1"><span>lower</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="deform_ref.html#lower-param-p-param1"><span>lower</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="deform_ref.html#deformation-param-p-param-parampol-1"><span>deformation</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="deform_ref.html#deformation-param-p-param-parampol-1"><span>deformation</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;(Param,ParamPol)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="deform_ref.html#recursive-deform-param-p-parampol1"><span>recursive_deform</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="deform_ref.html#recursive-deform-param-p-parampol1"><span>recursive_deform</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ParamPol</span></code></td>
 </tr>
 </tbody>

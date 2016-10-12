@@ -60,3 +60,11 @@ rewrite_word_Wdelta_to_W
 | 
 | 
 
+.. _conjugate_to_simple_by_wdelta_rootdatum_rd,_mat_delta,_int_j->(w_word,vec)1:
+
+conjugate_to_simple_by_Wdelta
+-------------------------------------------------
+| ``conjugate_to_simple_by_Wdelta:RootDatum rd, mat delta, int j->(W_word,vec)`` Defined in line number 57.
+| 
+| 
+

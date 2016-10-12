@@ -10,6 +10,7 @@ User Defined Functions
    usr_def_functions/all
    usr_def_functions/all_Kparameters
    usr_def_functions/basic
+   usr_def_functions/bigMatrices
    usr_def_functions/canonical_x_K
    usr_def_functions/center
    usr_def_functions/coherent
@@ -83,6 +84,7 @@ User Defined Functions
    usr_def_functions/Vogan-dual
    usr_def_functions/W_K
    usr_def_functions/W_orbit
+   usr_def_functions/W_reps_type_BC
    usr_def_functions/Wdelta
    usr_def_functions/Weylgroup
    usr_def_functions/wreps_type_C

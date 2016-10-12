@@ -36,6 +36,14 @@ sort_by
 | 
 | 
 
+.. _sort_by_(_(kgbelt,ratvec)_->_int)_f->([(kgbelt,ratvec)]_v)_[(kgbelt,ratvec)]1:
+
+sort_by
+-------------------------------------------------
+| ``sort_by:( (KGBElt,ratvec) -> int) f->([(KGBElt,ratvec)] v) [(KGBElt,ratvec)]`` Defined in line number 68.
+| 
+| 
+
 .. _sort_by_((param,bool)->int)_f->([(param,bool)]_v)_[(param,bool)]1:
 
 sort_by
@@ -49,6 +57,14 @@ sort_by
 sort_by
 -------------------------------------------------
 | ``sort_by:(Split,Param->int) f->([(Split,Param)] v) [(Split,Param)]`` Defined in line number 75.
+| 
+| 
+
+.. _sort_by_(split,(kgbelt,ratvec)->int)_f->([(split,(kgbelt,ratvec))]_v)_[(split,(kgbelt,ratvec))]1:
+
+sort_by
+-------------------------------------------------
+| ``sort_by:(Split,(KGBElt,ratvec)->int) f->([(Split,(KGBElt,ratvec))] v) [(Split,(KGBElt,ratvec))]`` Defined in line number 79.
 | 
 | 
 

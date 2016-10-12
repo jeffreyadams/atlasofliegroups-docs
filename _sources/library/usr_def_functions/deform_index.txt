@@ -4,12 +4,16 @@ deform.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
 
    * - Function
      - Argument(s) -> Results
+   * - :ref:`compress_[param]_b,_mat_kl_mat,_[poly]_polys,_vec_stops,_vec_survivors,_mat_map->([param],_mat,_[int])1`
+     - ``[Param] B, mat KL_mat, [poly] polys, vec stops, vec survivors, mat map->([Param], mat, [int])``
    * - :ref:`deformation_terms_param_p->parampol1`
      - ``Param p->ParamPol``
    * - :ref:`has_nu0_param_p->bool1`
