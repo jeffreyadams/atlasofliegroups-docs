@@ -3,8 +3,18 @@
 parabolics.at
 =====================================
 
+Topics addresses in this script:
+complex parabolics and Levi factors
+parabolics with theta-stable Levi factor
+theta-stable parabolics
+real parabolics
+See kgp.at: the data types KGPElt and Parabolic are synonyms; both consist
+of a pair (S,x) where S is a list of integers representing a subset of
+the simple roots, and x is a KGB element. This gives a K-conjugacy class
+of (complex) parabolics of type S
 
-This script imported the following .at files:
+
+**This script imported the following .at files:**
 
 | :ref:`kgp.at<kgp.at>`
 | :ref:`Weylgroup.at<Weylgroup.at>`

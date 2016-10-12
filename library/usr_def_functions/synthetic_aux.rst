@@ -4,7 +4,9 @@ synthetic_aux.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imported the following .at files:**
 
 | :ref:`synthetic.at<synthetic.at>`
 | :ref:`Weylgroup.at<Weylgroup.at>`

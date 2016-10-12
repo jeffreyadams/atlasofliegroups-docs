@@ -44,6 +44,14 @@ real_induce_standard
 | 
 | 
 
+.. _real_induce_irreducible_as_sum_of_standards_param_p_l,_realform_g->parampol1:
+
+real_induce_irreducible_as_sum_of_standards
+-------------------------------------------------
+| ``real_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 66.
+| 
+| 
+
 .. _real_induce_irreducible_param_p_l,_realform_g->parampol1:
 
 real_induce_irreducible
@@ -97,6 +105,14 @@ standardize
 theta_induce_standard
 -------------------------------------------------
 | ``theta_induce_standard:Param p_L,RealForm G->ParamPol`` Defined in line number 172.
+| 
+| 
+
+.. _theta_induce_irreducible_as_sum_of_standards_param_p_l,_realform_g->parampol1:
+
+theta_induce_irreducible_as_sum_of_standards
+-------------------------------------------------
+| ``theta_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 204.
 | 
 | 
 

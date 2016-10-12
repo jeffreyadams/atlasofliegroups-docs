@@ -4,6 +4,8 @@ hecke.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -38,12 +40,16 @@ hecke.at Function Index
      - ``int j, mat delta,Param p, ratvec g->[KGB_pair]``
    * - :ref:`xy_neighbors_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_[kgb_pair]_xy_pairs->[kgb_pair]1`
      - ``int j, mat delta, ratvec gamma, ratvec g, [KGB_pair] xy_pairs->[KGB_pair]``
+   * - :ref:`generate_subspace_int_j,_int_k,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair(x,y)->[kgb_pair]1`
+     - ``int j, int k, mat delta, ratvec gamma, ratvec g, KGB_pair(x,y)->[KGB_pair]``
    * - :ref:`generate_subspace_int_i,_int_j,_extended_param_e->[kgb_pair]1`
      - ``int i, int j, extended_param E->[KGB_pair]``
    * - :ref:`generate_subspace_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_p->[kgb_pair]1`
      - ``int j, mat delta, ratvec gamma, ratvec g, KGB_pair p->[KGB_pair]``
    * - :ref:`generate_subspace_int_i_,extended_param_e->[kgb_pair]1`
      - ``int i ,extended_param E->[KGB_pair]``
+   * - :ref:`decompose_int_i,_int_j,_mat_delta,_[param]_b,_ratvec_g->([[kgb_pair]],int,[int])1`
+     - ``int i, int j, mat delta, [Param] B, ratvec g->([[KGB_pair]],int,[int])``
    * - :ref:`sign_2i12_int_j,_extended_param_e,_extended_param_f->int2`
      - ``int j, extended_param E, extended_param F->int``
    * - :ref:`sign_2i12_old_int_j,extended_param_e,extended_param_f->int2`
@@ -54,6 +60,8 @@ hecke.at Function Index
      - ``int j,extended_param E->int``
    * - :ref:`sign_2cr_int_j,extended_param_e->int2`
      - ``int j,extended_param E->int``
+   * - :ref:`signs_1i1_int_j,_extended_param_e,_extended_param_e1,_extended_param_f->(int,int)2`
+     - ``int j, extended_param E, extended_param E1, extended_param F->(int,int)``
    * - :ref:`hecke_row_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_pair,_[kgb_pair]_basis->[poly]1`
      - ``int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]``
    * - :ref:`hecke_row_int_j,_extended_param(,delta,gamma,,,g,,,,):e,_[kgb_pair]_basis->[poly]1`

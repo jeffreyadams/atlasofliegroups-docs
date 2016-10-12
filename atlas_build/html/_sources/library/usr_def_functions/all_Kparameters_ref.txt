@@ -80,7 +80,7 @@ all_dominant_norm_upto
 
 lambda_rho_from_dominant_norm_upto
 -------------------------------------------------
-| ``lambda_rho_from_dominant_norm_upto:KGBElt x, ratvec v, int N->mat`` Defined in line number 109.
+| ``lambda_rho_from_dominant_norm_upto:KGBElt x, ratvec v, int N->mat`` Defined in line number 110.
 | 
 | 
 
@@ -88,7 +88,7 @@ lambda_rho_from_dominant_norm_upto
 
 K_parameters_norm_upto
 -------------------------------------------------
-| ``K_parameters_norm_upto:(KGBElt,ratvec,int)(x,,):triple->[K_Type]`` Defined in line number 114.
+| ``K_parameters_norm_upto:(KGBElt,ratvec,int)(x,,):triple->[K_Type]`` Defined in line number 115.
 | 
 | 
 

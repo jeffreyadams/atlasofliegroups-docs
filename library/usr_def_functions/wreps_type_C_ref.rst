@@ -4,7 +4,7 @@ wreps_type_C.at Function References
 =======================================================
 |
 
-.. _normalize_[int]_v->[int]1:
+.. _normalize_[int]_v->[int]2:
 
 normalize
 -------------------------------------------------
@@ -12,7 +12,7 @@ normalize
 | 
 | 
 
-.. _expand_[int]_v,_int_r->[int]1:
+.. _expand_[int]_v,_int_r->[int]2:
 
 expand
 -------------------------------------------------
@@ -20,7 +20,7 @@ expand
 | 
 | 
 
-.. _normalize_symbol_s->symbol1:
+.. _normalize_symbol_s->symbol2:
 
 normalize
 -------------------------------------------------
@@ -28,7 +28,7 @@ normalize
 | 
 | 
 
-.. _rank_[int]_f->int1:
+.. _rank_[int]_f->int2:
 
 rank
 -------------------------------------------------
@@ -36,7 +36,7 @@ rank
 | 
 | 
 
-.. _rank_symbol_s->int1:
+.. _rank_symbol_s->int2:
 
 rank
 -------------------------------------------------
@@ -52,7 +52,7 @@ symbol
 | 
 | 
 
-.. _wrep_symbol_s->wrep1:
+.. _wrep_symbol_s->wrep2:
 
 wrep
 -------------------------------------------------
@@ -60,7 +60,7 @@ wrep
 | 
 | 
 
-.. _wrep_orbit_p->wrep1:
+.. _wrep_orbit_p->wrep2:
 
 wrep
 -------------------------------------------------
@@ -76,7 +76,7 @@ orbit
 | 
 | 
 
-.. _symbol_wrep_sigma->symbol1:
+.. _symbol_wrep_sigma->symbol2:
 
 symbol
 -------------------------------------------------
@@ -92,7 +92,7 @@ orbit
 | 
 | 
 
-.. _\=_wrep__a,wrep_b->bool1:
+.. _\=_wrep__a,wrep_b->bool2:
 
 \=
 -------------------------------------------------
@@ -100,7 +100,7 @@ orbit
 | 
 | 
 
-.. _symbols_equal_symbol_a,symbol_b->bool1:
+.. _symbols_equal_symbol_a,symbol_b->bool2:
 
 symbols_equal
 -------------------------------------------------
@@ -108,7 +108,7 @@ symbols_equal
 | 
 | 
 
-.. _dimension_wrep_sigma->int1:
+.. _dimension_wrep_sigma->int2:
 
 dimension
 -------------------------------------------------
@@ -164,7 +164,7 @@ special_star
 | 
 | 
 
-.. _symbols_rootdatum_rd->[symbol]1:
+.. _symbols_rootdatum_rd->[symbol]2:
 
 symbols
 -------------------------------------------------
@@ -172,7 +172,7 @@ symbols
 | 
 | 
 
-.. _wreps_rootdatum_rd->[wrep]1:
+.. _wreps_rootdatum_rd->[wrep]2:
 
 wreps
 -------------------------------------------------
@@ -188,7 +188,7 @@ cut_off_string
 | 
 | 
 
-.. _cut_off_last_string_[int]_v->(int,[int])1:
+.. _cut_off_last_string_[int]_v->(int,[int])2:
 
 cut_off_last_string
 -------------------------------------------------
@@ -196,7 +196,7 @@ cut_off_last_string
 | 
 | 
 
-.. _extract_strings_[int]_v->[int]1:
+.. _extract_strings_[int]_v->[int]2:
 
 extract_strings
 -------------------------------------------------
@@ -204,7 +204,7 @@ extract_strings
 | 
 | 
 
-.. _a_levi_factor_int_rank,_[int]_tau->[int]1:
+.. _a_levi_factor_int_rank,_[int]_tau->[int]2:
 
 A_Levi_factor
 -------------------------------------------------
@@ -212,7 +212,7 @@ A_Levi_factor
 | 
 | 
 
-.. _ac_levi_factor_int_rank,_[int]_tau->(int,[int])1:
+.. _ac_levi_factor_int_rank,_[int]_tau->(int,[int])2:
 
 AC_Levi_factor
 -------------------------------------------------
@@ -220,7 +220,7 @@ AC_Levi_factor
 | 
 | 
 
-.. _is_max_[[int]]_taus,[int]_tau->bool1:
+.. _is_max_[[int]]_taus,[int]_tau->bool2:
 
 is_max
 -------------------------------------------------
@@ -228,7 +228,7 @@ is_max
 | 
 | 
 
-.. _max_only_[[int]]_taus->[[int]]1:
+.. _max_only_[[int]]_taus->[[int]]2:
 
 max_only
 -------------------------------------------------
@@ -236,7 +236,7 @@ max_only
 | 
 | 
 
-.. _levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])1:
+.. _levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])2:
 
 Levi_signature
 -------------------------------------------------
@@ -244,7 +244,7 @@ Levi_signature
 | 
 | 
 
-.. _max_first_entry_[[int]]_v->int1:
+.. _max_first_entry_[[int]]_v->int2:
 
 max_first_entry
 -------------------------------------------------
@@ -252,7 +252,7 @@ max_first_entry
 | 
 | 
 
-.. _keep_by_first_entry_[[int]]_v,int_k->[[int]]1:
+.. _keep_by_first_entry_[[int]]_v,int_k->[[int]]2:
 
 keep_by_first_entry
 -------------------------------------------------
@@ -260,7 +260,7 @@ keep_by_first_entry
 | 
 | 
 
-.. _keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]1:
+.. _keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]2:
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
@@ -268,7 +268,7 @@ keep_by_first_entry_and_truncate
 | 
 | 
 
-.. _max_tagged_entry_[(int,[int])]_v->int1:
+.. _max_tagged_entry_[(int,[int])]_v->int2:
 
 max_tagged_entry
 -------------------------------------------------
@@ -276,7 +276,7 @@ max_tagged_entry
 | 
 | 
 
-.. _keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]1:
+.. _keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]3:
 
 keep_by_first_entry
 -------------------------------------------------
@@ -284,7 +284,7 @@ keep_by_first_entry
 | 
 | 
 
-.. _keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]1:
+.. _keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]2:
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
@@ -292,7 +292,7 @@ keep_by_first_entry_and_truncate
 | 
 | 
 
-.. _wrep_int_rank,[[int]]_tau_invariants->wrep1:
+.. _wrep_int_rank,[[int]]_tau_invariants->wrep2:
 
 wrep
 -------------------------------------------------
@@ -300,7 +300,7 @@ wrep
 | 
 | 
 
-.. _wrep_block_b,[int]_cell->wrep1:
+.. _wrep_block_b,[int]_cell->wrep2:
 
 wrep
 -------------------------------------------------
@@ -308,7 +308,7 @@ wrep
 | 
 | 
 
-.. _wreps_block_b,[[int]]_cells->[wrep]1:
+.. _wreps_block_b,[[int]]_cells->[wrep]2:
 
 wreps
 -------------------------------------------------
@@ -316,7 +316,7 @@ wreps
 | 
 | 
 
-.. _print_wreps_cpt_block_b,[[int]]_cells->void1:
+.. _print_wreps_cpt_block_b,[[int]]_cells->void2:
 
 print_wreps_cpt
 -------------------------------------------------
@@ -324,7 +324,7 @@ print_wreps_cpt
 | 
 | 
 
-.. _print_wreps_block_b,[[int]]_cells->void1:
+.. _print_wreps_block_b,[[int]]_cells->void2:
 
 print_wreps
 -------------------------------------------------

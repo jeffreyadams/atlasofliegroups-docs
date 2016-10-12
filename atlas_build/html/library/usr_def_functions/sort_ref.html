@@ -171,8 +171,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/coordinates.html">Change of Coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
@@ -429,6 +428,11 @@
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bigMatrices_index.html">bigMatrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bigMatrices_ref.html">bigMatrices.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="canonical_x_K.html">canonical_x_K.at</a><ul>
@@ -796,6 +800,11 @@
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_ref.html">W_orbit.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="W_reps_type_BC.html">W_reps_type_BC.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="W_reps_type_BC_index.html">W_reps_type_BC.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="W_reps_type_BC_ref.html">W_reps_type_BC.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Wdelta.html">Wdelta.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="Wdelta_index.html">Wdelta.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Wdelta_ref.html">Wdelta.at Function References</a></li>
@@ -1036,8 +1045,16 @@
 <div class="line"><br /></div>
 </div>
 </div>
+<div class="section" id="sort-by-kgbelt-ratvec-int-f-kgbelt-ratvec-v-kgbelt-ratvec-1">
+<span id="id1"></span><h2>sort_by<a class="headerlink" href="#sort-by-kgbelt-ratvec-int-f-kgbelt-ratvec-v-kgbelt-ratvec-1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">sort_by:(</span> <span class="pre">(KGBElt,ratvec)</span> <span class="pre">-&gt;</span> <span class="pre">int)</span> <span class="pre">f-&gt;([(KGBElt,ratvec)]</span> <span class="pre">v)</span> <span class="pre">[(KGBElt,ratvec)]</span></code> Defined in line number 68.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
 <div class="section" id="sort-by-param-bool-int-f-param-bool-v-param-bool-1">
-<span id="id1"></span><h2>sort_by<a class="headerlink" href="#sort-by-param-bool-int-f-param-bool-v-param-bool-1" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>sort_by<a class="headerlink" href="#sort-by-param-bool-int-f-param-bool-v-param-bool-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">sort_by:((Param,bool)-&gt;int)</span> <span class="pre">f-&gt;([(Param,bool)]</span> <span class="pre">v)</span> <span class="pre">[(Param,bool)]</span></code> Defined in line number 72.</div>
 <div class="line"><br /></div>
@@ -1045,9 +1062,17 @@
 </div>
 </div>
 <div class="section" id="sort-by-split-param-int-f-split-param-v-split-param-1">
-<span id="id2"></span><h2>sort_by<a class="headerlink" href="#sort-by-split-param-int-f-split-param-v-split-param-1" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>sort_by<a class="headerlink" href="#sort-by-split-param-int-f-split-param-v-split-param-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">sort_by:(Split,Param-&gt;int)</span> <span class="pre">f-&gt;([(Split,Param)]</span> <span class="pre">v)</span> <span class="pre">[(Split,Param)]</span></code> Defined in line number 75.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="sort-by-split-kgbelt-ratvec-int-f-split-kgbelt-ratvec-v-split-kgbelt-ratvec-1">
+<span id="id4"></span><h2>sort_by<a class="headerlink" href="#sort-by-split-kgbelt-ratvec-int-f-split-kgbelt-ratvec-v-split-kgbelt-ratvec-1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">sort_by:(Split,(KGBElt,ratvec)-&gt;int)</span> <span class="pre">f-&gt;([(Split,(KGBElt,ratvec))]</span> <span class="pre">v)</span> <span class="pre">[(Split,(KGBElt,ratvec))]</span></code> Defined in line number 79.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

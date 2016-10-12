@@ -4,6 +4,8 @@ iterate_deform.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -20,6 +22,8 @@ iterate_deform.at Function Index
      - ``Param p->Param``
    * - :ref:`deformation_param_p->(param,parampol)2`
      - ``Param p->(Param,ParamPol)``
+   * - :ref:`iterate_deform_param_p->((param,parampol),int)1`
+     - ``Param p->((Param,ParamPol),int)``
    * - :ref:`recursive_deform_param_p->(param,parampol)1`
      - ``Param p->(Param,ParamPol)``
    * - :ref:`rec_def_param_p->(param,parampol)1`

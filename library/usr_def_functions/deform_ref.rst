@@ -4,6 +4,14 @@ deform.at Function References
 =======================================================
 |
 
+.. _compress_[param]_b,_mat_kl_mat,_[poly]_polys,_vec_stops,_vec_survivors,_mat_map->([param],_mat,_[int])1:
+
+compress
+-------------------------------------------------
+| ``compress:[Param] B, mat KL_mat, [poly] polys, vec stops, vec survivors, mat map->([Param], mat, [int])`` Defined in line number 13.
+| 
+| 
+
 .. _deformation_terms_param_p->parampol1:
 
 deformation_terms

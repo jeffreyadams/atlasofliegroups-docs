@@ -4,6 +4,8 @@ induction.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -20,6 +22,8 @@ induction.at Function Index
      - ``Param p_L,RealForm G->Param``
    * - :ref:`real_induce_standard_parampol_p,realform_g->parampol1`
      - ``ParamPol P,RealForm G->ParamPol``
+   * - :ref:`real_induce_irreducible_as_sum_of_standards_param_p_l,_realform_g->parampol1`
+     - ``Param p_L, RealForm G->ParamPol``
    * - :ref:`real_induce_irreducible_param_p_l,_realform_g->parampol1`
      - ``Param p_L, RealForm G->ParamPol``
    * - :ref:`cuspidal_data_param_p->(parabolic,param)1`
@@ -34,6 +38,8 @@ induction.at Function Index
      - ``ParamPol P->ParamPol``
    * - :ref:`theta_induce_standard_param_p_l,realform_g->parampol1`
      - ``Param p_L,RealForm G->ParamPol``
+   * - :ref:`theta_induce_irreducible_as_sum_of_standards_param_p_l,_realform_g->parampol1`
+     - ``Param p_L, RealForm G->ParamPol``
    * - :ref:`theta_induce_irreducible_param_p_l,_realform_g->parampol1`
      - ``Param p_L, RealForm G->ParamPol``
    * - :ref:`induce_standard_param_p_l,parabolic_p,realform_g->parampol1`

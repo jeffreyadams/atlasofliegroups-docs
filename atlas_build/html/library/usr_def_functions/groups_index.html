@@ -171,8 +171,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/coordinates.html">Change of Coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a></li>
@@ -429,6 +428,11 @@
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="bigMatrices_index.html">bigMatrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bigMatrices_ref.html">bigMatrices.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="canonical_x_K.html">canonical_x_K.at</a><ul>
@@ -796,6 +800,11 @@
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_ref.html">W_orbit.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="W_reps_type_BC.html">W_reps_type_BC.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="W_reps_type_BC_index.html">W_reps_type_BC.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="W_reps_type_BC_ref.html">W_reps_type_BC.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Wdelta.html">Wdelta.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="Wdelta_index.html">Wdelta.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Wdelta_ref.html">Wdelta.at Function References</a></li>
@@ -1135,43 +1144,46 @@
 <tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#gl-h-int-n-realform1"><span>GL_H</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#sp-r-int-n-realform1"><span>Sp_R</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#by-field-int-realform-f-r-int-realform-f-c-int-realform-f-h-string-int-realform-1"><span>by_field</span></a></td>
+<td><code class="docutils literal"><span class="pre">(int-&gt;RealForm)</span> <span class="pre">f_R,(int-&gt;RealForm)</span> <span class="pre">f_C,(int-&gt;RealForm)</span> <span class="pre">f_H-&gt;(string-&gt;(int-&gt;RealForm))</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#sp-r-int-n-realform1"><span>Sp_R</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#psp-r-int-n-realform1"><span>PSp_R</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#psp-r-int-n-realform1"><span>PSp_R</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#gsp-r-int-n-realform1"><span>GSp_R</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#gsp-r-int-n-realform1"><span>GSp_R</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#sp-h-int-n-realform1"><span>Sp_H</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#sp-h-int-n-realform1"><span>Sp_H</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#psp-h-int-n-realform1"><span>PSp_H</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#psp-h-int-n-realform1"><span>PSp_H</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#gsp-h-int-n-realform1"><span>GSp_H</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#gsp-h-int-n-realform1"><span>GSp_H</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#so-inner-class-int-p-int-q-string1"><span>SO_inner_class</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#so-inner-class-int-p-int-q-string1"><span>SO_inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">p,int</span> <span class="pre">q-&gt;string</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#so-real-form-number-int-p-int-q-int1"><span>SO_real_form_number</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#so-real-form-number-int-p-int-q-int1"><span>SO_real_form_number</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">p,int</span> <span class="pre">q-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#so-int-p-int-q-rootdatum-rd-realform1"><span>SO</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#so-int-p-int-q-rootdatum-rd-realform1"><span>SO</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">p,int</span> <span class="pre">q,RootDatum</span> <span class="pre">rd-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#spin-int-p-int-q-realform1"><span>Spin</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#spin-int-p-int-q-realform1"><span>Spin</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">p,int</span> <span class="pre">q-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#so-int-p-int-q-realform1"><span>SO</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#so-int-p-int-q-realform1"><span>SO</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">p,int</span> <span class="pre">q-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#pso-int-p-int-q-realform1"><span>PSO</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#pso-int-p-int-q-realform1"><span>PSO</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">p,int</span> <span class="pre">q-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="groups_ref.html#e8-ic-let-ic-inner-class-t0-ratvec-true-in-1"><span>E8_ic = let ic=inner_class</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="groups_ref.html#e8-ic-let-ic-inner-class-t0-ratvec-true-in-1"><span>E8_ic = let ic=inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">&quot;T0&quot;,[ratvec]:[],&quot;&quot;-&gt;true</span> <span class="pre">in</span> <span class="pre">&#64;</span></code></td>
 </tr>
 </tbody>

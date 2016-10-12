@@ -4,7 +4,9 @@ thetastable.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imported the following .at files:**
 
 | :ref:`parabolics.at<parabolics.at>`
 | :ref:`induction.at<induction.at>`

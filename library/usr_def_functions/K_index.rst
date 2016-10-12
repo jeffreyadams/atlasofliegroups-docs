@@ -4,6 +4,8 @@ K.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -62,3 +64,7 @@ K.at Function Index
      - ``KGBElt x->ratvec``
    * - :ref:`tworho_c_realform_g->ratvec1`
      - ``RealForm G->ratvec``
+   * - :ref:`convert_k_type_realform_g,vec_two_lambda,_vec_torus_bits,_int_cartan->param1`
+     - ``RealForm G,vec two_lambda, vec torus_bits, int cartan->Param``
+   * - :ref:`convert_k_type_realform_g,(vec_two_lambda,_vec_torus_bits,_int_cartan)->param1`
+     - ``RealForm G,(vec two_lambda, vec torus_bits, int cartan)->Param``

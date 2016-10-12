@@ -8,7 +8,23 @@ extended.at Function References
 
 assert
 -------------------------------------------------
-| ``assert:bool b, (->string) mess->void`` Defined in line number 10.
+| ``assert:bool b, (->string) mess->void`` Defined in line number 9.
+| 
+| 
+
+.. _e_mat_delta,_kgbelt_x,_ratvec_gamma,_ratvec_g,_ratvec_lambda->extended_param1:
+
+E
+-------------------------------------------------
+| ``E:mat delta, KGBElt x, ratvec gamma, ratvec g, ratvec lambda->extended_param`` Defined in line number 99.
+| 
+| 
+
+.. _e_mat_delta,_ratvec_gamma,_kgbelt_x,_ratvec_g,_kgbelt_gen_y->extended_param1:
+
+E
+-------------------------------------------------
+| ``E:mat delta, ratvec gamma, KGBElt x, ratvec g, KGBElt_gen y->extended_param`` Defined in line number 127.
 | 
 | 
 
@@ -16,7 +32,7 @@ assert
 
 E
 -------------------------------------------------
-| ``E:mat delta, Param p, ratvec g->extended_param`` Defined in line number 150.
+| ``E:mat delta, Param p, ratvec g->extended_param`` Defined in line number 149.
 | 
 | 
 
@@ -24,7 +40,7 @@ E
 
 E
 -------------------------------------------------
-| ``E:mat delta, Param p->extended_param`` Defined in line number 153.
+| ``E:mat delta, Param p->extended_param`` Defined in line number 152.
 | 
 | 
 
@@ -32,7 +48,7 @@ E
 
 E
 -------------------------------------------------
-| ``E:mat delta->(Param->extended_param): (Param p)`` Defined in line number 158.
+| ``E:mat delta->(Param->extended_param): (Param p)`` Defined in line number 157.
 | 
 | 
 
@@ -40,7 +56,7 @@ E
 
 torus_factor
 -------------------------------------------------
-| ``torus_factor:extended_param E->ratvec`` Defined in line number 160.
+| ``torus_factor:extended_param E->ratvec`` Defined in line number 159.
 | 
 | 
 
@@ -48,7 +64,7 @@ torus_factor
 
 dual_torus_factor
 -------------------------------------------------
-| ``dual_torus_factor:extended_param E->ratvec`` Defined in line number 161.
+| ``dual_torus_factor:extended_param E->ratvec`` Defined in line number 160.
 | 
 | 
 
@@ -56,7 +72,7 @@ dual_torus_factor
 
 nu
 -------------------------------------------------
-| ``nu:extended_param E->ratvec`` Defined in line number 162.
+| ``nu:extended_param E->ratvec`` Defined in line number 161.
 | 
 | 
 
@@ -64,7 +80,7 @@ nu
 
 length
 -------------------------------------------------
-| ``length:extended_param E->int`` Defined in line number 163.
+| ``length:extended_param E->int`` Defined in line number 162.
 | 
 | 
 
@@ -72,7 +88,7 @@ length
 
 sign
 -------------------------------------------------
-| ``sign:extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2->int`` Defined in line number 174.
+| ``sign:extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2->int`` Defined in line number 173.
 | 
 | 
 
@@ -80,7 +96,7 @@ sign
 
 sign_verbose
 -------------------------------------------------
-| ``sign_verbose:extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2->int`` Defined in line number 195.
+| ``sign_verbose:extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2->int`` Defined in line number 194.
 | 
 | 
 
@@ -88,7 +104,7 @@ sign_verbose
 
 dual_sign
 -------------------------------------------------
-| ``dual_sign:extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2->int`` Defined in line number 219.
+| ``dual_sign:extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2->int`` Defined in line number 218.
 | 
 | 
 
@@ -96,7 +112,7 @@ dual_sign
 
 sign
 -------------------------------------------------
-| ``sign:extended_param E,(extended_param F1,extended_param F2)->int`` Defined in line number 239.
+| ``sign:extended_param E,(extended_param F1,extended_param F2)->int`` Defined in line number 238.
 | 
 | 
 
@@ -104,7 +120,7 @@ sign
 
 sign
 -------------------------------------------------
-| ``sign:(extended_param E1,extended_param E2),extended_param F->int`` Defined in line number 241.
+| ``sign:(extended_param E1,extended_param E2),extended_param F->int`` Defined in line number 240.
 | 
 | 
 
@@ -112,7 +128,7 @@ sign
 
 default
 -------------------------------------------------
-| ``default:extended_param F->extended_param`` Defined in line number 245.
+| ``default:extended_param F->extended_param`` Defined in line number 244.
 | 
 | 
 
@@ -120,7 +136,7 @@ default
 
 sign
 -------------------------------------------------
-| ``sign:extended_param E->int`` Defined in line number 249.
+| ``sign:extended_param E->int`` Defined in line number 248.
 | 
 | 
 
@@ -128,7 +144,7 @@ sign
 
 dual_sign
 -------------------------------------------------
-| ``dual_sign:extended_param E->int`` Defined in line number 250.
+| ``dual_sign:extended_param E->int`` Defined in line number 249.
 | 
 | 
 
@@ -136,7 +152,7 @@ dual_sign
 
 \=
 -------------------------------------------------
-| ``=:extended_param E, extended_param F->bool`` Defined in line number 251.
+| ``=:extended_param E, extended_param F->bool`` Defined in line number 250.
 | 
 | 
 
@@ -144,7 +160,7 @@ dual_sign
 
 is_default
 -------------------------------------------------
-| ``is_default:extended_param E->bool`` Defined in line number 252.
+| ``is_default:extended_param E->bool`` Defined in line number 251.
 | 
 | 
 
@@ -152,7 +168,7 @@ is_default
 
 z
 -------------------------------------------------
-| ``z:extended_param E->rat`` Defined in line number 254.
+| ``z:extended_param E->rat`` Defined in line number 253.
 | 
 | 
 
@@ -160,7 +176,7 @@ z
 
 z_quot
 -------------------------------------------------
-| ``z_quot:extended_param E, extended_param F->int`` Defined in line number 257.
+| ``z_quot:extended_param E, extended_param F->int`` Defined in line number 256.
 | 
 | 
 
@@ -168,7 +184,7 @@ z_quot
 
 ext_print_block
 -------------------------------------------------
-| ``ext_print_block:mat delta, [Param] B->void`` Defined in line number 261.
+| ``ext_print_block:mat delta, [Param] B->void`` Defined in line number 260.
 | 
 | 
 
@@ -176,7 +192,7 @@ ext_print_block
 
 ext_print_block
 -------------------------------------------------
-| ``ext_print_block:mat delta,Param p->void`` Defined in line number 282.
+| ``ext_print_block:mat delta,Param p->void`` Defined in line number 281.
 | 
 | 
 
@@ -184,7 +200,7 @@ ext_print_block
 
 ext_print_block
 -------------------------------------------------
-| ``ext_print_block:Param p->void`` Defined in line number 284.
+| ``ext_print_block:Param p->void`` Defined in line number 283.
 | 
 | 
 
@@ -192,7 +208,7 @@ ext_print_block
 
 ext_block_of
 -------------------------------------------------
-| ``ext_block_of:mat delta, Param p, ratvec g->[extended_param]`` Defined in line number 292.
+| ``ext_block_of:mat delta, Param p, ratvec g->[extended_param]`` Defined in line number 291.
 | 
 | 
 
@@ -200,7 +216,7 @@ ext_block_of
 
 ext_block_of
 -------------------------------------------------
-| ``ext_block_of:mat delta, Param p->[extended_param]`` Defined in line number 294.
+| ``ext_block_of:mat delta, Param p->[extended_param]`` Defined in line number 293.
 | 
 | 
 
@@ -208,7 +224,7 @@ ext_block_of
 
 ext_block_of
 -------------------------------------------------
-| ``ext_block_of:Param p->[extended_param]`` Defined in line number 296.
+| ``ext_block_of:Param p->[extended_param]`` Defined in line number 295.
 | 
 | 
 
@@ -216,7 +232,7 @@ ext_block_of
 
 ext_block
 -------------------------------------------------
-| ``ext_block:mat delta, Param p, ratvec g->([extended_param],int)`` Defined in line number 299.
+| ``ext_block:mat delta, Param p, ratvec g->([extended_param],int)`` Defined in line number 298.
 | 
 | 
 
@@ -224,7 +240,7 @@ ext_block
 
 ext_block
 -------------------------------------------------
-| ``ext_block:mat delta, Param p->([extended_param],int)`` Defined in line number 302.
+| ``ext_block:mat delta, Param p->([extended_param],int)`` Defined in line number 301.
 | 
 | 
 
@@ -232,7 +248,7 @@ ext_block
 
 ext_block
 -------------------------------------------------
-| ``ext_block:Param p->([extended_param],int)`` Defined in line number 304.
+| ``ext_block:Param p->([extended_param],int)`` Defined in line number 303.
 | 
 | 
 
@@ -240,7 +256,7 @@ ext_block
 
 sign_find
 -------------------------------------------------
-| ``sign_find:[extended_param] list,extended_param E->(int,int)`` Defined in line number 308.
+| ``sign_find:[extended_param] list,extended_param E->(int,int)`` Defined in line number 307.
 | 
 | 
 
@@ -248,7 +264,7 @@ sign_find
 
 sign_find
 -------------------------------------------------
-| ``sign_find:extended_param E,[extended_param] list->(int,int)`` Defined in line number 312.
+| ``sign_find:extended_param E,[extended_param] list->(int,int)`` Defined in line number 311.
 | 
 | 
 
@@ -256,7 +272,7 @@ sign_find
 
 find
 -------------------------------------------------
-| ``find:[extended_param] list,extended_param E->int`` Defined in line number 315.
+| ``find:[extended_param] list,extended_param E->int`` Defined in line number 314.
 | 
 | 
 
@@ -264,7 +280,7 @@ find
 
 find
 -------------------------------------------------
-| ``find:extended_param E,[extended_param] list->int`` Defined in line number 319.
+| ``find:extended_param E,[extended_param] list->int`` Defined in line number 318.
 | 
 | 
 
@@ -272,7 +288,7 @@ find
 
 ext_basic
 -------------------------------------------------
-| ``ext_basic:RealForm G->(mat,[Param],ratvec)`` Defined in line number 325.
+| ``ext_basic:RealForm G->(mat,[Param],ratvec)`` Defined in line number 324.
 | 
 | 
 
@@ -280,7 +296,7 @@ ext_basic
 
 folded_bracket
 -------------------------------------------------
-| ``folded_bracket:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 335.
+| ``folded_bracket:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 334.
 | 
 | 
 
@@ -288,7 +304,7 @@ folded_bracket
 
 folded_m
 -------------------------------------------------
-| ``folded_m:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 339.
+| ``folded_m:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 338.
 | 
 | 
 
@@ -296,7 +312,7 @@ folded_m
 
 folded_order
 -------------------------------------------------
-| ``folded_order:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 342.
+| ``folded_order:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 341.
 | 
 | 
 

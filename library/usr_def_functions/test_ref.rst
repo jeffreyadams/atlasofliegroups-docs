@@ -26,6 +26,6 @@ actural useful stuff
 -------------------------------------------------
 | ``!=:int n->something`` Defined in line number 12.
 | 
-|  comment about this function two long can't fit into one line need yet another line
+| Comment about this function two long can't fit into one line need yet another line
 | 
 

@@ -324,6 +324,14 @@ GL_H
 | 
 | 
 
+.. _by_field_(int->realform)_f_r,(int->realform)_f_c,(int->realform)_f_h->(string->(int->realform))1:
+
+by_field
+-------------------------------------------------
+| ``by_field:(int->RealForm) f_R,(int->RealForm) f_C,(int->RealForm) f_H->(string->(int->RealForm))`` Defined in line number 159.
+| 
+| 
+
 .. _sp_r_int_n->realform1:
 
 Sp_R

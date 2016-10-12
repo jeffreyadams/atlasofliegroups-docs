@@ -104,7 +104,7 @@ xy_neighbors
 
 xy_neighbors
 -------------------------------------------------
-| ``xy_neighbors:int j, mat delta,Param p, ratvec g->[KGB_pair]`` Defined in line number 124.
+| ``xy_neighbors:int j, mat delta,Param p, ratvec g->[KGB_pair]`` Defined in line number 125.
 | 
 | 
 
@@ -112,7 +112,15 @@ xy_neighbors
 
 xy_neighbors
 -------------------------------------------------
-| ``xy_neighbors:int j, mat delta, ratvec gamma, ratvec g, [KGB_pair] xy_pairs->[KGB_pair]`` Defined in line number 140.
+| ``xy_neighbors:int j, mat delta, ratvec gamma, ratvec g, [KGB_pair] xy_pairs->[KGB_pair]`` Defined in line number 141.
+| 
+| 
+
+.. _generate_subspace_int_j,_int_k,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair(x,y)->[kgb_pair]1:
+
+generate_subspace
+-------------------------------------------------
+| ``generate_subspace:int j, int k, mat delta, ratvec gamma, ratvec g, KGB_pair(x,y)->[KGB_pair]`` Defined in line number 155.
 | 
 | 
 
@@ -120,7 +128,7 @@ xy_neighbors
 
 generate_subspace
 -------------------------------------------------
-| ``generate_subspace:int i, int j, extended_param E->[KGB_pair]`` Defined in line number 170.
+| ``generate_subspace:int i, int j, extended_param E->[KGB_pair]`` Defined in line number 171.
 | 
 | 
 
@@ -128,7 +136,7 @@ generate_subspace
 
 generate_subspace
 -------------------------------------------------
-| ``generate_subspace:int j, mat delta, ratvec gamma, ratvec g, KGB_pair p->[KGB_pair]`` Defined in line number 174.
+| ``generate_subspace:int j, mat delta, ratvec gamma, ratvec g, KGB_pair p->[KGB_pair]`` Defined in line number 175.
 | 
 | 
 
@@ -136,7 +144,15 @@ generate_subspace
 
 generate_subspace
 -------------------------------------------------
-| ``generate_subspace:int i ,extended_param E->[KGB_pair]`` Defined in line number 178.
+| ``generate_subspace:int i ,extended_param E->[KGB_pair]`` Defined in line number 179.
+| 
+| 
+
+.. _decompose_int_i,_int_j,_mat_delta,_[param]_b,_ratvec_g->([[kgb_pair]],int,[int])1:
+
+decompose
+-------------------------------------------------
+| ``decompose:int i, int j, mat delta, [Param] B, ratvec g->([[KGB_pair]],int,[int])`` Defined in line number 190.
 | 
 | 
 
@@ -144,7 +160,7 @@ generate_subspace
 
 sign_2i12
 -------------------------------------------------
-| ``sign_2i12:int j, extended_param E, extended_param F->int`` Defined in line number 240.
+| ``sign_2i12:int j, extended_param E, extended_param F->int`` Defined in line number 241.
 | 
 | 
 
@@ -152,7 +168,7 @@ sign_2i12
 
 sign_2i12_old
 -------------------------------------------------
-| ``sign_2i12_old:int j,extended_param E,extended_param F->int`` Defined in line number 249.
+| ``sign_2i12_old:int j,extended_param E,extended_param F->int`` Defined in line number 250.
 | 
 | 
 
@@ -160,7 +176,7 @@ sign_2i12_old
 
 sign_2r21
 -------------------------------------------------
-| ``sign_2r21:int j, extended_param E, extended_param F->int`` Defined in line number 316.
+| ``sign_2r21:int j, extended_param E, extended_param F->int`` Defined in line number 317.
 | 
 | 
 
@@ -168,7 +184,7 @@ sign_2r21
 
 sign_2Ci
 -------------------------------------------------
-| ``sign_2Ci:int j,extended_param E->int`` Defined in line number 320.
+| ``sign_2Ci:int j,extended_param E->int`` Defined in line number 321.
 | 
 | 
 
@@ -176,7 +192,15 @@ sign_2Ci
 
 sign_2Cr
 -------------------------------------------------
-| ``sign_2Cr:int j,extended_param E->int`` Defined in line number 328.
+| ``sign_2Cr:int j,extended_param E->int`` Defined in line number 329.
+| 
+| 
+
+.. _signs_1i1_int_j,_extended_param_e,_extended_param_e1,_extended_param_f->(int,int)2:
+
+signs_1i1
+-------------------------------------------------
+| ``signs_1i1:int j, extended_param E, extended_param E1, extended_param F->(int,int)`` Defined in line number 337.
 | 
 | 
 
@@ -184,7 +208,7 @@ sign_2Cr
 
 hecke_row
 -------------------------------------------------
-| ``hecke_row:int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]`` Defined in line number 379.
+| ``hecke_row:int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]`` Defined in line number 380.
 | 
 | 
 
@@ -192,7 +216,7 @@ hecke_row
 
 hecke_row
 -------------------------------------------------
-| ``hecke_row:int j, extended_param(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]`` Defined in line number 549.
+| ``hecke_row:int j, extended_param(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]`` Defined in line number 550.
 | 
 | 
 
@@ -200,7 +224,7 @@ hecke_row
 
 hecke_matrix
 -------------------------------------------------
-| ``hecke_matrix:int j, mat delta, ratvec gamma, ratvec g,[KGB_pair] basis->poly_mat`` Defined in line number 557.
+| ``hecke_matrix:int j, mat delta, ratvec gamma, ratvec g,[KGB_pair] basis->poly_mat`` Defined in line number 558.
 | 
 | 
 
@@ -208,7 +232,7 @@ hecke_matrix
 
 quadratic
 -------------------------------------------------
-| ``quadratic:poly_mat M, int length, bool show->bool`` Defined in line number 568.
+| ``quadratic:poly_mat M, int length, bool show->bool`` Defined in line number 569.
 | 
 | 
 
@@ -216,7 +240,7 @@ quadratic
 
 braid
 -------------------------------------------------
-| ``braid:poly_mat M,poly_mat N, int length,bool show->bool`` Defined in line number 583.
+| ``braid:poly_mat M,poly_mat N, int length,bool show->bool`` Defined in line number 584.
 | 
 | 
 
@@ -224,7 +248,7 @@ braid
 
 braid
 -------------------------------------------------
-| ``braid:poly_mat M,poly_mat N, int length->bool`` Defined in line number 593.
+| ``braid:poly_mat M,poly_mat N, int length->bool`` Defined in line number 594.
 | 
 | 
 
@@ -232,7 +256,7 @@ braid
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i, int j,mat delta, ratvec gamma, ratvec g, [KGB_pair] basis->bool`` Defined in line number 606.
+| ``test_hecke:int i, int j,mat delta, ratvec gamma, ratvec g, [KGB_pair] basis->bool`` Defined in line number 607.
 | 
 | 
 
@@ -240,7 +264,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i, int j, mat delta, ratvec gamma, [KGB_pair] basis->bool`` Defined in line number 626.
+| ``test_hecke:int i, int j, mat delta, ratvec gamma, [KGB_pair] basis->bool`` Defined in line number 627.
 | 
 | 
 
@@ -248,7 +272,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i, int j, mat delta, [Param] B, ratvec g->bool`` Defined in line number 633.
+| ``test_hecke:int i, int j, mat delta, [Param] B, ratvec g->bool`` Defined in line number 634.
 | 
 | 
 
@@ -256,7 +280,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i, int j, mat delta, [Param] B->bool`` Defined in line number 647.
+| ``test_hecke:int i, int j, mat delta, [Param] B->bool`` Defined in line number 648.
 | 
 | 
 
@@ -264,7 +288,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i,int j, mat delta,Param p->bool`` Defined in line number 650.
+| ``test_hecke:int i,int j, mat delta,Param p->bool`` Defined in line number 651.
 | 
 | 
 
@@ -272,7 +296,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i,int j,Param p,ratvec g->bool`` Defined in line number 652.
+| ``test_hecke:int i,int j,Param p,ratvec g->bool`` Defined in line number 653.
 | 
 | 
 
@@ -280,7 +304,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i,int j,Param p->bool`` Defined in line number 654.
+| ``test_hecke:int i,int j,Param p->bool`` Defined in line number 655.
 | 
 | 
 

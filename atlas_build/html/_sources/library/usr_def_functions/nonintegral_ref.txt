@@ -24,7 +24,7 @@ ext_cross
 
 posroot_ext_cross
 -------------------------------------------------
-| ``posroot_ext_cross:int i, extended_param E->extended_param`` Defined in line number 113.
+| ``posroot_ext_cross:int i, extended_param E->extended_param`` Defined in line number 114.
 | 
 | 
 
@@ -32,7 +32,7 @@ posroot_ext_cross
 
 ext_cross
 -------------------------------------------------
-| ``ext_cross:[int] w, extended_param E->extended_param`` Defined in line number 123.
+| ``ext_cross:[int] w, extended_param E->extended_param`` Defined in line number 124.
 | 
 | 
 
@@ -40,7 +40,7 @@ ext_cross
 
 ext_cross_special
 -------------------------------------------------
-| ``ext_cross_special:int i, extended_param E, bool show->extended_param`` Defined in line number 126.
+| ``ext_cross_special:int i, extended_param E, bool show->extended_param`` Defined in line number 127.
 | 
 | 
 
@@ -48,7 +48,7 @@ ext_cross_special
 
 ext_cross_special
 -------------------------------------------------
-| ``ext_cross_special:int i, extended_param E->extended_param`` Defined in line number 162.
+| ``ext_cross_special:int i, extended_param E->extended_param`` Defined in line number 163.
 | 
 | 
 
@@ -56,7 +56,7 @@ ext_cross_special
 
 ext_cross
 -------------------------------------------------
-| ``ext_cross:int i, extended_param E, bool show->extended_param`` Defined in line number 172.
+| ``ext_cross:int i, extended_param E, bool show->extended_param`` Defined in line number 173.
 | 
 | 
 
@@ -64,7 +64,7 @@ ext_cross
 
 ext_cross
 -------------------------------------------------
-| ``ext_cross:int i, extended_param E->extended_param`` Defined in line number 187.
+| ``ext_cross:int i, extended_param E->extended_param`` Defined in line number 188.
 | 
 | 
 
@@ -72,7 +72,7 @@ ext_cross
 
 posroot_ext_Cayley
 -------------------------------------------------
-| ``posroot_ext_Cayley:int i,extended_param E, bool show->[extended_param]`` Defined in line number 199.
+| ``posroot_ext_Cayley:int i,extended_param E, bool show->[extended_param]`` Defined in line number 200.
 | 
 | 
 
@@ -80,7 +80,7 @@ posroot_ext_Cayley
 
 posroot_ext_Cayley
 -------------------------------------------------
-| ``posroot_ext_Cayley:int i,extended_param E->[extended_param]`` Defined in line number 221.
+| ``posroot_ext_Cayley:int i,extended_param E->[extended_param]`` Defined in line number 222.
 | 
 | 
 
@@ -88,7 +88,7 @@ posroot_ext_Cayley
 
 ext_Cayley
 -------------------------------------------------
-| ``ext_Cayley:int j, extended_param E, bool show->[extended_param]`` Defined in line number 230.
+| ``ext_Cayley:int j, extended_param E, bool show->[extended_param]`` Defined in line number 231.
 | 
 | 
 
@@ -96,7 +96,7 @@ ext_Cayley
 
 ext_Cayley
 -------------------------------------------------
-| ``ext_Cayley:int j, extended_param E->[extended_param]`` Defined in line number 263.
+| ``ext_Cayley:int j, extended_param E->[extended_param]`` Defined in line number 264.
 | 
 | 
 

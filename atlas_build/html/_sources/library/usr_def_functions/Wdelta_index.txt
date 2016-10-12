@@ -4,6 +4,8 @@ Wdelta.at Function Index
 =======================================================
 |
 
+
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -24,3 +26,5 @@ Wdelta.at Function Index
      - ``InnerClass ic, W_word(,w)->W_word``
    * - :ref:`rewrite_word_wdelta_to_w_rootdatum_rd,mat_delta,w_word_ww->w_word1`
      - ``RootDatum rd,mat delta,W_word ww->W_word``
+   * - :ref:`conjugate_to_simple_by_wdelta_rootdatum_rd,_mat_delta,_int_j->(w_word,vec)1`
+     - ``RootDatum rd, mat delta, int j->(W_word,vec)``

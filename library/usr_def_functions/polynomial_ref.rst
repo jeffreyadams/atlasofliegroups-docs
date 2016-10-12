@@ -204,11 +204,11 @@ is_zero
 | 
 | 
 
-.. _upper_unitriangluar_inverse_poly_mat_p->poly_mat1:
+.. _upper_unitriangular_inverse_poly_mat_p->poly_mat1:
 
-upper_unitriangluar_inverse
+upper_unitriangular_inverse
 -------------------------------------------------
-| ``upper_unitriangluar_inverse:poly_mat P->poly_mat`` Defined in line number 140.
+| ``upper_unitriangular_inverse:poly_mat P->poly_mat`` Defined in line number 140.
 | 
 | 
 
@@ -257,6 +257,14 @@ printPolyMatrix
 sgn_poly
 -------------------------------------------------
 | ``sgn_poly:int k->poly`` Defined in line number 209.
+| 
+| 
+
+.. _divide_by_int_k,poly_v->poly1:
+
+divide_by
+-------------------------------------------------
+| ``divide_by:int k,poly v->poly`` Defined in line number 212.
 | 
 | 
 
