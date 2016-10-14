@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Occurrence Matrices &mdash; atlas 0.6 documentation</title>
+  <title>Parameters Sets &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -32,8 +32,8 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
-        <link rel="next" title="Parameters Sets" href="parameter_sets.html"/>
-        <link rel="prev" title="Coordinates and Characters" href="../coordinates_characters.html"/> 
+        <link rel="next" title="Principal Series" href="../principal_series.html"/>
+        <link rel="prev" title="Occurrence Matrices" href="occurrence_matrix.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -172,11 +172,11 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="occurrence_matrix.html">Occurrence Matrices</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Parameters Sets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#background">Background</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#characters-of-tori">Characters of Tori</a></li>
 </ul>
 </li>
 </ul>
@@ -982,11 +982,11 @@
       
           <li><a href="../coordinates_characters.html">Coordinates and Characters</a> &raquo;</li>
       
-    <li>Occurrence Matrices</li>
+    <li>Parameters Sets</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/tutorial/video_2A/occurrence_matrix.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/tutorial/video_2A/parameter_sets.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -999,66 +999,202 @@
 		  
 		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
 		      
-			<a href="parameter_sets.html" class="btn btn-neutral float-right" title="Parameters Sets" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+			<a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
 		      
 		      
-			<a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+			<a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
 		      
 		    </div>
 		  
 <!--endtest-->
             
-  <div class="section" id="occurrence-matrices">
-<h1>Occurrence Matrices<a class="headerlink" href="#occurrence-matrices" title="Permalink to this headline">¶</a></h1>
-<p>We mentionned before that a Cartan may appear in different real forms
-of an inner class. More precisely, for a given inner class there
-is a fixed set of Cartans which may ar may not appear in the different
-real forms associated to this inner class. If we ask for the number
-of Cartan classes of real form <code class="docutils literal"><span class="pre">G</span></code>, we get the same number regardless of which
-real form in the inner class we are using. This can be misleading unless we
-understand what the software is doing. This is because <code class="docutils literal"><span class="pre">atlas</span></code> is
-implicitly assuming that you are asking for the number of Cartans in
-the inner class of these real forms. For example,:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SO(5,4)
-Identifier G: RealForm
-atlas&gt; nr_of_Cartan_classes (G)
-Value: 9
-atlas&gt; G:=SO(9,0)
-Value: compact connected real group with Lie algebra &#39;so(9)&#39;
-atlas&gt; nr_of_Cartan_classes (G)
-Value: 9
-atlas&gt;
-</pre></div>
+  <div class="section" id="parameters-sets">
+<h1>Parameters Sets<a class="headerlink" href="#parameters-sets" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>The basic object in <code class="docutils literal"><span class="pre">atlas</span></code> is a <code class="docutils literal"><span class="pre">parameter</span></code> and the <code class="docutils literal"><span class="pre">parameter</span>
+<span class="pre">space</span></code> parametrizes both, the irreducible representations of a
+reductive algebraic group as well as the standard modules. In other
+words, for each <code class="docutils literal"><span class="pre">p</span></code> in the <code class="docutils literal"><span class="pre">parameter</span> <span class="pre">space</span></code> there is an
+irreducible module <code class="docutils literal"><span class="pre">J(p)</span></code> and a standard module <code class="docutils literal"><span class="pre">I(p)</span></code> associated
+to <code class="docutils literal"><span class="pre">p</span></code>. Namely <code class="docutils literal"><span class="pre">I(p)</span></code> is representation induced from a limit of discrete
+series and things are set up, following Langlands classification, so that this standard module has a unique irrudicible quotient. This quotient is also parametrized by the same parameter <code class="docutils literal"><span class="pre">p</span></code>.</p>
+<p>So this parameter space is the basic object behind this classification theory.</p>
+<p>In Adams and DuCloux paper, &#8220;Algorithms for representations of real
+groups&#8221;, section 1,  the authors use Langlands classification to describe the
+algorithm that will associate, to each real group, the parameter space
+in question.</p>
+<p>More precisely, for each real group G(R), the representations with fixed (regular)
+infinitesimal character <code class="docutils literal"><span class="pre">lambda</span></code> are parametrized by
+<code class="docutils literal"><span class="pre">(G(R))</span></code>-orbits) of pairs <code class="docutils literal"><span class="pre">(H(R),chi)</span></code>; where H(R) is a Cartan
+subgroup of G(R) and chi is a character of H(R) so that the
+differential of <code class="docutils literal"><span class="pre">chi=lambda</span></code> up to <code class="docutils literal"><span class="pre">G(C)</span></code> conjugacy.</p>
 </div>
-<p>So, to find out which Cartans appear in each individual real form there is an <code class="docutils literal"><span class="pre">occurrence</span> <span class="pre">matrix</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; occurrence_matrix (G)
+<div class="section" id="parameter-sets-for-sl-2-r">
+<h2>Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code><a class="headerlink" href="#parameter-sets-for-sl-2-r" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s look at <code class="docutils literal"><span class="pre">G=SL(2,R)</span></code> and representations with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code> How many are there? We need to look at conjugacy classes of cartans and their characters.</p>
+<p>Let&#8217;s review a few things we know about <code class="docutils literal"><span class="pre">G</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SL(2,R)
+Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
+
+atlas&gt; root_datum (G)
+Value: simply connected root datum of Lie type &#39;A1&#39;
+atlas&gt; simple_roots(G)
 Value:
-| 1, 0, 0, 0, 0, 0, 0, 0, 0 |
-| 1, 0, 1, 0, 0, 0, 0, 0, 0 |
-| 1, 1, 1, 1, 0, 0, 0, 0, 0 |
-| 1, 1, 1, 1, 0, 1, 0, 1, 0 |
-| 1, 1, 1, 1, 1, 1, 1, 1, 1 |
-</pre></div>
-</div>
-<p>Which again, is the same matrix for all the real forms in the inner class.</p>
-<p>This matrix has 9 columns for all the Cartan classes and 5 rows for all the
-real forms of the group of type <code class="docutils literal"><span class="pre">B4</span></code>. Recall that the real forms for
-this inner class can be listed as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for H in real_forms (G) do prints(H) od
-compact connected real group with Lie algebra &#39;so(9)&#39;
-disconnected real group with Lie algebra &#39;so(8,1)&#39;
-disconnected real group with Lie algebra &#39;so(7,2)&#39;
-disconnected real group with Lie algebra &#39;so(6,3)&#39;
-disconnected split real group with Lie algebra &#39;so(5,4)&#39;
+| 2 |
+
+atlas&gt; rho(G)
+Value: [ 1 ]/1
+
+atlas&gt; nr_of_Cartan_classes (G)
+Value: 2
+
+atlas&gt; void: for H in Cartan_classes (G) do prints(H) od
+Cartan class #0, occurring for 2 real forms and for 1 dual real form
+Cartan class #1, occurring for 1 real form and for 2 dual real forms
+atlas&gt;
+
+atlas&gt; set T= Cartan_classes (G)[0]
+Identifier T: CartanClass
+atlas&gt; T
+Value: Cartan class #0, occurring for 2 real forms and for 1 dual real form
+atlas&gt; set A= Cartan_classes (G)[1]
+Identifier A: CartanClass (hiding previous one of type mat)
+atlas&gt; A
+Value: Cartan class #1, occurring for 1 real form and for 2 dual real forms
+atlas&gt;
+
+
+atlas&gt; occurrence_matrix (G)
+Value:
+| 1, 0 |
+| 1, 1 |
+
+atlas&gt; void: for H in real_forms (G) do prints(H) od
+compact connected real group with Lie algebra &#39;su(2)&#39;
+connected split real group with Lie algebra &#39;sl(2,R)&#39;
 atlas&gt;
 </pre></div>
 </div>
-<p>Remember that we type <code class="docutils literal"><span class="pre">void:</span></code> to avoid getting the empty values <code class="docutils literal"><span class="pre">[(),(),(),(),()]</span></code></p>
-<p>So, the occurrence matrix says that all 9 Cartans appear in the split
-form SO(5,4), that only the compact Cartan appears in the compact real
-form SO(9,0), that SO(6,3) has only 6 Cartans, etc. Also note that the
-Compact Cartan appears in all real forms but the split Cartan only
-appears in the split real form.</p>
+<p>So, the split form of type A1 has two Cartans, the compact one, <code class="docutils literal"><span class="pre">T=S^1</span></code> and the split one, <code class="docutils literal"><span class="pre">A=R^x</span></code>.</p>
+<p>Now, the characters for <code class="docutils literal"><span class="pre">T</span></code> are of the form <code class="docutils literal"><span class="pre">e^ik\theta</span> <span class="pre">with</span> <span class="pre">k</span> <span class="pre">in</span> <span class="pre">Z.</span>
+<span class="pre">The</span> <span class="pre">ones</span> <span class="pre">corresponding</span> <span class="pre">to</span> <span class="pre">``rho</span></code> are <code class="docutils literal"><span class="pre">{{e^i\theta},</span> <span class="pre">e^{-i\theta}}</span></code> and they
+are not conjugate under the Weyl group of <code class="docutils literal"><span class="pre">T</span></code>, since -1 is not in
+it.</p>
+<p>On the other hand, for <code class="docutils literal"><span class="pre">A=R^x</span></code>, the characters whose differential is equal to <code class="docutils literal"><span class="pre">rho</span></code> are <code class="docutils literal"><span class="pre">{x--&gt;</span> <span class="pre">x,</span> <span class="pre">x^{-1},|x|,</span> <span class="pre">|x|^{-1}}</span></code>, where <a href="#id1"><span class="problematic" id="id2">|</span></a>x|=sign(x)*x.</p>
+<p>In this case -1 is in the Weyl group of A. So, up to conjugacy, we have that {chi}= {x, <a href="#id3"><span class="problematic" id="id4">|x|</span></a>}.</p>
+<p>This says that we have exactly three representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>; two from each Cartan.</p>
+<p>Let us look for those representations of <code class="docutils literal"><span class="pre">G</span></code>. The command <code class="docutils literal"><span class="pre">parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <code class="docutils literal"><span class="pre">G</span></code> with that infinitesimal character <code class="docutils literal"><span class="pre">[1]</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set P=all_parameters_gamma (G,[1])
+Identifier P: [Param]
+atlas&gt; #P
+Value: 4
+atlas&gt;
+atlas&gt; void: for p in P do prints(p) od
+final parameter (x=0,lambda=[1]/1,nu=[0]/1)
+final parameter (x=1,lambda=[1]/1,nu=[0]/1)
+final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+final parameter (x=2,lambda=[2]/1,nu=[1]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>This is the parameter set for <code class="docutils literal"><span class="pre">SL(2,R)</span></code>. Each parameter is a
+triple. <code class="docutils literal"><span class="pre">(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code>. We will explain each of these later. But
+for now we can say that the representation theory of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> tells
+us that there are four representations with infinitessimal character
+<code class="docutils literal"><span class="pre">rho</span></code>. Two of them are the discrete series associated to the Cartan
+<code class="docutils literal"><span class="pre">T</span></code> and corresponding to the two parameters above with <code class="docutils literal"><span class="pre">nu=0</span></code>; the trivial representation and an irreducible principal series, attached to the Cartan <code class="docutils literal"><span class="pre">A</span></code> and corresponding to the parameters with <code class="docutils literal"><span class="pre">nu=1</span></code></p>
+<p>We will say more about this later. But first we can look at characters for simpler groups.</p>
+</div>
+<div class="section" id="characters-of-tori">
+<h2>Characters of Tori<a class="headerlink" href="#characters-of-tori" title="Permalink to this headline">¶</a></h2>
+<p>To study characters of Tori we first need to know how <code class="docutils literal"><span class="pre">atlas</span></code>
+understands what a torus is. In order to specify which torus we want
+we use the command <code class="docutils literal"><span class="pre">torus</span></code>. There are two ways of using this
+command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype torus ?
+Overloaded instances of &#39;torus&#39;
+  (int,int,int)-&gt;RealForm
+  CartanClass-&gt;RealForm
+atlas&gt;
+
+atlas&gt; set H=torus(1,0,0)
+Identifier H: RealForm (hiding previous one of type string (constant))
+atlas&gt; H
+Value: compact connected quasisplit real group with Lie algebra &#39;u(1)&#39;
+atlas&gt; set H=torus(0,1,0)
+Identifier H: RealForm (hiding previous one of type RealForm)
+atlas&gt; H
+Value: connected quasisplit real group with Lie algebra &#39;gl(1,C)&#39;
+atlas&gt;  H:=torus(0,0,1)
+Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
+atlas&gt;
+
+atlas&gt; H:=torus(1,2,3)
+Value: disconnected quasisplit real group with Lie algebra
+&#39;u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)&#39;
+atlas&gt;
+</pre></div>
+</div>
+<p>So, the command <code class="docutils literal"><span class="pre">torus(a,b,c)</span></code> specifys a torus with <code class="docutils literal"><span class="pre">a</span></code> circle
+factors <code class="docutils literal"><span class="pre">S^1</span></code>, <code class="docutils literal"><span class="pre">b</span></code> <code class="docutils literal"><span class="pre">C^x</span></code> factors and <code class="docutils literal"><span class="pre">c</span></code> <code class="docutils literal"><span class="pre">R^x</span></code> factors.</p>
+<p>Starting with the circle, let us discuss its representations. From the thoery we know that they are parametrized by integers. So, starting from the trivial representation we can see how the software parametrizes them:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;  H:=torus(1,0,0)
+Value: compact connected quasisplit real group with Lie algebra &#39;u(1)&#39;
+atlas&gt; set p=trivial(H)
+Identifier p: Param
+atlas&gt; p
+Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>So this is the parameter for the trivial representation. The first element <code class="docutils literal"><span class="pre">x</span></code> is a KGB element. But it is not important for now. Let us see what involution it corresponds to:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(p)
+Identifier x: KGBElt (hiding previous one of type int)
+atlas&gt; set theta=involution(x)
+Identifier theta: mat
+atlas&gt; theta
+Value:
+| 1 |
+
+atlas&gt;
+</pre></div>
+</div>
+<p>So in this case it is the identity involution. That is the torus has a Cartan involution whose information is encoded in this element <code class="docutils literal"><span class="pre">x</span></code> and in the case of a compact torus it is the identity.</p>
+<p>Now to understand the rest of the parameters, suppose that <code class="docutils literal"><span class="pre">H</span></code> is a
+complex torus with Cartan involution theta, and defined over R. Let
+<code class="docutils literal"><span class="pre">H(R)</span></code> be the corresponding real group. Denote by <code class="docutils literal"><span class="pre">X^*(H)</span></code> the
+characters of H(R). Then the characters of H(R) are parametrized by
+(theta, gamma, lambda). Here <code class="docutils literal"><span class="pre">gamma</span></code> is the differential of the
+character and <code class="docutils literal"><span class="pre">lambda</span></code> is the restriction of the character to
+<code class="docutils literal"><span class="pre">H^theta</span></code>.</p>
+<p>The real points are not necessarily connected. So we need to specify not only the differential but also information of the disconnected part which is encoded in the estriction to <code class="docutils literal"><span class="pre">H^theta</span></code>.</p>
+<p>The basic fact is that the characters of <code class="docutils literal"><span class="pre">H^theta</span></code> are parametrized by
+<code class="docutils literal"><span class="pre">X^*/(1-theta)X^*</span></code>.</p>
+<p>So the characters of <code class="docutils literal"><span class="pre">H(R)</span></code> are parametrized by (theta, lambda, nu)
+where <code class="docutils literal"><span class="pre">lambda</span></code> is in <code class="docutils literal"><span class="pre">X^*/(1-theta)X^*``and</span> <span class="pre">``nu</span></code> is in <code class="docutils literal"><span class="pre">[X^*\otimes</span>
+<span class="pre">Q]^{-theta}</span></code></p>
+<p>So <code class="docutils literal"><span class="pre">lambda</span></code> is a character on <code class="docutils literal"><span class="pre">H^theta</span></code> and <code class="docutils literal"><span class="pre">nu</span></code> gives the
+character on the Lie algebra of <code class="docutils literal"><span class="pre">A=H^theta</span></code>.</p>
+<p>In the case of the circle, <code class="docutils literal"><span class="pre">lambda</span></code> is in <code class="docutils literal"><span class="pre">Z/(1-theta)Z=Z</span></code>, since
+<code class="docutils literal"><span class="pre">theta=1</span></code> and <code class="docutils literal"><span class="pre">nu</span></code> is in <code class="docutils literal"><span class="pre">Q^{-1}=0</span></code>, So the parameter for these
+character is <code class="docutils literal"><span class="pre">(x=0,lambda,</span> <span class="pre">nu=0)</span></code> and there is one for each lambda in
+<code class="docutils literal"><span class="pre">Z</span></code> correspondintg to the character <code class="docutils literal"><span class="pre">e^{i</span> <span class="pre">lambda}</span> <span class="pre">t</span></code>.</p>
+<p>In the case of the trivial character the parameter is:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
+Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>And for the character <code class="docutils literal"><span class="pre">e^{i</span> <span class="pre">3}</span> <span class="pre">t</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set q=parameter(x,[3],[0])
+Identifier q: Param (hiding previous one of type vec (constant))
+atlas&gt; q
+Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
+atlas&gt;
+</pre></div>
+</div>
+</div>
 </div>
 
 
@@ -1068,10 +1204,10 @@ appears in the split real form.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="parameter_sets.html" class="btn btn-neutral float-right" title="Parameters Sets" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
