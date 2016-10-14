@@ -34,7 +34,7 @@ Given (S,x),
 write :math:`[x_1,...,x_n]` for the S-equivalence class of :math:`x\subset` KGB.
 
 The last element :math:`x_n` is maximal, and is uniquely determined.
-This orbit of K on :math:`G/P_S` is closed <=> :math:`x_1`
+This orbit of K on :math:`G/P_S` is closed <=> :math:`x_1` is closed in KGB.
 
 
 **This script imported the following .at files:**

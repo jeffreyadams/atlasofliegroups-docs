@@ -162,7 +162,7 @@ is_open
 -------------------------------------------------
 | ``is_open:KGPElt y->bool`` Defined in line number 155.
 | 
-| Test whether y in :math:`K\G/P_S`
+| Test whether y in :math:`K\G/P_S` is open: <=> last element of y is last element of KGB
 | 
 
 .. _is_closed_kgpelt_p->bool1:
@@ -171,7 +171,7 @@ is_closed
 -------------------------------------------------
 | ``is_closed:KGPElt P->bool`` Defined in line number 158.
 | 
-| Test whether y in :math:`K\G/P_S`
+| Test whether y in :math:`K\G/P_S` is closed: <=> length(first element)=0
 | 
 
 .. _kgp_elt_ratvec_lambda,kgbelt_x->kgpelt1:
