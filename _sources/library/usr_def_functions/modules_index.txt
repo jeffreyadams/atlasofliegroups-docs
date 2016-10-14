@@ -50,33 +50,33 @@ modules.at Function Index
      - ``KGBElt x,ratvec lambda->void``
    * - :ref:`virtual_tag_param(p,type)->tag_parampol1`
      - ``tag_Param(p,type)->tag_ParamPol``
-   * - :ref:`\=_tag_param(p,type_p),tag_param(q,type_q)->bool1`
+   * - :ref:`\=_tag_Param(p,type_p),tag_Param(q,type_q)->bool1`
      - ``tag_Param(p,type_p),tag_Param(q,type_q)->bool``
    * - :ref:`character_tag_parampol_(p,type)->parampol1`
      - ``tag_ParamPol (P,type)->ParamPol``
-   * - :ref:`\=_tag_parampol(p,type_p):tp,tag_parampol(q,type_q):tq->bool1`
+   * - :ref:`\=_tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->bool1`
      - ``tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->bool``
-   * - :ref:`\+_tag_parampol(p,type_p):tp,tag_parampol(q,type_q):tq->tag_parampol1`
+   * - :ref:`\+_tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->tag_ParamPol1`
      - ``tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->tag_ParamPol``
-   * - :ref:`\+_tag_param(p,type_p),tag_param(q,type_q)->tag_parampol1`
+   * - :ref:`\+_tag_Param(p,type_p),tag_Param(q,type_q)->tag_ParamPol1`
      - ``tag_Param(p,type_p),tag_Param(q,type_q)->tag_ParamPol``
-   * - :ref:`\+_tag_parampol(p,type_p),tag_param(q,typeq)->tag_parampol1`
+   * - :ref:`\+_tag_ParamPol(P,type_P),tag_Param(q,typeq)->tag_ParamPol1`
      - ``tag_ParamPol(P,type_P),tag_Param(q,typeq)->tag_ParamPol``
-   * - :ref:`\-_tag_parampol(p,type)->tag_parampol1`
+   * - :ref:`\-_tag_ParamPol(P,type)->tag_ParamPol1`
      - ``tag_ParamPol(P,type)->tag_ParamPol``
-   * - :ref:`\-_tag_param(p,type)->tag_parampol1`
+   * - :ref:`\-_tag_Param(p,type)->tag_ParamPol1`
      - ``tag_Param(p,type)->tag_ParamPol``
-   * - :ref:`\-_tag_parampol(p,type_p),tag_parampol(q,type_q)->tag_parampol1`
+   * - :ref:`\-_tag_ParamPol(P,type_P),tag_ParamPol(Q,type_Q)->tag_ParamPol1`
      - ``tag_ParamPol(P,type_P),tag_ParamPol(Q,type_Q)->tag_ParamPol``
-   * - :ref:`\-_tag_param(p,typep),tag_parampol(q,type_q)->tag_parampol1`
+   * - :ref:`\-_tag_Param(p,typep),tag_ParamPol(Q,type_Q)->tag_ParamPol1`
      - ``tag_Param(p,typep),tag_ParamPol(Q,type_Q)->tag_ParamPol``
-   * - :ref:`\-_tag_param(p,typep),tag_param(q,typeq)->tag_parampol1`
+   * - :ref:`\-_tag_Param(p,typep),tag_Param(q,typeq)->tag_ParamPol1`
      - ``tag_Param(p,typep),tag_Param(q,typeq)->tag_ParamPol``
-   * - :ref:`\*_split_w,tag_parampol(p,type)->tag_parampol1`
+   * - :ref:`\*_Split_w,tag_ParamPol(P,type)->tag_ParamPol1`
      - ``Split w,tag_ParamPol(P,type)->tag_ParamPol``
-   * - :ref:`\*_split_w,tag_param(p,type)->tag_parampol1`
+   * - :ref:`\*_Split_w,tag_Param(p,type)->tag_ParamPol1`
      - ``Split w,tag_Param(p,type)->tag_ParamPol``
-   * - :ref:`\=_tag_parampol(p,type_p),tag_param(q,typeq)->bool1`
+   * - :ref:`\=_tag_ParamPol(P,type_P),tag_Param(q,typeq)->bool1`
      - ``tag_ParamPol(P,type_P),tag_Param(q,typeq)->bool``
    * - :ref:`infinitesimal_character_param_p,string_type->ratvec1`
      - ``Param p,string type->ratvec``

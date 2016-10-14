@@ -28,7 +28,7 @@ collect
 | 
 | 
 
-.. _\*_split_s,extended_param_e->extparampol1:
+.. _\*_Split_s,extended_param_E->extParamPol1:
 
 \*
 -------------------------------------------------
@@ -36,7 +36,7 @@ collect
 | 
 | 
 
-.. _\*_split_s,extparampol_p->extparampol1:
+.. _\*_Split_s,extParamPol_P->extParamPol1:
 
 \*
 -------------------------------------------------
@@ -44,7 +44,7 @@ collect
 | 
 | 
 
-.. _\#_[split]_a,[split]_b->[split]:_for_x_in_b_do_a#1:
+.. _\#_[Split]_a,[Split]_b->[Split]:_for_x_in_b_do_a#1:
 
 \#
 -------------------------------------------------
@@ -60,7 +60,7 @@ collect
 | 
 | 
 
-.. _\+_extparampol_p,extparampol_q->extparampol1:
+.. _\+_extParamPol_P,extParamPol_Q->extParamPol1:
 
 \+
 -------------------------------------------------
@@ -68,7 +68,7 @@ collect
 | 
 | 
 
-.. _\+_extparampol_p,extended_param_e->extparampol1:
+.. _\+_extParamPol_P,extended_param_E->extParamPol1:
 
 \+
 -------------------------------------------------
@@ -76,7 +76,7 @@ collect
 | 
 | 
 
-.. _\-_extparampol_p,extparampol_q->extparampol1:
+.. _\-_extParamPol_P,extParamPol_Q->extParamPol1:
 
 \-
 -------------------------------------------------

@@ -48,7 +48,7 @@ extended.at Function Index
      - ``extended_param E->int``
    * - :ref:`dual_sign_extended_param_e->int1`
      - ``extended_param E->int``
-   * - :ref:`\=_extended_param_e,_extended_param_f->bool1`
+   * - :ref:`\=_extended_param_E,_extended_param_F->bool1`
      - ``extended_param E, extended_param F->bool``
    * - :ref:`is_default_extended_param_e->bool1`
      - ``extended_param E->bool``

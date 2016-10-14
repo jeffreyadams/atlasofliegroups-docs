@@ -4,7 +4,7 @@ tits.at Function References
 =======================================================
 |
 
-.. _\=_tits_elt(,v,theta),tits_elt(,u,eta)->bool1:
+.. _\=_Tits_elt(,v,theta),Tits_elt(,u,eta)->bool1:
 
 \=
 -------------------------------------------------
@@ -12,7 +12,7 @@ tits.at Function References
 | 
 | 
 
-.. _\!=_(tits_elt,tits_elt)p->bool1:
+.. _\!=_(Tits_elt,Tits_elt)p->bool1:
 
 \!=
 -------------------------------------------------
@@ -148,7 +148,7 @@ lift
 | 
 | 
 
-.. _\^_tits_elt_!xi,_int_n->tits_elt1:
+.. _\^_Tits_elt_!xi,_int_n->Tits_elt1:
 
 \^
 -------------------------------------------------

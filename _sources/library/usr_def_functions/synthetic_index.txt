@@ -48,11 +48,11 @@ synthetic.at Function Index
      - ``KGBElt_gen(,,t)->ratvec``
    * - :ref:`unnormalized_torus_factor_kgbelt_gen(ic,,t)->ratvec1`
      - ``KGBElt_gen(ic,,t)->ratvec``
-   * - :ref:`\=_kgbelt_gen_x1,kgbelt_gen_x2->bool1`
+   * - :ref:`\=_KGBElt_gen_x1,KGBElt_gen_x2->bool1`
      - ``KGBElt_gen x1,KGBElt_gen x2->bool``
-   * - :ref:`\!=_(kgbelt_gen,kgbelt_gen)p->bool1`
+   * - :ref:`\!=_(KGBElt_gen,KGBElt_gen)p->bool1`
      - ``(KGBElt_gen,KGBElt_gen)p->bool``
-   * - :ref:`\*_mat_delta,kgbelt_gen(ic,theta,t)->kgbelt_gen1`
+   * - :ref:`\*_mat_delta,KGBElt_gen(ic,theta,t)->KGBElt_gen1`
      - ``mat delta,KGBElt_gen(ic,theta,t)->KGBElt_gen``
    * - :ref:`is_fixed_mat_delta,kgbelt_gen_y->bool1`
      - ``mat delta,KGBElt_gen y->bool``

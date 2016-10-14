@@ -316,17 +316,17 @@ ceil
 | 
 | 
 
-.. _\_(rat,int)p->int1:
+.. _\\_(rat,int)p->int1:
 
-\
+\\
 -------------------------------------------------
 | ``\:(rat,int)p->int`` Defined in line number 106.
 | 
 | 
 
-.. _\_(rat,rat)p->int1:
+.. _\\_(rat,rat)p->int1:
 
-\
+\\
 -------------------------------------------------
 | ``\:(rat,rat)p->int`` Defined in line number 107.
 | 
@@ -684,15 +684,15 @@ row
 | 
 | 
 
-.. _\##_mat_a,_mat_b->mat1:
+.. _\#\#_mat_A,_mat_B->mat1:
 
-\##
+\#\#
 -------------------------------------------------
 | ``##:mat A, mat B->mat`` Defined in line number 237.
 | 
 | 
 
-.. _\^_mat_a,_mat_b->mat1:
+.. _\^_mat_A,_mat_B->mat1:
 
 \^
 -------------------------------------------------
@@ -700,9 +700,9 @@ row
 | 
 | 
 
-.. _\##_int_n,[mat]_l->mat1:
+.. _\#\#_int_n,[mat]_L->mat1:
 
-\##
+\#\#
 -------------------------------------------------
 | ``##:int n,[mat] L->mat`` Defined in line number 243.
 | 
@@ -732,9 +732,9 @@ map_on
 | 
 | 
 
-.. _\_mat_m,int_d->mat:_map_on(m)((int_e)_int1:
+.. _\\_mat_m,int_d->mat:_map_on(m)((int_e)_int1:
 
-\
+\\
 -------------------------------------------------
 | ``\:mat m,int d->mat: map_on(m)((int e) int`` Defined in line number 257.
 | 
@@ -948,17 +948,17 @@ denom
 | 
 | 
 
-.. _\##_ratvec_a,ratvec_b->ratvec:_##([rat]:a,[rat]1:
+.. _\#\#_ratvec_a,ratvec_b->ratvec:_##([rat]:a,[rat]1:
 
-\##
+\#\#
 -------------------------------------------------
 | ``##:ratvec a,ratvec b->ratvec: ##([rat]:a,[rat]`` Defined in line number 381.
 | 
 | 
 
-.. _\##_[ratvec]_rs->ratvec:_##_for_r_in_rs_do_[rat]1:
+.. _\#\#_[ratvec]_rs->ratvec:_##_for_r_in_rs_do_[rat]1:
 
-\##
+\#\#
 -------------------------------------------------
 | ``##:[ratvec] rs->ratvec: ## for r in rs do [rat]`` Defined in line number 382.
 | 
@@ -972,7 +972,7 @@ sum
 | 
 | 
 
-.. _\*_[ratvec]_m,ratvec_v->ratvec1:
+.. _\*_[ratvec]_M,ratvec_v->ratvec1:
 
 \*
 -------------------------------------------------
@@ -1004,9 +1004,9 @@ is_integer
 | 
 | 
 
-.. _\_ratvec_v,_int_k->vec1:
+.. _\\_ratvec_v,_int_k->vec1:
 
-\
+\\
 -------------------------------------------------
 | ``\:ratvec v, int k->vec`` Defined in line number 407.
 | 
@@ -1780,7 +1780,7 @@ fundamental_coweights
 | 
 | 
 
-.. _\!=_innerclass_x,innerclass_y->bool1:
+.. _\!=_InnerClass_x,InnerClass_y->bool1:
 
 \!=
 -------------------------------------------------
@@ -1860,7 +1860,7 @@ split_rank
 | 
 | 
 
-.. _\=_cartanclass_h,cartanclass_j->bool1:
+.. _\=_CartanClass_H,CartanClass_J->bool1:
 
 \=
 -------------------------------------------------
@@ -1876,7 +1876,7 @@ number
 | 
 | 
 
-.. _\!=_realform_f,_realform_g->bool1:
+.. _\!=_RealForm_f,_RealForm_g->bool1:
 
 \!=
 -------------------------------------------------
@@ -1964,7 +1964,7 @@ is_compact
 | 
 | 
 
-.. _\!=_kgbelt_x,kgbelt_y->bool1:
+.. _\!=_KGBElt_x,KGBElt_y->bool1:
 
 \!=
 -------------------------------------------------
@@ -2444,7 +2444,7 @@ print_W_graph
 | 
 | 
 
-.. _\!=_param_x,param_y->bool1:
+.. _\!=_Param_x,Param_y->bool1:
 
 \!=
 -------------------------------------------------
@@ -2476,7 +2476,7 @@ null_module
 | 
 | 
 
-.. _\*_param_p,rat_f->param1:
+.. _\*_Param_p,rat_f->Param1:
 
 \*
 -------------------------------------------------
@@ -2780,7 +2780,7 @@ null_module
 | 
 | 
 
-.. _\-_parampol_p->parampol1:
+.. _\-_ParamPol_P->ParamPol1:
 
 \-
 -------------------------------------------------
@@ -2820,7 +2820,7 @@ s_to_minus_1
 | 
 | 
 
-.. _\-_parampol_a,_(split,param)_(c,p)->parampol1:
+.. _\-_ParamPol_a,_(Split,Param)_(c,p)->ParamPol1:
 
 \-
 -------------------------------------------------
@@ -2828,7 +2828,7 @@ s_to_minus_1
 | 
 | 
 
-.. _\*_parampol_p,_rat_f->parampol1:
+.. _\*_ParamPol_P,_rat_f->ParamPol1:
 
 \*
 -------------------------------------------------

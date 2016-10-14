@@ -4,7 +4,7 @@ hecke.at Function References
 =======================================================
 |
 
-.. _\=_kgb_pair(x,y),_kgb_pair(z,w)->bool1:
+.. _\=_KGB_pair(x,y),_KGB_pair(z,w)->bool1:
 
 \=
 -------------------------------------------------
@@ -12,7 +12,7 @@ hecke.at Function References
 | 
 | 
 
-.. _\!=_kgb_pair(x,y),_kgb_pair(z,w)->bool1:
+.. _\!=_KGB_pair(x,y),_KGB_pair(z,w)->bool1:
 
 \!=
 -------------------------------------------------

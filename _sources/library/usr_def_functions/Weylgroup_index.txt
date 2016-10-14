@@ -16,7 +16,7 @@ Weylgroup.at Function Index
      - ``W_word(rd,)->RootDatum``
    * - :ref:`word_w_word(,w)->[int]1`
      - ``W_word(,w)->[int]``
-   * - :ref:`\#_w_word(,w)->int1`
+   * - :ref:`\#_W_word(,w)->int1`
      - ``W_word(,w)->int``
    * - :ref:`act_w_word(rd,w),_vec_v->vec1`
      - ``W_word(rd,w), vec v->vec``
@@ -96,7 +96,7 @@ Weylgroup.at Function Index
      - ``W_word(rd,v), W_word(,w)->W_word``
    * - :ref:`conjugate_w_word(rd,v),_w_word(,w)->w_word1`
      - ``W_word(rd,v), W_word(,w)->W_word``
-   * - :ref:`\^_w_word_(!rd,w),_int_n->w_word1`
+   * - :ref:`\^_W_word_(!rd,w),_int_n->W_word1`
      - ``W_word (!rd,w), int n->W_word``
    * - :ref:`involution_innerclass_ic,_w_word(,w)->mat1`
      - ``InnerClass ic, W_word(,w)->mat``

@@ -36,7 +36,7 @@ W_reps_type_BC.at Function Index
      - ``Wrep sigma->Symbol``
    * - :ref:`orbit_c_wrep_sigma->orbit1`
      - ``Wrep sigma->Orbit``
-   * - :ref:`\=_wrep__a,wrep_b->bool1`
+   * - :ref:`\=_Wrep__a,Wrep_b->bool1`
      - ``Wrep  a,Wrep b->bool``
    * - :ref:`symbols_equal_symbol_a,symbol_b->bool1`
      - ``Symbol a,Symbol b->bool``

@@ -12,9 +12,9 @@ tits.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`\=_tits_elt(,v,theta),tits_elt(,u,eta)->bool1`
+   * - :ref:`\=_Tits_elt(,v,theta),Tits_elt(,u,eta)->bool1`
      - ``Tits_elt(,v,theta),Tits_elt(,u,eta)->bool``
-   * - :ref:`\!=_(tits_elt,tits_elt)p->bool1`
+   * - :ref:`\!=_(Tits_elt,Tits_elt)p->bool1`
      - ``(Tits_elt,Tits_elt)p->bool``
    * - :ref:`tits_identity_rootdatum_rd->tits_elt1`
      - ``RootDatum rd->Tits_elt``
@@ -48,7 +48,7 @@ tits.at Function Index
      - ``mat delta, W_word w->Tits_elt``
    * - :ref:`lift_realform_g,_w_word_w->tits_elt1`
      - ``RealForm G, W_word w->Tits_elt``
-   * - :ref:`\^_tits_elt_!xi,_int_n->tits_elt1`
+   * - :ref:`\^_Tits_elt_!xi,_int_n->Tits_elt1`
      - ``Tits_elt !xi, int n->Tits_elt``
    * - :ref:`order_tits_elt_xi->int1`
      - ``Tits_elt xi->int``

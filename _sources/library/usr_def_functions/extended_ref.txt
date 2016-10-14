@@ -148,7 +148,7 @@ dual_sign
 | 
 | 
 
-.. _\=_extended_param_e,_extended_param_f->bool1:
+.. _\=_extended_param_E,_extended_param_F->bool1:
 
 \=
 -------------------------------------------------

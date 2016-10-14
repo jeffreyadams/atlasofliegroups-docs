@@ -20,11 +20,11 @@ group_operations.at Function Index
      - ``RealForm G->void``
    * - :ref:`split_form_innerclass_ic->realform1`
      - ``InnerClass ic->RealForm``
-   * - :ref:`\*_rootdatum_r,rootdatum_s->rootdatum1`
+   * - :ref:`\*_RootDatum_R,RootDatum_S->RootDatum1`
      - ``RootDatum R,RootDatum S->RootDatum``
-   * - :ref:`\*_innerclass_ic1,innerclass_ic2->innerclass1`
+   * - :ref:`\*_InnerClass_ic1,InnerClass_ic2->InnerClass1`
      - ``InnerClass ic1,InnerClass ic2->InnerClass``
-   * - :ref:`\*_realform_g,realform_h->realform1`
+   * - :ref:`\*_RealForm_G,RealForm_H->RealForm1`
      - ``RealForm G,RealForm H->RealForm``
    * - :ref:`radical_rootdatum_rd->rootdatum1`
      - ``RootDatum rd->RootDatum``

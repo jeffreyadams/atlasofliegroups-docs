@@ -111,7 +111,7 @@ canonical_representative
 | 
 | 
 
-.. _\=_kgpelt_(s,x),kgpelt_(t,y)->bool1:
+.. _\=_KGPElt_(S,x),KGPElt_(T,y)->bool1:
 
 \=
 -------------------------------------------------

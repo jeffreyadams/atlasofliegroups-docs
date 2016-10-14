@@ -24,23 +24,23 @@ polynomial.at Function Index
      - ``poly_mat M->poly_mat``
    * - :ref:`dot_product_[poly]_v,[poly]_w->poly1`
      - ``[poly] v,[poly] w->poly``
-   * - :ref:`\*_poly_mat_a,poly_mat_b->poly_mat1`
+   * - :ref:`\*_poly_mat_A,poly_mat_B->poly_mat1`
      - ``poly_mat A,poly_mat B->poly_mat``
    * - :ref:`poly_list_add_[poly]_v,[poly]_w->[poly]1`
      - ``[poly] v,[poly] w->[poly]``
    * - :ref:`poly_list_sub_[poly]_v,[poly]_w->[poly]1`
      - ``[poly] v,[poly] w->[poly]``
-   * - :ref:`\-_poly_mat_m->poly_mat1`
+   * - :ref:`\-_poly_mat_M->poly_mat1`
      - ``poly_mat M->poly_mat``
-   * - :ref:`\+_poly_mat_a,poly_mat_b->poly_mat1`
+   * - :ref:`\+_poly_mat_A,poly_mat_B->poly_mat1`
      - ``poly_mat A,poly_mat B->poly_mat``
-   * - :ref:`\-_poly_mat_a,poly_mat_b->poly_mat1`
+   * - :ref:`\-_poly_mat_A,poly_mat_B->poly_mat1`
      - ``poly_mat A,poly_mat B->poly_mat``
    * - :ref:`scalar_multiply_[poly]_v,poly_f->[poly]1`
      - ``[poly] v,poly f->[poly]``
-   * - :ref:`\*_poly_f,poly_mat_m->poly_mat1`
+   * - :ref:`\*_poly_f,poly_mat_M->poly_mat1`
      - ``poly f,poly_mat M->poly_mat``
-   * - :ref:`\*_int_c,_poly_mat_m->poly_mat1`
+   * - :ref:`\*_int_c,_poly_mat_M->poly_mat1`
      - ``int c, poly_mat M->poly_mat``
    * - :ref:`update_row_[poly]_r,_int_j,poly_v->[poly]:_r[j]1`
      - ``[poly] R, int j,poly v->[poly]: R[j]``
@@ -54,11 +54,11 @@ polynomial.at Function Index
      - ``int n->poly_mat``
    * - :ref:`scalar_poly_matrix_int_n,_int_c->poly_mat1`
      - ``int n, int c->poly_mat``
-   * - :ref:`\+_poly_mat_m,_poly_p->poly_mat1`
+   * - :ref:`\+_poly_mat_M,_poly_p->poly_mat1`
      - ``poly_mat M, poly p->poly_mat``
-   * - :ref:`\-_poly_mat_m,_poly_p->poly_mat1`
+   * - :ref:`\-_poly_mat_M,_poly_p->poly_mat1`
      - ``poly_mat M, poly p->poly_mat``
-   * - :ref:`\=_poly_mat_a,poly_mat_b->bool1`
+   * - :ref:`\=_poly_mat_A,poly_mat_B->bool1`
      - ``poly_mat A,poly_mat B->bool``
    * - :ref:`is_zero_poly_mat_m->bool1`
      - ``poly_mat M->bool``

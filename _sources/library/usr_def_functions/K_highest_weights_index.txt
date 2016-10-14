@@ -12,7 +12,7 @@ K_highest_weights.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`\=_khighestweight_(x,mu),_khighestweight_(y,tau)->bool1`
+   * - :ref:`\=_KHighestWeight_(x,mu),_KHighestWeight_(y,tau)->bool1`
      - ``KHighestWeight (x,mu), KHighestWeight (y,tau)->bool``
    * - :ref:`is_split_spherical_param_p->bool1`
      - ``Param p->bool``
