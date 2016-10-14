@@ -1,4 +1,3 @@
-
 Coordinates and Characters
 ===========================
 
@@ -7,8 +6,8 @@ Coordinates and Characters
 .. toctree::
    :maxdepth: 2
 
-   video_2A/incidence_matrix
-   video_2A/
+   video_2A/occurrence_matrix
+   video_2A/parameter_sets
    video_2A/
    video_2A/
    video_2A/

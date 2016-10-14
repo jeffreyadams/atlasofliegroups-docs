@@ -19,7 +19,7 @@ of (complex) parabolics of type S
 
 | :ref:`kgp.at<kgp.at>`
 | :ref:`Weylgroup.at<Weylgroup.at>`
-| :ref:`group_operations<group_operations>`
+| :ref:`group_operations.at<group_operations.at>`
 |
 
 

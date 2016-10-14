@@ -8,7 +8,7 @@ test_K.at
 
 **This script imported the following .at files:**
 
-| :ref:`all<all>`
+| :ref:`all.at<all.at>`
 |
 
 
