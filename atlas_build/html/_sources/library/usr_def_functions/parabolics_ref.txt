@@ -10,7 +10,7 @@ complex_parabolic
 -------------------------------------------------
 | ``complex_parabolic:Parabolic(S,x)->ComplexParabolic`` Defined in line number 26.
 | 
-| 
+| The complex parabolic underlying P=(S,x)
 | 
 
 .. _complex_levi_rootdatum_rd,_(int->bool)_select->rootdatum1:
@@ -19,7 +19,7 @@ complex_Levi
 -------------------------------------------------
 | ``complex_Levi:RootDatum rd, (int->bool) select->RootDatum`` Defined in line number 29.
 | 
-| 
+| Auxiliary function
 | 
 
 .. _is_levi_theta_stable_parabolic_(s,x)->bool1:
@@ -118,7 +118,7 @@ parabolic
 -------------------------------------------------
 | ``parabolic:ratvec lambda,KGBElt x->Parabolic`` Defined in line number 127.
 | 
-| 
+| Parabolic defined by weight lambda
 | 
 
 .. _levi_ratvec_lambda,kgbelt_x->realform1:
@@ -127,7 +127,7 @@ Levi
 -------------------------------------------------
 | ``Levi:ratvec lambda,KGBElt x->RealForm`` Defined in line number 132.
 | 
-| 
+| Levi factor of parabolic defined by weight lambda
 | 
 
 .. _nilrad_ratvec_lambda,kgbelt_x->mat1:
@@ -172,7 +172,7 @@ parabolic_alt
 -------------------------------------------------
 | ``parabolic_alt:ratvec H,KGBElt x->Parabolic`` Defined in line number 152.
 | 
-| 
+| Parabolic defined by coweight H
 | 
 
 .. _levi_alt_ratvec_h,kgbelt_x->realform1:
@@ -181,7 +181,7 @@ Levi_alt
 -------------------------------------------------
 | ``Levi_alt:ratvec H,KGBElt x->RealForm`` Defined in line number 157.
 | 
-| 
+| Levi factor of parabolic defined by coweight H
 | 
 
 .. _nilrad_alt_ratvec_h,kgbelt_x->mat1:
@@ -244,7 +244,7 @@ real_Levi
 -------------------------------------------------
 | ``real_Levi:KGBElt x->RealForm`` Defined in line number 198.
 | 
-| 
+| Levi factor of real cuspidal parabolic;  M=centralizer of A in H=TA, as a RealForm
 | 
 
 .. _kgp_realform_g,complexparabolic_(rd,s)->[kgpelt]1:
@@ -253,7 +253,7 @@ KGP
 -------------------------------------------------
 | ``KGP:RealForm G,ComplexParabolic (rd,S)->[KGPElt]`` Defined in line number 254.
 | 
-| 
+| List of K-conjugacy classes of given ComplexParabolic (as KGP elts)
 | 
 
 .. _parabolics_realform_g,complexparabolic_(rd,s)->[parabolic]1:
@@ -262,7 +262,7 @@ parabolics
 -------------------------------------------------
 | ``parabolics:RealForm G,ComplexParabolic (rd,S)->[Parabolic]`` Defined in line number 258.
 | 
-| 
+| List K-conjugacy classes of given ComplesParabolic (as Parabolics)
 | 
 
 .. _theta_stable_parabolics_realform_g,complexparabolic_p->[parabolic]1:
@@ -307,6 +307,6 @@ print_theta_stable_parabolics
 -------------------------------------------------
 | ``print_theta_stable_parabolics:RealForm G->void`` Defined in line number 289.
 | 
-| 
+| For each theta stable parabolic of G, print S, Levi factor, and maximal x
 | 
 
