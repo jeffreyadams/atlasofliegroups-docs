@@ -200,7 +200,7 @@ In the case of the trivial character the parameter is::
    Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
    atlas>
 
-And for the character ``e^{i 3} t``::
+And for the character ``e^{i 3} theta``::
 
    atlas> set q=parameter(x,[3],[0])
    Identifier q: Param (hiding previous one of type vec (constant))
