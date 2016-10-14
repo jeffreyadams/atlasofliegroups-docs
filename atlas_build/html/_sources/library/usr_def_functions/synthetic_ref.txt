@@ -148,7 +148,7 @@ unnormalized_torus_factor
 | 
 | 
 
-.. _\=_kgbelt_gen_x1,kgbelt_gen_x2->bool1:
+.. _\=_KGBElt_gen_x1,KGBElt_gen_x2->bool1:
 
 \=
 -------------------------------------------------
@@ -156,7 +156,7 @@ unnormalized_torus_factor
 | 
 | 
 
-.. _\!=_(kgbelt_gen,kgbelt_gen)p->bool1:
+.. _\!=_(KGBElt_gen,KGBElt_gen)p->bool1:
 
 \!=
 -------------------------------------------------
@@ -164,7 +164,7 @@ unnormalized_torus_factor
 | 
 | 
 
-.. _\*_mat_delta,kgbelt_gen(ic,theta,t)->kgbelt_gen1:
+.. _\*_mat_delta,KGBElt_gen(ic,theta,t)->KGBElt_gen1:
 
 \*
 -------------------------------------------------

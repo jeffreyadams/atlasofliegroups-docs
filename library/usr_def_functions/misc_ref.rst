@@ -36,7 +36,7 @@ is_nonnegative
 | 
 | 
 
-.. _\%_parampol_p->[(split,param)]1:
+.. _\%_ParamPol_P->[(Split,Param)]1:
 
 \%
 -------------------------------------------------
@@ -84,7 +84,7 @@ finalize
 | 
 | 
 
-.. _\#_split_w,int_t)=let_(a,b->%w_in_int1:
+.. _\#_Split_w,int_t)=let_(a,b->%w_in_int1:
 
 \#
 -------------------------------------------------
@@ -92,7 +92,7 @@ finalize
 | 
 | 
 
-.. _\#_split_w,rat_t)=let_(a,b->%w_in_rat1:
+.. _\#_Split_w,rat_t)=let_(a,b->%w_in_rat1:
 
 \#
 -------------------------------------------------
@@ -100,7 +100,7 @@ finalize
 | 
 | 
 
-.. _\#_parampol_p,int_t->parampol1:
+.. _\#_ParamPol_P,int_t->ParamPol1:
 
 \#
 -------------------------------------------------

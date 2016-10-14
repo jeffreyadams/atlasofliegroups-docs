@@ -36,7 +36,7 @@ kgp.at Function Index
      - ``[int] S, KGBElt x->KGBElt``
    * - :ref:`canonical_representative_kgpelt_y->kgpelt1`
      - ``KGPElt y->KGPElt``
-   * - :ref:`\=_kgpelt_(s,x),kgpelt_(t,y)->bool1`
+   * - :ref:`\=_KGPElt_(S,x),KGPElt_(T,y)->bool1`
      - ``KGPElt (S,x),KGPElt (T,y)->bool``
    * - :ref:`equivalence_class_of_kgpelt(s,x):y->[kgbelt]1`
      - ``KGPElt(S,x):y->[KGBElt]``

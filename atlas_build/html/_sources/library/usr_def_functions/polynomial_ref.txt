@@ -52,7 +52,7 @@ dot_product
 | 
 | 
 
-.. _\*_poly_mat_a,poly_mat_b->poly_mat1:
+.. _\*_poly_mat_A,poly_mat_B->poly_mat1:
 
 \*
 -------------------------------------------------
@@ -76,7 +76,7 @@ poly_list_sub
 | 
 | 
 
-.. _\-_poly_mat_m->poly_mat1:
+.. _\-_poly_mat_M->poly_mat1:
 
 \-
 -------------------------------------------------
@@ -84,7 +84,7 @@ poly_list_sub
 | 
 | 
 
-.. _\+_poly_mat_a,poly_mat_b->poly_mat1:
+.. _\+_poly_mat_A,poly_mat_B->poly_mat1:
 
 \+
 -------------------------------------------------
@@ -92,7 +92,7 @@ poly_list_sub
 | 
 | 
 
-.. _\-_poly_mat_a,poly_mat_b->poly_mat1:
+.. _\-_poly_mat_A,poly_mat_B->poly_mat1:
 
 \-
 -------------------------------------------------
@@ -108,7 +108,7 @@ scalar_multiply
 | 
 | 
 
-.. _\*_poly_f,poly_mat_m->poly_mat1:
+.. _\*_poly_f,poly_mat_M->poly_mat1:
 
 \*
 -------------------------------------------------
@@ -116,7 +116,7 @@ scalar_multiply
 | 
 | 
 
-.. _\*_int_c,_poly_mat_m->poly_mat1:
+.. _\*_int_c,_poly_mat_M->poly_mat1:
 
 \*
 -------------------------------------------------
@@ -172,7 +172,7 @@ scalar_poly_matrix
 | 
 | 
 
-.. _\+_poly_mat_m,_poly_p->poly_mat1:
+.. _\+_poly_mat_M,_poly_p->poly_mat1:
 
 \+
 -------------------------------------------------
@@ -180,7 +180,7 @@ scalar_poly_matrix
 | 
 | 
 
-.. _\-_poly_mat_m,_poly_p->poly_mat1:
+.. _\-_poly_mat_M,_poly_p->poly_mat1:
 
 \-
 -------------------------------------------------
@@ -188,7 +188,7 @@ scalar_poly_matrix
 | 
 | 
 
-.. _\=_poly_mat_a,poly_mat_b->bool1:
+.. _\=_poly_mat_A,poly_mat_B->bool1:
 
 \=
 -------------------------------------------------

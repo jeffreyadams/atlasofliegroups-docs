@@ -4,7 +4,7 @@ K_highest_weights.at Function References
 =======================================================
 |
 
-.. _\=_khighestweight_(x,mu),_khighestweight_(y,tau)->bool1:
+.. _\=_KHighestWeight_(x,mu),_KHighestWeight_(y,tau)->bool1:
 
 \=
 -------------------------------------------------

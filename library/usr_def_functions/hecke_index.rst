@@ -12,9 +12,9 @@ hecke.at Function Index
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`\=_kgb_pair(x,y),_kgb_pair(z,w)->bool1`
+   * - :ref:`\=_KGB_pair(x,y),_KGB_pair(z,w)->bool1`
      - ``KGB_pair(x,y), KGB_pair(z,w)->bool``
-   * - :ref:`\!=_kgb_pair(x,y),_kgb_pair(z,w)->bool1`
+   * - :ref:`\!=_KGB_pair(x,y),_KGB_pair(z,w)->bool1`
      - ``KGB_pair(x,y), KGB_pair(z,w)->bool``
    * - :ref:`y_gen_extended_param(ic,,gamma,lambda,,,,omega,,)->kgbelt_gen1`
      - ``extended_param(ic,,gamma,lambda,,,,omega,,)->KGBElt_gen``

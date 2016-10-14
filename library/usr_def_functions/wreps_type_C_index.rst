@@ -34,7 +34,7 @@ wreps_type_C.at Function Index
      - ``Wrep sigma->Symbol``
    * - :ref:`orbit_wrep_sigma->orbit1`
      - ``Wrep sigma->Orbit``
-   * - :ref:`\=_wrep__a,wrep_b->bool2`
+   * - :ref:`\=_Wrep__a,Wrep_b->bool2`
      - ``Wrep  a,Wrep b->bool``
    * - :ref:`symbols_equal_symbol_a,symbol_b->bool2`
      - ``Symbol a,Symbol b->bool``

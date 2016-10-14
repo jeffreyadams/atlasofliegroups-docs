@@ -36,7 +36,7 @@ split_form
 | 
 | 
 
-.. _\*_rootdatum_r,rootdatum_s->rootdatum1:
+.. _\*_RootDatum_R,RootDatum_S->RootDatum1:
 
 \*
 -------------------------------------------------
@@ -44,7 +44,7 @@ split_form
 | 
 | 
 
-.. _\*_innerclass_ic1,innerclass_ic2->innerclass1:
+.. _\*_InnerClass_ic1,InnerClass_ic2->InnerClass1:
 
 \*
 -------------------------------------------------
@@ -52,7 +52,7 @@ split_form
 | 
 | 
 
-.. _\*_realform_g,realform_h->realform1:
+.. _\*_RealForm_G,RealForm_H->RealForm1:
 
 \*
 -------------------------------------------------

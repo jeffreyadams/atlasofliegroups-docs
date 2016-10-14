@@ -24,7 +24,7 @@ K_parameters.at Function Index
      - ``Param p->K_Type``
    * - :ref:`parameter_k_type_p->param1`
      - ``K_Type p->Param``
-   * - :ref:`\=_k_type_p,k_type_q->bool1`
+   * - :ref:`\=_K_Type_p,K_Type_q->bool1`
      - ``K_Type p,K_Type q->bool``
    * - :ref:`make_no_cminus_k_type_p->k_type1`
      - ``K_Type p->K_Type``

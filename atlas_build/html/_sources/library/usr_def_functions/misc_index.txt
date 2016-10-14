@@ -20,7 +20,7 @@ misc.at Function Index
      - ``ratvec v->bool``
    * - :ref:`is_nonnegative_ratvec_v->bool1`
      - ``ratvec v->bool``
-   * - :ref:`\%_parampol_p->[(split,param)]1`
+   * - :ref:`\%_ParamPol_P->[(Split,Param)]1`
      - ``ParamPol P->[(Split,Param)]``
    * - :ref:`integer_part_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``
@@ -32,11 +32,11 @@ misc.at Function Index
      - ``Param p->[Param]: for c@q in ParamPol``
    * - :ref:`finalize_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``
-   * - :ref:`\#_split_w,int_t)=let_(a,b->%w_in_int1`
+   * - :ref:`\#_Split_w,int_t)=let_(a,b->%w_in_int1`
      - ``Split w,int t)=let (a,b->%w in int``
-   * - :ref:`\#_split_w,rat_t)=let_(a,b->%w_in_rat1`
+   * - :ref:`\#_Split_w,rat_t)=let_(a,b->%w_in_rat1`
      - ``Split w,rat t)=let (a,b->%w in rat``
-   * - :ref:`\#_parampol_p,int_t->parampol1`
+   * - :ref:`\#_ParamPol_P,int_t->ParamPol1`
      - ``ParamPol P,int t->ParamPol``
    * - :ref:`fiber_partition_realform_g->[int]1`
      - ``RealForm G->[int]``

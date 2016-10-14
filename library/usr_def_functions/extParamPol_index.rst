@@ -18,19 +18,19 @@ extParamPol.at Function Index
      - ``extParamPol P->[extended_param]``
    * - :ref:`collect_extparampol_q->extparampol1`
      - ``extParamPol Q->extParamPol``
-   * - :ref:`\*_split_s,extended_param_e->extparampol1`
+   * - :ref:`\*_Split_s,extended_param_E->extParamPol1`
      - ``Split s,extended_param E->extParamPol``
-   * - :ref:`\*_split_s,extparampol_p->extparampol1`
+   * - :ref:`\*_Split_s,extParamPol_P->extParamPol1`
      - ``Split s,extParamPol P->extParamPol``
-   * - :ref:`\#_[split]_a,[split]_b->[split]:_for_x_in_b_do_a#1`
+   * - :ref:`\#_[Split]_a,[Split]_b->[Split]:_for_x_in_b_do_a#1`
      - ``[Split] a,[Split] b->[Split]: for x in b do a#``
    * - :ref:`\#_[extended_param]_a,[extended_param]_b->[extended_param]:_for_x_in_b_do_a#1`
      - ``[extended_param] a,[extended_param] b->[extended_param]: for x in b do a#``
-   * - :ref:`\+_extparampol_p,extparampol_q->extparampol1`
+   * - :ref:`\+_extParamPol_P,extParamPol_Q->extParamPol1`
      - ``extParamPol P,extParamPol Q->extParamPol``
-   * - :ref:`\+_extparampol_p,extended_param_e->extparampol1`
+   * - :ref:`\+_extParamPol_P,extended_param_E->extParamPol1`
      - ``extParamPol P,extended_param E->extParamPol``
-   * - :ref:`\-_extparampol_p,extparampol_q->extparampol1`
+   * - :ref:`\-_extParamPol_P,extParamPol_Q->extParamPol1`
      - ``extParamPol P,extParamPol Q->extParamPol``
    * - :ref:`null_ext_module_realform_g->extparampol1`
      - ``RealForm G->extParamPol``

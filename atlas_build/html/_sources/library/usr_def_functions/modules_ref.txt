@@ -156,7 +156,7 @@ virtual
 | 
 | 
 
-.. _\=_tag_param(p,type_p),tag_param(q,type_q)->bool1:
+.. _\=_tag_Param(p,type_p),tag_Param(q,type_q)->bool1:
 
 \=
 -------------------------------------------------
@@ -172,7 +172,7 @@ character
 | 
 | 
 
-.. _\=_tag_parampol(p,type_p):tp,tag_parampol(q,type_q):tq->bool1:
+.. _\=_tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->bool1:
 
 \=
 -------------------------------------------------
@@ -180,7 +180,7 @@ character
 | 
 | 
 
-.. _\+_tag_parampol(p,type_p):tp,tag_parampol(q,type_q):tq->tag_parampol1:
+.. _\+_tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->tag_ParamPol1:
 
 \+
 -------------------------------------------------
@@ -188,7 +188,7 @@ character
 | 
 | 
 
-.. _\+_tag_param(p,type_p),tag_param(q,type_q)->tag_parampol1:
+.. _\+_tag_Param(p,type_p),tag_Param(q,type_q)->tag_ParamPol1:
 
 \+
 -------------------------------------------------
@@ -196,7 +196,7 @@ character
 | 
 | 
 
-.. _\+_tag_parampol(p,type_p),tag_param(q,typeq)->tag_parampol1:
+.. _\+_tag_ParamPol(P,type_P),tag_Param(q,typeq)->tag_ParamPol1:
 
 \+
 -------------------------------------------------
@@ -204,7 +204,7 @@ character
 | 
 | 
 
-.. _\-_tag_parampol(p,type)->tag_parampol1:
+.. _\-_tag_ParamPol(P,type)->tag_ParamPol1:
 
 \-
 -------------------------------------------------
@@ -212,7 +212,7 @@ character
 | 
 | 
 
-.. _\-_tag_param(p,type)->tag_parampol1:
+.. _\-_tag_Param(p,type)->tag_ParamPol1:
 
 \-
 -------------------------------------------------
@@ -220,7 +220,7 @@ character
 | 
 | 
 
-.. _\-_tag_parampol(p,type_p),tag_parampol(q,type_q)->tag_parampol1:
+.. _\-_tag_ParamPol(P,type_P),tag_ParamPol(Q,type_Q)->tag_ParamPol1:
 
 \-
 -------------------------------------------------
@@ -228,7 +228,7 @@ character
 | 
 | 
 
-.. _\-_tag_param(p,typep),tag_parampol(q,type_q)->tag_parampol1:
+.. _\-_tag_Param(p,typep),tag_ParamPol(Q,type_Q)->tag_ParamPol1:
 
 \-
 -------------------------------------------------
@@ -236,7 +236,7 @@ character
 | 
 | 
 
-.. _\-_tag_param(p,typep),tag_param(q,typeq)->tag_parampol1:
+.. _\-_tag_Param(p,typep),tag_Param(q,typeq)->tag_ParamPol1:
 
 \-
 -------------------------------------------------
@@ -244,7 +244,7 @@ character
 | 
 | 
 
-.. _\*_split_w,tag_parampol(p,type)->tag_parampol1:
+.. _\*_Split_w,tag_ParamPol(P,type)->tag_ParamPol1:
 
 \*
 -------------------------------------------------
@@ -252,7 +252,7 @@ character
 | 
 | 
 
-.. _\*_split_w,tag_param(p,type)->tag_parampol1:
+.. _\*_Split_w,tag_Param(p,type)->tag_ParamPol1:
 
 \*
 -------------------------------------------------
@@ -260,7 +260,7 @@ character
 | 
 | 
 
-.. _\=_tag_parampol(p,type_p),tag_param(q,typeq)->bool1:
+.. _\=_tag_ParamPol(P,type_P),tag_Param(q,typeq)->bool1:
 
 \=
 -------------------------------------------------

@@ -90,9 +90,9 @@ basic.at Function Index
      - ``rat a->int``
    * - :ref:`ceil_rat_a->int1`
      - ``rat a->int``
-   * - :ref:`\_(rat,int)p->int1`
+   * - :ref:`\\_(rat,int)p->int1`
      - ``(rat,int)p->int``
-   * - :ref:`\_(rat,rat)p->int1`
+   * - :ref:`\\_(rat,rat)p->int1`
      - ``(rat,rat)p->int``
    * - :ref:`\%_(rat,int)p->(int,rat)1`
      - ``(rat,int)p->(int,rat)``
@@ -182,11 +182,11 @@ basic.at Function Index
      - ``mat m, vec v->mat: n_columns(m) ^ (([vec]``
    * - :ref:`\^_vec_v,_mat_m->mat:_n_columns(m)_^_(v#([vec]1`
      - ``vec v, mat m->mat: n_columns(m) ^ (v#([vec]``
-   * - :ref:`\##_mat_a,_mat_b->mat1`
+   * - :ref:`\#\#_mat_A,_mat_B->mat1`
      - ``mat A, mat B->mat``
-   * - :ref:`\^_mat_a,_mat_b->mat1`
+   * - :ref:`\^_mat_A,_mat_B->mat1`
      - ``mat A, mat B->mat``
-   * - :ref:`\##_int_n,[mat]_l->mat1`
+   * - :ref:`\#\#_int_n,[mat]_L->mat1`
      - ``int n,[mat] L->mat``
    * - :ref:`map_on_mat_m->((int->int)->mat)1`
      - ``mat m->((int->int)->mat)``
@@ -194,7 +194,7 @@ basic.at Function Index
      - ``int c,mat m->mat: map_on(m)((int e) int``
    * - :ref:`\-_mat_m->mat1`
      - ``mat m->mat``
-   * - :ref:`\_mat_m,int_d->mat:_map_on(m)((int_e)_int1`
+   * - :ref:`\\_mat_m,int_d->mat:_map_on(m)((int_e)_int1`
      - ``mat m,int d->mat: map_on(m)((int e) int``
    * - :ref:`\%_mat_m,int_d->mat:_map_on(m)((int_e)_int1`
      - ``mat m,int d->mat: map_on(m)((int e) int``
@@ -248,13 +248,13 @@ basic.at Function Index
      - ``int i,ratvec v->ratvec``
    * - :ref:`\*_rat_r,ratvec_v->ratvec1`
      - ``rat r,ratvec v->ratvec``
-   * - :ref:`\##_ratvec_a,ratvec_b->ratvec:_##([rat]:a,[rat]1`
+   * - :ref:`\#\#_ratvec_a,ratvec_b->ratvec:_##([rat]:a,[rat]1`
      - ``ratvec a,ratvec b->ratvec: ##([rat]:a,[rat]``
-   * - :ref:`\##_[ratvec]_rs->ratvec:_##_for_r_in_rs_do_[rat]1`
+   * - :ref:`\#\#_[ratvec]_rs->ratvec:_##_for_r_in_rs_do_[rat]1`
      - ``[ratvec] rs->ratvec: ## for r in rs do [rat]``
    * - :ref:`sum_[ratvec]_list,_int_l->ratvec1`
      - ``[ratvec] list, int l->ratvec``
-   * - :ref:`\*_[ratvec]_m,ratvec_v->ratvec1`
+   * - :ref:`\*_[ratvec]_M,ratvec_v->ratvec1`
      - ``[ratvec] M,ratvec v->ratvec``
    * - :ref:`is_integer_ratvec_v->bool1`
      - ``ratvec v->bool``
@@ -262,7 +262,7 @@ basic.at Function Index
      - ``ratvec v, ratvec w->rat``
    * - :ref:`\*_vec_v,_ratvec_w->rat1`
      - ``vec v, ratvec w->rat``
-   * - :ref:`\_ratvec_v,_int_k->vec1`
+   * - :ref:`\\_ratvec_v,_int_k->vec1`
      - ``ratvec v, int k->vec``
    * - :ref:`ratvec_as_vec_ratvec_v->vec1`
      - ``ratvec v->vec``
@@ -456,7 +456,7 @@ basic.at Function Index
      - ``RootDatum rd->[ratvec]``
    * - :ref:`fundamental_coweights_rootdatum_rd->[ratvec]1`
      - ``RootDatum rd->[ratvec]``
-   * - :ref:`\!=_innerclass_x,innerclass_y->bool1`
+   * - :ref:`\!=_InnerClass_x,InnerClass_y->bool1`
      - ``InnerClass x,InnerClass y->bool``
    * - :ref:`dual_integral_innerclass_ic,_ratvec_gamma->innerclass1`
      - ``InnerClass ic, ratvec gamma->InnerClass``
@@ -476,11 +476,11 @@ basic.at Function Index
      - ``InnerClass G->int``
    * - :ref:`split_rank_realform_g->int1`
      - ``RealForm G->int``
-   * - :ref:`\=_cartanclass_h,cartanclass_j->bool1`
+   * - :ref:`\=_CartanClass_H,CartanClass_J->bool1`
      - ``CartanClass H,CartanClass J->bool``
    * - :ref:`number_cartanclass_h,realform_g->int1`
      - ``CartanClass H,RealForm G->int``
-   * - :ref:`\!=_realform_f,_realform_g->bool1`
+   * - :ref:`\!=_RealForm_f,_RealForm_g->bool1`
      - ``RealForm f, RealForm g->bool``
    * - :ref:`form_name_realform_f->string1`
      - ``RealForm f->string``
@@ -502,7 +502,7 @@ basic.at Function Index
      - ``RealForm f, RealForm g->bool``
    * - :ref:`is_compact_realform_g->bool1`
      - ``RealForm G->bool``
-   * - :ref:`\!=_kgbelt_x,kgbelt_y->bool1`
+   * - :ref:`\!=_KGBElt_x,KGBElt_y->bool1`
      - ``KGBElt x,KGBElt y->bool``
    * - :ref:`root_datum_kgbelt_x->rootdatum1`
      - ``KGBElt x->RootDatum``
@@ -622,7 +622,7 @@ basic.at Function Index
      - ``(RealForm,RealForm) p->void``
    * - :ref:`print_w_graph_(realform,realform)_p->void1`
      - ``(RealForm,RealForm) p->void``
-   * - :ref:`\!=_param_x,param_y->bool1`
+   * - :ref:`\!=_Param_x,Param_y->bool1`
      - ``Param x,Param y->bool``
    * - :ref:`root_datum_param_p->rootdatum1`
      - ``Param p->RootDatum``
@@ -630,7 +630,7 @@ basic.at Function Index
      - ``Param p->InnerClass``
    * - :ref:`null_module_param_p->parampol1`
      - ``Param p->ParamPol``
-   * - :ref:`\*_param_p,rat_f->param1`
+   * - :ref:`\*_Param_p,rat_f->Param1`
      - ``Param p,rat f->Param``
    * - :ref:`x_param_p->kgbelt1`
      - ``Param p->KGBElt``
@@ -706,7 +706,7 @@ basic.at Function Index
      - ``Param p, [Param] block->int``
    * - :ref:`null_module_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``
-   * - :ref:`\-_parampol_p->parampol1`
+   * - :ref:`\-_ParamPol_P->ParamPol1`
      - ``ParamPol P->ParamPol``
    * - :ref:`first_param_parampol_p->param1`
      - ``ParamPol P->Param``
@@ -716,9 +716,9 @@ basic.at Function Index
      - ``ParamPol P->ParamPol``
    * - :ref:`s_to_minus_1_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``
-   * - :ref:`\-_parampol_a,_(split,param)_(c,p)->parampol1`
+   * - :ref:`\-_ParamPol_a,_(Split,Param)_(c,p)->ParamPol1`
      - ``ParamPol a, (Split,Param) (c,p)->ParamPol``
-   * - :ref:`\*_parampol_p,_rat_f->parampol1`
+   * - :ref:`\*_ParamPol_P,_rat_f->ParamPol1`
      - ``ParamPol P, rat f->ParamPol``
    * - :ref:`divide_by_int_n,_parampol_p->parampol1`
      - ``int n, ParamPol P->ParamPol``
