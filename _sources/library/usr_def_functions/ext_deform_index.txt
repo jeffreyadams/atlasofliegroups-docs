@@ -12,6 +12,10 @@ ext_deform.at Function Index
 
    * - Function
      - Argument(s) -> Results
+   * - :ref:`ext_kl_block_param_p,_mat_delta->([param],int,mat,[vec],vec,vec,mat)1`
+     - ``Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)``
+   * - :ref:`cook_kl_block_[param]_b,int_entry_elem,mat_kl,[poly]_polys,vec_stops,vec_surv,_mat_contrib->([param],int,poly_mat,vec)1`
+     - ``[Param] B,int entry_elem,mat KL,[poly] polys,vec stops,vec surv, mat contrib->([Param],int,poly_mat,vec)``
    * - :ref:`null_wt_int_r->ratvec1`
      - ``int r->ratvec``
    * - :ref:`has_nu0_param_p->bool2`

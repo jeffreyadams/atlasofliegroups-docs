@@ -72,7 +72,6 @@ User Defined Functions
    usr_def_functions/std_decs
    usr_def_functions/synthetic
    usr_def_functions/synthetic_aux
-   usr_def_functions/test
    usr_def_functions/test_K
    usr_def_functions/test_unitarity
    usr_def_functions/thetastable
