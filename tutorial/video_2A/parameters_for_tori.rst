@@ -4,13 +4,15 @@ Parameters for Tori
 To study characters of Tori we first need to know how ``atlas``
 understands what a torus is. In order to specify which torus we want
 we use the command ``torus``. There are two ways of using this
-command::
+command, which we can check as follows::
 
 	atlas> whattype torus ?
 	Overloaded instances of 'torus'
 	  (int,int,int)->RealForm
 	  CartanClass->RealForm
  	atlas>
+
+So, we can determine a particular torus by assigning three integers::
 
 	atlas> set H=torus(1,0,0)
 	Identifier H: RealForm (hiding previous one of type string (constant))
@@ -29,7 +31,7 @@ command::
 	'u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)' 
 	atlas>
 
-So, the command ``torus(a,b,c)`` specifys a torus with ``a`` circle
+That is, the command ``torus(a,b,c)`` specifys a torus with ``a`` circle
 factors ``S^1``, ``b`` ``C^x`` factors and ``c`` ``R^x`` factors.
 
 Starting with the circle, let us discuss its representations. From the thoery we know that they are parametrized by integers. So, starting from the trivial representation we can see how the software parametrizes them::
