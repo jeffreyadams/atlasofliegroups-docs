@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -995,18 +1000,6 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="matrix.html" class="btn btn-neutral float-right" title="Matrix Manipulating Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="lie-group-basics">
 <h1>Lie Group Basics<a class="headerlink" href="#lie-group-basics" title="Permalink to this headline">¶</a></h1>
@@ -1248,7 +1241,7 @@
 <blockquote>
 <div><code class="docutils literal"><span class="pre">(LieType-&gt;RootDatum)</span></code>: adjoint root datum for given type.
 Here the sublattice for the semisimple factor is the root lattice, with simple roots as basis; for the central torus an arbitrary basis is used. Therefore the this function could be defined as</div></blockquote>
-<div class="highlight-python"><div class="highlight"><pre><span></span>set adjoint_datum(LieType type) =
+<div class="highlight-python"><div class="highlight"><pre>set adjoint_datum(LieType type) =
 let M= for alpha@j in ^Cartan_matrix(type)
        do for entry@i in alpha
           do if i=j and entry=0 then 1 else entry fi
@@ -1299,7 +1292,7 @@ in root_datum(type,M)
         <a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="matrix.html" class="btn btn-neutral float-right" title="Matrix Manipulating Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="matrix.html" class="btn btn-neutral" title="Matrix Manipulating Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -995,38 +1000,26 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="summary.html" class="btn btn-neutral float-right" title="Syntax Summary" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="in_out_redir.html" class="btn btn-neutral float-right" title="Output, Input, and Redirection" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="miscellaneous-commands">
 <h1>Miscellaneous Commands<a class="headerlink" href="#miscellaneous-commands" title="Permalink to this headline">¶</a></h1>
 <p>Some operations, including the type checker, can be made more verbose by
 giving the command:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set verbose
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set verbose
 </pre></div>
 </div>
 <p>which remains in effect until a subsequent command:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set quiet
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set quiet
 </pre></div>
 </div>
 <p>is given.</p>
 <p>One can ask the state of all known identifiers by typing:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">showall</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">showall</span>
 </pre></div>
 </div>
 <p>which prints the type and value of every defined function and variable. If one
 just needs to know the type of one expression, one can type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype expr
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; whattype expr
 </pre></div>
 </div>
 <p>This performs type analysis of the expression and prints the result, but does
@@ -1034,7 +1027,7 @@ not evaluate anything. Overloaded function names by themselves are not a valid
 expressions, so this form cannot be used to find out function overloading.
 However by suffixing a question mark to the command, it will print the types
 of all overloads of the given (function or operator) symbol:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype + ?
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; whattype + ?
 Overloaded instances of +
   (int,int)-&gt;int
   (rat,int)-&gt;rat
@@ -1057,7 +1050,7 @@ Overloaded instances of +
 </pre></div>
 </div>
 <p>Finally when you get tired of using atlas, type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; quit
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; quit
 Bye.
 </pre></div>
 </div>
@@ -1073,7 +1066,7 @@ Bye.
         <a href="summary.html" class="btn btn-neutral float-right" title="Syntax Summary" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="in_out_redir.html" class="btn btn-neutral float-right" title="Output, Input, and Redirection" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="in_out_redir.html" class="btn btn-neutral" title="Output, Input, and Redirection" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

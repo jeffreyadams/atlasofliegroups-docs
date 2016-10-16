@@ -32,7 +32,7 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
-        <link rel="next" title="Parameters Sets" href="parameter_sets.html"/>
+        <link rel="next" title="Parameters" href="parameters.html"/>
         <link rel="prev" title="Coordinates and Characters" href="../coordinates_characters.html"/> 
 
   
@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -995,18 +1000,6 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="parameter_sets.html" class="btn btn-neutral float-right" title="Parameters Sets" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="occurrence-matrices">
 <h1>Occurrence Matrices<a class="headerlink" href="#occurrence-matrices" title="Permalink to this headline">¶</a></h1>
@@ -1019,7 +1012,7 @@ real form in the inner class we are using. This can be misleading unless we
 understand what the software is doing. This is because <code class="docutils literal"><span class="pre">atlas</span></code> is
 implicitly assuming that you are asking for the number of Cartans in
 the inner class of these real forms. For example,:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SO(5,4)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SO(5,4)
 Identifier G: RealForm
 atlas&gt; nr_of_Cartan_classes (G)
 Value: 9
@@ -1031,7 +1024,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>So, to find out which Cartans appear in each individual real form there is an <code class="docutils literal"><span class="pre">occurrence</span> <span class="pre">matrix</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; occurrence_matrix (G)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; occurrence_matrix (G)
 Value:
 | 1, 0, 0, 0, 0, 0, 0, 0, 0 |
 | 1, 0, 1, 0, 0, 0, 0, 0, 0 |
@@ -1044,7 +1037,7 @@ Value:
 <p>This matrix has 9 columns for all the Cartan classes and 5 rows for all the
 real forms of the group of type <code class="docutils literal"><span class="pre">B4</span></code>. Recall that the real forms for
 this inner class can be listed as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for H in real_forms (G) do prints(H) od
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; void: for H in real_forms (G) do prints(H) od
 compact connected real group with Lie algebra &#39;so(9)&#39;
 disconnected real group with Lie algebra &#39;so(8,1)&#39;
 disconnected real group with Lie algebra &#39;so(7,2)&#39;
@@ -1068,10 +1061,10 @@ appears in the split real form.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="parameter_sets.html" class="btn btn-neutral float-right" title="Parameters Sets" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../coordinates_characters.html" class="btn btn-neutral" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

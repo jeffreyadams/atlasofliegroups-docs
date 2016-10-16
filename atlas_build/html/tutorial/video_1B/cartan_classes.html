@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2A/parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -995,25 +1000,13 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="real_forms.html" class="btn btn-neutral float-right" title="Real Forms of a Complex Group" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="cartan-subgroups">
 <h1>Cartan Subgroups<a class="headerlink" href="#cartan-subgroups" title="Permalink to this headline">¶</a></h1>
 <p>When we give atlas a specific Lie group G, the software knows several
 characteristics of the group. And depending on what you ask about G, atlas
 will provide more information:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SL(2,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; G:=SL(2,R)
 Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
 atlas&gt;  H:=PSL(2,R)
 Value: disconnected split real group with Lie algebra &#39;sl(2,R)&#39;
@@ -1022,7 +1015,7 @@ atlas&gt;
 </div>
 <p>Recall that H=SO(2,1).</p>
 <p>Now, one of the main structural facts about a group is what its Cartan subgroups are. For that we can type the following sequence of commands:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; nr_of_Cartan_classes (G)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; nr_of_Cartan_classes (G)
 Value: 2
 atlas&gt; set cartans =Cartan_classes (G)
 Identifier cartans: [CartanClass]
@@ -1060,7 +1053,7 @@ factors and <code class="docutils literal"><span class="pre">c=0</span></code> r
 of complex groups of type <code class="docutils literal"><span class="pre">A1</span></code>.</p>
 <p>The information about twisted involutions will be discussed later.</p>
 <p>Now for information about the second Cartan subgroup:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set A=cartans[1]
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set A=cartans[1]
 Identifier A: CartanClass
 atlas&gt; A
 Value: Cartan class #1, occurring for 1 real form and for 2 dual real forms
@@ -1078,7 +1071,7 @@ atlas&gt;
 factors. And it just has real roots of type <code class="docutils literal"><span class="pre">A₁</span></code>. We will discuss later
 the information about involutions.</p>
 <p>In contrast, the group SL(2,C) has only one conjugacy class of cartans:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G2=SL(2,C)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G2=SL(2,C)
 Identifier G2: RealForm (hiding previous one of type string)
 atlas&gt; nr_of_Cartan_classes (G2)
 Value: 1
@@ -1105,7 +1098,7 @@ these two Cartans is subtle. Locally they are both isomorphic rank one
 Cartans and look like <code class="docutils literal"><span class="pre">S^1×R^x</span></code>. But, one is <code class="docutils literal"><span class="pre">C^x</span></code> and atlas can
 distinguish the two.</p>
 <p>The root systems of these intermediate Cartans also transform accordingly. For the Compact Cartan we have an imaginary root system of type <code class="docutils literal"><span class="pre">C2</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G1=Sp(4,R)
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G1=Sp(4,R)
 Identifier G1: RealForm
 atlas&gt; G1
 Value: connected split real group with Lie algebra &#39;sp(4,R)&#39;
@@ -1124,7 +1117,7 @@ complex factor: empty
 </pre></div>
 </div>
 <p>Now for the most split Cartan, the last one, all of the roots are real:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; print_Cartan_info (cartans[3])
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; print_Cartan_info (cartans[3])
 compact: 0, complex: 0, split: 2
 canonical twisted involution: 2,1,2,1
 twisted involution orbit size: 1; fiber size: 1; strong inv: 1
@@ -1135,7 +1128,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>For the complex intermidiate Cartan, we have an imaginary root system and a real root system, both of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; cartans[1]
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; cartans[1]
 Value: Cartan class #1, occurring for 2 real forms and for 1 dual real form
 atlas&gt; print_Cartan_info (cartans[1])
 compact: 0, complex: 1, split: 0
@@ -1148,7 +1141,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Lastly, the other intermidiate Cartan has also an imaginary and a real root system of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; cartans[2]
+<div class="highlight-python"><div class="highlight"><pre>atlas&gt; cartans[2]
 Value: Cartan class #2, occurring for 1 real form and for 2 dual real forms
 atlas&gt; print_Cartan_info (cartans[2])
 compact: 1, complex: 0, split: 1
@@ -1173,7 +1166,7 @@ atlas&gt;
         <a href="real_forms.html" class="btn btn-neutral float-right" title="Real Forms of a Complex Group" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="atlas_coordinates.html" class="btn btn-neutral" title="atlas choice of coordinates" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
