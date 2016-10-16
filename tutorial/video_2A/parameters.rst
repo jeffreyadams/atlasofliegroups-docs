@@ -8,11 +8,11 @@ The basic object in ``atlas`` is a ``parameter`` and the ``parameter
 space`` parametrizes both, the irreducible representations of a
 reductive algebraic group as well as the standard modules. In other
 words, for each ``p`` in the ``parameter space`` there is an
-irreducible module ``J(p)`` and a standard module ``I(p)`` associated
-to ``p``. Namely ``I(p)`` is a representation induced from a limit of
+irreducible module $J(p)$ and a standard module $I(p)$ associated
+to ``p``. Namely $I(p)$ is a representation induced from a limit of
 discrete series and things are set up, following Langlands
 classification, so that this standard module has a unique
-irrudicible quotient. This quotient is also parametrized by the same
+irrudicible quotient $J(p)$. This quotient is also parametrized by the same
 parameter ``p``.
 
 So this parameter ``p`` is the basic object behind this classification theory.
@@ -22,11 +22,11 @@ groups", section 1,  the authors use Langlands classification to describe the
 algorithm that will associate, to each real group, the parameter space
 in question.
 
-More precisely, for each real group G(R), the representations with
+More precisely, for each real group $G(R)$, the representations with
 fixed (regular) infinitesimal character ``lambda`` are parametrized
-by ``(G(R))``-orbits) of pairs ``(H(R),chi)``; where H(R) is a Cartan
-subgroup of G(R) and chi is a character of H(R) so that the
-differential of ``chi=lambda`` up to ``G(C)`` conjugacy.
+by $(G(R))$-orbits) of pairs $(H(R), \chi)$; where $H(R)$ is a Cartan
+subgroup of $G(R)$ and $\chi$ is a character of $H(R)$ so that the
+differential of $\chi$ equals ``lambda`` up to $G(C)$-conjugacy.
 
 
 Parameters for ``SL(2,R)``
@@ -80,20 +80,20 @@ Let's review a few things we know about ``SL(2,R)``::
       connected split real group with Lie algebra 'sl(2,R)'
       atlas>
 
-So, the split form of type A1 has two Cartans, the compact one,
- ``T=S^1`` and the split one, ``A=R^x``.
+So, the split form of type ``A1`` has two Cartans, the compact one,
+ $T=S^1$ and the split one, $A=R^x$.
 
-Now, the characters for ``T`` are of the form ``e^ik\theta`` with ``k\in Z``.
-The ones corresponding to ``rho`` are ``{e{^i\theta}, e^{-i\theta}}`` and they
-are not conjugate under the Weyl group of ``T``, since -1 is not in
+Now, the characters for $T$ are of the form $e^{ik\theta}$ with $k\in \mathbb Z$``.
+The ones corresponding to ``rho`` are ${e{^i\theta}, e^{-i\theta}}$ and they
+are not conjugate under the Weyl group of $T$, since ``-1`` is not in
 it.
 
-On the other hand, for ``A=R^x``, the characters whose differential is
-equal to ``rho`` are ``{x--> x, x^{-1},|x|, |x|^{-1}}``, where
-``|x|=sign(x)*x``.
+On the other hand, for $A=R^x$, the characters whose differential is
+equal to ``rho`` are ${x\rightarrow x, x^{-1},|x|, |x|^{-1} : x\in A}$, where
+$|x|=sign(x)x$.
 
-In this case -1 is in the Weyl group of A. So, up to conjugacy, we
-have that {\ch\ i}= {x, |x|}.
+In this case ``-1`` is in the Weyl group of $A$. So, up to conjugacy, we
+have that ${\chi \in \widehat A}= {x, |x|}$.
 
 This says that we have exactly three representations of ``SL(2,R)``
 with infinitesimal character ``rho``; two from each Cartan.
@@ -114,16 +114,16 @@ with that infinitesimal character ``[1]``::
     final parameter (x=2,lambda=[2]/1,nu=[1]/1)
     atlas>
 
-This is a set of parameters for representations of ``SL(2,R)``; namely
-those with infinitesimal character ``rho``. Each parameter is a
-triple. ``(x, lambda, nu)``. We will explain each of these later. But
-for now we can say that the representation theory of ``SL(2,R)`` tells
-us that there are four representations with infinitessimal character
-``rho``. Two of them are the discrete series associated to the Cartan
-``T`` and corresponding to the two parameters above with ``nu=0``; the
-other two are the trivial representation and an irreducible principal
-series, both, attached to the Cartan ``A`` and corresponding to the
-parameters with ``nu=1``
+This is the set of parameters for representations of ``SL(2,R)`` with
+infinitesimal character ``rho``. Each parameter is a triple. ``(x,
+lambda, nu)``. We will explain each of these later. But for now we can
+say that the representation theory of ``SL(2,R)`` tells us that there
+are four representations with infinitesimal character ``rho``. Two of
+them are the discrete series associated to the compact Cartan and
+corresponding to the two parameters above with ``nu=0``; the other two
+are the trivial representation and an irreducible principal series,
+both, attached to the split Cartan and corresponding to the parameters
+with ``nu=1``
 
 We will say more about the representations of ``SL(2,R)`` later. But,
 as it is illustrated here, the theory tells us we first need to
