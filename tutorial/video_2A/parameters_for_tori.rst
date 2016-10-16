@@ -12,7 +12,7 @@ command, which we can check as follows::
 	  CartanClass->RealForm
  	atlas>
 
-So, we can determine a particular torus by assigning three integers::
+We are interested in the first oprtion. So, we can determine a particular torus by assigning three integers::
 
 	atlas> set H=torus(1,0,0)
 	Identifier H: RealForm (hiding previous one of type string (constant))
@@ -31,10 +31,13 @@ So, we can determine a particular torus by assigning three integers::
 	'u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)' 
 	atlas>
 
-That is, the command ``torus(a,b,c)`` specifys a torus with ``a`` circle
-factors ``S^1``, ``b`` ``C^x`` factors and ``c`` ``R^x`` factors.
+That is, the command ``torus(a,b,c)`` specifies a torus with ``a``
+$S^1$ factors, ``b`` $C^x$ factors and ``c`` $R^x$ factors.
 
-Starting with the circle, let us discuss its representations. From the thoery we know that they are parametrized by integers. So, starting from the trivial representation we can see how the software parametrizes them::
+Starting with the circle, let us discuss its representations. From the
+theory we know that they are parametrized by integers. So, starting
+from the trivial representation we can see how the software
+parametrizes them::
 
 	 atlas>  H:=torus(1,0,0)
 	 Value: compact connected quasisplit real group with Lie algebra 'u(1)'
@@ -44,10 +47,10 @@ Starting with the circle, let us discuss its representations. From the thoery we
 	 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 	 atlas>
 
-So this is the parameter for the trivial representation. The first element ``x`` is a KGB element. But it is not important for now. Let us see what involution it corresponds to::
+This is the parameter for the trivial representation. The first element ``x`` is a KGB element. But it is not important for now. Let us see what involution it corresponds to::
 
    atlas> set x=x(p)
-   Identifier x: KGBElt (hiding previous one of type int)
+   Identifier x: KGBElt 
    atlas> set theta=involution(x)
    Identifier theta: mat
    atlas> theta
@@ -56,26 +59,29 @@ So this is the parameter for the trivial representation. The first element ``x``
 
    atlas> 
 
-So in this case it is the identity involution. That is the torus has a Cartan involution whose information is encoded in this element ``x`` and in the case of a compact torus it is the identity.
+In this case it is the identity involution. That is, the torus has a
+Cartan involution whose information is encoded in this element ``x``
+and in the case of a compact torus it is the identity.
 
-Now to understand the rest of the parameters, suppose that ``H`` is a
-complex torus with Cartan involution theta, and defined over R. Let
-``H(R)`` be the corresponding real group. Denote by ``X^*(H)`` the
-characters of H(R). Then the characters of H(R) are parametrized by
-(theta, gamma, lambda). Here ``gamma`` is the differential of the
-character and ``lambda`` is the restriction of the character to
-``H^theta``.
+Now to understand the rest of the parameters, suppose that $H$ is a
+complex torus with Cartan involution $\theta$, and defined over $\mathbb R$. Let
+$H(R)$ be the corresponding real group. Denote by $X^* (H)$ the
+characters of $H(R)$. Then these characters are parametrized by triples
+$(\theta, \gamma, \lambda)$. Here ``gamma`` is the differential of the
+character and $\lambda$ is the restriction of the character to
+$H^{\theta}$.
 
-The real points are not necessarily connected. So we need to specify not only the differential but also information of the disconnected part which is encoded in the estriction to ``H^theta``.
+The real points are not necessarily connected. So we need to specify
+not only the differential but also information of the disconnected
+part which is encoded in the estriction to $H^{\theta}$.
 
-The basic fact is that the characters of ``H^theta`` are parametrized by
-``X^*/(1-theta)X^*``.
+The basic fact is that the characters of $H^{\theta}$ are parametrized by
+$X^*/(1-theta)X^*$.
 
-So the characters of ``H(R)`` are parametrized by (theta, lambda, nu)
-where ``lambda`` is in ``X^*/(1-theta)X^*``and ``nu`` is in ``[X^*\otimes
-Q]^{-theta}``
+So the characters of $H(R)$ are parametrized by triples $(\theta, \lambda, \nu)$
+where $\lambda \in X^*/(1-theta)X^*``and $nu \in [X^*\otimes Q]^{-theta}$
  
-So ``lambda`` is a character on ``H^theta`` and ``nu`` gives the
+So $\lambda$ is a character on $H^theta$ and $nu$ gives the
 character on the Lie algebra of ``A=H^theta``.
 
 In the case of the circle, ``lambda`` is in ``Z/(1-theta)Z=Z``, since
