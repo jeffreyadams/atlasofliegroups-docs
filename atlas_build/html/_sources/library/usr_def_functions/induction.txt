@@ -28,10 +28,10 @@ Then :math:`Ind_L^G(I(p_L))=I(p_G)` .
 In the :math:`\theta` -stable case, the shifted parameter p_G may be non-standard
 and needs to be standardized:
 
-If p=(x,lambda,nu), and <lambda,:math:`\alpha^{\vee}` ><0 for some imaginary root :math:`\alpha`  
+If p=(x,lambda,nu), and <lambda, :math:`\alpha^{\vee}` ><0 for some imaginary root :math:`\alpha`  
 (i.e. non-standard), let i_root_system=imaginary roots for x(p). Find :math:`w`  so 
 that :math:`w^{-1}` lambda is dominant for imaginary roots, set 
-p_dom=parameter(x,:math:`w^{-1}` lambda,nu) and return coherent continuation action 
+p_dom=parameter(x, :math:`w^{-1}` lambda,nu) and return coherent continuation action 
 (wrt imaginary roots) of :math:`w`  on p_dom.
 
 

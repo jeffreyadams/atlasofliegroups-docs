@@ -217,7 +217,7 @@ rho_Levi_alt
 -------------------------------------------------
 | ``rho_Levi_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 170.
 | 
-| :math:`\rho(L)`  for Levi of P defined by H (if L :math:`\theta` -stable
+|  :math:`\rho(L)`  for Levi of P defined by H (if L :math:`\theta` -stable
 | 
 
 .. _real_parabolic_kgbelt_x->parabolic1:
