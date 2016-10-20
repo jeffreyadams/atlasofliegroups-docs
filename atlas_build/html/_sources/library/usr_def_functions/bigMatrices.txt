@@ -8,6 +8,10 @@ bigMatrices.at
 
 **This script imported the following .at files:**
 
+| :ref:`extended_misc.at<extended_misc.at>`
+| :ref:`polynomial.at<polynomial.at>`
+| :ref:`dual.at<dual.at>`
+| :ref:`ext_deform.at<ext_deform.at>`
 |
 
 

@@ -6,6 +6,8 @@ complex_nilpotent_orbits.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -88,3 +90,15 @@ complex_nilpotent_orbits.at Function Index
      - ``Block B,[int] C->bool``
    * - :ref:`is_aq_block_b,int_i->bool1`
      - ``Block B,int i->bool``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`ComplexNilpotent`
+     - ``(RootDatum,vec)``

@@ -6,6 +6,8 @@ K_highest_weights.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -46,6 +48,8 @@ K_highest_weights.at Function Index
      - ``KGBElt x,ratvec v->(KGBElt,RootDatum)``
    * - :ref:`find_nci_root_kgbelt_x,ratvec_tau->int1`
      - ``KGBElt x,ratvec tau->int``
+   * - :ref:`tworho_k_fixed_kgbelt_x->ratvec1`
+     - ``KGBElt x->ratvec``
    * - :ref:`project_on_dominant_cone_kgbelt_x,_ratvec_mu->(kgbelt,ratvec,ratvec)1`
      - ``KGBElt x, ratvec mu->(KGBElt,ratvec,ratvec)``
    * - :ref:`project_on_dominant_cone_kgbelt_x,_vec_mu->(kgbelt,ratvec,ratvec)1`

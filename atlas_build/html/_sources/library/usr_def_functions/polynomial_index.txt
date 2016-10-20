@@ -6,6 +6,8 @@ polynomial.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -76,5 +78,19 @@ polynomial.at Function Index
      - ``poly_mat M->void``
    * - :ref:`sgn_poly_int_k->poly1`
      - ``int k->poly``
-   * - :ref:`divide_by_int_k,poly_v->poly1`
-     - ``int k,poly v->poly``
+   * - :ref:`divide_by_int_k,_poly_v->poly1`
+     - ``int k, poly v->poly``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`poly`
+     - ``vec``
+   * - :ref:`poly_mat`
+     - ``[[poly]]``

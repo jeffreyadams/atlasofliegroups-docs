@@ -6,6 +6,8 @@ W_reps_type_BC.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -100,3 +102,19 @@ W_reps_type_BC.at Function Index
      - ``Block B,[[int]] cells->void``
    * - :ref:`wreps_block_b,[[int]]_cells->[([int],[int])]1`
      - ``Block B,[[int]] cells->[([int],[int])]``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`Orbit`
+     - ``[int]``
+   * - :ref:`Symbol`
+     - ``[[int]]``
+   * - :ref:`Wrep`
+     - ``([int],[int])``

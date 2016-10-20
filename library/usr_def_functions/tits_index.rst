@@ -6,6 +6,8 @@ tits.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -52,3 +54,15 @@ tits.at Function Index
      - ``Tits_elt !xi, int n->Tits_elt``
    * - :ref:`order_tits_elt_xi->int1`
      - ``Tits_elt xi->int``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`Tits_elt`
+     - ``(RootDatum root_datum,ratvec torus_part,mat theta)``

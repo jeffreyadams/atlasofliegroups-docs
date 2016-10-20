@@ -65,13 +65,13 @@ User Defined Functions
    usr_def_functions/print_K_types
    usr_def_functions/ratmat
    usr_def_functions/representations
-   usr_def_functions/rho_shifts
    usr_def_functions/sort
    usr_def_functions/sp4
    usr_def_functions/stable
    usr_def_functions/std_decs
    usr_def_functions/synthetic
    usr_def_functions/synthetic_aux
+   usr_def_functions/test
    usr_def_functions/test_K
    usr_def_functions/test_unitarity
    usr_def_functions/thetastable

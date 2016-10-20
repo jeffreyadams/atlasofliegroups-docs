@@ -6,6 +6,8 @@ extended_misc.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -88,3 +90,17 @@ extended_misc.at Function Index
      - ``extended_param E->void``
    * - :ref:`display_one_line_extended_param_e->void1`
      - ``extended_param E->void``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`x_rep`
+     - ``(ratvec,mat)``
+   * - :ref:`extended_param`
+     - ``( InnerClass ic, mat delta, ratvec gamma, vec lambda_rho, mat theta, ratvec g, vec l, mat omega, vec tau, vec t)``

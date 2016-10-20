@@ -6,6 +6,8 @@ hermitian.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1

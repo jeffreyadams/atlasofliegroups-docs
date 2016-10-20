@@ -5,8 +5,8 @@ parabolics.at
 
 Topics addresses in this script:
 complex parabolics and Levi factors;
-parabolics with :math:`\theta`-stable Levi factor;
-:math:`\theta`-stable parabolics;
+parabolics with :math:`\theta` -stable Levi factor;
+:math:`\theta` -stable parabolics;
 real parabolics.
 
 See kgp.at: the data types KGPElt and Parabolic are synonyms; both consist

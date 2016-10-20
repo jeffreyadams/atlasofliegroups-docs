@@ -310,3 +310,11 @@ print_theta_stable_parabolics
 | For each theta stable parabolic of G, print S, Levi factor, and maximal x
 | 
 
+.. _ComplexParabolic:
+
+ComplexParabolic
+-----------------------------------------
+| ``(RootDatum,[int])`` Defined in line number 23.
+| 
+| 
+

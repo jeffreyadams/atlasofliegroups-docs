@@ -508,3 +508,11 @@ make_no_Cplus
 | 
 | 
 
+.. _W_word:
+
+W_word
+-----------------------------------------
+| ``(RootDatum,[int])`` Defined in line number 6.
+| 
+| 
+

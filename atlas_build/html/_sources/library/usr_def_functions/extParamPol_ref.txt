@@ -92,3 +92,11 @@ null_ext_module
 | 
 | 
 
+.. _extParamPol:
+
+extParamPol
+-----------------------------------------
+| ``[(Split,extended_param)]`` Defined in line number 4.
+| 
+| 
+

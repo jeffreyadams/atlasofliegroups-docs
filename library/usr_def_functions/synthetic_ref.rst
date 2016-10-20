@@ -180,3 +180,11 @@ is_fixed
 | 
 | 
 
+.. _KGBElt_gen:
+
+KGBElt_gen
+-----------------------------------------
+| ``(InnerClass,mat,ratvec)`` Defined in line number 144.
+| 
+| 
+

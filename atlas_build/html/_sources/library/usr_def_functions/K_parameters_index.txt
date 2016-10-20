@@ -6,6 +6,8 @@ K_parameters.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -30,3 +32,19 @@ K_parameters.at Function Index
      - ``K_Type p->K_Type``
    * - :ref:`length_khighestweight_(x,mu)->rat1`
      - ``KHighestWeight (x,mu)->rat``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`K_Type`
+     - ``(KGBElt,ratvec)``
+   * - :ref:`K_Type_Pol`
+     - ``ParamPol``
+   * - :ref:`KHighestWeight`
+     - ``(KGBElt,vec)``

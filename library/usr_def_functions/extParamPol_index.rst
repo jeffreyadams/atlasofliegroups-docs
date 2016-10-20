@@ -6,6 +6,8 @@ extParamPol.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -34,3 +36,15 @@ extParamPol.at Function Index
      - ``extParamPol P,extParamPol Q->extParamPol``
    * - :ref:`null_ext_module_realform_g->extparampol1`
      - ``RealForm G->extParamPol``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`extParamPol`
+     - ``[(Split,extended_param)]``

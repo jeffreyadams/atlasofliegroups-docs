@@ -717,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/sort_ref.html">sort.at Function References</a></li>
@@ -750,6 +745,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux.html">synthetic_aux.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux_index.html">synthetic_aux.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test_K.html">test_K.at</a><ul>
@@ -1000,6 +998,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="parameters_for_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="parameters">
 <h1>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h1>
@@ -1032,7 +1042,7 @@ differential of $chi$ equals <code class="docutils literal"><span class="pre">la
 character <code class="docutils literal"><span class="pre">rho</span></code> How many are there? We need to look at conjugacy
 classes of cartans and their characters.</p>
 <p>Let&#8217;s review a few things we know about <code class="docutils literal"><span class="pre">SL(2,R)</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; G:=SL(2,R)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SL(2,R)
 Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
 
 atlas&gt; root_datum (G)
@@ -1092,7 +1102,7 @@ with infinitesimal character <code class="docutils literal"><span class="pre">rh
 <p>Let us look for those representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code>. The command
 <code class="docutils literal"><span class="pre">parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <code class="docutils literal"><span class="pre">G</span></code>
 with that infinitesimal character <code class="docutils literal"><span class="pre">[1]</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set P=all_parameters_gamma (G,[1])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set P=all_parameters_gamma (G,[1])
 Identifier P: [Param]
 atlas&gt; #P
 Value: 4
@@ -1131,7 +1141,7 @@ understand the characters of Tori. We do this in the next section.</p>
         <a href="parameters_for_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="occurrence_matrix.html" class="btn btn-neutral" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -204,14 +204,6 @@ signs_1i1
 | 
 | 
 
-.. _hecke_row_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_pair,_[kgb_pair]_basis->[poly]1:
-
-hecke_row
--------------------------------------------------
-| ``hecke_row:int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]`` Defined in line number 380.
-| 
-| 
-
 .. _hecke_row_int_j,_extended_param(,delta,gamma,,,g,,,,):e,_[kgb_pair]_basis->[poly]1:
 
 hecke_row
@@ -305,6 +297,14 @@ test_hecke
 test_hecke
 -------------------------------------------------
 | ``test_hecke:int i,int j,Param p->bool`` Defined in line number 655.
+| 
+| 
+
+.. _KGB_pair:
+
+KGB_pair
+-----------------------------------------
+| ``(KGBElt, KGBElt_gen)`` Defined in line number 12.
 | 
 | 
 

@@ -144,7 +144,7 @@ KGP
 -------------------------------------------------
 | ``KGP:RealForm G,[int] S->[KGPElt]`` Defined in line number 146.
 | 
-| The set of KGP elements associated to a RealForm and a set of simple roots S; KGP(G,S) is in bijection with :math:`K\G/P_S` 
+| The set of KGP elements associated to a RealForm and a set of simple roots S; KGP(G,S) is in bijection with :math:`K\backslash G/P_S` 
 | 
 
 .. _kgp_numbers_realform_g,[int]_s->[int]1:
@@ -162,7 +162,7 @@ is_open
 -------------------------------------------------
 | ``is_open:KGPElt y->bool`` Defined in line number 155.
 | 
-| Test whether y in :math:`K\G/P_S`  is open: <=> last element of y is last element of KGB
+| Test whether y in :math:`K\backslash G/P_S`  is open: <=> last element of y is last element of KGB
 | 
 
 .. _is_closed_kgpelt_p->bool1:
@@ -171,7 +171,7 @@ is_closed
 -------------------------------------------------
 | ``is_closed:KGPElt P->bool`` Defined in line number 158.
 | 
-| Test whether y in :math:`K\G/P_S`  is closed: <=> length(first element)=0
+| Test whether y in :math:`K\backslash G/P_S`  is closed: <=> length(first element)=0
 | 
 
 .. _kgp_elt_ratvec_lambda,kgbelt_x->kgpelt1:
@@ -181,5 +181,21 @@ KGP_elt
 | ``KGP_elt:ratvec lambda,KGBElt x->KGPElt`` Defined in line number 161.
 | 
 | Parabolic determined by (the stabilizer in W of) a weight lambda
+| 
+
+.. _KGPElt:
+
+KGPElt
+-----------------------------------------
+| ``([int], KGBElt)`` Defined in line number 46.
+| 
+| 
+
+.. _Parabolic:
+
+Parabolic
+-----------------------------------------
+| ``([int], KGBElt)`` Defined in line number 47.
+| 
 | 
 

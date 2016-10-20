@@ -6,6 +6,8 @@ ratmat.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -116,3 +118,15 @@ ratmat.at Function Index
      - ``ratvec v->string``
    * - :ref:`show_ratmat(m,,d)->void1`
      - ``ratmat(M,,d)->void``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`ratmat`
+     - ``(mat,string,int)``

@@ -6,6 +6,8 @@ synthetic.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -56,3 +58,15 @@ synthetic.at Function Index
      - ``mat delta,KGBElt_gen(ic,theta,t)->KGBElt_gen``
    * - :ref:`is_fixed_mat_delta,kgbelt_gen_y->bool1`
      - ``mat delta,KGBElt_gen y->bool``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`KGBElt_gen`
+     - ``(InnerClass,mat,ratvec)``

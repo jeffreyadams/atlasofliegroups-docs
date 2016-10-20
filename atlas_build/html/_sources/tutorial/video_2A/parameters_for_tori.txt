@@ -87,7 +87,7 @@ where ``lambda`` is in $X^*/(1-theta)X^*``and ``nu`` is in $[X^*\otimes \mathbb 
 So``\lambda`` is a character on $H^\theta$ and ``nu`` gives the
 character on the Lie algebra of the split Cartan $A=H^{-\theta}$.
 
-In the case of the circle, ``lambda is in $\mathbb Z/(1-\theta)\mathbb
+In the case of the circle, ``lambda`` is in $\mathbb Z/(1-\theta)\mathbb
 Z=\mathbb Z$, since $\theta=1$; and ``nu`` is in $Q^{-1}=0$ 
 
 So the characters for the compact torus ar given by the parameters ``(x=0,lambda, nu=0)`` and there is

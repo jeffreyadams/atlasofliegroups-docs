@@ -717,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/sort_ref.html">sort.at Function References</a></li>
@@ -750,6 +745,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux.html">synthetic_aux.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux_index.html">synthetic_aux.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test_K.html">test_K.at</a><ul>
@@ -1000,6 +998,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="parameters-for-tori">
 <h1>Parameters for Tori<a class="headerlink" href="#parameters-for-tori" title="Permalink to this headline">¶</a></h1>
@@ -1007,7 +1017,7 @@
 understands what a torus is. In order to specify which torus we want
 we use the command <code class="docutils literal"><span class="pre">torus</span></code>. There are two ways of using this
 command, which we can check as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; whattype torus ?
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype torus ?
 Overloaded instances of &#39;torus&#39;
   (int,int,int)-&gt;RealForm
   CartanClass-&gt;RealForm
@@ -1015,7 +1025,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>We are interested in the first oprtion. So, we can determine a particular torus by assigning three integers:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set H=torus(1,0,0)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set H=torus(1,0,0)
 Identifier H: RealForm (hiding previous one of type string (constant))
 atlas&gt; H
 Value: compact connected quasisplit real group with Lie algebra &#39;u(1)&#39;
@@ -1041,7 +1051,7 @@ $S^1$ factors, <code class="docutils literal"><span class="pre">b</span></code> 
 theory we know that they are parametrized by integers. So, starting
 from the trivial representation we can see how the software
 parametrizes them:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt;  H:=torus(1,0,0)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;  H:=torus(1,0,0)
 Value: compact connected quasisplit real group with Lie algebra &#39;u(1)&#39;
 atlas&gt; set p=trivial(H)
 Identifier p: Param
@@ -1051,7 +1061,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>This is the parameter for the trivial representation. The first element <code class="docutils literal"><span class="pre">x</span></code> is a KGB element. But it is not important for now. Let us see what involution it corresponds to:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set x=x(p)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(p)
 Identifier x: KGBElt
 atlas&gt; set theta=involution(x)
 Identifier theta: mat
@@ -1081,30 +1091,30 @@ $X^*/(1-theta)X^*$.</p>
 where <code class="docutils literal"><span class="pre">lambda</span></code> is in $X^*/(1-theta)X^*``and <code class="docutils literal"><span class="pre">nu</span></code> is in $[X^*otimes mathbb Q]^{-theta}$</p>
 <p>So``lambda`` is a character on $H^theta$ and <code class="docutils literal"><span class="pre">nu</span></code> gives the
 character on the Lie algebra of the split Cartan $A=H^{-theta}$.</p>
-<p>In the case of the circle, <code class="docutils literal"><span class="pre">lambda</span> <span class="pre">is</span> <span class="pre">in</span> <span class="pre">$\mathbb</span> <span class="pre">Z/(1-\theta)\mathbb</span>
-<span class="pre">Z=\mathbb</span> <span class="pre">Z$,</span> <span class="pre">since</span> <span class="pre">$\theta=1$;</span> <span class="pre">and</span> <span class="pre">``nu</span></code> is in $Q^{-1}=0$</p>
+<p>In the case of the circle, <code class="docutils literal"><span class="pre">lambda</span></code> is in $mathbb Z/(1-theta)mathbb
+Z=mathbb Z$, since $theta=1$; and <code class="docutils literal"><span class="pre">nu</span></code> is in $Q^{-1}=0$</p>
 <p>So the characters for the compact torus ar given by the parameters <code class="docutils literal"><span class="pre">(x=0,lambda,</span> <span class="pre">nu=0)</span></code> and there is
 one for each lambda in $mathbb Z$ correspondintg to the character $e^{ilambda} t$.</p>
 <p>In the case of the trivial character the parameter is:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; p
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
 <p>And for the character $e^{i 3} t$ of $S^1$ we have:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; q:=parameter (x,[3],[0])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[3],[0])
 Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
 <p>Note that <code class="docutils literal"><span class="pre">nu</span></code> is fixed by $-theta$. So, given any <code class="docutils literal"><span class="pre">nu</span></code> it will be replaced by $1-theta)/2nu in (X^*_{mathbb Q})^{-theta}$</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; q:=parameter (x,[3],[2])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[3],[2])
 Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
 <p>So they are equivalent modulo the above equivalence relation and parametrize the same character. For example, we can ask <code class="docutils literal"><span class="pre">atlas</span></code></p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; parameter (x,[3],[3])= parameter (x,[3],[0])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; parameter (x,[3],[3])= parameter (x,[3],[0])
 Value: true
 atlas&gt;
 </pre></div>
@@ -1113,7 +1123,7 @@ atlas&gt;
 <div class="section" id="the-characters-of-r-x">
 <h2>The characters of $R^x$<a class="headerlink" href="#the-characters-of-r-x" title="Permalink to this headline">¶</a></h2>
 <p>Now lets take the most split one-dimensional torus:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; H:=torus(0,0,1)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; H:=torus(0,0,1)
 Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
 atlas&gt; p:=trivial (H)
 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
@@ -1133,13 +1143,13 @@ parameters. So we have to do some extra work in general, depending on
 the information that we want. The idea is that some problems can be
 reduced to the case of rational parameters.</p>
 <p>Le&#8217;s do some examples. For the trivial representation we have:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; p
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
 <p>And for the representation $nu :x rightarrow <a href="#id1"><span class="problematic" id="id2">|</span></a>x|^{4/3}$</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; p:=parameter (x,[0],[4/3])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:=parameter (x,[0],[4/3])
 Value: final parameter (x=0,lambda=[0]/1,nu=[4]/3)
 atlas&gt;
 </pre></div>
@@ -1147,7 +1157,7 @@ atlas&gt;
 <p>Now suppose we want a representation with non trivial character on the
 component group $mathbb Z/2mathbb Z$. For example, the sign
 representation is given by:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; q:=parameter (x,[1],[0])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[1],[0])
 Value: final parameter (x=0,lambda=[1]/1,nu=[0]/1)
 atlas&gt;
 
@@ -1163,7 +1173,7 @@ atlas&gt;
 <p>Which differs from the trivial by the non trivial character on
 $mathbb Z/2mathbb Z$. And note what happens when we change that
 character to <code class="docutils literal"><span class="pre">2</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; q:=parameter (x,[2],[0])
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[2],[0])
 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 atlas&gt; p=q
 Value: true
@@ -1187,7 +1197,7 @@ atlas&gt;
         <a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="parameters.html" class="btn btn-neutral" title="Parameters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

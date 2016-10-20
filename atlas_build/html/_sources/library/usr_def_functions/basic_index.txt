@@ -6,6 +6,8 @@ basic.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -50,6 +52,10 @@ basic.at Function Index
      - ``[(->bool)] p->int``
    * - :ref:`last_[(->bool)]_p->int1`
      - ``[(->bool)] p->int``
+   * - :ref:`binary_search_first_(int->bool)pred,_int_low,_int_high->int1`
+     - ``(int->bool)pred, int low, int high->int``
+   * - :ref:`from_stops_[int]_stops->(int->int)1`
+     - ``[int] stops->(int->int)``
    * - :ref:`abs_int_k->int1`
      - ``int k->int``
    * - :ref:`sign_int_k->int1`

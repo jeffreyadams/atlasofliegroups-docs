@@ -717,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/sort_ref.html">sort.at Function References</a></li>
@@ -750,6 +745,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux.html">synthetic_aux.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux_index.html">synthetic_aux.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test_K.html">test_K.at</a><ul>
@@ -1000,12 +998,24 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="cartan_classes.html" class="btn btn-neutral float-right" title="Cartan Subgroups" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="real-forms-of-a-complex-group">
 <h1>Real Forms of a Complex Group<a class="headerlink" href="#real-forms-of-a-complex-group" title="Permalink to this headline">¶</a></h1>
 <p>We can also find out what are all the real forms of a Lie group.</p>
 <p>{COMMENT: I THINK AN EXPLANATION IS NEEDED FOR A WIDER AUDIENCE AS TO WHY WE TALK ABOUT REAL FORMS OF A NON-COMPLEX GROUP AND WHY THE REAL FORMS OF Sp(4,C) ARE DIFFERENT. I THINK THIS WAS NOT COVERED LATER IN THE VIDEOS}:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=Sp(4,R)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=Sp(4,R)
 Identifier G: RealForm
 atlas&gt; set rf=real_forms(G)
 Identifier rf: [RealForm]
@@ -1033,7 +1043,7 @@ The Cartan classes are the same across all real forms of the same
 complex group. In fact even though within the compact Cartan there is
 only one conjugacy class of Cartans (within the compact group). We
 will have the same Cartan classes for <code class="docutils literal"><span class="pre">G=Sp(2)</span></code> than for <code class="docutils literal"><span class="pre">G=Sp(4,R)</span></code>.:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; rf[0]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rf[0]
 Value: compact connected real group with Lie algebra &#39;sp(2)&#39;
 atlas&gt; nr_of_Cartan_classes (rf[0])
 Value: 4
@@ -1054,7 +1064,7 @@ atlas&gt;
 <div class="section" id="inner-classes-and-outer-involutions">
 <h2>Inner Classes and Outer Involutions<a class="headerlink" href="#inner-classes-and-outer-involutions" title="Permalink to this headline">¶</a></h2>
 <p>Now let&#8217;s look at the real forms of G=SL(5,R). It turns out there is only one: G itself:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(5,R)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(5,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rf =real_forms(G)
 Identifier rf: [RealForm] (hiding previous one of type [RealForm])
@@ -1067,7 +1077,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Note that the complexified Lie algebra of <code class="docutils literal"><span class="pre">G</span></code>, <code class="docutils literal"><span class="pre">sl(5,C)</span></code>. Has other real forms. However, associated to <code class="docutils literal"><span class="pre">G</span></code>, there is only one. This is because atlas thinks always in terms of inner classes. That is a real form is a real form in a given inner class. And there is a distinquished involution in <code class="docutils literal"><span class="pre">G</span></code> which is non trivial and which atlas uses to determine the inner class of the group <code class="docutils literal"><span class="pre">G</span></code>, and there is only one real form in this inner class.:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; distinguished_involution(G)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; distinguished_involution(G)
 Value:
 | 1, 0, 0, 0 |
 | 1, 0, 0, -1 |
@@ -1077,7 +1087,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Let&#8217;s look at another real form of type <code class="docutils literal"><span class="pre">A4</span></code>, namely <code class="docutils literal"><span class="pre">su(3,2)</span></code>. THis gives us another inner class. it turns out this inner class has the rest of the real forms of <code class="docutils literal"><span class="pre">sl(5,C)</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; H:=SU(3,2)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; H:=SU(3,2)
 Value: connected quasisplit real group with Lie algebra &#39;su(3,2)&#39;
 atlas&gt; set rfH=real_forms (H)
 Identifier rfH: [RealForm]
@@ -1092,7 +1102,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>So, these three real groups are grouped together because they are all in the same inner class. Note that they all have a compact Cartan, whereas <code class="docutils literal"><span class="pre">SL(5,R)</span></code> does not. The distinguished involution or <code class="docutils literal"><span class="pre">H=SU(3,2)</span></code> is the identity:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; distinguished_involution (H)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; distinguished_involution (H)
 Value:
 | 1, 0, 0, 0 |
 | 0, 1, 0, 0 |
@@ -1108,7 +1118,7 @@ and for <code class="docutils literal"><span class="pre">SL(p+q,R)</span></code>
 <p>So what will happen for G=SL(6,R)? We can see in the following example
 that there is another real form in the same inner class as
 SL(6,C). This will be true whenever p+q=2n, namely SL(n,H):</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set G=SL(6,R)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(6,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rf=real_forms (G)
 Identifier rf: [RealForm] (hiding previous one of type [RealForm])
@@ -1124,7 +1134,7 @@ atlas&gt;
 </div>
 <p>More generally, for <code class="docutils literal"><span class="pre">Sl(2n,R)</span></code> has another real form in this inner class, the group SL(n,H).</p>
 <p>In fact the distinguished involution is the one attached to the non trivial diagram automorphism. And in this case it flips all the roots except the central root:</p>
-<div class="highlight-python"><div class="highlight"><pre>atlas&gt; set delta=distinguished_involution (G)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set delta=distinguished_involution (G)
 Identifier delta: mat
 atlas&gt; delta
 Value:
@@ -1166,7 +1176,7 @@ atlas&gt;
         <a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="cartan_classes.html" class="btn btn-neutral" title="Cartan Subgroups" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cartan_classes.html" class="btn btn-neutral float-right" title="Cartan Subgroups" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

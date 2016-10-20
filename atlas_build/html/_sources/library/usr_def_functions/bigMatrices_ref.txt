@@ -8,7 +8,7 @@ bigMatrices.at Function References
 
 indices_subset
 -------------------------------------------------
-| ``indices_subset:[Param] subset,  [Param] whole->[int]`` Defined in line number 2.
+| ``indices_subset:[Param] subset,  [Param] whole->[int]`` Defined in line number 6.
 | 
 | 
 
@@ -16,7 +16,7 @@ indices_subset
 
 delta_orbit_reps
 -------------------------------------------------
-| ``delta_orbit_reps:[Param] B,mat delta->[int]`` Defined in line number 7.
+| ``delta_orbit_reps:[Param] B,mat delta->[int]`` Defined in line number 11.
 | 
 | 
 
@@ -24,7 +24,7 @@ delta_orbit_reps
 
 complete_indices
 -------------------------------------------------
-| ``complete_indices:[Param] B,mat delta->[(int,int)]`` Defined in line number 20.
+| ``complete_indices:[Param] B,mat delta->[(int,int)]`` Defined in line number 24.
 | 
 | 
 
@@ -32,7 +32,7 @@ complete_indices
 
 my_extended_block
 -------------------------------------------------
-| ``my_extended_block:Param p,mat delta->([Param],[int])`` Defined in line number 26.
+| ``my_extended_block:Param p,mat delta->([Param],[int])`` Defined in line number 30.
 | 
 | 
 
@@ -40,7 +40,7 @@ my_extended_block
 
 big_KL_P_polynomials
 -------------------------------------------------
-| ``big_KL_P_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 62.
+| ``big_KL_P_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 66.
 | 
 | 
 
@@ -48,7 +48,7 @@ big_KL_P_polynomials
 
 big_KL_P_signed_polynomials
 -------------------------------------------------
-| ``big_KL_P_signed_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 91.
+| ``big_KL_P_signed_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 95.
 | 
 | 
 
@@ -56,7 +56,7 @@ big_KL_P_signed_polynomials
 
 big_KL_Q_polynomials
 -------------------------------------------------
-| ``big_KL_Q_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 102.
+| ``big_KL_Q_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 106.
 | 
 | 
 

@@ -308,3 +308,11 @@ is_Aq
 | 
 | 
 
+.. _ComplexNilpotent:
+
+ComplexNilpotent
+-----------------------------------------
+| ``(RootDatum,vec)`` Defined in line number 13.
+| 
+| 
+

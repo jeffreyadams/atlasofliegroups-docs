@@ -6,12 +6,16 @@ ext_deform.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
 
    * - Function
      - Argument(s) -> Results
+   * - :ref:`survives_param_p->bool1`
+     - ``Param p->bool``
    * - :ref:`ext_kl_block_param_p,_mat_delta->([param],int,mat,[vec],vec,vec,mat)1`
      - ``Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)``
    * - :ref:`cook_kl_block_[param]_b,int_entry_elem,mat_kl,[poly]_polys,vec_stops,vec_surv,_mat_contrib->([param],int,poly_mat,vec)1`

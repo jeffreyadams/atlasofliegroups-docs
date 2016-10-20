@@ -6,6 +6,8 @@ partitions.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -24,3 +26,15 @@ partitions.at Function Index
      - ``Partition P->int``
    * - :ref:`rec_fun compositions_le_int_limit,_int_n->[[int]]1`
      - ``int limit, int n->[[int]]``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`Partition`
+     - ``[int]``

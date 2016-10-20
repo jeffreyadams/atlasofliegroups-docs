@@ -6,6 +6,8 @@ kgp.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -52,3 +54,17 @@ kgp.at Function Index
      - ``KGPElt P->bool``
    * - :ref:`kgp_elt_ratvec_lambda,kgbelt_x->kgpelt1`
      - ``ratvec lambda,KGBElt x->KGPElt``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`KGPElt`
+     - ``([int], KGBElt)``
+   * - :ref:`Parabolic`
+     - ``([int], KGBElt)``

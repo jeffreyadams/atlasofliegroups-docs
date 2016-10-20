@@ -6,6 +6,8 @@ hecke.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -62,8 +64,6 @@ hecke.at Function Index
      - ``int j,extended_param E->int``
    * - :ref:`signs_1i1_int_j,_extended_param_e,_extended_param_e1,_extended_param_f->(int,int)2`
      - ``int j, extended_param E, extended_param E1, extended_param F->(int,int)``
-   * - :ref:`hecke_row_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_pair,_[kgb_pair]_basis->[poly]1`
-     - ``int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]``
    * - :ref:`hecke_row_int_j,_extended_param(,delta,gamma,,,g,,,,):e,_[kgb_pair]_basis->[poly]1`
      - ``int j, extended_param(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]``
    * - :ref:`hecke_matrix_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,[kgb_pair]_basis->poly_mat1`
@@ -88,3 +88,15 @@ hecke.at Function Index
      - ``int i,int j,Param p,ratvec g->bool``
    * - :ref:`test_hecke_int_i,int_j,param_p->bool1`
      - ``int i,int j,Param p->bool``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`KGB_pair`
+     - ``(KGBElt, KGBElt_gen)``
