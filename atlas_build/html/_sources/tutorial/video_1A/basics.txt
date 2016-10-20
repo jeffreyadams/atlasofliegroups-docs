@@ -77,7 +77,7 @@ Another useful command is whattype::
         type: int
         atlas>
 
-This tells us the data type (int) of the variable x. For more information on data types go to :ref:`basic_commands`` 
+This tells us the data type (int) of the variable x. For more information on data types go to :ref:`basic_commands`. 
 
 The ``basic.at`` file
 ----------------------

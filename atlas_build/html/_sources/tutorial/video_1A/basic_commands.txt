@@ -1,5 +1,7 @@
+.. _basic_commands:
+
 Basic Commands
-===============
+================
 
 Helpful unix tools
 -------------------

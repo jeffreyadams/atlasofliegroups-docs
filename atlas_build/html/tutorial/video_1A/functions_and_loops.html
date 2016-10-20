@@ -163,6 +163,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
@@ -1048,7 +1049,7 @@ mat-&gt;mat
 atlas&gt;
 </pre></div>
 </div>
-<p>Gives you the argument and output for the function <a href="#id1"><span class="problematic" id="id2">`</span></a>inverse&#8217;. It says that the function &#8216;inverse&#8217; takes a matrix and produces another matrix.</p>
+<p>Gives you the argument and output for the function &#8216;inverse&#8217;. It says that the function &#8216;inverse&#8217; takes a matrix and produces another matrix.</p>
 <p>Note: Remember that the command <cite>whattype&#8217; without the question mark gives a data type. To get atlas to give you and argument you need to add `</cite>?``:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype invert ?
 Overloaded instances of &#39;invert&#39;
@@ -1102,10 +1103,12 @@ atlas&gt;
 </div>
 <p>This is defined in basic, takes a pair of strings and concatenates them</p>
 <p>However, if you want to know what &#8216;+&#8217; does to a matrix and an integer you get:</p>
-<p>atlas&gt;
-atlas&gt; +&#64;(mat,int)
-Value: {+&#64;(mat,int)}
-atlas&gt;</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;
+atlas&gt; +@(mat,int)
+Value: {+@(mat,int)}
+atlas&gt;
+</pre></div>
+</div>
 <p>This means this is a built-in function that you can find in the <code class="docutils literal"><span class="pre">atlas-functions.help</span></code> file for information. But, in this case we can also try it to see what it does:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set A =id_mat(3)
 Identifier A: mat
@@ -1191,13 +1194,15 @@ Overloaded instances of &#39;#&#39;
 </pre></div>
 </div>
 <p>Here is a simple example of what you can do with it:</p>
-<p>atlas&gt; set v=vec:[1,2]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set v=vec:[1,2]
 Identifier v: vec
 atlas&gt; set x=3
 Identifier x: int
 atlas&gt; v#x
 Value: [ 1, 2, 3 ]
-atlas&gt;</p>
+atlas&gt;
+</pre></div>
+</div>
 <p>There are several kinds of loops which are explained in the
 <code class="docutils literal"><span class="pre">atlas.help</span></code> file. However, sometimes it is easier to look at some
 of the scripts in the <code class="docutils literal"><span class="pre">.at</span></code> files and see how the loops are used to

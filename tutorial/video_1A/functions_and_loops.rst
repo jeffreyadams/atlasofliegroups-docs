@@ -40,7 +40,7 @@ To find out about the usage of a function you type ``whattype <function name> ?`
    mat->mat
    atlas>
 
-Gives you the argument and output for the function `inverse'. It says that the function 'inverse' takes a matrix and produces another matrix.
+Gives you the argument and output for the function 'inverse'. It says that the function 'inverse' takes a matrix and produces another matrix.
     
 Note: Remember that the command `whattype' without the question mark gives a data type. To get atlas to give you and argument you need to add ``?``::
 
@@ -98,10 +98,10 @@ This is defined in basic, takes a pair of strings and concatenates them
 
 However, if you want to know what '+' does to a matrix and an integer you get::
 
-atlas>
-atlas> +@(mat,int)
-Value: {+@(mat,int)}
-atlas>
+    atlas>
+    atlas> +@(mat,int)
+    Value: {+@(mat,int)}
+    atlas>
 
 This means this is a built-in function that you can find in the ``atlas-functions.help`` file for information. But, in this case we can also try it to see what it does::
 
@@ -194,13 +194,13 @@ You can find out more about this operation by typing ``whattype # ?`` and by loo
 
 Here is a simple example of what you can do with it::
 
-atlas> set v=vec:[1,2]
-Identifier v: vec
-atlas> set x=3
-Identifier x: int
-atlas> v#x
-Value: [ 1, 2, 3 ]
-atlas>
+    atlas> set v=vec:[1,2]
+    Identifier v: vec
+    atlas> set x=3
+    Identifier x: int
+    atlas> v#x
+    Value: [ 1, 2, 3 ]
+    atlas>
 
 
 There are several kinds of loops which are explained in the
