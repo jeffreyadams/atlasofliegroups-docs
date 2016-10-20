@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -712,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sort_ref.html">sort.at Function References</a></li>
@@ -745,6 +745,9 @@
 <li class="toctree-l3"><a class="reference internal" href="synthetic_aux.html">synthetic_aux.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_index.html">synthetic_aux.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="test_K.html">test_K.at</a><ul>
@@ -1038,7 +1041,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">is_Levi_theta_stable:Parabolic</span> <span class="pre">(S,x)-&gt;bool</span></code> Defined in line number 39.</div>
 <div class="line"><br /></div>
-<div class="line">Test if a complex Levi defined by a set of simple roots S is <span class="math">\(\theta_x\)</span>-stable;   algorithm: H=sum of fundamental coweights with index not in S,   test whether <span class="math">\(&lt;\theta_x(\alpha),H&gt;=0\)</span> for all <span class="math">\(\alpha\)</span> in S</div>
+<div class="line">Test if a complex Levi defined by a set of simple roots S is <span class="math">\(\theta_x\)</span> -stable;   algorithm: H=sum of fundamental coweights with index not in S,   test whether <span class="math">\(&lt;\theta_x(\alpha),H&gt;=0\)</span>  for all <span class="math">\(\alpha\)</span>  in S</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1047,7 +1050,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">Levi:Parabolic(S,x):P-&gt;RealForm</span></code> Defined in line number 51.</div>
 <div class="line"><br /></div>
-<div class="line">Make a real Levi factor from P=(S,x), the complex Levi of S must be <span class="math">\(\theta_x\)</span>-stable</div>
+<div class="line">Make a real Levi factor from P=(S,x), the complex Levi of S must be <span class="math">\(\theta_x\)</span> -stable</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1056,7 +1059,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">is_parabolic_theta_stable:Parabolic</span> <span class="pre">(S,x):P-&gt;bool</span></code> Defined in line number 61.</div>
 <div class="line"><br /></div>
-<div class="line">Test if parabolic P=(S,x) is <span class="math">\(\theta\)</span>-stable: &lt;=&gt;   1) the complex Levi factor L is <span class="math">\(\theta\)</span>-stable   2) the KGP element P is closed (see kgp.at)   3) <span class="math">\(\alpha\)</span> simple, not in S =&gt; <span class="math">\(\alpha\)</span> is imaginary or C+ wrt maximal(P)</div>
+<div class="line">Test if parabolic P=(S,x) is <span class="math">\(\theta\)</span> -stable: &lt;=&gt;   1) the complex Levi factor L is <span class="math">\(\theta\)</span> -stable   2) the KGP element P is closed (see kgp.at)   3) <span class="math">\(\alpha\)</span>  simple, not in S =&gt; <span class="math">\(\alpha\)</span>  is imaginary or C+ wrt maximal(P)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1065,7 +1068,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">is_parabolic_real:Parabolic</span> <span class="pre">(S,x):P-&gt;bool</span></code> Defined in line number 74.</div>
 <div class="line"><br /></div>
-<div class="line">Test if parabolic P=(S,x) is real: &lt;=&gt;:   1) L is <span class="math">\(\theta\)</span>-stable   2) P is open   3) <span class="math">\(\alpha\)</span> simple, not in S =&gt; <span class="math">\(\alpha\)</span> is real or C- wrt a maximal element of P</div>
+<div class="line">Test if parabolic P=(S,x) is real: &lt;=&gt;:   1) L is <span class="math">\(\theta\)</span> -stable   2) P is open   3) <span class="math">\(\alpha\)</span>  simple, not in S =&gt; <span class="math">\(\alpha\)</span>  is real or C- wrt a maximal element of P</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1074,7 +1077,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">rho_u:ComplexParabolic</span> <span class="pre">P-&gt;ratvec</span></code> Defined in line number 94.</div>
 <div class="line"><br /></div>
-<div class="line">Half sum of positive roots not in the Levi (L must be <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Half sum of positive roots not in the Levi (L must be <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1083,7 +1086,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">rho_u:Parabolic</span> <span class="pre">P-&gt;ratvec</span></code> Defined in line number 97.</div>
 <div class="line"><br /></div>
-<div class="line">Half sum of positive roots not in the Levi (L must be <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Half sum of positive roots not in the Levi (L must be <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1092,7 +1095,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">rho_l:Parabolic</span> <span class="pre">P-&gt;ratvec</span></code> Defined in line number 100.</div>
 <div class="line"><br /></div>
-<div class="line">Half sum of positive roots in the Levi (L must be <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Half sum of positive roots in the Levi (L must be <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1101,7 +1104,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">nilrad:Parabolic</span> <span class="pre">P-&gt;mat</span></code> Defined in line number 103.</div>
 <div class="line"><br /></div>
-<div class="line">Positive coroots in the nilradical u of P (L must be <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Positive coroots in the nilradical u of P (L must be <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1110,7 +1113,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">nilrad_roots:Parabolic</span> <span class="pre">P-&gt;mat</span></code> Defined in line number 108.</div>
 <div class="line"><br /></div>
-<div class="line">Positive roots in the nilradical u of P (L must be <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Positive roots in the nilradical u of P (L must be <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1119,7 +1122,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">zero_simple_coroots:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">lambda-&gt;[int]</span></code> Defined in line number 121.</div>
 <div class="line"><br /></div>
-<div class="line">Simple coroots on which weight lambda (in <span class="math">\(\mathfrak h^*\)</span>) is zero</div>
+<div class="line">Simple coroots on which weight lambda (in <span class="math">\(\mathfrak h^*\)</span> ) is zero</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1146,7 +1149,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">nilrad:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 135.</div>
 <div class="line"><br /></div>
-<div class="line">Positive coroots in nilradical of P defined by lambda (if L <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Positive coroots in nilradical of P defined by lambda (if L <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1155,7 +1158,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">nilrad_roots:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 138.</div>
 <div class="line"><br /></div>
-<div class="line">Positive roots in nilradical of P defined by lambda (if L <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Positive roots in nilradical of P defined by lambda (if L <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1164,7 +1167,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">rho_u:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 143.</div>
 <div class="line"><br /></div>
-<div class="line">Half sum of positive roots in nilradical of P defined by lambda (if L <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Half sum of positive roots in nilradical of P defined by lambda (if L <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1173,7 +1176,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">zero_simple_roots:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">cowt-&gt;[int]</span></code> Defined in line number 146.</div>
 <div class="line"><br /></div>
-<div class="line">Simple roots which are zero on coweight H (in <span class="math">\(\mathfrak h\)</span>)</div>
+<div class="line">Simple roots which are zero on coweight H (in <span class="math">\(\mathfrak h\)</span> )</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1200,7 +1203,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">nilrad_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 160.</div>
 <div class="line"><br /></div>
-<div class="line">Positive coroots in nilradical of P defined by coweight H (if L <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Positive coroots in nilradical of P defined by coweight H (if L <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1209,7 +1212,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">nilrad_roots_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 163.</div>
 <div class="line"><br /></div>
-<div class="line">Positive roots in nilradical of P defined by coweight H (if L <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Positive roots in nilradical of P defined by coweight H (if L <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1218,7 +1221,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">rho_u_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 167.</div>
 <div class="line"><br /></div>
-<div class="line">Half sum of roots in nilradical of P defined by H (if L <span class="math">\(\theta\)</span>-stable)</div>
+<div class="line">Half sum of roots in nilradical of P defined by H (if L <span class="math">\(\theta\)</span> -stable)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1227,7 +1230,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">rho_Levi_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 170.</div>
 <div class="line"><br /></div>
-<div class="line"><span class="math">\(\rho(L)\)</span> for Levi of P defined by H (if L <span class="math">\(\theta\)</span>-stable</div>
+<div class="line"><span class="math">\(\rho(L)\)</span>  for Levi of P defined by H (if L <span class="math">\(\theta\)</span> -stable</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1236,7 +1239,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">real_parabolic:KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 180.</div>
 <div class="line"><br /></div>
-<div class="line">Real_parabolic(x) has Levi factor M=centralizer(A)   <span class="math">\(\mathfrak u`=positive roots not in M   for M to be stable: x must have no C+ roots   =&gt; real roots :math:\)</span>alpha` are those satisfying <span class="math">\(&lt;(1-\theta_x)\rho,\alpha^\vee&gt;=0\)</span></div>
+<div class="line">Real_parabolic(x) has Levi factor M=centralizer(A)   <span class="math">\(\mathfrak u\)</span> =positive roots not in M   for M to be stable: x must have no C+ roots   =&gt; real roots <span class="math">\(\alpha\)</span>  are those satisfying <span class="math">\(&lt;(1-\theta_x)\rho,\alpha^\vee&gt;=0\)</span></div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1245,7 +1248,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolic:KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 190.</div>
 <div class="line"><br /></div>
-<div class="line">Theta_stable_parabolic(x) has Levi factor L=centralizer(T)   <span class="math">\(\mathfrak u`=positive roots not in L   for this to be stable: no C- roots   =&gt; imaginary roots :math:\)</span>alpha` are those satisfying <span class="math">\(&lt;(1+\theta_x)\rho,\alpha^\vee&gt;=0\)</span></div>
+<div class="line">Theta_stable_parabolic(x) has Levi factor L=centralizer(T)   <span class="math">\(\mathfrak u\)</span> =positive roots not in L   for this to be stable: no C- roots   =&gt; imaginary roots <span class="math">\(\alpha\)</span>  are those satisfying <span class="math">\(&lt;(1+\theta_x)\rho,\alpha^\vee&gt;=0\)</span></div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1281,7 +1284,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics:RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">P-&gt;[Parabolic]</span></code> Defined in line number 262.</div>
 <div class="line"><br /></div>
-<div class="line">List K-conjugacy classes of given ComplexParablic that are <span class="math">\(\theta\)</span>-stable</div>
+<div class="line">List K-conjugacy classes of given ComplexParablic that are <span class="math">\(\theta\)</span> -stable</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1290,7 +1293,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code> Defined in line number 268.</div>
 <div class="line"><br /></div>
-<div class="line">List all <span class="math">\(\theta\)</span>-stable parabolics for G</div>
+<div class="line">List all <span class="math">\(\theta\)</span> -stable parabolics for G</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1299,7 +1302,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics_type:RealForm</span> <span class="pre">G,[int]</span> <span class="pre">P-&gt;[Parabolic]</span></code> Defined in line number 275.</div>
 <div class="line"><br /></div>
-<div class="line">List all <span class="math">\(\theta\)</span>-stable parabolics of G, of type S</div>
+<div class="line">List all <span class="math">\(\theta\)</span> -stable parabolics of G, of type S</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1308,7 +1311,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">all_rel_split_theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code> Defined in line number 281.</div>
 <div class="line"><br /></div>
-<div class="line">List all <span class="math">\(\theta\)</span>-stable parabolics of G with relatively split L</div>
+<div class="line">List all <span class="math">\(\theta\)</span> -stable parabolics of G with relatively split L</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1318,6 +1321,14 @@
 <div class="line"><code class="docutils literal"><span class="pre">print_theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;void</span></code> Defined in line number 289.</div>
 <div class="line"><br /></div>
 <div class="line">For each theta stable parabolic of G, print S, Levi factor, and maximal x</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="complexparabolic">
+<span id="id7"></span><h2>ComplexParabolic<a class="headerlink" href="#complexparabolic" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">(RootDatum,[int])</span></code> Defined in line number 23.</div>
+<div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>

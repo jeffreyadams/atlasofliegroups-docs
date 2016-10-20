@@ -13,6 +13,7 @@ W_reps_type_BC.at
 | :ref:`nilpotent.at<nilpotent.at>`
 | :ref:`complex_nilpotent_orbits.at<complex_nilpotent_orbits.at>`
 | :ref:`partitions.at<partitions.at>`
+| :ref:`wreps_type_C.at<wreps_type_C.at>`
 |
 
 

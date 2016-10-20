@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -712,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sort_ref.html">sort.at Function References</a></li>
@@ -745,6 +745,9 @@
 <li class="toctree-l3"><a class="reference internal" href="synthetic_aux.html">synthetic_aux.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_index.html">synthetic_aux.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="test_K.html">test_K.at</a><ul>
@@ -1013,29 +1016,29 @@
 <p>Also see parabolics.at;
 see &#8220;Parabolic Subgroups and Induction&#8221;, in dropbox, ultimately on atlas web site.</p>
 <p>Fix a subset S of the simple roots, defining the complex standard
-parabolic <span class="math">\(P_S\)</span> (see parabolics.at) of type S. We define a set KGP(S) (a
-quotient of KGB) such that (roughly) KGP(S) &lt;-&gt; <span class="math">\(K\G/P_S\)</span>.</p>
-<p>More precisely, for any <span class="math">\(x\in\)</span> KGB and <span class="math">\(p(\xi)=x\)</span>,
-KGP(S) is canonically in bijection with <span class="math">\(K_\xi\G/P_S\)</span>; i.e.,
-<span class="math">\(K_\xi\)</span> conjugacy classes of parabolics of type S.</p>
-<p>K orbits on <span class="math">\(G/P_S\)</span>, equivalently K-conjugacy classes of parabolics of type S:
+parabolic <span class="math">\(P_S\)</span>  (see parabolics.at) of type S. We define a set KGP(S) (a
+quotient of KGB) such that (roughly) KGP(S) &lt;-&gt; <span class="math">\(K\backslash G/P_S\)</span> .</p>
+<p>More precisely, for any <span class="math">\(x\in\)</span>  KGB and <span class="math">\(p(\xi)=x\)</span> ,
+KGP(S) is canonically in bijection with <span class="math">\(K_{\xi}\backslash G/P_S\)</span> ; i.e.,
+<span class="math">\(K_{\xi}\)</span>  conjugacy classes of parabolics of type S.</p>
+<p>K orbits on <span class="math">\(G/P_S\)</span> , equivalently K-conjugacy classes of parabolics of type S:
 Given a RealForm and a subset S of the simple roots,
 S -&gt; partial order on KGB, generated by ascents in S
 -&gt; equivalence relation generated by this
-KGB/equivalence &lt;-&gt; <span class="math">\(K\G/P_S\)</span>
+KGB/equivalence &lt;-&gt; <span class="math">\(K\backslash G/P_S\)</span>
 Define KGP to be KGB modulo this equivalence.</p>
 <p>Data: ([int],KGBElt)=(S,x) where S lists the indices of a subset of the
 simple roots of root_datum(x)
-Equivalence: (S,x)=(S&#8217;,y) if these correspond to the same K orbit on <span class="math">\(G/P_S\)</span>,
+Equivalence: (S,x)=(S&#8217;,y) if these correspond to the same K orbit on <span class="math">\(G/P_S\)</span> ,
 which means:
 real_form(x)=real_form(y), S=S&#8217;  (i.e. same complex parabolic), and
 x=y in the equivalence defined by S.
 In particular, given (S,x), taking x itself for the strong real form,
-(S,x) goes to the <span class="math">\(K_x\)</span>-conjugacy class of the standard parabolic <span class="math">\(P_S\)</span>.</p>
+(S,x) goes to the <span class="math">\(K_x\)</span> -conjugacy class of the standard parabolic <span class="math">\(P_S\)</span> .</p>
 <p>Given (S,x),
-write <span class="math">\([x_1,...,x_n]\)</span> for the S-equivalence class of <span class="math">\(x\subset\)</span> KGB.</p>
-<p>The last element <span class="math">\(x_n\)</span> is maximal, and is uniquely determined.
-This orbit of K on <span class="math">\(G/P_S\)</span> is closed &lt;=&gt; <span class="math">\(x_1\)</span> is closed in KGB.</p>
+write <span class="math">\([x_1,...,x_n]\)</span>  for the S-equivalence class of <span class="math">\(x\subset\)</span>  KGB.</p>
+<p>The last element <span class="math">\(x_n\)</span>  is maximal, and is uniquely determined.
+This orbit of K on <span class="math">\(G/P_S\)</span>  is closed &lt;=&gt; <span class="math">\(x_1\)</span>  is closed in KGB.</p>
 <p><strong>This script imported the following .at files:</strong></p>
 <div class="line-block">
 <div class="line"><a class="reference internal" href="basic.html#basic-at"><span>basic.at</span></a></div>

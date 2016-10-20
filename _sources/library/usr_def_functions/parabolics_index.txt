@@ -6,6 +6,8 @@ parabolics.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -80,3 +82,15 @@ parabolics.at Function Index
      - ``RealForm G->[Parabolic]``
    * - :ref:`print_theta_stable_parabolics_realform_g->void1`
      - ``RealForm G->void``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`ComplexParabolic`
+     - ``(RootDatum,[int])``

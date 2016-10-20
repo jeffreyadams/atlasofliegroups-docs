@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -712,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sort_ref.html">sort.at Function References</a></li>
@@ -745,6 +745,9 @@
 <li class="toctree-l3"><a class="reference internal" href="synthetic_aux.html">synthetic_aux.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_index.html">synthetic_aux.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="test_K.html">test_K.at</a><ul>
@@ -1015,147 +1018,192 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<div class="section" id="my-embed-kgb">
-<span id="my-embed-kgb-kgbelt-x-l-realform-g-kgbelt1"></span><h2>my_embed_KGB<a class="headerlink" href="#my-embed-kgb" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">my_embed_KGB:KGBElt</span> <span class="pre">x_L,RealForm</span> <span class="pre">G-&gt;KGBElt</span></code> Defined in line number 16.</div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
 <div class="section" id="embed-kgb">
 <span id="embed-kgb-kgbelt-x-l-realform-g-kgbelt1"></span><h2>embed_KGB<a class="headerlink" href="#embed-kgb" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">embed_KGB:KGBElt</span> <span class="pre">x_L,RealForm</span> <span class="pre">G-&gt;KGBElt</span></code> Defined in line number 34.</div>
+<div class="line"><code class="docutils literal"><span class="pre">embed_KGB:KGBElt</span> <span class="pre">x_L,RealForm</span> <span class="pre">G-&gt;KGBElt</span></code> Defined in line number 42.</div>
 <div class="line"><br /></div>
+<div class="line">If L is a theta-stable Levi factor in G,  KGB for L embeds in KGB for G.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="inverse-embed-kgb">
-<span id="inverse-embed-kgb-kgbelt-x-g-realform-m-kgbelt1"></span><h2>inverse_embed_KGB<a class="headerlink" href="#inverse-embed-kgb" title="Permalink to this headline">¶</a></h2>
+<span id="inverse-embed-kgb-kgbelt-x-g-realform-l-kgbelt1"></span><h2>inverse_embed_KGB<a class="headerlink" href="#inverse-embed-kgb" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">inverse_embed_KGB:KGBElt</span> <span class="pre">x_G,RealForm</span> <span class="pre">M-&gt;KGBElt</span></code> Defined in line number 38.</div>
+<div class="line"><code class="docutils literal"><span class="pre">inverse_embed_KGB:KGBElt</span> <span class="pre">x_G,RealForm</span> <span class="pre">L-&gt;KGBElt</span></code> Defined in line number 46.</div>
 <div class="line"><br /></div>
+<div class="line">Given a KGB element of G, find one for the theta-stable Levi L which maps to it.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="makes">
+<span id="makes-mat-theta-rootdatum-rd-mat1"></span><h2>makeS<a class="headerlink" href="#makes" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">makeS:mat</span> <span class="pre">theta,RootDatum</span> <span class="pre">rd-&gt;mat</span></code> Defined in line number 55.</div>
+<div class="line"><br /></div>
+<div class="line">Given an involution theta and a root datum, return the set S of complex roots    containing the first positive representative of each quadruple    (pm alpha,pm theta(alpha)).</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="makes-kgbelt-x-mat1">
+<span id="id1"></span><h2>makeS<a class="headerlink" href="#makes-kgbelt-x-mat1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">makeS:KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 60.</div>
+<div class="line"><br /></div>
+<div class="line">As the previous function, with argument a KGB element x determining the involution    and root datum</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="rho-s">
+<span id="rho-s-mat-rootdatum-pair-ratvec1"></span><h2>rho_S<a class="headerlink" href="#rho-s" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">rho_S:(mat,RootDatum)pair-&gt;ratvec</span></code> Defined in line number 63.</div>
+<div class="line"><br /></div>
+<div class="line">Half sum of roots in chosen set S of complex roots, described above.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="rho-s-kgbelt-x-ratvec1">
+<span id="id2"></span><h2>rho_S<a class="headerlink" href="#rho-s-kgbelt-x-ratvec1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">rho_S:KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 66.</div>
+<div class="line"><br /></div>
+<div class="line">As previous function, with argument KGB element x.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="real-induce-standard">
 <span id="real-induce-standard-param-p-l-realform-g-param1"></span><h2>real_induce_standard<a class="headerlink" href="#real-induce-standard" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_induce_standard:Param</span> <span class="pre">p_L,RealForm</span> <span class="pre">G-&gt;Param</span></code> Defined in line number 49.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_induce_standard:Param</span> <span class="pre">p_L,RealForm</span> <span class="pre">G-&gt;Param</span></code> Defined in line number 70.</div>
 <div class="line"><br /></div>
+<div class="line">Real parabolic induction of a standard module of real Levi L to G</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="real-induce-standard-parampol-p-realform-g-parampol1">
-<span id="id1"></span><h2>real_induce_standard<a class="headerlink" href="#real-induce-standard-parampol-p-realform-g-parampol1" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>real_induce_standard<a class="headerlink" href="#real-induce-standard-parampol-p-realform-g-parampol1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_induce_standard:ParamPol</span> <span class="pre">P,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 56.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_induce_standard:ParamPol</span> <span class="pre">P,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 79.</div>
 <div class="line"><br /></div>
+<div class="line">Real parabolic induction of standards, applied to a formal sum of    parameters (ParamPol).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="real-induce-irreducible-as-sum-of-standards">
 <span id="real-induce-irreducible-as-sum-of-standards-param-p-l-realform-g-parampol1"></span><h2>real_induce_irreducible_as_sum_of_standards<a class="headerlink" href="#real-induce-irreducible-as-sum-of-standards" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_induce_irreducible_as_sum_of_standards:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 66.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_induce_irreducible_as_sum_of_standards:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 87.</div>
 <div class="line"><br /></div>
+<div class="line">Write the (real) induced of an irreducible J(p_L) of L as a formal sum of    standards for G; use the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="real-induce-irreducible">
 <span id="real-induce-irreducible-param-p-l-realform-g-parampol1"></span><h2>real_induce_irreducible<a class="headerlink" href="#real-induce-irreducible" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_induce_irreducible:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 75.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_induce_irreducible:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 96.</div>
 <div class="line"><br /></div>
+<div class="line">Write the (real) induced Ind(J(p_L)) of an irreducible of L as a sum of    irreducibles for G; use composition series to convert    output of the previous function into sum of irreducibles.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="cuspidal-data">
 <span id="cuspidal-data-param-p-parabolic-param-1"></span><h2>cuspidal_data<a class="headerlink" href="#cuspidal-data" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cuspidal_data:Param</span> <span class="pre">p-&gt;(Parabolic,Param)</span></code> Defined in line number 84.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cuspidal_data:Param</span> <span class="pre">p-&gt;(Parabolic,Param)</span></code> Defined in line number 107.</div>
 <div class="line"><br /></div>
+<div class="line">Cuspidal data associated to a parameter p: a cuspidal parabolic subgroup P=MN    and parameter p_M for a relative limit of discrete series so that    Ind(I(p_M))=I(p); uses real_parabolic(x) of parabolics.at</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="theta-stable-data">
 <span id="theta-stable-data-param-p-parabolic-param-1"></span><h2>theta_stable_data<a class="headerlink" href="#theta-stable-data" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_stable_data:Param</span> <span class="pre">p-&gt;(Parabolic,Param)</span></code> Defined in line number 101.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_data:Param</span> <span class="pre">p-&gt;(Parabolic,Param)</span></code> Defined in line number 128.</div>
 <div class="line"><br /></div>
+<div class="line">Theta-stable data associated to a parameter p: a theta-stable parabolic P=LN    with L relatively split, and parameter p_L for a principal series representation    so that p is obtained by cohomological parabolic induction    from p_L; uses theta_stable_parabolic(x) of parabolics.at.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="coherent-std-imaginary">
 <span id="coherent-std-imaginary-w-word-w-param-p-parampol1"></span><h2>coherent_std_imaginary<a class="headerlink" href="#coherent-std-imaginary" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">coherent_std_imaginary:W_word</span> <span class="pre">w,Param</span> <span class="pre">p-&gt;ParamPol</span></code> Defined in line number 117.</div>
+<div class="line"><code class="docutils literal"><span class="pre">coherent_std_imaginary:W_word</span> <span class="pre">w,Param</span> <span class="pre">p-&gt;ParamPol</span></code> Defined in line number 145.</div>
 <div class="line"><br /></div>
+<div class="line">Auxiliary function</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="standardize">
 <span id="standardize-param-p-parampol1"></span><h2>standardize<a class="headerlink" href="#standardize" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">standardize:Param</span> <span class="pre">p-&gt;ParamPol</span></code> Defined in line number 143.</div>
+<div class="line"><code class="docutils literal"><span class="pre">standardize:Param</span> <span class="pre">p-&gt;ParamPol</span></code> Defined in line number 161.</div>
 <div class="line"><br /></div>
+<div class="line">Convert a possibly non-standard parameter into a linear combination of   standard ones</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="standardize-parampol-p-parampol1">
-<span id="id2"></span><h2>standardize<a class="headerlink" href="#standardize-parampol-p-parampol1" title="Permalink to this headline">¶</a></h2>
+<span id="id4"></span><h2>standardize<a class="headerlink" href="#standardize-parampol-p-parampol1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">standardize:ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code> Defined in line number 153.</div>
+<div class="line"><code class="docutils literal"><span class="pre">standardize:ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code> Defined in line number 172.</div>
 <div class="line"><br /></div>
+<div class="line">Standardize a formal linear combination of possibly non-standard parameters</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="theta-induce-standard">
 <span id="theta-induce-standard-param-p-l-realform-g-parampol1"></span><h2>theta_induce_standard<a class="headerlink" href="#theta-induce-standard" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_induce_standard:Param</span> <span class="pre">p_L,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 172.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_induce_standard:Param</span> <span class="pre">p_L,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 181.</div>
 <div class="line"><br /></div>
+<div class="line">Theta-stable (cohomological) parabolic induction of a standard module for    the Levi L of a theta-stable parabolic; if outside of weakly good range,    must apply standardize.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="theta-induce-irreducible-as-sum-of-standards">
 <span id="theta-induce-irreducible-as-sum-of-standards-param-p-l-realform-g-parampol1"></span><h2>theta_induce_irreducible_as_sum_of_standards<a class="headerlink" href="#theta-induce-irreducible-as-sum-of-standards" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_induce_irreducible_as_sum_of_standards:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 204.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_induce_irreducible_as_sum_of_standards:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 211.</div>
 <div class="line"><br /></div>
+<div class="line">Write the (theta-stable) induced of an irreducible J(p_L) of L as a formal    sum of standards for G; use the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="theta-induce-irreducible">
 <span id="theta-induce-irreducible-param-p-l-realform-g-parampol1"></span><h2>theta_induce_irreducible<a class="headerlink" href="#theta-induce-irreducible" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_induce_irreducible:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 217.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_induce_irreducible:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 226.</div>
 <div class="line"><br /></div>
+<div class="line">Write the (theta-stable) induced Ind(J(p_L)) of an irreducible of L    as a sum of irreducibles for G; use composition series to convert    output of the previous function into sum of irreducibles.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="induce-standard">
 <span id="induce-standard-param-p-l-parabolic-p-realform-g-parampol1"></span><h2>induce_standard<a class="headerlink" href="#induce-standard" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">induce_standard:Param</span> <span class="pre">p_L,Parabolic</span> <span class="pre">P,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 236.</div>
+<div class="line"><code class="docutils literal"><span class="pre">induce_standard:Param</span> <span class="pre">p_L,Parabolic</span> <span class="pre">P,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 248.</div>
 <div class="line"><br /></div>
+<div class="line">Real or theta-stable parabolic induction of a standard module,    depending on whether P=LN a real or theta-stable parabolic    (returns error message if neither).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="induce-irreducible">
 <span id="induce-irreducible-param-p-l-parabolic-p-realform-g-parampol1"></span><h2>induce_irreducible<a class="headerlink" href="#induce-irreducible" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">induce_irreducible:Param</span> <span class="pre">p_L,Parabolic</span> <span class="pre">P,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 245.</div>
+<div class="line"><code class="docutils literal"><span class="pre">induce_irreducible:Param</span> <span class="pre">p_L,Parabolic</span> <span class="pre">P,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 260.</div>
 <div class="line"><br /></div>
+<div class="line">Write the (real or theta-stable) induced Ind(J(p_L)) of an irreducible    of L as a sum of irreducibles for G; error message if P=LN is not a real    or theta-stable parabolic.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="induce-standard-parampol-pol-parabolic-p-realform-g-parampol1">
-<span id="id3"></span><h2>induce_standard<a class="headerlink" href="#induce-standard-parampol-pol-parabolic-p-realform-g-parampol1" title="Permalink to this headline">¶</a></h2>
+<span id="id5"></span><h2>induce_standard<a class="headerlink" href="#induce-standard-parampol-pol-parabolic-p-realform-g-parampol1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">induce_standard:ParamPol</span> <span class="pre">pol,Parabolic</span> <span class="pre">P,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 254.</div>
+<div class="line"><code class="docutils literal"><span class="pre">induce_standard:ParamPol</span> <span class="pre">pol,Parabolic</span> <span class="pre">P,RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 271.</div>
 <div class="line"><br /></div>
+<div class="line">Real or theta-stable parabolic induction applied to a linear combination    of standard modules (error message if P is not real or theta-stable).</div>
 <div class="line"><br /></div>
 </div>
 </div>

@@ -76,3 +76,27 @@ length
 | 
 | 
 
+.. _K_Type:
+
+K_Type
+-----------------------------------------
+| ``(KGBElt,ratvec)`` Defined in line number 29.
+| 
+| 
+
+.. _K_Type_Pol:
+
+K_Type_Pol
+-----------------------------------------
+| ``ParamPol`` Defined in line number 30.
+| 
+| 
+
+.. _KHighestWeight:
+
+KHighestWeight
+-----------------------------------------
+| ``(KGBElt,vec)`` Defined in line number 31.
+| 
+| 
+

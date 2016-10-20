@@ -8,7 +8,7 @@ W_reps_type_BC.at Function References
 
 normalize
 -------------------------------------------------
-| ``normalize:[int] v->[int]`` Defined in line number 28.
+| ``normalize:[int] v->[int]`` Defined in line number 30.
 | 
 | 
 
@@ -16,7 +16,7 @@ normalize
 
 expand
 -------------------------------------------------
-| ``expand:[int] v, int r->[int]`` Defined in line number 34.
+| ``expand:[int] v, int r->[int]`` Defined in line number 36.
 | 
 | 
 
@@ -24,7 +24,7 @@ expand
 
 normalize
 -------------------------------------------------
-| ``normalize:Symbol S->Symbol`` Defined in line number 37.
+| ``normalize:Symbol S->Symbol`` Defined in line number 39.
 | 
 | 
 
@@ -32,7 +32,7 @@ normalize
 
 rank
 -------------------------------------------------
-| ``rank:[int] f->int`` Defined in line number 48.
+| ``rank:[int] f->int`` Defined in line number 50.
 | 
 | 
 
@@ -40,7 +40,7 @@ rank
 
 rank
 -------------------------------------------------
-| ``rank:Symbol S->int`` Defined in line number 49.
+| ``rank:Symbol S->int`` Defined in line number 51.
 | 
 | 
 
@@ -48,7 +48,7 @@ rank
 
 symbol_B
 -------------------------------------------------
-| ``symbol_B:Orbit P->Symbol`` Defined in line number 55.
+| ``symbol_B:Orbit P->Symbol`` Defined in line number 57.
 | 
 | 
 
@@ -56,7 +56,7 @@ symbol_B
 
 symbol_C
 -------------------------------------------------
-| ``symbol_C:Orbit P->Symbol`` Defined in line number 63.
+| ``symbol_C:Orbit P->Symbol`` Defined in line number 65.
 | 
 | 
 
@@ -64,7 +64,7 @@ symbol_C
 
 wrep
 -------------------------------------------------
-| ``wrep:Symbol S->Wrep`` Defined in line number 70.
+| ``wrep:Symbol S->Wrep`` Defined in line number 72.
 | 
 | 
 
@@ -72,7 +72,7 @@ wrep
 
 wrep
 -------------------------------------------------
-| ``wrep:Orbit P->Wrep`` Defined in line number 78.
+| ``wrep:Orbit P->Wrep`` Defined in line number 80.
 | 
 | 
 
@@ -80,7 +80,7 @@ wrep
 
 orbit_C
 -------------------------------------------------
-| ``orbit_C:Symbol S->Orbit`` Defined in line number 86.
+| ``orbit_C:Symbol S->Orbit`` Defined in line number 88.
 | 
 | 
 
@@ -88,7 +88,7 @@ orbit_C
 
 symbol
 -------------------------------------------------
-| ``symbol:Wrep sigma->Symbol`` Defined in line number 96.
+| ``symbol:Wrep sigma->Symbol`` Defined in line number 98.
 | 
 | 
 
@@ -96,7 +96,7 @@ symbol
 
 orbit_C
 -------------------------------------------------
-| ``orbit_C:Wrep sigma->Orbit`` Defined in line number 106.
+| ``orbit_C:Wrep sigma->Orbit`` Defined in line number 108.
 | 
 | 
 
@@ -104,7 +104,7 @@ orbit_C
 
 \=
 -------------------------------------------------
-| ``=:Wrep  a,Wrep b->bool`` Defined in line number 109.
+| ``=:Wrep  a,Wrep b->bool`` Defined in line number 111.
 | 
 | 
 
@@ -112,7 +112,7 @@ orbit_C
 
 symbols_equal
 -------------------------------------------------
-| ``symbols_equal:Symbol a,Symbol b->bool`` Defined in line number 112.
+| ``symbols_equal:Symbol a,Symbol b->bool`` Defined in line number 114.
 | 
 | 
 
@@ -120,7 +120,7 @@ symbols_equal
 
 dimension
 -------------------------------------------------
-| ``dimension:Wrep sigma->int`` Defined in line number 114.
+| ``dimension:Wrep sigma->int`` Defined in line number 116.
 | 
 | 
 
@@ -128,7 +128,7 @@ dimension
 
 is_special_C
 -------------------------------------------------
-| ``is_special_C:Symbol S->bool`` Defined in line number 127.
+| ``is_special_C:Symbol S->bool`` Defined in line number 129.
 | 
 | 
 
@@ -136,7 +136,7 @@ is_special_C
 
 is_special_C
 -------------------------------------------------
-| ``is_special_C:Orbit P->bool`` Defined in line number 131.
+| ``is_special_C:Orbit P->bool`` Defined in line number 133.
 | 
 | 
 
@@ -144,7 +144,7 @@ is_special_C
 
 is_special_C
 -------------------------------------------------
-| ``is_special_C:Wrep sigma->bool`` Defined in line number 132.
+| ``is_special_C:Wrep sigma->bool`` Defined in line number 134.
 | 
 | 
 
@@ -152,7 +152,7 @@ is_special_C
 
 special_C_star
 -------------------------------------------------
-| ``special_C_star:Symbol S->string`` Defined in line number 134.
+| ``special_C_star:Symbol S->string`` Defined in line number 136.
 | 
 | 
 
@@ -160,7 +160,7 @@ special_C_star
 
 special_C_star
 -------------------------------------------------
-| ``special_C_star:Orbit P->string`` Defined in line number 135.
+| ``special_C_star:Orbit P->string`` Defined in line number 137.
 | 
 | 
 
@@ -168,7 +168,7 @@ special_C_star
 
 special_C_star
 -------------------------------------------------
-| ``special_C_star:Wrep sigma->string`` Defined in line number 136.
+| ``special_C_star:Wrep sigma->string`` Defined in line number 138.
 | 
 | 
 
@@ -176,7 +176,7 @@ special_C_star
 
 symbols
 -------------------------------------------------
-| ``symbols:RootDatum rd->[Symbol]`` Defined in line number 139.
+| ``symbols:RootDatum rd->[Symbol]`` Defined in line number 141.
 | 
 | 
 
@@ -184,7 +184,7 @@ symbols
 
 wreps
 -------------------------------------------------
-| ``wreps:RootDatum rd->[Wrep]`` Defined in line number 148.
+| ``wreps:RootDatum rd->[Wrep]`` Defined in line number 150.
 | 
 | 
 
@@ -192,7 +192,7 @@ wreps
 
 cut_off_string
 -------------------------------------------------
-| ``cut_off_string:[int] v->(int,[int])`` Defined in line number 180.
+| ``cut_off_string:[int] v->(int,[int])`` Defined in line number 182.
 | 
 | 
 
@@ -200,7 +200,7 @@ cut_off_string
 
 cut_off_last_string
 -------------------------------------------------
-| ``cut_off_last_string:[int] v->(int,[int])`` Defined in line number 188.
+| ``cut_off_last_string:[int] v->(int,[int])`` Defined in line number 190.
 | 
 | 
 
@@ -208,7 +208,7 @@ cut_off_last_string
 
 extract_strings
 -------------------------------------------------
-| ``extract_strings:[int] v->[int]`` Defined in line number 195.
+| ``extract_strings:[int] v->[int]`` Defined in line number 197.
 | 
 | 
 
@@ -216,7 +216,7 @@ extract_strings
 
 A_Levi_factor
 -------------------------------------------------
-| ``A_Levi_factor:int rank, [int] tau->[int]`` Defined in line number 200.
+| ``A_Levi_factor:int rank, [int] tau->[int]`` Defined in line number 202.
 | 
 | 
 
@@ -224,7 +224,7 @@ A_Levi_factor
 
 AC_Levi_factor
 -------------------------------------------------
-| ``AC_Levi_factor:int rank, [int] tau->(int,[int])`` Defined in line number 210.
+| ``AC_Levi_factor:int rank, [int] tau->(int,[int])`` Defined in line number 212.
 | 
 | 
 
@@ -232,7 +232,7 @@ AC_Levi_factor
 
 is_max
 -------------------------------------------------
-| ``is_max:[[int]] taus,[int] tau->bool`` Defined in line number 218.
+| ``is_max:[[int]] taus,[int] tau->bool`` Defined in line number 221.
 | 
 | 
 
@@ -240,7 +240,7 @@ is_max
 
 max_only
 -------------------------------------------------
-| ``max_only:[[int]] taus->[[int]]`` Defined in line number 222.
+| ``max_only:[[int]] taus->[[int]]`` Defined in line number 225.
 | 
 | 
 
@@ -248,7 +248,7 @@ max_only
 
 Levi_signature
 -------------------------------------------------
-| ``Levi_signature:int rank,[[int]] tau_invariants->([[int]],[(int,[int])])`` Defined in line number 228.
+| ``Levi_signature:int rank,[[int]] tau_invariants->([[int]],[(int,[int])])`` Defined in line number 231.
 | 
 | 
 
@@ -256,7 +256,7 @@ Levi_signature
 
 max_first_entry
 -------------------------------------------------
-| ``max_first_entry:[[int]] v->int`` Defined in line number 245.
+| ``max_first_entry:[[int]] v->int`` Defined in line number 248.
 | 
 | 
 
@@ -264,7 +264,7 @@ max_first_entry
 
 keep_by_first_entry
 -------------------------------------------------
-| ``keep_by_first_entry:[[int]] v,int k->[[int]]`` Defined in line number 247.
+| ``keep_by_first_entry:[[int]] v,int k->[[int]]`` Defined in line number 250.
 | 
 | 
 
@@ -272,7 +272,7 @@ keep_by_first_entry
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
-| ``keep_by_first_entry_and_truncate:[[int]] v,int k->[[int]]`` Defined in line number 251.
+| ``keep_by_first_entry_and_truncate:[[int]] v,int k->[[int]]`` Defined in line number 254.
 | 
 | 
 
@@ -280,7 +280,7 @@ keep_by_first_entry_and_truncate
 
 max_tagged_entry
 -------------------------------------------------
-| ``max_tagged_entry:[(int,[int])] v->int`` Defined in line number 259.
+| ``max_tagged_entry:[(int,[int])] v->int`` Defined in line number 262.
 | 
 | 
 
@@ -288,7 +288,7 @@ max_tagged_entry
 
 keep_by_first_entry
 -------------------------------------------------
-| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 261.
+| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 264.
 | 
 | 
 
@@ -296,7 +296,7 @@ keep_by_first_entry
 
 keep_by_first_entry
 -------------------------------------------------
-| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 264.
+| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 267.
 | 
 | 
 
@@ -304,7 +304,7 @@ keep_by_first_entry
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
-| ``keep_by_first_entry_and_truncate:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 268.
+| ``keep_by_first_entry_and_truncate:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 271.
 | 
 | 
 
@@ -312,7 +312,7 @@ keep_by_first_entry_and_truncate
 
 wrep
 -------------------------------------------------
-| ``wrep:int rank,[[int]] tau_invariants->Wrep`` Defined in line number 280.
+| ``wrep:int rank,[[int]] tau_invariants->Wrep`` Defined in line number 283.
 | 
 | 
 
@@ -320,7 +320,7 @@ wrep
 
 wrep
 -------------------------------------------------
-| ``wrep:Block B,[int] cell->Wrep`` Defined in line number 308.
+| ``wrep:Block B,[int] cell->Wrep`` Defined in line number 312.
 | 
 | 
 
@@ -328,7 +328,7 @@ wrep
 
 wreps
 -------------------------------------------------
-| ``wreps:Block B,[[int]] cells->[Wrep]`` Defined in line number 311.
+| ``wreps:Block B,[[int]] cells->[Wrep]`` Defined in line number 315.
 | 
 | 
 
@@ -336,7 +336,7 @@ wreps
 
 print_wreps_cpt
 -------------------------------------------------
-| ``print_wreps_cpt:Block B,[[int]] cells->void`` Defined in line number 331.
+| ``print_wreps_cpt:Block B,[[int]] cells->void`` Defined in line number 335.
 | 
 | 
 
@@ -344,7 +344,7 @@ print_wreps_cpt
 
 print_wreps
 -------------------------------------------------
-| ``print_wreps:Block B,[[int]] cells->void`` Defined in line number 335.
+| ``print_wreps:Block B,[[int]] cells->void`` Defined in line number 339.
 | 
 | 
 
@@ -352,7 +352,31 @@ print_wreps
 
 wreps
 -------------------------------------------------
-| ``wreps:Block B,[[int]] cells->[([int],[int])]`` Defined in line number 338.
+| ``wreps:Block B,[[int]] cells->[([int],[int])]`` Defined in line number 342.
+| 
+| 
+
+.. _Orbit:
+
+Orbit
+-----------------------------------------
+| ``[int]`` Defined in line number 25.
+| 
+| 
+
+.. _Symbol:
+
+Symbol
+-----------------------------------------
+| ``[[int]]`` Defined in line number 26.
+| 
+| 
+
+.. _Wrep:
+
+Wrep
+-----------------------------------------
+| ``([int],[int])`` Defined in line number 27.
 | 
 | 
 

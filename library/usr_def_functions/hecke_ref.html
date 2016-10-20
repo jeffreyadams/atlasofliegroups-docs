@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -712,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sort_ref.html">sort.at Function References</a></li>
@@ -745,6 +745,9 @@
 <li class="toctree-l3"><a class="reference internal" href="synthetic_aux.html">synthetic_aux.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_index.html">synthetic_aux.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="test_K.html">test_K.at</a><ul>
@@ -1216,15 +1219,7 @@
 </div>
 </div>
 <div class="section" id="hecke-row">
-<span id="hecke-row-int-j-mat-delta-ratvec-gamma-ratvec-g-kgb-pair-pair-kgb-pair-basis-poly-1"></span><h2>hecke_row<a class="headerlink" href="#hecke-row" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">hecke_row:int</span> <span class="pre">j,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">ratvec</span> <span class="pre">gamma,</span> <span class="pre">ratvec</span> <span class="pre">g,</span> <span class="pre">KGB_pair</span> <span class="pre">pair,</span> <span class="pre">[KGB_pair]</span> <span class="pre">basis-&gt;[poly]</span></code> Defined in line number 380.</div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
-<div class="section" id="hecke-row-int-j-extended-param-delta-gamma-g-e-kgb-pair-basis-poly-1">
-<span id="id11"></span><h2>hecke_row<a class="headerlink" href="#hecke-row-int-j-extended-param-delta-gamma-g-e-kgb-pair-basis-poly-1" title="Permalink to this headline">¶</a></h2>
+<span id="hecke-row-int-j-extended-param-delta-gamma-g-e-kgb-pair-basis-poly-1"></span><h2>hecke_row<a class="headerlink" href="#hecke-row" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">hecke_row:int</span> <span class="pre">j,</span> <span class="pre">extended_param(,delta,gamma,,,g,,,,):E,</span> <span class="pre">[KGB_pair]</span> <span class="pre">basis-&gt;[poly]</span></code> Defined in line number 550.</div>
 <div class="line"><br /></div>
@@ -1256,7 +1251,7 @@
 </div>
 </div>
 <div class="section" id="braid-poly-mat-m-poly-mat-n-int-length-bool1">
-<span id="id12"></span><h2>braid<a class="headerlink" href="#braid-poly-mat-m-poly-mat-n-int-length-bool1" title="Permalink to this headline">¶</a></h2>
+<span id="id11"></span><h2>braid<a class="headerlink" href="#braid-poly-mat-m-poly-mat-n-int-length-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">braid:poly_mat</span> <span class="pre">M,poly_mat</span> <span class="pre">N,</span> <span class="pre">int</span> <span class="pre">length-&gt;bool</span></code> Defined in line number 594.</div>
 <div class="line"><br /></div>
@@ -1272,7 +1267,7 @@
 </div>
 </div>
 <div class="section" id="test-hecke-int-i-int-j-mat-delta-ratvec-gamma-kgb-pair-basis-bool1">
-<span id="id13"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-mat-delta-ratvec-gamma-kgb-pair-basis-bool1" title="Permalink to this headline">¶</a></h2>
+<span id="id12"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-mat-delta-ratvec-gamma-kgb-pair-basis-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">test_hecke:int</span> <span class="pre">i,</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">ratvec</span> <span class="pre">gamma,</span> <span class="pre">[KGB_pair]</span> <span class="pre">basis-&gt;bool</span></code> Defined in line number 627.</div>
 <div class="line"><br /></div>
@@ -1280,7 +1275,7 @@
 </div>
 </div>
 <div class="section" id="test-hecke-int-i-int-j-mat-delta-param-b-ratvec-g-bool1">
-<span id="id14"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-mat-delta-param-b-ratvec-g-bool1" title="Permalink to this headline">¶</a></h2>
+<span id="id13"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-mat-delta-param-b-ratvec-g-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">test_hecke:int</span> <span class="pre">i,</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">[Param]</span> <span class="pre">B,</span> <span class="pre">ratvec</span> <span class="pre">g-&gt;bool</span></code> Defined in line number 634.</div>
 <div class="line"><br /></div>
@@ -1288,7 +1283,7 @@
 </div>
 </div>
 <div class="section" id="test-hecke-int-i-int-j-mat-delta-param-b-bool1">
-<span id="id15"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-mat-delta-param-b-bool1" title="Permalink to this headline">¶</a></h2>
+<span id="id14"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-mat-delta-param-b-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">test_hecke:int</span> <span class="pre">i,</span> <span class="pre">int</span> <span class="pre">j,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">[Param]</span> <span class="pre">B-&gt;bool</span></code> Defined in line number 648.</div>
 <div class="line"><br /></div>
@@ -1296,7 +1291,7 @@
 </div>
 </div>
 <div class="section" id="test-hecke-int-i-int-j-mat-delta-param-p-bool1">
-<span id="id16"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-mat-delta-param-p-bool1" title="Permalink to this headline">¶</a></h2>
+<span id="id15"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-mat-delta-param-p-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">test_hecke:int</span> <span class="pre">i,int</span> <span class="pre">j,</span> <span class="pre">mat</span> <span class="pre">delta,Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 651.</div>
 <div class="line"><br /></div>
@@ -1304,7 +1299,7 @@
 </div>
 </div>
 <div class="section" id="test-hecke-int-i-int-j-param-p-ratvec-g-bool1">
-<span id="id17"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-param-p-ratvec-g-bool1" title="Permalink to this headline">¶</a></h2>
+<span id="id16"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-param-p-ratvec-g-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">test_hecke:int</span> <span class="pre">i,int</span> <span class="pre">j,Param</span> <span class="pre">p,ratvec</span> <span class="pre">g-&gt;bool</span></code> Defined in line number 653.</div>
 <div class="line"><br /></div>
@@ -1312,9 +1307,17 @@
 </div>
 </div>
 <div class="section" id="test-hecke-int-i-int-j-param-p-bool1">
-<span id="id18"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-param-p-bool1" title="Permalink to this headline">¶</a></h2>
+<span id="id17"></span><h2>test_hecke<a class="headerlink" href="#test-hecke-int-i-int-j-param-p-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">test_hecke:int</span> <span class="pre">i,int</span> <span class="pre">j,Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 655.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="kgb-pair">
+<span id="id18"></span><h2>KGB_pair<a class="headerlink" href="#kgb-pair" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">(KGBElt,</span> <span class="pre">KGBElt_gen)</span></code> Defined in line number 12.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

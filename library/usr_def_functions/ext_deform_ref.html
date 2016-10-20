@@ -173,10 +173,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/coordinates_characters.html">Coordinates and Characters</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html">Parameters Sets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#background">Background</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#parameter-sets-for-sl-2-r">Parameter sets for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameter_sets.html#characters-of-tori">Characters of Tori</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -712,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sort_ref.html">sort.at Function References</a></li>
@@ -745,6 +745,9 @@
 <li class="toctree-l3"><a class="reference internal" href="synthetic_aux.html">synthetic_aux.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_index.html">synthetic_aux.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="test_K.html">test_K.at</a><ul>
@@ -1015,10 +1018,18 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<div class="section" id="survives">
+<span id="survives-param-p-bool1"></span><h2>survives<a class="headerlink" href="#survives" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">survives:Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 6.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
 <div class="section" id="ext-kl-block">
 <span id="ext-kl-block-param-p-mat-delta-param-int-mat-vec-vec-vec-mat-1"></span><h2>ext_KL_block<a class="headerlink" href="#ext-kl-block" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">ext_KL_block:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;([Param],int,mat,[vec],vec,vec,mat)</span></code> Defined in line number 7.</div>
+<div class="line"><code class="docutils literal"><span class="pre">ext_KL_block:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;([Param],int,mat,[vec],vec,vec,mat)</span></code> Defined in line number 11.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1026,7 +1037,7 @@
 <div class="section" id="cook-kl-block">
 <span id="cook-kl-block-param-b-int-entry-elem-mat-kl-poly-polys-vec-stops-vec-surv-mat-contrib-param-int-poly-mat-vec-1"></span><h2>cook_KL_block<a class="headerlink" href="#cook-kl-block" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cook_KL_block:[Param]</span> <span class="pre">B,int</span> <span class="pre">entry_elem,mat</span> <span class="pre">KL,[poly]</span> <span class="pre">polys,vec</span> <span class="pre">stops,vec</span> <span class="pre">surv,</span> <span class="pre">mat</span> <span class="pre">contrib-&gt;([Param],int,poly_mat,vec)</span></code> Defined in line number 27.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cook_KL_block:[Param]</span> <span class="pre">B,int</span> <span class="pre">entry_elem,mat</span> <span class="pre">KL,[poly]</span> <span class="pre">polys,vec</span> <span class="pre">stops,vec</span> <span class="pre">surv,</span> <span class="pre">mat</span> <span class="pre">contrib-&gt;([Param],int,poly_mat,vec)</span></code> Defined in line number 29.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1034,7 +1045,7 @@
 <div class="section" id="null-wt">
 <span id="null-wt-int-r-ratvec1"></span><h2>null_wt<a class="headerlink" href="#null-wt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">null_wt:int</span> <span class="pre">r-&gt;ratvec</span></code> Defined in line number 56.</div>
+<div class="line"><code class="docutils literal"><span class="pre">null_wt:int</span> <span class="pre">r-&gt;ratvec</span></code> Defined in line number 54.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1042,7 +1053,7 @@
 <div class="section" id="has-nu0">
 <span id="has-nu0-param-p-bool2"></span><h2>has_nu0<a class="headerlink" href="#has-nu0" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">has_nu0:Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 57.</div>
+<div class="line"><code class="docutils literal"><span class="pre">has_nu0:Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 55.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1050,7 +1061,7 @@
 <div class="section" id="kl-p-polynomials">
 <span id="kl-p-polynomials-param-b-fixed-mat-delta-poly-1"></span><h2>KL_P_polynomials<a class="headerlink" href="#kl-p-polynomials" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">KL_P_polynomials:[Param]</span> <span class="pre">B_fixed,mat</span> <span class="pre">delta-&gt;[[poly]]</span></code> Defined in line number 63.</div>
+<div class="line"><code class="docutils literal"><span class="pre">KL_P_polynomials:[Param]</span> <span class="pre">B_fixed,mat</span> <span class="pre">delta-&gt;[[poly]]</span></code> Defined in line number 61.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1058,7 +1069,7 @@
 <div class="section" id="kl-p-signed-polynomials">
 <span id="kl-p-signed-polynomials-param-b-fixed-mat-delta-poly-1"></span><h2>KL_P_signed_polynomials<a class="headerlink" href="#kl-p-signed-polynomials" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">KL_P_signed_polynomials:[Param]</span> <span class="pre">B_fixed,mat</span> <span class="pre">delta-&gt;[[poly]]</span></code> Defined in line number 75.</div>
+<div class="line"><code class="docutils literal"><span class="pre">KL_P_signed_polynomials:[Param]</span> <span class="pre">B_fixed,mat</span> <span class="pre">delta-&gt;[[poly]]</span></code> Defined in line number 73.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1066,7 +1077,7 @@
 <div class="section" id="kl-q-polynomials">
 <span id="kl-q-polynomials-param-b-fixed-mat-delta-poly-1"></span><h2>KL_Q_polynomials<a class="headerlink" href="#kl-q-polynomials" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">KL_Q_polynomials:[Param]</span> <span class="pre">B_fixed,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;[[poly]]</span></code> Defined in line number 87.</div>
+<div class="line"><code class="docutils literal"><span class="pre">KL_Q_polynomials:[Param]</span> <span class="pre">B_fixed,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;[[poly]]</span></code> Defined in line number 85.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1074,7 +1085,7 @@
 <div class="section" id="deform">
 <span id="deform-param-p-mat-delta-parampol1"></span><h2>deform<a class="headerlink" href="#deform" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">deform:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ParamPol</span></code> Defined in line number 90.</div>
+<div class="line"><code class="docutils literal"><span class="pre">deform:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ParamPol</span></code> Defined in line number 88.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1082,7 +1093,7 @@
 <div class="section" id="rec-def">
 <span id="rec-def-param-p-mat-delta-param-parampol-1"></span><h2>rec_def<a class="headerlink" href="#rec-def" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">rec_def:Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;(Param,ParamPol)</span></code> Defined in line number 137.</div>
+<div class="line"><code class="docutils literal"><span class="pre">rec_def:Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;(Param,ParamPol)</span></code> Defined in line number 135.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1090,7 +1101,7 @@
 <div class="section" id="deformation-terms">
 <span id="deformation-terms-param-p-mat-delta-parampol1"></span><h2>deformation_terms<a class="headerlink" href="#deformation-terms" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">deformation_terms:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ParamPol</span></code> Defined in line number 175.</div>
+<div class="line"><code class="docutils literal"><span class="pre">deformation_terms:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ParamPol</span></code> Defined in line number 173.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1098,7 +1109,7 @@
 <div class="section" id="recursive-deform">
 <span id="recursive-deform-param-p-mat-delta-parampol1"></span><h2>recursive_deform<a class="headerlink" href="#recursive-deform" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">recursive_deform:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ParamPol</span></code> Defined in line number 204.</div>
+<div class="line"><code class="docutils literal"><span class="pre">recursive_deform:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ParamPol</span></code> Defined in line number 202.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1106,7 +1117,7 @@
 <div class="section" id="c-form-std">
 <span id="c-form-std-param-p-mat-delta-parampol1"></span><h2>c_form_std<a class="headerlink" href="#c-form-std" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">c_form_std:Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;ParamPol</span></code> Defined in line number 247.</div>
+<div class="line"><code class="docutils literal"><span class="pre">c_form_std:Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;ParamPol</span></code> Defined in line number 245.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

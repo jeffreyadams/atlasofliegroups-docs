@@ -6,6 +6,8 @@ modules.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -94,3 +96,17 @@ modules.at Function Index
      - ``int s,tag_Param (p,type)->int``
    * - :ref:`branch_(param_p,string_type),_int_bound->(parampol,string)1`
      - ``(Param p,string type), int bound->(ParamPol,string)``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`tag_Param`
+     - ``(Param,string)``
+   * - :ref:`tag_ParamPol`
+     - ``(ParamPol,string)``

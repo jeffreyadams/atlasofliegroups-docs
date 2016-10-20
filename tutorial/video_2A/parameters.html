@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Change of Coordinates &mdash; atlas 0.6 documentation</title>
+  <title>Parameters &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -32,8 +32,8 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
-        <link rel="next" title="Principal Series" href="../principal_series.html"/>
-        <link rel="prev" title="Coordinates and Characters" href="../coordinates_characters.html"/> 
+        <link rel="next" title="Parameters for Tori" href="parameters_for_tori.html"/>
+        <link rel="prev" title="Occurrence Matrices" href="occurrence_matrix.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -172,7 +172,18 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Change of Coordinates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="occurrence_matrix.html">Occurrence Matrices</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="parameters_for_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
@@ -429,6 +440,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_index.html">basic.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_ref.html">basic.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/bigMatrices.html">bigMatrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/bigMatrices_index.html">bigMatrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/bigMatrices_ref.html">bigMatrices.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/canonical_x_K.html">canonical_x_K.at</a><ul>
@@ -701,11 +717,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/representations_ref.html">representations.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts.html">rho_shifts.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts_index.html">rho_shifts.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/rho_shifts_ref.html">rho_shifts.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/sort.html">sort.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/sort_index.html">sort.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/sort_ref.html">sort.at Function References</a></li>
@@ -736,9 +747,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/synthetic_aux_ref.html">synthetic_aux.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test.html">test.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/test_index.html">test.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/test_ref.html">test.at Function References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test.html">test.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test_K.html">test_K.at</a><ul>
@@ -794,6 +803,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/W_orbit.html">W_orbit.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/W_orbit_index.html">W_orbit.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/W_orbit_ref.html">W_orbit.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/W_reps_type_BC.html">W_reps_type_BC.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/W_reps_type_BC_index.html">W_reps_type_BC.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/W_reps_type_BC_ref.html">W_reps_type_BC.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/Wdelta.html">Wdelta.at</a><ul>
@@ -971,11 +985,11 @@
       
           <li><a href="../coordinates_characters.html">Coordinates and Characters</a> &raquo;</li>
       
-    <li>Change of Coordinates</li>
+    <li>Parameters</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/tutorial/video_2A/coordinates.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/tutorial/video_2A/parameters.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -988,134 +1002,133 @@
 		  
 		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
 		      
-			<a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+			<a href="parameters_for_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
 		      
 		      
-			<a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+			<a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
 		      
 		    </div>
 		  
 <!--endtest-->
             
-  <div class="section" id="change-of-coordinates">
-<h1>Change of Coordinates<a class="headerlink" href="#change-of-coordinates" title="Permalink to this headline">¶</a></h1>
-<p>For this and following sessions you want to download the files <code class="docutils literal"><span class="pre">basic.at</span></code>, <code class="docutils literal"><span class="pre">groups.at</span></code> and <code class="docutils literal"><span class="pre">lietypes.at</span></code>.</p>
-<p>To change <code class="docutils literal"><span class="pre">atlas</span></code> coordinates for roots and other weights to your
-prefered coordinate system you can also download the file <code class="docutils literal"><span class="pre">coordinates.at</span></code> (included in the all.at file) and do the following:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=simply_connected(C2)
-Identifier rd: RootDatum
-atlas&gt; simple_roots(rd)
-Value:
-| 2, -2 |
-| -1, 2 |
+  <div class="section" id="parameters">
+<h1>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The basic object in <code class="docutils literal"><span class="pre">atlas</span></code> is a <code class="docutils literal"><span class="pre">parameter</span></code> and the <code class="docutils literal"><span class="pre">parameter</span>
+<span class="pre">space</span></code> parametrizes both, the irreducible representations of a
+reductive algebraic group as well as the standard modules. In other
+words, for each <code class="docutils literal"><span class="pre">p</span></code> in the <code class="docutils literal"><span class="pre">parameter</span> <span class="pre">space</span></code> there is an
+irreducible module $J(p)$ and a standard module $I(p)$ associated
+to <code class="docutils literal"><span class="pre">p</span></code>. Namely $I(p)$ is a representation induced from a limit of
+discrete series and things are set up, following Langlands
+classification, so that this standard module has a unique
+irrudicible quotient $J(p)$. This quotient is also parametrized by the same
+parameter <code class="docutils literal"><span class="pre">p</span></code>.</p>
+<p>So this parameter <code class="docutils literal"><span class="pre">p</span></code> is the basic object behind this classification theory.</p>
+<p>In Adams and DuCloux paper, &#8220;Algorithms for representations of real
+groups&#8221;, section 1,  the authors use Langlands classification to describe the
+algorithm that will associate, to each real group, the parameter space
+in question.</p>
+<p>More precisely, for each real group $G(R)$, the representations with
+fixed (regular) infinitesimal character <code class="docutils literal"><span class="pre">lambda</span></code> are parametrized
+by $(G(R))$-orbits) of pairs $(H(R), chi)$; where $H(R)$ is a Cartan
+subgroup of $G(R)$ and $chi$ is a character of $H(R)$ so that the
+differential of $chi$ equals <code class="docutils literal"><span class="pre">lambda</span></code> up to $G(C)$-conjugacy.</p>
+</div>
+<div class="section" id="parameters-for-sl-2-r">
+<h2>Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code><a class="headerlink" href="#parameters-for-sl-2-r" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s look at <code class="docutils literal"><span class="pre">G=SL(2,R)</span></code> and representations with infinitesimal
+character <code class="docutils literal"><span class="pre">rho</span></code> How many are there? We need to look at conjugacy
+classes of cartans and their characters.</p>
+<p>Let&#8217;s review a few things we know about <code class="docutils literal"><span class="pre">SL(2,R)</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SL(2,R)
+Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
 
-atlas&gt; set A=mat:[[1,-1],[0,2]]
-Identifier A: mat atlas&gt; A
+atlas&gt; root_datum (G)
+Value: simply connected root datum of Lie type &#39;A1&#39;
+atlas&gt; simple_roots(G)
+Value:
+| 2 |
+
+atlas&gt; rho(G)
+Value: [ 1 ]/1
+
+atlas&gt; nr_of_Cartan_classes (G)
+Value: 2
+
+atlas&gt; void: for H in Cartan_classes (G) do prints(H) od
+Cartan class #0, occurring for 2 real forms and for 1 dual real form
+Cartan class #1, occurring for 1 real form and for 2 dual real forms
+atlas&gt;
+
+atlas&gt; set T= Cartan_classes (G)[0]
+Identifier T: CartanClass
+atlas&gt; T
+Value: Cartan class #0, occurring for 2 real forms and for 1 dual real form
+atlas&gt; set A= Cartan_classes (G)[1]
+Identifier A: CartanClass (hiding previous one of type mat)
+atlas&gt; A
+Value: Cartan class #1, occurring for 1 real form and for 2 dual real forms
+atlas&gt;
+
+
+atlas&gt; occurrence_matrix (G)
 Value:
 | 1, 0 |
-| -1, 2 |
-
-atlas&gt; set C=change_basis_integral (rd,A)
-  Identifier C: mat (hiding previous one of type string (constant))
-atlas&gt; C
-Value:
 | 1, 1 |
-| 0, 1 |
 
-atlas&gt; set sr=simple_roots (rd)
-Identifier sr: mat
-atlas&gt; sr
-Value:
-| 2, -2 |
-|-1, 2 |
-
-atlas&gt; C*sr
-Value:
-| 1, 0 |
-| -1, 2 |
-
-atlas&gt; C*sr=A
-Value:true
-atlas&gt; rho(rd)
-Value:
-[ 1, 1 ]/1
-
-atlas&gt; C*rho(rd)
-Value:
-[ 2, 1]/1
-
+atlas&gt; void: for H in real_forms (G) do prints(H) od
+compact connected real group with Lie algebra &#39;su(2)&#39;
+connected split real group with Lie algebra &#39;sl(2,R)&#39;
 atlas&gt;
 </pre></div>
 </div>
-<p>So, <code class="docutils literal"><span class="pre">C</span></code> is the change of basis matrix and you can change, in the usual way, any vector like <code class="docutils literal"><span class="pre">rho</span></code>
-written in the original basis, into one expressed in terms of the new basis using the matrix <code class="docutils literal"><span class="pre">C</span></code>.</p>
-<p>Now, for this example this was not so necessary since we can use the real form expression of the group:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; simple_roots(Sp(4,R))
-Value:
-| 1, 0 |
-| -1, 2 |
+<dl class="docutils">
+<dt>So, the split form of type <code class="docutils literal"><span class="pre">A1</span></code> has two Cartans, the compact one,</dt>
+<dd>$T=S^1$ and the split one, $A=R^x$.</dd>
+</dl>
+<p>Now, the characters for $T$ are of the form $e^{iktheta}$ with $kin mathbb Z$``.
+The ones corresponding to <code class="docutils literal"><span class="pre">rho</span></code> are ${e{^itheta}, e^{-itheta}}$ and they
+are not conjugate under the Weyl group of $T$, since <code class="docutils literal"><span class="pre">-1</span></code> is not in
+it.</p>
+<p>On the other hand, for $A=R^x$, the characters whose differential is
+equal to <code class="docutils literal"><span class="pre">rho</span></code> are ${xrightarrow x, x^{-1},|x|, <a href="#id1"><span class="problematic" id="id2">|</span></a>x|^{-1} : xin A}$, where
+$|x|=sign(x)x$.</p>
+<p>In this case <code class="docutils literal"><span class="pre">-1</span></code> is in the Weyl group of $A$. So, up to conjugacy, we
+have that ${chi in widehat A}= {x, <a href="#id3"><span class="problematic" id="id4">|x|</span></a>}$.</p>
+<p>This says that we have exactly three representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code>
+with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>; two from each Cartan.</p>
+<p>Let us look for those representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code>. The command
+<code class="docutils literal"><span class="pre">parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <code class="docutils literal"><span class="pre">G</span></code>
+with that infinitesimal character <code class="docutils literal"><span class="pre">[1]</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set P=all_parameters_gamma (G,[1])
+Identifier P: [Param]
+atlas&gt; #P
+Value: 4
+atlas&gt;
+atlas&gt; void: for p in P do prints(p) od
+final parameter (x=0,lambda=[1]/1,nu=[0]/1)
+final parameter (x=1,lambda=[1]/1,nu=[0]/1)
+final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+final parameter (x=2,lambda=[2]/1,nu=[1]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>However, the change of basis matrix is needed for example for
-<code class="docutils literal"><span class="pre">SL(3,R)</span></code>. Moreover, in this case we do not get integral matrices. So
-we need a more general command:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span> atlas&gt; set G=SL(3,R)
- Identifier G: RealForm (hiding previous one of type RealForm)
- atlas&gt; sr:=simple_roots (G)
- Value:
- | 1, 1 |
- | -1, 2 |
-
- atlas&gt; A:=[[1,-1,0],[0,1,-1]]
- Value:
- | 1, 0 |
- | -1, 1 |
- | 0, -1 |
-
- atlas&gt; set C=change_basis (G,A)
- Identifier C: [ratvec] (hiding previous one of type mat)
- atlas&gt; C
- Value:
- [[ 2, -1, -1 ]/3,[ -1, 2, -1 ]/3]
-
-atlas&gt; C*sr
- Value:
- [[ 1, -1, 0 ]/1,[ 0, 1, -1 ]/1]
- atlas&gt; make_integral(C*sr)
- Value:
- | 1, 0 |
- | -1, 1 |
- | 0, -1 |
-
- atlas&gt; C*rho(G)
- Value:
- [ 1, 0, -1]/1
-
- atlas&gt;
-</pre></div>
+<p>This is the set of parameters for representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> with
+infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>. Each parameter is a triple. <code class="docutils literal"><span class="pre">(x,</span>
+<span class="pre">lambda,</span> <span class="pre">nu)</span></code>. We will explain each of these later. But for now we can
+say that the representation theory of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> tells us that there
+are four representations with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>. Two of
+them are the discrete series associated to the compact Cartan and
+corresponding to the two parameters above with <code class="docutils literal"><span class="pre">nu=0</span></code>; the other two
+are the trivial representation and an irreducible principal series,
+both, attached to the split Cartan and corresponding to the parameters
+with <code class="docutils literal"><span class="pre">nu=1</span></code></p>
+<p>We will say more about the representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> later. But,
+as it is illustrated here, the theory tells us we first need to
+understand the characters of Tori. We do this in the next section.</p>
 </div>
-<p>Note the use of the new command:<code class="docutils literal"><span class="pre">make_integral</span></code>. Since the end result is an integral matrix, <code class="docutils literal"><span class="pre">atlas</span></code> can re-write it as such.</p>
-<p>Now to translate things back to atlas&#8217; coordinates we use the inverse change of coordinates matrix:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set D=inverse_change_basis(SL(3,R),A)
-Identifier D:[ratvec]
-atlas&gt; D
-Value:
-[[ 1, 0 ]/1,[ 0, 1 ]/1,[ -1, -1 ]/1]
-
-atlas&gt; D*C
-Value:
-[[ 1, 0 ]/1,[ 0, 1 ]/1]
-
-atlas&gt; make_integral(D*C)
-Value:
-| 1, 0 |
-| 0, 1 |
-
-atlas&gt;
-</pre></div>
-</div>
-<p>For more information about this look at the coordinates.at file and watch the supplemental video on coordinates on the atlas website.</p>
 </div>
 
 
@@ -1125,10 +1138,10 @@ atlas&gt;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="parameters_for_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

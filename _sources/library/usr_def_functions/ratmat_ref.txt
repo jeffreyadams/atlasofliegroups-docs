@@ -420,3 +420,11 @@ show
 | 
 | 
 
+.. _ratmat:
+
+ratmat
+-----------------------------------------
+| ``(mat,string,int)`` Defined in line number 9.
+| 
+| 
+

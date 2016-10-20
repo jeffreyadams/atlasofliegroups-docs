@@ -332,3 +332,27 @@ print_wreps
 | 
 | 
 
+.. _Orbit:
+
+Orbit
+-----------------------------------------
+| ``[int]`` Defined in line number 23.
+| 
+| 
+
+.. _Symbol:
+
+Symbol
+-----------------------------------------
+| ``[[int]]`` Defined in line number 24.
+| 
+| 
+
+.. _Wrep:
+
+Wrep
+-----------------------------------------
+| ``([int],[int])`` Defined in line number 25.
+| 
+| 
+

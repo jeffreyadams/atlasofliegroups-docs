@@ -6,6 +6,8 @@ Weylgroup.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
@@ -138,3 +140,15 @@ Weylgroup.at Function Index
      - ``Param p->Param``
    * - :ref:`make_no_cplus_param_p->param1`
      - ``Param p->Param``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`W_word`
+     - ``(RootDatum,[int])``

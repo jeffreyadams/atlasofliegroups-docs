@@ -6,18 +6,26 @@ induction.at Function Index
 
 
 
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`my_embed_kgb_kgbelt_x_l,realform_g->kgbelt1`
-     - ``KGBElt x_L,RealForm G->KGBElt``
    * - :ref:`embed_kgb_kgbelt_x_l,realform_g->kgbelt1`
      - ``KGBElt x_L,RealForm G->KGBElt``
-   * - :ref:`inverse_embed_kgb_kgbelt_x_g,realform_m->kgbelt1`
-     - ``KGBElt x_G,RealForm M->KGBElt``
+   * - :ref:`inverse_embed_kgb_kgbelt_x_g,realform_l->kgbelt1`
+     - ``KGBElt x_G,RealForm L->KGBElt``
+   * - :ref:`makes_mat_theta,rootdatum_rd->mat1`
+     - ``mat theta,RootDatum rd->mat``
+   * - :ref:`makes_kgbelt_x->mat1`
+     - ``KGBElt x->mat``
+   * - :ref:`rho_s_(mat,rootdatum)pair->ratvec1`
+     - ``(mat,RootDatum)pair->ratvec``
+   * - :ref:`rho_s_kgbelt_x->ratvec1`
+     - ``KGBElt x->ratvec``
    * - :ref:`real_induce_standard_param_p_l,realform_g->param1`
      - ``Param p_L,RealForm G->Param``
    * - :ref:`real_induce_standard_parampol_p,realform_g->parampol1`

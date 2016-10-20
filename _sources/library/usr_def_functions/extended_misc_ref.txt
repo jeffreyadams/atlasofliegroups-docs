@@ -308,3 +308,19 @@ display_one_line
 | 
 | 
 
+.. _x_rep:
+
+x_rep
+-----------------------------------------
+| ``(ratvec,mat)`` Defined in line number 78.
+| 
+| 
+
+.. _extended_param:
+
+extended_param
+-----------------------------------------
+| ``( InnerClass ic, mat delta, ratvec gamma, vec lambda_rho, mat theta, ratvec g, vec l, mat omega, vec tau, vec t)`` Defined in line number 97.
+| 
+| 
+

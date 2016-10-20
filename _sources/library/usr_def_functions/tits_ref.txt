@@ -164,3 +164,11 @@ order
 | 
 | 
 
+.. _Tits_elt:
+
+Tits_elt
+-----------------------------------------
+| ``(RootDatum root_datum,ratvec torus_part,mat theta)`` Defined in line number 18.
+| 
+| 
+
