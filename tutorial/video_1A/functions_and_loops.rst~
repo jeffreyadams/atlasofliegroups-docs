@@ -137,7 +137,7 @@ Some of the simplest examples of loops are the ``for loops``. For example::
      atlas> v
      Value: [0,1,2]
 
-If we do not want ``atlass`` to print the result we can use either ``void:`` before the loop or ``;()`` at the end of the loop::
+If we do not want ``atlas `` to print the result we can use either ``void:`` before the loop or ``;()`` at the end of the loop::
 
    atlas> void:for i:3 do i od
    atlas>
@@ -181,7 +181,7 @@ We can define some functions using loops. For example, one basic loop lists the 
 
 This is an example of a ``for loop``. Which tells the software that for each v in A you return something. Here od tells ``atlas`` to end the loop once all the vectors of A were listed.
 
-Another example is::
+Another examples are::
 
 	atlas> v:=[1,2,3,4]
 	Value: [1,2,3,4]
