@@ -183,7 +183,7 @@ KGP_elt
 | Parabolic determined by (the stabilizer in W of) a weight lambda
 | 
 
-.. _KGPElt:
+.. _KGPElt1:
 
 KGPElt
 -----------------------------------------
@@ -191,7 +191,7 @@ KGPElt
 | 
 | 
 
-.. _Parabolic:
+.. _Parabolic1:
 
 Parabolic
 -----------------------------------------

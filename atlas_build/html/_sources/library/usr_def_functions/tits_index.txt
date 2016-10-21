@@ -64,5 +64,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`Tits_elt`
+   * - :ref:`Tits_elt1`
      - ``(RootDatum root_datum,ratvec torus_part,mat theta)``

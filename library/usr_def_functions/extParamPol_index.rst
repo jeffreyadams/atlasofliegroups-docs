@@ -46,5 +46,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`extParamPol`
+   * - :ref:`extParamPol1`
      - ``[(Split,extended_param)]``

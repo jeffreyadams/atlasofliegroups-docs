@@ -52,7 +52,7 @@ rec_fun compositions_le
 | 
 | 
 
-.. _Partition:
+.. _Partition1:
 
 Partition
 -----------------------------------------

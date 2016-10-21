@@ -36,5 +36,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`Partition`
+   * - :ref:`Partition1`
      - ``[int]``

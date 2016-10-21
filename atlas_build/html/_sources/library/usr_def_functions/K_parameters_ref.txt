@@ -76,7 +76,7 @@ length
 | 
 | 
 
-.. _K_Type:
+.. _K_Type1:
 
 K_Type
 -----------------------------------------
@@ -84,7 +84,7 @@ K_Type
 | 
 | 
 
-.. _K_Type_Pol:
+.. _K_Type_Pol1:
 
 K_Type_Pol
 -----------------------------------------
@@ -92,7 +92,7 @@ K_Type_Pol
 | 
 | 
 
-.. _KHighestWeight:
+.. _KHighestWeight1:
 
 KHighestWeight
 -----------------------------------------

@@ -100,5 +100,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`ComplexNilpotent`
+   * - :ref:`ComplexNilpotent1`
      - ``(RootDatum,vec)``

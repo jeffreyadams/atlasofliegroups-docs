@@ -180,7 +180,7 @@ is_fixed
 | 
 | 
 
-.. _KGBElt_gen:
+.. _KGBElt_gen1:
 
 KGBElt_gen
 -----------------------------------------

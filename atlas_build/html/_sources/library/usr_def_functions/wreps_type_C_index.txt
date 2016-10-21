@@ -106,9 +106,9 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`Orbit`
+   * - :ref:`Orbit2`
      - ``[int]``
-   * - :ref:`Symbol`
+   * - :ref:`Symbol2`
      - ``[[int]]``
-   * - :ref:`Wrep`
+   * - :ref:`Wrep2`
      - ``([int],[int])``

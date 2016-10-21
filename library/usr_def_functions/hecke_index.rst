@@ -98,5 +98,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`KGB_pair`
+   * - :ref:`KGB_pair1`
      - ``(KGBElt, KGBElt_gen)``

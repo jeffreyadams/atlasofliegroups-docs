@@ -92,5 +92,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`ComplexParabolic`
+   * - :ref:`ComplexParabolic1`
      - ``(RootDatum,[int])``

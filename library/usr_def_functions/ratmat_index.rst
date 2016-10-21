@@ -128,5 +128,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`ratmat`
+   * - :ref:`ratmat1`
      - ``(mat,string,int)``

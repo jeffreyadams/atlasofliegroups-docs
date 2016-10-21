@@ -68,5 +68,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`KGBElt_gen`
+   * - :ref:`KGBElt_gen1`
      - ``(InnerClass,mat,ratvec)``
