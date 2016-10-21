@@ -152,6 +152,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="">Functions and Loops</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#arguments-and-outputs">Arguments and Outputs</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#loops">Loops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#functions-defined-using-loops">Functions defined using loops</a></li>
 </ul>
 </li>
 </ul>
@@ -1131,6 +1132,48 @@ atlas&gt;
 </div>
 <div class="section" id="loops">
 <h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
+<p>Some of the simplest examples of loops are the <code class="docutils literal"><span class="pre">for</span> <span class="pre">loops</span></code>. For example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; for i:3 do i od
+Value: [0,1,2]
+atlas&gt;
+
+atlas&gt; set v=for i:3 do i od
+Variable v: [int]
+atlas&gt; v
+Value: [0,1,2]
+</pre></div>
+</div>
+<p>If we do not want <code class="docutils literal"><span class="pre">atlas</span> <span class="pre">``</span> <span class="pre">to</span> <span class="pre">print</span> <span class="pre">the</span> <span class="pre">result</span> <span class="pre">we</span> <span class="pre">can</span> <span class="pre">use</span> <span class="pre">either</span> <span class="pre">``void:</span></code> before the loop or <code class="docutils literal"><span class="pre">;()</span></code> at the end of the loop:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void:for i:3 do i od
+atlas&gt;
+
+atlas&gt; for i:3 do i od;()
+atlas&gt;
+</pre></div>
+</div>
+<p>A loop can also be used to ask atlas to print from a list. For example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; for i:3 do prints(i) od
+0
+1
+2
+Value: [(),(),()]
+atlas&gt;
+</pre></div>
+</div>
+<p>You can ignore the last line or use the commands above to prevent it from appearing:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void:for i:3 do prints(i) od
+0
+1
+2
+atlas&gt; for i:3 do prints(i) od;()
+0
+1
+2
+</pre></div>
+</div>
+</div>
+<div class="section" id="functions-defined-using-loops">
+<h2>Functions defined using loops<a class="headerlink" href="#functions-defined-using-loops" title="Permalink to this headline">¶</a></h2>
 <p>We can define some functions using loops. For example, one basic loop lists the column vectors of a matrix as follows:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A:=[[1,2],[3,4]]
 Value:
@@ -1143,7 +1186,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>This is an example of a <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code>. Which tells the software that for each v in A you return something. Here od tells <code class="docutils literal"><span class="pre">atlas</span></code> to end the loop once all the vectors of A were listed.</p>
-<p>Another example is:</p>
+<p>Another examples are:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; v:=[1,2,3,4]
 Value: [1,2,3,4]
 atlas&gt; for a in v do a^2 od
@@ -1171,7 +1214,7 @@ Value: [ 1, 2, 3, 4 ]
 atlas&gt;
 </pre></div>
 </div>
-<p>Note that the command above that does this is a loop. The first part
+<p>Again the command above that does this is a loop. The first part
 says that the function takes a matrix and outputs a vector.  The
 second part defines an empty vector <code class="docutils literal"><span class="pre">rv</span></code>. The third part is the loop that
 says that for each vector v in the matrix A, append it to what you

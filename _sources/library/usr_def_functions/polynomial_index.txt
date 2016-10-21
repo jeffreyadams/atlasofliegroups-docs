@@ -90,7 +90,7 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`poly`
+   * - :ref:`poly1`
      - ``vec``
-   * - :ref:`poly_mat`
+   * - :ref:`poly_mat1`
      - ``[[poly]]``

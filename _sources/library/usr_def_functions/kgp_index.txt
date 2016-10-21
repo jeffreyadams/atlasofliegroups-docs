@@ -64,7 +64,7 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`KGPElt`
+   * - :ref:`KGPElt1`
      - ``([int], KGBElt)``
-   * - :ref:`Parabolic`
+   * - :ref:`Parabolic1`
      - ``([int], KGBElt)``

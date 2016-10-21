@@ -92,7 +92,7 @@ null_ext_module
 | 
 | 
 
-.. _extParamPol:
+.. _extParamPol1:
 
 extParamPol
 -----------------------------------------

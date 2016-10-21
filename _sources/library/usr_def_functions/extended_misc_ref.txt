@@ -308,7 +308,7 @@ display_one_line
 | 
 | 
 
-.. _x_rep:
+.. _x_rep1:
 
 x_rep
 -----------------------------------------
@@ -316,7 +316,7 @@ x_rep
 | 
 | 
 
-.. _extended_param:
+.. _extended_param1:
 
 extended_param
 -----------------------------------------

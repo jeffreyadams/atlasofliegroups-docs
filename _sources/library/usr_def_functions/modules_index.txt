@@ -106,7 +106,7 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`tag_Param`
+   * - :ref:`tag_Param1`
      - ``(Param,string)``
-   * - :ref:`tag_ParamPol`
+   * - :ref:`tag_ParamPol1`
      - ``(ParamPol,string)``

@@ -42,9 +42,9 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`K_Type`
+   * - :ref:`K_Type1`
      - ``(KGBElt,ratvec)``
-   * - :ref:`K_Type_Pol`
+   * - :ref:`K_Type_Pol1`
      - ``ParamPol``
-   * - :ref:`KHighestWeight`
+   * - :ref:`KHighestWeight1`
      - ``(KGBElt,vec)``

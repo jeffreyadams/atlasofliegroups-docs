@@ -100,7 +100,7 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`x_rep`
+   * - :ref:`x_rep1`
      - ``(ratvec,mat)``
-   * - :ref:`extended_param`
+   * - :ref:`extended_param1`
      - ``( InnerClass ic, mat delta, ratvec gamma, vec lambda_rho, mat theta, ratvec g, vec l, mat omega, vec tau, vec t)``

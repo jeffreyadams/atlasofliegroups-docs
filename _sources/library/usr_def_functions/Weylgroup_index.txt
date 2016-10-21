@@ -150,5 +150,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`W_word`
+   * - :ref:`W_word1`
      - ``(RootDatum,[int])``
