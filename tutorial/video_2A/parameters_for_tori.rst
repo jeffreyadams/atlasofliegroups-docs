@@ -32,7 +32,7 @@ We are interested in the first oprtion. So, we can determine a particular torus 
 	atlas>
 
 That is, the command ``torus(a,b,c)`` specifies a torus with ``a``
-$S^1$ factors, ``b`` $C^x$ factors and ``c`` $R^x$ factors.
+$S^1$ factors, ``b`` ${\mathbb C}^x$ factors and ``c`` ${\mathbb R}^x$ factors.
 
 The characters of $S^1$
 ------------------------
@@ -68,8 +68,8 @@ and in the case of a compact torus it is the identity.
 
 Now to understand the rest of the parameters, suppose that $H$ is a
 complex torus with Cartan involution $\theta$, and defined over
-$\mathbb R$. Let $H(R)$ be the corresponding real group. Denote by
-$X^* (H)$ the characters of $H(R)$. Then these characters are
+$\mathbb R$. Let $H(\mathbb R )$ be the corresponding real group. Denote by
+$X^* (H)$ the characters of $H(\mathbb R )$. Then these characters are
 parametrized by triples $(\theta, \gamma, \lambda)$. Here $gamma$ is
 the differential of the character and ``lambda`` is the restriction
 of the character to $H^{\theta}$.
@@ -81,14 +81,14 @@ part which is encoded in the estriction to $H^{\theta}$.
 The basic fact is that the characters of $H^{\theta}$ are parametrized by
 $X^*/(1-theta)X^*$.
 
-So the characters of $H(R)$ are parametrized by triples $(\theta, \lambda, \nu)$
+So the characters of $H(\mathbb R )$ are parametrized by triples $(\theta, \lambda, \nu)$
 where ``lambda`` is in $X^*/(1-theta)X^*``and ``nu`` is in $[X^*\otimes \mathbb Q]^{-\theta}$
  
 So``\lambda`` is a character on $H^\theta$ and ``nu`` gives the
 character on the Lie algebra of the split Cartan $A=H^{-\theta}$.
 
-In the case of the circle, ``lambda`` is in $\mathbb Z/(1-\theta)\mathbb
-Z=\mathbb Z$, since $\theta=1$; and ``nu`` is in $Q^{-1}=0$ 
+In the case of the circle, ``lambda`` is in $\mathbb Z/(1-\theta){\mathbb
+Z}=\mathbb Z$, since $\theta=1$; and ``nu`` is in $Q^{-1}=0$ 
 
 So the characters for the compact torus are given by the parameters
 ``(x=0,lambda, nu=0)`` and there is one for each lambda in $\mathbb Z$
@@ -112,13 +112,13 @@ Note that ``nu`` is fixed by $-\theta$. So, given any ``nu`` it will be replaced
     Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
     atlas> 
 
-So they are equivalent modulo the above equivalence relation and parametrize the same character. For example, we can ask ``atlas`` ::
+So the above parameters are equivalent modulo the above equivalence relation and parametrize the same character. For example, we can ask ``atlas`` ::
 
    atlas> parameter (x,[3],[3])= parameter (x,[3],[0])
    Value: true
    atlas> 
 
-The characters of $R^x$
+The characters of ${\mathbb R}^x$
 ------------------------
 
 Now lets take the most split one-dimensional torus::
@@ -134,10 +134,10 @@ Now lets take the most split one-dimensional torus::
     | -1 |
 
 So now our parameters ``(x, lambda, nu)`` satisfy 
-``lambda`` is in $\mathbb Z/(1-\theta)\mathbb Z=\mathbb Z/2\mathbb Z$, and 
+``lambda`` is in ${\mathbb Z}/(1-\theta){\mathbb Z}=\mathbb Z/2{\mathbb Z}$, and 
 ``nu`` is fixed by $-theta=1$. So, ``nu`` is in $\mathbb Q$
 
-Note that the characters of $R^x$ are parametrized by the complex
+Note that the characters of ${\mathbb R}^x$ are parametrized by the complex
 numbers ``nu``. However, the software only works with rational
 parameters. So we have to do some extra work in general, depending on
 the information that we want. The idea is that some problems can be
@@ -156,7 +156,7 @@ And for the representation $\nu :x \rightarrow |x|^{4/3}$ ::
     atlas>
 
 Now suppose we want a representation with non trivial character on the
-component group $\mathbb Z/2\mathbb Z$. For example, the sign
+component group ${\mathbb Z}/2{\mathbb Z}$. For example, the sign
 representation is given by::
 
     atlas> q:=parameter (x,[1],[0])
@@ -165,14 +165,11 @@ representation is given by::
 
     atlas> p:=trivial(H)
     Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
-    atlas> q
-    Value: final parameter (x=0,lambda=[1]/1,nu=[0]/1)
-    atlas> p
-    Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
-    atlas>
+    atlas> 
+
 
 Which differs from the trivial by the non trivial character on
-$\mathbb Z/2\mathbb Z$. And note what happens when we change that
+${\mathbb Z}/2{\mathbb Z}$. And note what happens when we change that
 character to ``2``::
 
       atlas> q:=parameter (x,[2],[0])
@@ -181,7 +178,7 @@ character to ``2``::
       Value: true
       atlas>
 
-Which is correct since $2=0(mod2)$. So, sometimes the software will replace the parameters you are using, but they will be equivalent.
+Which is correct since $2=0(mod2)$. So, sometimes the software will replace the parameters you are using for something  equivalent.
 
 Characters of $C^x$
 -------------------

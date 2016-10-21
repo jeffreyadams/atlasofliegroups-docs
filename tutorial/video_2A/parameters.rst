@@ -83,10 +83,11 @@ Let's review a few things we know about ``SL(2,R)``::
       connected split real group with Lie algebra 'sl(2,R)'
       atlas>
 
-So, the split form of type ``A1`` has two Cartans, the compact one,
- $T=S^1$ and the split one, $A={\mathbb R}^x$.
 
-Now, the characters for $T$ are of the form $e^{ik\theta}$ with $k\in \mathbb Z$``.
+So, the split form of type ``A1`` has two Cartans, the compact one,
+$T=S^1$ and the split one, $A={\mathbb R}^x$.
+
+Now, the characters for $T$ are of the form $e^{ik\theta}$ with $k \in \mathbb Z$``.
 The ones corresponding to ``rho`` are ${e{^i\theta}, e^{-i\theta}}$ and they
 are not conjugate under the Weyl group of $T$, since ``-1`` is not in
 it.
