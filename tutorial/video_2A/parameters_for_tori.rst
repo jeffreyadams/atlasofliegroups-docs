@@ -67,12 +67,12 @@ Cartan involution whose information is encoded in this element ``x``
 and in the case of a compact torus it is the identity.
 
 Now to understand the rest of the parameters, suppose that $H$ is a
-complex torus with Cartan involution $\theta$, and defined over $\mathbb R$. Let
-$H(R)$ be the corresponding real group. Denote by $X^* (H)$ the
-characters of $H(R)$. Then these characters are parametrized by triples
-$(\theta, \gamma, \lambda)$. Here $gamma$ is the differential of the
-character and ``\lambda`` is the restriction of the character to
-$H^{\theta}$.
+complex torus with Cartan involution $\theta$, and defined over
+$\mathbb R$. Let $H(R)$ be the corresponding real group. Denote by
+$X^* (H)$ the characters of $H(R)$. Then these characters are
+parametrized by triples $(\theta, \gamma, \lambda)$. Here $gamma$ is
+the differential of the character and ``lambda`` is the restriction
+of the character to $H^{\theta}$.
 
 The real points are not necessarily connected. So we need to specify
 not only the differential but also information of the disconnected
@@ -90,8 +90,9 @@ character on the Lie algebra of the split Cartan $A=H^{-\theta}$.
 In the case of the circle, ``lambda`` is in $\mathbb Z/(1-\theta)\mathbb
 Z=\mathbb Z$, since $\theta=1$; and ``nu`` is in $Q^{-1}=0$ 
 
-So the characters for the compact torus ar given by the parameters ``(x=0,lambda, nu=0)`` and there is
-one for each lambda in $\mathbb Z$ correspondintg to the character $e^{i\lambda} t$.
+So the characters for the compact torus are given by the parameters
+``(x=0,lambda, nu=0)`` and there is one for each lambda in $\mathbb Z$
+correspondintg to the character $e^{i\lambda} t$.
 
 In the case of the trivial character the parameter is::
 
