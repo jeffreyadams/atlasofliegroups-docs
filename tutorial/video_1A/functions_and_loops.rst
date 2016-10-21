@@ -126,6 +126,48 @@ So, it adds a 1 to the diagonal of a matrix.
 Loops
 -----
 
+Some of the simplest examples of loops are the ``for loops``. For example::
+
+     atlas> for i:3 do i od
+     Value: [0,1,2]
+     atlas> 
+
+     atlas> set v=for i:3 do i od
+     Variable v: [int]
+     atlas> v
+     Value: [0,1,2]
+
+If we do not want ``atlas `` to print the result we can use either ``void:`` before the loop or ``;()`` at the end of the loop::
+
+   atlas> void:for i:3 do i od
+   atlas>
+
+   atlas> for i:3 do i od;()
+   atlas>   
+
+A loop can also be used to ask atlas to print from a list. For example::
+
+   atlas> for i:3 do prints(i) od
+   0
+   1
+   2
+   Value: [(),(),()]
+   atlas>
+
+You can ignore the last line or use the commands above to prevent it from appearing::
+ 
+   atlas> void:for i:3 do prints(i) od
+   0
+   1
+   2
+   atlas> for i:3 do prints(i) od;()
+   0
+   1
+   2
+
+Functions defined using loops
+------------------------------
+
 We can define some functions using loops. For example, one basic loop lists the column vectors of a matrix as follows::
 
    atlas> A:=[[1,2],[3,4]]
@@ -139,7 +181,7 @@ We can define some functions using loops. For example, one basic loop lists the 
 
 This is an example of a ``for loop``. Which tells the software that for each v in A you return something. Here od tells ``atlas`` to end the loop once all the vectors of A were listed.
 
-Another example is::
+Another examples are::
 
 	atlas> v:=[1,2,3,4]
 	Value: [1,2,3,4]
@@ -168,7 +210,7 @@ writes them concatenated into a single row::
    Value: [ 1, 2, 3, 4 ]
    atlas> 
 
-Note that the command above that does this is a loop. The first part
+Again the command above that does this is a loop. The first part
 says that the function takes a matrix and outputs a vector.  The
 second part defines an empty vector ``rv``. The third part is the loop that
 says that for each vector v in the matrix A, append it to what you
