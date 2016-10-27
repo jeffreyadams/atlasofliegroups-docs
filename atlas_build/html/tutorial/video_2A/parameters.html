@@ -32,7 +32,7 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
-        <link rel="next" title="Parameters for Tori" href="parameters_for_tori.html"/>
+        <link rel="next" title="Parameters for Tori" href="parameters_real_tori.html"/>
         <link rel="prev" title="Occurrence Matrices" href="occurrence_matrix.html"/> 
 
   
@@ -180,10 +180,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="parameters_for_tori.html">Parameters for Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l3"><a class="reference internal" href="parameters_real_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -640,6 +640,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/kl_ref.html">kl.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/KL_polynomial_matrices.html">KL_polynomial_matrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/KL_polynomial_matrices_index.html">KL_polynomial_matrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/KL_polynomial_matrices_ref.html">KL_polynomial_matrices.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/lattice.html">lattice.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/lattice_index.html">lattice.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/lattice_ref.html">lattice.at Function References</a></li>
@@ -1002,7 +1007,7 @@
 		  
 		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
 		      
-			<a href="parameters_for_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+			<a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
 		      
 		      
 			<a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -1030,11 +1035,14 @@ parameter <code class="docutils literal"><span class="pre">p</span></code>.</p>
 groups&#8221;, section 1,  the authors use Langlands classification to describe the
 algorithm that will associate, to each real group, the parameter space
 in question.</p>
-<p>More precisely, for each real group $G(R)$, the representations with
-fixed (regular) infinitesimal character <code class="docutils literal"><span class="pre">lambda</span></code> are parametrized
-by $(G(R))$-orbits) of pairs $(H(R), chi)$; where $H(R)$ is a Cartan
-subgroup of $G(R)$ and $chi$ is a character of $H(R)$ so that the
-differential of $chi$ equals <code class="docutils literal"><span class="pre">lambda</span></code> up to $G(C)$-conjugacy.</p>
+<p>More precisely, assume for the moment that <code class="docutils literal"><span class="pre">rho</span></code> exponentiates to a
+character of a torus in $G(mathbb C )$. Then, the representations of
+$G(mathbb R)$, with a fixed (regular) infinitesimal
+character``lambda`` are parametrized by $(G(mathbb R))$-orbits) of
+pairs $(H(mathbb R ), chi)$; where $H(mathbb R )$ is a Cartan
+subgroup of $G(mathbb R )$ and $chi$ is a character of $H(mathbb R
+)$ so that the differential of $chi$ equals <code class="docutils literal"><span class="pre">lambda</span></code> up to
+$G(mathbb C )$-conjugacy.</p>
 </div>
 <div class="section" id="parameters-for-sl-2-r">
 <h2>Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code><a class="headerlink" href="#parameters-for-sl-2-r" title="Permalink to this headline">¶</a></h2>
@@ -1084,20 +1092,18 @@ connected split real group with Lie algebra &#39;sl(2,R)&#39;
 atlas&gt;
 </pre></div>
 </div>
-<dl class="docutils">
-<dt>So, the split form of type <code class="docutils literal"><span class="pre">A1</span></code> has two Cartans, the compact one,</dt>
-<dd>$T=S^1$ and the split one, $A=R^x$.</dd>
-</dl>
-<p>Now, the characters for $T$ are of the form $e^{iktheta}$ with $kin mathbb Z$``.
+<p>So, the split form of type <code class="docutils literal"><span class="pre">A1</span></code> has two Cartans, the compact one,
+$T=S^1$ and the split one, $A={mathbb R}^x$.</p>
+<p>Now, the characters for $T$ are of the form $e^{iktheta}$ with $k in mathbb Z$``.
 The ones corresponding to <code class="docutils literal"><span class="pre">rho</span></code> are ${e{^itheta}, e^{-itheta}}$ and they
 are not conjugate under the Weyl group of $T$, since <code class="docutils literal"><span class="pre">-1</span></code> is not in
 it.</p>
-<p>On the other hand, for $A=R^x$, the characters whose differential is
+<p>On the other hand, for $A={mathbb R}^x$, the characters whose differential is
 equal to <code class="docutils literal"><span class="pre">rho</span></code> are ${xrightarrow x, x^{-1},|x|, <a href="#id1"><span class="problematic" id="id2">|</span></a>x|^{-1} : xin A}$, where
 $|x|=sign(x)x$.</p>
 <p>In this case <code class="docutils literal"><span class="pre">-1</span></code> is in the Weyl group of $A$. So, up to conjugacy, we
 have that ${chi in widehat A}= {x, <a href="#id3"><span class="problematic" id="id4">|x|</span></a>}$.</p>
-<p>This says that we have exactly three representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code>
+<p>This says that we have exactly four representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code>
 with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>; two from each Cartan.</p>
 <p>Let us look for those representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code>. The command
 <code class="docutils literal"><span class="pre">parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <code class="docutils literal"><span class="pre">G</span></code>
@@ -1122,9 +1128,9 @@ say that the representation theory of <code class="docutils literal"><span class
 are four representations with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>. Two of
 them are the discrete series associated to the compact Cartan and
 corresponding to the two parameters above with <code class="docutils literal"><span class="pre">nu=0</span></code>; the other two
-are the trivial representation and an irreducible principal series,
+are the trivial representation and an irreducible principal series;
 both, attached to the split Cartan and corresponding to the parameters
-with <code class="docutils literal"><span class="pre">nu=1</span></code></p>
+with <code class="docutils literal"><span class="pre">nu=1</span></code>.</p>
 <p>We will say more about the representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> later. But,
 as it is illustrated here, the theory tells us we first need to
 understand the characters of Tori. We do this in the next section.</p>
@@ -1138,7 +1144,7 @@ understand the characters of Tori. We do this in the next section.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="parameters_for_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

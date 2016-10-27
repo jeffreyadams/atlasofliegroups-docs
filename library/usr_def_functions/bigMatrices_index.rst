@@ -24,6 +24,8 @@ Functions
      - ``Param p,mat delta->([Param],[int])``
    * - :ref:`big_kl_p_polynomials_[param]_b,mat_delta->[[vec]]1`
      - ``[Param] B,mat delta->[[vec]]``
+   * - :ref:`big_kl_p_polynomials_[param]_b,mat_delta->[[vec]]2`
+     - ``[Param] B,mat delta->[[vec]]``
    * - :ref:`big_kl_p_signed_polynomials_[param]_b,mat_delta->[[vec]]1`
      - ``[Param] B,mat delta->[[vec]]``
    * - :ref:`big_kl_q_polynomials_[param]_b,mat_delta->[[vec]]1`

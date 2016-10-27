@@ -28,7 +28,7 @@ makeS
 -------------------------------------------------
 | ``makeS:mat theta,RootDatum rd->mat`` Defined in line number 55.
 | 
-| Given an involution theta and a root datum, return the set S of complex roots    containing the first positive representative of each quadruple    (\pm alpha,\pm theta(alpha)).
+| Given an involution theta and a root datum, return the set S of complex roots    containing the first positive representative of each quadruple    ( :math:`\pm`  alpha, :math:`\pm`  theta(alpha)).
 | 
 
 .. _makes_kgbelt_x->mat1:
@@ -82,7 +82,7 @@ real_induce_irreducible_as_sum_of_standards
 -------------------------------------------------
 | ``real_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 87.
 | 
-| Write the (real) induced of an irreducible J(p_L) of L as a formal sum of    standards for G; use the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)
+| Write the (real) induced of an irreducible J(p_L) of L as a formal sum of    standards for G; uses the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)
 | 
 
 .. _real_induce_irreducible_param_p_l,_realform_g->parampol1:
@@ -91,7 +91,7 @@ real_induce_irreducible
 -------------------------------------------------
 | ``real_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 96.
 | 
-| Write the (real) induced Ind(J(p_L)) of an irreducible of L as a sum of    irreducibles for G; use composition series to convert    output of the previous function into sum of irreducibles.
+| Write the (real) induced Ind(J(p_L)) of an irreducible of L as a sum of    irreducibles for G; uses composition series to convert    output of the previous function into sum of irreducibles.
 | 
 
 .. _cuspidal_data_param_p->(parabolic,param)1:
@@ -154,7 +154,7 @@ theta_induce_irreducible_as_sum_of_standards
 -------------------------------------------------
 | ``theta_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 211.
 | 
-| Write the (theta-stable) induced of an irreducible J(p_L) of L as a formal    sum of standards for G; use the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)
+| Write the (theta-stable) induced of an irreducible J(p_L) of L as a formal    sum of standards for G; uses the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)
 | 
 
 .. _theta_induce_irreducible_param_p_l,_realform_g->parampol1:
@@ -163,7 +163,7 @@ theta_induce_irreducible
 -------------------------------------------------
 | ``theta_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 226.
 | 
-| Write the (theta-stable) induced Ind(J(p_L)) of an irreducible of L    as a sum of irreducibles for G; use composition series to convert    output of the previous function into sum of irreducibles.
+| Write the (theta-stable) induced Ind(J(p_L)) of an irreducible of L    as a sum of irreducibles for G; uses composition series to convert    output of the previous function into sum of irreducibles.
 | 
 
 .. _induce_standard_param_p_l,parabolic_p,realform_g->parampol1:

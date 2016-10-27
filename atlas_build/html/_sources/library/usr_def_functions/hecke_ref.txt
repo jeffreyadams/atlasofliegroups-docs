@@ -20,11 +20,11 @@ hecke.at Function References
 | 
 | 
 
-.. _y_gen_extended_param(ic,,gamma,lambda,,,,omega,,)->kgbelt_gen1:
+.. _y_gen_extparam(ic,,gamma,lambda,,,,omega,,)->kgbelt_gen1:
 
 y_gen
 -------------------------------------------------
-| ``y_gen:extended_param(ic,,gamma,lambda,,,,omega,,)->KGBElt_gen`` Defined in line number 26.
+| ``y_gen:ExtParam(ic,,gamma,lambda,,,,omega,,)->KGBElt_gen`` Defined in line number 26.
 | 
 | 
 
@@ -60,19 +60,19 @@ add_pair
 | 
 | 
 
-.. _index_extended_param_ep,_[kgb_pair]_xy_pairs->int1:
+.. _index_extparam_ep,_[kgb_pair]_xy_pairs->int1:
 
 index
 -------------------------------------------------
-| ``index:extended_param Ep, [KGB_pair] xy_pairs->int`` Defined in line number 54.
+| ``index:ExtParam Ep, [KGB_pair] xy_pairs->int`` Defined in line number 54.
 | 
 | 
 
-.. _neighbors_int_j,_extended_param_ep->[extended_param]1:
+.. _neighbors_int_j,_extparam_ep->[extparam]1:
 
 neighbors
 -------------------------------------------------
-| ``neighbors:int j, extended_param Ep->[extended_param]`` Defined in line number 68.
+| ``neighbors:int j, ExtParam Ep->[ExtParam]`` Defined in line number 68.
 | 
 | 
 
@@ -92,11 +92,11 @@ x_sort
 | 
 | 
 
-.. _xy_neighbors_int_j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[kgb_pair]1:
+.. _xy_neighbors_int_j,extparam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->[kgb_pair]1:
 
 xy_neighbors
 -------------------------------------------------
-| ``xy_neighbors:int j,extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[KGB_pair]`` Defined in line number 119.
+| ``xy_neighbors:int j,ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[KGB_pair]`` Defined in line number 119.
 | 
 | 
 
@@ -124,11 +124,11 @@ generate_subspace
 | 
 | 
 
-.. _generate_subspace_int_i,_int_j,_extended_param_e->[kgb_pair]1:
+.. _generate_subspace_int_i,_int_j,_extparam_e->[kgb_pair]1:
 
 generate_subspace
 -------------------------------------------------
-| ``generate_subspace:int i, int j, extended_param E->[KGB_pair]`` Defined in line number 171.
+| ``generate_subspace:int i, int j, ExtParam E->[KGB_pair]`` Defined in line number 171.
 | 
 | 
 
@@ -140,11 +140,11 @@ generate_subspace
 | 
 | 
 
-.. _generate_subspace_int_i_,extended_param_e->[kgb_pair]1:
+.. _generate_subspace_int_i_,extparam_e->[kgb_pair]1:
 
 generate_subspace
 -------------------------------------------------
-| ``generate_subspace:int i ,extended_param E->[KGB_pair]`` Defined in line number 179.
+| ``generate_subspace:int i ,ExtParam E->[KGB_pair]`` Defined in line number 179.
 | 
 | 
 
@@ -156,59 +156,67 @@ decompose
 | 
 | 
 
-.. _sign_2i12_int_j,_extended_param_e,_extended_param_f->int2:
+.. _sign_2i12_int_j,_extparam_e,_extparam_f->int2:
 
 sign_2i12
 -------------------------------------------------
-| ``sign_2i12:int j, extended_param E, extended_param F->int`` Defined in line number 241.
+| ``sign_2i12:int j, ExtParam E, ExtParam F->int`` Defined in line number 241.
 | 
 | 
 
-.. _sign_2i12_old_int_j,extended_param_e,extended_param_f->int2:
+.. _sign_2i12_old_int_j,extparam_e,extparam_f->int2:
 
 sign_2i12_old
 -------------------------------------------------
-| ``sign_2i12_old:int j,extended_param E,extended_param F->int`` Defined in line number 250.
+| ``sign_2i12_old:int j,ExtParam E,ExtParam F->int`` Defined in line number 250.
 | 
 | 
 
-.. _sign_2r21_int_j,_extended_param_e,_extended_param_f->int2:
+.. _sign_2r21_int_j,_extparam_e,_extparam_f->int2:
 
 sign_2r21
 -------------------------------------------------
-| ``sign_2r21:int j, extended_param E, extended_param F->int`` Defined in line number 317.
+| ``sign_2r21:int j, ExtParam E, ExtParam F->int`` Defined in line number 317.
 | 
 | 
 
-.. _sign_2ci_int_j,extended_param_e->int2:
+.. _sign_2ci_int_j,extparam_e->int2:
 
 sign_2Ci
 -------------------------------------------------
-| ``sign_2Ci:int j,extended_param E->int`` Defined in line number 321.
+| ``sign_2Ci:int j,ExtParam E->int`` Defined in line number 321.
 | 
 | 
 
-.. _sign_2cr_int_j,extended_param_e->int2:
+.. _sign_2cr_int_j,extparam_e->int2:
 
 sign_2Cr
 -------------------------------------------------
-| ``sign_2Cr:int j,extended_param E->int`` Defined in line number 329.
+| ``sign_2Cr:int j,ExtParam E->int`` Defined in line number 329.
 | 
 | 
 
-.. _signs_1i1_int_j,_extended_param_e,_extended_param_e1,_extended_param_f->(int,int)2:
+.. _signs_1i1_int_j,_extparam_e,_extparam_e1,_extparam_f->(int,int)2:
 
 signs_1i1
 -------------------------------------------------
-| ``signs_1i1:int j, extended_param E, extended_param E1, extended_param F->(int,int)`` Defined in line number 337.
+| ``signs_1i1:int j, ExtParam E, ExtParam E1, ExtParam F->(int,int)`` Defined in line number 337.
 | 
 | 
 
-.. _hecke_row_int_j,_extended_param(,delta,gamma,,,g,,,,):e,_[kgb_pair]_basis->[poly]1:
+.. _hecke_row_int_j,_mat_delta,_ratvec_gamma,_ratvec_g,_kgb_pair_pair,_[kgb_pair]_basis->[poly]1:
 
 hecke_row
 -------------------------------------------------
-| ``hecke_row:int j, extended_param(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]`` Defined in line number 550.
+| ``hecke_row:int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]`` Defined in line number 380.
+| 
+| 
+
+.. _hecke_row_int_j,_extparam(,delta,gamma,,,g,,,,):e,_[kgb_pair]_basis->[poly]1:
+
+hecke_row
+-------------------------------------------------
+| ``hecke_row:int j, ExtParam(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]`` Defined in line number 550.
 | 
 | 
 

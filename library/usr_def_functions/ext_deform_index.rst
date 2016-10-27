@@ -14,8 +14,6 @@ Functions
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`survives_param_p->bool1`
-     - ``Param p->bool``
    * - :ref:`ext_kl_block_param_p,_mat_delta->([param],int,mat,[vec],vec,vec,mat)1`
      - ``Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)``
    * - :ref:`cook_kl_block_[param]_b,int_entry_elem,mat_kl,[poly]_polys,vec_stops,vec_surv,_mat_contrib->([param],int,poly_mat,vec)1`
@@ -24,9 +22,9 @@ Functions
      - ``int r->ratvec``
    * - :ref:`has_nu0_param_p->bool2`
      - ``Param p->bool``
-   * - :ref:`kl_p_polynomials_[param]_b_fixed,mat_delta->[[poly]]1`
+   * - :ref:`kl_p_polynomials_1_[param]_b_fixed,mat_delta->[[poly]]1`
      - ``[Param] B_fixed,mat delta->[[poly]]``
-   * - :ref:`kl_p_signed_polynomials_[param]_b_fixed,mat_delta->[[poly]]1`
+   * - :ref:`kl_p_signed_polynomials_1_[param]_b_fixed,mat_delta->[[poly]]1`
      - ``[Param] B_fixed,mat delta->[[poly]]``
    * - :ref:`kl_q_polynomials_[param]_b_fixed,_mat_delta->[[poly]]1`
      - ``[Param] B_fixed, mat delta->[[poly]]``

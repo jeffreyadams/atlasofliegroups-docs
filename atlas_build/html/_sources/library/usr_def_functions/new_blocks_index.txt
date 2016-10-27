@@ -18,5 +18,5 @@ Functions
      - ``int s,Param p->Param``
    * - :ref:`cayley_int_s,param_p->param2`
      - ``int s,Param p->Param``
-   * - :ref:`block_param_p->([param],int)1`
+   * - :ref:`block_param_p->([param],int)2`
      - ``Param p->([Param],int)``

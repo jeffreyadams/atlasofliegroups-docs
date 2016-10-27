@@ -306,6 +306,18 @@ Functions
      - ``Split x, int n->(Split,Split)``
    * - :ref:`split_format_split_w->string1`
      - ``Split w->string``
+   * - :ref:`find_[int]_v,_int_k->int:_____first(#v,(int_i)bool1`
+     - ``[int] v, int k->int:     first(#v,(int i)bool``
+   * - :ref:`find_[param]_p,param_p->int:__first(#p,(int_i)bool1`
+     - ``[Param] P,Param p->int:  first(#P,(int i)bool``
+   * - :ref:`find_[kgbelt]_s,kgbelt_x->int:first(#s,(int_i)bool1`
+     - ``[KGBElt] S,KGBElt x->int:first(#S,(int i)bool``
+   * - :ref:`find_[[int]]_s,[int]_v->int:first(#s,(int_i)bool1`
+     - ``[[int]] S,[int] v->int:first(#S,(int i)bool``
+   * - :ref:`find_vec_[vec]_s,vec_v->int:first(#s,(int_i)bool1`
+     - ``[vec] S,vec v->int:first(#S,(int i)bool``
+   * - :ref:`pad_string_s,int_padding->string1`
+     - ``string s,int padding->string``
    * - :ref:`root_datum_[vec]_simple_roots,_[vec]_simple_coroots,_int_r->rootdatum1`
      - ``[vec] simple_roots, [vec] simple_coroots, int r->RootDatum``
    * - :ref:`root_datum_lietype_t,_[ratvec]_gens->rootdatum1`
@@ -664,6 +676,8 @@ Functions
      - ``KGBElt x,ratvec lambda,ratvec nu->Param``
    * - :ref:`parameter_gamma_kgbelt_x,_ratvec_lambda,_ratvec_gamma->param1`
      - ``KGBElt x, ratvec lambda, ratvec gamma->Param``
+   * - :ref:`block_param_p->([param],int)1`
+     - ``Param p->([Param],int)``
    * - :ref:`block_of_param_p->[param]1`
      - ``Param p->[Param]``
    * - :ref:`imaginary_type_int_s,_param_p->int1`
@@ -770,15 +784,3 @@ Functions
      - ``[[vec]] v, int k->[[vec]]:   v[:k]##v[k+1``
    * - :ref:`delete_[parampol]_p,_int_k->[parampol]:p[:k]##p[k+11`
      - ``[ParamPol] P, int k->[ParamPol]:P[:k]##P[k+1``
-   * - :ref:`find_[int]_v,_int_k->int:_____first(#v,(int_i)bool1`
-     - ``[int] v, int k->int:     first(#v,(int i)bool``
-   * - :ref:`find_[param]_p,param_p->int:__first(#p,(int_i)bool1`
-     - ``[Param] P,Param p->int:  first(#P,(int i)bool``
-   * - :ref:`find_[kgbelt]_s,kgbelt_x->int:first(#s,(int_i)bool1`
-     - ``[KGBElt] S,KGBElt x->int:first(#S,(int i)bool``
-   * - :ref:`find_[[int]]_s,[int]_v->int:first(#s,(int_i)bool1`
-     - ``[[int]] S,[int] v->int:first(#S,(int i)bool``
-   * - :ref:`find_vec_[vec]_s,vec_v->int:first(#s,(int_i)bool1`
-     - ``[vec] S,vec v->int:first(#S,(int i)bool``
-   * - :ref:`pad_string_s,int_padding->string1`
-     - ``string s,int padding->string``

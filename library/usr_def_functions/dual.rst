@@ -14,6 +14,7 @@ dual.at
 | :ref:`Vogan-dual.at<Vogan-dual.at>`
 | :ref:`polynomial.at<polynomial.at>`
 | :ref:`extended.at<extended.at>`
+| :ref:`KL_polynomial_matrices.at<KL_polynomial_matrices.at>`
 |
 
 

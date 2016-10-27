@@ -4,43 +4,43 @@ extended_cross.at Function References
 =======================================================
 |
 
-.. _test_ext_cross_param_p,__[int]_kappa,_extended_param_e->void1:
+.. _test_ext_cross_param_p,__[int]_kappa,_extparam_e->void1:
 
 test_ext_cross
 -------------------------------------------------
-| ``test_ext_cross:Param p,  [int] kappa, extended_param E->void`` Defined in line number 11.
+| ``test_ext_cross:Param p,  [int] kappa, ExtParam E->void`` Defined in line number 11.
 | 
 | 
 
-.. _ext_cross_1_int_j,_extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->extended_param1:
+.. _ext_cross_1_int_j,_extparam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->extparam1:
 
 ext_cross_1
 -------------------------------------------------
-| ``ext_cross_1:int j, extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->extended_param`` Defined in line number 17.
+| ``ext_cross_1:int j, ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->ExtParam`` Defined in line number 17.
 | 
 | 
 
-.. _ext_cross_2_int_j,_extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->extended_param1:
+.. _ext_cross_2_int_j,_extparam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->extparam1:
 
 ext_cross_2
 -------------------------------------------------
-| ``ext_cross_2:int j, extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->extended_param`` Defined in line number 53.
+| ``ext_cross_2:int j, ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->ExtParam`` Defined in line number 53.
 | 
 | 
 
-.. _ext_cross_3_int_j,extended_param_e->extended_param1:
+.. _ext_cross_3_int_j,extparam_e->extparam1:
 
 ext_cross_3
 -------------------------------------------------
-| ``ext_cross_3:int j,extended_param E->extended_param`` Defined in line number 150.
+| ``ext_cross_3:int j,ExtParam E->ExtParam`` Defined in line number 150.
 | 
 | 
 
-.. _ext_cross_simple_int_j,_extended_param_(ic,delta,,,,,,,,):e->extended_param1:
+.. _ext_cross_simple_int_j,_extparam_(ic,delta,,,,,,,,):e->extparam1:
 
 ext_cross_simple
 -------------------------------------------------
-| ``ext_cross_simple:int j, extended_param (ic,delta,,,,,,,,):E->extended_param`` Defined in line number 160.
+| ``ext_cross_simple:int j, ExtParam (ic,delta,,,,,,,,):E->ExtParam`` Defined in line number 160.
 | 
 | 
 

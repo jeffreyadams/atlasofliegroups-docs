@@ -132,35 +132,35 @@ square_is_central
 | 
 | 
 
-.. _root_datum_extended_param_e->rootdatum1:
+.. _root_datum_extparam_e->rootdatum1:
 
 root_datum
 -------------------------------------------------
-| ``root_datum:extended_param E->RootDatum`` Defined in line number 104.
+| ``root_datum:ExtParam E->RootDatum`` Defined in line number 104.
 | 
 | 
 
-.. _rho_extended_param_e->ratvec1:
+.. _rho_extparam_e->ratvec1:
 
 rho
 -------------------------------------------------
-| ``rho:extended_param E->ratvec`` Defined in line number 105.
+| ``rho:ExtParam E->ratvec`` Defined in line number 105.
 | 
 | 
 
-.. _rho_check_extended_param_e->ratvec1:
+.. _rho_check_extparam_e->ratvec1:
 
 rho_check
 -------------------------------------------------
-| ``rho_check:extended_param E->ratvec`` Defined in line number 106.
+| ``rho_check:ExtParam E->ratvec`` Defined in line number 106.
 | 
 | 
 
-.. _dual_parameter_extended_param(ic,_delta,_gamma,_lambda,_theta,_g,_l,_omega,_tau,t)->extended_param1:
+.. _dual_parameter_extparam(ic,_delta,_gamma,_lambda,_theta,_g,_l,_omega,_tau,t)->extparam1:
 
 dual_parameter
 -------------------------------------------------
-| ``dual_parameter:extended_param(ic, delta, gamma, lambda, theta, g, l, omega, tau,t)->extended_param`` Defined in line number 108.
+| ``dual_parameter:ExtParam(ic, delta, gamma, lambda, theta, g, l, omega, tau,t)->ExtParam`` Defined in line number 108.
 | 
 | 
 
@@ -180,67 +180,67 @@ log_zeta
 | 
 | 
 
-.. _log_z_extended_param_e->rat1:
+.. _log_z_extparam_e->rat1:
 
 log_z
 -------------------------------------------------
-| ``log_z:extended_param E->rat`` Defined in line number 120.
+| ``log_z:ExtParam E->rat`` Defined in line number 120.
 | 
 | 
 
-.. _log_zeta_extended_param_e->rat1:
+.. _log_zeta_extparam_e->rat1:
 
 log_zeta
 -------------------------------------------------
-| ``log_zeta:extended_param E->rat`` Defined in line number 122.
+| ``log_zeta:ExtParam E->rat`` Defined in line number 122.
 | 
 | 
 
-.. _x_extended_param_e->kgbelt1:
+.. _x_extparam_e->kgbelt1:
 
 x
 -------------------------------------------------
-| ``x:extended_param E->KGBElt`` Defined in line number 127.
+| ``x:ExtParam E->KGBElt`` Defined in line number 127.
 | 
 | 
 
-.. _y_extended_param_e->kgbelt1:
+.. _y_extparam_e->kgbelt1:
 
 y
 -------------------------------------------------
-| ``y:extended_param E->KGBElt`` Defined in line number 130.
+| ``y:ExtParam E->KGBElt`` Defined in line number 130.
 | 
 | 
 
-.. _parameter_extended_param_e->param1:
+.. _parameter_extparam_e->param1:
 
 parameter
 -------------------------------------------------
-| ``parameter:extended_param E->Param`` Defined in line number 138.
+| ``parameter:ExtParam E->Param`` Defined in line number 138.
 | 
 | 
 
-.. _integrality_datum_extended_param_e->rootdatum1:
+.. _integrality_datum_extparam_e->rootdatum1:
 
 integrality_datum
 -------------------------------------------------
-| ``integrality_datum:extended_param E->RootDatum`` Defined in line number 140.
+| ``integrality_datum:ExtParam E->RootDatum`` Defined in line number 140.
 | 
 | 
 
-.. _translate_to_dominant_extended_param(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t):e->(extended_param,vec)1:
+.. _translate_to_dominant_extparam(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t):e->(extparam,vec)1:
 
 translate_to_dominant
 -------------------------------------------------
-| ``translate_to_dominant:extended_param(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t):E->(extended_param,vec)`` Defined in line number 151.
+| ``translate_to_dominant:ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t):E->(ExtParam,vec)`` Defined in line number 151.
 | 
 | 
 
-.. _valid_extended_param(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t)->bool1:
+.. _valid_extparam(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t)->bool1:
 
 valid
 -------------------------------------------------
-| ``valid:extended_param(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t)->bool`` Defined in line number 160.
+| ``valid:ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t)->bool`` Defined in line number 160.
 | 
 | 
 
@@ -268,43 +268,43 @@ fixed_block
 | 
 | 
 
-.. _format_extended_param_e->string1:
+.. _format_extparam_e->string1:
 
 format
 -------------------------------------------------
-| ``format:extended_param E->string`` Defined in line number 191.
+| ``format:ExtParam E->string`` Defined in line number 191.
 | 
 | 
 
-.. _short_format_extended_param_e->string1:
+.. _short_format_extparam_e->string1:
 
 short_format
 -------------------------------------------------
-| ``short_format:extended_param E->string`` Defined in line number 202.
+| ``short_format:ExtParam E->string`` Defined in line number 202.
 | 
 | 
 
-.. _long_format_extended_param_e->string1:
+.. _long_format_extparam_e->string1:
 
 long_format
 -------------------------------------------------
-| ``long_format:extended_param E->string`` Defined in line number 204.
+| ``long_format:ExtParam E->string`` Defined in line number 204.
 | 
 | 
 
-.. _display_extended_param_e->void1:
+.. _display_extparam_e->void1:
 
 display
 -------------------------------------------------
-| ``display:extended_param E->void`` Defined in line number 207.
+| ``display:ExtParam E->void`` Defined in line number 207.
 | 
 | 
 
-.. _display_one_line_extended_param_e->void1:
+.. _display_one_line_extparam_e->void1:
 
 display_one_line
 -------------------------------------------------
-| ``display_one_line:extended_param E->void`` Defined in line number 208.
+| ``display_one_line:ExtParam E->void`` Defined in line number 208.
 | 
 | 
 
@@ -316,9 +316,9 @@ x_rep
 | 
 | 
 
-.. _extended_param1:
+.. _ExtParam1:
 
-extended_param
+ExtParam
 -----------------------------------------
 | ``( InnerClass ic, mat delta, ratvec gamma, vec lambda_rho, mat theta, ratvec g, vec l, mat omega, vec tau, vec t)`` Defined in line number 97.
 | 

@@ -14,13 +14,13 @@ Functions
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`test_ext_cross_param_p,__[int]_kappa,_extended_param_e->void1`
-     - ``Param p,  [int] kappa, extended_param E->void``
-   * - :ref:`ext_cross_1_int_j,_extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->extended_param1`
-     - ``int j, extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->extended_param``
-   * - :ref:`ext_cross_2_int_j,_extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->extended_param1`
-     - ``int j, extended_param(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->extended_param``
-   * - :ref:`ext_cross_3_int_j,extended_param_e->extended_param1`
-     - ``int j,extended_param E->extended_param``
-   * - :ref:`ext_cross_simple_int_j,_extended_param_(ic,delta,,,,,,,,):e->extended_param1`
-     - ``int j, extended_param (ic,delta,,,,,,,,):E->extended_param``
+   * - :ref:`test_ext_cross_param_p,__[int]_kappa,_extparam_e->void1`
+     - ``Param p,  [int] kappa, ExtParam E->void``
+   * - :ref:`ext_cross_1_int_j,_extparam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->extparam1`
+     - ``int j, ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->ExtParam``
+   * - :ref:`ext_cross_2_int_j,_extparam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):e->extparam1`
+     - ``int j, ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->ExtParam``
+   * - :ref:`ext_cross_3_int_j,extparam_e->extparam1`
+     - ``int j,ExtParam E->ExtParam``
+   * - :ref:`ext_cross_simple_int_j,_extparam_(ic,delta,,,,,,,,):e->extparam1`
+     - ``int j, ExtParam (ic,delta,,,,,,,,):E->ExtParam``

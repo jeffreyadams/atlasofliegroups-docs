@@ -180,10 +180,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -640,6 +640,11 @@
 <li class="toctree-l4"><a class="reference internal" href="kl_ref.html">kl.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="KL_polynomial_matrices.html">KL_polynomial_matrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_index.html">KL_polynomial_matrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_ref.html">KL_polynomial_matrices.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="lattice.html">lattice.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="lattice_index.html">lattice.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lattice_ref.html">lattice.at Function References</a></li>
@@ -1018,82 +1023,66 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<div class="section" id="splits">
-<span id="splits-extparampol-p-split-1"></span><h2>splits<a class="headerlink" href="#splits" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="split-s-extparampol-p-plus-p-minus-p-ind-extparampol1">
+<span id="id1"></span><h2>*<a class="headerlink" href="#split-s-extparampol-p-plus-p-minus-p-ind-extparampol1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">splits:extParamPol</span> <span class="pre">P-&gt;[Split]</span></code> Defined in line number 5.</div>
+<div class="line"><code class="docutils literal"><span class="pre">*:Split</span> <span class="pre">s,ExtParamPol</span> <span class="pre">(P_plus,P_minus,P_ind)-&gt;ExtParamPol</span></code> Defined in line number 16.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="ext-params">
-<span id="ext-params-extparampol-p-extended-param-1"></span><h2>ext_params<a class="headerlink" href="#ext-params" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="extparampol">
+<span id="extparampol-extparam-e-extparampol1"></span><h2>extParamPol<a class="headerlink" href="#extparampol" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">ext_params:extParamPol</span> <span class="pre">P-&gt;[extended_param]</span></code> Defined in line number 6.</div>
+<div class="line"><code class="docutils literal"><span class="pre">extParamPol:ExtParam</span> <span class="pre">E-&gt;ExtParamPol</span></code> Defined in line number 17.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="collect">
-<span id="collect-extparampol-q-extparampol1"></span><h2>collect<a class="headerlink" href="#collect" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="extparampol-param-p-int-type-extparampol1">
+<span id="id2"></span><h2>extParamPol<a class="headerlink" href="#extparampol-param-p-int-type-extparampol1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">collect:extParamPol</span> <span class="pre">Q-&gt;extParamPol</span></code> Defined in line number 8.</div>
+<div class="line"><code class="docutils literal"><span class="pre">extParamPol:Param</span> <span class="pre">p,int</span> <span class="pre">type-&gt;ExtParamPol</span></code> Defined in line number 25.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="split-s-extended-param-e-extparampol1">
-<span id="id1"></span><h2>*<a class="headerlink" href="#split-s-extended-param-e-extparampol1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="extparampol-p-plus-1-p-minus-1-p-ind-1-extparampol-p-plus-2-p-minus-2-p-ind-2-extparampol1">
+<span id="id3"></span><h2>+<a class="headerlink" href="#extparampol-p-plus-1-p-minus-1-p-ind-1-extparampol-p-plus-2-p-minus-2-p-ind-2-extparampol1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">*:Split</span> <span class="pre">s,extended_param</span> <span class="pre">E-&gt;extParamPol</span></code> Defined in line number 23.</div>
+<div class="line"><code class="docutils literal"><span class="pre">+:ExtParamPol</span> <span class="pre">(P_plus_1,P_minus_1,P_ind_1),ExtParamPol</span> <span class="pre">(P_plus_2,P_minus_2,P_ind_2)-&gt;ExtParamPol</span></code> Defined in line number 34.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="split-s-extparampol-p-extparampol1">
-<span id="id2"></span><h2>*<a class="headerlink" href="#split-s-extparampol-p-extparampol1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<span id="id5"></span><h2>-<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">*:Split</span> <span class="pre">s,extParamPol</span> <span class="pre">P-&gt;extParamPol</span></code> Defined in line number 24.</div>
+<div class="line"><code class="docutils literal"><span class="pre">-:ExtParamPol</span> <span class="pre">(P_plus_1,P_minus_1,P_ind_1),ExtParamPol</span> <span class="pre">(P_plus_2,P_minus_2,P_ind_2)-&gt;ExtParamPol</span></code> Defined in line number 35.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="split-a-split-b-split-for-x-in-b-do-a-1">
-<span id="id3"></span><h2>#<a class="headerlink" href="#split-a-split-b-split-for-x-in-b-do-a-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="extparampol-p-extparampol-q-p-in-for-r-in-q-do-rv-1">
+<span id="id6"></span><h2>+<a class="headerlink" href="#extparampol-p-extparampol-q-p-in-for-r-in-q-do-rv-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">#:[Split]</span> <span class="pre">a,[Split]</span> <span class="pre">b-&gt;[Split]:</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">b</span> <span class="pre">do</span> <span class="pre">a#</span></code> Defined in line number 25.</div>
+<div class="line"><code class="docutils literal"><span class="pre">+:ExtParamPol</span> <span class="pre">P,[ExtParamPol]</span> <span class="pre">Q-&gt;P</span> <span class="pre">in</span> <span class="pre">for</span> <span class="pre">R</span> <span class="pre">in</span> <span class="pre">Q</span> <span class="pre">do</span> <span class="pre">rv+</span></code> Defined in line number 36.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="extended-param-a-extended-param-b-extended-param-for-x-in-b-do-a-1">
-<span id="id4"></span><h2>#<a class="headerlink" href="#extended-param-a-extended-param-b-extended-param-for-x-in-b-do-a-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="extparampol-p-split-s-param-p-int-type-extparampol1">
+<span id="id7"></span><h2>+<a class="headerlink" href="#extparampol-p-split-s-param-p-int-type-extparampol1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">#:[extended_param]</span> <span class="pre">a,[extended_param]</span> <span class="pre">b-&gt;[extended_param]:</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">b</span> <span class="pre">do</span> <span class="pre">a#</span></code> Defined in line number 26.</div>
+<div class="line"><code class="docutils literal"><span class="pre">+:ExtParamPol</span> <span class="pre">P,(Split</span> <span class="pre">S,Param</span> <span class="pre">p,int</span> <span class="pre">type)-&gt;ExtParamPol</span></code> Defined in line number 37.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="extparampol-p-extparampol-q-extparampol1">
-<span id="id5"></span><h2>+<a class="headerlink" href="#extparampol-p-extparampol-q-extparampol1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="display">
+<span id="display-extparampol-a-b-c-void-prints-plus-a-new-line-minus-b-new-line-induced1"></span><h2>display<a class="headerlink" href="#display" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">+:extParamPol</span> <span class="pre">P,extParamPol</span> <span class="pre">Q-&gt;extParamPol</span></code> Defined in line number 28.</div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
-<div class="section" id="extparampol-p-extended-param-e-extparampol1">
-<span id="id6"></span><h2>+<a class="headerlink" href="#extparampol-p-extended-param-e-extparampol1" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">+:extParamPol</span> <span class="pre">P,extended_param</span> <span class="pre">E-&gt;extParamPol</span></code> Defined in line number 33.</div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
-<div class="section" id="id7">
-<span id="id8"></span><h2>-<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">-:extParamPol</span> <span class="pre">P,extParamPol</span> <span class="pre">Q-&gt;extParamPol</span></code> Defined in line number 35.</div>
+<div class="line"><code class="docutils literal"><span class="pre">display:ExtParamPol</span> <span class="pre">(A,B,C)-&gt;void:prints(&quot;plus:&quot;,A,new_line,&quot;minus:&quot;,B,new_line,&quot;induced</span></code> Defined in line number 39.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1101,15 +1090,111 @@
 <div class="section" id="null-ext-module">
 <span id="null-ext-module-realform-g-extparampol1"></span><h2>null_ext_module<a class="headerlink" href="#null-ext-module" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">null_ext_module:RealForm</span> <span class="pre">G-&gt;extParamPol</span></code> Defined in line number 37.</div>
+<div class="line"><code class="docutils literal"><span class="pre">null_ext_module:RealForm</span> <span class="pre">G-&gt;ExtParamPol</span></code> Defined in line number 40.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="extparampol">
-<span id="extparampol1"></span><h2>extParamPol<a class="headerlink" href="#extparampol" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="find">
+<span id="find-int-int-complete-indices-int-int-pair-int-first-complete-indices-int-i-bool1"></span><h2>find<a class="headerlink" href="#find" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">[(Split,extended_param)]</span></code> Defined in line number 4.</div>
+<div class="line"><code class="docutils literal"><span class="pre">find:[(int,int)]</span> <span class="pre">complete_indices,(int,int)</span> <span class="pre">pair-&gt;int:first(#complete_indices,(int</span> <span class="pre">i)bool</span></code> Defined in line number 41.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="deform">
+<span id="deform-param-p-mat-delta-int-type-extparampol1"></span><h2>deform<a class="headerlink" href="#deform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">deform:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code> Defined in line number 49.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="deform-extparam-e-mat-delta-extparampol1">
+<span id="id8"></span><h2>deform<a class="headerlink" href="#deform-extparam-e-mat-delta-extparampol1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">deform:ExtParam</span> <span class="pre">E,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ExtParamPol</span></code> Defined in line number 105.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="change-nu">
+<span id="change-nu-param-p-rat-factor-int-type-extparampol1"></span><h2>change_nu<a class="headerlink" href="#change-nu" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">change_nu:Param</span> <span class="pre">p,</span> <span class="pre">rat</span> <span class="pre">factor,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code> Defined in line number 110.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="extparampol-p-split-param-int-1">
+<span id="id9"></span><h2>%<a class="headerlink" href="#extparampol-p-split-param-int-1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">%:ExtParamPol</span> <span class="pre">P-&gt;[(Split,Param,int)]</span></code> Defined in line number 123.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="recursive-deform">
+<span id="recursive-deform-param-p-mat-delta-int-type-extparampol1"></span><h2>recursive_deform<a class="headerlink" href="#recursive-deform" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">recursive_deform:Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code> Defined in line number 130.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="print-extended-character-formula">
+<span id="print-extended-character-formula-param-p-param-b-mat-delta-void1"></span><h2>print_extended_character_formula<a class="headerlink" href="#print-extended-character-formula" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">print_extended_character_formula:Param</span> <span class="pre">p,[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;void</span></code> Defined in line number 166.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="print-extended-character-formula-param-p-mat-delta-void1">
+<span id="id10"></span><h2>print_extended_character_formula<a class="headerlink" href="#print-extended-character-formula-param-p-mat-delta-void1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">print_extended_character_formula:Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;void</span></code> Defined in line number 174.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="print-extended-composition-series">
+<span id="print-extended-composition-series-param-p-param-b-mat-delta-void1"></span><h2>print_extended_composition_series<a class="headerlink" href="#print-extended-composition-series" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">print_extended_composition_series:Param</span> <span class="pre">p,[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;void</span></code> Defined in line number 177.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="print-extended-composition-series-param-p-mat-delta-void1">
+<span id="id11"></span><h2>print_extended_composition_series<a class="headerlink" href="#print-extended-composition-series-param-p-mat-delta-void1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">print_extended_composition_series:Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;void</span></code> Defined in line number 185.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="print-extended-indices">
+<span id="print-extended-indices-param-b-mat-delta-void1"></span><h2>print_extended_indices<a class="headerlink" href="#print-extended-indices" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">print_extended_indices:[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;void</span></code> Defined in line number 187.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="character-formula">
+<span id="character-formula-param-p-mat-delta-extparampol1"></span><h2>character_formula<a class="headerlink" href="#character-formula" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">character_formula:Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;ExtParamPol</span></code> Defined in line number 192.</div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="extparampol1">
+<span id="id12"></span><h2>ExtParamPol<a class="headerlink" href="#extparampol1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">(ParamPol,ParamPol,ParamPol)</span></code> Defined in line number 14.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

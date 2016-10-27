@@ -180,10 +180,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -640,6 +640,11 @@
 <li class="toctree-l4"><a class="reference internal" href="kl_ref.html">kl.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="KL_polynomial_matrices.html">KL_polynomial_matrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_index.html">KL_polynomial_matrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_ref.html">KL_polynomial_matrices.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="lattice.html">lattice.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="lattice_index.html">lattice.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lattice_ref.html">lattice.at Function References</a></li>
@@ -1033,38 +1038,38 @@
 <tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#cross-mat-w-param-p-param1"><span>cross</span></a></td>
 <td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">w,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-mat-w-extended-param-ic-delta-gamma-lambda-rho-theta-g-l-tau-t-e-extended-param1"><span>ext_cross</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">w,extended_param(ic,delta,gamma,lambda_rho,theta,g,l,,tau,t):E-&gt;extended_param</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-mat-w-extparam-ic-delta-gamma-lambda-rho-theta-g-l-tau-t-e-extparam1"><span>ext_cross</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">w,ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,,tau,t):E-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#posroot-ext-cross-int-i-extended-param-e-extended-param1"><span>posroot_ext_cross</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">extended_param</span> <span class="pre">E-&gt;extended_param</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#posroot-ext-cross-int-i-extparam-e-extparam1"><span>posroot_ext_cross</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">ExtParam</span> <span class="pre">E-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-int-w-extended-param-e-extended-param1"><span>ext_cross</span></a></td>
-<td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">w,</span> <span class="pre">extended_param</span> <span class="pre">E-&gt;extended_param</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-int-w-extparam-e-extparam1"><span>ext_cross</span></a></td>
+<td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">w,</span> <span class="pre">ExtParam</span> <span class="pre">E-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-special-int-i-extended-param-e-bool-show-extended-param1"><span>ext_cross_special</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">extended_param</span> <span class="pre">E,</span> <span class="pre">bool</span> <span class="pre">show-&gt;extended_param</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-special-int-i-extparam-e-bool-show-extparam1"><span>ext_cross_special</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">ExtParam</span> <span class="pre">E,</span> <span class="pre">bool</span> <span class="pre">show-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-special-int-i-extended-param-e-extended-param1"><span>ext_cross_special</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">extended_param</span> <span class="pre">E-&gt;extended_param</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-special-int-i-extparam-e-extparam1"><span>ext_cross_special</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">ExtParam</span> <span class="pre">E-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-int-i-extended-param-e-bool-show-extended-param1"><span>ext_cross</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">extended_param</span> <span class="pre">E,</span> <span class="pre">bool</span> <span class="pre">show-&gt;extended_param</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-int-i-extparam-e-bool-show-extparam1"><span>ext_cross</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">ExtParam</span> <span class="pre">E,</span> <span class="pre">bool</span> <span class="pre">show-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-int-i-extended-param-e-extended-param1"><span>ext_cross</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">extended_param</span> <span class="pre">E-&gt;extended_param</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cross-int-i-extparam-e-extparam1"><span>ext_cross</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,</span> <span class="pre">ExtParam</span> <span class="pre">E-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#posroot-ext-cayley-int-i-extended-param-e-bool-show-extended-param-1"><span>posroot_ext_Cayley</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,extended_param</span> <span class="pre">E,</span> <span class="pre">bool</span> <span class="pre">show-&gt;[extended_param]</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#posroot-ext-cayley-int-i-extparam-e-bool-show-extparam-1"><span>posroot_ext_Cayley</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,ExtParam</span> <span class="pre">E,</span> <span class="pre">bool</span> <span class="pre">show-&gt;[ExtParam]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#posroot-ext-cayley-int-i-extended-param-e-extended-param-1"><span>posroot_ext_Cayley</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,extended_param</span> <span class="pre">E-&gt;[extended_param]</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#posroot-ext-cayley-int-i-extparam-e-extparam-1"><span>posroot_ext_Cayley</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i,ExtParam</span> <span class="pre">E-&gt;[ExtParam]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#ext-cayley-int-j-extended-param-e-bool-show-extended-param-1"><span>ext_Cayley</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">j,</span> <span class="pre">extended_param</span> <span class="pre">E,</span> <span class="pre">bool</span> <span class="pre">show-&gt;[extended_param]</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="nonintegral_ref.html#ext-cayley-int-j-extparam-e-bool-show-extparam-1"><span>ext_Cayley</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">j,</span> <span class="pre">ExtParam</span> <span class="pre">E,</span> <span class="pre">bool</span> <span class="pre">show-&gt;[ExtParam]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cayley-int-j-extended-param-e-extended-param-1"><span>ext_Cayley</span></a></td>
-<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">j,</span> <span class="pre">extended_param</span> <span class="pre">E-&gt;[extended_param]</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="nonintegral_ref.html#ext-cayley-int-j-extparam-e-extparam-1"><span>ext_Cayley</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">j,</span> <span class="pre">ExtParam</span> <span class="pre">E-&gt;[ExtParam]</span></code></td>
 </tr>
 </tbody>
 </table>
