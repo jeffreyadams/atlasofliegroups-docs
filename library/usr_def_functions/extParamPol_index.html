@@ -180,10 +180,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -640,6 +640,11 @@
 <li class="toctree-l4"><a class="reference internal" href="kl_ref.html">kl.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="KL_polynomial_matrices.html">KL_polynomial_matrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_index.html">KL_polynomial_matrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_ref.html">KL_polynomial_matrices.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="lattice.html">lattice.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="lattice_index.html">lattice.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lattice_ref.html">lattice.at Function References</a></li>
@@ -1030,38 +1035,68 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#splits-extparampol-p-split-1"><span>splits</span></a></td>
-<td><code class="docutils literal"><span class="pre">extParamPol</span> <span class="pre">P-&gt;[Split]</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#split-s-extparampol-p-plus-p-minus-p-ind-extparampol1"><span>*</span></a></td>
+<td><code class="docutils literal"><span class="pre">Split</span> <span class="pre">s,ExtParamPol</span> <span class="pre">(P_plus,P_minus,P_ind)-&gt;ExtParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#ext-params-extparampol-p-extended-param-1"><span>ext_params</span></a></td>
-<td><code class="docutils literal"><span class="pre">extParamPol</span> <span class="pre">P-&gt;[extended_param]</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-extparam-e-extparampol1"><span>extParamPol</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;ExtParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#collect-extparampol-q-extparampol1"><span>collect</span></a></td>
-<td><code class="docutils literal"><span class="pre">extParamPol</span> <span class="pre">Q-&gt;extParamPol</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-param-p-int-type-extparampol1"><span>extParamPol</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,int</span> <span class="pre">type-&gt;ExtParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#split-s-extended-param-e-extparampol1"><span>*</span></a></td>
-<td><code class="docutils literal"><span class="pre">Split</span> <span class="pre">s,extended_param</span> <span class="pre">E-&gt;extParamPol</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-p-plus-1-p-minus-1-p-ind-1-extparampol-p-plus-2-p-minus-2-p-ind-2-extparampol1"><span>+</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParamPol</span> <span class="pre">(P_plus_1,P_minus_1,P_ind_1),ExtParamPol</span> <span class="pre">(P_plus_2,P_minus_2,P_ind_2)-&gt;ExtParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#split-s-extparampol-p-extparampol1"><span>*</span></a></td>
-<td><code class="docutils literal"><span class="pre">Split</span> <span class="pre">s,extParamPol</span> <span class="pre">P-&gt;extParamPol</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#id4"><span>-</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParamPol</span> <span class="pre">(P_plus_1,P_minus_1,P_ind_1),ExtParamPol</span> <span class="pre">(P_plus_2,P_minus_2,P_ind_2)-&gt;ExtParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#split-a-split-b-split-for-x-in-b-do-a-1"><span>#</span></a></td>
-<td><code class="docutils literal"><span class="pre">[Split]</span> <span class="pre">a,[Split]</span> <span class="pre">b-&gt;[Split]:</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">b</span> <span class="pre">do</span> <span class="pre">a#</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-p-extparampol-q-p-in-for-r-in-q-do-rv-1"><span>+</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParamPol</span> <span class="pre">P,[ExtParamPol]</span> <span class="pre">Q-&gt;P</span> <span class="pre">in</span> <span class="pre">for</span> <span class="pre">R</span> <span class="pre">in</span> <span class="pre">Q</span> <span class="pre">do</span> <span class="pre">rv+</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#extended-param-a-extended-param-b-extended-param-for-x-in-b-do-a-1"><span>#</span></a></td>
-<td><code class="docutils literal"><span class="pre">[extended_param]</span> <span class="pre">a,[extended_param]</span> <span class="pre">b-&gt;[extended_param]:</span> <span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">b</span> <span class="pre">do</span> <span class="pre">a#</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-p-split-s-param-p-int-type-extparampol1"><span>+</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParamPol</span> <span class="pre">P,(Split</span> <span class="pre">S,Param</span> <span class="pre">p,int</span> <span class="pre">type)-&gt;ExtParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-p-extparampol-q-extparampol1"><span>+</span></a></td>
-<td><code class="docutils literal"><span class="pre">extParamPol</span> <span class="pre">P,extParamPol</span> <span class="pre">Q-&gt;extParamPol</span></code></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-p-extended-param-e-extparampol1"><span>+</span></a></td>
-<td><code class="docutils literal"><span class="pre">extParamPol</span> <span class="pre">P,extended_param</span> <span class="pre">E-&gt;extParamPol</span></code></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#id7"><span>-</span></a></td>
-<td><code class="docutils literal"><span class="pre">extParamPol</span> <span class="pre">P,extParamPol</span> <span class="pre">Q-&gt;extParamPol</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#display-extparampol-a-b-c-void-prints-plus-a-new-line-minus-b-new-line-induced1"><span>display</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParamPol</span> <span class="pre">(A,B,C)-&gt;void:prints(&quot;plus:&quot;,A,new_line,&quot;minus:&quot;,B,new_line,&quot;induced</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#null-ext-module-realform-g-extparampol1"><span>null_ext_module</span></a></td>
-<td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;extParamPol</span></code></td>
+<td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;ExtParamPol</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#find-int-int-complete-indices-int-int-pair-int-first-complete-indices-int-i-bool1"><span>find</span></a></td>
+<td><code class="docutils literal"><span class="pre">[(int,int)]</span> <span class="pre">complete_indices,(int,int)</span> <span class="pre">pair-&gt;int:first(#complete_indices,(int</span> <span class="pre">i)bool</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#deform-param-p-mat-delta-int-type-extparampol1"><span>deform</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#deform-extparam-e-mat-delta-extparampol1"><span>deform</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ExtParamPol</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#change-nu-param-p-rat-factor-int-type-extparampol1"><span>change_nu</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">rat</span> <span class="pre">factor,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-p-split-param-int-1"><span>%</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParamPol</span> <span class="pre">P-&gt;[(Split,Param,int)]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#recursive-deform-param-p-mat-delta-int-type-extparampol1"><span>recursive_deform</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#print-extended-character-formula-param-p-param-b-mat-delta-void1"><span>print_extended_character_formula</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;void</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#print-extended-character-formula-param-p-mat-delta-void1"><span>print_extended_character_formula</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;void</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#print-extended-composition-series-param-p-param-b-mat-delta-void1"><span>print_extended_composition_series</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;void</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#print-extended-composition-series-param-p-mat-delta-void1"><span>print_extended_composition_series</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;void</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#print-extended-indices-param-b-mat-delta-void1"><span>print_extended_indices</span></a></td>
+<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;void</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#character-formula-param-p-mat-delta-extparampol1"><span>character_formula</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;ExtParamPol</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -1077,8 +1112,8 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#extparampol1"><span>extParamPol</span></a></td>
-<td><code class="docutils literal"><span class="pre">[(Split,extended_param)]</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#extparampol1"><span>ExtParamPol</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ParamPol,ParamPol,ParamPol)</span></code></td>
 </tr>
 </tbody>
 </table>

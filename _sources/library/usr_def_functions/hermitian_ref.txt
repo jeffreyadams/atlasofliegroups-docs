@@ -56,7 +56,15 @@ c_form_irreducible_long
 
 c_form_irreducible
 -------------------------------------------------
-| ``c_form_irreducible:Param p->ParamPol`` Defined in line number 69.
+| ``c_form_irreducible:Param p->ParamPol`` Defined in line number 72.
+| 
+| 
+
+.. _c_form_irreducible_param_p->parampol2:
+
+c_form_irreducible
+-------------------------------------------------
+| ``c_form_irreducible:Param p->ParamPol`` Defined in line number 80.
 | 
 | 
 
@@ -64,7 +72,7 @@ c_form_irreducible
 
 c_form_irreducible_delta
 -------------------------------------------------
-| ``c_form_irreducible_delta:Param p->ParamPol`` Defined in line number 86.
+| ``c_form_irreducible_delta:Param p->ParamPol`` Defined in line number 98.
 | 
 | 
 
@@ -72,7 +80,7 @@ c_form_irreducible_delta
 
 print_c_form_irreducible_long
 -------------------------------------------------
-| ``print_c_form_irreducible_long:Param p->void`` Defined in line number 101.
+| ``print_c_form_irreducible_long:Param p->void`` Defined in line number 117.
 | 
 | 
 
@@ -80,7 +88,7 @@ print_c_form_irreducible_long
 
 mixed
 -------------------------------------------------
-| ``mixed:Split w->bool`` Defined in line number 117.
+| ``mixed:Split w->bool`` Defined in line number 133.
 | 
 | 
 
@@ -88,7 +96,7 @@ mixed
 
 analyse
 -------------------------------------------------
-| ``analyse:ParamPol P->void`` Defined in line number 118.
+| ``analyse:ParamPol P->void`` Defined in line number 134.
 | 
 | 
 
@@ -96,7 +104,7 @@ analyse
 
 lambda_plus_rho_res_T
 -------------------------------------------------
-| ``lambda_plus_rho_res_T:KGBElt x,ratvec lambda->ratvec`` Defined in line number 142.
+| ``lambda_plus_rho_res_T:KGBElt x,ratvec lambda->ratvec`` Defined in line number 158.
 | 
 | 
 
@@ -104,7 +112,7 @@ lambda_plus_rho_res_T
 
 mu
 -------------------------------------------------
-| ``mu:Param p->rat`` Defined in line number 147.
+| ``mu:Param p->rat`` Defined in line number 163.
 | 
 | 
 
@@ -112,7 +120,7 @@ mu
 
 convert_cform_hermitian
 -------------------------------------------------
-| ``convert_cform_hermitian:ParamPol P->ParamPol`` Defined in line number 151.
+| ``convert_cform_hermitian:ParamPol P->ParamPol`` Defined in line number 167.
 | 
 | 
 
@@ -120,7 +128,7 @@ convert_cform_hermitian
 
 hermitian_form_irreducible
 -------------------------------------------------
-| ``hermitian_form_irreducible:Param p->ParamPol`` Defined in line number 160.
+| ``hermitian_form_irreducible:Param p->ParamPol`` Defined in line number 176.
 | 
 | 
 
@@ -128,7 +136,7 @@ hermitian_form_irreducible
 
 print_hermitian_form_irreducible
 -------------------------------------------------
-| ``print_hermitian_form_irreducible:Param p->void`` Defined in line number 168.
+| ``print_hermitian_form_irreducible:Param p->void`` Defined in line number 184.
 | 
 | 
 
@@ -136,7 +144,7 @@ print_hermitian_form_irreducible
 
 print_hermitian_form_irreducible
 -------------------------------------------------
-| ``print_hermitian_form_irreducible:[Param] P->void`` Defined in line number 172.
+| ``print_hermitian_form_irreducible:[Param] P->void`` Defined in line number 188.
 | 
 | 
 
@@ -144,7 +152,7 @@ print_hermitian_form_irreducible
 
 is_unitary
 -------------------------------------------------
-| ``is_unitary:ParamPol P->bool`` Defined in line number 194.
+| ``is_unitary:ParamPol P->bool`` Defined in line number 210.
 | 
 | 
 
@@ -152,7 +160,7 @@ is_unitary
 
 is_unitary
 -------------------------------------------------
-| ``is_unitary:Param p->bool`` Defined in line number 213.
+| ``is_unitary:Param p->bool`` Defined in line number 229.
 | 
 | 
 
@@ -160,7 +168,23 @@ is_unitary
 
 test_line
 -------------------------------------------------
-| ``test_line:Param p->void`` Defined in line number 220.
+| ``test_line:Param p->void`` Defined in line number 236.
+| 
+| 
+
+.. _is_pure_split_w->bool1:
+
+is_pure
+-------------------------------------------------
+| ``is_pure:Split w->bool`` Defined in line number 260.
+| 
+| 
+
+.. _test_param_p->bool1:
+
+test
+-------------------------------------------------
+| ``test:Param p->bool`` Defined in line number 262.
 | 
 | 
 

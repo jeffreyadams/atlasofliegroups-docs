@@ -180,10 +180,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -640,6 +640,11 @@
 <li class="toctree-l4"><a class="reference internal" href="kl_ref.html">kl.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="KL_polynomial_matrices.html">KL_polynomial_matrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_index.html">KL_polynomial_matrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_ref.html">KL_polynomial_matrices.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="lattice.html">lattice.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="lattice_index.html">lattice.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lattice_ref.html">lattice.at Function References</a></li>
@@ -1041,7 +1046,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">makeS:mat</span> <span class="pre">theta,RootDatum</span> <span class="pre">rd-&gt;mat</span></code> Defined in line number 55.</div>
 <div class="line"><br /></div>
-<div class="line">Given an involution theta and a root datum, return the set S of complex roots    containing the first positive representative of each quadruple    (pm alpha,pm theta(alpha)).</div>
+<div class="line">Given an involution theta and a root datum, return the set S of complex roots    containing the first positive representative of each quadruple    ( <span class="math">\(\pm\)</span>  alpha, <span class="math">\(\pm\)</span>  theta(alpha)).</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1095,7 +1100,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">real_induce_irreducible_as_sum_of_standards:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 87.</div>
 <div class="line"><br /></div>
-<div class="line">Write the (real) induced of an irreducible J(p_L) of L as a formal sum of    standards for G; use the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)</div>
+<div class="line">Write the (real) induced of an irreducible J(p_L) of L as a formal sum of    standards for G; uses the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1104,7 +1109,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">real_induce_irreducible:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 96.</div>
 <div class="line"><br /></div>
-<div class="line">Write the (real) induced Ind(J(p_L)) of an irreducible of L as a sum of    irreducibles for G; use composition series to convert    output of the previous function into sum of irreducibles.</div>
+<div class="line">Write the (real) induced Ind(J(p_L)) of an irreducible of L as a sum of    irreducibles for G; uses composition series to convert    output of the previous function into sum of irreducibles.</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1167,7 +1172,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">theta_induce_irreducible_as_sum_of_standards:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 211.</div>
 <div class="line"><br /></div>
-<div class="line">Write the (theta-stable) induced of an irreducible J(p_L) of L as a formal    sum of standards for G; use the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)</div>
+<div class="line">Write the (theta-stable) induced of an irreducible J(p_L) of L as a formal    sum of standards for G; uses the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)</div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -1176,7 +1181,7 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">theta_induce_irreducible:Param</span> <span class="pre">p_L,</span> <span class="pre">RealForm</span> <span class="pre">G-&gt;ParamPol</span></code> Defined in line number 226.</div>
 <div class="line"><br /></div>
-<div class="line">Write the (theta-stable) induced Ind(J(p_L)) of an irreducible of L    as a sum of irreducibles for G; use composition series to convert    output of the previous function into sum of irreducibles.</div>
+<div class="line">Write the (theta-stable) induced Ind(J(p_L)) of an irreducible of L    as a sum of irreducibles for G; uses composition series to convert    output of the previous function into sum of irreducibles.</div>
 <div class="line"><br /></div>
 </div>
 </div>

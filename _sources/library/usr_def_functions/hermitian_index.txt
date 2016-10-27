@@ -28,6 +28,8 @@ Functions
      - ``Param p->(ParamPol,[(Param,Split,ParamPol)])``
    * - :ref:`c_form_irreducible_param_p->parampol1`
      - ``Param p->ParamPol``
+   * - :ref:`c_form_irreducible_param_p->parampol2`
+     - ``Param p->ParamPol``
    * - :ref:`c_form_irreducible_delta_param_p->parampol1`
      - ``Param p->ParamPol``
    * - :ref:`print_c_form_irreducible_long_param_p->void1`
@@ -54,3 +56,7 @@ Functions
      - ``Param p->bool``
    * - :ref:`test_line_param_p->void1`
      - ``Param p->void``
+   * - :ref:`is_pure_split_w->bool1`
+     - ``Split w->bool``
+   * - :ref:`test_param_p->bool1`
+     - ``Param p->bool``

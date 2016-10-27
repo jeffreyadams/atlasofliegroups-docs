@@ -49,6 +49,7 @@ User Defined Functions
    usr_def_functions/K_types
    usr_def_functions/kgp
    usr_def_functions/kl
+   usr_def_functions/KL_polynomial_matrices
    usr_def_functions/lattice
    usr_def_functions/lietypes
    usr_def_functions/LKT

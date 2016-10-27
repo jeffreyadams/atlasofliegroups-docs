@@ -78,8 +78,8 @@ Functions
      - ``poly_mat M->void``
    * - :ref:`sgn_poly_int_k->poly1`
      - ``int k->poly``
-   * - :ref:`divide_by_int_k,_poly_v->poly1`
-     - ``int k, poly v->poly``
+   * - :ref:`divide_by_int_k,poly_v->poly1`
+     - ``int k,poly v->poly``
 
 
 Data Types

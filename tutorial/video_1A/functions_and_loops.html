@@ -180,10 +180,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters_real_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -638,6 +638,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/kl.html">kl.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/kl_index.html">kl.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/kl_ref.html">kl.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/KL_polynomial_matrices.html">KL_polynomial_matrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/KL_polynomial_matrices_index.html">KL_polynomial_matrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/KL_polynomial_matrices_ref.html">KL_polynomial_matrices.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/lattice.html">lattice.at</a><ul>
@@ -1143,7 +1148,7 @@ atlas&gt; v
 Value: [0,1,2]
 </pre></div>
 </div>
-<p>If we do not want <code class="docutils literal"><span class="pre">atlas</span> <span class="pre">``</span> <span class="pre">to</span> <span class="pre">print</span> <span class="pre">the</span> <span class="pre">result</span> <span class="pre">we</span> <span class="pre">can</span> <span class="pre">use</span> <span class="pre">either</span> <span class="pre">``void:</span></code> before the loop or <code class="docutils literal"><span class="pre">;()</span></code> at the end of the loop:</p>
+<p>If we do not want <code class="docutils literal"><span class="pre">atlass</span></code> to print the result we can use either <code class="docutils literal"><span class="pre">void:</span></code> before the loop or <code class="docutils literal"><span class="pre">;()</span></code> at the end of the loop:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void:for i:3 do i od
 atlas&gt;
 
@@ -1186,7 +1191,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>This is an example of a <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code>. Which tells the software that for each v in A you return something. Here od tells <code class="docutils literal"><span class="pre">atlas</span></code> to end the loop once all the vectors of A were listed.</p>
-<p>Another examples are:</p>
+<p>Another example is:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; v:=[1,2,3,4]
 Value: [1,2,3,4]
 atlas&gt; for a in v do a^2 od

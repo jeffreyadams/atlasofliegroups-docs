@@ -12,6 +12,7 @@ ext_deform.at
 | :ref:`extended.at<extended.at>`
 | :ref:`extended_misc.at<extended_misc.at>`
 | :ref:`polynomial.at<polynomial.at>`
+| :ref:`dual.at<dual.at>`
 |
 
 

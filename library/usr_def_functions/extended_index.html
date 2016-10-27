@@ -180,10 +180,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html">Parameters for Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#the-characters-of-r-x">The characters of $R^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_for_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
 </ul>
 </li>
 </ul>
@@ -640,6 +640,11 @@
 <li class="toctree-l4"><a class="reference internal" href="kl_ref.html">kl.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="KL_polynomial_matrices.html">KL_polynomial_matrices.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_index.html">KL_polynomial_matrices.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="KL_polynomial_matrices_ref.html">KL_polynomial_matrices.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="lattice.html">lattice.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="lattice_index.html">lattice.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="lattice_ref.html">lattice.at Function References</a></li>
@@ -1033,68 +1038,68 @@
 <tr class="row-even"><td><a class="reference internal" href="extended_ref.html#assert-bool-b-string-mess-void1"><span>assert</span></a></td>
 <td><code class="docutils literal"><span class="pre">bool</span> <span class="pre">b,</span> <span class="pre">(-&gt;string)</span> <span class="pre">mess-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-kgbelt-x-ratvec-gamma-ratvec-g-ratvec-lambda-extended-param1"><span>E</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">ratvec</span> <span class="pre">gamma,</span> <span class="pre">ratvec</span> <span class="pre">g,</span> <span class="pre">ratvec</span> <span class="pre">lambda-&gt;extended_param</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-kgbelt-x-ratvec-gamma-ratvec-g-ratvec-lambda-extparam1"><span>E</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">ratvec</span> <span class="pre">gamma,</span> <span class="pre">ratvec</span> <span class="pre">g,</span> <span class="pre">ratvec</span> <span class="pre">lambda-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-ratvec-gamma-kgbelt-x-ratvec-g-kgbelt-gen-y-extended-param1"><span>E</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">ratvec</span> <span class="pre">gamma,</span> <span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">ratvec</span> <span class="pre">g,</span> <span class="pre">KGBElt_gen</span> <span class="pre">y-&gt;extended_param</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-ratvec-gamma-kgbelt-x-ratvec-g-kgbelt-gen-y-extparam1"><span>E</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">ratvec</span> <span class="pre">gamma,</span> <span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">ratvec</span> <span class="pre">g,</span> <span class="pre">KGBElt_gen</span> <span class="pre">y-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-param-p-ratvec-g-extended-param1"><span>E</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">ratvec</span> <span class="pre">g-&gt;extended_param</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-param-p-ratvec-g-extparam1"><span>E</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">ratvec</span> <span class="pre">g-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-param-p-extended-param1"><span>E</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p-&gt;extended_param</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-param-p-extparam1"><span>E</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-param-extended-param-param-p-1"><span>E</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta-&gt;(Param-&gt;extended_param):</span> <span class="pre">(Param</span> <span class="pre">p)</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#e-mat-delta-param-extparam-param-p-1"><span>E</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta-&gt;(Param-&gt;ExtParam):</span> <span class="pre">(Param</span> <span class="pre">p)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#torus-factor-extended-param-e-ratvec1"><span>torus_factor</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E-&gt;ratvec</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#torus-factor-extparam-e-ratvec1"><span>torus_factor</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#dual-torus-factor-extended-param-e-ratvec1"><span>dual_torus_factor</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E-&gt;ratvec</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#dual-torus-factor-extparam-e-ratvec1"><span>dual_torus_factor</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#nu-extended-param-e-ratvec1"><span>nu</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E-&gt;ratvec</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#nu-extparam-e-ratvec1"><span>nu</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#length-extended-param-e-int1"><span>length</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E-&gt;int</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#length-extparam-e-int1"><span>length</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#sign-extended-param-ic1-delta1-gamma1-lambda1-theta1-g1-l1-omega1-tau1-t1-e1-extended-param-ic2-delta2-gamma2-lambda2-theta2-g2-l2-omega2-tau2-t2-e2-int1"><span>sign</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2-&gt;int</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#sign-extparam-ic1-delta1-gamma1-lambda1-theta1-g1-l1-omega1-tau1-t1-e1-extparam-ic2-delta2-gamma2-lambda2-theta2-g2-l2-omega2-tau2-t2-e2-int1"><span>sign</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,ExtParam(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#sign-verbose-extended-param-ic1-delta1-gamma1-lambda1-theta1-g1-l1-omega1-tau1-t1-e1-extended-param-ic2-delta2-gamma2-lambda2-theta2-g2-l2-omega2-tau2-t2-e2-int1"><span>sign_verbose</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2-&gt;int</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#sign-verbose-extparam-ic1-delta1-gamma1-lambda1-theta1-g1-l1-omega1-tau1-t1-e1-extparam-ic2-delta2-gamma2-lambda2-theta2-g2-l2-omega2-tau2-t2-e2-int1"><span>sign_verbose</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,ExtParam(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#dual-sign-extended-param-ic1-delta1-gamma1-lambda1-theta1-g1-l1-omega1-tau1-t1-e1-extended-param-ic2-delta2-gamma2-lambda2-theta2-g2-l2-omega2-tau2-t2-e2-int1"><span>dual_sign</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,extended_param(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2-&gt;int</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#dual-sign-extparam-ic1-delta1-gamma1-lambda1-theta1-g1-l1-omega1-tau1-t1-e1-extparam-ic2-delta2-gamma2-lambda2-theta2-g2-l2-omega2-tau2-t2-e2-int1"><span>dual_sign</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam(ic1,delta1,gamma1,lambda1,theta1,g1,l1,omega1,tau1,t1):E1,ExtParam(ic2,delta2,gamma2,lambda2,theta2,g2,l2,omega2,tau2,t2):E2-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#sign-extended-param-e-extended-param-f1-extended-param-f2-int1"><span>sign</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E,(extended_param</span> <span class="pre">F1,extended_param</span> <span class="pre">F2)-&gt;int</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#sign-extparam-e-extparam-f1-extparam-f2-int1"><span>sign</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E,(ExtParam</span> <span class="pre">F1,ExtParam</span> <span class="pre">F2)-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#sign-extended-param-e1-extended-param-e2-extended-param-f-int1"><span>sign</span></a></td>
-<td><code class="docutils literal"><span class="pre">(extended_param</span> <span class="pre">E1,extended_param</span> <span class="pre">E2),extended_param</span> <span class="pre">F-&gt;int</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#sign-extparam-e1-extparam-e2-extparam-f-int1"><span>sign</span></a></td>
+<td><code class="docutils literal"><span class="pre">(ExtParam</span> <span class="pre">E1,ExtParam</span> <span class="pre">E2),ExtParam</span> <span class="pre">F-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#default-extended-param-f-extended-param1"><span>default</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">F-&gt;extended_param</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#default-extparam-f-extparam1"><span>default</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">F-&gt;ExtParam</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#sign-extended-param-e-int1"><span>sign</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E-&gt;int</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#sign-extparam-e-int1"><span>sign</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#dual-sign-extended-param-e-int1"><span>dual_sign</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E-&gt;int</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#dual-sign-extparam-e-int1"><span>dual_sign</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#extended-param-e-extended-param-f-bool1"><span>=</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E,</span> <span class="pre">extended_param</span> <span class="pre">F-&gt;bool</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#extparam-e-extparam-f-bool1"><span>=</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E,</span> <span class="pre">ExtParam</span> <span class="pre">F-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#is-default-extended-param-e-bool1"><span>is_default</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E-&gt;bool</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#is-default-extparam-e-bool1"><span>is_default</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#z-extended-param-e-rat1"><span>z</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E-&gt;rat</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#z-extparam-e-rat1"><span>z</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E-&gt;rat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#z-quot-extended-param-e-extended-param-f-int1"><span>z_quot</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E,</span> <span class="pre">extended_param</span> <span class="pre">F-&gt;int</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#z-quot-extparam-e-extparam-f-int1"><span>z_quot</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E,</span> <span class="pre">ExtParam</span> <span class="pre">F-&gt;int</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="extended_ref.html#ext-print-block-mat-delta-param-b-void1"><span>ext_print_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">[Param]</span> <span class="pre">B-&gt;void</span></code></td>
@@ -1105,35 +1110,35 @@
 <tr class="row-even"><td><a class="reference internal" href="extended_ref.html#ext-print-block-param-p-void1"><span>ext_print_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#ext-block-of-mat-delta-param-p-ratvec-g-extended-param-1"><span>ext_block_of</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">ratvec</span> <span class="pre">g-&gt;[extended_param]</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#ext-block-of-mat-delta-param-p-ratvec-g-extparam-1"><span>ext_block_of</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">ratvec</span> <span class="pre">g-&gt;[ExtParam]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#ext-block-of-mat-delta-param-p-extended-param-1"><span>ext_block_of</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p-&gt;[extended_param]</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#ext-block-of-mat-delta-param-p-extparam-1"><span>ext_block_of</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p-&gt;[ExtParam]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#ext-block-of-param-p-extended-param-1"><span>ext_block_of</span></a></td>
-<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[extended_param]</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#ext-block-of-param-p-extparam-1"><span>ext_block_of</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[ExtParam]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#ext-block-mat-delta-param-p-ratvec-g-extended-param-int-1"><span>ext_block</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">ratvec</span> <span class="pre">g-&gt;([extended_param],int)</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#ext-block-mat-delta-param-p-ratvec-g-extparam-int-1"><span>ext_block</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">ratvec</span> <span class="pre">g-&gt;([ExtParam],int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#ext-block-mat-delta-param-p-extended-param-int-1"><span>ext_block</span></a></td>
-<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p-&gt;([extended_param],int)</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#ext-block-mat-delta-param-p-extparam-int-1"><span>ext_block</span></a></td>
+<td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">Param</span> <span class="pre">p-&gt;([ExtParam],int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#ext-block-param-p-extended-param-int-1"><span>ext_block</span></a></td>
-<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;([extended_param],int)</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#ext-block-param-p-extparam-int-1"><span>ext_block</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;([ExtParam],int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#sign-find-extended-param-list-extended-param-e-int-int-1"><span>sign_find</span></a></td>
-<td><code class="docutils literal"><span class="pre">[extended_param]</span> <span class="pre">list,extended_param</span> <span class="pre">E-&gt;(int,int)</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#sign-find-extparam-list-extparam-e-int-int-1"><span>sign_find</span></a></td>
+<td><code class="docutils literal"><span class="pre">[ExtParam]</span> <span class="pre">list,ExtParam</span> <span class="pre">E-&gt;(int,int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#sign-find-extended-param-e-extended-param-list-int-int-1"><span>sign_find</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E,[extended_param]</span> <span class="pre">list-&gt;(int,int)</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#sign-find-extparam-e-extparam-list-int-int-1"><span>sign_find</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E,[ExtParam]</span> <span class="pre">list-&gt;(int,int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#find-extended-param-list-extended-param-e-int1"><span>find</span></a></td>
-<td><code class="docutils literal"><span class="pre">[extended_param]</span> <span class="pre">list,extended_param</span> <span class="pre">E-&gt;int</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#find-extparam-list-extparam-e-int1"><span>find</span></a></td>
+<td><code class="docutils literal"><span class="pre">[ExtParam]</span> <span class="pre">list,ExtParam</span> <span class="pre">E-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#find-extended-param-e-extended-param-list-int1"><span>find</span></a></td>
-<td><code class="docutils literal"><span class="pre">extended_param</span> <span class="pre">E,[extended_param]</span> <span class="pre">list-&gt;int</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extended_ref.html#find-extparam-e-extparam-list-int1"><span>find</span></a></td>
+<td><code class="docutils literal"><span class="pre">ExtParam</span> <span class="pre">E,[ExtParam]</span> <span class="pre">list-&gt;int</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="extended_ref.html#ext-basic-realform-g-mat-param-ratvec-1"><span>ext_basic</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;(mat,[Param],ratvec)</span></code></td>

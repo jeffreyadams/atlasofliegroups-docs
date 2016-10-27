@@ -12,11 +12,11 @@ ext_length
 | 
 | 
 
-.. _ext_length_int_j,_extended_param_e->int1:
+.. _ext_length_int_j,_extparam_e->int1:
 
 ext_length
 -------------------------------------------------
-| ``ext_length:int j, extended_param E->int`` Defined in line number 22.
+| ``ext_length:int j, ExtParam E->int`` Defined in line number 22.
 | 
 | 
 
@@ -52,19 +52,19 @@ ext_type
 | 
 | 
 
-.. _ext_type_int_j,extended_param_e->string1:
+.. _ext_type_int_j,extparam_e->string1:
 
 ext_type
 -------------------------------------------------
-| ``ext_type:int j,extended_param E->string`` Defined in line number 97.
+| ``ext_type:int j,ExtParam E->string`` Defined in line number 97.
 | 
 | 
 
-.. _ext_types_extended_param_(ic,delta,,,,,,,,):e->[string]1:
+.. _ext_types_extparam_(ic,delta,,,,,,,,):e->[string]1:
 
 ext_types
 -------------------------------------------------
-| ``ext_types:extended_param (ic,delta,,,,,,,,):E->[string]`` Defined in line number 101.
+| ``ext_types:ExtParam (ic,delta,,,,,,,,):E->[string]`` Defined in line number 101.
 | 
 | 
 

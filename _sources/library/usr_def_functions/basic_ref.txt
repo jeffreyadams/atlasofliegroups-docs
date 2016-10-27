@@ -176,7 +176,7 @@ from_stops
 
 abs
 -------------------------------------------------
-| ``abs:int k->int`` Defined in line number 62.
+| ``abs:int k->int`` Defined in line number 61.
 | 
 | 
 
@@ -184,7 +184,7 @@ abs
 
 sign
 -------------------------------------------------
-| ``sign:int k->int`` Defined in line number 63.
+| ``sign:int k->int`` Defined in line number 62.
 | 
 | 
 
@@ -192,7 +192,7 @@ sign
 
 is_odd
 -------------------------------------------------
-| ``is_odd:int n->bool`` Defined in line number 65.
+| ``is_odd:int n->bool`` Defined in line number 64.
 | 
 | 
 
@@ -200,7 +200,7 @@ is_odd
 
 is_even
 -------------------------------------------------
-| ``is_even:int n->bool`` Defined in line number 66.
+| ``is_even:int n->bool`` Defined in line number 65.
 | 
 | 
 
@@ -208,7 +208,7 @@ is_even
 
 min
 -------------------------------------------------
-| ``min:int k, int l->int`` Defined in line number 68.
+| ``min:int k, int l->int`` Defined in line number 67.
 | 
 | 
 
@@ -216,7 +216,7 @@ min
 
 max
 -------------------------------------------------
-| ``max:int k, int l->int`` Defined in line number 69.
+| ``max:int k, int l->int`` Defined in line number 68.
 | 
 | 
 
@@ -224,7 +224,7 @@ max
 
 min
 -------------------------------------------------
-| ``min:[int] a->int`` Defined in line number 71.
+| ``min:[int] a->int`` Defined in line number 70.
 | 
 | 
 
@@ -232,7 +232,7 @@ min
 
 max
 -------------------------------------------------
-| ``max:[int] a->int`` Defined in line number 73.
+| ``max:[int] a->int`` Defined in line number 72.
 | 
 | 
 
@@ -240,7 +240,7 @@ max
 
 min_loc
 -------------------------------------------------
-| ``min_loc:[int] a->int`` Defined in line number 76.
+| ``min_loc:[int] a->int`` Defined in line number 75.
 | 
 | 
 
@@ -248,7 +248,7 @@ min_loc
 
 max_loc
 -------------------------------------------------
-| ``max_loc:[int] a->int`` Defined in line number 82.
+| ``max_loc:[int] a->int`` Defined in line number 81.
 | 
 | 
 
@@ -256,7 +256,7 @@ max_loc
 
 min
 -------------------------------------------------
-| ``min:int !seed->([int]->int)`` Defined in line number 90.
+| ``min:int !seed->([int]->int)`` Defined in line number 89.
 | 
 | 
 
@@ -264,7 +264,7 @@ min
 
 max
 -------------------------------------------------
-| ``max:int !seed->([int]->int)`` Defined in line number 92.
+| ``max:int !seed->([int]->int)`` Defined in line number 91.
 | 
 | 
 
@@ -272,7 +272,7 @@ max
 
 lcm
 -------------------------------------------------
-| ``lcm:[int] list) = let (,d->%(ratvec`` Defined in line number 95.
+| ``lcm:[int] list) = let (,d->%(ratvec`` Defined in line number 94.
 | 
 | 
 
@@ -280,7 +280,7 @@ lcm
 
 \=
 -------------------------------------------------
-| ``=:(int,int)(x0,y0),(int,int)(x1,y1)->bool`` Defined in line number 97.
+| ``=:(int,int)(x0,y0),(int,int)(x1,y1)->bool`` Defined in line number 96.
 | 
 | 
 
@@ -288,7 +288,7 @@ lcm
 
 \!=
 -------------------------------------------------
-| ``!=:(int,int)(x0,y0),(int,int)(x1,y1)->bool`` Defined in line number 98.
+| ``!=:(int,int)(x0,y0),(int,int)(x1,y1)->bool`` Defined in line number 97.
 | 
 | 
 
@@ -296,7 +296,7 @@ lcm
 
 is_integer
 -------------------------------------------------
-| ``is_integer:rat r->bool`` Defined in line number 107.
+| ``is_integer:rat r->bool`` Defined in line number 106.
 | 
 | 
 
@@ -304,7 +304,7 @@ is_integer
 
 sign
 -------------------------------------------------
-| ``sign:rat a->int`` Defined in line number 108.
+| ``sign:rat a->int`` Defined in line number 107.
 | 
 | 
 
@@ -312,7 +312,7 @@ sign
 
 abs
 -------------------------------------------------
-| ``abs:rat a->rat`` Defined in line number 110.
+| ``abs:rat a->rat`` Defined in line number 109.
 | 
 | 
 
@@ -320,7 +320,7 @@ abs
 
 floor
 -------------------------------------------------
-| ``floor:rat a->int`` Defined in line number 112.
+| ``floor:rat a->int`` Defined in line number 111.
 | 
 | 
 
@@ -328,7 +328,7 @@ floor
 
 ceil
 -------------------------------------------------
-| ``ceil:rat a->int`` Defined in line number 113.
+| ``ceil:rat a->int`` Defined in line number 112.
 | 
 | 
 
@@ -336,7 +336,7 @@ ceil
 
 \\
 -------------------------------------------------
-| ``\:(rat,int)p->int`` Defined in line number 115.
+| ``\:(rat,int)p->int`` Defined in line number 114.
 | 
 | 
 
@@ -344,7 +344,7 @@ ceil
 
 \\
 -------------------------------------------------
-| ``\:(rat,rat)p->int`` Defined in line number 116.
+| ``\:(rat,rat)p->int`` Defined in line number 115.
 | 
 | 
 
@@ -352,7 +352,7 @@ ceil
 
 \%
 -------------------------------------------------
-| ``\%:(rat,int)p->(int,rat)`` Defined in line number 117.
+| ``\%:(rat,int)p->(int,rat)`` Defined in line number 116.
 | 
 | 
 
@@ -360,7 +360,7 @@ ceil
 
 \%
 -------------------------------------------------
-| ``\%:(rat,rat)p->(int,rat)`` Defined in line number 118.
+| ``\%:(rat,rat)p->(int,rat)`` Defined in line number 117.
 | 
 | 
 
@@ -368,7 +368,7 @@ ceil
 
 floor
 -------------------------------------------------
-| ``floor:[rat] v->vec`` Defined in line number 121.
+| ``floor:[rat] v->vec`` Defined in line number 120.
 | 
 | 
 
@@ -376,7 +376,7 @@ floor
 
 ceil
 -------------------------------------------------
-| ``ceil:[rat] v->vec`` Defined in line number 122.
+| ``ceil:[rat] v->vec`` Defined in line number 121.
 | 
 | 
 
@@ -384,7 +384,7 @@ ceil
 
 rat_as_int
 -------------------------------------------------
-| ``rat_as_int:rat r->int`` Defined in line number 126.
+| ``rat_as_int:rat r->int`` Defined in line number 125.
 | 
 | 
 
@@ -392,7 +392,7 @@ rat_as_int
 
 \*
 -------------------------------------------------
-| ``*:int n,string s->string`` Defined in line number 142.
+| ``*:int n,string s->string`` Defined in line number 141.
 | 
 | 
 
@@ -400,7 +400,7 @@ rat_as_int
 
 \+
 -------------------------------------------------
-| ``+:string s, int i->string`` Defined in line number 144.
+| ``+:string s, int i->string`` Defined in line number 143.
 | 
 | 
 
@@ -408,7 +408,7 @@ rat_as_int
 
 \+
 -------------------------------------------------
-| ``+:int i, string s->string`` Defined in line number 145.
+| ``+:int i, string s->string`` Defined in line number 144.
 | 
 | 
 
@@ -416,7 +416,7 @@ rat_as_int
 
 plural
 -------------------------------------------------
-| ``plural:int n->string`` Defined in line number 149.
+| ``plural:int n->string`` Defined in line number 148.
 | 
 | 
 
@@ -424,7 +424,7 @@ plural
 
 plural
 -------------------------------------------------
-| ``plural:int n,string s->string`` Defined in line number 150.
+| ``plural:int n,string s->string`` Defined in line number 149.
 | 
 | 
 
@@ -432,7 +432,7 @@ plural
 
 l_adjust
 -------------------------------------------------
-| ``l_adjust:int w, string s->string`` Defined in line number 154.
+| ``l_adjust:int w, string s->string`` Defined in line number 153.
 | 
 | 
 
@@ -440,7 +440,7 @@ l_adjust
 
 r_adjust
 -------------------------------------------------
-| ``r_adjust:int w, string s->string`` Defined in line number 156.
+| ``r_adjust:int w, string s->string`` Defined in line number 155.
 | 
 | 
 
@@ -448,7 +448,7 @@ r_adjust
 
 c_adjust
 -------------------------------------------------
-| ``c_adjust:int w, string s->string`` Defined in line number 158.
+| ``c_adjust:int w, string s->string`` Defined in line number 157.
 | 
 | 
 
@@ -456,7 +456,7 @@ c_adjust
 
 width
 -------------------------------------------------
-| ``width:int n->int`` Defined in line number 161.
+| ``width:int n->int`` Defined in line number 160.
 | 
 | 
 
@@ -464,7 +464,7 @@ width
 
 split_lines
 -------------------------------------------------
-| ``split_lines:string text->[string]`` Defined in line number 163.
+| ``split_lines:string text->[string]`` Defined in line number 162.
 | 
 | 
 
@@ -472,7 +472,7 @@ split_lines
 
 is_substring
 -------------------------------------------------
-| ``is_substring:string s, string text->bool`` Defined in line number 169.
+| ``is_substring:string s, string text->bool`` Defined in line number 168.
 | 
 | 
 
@@ -480,7 +480,7 @@ is_substring
 
 fgrep
 -------------------------------------------------
-| ``fgrep:string s, string text->[string]`` Defined in line number 173.
+| ``fgrep:string s, string text->[string]`` Defined in line number 172.
 | 
 | 
 
@@ -488,7 +488,7 @@ fgrep
 
 vector
 -------------------------------------------------
-| ``vector:int n,(int->int)f->vec: for i`` Defined in line number 181.
+| ``vector:int n,(int->int)f->vec: for i`` Defined in line number 180.
 | 
 | 
 
@@ -496,7 +496,7 @@ vector
 
 ones
 -------------------------------------------------
-| ``ones:int n->vec: for i`` Defined in line number 183.
+| ``ones:int n->vec: for i`` Defined in line number 182.
 | 
 | 
 
@@ -504,7 +504,7 @@ ones
 
 gcd
 -------------------------------------------------
-| ``gcd:[int] v->int`` Defined in line number 186.
+| ``gcd:[int] v->int`` Defined in line number 185.
 | 
 | 
 
@@ -512,7 +512,7 @@ gcd
 
 \*
 -------------------------------------------------
-| ``*:int c,vec v->vec`` Defined in line number 190.
+| ``*:int c,vec v->vec`` Defined in line number 189.
 | 
 | 
 
@@ -520,7 +520,7 @@ gcd
 
 product
 -------------------------------------------------
-| ``product:vec v->1 in for e in v do s*`` Defined in line number 194.
+| ``product:vec v->1 in for e in v do s*`` Defined in line number 193.
 | 
 | 
 
@@ -528,7 +528,7 @@ product
 
 reverse
 -------------------------------------------------
-| ``reverse:vec v->vec: v~[`` Defined in line number 196.
+| ``reverse:vec v->vec: v~[`` Defined in line number 195.
 | 
 | 
 
@@ -536,7 +536,7 @@ reverse
 
 lower
 -------------------------------------------------
-| ``lower:int k,vec v->vec: v[`` Defined in line number 197.
+| ``lower:int k,vec v->vec: v[`` Defined in line number 196.
 | 
 | 
 
@@ -544,7 +544,7 @@ lower
 
 upper
 -------------------------------------------------
-| ``upper:int k,vec v->vec: v[k~`` Defined in line number 198.
+| ``upper:int k,vec v->vec: v[k~`` Defined in line number 197.
 | 
 | 
 
@@ -552,7 +552,7 @@ upper
 
 drop_lower
 -------------------------------------------------
-| ``drop_lower:int k,vec v->vec: v[k`` Defined in line number 199.
+| ``drop_lower:int k,vec v->vec: v[k`` Defined in line number 198.
 | 
 | 
 
@@ -560,7 +560,7 @@ drop_lower
 
 drop_upper
 -------------------------------------------------
-| ``drop_upper:int k,vec v->vec: v[`` Defined in line number 200.
+| ``drop_upper:int k,vec v->vec: v[`` Defined in line number 199.
 | 
 | 
 
@@ -568,7 +568,7 @@ drop_upper
 
 <=
 -------------------------------------------------
-| ``<=:vec v->bool`` Defined in line number 202.
+| ``<=:vec v->bool`` Defined in line number 201.
 | 
 | 
 
@@ -576,7 +576,7 @@ drop_upper
 
 \<
 -------------------------------------------------
-| ``<:vec v->bool`` Defined in line number 203.
+| ``<:vec v->bool`` Defined in line number 202.
 | 
 | 
 
@@ -584,7 +584,7 @@ drop_upper
 
 is_member
 -------------------------------------------------
-| ``is_member:[int] v->(int->bool)`` Defined in line number 205.
+| ``is_member:[int] v->(int->bool)`` Defined in line number 204.
 | 
 | 
 
@@ -592,7 +592,7 @@ is_member
 
 contains
 -------------------------------------------------
-| ``contains:int val->([int]->bool): ([int] v)bool`` Defined in line number 209.
+| ``contains:int val->([int]->bool): ([int] v)bool`` Defined in line number 208.
 | 
 | 
 
@@ -600,7 +600,7 @@ contains
 
 rec_fun all_0_1_vecs
 -------------------------------------------------
-| ``rec_fun all_0_1_vecs:int n->[vec]`` Defined in line number 211.
+| ``rec_fun all_0_1_vecs:int n->[vec]`` Defined in line number 210.
 | 
 | 
 
@@ -608,7 +608,7 @@ rec_fun all_0_1_vecs
 
 rec_fun power_set
 -------------------------------------------------
-| ``rec_fun power_set:int n->[[int]]`` Defined in line number 217.
+| ``rec_fun power_set:int n->[[int]]`` Defined in line number 216.
 | 
 | 
 
@@ -616,7 +616,7 @@ rec_fun power_set
 
 power_set
 -------------------------------------------------
-| ``power_set:[int] S->[[int]]`` Defined in line number 219.
+| ``power_set:[int] S->[[int]]`` Defined in line number 218.
 | 
 | 
 
@@ -624,7 +624,7 @@ power_set
 
 matrix
 -------------------------------------------------
-| ``matrix:(int,int)(r,c),(int,int->int) f->mat`` Defined in line number 226.
+| ``matrix:(int,int)(r,c),(int,int->int) f->mat`` Defined in line number 225.
 | 
 | 
 
@@ -632,7 +632,7 @@ matrix
 
 n_rows
 -------------------------------------------------
-| ``n_rows:mat m->int`` Defined in line number 229.
+| ``n_rows:mat m->int`` Defined in line number 228.
 | 
 | 
 
@@ -640,7 +640,7 @@ n_rows
 
 n_columns
 -------------------------------------------------
-| ``n_columns:mat m->int`` Defined in line number 230.
+| ``n_columns:mat m->int`` Defined in line number 229.
 | 
 | 
 
@@ -648,7 +648,7 @@ n_columns
 
 column
 -------------------------------------------------
-| ``column:vec v->mat`` Defined in line number 232.
+| ``column:vec v->mat`` Defined in line number 231.
 | 
 | 
 
@@ -656,7 +656,7 @@ column
 
 row
 -------------------------------------------------
-| ``row:vec v->mat`` Defined in line number 233.
+| ``row:vec v->mat`` Defined in line number 232.
 | 
 | 
 
@@ -664,7 +664,7 @@ row
 
 \=
 -------------------------------------------------
-| ``=:mat m,int k->bool`` Defined in line number 236.
+| ``=:mat m,int k->bool`` Defined in line number 235.
 | 
 | 
 
@@ -672,7 +672,7 @@ row
 
 \#
 -------------------------------------------------
-| ``#:mat m, vec v->mat: n_rows(m)  # (([vec]`` Defined in line number 239.
+| ``#:mat m, vec v->mat: n_rows(m)  # (([vec]`` Defined in line number 238.
 | 
 | 
 
@@ -680,7 +680,7 @@ row
 
 \#
 -------------------------------------------------
-| ``#:vec v, mat m->mat: n_rows(m)  # (v#([vec]`` Defined in line number 240.
+| ``#:vec v, mat m->mat: n_rows(m)  # (v#([vec]`` Defined in line number 239.
 | 
 | 
 
@@ -688,7 +688,7 @@ row
 
 \^
 -------------------------------------------------
-| ``^:mat m, vec v->mat: n_columns(m) ^ (([vec]`` Defined in line number 243.
+| ``^:mat m, vec v->mat: n_columns(m) ^ (([vec]`` Defined in line number 242.
 | 
 | 
 
@@ -696,7 +696,7 @@ row
 
 \^
 -------------------------------------------------
-| ``^:vec v, mat m->mat: n_columns(m) ^ (v#([vec]`` Defined in line number 244.
+| ``^:vec v, mat m->mat: n_columns(m) ^ (v#([vec]`` Defined in line number 243.
 | 
 | 
 
@@ -704,7 +704,7 @@ row
 
 \#\#
 -------------------------------------------------
-| ``##:mat A, mat B->mat`` Defined in line number 246.
+| ``##:mat A, mat B->mat`` Defined in line number 245.
 | 
 | 
 
@@ -712,7 +712,7 @@ row
 
 \^
 -------------------------------------------------
-| ``^:mat A, mat B->mat`` Defined in line number 248.
+| ``^:mat A, mat B->mat`` Defined in line number 247.
 | 
 | 
 
@@ -720,7 +720,7 @@ row
 
 \#\#
 -------------------------------------------------
-| ``##:int n,[mat] L->mat`` Defined in line number 252.
+| ``##:int n,[mat] L->mat`` Defined in line number 251.
 | 
 | 
 
@@ -728,7 +728,7 @@ row
 
 map_on
 -------------------------------------------------
-| ``map_on:mat m->((int->int)->mat)`` Defined in line number 256.
+| ``map_on:mat m->((int->int)->mat)`` Defined in line number 255.
 | 
 | 
 
@@ -736,7 +736,7 @@ map_on
 
 \*
 -------------------------------------------------
-| ``*:int c,mat m->mat: map_on(m)((int e) int`` Defined in line number 261.
+| ``*:int c,mat m->mat: map_on(m)((int e) int`` Defined in line number 260.
 | 
 | 
 
@@ -744,7 +744,7 @@ map_on
 
 \-
 -------------------------------------------------
-| ``-:mat m->mat`` Defined in line number 262.
+| ``-:mat m->mat`` Defined in line number 261.
 | 
 | 
 
@@ -752,7 +752,7 @@ map_on
 
 \\
 -------------------------------------------------
-| ``\:mat m,int d->mat: map_on(m)((int e) int`` Defined in line number 266.
+| ``\:mat m,int d->mat: map_on(m)((int e) int`` Defined in line number 265.
 | 
 | 
 
@@ -760,7 +760,7 @@ map_on
 
 \%
 -------------------------------------------------
-| ``%:mat m,int d->mat: map_on(m)((int e) int`` Defined in line number 269.
+| ``%:mat m,int d->mat: map_on(m)((int e) int`` Defined in line number 268.
 | 
 | 
 
@@ -768,7 +768,7 @@ map_on
 
 inverse
 -------------------------------------------------
-| ``inverse:mat M->mat`` Defined in line number 292.
+| ``inverse:mat M->mat`` Defined in line number 291.
 | 
 | 
 
@@ -776,7 +776,7 @@ inverse
 
 det
 -------------------------------------------------
-| ``det:mat M->int`` Defined in line number 296.
+| ``det:mat M->int`` Defined in line number 295.
 | 
 | 
 
@@ -784,7 +784,7 @@ det
 
 saturated_span
 -------------------------------------------------
-| ``saturated_span:mat M->bool`` Defined in line number 304.
+| ``saturated_span:mat M->bool`` Defined in line number 303.
 | 
 | 
 
@@ -792,7 +792,7 @@ saturated_span
 
 all
 -------------------------------------------------
-| ``all:mat M,(vec->bool) filter->bool`` Defined in line number 309.
+| ``all:mat M,(vec->bool) filter->bool`` Defined in line number 308.
 | 
 | 
 
@@ -800,7 +800,7 @@ all
 
 none
 -------------------------------------------------
-| ``none:mat M,(vec->bool) filter->bool`` Defined in line number 311.
+| ``none:mat M,(vec->bool) filter->bool`` Defined in line number 310.
 | 
 | 
 
@@ -808,7 +808,7 @@ none
 
 first
 -------------------------------------------------
-| ``first:mat M,(vec->bool) filter->int`` Defined in line number 313.
+| ``first:mat M,(vec->bool) filter->int`` Defined in line number 312.
 | 
 | 
 
@@ -816,7 +816,7 @@ first
 
 last
 -------------------------------------------------
-| ``last:mat M,(vec->bool) filter->int`` Defined in line number 316.
+| ``last:mat M,(vec->bool) filter->int`` Defined in line number 315.
 | 
 | 
 
@@ -824,7 +824,7 @@ last
 
 columns_with
 -------------------------------------------------
-| ``columns_with:(int,vec->bool) p,mat m->mat`` Defined in line number 319.
+| ``columns_with:(int,vec->bool) p,mat m->mat`` Defined in line number 318.
 | 
 | 
 
@@ -832,7 +832,7 @@ columns_with
 
 columns_with
 -------------------------------------------------
-| ``columns_with:(vec->bool) p,mat m->mat`` Defined in line number 322.
+| ``columns_with:(vec->bool) p,mat m->mat`` Defined in line number 321.
 | 
 | 
 
@@ -840,7 +840,7 @@ columns_with
 
 columns_with
 -------------------------------------------------
-| ``columns_with:(int->bool) p,mat m->mat`` Defined in line number 324.
+| ``columns_with:(int->bool) p,mat m->mat`` Defined in line number 323.
 | 
 | 
 
@@ -848,7 +848,7 @@ columns_with
 
 rows_with
 -------------------------------------------------
-| ``rows_with:(int,vec->bool) p,mat m->mat`` Defined in line number 327.
+| ``rows_with:(int,vec->bool) p,mat m->mat`` Defined in line number 326.
 | 
 | 
 
@@ -856,7 +856,7 @@ rows_with
 
 rows_with
 -------------------------------------------------
-| ``rows_with:(vec->bool) p,mat m->mat`` Defined in line number 330.
+| ``rows_with:(vec->bool) p,mat m->mat`` Defined in line number 329.
 | 
 | 
 
@@ -864,7 +864,7 @@ rows_with
 
 rows_with
 -------------------------------------------------
-| ``rows_with:(int->bool) p,mat m->mat`` Defined in line number 332.
+| ``rows_with:(int->bool) p,mat m->mat`` Defined in line number 331.
 | 
 | 
 
@@ -872,7 +872,7 @@ rows_with
 
 >=
 -------------------------------------------------
-| ``>=:mat m->bool`` Defined in line number 335.
+| ``>=:mat m->bool`` Defined in line number 334.
 | 
 | 
 
@@ -880,7 +880,7 @@ rows_with
 
 \>
 -------------------------------------------------
-| ``>:mat m->bool`` Defined in line number 337.
+| ``>:mat m->bool`` Defined in line number 336.
 | 
 | 
 
@@ -888,7 +888,7 @@ rows_with
 
 <=
 -------------------------------------------------
-| ``<=:mat m->bool`` Defined in line number 339.
+| ``<=:mat m->bool`` Defined in line number 338.
 | 
 | 
 
@@ -896,7 +896,7 @@ rows_with
 
 \<
 -------------------------------------------------
-| ``<:mat m->bool`` Defined in line number 340.
+| ``<:mat m->bool`` Defined in line number 339.
 | 
 | 
 
@@ -904,7 +904,7 @@ rows_with
 
 lookup_column
 -------------------------------------------------
-| ``lookup_column:vec v,mat m->int`` Defined in line number 342.
+| ``lookup_column:vec v,mat m->int`` Defined in line number 341.
 | 
 | 
 
@@ -912,7 +912,7 @@ lookup_column
 
 lookup_row
 -------------------------------------------------
-| ``lookup_row:vec v,mat m->int`` Defined in line number 344.
+| ``lookup_row:vec v,mat m->int`` Defined in line number 343.
 | 
 | 
 
@@ -920,7 +920,7 @@ lookup_row
 
 sum
 -------------------------------------------------
-| ``sum:mat m->vec`` Defined in line number 348.
+| ``sum:mat m->vec`` Defined in line number 347.
 | 
 | 
 
@@ -928,7 +928,7 @@ sum
 
 order
 -------------------------------------------------
-| ``order:mat !M->int`` Defined in line number 373.
+| ``order:mat !M->int`` Defined in line number 372.
 | 
 | 
 
@@ -936,7 +936,7 @@ order
 
 numer
 -------------------------------------------------
-| ``numer:ratvec a->vec`` Defined in line number 382.
+| ``numer:ratvec a->vec`` Defined in line number 381.
 | 
 | 
 
@@ -944,7 +944,7 @@ numer
 
 denom
 -------------------------------------------------
-| ``denom:ratvec a->int`` Defined in line number 383.
+| ``denom:ratvec a->int`` Defined in line number 382.
 | 
 | 
 
@@ -952,7 +952,7 @@ denom
 
 \*
 -------------------------------------------------
-| ``*:int i,ratvec v->ratvec`` Defined in line number 386.
+| ``*:int i,ratvec v->ratvec`` Defined in line number 385.
 | 
 | 
 
@@ -960,7 +960,7 @@ denom
 
 \*
 -------------------------------------------------
-| ``*:rat r,ratvec v->ratvec`` Defined in line number 387.
+| ``*:rat r,ratvec v->ratvec`` Defined in line number 386.
 | 
 | 
 
@@ -968,7 +968,7 @@ denom
 
 \#\#
 -------------------------------------------------
-| ``##:ratvec a,ratvec b->ratvec: ##([rat]:a,[rat]`` Defined in line number 390.
+| ``##:ratvec a,ratvec b->ratvec: ##([rat]:a,[rat]`` Defined in line number 389.
 | 
 | 
 
@@ -976,7 +976,7 @@ denom
 
 \#\#
 -------------------------------------------------
-| ``##:[ratvec] rs->ratvec: ## for r in rs do [rat]`` Defined in line number 391.
+| ``##:[ratvec] rs->ratvec: ## for r in rs do [rat]`` Defined in line number 390.
 | 
 | 
 
@@ -984,7 +984,7 @@ denom
 
 sum
 -------------------------------------------------
-| ``sum:[ratvec] list, int l->ratvec`` Defined in line number 393.
+| ``sum:[ratvec] list, int l->ratvec`` Defined in line number 392.
 | 
 | 
 
@@ -992,7 +992,7 @@ sum
 
 \*
 -------------------------------------------------
-| ``*:[ratvec] M,ratvec v->ratvec`` Defined in line number 401.
+| ``*:[ratvec] M,ratvec v->ratvec`` Defined in line number 400.
 | 
 | 
 
@@ -1000,7 +1000,7 @@ sum
 
 is_integer
 -------------------------------------------------
-| ``is_integer:ratvec v->bool`` Defined in line number 407.
+| ``is_integer:ratvec v->bool`` Defined in line number 406.
 | 
 | 
 
@@ -1008,7 +1008,7 @@ is_integer
 
 \*
 -------------------------------------------------
-| ``*:ratvec v, ratvec w->rat`` Defined in line number 410.
+| ``*:ratvec v, ratvec w->rat`` Defined in line number 409.
 | 
 | 
 
@@ -1016,7 +1016,7 @@ is_integer
 
 \*
 -------------------------------------------------
-| ``*:vec v, ratvec w->rat`` Defined in line number 412.
+| ``*:vec v, ratvec w->rat`` Defined in line number 411.
 | 
 | 
 
@@ -1024,7 +1024,7 @@ is_integer
 
 \\
 -------------------------------------------------
-| ``\:ratvec v, int k->vec`` Defined in line number 416.
+| ``\:ratvec v, int k->vec`` Defined in line number 415.
 | 
 | 
 
@@ -1032,7 +1032,7 @@ is_integer
 
 ratvec_as_vec
 -------------------------------------------------
-| ``ratvec_as_vec:ratvec v->vec`` Defined in line number 419.
+| ``ratvec_as_vec:ratvec v->vec`` Defined in line number 418.
 | 
 | 
 
@@ -1040,7 +1040,7 @@ ratvec_as_vec
 
 reverse
 -------------------------------------------------
-| ``reverse:ratvec v->ratvec: v~[`` Defined in line number 422.
+| ``reverse:ratvec v->ratvec: v~[`` Defined in line number 421.
 | 
 | 
 
@@ -1048,7 +1048,7 @@ reverse
 
 lower
 -------------------------------------------------
-| ``lower:int k,ratvec v->ratvec: v[`` Defined in line number 423.
+| ``lower:int k,ratvec v->ratvec: v[`` Defined in line number 422.
 | 
 | 
 
@@ -1056,7 +1056,7 @@ lower
 
 upper
 -------------------------------------------------
-| ``upper:int k,ratvec v->ratvec: v[k~`` Defined in line number 424.
+| ``upper:int k,ratvec v->ratvec: v[k~`` Defined in line number 423.
 | 
 | 
 
@@ -1064,7 +1064,7 @@ upper
 
 drop_lower
 -------------------------------------------------
-| ``drop_lower:int k,ratvec v->ratvec: v[k`` Defined in line number 425.
+| ``drop_lower:int k,ratvec v->ratvec: v[k`` Defined in line number 424.
 | 
 | 
 
@@ -1072,7 +1072,7 @@ drop_lower
 
 drop_upper
 -------------------------------------------------
-| ``drop_upper:int k,ratvec v->ratvec: v[`` Defined in line number 426.
+| ``drop_upper:int k,ratvec v->ratvec: v[`` Defined in line number 425.
 | 
 | 
 
@@ -1080,7 +1080,7 @@ drop_upper
 
 sum
 -------------------------------------------------
-| ``sum:ratvec v->rat`` Defined in line number 429.
+| ``sum:ratvec v->rat`` Defined in line number 428.
 | 
 | 
 
@@ -1088,7 +1088,7 @@ sum
 
 <=
 -------------------------------------------------
-| ``<=:ratvec v->bool`` Defined in line number 431.
+| ``<=:ratvec v->bool`` Defined in line number 430.
 | 
 | 
 
@@ -1096,7 +1096,7 @@ sum
 
 \<
 -------------------------------------------------
-| ``<:ratvec v->bool`` Defined in line number 432.
+| ``<:ratvec v->bool`` Defined in line number 431.
 | 
 | 
 
@@ -1104,7 +1104,7 @@ sum
 
 solve
 -------------------------------------------------
-| ``solve:mat A, ratvec b->[ratvec]`` Defined in line number 435.
+| ``solve:mat A, ratvec b->[ratvec]`` Defined in line number 434.
 | 
 | 
 
@@ -1112,7 +1112,7 @@ solve
 
 !one_minus_s = Split:
 -------------------------------------------------
-| ``!one_minus_s = Split::1,-1->Split`` Defined in line number 445.
+| ``!one_minus_s = Split::1,-1->Split`` Defined in line number 444.
 | 
 | 
 
@@ -1120,7 +1120,7 @@ solve
 
 int_part
 -------------------------------------------------
-| ``int_part:Split x->int`` Defined in line number 447.
+| ``int_part:Split x->int`` Defined in line number 446.
 | 
 | 
 
@@ -1128,7 +1128,7 @@ int_part
 
 s_part
 -------------------------------------------------
-| ``s_part:Split x->int`` Defined in line number 448.
+| ``s_part:Split x->int`` Defined in line number 447.
 | 
 | 
 
@@ -1136,7 +1136,7 @@ s_part
 
 s_to_1
 -------------------------------------------------
-| ``s_to_1:Split x->int`` Defined in line number 453.
+| ``s_to_1:Split x->int`` Defined in line number 452.
 | 
 | 
 
@@ -1144,7 +1144,7 @@ s_to_1
 
 s_to_minus_1
 -------------------------------------------------
-| ``s_to_minus_1:Split x->int`` Defined in line number 454.
+| ``s_to_minus_1:Split x->int`` Defined in line number 453.
 | 
 | 
 
@@ -1152,7 +1152,7 @@ s_to_minus_1
 
 split_as_int
 -------------------------------------------------
-| ``split_as_int:Split x->int`` Defined in line number 456.
+| ``split_as_int:Split x->int`` Defined in line number 455.
 | 
 | 
 
@@ -1160,7 +1160,7 @@ split_as_int
 
 \%
 -------------------------------------------------
-| ``\%:Split x, int n->(Split,Split)`` Defined in line number 458.
+| ``\%:Split x, int n->(Split,Split)`` Defined in line number 457.
 | 
 | 
 
@@ -1168,1863 +1168,7 @@ split_as_int
 
 split_format
 -------------------------------------------------
-| ``split_format:Split w->string`` Defined in line number 462.
-| 
-| 
-
-.. _root_datum_[vec]_simple_roots,_[vec]_simple_coroots,_int_r->rootdatum1:
-
-root_datum
--------------------------------------------------
-| ``root_datum:[vec] simple_roots, [vec] simple_coroots, int r->RootDatum`` Defined in line number 489.
-| 
-| 
-
-.. _root_datum_lietype_t,_[ratvec]_gens->rootdatum1:
-
-root_datum
--------------------------------------------------
-| ``root_datum:LieType t, [ratvec] gens->RootDatum`` Defined in line number 492.
-| 
-| 
-
-.. _root_datum_lietype_t,_ratvec_gen->rootdatum1:
-
-root_datum
--------------------------------------------------
-| ``root_datum:LieType t, ratvec gen->RootDatum`` Defined in line number 496.
-| 
-| 
-
-.. _is_root_(rootdatum,vec)_(rd,):p->bool1:
-
-is_root
--------------------------------------------------
-| ``is_root:(RootDatum,vec) (rd,):p->bool`` Defined in line number 499.
-| 
-| 
-
-.. _is_coroot_(rootdatum,vec)_(rd,):p->bool1:
-
-is_coroot
--------------------------------------------------
-| ``is_coroot:(RootDatum,vec) (rd,):p->bool`` Defined in line number 501.
-| 
-| 
-
-.. _is_posroot_(rootdatum,vec)(rd,):p->bool1:
-
-is_posroot
--------------------------------------------------
-| ``is_posroot:(RootDatum,vec)(rd,):p->bool`` Defined in line number 503.
-| 
-| 
-
-.. _is_poscoroot_(rootdatum,vec)(rd,):p->bool1:
-
-is_poscoroot
--------------------------------------------------
-| ``is_poscoroot:(RootDatum,vec)(rd,):p->bool`` Defined in line number 505.
-| 
-| 
-
-.. _posroot_index_(rootdatum,vec)p->int1:
-
-posroot_index
--------------------------------------------------
-| ``posroot_index:(RootDatum,vec)p->int`` Defined in line number 508.
-| 
-| 
-
-.. _poscoroot_index_(rootdatum,vec)p->int1:
-
-poscoroot_index
--------------------------------------------------
-| ``poscoroot_index:(RootDatum,vec)p->int`` Defined in line number 510.
-| 
-| 
-
-.. _rho_rootdatum_rd->ratvec1:
-
-rho
--------------------------------------------------
-| ``rho:RootDatum rd->ratvec`` Defined in line number 514.
-| 
-| 
-
-.. _rho_as_vec_rootdatum_r->vec1:
-
-rho_as_vec
--------------------------------------------------
-| ``rho_as_vec:RootDatum r->vec`` Defined in line number 520.
-| 
-| 
-
-.. _rho_check_rootdatum_rd->ratvec1:
-
-rho_check
--------------------------------------------------
-| ``rho_check:RootDatum rd->ratvec`` Defined in line number 522.
-| 
-| 
-
-.. _is_positive_root_rootdatum_rd->(vec->bool)1:
-
-is_positive_root
--------------------------------------------------
-| ``is_positive_root:RootDatum rd->(vec->bool)`` Defined in line number 529.
-| 
-| 
-
-.. _is_positive_coroot_rootdatum_rd->(vec->bool)1:
-
-is_positive_coroot
--------------------------------------------------
-| ``is_positive_coroot:RootDatum rd->(vec->bool)`` Defined in line number 531.
-| 
-| 
-
-.. _is_negative_root_rootdatum_rd->(vec->bool)1:
-
-is_negative_root
--------------------------------------------------
-| ``is_negative_root:RootDatum rd->(vec->bool)`` Defined in line number 533.
-| 
-| 
-
-.. _is_negative_coroot_rootdatum_rd->(vec->bool)1:
-
-is_negative_coroot
--------------------------------------------------
-| ``is_negative_coroot:RootDatum rd->(vec->bool)`` Defined in line number 535.
-| 
-| 
-
-.. _is_positive_root_rootdatum_rd,vec_alpha->bool1:
-
-is_positive_root
--------------------------------------------------
-| ``is_positive_root:RootDatum rd,vec alpha->bool`` Defined in line number 538.
-| 
-| 
-
-.. _is_positive_coroot_rootdatum_rd,vec_alphav->bool1:
-
-is_positive_coroot
--------------------------------------------------
-| ``is_positive_coroot:RootDatum rd,vec alphav->bool`` Defined in line number 540.
-| 
-| 
-
-.. _is_negative_root_rootdatum_rd,vec_alpha->bool1:
-
-is_negative_root
--------------------------------------------------
-| ``is_negative_root:RootDatum rd,vec alpha->bool`` Defined in line number 542.
-| 
-| 
-
-.. _is_negative_coroot_rootdatum_rd,vec_alphav->bool1:
-
-is_negative_coroot
--------------------------------------------------
-| ``is_negative_coroot:RootDatum rd,vec alphav->bool`` Defined in line number 544.
-| 
-| 
-
-.. _roots_all_positive_rootdatum_rd->(mat->bool)1:
-
-roots_all_positive
--------------------------------------------------
-| ``roots_all_positive:RootDatum rd->(mat->bool)`` Defined in line number 548.
-| 
-| 
-
-.. _coroots_all_positive_rootdatum_rd->(mat->bool)1:
-
-coroots_all_positive
--------------------------------------------------
-| ``coroots_all_positive:RootDatum rd->(mat->bool)`` Defined in line number 550.
-| 
-| 
-
-.. _among_posroots_rootdatum_rd->(mat_m)bool1:
-
-among_posroots
--------------------------------------------------
-| ``among_posroots:RootDatum rd->(mat M)bool`` Defined in line number 553.
-| 
-| 
-
-.. _among_poscoroots_rootdatum_rd->(mat_m)bool1:
-
-among_poscoroots
--------------------------------------------------
-| ``among_poscoroots:RootDatum rd->(mat M)bool`` Defined in line number 555.
-| 
-| 
-
-.. _roots_rootdatum_rd->mat1:
-
-roots
--------------------------------------------------
-| ``roots:RootDatum rd->mat`` Defined in line number 562.
-| 
-| 
-
-.. _coroots_rootdatum_rd->mat1:
-
-coroots
--------------------------------------------------
-| ``coroots:RootDatum rd->mat`` Defined in line number 564.
-| 
-| 
-
-.. _root_rootdatum_rd,_vec_alpha_v->vec1:
-
-root
--------------------------------------------------
-| ``root:RootDatum rd, vec alpha_v->vec`` Defined in line number 568.
-| 
-| 
-
-.. _coroot_rootdatum_rd,_vec_alpha->vec1:
-
-coroot
--------------------------------------------------
-| ``coroot:RootDatum rd, vec alpha->vec`` Defined in line number 569.
-| 
-| 
-
-.. _reflection_rootdatum_rd,_int_i->mat1:
-
-reflection
--------------------------------------------------
-| ``reflection:RootDatum rd, int i->mat`` Defined in line number 572.
-| 
-| 
-
-.. _reflection_(rootdatum,vec)(rd,):p->mat1:
-
-reflection
--------------------------------------------------
-| ``reflection:(RootDatum,vec)(rd,):p->mat`` Defined in line number 574.
-| 
-| 
-
-.. _coreflection_rootdatum_rd,_int_i->mat1:
-
-coreflection
--------------------------------------------------
-| ``coreflection:RootDatum rd, int i->mat`` Defined in line number 576.
-| 
-| 
-
-.. _coreflection_(rootdatum,vec)(rd,):p->mat1:
-
-coreflection
--------------------------------------------------
-| ``coreflection:(RootDatum,vec)(rd,):p->mat`` Defined in line number 578.
-| 
-| 
-
-.. _reflect_rootdatum_rd,_int_i,_vec_v->vec1:
-
-reflect
--------------------------------------------------
-| ``reflect:RootDatum rd, int i, vec v->vec`` Defined in line number 580.
-| 
-| 
-
-.. _reflect_rootdatum_rd,_vec_alpha,_vec_v->vec1:
-
-reflect
--------------------------------------------------
-| ``reflect:RootDatum rd, vec alpha, vec v->vec`` Defined in line number 582.
-| 
-| 
-
-.. _coreflect_rootdatum_rd,_vec_v,_int_i->vec1:
-
-coreflect
--------------------------------------------------
-| ``coreflect:RootDatum rd, vec v, int i->vec`` Defined in line number 584.
-| 
-| 
-
-.. _coreflect_rootdatum_rd,_vec_v,_vec_alpha->vec1:
-
-coreflect
--------------------------------------------------
-| ``coreflect:RootDatum rd, vec v, vec alpha->vec`` Defined in line number 586.
-| 
-| 
-
-.. _reflect_rootdatum_rd,_int_i,_ratvec_v->ratvec1:
-
-reflect
--------------------------------------------------
-| ``reflect:RootDatum rd, int i, ratvec v->ratvec`` Defined in line number 589.
-| 
-| 
-
-.. _reflect_rootdatum_rd,_vec_alpha,_ratvec_v->ratvec1:
-
-reflect
--------------------------------------------------
-| ``reflect:RootDatum rd, vec alpha, ratvec v->ratvec`` Defined in line number 591.
-| 
-| 
-
-.. _coreflect_rootdatum_rd,_ratvec_v,_int_i->ratvec1:
-
-coreflect
--------------------------------------------------
-| ``coreflect:RootDatum rd, ratvec v, int i->ratvec`` Defined in line number 593.
-| 
-| 
-
-.. _coreflect_rootdatum_rd,_ratvec_v,_vec_alpha->ratvec1:
-
-coreflect
--------------------------------------------------
-| ``coreflect:RootDatum rd, ratvec v, vec alpha->ratvec`` Defined in line number 595.
-| 
-| 
-
-.. _left_reflect_rootdatum_rd,_int_i,_mat_m->mat1:
-
-left_reflect
--------------------------------------------------
-| ``left_reflect:RootDatum rd, int i, mat M->mat`` Defined in line number 599.
-| 
-| 
-
-.. _left_reflect_rootdatum_rd,_vec_alpha,_mat_m->mat1:
-
-left_reflect
--------------------------------------------------
-| ``left_reflect:RootDatum rd, vec alpha, mat M->mat`` Defined in line number 601.
-| 
-| 
-
-.. _right_reflect_rootdatum_rd,_mat_m,_int_i->mat1:
-
-right_reflect
--------------------------------------------------
-| ``right_reflect:RootDatum rd, mat M, int i->mat`` Defined in line number 603.
-| 
-| 
-
-.. _right_reflect_rootdatum_rd,_mat_m,_vec_alpha->mat1:
-
-right_reflect
--------------------------------------------------
-| ``right_reflect:RootDatum rd, mat M, vec alpha->mat`` Defined in line number 605.
-| 
-| 
-
-.. _conjugate_rootdatum_rd,_int_i,_mat_m->mat1:
-
-conjugate
--------------------------------------------------
-| ``conjugate:RootDatum rd, int i, mat M->mat`` Defined in line number 608.
-| 
-| 
-
-.. _conjugate_rootdatum_rd,_vec_alpha,_mat_m->mat1:
-
-conjugate
--------------------------------------------------
-| ``conjugate:RootDatum rd, vec alpha, mat M->mat`` Defined in line number 610.
-| 
-| 
-
-.. _singular_simple_indices_rootdatum_rd,ratvec_v->[int]1:
-
-singular_simple_indices
--------------------------------------------------
-| ``singular_simple_indices:RootDatum rd,ratvec v->[int]`` Defined in line number 614.
-| 
-| 
-
-.. _is_imaginary_mat_theta->(vec->bool):_(vec_alpha)1:
-
-is_imaginary
--------------------------------------------------
-| ``is_imaginary:mat theta->(vec->bool): (vec alpha)`` Defined in line number 618.
-| 
-| 
-
-.. _is_real_mat_theta->(vec->bool):_(vec_alpha)1:
-
-is_real
--------------------------------------------------
-| ``is_real:mat theta->(vec->bool): (vec alpha)`` Defined in line number 619.
-| 
-| 
-
-.. _is_complex_mat_theta->(vec->bool):_(vec_alpha)1:
-
-is_complex
--------------------------------------------------
-| ``is_complex:mat theta->(vec->bool): (vec alpha)`` Defined in line number 620.
-| 
-| 
-
-.. _imaginary_roots_rootdatum_rd,_mat_theta->mat1:
-
-imaginary_roots
--------------------------------------------------
-| ``imaginary_roots:RootDatum rd, mat theta->mat`` Defined in line number 624.
-| 
-| 
-
-.. _real_roots_rootdatum_rd,_mat_theta->mat1:
-
-real_roots
--------------------------------------------------
-| ``real_roots:RootDatum rd, mat theta->mat`` Defined in line number 626.
-| 
-| 
-
-.. _imaginary_coroots_rootdatum_rd,_mat_theta->mat1:
-
-imaginary_coroots
--------------------------------------------------
-| ``imaginary_coroots:RootDatum rd, mat theta->mat`` Defined in line number 630.
-| 
-| 
-
-.. _real_coroots_rootdatum_rd,_mat_theta->mat1:
-
-real_coroots
--------------------------------------------------
-| ``real_coroots:RootDatum rd, mat theta->mat`` Defined in line number 632.
-| 
-| 
-
-.. _imaginary_posroots_rootdatum_rd,mat_theta->mat1:
-
-imaginary_posroots
--------------------------------------------------
-| ``imaginary_posroots:RootDatum rd,mat theta->mat`` Defined in line number 636.
-| 
-| 
-
-.. _real_posroots_rootdatum_rd,mat_theta->mat1:
-
-real_posroots
--------------------------------------------------
-| ``real_posroots:RootDatum rd,mat theta->mat`` Defined in line number 638.
-| 
-| 
-
-.. _imaginary_poscoroots_rootdatum_rd,mat_theta->mat1:
-
-imaginary_poscoroots
--------------------------------------------------
-| ``imaginary_poscoroots:RootDatum rd,mat theta->mat`` Defined in line number 640.
-| 
-| 
-
-.. _real_poscoroots_rootdatum_rd,mat_theta->mat1:
-
-real_poscoroots
--------------------------------------------------
-| ``real_poscoroots:RootDatum rd,mat theta->mat`` Defined in line number 642.
-| 
-| 
-
-.. _imaginary_sys_(rootdatum,mat)p->(mat,mat)1:
-
-imaginary_sys
--------------------------------------------------
-| ``imaginary_sys:(RootDatum,mat)p->(mat,mat)`` Defined in line number 644.
-| 
-| 
-
-.. _real_sys_(rootdatum,mat)p->(mat,mat)1:
-
-real_sys
--------------------------------------------------
-| ``real_sys:(RootDatum,mat)p->(mat,mat)`` Defined in line number 646.
-| 
-| 
-
-.. _is_dominant_rootdatum_rd,_ratvec_v->bool1:
-
-is_dominant
--------------------------------------------------
-| ``is_dominant:RootDatum rd, ratvec v->bool`` Defined in line number 650.
-| 
-| 
-
-.. _is_strictly_dominant_rootdatum_rd,_ratvec_v->bool1:
-
-is_strictly_dominant
--------------------------------------------------
-| ``is_strictly_dominant:RootDatum rd, ratvec v->bool`` Defined in line number 652.
-| 
-| 
-
-.. _is_regular_rootdatum_rd,ratvec_v->bool1:
-
-is_regular
--------------------------------------------------
-| ``is_regular:RootDatum rd,ratvec v->bool`` Defined in line number 654.
-| 
-| 
-
-.. _is_integral_rootdatum_rd,_ratvec_v->bool1:
-
-is_integral
--------------------------------------------------
-| ``is_integral:RootDatum rd, ratvec v->bool`` Defined in line number 656.
-| 
-| 
-
-.. _radical_basis_rootdatum_rd->mat1:
-
-radical_basis
--------------------------------------------------
-| ``radical_basis:RootDatum rd->mat`` Defined in line number 660.
-| 
-| 
-
-.. _coradical_basis_rootdatum_rd->mat1:
-
-coradical_basis
--------------------------------------------------
-| ``coradical_basis:RootDatum rd->mat`` Defined in line number 662.
-| 
-| 
-
-.. _is_semisimple_rootdatum_rd->bool1:
-
-is_semisimple
--------------------------------------------------
-| ``is_semisimple:RootDatum rd->bool`` Defined in line number 665.
-| 
-| 
-
-.. _derived_is_simply_connected_rootdatum_rd->bool1:
-
-derived_is_simply_connected
--------------------------------------------------
-| ``derived_is_simply_connected:RootDatum rd->bool`` Defined in line number 667.
-| 
-| 
-
-.. _has_connected_center_rootdatum_rd->bool1:
-
-has_connected_center
--------------------------------------------------
-| ``has_connected_center:RootDatum rd->bool`` Defined in line number 669.
-| 
-| 
-
-.. _is_simply_connected_rootdatum_rd->bool1:
-
-is_simply_connected
--------------------------------------------------
-| ``is_simply_connected:RootDatum rd->bool`` Defined in line number 671.
-| 
-| 
-
-.. _is_adjoint_rootdatum_rd->bool1:
-
-is_adjoint
--------------------------------------------------
-| ``is_adjoint:RootDatum rd->bool`` Defined in line number 673.
-| 
-| 
-
-.. _derived_rootdatum_rd->rootdatum1:
-
-derived
--------------------------------------------------
-| ``derived:RootDatum rd->RootDatum`` Defined in line number 679.
-| 
-| 
-
-.. _mod_central_torus_rootdatum_rd->rootdatum1:
-
-mod_central_torus
--------------------------------------------------
-| ``mod_central_torus:RootDatum rd->RootDatum`` Defined in line number 680.
-| 
-| 
-
-.. _adjoint_rootdatum_rd->rootdatum1:
-
-adjoint
--------------------------------------------------
-| ``adjoint:RootDatum rd->RootDatum`` Defined in line number 682.
-| 
-| 
-
-.. _is_simple_for_vec_dual_two_rho->(vec->bool)1:
-
-is_simple_for
--------------------------------------------------
-| ``is_simple_for:vec dual_two_rho->(vec->bool)`` Defined in line number 686.
-| 
-| 
-
-.. _simple_from_positive_mat_posroots,mat_poscoroots->(mat,mat)1:
-
-simple_from_positive
--------------------------------------------------
-| ``simple_from_positive:mat posroots,mat poscoroots->(mat,mat)`` Defined in line number 690.
-| 
-| 
-
-.. _fundamental_weights_rootdatum_rd->[ratvec]1:
-
-fundamental_weights
--------------------------------------------------
-| ``fundamental_weights:RootDatum rd->[ratvec]`` Defined in line number 695.
-| 
-| 
-
-.. _fundamental_coweights_rootdatum_rd->[ratvec]1:
-
-fundamental_coweights
--------------------------------------------------
-| ``fundamental_coweights:RootDatum rd->[ratvec]`` Defined in line number 697.
-| 
-| 
-
-.. _\!=_InnerClass_x,InnerClass_y->bool1:
-
-\!=
--------------------------------------------------
-| ``!=:InnerClass x,InnerClass y->bool`` Defined in line number 704.
-| 
-| 
-
-.. _dual_integral_innerclass_ic,_ratvec_gamma->innerclass1:
-
-dual_integral
--------------------------------------------------
-| ``dual_integral:InnerClass ic, ratvec gamma->InnerClass`` Defined in line number 707.
-| 
-| 
-
-.. _cartan_classes_innerclass_ic->[cartanclass]1:
-
-Cartan_classes
--------------------------------------------------
-| ``Cartan_classes:InnerClass ic->[CartanClass]`` Defined in line number 713.
-| 
-| 
-
-.. _print_cartan_info_cartanclass_cc->void1:
-
-print_Cartan_info
--------------------------------------------------
-| ``print_Cartan_info:CartanClass cc->void`` Defined in line number 716.
-| 
-| 
-
-.. _fundamental_cartan_innerclass_ic->cartanclass1:
-
-fundamental_Cartan
--------------------------------------------------
-| ``fundamental_Cartan:InnerClass ic->CartanClass`` Defined in line number 736.
-| 
-| 
-
-.. _most_split_cartan_innerclass_ic->cartanclass1:
-
-most_split_Cartan
--------------------------------------------------
-| ``most_split_Cartan:InnerClass ic->CartanClass`` Defined in line number 738.
-| 
-| 
-
-.. _compact_rank_cartanclass_cc->int1:
-
-compact_rank
--------------------------------------------------
-| ``compact_rank:CartanClass cc->int`` Defined in line number 743.
-| 
-| 
-
-.. _split_rank_cartanclass_cc->int1:
-
-split_rank
--------------------------------------------------
-| ``split_rank:CartanClass cc->int`` Defined in line number 745.
-| 
-| 
-
-.. _compact_rank_innerclass_g->int1:
-
-compact_rank
--------------------------------------------------
-| ``compact_rank:InnerClass G->int`` Defined in line number 748.
-| 
-| 
-
-.. _split_rank_realform_g->int1:
-
-split_rank
--------------------------------------------------
-| ``split_rank:RealForm G->int`` Defined in line number 749.
-| 
-| 
-
-.. _\=_CartanClass_H,CartanClass_J->bool1:
-
-\=
--------------------------------------------------
-| ``=:CartanClass H,CartanClass J->bool`` Defined in line number 752.
-| 
-| 
-
-.. _number_cartanclass_h,realform_g->int1:
-
-number
--------------------------------------------------
-| ``number:CartanClass H,RealForm G->int`` Defined in line number 757.
-| 
-| 
-
-.. _\!=_RealForm_f,_RealForm_g->bool1:
-
-\!=
--------------------------------------------------
-| ``!=:RealForm f, RealForm g->bool`` Defined in line number 762.
-| 
-| 
-
-.. _form_name_realform_f->string1:
-
-form_name
--------------------------------------------------
-| ``form_name:RealForm f->string`` Defined in line number 764.
-| 
-| 
-
-.. _real_forms_innerclass_ic->[realform]1:
-
-real_forms
--------------------------------------------------
-| ``real_forms:InnerClass ic->[RealForm]`` Defined in line number 766.
-| 
-| 
-
-.. _dual_real_forms_innerclass_ic->[realform]1:
-
-dual_real_forms
--------------------------------------------------
-| ``dual_real_forms:InnerClass ic->[RealForm]`` Defined in line number 768.
-| 
-| 
-
-.. _is_quasisplit_realform_g->bool1:
-
-is_quasisplit
--------------------------------------------------
-| ``is_quasisplit:RealForm G->bool`` Defined in line number 771.
-| 
-| 
-
-.. _is_quasicompact_realform_g->bool1:
-
-is_quasicompact
--------------------------------------------------
-| ``is_quasicompact:RealForm G->bool`` Defined in line number 772.
-| 
-| 
-
-.. _split_form_rootdatum_r->realform1:
-
-split_form
--------------------------------------------------
-| ``split_form:RootDatum r->RealForm`` Defined in line number 774.
-| 
-| 
-
-.. _split_form_lietype_t->realform1:
-
-split_form
--------------------------------------------------
-| ``split_form:LieType t->RealForm`` Defined in line number 778.
-| 
-| 
-
-.. _quasicompact_form_innerclass_ic->realform1:
-
-quasicompact_form
--------------------------------------------------
-| ``quasicompact_form:InnerClass ic->RealForm`` Defined in line number 780.
-| 
-| 
-
-.. _is_compatible_realform_f,_realform_g->bool1:
-
-is_compatible
--------------------------------------------------
-| ``is_compatible:RealForm f, RealForm g->bool`` Defined in line number 783.
-| 
-| 
-
-.. _is_compact_realform_g->bool1:
-
-is_compact
--------------------------------------------------
-| ``is_compact:RealForm G->bool`` Defined in line number 788.
-| 
-| 
-
-.. _\!=_KGBElt_x,KGBElt_y->bool1:
-
-\!=
--------------------------------------------------
-| ``!=:KGBElt x,KGBElt y->bool`` Defined in line number 795.
-| 
-| 
-
-.. _root_datum_kgbelt_x->rootdatum1:
-
-root_datum
--------------------------------------------------
-| ``root_datum:KGBElt x->RootDatum`` Defined in line number 798.
-| 
-| 
-
-.. _inner_class_kgbelt_x->innerclass1:
-
-inner_class
--------------------------------------------------
-| ``inner_class:KGBElt x->InnerClass`` Defined in line number 799.
-| 
-| 
-
-.. _kgb_realform_rf->[kgbelt]:_for_i1:
-
-KGB
--------------------------------------------------
-| ``KGB:RealForm rf->[KGBElt]: for i`` Defined in line number 801.
-| 
-| 
-
-.. _kgb_cartanclass_h,realform_g->[kgbelt]1:
-
-KGB
--------------------------------------------------
-| ``KGB:CartanClass H,RealForm G->[KGBElt]`` Defined in line number 804.
-| 
-| 
-
-.. _kgb_elt_(innerclass,_mat,_ratvec)_(,theta,v):all->kgbelt1:
-
-KGB_elt
--------------------------------------------------
-| ``KGB_elt:(InnerClass, mat, ratvec) (,theta,v):all->KGBElt`` Defined in line number 807.
-| 
-| 
-
-.. _kgb_elt_rootdatum_rd,_mat_theta,_ratvec_v->kgbelt1:
-
-KGB_elt
--------------------------------------------------
-| ``KGB_elt:RootDatum rd, mat theta, ratvec v->KGBElt`` Defined in line number 812.
-| 
-| 
-
-.. _cartan_class_innerclass_ic,_mat_theta->cartanclass1:
-
-Cartan_class
--------------------------------------------------
-| ``Cartan_class:InnerClass ic, mat theta->CartanClass`` Defined in line number 817.
-| 
-| 
-
-.. _status_vec_alpha,kgbelt_x->int1:
-
-status
--------------------------------------------------
-| ``status:vec alpha,KGBElt x->int`` Defined in line number 820.
-| 
-| 
-
-.. _cross_vec_alpha,kgbelt_x->kgbelt1:
-
-cross
--------------------------------------------------
-| ``cross:vec alpha,KGBElt x->KGBElt`` Defined in line number 822.
-| 
-| 
-
-.. _cayley_vec_alpha,kgbelt_x->kgbelt1:
-
-Cayley
--------------------------------------------------
-| ``Cayley:vec alpha,KGBElt x->KGBElt`` Defined in line number 824.
-| 
-| 
-
-.. _w_cross_[int]_w,kgbelt_x->kgbelt1:
-
-W_cross
--------------------------------------------------
-| ``W_cross:[int] w,KGBElt x->KGBElt`` Defined in line number 828.
-| 
-| 
-
-.. _kgb_status_text_int_i->string1:
-
-KGB_status_text
--------------------------------------------------
-| ``KGB_status_text:int i->string`` Defined in line number 831.
-| 
-| 
-
-.. _status_text_(int,kgbelt)p->string1:
-
-status_text
--------------------------------------------------
-| ``status_text:(int,KGBElt)p->string`` Defined in line number 833.
-| 
-| 
-
-.. _status_text_(vec,kgbelt)p->string1:
-
-status_text
--------------------------------------------------
-| ``status_text:(vec,KGBElt)p->string`` Defined in line number 834.
-| 
-| 
-
-.. _status_texts_kgbelt_x->[string]1:
-
-status_texts
--------------------------------------------------
-| ``status_texts:KGBElt x->[string]`` Defined in line number 835.
-| 
-| 
-
-.. _is_imaginary_kgbelt_x->(vec->bool)1:
-
-is_imaginary
--------------------------------------------------
-| ``is_imaginary:KGBElt x->(vec->bool)`` Defined in line number 849.
-| 
-| 
-
-.. _is_real_kgbelt_x->(vec->bool)1:
-
-is_real
--------------------------------------------------
-| ``is_real:KGBElt x->(vec->bool)`` Defined in line number 850.
-| 
-| 
-
-.. _is_complex_kgbelt_x->(vec->bool)1:
-
-is_complex
--------------------------------------------------
-| ``is_complex:KGBElt x->(vec->bool)`` Defined in line number 851.
-| 
-| 
-
-.. _imaginary_posroots_kgbelt_x->mat1:
-
-imaginary_posroots
--------------------------------------------------
-| ``imaginary_posroots:KGBElt x->mat`` Defined in line number 854.
-| 
-| 
-
-.. _real_posroots_kgbelt_x->mat1:
-
-real_posroots
--------------------------------------------------
-| ``real_posroots:KGBElt x->mat`` Defined in line number 856.
-| 
-| 
-
-.. _imaginary_poscoroots_kgbelt_x->mat1:
-
-imaginary_poscoroots
--------------------------------------------------
-| ``imaginary_poscoroots:KGBElt x->mat`` Defined in line number 858.
-| 
-| 
-
-.. _real_poscoroots_kgbelt_x->mat1:
-
-real_poscoroots
--------------------------------------------------
-| ``real_poscoroots:KGBElt x->mat`` Defined in line number 860.
-| 
-| 
-
-.. _imaginary_sys_kgbelt_x->(mat,mat)1:
-
-imaginary_sys
--------------------------------------------------
-| ``imaginary_sys:KGBElt x->(mat,mat)`` Defined in line number 862.
-| 
-| 
-
-.. _real_sys_kgbelt_x->(mat,mat)1:
-
-real_sys
--------------------------------------------------
-| ``real_sys:KGBElt x->(mat,mat)`` Defined in line number 865.
-| 
-| 
-
-.. _rho_i_kgbelt_x->ratvec1:
-
-rho_i
--------------------------------------------------
-| ``rho_i:KGBElt x->ratvec`` Defined in line number 869.
-| 
-| 
-
-.. _rho_r_kgbelt_x->ratvec1:
-
-rho_r
--------------------------------------------------
-| ``rho_r:KGBElt x->ratvec`` Defined in line number 870.
-| 
-| 
-
-.. _rho_check_i_kgbelt_x->ratvec1:
-
-rho_check_i
--------------------------------------------------
-| ``rho_check_i:KGBElt x->ratvec`` Defined in line number 871.
-| 
-| 
-
-.. _rho_check_r_kgbelt_x->ratvec1:
-
-rho_check_r
--------------------------------------------------
-| ``rho_check_r:KGBElt x->ratvec`` Defined in line number 872.
-| 
-| 
-
-.. _rho_i_(rootdatum,mat)_rd_theta->ratvec1:
-
-rho_i
--------------------------------------------------
-| ``rho_i:(RootDatum,mat) rd_theta->ratvec`` Defined in line number 874.
-| 
-| 
-
-.. _rho_r_(rootdatum,mat)_rd_theta->ratvec1:
-
-rho_r
--------------------------------------------------
-| ``rho_r:(RootDatum,mat) rd_theta->ratvec`` Defined in line number 876.
-| 
-| 
-
-.. _rho_check_i_(rootdatum,mat)_rd_theta->ratvec1:
-
-rho_check_i
--------------------------------------------------
-| ``rho_check_i:(RootDatum,mat) rd_theta->ratvec`` Defined in line number 878.
-| 
-| 
-
-.. _rho_check_r_(rootdatum,mat)_rd_theta->ratvec1:
-
-rho_check_r
--------------------------------------------------
-| ``rho_check_r:(RootDatum,mat) rd_theta->ratvec`` Defined in line number 880.
-| 
-| 
-
-.. _is_compact_kgbelt_x->(vec->bool)1:
-
-is_compact
--------------------------------------------------
-| ``is_compact:KGBElt x->(vec->bool)`` Defined in line number 884.
-| 
-| 
-
-.. _is_noncompact_kgbelt_x->(vec->bool)1:
-
-is_noncompact
--------------------------------------------------
-| ``is_noncompact:KGBElt x->(vec->bool)`` Defined in line number 887.
-| 
-| 
-
-.. _is_compact_imaginary_kgbelt_x->(vec->bool)1:
-
-is_compact_imaginary
--------------------------------------------------
-| ``is_compact_imaginary:KGBElt x->(vec->bool)`` Defined in line number 892.
-| 
-| 
-
-.. _is_noncompact_imaginary_kgbelt_x->(vec->bool)1:
-
-is_noncompact_imaginary
--------------------------------------------------
-| ``is_noncompact_imaginary:KGBElt x->(vec->bool)`` Defined in line number 895.
-| 
-| 
-
-.. _compact_posroots_kgbelt_x->mat1:
-
-compact_posroots
--------------------------------------------------
-| ``compact_posroots:KGBElt x->mat`` Defined in line number 899.
-| 
-| 
-
-.. _noncompact_posroots_kgbelt_x->mat1:
-
-noncompact_posroots
--------------------------------------------------
-| ``noncompact_posroots:KGBElt x->mat`` Defined in line number 901.
-| 
-| 
-
-.. _rho_ci_kgbelt_x->ratvec1:
-
-rho_ci
--------------------------------------------------
-| ``rho_ci:KGBElt x->ratvec`` Defined in line number 904.
-| 
-| 
-
-.. _rho_nci_kgbelt_x->ratvec1:
-
-rho_nci
--------------------------------------------------
-| ``rho_nci:KGBElt x->ratvec`` Defined in line number 905.
-| 
-| 
-
-.. _is_imaginary_vec_v,kgbelt_x->bool1:
-
-is_imaginary
--------------------------------------------------
-| ``is_imaginary:vec v,KGBElt x->bool`` Defined in line number 907.
-| 
-| 
-
-.. _is_real_vec_v,kgbelt_x->bool1:
-
-is_real
--------------------------------------------------
-| ``is_real:vec v,KGBElt x->bool`` Defined in line number 908.
-| 
-| 
-
-.. _is_complex_vec_v,kgbelt_x->bool1:
-
-is_complex
--------------------------------------------------
-| ``is_complex:vec v,KGBElt x->bool`` Defined in line number 909.
-| 
-| 
-
-.. _is_compact_imaginary_vec_v,kgbelt_x->bool1:
-
-is_compact_imaginary
--------------------------------------------------
-| ``is_compact_imaginary:vec v,KGBElt x->bool`` Defined in line number 910.
-| 
-| 
-
-.. _is_noncompact_imaginary_vec_v,kgbelt_x->bool1:
-
-is_noncompact_imaginary
--------------------------------------------------
-| ``is_noncompact_imaginary:vec v,KGBElt x->bool`` Defined in line number 911.
-| 
-| 
-
-.. _print_kgb_kgbelt_x->void1:
-
-print_KGB
--------------------------------------------------
-| ``print_KGB:KGBElt x->void`` Defined in line number 914.
-| 
-| 
-
-.. _no_cminus_roots_kgbelt_x->bool1:
-
-no_Cminus_roots
--------------------------------------------------
-| ``no_Cminus_roots:KGBElt x->bool`` Defined in line number 918.
-| 
-| 
-
-.. _no_cplus_roots_kgbelt_x->bool1:
-
-no_Cplus_roots
--------------------------------------------------
-| ``no_Cplus_roots:KGBElt x->bool`` Defined in line number 920.
-| 
-| 
-
-.. _blocks_innerclass_ic->[block]1:
-
-blocks
--------------------------------------------------
-| ``blocks:InnerClass ic->[Block]`` Defined in line number 925.
-| 
-| 
-
-.. _raw_kl_(realform,realform)_p->(mat,[vec],vec)1:
-
-raw_KL
--------------------------------------------------
-| ``raw_KL:(RealForm,RealForm) p->(mat,[vec],vec)`` Defined in line number 933.
-| 
-| 
-
-.. _dual_kl_(realform,realform)_p->(mat,[vec],vec)1:
-
-dual_KL
--------------------------------------------------
-| ``dual_KL:(RealForm,RealForm) p->(mat,[vec],vec)`` Defined in line number 934.
-| 
-| 
-
-.. _print_block_(realform,realform)_p->void1:
-
-print_block
--------------------------------------------------
-| ``print_block:(RealForm,RealForm) p->void`` Defined in line number 936.
-| 
-| 
-
-.. _print_blocku_(realform,realform)_p->void1:
-
-print_blocku
--------------------------------------------------
-| ``print_blocku:(RealForm,RealForm) p->void`` Defined in line number 937.
-| 
-| 
-
-.. _print_blockd_(realform,realform)_p->void1:
-
-print_blockd
--------------------------------------------------
-| ``print_blockd:(RealForm,RealForm) p->void`` Defined in line number 938.
-| 
-| 
-
-.. _print_kl_basis_(realform,realform)_p->void1:
-
-print_KL_basis
--------------------------------------------------
-| ``print_KL_basis:(RealForm,RealForm) p->void`` Defined in line number 939.
-| 
-| 
-
-.. _print_prim_kl_(realform,realform)_p->void1:
-
-print_prim_KL
--------------------------------------------------
-| ``print_prim_KL:(RealForm,RealForm) p->void`` Defined in line number 940.
-| 
-| 
-
-.. _print_kl_list_(realform,realform)_p->void1:
-
-print_KL_list
--------------------------------------------------
-| ``print_KL_list:(RealForm,RealForm) p->void`` Defined in line number 941.
-| 
-| 
-
-.. _print_w_cells_(realform,realform)_p->void1:
-
-print_W_cells
--------------------------------------------------
-| ``print_W_cells:(RealForm,RealForm) p->void`` Defined in line number 942.
-| 
-| 
-
-.. _print_w_graph_(realform,realform)_p->void1:
-
-print_W_graph
--------------------------------------------------
-| ``print_W_graph:(RealForm,RealForm) p->void`` Defined in line number 943.
-| 
-| 
-
-.. _\!=_Param_x,Param_y->bool1:
-
-\!=
--------------------------------------------------
-| ``!=:Param x,Param y->bool`` Defined in line number 948.
-| 
-| 
-
-.. _root_datum_param_p->rootdatum1:
-
-root_datum
--------------------------------------------------
-| ``root_datum:Param p->RootDatum`` Defined in line number 950.
-| 
-| 
-
-.. _inner_class_param_p->innerclass1:
-
-inner_class
--------------------------------------------------
-| ``inner_class:Param p->InnerClass`` Defined in line number 951.
-| 
-| 
-
-.. _null_module_param_p->parampol1:
-
-null_module
--------------------------------------------------
-| ``null_module:Param p->ParamPol`` Defined in line number 953.
-| 
-| 
-
-.. _\*_Param_p,rat_f->Param1:
-
-\*
--------------------------------------------------
-| ``*:Param p,rat f->Param`` Defined in line number 957.
-| 
-| 
-
-.. _x_param_p->kgbelt1:
-
-x
--------------------------------------------------
-| ``x:Param p->KGBElt`` Defined in line number 960.
-| 
-| 
-
-.. _lambda_minus_rho_param_p->vec1:
-
-lambda_minus_rho
--------------------------------------------------
-| ``lambda_minus_rho:Param p->vec`` Defined in line number 961.
-| 
-| 
-
-.. _lambda_param_p->ratvec1:
-
-lambda
--------------------------------------------------
-| ``lambda:Param p->ratvec`` Defined in line number 962.
-| 
-| 
-
-.. _infinitesimal_character_param_p->ratvec1:
-
-infinitesimal_character
--------------------------------------------------
-| ``infinitesimal_character:Param p->ratvec`` Defined in line number 963.
-| 
-| 
-
-.. _nu_param_p->ratvec1:
-
-nu
--------------------------------------------------
-| ``nu:Param p->ratvec`` Defined in line number 964.
-| 
-| 
-
-.. _cartan_class_param_p->cartanclass1:
-
-Cartan_class
--------------------------------------------------
-| ``Cartan_class:Param p->CartanClass`` Defined in line number 965.
-| 
-| 
-
-.. _integrality_datum_param_p->rootdatum1:
-
-integrality_datum
--------------------------------------------------
-| ``integrality_datum:Param p->RootDatum`` Defined in line number 969.
-| 
-| 
-
-.. _is_regular_param_p->bool1:
-
-is_regular
--------------------------------------------------
-| ``is_regular:Param p->bool`` Defined in line number 972.
-| 
-| 
-
-.. _trivial_realform_g->param1:
-
-trivial
--------------------------------------------------
-| ``trivial:RealForm G->Param`` Defined in line number 975.
-| 
-| 
-
-.. _w_cross_[int]_w,param_p->param1:
-
-W_cross
--------------------------------------------------
-| ``W_cross:[int] w,Param p->Param`` Defined in line number 979.
-| 
-| 
-
-.. _parameter_realform_g,int_x,ratvec_lambda,ratvec_nu->param1:
-
-parameter
--------------------------------------------------
-| ``parameter:RealForm G,int x,ratvec lambda,ratvec nu->Param`` Defined in line number 985.
-| 
-| 
-
-.. _parameter_kgbelt_x,ratvec_lambda,ratvec_nu->param1:
-
-parameter
--------------------------------------------------
-| ``parameter:KGBElt x,ratvec lambda,ratvec nu->Param`` Defined in line number 987.
-| 
-| 
-
-.. _parameter_gamma_kgbelt_x,_ratvec_lambda,_ratvec_gamma->param1:
-
-parameter_gamma
--------------------------------------------------
-| ``parameter_gamma:KGBElt x, ratvec lambda, ratvec gamma->Param`` Defined in line number 991.
-| 
-| 
-
-.. _block_of_param_p->[param]1:
-
-block_of
--------------------------------------------------
-| ``block_of:Param p->[Param]`` Defined in line number 997.
-| 
-| 
-
-.. _imaginary_type_int_s,_param_p->int1:
-
-imaginary_type
--------------------------------------------------
-| ``imaginary_type:int s, Param p->int`` Defined in line number 1001.
-| 
-| 
-
-.. _real_type_int_s,param_p->int1:
-
-real_type
--------------------------------------------------
-| ``real_type:int s,Param p->int`` Defined in line number 1002.
-| 
-| 
-
-.. _imaginary_type_vec_alpha,_param_p->int1:
-
-imaginary_type
--------------------------------------------------
-| ``imaginary_type:vec alpha, Param p->int`` Defined in line number 1004.
-| 
-| 
-
-.. _real_type_vec_alpha,_param_p->int1:
-
-real_type
--------------------------------------------------
-| ``real_type:vec alpha, Param p->int`` Defined in line number 1006.
-| 
-| 
-
-.. _is_nonparity_int_s,param_p->bool1:
-
-is_nonparity
--------------------------------------------------
-| ``is_nonparity:int s,Param p->bool`` Defined in line number 1009.
-| 
-| 
-
-.. _is_parity_int_s,param_p->bool1:
-
-is_parity
--------------------------------------------------
-| ``is_parity:int s,Param p->bool`` Defined in line number 1010.
-| 
-| 
-
-.. _is_nonparity_vec_alpha,param_p->bool1:
-
-is_nonparity
--------------------------------------------------
-| ``is_nonparity:vec alpha,Param p->bool`` Defined in line number 1012.
-| 
-| 
-
-.. _is_parity_vec_alpha,param_p->bool1:
-
-is_parity
--------------------------------------------------
-| ``is_parity:vec alpha,Param p->bool`` Defined in line number 1014.
-| 
-| 
-
-.. _status_vec_alpha,param_p->int1:
-
-status
--------------------------------------------------
-| ``status:vec alpha,Param p->int`` Defined in line number 1017.
-| 
-| 
-
-.. _status_int_s,param_p->int1:
-
-status
--------------------------------------------------
-| ``status:int s,Param p->int`` Defined in line number 1025.
-| 
-| 
-
-.. _block_status_text_int_i->string1:
-
-block_status_text
--------------------------------------------------
-| ``block_status_text:int i->string`` Defined in line number 1028.
-| 
-| 
-
-.. _status_text_int_s,param_p->string1:
-
-status_text
--------------------------------------------------
-| ``status_text:int s,Param p->string`` Defined in line number 1031.
-| 
-| 
-
-.. _status_texts_param_p->[string]1:
-
-status_texts
--------------------------------------------------
-| ``status_texts:Param p->[string]`` Defined in line number 1032.
-| 
-| 
-
-.. _status_text_(vec,param)_ap->string1:
-
-status_text
--------------------------------------------------
-| ``status_text:(vec,Param) ap->string`` Defined in line number 1035.
-| 
-| 
-
-.. _parity_poscoroots_param_p->mat1:
-
-parity_poscoroots
--------------------------------------------------
-| ``parity_poscoroots:Param p->mat`` Defined in line number 1037.
-| 
-| 
-
-.. _nonparity_poscoroots_param_p->mat1:
-
-nonparity_poscoroots
--------------------------------------------------
-| ``nonparity_poscoroots:Param p->mat`` Defined in line number 1040.
-| 
-| 
-
-.. _is_descent_int_s,param_p->bool1:
-
-is_descent
--------------------------------------------------
-| ``is_descent:int s,Param p->bool`` Defined in line number 1044.
-| 
-| 
-
-.. _tau_bitset_param_p->((int->bool),int)1:
-
-tau_bitset
--------------------------------------------------
-| ``tau_bitset:Param p->((int->bool),int)`` Defined in line number 1045.
-| 
-| 
-
-.. _tau_param_p->[int]1:
-
-tau
--------------------------------------------------
-| ``tau:Param p->[int]`` Defined in line number 1048.
-| 
-| 
-
-.. _tau_complement_param_p->[int]1:
-
-tau_complement
--------------------------------------------------
-| ``tau_complement:Param p->[int]`` Defined in line number 1049.
-| 
-| 
-
-.. _is_descent_(vec,param)_ap->bool1:
-
-is_descent
--------------------------------------------------
-| ``is_descent:(vec,Param) ap->bool`` Defined in line number 1051.
-| 
-| 
-
-.. _lookup_param_p,_[param]_block->int1:
-
-lookup
--------------------------------------------------
-| ``lookup:Param p, [Param] block->int`` Defined in line number 1053.
-| 
-| 
-
-.. _null_module_parampol_p->parampol1:
-
-null_module
--------------------------------------------------
-| ``null_module:ParamPol P->ParamPol`` Defined in line number 1111.
-| 
-| 
-
-.. _\-_ParamPol_P->ParamPol1:
-
-\-
--------------------------------------------------
-| ``-:ParamPol P->ParamPol`` Defined in line number 1112.
-| 
-| 
-
-.. _first_param_parampol_p->param1:
-
-first_param
--------------------------------------------------
-| ``first_param:ParamPol P->Param`` Defined in line number 1114.
-| 
-| 
-
-.. _last_param_parampol_p->param1:
-
-last_param
--------------------------------------------------
-| ``last_param:ParamPol P->Param`` Defined in line number 1115.
-| 
-| 
-
-.. _s_to_1_parampol_p->parampol1:
-
-s_to_1
--------------------------------------------------
-| ``s_to_1:ParamPol P->ParamPol`` Defined in line number 1117.
-| 
-| 
-
-.. _s_to_minus_1_parampol_p->parampol1:
-
-s_to_minus_1
--------------------------------------------------
-| ``s_to_minus_1:ParamPol P->ParamPol`` Defined in line number 1118.
-| 
-| 
-
-.. _\-_ParamPol_a,_(Split,Param)_(c,p)->ParamPol1:
-
-\-
--------------------------------------------------
-| ``-:ParamPol a, (Split,Param) (c,p)->ParamPol`` Defined in line number 1121.
-| 
-| 
-
-.. _\*_ParamPol_P,_rat_f->ParamPol1:
-
-\*
--------------------------------------------------
-| ``*:ParamPol P, rat f->ParamPol`` Defined in line number 1124.
-| 
-| 
-
-.. _divide_by_int_n,_parampol_p->parampol1:
-
-divide_by
--------------------------------------------------
-| ``divide_by:int n, ParamPol P->ParamPol`` Defined in line number 1127.
-| 
-| 
-
-.. _root_datum_parampol_p->rootdatum1:
-
-root_datum
--------------------------------------------------
-| ``root_datum:ParamPol P->RootDatum`` Defined in line number 1131.
-| 
-| 
-
-.. _virtual_param_p->parampol1:
-
-virtual
--------------------------------------------------
-| ``virtual:Param p->ParamPol`` Defined in line number 1133.
-| 
-| 
-
-.. _virtual_realform_g,_[param]_ps->parampol1:
-
-virtual
--------------------------------------------------
-| ``virtual:RealForm G, [Param] ps->ParamPol`` Defined in line number 1134.
-| 
-| 
-
-.. _pol_format_parampol_p->void1:
-
-pol_format
--------------------------------------------------
-| ``pol_format:ParamPol P->void`` Defined in line number 1139.
-| 
-| 
-
-.. _infinitesimal_character_parampol_p->ratvec1:
-
-infinitesimal_character
--------------------------------------------------
-| ``infinitesimal_character:ParamPol P->ratvec`` Defined in line number 1144.
-| 
-| 
-
-.. _separate_by_infinitesimal_character_parampol_p->[(ratvec,parampol)]1:
-
-separate_by_infinitesimal_character
--------------------------------------------------
-| ``separate_by_infinitesimal_character:ParamPol P->[(ratvec,ParamPol)]`` Defined in line number 1153.
-| 
-| 
-
-.. _in_string_list_string_s,[string]_s->bool1:
-
-in_string_list
--------------------------------------------------
-| ``in_string_list:string s,[string] S->bool`` Defined in line number 1165.
-| 
-| 
-
-.. _imaginary_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1:
-
-imaginary_roots_and_coroots
--------------------------------------------------
-| ``imaginary_roots_and_coroots:(RootDatum, mat)p->(mat,mat)`` Defined in line number 1171.
-| 
-| 
-
-.. _imaginary_roots_and_coroots_kgbelt_x->(mat,mat)1:
-
-imaginary_roots_and_coroots
--------------------------------------------------
-| ``imaginary_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 1173.
-| 
-| 
-
-.. _real_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1:
-
-real_roots_and_coroots
--------------------------------------------------
-| ``real_roots_and_coroots:(RootDatum, mat)p->(mat,mat)`` Defined in line number 1179.
-| 
-| 
-
-.. _real_roots_and_coroots_kgbelt_x->(mat,mat)1:
-
-real_roots_and_coroots
--------------------------------------------------
-| ``real_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 1181.
-| 
-| 
-
-.. _complex_posroots_rootdatum_rd,mat_theta->mat1:
-
-complex_posroots
--------------------------------------------------
-| ``complex_posroots:RootDatum rd,mat theta->mat`` Defined in line number 1184.
-| 
-| 
-
-.. _complex_posroots_kgbelt_x->mat1:
-
-complex_posroots
--------------------------------------------------
-| ``complex_posroots:KGBElt x->mat`` Defined in line number 1186.
-| 
-| 
-
-.. _monomials_parampol_p->[param]1:
-
-monomials
--------------------------------------------------
-| ``monomials:ParamPol P->[Param]`` Defined in line number 1193.
-| 
-| 
-
-.. _monomial_parampol_p,int_i->param1:
-
-monomial
--------------------------------------------------
-| ``monomial:ParamPol P,int i->Param`` Defined in line number 1194.
-| 
-| 
-
-.. _delete_[int]_v,_int_k->[int]:_____v[:k]##v[k+11:
-
-delete
--------------------------------------------------
-| ``delete:[int] v, int k->[int]:     v[:k]##v[k+1`` Defined in line number 1197.
-| 
-| 
-
-.. _delete_[vec]_v,_int_k->[vec]:_____v[:k]##v[k+11:
-
-delete
--------------------------------------------------
-| ``delete:[vec] v, int k->[vec]:     v[:k]##v[k+1`` Defined in line number 1198.
-| 
-| 
-
-.. _delete_[ratvec]_v,_int_k->[ratvec]:__v[:k]##v[k+11:
-
-delete
--------------------------------------------------
-| ``delete:[ratvec] v, int k->[ratvec]:  v[:k]##v[k+1`` Defined in line number 1199.
-| 
-| 
-
-.. _delete_[[ratvec]]_v,_int_k->[[ratvec]]:v[:k]##v[k+11:
-
-delete
--------------------------------------------------
-| ``delete:[[ratvec]] v, int k->[[ratvec]]:v[:k]##v[k+1`` Defined in line number 1200.
-| 
-| 
-
-.. _delete_[[vec]]_v,_int_k->[[vec]]:___v[:k]##v[k+11:
-
-delete
--------------------------------------------------
-| ``delete:[[vec]] v, int k->[[vec]]:   v[:k]##v[k+1`` Defined in line number 1201.
-| 
-| 
-
-.. _delete_[parampol]_p,_int_k->[parampol]:p[:k]##p[k+11:
-
-delete
--------------------------------------------------
-| ``delete:[ParamPol] P, int k->[ParamPol]:P[:k]##P[k+1`` Defined in line number 1202.
+| ``split_format:Split w->string`` Defined in line number 461.
 | 
 | 
 
@@ -3032,7 +1176,7 @@ delete
 
 find
 -------------------------------------------------
-| ``find:[int] v, int k->int:     first(#v,(int i)bool`` Defined in line number 1208.
+| ``find:[int] v, int k->int:     first(#v,(int i)bool`` Defined in line number 487.
 | 
 | 
 
@@ -3040,7 +1184,7 @@ find
 
 find
 -------------------------------------------------
-| ``find:[Param] P,Param p->int:  first(#P,(int i)bool`` Defined in line number 1209.
+| ``find:[Param] P,Param p->int:  first(#P,(int i)bool`` Defined in line number 488.
 | 
 | 
 
@@ -3048,7 +1192,7 @@ find
 
 find
 -------------------------------------------------
-| ``find:[KGBElt] S,KGBElt x->int:first(#S,(int i)bool`` Defined in line number 1210.
+| ``find:[KGBElt] S,KGBElt x->int:first(#S,(int i)bool`` Defined in line number 489.
 | 
 | 
 
@@ -3056,7 +1200,7 @@ find
 
 find
 -------------------------------------------------
-| ``find:[[int]] S,[int] v->int:first(#S,(int i)bool`` Defined in line number 1213.
+| ``find:[[int]] S,[int] v->int:first(#S,(int i)bool`` Defined in line number 492.
 | 
 | 
 
@@ -3064,7 +1208,7 @@ find
 
 find_vec
 -------------------------------------------------
-| ``find_vec:[vec] S,vec v->int:first(#S,(int i)bool`` Defined in line number 1216.
+| ``find_vec:[vec] S,vec v->int:first(#S,(int i)bool`` Defined in line number 495.
 | 
 | 
 
@@ -3072,7 +1216,1871 @@ find_vec
 
 pad
 -------------------------------------------------
-| ``pad:string s,int padding->string`` Defined in line number 1219.
+| ``pad:string s,int padding->string`` Defined in line number 498.
+| 
+| 
+
+.. _root_datum_[vec]_simple_roots,_[vec]_simple_coroots,_int_r->rootdatum1:
+
+root_datum
+-------------------------------------------------
+| ``root_datum:[vec] simple_roots, [vec] simple_coroots, int r->RootDatum`` Defined in line number 503.
+| 
+| 
+
+.. _root_datum_lietype_t,_[ratvec]_gens->rootdatum1:
+
+root_datum
+-------------------------------------------------
+| ``root_datum:LieType t, [ratvec] gens->RootDatum`` Defined in line number 506.
+| 
+| 
+
+.. _root_datum_lietype_t,_ratvec_gen->rootdatum1:
+
+root_datum
+-------------------------------------------------
+| ``root_datum:LieType t, ratvec gen->RootDatum`` Defined in line number 510.
+| 
+| 
+
+.. _is_root_(rootdatum,vec)_(rd,):p->bool1:
+
+is_root
+-------------------------------------------------
+| ``is_root:(RootDatum,vec) (rd,):p->bool`` Defined in line number 513.
+| 
+| 
+
+.. _is_coroot_(rootdatum,vec)_(rd,):p->bool1:
+
+is_coroot
+-------------------------------------------------
+| ``is_coroot:(RootDatum,vec) (rd,):p->bool`` Defined in line number 515.
+| 
+| 
+
+.. _is_posroot_(rootdatum,vec)(rd,):p->bool1:
+
+is_posroot
+-------------------------------------------------
+| ``is_posroot:(RootDatum,vec)(rd,):p->bool`` Defined in line number 517.
+| 
+| 
+
+.. _is_poscoroot_(rootdatum,vec)(rd,):p->bool1:
+
+is_poscoroot
+-------------------------------------------------
+| ``is_poscoroot:(RootDatum,vec)(rd,):p->bool`` Defined in line number 519.
+| 
+| 
+
+.. _posroot_index_(rootdatum,vec)p->int1:
+
+posroot_index
+-------------------------------------------------
+| ``posroot_index:(RootDatum,vec)p->int`` Defined in line number 522.
+| 
+| 
+
+.. _poscoroot_index_(rootdatum,vec)p->int1:
+
+poscoroot_index
+-------------------------------------------------
+| ``poscoroot_index:(RootDatum,vec)p->int`` Defined in line number 524.
+| 
+| 
+
+.. _rho_rootdatum_rd->ratvec1:
+
+rho
+-------------------------------------------------
+| ``rho:RootDatum rd->ratvec`` Defined in line number 528.
+| 
+| 
+
+.. _rho_as_vec_rootdatum_r->vec1:
+
+rho_as_vec
+-------------------------------------------------
+| ``rho_as_vec:RootDatum r->vec`` Defined in line number 534.
+| 
+| 
+
+.. _rho_check_rootdatum_rd->ratvec1:
+
+rho_check
+-------------------------------------------------
+| ``rho_check:RootDatum rd->ratvec`` Defined in line number 536.
+| 
+| 
+
+.. _is_positive_root_rootdatum_rd->(vec->bool)1:
+
+is_positive_root
+-------------------------------------------------
+| ``is_positive_root:RootDatum rd->(vec->bool)`` Defined in line number 543.
+| 
+| 
+
+.. _is_positive_coroot_rootdatum_rd->(vec->bool)1:
+
+is_positive_coroot
+-------------------------------------------------
+| ``is_positive_coroot:RootDatum rd->(vec->bool)`` Defined in line number 545.
+| 
+| 
+
+.. _is_negative_root_rootdatum_rd->(vec->bool)1:
+
+is_negative_root
+-------------------------------------------------
+| ``is_negative_root:RootDatum rd->(vec->bool)`` Defined in line number 547.
+| 
+| 
+
+.. _is_negative_coroot_rootdatum_rd->(vec->bool)1:
+
+is_negative_coroot
+-------------------------------------------------
+| ``is_negative_coroot:RootDatum rd->(vec->bool)`` Defined in line number 549.
+| 
+| 
+
+.. _is_positive_root_rootdatum_rd,vec_alpha->bool1:
+
+is_positive_root
+-------------------------------------------------
+| ``is_positive_root:RootDatum rd,vec alpha->bool`` Defined in line number 552.
+| 
+| 
+
+.. _is_positive_coroot_rootdatum_rd,vec_alphav->bool1:
+
+is_positive_coroot
+-------------------------------------------------
+| ``is_positive_coroot:RootDatum rd,vec alphav->bool`` Defined in line number 554.
+| 
+| 
+
+.. _is_negative_root_rootdatum_rd,vec_alpha->bool1:
+
+is_negative_root
+-------------------------------------------------
+| ``is_negative_root:RootDatum rd,vec alpha->bool`` Defined in line number 556.
+| 
+| 
+
+.. _is_negative_coroot_rootdatum_rd,vec_alphav->bool1:
+
+is_negative_coroot
+-------------------------------------------------
+| ``is_negative_coroot:RootDatum rd,vec alphav->bool`` Defined in line number 558.
+| 
+| 
+
+.. _roots_all_positive_rootdatum_rd->(mat->bool)1:
+
+roots_all_positive
+-------------------------------------------------
+| ``roots_all_positive:RootDatum rd->(mat->bool)`` Defined in line number 562.
+| 
+| 
+
+.. _coroots_all_positive_rootdatum_rd->(mat->bool)1:
+
+coroots_all_positive
+-------------------------------------------------
+| ``coroots_all_positive:RootDatum rd->(mat->bool)`` Defined in line number 564.
+| 
+| 
+
+.. _among_posroots_rootdatum_rd->(mat_m)bool1:
+
+among_posroots
+-------------------------------------------------
+| ``among_posroots:RootDatum rd->(mat M)bool`` Defined in line number 567.
+| 
+| 
+
+.. _among_poscoroots_rootdatum_rd->(mat_m)bool1:
+
+among_poscoroots
+-------------------------------------------------
+| ``among_poscoroots:RootDatum rd->(mat M)bool`` Defined in line number 569.
+| 
+| 
+
+.. _roots_rootdatum_rd->mat1:
+
+roots
+-------------------------------------------------
+| ``roots:RootDatum rd->mat`` Defined in line number 576.
+| 
+| 
+
+.. _coroots_rootdatum_rd->mat1:
+
+coroots
+-------------------------------------------------
+| ``coroots:RootDatum rd->mat`` Defined in line number 578.
+| 
+| 
+
+.. _root_rootdatum_rd,_vec_alpha_v->vec1:
+
+root
+-------------------------------------------------
+| ``root:RootDatum rd, vec alpha_v->vec`` Defined in line number 582.
+| 
+| 
+
+.. _coroot_rootdatum_rd,_vec_alpha->vec1:
+
+coroot
+-------------------------------------------------
+| ``coroot:RootDatum rd, vec alpha->vec`` Defined in line number 583.
+| 
+| 
+
+.. _reflection_rootdatum_rd,_int_i->mat1:
+
+reflection
+-------------------------------------------------
+| ``reflection:RootDatum rd, int i->mat`` Defined in line number 586.
+| 
+| 
+
+.. _reflection_(rootdatum,vec)(rd,):p->mat1:
+
+reflection
+-------------------------------------------------
+| ``reflection:(RootDatum,vec)(rd,):p->mat`` Defined in line number 588.
+| 
+| 
+
+.. _coreflection_rootdatum_rd,_int_i->mat1:
+
+coreflection
+-------------------------------------------------
+| ``coreflection:RootDatum rd, int i->mat`` Defined in line number 590.
+| 
+| 
+
+.. _coreflection_(rootdatum,vec)(rd,):p->mat1:
+
+coreflection
+-------------------------------------------------
+| ``coreflection:(RootDatum,vec)(rd,):p->mat`` Defined in line number 592.
+| 
+| 
+
+.. _reflect_rootdatum_rd,_int_i,_vec_v->vec1:
+
+reflect
+-------------------------------------------------
+| ``reflect:RootDatum rd, int i, vec v->vec`` Defined in line number 594.
+| 
+| 
+
+.. _reflect_rootdatum_rd,_vec_alpha,_vec_v->vec1:
+
+reflect
+-------------------------------------------------
+| ``reflect:RootDatum rd, vec alpha, vec v->vec`` Defined in line number 596.
+| 
+| 
+
+.. _coreflect_rootdatum_rd,_vec_v,_int_i->vec1:
+
+coreflect
+-------------------------------------------------
+| ``coreflect:RootDatum rd, vec v, int i->vec`` Defined in line number 598.
+| 
+| 
+
+.. _coreflect_rootdatum_rd,_vec_v,_vec_alpha->vec1:
+
+coreflect
+-------------------------------------------------
+| ``coreflect:RootDatum rd, vec v, vec alpha->vec`` Defined in line number 600.
+| 
+| 
+
+.. _reflect_rootdatum_rd,_int_i,_ratvec_v->ratvec1:
+
+reflect
+-------------------------------------------------
+| ``reflect:RootDatum rd, int i, ratvec v->ratvec`` Defined in line number 603.
+| 
+| 
+
+.. _reflect_rootdatum_rd,_vec_alpha,_ratvec_v->ratvec1:
+
+reflect
+-------------------------------------------------
+| ``reflect:RootDatum rd, vec alpha, ratvec v->ratvec`` Defined in line number 605.
+| 
+| 
+
+.. _coreflect_rootdatum_rd,_ratvec_v,_int_i->ratvec1:
+
+coreflect
+-------------------------------------------------
+| ``coreflect:RootDatum rd, ratvec v, int i->ratvec`` Defined in line number 607.
+| 
+| 
+
+.. _coreflect_rootdatum_rd,_ratvec_v,_vec_alpha->ratvec1:
+
+coreflect
+-------------------------------------------------
+| ``coreflect:RootDatum rd, ratvec v, vec alpha->ratvec`` Defined in line number 609.
+| 
+| 
+
+.. _left_reflect_rootdatum_rd,_int_i,_mat_m->mat1:
+
+left_reflect
+-------------------------------------------------
+| ``left_reflect:RootDatum rd, int i, mat M->mat`` Defined in line number 613.
+| 
+| 
+
+.. _left_reflect_rootdatum_rd,_vec_alpha,_mat_m->mat1:
+
+left_reflect
+-------------------------------------------------
+| ``left_reflect:RootDatum rd, vec alpha, mat M->mat`` Defined in line number 615.
+| 
+| 
+
+.. _right_reflect_rootdatum_rd,_mat_m,_int_i->mat1:
+
+right_reflect
+-------------------------------------------------
+| ``right_reflect:RootDatum rd, mat M, int i->mat`` Defined in line number 617.
+| 
+| 
+
+.. _right_reflect_rootdatum_rd,_mat_m,_vec_alpha->mat1:
+
+right_reflect
+-------------------------------------------------
+| ``right_reflect:RootDatum rd, mat M, vec alpha->mat`` Defined in line number 619.
+| 
+| 
+
+.. _conjugate_rootdatum_rd,_int_i,_mat_m->mat1:
+
+conjugate
+-------------------------------------------------
+| ``conjugate:RootDatum rd, int i, mat M->mat`` Defined in line number 622.
+| 
+| 
+
+.. _conjugate_rootdatum_rd,_vec_alpha,_mat_m->mat1:
+
+conjugate
+-------------------------------------------------
+| ``conjugate:RootDatum rd, vec alpha, mat M->mat`` Defined in line number 624.
+| 
+| 
+
+.. _singular_simple_indices_rootdatum_rd,ratvec_v->[int]1:
+
+singular_simple_indices
+-------------------------------------------------
+| ``singular_simple_indices:RootDatum rd,ratvec v->[int]`` Defined in line number 628.
+| 
+| 
+
+.. _is_imaginary_mat_theta->(vec->bool):_(vec_alpha)1:
+
+is_imaginary
+-------------------------------------------------
+| ``is_imaginary:mat theta->(vec->bool): (vec alpha)`` Defined in line number 632.
+| 
+| 
+
+.. _is_real_mat_theta->(vec->bool):_(vec_alpha)1:
+
+is_real
+-------------------------------------------------
+| ``is_real:mat theta->(vec->bool): (vec alpha)`` Defined in line number 633.
+| 
+| 
+
+.. _is_complex_mat_theta->(vec->bool):_(vec_alpha)1:
+
+is_complex
+-------------------------------------------------
+| ``is_complex:mat theta->(vec->bool): (vec alpha)`` Defined in line number 634.
+| 
+| 
+
+.. _imaginary_roots_rootdatum_rd,_mat_theta->mat1:
+
+imaginary_roots
+-------------------------------------------------
+| ``imaginary_roots:RootDatum rd, mat theta->mat`` Defined in line number 638.
+| 
+| 
+
+.. _real_roots_rootdatum_rd,_mat_theta->mat1:
+
+real_roots
+-------------------------------------------------
+| ``real_roots:RootDatum rd, mat theta->mat`` Defined in line number 640.
+| 
+| 
+
+.. _imaginary_coroots_rootdatum_rd,_mat_theta->mat1:
+
+imaginary_coroots
+-------------------------------------------------
+| ``imaginary_coroots:RootDatum rd, mat theta->mat`` Defined in line number 644.
+| 
+| 
+
+.. _real_coroots_rootdatum_rd,_mat_theta->mat1:
+
+real_coroots
+-------------------------------------------------
+| ``real_coroots:RootDatum rd, mat theta->mat`` Defined in line number 646.
+| 
+| 
+
+.. _imaginary_posroots_rootdatum_rd,mat_theta->mat1:
+
+imaginary_posroots
+-------------------------------------------------
+| ``imaginary_posroots:RootDatum rd,mat theta->mat`` Defined in line number 650.
+| 
+| 
+
+.. _real_posroots_rootdatum_rd,mat_theta->mat1:
+
+real_posroots
+-------------------------------------------------
+| ``real_posroots:RootDatum rd,mat theta->mat`` Defined in line number 652.
+| 
+| 
+
+.. _imaginary_poscoroots_rootdatum_rd,mat_theta->mat1:
+
+imaginary_poscoroots
+-------------------------------------------------
+| ``imaginary_poscoroots:RootDatum rd,mat theta->mat`` Defined in line number 654.
+| 
+| 
+
+.. _real_poscoroots_rootdatum_rd,mat_theta->mat1:
+
+real_poscoroots
+-------------------------------------------------
+| ``real_poscoroots:RootDatum rd,mat theta->mat`` Defined in line number 656.
+| 
+| 
+
+.. _imaginary_sys_(rootdatum,mat)p->(mat,mat)1:
+
+imaginary_sys
+-------------------------------------------------
+| ``imaginary_sys:(RootDatum,mat)p->(mat,mat)`` Defined in line number 658.
+| 
+| 
+
+.. _real_sys_(rootdatum,mat)p->(mat,mat)1:
+
+real_sys
+-------------------------------------------------
+| ``real_sys:(RootDatum,mat)p->(mat,mat)`` Defined in line number 660.
+| 
+| 
+
+.. _is_dominant_rootdatum_rd,_ratvec_v->bool1:
+
+is_dominant
+-------------------------------------------------
+| ``is_dominant:RootDatum rd, ratvec v->bool`` Defined in line number 664.
+| 
+| 
+
+.. _is_strictly_dominant_rootdatum_rd,_ratvec_v->bool1:
+
+is_strictly_dominant
+-------------------------------------------------
+| ``is_strictly_dominant:RootDatum rd, ratvec v->bool`` Defined in line number 666.
+| 
+| 
+
+.. _is_regular_rootdatum_rd,ratvec_v->bool1:
+
+is_regular
+-------------------------------------------------
+| ``is_regular:RootDatum rd,ratvec v->bool`` Defined in line number 668.
+| 
+| 
+
+.. _is_integral_rootdatum_rd,_ratvec_v->bool1:
+
+is_integral
+-------------------------------------------------
+| ``is_integral:RootDatum rd, ratvec v->bool`` Defined in line number 670.
+| 
+| 
+
+.. _radical_basis_rootdatum_rd->mat1:
+
+radical_basis
+-------------------------------------------------
+| ``radical_basis:RootDatum rd->mat`` Defined in line number 674.
+| 
+| 
+
+.. _coradical_basis_rootdatum_rd->mat1:
+
+coradical_basis
+-------------------------------------------------
+| ``coradical_basis:RootDatum rd->mat`` Defined in line number 676.
+| 
+| 
+
+.. _is_semisimple_rootdatum_rd->bool1:
+
+is_semisimple
+-------------------------------------------------
+| ``is_semisimple:RootDatum rd->bool`` Defined in line number 679.
+| 
+| 
+
+.. _derived_is_simply_connected_rootdatum_rd->bool1:
+
+derived_is_simply_connected
+-------------------------------------------------
+| ``derived_is_simply_connected:RootDatum rd->bool`` Defined in line number 681.
+| 
+| 
+
+.. _has_connected_center_rootdatum_rd->bool1:
+
+has_connected_center
+-------------------------------------------------
+| ``has_connected_center:RootDatum rd->bool`` Defined in line number 683.
+| 
+| 
+
+.. _is_simply_connected_rootdatum_rd->bool1:
+
+is_simply_connected
+-------------------------------------------------
+| ``is_simply_connected:RootDatum rd->bool`` Defined in line number 685.
+| 
+| 
+
+.. _is_adjoint_rootdatum_rd->bool1:
+
+is_adjoint
+-------------------------------------------------
+| ``is_adjoint:RootDatum rd->bool`` Defined in line number 687.
+| 
+| 
+
+.. _derived_rootdatum_rd->rootdatum1:
+
+derived
+-------------------------------------------------
+| ``derived:RootDatum rd->RootDatum`` Defined in line number 693.
+| 
+| 
+
+.. _mod_central_torus_rootdatum_rd->rootdatum1:
+
+mod_central_torus
+-------------------------------------------------
+| ``mod_central_torus:RootDatum rd->RootDatum`` Defined in line number 694.
+| 
+| 
+
+.. _adjoint_rootdatum_rd->rootdatum1:
+
+adjoint
+-------------------------------------------------
+| ``adjoint:RootDatum rd->RootDatum`` Defined in line number 696.
+| 
+| 
+
+.. _is_simple_for_vec_dual_two_rho->(vec->bool)1:
+
+is_simple_for
+-------------------------------------------------
+| ``is_simple_for:vec dual_two_rho->(vec->bool)`` Defined in line number 700.
+| 
+| 
+
+.. _simple_from_positive_mat_posroots,mat_poscoroots->(mat,mat)1:
+
+simple_from_positive
+-------------------------------------------------
+| ``simple_from_positive:mat posroots,mat poscoroots->(mat,mat)`` Defined in line number 704.
+| 
+| 
+
+.. _fundamental_weights_rootdatum_rd->[ratvec]1:
+
+fundamental_weights
+-------------------------------------------------
+| ``fundamental_weights:RootDatum rd->[ratvec]`` Defined in line number 709.
+| 
+| 
+
+.. _fundamental_coweights_rootdatum_rd->[ratvec]1:
+
+fundamental_coweights
+-------------------------------------------------
+| ``fundamental_coweights:RootDatum rd->[ratvec]`` Defined in line number 711.
+| 
+| 
+
+.. _\!=_InnerClass_x,InnerClass_y->bool1:
+
+\!=
+-------------------------------------------------
+| ``!=:InnerClass x,InnerClass y->bool`` Defined in line number 718.
+| 
+| 
+
+.. _dual_integral_innerclass_ic,_ratvec_gamma->innerclass1:
+
+dual_integral
+-------------------------------------------------
+| ``dual_integral:InnerClass ic, ratvec gamma->InnerClass`` Defined in line number 721.
+| 
+| 
+
+.. _cartan_classes_innerclass_ic->[cartanclass]1:
+
+Cartan_classes
+-------------------------------------------------
+| ``Cartan_classes:InnerClass ic->[CartanClass]`` Defined in line number 727.
+| 
+| 
+
+.. _print_cartan_info_cartanclass_cc->void1:
+
+print_Cartan_info
+-------------------------------------------------
+| ``print_Cartan_info:CartanClass cc->void`` Defined in line number 730.
+| 
+| 
+
+.. _fundamental_cartan_innerclass_ic->cartanclass1:
+
+fundamental_Cartan
+-------------------------------------------------
+| ``fundamental_Cartan:InnerClass ic->CartanClass`` Defined in line number 750.
+| 
+| 
+
+.. _most_split_cartan_innerclass_ic->cartanclass1:
+
+most_split_Cartan
+-------------------------------------------------
+| ``most_split_Cartan:InnerClass ic->CartanClass`` Defined in line number 752.
+| 
+| 
+
+.. _compact_rank_cartanclass_cc->int1:
+
+compact_rank
+-------------------------------------------------
+| ``compact_rank:CartanClass cc->int`` Defined in line number 757.
+| 
+| 
+
+.. _split_rank_cartanclass_cc->int1:
+
+split_rank
+-------------------------------------------------
+| ``split_rank:CartanClass cc->int`` Defined in line number 759.
+| 
+| 
+
+.. _compact_rank_innerclass_g->int1:
+
+compact_rank
+-------------------------------------------------
+| ``compact_rank:InnerClass G->int`` Defined in line number 762.
+| 
+| 
+
+.. _split_rank_realform_g->int1:
+
+split_rank
+-------------------------------------------------
+| ``split_rank:RealForm G->int`` Defined in line number 763.
+| 
+| 
+
+.. _\=_CartanClass_H,CartanClass_J->bool1:
+
+\=
+-------------------------------------------------
+| ``=:CartanClass H,CartanClass J->bool`` Defined in line number 766.
+| 
+| 
+
+.. _number_cartanclass_h,realform_g->int1:
+
+number
+-------------------------------------------------
+| ``number:CartanClass H,RealForm G->int`` Defined in line number 771.
+| 
+| 
+
+.. _\!=_RealForm_f,_RealForm_g->bool1:
+
+\!=
+-------------------------------------------------
+| ``!=:RealForm f, RealForm g->bool`` Defined in line number 776.
+| 
+| 
+
+.. _form_name_realform_f->string1:
+
+form_name
+-------------------------------------------------
+| ``form_name:RealForm f->string`` Defined in line number 778.
+| 
+| 
+
+.. _real_forms_innerclass_ic->[realform]1:
+
+real_forms
+-------------------------------------------------
+| ``real_forms:InnerClass ic->[RealForm]`` Defined in line number 780.
+| 
+| 
+
+.. _dual_real_forms_innerclass_ic->[realform]1:
+
+dual_real_forms
+-------------------------------------------------
+| ``dual_real_forms:InnerClass ic->[RealForm]`` Defined in line number 782.
+| 
+| 
+
+.. _is_quasisplit_realform_g->bool1:
+
+is_quasisplit
+-------------------------------------------------
+| ``is_quasisplit:RealForm G->bool`` Defined in line number 785.
+| 
+| 
+
+.. _is_quasicompact_realform_g->bool1:
+
+is_quasicompact
+-------------------------------------------------
+| ``is_quasicompact:RealForm G->bool`` Defined in line number 786.
+| 
+| 
+
+.. _split_form_rootdatum_r->realform1:
+
+split_form
+-------------------------------------------------
+| ``split_form:RootDatum r->RealForm`` Defined in line number 788.
+| 
+| 
+
+.. _split_form_lietype_t->realform1:
+
+split_form
+-------------------------------------------------
+| ``split_form:LieType t->RealForm`` Defined in line number 792.
+| 
+| 
+
+.. _quasicompact_form_innerclass_ic->realform1:
+
+quasicompact_form
+-------------------------------------------------
+| ``quasicompact_form:InnerClass ic->RealForm`` Defined in line number 794.
+| 
+| 
+
+.. _is_compatible_realform_f,_realform_g->bool1:
+
+is_compatible
+-------------------------------------------------
+| ``is_compatible:RealForm f, RealForm g->bool`` Defined in line number 797.
+| 
+| 
+
+.. _is_compact_realform_g->bool1:
+
+is_compact
+-------------------------------------------------
+| ``is_compact:RealForm G->bool`` Defined in line number 802.
+| 
+| 
+
+.. _\!=_KGBElt_x,KGBElt_y->bool1:
+
+\!=
+-------------------------------------------------
+| ``!=:KGBElt x,KGBElt y->bool`` Defined in line number 809.
+| 
+| 
+
+.. _root_datum_kgbelt_x->rootdatum1:
+
+root_datum
+-------------------------------------------------
+| ``root_datum:KGBElt x->RootDatum`` Defined in line number 812.
+| 
+| 
+
+.. _inner_class_kgbelt_x->innerclass1:
+
+inner_class
+-------------------------------------------------
+| ``inner_class:KGBElt x->InnerClass`` Defined in line number 813.
+| 
+| 
+
+.. _kgb_realform_rf->[kgbelt]:_for_i1:
+
+KGB
+-------------------------------------------------
+| ``KGB:RealForm rf->[KGBElt]: for i`` Defined in line number 815.
+| 
+| 
+
+.. _kgb_cartanclass_h,realform_g->[kgbelt]1:
+
+KGB
+-------------------------------------------------
+| ``KGB:CartanClass H,RealForm G->[KGBElt]`` Defined in line number 818.
+| 
+| 
+
+.. _kgb_elt_(innerclass,_mat,_ratvec)_(,theta,v):all->kgbelt1:
+
+KGB_elt
+-------------------------------------------------
+| ``KGB_elt:(InnerClass, mat, ratvec) (,theta,v):all->KGBElt`` Defined in line number 821.
+| 
+| 
+
+.. _kgb_elt_rootdatum_rd,_mat_theta,_ratvec_v->kgbelt1:
+
+KGB_elt
+-------------------------------------------------
+| ``KGB_elt:RootDatum rd, mat theta, ratvec v->KGBElt`` Defined in line number 826.
+| 
+| 
+
+.. _cartan_class_innerclass_ic,_mat_theta->cartanclass1:
+
+Cartan_class
+-------------------------------------------------
+| ``Cartan_class:InnerClass ic, mat theta->CartanClass`` Defined in line number 831.
+| 
+| 
+
+.. _status_vec_alpha,kgbelt_x->int1:
+
+status
+-------------------------------------------------
+| ``status:vec alpha,KGBElt x->int`` Defined in line number 834.
+| 
+| 
+
+.. _cross_vec_alpha,kgbelt_x->kgbelt1:
+
+cross
+-------------------------------------------------
+| ``cross:vec alpha,KGBElt x->KGBElt`` Defined in line number 836.
+| 
+| 
+
+.. _cayley_vec_alpha,kgbelt_x->kgbelt1:
+
+Cayley
+-------------------------------------------------
+| ``Cayley:vec alpha,KGBElt x->KGBElt`` Defined in line number 838.
+| 
+| 
+
+.. _w_cross_[int]_w,kgbelt_x->kgbelt1:
+
+W_cross
+-------------------------------------------------
+| ``W_cross:[int] w,KGBElt x->KGBElt`` Defined in line number 842.
+| 
+| 
+
+.. _kgb_status_text_int_i->string1:
+
+KGB_status_text
+-------------------------------------------------
+| ``KGB_status_text:int i->string`` Defined in line number 845.
+| 
+| 
+
+.. _status_text_(int,kgbelt)p->string1:
+
+status_text
+-------------------------------------------------
+| ``status_text:(int,KGBElt)p->string`` Defined in line number 847.
+| 
+| 
+
+.. _status_text_(vec,kgbelt)p->string1:
+
+status_text
+-------------------------------------------------
+| ``status_text:(vec,KGBElt)p->string`` Defined in line number 848.
+| 
+| 
+
+.. _status_texts_kgbelt_x->[string]1:
+
+status_texts
+-------------------------------------------------
+| ``status_texts:KGBElt x->[string]`` Defined in line number 849.
+| 
+| 
+
+.. _is_imaginary_kgbelt_x->(vec->bool)1:
+
+is_imaginary
+-------------------------------------------------
+| ``is_imaginary:KGBElt x->(vec->bool)`` Defined in line number 863.
+| 
+| 
+
+.. _is_real_kgbelt_x->(vec->bool)1:
+
+is_real
+-------------------------------------------------
+| ``is_real:KGBElt x->(vec->bool)`` Defined in line number 864.
+| 
+| 
+
+.. _is_complex_kgbelt_x->(vec->bool)1:
+
+is_complex
+-------------------------------------------------
+| ``is_complex:KGBElt x->(vec->bool)`` Defined in line number 865.
+| 
+| 
+
+.. _imaginary_posroots_kgbelt_x->mat1:
+
+imaginary_posroots
+-------------------------------------------------
+| ``imaginary_posroots:KGBElt x->mat`` Defined in line number 868.
+| 
+| 
+
+.. _real_posroots_kgbelt_x->mat1:
+
+real_posroots
+-------------------------------------------------
+| ``real_posroots:KGBElt x->mat`` Defined in line number 870.
+| 
+| 
+
+.. _imaginary_poscoroots_kgbelt_x->mat1:
+
+imaginary_poscoroots
+-------------------------------------------------
+| ``imaginary_poscoroots:KGBElt x->mat`` Defined in line number 872.
+| 
+| 
+
+.. _real_poscoroots_kgbelt_x->mat1:
+
+real_poscoroots
+-------------------------------------------------
+| ``real_poscoroots:KGBElt x->mat`` Defined in line number 874.
+| 
+| 
+
+.. _imaginary_sys_kgbelt_x->(mat,mat)1:
+
+imaginary_sys
+-------------------------------------------------
+| ``imaginary_sys:KGBElt x->(mat,mat)`` Defined in line number 876.
+| 
+| 
+
+.. _real_sys_kgbelt_x->(mat,mat)1:
+
+real_sys
+-------------------------------------------------
+| ``real_sys:KGBElt x->(mat,mat)`` Defined in line number 879.
+| 
+| 
+
+.. _rho_i_kgbelt_x->ratvec1:
+
+rho_i
+-------------------------------------------------
+| ``rho_i:KGBElt x->ratvec`` Defined in line number 883.
+| 
+| 
+
+.. _rho_r_kgbelt_x->ratvec1:
+
+rho_r
+-------------------------------------------------
+| ``rho_r:KGBElt x->ratvec`` Defined in line number 884.
+| 
+| 
+
+.. _rho_check_i_kgbelt_x->ratvec1:
+
+rho_check_i
+-------------------------------------------------
+| ``rho_check_i:KGBElt x->ratvec`` Defined in line number 885.
+| 
+| 
+
+.. _rho_check_r_kgbelt_x->ratvec1:
+
+rho_check_r
+-------------------------------------------------
+| ``rho_check_r:KGBElt x->ratvec`` Defined in line number 886.
+| 
+| 
+
+.. _rho_i_(rootdatum,mat)_rd_theta->ratvec1:
+
+rho_i
+-------------------------------------------------
+| ``rho_i:(RootDatum,mat) rd_theta->ratvec`` Defined in line number 888.
+| 
+| 
+
+.. _rho_r_(rootdatum,mat)_rd_theta->ratvec1:
+
+rho_r
+-------------------------------------------------
+| ``rho_r:(RootDatum,mat) rd_theta->ratvec`` Defined in line number 890.
+| 
+| 
+
+.. _rho_check_i_(rootdatum,mat)_rd_theta->ratvec1:
+
+rho_check_i
+-------------------------------------------------
+| ``rho_check_i:(RootDatum,mat) rd_theta->ratvec`` Defined in line number 892.
+| 
+| 
+
+.. _rho_check_r_(rootdatum,mat)_rd_theta->ratvec1:
+
+rho_check_r
+-------------------------------------------------
+| ``rho_check_r:(RootDatum,mat) rd_theta->ratvec`` Defined in line number 894.
+| 
+| 
+
+.. _is_compact_kgbelt_x->(vec->bool)1:
+
+is_compact
+-------------------------------------------------
+| ``is_compact:KGBElt x->(vec->bool)`` Defined in line number 898.
+| 
+| 
+
+.. _is_noncompact_kgbelt_x->(vec->bool)1:
+
+is_noncompact
+-------------------------------------------------
+| ``is_noncompact:KGBElt x->(vec->bool)`` Defined in line number 901.
+| 
+| 
+
+.. _is_compact_imaginary_kgbelt_x->(vec->bool)1:
+
+is_compact_imaginary
+-------------------------------------------------
+| ``is_compact_imaginary:KGBElt x->(vec->bool)`` Defined in line number 906.
+| 
+| 
+
+.. _is_noncompact_imaginary_kgbelt_x->(vec->bool)1:
+
+is_noncompact_imaginary
+-------------------------------------------------
+| ``is_noncompact_imaginary:KGBElt x->(vec->bool)`` Defined in line number 909.
+| 
+| 
+
+.. _compact_posroots_kgbelt_x->mat1:
+
+compact_posroots
+-------------------------------------------------
+| ``compact_posroots:KGBElt x->mat`` Defined in line number 913.
+| 
+| 
+
+.. _noncompact_posroots_kgbelt_x->mat1:
+
+noncompact_posroots
+-------------------------------------------------
+| ``noncompact_posroots:KGBElt x->mat`` Defined in line number 915.
+| 
+| 
+
+.. _rho_ci_kgbelt_x->ratvec1:
+
+rho_ci
+-------------------------------------------------
+| ``rho_ci:KGBElt x->ratvec`` Defined in line number 918.
+| 
+| 
+
+.. _rho_nci_kgbelt_x->ratvec1:
+
+rho_nci
+-------------------------------------------------
+| ``rho_nci:KGBElt x->ratvec`` Defined in line number 919.
+| 
+| 
+
+.. _is_imaginary_vec_v,kgbelt_x->bool1:
+
+is_imaginary
+-------------------------------------------------
+| ``is_imaginary:vec v,KGBElt x->bool`` Defined in line number 921.
+| 
+| 
+
+.. _is_real_vec_v,kgbelt_x->bool1:
+
+is_real
+-------------------------------------------------
+| ``is_real:vec v,KGBElt x->bool`` Defined in line number 922.
+| 
+| 
+
+.. _is_complex_vec_v,kgbelt_x->bool1:
+
+is_complex
+-------------------------------------------------
+| ``is_complex:vec v,KGBElt x->bool`` Defined in line number 923.
+| 
+| 
+
+.. _is_compact_imaginary_vec_v,kgbelt_x->bool1:
+
+is_compact_imaginary
+-------------------------------------------------
+| ``is_compact_imaginary:vec v,KGBElt x->bool`` Defined in line number 924.
+| 
+| 
+
+.. _is_noncompact_imaginary_vec_v,kgbelt_x->bool1:
+
+is_noncompact_imaginary
+-------------------------------------------------
+| ``is_noncompact_imaginary:vec v,KGBElt x->bool`` Defined in line number 925.
+| 
+| 
+
+.. _print_kgb_kgbelt_x->void1:
+
+print_KGB
+-------------------------------------------------
+| ``print_KGB:KGBElt x->void`` Defined in line number 928.
+| 
+| 
+
+.. _no_cminus_roots_kgbelt_x->bool1:
+
+no_Cminus_roots
+-------------------------------------------------
+| ``no_Cminus_roots:KGBElt x->bool`` Defined in line number 932.
+| 
+| 
+
+.. _no_cplus_roots_kgbelt_x->bool1:
+
+no_Cplus_roots
+-------------------------------------------------
+| ``no_Cplus_roots:KGBElt x->bool`` Defined in line number 934.
+| 
+| 
+
+.. _blocks_innerclass_ic->[block]1:
+
+blocks
+-------------------------------------------------
+| ``blocks:InnerClass ic->[Block]`` Defined in line number 939.
+| 
+| 
+
+.. _raw_kl_(realform,realform)_p->(mat,[vec],vec)1:
+
+raw_KL
+-------------------------------------------------
+| ``raw_KL:(RealForm,RealForm) p->(mat,[vec],vec)`` Defined in line number 947.
+| 
+| 
+
+.. _dual_kl_(realform,realform)_p->(mat,[vec],vec)1:
+
+dual_KL
+-------------------------------------------------
+| ``dual_KL:(RealForm,RealForm) p->(mat,[vec],vec)`` Defined in line number 948.
+| 
+| 
+
+.. _print_block_(realform,realform)_p->void1:
+
+print_block
+-------------------------------------------------
+| ``print_block:(RealForm,RealForm) p->void`` Defined in line number 950.
+| 
+| 
+
+.. _print_blocku_(realform,realform)_p->void1:
+
+print_blocku
+-------------------------------------------------
+| ``print_blocku:(RealForm,RealForm) p->void`` Defined in line number 951.
+| 
+| 
+
+.. _print_blockd_(realform,realform)_p->void1:
+
+print_blockd
+-------------------------------------------------
+| ``print_blockd:(RealForm,RealForm) p->void`` Defined in line number 952.
+| 
+| 
+
+.. _print_kl_basis_(realform,realform)_p->void1:
+
+print_KL_basis
+-------------------------------------------------
+| ``print_KL_basis:(RealForm,RealForm) p->void`` Defined in line number 953.
+| 
+| 
+
+.. _print_prim_kl_(realform,realform)_p->void1:
+
+print_prim_KL
+-------------------------------------------------
+| ``print_prim_KL:(RealForm,RealForm) p->void`` Defined in line number 954.
+| 
+| 
+
+.. _print_kl_list_(realform,realform)_p->void1:
+
+print_KL_list
+-------------------------------------------------
+| ``print_KL_list:(RealForm,RealForm) p->void`` Defined in line number 955.
+| 
+| 
+
+.. _print_w_cells_(realform,realform)_p->void1:
+
+print_W_cells
+-------------------------------------------------
+| ``print_W_cells:(RealForm,RealForm) p->void`` Defined in line number 956.
+| 
+| 
+
+.. _print_w_graph_(realform,realform)_p->void1:
+
+print_W_graph
+-------------------------------------------------
+| ``print_W_graph:(RealForm,RealForm) p->void`` Defined in line number 957.
+| 
+| 
+
+.. _\!=_Param_x,Param_y->bool1:
+
+\!=
+-------------------------------------------------
+| ``!=:Param x,Param y->bool`` Defined in line number 962.
+| 
+| 
+
+.. _root_datum_param_p->rootdatum1:
+
+root_datum
+-------------------------------------------------
+| ``root_datum:Param p->RootDatum`` Defined in line number 964.
+| 
+| 
+
+.. _inner_class_param_p->innerclass1:
+
+inner_class
+-------------------------------------------------
+| ``inner_class:Param p->InnerClass`` Defined in line number 965.
+| 
+| 
+
+.. _null_module_param_p->parampol1:
+
+null_module
+-------------------------------------------------
+| ``null_module:Param p->ParamPol`` Defined in line number 967.
+| 
+| 
+
+.. _\*_Param_p,rat_f->Param1:
+
+\*
+-------------------------------------------------
+| ``*:Param p,rat f->Param`` Defined in line number 971.
+| 
+| 
+
+.. _x_param_p->kgbelt1:
+
+x
+-------------------------------------------------
+| ``x:Param p->KGBElt`` Defined in line number 974.
+| 
+| 
+
+.. _lambda_minus_rho_param_p->vec1:
+
+lambda_minus_rho
+-------------------------------------------------
+| ``lambda_minus_rho:Param p->vec`` Defined in line number 975.
+| 
+| 
+
+.. _lambda_param_p->ratvec1:
+
+lambda
+-------------------------------------------------
+| ``lambda:Param p->ratvec`` Defined in line number 976.
+| 
+| 
+
+.. _infinitesimal_character_param_p->ratvec1:
+
+infinitesimal_character
+-------------------------------------------------
+| ``infinitesimal_character:Param p->ratvec`` Defined in line number 977.
+| 
+| 
+
+.. _nu_param_p->ratvec1:
+
+nu
+-------------------------------------------------
+| ``nu:Param p->ratvec`` Defined in line number 978.
+| 
+| 
+
+.. _cartan_class_param_p->cartanclass1:
+
+Cartan_class
+-------------------------------------------------
+| ``Cartan_class:Param p->CartanClass`` Defined in line number 979.
+| 
+| 
+
+.. _integrality_datum_param_p->rootdatum1:
+
+integrality_datum
+-------------------------------------------------
+| ``integrality_datum:Param p->RootDatum`` Defined in line number 983.
+| 
+| 
+
+.. _is_regular_param_p->bool1:
+
+is_regular
+-------------------------------------------------
+| ``is_regular:Param p->bool`` Defined in line number 986.
+| 
+| 
+
+.. _trivial_realform_g->param1:
+
+trivial
+-------------------------------------------------
+| ``trivial:RealForm G->Param`` Defined in line number 989.
+| 
+| 
+
+.. _w_cross_[int]_w,param_p->param1:
+
+W_cross
+-------------------------------------------------
+| ``W_cross:[int] w,Param p->Param`` Defined in line number 993.
+| 
+| 
+
+.. _parameter_realform_g,int_x,ratvec_lambda,ratvec_nu->param1:
+
+parameter
+-------------------------------------------------
+| ``parameter:RealForm G,int x,ratvec lambda,ratvec nu->Param`` Defined in line number 999.
+| 
+| 
+
+.. _parameter_kgbelt_x,ratvec_lambda,ratvec_nu->param1:
+
+parameter
+-------------------------------------------------
+| ``parameter:KGBElt x,ratvec lambda,ratvec nu->Param`` Defined in line number 1001.
+| 
+| 
+
+.. _parameter_gamma_kgbelt_x,_ratvec_lambda,_ratvec_gamma->param1:
+
+parameter_gamma
+-------------------------------------------------
+| ``parameter_gamma:KGBElt x, ratvec lambda, ratvec gamma->Param`` Defined in line number 1005.
+| 
+| 
+
+.. _block_param_p->([param],int)1:
+
+block
+-------------------------------------------------
+| ``block:Param p->([Param],int)`` Defined in line number 1014.
+| 
+| 
+
+.. _block_of_param_p->[param]1:
+
+block_of
+-------------------------------------------------
+| ``block_of:Param p->[Param]`` Defined in line number 1020.
+| 
+| 
+
+.. _imaginary_type_int_s,_param_p->int1:
+
+imaginary_type
+-------------------------------------------------
+| ``imaginary_type:int s, Param p->int`` Defined in line number 1024.
+| 
+| 
+
+.. _real_type_int_s,param_p->int1:
+
+real_type
+-------------------------------------------------
+| ``real_type:int s,Param p->int`` Defined in line number 1025.
+| 
+| 
+
+.. _imaginary_type_vec_alpha,_param_p->int1:
+
+imaginary_type
+-------------------------------------------------
+| ``imaginary_type:vec alpha, Param p->int`` Defined in line number 1027.
+| 
+| 
+
+.. _real_type_vec_alpha,_param_p->int1:
+
+real_type
+-------------------------------------------------
+| ``real_type:vec alpha, Param p->int`` Defined in line number 1029.
+| 
+| 
+
+.. _is_nonparity_int_s,param_p->bool1:
+
+is_nonparity
+-------------------------------------------------
+| ``is_nonparity:int s,Param p->bool`` Defined in line number 1032.
+| 
+| 
+
+.. _is_parity_int_s,param_p->bool1:
+
+is_parity
+-------------------------------------------------
+| ``is_parity:int s,Param p->bool`` Defined in line number 1033.
+| 
+| 
+
+.. _is_nonparity_vec_alpha,param_p->bool1:
+
+is_nonparity
+-------------------------------------------------
+| ``is_nonparity:vec alpha,Param p->bool`` Defined in line number 1035.
+| 
+| 
+
+.. _is_parity_vec_alpha,param_p->bool1:
+
+is_parity
+-------------------------------------------------
+| ``is_parity:vec alpha,Param p->bool`` Defined in line number 1037.
+| 
+| 
+
+.. _status_vec_alpha,param_p->int1:
+
+status
+-------------------------------------------------
+| ``status:vec alpha,Param p->int`` Defined in line number 1040.
+| 
+| 
+
+.. _status_int_s,param_p->int1:
+
+status
+-------------------------------------------------
+| ``status:int s,Param p->int`` Defined in line number 1048.
+| 
+| 
+
+.. _block_status_text_int_i->string1:
+
+block_status_text
+-------------------------------------------------
+| ``block_status_text:int i->string`` Defined in line number 1051.
+| 
+| 
+
+.. _status_text_int_s,param_p->string1:
+
+status_text
+-------------------------------------------------
+| ``status_text:int s,Param p->string`` Defined in line number 1054.
+| 
+| 
+
+.. _status_texts_param_p->[string]1:
+
+status_texts
+-------------------------------------------------
+| ``status_texts:Param p->[string]`` Defined in line number 1055.
+| 
+| 
+
+.. _status_text_(vec,param)_ap->string1:
+
+status_text
+-------------------------------------------------
+| ``status_text:(vec,Param) ap->string`` Defined in line number 1058.
+| 
+| 
+
+.. _parity_poscoroots_param_p->mat1:
+
+parity_poscoroots
+-------------------------------------------------
+| ``parity_poscoroots:Param p->mat`` Defined in line number 1060.
+| 
+| 
+
+.. _nonparity_poscoroots_param_p->mat1:
+
+nonparity_poscoroots
+-------------------------------------------------
+| ``nonparity_poscoroots:Param p->mat`` Defined in line number 1063.
+| 
+| 
+
+.. _is_descent_int_s,param_p->bool1:
+
+is_descent
+-------------------------------------------------
+| ``is_descent:int s,Param p->bool`` Defined in line number 1067.
+| 
+| 
+
+.. _tau_bitset_param_p->((int->bool),int)1:
+
+tau_bitset
+-------------------------------------------------
+| ``tau_bitset:Param p->((int->bool),int)`` Defined in line number 1068.
+| 
+| 
+
+.. _tau_param_p->[int]1:
+
+tau
+-------------------------------------------------
+| ``tau:Param p->[int]`` Defined in line number 1071.
+| 
+| 
+
+.. _tau_complement_param_p->[int]1:
+
+tau_complement
+-------------------------------------------------
+| ``tau_complement:Param p->[int]`` Defined in line number 1072.
+| 
+| 
+
+.. _is_descent_(vec,param)_ap->bool1:
+
+is_descent
+-------------------------------------------------
+| ``is_descent:(vec,Param) ap->bool`` Defined in line number 1074.
+| 
+| 
+
+.. _lookup_param_p,_[param]_block->int1:
+
+lookup
+-------------------------------------------------
+| ``lookup:Param p, [Param] block->int`` Defined in line number 1076.
+| 
+| 
+
+.. _null_module_parampol_p->parampol1:
+
+null_module
+-------------------------------------------------
+| ``null_module:ParamPol P->ParamPol`` Defined in line number 1134.
+| 
+| 
+
+.. _\-_ParamPol_P->ParamPol1:
+
+\-
+-------------------------------------------------
+| ``-:ParamPol P->ParamPol`` Defined in line number 1135.
+| 
+| 
+
+.. _first_param_parampol_p->param1:
+
+first_param
+-------------------------------------------------
+| ``first_param:ParamPol P->Param`` Defined in line number 1137.
+| 
+| 
+
+.. _last_param_parampol_p->param1:
+
+last_param
+-------------------------------------------------
+| ``last_param:ParamPol P->Param`` Defined in line number 1138.
+| 
+| 
+
+.. _s_to_1_parampol_p->parampol1:
+
+s_to_1
+-------------------------------------------------
+| ``s_to_1:ParamPol P->ParamPol`` Defined in line number 1140.
+| 
+| 
+
+.. _s_to_minus_1_parampol_p->parampol1:
+
+s_to_minus_1
+-------------------------------------------------
+| ``s_to_minus_1:ParamPol P->ParamPol`` Defined in line number 1141.
+| 
+| 
+
+.. _\-_ParamPol_a,_(Split,Param)_(c,p)->ParamPol1:
+
+\-
+-------------------------------------------------
+| ``-:ParamPol a, (Split,Param) (c,p)->ParamPol`` Defined in line number 1144.
+| 
+| 
+
+.. _\*_ParamPol_P,_rat_f->ParamPol1:
+
+\*
+-------------------------------------------------
+| ``*:ParamPol P, rat f->ParamPol`` Defined in line number 1147.
+| 
+| 
+
+.. _divide_by_int_n,_parampol_p->parampol1:
+
+divide_by
+-------------------------------------------------
+| ``divide_by:int n, ParamPol P->ParamPol`` Defined in line number 1150.
+| 
+| 
+
+.. _root_datum_parampol_p->rootdatum1:
+
+root_datum
+-------------------------------------------------
+| ``root_datum:ParamPol P->RootDatum`` Defined in line number 1154.
+| 
+| 
+
+.. _virtual_param_p->parampol1:
+
+virtual
+-------------------------------------------------
+| ``virtual:Param p->ParamPol`` Defined in line number 1156.
+| 
+| 
+
+.. _virtual_realform_g,_[param]_ps->parampol1:
+
+virtual
+-------------------------------------------------
+| ``virtual:RealForm G, [Param] ps->ParamPol`` Defined in line number 1157.
+| 
+| 
+
+.. _pol_format_parampol_p->void1:
+
+pol_format
+-------------------------------------------------
+| ``pol_format:ParamPol P->void`` Defined in line number 1162.
+| 
+| 
+
+.. _infinitesimal_character_parampol_p->ratvec1:
+
+infinitesimal_character
+-------------------------------------------------
+| ``infinitesimal_character:ParamPol P->ratvec`` Defined in line number 1167.
+| 
+| 
+
+.. _separate_by_infinitesimal_character_parampol_p->[(ratvec,parampol)]1:
+
+separate_by_infinitesimal_character
+-------------------------------------------------
+| ``separate_by_infinitesimal_character:ParamPol P->[(ratvec,ParamPol)]`` Defined in line number 1176.
+| 
+| 
+
+.. _in_string_list_string_s,[string]_s->bool1:
+
+in_string_list
+-------------------------------------------------
+| ``in_string_list:string s,[string] S->bool`` Defined in line number 1188.
+| 
+| 
+
+.. _imaginary_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1:
+
+imaginary_roots_and_coroots
+-------------------------------------------------
+| ``imaginary_roots_and_coroots:(RootDatum, mat)p->(mat,mat)`` Defined in line number 1194.
+| 
+| 
+
+.. _imaginary_roots_and_coroots_kgbelt_x->(mat,mat)1:
+
+imaginary_roots_and_coroots
+-------------------------------------------------
+| ``imaginary_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 1196.
+| 
+| 
+
+.. _real_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1:
+
+real_roots_and_coroots
+-------------------------------------------------
+| ``real_roots_and_coroots:(RootDatum, mat)p->(mat,mat)`` Defined in line number 1202.
+| 
+| 
+
+.. _real_roots_and_coroots_kgbelt_x->(mat,mat)1:
+
+real_roots_and_coroots
+-------------------------------------------------
+| ``real_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 1204.
+| 
+| 
+
+.. _complex_posroots_rootdatum_rd,mat_theta->mat1:
+
+complex_posroots
+-------------------------------------------------
+| ``complex_posroots:RootDatum rd,mat theta->mat`` Defined in line number 1207.
+| 
+| 
+
+.. _complex_posroots_kgbelt_x->mat1:
+
+complex_posroots
+-------------------------------------------------
+| ``complex_posroots:KGBElt x->mat`` Defined in line number 1209.
+| 
+| 
+
+.. _monomials_parampol_p->[param]1:
+
+monomials
+-------------------------------------------------
+| ``monomials:ParamPol P->[Param]`` Defined in line number 1216.
+| 
+| 
+
+.. _monomial_parampol_p,int_i->param1:
+
+monomial
+-------------------------------------------------
+| ``monomial:ParamPol P,int i->Param`` Defined in line number 1217.
+| 
+| 
+
+.. _delete_[int]_v,_int_k->[int]:_____v[:k]##v[k+11:
+
+delete
+-------------------------------------------------
+| ``delete:[int] v, int k->[int]:     v[:k]##v[k+1`` Defined in line number 1220.
+| 
+| 
+
+.. _delete_[vec]_v,_int_k->[vec]:_____v[:k]##v[k+11:
+
+delete
+-------------------------------------------------
+| ``delete:[vec] v, int k->[vec]:     v[:k]##v[k+1`` Defined in line number 1221.
+| 
+| 
+
+.. _delete_[ratvec]_v,_int_k->[ratvec]:__v[:k]##v[k+11:
+
+delete
+-------------------------------------------------
+| ``delete:[ratvec] v, int k->[ratvec]:  v[:k]##v[k+1`` Defined in line number 1222.
+| 
+| 
+
+.. _delete_[[ratvec]]_v,_int_k->[[ratvec]]:v[:k]##v[k+11:
+
+delete
+-------------------------------------------------
+| ``delete:[[ratvec]] v, int k->[[ratvec]]:v[:k]##v[k+1`` Defined in line number 1223.
+| 
+| 
+
+.. _delete_[[vec]]_v,_int_k->[[vec]]:___v[:k]##v[k+11:
+
+delete
+-------------------------------------------------
+| ``delete:[[vec]] v, int k->[[vec]]:   v[:k]##v[k+1`` Defined in line number 1224.
+| 
+| 
+
+.. _delete_[parampol]_p,_int_k->[parampol]:p[:k]##p[k+11:
+
+delete
+-------------------------------------------------
+| ``delete:[ParamPol] P, int k->[ParamPol]:P[:k]##P[k+1`` Defined in line number 1225.
 | 
 | 
 

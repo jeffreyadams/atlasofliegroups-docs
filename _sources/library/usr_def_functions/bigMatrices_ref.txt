@@ -24,7 +24,7 @@ delta_orbit_reps
 
 complete_indices
 -------------------------------------------------
-| ``complete_indices:[Param] B,mat delta->[(int,int)]`` Defined in line number 24.
+| ``complete_indices:[Param] B,mat delta->[(int,int)]`` Defined in line number 25.
 | 
 | 
 
@@ -32,7 +32,7 @@ complete_indices
 
 my_extended_block
 -------------------------------------------------
-| ``my_extended_block:Param p,mat delta->([Param],[int])`` Defined in line number 30.
+| ``my_extended_block:Param p,mat delta->([Param],[int])`` Defined in line number 31.
 | 
 | 
 
@@ -40,7 +40,15 @@ my_extended_block
 
 big_KL_P_polynomials
 -------------------------------------------------
-| ``big_KL_P_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 66.
+| ``big_KL_P_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 67.
+| 
+| 
+
+.. _big_kl_p_polynomials_[param]_b,mat_delta->[[vec]]2:
+
+big_KL_P_polynomials
+-------------------------------------------------
+| ``big_KL_P_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 98.
 | 
 | 
 
@@ -48,7 +56,7 @@ big_KL_P_polynomials
 
 big_KL_P_signed_polynomials
 -------------------------------------------------
-| ``big_KL_P_signed_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 95.
+| ``big_KL_P_signed_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 160.
 | 
 | 
 
@@ -56,7 +64,7 @@ big_KL_P_signed_polynomials
 
 big_KL_Q_polynomials
 -------------------------------------------------
-| ``big_KL_Q_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 106.
+| ``big_KL_Q_polynomials:[Param] B,mat delta->[[vec]]`` Defined in line number 171.
 | 
 | 
 

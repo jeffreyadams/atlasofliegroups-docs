@@ -20,18 +20,18 @@ half sum of complex roots.)
 For :math:`\theta` -stable induction, the rho-shift is:
 :math:`\rho_i(G)-\rho_i(L)+\rho_{complex}(G)-\rho_{complex}(L)
 =\rho(G)-\rho_r(G)-\rho(L)+\rho_r(L)` .
-Since :math:`\mathfrak q`  is :math:`\theta`  -stable, :math:`rho_r(G)-\rho_r(L)=0` , so the
+Since :math:`\mathfrak q`  is :math:`\theta`  -stable, :math:`\rho_r(G)-\rho_r(L)=0` , so the
 shift is :math:`\rho(G)-\rho(L)=\rho(\mathfrak u)` .
 
-Then :math:`Ind_L^G(I(p_L))=I(p_G)` . 
+Then :math:`Ind_L^G I(p_L)=I(p_G)` . 
 
 In the :math:`\theta` -stable case, the shifted parameter p_G may be non-standard
 and needs to be standardized:
 
 If p=(x,lambda,nu), and <lambda, :math:`\alpha^{\vee}` ><0 for some imaginary root :math:`\alpha`  
 (i.e. non-standard), let i_root_system=imaginary roots for x(p). Find :math:`w`  so 
-that :math:`w^{-1}` lambda is dominant for imaginary roots, set 
-p_dom=parameter(x, :math:`w^{-1}` lambda,nu) and return coherent continuation action 
+that :math:`w^{-1}\cdot` lambda is dominant for imaginary roots, set 
+p_dom=parameter(x, :math:`w^{-1}\cdot` lambda,nu) and return coherent continuation action 
 (wrt imaginary roots) of :math:`w`  on p_dom.
 
 

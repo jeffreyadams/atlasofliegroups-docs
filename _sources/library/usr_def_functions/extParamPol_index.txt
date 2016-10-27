@@ -14,28 +14,48 @@ Functions
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`splits_extparampol_p->[split]1`
-     - ``extParamPol P->[Split]``
-   * - :ref:`ext_params_extparampol_p->[extended_param]1`
-     - ``extParamPol P->[extended_param]``
-   * - :ref:`collect_extparampol_q->extparampol1`
-     - ``extParamPol Q->extParamPol``
-   * - :ref:`\*_Split_s,extended_param_E->extParamPol1`
-     - ``Split s,extended_param E->extParamPol``
-   * - :ref:`\*_Split_s,extParamPol_P->extParamPol1`
-     - ``Split s,extParamPol P->extParamPol``
-   * - :ref:`\#_[Split]_a,[Split]_b->[Split]:_for_x_in_b_do_a#1`
-     - ``[Split] a,[Split] b->[Split]: for x in b do a#``
-   * - :ref:`\#_[extended_param]_a,[extended_param]_b->[extended_param]:_for_x_in_b_do_a#1`
-     - ``[extended_param] a,[extended_param] b->[extended_param]: for x in b do a#``
-   * - :ref:`\+_extParamPol_P,extParamPol_Q->extParamPol1`
-     - ``extParamPol P,extParamPol Q->extParamPol``
-   * - :ref:`\+_extParamPol_P,extended_param_E->extParamPol1`
-     - ``extParamPol P,extended_param E->extParamPol``
-   * - :ref:`\-_extParamPol_P,extParamPol_Q->extParamPol1`
-     - ``extParamPol P,extParamPol Q->extParamPol``
+   * - :ref:`\*_Split_s,ExtParamPol_(P_plus,P_minus,P_ind)->ExtParamPol1`
+     - ``Split s,ExtParamPol (P_plus,P_minus,P_ind)->ExtParamPol``
+   * - :ref:`extparampol_extparam_e->extparampol1`
+     - ``ExtParam E->ExtParamPol``
+   * - :ref:`extparampol_param_p,int_type->extparampol1`
+     - ``Param p,int type->ExtParamPol``
+   * - :ref:`\+_ExtParamPol_(P_plus_1,P_minus_1,P_ind_1),ExtParamPol_(P_plus_2,P_minus_2,P_ind_2)->ExtParamPol1`
+     - ``ExtParamPol (P_plus_1,P_minus_1,P_ind_1),ExtParamPol (P_plus_2,P_minus_2,P_ind_2)->ExtParamPol``
+   * - :ref:`\-_ExtParamPol_(P_plus_1,P_minus_1,P_ind_1),ExtParamPol_(P_plus_2,P_minus_2,P_ind_2)->ExtParamPol1`
+     - ``ExtParamPol (P_plus_1,P_minus_1,P_ind_1),ExtParamPol (P_plus_2,P_minus_2,P_ind_2)->ExtParamPol``
+   * - :ref:`\+_ExtParamPol_P,[ExtParamPol]_Q->P_in_for_R_in_Q_do_rv+1`
+     - ``ExtParamPol P,[ExtParamPol] Q->P in for R in Q do rv+``
+   * - :ref:`\+_ExtParamPol_P,(Split_S,Param_p,int_type)->ExtParamPol1`
+     - ``ExtParamPol P,(Split S,Param p,int type)->ExtParamPol``
+   * - :ref:`display_extparampol_(a,b,c)->void:prints("plus:",a,new_line,"minus:",b,new_line,"induced1`
+     - ``ExtParamPol (A,B,C)->void:prints("plus:",A,new_line,"minus:",B,new_line,"induced``
    * - :ref:`null_ext_module_realform_g->extparampol1`
-     - ``RealForm G->extParamPol``
+     - ``RealForm G->ExtParamPol``
+   * - :ref:`find_[(int,int)]_complete_indices,(int,int)_pair->int:first(#complete_indices,(int_i)bool1`
+     - ``[(int,int)] complete_indices,(int,int) pair->int:first(#complete_indices,(int i)bool``
+   * - :ref:`deform_param_p,_mat_delta,_int_type->extparampol1`
+     - ``Param p, mat delta, int type->ExtParamPol``
+   * - :ref:`deform_extparam_e,_mat_delta->extparampol1`
+     - ``ExtParam E, mat delta->ExtParamPol``
+   * - :ref:`change_nu_param_p,_rat_factor,_int_type->extparampol1`
+     - ``Param p, rat factor, int type->ExtParamPol``
+   * - :ref:`\%_ExtParamPol_P->[(Split,Param,int)]1`
+     - ``ExtParamPol P->[(Split,Param,int)]``
+   * - :ref:`recursive_deform_param_p,_mat_delta,_int_type->extparampol1`
+     - ``Param p, mat delta, int type->ExtParamPol``
+   * - :ref:`print_extended_character_formula_param_p,[param]_b,mat_delta->void1`
+     - ``Param p,[Param] B,mat delta->void``
+   * - :ref:`print_extended_character_formula_param_p,mat_delta->void1`
+     - ``Param p,mat delta->void``
+   * - :ref:`print_extended_composition_series_param_p,[param]_b,mat_delta->void1`
+     - ``Param p,[Param] B,mat delta->void``
+   * - :ref:`print_extended_composition_series_param_p,mat_delta->void1`
+     - ``Param p,mat delta->void``
+   * - :ref:`print_extended_indices_[param]_b,mat_delta->void1`
+     - ``[Param] B,mat delta->void``
+   * - :ref:`character_formula_param_p,mat_delta->extparampol1`
+     - ``Param p,mat delta->ExtParamPol``
 
 
 Data Types
@@ -46,5 +66,5 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`extParamPol1`
-     - ``[(Split,extended_param)]``
+   * - :ref:`ExtParamPol1`
+     - ``(ParamPol,ParamPol,ParamPol)``
