@@ -11,3 +11,4 @@ Go to the `atlas web interface`_
     we are building a new atlas web interface (the older version is `here`_). Like the older version, you will be able to access many functions of atlas without having to install it on your local machine.
     
 .. _here: http://www.liegroups.org/web/
+
