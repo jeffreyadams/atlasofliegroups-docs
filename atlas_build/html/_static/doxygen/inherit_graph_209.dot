@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="atlas::weyl::WeylGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1weyl_1_1WeylGroup.html",tooltip="Represents a Weyl group for the purpose of manipulating its elements. "];
-}
