@@ -8,7 +8,7 @@ print_K_types.at Function References
 
 print_branch_irr
 -------------------------------------------------
-| ``print_branch_irr:ParamPol P,KGBElt x,int bound->void`` Defined in line number 22.
+| ``print_branch_irr:ParamPol P,KGBElt x,int bound->void`` Defined in line number 21.
 | 
 | 
 
@@ -16,7 +16,7 @@ print_branch_irr
 
 print_branch_irr
 -------------------------------------------------
-| ``print_branch_irr:ParamPol P,int bound->void`` Defined in line number 26.
+| ``print_branch_irr:ParamPol P,int bound->void`` Defined in line number 25.
 | 
 | 
 
@@ -24,7 +24,7 @@ print_branch_irr
 
 print_branch_irr_long
 -------------------------------------------------
-| ``print_branch_irr_long:ParamPol P,KGBElt x,int bound->void`` Defined in line number 33.
+| ``print_branch_irr_long:ParamPol P,KGBElt x,int bound->void`` Defined in line number 32.
 | 
 | 
 
@@ -32,7 +32,7 @@ print_branch_irr_long
 
 print_branch_irr_long
 -------------------------------------------------
-| ``print_branch_irr_long:ParamPol P,int bound->void`` Defined in line number 40.
+| ``print_branch_irr_long:ParamPol P,int bound->void`` Defined in line number 39.
 | 
 | 
 
@@ -40,7 +40,7 @@ print_branch_irr_long
 
 print_branch_irr
 -------------------------------------------------
-| ``print_branch_irr:Param p,KGBElt x, int bound->void`` Defined in line number 45.
+| ``print_branch_irr:Param p,KGBElt x, int bound->void`` Defined in line number 44.
 | 
 | 
 
@@ -48,7 +48,7 @@ print_branch_irr
 
 print_branch_irr
 -------------------------------------------------
-| ``print_branch_irr:Param p, int bound->void`` Defined in line number 47.
+| ``print_branch_irr:Param p, int bound->void`` Defined in line number 46.
 | 
 | 
 
@@ -56,7 +56,7 @@ print_branch_irr
 
 print_branch_irr_long
 -------------------------------------------------
-| ``print_branch_irr_long:Param p,KGBElt x, int bound->void`` Defined in line number 49.
+| ``print_branch_irr_long:Param p,KGBElt x, int bound->void`` Defined in line number 48.
 | 
 | 
 
@@ -64,7 +64,7 @@ print_branch_irr_long
 
 print_branch_irr_long
 -------------------------------------------------
-| ``print_branch_irr_long:Param p, int bound->void`` Defined in line number 51.
+| ``print_branch_irr_long:Param p, int bound->void`` Defined in line number 50.
 | 
 | 
 
@@ -72,7 +72,7 @@ print_branch_irr_long
 
 print_branch_std
 -------------------------------------------------
-| ``print_branch_std:ParamPol P,KGBElt x,int bound->void`` Defined in line number 54.
+| ``print_branch_std:ParamPol P,KGBElt x,int bound->void`` Defined in line number 53.
 | 
 | 
 
@@ -80,7 +80,7 @@ print_branch_std
 
 print_branch_std
 -------------------------------------------------
-| ``print_branch_std:ParamPol P,int bound->void`` Defined in line number 60.
+| ``print_branch_std:ParamPol P,int bound->void`` Defined in line number 59.
 | 
 | 
 
@@ -88,7 +88,7 @@ print_branch_std
 
 print_branch_std_long
 -------------------------------------------------
-| ``print_branch_std_long:ParamPol P,KGBElt x,int bound->void`` Defined in line number 67.
+| ``print_branch_std_long:ParamPol P,KGBElt x,int bound->void`` Defined in line number 66.
 | 
 | 
 
@@ -96,7 +96,7 @@ print_branch_std_long
 
 print_branch_std_long
 -------------------------------------------------
-| ``print_branch_std_long:ParamPol P,int bound->void`` Defined in line number 76.
+| ``print_branch_std_long:ParamPol P,int bound->void`` Defined in line number 75.
 | 
 | 
 
@@ -104,7 +104,7 @@ print_branch_std_long
 
 print_branch_std
 -------------------------------------------------
-| ``print_branch_std:Param p,KGBElt x, int bound->void`` Defined in line number 80.
+| ``print_branch_std:Param p,KGBElt x, int bound->void`` Defined in line number 79.
 | 
 | 
 
@@ -112,7 +112,7 @@ print_branch_std
 
 print_branch_std
 -------------------------------------------------
-| ``print_branch_std:Param p, int bound->void`` Defined in line number 82.
+| ``print_branch_std:Param p, int bound->void`` Defined in line number 81.
 | 
 | 
 
@@ -120,7 +120,7 @@ print_branch_std
 
 print_branch_std_long
 -------------------------------------------------
-| ``print_branch_std_long:Param p,KGBElt x, int bound->void`` Defined in line number 84.
+| ``print_branch_std_long:Param p,KGBElt x, int bound->void`` Defined in line number 83.
 | 
 | 
 
@@ -128,7 +128,7 @@ print_branch_std_long
 
 print_branch_std_long
 -------------------------------------------------
-| ``print_branch_std_long:Param p, int bound->void`` Defined in line number 86.
+| ``print_branch_std_long:Param p, int bound->void`` Defined in line number 85.
 | 
 | 
 
@@ -136,7 +136,7 @@ print_branch_std_long
 
 print_K_signature_irr
 -------------------------------------------------
-| ``print_K_signature_irr:Param p,KGBElt x,int bound->void`` Defined in line number 91.
+| ``print_K_signature_irr:Param p,KGBElt x,int bound->void`` Defined in line number 90.
 | 
 | 
 
@@ -144,7 +144,7 @@ print_K_signature_irr
 
 print_K_signature_irr
 -------------------------------------------------
-| ``print_K_signature_irr:Param p,int bound->void`` Defined in line number 103.
+| ``print_K_signature_irr:Param p,int bound->void`` Defined in line number 102.
 | 
 | 
 

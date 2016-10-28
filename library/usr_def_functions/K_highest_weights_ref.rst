@@ -8,16 +8,34 @@ K_highest_weights.at Function References
 
 \=
 -------------------------------------------------
-| ``=:KHighestWeight (x,mu), KHighestWeight (y,tau)->bool`` Defined in line number 59.
+| ``=:KHighestWeight (x,mu), KHighestWeight (y,tau)->bool`` Defined in line number 57.
 | 
 | Equality of KHighestWeights
+| 
+
+.. _lkts_param_p->[k_type]1:
+
+LKTs
+-------------------------------------------------
+| ``LKTs:Param p->[K_Type]`` Defined in line number 82.
+| 
+| 
+| 
+
+.. _lkt_param_p->k_type1:
+
+LKT
+-------------------------------------------------
+| ``LKT:Param p->K_Type`` Defined in line number 85.
+| 
+| 
 | 
 
 .. _is_split_spherical_param_p->bool1:
 
 is_split_spherical
 -------------------------------------------------
-| ``is_split_spherical:Param p->bool`` Defined in line number 99.
+| ``is_split_spherical:Param p->bool`` Defined in line number 103.
 | 
 | Test if p is G-spherical: G rel. split, all roots in tau(p)
 | 
@@ -26,7 +44,7 @@ is_split_spherical
 
 is_split_spherical
 -------------------------------------------------
-| ``is_split_spherical:K_Type p->bool`` Defined in line number 108.
+| ``is_split_spherical:K_Type p->bool`` Defined in line number 112.
 | 
 | Test if a K-type is G-spherical: LKT of G-spherical p
 | 
@@ -35,7 +53,7 @@ is_split_spherical
 
 highest_weight_split_spherical
 -------------------------------------------------
-| ``highest_weight_split_spherical:K_Type p->KHighestWeight`` Defined in line number 113.
+| ``highest_weight_split_spherical:K_Type p->KHighestWeight`` Defined in line number 117.
 | 
 | Highest weight of a G-spherical K-type (is unique)
 | 
@@ -44,7 +62,7 @@ highest_weight_split_spherical
 
 highest_weight_split_spherical
 -------------------------------------------------
-| ``highest_weight_split_spherical:Param p->KHighestWeight`` Defined in line number 127.
+| ``highest_weight_split_spherical:Param p->KHighestWeight`` Defined in line number 131.
 | 
 | Highest weight of LKT of a G-spherical parameter (is unique)
 | 
@@ -53,7 +71,7 @@ highest_weight_split_spherical
 
 highest_weight_split_spherical
 -------------------------------------------------
-| ``highest_weight_split_spherical:K_Type p,KGBElt x_K->KHighestWeight`` Defined in line number 131.
+| ``highest_weight_split_spherical:K_Type p,KGBElt x_K->KHighestWeight`` Defined in line number 135.
 | 
 | Highest weight of LKT of G-spherical K-type wrt x_K (is unique)
 | 
@@ -62,7 +80,7 @@ highest_weight_split_spherical
 
 highest_weight_split_spherical
 -------------------------------------------------
-| ``highest_weight_split_spherical:Param p,KGBElt x_K->KHighestWeight`` Defined in line number 135.
+| ``highest_weight_split_spherical:Param p,KGBElt x_K->KHighestWeight`` Defined in line number 139.
 | 
 | Highest weight of LKT of a G-spherical parameter wrt x_K (is unique)
 | 
@@ -71,7 +89,7 @@ highest_weight_split_spherical
 
 highest_weight_one
 -------------------------------------------------
-| ``highest_weight_one:K_Type p->KHighestWeight`` Defined in line number 144.
+| ``highest_weight_one:K_Type p->KHighestWeight`` Defined in line number 148.
 | 
 | One KHighestWeight of a K-type
 | 
@@ -80,7 +98,7 @@ highest_weight_one
 
 highest_weight_one
 -------------------------------------------------
-| ``highest_weight_one:K_Type p,KGBElt x_K->KHighestWeight`` Defined in line number 163.
+| ``highest_weight_one:K_Type p,KGBElt x_K->KHighestWeight`` Defined in line number 167.
 | 
 | One KHighestWeight of a K-type wrt x_K
 | 
@@ -89,7 +107,7 @@ highest_weight_one
 
 highest_weights
 -------------------------------------------------
-| ``highest_weights:K_Type p->[KHighestWeight]`` Defined in line number 171.
+| ``highest_weights:K_Type p->[KHighestWeight]`` Defined in line number 175.
 | 
 | All highest weights of a K-type
 | 
@@ -98,7 +116,7 @@ highest_weights
 
 highest_weights
 -------------------------------------------------
-| ``highest_weights:K_Type p,KGBElt x_K->[KHighestWeight]`` Defined in line number 175.
+| ``highest_weights:K_Type p,KGBElt x_K->[KHighestWeight]`` Defined in line number 179.
 | 
 | All highest weights of a K-type wrt x_K
 | 
@@ -107,7 +125,7 @@ highest_weights
 
 highest_weights
 -------------------------------------------------
-| ``highest_weights:Param p->[KHighestWeight]`` Defined in line number 180.
+| ``highest_weights:Param p->[KHighestWeight]`` Defined in line number 184.
 | 
 | All highest weights of all LKTs of a parameter
 | 
@@ -116,7 +134,7 @@ highest_weights
 
 highest_weights
 -------------------------------------------------
-| ``highest_weights:Param p,KGBElt x_K->[KHighestWeight]`` Defined in line number 186.
+| ``highest_weights:Param p,KGBElt x_K->[KHighestWeight]`` Defined in line number 190.
 | 
 | All highest weights of all LKTs of a parameter wrt x_K
 | 
@@ -125,7 +143,7 @@ highest_weights
 
 highest_weight
 -------------------------------------------------
-| ``highest_weight:K_Type p->KHighestWeight`` Defined in line number 192.
+| ``highest_weight:K_Type p->KHighestWeight`` Defined in line number 196.
 | 
 | Unique highest weight of a K-type (or error if not unique)
 | 
@@ -134,7 +152,7 @@ highest_weight
 
 highest_weight
 -------------------------------------------------
-| ``highest_weight:Param p->KHighestWeight`` Defined in line number 198.
+| ``highest_weight:Param p->KHighestWeight`` Defined in line number 202.
 | 
 | Unique highest weight of a parameter (or error if not unique)
 | 
@@ -143,7 +161,7 @@ highest_weight
 
 centralizer
 -------------------------------------------------
-| ``centralizer:KGBElt x,ratvec v->(KGBElt,RootDatum)`` Defined in line number 217.
+| ``centralizer:KGBElt x,ratvec v->(KGBElt,RootDatum)`` Defined in line number 221.
 | 
 | (internal function)
 | 
@@ -152,16 +170,16 @@ centralizer
 
 find_nci_root
 -------------------------------------------------
-| ``find_nci_root:KGBElt x,ratvec tau->int`` Defined in line number 227.
+| ``find_nci_root:KGBElt x,ratvec tau->int`` Defined in line number 231.
 | 
 | (internal function)
 | 
 
-.. _tworho_k_fixed_kgbelt_x->ratvec1:
+.. _tworho_k_kgbelt_x->ratvec1:
 
-tworho_K_fixed
+tworho_K
 -------------------------------------------------
-| ``tworho_K_fixed:KGBElt x->ratvec`` Defined in line number 258.
+| ``tworho_K:KGBElt x->ratvec`` Defined in line number 262.
 | 
 | 
 
@@ -169,7 +187,7 @@ tworho_K_fixed
 
 project_on_dominant_cone
 -------------------------------------------------
-| ``project_on_dominant_cone:KGBElt x, ratvec mu->(KGBElt,ratvec,ratvec)`` Defined in line number 275.
+| ``project_on_dominant_cone:KGBElt x, ratvec mu->(KGBElt,ratvec,ratvec)`` Defined in line number 279.
 | 
 | Vogan algorithm to project KHighestWeight on dominant cone
 | 
@@ -178,7 +196,7 @@ project_on_dominant_cone
 
 project_on_dominant_cone
 -------------------------------------------------
-| ``project_on_dominant_cone:KGBElt x, vec mu->(KGBElt,ratvec,ratvec)`` Defined in line number 319.
+| ``project_on_dominant_cone:KGBElt x, vec mu->(KGBElt,ratvec,ratvec)`` Defined in line number 323.
 | 
 | Vogan algorithm to project KHighestWeight on dominant cone
 | 
@@ -187,7 +205,7 @@ project_on_dominant_cone
 
 characters_order_2
 -------------------------------------------------
-| ``characters_order_2:KGBElt x->[vec]`` Defined in line number 334.
+| ``characters_order_2:KGBElt x->[vec]`` Defined in line number 338.
 | 
 | (internal function)
 | 
@@ -196,7 +214,7 @@ characters_order_2
 
 all_G_spherical_same_differential
 -------------------------------------------------
-| ``all_G_spherical_same_differential:K_Type p->[K_Type]`` Defined in line number 354.
+| ``all_G_spherical_same_differential:K_Type p->[K_Type]`` Defined in line number 358.
 | 
 | All G-spherical K-types with same differential as given one
 | 
@@ -205,7 +223,7 @@ all_G_spherical_same_differential
 
 all_G_spherical_same_differential
 -------------------------------------------------
-| ``all_G_spherical_same_differential:Param p->[K_Type]`` Defined in line number 371.
+| ``all_G_spherical_same_differential:Param p->[K_Type]`` Defined in line number 375.
 | 
 | All G-spherical K-types with same differential as LKT of p
 | 
@@ -214,7 +232,7 @@ all_G_spherical_same_differential
 
 parabolic
 -------------------------------------------------
-| ``parabolic:KHighestWeight (x,mu)->Parabolic`` Defined in line number 383.
+| ``parabolic:KHighestWeight (x,mu)->Parabolic`` Defined in line number 387.
 | 
 | Parabolic attached to KHighestWeight by Vogan algorithm
 | 
@@ -223,7 +241,7 @@ parabolic
 
 make_strongly_dominant
 -------------------------------------------------
-| ``make_strongly_dominant:KHighestWeight mu,KGBElt x_Q->KHighestWeight`` Defined in line number 397.
+| ``make_strongly_dominant:KHighestWeight mu,KGBElt x_Q->KHighestWeight`` Defined in line number 401.
 | 
 | 
 
@@ -231,7 +249,7 @@ make_strongly_dominant
 
 K_types
 -------------------------------------------------
-| ``K_types:KHighestWeight mu_in->[K_Type]`` Defined in line number 405.
+| ``K_types:KHighestWeight mu_in->[K_Type]`` Defined in line number 409.
 | 
 | KHighestWeight -> array of K-types
 | 
@@ -240,7 +258,7 @@ K_types
 
 K_type
 -------------------------------------------------
-| ``K_type:KHighestWeight(x,mu)->K_Type`` Defined in line number 442.
+| ``K_type:KHighestWeight(x,mu)->K_Type`` Defined in line number 446.
 | 
 | KHighestWeight -> unique K-type if unique (or error)
 | 
@@ -249,7 +267,7 @@ K_type
 
 K0_highest_weight
 -------------------------------------------------
-| ``K0_highest_weight:KHighestWeight(x,mu)->Param`` Defined in line number 451.
+| ``K0_highest_weight:KHighestWeight(x,mu)->Param`` Defined in line number 455.
 | 
 | Highest weight for K_0 to KHighestWeight
 | 
@@ -258,7 +276,7 @@ K0_highest_weight
 
 dimension
 -------------------------------------------------
-| ``dimension:KHighestWeight mu->int`` Defined in line number 459.
+| ``dimension:KHighestWeight mu->int`` Defined in line number 463.
 | 
 | Dimension of KHighestWeight
 | 
@@ -267,7 +285,7 @@ dimension
 
 dimension
 -------------------------------------------------
-| ``dimension:K_Type p->int`` Defined in line number 462.
+| ``dimension:K_Type p->int`` Defined in line number 466.
 | 
 | Dimension of K-type
 | 
@@ -276,7 +294,7 @@ dimension
 
 H_weight
 -------------------------------------------------
-| ``H_weight:KGBElt x,vec mu_K->KHighestWeight`` Defined in line number 476.
+| ``H_weight:KGBElt x,vec mu_K->KHighestWeight`` Defined in line number 480.
 | 
 | 
 
@@ -284,7 +302,7 @@ H_weight
 
 fundamental_weights_K_H
 -------------------------------------------------
-| ``fundamental_weights_K_H:KGBElt x->[ratvec]`` Defined in line number 480.
+| ``fundamental_weights_K_H:KGBElt x->[ratvec]`` Defined in line number 484.
 | 
 | 
 
@@ -292,7 +310,7 @@ fundamental_weights_K_H
 
 K0_param
 -------------------------------------------------
-| ``K0_param:K_Type p,KGBElt x_K->Param`` Defined in line number 484.
+| ``K0_param:K_Type p,KGBElt x_K->Param`` Defined in line number 488.
 | 
 | 
 
@@ -300,7 +318,7 @@ K0_param
 
 K0_param
 -------------------------------------------------
-| ``K0_param:K_Type p->Param`` Defined in line number 488.
+| ``K0_param:K_Type p->Param`` Defined in line number 492.
 | 
 | 
 
@@ -308,7 +326,7 @@ K0_param
 
 K0_params
 -------------------------------------------------
-| ``K0_params:Param p,KGBElt x_K->[Param]`` Defined in line number 495.
+| ``K0_params:Param p,KGBElt x_K->[Param]`` Defined in line number 499.
 | 
 | 
 
@@ -316,7 +334,7 @@ K0_params
 
 K0_params
 -------------------------------------------------
-| ``K0_params:Param p->[Param]`` Defined in line number 498.
+| ``K0_params:Param p->[Param]`` Defined in line number 502.
 | 
 | 
 
@@ -324,7 +342,7 @@ K0_params
 
 K0_param
 -------------------------------------------------
-| ``K0_param:Param p,KGBElt x_K->Param`` Defined in line number 501.
+| ``K0_param:Param p,KGBElt x_K->Param`` Defined in line number 505.
 | 
 | 
 
@@ -332,7 +350,7 @@ K0_param
 
 K0_param
 -------------------------------------------------
-| ``K0_param:Param p->Param`` Defined in line number 506.
+| ``K0_param:Param p->Param`` Defined in line number 510.
 | 
 | 
 
@@ -340,7 +358,7 @@ K0_param
 
 fundamental_weight_coordinates
 -------------------------------------------------
-| ``fundamental_weight_coordinates:KHighestWeight (x,mu)->vec`` Defined in line number 512.
+| ``fundamental_weight_coordinates:KHighestWeight (x,mu)->vec`` Defined in line number 516.
 | 
 | 
 
@@ -348,7 +366,7 @@ fundamental_weight_coordinates
 
 K_highest_weight_from_fundamental_weights
 -------------------------------------------------
-| ``K_highest_weight_from_fundamental_weights:KGBElt x,vec tau->KHighestWeight`` Defined in line number 517.
+| ``K_highest_weight_from_fundamental_weights:KGBElt x,vec tau->KHighestWeight`` Defined in line number 521.
 | 
 | 
 
@@ -356,7 +374,7 @@ K_highest_weight_from_fundamental_weights
 
 dimensions
 -------------------------------------------------
-| ``dimensions:Param p, KGBElt x_K->[int]`` Defined in line number 525.
+| ``dimensions:Param p, KGBElt x_K->[int]`` Defined in line number 529.
 | 
 | 
 
@@ -364,7 +382,7 @@ dimensions
 
 dimensions
 -------------------------------------------------
-| ``dimensions:Param p->[int]`` Defined in line number 527.
+| ``dimensions:Param p->[int]`` Defined in line number 531.
 | 
 | 
 
@@ -372,7 +390,7 @@ dimensions
 
 dimensions
 -------------------------------------------------
-| ``dimensions:[Param] B->[[int]]`` Defined in line number 528.
+| ``dimensions:[Param] B->[[int]]`` Defined in line number 532.
 | 
 | 
 

@@ -8,6 +8,7 @@ KL_polynomial_matrices.at
 
 **This script imported the following .at files:**
 
+| :ref:`ext_deform.at<ext_deform.at>`
 |
 
 

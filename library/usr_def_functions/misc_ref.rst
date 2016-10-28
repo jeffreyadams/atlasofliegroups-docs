@@ -84,11 +84,19 @@ finalize
 | 
 | 
 
+.. _finalize_[param]_p->[param]1:
+
+finalize
+-------------------------------------------------
+| ``finalize:[Param] P->[Param]`` Defined in line number 37.
+| 
+| 
+
 .. _\#_Split_w,int_t)=let_(a,b->%w_in_int1:
 
 \#
 -------------------------------------------------
-| ``#:Split w,int t)=let (a,b->%w in int`` Defined in line number 37.
+| ``#:Split w,int t)=let (a,b->%w in int`` Defined in line number 42.
 | 
 | 
 
@@ -96,7 +104,7 @@ finalize
 
 \#
 -------------------------------------------------
-| ``#:Split w,rat t)=let (a,b->%w in rat`` Defined in line number 38.
+| ``#:Split w,rat t)=let (a,b->%w in rat`` Defined in line number 43.
 | 
 | 
 
@@ -104,7 +112,7 @@ finalize
 
 \#
 -------------------------------------------------
-| ``#:ParamPol P,int t->ParamPol`` Defined in line number 39.
+| ``#:ParamPol P,int t->ParamPol`` Defined in line number 44.
 | 
 | 
 
@@ -112,7 +120,7 @@ finalize
 
 fiber_partition
 -------------------------------------------------
-| ``fiber_partition:RealForm G->[int]`` Defined in line number 44.
+| ``fiber_partition:RealForm G->[int]`` Defined in line number 49.
 | 
 | 
 
@@ -120,7 +128,7 @@ fiber_partition
 
 in_distinguished_fiber
 -------------------------------------------------
-| ``in_distinguished_fiber:KGBElt x->bool`` Defined in line number 46.
+| ``in_distinguished_fiber:KGBElt x->bool`` Defined in line number 51.
 | 
 | 
 
@@ -128,7 +136,7 @@ in_distinguished_fiber
 
 distinguished_fiber
 -------------------------------------------------
-| ``distinguished_fiber:RealForm G->[int]`` Defined in line number 49.
+| ``distinguished_fiber:RealForm G->[int]`` Defined in line number 54.
 | 
 | 
 
@@ -136,7 +144,7 @@ distinguished_fiber
 
 root_length
 -------------------------------------------------
-| ``root_length:RootDatum rd,vec alpha->int`` Defined in line number 57.
+| ``root_length:RootDatum rd,vec alpha->int`` Defined in line number 62.
 | 
 | 
 
@@ -144,7 +152,7 @@ root_length
 
 is_simple_root
 -------------------------------------------------
-| ``is_simple_root:RootDatum rd,[int] alpha->bool`` Defined in line number 58.
+| ``is_simple_root:RootDatum rd,[int] alpha->bool`` Defined in line number 63.
 | 
 | 
 
@@ -152,7 +160,7 @@ is_simple_root
 
 simple_imaginary_subsystem
 -------------------------------------------------
-| ``simple_imaginary_subsystem:KGBElt x->(mat,mat)`` Defined in line number 60.
+| ``simple_imaginary_subsystem:KGBElt x->(mat,mat)`` Defined in line number 65.
 | 
 | 
 
@@ -160,7 +168,7 @@ simple_imaginary_subsystem
 
 simple_real_subsystem
 -------------------------------------------------
-| ``simple_real_subsystem:KGBElt x->(mat,mat)`` Defined in line number 63.
+| ``simple_real_subsystem:KGBElt x->(mat,mat)`` Defined in line number 68.
 | 
 | 
 
@@ -168,7 +176,7 @@ simple_real_subsystem
 
 to_binary
 -------------------------------------------------
-| ``to_binary:int length, int n->vec`` Defined in line number 66.
+| ``to_binary:int length, int n->vec`` Defined in line number 71.
 | 
 | 
 
@@ -176,7 +184,7 @@ to_binary
 
 generate_all_subsets
 -------------------------------------------------
-| ``generate_all_subsets:[int] S->[[int]]`` Defined in line number 72.
+| ``generate_all_subsets:[int] S->[[int]]`` Defined in line number 77.
 | 
 | 
 
@@ -184,7 +192,7 @@ generate_all_subsets
 
 prettyPrint
 -------------------------------------------------
-| ``prettyPrint:Split w->string`` Defined in line number 80.
+| ``prettyPrint:Split w->string`` Defined in line number 85.
 | 
 | 
 
@@ -192,7 +200,7 @@ prettyPrint
 
 prettyPrint
 -------------------------------------------------
-| ``prettyPrint:ParamPol P->void`` Defined in line number 93.
+| ``prettyPrint:ParamPol P->void`` Defined in line number 98.
 | 
 | 
 

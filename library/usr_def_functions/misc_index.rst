@@ -34,6 +34,8 @@ Functions
      - ``Param p->[Param]: for c@q in ParamPol``
    * - :ref:`finalize_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``
+   * - :ref:`finalize_[param]_p->[param]1`
+     - ``[Param] P->[Param]``
    * - :ref:`\#_Split_w,int_t)=let_(a,b->%w_in_int1`
      - ``Split w,int t)=let (a,b->%w in int``
    * - :ref:`\#_Split_w,rat_t)=let_(a,b->%w_in_rat1`

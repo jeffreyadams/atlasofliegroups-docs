@@ -10,7 +10,6 @@ K_highest_weights.at
 
 | :ref:`W_K.at<W_K.at>`
 | :ref:`thetastable.at<thetastable.at>`
-| :ref:`LKT.at<LKT.at>`
 |
 
 

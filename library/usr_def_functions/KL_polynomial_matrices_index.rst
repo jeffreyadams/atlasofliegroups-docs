@@ -18,7 +18,7 @@ Functions
      - ``int i, vec stops->int``
    * - :ref:`length_diff_int_i,int_j,vec_stops->int1`
      - ``int i,int j,vec stops->int``
-   * - :ref:`cook_kl_block_[param]_b,int_entry_elem,mat_kl,[poly]_polys,vec_stops,vec_surv,_mat_contrib->([param],int,poly_mat,vec)2`
+   * - :ref:`cook_kl_block_alt_[param]_b,int_entry_elem,mat_kl,[poly]_polys,vec_stops,vec_surv,_mat_contrib->([param],int,poly_mat,vec)1`
      - ``[Param] B,int entry_elem,mat KL,[poly] polys,vec stops,vec surv, mat contrib->([Param],int,poly_mat,vec)``
    * - :ref:`permutation_[param]_b1,_[param]_b2->([int],bool)1`
      - ``[Param] B1, [Param] B2->([int],bool)``
@@ -36,7 +36,7 @@ Functions
      - ``[Param] B->poly_mat``
    * - :ref:`final_subset_[param]_b->[]_in_for_p_in_b_do_if_is_final(p)_then_rv#1`
      - ``[Param] B->[] in for p in B do if is_final(p) then rv#``
-   * - :ref:`kl_block_param_p,_mat_delta->([param],int,mat,[vec],vec,vec,mat)1`
+   * - :ref:`kl_block_alt_param_p,_mat_delta->([param],int,mat,[vec],vec,vec,mat)1`
      - ``Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)``
    * - :ref:`kl_p_polynomials_param_p,mat_delta->poly_mat1`
      - ``Param p,mat delta->poly_mat``

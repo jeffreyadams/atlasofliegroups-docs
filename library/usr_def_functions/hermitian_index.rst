@@ -38,9 +38,9 @@ Functions
      - ``Split w->bool``
    * - :ref:`analyse_parampol_p->void1`
      - ``ParamPol P->void``
-   * - :ref:`lambda_plus_rho_res_t_kgbelt_x,ratvec_lambda->ratvec1`
+   * - :ref:`lambda_plus_rho_res_t_kgbelt_x,ratvec_lambda->ratvec2`
      - ``KGBElt x,ratvec lambda->ratvec``
-   * - :ref:`mu_param_p->rat1`
+   * - :ref:`mu_param_p->rat2`
      - ``Param p->rat``
    * - :ref:`convert_cform_hermitian_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``

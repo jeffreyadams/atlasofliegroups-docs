@@ -70,3 +70,77 @@ Functions
      - ``RealForm G,vec two_lambda, vec torus_bits, int cartan->Param``
    * - :ref:`convert_k_type_realform_g,(vec_two_lambda,_vec_torus_bits,_int_cartan)->param1`
      - ``RealForm G,(vec two_lambda, vec torus_bits, int cartan)->Param``
+   * - :ref:`x_k_type_p->kgbelt1`
+     - ``K_Type p->KGBElt``
+   * - :ref:`lambda_k_type_p->ratvec1`
+     - ``K_Type p->ratvec``
+   * - :ref:`dlambda_k_type_p->ratvec1`
+     - ``K_Type p->ratvec``
+   * - :ref:`dlambda_param_p->ratvec1`
+     - ``Param p->ratvec``
+   * - :ref:`k_type_param_p->k_type1`
+     - ``Param p->K_Type``
+   * - :ref:`parameter_k_type_p->param1`
+     - ``K_Type p->Param``
+   * - :ref:`\=_K_Type_p,K_Type_q->bool1`
+     - ``K_Type p,K_Type q->bool``
+   * - :ref:`make_no_cminus_k_type_p->k_type1`
+     - ``K_Type p->K_Type``
+   * - :ref:`length_khighestweight_(x,mu)->rat1`
+     - ``KHighestWeight (x,mu)->rat``
+   * - :ref:`k_norm_ratvec__->(k_type->int):_(k_type(x,lambda))1`
+     - ``ratvec _->(K_Type->int): (K_Type(x,lambda))``
+   * - :ref:`k_norm_ratvec_v,k_type_p->int1`
+     - ``ratvec v,K_Type p->int``
+   * - :ref:`k_norm_ratvec_v,param_p->int1`
+     - ``ratvec v,Param p->int``
+   * - :ref:`k_norm_ratvec_v,split_s,k_type_p->int1`
+     - ``ratvec v,Split s,K_Type p->int``
+   * - :ref:`k_norm_ratvec_v,split_s,param_p->int1`
+     - ``ratvec v,Split s,Param p->int``
+   * - :ref:`k_norm_k_type_p->int1`
+     - ``K_Type p->int``
+   * - :ref:`k_norm_param_p->int1`
+     - ``Param p->int``
+   * - :ref:`k_norm_split_s,k_type_p->int1`
+     - ``Split s,K_Type p->int``
+   * - :ref:`k_norms_ratvec_v->k_norm(v)_in_(k_type_pol_p)_[int]1`
+     - ``ratvec v->K_norm(v) in (K_Type_Pol P) [int]``
+   * - :ref:`k_norms_k_type_pol_p->[int]1`
+     - ``K_Type_Pol P->[int]``
+   * - :ref:`k_norm_ratvec_v,k_type_pol_p->int1`
+     - ``ratvec v,K_Type_Pol P->int``
+   * - :ref:`k_norm_k_type_pol_p->int1`
+     - ``K_Type_Pol P->int``
+   * - :ref:`leading_terms_ratvec_v->k_norm(v)_in_(k_type_pol_p):_k_type_pol1`
+     - ``ratvec v->K_norm(v) in (K_Type_Pol P): K_Type_Pol``
+   * - :ref:`all_k_norms_ratvec_v->k_norm(v)_in_(k_type_pol_p)_[int]1`
+     - ``ratvec v->K_norm(v) in (K_Type_Pol P) [int]``
+   * - :ref:`all_k_norms_k_type_pol_p->[int]1`
+     - ``K_Type_Pol P->[int]``
+   * - :ref:`sort_by_k_norm_ratvec_v->([k_type]_->_[k_type])1`
+     - ``ratvec v->([K_Type] -> [K_Type])``
+   * - :ref:`print_by_k_norm_ratvec_v->k_norm(v)_in_(k_type_pol_p)_void1`
+     - ``ratvec v->K_norm(v) in (K_Type_Pol P) void``
+   * - :ref:`print_by_k_norm_ratvec_v,k_type_pol_p->void1`
+     - ``ratvec v,K_Type_Pol P->void``
+   * - :ref:`print_by_k_norm_k_type_pol_p->void1`
+     - ``K_Type_Pol P->void``
+   * - :ref:`leading_terms_k_type_pol_p->k_type_pol1`
+     - ``K_Type_Pol P->K_Type_Pol``
+
+
+Data Types
+
+.. list-table::
+   :widths: 10 20
+   :header-rows: 1
+
+   * - Data Type Name
+     - Definition
+   * - :ref:`K_Type1`
+     - ``(KGBElt,ratvec)``
+   * - :ref:`K_Type_Pol1`
+     - ``ParamPol``
+   * - :ref:`KHighestWeight1`
+     - ``(KGBElt,vec)``

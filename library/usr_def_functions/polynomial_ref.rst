@@ -268,6 +268,14 @@ divide_by
 | 
 | 
 
+.. _is_non_negative_poly_v->bool1:
+
+is_non_negative
+-------------------------------------------------
+| ``is_non_negative:poly v->bool`` Defined in line number 223.
+| 
+| 
+
 .. _poly1:
 
 poly

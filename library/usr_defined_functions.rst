@@ -44,15 +44,12 @@ User Defined Functions
    usr_def_functions/jantzen
    usr_def_functions/K
    usr_def_functions/K_highest_weights
-   usr_def_functions/K_norm
-   usr_def_functions/K_parameters
    usr_def_functions/K_types
    usr_def_functions/kgp
    usr_def_functions/kl
    usr_def_functions/KL_polynomial_matrices
    usr_def_functions/lattice
    usr_def_functions/lietypes
-   usr_def_functions/LKT
    usr_def_functions/matrix
    usr_def_functions/misc
    usr_def_functions/modules

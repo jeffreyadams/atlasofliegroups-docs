@@ -14,8 +14,8 @@ Functions
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`permutation_[param]_b1,_[param]_b2->[int]:for_i1`
-     - ``[Param] B1, [Param] B2->[int]:for i``
+   * - :ref:`permutation_[param]_b1,_[param]_b2->[int]1`
+     - ``[Param] B1, [Param] B2->[int]``
    * - :ref:`dual_block_[param]_b,_innerclass_dual_inner_class->([param],[int])1`
      - ``[Param] B, InnerClass dual_inner_class->([Param],[int])``
    * - :ref:`dual_block_[param]_b->([param],[int])1`

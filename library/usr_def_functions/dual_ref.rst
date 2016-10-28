@@ -4,11 +4,11 @@ dual.at Function References
 =======================================================
 |
 
-.. _permutation_[param]_b1,_[param]_b2->[int]:for_i1:
+.. _permutation_[param]_b1,_[param]_b2->[int]1:
 
 permutation
 -------------------------------------------------
-| ``permutation:[Param] B1, [Param] B2->[int]:for i`` Defined in line number 18.
+| ``permutation:[Param] B1, [Param] B2->[int]`` Defined in line number 18.
 | 
 | 
 
@@ -16,7 +16,7 @@ permutation
 
 dual_block
 -------------------------------------------------
-| ``dual_block:[Param] B, InnerClass dual_inner_class->([Param],[int])`` Defined in line number 26.
+| ``dual_block:[Param] B, InnerClass dual_inner_class->([Param],[int])`` Defined in line number 27.
 | 
 | 
 
@@ -24,7 +24,7 @@ dual_block
 
 dual_block
 -------------------------------------------------
-| ``dual_block:[Param] B->([Param],[int])`` Defined in line number 38.
+| ``dual_block:[Param] B->([Param],[int])`` Defined in line number 39.
 | 
 | 
 
@@ -32,7 +32,7 @@ dual_block
 
 dual_ExtParameter
 -------------------------------------------------
-| ``dual_ExtParameter:ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t)->ExtParam`` Defined in line number 40.
+| ``dual_ExtParameter:ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t)->ExtParam`` Defined in line number 41.
 | 
 | 
 
@@ -40,7 +40,7 @@ dual_ExtParameter
 
 KL_Q_polynomial
 -------------------------------------------------
-| ``KL_Q_polynomial:[Param] B, poly_mat Q,Param irr,Param std->poly`` Defined in line number 68.
+| ``KL_Q_polynomial:[Param] B, poly_mat Q,Param irr,Param std->poly`` Defined in line number 69.
 | 
 | 
 

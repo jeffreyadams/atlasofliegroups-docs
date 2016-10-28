@@ -8,7 +8,7 @@ induction.at Function References
 
 embed_KGB
 -------------------------------------------------
-| ``embed_KGB:KGBElt x_L,RealForm G->KGBElt`` Defined in line number 42.
+| ``embed_KGB:KGBElt x_L,RealForm G->KGBElt`` Defined in line number 43.
 | 
 | If L is a theta-stable Levi factor in G,  KGB for L embeds in KGB for G.
 | 
@@ -17,7 +17,7 @@ embed_KGB
 
 inverse_embed_KGB
 -------------------------------------------------
-| ``inverse_embed_KGB:KGBElt x_G,RealForm L->KGBElt`` Defined in line number 46.
+| ``inverse_embed_KGB:KGBElt x_G,RealForm L->KGBElt`` Defined in line number 47.
 | 
 | Given a KGB element of G, find one for the theta-stable Levi L which maps to it.
 | 
@@ -26,7 +26,7 @@ inverse_embed_KGB
 
 makeS
 -------------------------------------------------
-| ``makeS:mat theta,RootDatum rd->mat`` Defined in line number 55.
+| ``makeS:mat theta,RootDatum rd->mat`` Defined in line number 56.
 | 
 | Given an involution theta and a root datum, return the set S of complex roots    containing the first positive representative of each quadruple    ( :math:`\pm`  alpha, :math:`\pm`  theta(alpha)).
 | 
@@ -35,7 +35,7 @@ makeS
 
 makeS
 -------------------------------------------------
-| ``makeS:KGBElt x->mat`` Defined in line number 60.
+| ``makeS:KGBElt x->mat`` Defined in line number 61.
 | 
 | As the previous function, with argument a KGB element x determining the involution    and root datum
 | 
@@ -44,7 +44,7 @@ makeS
 
 rho_S
 -------------------------------------------------
-| ``rho_S:(mat,RootDatum)pair->ratvec`` Defined in line number 63.
+| ``rho_S:(mat,RootDatum)pair->ratvec`` Defined in line number 64.
 | 
 | Half sum of roots in chosen set S of complex roots, described above.
 | 
@@ -53,7 +53,7 @@ rho_S
 
 rho_S
 -------------------------------------------------
-| ``rho_S:KGBElt x->ratvec`` Defined in line number 66.
+| ``rho_S:KGBElt x->ratvec`` Defined in line number 67.
 | 
 | As previous function, with argument KGB element x.
 | 
@@ -62,7 +62,7 @@ rho_S
 
 real_induce_standard
 -------------------------------------------------
-| ``real_induce_standard:Param p_L,RealForm G->Param`` Defined in line number 70.
+| ``real_induce_standard:Param p_L,RealForm G->Param`` Defined in line number 71.
 | 
 | Real parabolic induction of a standard module of real Levi L to G
 | 
@@ -71,7 +71,7 @@ real_induce_standard
 
 real_induce_standard
 -------------------------------------------------
-| ``real_induce_standard:ParamPol P,RealForm G->ParamPol`` Defined in line number 79.
+| ``real_induce_standard:ParamPol P,RealForm G->ParamPol`` Defined in line number 80.
 | 
 | Real parabolic induction of standards, applied to a formal sum of    parameters (ParamPol).
 | 
@@ -80,7 +80,7 @@ real_induce_standard
 
 real_induce_irreducible_as_sum_of_standards
 -------------------------------------------------
-| ``real_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 87.
+| ``real_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 88.
 | 
 | Write the (real) induced of an irreducible J(p_L) of L as a formal sum of    standards for G; uses the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)
 | 
@@ -89,7 +89,7 @@ real_induce_irreducible_as_sum_of_standards
 
 real_induce_irreducible
 -------------------------------------------------
-| ``real_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 96.
+| ``real_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 97.
 | 
 | Write the (real) induced Ind(J(p_L)) of an irreducible of L as a sum of    irreducibles for G; uses composition series to convert    output of the previous function into sum of irreducibles.
 | 
@@ -98,7 +98,7 @@ real_induce_irreducible
 
 cuspidal_data
 -------------------------------------------------
-| ``cuspidal_data:Param p->(Parabolic,Param)`` Defined in line number 107.
+| ``cuspidal_data:Param p->(Parabolic,Param)`` Defined in line number 108.
 | 
 | Cuspidal data associated to a parameter p: a cuspidal parabolic subgroup P=MN    and parameter p_M for a relative limit of discrete series so that    Ind(I(p_M))=I(p); uses real_parabolic(x) of parabolics.at
 | 
@@ -107,7 +107,7 @@ cuspidal_data
 
 theta_stable_data
 -------------------------------------------------
-| ``theta_stable_data:Param p->(Parabolic,Param)`` Defined in line number 128.
+| ``theta_stable_data:Param p->(Parabolic,Param)`` Defined in line number 129.
 | 
 | Theta-stable data associated to a parameter p: a theta-stable parabolic P=LN    with L relatively split, and parameter p_L for a principal series representation    so that p is obtained by cohomological parabolic induction    from p_L; uses theta_stable_parabolic(x) of parabolics.at.
 | 
@@ -116,7 +116,7 @@ theta_stable_data
 
 coherent_std_imaginary
 -------------------------------------------------
-| ``coherent_std_imaginary:W_word w,Param p->ParamPol`` Defined in line number 145.
+| ``coherent_std_imaginary:W_word w,Param p->ParamPol`` Defined in line number 146.
 | 
 | Auxiliary function
 | 
@@ -125,7 +125,7 @@ coherent_std_imaginary
 
 standardize
 -------------------------------------------------
-| ``standardize:Param p->ParamPol`` Defined in line number 161.
+| ``standardize:Param p->ParamPol`` Defined in line number 162.
 | 
 | Convert a possibly non-standard parameter into a linear combination of   standard ones
 | 
@@ -134,7 +134,7 @@ standardize
 
 standardize
 -------------------------------------------------
-| ``standardize:ParamPol P->ParamPol`` Defined in line number 172.
+| ``standardize:ParamPol P->ParamPol`` Defined in line number 173.
 | 
 | Standardize a formal linear combination of possibly non-standard parameters
 | 
@@ -143,7 +143,7 @@ standardize
 
 theta_induce_standard
 -------------------------------------------------
-| ``theta_induce_standard:Param p_L,RealForm G->ParamPol`` Defined in line number 181.
+| ``theta_induce_standard:Param p_L,RealForm G->ParamPol`` Defined in line number 182.
 | 
 | Theta-stable (cohomological) parabolic induction of a standard module for    the Levi L of a theta-stable parabolic; if outside of weakly good range,    must apply standardize.
 | 
@@ -152,7 +152,7 @@ theta_induce_standard
 
 theta_induce_irreducible_as_sum_of_standards
 -------------------------------------------------
-| ``theta_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 211.
+| ``theta_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 212.
 | 
 | Write the (theta-stable) induced of an irreducible J(p_L) of L as a formal    sum of standards for G; uses the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)
 | 
@@ -161,7 +161,7 @@ theta_induce_irreducible_as_sum_of_standards
 
 theta_induce_irreducible
 -------------------------------------------------
-| ``theta_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 226.
+| ``theta_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 227.
 | 
 | Write the (theta-stable) induced Ind(J(p_L)) of an irreducible of L    as a sum of irreducibles for G; uses composition series to convert    output of the previous function into sum of irreducibles.
 | 
@@ -170,7 +170,7 @@ theta_induce_irreducible
 
 induce_standard
 -------------------------------------------------
-| ``induce_standard:Param p_L,Parabolic P,RealForm G->ParamPol`` Defined in line number 248.
+| ``induce_standard:Param p_L,Parabolic P,RealForm G->ParamPol`` Defined in line number 249.
 | 
 | Real or theta-stable parabolic induction of a standard module,    depending on whether P=LN a real or theta-stable parabolic    (returns error message if neither).
 | 
@@ -179,7 +179,7 @@ induce_standard
 
 induce_irreducible
 -------------------------------------------------
-| ``induce_irreducible:Param p_L,Parabolic P,RealForm G->ParamPol`` Defined in line number 260.
+| ``induce_irreducible:Param p_L,Parabolic P,RealForm G->ParamPol`` Defined in line number 261.
 | 
 | Write the (real or theta-stable) induced Ind(J(p_L)) of an irreducible    of L as a sum of irreducibles for G; error message if P=LN is not a real    or theta-stable parabolic.
 | 
@@ -188,7 +188,7 @@ induce_irreducible
 
 induce_standard
 -------------------------------------------------
-| ``induce_standard:ParamPol pol,Parabolic P,RealForm G->ParamPol`` Defined in line number 271.
+| ``induce_standard:ParamPol pol,Parabolic P,RealForm G->ParamPol`` Defined in line number 272.
 | 
 | Real or theta-stable parabolic induction applied to a linear combination    of standard modules (error message if P is not real or theta-stable).
 | 
