@@ -32,9 +32,9 @@ The Atlas consists in part of a project to determine the unitary dual, by mathem
    gen_info
    getting_started
    tutorial_with_examples
-   rep_thy_with_atlas
    atlas_lib
    source_library
+   web_interface
    videos
    trouble_shooting
 
