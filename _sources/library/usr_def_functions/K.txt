@@ -8,8 +8,9 @@ K.at
 
 **This script imported the following .at files:**
 
-| :ref:`basic.at<basic.at>`
+| :ref:`sort.at<sort.at>`
 | :ref:`matrix.at<matrix.at>`
+| :ref:`Weylgroup.at<Weylgroup.at>`
 |
 
 

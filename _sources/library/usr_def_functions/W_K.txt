@@ -8,7 +8,7 @@ W_K.at
 
 **This script imported the following .at files:**
 
-| :ref:`K_parameters.at<K_parameters.at>`
+| :ref:`K.at<K.at>`
 | :ref:`parabolics.at<parabolics.at>`
 | :ref:`K.at<K.at>`
 | :ref:`W_orbit.at<W_orbit.at>`

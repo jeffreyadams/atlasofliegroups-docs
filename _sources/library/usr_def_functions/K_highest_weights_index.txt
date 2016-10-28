@@ -16,6 +16,10 @@ Functions
      - Argument(s) -> Results
    * - :ref:`\=_KHighestWeight_(x,mu),_KHighestWeight_(y,tau)->bool1`
      - ``KHighestWeight (x,mu), KHighestWeight (y,tau)->bool``
+   * - :ref:`lkts_param_p->[k_type]1`
+     - ``Param p->[K_Type]``
+   * - :ref:`lkt_param_p->k_type1`
+     - ``Param p->K_Type``
    * - :ref:`is_split_spherical_param_p->bool1`
      - ``Param p->bool``
    * - :ref:`is_split_spherical_k_type_p->bool1`
@@ -48,7 +52,7 @@ Functions
      - ``KGBElt x,ratvec v->(KGBElt,RootDatum)``
    * - :ref:`find_nci_root_kgbelt_x,ratvec_tau->int1`
      - ``KGBElt x,ratvec tau->int``
-   * - :ref:`tworho_k_fixed_kgbelt_x->ratvec1`
+   * - :ref:`tworho_k_kgbelt_x->ratvec1`
      - ``KGBElt x->ratvec``
    * - :ref:`project_on_dominant_cone_kgbelt_x,_ratvec_mu->(kgbelt,ratvec,ratvec)1`
      - ``KGBElt x, ratvec mu->(KGBElt,ratvec,ratvec)``

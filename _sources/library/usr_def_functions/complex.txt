@@ -8,7 +8,7 @@ complex.at
 
 **This script imported the following .at files:**
 
-| :ref:`LKT.at<LKT.at>`
+| :ref:`misc.at<misc.at>`
 |
 
 

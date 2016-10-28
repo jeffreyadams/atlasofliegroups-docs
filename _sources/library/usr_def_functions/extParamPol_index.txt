@@ -56,6 +56,26 @@ Functions
      - ``[Param] B,mat delta->void``
    * - :ref:`character_formula_param_p,mat_delta->extparampol1`
      - ``Param p,mat delta->ExtParamPol``
+   * - :ref:`c_form_irreducible_long_param_p,mat_delta,_int_type->(extparampol,[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],extparampol)1`
+     - ``Param p,mat delta, int type->(ExtParamPol,[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],ExtParamPol)``
+   * - :ref:`print_c_form_irreducible_long_extparampol_cf,_[((split,param),extparampol)]_plus,[((split,param),extparampol)]_minus,[((split,param),extparampol)]_induced,extparampol_answer->void1`
+     - ``ExtParamPol cf, [((Split,Param),ExtParamPol)] plus,[((Split,Param),ExtParamPol)] minus,[((Split,Param),ExtParamPol)] induced,ExtParamPol answer->void``
+   * - :ref:`print_c_form_irreducible_long_param_p,mat_delta,_int_type->void1`
+     - ``Param p,mat delta, int type->void``
+   * - :ref:`lambda_plus_rho_res_t_kgbelt_x,ratvec_lambda->ratvec1`
+     - ``KGBElt x,ratvec lambda->ratvec``
+   * - :ref:`mu_param_p->rat1`
+     - ``Param p->rat``
+   * - :ref:`mu_param_p,mat_delta->rat1`
+     - ``Param p,mat delta->rat``
+   * - :ref:`convert_cform_hermitian_parampol_p,mat_delta->parampol1`
+     - ``ParamPol P,mat delta->ParamPol``
+   * - :ref:`hermitian_form_irreducible_param_p,mat_delta->parampol1`
+     - ``Param p,mat delta->ParamPol``
+   * - :ref:`print_hermitian_form_irreducible_param_p,mat_delta->void1`
+     - ``Param p,mat delta->void``
+   * - :ref:`print_hermitian_form_irreducible_[param]_p,mat_delta->void1`
+     - ``[Param] P,mat delta->void``
 
 
 Data Types

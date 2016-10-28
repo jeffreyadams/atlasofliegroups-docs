@@ -8,7 +8,7 @@ KL_polynomial_matrices.at Function References
 
 length
 -------------------------------------------------
-| ``length:int i, vec stops->int`` Defined in line number 2.
+| ``length:int i, vec stops->int`` Defined in line number 4.
 | 
 | 
 
@@ -16,15 +16,15 @@ length
 
 length_diff
 -------------------------------------------------
-| ``length_diff:int i,int j,vec stops->int`` Defined in line number 8.
+| ``length_diff:int i,int j,vec stops->int`` Defined in line number 10.
 | 
 | 
 
-.. _cook_kl_block_[param]_b,int_entry_elem,mat_kl,[poly]_polys,vec_stops,vec_surv,_mat_contrib->([param],int,poly_mat,vec)2:
+.. _cook_kl_block_alt_[param]_b,int_entry_elem,mat_kl,[poly]_polys,vec_stops,vec_surv,_mat_contrib->([param],int,poly_mat,vec)1:
 
-cook_KL_block
+cook_KL_block_alt
 -------------------------------------------------
-| ``cook_KL_block:[Param] B,int entry_elem,mat KL,[poly] polys,vec stops,vec surv, mat contrib->([Param],int,poly_mat,vec)`` Defined in line number 15.
+| ``cook_KL_block_alt:[Param] B,int entry_elem,mat KL,[poly] polys,vec stops,vec surv, mat contrib->([Param],int,poly_mat,vec)`` Defined in line number 17.
 | 
 | 
 
@@ -32,7 +32,7 @@ cook_KL_block
 
 permutation
 -------------------------------------------------
-| ``permutation:[Param] B1, [Param] B2->([int],bool)`` Defined in line number 52.
+| ``permutation:[Param] B1, [Param] B2->([int],bool)`` Defined in line number 54.
 | 
 | 
 
@@ -40,7 +40,7 @@ permutation
 
 KL_P_polynomials
 -------------------------------------------------
-| ``KL_P_polynomials:Param p->poly_mat`` Defined in line number 55.
+| ``KL_P_polynomials:Param p->poly_mat`` Defined in line number 57.
 | 
 | 
 
@@ -48,7 +48,7 @@ KL_P_polynomials
 
 KL_P_signed_polynomials
 -------------------------------------------------
-| ``KL_P_signed_polynomials:Param p->poly_mat`` Defined in line number 57.
+| ``KL_P_signed_polynomials:Param p->poly_mat`` Defined in line number 59.
 | 
 | 
 
@@ -56,7 +56,7 @@ KL_P_signed_polynomials
 
 KL_P_polynomials
 -------------------------------------------------
-| ``KL_P_polynomials:[Param] B->poly_mat`` Defined in line number 64.
+| ``KL_P_polynomials:[Param] B->poly_mat`` Defined in line number 66.
 | 
 | 
 
@@ -64,7 +64,7 @@ KL_P_polynomials
 
 KL_P_signed_polynomials
 -------------------------------------------------
-| ``KL_P_signed_polynomials:[Param] B->poly_mat`` Defined in line number 72.
+| ``KL_P_signed_polynomials:[Param] B->poly_mat`` Defined in line number 74.
 | 
 | 
 
@@ -72,7 +72,7 @@ KL_P_signed_polynomials
 
 KL_Q_polynomials
 -------------------------------------------------
-| ``KL_Q_polynomials:Param p->poly_mat`` Defined in line number 82.
+| ``KL_Q_polynomials:Param p->poly_mat`` Defined in line number 84.
 | 
 | 
 
@@ -80,7 +80,7 @@ KL_Q_polynomials
 
 KL_Q_polynomials
 -------------------------------------------------
-| ``KL_Q_polynomials:[Param] B->poly_mat`` Defined in line number 83.
+| ``KL_Q_polynomials:[Param] B->poly_mat`` Defined in line number 85.
 | 
 | 
 
@@ -88,15 +88,15 @@ KL_Q_polynomials
 
 final_subset
 -------------------------------------------------
-| ``final_subset:[Param] B->[] in for p in B do if is_final(p) then rv#`` Defined in line number 87.
+| ``final_subset:[Param] B->[] in for p in B do if is_final(p) then rv#`` Defined in line number 89.
 | 
 | 
 
-.. _kl_block_param_p,_mat_delta->([param],int,mat,[vec],vec,vec,mat)1:
+.. _kl_block_alt_param_p,_mat_delta->([param],int,mat,[vec],vec,vec,mat)1:
 
-KL_block
+KL_block_alt
 -------------------------------------------------
-| ``KL_block:Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)`` Defined in line number 92.
+| ``KL_block_alt:Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)`` Defined in line number 94.
 | 
 | 
 
@@ -104,7 +104,7 @@ KL_block
 
 KL_P_polynomials
 -------------------------------------------------
-| ``KL_P_polynomials:Param p,mat delta->poly_mat`` Defined in line number 119.
+| ``KL_P_polynomials:Param p,mat delta->poly_mat`` Defined in line number 124.
 | 
 | 
 
@@ -112,7 +112,7 @@ KL_P_polynomials
 
 KL_P_polynomials
 -------------------------------------------------
-| ``KL_P_polynomials:[Param] B_fixed,mat delta->poly_mat`` Defined in line number 123.
+| ``KL_P_polynomials:[Param] B_fixed,mat delta->poly_mat`` Defined in line number 128.
 | 
 | 
 
@@ -120,7 +120,7 @@ KL_P_polynomials
 
 KL_P_signed_polynomials
 -------------------------------------------------
-| ``KL_P_signed_polynomials:Param p, mat delta->poly_mat`` Defined in line number 141.
+| ``KL_P_signed_polynomials:Param p, mat delta->poly_mat`` Defined in line number 147.
 | 
 | 
 
@@ -128,7 +128,7 @@ KL_P_signed_polynomials
 
 KL_P_polynomials_alt
 -------------------------------------------------
-| ``KL_P_polynomials_alt:[Param] B,mat delta->poly_mat`` Defined in line number 156.
+| ``KL_P_polynomials_alt:[Param] B,mat delta->poly_mat`` Defined in line number 162.
 | 
 | 
 
@@ -136,7 +136,7 @@ KL_P_polynomials_alt
 
 KL_P_signed_polynomials
 -------------------------------------------------
-| ``KL_P_signed_polynomials:[Param] B,mat delta->poly_mat`` Defined in line number 164.
+| ``KL_P_signed_polynomials:[Param] B,mat delta->poly_mat`` Defined in line number 170.
 | 
 | 
 
@@ -144,7 +144,7 @@ KL_P_signed_polynomials
 
 KL_Q_polynomials
 -------------------------------------------------
-| ``KL_Q_polynomials:Param p->poly_mat`` Defined in line number 174.
+| ``KL_Q_polynomials:Param p->poly_mat`` Defined in line number 180.
 | 
 | 
 
@@ -152,7 +152,7 @@ KL_Q_polynomials
 
 KL_Q_polynomials
 -------------------------------------------------
-| ``KL_Q_polynomials:[Param] B->poly_mat`` Defined in line number 175.
+| ``KL_Q_polynomials:[Param] B->poly_mat`` Defined in line number 181.
 | 
 | 
 
@@ -160,7 +160,7 @@ KL_Q_polynomials
 
 KL_P_polynomials_old
 -------------------------------------------------
-| ``KL_P_polynomials_old:Param p->poly_mat`` Defined in line number 189.
+| ``KL_P_polynomials_old:Param p->poly_mat`` Defined in line number 195.
 | 
 | 
 
@@ -168,7 +168,7 @@ KL_P_polynomials_old
 
 KL_P_polynomials_old
 -------------------------------------------------
-| ``KL_P_polynomials_old:[Param] B_fixed,mat delta->[[poly]]`` Defined in line number 203.
+| ``KL_P_polynomials_old:[Param] B_fixed,mat delta->[[poly]]`` Defined in line number 209.
 | 
 | 
 
@@ -176,7 +176,7 @@ KL_P_polynomials_old
 
 KL_P_signed_polynomials_old
 -------------------------------------------------
-| ``KL_P_signed_polynomials_old:[Param] B_fixed,mat delta->[[poly]]`` Defined in line number 215.
+| ``KL_P_signed_polynomials_old:[Param] B_fixed,mat delta->[[poly]]`` Defined in line number 221.
 | 
 | 
 
