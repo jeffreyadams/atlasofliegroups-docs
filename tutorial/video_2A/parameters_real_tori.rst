@@ -1,5 +1,5 @@
-Parameters for Tori
-====================
+Parameters for Real Tori
+==========================
 
 To study characters of Tori we first need to know how ``atlas``
 understands what a torus is. In order to specify which torus we want
@@ -119,7 +119,7 @@ So the above parameters are equivalent modulo the above equivalence relation and
    atlas> 
 
 The characters of ${\mathbb R}^x$
-------------------------
+----------------------------------
 
 Now lets take the most split one-dimensional torus::
 
@@ -143,7 +143,8 @@ parameters. So we have to do some extra work in general, depending on
 the information that we want. The idea is that some problems can be
 reduced to the case of rational parameters.
 
-Le's do some examples. For the trivial representation we have::
+Le's do some examples. For the trivial representation, namely
+correspondintg to the trivial character on the component group and the character $\nu :x \rightarrow |x|^0$ we have::
 
      atlas> p
      Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
@@ -178,9 +179,84 @@ character to ``2``::
       Value: true
       atlas>
 
-Which is correct since $2=0(mod2)$. So, sometimes the software will replace the parameters you are using for something  equivalent.
+Which is correct since $2=0(mod2)$. So, sometimes the software will replace the parameters you are using for something equivalent.
 
-Characters of $C^x$
--------------------
+Characters of ${\mathbb C}^x$.
+-------------------------------
+
+Now let us look at ${\mathbb C}^x \cong GL(1, \mathbb C) $ and the
+trivial representation::
+
+    atlas> H:=torus(0,1,0)
+    Value: connected quasisplit real group with Lie algebra 'gl(1,C)'
+    atlas> set p=trivial(H)
+    Identifier p: Param
+    atlas> p
+    Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
+
+Now we have two coordinates for each parameter because we have a rank-2
+real group, locally isomorphic to  $S^1 x {\mathbb R}^x$. Let's see what the Cartan involution is for this torus
+
+    atlas> set x=x(p)
+    Identifier x: KGBElt
+    atlas> set theta=involution (x)
+    Identifier theta: mat
+    atlas> theta
+    Value: 
+    | 0, 1 |
+    | 1, 0 |
+    
+    atlas> 
+
+So the Cartan involution of the complex torus switches the two coordinates.
+For example if ``lambda = [0,0]`` and ``nu= [2,4]``, we have::
+
+    atlas> set q=parameter (x,[0,0],[2,4])
+    Identifier q: Param (hiding previous one of type vec (constant))
+    atlas> q
+    Value: final parameter (x=0,lambda=[0,0]/1,nu=[-1,1]/1)
+    atlas> 
+
+Here the software leaves ``lambda`` as ``[0,0]`` and it changes ``nu`` to
+``[-1,1]``.  Which makes sense since``nu`` is fixed by $-\theta$ so it changed ``nu`` to $(1-\theta)\nu/2$::
+
+	atlas> (1-theta)*[2,4]/2
+	Value: [ -1,  1 ]/1
+	atlas>
+
+So, in fact for this group the ``nu`` will always look like ``[x,-x]``::
+
+    atlas> set q=parameter (x,[0,0],[3,-3])
+    Identifier q: Param (hiding previous one of type Param)
+    atlas> q
+    Value: final parameter (x=0,lambda=[0,0]/1,nu=[3,-3]/1)
+    atlas> 
+    atlas> set q=parameter (x,[0,0],[3,3])
+    Identifier q: Param (hiding previous one of type Param)
+    atlas> q
+    Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
+    atlas>
+
+
+On the other hand, we can change lambda::
+
+   atlas> set q=parameter (x,[1,0],[0,0])
+   Identifier q: Param (hiding previous one of type Param)
+   atlas> q
+   Value: final parameter (x=0,lambda=[1,0]/1,nu=[0,0]/1)
+   atlas> set q=parameter (x,[0,1],[0,0])
+   Identifier q: Param (hiding previous one of type Param)
+   atlas> q
+   Value: final parameter (x=0,lambda=[1,0]/1,nu=[0,0]/1)
+   atlas>
+
+As we would expect since these two representations are equivalent modulo $1-theta$
+
+So, The representations of ${\mathbb C}^x are given by ${\mathbb Z}^2 /(1-\theta) {\mathbb Z}^2 and Q}$
+
+
+
+
+
 
 
