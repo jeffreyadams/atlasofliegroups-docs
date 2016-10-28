@@ -41,7 +41,7 @@ Now, when we have a parameter ``p``, we can ask for its infinitesimal character.
     Value: [  5, -3 ]/2
     atlas> 
 
-If we have ``q=(x lambda, nu)`` the differential of this character is
+If we have ``q=(x, lambda, nu)`` the differential of this character is
 the infinitesimal character which equals $(1+ \theta )/2 *\lambda +(1-
 \theta )/2* \nu$. But ``nu`` is already averaged so this equals
 $(1+ \theta)/2 *\lambda + \nu$::
