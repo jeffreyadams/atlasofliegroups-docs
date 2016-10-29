@@ -195,7 +195,7 @@ trivial representation::
     Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
 
 Now we have two coordinates for each parameter because we have a rank-2
-real group, locally isomorphic to  $S^1 x {\mathbb R}^x$. Let's see what the Cartan involution is for this torus::
+real group, locally isomorphic to  $S^1 x {\mathbb R}^x$. Let's see what the Cartan involution is for this torus
 
     atlas> set x=x(p)
     Identifier x: KGBElt
