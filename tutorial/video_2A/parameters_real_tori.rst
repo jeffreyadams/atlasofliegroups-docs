@@ -50,7 +50,9 @@ parametrizes them::
 	 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 	 atlas>
 
-This is the parameter for the trivial representation. The first element ``x`` is a KGB element. But it is not important for now. Let us see what involution it corresponds to::
+This is the parameter for the trivial representation. The first
+element ``x`` is a$K\\G/B$ element. But it is not important for now. Let
+us see what involution it corresponds to::
 
    atlas> set x=x(p)
    Identifier x: KGBElt 
@@ -70,28 +72,29 @@ Now to understand the rest of the parameters, suppose that $H$ is a
 complex torus with Cartan involution $\theta$, and defined over
 $\mathbb R$. Let $H(\mathbb R )$ be the corresponding real group. Denote by
 $X^* (H)$ the characters of $H(\mathbb R )$. Then these characters are
-parametrized by triples $(\theta, \gamma, \lambda)$. Here $gamma$ is
+parametrized by triples $(\theta, \gamma, \lambda)$. Here $\gamma$ is
 the differential of the character and ``lambda`` is the restriction
 of the character to $H^{\theta}$.
 
 The real points are not necessarily connected. So we need to specify
 not only the differential but also information of the disconnected
-part which is encoded in the estriction to $H^{\theta}$.
+part which is encoded in the restriction to $H^{\theta}$.
 
 The basic fact is that the characters of $H^{\theta}$ are parametrized by
 $X^*/(1-theta)X^*$.
 
-So the characters of $H(\mathbb R )$ are parametrized by triples $(\theta, \lambda, \nu)$
-where ``lambda`` is in $X^*/(1-theta)X^*``and ``nu`` is in $[X^*\otimes \mathbb Q]^{-\theta}$
+So the characters of $H(\mathbb R )$ are parametrized by triples
+$(\theta, \lambda, \nu)$ where ``lambda`` is in $X^*/(1-theta)X^*``and
+``nu`` is in $[X^*\otimes \mathbb Q]^{-\theta}$
  
-So``\lambda`` is a character on $H^\theta$ and ``nu`` gives the
+So ``\lambda`` is a character on $H^\theta$ and ``nu`` gives the
 character on the Lie algebra of the split Cartan $A=H^{-\theta}$.
 
-In the case of the circle, ``lambda`` is in $\mathbb Z/(1-\theta){\mathbb
-Z}=\mathbb Z$, since $\theta=1$; and ``nu`` is in $Q^{-1}=0$ 
+In the case of the circle, ``lambda`` is in $\mathbb Z/(1-\theta ){\mathbb
+Z}=\mathbb Z$, since $\theta =1$; and ``nu`` is in ${\mattbb Q}^{-1}=0$. 
 
 So the characters for the compact torus are given by the parameters
-``(x=0,lambda, nu=0)`` and there is one for each lambda in $\mathbb Z$
+``(x=0,lambda, nu=0)`` and there is one for each ``lambda`` in $\mathbb Z$
 correspondintg to the character $e^{i\lambda} t$.
 
 In the case of the trivial character the parameter is::
@@ -106,13 +109,14 @@ And for the character $e^{i 3} t$ of $S^1$ we have::
     Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
     atlas> 
 
-Note that ``nu`` is fixed by $-\theta$. So, given any ``nu`` it will be replaced by $1-\theta)/2\nu \in (X^*_{\mathbb Q})^{-\theta}$ ::
+Note that ``nu`` is fixed by $-\theta$. So, given any ``nu`` it will
+be replaced by $(1-\theta)/2 \nu \in (X^*_{\mathbb Q})^{-\theta}$.::
 
     atlas> q:=parameter (x,[3],[2])
     Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
     atlas> 
 
-So the above parameters are equivalent modulo the above equivalence relation and parametrize the same character. For example, we can ask ``atlas`` ::
+So, the above parameters are equivalent modulo the above equivalence relation and parametrize the same character. For example, we can ask ``atlas`` if ::
 
    atlas> parameter (x,[3],[3])= parameter (x,[3],[0])
    Value: true
@@ -133,9 +137,9 @@ Now lets take the most split one-dimensional torus::
     Value: 
     | -1 |
 
-So now our parameters ``(x, lambda, nu)`` satisfy 
-``lambda`` is in ${\mathbb Z}/(1-\theta){\mathbb Z}=\mathbb Z/2{\mathbb Z}$, and 
-``nu`` is fixed by $-theta=1$. So, ``nu`` is in $\mathbb Q$
+Now our parameters ``(x, lambda, nu)`` satisfy ``lambda`` is in
+${\mathbb Z}/(1-\theta){\mathbb Z}=\mathbb Z/2{\mathbb Z}$, and ``nu``
+is fixed by $-theta=1$. So, ``nu`` is in $\mathbb Q$
 
 Note that the characters of ${\mathbb R}^x$ are parametrized by the complex
 numbers ``nu``. However, the software only works with rational
@@ -143,14 +147,14 @@ parameters. So we have to do some extra work in general, depending on
 the information that we want. The idea is that some problems can be
 reduced to the case of rational parameters.
 
-Le's do some examples. For the trivial representation, namely
+Le's do some examples. For the trivial representation, namely the parameter
 correspondintg to the trivial character on the component group and the character $\nu :x \rightarrow |x|^0$ we have::
 
      atlas> p
      Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
      atlas>
 
-And for the representation $\nu :x \rightarrow |x|^{4/3}$ ::
+And for the representation with $\nu :x \rightarrow |x|^{4/3}$ ::
 
     atlas> p:=parameter (x,[0],[4/3])
     Value: final parameter (x=0,lambda=[0]/1,nu=[4]/3)
@@ -252,7 +256,7 @@ On the other hand, we can change lambda::
 
 As we would expect since these two representations are equivalent modulo $1-theta$
 
-So, The representations of ${\mathbb C}^x are given by ${\mathbb Z}^2 /(1-\theta) {\mathbb Z}^2 and Q}$
+So, The representations of ${\mathbb C}^x are given by ${\mathbb Z}^2 /(1-\theta) {\mathbb Z}^2$ and $\mathbb Q$
 
 
 
