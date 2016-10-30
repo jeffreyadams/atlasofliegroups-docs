@@ -87,7 +87,7 @@ So the characters of $H(\mathbb R )$ are parametrized by triples
 $(\theta, \lambda, \nu)$ where ``lambda`` is in $X^*/(1-theta)X^*``and
 ``nu`` is in $[X^*\otimes \mathbb Q]^{-\theta}$
  
-So ``\lambda`` is a character on $H^\theta$ and ``nu`` gives the
+So ``lambda`` is a character on $H^\theta$ and ``nu`` gives the
 character on the Lie algebra of the split Cartan $A=H^{-\theta}$.
 
 In the case of the circle, ``lambda`` is in $\mathbb Z/(1-\theta ){\mathbb
