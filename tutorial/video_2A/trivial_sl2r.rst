@@ -19,12 +19,12 @@ Let us consider again the case of ``SL(2,R)`` and the trivial representation.::
    
    atlas>
 
-So the parameter for the trivial representation contains the
-information of the Cartan subgroup and its cartan involution, $\theta$
-given by x. In this case ``theta=-1``. This means it is the split
-Cartan, which is isomorphic to ${\mathbb R }^x$ 
+So the parameter for the trivial representation contains information
+of the Cartan subgroup and its cartan involution, $\theta$, encoded in
+the $K\\G/B$ element ``x``. In this case $\theta=-1$. This means it
+is the split Cartan, which is isomorphic to ${\mathbb R }^x$
 
-We also have information about he character which, as we saw in the
+We also have encoded information about he character which, as we saw in the
 section on characters of real tori, is given by ``lambda`` and
 ``nu``. Here ``nu=1`` is the differential of the character, and
 ``lambda=1`` gives the character on the component group ${\mathbb
