@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Parameters for Tori &mdash; atlas 0.6 documentation</title>
+  <title>Parameters for Real Tori &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -32,7 +32,7 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
-        <link rel="next" title="Principal Series" href="../principal_series.html"/>
+        <link rel="next" title="The Character Differential" href="differential.html"/>
         <link rel="prev" title="Parameters" href="parameters.html"/> 
 
   
@@ -180,15 +180,19 @@
 <li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Parameters for Tori</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Parameters for Real Tori</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#the-characters-of-s-1">The characters of $S^1$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="differential.html">The Character Differential</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/principal_series_split.html">Principal Series of Split Groups</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
 </ul>
@@ -975,7 +979,7 @@
       
           <li><a href="../coordinates_characters.html">Coordinates and Characters</a> &raquo;</li>
       
-    <li>Parameters for Tori</li>
+    <li>Parameters for Real Tori</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -992,7 +996,7 @@
 		  
 		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
 		      
-			<a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+			<a href="differential.html" class="btn btn-neutral float-right" title="The Character Differential" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
 		      
 		      
 			<a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -1001,8 +1005,8 @@
 		  
 <!--endtest-->
             
-  <div class="section" id="parameters-for-tori">
-<h1>Parameters for Tori<a class="headerlink" href="#parameters-for-tori" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="parameters-for-real-tori">
+<h1>Parameters for Real Tori<a class="headerlink" href="#parameters-for-real-tori" title="Permalink to this headline">¶</a></h1>
 <p>To study characters of Tori we first need to know how <code class="docutils literal"><span class="pre">atlas</span></code>
 understands what a torus is. In order to specify which torus we want
 we use the command <code class="docutils literal"><span class="pre">torus</span></code>. There are two ways of using this
@@ -1050,7 +1054,9 @@ Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>This is the parameter for the trivial representation. The first element <code class="docutils literal"><span class="pre">x</span></code> is a KGB element. But it is not important for now. Let us see what involution it corresponds to:</p>
+<p>This is the parameter for the trivial representation. The first
+element <code class="docutils literal"><span class="pre">x</span></code> is a$K\G/B$ element. But it is not important for now. Let
+us see what involution it corresponds to:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(p)
 Identifier x: KGBElt
 atlas&gt; set theta=involution(x)
@@ -1074,17 +1080,18 @@ the differential of the character and <code class="docutils literal"><span class
 of the character to $H^{theta}$.</p>
 <p>The real points are not necessarily connected. So we need to specify
 not only the differential but also information of the disconnected
-part which is encoded in the estriction to $H^{theta}$.</p>
+part which is encoded in the restriction to $H^{theta}$.</p>
 <p>The basic fact is that the characters of $H^{theta}$ are parametrized by
 $X^*/(1-theta)X^*$.</p>
-<p>So the characters of $H(mathbb R )$ are parametrized by triples $(theta, lambda, nu)$
-where <code class="docutils literal"><span class="pre">lambda</span></code> is in $X^*/(1-theta)X^*``and <code class="docutils literal"><span class="pre">nu</span></code> is in $[X^*otimes mathbb Q]^{-theta}$</p>
-<p>So``lambda`` is a character on $H^theta$ and <code class="docutils literal"><span class="pre">nu</span></code> gives the
+<p>So the characters of $H(mathbb R )$ are parametrized by triples
+$(theta, lambda, nu)$ where <code class="docutils literal"><span class="pre">lambda</span></code> is in $X^*/(1-theta)X^*``and
+<code class="docutils literal"><span class="pre">nu</span></code> is in $[X^*otimes mathbb Q]^{-theta}$</p>
+<p>So <code class="docutils literal"><span class="pre">lambda</span></code> is a character on $H^theta$ and <code class="docutils literal"><span class="pre">nu</span></code> gives the
 character on the Lie algebra of the split Cartan $A=H^{-theta}$.</p>
-<p>In the case of the circle, <code class="docutils literal"><span class="pre">lambda</span></code> is in $mathbb Z/(1-theta){mathbb
-Z}=mathbb Z$, since $theta=1$; and <code class="docutils literal"><span class="pre">nu</span></code> is in $Q^{-1}=0$</p>
+<p>In the case of the circle, <code class="docutils literal"><span class="pre">lambda</span></code> is in $mathbb Z/(1-theta ){mathbb
+Z}=mathbb Z$, since $theta =1$; and <code class="docutils literal"><span class="pre">nu</span></code> is in ${mattbb Q}^{-1}=0$.</p>
 <p>So the characters for the compact torus are given by the parameters
-<code class="docutils literal"><span class="pre">(x=0,lambda,</span> <span class="pre">nu=0)</span></code> and there is one for each lambda in $mathbb Z$
+<code class="docutils literal"><span class="pre">(x=0,lambda,</span> <span class="pre">nu=0)</span></code> and there is one for each <code class="docutils literal"><span class="pre">lambda</span></code> in $mathbb Z$
 correspondintg to the character $e^{ilambda} t$.</p>
 <p>In the case of the trivial character the parameter is:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
@@ -1098,13 +1105,14 @@ Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>Note that <code class="docutils literal"><span class="pre">nu</span></code> is fixed by $-theta$. So, given any <code class="docutils literal"><span class="pre">nu</span></code> it will be replaced by $1-theta)/2nu in (X^*_{mathbb Q})^{-theta}$</p>
+<p>Note that <code class="docutils literal"><span class="pre">nu</span></code> is fixed by $-theta$. So, given any <code class="docutils literal"><span class="pre">nu</span></code> it will
+be replaced by $(1-theta)/2 nu in (X^*_{mathbb Q})^{-theta}$.:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[3],[2])
 Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>So the above parameters are equivalent modulo the above equivalence relation and parametrize the same character. For example, we can ask <code class="docutils literal"><span class="pre">atlas</span></code></p>
+<p>So, the above parameters are equivalent modulo the above equivalence relation and parametrize the same character. For example, we can ask <code class="docutils literal"><span class="pre">atlas</span></code> if</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; parameter (x,[3],[3])= parameter (x,[3],[0])
 Value: true
 atlas&gt;
@@ -1125,21 +1133,22 @@ Value:
 | -1 |
 </pre></div>
 </div>
-<p>So now our parameters <code class="docutils literal"><span class="pre">(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code> satisfy
-<code class="docutils literal"><span class="pre">lambda</span></code> is in ${mathbb Z}/(1-theta){mathbb Z}=mathbb Z/2{mathbb Z}$, and
-<code class="docutils literal"><span class="pre">nu</span></code> is fixed by $-theta=1$. So, <code class="docutils literal"><span class="pre">nu</span></code> is in $mathbb Q$</p>
+<p>Now our parameters <code class="docutils literal"><span class="pre">(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code> satisfy <code class="docutils literal"><span class="pre">lambda</span></code> is in
+${mathbb Z}/(1-theta){mathbb Z}=mathbb Z/2{mathbb Z}$, and <code class="docutils literal"><span class="pre">nu</span></code>
+is fixed by $-theta=1$. So, <code class="docutils literal"><span class="pre">nu</span></code> is in $mathbb Q$</p>
 <p>Note that the characters of ${mathbb R}^x$ are parametrized by the complex
 numbers <code class="docutils literal"><span class="pre">nu</span></code>. However, the software only works with rational
 parameters. So we have to do some extra work in general, depending on
 the information that we want. The idea is that some problems can be
 reduced to the case of rational parameters.</p>
-<p>Le&#8217;s do some examples. For the trivial representation we have:</p>
+<p>Le&#8217;s do some examples. For the trivial representation, namely the parameter
+correspondintg to the trivial character on the component group and the character $nu :x rightarrow <a href="#id1"><span class="problematic" id="id2">|</span></a>x|^0$ we have:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>And for the representation $nu :x rightarrow <a href="#id1"><span class="problematic" id="id2">|</span></a>x|^{4/3}$</p>
+<p>And for the representation with $nu :x rightarrow <a href="#id3"><span class="problematic" id="id4">|</span></a>x|^{4/3}$</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:=parameter (x,[0],[4/3])
 Value: final parameter (x=0,lambda=[0]/1,nu=[4]/3)
 atlas&gt;
@@ -1167,10 +1176,77 @@ Value: true
 atlas&gt;
 </pre></div>
 </div>
-<p>Which is correct since $2=0(mod2)$. So, sometimes the software will replace the parameters you are using for something  equivalent.</p>
+<p>Which is correct since $2=0(mod2)$. So, sometimes the software will replace the parameters you are using for something equivalent.</p>
 </div>
-<div class="section" id="characters-of-c-x">
-<h2>Characters of $C^x$<a class="headerlink" href="#characters-of-c-x" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="characters-of-mathbb-c-x">
+<h2>Characters of ${mathbb C}^x$.<a class="headerlink" href="#characters-of-mathbb-c-x" title="Permalink to this headline">¶</a></h2>
+<p>Now let us look at ${mathbb C}^x cong GL(1, mathbb C) $ and the
+trivial representation:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; H:=torus(0,1,0)
+Value: connected quasisplit real group with Lie algebra &#39;gl(1,C)&#39;
+atlas&gt; set p=trivial(H)
+Identifier p: Param
+atlas&gt; p
+Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
+</pre></div>
+</div>
+<p>Now we have two coordinates for each parameter because we have a rank-2
+real group, locally isomorphic to  $S^1 x {mathbb R}^x$. Let&#8217;s see what the Cartan involution is for this torus:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(p)
+Identifier x: KGBElt
+atlas&gt; set theta=involution (x)
+Identifier theta: mat
+atlas&gt; theta
+Value:
+| 0, 1 |
+| 1, 0 |
+
+atlas&gt;
+</pre></div>
+</div>
+<p>So the Cartan involution of the complex torus switches the two coordinates.
+For example if <code class="docutils literal"><span class="pre">lambda</span> <span class="pre">=</span> <span class="pre">[0,0]</span></code> and <code class="docutils literal"><span class="pre">nu=</span> <span class="pre">[2,4]</span></code>, we have:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set q=parameter (x,[0,0],[2,4])
+Identifier q: Param (hiding previous one of type vec (constant))
+atlas&gt; q
+Value: final parameter (x=0,lambda=[0,0]/1,nu=[-1,1]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>Here the software leaves <code class="docutils literal"><span class="pre">lambda</span></code> as <code class="docutils literal"><span class="pre">[0,0]</span></code> and it changes <code class="docutils literal"><span class="pre">nu</span></code> to
+<code class="docutils literal"><span class="pre">[-1,1]</span></code>.  Which makes sense since``nu`` is fixed by $-theta$ so it changed <code class="docutils literal"><span class="pre">nu</span></code> to $(1-theta)nu/2$:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; (1-theta)*[2,4]/2
+Value: [ -1,  1 ]/1
+atlas&gt;
+</pre></div>
+</div>
+<p>So, in fact for this group the <code class="docutils literal"><span class="pre">nu</span></code> will always look like <code class="docutils literal"><span class="pre">[x,-x]</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set q=parameter (x,[0,0],[3,-3])
+Identifier q: Param (hiding previous one of type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[0,0]/1,nu=[3,-3]/1)
+atlas&gt;
+atlas&gt; set q=parameter (x,[0,0],[3,3])
+Identifier q: Param (hiding previous one of type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>On the other hand, we can change lambda:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set q=parameter (x,[1,0],[0,0])
+Identifier q: Param (hiding previous one of type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[1,0]/1,nu=[0,0]/1)
+atlas&gt; set q=parameter (x,[0,1],[0,0])
+Identifier q: Param (hiding previous one of type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[1,0]/1,nu=[0,0]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>As we would expect since these two representations are equivalent modulo $1-theta$</p>
+<p>So, The representations of ${mathbb C}^x are given by ${mathbb Z}^2 /(1-theta) {mathbb Z}^2$ and $mathbb Q$</p>
 </div>
 </div>
 
@@ -1181,7 +1257,7 @@ atlas&gt;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../principal_series.html" class="btn btn-neutral float-right" title="Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="differential.html" class="btn btn-neutral float-right" title="The Character Differential" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

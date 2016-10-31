@@ -32,7 +32,7 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
-        <link rel="next" title="Parameters for Tori" href="parameters_real_tori.html"/>
+        <link rel="next" title="Parameters for Real Tori" href="parameters_real_tori.html"/>
         <link rel="prev" title="Occurrence Matrices" href="occurrence_matrix.html"/> 
 
   
@@ -180,15 +180,19 @@
 <li class="toctree-l4"><a class="reference internal" href="#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="parameters_real_tori.html">Parameters for Tori</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="parameters_real_tori.html">Parameters for Real Tori</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#characters-of-c-x">Characters of $C^x$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="differential.html">The Character Differential</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../principal_series.html">Principal Series</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/principal_series_split.html">Principal Series of Split Groups</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../syntax_minimalps.html">Minimal Principle Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
 </ul>
@@ -992,7 +996,7 @@
 		  
 		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
 		      
-			<a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+			<a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Real Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
 		      
 		      
 			<a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -1008,7 +1012,7 @@
 <p>The basic object in <code class="docutils literal"><span class="pre">atlas</span></code> is a <code class="docutils literal"><span class="pre">parameter</span></code> and the <code class="docutils literal"><span class="pre">parameter</span>
 <span class="pre">space</span></code> parametrizes both, the irreducible representations of a
 reductive algebraic group as well as the standard modules. In other
-words, for each <code class="docutils literal"><span class="pre">p</span></code> in the <code class="docutils literal"><span class="pre">parameter</span> <span class="pre">space</span></code> there is an
+words, for each <code class="docutils literal"><span class="pre">p</span></code> in the <code class="docutils literal"><span class="pre">parameter</span> <span class="pre">space</span></code> there are an
 irreducible module $J(p)$ and a standard module $I(p)$ associated
 to <code class="docutils literal"><span class="pre">p</span></code>. Namely $I(p)$ is a representation induced from a limit of
 discrete series and things are set up, following Langlands
@@ -1016,15 +1020,15 @@ classification, so that this standard module has a unique
 irrudicible quotient $J(p)$. This quotient is also parametrized by the same
 parameter <code class="docutils literal"><span class="pre">p</span></code>.</p>
 <p>So this parameter <code class="docutils literal"><span class="pre">p</span></code> is the basic object behind this classification theory.</p>
-<p>In Adams and DuCloux paper, &#8220;Algorithms for representations of real
-groups&#8221;, section 1,  the authors use Langlands classification to describe the
+<p>In Adams&#8217; and DuCloux&#8217;s paper, &#8220;Algorithms for representations of real
+groups&#8221;, Section 1, the authors use Langlands classification to describe the
 algorithm that will associate, to each real group, the parameter space
 in question.</p>
 <p>More precisely, assume for the moment that <code class="docutils literal"><span class="pre">rho</span></code> exponentiates to a
-character of a torus in $G(mathbb C )$. Then, the representations of
+character of a torus in $G(\mathbb C )$. Then, the representations of
 $G(mathbb R)$, with a fixed (regular) infinitesimal
-character``lambda`` are parametrized by $(G(mathbb R))$-orbits) of
-pairs $(H(mathbb R ), chi)$; where $H(mathbb R )$ is a Cartan
+character``lambda`` are parametrized by $G(mathbb R)$-orbits of
+pairs $(H(mathbb R ), chi )$; where $H(mathbb R )$ is a Cartan
 subgroup of $G(mathbb R )$ and $chi$ is a character of $H(mathbb R
 )$ so that the differential of $chi$ equals <code class="docutils literal"><span class="pre">lambda</span></code> up to
 $G(mathbb C )$-conjugacy.</p>
@@ -1080,9 +1084,8 @@ atlas&gt;
 <p>So, the split form of type <code class="docutils literal"><span class="pre">A1</span></code> has two Cartans, the compact one,
 $T=S^1$ and the split one, $A={mathbb R}^x$.</p>
 <p>Now, the characters for $T$ are of the form $e^{iktheta}$ with $k in mathbb Z$``.
-The ones corresponding to <code class="docutils literal"><span class="pre">rho</span></code> are ${e{^itheta}, e^{-itheta}}$ and they
-are not conjugate under the Weyl group of $T$, since <code class="docutils literal"><span class="pre">-1</span></code> is not in
-it.</p>
+The ones corresponding to <code class="docutils literal"><span class="pre">rho</span></code> are ${e{^itheta }, e^{-itheta }}$ and they
+are not conjugate under the Weyl group of $T$, since <code class="docutils literal"><span class="pre">-1</span></code> is not in this Weyl group.</p>
 <p>On the other hand, for $A={mathbb R}^x$, the characters whose differential is
 equal to <code class="docutils literal"><span class="pre">rho</span></code> are ${xrightarrow x, x^{-1},|x|, <a href="#id1"><span class="problematic" id="id2">|</span></a>x|^{-1} : xin A}$, where
 $|x|=sign(x)x$.</p>
@@ -1112,9 +1115,9 @@ infinitesimal character <code class="docutils literal"><span class="pre">rho</sp
 say that the representation theory of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> tells us that there
 are four representations with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>. Two of
 them are the discrete series associated to the compact Cartan and
-corresponding to the two parameters above with <code class="docutils literal"><span class="pre">nu=0</span></code>; the other two
+correspond to the two parameters above with <code class="docutils literal"><span class="pre">nu=0</span></code>; the other two
 are the trivial representation and an irreducible principal series;
-both, attached to the split Cartan and corresponding to the parameters
+both, attached to the split Cartan and correspond to the parameters
 with <code class="docutils literal"><span class="pre">nu=1</span></code>.</p>
 <p>We will say more about the representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> later. But,
 as it is illustrated here, the theory tells us we first need to
@@ -1129,7 +1132,7 @@ understand the characters of Tori. We do this in the next section.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Real Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

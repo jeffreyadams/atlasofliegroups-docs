@@ -7,7 +7,7 @@ Introduction
 The basic object in ``atlas`` is a ``parameter`` and the ``parameter
 space`` parametrizes both, the irreducible representations of a
 reductive algebraic group as well as the standard modules. In other
-words, for each ``p`` in the ``parameter space`` there is an
+words, for each ``p`` in the ``parameter space`` there are an
 irreducible module $J(p)$ and a standard module $I(p)$ associated
 to ``p``. Namely $I(p)$ is a representation induced from a limit of
 discrete series and things are set up, following Langlands
@@ -17,16 +17,16 @@ parameter ``p``.
 
 So this parameter ``p`` is the basic object behind this classification theory.
 
-In Adams and DuCloux paper, "Algorithms for representations of real
-groups", section 1,  the authors use Langlands classification to describe the
+In Adams' and DuCloux's paper, "Algorithms for representations of real
+groups", Section 1, the authors use Langlands classification to describe the
 algorithm that will associate, to each real group, the parameter space
 in question.
 
 More precisely, assume for the moment that ``rho`` exponentiates to a
-character of a torus in $G(\mathbb C )$. Then, the representations of
+character of a torus in $G(\\mathbb C )$. Then, the representations of
 $G(\mathbb R)$, with a fixed (regular) infinitesimal
-character``lambda`` are parametrized by $(G(\mathbb R))$-orbits) of
-pairs $(H(\mathbb R ), \chi)$; where $H(\mathbb R )$ is a Cartan
+character``lambda`` are parametrized by $G(\mathbb R)$-orbits of
+pairs $(H(\mathbb R ), \chi )$; where $H(\mathbb R )$ is a Cartan
 subgroup of $G(\mathbb R )$ and $\chi$ is a character of $H(\mathbb R
 )$ so that the differential of $\chi$ equals ``lambda`` up to
 $G(\mathbb C )$-conjugacy.
@@ -88,9 +88,8 @@ So, the split form of type ``A1`` has two Cartans, the compact one,
 $T=S^1$ and the split one, $A={\mathbb R}^x$.
 
 Now, the characters for $T$ are of the form $e^{ik\theta}$ with $k \in \mathbb Z$``.
-The ones corresponding to ``rho`` are ${e{^i\theta}, e^{-i\theta}}$ and they
-are not conjugate under the Weyl group of $T$, since ``-1`` is not in
-it.
+The ones corresponding to ``rho`` are ${e{^i\theta }, e^{-i\theta }}$ and they
+are not conjugate under the Weyl group of $T$, since ``-1`` is not in this Weyl group.
 
 On the other hand, for $A={\mathbb R}^x$, the characters whose differential is
 equal to ``rho`` are ${x\rightarrow x, x^{-1},|x|, |x|^{-1} : x\in A}$, where
@@ -124,9 +123,9 @@ lambda, nu)``. We will explain each of these later. But for now we can
 say that the representation theory of ``SL(2,R)`` tells us that there
 are four representations with infinitesimal character ``rho``. Two of
 them are the discrete series associated to the compact Cartan and
-corresponding to the two parameters above with ``nu=0``; the other two
+correspond to the two parameters above with ``nu=0``; the other two
 are the trivial representation and an irreducible principal series;
-both, attached to the split Cartan and corresponding to the parameters
+both, attached to the split Cartan and correspond to the parameters
 with ``nu=1``.
 
 We will say more about the representations of ``SL(2,R)`` later. But,
