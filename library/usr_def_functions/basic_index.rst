@@ -306,18 +306,6 @@ Functions
      - ``Split x, int n->(Split,Split)``
    * - :ref:`split_format_split_w->string1`
      - ``Split w->string``
-   * - :ref:`find_[int]_v,_int_k->int:_____first(#v,(int_i)bool1`
-     - ``[int] v, int k->int:     first(#v,(int i)bool``
-   * - :ref:`find_[param]_p,param_p->int:__first(#p,(int_i)bool1`
-     - ``[Param] P,Param p->int:  first(#P,(int i)bool``
-   * - :ref:`find_[kgbelt]_s,kgbelt_x->int:first(#s,(int_i)bool1`
-     - ``[KGBElt] S,KGBElt x->int:first(#S,(int i)bool``
-   * - :ref:`find_[[int]]_s,[int]_v->int:first(#s,(int_i)bool1`
-     - ``[[int]] S,[int] v->int:first(#S,(int i)bool``
-   * - :ref:`find_vec_[vec]_s,vec_v->int:first(#s,(int_i)bool1`
-     - ``[vec] S,vec v->int:first(#S,(int i)bool``
-   * - :ref:`pad_string_s,int_padding->string1`
-     - ``string s,int padding->string``
    * - :ref:`root_datum_[vec]_simple_roots,_[vec]_simple_coroots,_int_r->rootdatum1`
      - ``[vec] simple_roots, [vec] simple_coroots, int r->RootDatum``
    * - :ref:`root_datum_lietype_t,_[ratvec]_gens->rootdatum1`
@@ -642,6 +630,8 @@ Functions
      - ``(RealForm,RealForm) p->void``
    * - :ref:`\!=_Param_x,Param_y->bool1`
      - ``Param x,Param y->bool``
+   * - :ref:`equals_param_p,param_q->bool1`
+     - ``Param p,Param q->bool``
    * - :ref:`root_datum_param_p->rootdatum1`
      - ``Param p->RootDatum``
    * - :ref:`inner_class_param_p->innerclass1`
@@ -666,6 +656,8 @@ Functions
      - ``Param p->RootDatum``
    * - :ref:`is_regular_param_p->bool1`
      - ``Param p->bool``
+   * - :ref:`survives_param_p->bool1`
+     - ``Param p->bool``
    * - :ref:`trivial_realform_g->param1`
      - ``RealForm G->Param``
    * - :ref:`w_cross_[int]_w,param_p->param1`
@@ -676,9 +668,11 @@ Functions
      - ``KGBElt x,ratvec lambda,ratvec nu->Param``
    * - :ref:`parameter_gamma_kgbelt_x,_ratvec_lambda,_ratvec_gamma->param1`
      - ``KGBElt x, ratvec lambda, ratvec gamma->Param``
-   * - :ref:`block_param_p->([param],int)1`
+   * - :ref:`singular_block_param_p->([param],int)1`
      - ``Param p->([Param],int)``
    * - :ref:`block_of_param_p->[param]1`
+     - ``Param p->[Param]``
+   * - :ref:`singular_block_of_param_p->[param]1`
      - ``Param p->[Param]``
    * - :ref:`imaginary_type_int_s,_param_p->int1`
      - ``int s, Param p->int``
@@ -754,24 +748,16 @@ Functions
      - ``ParamPol P->ratvec``
    * - :ref:`separate_by_infinitesimal_character_parampol_p->[(ratvec,parampol)]1`
      - ``ParamPol P->[(ratvec,ParamPol)]``
+   * - :ref:`find_[int]_v,_int_k->int:______first(#v,(int_i)bool1`
+     - ``[int] v, int k->int:      first(#v,(int i)bool``
+   * - :ref:`find_[param]_p,param_p->int:___first(#p,(int_i)bool1`
+     - ``[Param] P,Param p->int:   first(#P,(int i)bool``
+   * - :ref:`find_[kgbelt]_s,kgbelt_x->int:_first(#s,(int_i)bool1`
+     - ``[KGBElt] S,KGBElt x->int: first(#S,(int i)bool``
+   * - :ref:`find_[vec]_s,vec_v->int:_______first(#s,(int_i)bool1`
+     - ``[vec] S,vec v->int:       first(#S,(int i)bool``
    * - :ref:`in_string_list_string_s,[string]_s->bool1`
      - ``string s,[string] S->bool``
-   * - :ref:`imaginary_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1`
-     - ``(RootDatum, mat)p->(mat,mat)``
-   * - :ref:`imaginary_roots_and_coroots_kgbelt_x->(mat,mat)1`
-     - ``KGBElt x->(mat,mat)``
-   * - :ref:`real_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1`
-     - ``(RootDatum, mat)p->(mat,mat)``
-   * - :ref:`real_roots_and_coroots_kgbelt_x->(mat,mat)1`
-     - ``KGBElt x->(mat,mat)``
-   * - :ref:`complex_posroots_rootdatum_rd,mat_theta->mat1`
-     - ``RootDatum rd,mat theta->mat``
-   * - :ref:`complex_posroots_kgbelt_x->mat1`
-     - ``KGBElt x->mat``
-   * - :ref:`monomials_parampol_p->[param]1`
-     - ``ParamPol P->[Param]``
-   * - :ref:`monomial_parampol_p,int_i->param1`
-     - ``ParamPol P,int i->Param``
    * - :ref:`delete_[int]_v,_int_k->[int]:_____v[:k]##v[k+11`
      - ``[int] v, int k->[int]:     v[:k]##v[k+1``
    * - :ref:`delete_[vec]_v,_int_k->[vec]:_____v[:k]##v[k+11`
@@ -784,3 +770,21 @@ Functions
      - ``[[vec]] v, int k->[[vec]]:   v[:k]##v[k+1``
    * - :ref:`delete_[parampol]_p,_int_k->[parampol]:p[:k]##p[k+11`
      - ``[ParamPol] P, int k->[ParamPol]:P[:k]##P[k+1``
+   * - :ref:`imaginary_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1`
+     - ``(RootDatum, mat)p->(mat,mat)``
+   * - :ref:`imaginary_roots_and_coroots_kgbelt_x->(mat,mat)1`
+     - ``KGBElt x->(mat,mat)``
+   * - :ref:`real_roots_and_coroots_(rootdatum,_mat)p->(mat,mat)1`
+     - ``(RootDatum, mat)p->(mat,mat)``
+   * - :ref:`real_roots_and_coroots_kgbelt_x->(mat,mat)1`
+     - ``KGBElt x->(mat,mat)``
+   * - :ref:`complex_posroots_rootdatum_rd,mat_theta->mat1`
+     - ``RootDatum rd,mat theta->mat``
+   * - :ref:`complex_posroots_kgbelt_x->mat1`
+     - ``KGBElt x->mat``
+   * - :ref:`pad_string_s,int_padding->string1`
+     - ``string s,int padding->string``
+   * - :ref:`monomials_parampol_p->[param]1`
+     - ``ParamPol P->[Param]``
+   * - :ref:`monomial_parampol_p,int_i->param1`
+     - ``ParamPol P,int i->Param``

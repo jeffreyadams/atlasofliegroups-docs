@@ -8,7 +8,7 @@ complex_nilpotent_orbits.at Function References
 
 root_datum_of
 -------------------------------------------------
-| ``root_datum_of:ComplexNilpotent O->RootDatum`` Defined in line number 16.
+| ``root_datum_of:ComplexNilpotent O->RootDatum`` Defined in line number 14.
 | 
 | 
 
@@ -16,7 +16,7 @@ root_datum_of
 
 semisimple_element
 -------------------------------------------------
-| ``semisimple_element:ComplexNilpotent O->vec`` Defined in line number 17.
+| ``semisimple_element:ComplexNilpotent O->vec`` Defined in line number 15.
 | 
 | 
 
@@ -24,7 +24,7 @@ semisimple_element
 
 dim_nilpotent
 -------------------------------------------------
-| ``dim_nilpotent:RootDatum rd,ratvec H->int`` Defined in line number 19.
+| ``dim_nilpotent:RootDatum rd,ratvec H->int`` Defined in line number 17.
 | 
 | 
 
@@ -32,7 +32,7 @@ dim_nilpotent
 
 diagram
 -------------------------------------------------
-| ``diagram:ComplexNilpotent O->[int]`` Defined in line number 27.
+| ``diagram:ComplexNilpotent O->[int]`` Defined in line number 25.
 | 
 | 
 
@@ -40,7 +40,7 @@ diagram
 
 dim_eigenspace
 -------------------------------------------------
-| ``dim_eigenspace:RootDatum rd, ratvec H, int k->int`` Defined in line number 33.
+| ``dim_eigenspace:RootDatum rd, ratvec H, int k->int`` Defined in line number 31.
 | 
 | 
 
@@ -48,7 +48,7 @@ dim_eigenspace
 
 max_eigenspace
 -------------------------------------------------
-| ``max_eigenspace:RootDatum rd, ratvec H->int`` Defined in line number 42.
+| ``max_eigenspace:RootDatum rd, ratvec H->int`` Defined in line number 40.
 | 
 | 
 
@@ -56,7 +56,7 @@ max_eigenspace
 
 all_eigenspaces
 -------------------------------------------------
-| ``all_eigenspaces:RootDatum rd, ratvec H->[int]`` Defined in line number 46.
+| ``all_eigenspaces:RootDatum rd, ratvec H->[int]`` Defined in line number 44.
 | 
 | 
 
@@ -64,7 +64,7 @@ all_eigenspaces
 
 extract_even
 -------------------------------------------------
-| ``extract_even:[int] v->for i`` Defined in line number 56.
+| ``extract_even:[int] v->for i`` Defined in line number 54.
 | 
 | 
 
@@ -72,7 +72,7 @@ extract_even
 
 extract_odd
 -------------------------------------------------
-| ``extract_odd:[int] v->for i`` Defined in line number 57.
+| ``extract_odd:[int] v->for i`` Defined in line number 55.
 | 
 | 
 
@@ -80,7 +80,7 @@ extract_odd
 
 even_eigenspaces
 -------------------------------------------------
-| ``even_eigenspaces:RootDatum rd, ratvec H->[int]`` Defined in line number 62.
+| ``even_eigenspaces:RootDatum rd, ratvec H->[int]`` Defined in line number 60.
 | 
 | 
 
@@ -88,7 +88,7 @@ even_eigenspaces
 
 odd_eigenspaces
 -------------------------------------------------
-| ``odd_eigenspaces:RootDatum rd, ratvec H->[int]`` Defined in line number 63.
+| ``odd_eigenspaces:RootDatum rd, ratvec H->[int]`` Defined in line number 61.
 | 
 | 
 
@@ -96,7 +96,7 @@ odd_eigenspaces
 
 support
 -------------------------------------------------
-| ``support:KGBElt x->[int]`` Defined in line number 77.
+| ``support:KGBElt x->[int]`` Defined in line number 75.
 | 
 | 
 
@@ -104,7 +104,7 @@ support
 
 support
 -------------------------------------------------
-| ``support:Param p->[int]`` Defined in line number 82.
+| ``support:Param p->[int]`` Defined in line number 80.
 | 
 | 
 
@@ -112,7 +112,7 @@ support
 
 blocku
 -------------------------------------------------
-| ``blocku:RealForm G->[Param]`` Defined in line number 84.
+| ``blocku:RealForm G->[Param]`` Defined in line number 82.
 | 
 | 
 
@@ -120,7 +120,7 @@ blocku
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((vec, rat)-> rat) f->([(vec,rat)] v) [(vec,rat)]`` Defined in line number 90.
+| ``sort_by:((vec, rat)-> rat) f->([(vec,rat)] v) [(vec,rat)]`` Defined in line number 88.
 | 
 | 
 
@@ -128,7 +128,7 @@ sort_by
 
 smash
 -------------------------------------------------
-| ``smash:[int] v,[[int]] A->[[int]]`` Defined in line number 97.
+| ``smash:[int] v,[[int]] A->[[int]]`` Defined in line number 95.
 | 
 | 
 
@@ -136,7 +136,7 @@ smash
 
 rec_fun box
 -------------------------------------------------
-| ``rec_fun box:int height, int rank->[[int]]`` Defined in line number 102.
+| ``rec_fun box:int height, int rank->[[int]]`` Defined in line number 100.
 | 
 | 
 
@@ -144,7 +144,7 @@ rec_fun box
 
 rec_fun box
 -------------------------------------------------
-| ``rec_fun box:[int] heights->[[int]]`` Defined in line number 106.
+| ``rec_fun box:[int] heights->[[int]]`` Defined in line number 104.
 | 
 | 
 
@@ -152,7 +152,7 @@ rec_fun box
 
 all_H
 -------------------------------------------------
-| ``all_H:RootDatum rd->[(vec,rat)]`` Defined in line number 115.
+| ``all_H:RootDatum rd->[(vec,rat)]`` Defined in line number 113.
 | 
 | 
 
@@ -160,7 +160,7 @@ all_H
 
 all_H_dimensions
 -------------------------------------------------
-| ``all_H_dimensions:RootDatum rd->[int]`` Defined in line number 128.
+| ``all_H_dimensions:RootDatum rd->[int]`` Defined in line number 126.
 | 
 | 
 
@@ -168,7 +168,7 @@ all_H_dimensions
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((ratvec, [vec])-> int) f->([(ratvec,[vec])] v) [(ratvec,[vec])]`` Defined in line number 133.
+| ``sort_by:((ratvec, [vec])-> int) f->([(ratvec,[vec])] v) [(ratvec,[vec])]`` Defined in line number 131.
 | 
 | 
 
@@ -176,7 +176,7 @@ sort_by
 
 find_H
 -------------------------------------------------
-| ``find_H:Parabolic P->[(vec,[vec])]`` Defined in line number 153.
+| ``find_H:Parabolic P->[(vec,[vec])]`` Defined in line number 151.
 | 
 | 
 
@@ -184,7 +184,7 @@ find_H
 
 max_only
 -------------------------------------------------
-| ``max_only:[(vec,[vec])] arg->[(vec,[vec])]`` Defined in line number 172.
+| ``max_only:[(vec,[vec])] arg->[(vec,[vec])]`` Defined in line number 170.
 | 
 | 
 
@@ -192,7 +192,7 @@ max_only
 
 <=
 -------------------------------------------------
-| ``<=:[int] a,[int] b->all(for i`` Defined in line number 233.
+| ``<=:[int] a,[int] b->all(for i`` Defined in line number 231.
 | 
 | 
 
@@ -200,7 +200,7 @@ max_only
 
 principal_block
 -------------------------------------------------
-| ``principal_block:RealForm G->Block`` Defined in line number 236.
+| ``principal_block:RealForm G->Block`` Defined in line number 234.
 | 
 | 
 
@@ -208,7 +208,7 @@ principal_block
 
 real_form
 -------------------------------------------------
-| ``real_form:Block B->RealForm`` Defined in line number 256.
+| ``real_form:Block B->RealForm`` Defined in line number 254.
 | 
 | 
 
@@ -216,7 +216,7 @@ real_form
 
 rho
 -------------------------------------------------
-| ``rho:Block B->ratvec`` Defined in line number 257.
+| ``rho:Block B->ratvec`` Defined in line number 255.
 | 
 | 
 
@@ -224,7 +224,7 @@ rho
 
 choose_gamma
 -------------------------------------------------
-| ``choose_gamma:KGBElt x,KGBElt y->ratvec`` Defined in line number 260.
+| ``choose_gamma:KGBElt x,KGBElt y->ratvec`` Defined in line number 258.
 | 
 | 
 
@@ -232,7 +232,7 @@ choose_gamma
 
 choose_gamma
 -------------------------------------------------
-| ``choose_gamma:Block B->ratvec`` Defined in line number 263.
+| ``choose_gamma:Block B->ratvec`` Defined in line number 261.
 | 
 | 
 
@@ -240,7 +240,7 @@ choose_gamma
 
 convert_list_W_cells
 -------------------------------------------------
-| ``convert_list_W_cells:Block B,ratvec gamma,[[int]] Wcells->[[Param]]`` Defined in line number 269.
+| ``convert_list_W_cells:Block B,ratvec gamma,[[int]] Wcells->[[Param]]`` Defined in line number 267.
 | 
 | 
 
@@ -248,7 +248,7 @@ convert_list_W_cells
 
 tau_invariants
 -------------------------------------------------
-| ``tau_invariants:Block B->[[int]]`` Defined in line number 277.
+| ``tau_invariants:Block B->[[int]]`` Defined in line number 275.
 | 
 | 
 
@@ -256,7 +256,7 @@ tau_invariants
 
 tau_invariants_of_cell
 -------------------------------------------------
-| ``tau_invariants_of_cell:Block B, [int] cell->[(int,[int])]`` Defined in line number 281.
+| ``tau_invariants_of_cell:Block B, [int] cell->[(int,[int])]`` Defined in line number 279.
 | 
 | 
 
@@ -264,7 +264,7 @@ tau_invariants_of_cell
 
 tau_invariants_of_cell_raw
 -------------------------------------------------
-| ``tau_invariants_of_cell_raw:Block B, [int] cell->[[int]]`` Defined in line number 285.
+| ``tau_invariants_of_cell_raw:Block B, [int] cell->[[int]]`` Defined in line number 283.
 | 
 | 
 
@@ -272,7 +272,7 @@ tau_invariants_of_cell_raw
 
 tau_containing
 -------------------------------------------------
-| ``tau_containing:Block B,[int] P->[int]`` Defined in line number 289.
+| ``tau_containing:Block B,[int] P->[int]`` Defined in line number 287.
 | 
 | 
 
@@ -280,7 +280,7 @@ tau_containing
 
 is_Aq
 -------------------------------------------------
-| ``is_Aq:Param p->bool`` Defined in line number 294.
+| ``is_Aq:Param p->bool`` Defined in line number 292.
 | 
 | 
 
@@ -288,7 +288,7 @@ is_Aq
 
 Blocku
 -------------------------------------------------
-| ``Blocku:RealForm G->[int]`` Defined in line number 304.
+| ``Blocku:RealForm G->[int]`` Defined in line number 302.
 | 
 | 
 
@@ -296,7 +296,7 @@ Blocku
 
 is_Aq_cell
 -------------------------------------------------
-| ``is_Aq_cell:Block B,[int] C->bool`` Defined in line number 309.
+| ``is_Aq_cell:Block B,[int] C->bool`` Defined in line number 307.
 | 
 | 
 
@@ -304,7 +304,7 @@ is_Aq_cell
 
 is_Aq
 -------------------------------------------------
-| ``is_Aq:Block B,int i->bool`` Defined in line number 312.
+| ``is_Aq:Block B,int i->bool`` Defined in line number 310.
 | 
 | 
 
@@ -312,7 +312,7 @@ is_Aq
 
 ComplexNilpotent
 -----------------------------------------
-| ``(RootDatum,vec)`` Defined in line number 13.
+| ``(RootDatum,vec)`` Defined in line number 11.
 | 
 | 
 
