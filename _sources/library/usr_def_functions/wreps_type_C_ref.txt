@@ -240,7 +240,7 @@ max_only
 
 Levi_signature
 -------------------------------------------------
-| ``Levi_signature:int rank,[[int]] tau_invariants->([[int]],[(int,[int])])`` Defined in line number 209.
+| ``Levi_signature:int rank,[[int]] tau_invariants->([[int]],[(int,[int])])`` Defined in line number 212.
 | 
 | 
 
@@ -248,7 +248,7 @@ Levi_signature
 
 max_first_entry
 -------------------------------------------------
-| ``max_first_entry:[[int]] v->int`` Defined in line number 226.
+| ``max_first_entry:[[int]] v->int`` Defined in line number 229.
 | 
 | 
 
@@ -256,7 +256,7 @@ max_first_entry
 
 keep_by_first_entry
 -------------------------------------------------
-| ``keep_by_first_entry:[[int]] v,int k->[[int]]`` Defined in line number 228.
+| ``keep_by_first_entry:[[int]] v,int k->[[int]]`` Defined in line number 231.
 | 
 | 
 
@@ -264,7 +264,7 @@ keep_by_first_entry
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
-| ``keep_by_first_entry_and_truncate:[[int]] v,int k->[[int]]`` Defined in line number 232.
+| ``keep_by_first_entry_and_truncate:[[int]] v,int k->[[int]]`` Defined in line number 235.
 | 
 | 
 
@@ -272,7 +272,7 @@ keep_by_first_entry_and_truncate
 
 max_tagged_entry
 -------------------------------------------------
-| ``max_tagged_entry:[(int,[int])] v->int`` Defined in line number 240.
+| ``max_tagged_entry:[(int,[int])] v->int`` Defined in line number 243.
 | 
 | 
 
@@ -280,7 +280,7 @@ max_tagged_entry
 
 keep_by_first_entry
 -------------------------------------------------
-| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 242.
+| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 245.
 | 
 | 
 
@@ -288,7 +288,7 @@ keep_by_first_entry
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
-| ``keep_by_first_entry_and_truncate:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 245.
+| ``keep_by_first_entry_and_truncate:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 248.
 | 
 | 
 
@@ -296,7 +296,7 @@ keep_by_first_entry_and_truncate
 
 wrep
 -------------------------------------------------
-| ``wrep:int rank,[[int]] tau_invariants->Wrep`` Defined in line number 257.
+| ``wrep:int rank,[[int]] tau_invariants->Wrep`` Defined in line number 260.
 | 
 | 
 
@@ -304,7 +304,7 @@ wrep
 
 wrep
 -------------------------------------------------
-| ``wrep:Block B,[int] cell->Wrep`` Defined in line number 285.
+| ``wrep:Block B,[int] cell->Wrep`` Defined in line number 288.
 | 
 | 
 
@@ -312,7 +312,7 @@ wrep
 
 wreps
 -------------------------------------------------
-| ``wreps:Block B,[[int]] cells->[Wrep]`` Defined in line number 288.
+| ``wreps:Block B,[[int]] cells->[Wrep]`` Defined in line number 291.
 | 
 | 
 
@@ -320,7 +320,7 @@ wreps
 
 print_wreps_cpt
 -------------------------------------------------
-| ``print_wreps_cpt:Block B,[[int]] cells->void`` Defined in line number 308.
+| ``print_wreps_cpt:Block B,[[int]] cells->void`` Defined in line number 311.
 | 
 | 
 
@@ -328,7 +328,7 @@ print_wreps_cpt
 
 print_wreps
 -------------------------------------------------
-| ``print_wreps:Block B,[[int]] cells->void`` Defined in line number 312.
+| ``print_wreps:Block B,[[int]] cells->void`` Defined in line number 315.
 | 
 | 
 

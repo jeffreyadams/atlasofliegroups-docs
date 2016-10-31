@@ -72,7 +72,7 @@ convert_W_word
 
 R_K_dom
 -------------------------------------------------
-| ``R_K_dom:KGBElt x->[W_word]`` Defined in line number 121.
+| ``R_K_dom:KGBElt x->[W_word]`` Defined in line number 120.
 | 
 | 
 
@@ -80,7 +80,7 @@ R_K_dom
 
 W_K
 -------------------------------------------------
-| ``W_K:KGBElt x->(RootDatum,[(RootDatum,[int])])`` Defined in line number 130.
+| ``W_K:KGBElt x->(RootDatum,[(RootDatum,[int])])`` Defined in line number 129.
 | 
 | 
 
@@ -88,7 +88,7 @@ W_K
 
 move_weight
 -------------------------------------------------
-| ``move_weight:(KGBElt x,vec mu),KGBElt y->KHighestWeight`` Defined in line number 132.
+| ``move_weight:(KGBElt x,vec mu),KGBElt y->KHighestWeight`` Defined in line number 131.
 | 
 | 
 
@@ -96,7 +96,7 @@ move_weight
 
 R_K_dom_mu_orbit
 -------------------------------------------------
-| ``R_K_dom_mu_orbit:KHighestWeight (x,mu)->[KHighestWeight]`` Defined in line number 138.
+| ``R_K_dom_mu_orbit:KHighestWeight (x,mu)->[KHighestWeight]`` Defined in line number 137.
 | 
 | 
 
@@ -104,7 +104,7 @@ R_K_dom_mu_orbit
 
 P_positive_test_coweight
 -------------------------------------------------
-| ``P_positive_test_coweight:KGBElt x,W_word S->vec`` Defined in line number 169.
+| ``P_positive_test_coweight:KGBElt x,W_word S->vec`` Defined in line number 168.
 | 
 | 
 
@@ -112,7 +112,7 @@ P_positive_test_coweight
 
 P_positive_test_coweights
 -------------------------------------------------
-| ``P_positive_test_coweights:KGBElt x->[vec]`` Defined in line number 178.
+| ``P_positive_test_coweights:KGBElt x->[vec]`` Defined in line number 177.
 | 
 | 
 
@@ -120,7 +120,7 @@ P_positive_test_coweights
 
 is_P_positive
 -------------------------------------------------
-| ``is_P_positive:KGBElt x,vec mu,[W_word] S->bool`` Defined in line number 182.
+| ``is_P_positive:KGBElt x,vec mu,[W_word] S->bool`` Defined in line number 181.
 | 
 | 
 
@@ -128,7 +128,7 @@ is_P_positive
 
 make_strongly_dominant
 -------------------------------------------------
-| ``make_strongly_dominant:KGBElt x,vec mu->((KGBElt,vec),W_word,W_word,bool)`` Defined in line number 195.
+| ``make_strongly_dominant:KGBElt x,vec mu->((KGBElt,vec),W_word,W_word,bool)`` Defined in line number 194.
 | 
 | 
 
@@ -136,7 +136,7 @@ make_strongly_dominant
 
 R_K_dom_mu
 -------------------------------------------------
-| ``R_K_dom_mu:KGBElt x,vec mu->[W_word]`` Defined in line number 231.
+| ``R_K_dom_mu:KGBElt x,vec mu->[W_word]`` Defined in line number 230.
 | 
 | 
 

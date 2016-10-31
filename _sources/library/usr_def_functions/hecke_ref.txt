@@ -208,7 +208,7 @@ signs_1i1
 
 hecke_row
 -------------------------------------------------
-| ``hecke_row:int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]`` Defined in line number 380.
+| ``hecke_row:int j, mat delta, ratvec gamma, ratvec g, KGB_pair pair, [KGB_pair] basis->[poly]`` Defined in line number 379.
 | 
 | 
 
@@ -216,7 +216,7 @@ hecke_row
 
 hecke_row
 -------------------------------------------------
-| ``hecke_row:int j, ExtParam(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]`` Defined in line number 550.
+| ``hecke_row:int j, ExtParam(,delta,gamma,,,g,,,,):E, [KGB_pair] basis->[poly]`` Defined in line number 549.
 | 
 | 
 
@@ -224,7 +224,7 @@ hecke_row
 
 hecke_matrix
 -------------------------------------------------
-| ``hecke_matrix:int j, mat delta, ratvec gamma, ratvec g,[KGB_pair] basis->poly_mat`` Defined in line number 558.
+| ``hecke_matrix:int j, mat delta, ratvec gamma, ratvec g,[KGB_pair] basis->poly_mat`` Defined in line number 557.
 | 
 | 
 
@@ -232,7 +232,7 @@ hecke_matrix
 
 quadratic
 -------------------------------------------------
-| ``quadratic:poly_mat M, int length, bool show->bool`` Defined in line number 569.
+| ``quadratic:poly_mat M, int length, bool show->bool`` Defined in line number 568.
 | 
 | 
 
@@ -240,7 +240,7 @@ quadratic
 
 braid
 -------------------------------------------------
-| ``braid:poly_mat M,poly_mat N, int length,bool show->bool`` Defined in line number 584.
+| ``braid:poly_mat M,poly_mat N, int length,bool show->bool`` Defined in line number 583.
 | 
 | 
 
@@ -248,7 +248,7 @@ braid
 
 braid
 -------------------------------------------------
-| ``braid:poly_mat M,poly_mat N, int length->bool`` Defined in line number 594.
+| ``braid:poly_mat M,poly_mat N, int length->bool`` Defined in line number 593.
 | 
 | 
 
@@ -256,7 +256,7 @@ braid
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i, int j,mat delta, ratvec gamma, ratvec g, [KGB_pair] basis->bool`` Defined in line number 607.
+| ``test_hecke:int i, int j,mat delta, ratvec gamma, ratvec g, [KGB_pair] basis->bool`` Defined in line number 606.
 | 
 | 
 
@@ -264,7 +264,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i, int j, mat delta, ratvec gamma, [KGB_pair] basis->bool`` Defined in line number 627.
+| ``test_hecke:int i, int j, mat delta, ratvec gamma, [KGB_pair] basis->bool`` Defined in line number 626.
 | 
 | 
 
@@ -272,7 +272,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i, int j, mat delta, [Param] B, ratvec g->bool`` Defined in line number 634.
+| ``test_hecke:int i, int j, mat delta, [Param] B, ratvec g->bool`` Defined in line number 633.
 | 
 | 
 
@@ -280,7 +280,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i, int j, mat delta, [Param] B->bool`` Defined in line number 648.
+| ``test_hecke:int i, int j, mat delta, [Param] B->bool`` Defined in line number 647.
 | 
 | 
 
@@ -288,7 +288,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i,int j, mat delta,Param p->bool`` Defined in line number 651.
+| ``test_hecke:int i,int j, mat delta,Param p->bool`` Defined in line number 650.
 | 
 | 
 
@@ -296,7 +296,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i,int j,Param p,ratvec g->bool`` Defined in line number 653.
+| ``test_hecke:int i,int j,Param p,ratvec g->bool`` Defined in line number 652.
 | 
 | 
 
@@ -304,7 +304,7 @@ test_hecke
 
 test_hecke
 -------------------------------------------------
-| ``test_hecke:int i,int j,Param p->bool`` Defined in line number 655.
+| ``test_hecke:int i,int j,Param p->bool`` Defined in line number 654.
 | 
 | 
 

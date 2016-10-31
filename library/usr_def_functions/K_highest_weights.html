@@ -453,11 +453,6 @@
 <li class="toctree-l4"><a class="reference internal" href="bigMatrices_ref.html">bigMatrices.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="canonical_x_K.html">canonical_x_K.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="canonical_x_K_index.html">canonical_x_K.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="canonical_x_K_ref.html">canonical_x_K.at Function References</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="center.html">center.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="center_index.html">center.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="center_ref.html">center.at Function References</a></li>
@@ -621,11 +616,6 @@
 <li class="toctree-l3"><a class="reference internal" href="K_types.html">K_types.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="K_types_index.html">K_types.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="K_types_ref.html">K_types.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="kgp.html">kgp.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="kgp_index.html">kgp.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="kgp_ref.html">kgp.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="kl.html">kl.at</a><ul>
@@ -1007,6 +997,30 @@
             
   <div class="section" id="k-highest-weights-at">
 <span id="id1"></span><h1>K_highest_weights.at<a class="headerlink" href="#k-highest-weights-at" title="Permalink to this headline">¶</a></h1>
+<p>Functions involving K-types (final tempered limit parameters) and K-highest weights.
+The main reference is Vogan, &#8220;Branching to a Maximal Compact Subgroup&#8221; [KHatHowe].
+See also the notes on &#8220;K-types in atlas&#8221;.</p>
+<p>The main functions are</p>
+<p>(x,lambda) -&gt; {(x_K,mu)} multivalued,
+(x_K,mu) is one value, then take the R(K)-orbit &lt;-&gt; R(K)/R(K,mu)</p>
+<p>algorithm:
+1) if G is relatively split, Cartan is (relatively) split, all roots in the
+tau-invariant,
+this is the &#8220;G-spherical&#8221; case of KHatHowe, section 8
+2) if p is final standard limit tempered, it has a unique LKT,
+use theta_stable_data to write p as cohomologically induced from a
+relatively split L
+3) apply 2) to all terms of finalize(p*0)</p>
+<p>project vector mu on dominant cone (spanned by fundamental coweights)
+algorithm from KHatHowe Section 13, modification of BGB Proposition 5.3.3
+used in map from highest weights to LKT below</p>
+<p>This is the Vogan algorithm, version in khatHowe Section 13,
+which is a slight modification of BGB Proposition 5.3.3
+given (x,mu) -&gt; mu+2rho_K(x) -&gt;
+choose positive chamber for G -&gt; mu+2rho_K(x)-rho
+project on given dominant chamber
+returns (x,mu+2rho_K(x)-rho,tau) where tau is dominant
+need the second argument for the modified Vogan algorithm</p>
 <p><strong>This script imported the following .at files:</strong></p>
 <div class="line-block">
 <div class="line"><a class="reference internal" href="W_K.html#w-k-at"><span>W_K.at</span></a></div>

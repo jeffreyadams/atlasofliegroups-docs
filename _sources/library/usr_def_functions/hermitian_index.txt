@@ -18,8 +18,6 @@ Functions
      - ``[Param] P->[Param]``
    * - :ref:`make_nu0_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``
-   * - :ref:`orientation_nr_term_int_ori_nr_p,param_q->split1`
-     - ``int ori_nr_p,Param q->Split``
    * - :ref:`c_form_std_param_p->parampol1`
      - ``Param p->ParamPol``
    * - :ref:`c_form_std_delta_param_p->parampol1`
