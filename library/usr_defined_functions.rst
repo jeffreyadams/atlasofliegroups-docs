@@ -11,7 +11,6 @@ User Defined Functions
    usr_def_functions/all_Kparameters
    usr_def_functions/basic
    usr_def_functions/bigMatrices
-   usr_def_functions/canonical_x_K
    usr_def_functions/center
    usr_def_functions/coherent
    usr_def_functions/complex
@@ -45,7 +44,6 @@ User Defined Functions
    usr_def_functions/K
    usr_def_functions/K_highest_weights
    usr_def_functions/K_types
-   usr_def_functions/kgp
    usr_def_functions/kl
    usr_def_functions/KL_polynomial_matrices
    usr_def_functions/lattice
@@ -76,10 +74,12 @@ User Defined Functions
    usr_def_functions/torus
    usr_def_functions/translate
    usr_def_functions/twist
+   usr_def_functions/Unipotent_Packets_All_Types
    usr_def_functions/unitary
    usr_def_functions/Vogan-dual
    usr_def_functions/W_K
    usr_def_functions/W_orbit
+   usr_def_functions/W_Reps_Mod
    usr_def_functions/W_reps_type_BC
    usr_def_functions/Wdelta
    usr_def_functions/Weylgroup

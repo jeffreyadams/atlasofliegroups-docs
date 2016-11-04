@@ -188,7 +188,7 @@ wreps
 | 
 | 
 
-.. _cut_off_string_[int]_v->(int,[int])1:
+.. _cut_off_string_[int]_v->(int,[int])2:
 
 cut_off_string
 -------------------------------------------------
@@ -196,7 +196,7 @@ cut_off_string
 | 
 | 
 
-.. _cut_off_last_string_[int]_v->(int,[int])1:
+.. _cut_off_last_string_[int]_v->(int,[int])2:
 
 cut_off_last_string
 -------------------------------------------------
@@ -204,7 +204,7 @@ cut_off_last_string
 | 
 | 
 
-.. _extract_strings_[int]_v->[int]1:
+.. _extract_strings_[int]_v->[int]2:
 
 extract_strings
 -------------------------------------------------
@@ -212,7 +212,7 @@ extract_strings
 | 
 | 
 
-.. _a_levi_factor_int_rank,_[int]_tau->[int]1:
+.. _a_levi_factor_int_rank,_[int]_tau->[int]2:
 
 A_Levi_factor
 -------------------------------------------------
@@ -220,7 +220,7 @@ A_Levi_factor
 | 
 | 
 
-.. _ac_levi_factor_int_rank,_[int]_tau->(int,[int])1:
+.. _ac_levi_factor_int_rank,_[int]_tau->(int,[int])2:
 
 AC_Levi_factor
 -------------------------------------------------
@@ -228,7 +228,7 @@ AC_Levi_factor
 | 
 | 
 
-.. _is_max_[[int]]_taus,[int]_tau->bool1:
+.. _is_max_[[int]]_taus,[int]_tau->bool2:
 
 is_max
 -------------------------------------------------
@@ -236,7 +236,7 @@ is_max
 | 
 | 
 
-.. _max_only_[[int]]_taus->[[int]]1:
+.. _max_only_[[int]]_taus->[[int]]2:
 
 max_only
 -------------------------------------------------
@@ -244,51 +244,43 @@ max_only
 | 
 | 
 
-.. _levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])1:
+.. _levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])2:
 
 Levi_signature
 -------------------------------------------------
-| ``Levi_signature:int rank,[[int]] tau_invariants->([[int]],[(int,[int])])`` Defined in line number 231.
+| ``Levi_signature:int rank,[[int]] tau_invariants->([[int]],[(int,[int])])`` Defined in line number 234.
 | 
 | 
 
-.. _max_first_entry_[[int]]_v->int1:
+.. _max_first_entry_[[int]]_v->int2:
 
 max_first_entry
 -------------------------------------------------
-| ``max_first_entry:[[int]] v->int`` Defined in line number 248.
+| ``max_first_entry:[[int]] v->int`` Defined in line number 251.
 | 
 | 
 
-.. _keep_by_first_entry_[[int]]_v,int_k->[[int]]1:
+.. _keep_by_first_entry_[[int]]_v,int_k->[[int]]2:
 
 keep_by_first_entry
 -------------------------------------------------
-| ``keep_by_first_entry:[[int]] v,int k->[[int]]`` Defined in line number 250.
+| ``keep_by_first_entry:[[int]] v,int k->[[int]]`` Defined in line number 253.
 | 
 | 
 
-.. _keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]1:
+.. _keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]2:
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
-| ``keep_by_first_entry_and_truncate:[[int]] v,int k->[[int]]`` Defined in line number 254.
+| ``keep_by_first_entry_and_truncate:[[int]] v,int k->[[int]]`` Defined in line number 257.
 | 
 | 
 
-.. _max_tagged_entry_[(int,[int])]_v->int1:
+.. _max_tagged_entry_[(int,[int])]_v->int2:
 
 max_tagged_entry
 -------------------------------------------------
-| ``max_tagged_entry:[(int,[int])] v->int`` Defined in line number 262.
-| 
-| 
-
-.. _keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]1:
-
-keep_by_first_entry
--------------------------------------------------
-| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 264.
+| ``max_tagged_entry:[(int,[int])] v->int`` Defined in line number 265.
 | 
 | 
 
@@ -300,35 +292,43 @@ keep_by_first_entry
 | 
 | 
 
-.. _keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]1:
+.. _keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]3:
+
+keep_by_first_entry
+-------------------------------------------------
+| ``keep_by_first_entry:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 270.
+| 
+| 
+
+.. _keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]2:
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
-| ``keep_by_first_entry_and_truncate:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 271.
+| ``keep_by_first_entry_and_truncate:[(int,[int])] v,int k->[(int,[int])]`` Defined in line number 274.
 | 
 | 
 
-.. _wrep_int_rank,[[int]]_tau_invariants->wrep1:
-
-wrep
--------------------------------------------------
-| ``wrep:int rank,[[int]] tau_invariants->Wrep`` Defined in line number 283.
-| 
-| 
-
-.. _wrep_block_b,[int]_cell->wrep1:
+.. _wrep_int_rank,[[int]]_tau_invariants->wrep2:
 
 wrep
 -------------------------------------------------
-| ``wrep:Block B,[int] cell->Wrep`` Defined in line number 312.
+| ``wrep:int rank,[[int]] tau_invariants->Wrep`` Defined in line number 286.
 | 
 | 
 
-.. _wreps_block_b,[[int]]_cells->[wrep]1:
+.. _wrep_block_b,[int]_cell->wrep2:
+
+wrep
+-------------------------------------------------
+| ``wrep:Block B,[int] cell->Wrep`` Defined in line number 315.
+| 
+| 
+
+.. _wreps_block_b,[[int]]_cells->[wrep]2:
 
 wreps
 -------------------------------------------------
-| ``wreps:Block B,[[int]] cells->[Wrep]`` Defined in line number 315.
+| ``wreps:Block B,[[int]] cells->[Wrep]`` Defined in line number 318.
 | 
 | 
 
@@ -336,7 +336,7 @@ wreps
 
 print_wreps_cpt
 -------------------------------------------------
-| ``print_wreps_cpt:Block B,[[int]] cells->void`` Defined in line number 335.
+| ``print_wreps_cpt:Block B,[[int]] cells->void`` Defined in line number 338.
 | 
 | 
 
@@ -344,7 +344,7 @@ print_wreps_cpt
 
 print_wreps
 -------------------------------------------------
-| ``print_wreps:Block B,[[int]] cells->void`` Defined in line number 339.
+| ``print_wreps:Block B,[[int]] cells->void`` Defined in line number 342.
 | 
 | 
 
@@ -352,11 +352,11 @@ print_wreps
 
 wreps
 -------------------------------------------------
-| ``wreps:Block B,[[int]] cells->[([int],[int])]`` Defined in line number 342.
+| ``wreps:Block B,[[int]] cells->[([int],[int])]`` Defined in line number 345.
 | 
 | 
 
-.. _Orbit1:
+.. _Orbit2:
 
 Orbit
 -----------------------------------------
@@ -364,7 +364,7 @@ Orbit
 | 
 | 
 
-.. _Symbol1:
+.. _Symbol2:
 
 Symbol
 -----------------------------------------
@@ -372,7 +372,7 @@ Symbol
 | 
 | 
 
-.. _Wrep1:
+.. _Wrep2:
 
 Wrep
 -----------------------------------------

@@ -14,6 +14,14 @@ Functions
 
    * - Function
      - Argument(s) -> Results
+   * - :ref:`map_into_distinguished_fiber_kgbelt_x->kgbelt1`
+     - ``KGBElt x->KGBElt``
+   * - :ref:`strong_map_into_distinguished_fiber_kgbelt_x->kgbelt1`
+     - ``KGBElt x->KGBElt``
+   * - :ref:`canonical_x_k_kgbelt_x->kgbelt1`
+     - ``KGBElt x->KGBElt``
+   * - :ref:`canonical_x_k_param_p->kgbelt1`
+     - ``Param p->KGBElt``
    * - :ref:`u_kgbelt_x->mat1`
      - ``KGBElt x->mat``
    * - :ref:`rho_u_cx_parabolic_p->ratvec1`

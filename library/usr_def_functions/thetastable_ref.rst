@@ -4,11 +4,43 @@ thetastable.at Function References
 =======================================================
 |
 
+.. _map_into_distinguished_fiber_kgbelt_x->kgbelt1:
+
+map_into_distinguished_fiber
+-------------------------------------------------
+| ``map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 36.
+| 
+| 
+
+.. _strong_map_into_distinguished_fiber_kgbelt_x->kgbelt1:
+
+strong_map_into_distinguished_fiber
+-------------------------------------------------
+| ``strong_map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 52.
+| 
+| 
+
+.. _canonical_x_k_kgbelt_x->kgbelt1:
+
+canonical_x_K
+-------------------------------------------------
+| ``canonical_x_K:KGBElt x->KGBElt`` Defined in line number 55.
+| 
+| 
+
+.. _canonical_x_k_param_p->kgbelt1:
+
+canonical_x_K
+-------------------------------------------------
+| ``canonical_x_K:Param p->KGBElt`` Defined in line number 56.
+| 
+| 
+
 .. _u_kgbelt_x->mat1:
 
 u
 -------------------------------------------------
-| ``u:KGBElt x->mat`` Defined in line number 22.
+| ``u:KGBElt x->mat`` Defined in line number 61.
 | 
 | 
 
@@ -16,7 +48,7 @@ u
 
 rho_u_cx
 -------------------------------------------------
-| ``rho_u_cx:Parabolic P->ratvec`` Defined in line number 31.
+| ``rho_u_cx:Parabolic P->ratvec`` Defined in line number 70.
 | 
 | 
 
@@ -24,7 +56,7 @@ rho_u_cx
 
 rho_u_cx_T
 -------------------------------------------------
-| ``rho_u_cx_T:Parabolic P->vec`` Defined in line number 46.
+| ``rho_u_cx_T:Parabolic P->vec`` Defined in line number 85.
 | 
 | 
 
@@ -32,7 +64,7 @@ rho_u_cx_T
 
 rho_u_ic
 -------------------------------------------------
-| ``rho_u_ic:Parabolic P->ratvec`` Defined in line number 55.
+| ``rho_u_ic:Parabolic P->ratvec`` Defined in line number 94.
 | 
 | 
 
@@ -40,7 +72,7 @@ rho_u_ic
 
 two_rho_u_cap_k
 -------------------------------------------------
-| ``two_rho_u_cap_k:Parabolic P->vec`` Defined in line number 62.
+| ``two_rho_u_cap_k:Parabolic P->vec`` Defined in line number 101.
 | 
 | 
 
@@ -48,7 +80,7 @@ two_rho_u_cap_k
 
 two_rho_u_cap_s
 -------------------------------------------------
-| ``two_rho_u_cap_s:Parabolic P->vec`` Defined in line number 64.
+| ``two_rho_u_cap_s:Parabolic P->vec`` Defined in line number 103.
 | 
 | 
 
@@ -56,7 +88,7 @@ two_rho_u_cap_s
 
 rho_u_cap_k
 -------------------------------------------------
-| ``rho_u_cap_k:Parabolic P->ratvec`` Defined in line number 68.
+| ``rho_u_cap_k:Parabolic P->ratvec`` Defined in line number 107.
 | 
 | 
 
@@ -64,7 +96,7 @@ rho_u_cap_k
 
 rho_u_cap_s
 -------------------------------------------------
-| ``rho_u_cap_s:Parabolic P->ratvec`` Defined in line number 69.
+| ``rho_u_cap_s:Parabolic P->ratvec`` Defined in line number 108.
 | 
 | 
 
@@ -72,7 +104,7 @@ rho_u_cap_s
 
 dim_u_cap_k
 -------------------------------------------------
-| ``dim_u_cap_k:Parabolic (,x):P->int`` Defined in line number 71.
+| ``dim_u_cap_k:Parabolic (,x):P->int`` Defined in line number 110.
 | 
 | 
 
@@ -80,7 +112,7 @@ dim_u_cap_k
 
 dim_u_cap_k
 -------------------------------------------------
-| ``dim_u_cap_k:KGBElt x->int`` Defined in line number 79.
+| ``dim_u_cap_k:KGBElt x->int`` Defined in line number 118.
 | 
 | 
 
@@ -88,7 +120,7 @@ dim_u_cap_k
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:Parabolic (S,):P->int`` Defined in line number 81.
+| ``dim_u_cap_p:Parabolic (S,):P->int`` Defined in line number 120.
 | 
 | 
 
@@ -96,7 +128,7 @@ dim_u_cap_p
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:KGBElt x->int`` Defined in line number 83.
+| ``dim_u_cap_p:KGBElt x->int`` Defined in line number 122.
 | 
 | 
 
@@ -104,7 +136,7 @@ dim_u_cap_p
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:ratvec lambda,KGBElt x->int`` Defined in line number 84.
+| ``dim_u_cap_p:ratvec lambda,KGBElt x->int`` Defined in line number 123.
 | 
 | 
 
@@ -112,7 +144,7 @@ dim_u_cap_p
 
 dim_u_cap_k_2
 -------------------------------------------------
-| ``dim_u_cap_k_2:Parabolic P,ratvec H->int`` Defined in line number 86.
+| ``dim_u_cap_k_2:Parabolic P,ratvec H->int`` Defined in line number 125.
 | 
 | 
 
@@ -120,7 +152,7 @@ dim_u_cap_k_2
 
 dim_u_cap_k_ge2
 -------------------------------------------------
-| ``dim_u_cap_k_ge2:Parabolic P,ratvec H->int`` Defined in line number 96.
+| ``dim_u_cap_k_ge2:Parabolic P,ratvec H->int`` Defined in line number 135.
 | 
 | 
 
@@ -128,7 +160,7 @@ dim_u_cap_k_ge2
 
 dim_u_cap_p_ge2
 -------------------------------------------------
-| ``dim_u_cap_p_ge2:Parabolic P,ratvec H->int`` Defined in line number 106.
+| ``dim_u_cap_p_ge2:Parabolic P,ratvec H->int`` Defined in line number 145.
 | 
 | 
 
@@ -136,7 +168,7 @@ dim_u_cap_p_ge2
 
 dim_u_cap_k_1
 -------------------------------------------------
-| ``dim_u_cap_k_1:Parabolic P,ratvec H->int`` Defined in line number 116.
+| ``dim_u_cap_k_1:Parabolic P,ratvec H->int`` Defined in line number 155.
 | 
 | 
 
@@ -144,7 +176,7 @@ dim_u_cap_k_1
 
 make_dominant
 -------------------------------------------------
-| ``make_dominant:KGBElt x_in,ratvec lambda_in, ratvec lambda_q_in->(KGBElt,ratvec,ratvec)`` Defined in line number 165.
+| ``make_dominant:KGBElt x_in,ratvec lambda_in, ratvec lambda_q_in->(KGBElt,ratvec,ratvec)`` Defined in line number 204.
 | 
 | 
 
@@ -152,7 +184,7 @@ make_dominant
 
 Aq_param_pol
 -------------------------------------------------
-| ``Aq_param_pol:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->ParamPol`` Defined in line number 170.
+| ``Aq_param_pol:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->ParamPol`` Defined in line number 209.
 | 
 | 
 
@@ -160,7 +192,7 @@ Aq_param_pol
 
 Aq
 -------------------------------------------------
-| ``Aq:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 214.
+| ``Aq:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 253.
 | 
 | 
 
@@ -168,7 +200,7 @@ Aq
 
 Aq
 -------------------------------------------------
-| ``Aq:KGBElt x,ratvec lambda_in->Param`` Defined in line number 222.
+| ``Aq:KGBElt x,ratvec lambda_in->Param`` Defined in line number 261.
 | 
 | 
 
@@ -176,7 +208,7 @@ Aq
 
 Aq
 -------------------------------------------------
-| ``Aq:RealForm G,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 227.
+| ``Aq:RealForm G,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 266.
 | 
 | 
 
@@ -184,7 +216,7 @@ Aq
 
 Aq
 -------------------------------------------------
-| ``Aq:RealForm G,ratvec lambda_in->Param`` Defined in line number 229.
+| ``Aq:RealForm G,ratvec lambda_in->Param`` Defined in line number 268.
 | 
 | 
 
@@ -192,7 +224,7 @@ Aq
 
 is_good
 -------------------------------------------------
-| ``is_good:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 260.
+| ``is_good:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 299.
 | 
 | 
 
@@ -200,7 +232,7 @@ is_good
 
 is_weakly_good
 -------------------------------------------------
-| ``is_weakly_good:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 264.
+| ``is_weakly_good:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 303.
 | 
 | 
 
@@ -208,7 +240,7 @@ is_weakly_good
 
 is_fair
 -------------------------------------------------
-| ``is_fair:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 268.
+| ``is_fair:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 307.
 | 
 | 
 
@@ -216,7 +248,7 @@ is_fair
 
 is_weakly_fair
 -------------------------------------------------
-| ``is_weakly_fair:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 273.
+| ``is_weakly_fair:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 312.
 | 
 | 
 
@@ -224,7 +256,7 @@ is_weakly_fair
 
 is_good
 -------------------------------------------------
-| ``is_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 277.
+| ``is_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 316.
 | 
 | 
 
@@ -232,7 +264,7 @@ is_good
 
 is_weakly_good
 -------------------------------------------------
-| ``is_weakly_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 281.
+| ``is_weakly_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 320.
 | 
 | 
 
@@ -240,7 +272,7 @@ is_weakly_good
 
 is_fair
 -------------------------------------------------
-| ``is_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 285.
+| ``is_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 324.
 | 
 | 
 
@@ -248,7 +280,7 @@ is_fair
 
 is_weakly_fair
 -------------------------------------------------
-| ``is_weakly_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 289.
+| ``is_weakly_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 328.
 | 
 | 
 
@@ -256,7 +288,7 @@ is_weakly_fair
 
 goodness
 -------------------------------------------------
-| ``goodness:Param p_L,Parabolic P,RealForm G->string`` Defined in line number 293.
+| ``goodness:Param p_L,Parabolic P,RealForm G->string`` Defined in line number 332.
 | 
 | 
 
@@ -264,7 +296,7 @@ goodness
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,ComplexParabolic P->[Param]`` Defined in line number 327.
+| ``Aq_packet:RealForm G,ComplexParabolic P->[Param]`` Defined in line number 366.
 | 
 | 
 
@@ -272,7 +304,7 @@ Aq_packet
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,[int] S->[Param]:Aq_packet(G,ComplexParabolic`` Defined in line number 334.
+| ``Aq_packet:RealForm G,[int] S->[Param]:Aq_packet(G,ComplexParabolic`` Defined in line number 373.
 | 
 | 
 
@@ -280,7 +312,7 @@ Aq_packet
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,[*] S->[Param]:Aq_packet(G,[int]`` Defined in line number 335.
+| ``Aq_packet:RealForm G,[*] S->[Param]:Aq_packet(G,[int]`` Defined in line number 374.
 | 
 | 
 
@@ -288,7 +320,7 @@ Aq_packet
 
 is_good
 -------------------------------------------------
-| ``is_good:Param p_L,RealForm G->bool`` Defined in line number 337.
+| ``is_good:Param p_L,RealForm G->bool`` Defined in line number 376.
 | 
 | 
 
@@ -296,7 +328,7 @@ is_good
 
 is_weakly_good
 -------------------------------------------------
-| ``is_weakly_good:Param p_L,RealForm G->bool`` Defined in line number 342.
+| ``is_weakly_good:Param p_L,RealForm G->bool`` Defined in line number 381.
 | 
 | 
 
@@ -304,7 +336,7 @@ is_weakly_good
 
 is_fair
 -------------------------------------------------
-| ``is_fair:Param p_L,RealForm G->bool`` Defined in line number 347.
+| ``is_fair:Param p_L,RealForm G->bool`` Defined in line number 386.
 | 
 | 
 
@@ -312,7 +344,7 @@ is_fair
 
 is_weakly_fair
 -------------------------------------------------
-| ``is_weakly_fair:Param p_L,RealForm G->bool`` Defined in line number 353.
+| ``is_weakly_fair:Param p_L,RealForm G->bool`` Defined in line number 392.
 | 
 | 
 
@@ -320,7 +352,7 @@ is_weakly_fair
 
 goodness
 -------------------------------------------------
-| ``goodness:Param p_L,RealForm G->void`` Defined in line number 372.
+| ``goodness:Param p_L,RealForm G->void`` Defined in line number 411.
 | 
 | 
 
@@ -328,7 +360,7 @@ goodness
 
 goodness
 -------------------------------------------------
-| ``goodness:KGBElt x,ratvec lambda_in,ratvec lambda_q->void`` Defined in line number 386.
+| ``goodness:KGBElt x,ratvec lambda_in,ratvec lambda_q->void`` Defined in line number 425.
 | 
 | 
 
