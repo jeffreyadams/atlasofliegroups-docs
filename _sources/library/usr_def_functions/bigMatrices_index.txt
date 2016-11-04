@@ -14,6 +14,8 @@ Functions
 
    * - Function
      - Argument(s) -> Results
+   * - :ref:`find_strong_[param]_p,param_p->int:__first(#p,(int_i)bool1`
+     - ``[Param] P,Param p->int:  first(#P,(int i)bool``
    * - :ref:`fixed_subset_[param]_b,mat_delta->[param]1`
      - ``[Param] B,mat delta->[Param]``
    * - :ref:`indices_subset_[param]_subset,__[param]_whole->[int]1`
@@ -28,10 +30,12 @@ Functions
      - ``[Param] B,mat delta->([int],[int],[(int,int)], [int])``
    * - :ref:`big_kl_p_polynomials_[param]_b,mat_delta->[[vec]]1`
      - ``[Param] B,mat delta->[[vec]]``
-   * - :ref:`big_kl_p_polynomials_[param]_b,mat_delta->[[vec]]2`
-     - ``[Param] B,mat delta->[[vec]]``
+   * - :ref:`big_kl_p_polynomials_at_minus_one_[param]_b,mat_delta->mat1`
+     - ``[Param] B,mat delta->mat``
    * - :ref:`big_kl_p_signed_polynomials_[param]_b,mat_delta->[[vec]]1`
      - ``[Param] B,mat delta->[[vec]]``
+   * - :ref:`big_kl_p_signed_polynomials_at_minus_one_[param]_b,mat_delta->mat1`
+     - ``[Param] B,mat delta->mat``
    * - :ref:`is_non_negative_[poly]_polynomials->bool1`
      - ``[poly] polynomials->bool``
    * - :ref:`is_non_negative_poly_mat_m->bool1`
