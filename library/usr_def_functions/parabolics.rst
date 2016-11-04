@@ -22,6 +22,7 @@ Define KGP to be KGB modulo this equivalence.
 
 Data: ([int],KGBElt)=(S,x) where S lists the indices of a subset of the
 simple roots of root_datum(x)
+
 Equivalence: (S,x)=(S',y) if these correspond to the same K orbit on :math:`G/P_S` ,
 which means:
 real_form(x)=real_form(y), S=S'  (i.e. same complex parabolic), and
