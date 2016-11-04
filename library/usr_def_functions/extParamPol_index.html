@@ -448,9 +448,7 @@
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="bigMatrices_index.html">bigMatrices.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="bigMatrices_ref.html">bigMatrices.at Function References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="center.html">center.at</a><ul>
@@ -768,6 +766,11 @@
 <li class="toctree-l4"><a class="reference internal" href="twist_ref.html">twist.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="Unipotent_Packets_All_Types.html">Unipotent_Packets_All_Types.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_index.html">Unipotent_Packets_All_Types.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html">Unipotent_Packets_All_Types.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="unitary.html">unitary.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="unitary_index.html">unitary.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="unitary_ref.html">unitary.at Function References</a></li>
@@ -786,6 +789,11 @@
 <li class="toctree-l3"><a class="reference internal" href="W_orbit.html">W_orbit.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_index.html">W_orbit.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_ref.html">W_orbit.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="W_Reps_Mod.html">W_Reps_Mod.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="W_Reps_Mod_index.html">W_Reps_Mod.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="W_Reps_Mod_ref.html">W_Reps_Mod.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="W_reps_type_BC.html">W_reps_type_BC.at</a><ul>
@@ -1044,7 +1052,13 @@
 <tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#find-int-int-complete-indices-int-int-pair-int-first-complete-indices-int-i-bool1"><span>find</span></a></td>
 <td><code class="docutils literal"><span class="pre">[(int,int)]</span> <span class="pre">complete_indices,(int,int)</span> <span class="pre">pair-&gt;int:first(#complete_indices,(int</span> <span class="pre">i)bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#deform-param-p-mat-delta-int-type-extparampol1"><span>deform</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#deform-unreduced-param-p-mat-delta-int-sign-extparampol1"><span>deform_unreduced</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">sign-&gt;ExtParamPol</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#deform-param-p-mat-delta-int-type-extparampol1"><span>deform</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#deform-old-param-p-mat-delta-int-type-extparampol1"><span>deform_old</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#deform-extparam-e-mat-delta-extparampol1"><span>deform</span></a></td>
@@ -1056,8 +1070,8 @@
 <tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#extparampol-p-split-param-int-1"><span>%</span></a></td>
 <td><code class="docutils literal"><span class="pre">ExtParamPol</span> <span class="pre">P-&gt;[(Split,Param,int)]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#recursive-deform-param-p-mat-delta-int-type-extparampol1"><span>recursive_deform</span></a></td>
-<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;ExtParamPol</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#recursive-deform-param-p-mat-delta-int-type-p-extparampol1"><span>recursive_deform</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type_p-&gt;ExtParamPol</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#print-extended-character-formula-param-p-param-b-mat-delta-void1"><span>print_extended_character_formula</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;void</span></code></td>
@@ -1077,35 +1091,26 @@
 <tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#character-formula-param-p-mat-delta-extparampol1"><span>character_formula</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;ExtParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#c-form-irreducible-long-param-p-mat-delta-int-type-extparampol-split-param-parampol-parampol-parampol-split-param-parampol-parampol-parampol-split-param-parampol-parampol-parampol-extparampol-1"><span>c_form_irreducible_long</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#c-form-irreducible-big-long-param-p-mat-delta-int-type-extparampol-split-param-parampol-parampol-parampol-split-param-parampol-parampol-parampol-split-param-parampol-parampol-parampol-extparampol-1"><span>c_form_irreducible_big_long</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;(ExtParamPol,[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],ExtParamPol)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#print-c-form-irreducible-long-extparampol-cf-split-param-extparampol-plus-split-param-extparampol-minus-split-param-extparampol-induced-extparampol-answer-void1"><span>print_c_form_irreducible_long</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#print-c-form-irreducible-big-long-extparampol-cf-split-param-extparampol-plus-split-param-extparampol-minus-split-param-extparampol-induced-extparampol-answer-void1"><span>print_c_form_irreducible_big_long</span></a></td>
 <td><code class="docutils literal"><span class="pre">ExtParamPol</span> <span class="pre">cf,</span> <span class="pre">[((Split,Param),ExtParamPol)]</span> <span class="pre">plus,[((Split,Param),ExtParamPol)]</span> <span class="pre">minus,[((Split,Param),ExtParamPol)]</span> <span class="pre">induced,ExtParamPol</span> <span class="pre">answer-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#print-c-form-irreducible-long-param-p-mat-delta-int-type-void1"><span>print_c_form_irreducible_long</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#print-c-form-irreducible-big-long-param-p-mat-delta-int-type-void1"><span>print_c_form_irreducible_big_long</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta,</span> <span class="pre">int</span> <span class="pre">type-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#lambda-plus-rho-res-t-kgbelt-x-ratvec-lambda-ratvec1"><span>lambda_plus_rho_res_T</span></a></td>
-<td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">lambda-&gt;ratvec</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#hermitian-form-irreducible-big-param-p-parampol1"><span>hermitian_form_irreducible_big</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#mu-param-p-rat1"><span>mu</span></a></td>
-<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;rat</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#is-unitary-big-param-p-bool1"><span>is_unitary_big</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#mu-param-p-mat-delta-rat1"><span>mu</span></a></td>
-<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;rat</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#print-is-unitary-big-param-p-void1"><span>print_is_unitary_big</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#convert-cform-hermitian-parampol-p-mat-delta-parampol1"><span>convert_cform_hermitian</span></a></td>
-<td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P,mat</span> <span class="pre">delta-&gt;ParamPol</span></code></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#hermitian-form-irreducible-param-p-mat-delta-parampol1"><span>hermitian_form_irreducible</span></a></td>
-<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;ParamPol</span></code></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#print-hermitian-form-irreducible-param-p-mat-delta-void1"><span>print_hermitian_form_irreducible</span></a></td>
-<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;void</span></code></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="extParamPol_ref.html#id14"><span>print_hermitian_form_irreducible</span></a></td>
-<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">P,mat</span> <span class="pre">delta-&gt;void</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="extParamPol_ref.html#is-weakly-unitary-big-param-p-bool1"><span>is_weakly_unitary_big</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
 </tbody>
 </table>

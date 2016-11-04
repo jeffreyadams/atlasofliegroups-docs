@@ -448,9 +448,7 @@
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="bigMatrices_index.html">bigMatrices.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="bigMatrices_ref.html">bigMatrices.at Function References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="center.html">center.at</a><ul>
@@ -768,6 +766,11 @@
 <li class="toctree-l4"><a class="reference internal" href="twist_ref.html">twist.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="Unipotent_Packets_All_Types.html">Unipotent_Packets_All_Types.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_index.html">Unipotent_Packets_All_Types.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html">Unipotent_Packets_All_Types.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="unitary.html">unitary.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="unitary_index.html">unitary.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="unitary_ref.html">unitary.at Function References</a></li>
@@ -786,6 +789,11 @@
 <li class="toctree-l3"><a class="reference internal" href="W_orbit.html">W_orbit.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_index.html">W_orbit.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_ref.html">W_orbit.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="W_Reps_Mod.html">W_Reps_Mod.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="W_Reps_Mod_index.html">W_Reps_Mod.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="W_Reps_Mod_ref.html">W_Reps_Mod.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="W_reps_type_BC.html">W_reps_type_BC.at</a><ul>
@@ -1005,16 +1013,16 @@
 <div class="section" id="khighestweight-x-mu-khighestweight-y-tau-bool1">
 <span id="id1"></span><h2>=<a class="headerlink" href="#khighestweight-x-mu-khighestweight-y-tau-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">=:KHighestWeight</span> <span class="pre">(x,mu),</span> <span class="pre">KHighestWeight</span> <span class="pre">(y,tau)-&gt;bool</span></code> Defined in line number 82.</div>
+<div class="line"><code class="docutils literal"><span class="pre">=:KHighestWeight</span> <span class="pre">(x,mu),</span> <span class="pre">KHighestWeight</span> <span class="pre">(y,tau)-&gt;bool</span></code> Defined in line number 98.</div>
 <div class="line"><br /></div>
-<div class="line">Equality of KHighestWeights; (x,mu)=(x&#8217;,mu&#8217;) iff x=x&#8217;, and mu and mu&#8217;    differ by (1-theta)X^* or compact Weyl group action</div>
+<div class="line">Equality of KHighestWeights; (x,mu)=(x&#8217;,mu&#8217;) iff x=x&#8217;, and mu and mu&#8217;    differ by (1-theta)X^* or compact Weyl group action.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="lkts">
 <span id="lkts-param-p-k-type-1"></span><h2>LKTs<a class="headerlink" href="#lkts" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">LKTs:Param</span> <span class="pre">p-&gt;[K_Type]</span></code> Defined in line number 108.</div>
+<div class="line"><code class="docutils literal"><span class="pre">LKTs:Param</span> <span class="pre">p-&gt;[K_Type]</span></code> Defined in line number 124.</div>
 <div class="line"><br /></div>
 <div class="line">List of LKTs (as final tempered limit parameters) of a module given by a    parameter</div>
 <div class="line"><br /></div>
@@ -1023,142 +1031,141 @@
 <div class="section" id="lkt">
 <span id="lkt-param-p-k-type1"></span><h2>LKT<a class="headerlink" href="#lkt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">LKT:Param</span> <span class="pre">p-&gt;K_Type</span></code> Defined in line number 111.</div>
+<div class="line"><code class="docutils literal"><span class="pre">LKT:Param</span> <span class="pre">p-&gt;K_Type</span></code> Defined in line number 128.</div>
 <div class="line"><br /></div>
-<div class="line">LKT of module given by a parameter, if it is unique (otherwise error message)</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="is-split-spherical">
 <span id="is-split-spherical-param-p-bool1"></span><h2>is_split_spherical<a class="headerlink" href="#is-split-spherical" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">is_split_spherical:Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 117.</div>
+<div class="line"><code class="docutils literal"><span class="pre">is_split_spherical:Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 135.</div>
 <div class="line"><br /></div>
-<div class="line">Test if parameter p for G is G-spherical: G must be rel. split, all roots in tau(p)</div>
+<div class="line">Test if parameter p for G is G-spherical: G must be rel. split, all roots    in tau(p).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="is-split-spherical-k-type-p-bool1">
 <span id="id2"></span><h2>is_split_spherical<a class="headerlink" href="#is-split-spherical-k-type-p-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">is_split_spherical:K_Type</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 126.</div>
+<div class="line"><code class="docutils literal"><span class="pre">is_split_spherical:K_Type</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 144.</div>
 <div class="line"><br /></div>
-<div class="line">Test if a K-type is G-spherical: must be LKT of G-spherical p</div>
+<div class="line">Test if a K-type is G-spherical: must be LKT of G-spherical p.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weight-split-spherical">
 <span id="highest-weight-split-spherical-k-type-p-khighestweight1"></span><h2>highest_weight_split_spherical<a class="headerlink" href="#highest-weight-split-spherical" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weight_split_spherical:K_Type</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 130.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weight_split_spherical:K_Type</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 148.</div>
 <div class="line"><br /></div>
-<div class="line">Highest weight of a G-spherical K-type (necessarily unique)</div>
+<div class="line">Highest weight of a G-spherical K-type (necessarily unique).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weight-split-spherical-param-p-khighestweight1">
 <span id="id3"></span><h2>highest_weight_split_spherical<a class="headerlink" href="#highest-weight-split-spherical-param-p-khighestweight1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weight_split_spherical:Param</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 144.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weight_split_spherical:Param</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 162.</div>
 <div class="line"><br /></div>
-<div class="line">Highest weight of LKT of a G-spherical parameter (is unique)</div>
+<div class="line">Highest weight of LKT of a G-spherical parameter (is unique).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weight-split-spherical-k-type-p-kgbelt-x-k-khighestweight1">
 <span id="id4"></span><h2>highest_weight_split_spherical<a class="headerlink" href="#highest-weight-split-spherical-k-type-p-kgbelt-x-k-khighestweight1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weight_split_spherical:K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;KHighestWeight</span></code> Defined in line number 148.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weight_split_spherical:K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;KHighestWeight</span></code> Defined in line number 166.</div>
 <div class="line"><br /></div>
-<div class="line">Highest weight of LKT of G-spherical K-type w.r.t. x_K (is unique)</div>
+<div class="line">Highest weight of LKT of G-spherical K-type w.r.t. x_K (is unique).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weight-split-spherical-param-p-kgbelt-x-k-khighestweight1">
 <span id="id5"></span><h2>highest_weight_split_spherical<a class="headerlink" href="#highest-weight-split-spherical-param-p-kgbelt-x-k-khighestweight1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weight_split_spherical:Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;KHighestWeight</span></code> Defined in line number 152.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weight_split_spherical:Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;KHighestWeight</span></code> Defined in line number 170.</div>
 <div class="line"><br /></div>
-<div class="line">Highest weight of LKT of a G-spherical parameter w.r.t. x_K (is unique)</div>
+<div class="line">Highest weight of LKT of a G-spherical parameter w.r.t. x_K (is unique).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weight-one">
 <span id="highest-weight-one-k-type-p-khighestweight1"></span><h2>highest_weight_one<a class="headerlink" href="#highest-weight-one" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weight_one:K_Type</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 156.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weight_one:K_Type</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 174.</div>
 <div class="line"><br /></div>
-<div class="line">This function returns just ONE KHighestWeight of a K-type (auxiliary function)</div>
+<div class="line">This function returns just ONE KHighestWeight of a K-type (auxiliary function).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weight-one-k-type-p-kgbelt-x-k-khighestweight1">
 <span id="id6"></span><h2>highest_weight_one<a class="headerlink" href="#highest-weight-one-k-type-p-kgbelt-x-k-khighestweight1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weight_one:K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;KHighestWeight</span></code> Defined in line number 175.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weight_one:K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;KHighestWeight</span></code> Defined in line number 193.</div>
 <div class="line"><br /></div>
-<div class="line">ONE KHighestWeight of a K-type w.r.t. x_K (auxiliary function)</div>
+<div class="line">ONE KHighestWeight of a K-type w.r.t. x_K (auxiliary function).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weights">
 <span id="highest-weights-k-type-p-khighestweight-1"></span><h2>highest_weights<a class="headerlink" href="#highest-weights" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weights:K_Type</span> <span class="pre">p-&gt;[KHighestWeight]</span></code> Defined in line number 180.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weights:K_Type</span> <span class="pre">p-&gt;[KHighestWeight]</span></code> Defined in line number 198.</div>
 <div class="line"><br /></div>
-<div class="line">All highest weights of a K-type; R-group acts on one KHighestWeight of    previous function (number of terms is <a href="#id20"><span class="problematic" id="id21">|R(K)/R(K,mu)|</span></a>)</div>
+<div class="line">All highest weights of a K-type; R-group acts on one KHighestWeight of    previous function (number of terms is <a href="#id20"><span class="problematic" id="id21">|R(K)/R(K,mu)|</span></a>).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weights-k-type-p-kgbelt-x-k-khighestweight-1">
 <span id="id7"></span><h2>highest_weights<a class="headerlink" href="#highest-weights-k-type-p-kgbelt-x-k-khighestweight-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weights:K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;[KHighestWeight]</span></code> Defined in line number 184.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weights:K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;[KHighestWeight]</span></code> Defined in line number 202.</div>
 <div class="line"><br /></div>
-<div class="line">All highest weights of a K-type w.r.t. x_K</div>
+<div class="line">All highest weights of a K-type w.r.t. x_K.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weights-param-p-khighestweight-1">
 <span id="id8"></span><h2>highest_weights<a class="headerlink" href="#highest-weights-param-p-khighestweight-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weights:Param</span> <span class="pre">p-&gt;[KHighestWeight]</span></code> Defined in line number 188.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weights:Param</span> <span class="pre">p-&gt;[KHighestWeight]</span></code> Defined in line number 206.</div>
 <div class="line"><br /></div>
-<div class="line">List of all highest weights of all LKTs of a parameter</div>
+<div class="line">List of all highest weights of all LKTs of a parameter.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weights-param-p-kgbelt-x-k-khighestweight-1">
 <span id="id9"></span><h2>highest_weights<a class="headerlink" href="#highest-weights-param-p-kgbelt-x-k-khighestweight-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weights:Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;[KHighestWeight]</span></code> Defined in line number 194.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weights:Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;[KHighestWeight]</span></code> Defined in line number 212.</div>
 <div class="line"><br /></div>
-<div class="line">List of all highest weights of all LKTs of a parameter w.r.t. x_K</div>
+<div class="line">List of all highest weights of all LKTs of a parameter w.r.t. x_K.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weight">
 <span id="highest-weight-k-type-p-khighestweight1"></span><h2>highest_weight<a class="headerlink" href="#highest-weight" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weight:K_Type</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 198.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weight:K_Type</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 216.</div>
 <div class="line"><br /></div>
-<div class="line">Unique highest weight of a K-type (or error if not unique)</div>
+<div class="line">Unique highest weight of a K-type (or error if not unique).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="highest-weight-param-p-khighestweight1">
 <span id="id10"></span><h2>highest_weight<a class="headerlink" href="#highest-weight-param-p-khighestweight1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">highest_weight:Param</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 204.</div>
+<div class="line"><code class="docutils literal"><span class="pre">highest_weight:Param</span> <span class="pre">p-&gt;KHighestWeight</span></code> Defined in line number 222.</div>
 <div class="line"><br /></div>
-<div class="line">Unique highest weight of (unique) LKT of a parameter (or error if not unique)</div>
+<div class="line">Unique highest weight of (unique) LKT of a parameter (or error if not unique).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="centralizer">
 <span id="centralizer-kgbelt-x-ratvec-v-kgbelt-rootdatum-1"></span><h2>centralizer<a class="headerlink" href="#centralizer" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">centralizer:KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">v-&gt;(KGBElt,RootDatum)</span></code> Defined in line number 220.</div>
+<div class="line"><code class="docutils literal"><span class="pre">centralizer:KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">v-&gt;(KGBElt,RootDatum)</span></code> Defined in line number 238.</div>
 <div class="line"><br /></div>
 <div class="line">(Auxiliary function)</div>
 <div class="line"><br /></div>
@@ -1167,7 +1174,7 @@
 <div class="section" id="find-nci-root">
 <span id="find-nci-root-kgbelt-x-ratvec-tau-int1"></span><h2>find_nci_root<a class="headerlink" href="#find-nci-root" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">find_nci_root:KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">tau-&gt;int</span></code> Defined in line number 230.</div>
+<div class="line"><code class="docutils literal"><span class="pre">find_nci_root:KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">tau-&gt;int</span></code> Defined in line number 248.</div>
 <div class="line"><br /></div>
 <div class="line">(Auxiliary function)</div>
 <div class="line"><br /></div>
@@ -1176,7 +1183,7 @@
 <div class="section" id="tworho-k">
 <span id="tworho-k-kgbelt-x-ratvec1"></span><h2>tworho_K<a class="headerlink" href="#tworho-k" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">tworho_K:KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 263.</div>
+<div class="line"><code class="docutils literal"><span class="pre">tworho_K:KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 282.</div>
 <div class="line"><br /></div>
 <div class="line">Sum of the roots of K as an element of <span class="math">\((X^*)^{\delta}\otimes\mathbb Q\)</span>  (this may be half-integral); x must be in the distinguished fiber.</div>
 <div class="line"><br /></div>
@@ -1185,7 +1192,7 @@
 <div class="section" id="project-on-dominant-cone">
 <span id="project-on-dominant-cone-kgbelt-x-ratvec-mu-kgbelt-ratvec-ratvec-1"></span><h2>project_on_dominant_cone<a class="headerlink" href="#project-on-dominant-cone" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">project_on_dominant_cone:KGBElt</span> <span class="pre">x,</span> <span class="pre">ratvec</span> <span class="pre">mu-&gt;(KGBElt,ratvec,ratvec)</span></code> Defined in line number 272.</div>
+<div class="line"><code class="docutils literal"><span class="pre">project_on_dominant_cone:KGBElt</span> <span class="pre">x,</span> <span class="pre">ratvec</span> <span class="pre">mu-&gt;(KGBElt,ratvec,ratvec)</span></code> Defined in line number 291.</div>
 <div class="line"><br /></div>
 <div class="line">Vogan algorithm to project KHighestWeight (x,mu) on dominant cone; returns    (x&#8217;,mu+2rho_K(x)-rho,tau) with tau dominant and x&#8217; corresponding to the new    Weyl chamber.</div>
 <div class="line"><br /></div>
@@ -1194,16 +1201,16 @@
 <div class="section" id="project-on-dominant-cone-kgbelt-x-vec-mu-kgbelt-ratvec-ratvec-1">
 <span id="id11"></span><h2>project_on_dominant_cone<a class="headerlink" href="#project-on-dominant-cone-kgbelt-x-vec-mu-kgbelt-ratvec-ratvec-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">project_on_dominant_cone:KGBElt</span> <span class="pre">x,</span> <span class="pre">vec</span> <span class="pre">mu-&gt;(KGBElt,ratvec,ratvec)</span></code> Defined in line number 316.</div>
+<div class="line"><code class="docutils literal"><span class="pre">project_on_dominant_cone:KGBElt</span> <span class="pre">x,</span> <span class="pre">vec</span> <span class="pre">mu-&gt;(KGBElt,ratvec,ratvec)</span></code> Defined in line number 335.</div>
 <div class="line"><br /></div>
-<div class="line">Vogan algorithm; previous function in case mu is given as a vec, rather than ratvec</div>
+<div class="line">Vogan algorithm; previous function in case mu is given as a vec, rather than ratvec.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="characters-order-2">
 <span id="characters-order-2-kgbelt-x-vec-1"></span><h2>characters_order_2<a class="headerlink" href="#characters-order-2" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">characters_order_2:KGBElt</span> <span class="pre">x-&gt;[vec]</span></code> Defined in line number 331.</div>
+<div class="line"><code class="docutils literal"><span class="pre">characters_order_2:KGBElt</span> <span class="pre">x-&gt;[vec]</span></code> Defined in line number 350.</div>
 <div class="line"><br /></div>
 <div class="line">(Auxiliary function)</div>
 <div class="line"><br /></div>
@@ -1212,7 +1219,7 @@
 <div class="section" id="all-g-spherical-same-differential">
 <span id="all-g-spherical-same-differential-k-type-p-k-type-1"></span><h2>all_G_spherical_same_differential<a class="headerlink" href="#all-g-spherical-same-differential" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">all_G_spherical_same_differential:K_Type</span> <span class="pre">p-&gt;[K_Type]</span></code> Defined in line number 351.</div>
+<div class="line"><code class="docutils literal"><span class="pre">all_G_spherical_same_differential:K_Type</span> <span class="pre">p-&gt;[K_Type]</span></code> Defined in line number 370.</div>
 <div class="line"><br /></div>
 <div class="line">All G-spherical K-types with same differential as given one.</div>
 <div class="line"><br /></div>
@@ -1221,16 +1228,16 @@
 <div class="section" id="all-g-spherical-same-differential-param-p-k-type-1">
 <span id="id12"></span><h2>all_G_spherical_same_differential<a class="headerlink" href="#all-g-spherical-same-differential-param-p-k-type-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">all_G_spherical_same_differential:Param</span> <span class="pre">p-&gt;[K_Type]</span></code> Defined in line number 368.</div>
+<div class="line"><code class="docutils literal"><span class="pre">all_G_spherical_same_differential:Param</span> <span class="pre">p-&gt;[K_Type]</span></code> Defined in line number 387.</div>
 <div class="line"><br /></div>
-<div class="line">All G-spherical K-types with same differential as LKT of parameter p</div>
+<div class="line">All G-spherical K-types with same differential as the LKT of parameter p.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="parabolic">
 <span id="parabolic-khighestweight-x-mu-parabolic1"></span><h2>parabolic<a class="headerlink" href="#parabolic" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">parabolic:KHighestWeight</span> <span class="pre">(x,mu)-&gt;Parabolic</span></code> Defined in line number 380.</div>
+<div class="line"><code class="docutils literal"><span class="pre">parabolic:KHighestWeight</span> <span class="pre">(x,mu)-&gt;Parabolic</span></code> Defined in line number 399.</div>
 <div class="line"><br /></div>
 <div class="line">Parabolic attached to KHighestWeight by Vogan algorithm.</div>
 <div class="line"><br /></div>
@@ -1239,7 +1246,7 @@
 <div class="section" id="make-strongly-dominant">
 <span id="make-strongly-dominant-khighestweight-mu-kgbelt-x-q-khighestweight1"></span><h2>make_strongly_dominant<a class="headerlink" href="#make-strongly-dominant" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_strongly_dominant:KHighestWeight</span> <span class="pre">mu,KGBElt</span> <span class="pre">x_Q-&gt;KHighestWeight</span></code> Defined in line number 395.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_strongly_dominant:KHighestWeight</span> <span class="pre">mu,KGBElt</span> <span class="pre">x_Q-&gt;KHighestWeight</span></code> Defined in line number 414.</div>
 <div class="line"><br /></div>
 <div class="line">(Auxiliary function)</div>
 <div class="line"><br /></div>
@@ -1248,7 +1255,7 @@
 <div class="section" id="k-types">
 <span id="k-types-khighestweight-mu-in-k-type-1"></span><h2>K_types<a class="headerlink" href="#k-types" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_types:KHighestWeight</span> <span class="pre">mu_in-&gt;[K_Type]</span></code> Defined in line number 403.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K_types:KHighestWeight</span> <span class="pre">mu_in-&gt;[K_Type]</span></code> Defined in line number 422.</div>
 <div class="line"><br /></div>
 <div class="line">All K_types with the same KHighestWeight.</div>
 <div class="line"><br /></div>
@@ -1257,7 +1264,7 @@
 <div class="section" id="k-type">
 <span id="k-type-khighestweight-x-mu-k-type1"></span><h2>K_type<a class="headerlink" href="#k-type" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_type:KHighestWeight(x,mu)-&gt;K_Type</span></code> Defined in line number 440.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K_type:KHighestWeight(x,mu)-&gt;K_Type</span></code> Defined in line number 459.</div>
 <div class="line"><br /></div>
 <div class="line">K_type with given KHighestWeight if unique (otherwise error).</div>
 <div class="line"><br /></div>
@@ -1266,16 +1273,16 @@
 <div class="section" id="k0-highest-weight">
 <span id="k0-highest-weight-khighestweight-x-mu-param1"></span><h2>K0_highest_weight<a class="headerlink" href="#k0-highest-weight" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K0_highest_weight:KHighestWeight(x,mu)-&gt;Param</span></code> Defined in line number 450.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K0_highest_weight:KHighestWeight(x,mu)-&gt;Param</span></code> Defined in line number 469.</div>
 <div class="line"><br /></div>
-<div class="line">Parameter for K_0 of the K_0-type with highest weight (the restriction of)    KHighestWeight mu.</div>
+<div class="line">Parameter for (the RealForm K_0) of the K_0-type with highest weight    (the restriction of) KHighestWeight mu.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="dimension">
 <span id="dimension-khighestweight-mu-int1"></span><h2>dimension<a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dimension:KHighestWeight</span> <span class="pre">mu-&gt;int</span></code> Defined in line number 458.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dimension:KHighestWeight</span> <span class="pre">mu-&gt;int</span></code> Defined in line number 477.</div>
 <div class="line"><br /></div>
 <div class="line">Dimension of the K_#-type with KHighestWeight mu.</div>
 <div class="line"><br /></div>
@@ -1284,7 +1291,7 @@
 <div class="section" id="dimension-k-type-p-int1">
 <span id="id13"></span><h2>dimension<a class="headerlink" href="#dimension-k-type-p-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dimension:K_Type</span> <span class="pre">p-&gt;int</span></code> Defined in line number 461.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dimension:K_Type</span> <span class="pre">p-&gt;int</span></code> Defined in line number 480.</div>
 <div class="line"><br /></div>
 <div class="line">Dimension of a K-type.</div>
 <div class="line"><br /></div>
@@ -1293,104 +1300,117 @@
 <div class="section" id="h-weight">
 <span id="h-weight-kgbelt-x-vec-mu-k-khighestweight1"></span><h2>H_weight<a class="headerlink" href="#h-weight" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">H_weight:KGBElt</span> <span class="pre">x,vec</span> <span class="pre">mu_K-&gt;KHighestWeight</span></code> Defined in line number 475.</div>
+<div class="line"><code class="docutils literal"><span class="pre">H_weight:KGBElt</span> <span class="pre">x,vec</span> <span class="pre">mu_K-&gt;KHighestWeight</span></code> Defined in line number 491.</div>
 <div class="line"><br /></div>
+<div class="line">(Auxiliary function)</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="fundamental-weights-k-h">
 <span id="fundamental-weights-k-h-kgbelt-x-ratvec-1"></span><h2>fundamental_weights_K_H<a class="headerlink" href="#fundamental-weights-k-h" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">fundamental_weights_K_H:KGBElt</span> <span class="pre">x-&gt;[ratvec]</span></code> Defined in line number 479.</div>
+<div class="line"><code class="docutils literal"><span class="pre">fundamental_weights_K_H:KGBElt</span> <span class="pre">x-&gt;[ratvec]</span></code> Defined in line number 496.</div>
 <div class="line"><br /></div>
+<div class="line">(Auxiliary function)</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k0-param">
 <span id="k0-param-k-type-p-kgbelt-x-k-param1"></span><h2>K0_param<a class="headerlink" href="#k0-param" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K0_param:K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;Param</span></code> Defined in line number 483.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K0_param:K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;Param</span></code> Defined in line number 502.</div>
 <div class="line"><br /></div>
+<div class="line">ONE K_0-type in the restriction of a K_type to the identity component K_0 of K    (auxiliary function).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k0-param-k-type-p-param1">
 <span id="id14"></span><h2>K0_param<a class="headerlink" href="#k0-param-k-type-p-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K0_param:K_Type</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 487.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K0_param:K_Type</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 508.</div>
 <div class="line"><br /></div>
+<div class="line">ONE K_0-type in the restriction of a K_type to the identity component K_0 of K    (auxiliary function).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k0-params">
 <span id="k0-params-param-p-kgbelt-x-k-param-1"></span><h2>K0_params<a class="headerlink" href="#k0-params" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K0_params:Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;[Param]</span></code> Defined in line number 494.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K0_params:Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;[Param]</span></code> Defined in line number 516.</div>
 <div class="line"><br /></div>
+<div class="line">All K_0-types in the restriction of the LKTs of parameter p K_0.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k0-params-param-p-param-1">
 <span id="id15"></span><h2>K0_params<a class="headerlink" href="#k0-params-param-p-param-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K0_params:Param</span> <span class="pre">p-&gt;[Param]</span></code> Defined in line number 497.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K0_params:Param</span> <span class="pre">p-&gt;[Param]</span></code> Defined in line number 521.</div>
 <div class="line"><br /></div>
+<div class="line">All K_0-types in the restriction of the LKTs of parameter p to K_0.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k0-param-param-p-kgbelt-x-k-param1">
 <span id="id16"></span><h2>K0_param<a class="headerlink" href="#k0-param-param-p-kgbelt-x-k-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K0_param:Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;Param</span></code> Defined in line number 500.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K0_param:Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;Param</span></code> Defined in line number 525.</div>
 <div class="line"><br /></div>
+<div class="line">Unique K_0-type in the restriction of (unique) LKT to K_0 (error if not unique).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k0-param-param-p-param1">
 <span id="id17"></span><h2>K0_param<a class="headerlink" href="#k0-param-param-p-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K0_param:Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 505.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K0_param:Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 531.</div>
 <div class="line"><br /></div>
+<div class="line">Unique K_0-type in the restriction of (unique) LKT to K_0 (error if not unique).</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="fundamental-weight-coordinates">
 <span id="fundamental-weight-coordinates-khighestweight-x-mu-vec1"></span><h2>fundamental_weight_coordinates<a class="headerlink" href="#fundamental-weight-coordinates" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">fundamental_weight_coordinates:KHighestWeight</span> <span class="pre">(x,mu)-&gt;vec</span></code> Defined in line number 511.</div>
+<div class="line"><code class="docutils literal"><span class="pre">fundamental_weight_coordinates:KHighestWeight</span> <span class="pre">(x,mu)-&gt;vec</span></code> Defined in line number 538.</div>
 <div class="line"><br /></div>
+<div class="line">(Auxiliary function)</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="k-highest-weight-from-fundamental-weights">
 <span id="k-highest-weight-from-fundamental-weights-kgbelt-x-vec-tau-khighestweight1"></span><h2>K_highest_weight_from_fundamental_weights<a class="headerlink" href="#k-highest-weight-from-fundamental-weights" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">K_highest_weight_from_fundamental_weights:KGBElt</span> <span class="pre">x,vec</span> <span class="pre">tau-&gt;KHighestWeight</span></code> Defined in line number 516.</div>
+<div class="line"><code class="docutils literal"><span class="pre">K_highest_weight_from_fundamental_weights:KGBElt</span> <span class="pre">x,vec</span> <span class="pre">tau-&gt;KHighestWeight</span></code> Defined in line number 544.</div>
 <div class="line"><br /></div>
+<div class="line">(Auxiliary function)</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="dimensions">
 <span id="dimensions-param-p-kgbelt-x-k-int-1"></span><h2>dimensions<a class="headerlink" href="#dimensions" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dimensions:Param</span> <span class="pre">p,</span> <span class="pre">KGBElt</span> <span class="pre">x_K-&gt;[int]</span></code> Defined in line number 524.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dimensions:Param</span> <span class="pre">p,</span> <span class="pre">KGBElt</span> <span class="pre">x_K-&gt;[int]</span></code> Defined in line number 553.</div>
 <div class="line"><br /></div>
+<div class="line">List the dimensions of the K_0-types in the restriction of the LKTs of parameter p.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="dimensions-param-p-int-1">
 <span id="id18"></span><h2>dimensions<a class="headerlink" href="#dimensions-param-p-int-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dimensions:Param</span> <span class="pre">p-&gt;[int]</span></code> Defined in line number 526.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dimensions:Param</span> <span class="pre">p-&gt;[int]</span></code> Defined in line number 557.</div>
 <div class="line"><br /></div>
+<div class="line">List the dimensions of the K_0-types in the restriction of the LKTs of parameter p.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="dimensions-param-b-int-1">
 <span id="id19"></span><h2>dimensions<a class="headerlink" href="#dimensions-param-b-int-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dimensions:[Param]</span> <span class="pre">B-&gt;[[int]]</span></code> Defined in line number 527.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dimensions:[Param]</span> <span class="pre">B-&gt;[[int]]</span></code> Defined in line number 561.</div>
 <div class="line"><br /></div>
+<div class="line">List the dimensions of the K_0-types in the restriction of the LKTs of    a list of parameters.</div>
 <div class="line"><br /></div>
 </div>
 </div>

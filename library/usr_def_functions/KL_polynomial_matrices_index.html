@@ -448,9 +448,7 @@
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="bigMatrices_index.html">bigMatrices.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="bigMatrices_ref.html">bigMatrices.at Function References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="center.html">center.at</a><ul>
@@ -768,6 +766,11 @@
 <li class="toctree-l4"><a class="reference internal" href="twist_ref.html">twist.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="Unipotent_Packets_All_Types.html">Unipotent_Packets_All_Types.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_index.html">Unipotent_Packets_All_Types.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html">Unipotent_Packets_All_Types.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="unitary.html">unitary.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="unitary_index.html">unitary.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="unitary_ref.html">unitary.at Function References</a></li>
@@ -786,6 +789,11 @@
 <li class="toctree-l3"><a class="reference internal" href="W_orbit.html">W_orbit.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_index.html">W_orbit.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_ref.html">W_orbit.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="W_Reps_Mod.html">W_Reps_Mod.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="W_Reps_Mod_index.html">W_Reps_Mod.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="W_Reps_Mod_ref.html">W_Reps_Mod.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="W_reps_type_BC.html">W_reps_type_BC.at</a><ul>
@@ -1023,41 +1031,65 @@
 <tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#cook-kl-block-alt-param-b-int-entry-elem-mat-kl-poly-polys-vec-stops-vec-surv-mat-contrib-param-int-poly-mat-vec-1"><span>cook_KL_block_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B,int</span> <span class="pre">entry_elem,mat</span> <span class="pre">KL,[poly]</span> <span class="pre">polys,vec</span> <span class="pre">stops,vec</span> <span class="pre">surv,</span> <span class="pre">mat</span> <span class="pre">contrib-&gt;([Param],int,poly_mat,vec)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#permutation-param-b1-param-b2-int-bool-1"><span>permutation</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#eval-poly-mat-m-int-k-mat1"><span>eval</span></a></td>
+<td><code class="docutils literal"><span class="pre">poly_mat</span> <span class="pre">M,int</span> <span class="pre">k-&gt;mat</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#permutation-param-b1-param-b2-int-bool-1"><span>permutation</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B1,</span> <span class="pre">[Param]</span> <span class="pre">B2-&gt;([int],bool)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-param-p-poly-mat1"><span>KL_P_polynomials</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-param-p-poly-mat1"><span>KL_P_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;poly_mat</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-at-minus-one-param-p-mat1"><span>KL_P_polynomials_at_minus_one</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;mat</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-param-p-poly-mat1"><span>KL_P_signed_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-param-b-poly-mat1"><span>KL_P_polynomials</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-at-minus-one-param-p-mat1"><span>KL_P_signed_polynomials_at_minus_one</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;mat</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-param-b-poly-mat1"><span>KL_P_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;poly_mat</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-at-minus-one-param-b-mat1"><span>KL_P_polynomials_at_minus_one</span></a></td>
+<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;mat</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-param-b-poly-mat1"><span>KL_P_signed_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-q-polynomials-param-p-poly-mat1"><span>KL_Q_polynomials</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-at-minus-one-param-b-mat1"><span>KL_P_signed_polynomials_at_minus_one</span></a></td>
+<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;mat</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-q-polynomials-param-p-poly-mat1"><span>KL_Q_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-q-polynomials-param-b-poly-mat1"><span>KL_Q_polynomials</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-q-polynomials-param-b-poly-mat1"><span>KL_Q_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#final-subset-param-b-in-for-p-in-b-do-if-is-final-p-then-rv-1"><span>final_subset</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#final-subset-param-b-in-for-p-in-b-do-if-is-final-p-then-rv-1"><span>final_subset</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;[]</span> <span class="pre">in</span> <span class="pre">for</span> <span class="pre">p</span> <span class="pre">in</span> <span class="pre">B</span> <span class="pre">do</span> <span class="pre">if</span> <span class="pre">is_final(p)</span> <span class="pre">then</span> <span class="pre">rv#</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-block-alt-param-p-mat-delta-param-int-mat-vec-vec-vec-mat-1"><span>KL_block_alt</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-block-alt-param-p-mat-delta-param-int-mat-vec-vec-vec-mat-1"><span>KL_block_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;([Param],int,mat,[vec],vec,vec,mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-param-p-mat-delta-poly-mat1"><span>KL_P_polynomials</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-param-p-mat-delta-poly-mat1"><span>KL_P_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;poly_mat</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-at-minus-one-param-p-mat-delta-mat1"><span>KL_P_polynomials_at_minus_one</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;mat</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-param-b-fixed-mat-delta-poly-mat1"><span>KL_P_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B_fixed,mat</span> <span class="pre">delta-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-param-p-mat-delta-poly-mat1"><span>KL_P_signed_polynomials</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-at-minus-one-param-b-fixed-mat-delta-mat1"><span>KL_P_polynomials_at_minus_one</span></a></td>
+<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B_fixed,mat</span> <span class="pre">delta-&gt;mat</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-param-p-mat-delta-poly-mat1"><span>KL_P_signed_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;poly_mat</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-at-minus-one-param-p-mat-delta-mat1"><span>KL_P_signed_polynomials_at_minus_one</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;mat</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-alt-param-b-mat-delta-poly-mat1"><span>KL_P_polynomials_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;poly_mat</span></code></td>
@@ -1065,19 +1097,22 @@
 <tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-param-b-mat-delta-poly-mat1"><span>KL_P_signed_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-q-polynomials-param-p-poly-mat2"><span>KL_Q_polynomials</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-at-minus-one-param-b-mat-delta-mat1"><span>KL_P_signed_polynomials_at_minus_one</span></a></td>
+<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B,mat</span> <span class="pre">delta-&gt;mat</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-q-polynomials-param-p-poly-mat2"><span>KL_Q_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-q-polynomials-param-b-poly-mat2"><span>KL_Q_polynomials</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-q-polynomials-param-b-poly-mat2"><span>KL_Q_polynomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-old-param-p-poly-mat1"><span>KL_P_polynomials_old</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-old-param-p-poly-mat1"><span>KL_P_polynomials_old</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;poly_mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-old-param-b-fixed-mat-delta-poly-1"><span>KL_P_polynomials_old</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-polynomials-old-param-b-fixed-mat-delta-poly-1"><span>KL_P_polynomials_old</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B_fixed,mat</span> <span class="pre">delta-&gt;[[poly]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-old-param-b-fixed-mat-delta-poly-1"><span>KL_P_signed_polynomials_old</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="KL_polynomial_matrices_ref.html#kl-p-signed-polynomials-old-param-b-fixed-mat-delta-poly-1"><span>KL_P_signed_polynomials_old</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B_fixed,mat</span> <span class="pre">delta-&gt;[[poly]]</span></code></td>
 </tr>
 </tbody>

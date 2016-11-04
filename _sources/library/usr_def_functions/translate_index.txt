@@ -42,7 +42,3 @@ Functions
      - ``Param p->[int]``
    * - :ref:`make_maximally_singular_param_p->param1`
      - ``Param p->Param``
-   * - :ref:`test_even_unipotent_param_p->void1`
-     - ``Param p->void``
-   * - :ref:`test_even_unipotent_[param]_params->void1`
-     - ``[Param] params->void``

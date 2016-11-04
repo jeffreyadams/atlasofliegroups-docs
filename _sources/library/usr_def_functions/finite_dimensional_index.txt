@@ -28,5 +28,3 @@ Functions
      - ``Param p->vec``
    * - :ref:`complex_lkt_param_p->vec1`
      - ``Param p->vec``
-   * - :ref:`testcomplex_realform_g->void1`
-     - ``RealForm G->void``

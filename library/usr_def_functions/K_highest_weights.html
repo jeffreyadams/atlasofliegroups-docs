@@ -448,9 +448,7 @@
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="bigMatrices_index.html">bigMatrices.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="bigMatrices_ref.html">bigMatrices.at Function References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bigMatrices.html">bigMatrices.at</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="center.html">center.at</a><ul>
@@ -768,6 +766,11 @@
 <li class="toctree-l4"><a class="reference internal" href="twist_ref.html">twist.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="Unipotent_Packets_All_Types.html">Unipotent_Packets_All_Types.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_index.html">Unipotent_Packets_All_Types.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html">Unipotent_Packets_All_Types.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="unitary.html">unitary.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="unitary_index.html">unitary.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="unitary_ref.html">unitary.at Function References</a></li>
@@ -786,6 +789,11 @@
 <li class="toctree-l3"><a class="reference internal" href="W_orbit.html">W_orbit.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_index.html">W_orbit.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="W_orbit_ref.html">W_orbit.at Function References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="W_Reps_Mod.html">W_Reps_Mod.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="W_Reps_Mod_index.html">W_Reps_Mod.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="W_Reps_Mod_ref.html">W_Reps_Mod.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="W_reps_type_BC.html">W_reps_type_BC.at</a><ul>
@@ -999,32 +1007,43 @@
 <span id="id1"></span><h1>K_highest_weights.at<a class="headerlink" href="#k-highest-weights-at" title="Permalink to this headline">¶</a></h1>
 <p>Functions involving K-types (final tempered limit parameters) and K-highest weights.
 The main reference is Vogan, &#8220;Branching to a Maximal Compact Subgroup&#8221; [KHatHowe].
-See also the notes on &#8220;K-types in atlas&#8221;.</p>
-<p>The main functions are</p>
-<p>(x,lambda) -&gt; {(x_K,mu)} multivalued,
-(x_K,mu) is one value, then take the R(K)-orbit &lt;-&gt; R(K)/R(K,mu)</p>
-<p>algorithm:
-1) if G is relatively split, Cartan is (relatively) split, all roots in the
-tau-invariant,
-this is the &#8220;G-spherical&#8221; case of KHatHowe, section 8
-2) if p is final standard limit tempered, it has a unique LKT,
-use theta_stable_data to write p as cohomologically induced from a
-relatively split L
-3) apply 2) to all terms of finalize(p*0)</p>
-<p>project vector mu on dominant cone (spanned by fundamental coweights)
-algorithm from KHatHowe Section 13, modification of BGB Proposition 5.3.3
-used in map from highest weights to LKT below</p>
-<p>This is the Vogan algorithm, version in khatHowe Section 13,
-which is a slight modification of BGB Proposition 5.3.3
-given (x,mu) -&gt; mu+2rho_K(x) -&gt;
-choose positive chamber for G -&gt; mu+2rho_K(x)-rho
-project on given dominant chamber
-returns (x,mu+2rho_K(x)-rho,tau) where tau is dominant
-need the second argument for the modified Vogan algorithm</p>
+See also the notes on &#8220;K-types in atlas&#8221; in dropbox.</p>
+<p>The main functions are:</p>
+<p>1) highest_weights: Given a K_type tau=(x,lambda), find all K-highest weights
+corresponding to the K_#-types in the restriction of tau.</p>
+<p>(x,lambda) -&gt; {(x_K,mu)} multivalued; find one value (x_K,mu) is one value, then
+take the R(K)-orbit &lt;-&gt; R(K)/R(K,mu) K-highest weights.</p>
+<p>Algorithm:</p>
+<p>i) If G is relatively split, Cartan is (relatively) split, all roots in the
+tau-invariant, this is the &#8220;G-spherical&#8221; case of KHatHowe, section 8</p>
+<p>ii) if p is final standard limit tempered, it has a unique LKT,
+use theta_stable_data (see induction.at) to write p as cohomologically induced
+from a relatively split L</p>
+<ol class="lowerroman simple" start="3">
+<li>Apply ii) to all terms of finalize(p*0)</li>
+</ol>
+<p>2) K_types: Given a KHighestWeight mu=(x,kappa), find all K_types containing
+the corresponding K_#-type.</p>
+<p>mu=(x_K,kappa) -&gt; {(x,lambda)} multivalued; find <span class="math">\(\theta\)</span> -stable data
+(Q=LU,p_L=(x_L,lambda_L,0)) for one K-type tau first, then
+compute all (L-spherical) (Lcap K)-types p_L&#8217;=(x_L,lambda_L&#8217;)
+with the same infinitesimal character. There will be
+<a href="#id4"><span class="problematic" id="id5">|R(K,mu)|</span></a> of them (the cardinality of the stabilizer of mu in the
+R-group of K).</p>
+<p>Algorithm:</p>
+<p>This is the Vogan algorithm, version in [KHatHowe] Section 13, a
+slight modification of Vogan&#8217;s Big Green Book Prop. 5.3.3.</p>
+<p>Given (x_K,kappa) -&gt; kappa+2rho_K(x_K), choose positive chamber for G
+-&gt; kappa+2rho_K(x_K)-rho <span class="math">\(; project on the given dominant Weyl chamber -&gt; xi;
+then the simple roots contributing to difference between xi and
+kappa +2rho_K-rho determine the ` \theta :math:\)</span>-stable parabolic Q=LU that is
+part of the ` theta :math:<a href="#id2"><span class="problematic" id="id3">`</span></a>-stable data for tau=(x,lambda). The parameter for
+(relatively split) L is obtained from xi by a ` rho$-shift.</p>
 <p><strong>This script imported the following .at files:</strong></p>
 <div class="line-block">
 <div class="line"><a class="reference internal" href="W_K.html#w-k-at"><span>W_K.at</span></a></div>
 <div class="line"><a class="reference internal" href="thetastable.html#thetastable-at"><span>thetastable.at</span></a></div>
+<div class="line"><a class="reference internal" href="representations.html#representations-at"><span>representations.at</span></a></div>
 <div class="line"><br /></div>
 </div>
 <div class="toctree-wrapper compound">

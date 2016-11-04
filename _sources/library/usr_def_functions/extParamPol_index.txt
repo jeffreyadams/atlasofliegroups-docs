@@ -34,7 +34,11 @@ Functions
      - ``RealForm G->ExtParamPol``
    * - :ref:`find_[(int,int)]_complete_indices,(int,int)_pair->int:first(#complete_indices,(int_i)bool1`
      - ``[(int,int)] complete_indices,(int,int) pair->int:first(#complete_indices,(int i)bool``
-   * - :ref:`deform_param_p,_mat_delta,_int_type->extparampol1`
+   * - :ref:`deform_unreduced_param_p,_mat_delta,_int_sign->extparampol1`
+     - ``Param p, mat delta, int sign->ExtParamPol``
+   * - :ref:`deform_param_p,mat_delta,_int_type->extparampol1`
+     - ``Param p,mat delta, int type->ExtParamPol``
+   * - :ref:`deform_old_param_p,_mat_delta,_int_type->extparampol1`
      - ``Param p, mat delta, int type->ExtParamPol``
    * - :ref:`deform_extparam_e,_mat_delta->extparampol1`
      - ``ExtParam E, mat delta->ExtParamPol``
@@ -42,8 +46,8 @@ Functions
      - ``Param p, rat factor, int type->ExtParamPol``
    * - :ref:`\%_ExtParamPol_P->[(Split,Param,int)]1`
      - ``ExtParamPol P->[(Split,Param,int)]``
-   * - :ref:`recursive_deform_param_p,_mat_delta,_int_type->extparampol1`
-     - ``Param p, mat delta, int type->ExtParamPol``
+   * - :ref:`recursive_deform_param_p,_mat_delta,_int_type_p->extparampol1`
+     - ``Param p, mat delta, int type_p->ExtParamPol``
    * - :ref:`print_extended_character_formula_param_p,[param]_b,mat_delta->void1`
      - ``Param p,[Param] B,mat delta->void``
    * - :ref:`print_extended_character_formula_param_p,mat_delta->void1`
@@ -56,26 +60,20 @@ Functions
      - ``[Param] B,mat delta->void``
    * - :ref:`character_formula_param_p,mat_delta->extparampol1`
      - ``Param p,mat delta->ExtParamPol``
-   * - :ref:`c_form_irreducible_long_param_p,mat_delta,_int_type->(extparampol,[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],extparampol)1`
+   * - :ref:`c_form_irreducible_big_long_param_p,mat_delta,_int_type->(extparampol,[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],extparampol)1`
      - ``Param p,mat delta, int type->(ExtParamPol,[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],ExtParamPol)``
-   * - :ref:`print_c_form_irreducible_long_extparampol_cf,_[((split,param),extparampol)]_plus,[((split,param),extparampol)]_minus,[((split,param),extparampol)]_induced,extparampol_answer->void1`
+   * - :ref:`print_c_form_irreducible_big_long_extparampol_cf,_[((split,param),extparampol)]_plus,[((split,param),extparampol)]_minus,[((split,param),extparampol)]_induced,extparampol_answer->void1`
      - ``ExtParamPol cf, [((Split,Param),ExtParamPol)] plus,[((Split,Param),ExtParamPol)] minus,[((Split,Param),ExtParamPol)] induced,ExtParamPol answer->void``
-   * - :ref:`print_c_form_irreducible_long_param_p,mat_delta,_int_type->void1`
+   * - :ref:`print_c_form_irreducible_big_long_param_p,mat_delta,_int_type->void1`
      - ``Param p,mat delta, int type->void``
-   * - :ref:`lambda_plus_rho_res_t_kgbelt_x,ratvec_lambda->ratvec1`
-     - ``KGBElt x,ratvec lambda->ratvec``
-   * - :ref:`mu_param_p->rat1`
-     - ``Param p->rat``
-   * - :ref:`mu_param_p,mat_delta->rat1`
-     - ``Param p,mat delta->rat``
-   * - :ref:`convert_cform_hermitian_parampol_p,mat_delta->parampol1`
-     - ``ParamPol P,mat delta->ParamPol``
-   * - :ref:`hermitian_form_irreducible_param_p,mat_delta->parampol1`
-     - ``Param p,mat delta->ParamPol``
-   * - :ref:`print_hermitian_form_irreducible_param_p,mat_delta->void1`
-     - ``Param p,mat delta->void``
-   * - :ref:`print_hermitian_form_irreducible_[param]_p,mat_delta->void1`
-     - ``[Param] P,mat delta->void``
+   * - :ref:`hermitian_form_irreducible_big_param_p->parampol1`
+     - ``Param p->ParamPol``
+   * - :ref:`is_unitary_big_param_p->bool1`
+     - ``Param p->bool``
+   * - :ref:`print_is_unitary_big_param_p->void1`
+     - ``Param p->void``
+   * - :ref:`is_weakly_unitary_big_param_p->bool1`
+     - ``Param p->bool``
 
 
 Data Types

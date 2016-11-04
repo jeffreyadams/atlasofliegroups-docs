@@ -11,7 +11,6 @@ all.at
 | :ref:`extParamPol.at<extParamPol.at>`
 | :ref:`K_types.at<K_types.at>`
 | :ref:`complex_nilpotent_orbits.at<complex_nilpotent_orbits.at>`
-| :ref:`wreps_type_C.at<wreps_type_C.at>`
 | :ref:`complex.at<complex.at>`
 | :ref:`test_unitarity.at<test_unitarity.at>`
 | :ref:`conjugacy_classes.at<conjugacy_classes.at>`

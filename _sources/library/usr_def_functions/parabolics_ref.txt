@@ -504,7 +504,7 @@ Parabolic
 ----------------------------------------
 | ``([int], KGBElt)`` Defined in line number 55.
 | 
-| Data type for a K_orbit on G/P_S (synonym for KGPElt)
+| Data type for a K_orbit on G/P_S (synonym for KGPElt).
 | 
 
 .. _ComplexParabolic1:

@@ -8,7 +8,7 @@ test_unitarity.at Function References
 
 test
 -------------------------------------------------
-| ``test:[(Param,bool)] parameters->bool`` Defined in line number 20.
+| ``test:[(Param,bool)] parameters->bool`` Defined in line number 23.
 | 
 | 
 
@@ -16,7 +16,7 @@ test
 
 test
 -------------------------------------------------
-| ``test:[Param] parameters->bool`` Defined in line number 63.
+| ``test:[Param] parameters->bool`` Defined in line number 66.
 | 
 | 
 
@@ -24,7 +24,7 @@ test
 
 spherical_unipotent
 -------------------------------------------------
-| ``spherical_unipotent:RealForm G->[Param]`` Defined in line number 81.
+| ``spherical_unipotent:RealForm G->[Param]`` Defined in line number 84.
 | 
 | 
 
@@ -32,7 +32,7 @@ spherical_unipotent
 
 test7
 -------------------------------------------------
-| ``test7:->bool`` Defined in line number 103.
+| ``test7:->bool`` Defined in line number 106.
 | 
 | 
 
@@ -40,7 +40,7 @@ test7
 
 test8
 -------------------------------------------------
-| ``test8:->bool`` Defined in line number 108.
+| ``test8:->bool`` Defined in line number 111.
 | 
 | 
 
@@ -48,7 +48,7 @@ test8
 
 test9
 -------------------------------------------------
-| ``test9:->bool`` Defined in line number 112.
+| ``test9:->bool`` Defined in line number 115.
 | 
 | 
 
