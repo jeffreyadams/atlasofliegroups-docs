@@ -9,7 +9,7 @@ space`` parametrizes both, the irreducible representations of a
 reductive algebraic group as well as the standard modules. In other
 words, for each ``p`` in the ``parameter space`` there are an
 irreducible module $J(p)$ and a standard module $I(p)$ associated
-to ``p``. Namely :math:'I(p)` is a representation induced from a limit of
+to ``p``. Namely $I(p)$ is a representation induced from a limit of
 discrete series and things are set up, following Langlands
 classification, so that this standard module has a unique
 irrudicible quotient $J(p)$. This quotient is also parametrized by the same
