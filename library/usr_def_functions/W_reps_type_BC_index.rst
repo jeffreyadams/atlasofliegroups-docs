@@ -60,41 +60,41 @@ Functions
      - ``RootDatum rd->[Symbol]``
    * - :ref:`wreps_rootdatum_rd->[wrep]1`
      - ``RootDatum rd->[Wrep]``
-   * - :ref:`cut_off_string_[int]_v->(int,[int])1`
+   * - :ref:`cut_off_string_[int]_v->(int,[int])2`
      - ``[int] v->(int,[int])``
-   * - :ref:`cut_off_last_string_[int]_v->(int,[int])1`
+   * - :ref:`cut_off_last_string_[int]_v->(int,[int])2`
      - ``[int] v->(int,[int])``
-   * - :ref:`extract_strings_[int]_v->[int]1`
+   * - :ref:`extract_strings_[int]_v->[int]2`
      - ``[int] v->[int]``
-   * - :ref:`a_levi_factor_int_rank,_[int]_tau->[int]1`
+   * - :ref:`a_levi_factor_int_rank,_[int]_tau->[int]2`
      - ``int rank, [int] tau->[int]``
-   * - :ref:`ac_levi_factor_int_rank,_[int]_tau->(int,[int])1`
+   * - :ref:`ac_levi_factor_int_rank,_[int]_tau->(int,[int])2`
      - ``int rank, [int] tau->(int,[int])``
-   * - :ref:`is_max_[[int]]_taus,[int]_tau->bool1`
+   * - :ref:`is_max_[[int]]_taus,[int]_tau->bool2`
      - ``[[int]] taus,[int] tau->bool``
-   * - :ref:`max_only_[[int]]_taus->[[int]]1`
+   * - :ref:`max_only_[[int]]_taus->[[int]]2`
      - ``[[int]] taus->[[int]]``
-   * - :ref:`levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])1`
+   * - :ref:`levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])2`
      - ``int rank,[[int]] tau_invariants->([[int]],[(int,[int])])``
-   * - :ref:`max_first_entry_[[int]]_v->int1`
+   * - :ref:`max_first_entry_[[int]]_v->int2`
      - ``[[int]] v->int``
-   * - :ref:`keep_by_first_entry_[[int]]_v,int_k->[[int]]1`
+   * - :ref:`keep_by_first_entry_[[int]]_v,int_k->[[int]]2`
      - ``[[int]] v,int k->[[int]]``
-   * - :ref:`keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]1`
+   * - :ref:`keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]2`
      - ``[[int]] v,int k->[[int]]``
-   * - :ref:`max_tagged_entry_[(int,[int])]_v->int1`
+   * - :ref:`max_tagged_entry_[(int,[int])]_v->int2`
      - ``[(int,[int])] v->int``
-   * - :ref:`keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]1`
-     - ``[(int,[int])] v,int k->[(int,[int])]``
    * - :ref:`keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]2`
      - ``[(int,[int])] v,int k->[(int,[int])]``
-   * - :ref:`keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]1`
+   * - :ref:`keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]3`
      - ``[(int,[int])] v,int k->[(int,[int])]``
-   * - :ref:`wrep_int_rank,[[int]]_tau_invariants->wrep1`
+   * - :ref:`keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]2`
+     - ``[(int,[int])] v,int k->[(int,[int])]``
+   * - :ref:`wrep_int_rank,[[int]]_tau_invariants->wrep2`
      - ``int rank,[[int]] tau_invariants->Wrep``
-   * - :ref:`wrep_block_b,[int]_cell->wrep1`
+   * - :ref:`wrep_block_b,[int]_cell->wrep2`
      - ``Block B,[int] cell->Wrep``
-   * - :ref:`wreps_block_b,[[int]]_cells->[wrep]1`
+   * - :ref:`wreps_block_b,[[int]]_cells->[wrep]2`
      - ``Block B,[[int]] cells->[Wrep]``
    * - :ref:`print_wreps_cpt_block_b,[[int]]_cells->void1`
      - ``Block B,[[int]] cells->void``
@@ -112,9 +112,9 @@ Data Types
 
    * - Data Type Name
      - Definition
-   * - :ref:`Orbit1`
+   * - :ref:`Orbit2`
      - ``[int]``
-   * - :ref:`Symbol1`
+   * - :ref:`Symbol2`
      - ``[[int]]``
-   * - :ref:`Wrep1`
+   * - :ref:`Wrep2`
      - ``([int],[int])``

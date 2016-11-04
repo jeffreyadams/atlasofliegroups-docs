@@ -304,6 +304,8 @@ Functions
      - ``Split x->int``
    * - :ref:`\%_split_x,_int_n->(split,split)1`
      - ``Split x, int n->(Split,Split)``
+   * - :ref:`is_pure_split_w->bool1`
+     - ``Split w->bool``
    * - :ref:`split_format_split_w->string1`
      - ``Split w->string``
    * - :ref:`root_datum_[vec]_simple_roots,_[vec]_simple_coroots,_int_r->rootdatum1`
@@ -748,6 +750,10 @@ Functions
      - ``ParamPol P->ratvec``
    * - :ref:`separate_by_infinitesimal_character_parampol_p->[(ratvec,parampol)]1`
      - ``ParamPol P->[(ratvec,ParamPol)]``
+   * - :ref:`is_pure_parampol_p->bool1`
+     - ``ParamPol P->bool``
+   * - :ref:`purity_parampol_p->(int,int,int)1`
+     - ``ParamPol P->(int,int,int)``
    * - :ref:`find_[int]_v,_int_k->int:______first(#v,(int_i)bool1`
      - ``[int] v, int k->int:      first(#v,(int i)bool``
    * - :ref:`find_[param]_p,param_p->int:___first(#p,(int_i)bool1`

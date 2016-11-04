@@ -10,7 +10,6 @@ finite_dimensional.at
 
 | :ref:`basic.at<basic.at>`
 | :ref:`Weylgroup.at<Weylgroup.at>`
-| :ref:`hermitian.at<hermitian.at>`
 |
 
 

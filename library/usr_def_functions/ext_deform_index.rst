@@ -28,10 +28,6 @@ Functions
      - ``[Param] B_fixed,mat delta->[[poly]]``
    * - :ref:`kl_q_polynomials_[param]_b_fixed,_mat_delta->[[poly]]1`
      - ``[Param] B_fixed, mat delta->[[poly]]``
-   * - :ref:`deform_param_p,_mat_delta->parampol1`
-     - ``Param p, mat delta->ParamPol``
-   * - :ref:`rec_def_param_p,mat_delta->(param,parampol)1`
-     - ``Param p,mat delta->(Param,ParamPol)``
    * - :ref:`deformation_terms_param_p,_mat_delta->parampol1`
      - ``Param p, mat delta->ParamPol``
    * - :ref:`recursive_deform_param_p,_mat_delta->parampol1`

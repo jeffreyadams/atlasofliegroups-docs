@@ -276,6 +276,14 @@ is_non_negative
 | 
 | 
 
+.. _principal_minor_poly_mat_m,int_size->poly_mat1:
+
+principal_minor
+-------------------------------------------------
+| ``principal_minor:poly_mat M,int size->poly_mat`` Defined in line number 225.
+| 
+| 
+
 .. _poly1:
 
 poly

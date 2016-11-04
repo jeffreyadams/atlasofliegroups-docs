@@ -10,6 +10,7 @@ extParamPol.at
 
 | :ref:`bigMatrices.at<bigMatrices.at>`
 | :ref:`thetastable.at<thetastable.at>`
+| :ref:`hermitian.at<hermitian.at>`
 |
 
 

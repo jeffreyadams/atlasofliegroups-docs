@@ -188,7 +188,7 @@ cut_off_string
 | 
 | 
 
-.. _cut_off_last_string_[int]_v->(int,[int])2:
+.. _cut_off_last_string_[int]_v->(int,[int])3:
 
 cut_off_last_string
 -------------------------------------------------
@@ -196,7 +196,7 @@ cut_off_last_string
 | 
 | 
 
-.. _extract_strings_[int]_v->[int]2:
+.. _extract_strings_[int]_v->[int]3:
 
 extract_strings
 -------------------------------------------------
@@ -204,7 +204,7 @@ extract_strings
 | 
 | 
 
-.. _a_levi_factor_int_rank,_[int]_tau->[int]2:
+.. _a_levi_factor_int_rank,_[int]_tau->[int]3:
 
 A_Levi_factor
 -------------------------------------------------
@@ -212,7 +212,7 @@ A_Levi_factor
 | 
 | 
 
-.. _ac_levi_factor_int_rank,_[int]_tau->(int,[int])2:
+.. _ac_levi_factor_int_rank,_[int]_tau->(int,[int])3:
 
 AC_Levi_factor
 -------------------------------------------------
@@ -220,7 +220,7 @@ AC_Levi_factor
 | 
 | 
 
-.. _is_max_[[int]]_taus,[int]_tau->bool2:
+.. _is_max_[[int]]_taus,[int]_tau->bool3:
 
 is_max
 -------------------------------------------------
@@ -228,7 +228,7 @@ is_max
 | 
 | 
 
-.. _max_only_[[int]]_taus->[[int]]2:
+.. _max_only_[[int]]_taus->[[int]]3:
 
 max_only
 -------------------------------------------------
@@ -236,7 +236,7 @@ max_only
 | 
 | 
 
-.. _levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])2:
+.. _levi_signature_int_rank,[[int]]_tau_invariants->([[int]],[(int,[int])])3:
 
 Levi_signature
 -------------------------------------------------
@@ -244,7 +244,7 @@ Levi_signature
 | 
 | 
 
-.. _max_first_entry_[[int]]_v->int2:
+.. _max_first_entry_[[int]]_v->int3:
 
 max_first_entry
 -------------------------------------------------
@@ -252,7 +252,7 @@ max_first_entry
 | 
 | 
 
-.. _keep_by_first_entry_[[int]]_v,int_k->[[int]]2:
+.. _keep_by_first_entry_[[int]]_v,int_k->[[int]]3:
 
 keep_by_first_entry
 -------------------------------------------------
@@ -260,7 +260,7 @@ keep_by_first_entry
 | 
 | 
 
-.. _keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]2:
+.. _keep_by_first_entry_and_truncate_[[int]]_v,int_k->[[int]]3:
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
@@ -268,7 +268,7 @@ keep_by_first_entry_and_truncate
 | 
 | 
 
-.. _max_tagged_entry_[(int,[int])]_v->int2:
+.. _max_tagged_entry_[(int,[int])]_v->int3:
 
 max_tagged_entry
 -------------------------------------------------
@@ -276,7 +276,7 @@ max_tagged_entry
 | 
 | 
 
-.. _keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]3:
+.. _keep_by_first_entry_[(int,[int])]_v,int_k->[(int,[int])]4:
 
 keep_by_first_entry
 -------------------------------------------------
@@ -284,7 +284,7 @@ keep_by_first_entry
 | 
 | 
 
-.. _keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]2:
+.. _keep_by_first_entry_and_truncate_[(int,[int])]_v,int_k->[(int,[int])]3:
 
 keep_by_first_entry_and_truncate
 -------------------------------------------------
@@ -292,7 +292,7 @@ keep_by_first_entry_and_truncate
 | 
 | 
 
-.. _wrep_int_rank,[[int]]_tau_invariants->wrep2:
+.. _wrep_int_rank,[[int]]_tau_invariants->wrep3:
 
 wrep
 -------------------------------------------------
@@ -300,7 +300,7 @@ wrep
 | 
 | 
 
-.. _wrep_block_b,[int]_cell->wrep2:
+.. _wrep_block_b,[int]_cell->wrep3:
 
 wrep
 -------------------------------------------------
@@ -308,7 +308,7 @@ wrep
 | 
 | 
 
-.. _wreps_block_b,[[int]]_cells->[wrep]2:
+.. _wreps_block_b,[[int]]_cells->[wrep]3:
 
 wreps
 -------------------------------------------------
@@ -332,7 +332,7 @@ print_wreps
 | 
 | 
 
-.. _Orbit2:
+.. _Orbit3:
 
 Orbit
 -----------------------------------------
@@ -340,7 +340,7 @@ Orbit
 | 
 | 
 
-.. _Symbol2:
+.. _Symbol3:
 
 Symbol
 -----------------------------------------
@@ -348,7 +348,7 @@ Symbol
 | 
 | 
 
-.. _Wrep2:
+.. _Wrep3:
 
 Wrep
 -----------------------------------------

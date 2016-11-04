@@ -60,27 +60,11 @@ KL_Q_polynomials
 | 
 | 
 
-.. _deform_param_p,_mat_delta->parampol1:
-
-deform
--------------------------------------------------
-| ``deform:Param p, mat delta->ParamPol`` Defined in line number 87.
-| 
-| 
-
-.. _rec_def_param_p,mat_delta->(param,parampol)1:
-
-rec_def
--------------------------------------------------
-| ``rec_def:Param p,mat delta->(Param,ParamPol)`` Defined in line number 134.
-| 
-| 
-
 .. _deformation_terms_param_p,_mat_delta->parampol1:
 
 deformation_terms
 -------------------------------------------------
-| ``deformation_terms:Param p, mat delta->ParamPol`` Defined in line number 172.
+| ``deformation_terms:Param p, mat delta->ParamPol`` Defined in line number 87.
 | 
 | 
 
@@ -88,7 +72,7 @@ deformation_terms
 
 recursive_deform
 -------------------------------------------------
-| ``recursive_deform:Param p, mat delta->ParamPol`` Defined in line number 201.
+| ``recursive_deform:Param p, mat delta->ParamPol`` Defined in line number 119.
 | 
 | 
 
@@ -96,7 +80,7 @@ recursive_deform
 
 c_form_std
 -------------------------------------------------
-| ``c_form_std:Param p,mat delta->ParamPol`` Defined in line number 254.
+| ``c_form_std:Param p,mat delta->ParamPol`` Defined in line number 171.
 | 
 | 
 
