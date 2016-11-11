@@ -44,9 +44,5 @@ Functions
      - ``RealForm G->RealForm``
    * - :ref:`adjoint_realform_g->realform1`
      - ``RealForm G->RealForm``
-   * - :ref:`is_equal_rank_innerclass_g->bool1`
-     - ``InnerClass G->bool``
-   * - :ref:`is_split_realform_g->bool1`
-     - ``RealForm G->bool``
    * - :ref:`is_relatively_split_realform_g->bool1`
      - ``RealForm G->bool``

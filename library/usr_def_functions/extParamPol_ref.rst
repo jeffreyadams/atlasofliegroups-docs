@@ -96,7 +96,7 @@ deform_unreduced
 
 deform
 -------------------------------------------------
-| ``deform:Param p,mat delta, int type->ExtParamPol`` Defined in line number 86.
+| ``deform:Param p,mat delta, int type->ExtParamPol`` Defined in line number 87.
 | 
 | 
 
@@ -160,7 +160,7 @@ print_extended_character_formula
 
 print_extended_composition_series
 -------------------------------------------------
-| ``print_extended_composition_series:Param p,[Param] B,mat delta->void`` Defined in line number 215.
+| ``print_extended_composition_series:Param p,[Param] B,mat delta->void`` Defined in line number 214.
 | 
 | 
 
@@ -168,7 +168,7 @@ print_extended_composition_series
 
 print_extended_composition_series
 -------------------------------------------------
-| ``print_extended_composition_series:Param p,mat delta->void`` Defined in line number 223.
+| ``print_extended_composition_series:Param p,mat delta->void`` Defined in line number 222.
 | 
 | 
 
@@ -176,7 +176,7 @@ print_extended_composition_series
 
 print_extended_indices
 -------------------------------------------------
-| ``print_extended_indices:[Param] B,mat delta->void`` Defined in line number 225.
+| ``print_extended_indices:[Param] B,mat delta->void`` Defined in line number 224.
 | 
 | 
 
@@ -184,7 +184,7 @@ print_extended_indices
 
 character_formula
 -------------------------------------------------
-| ``character_formula:Param p,mat delta->ExtParamPol`` Defined in line number 230.
+| ``character_formula:Param p,mat delta->ExtParamPol`` Defined in line number 229.
 | 
 | 
 

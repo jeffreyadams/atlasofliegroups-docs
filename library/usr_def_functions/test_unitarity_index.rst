@@ -18,8 +18,8 @@ Functions
      - ``[(Param,bool)] parameters->bool``
    * - :ref:`test_[param]_parameters->bool1`
      - ``[Param] parameters->bool``
-   * - :ref:`spherical_unipotent_realform_g->[param]1`
-     - ``RealForm G->[Param]``
+   * - :ref:`test_spherical_unipotent_realform_g->void1`
+     - ``RealForm G->void``
    * - :ref:`test7_->bool1`
      - ``->bool``
    * - :ref:`test8_->bool1`

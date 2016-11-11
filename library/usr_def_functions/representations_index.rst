@@ -36,6 +36,8 @@ Functions
      - ``RealForm G,ratvec nu->Param``
    * - :ref:`minimal_spherical_principal_series_realform_g->param1`
      - ``RealForm G->Param``
+   * - :ref:`spherical_unipotent_representations_realform_g->[param]1`
+     - ``RealForm G->[Param]``
    * - :ref:`hc_parameter_param_p,kgbelt_x_b->ratvec1`
      - ``Param p,KGBElt x_b->ratvec``
    * - :ref:`hc_parameter_param_p->ratvec1`

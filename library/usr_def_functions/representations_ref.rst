@@ -92,11 +92,19 @@ minimal_spherical_principal_series
 | 
 | 
 
+.. _spherical_unipotent_representations_realform_g->[param]1:
+
+spherical_unipotent_representations
+-------------------------------------------------
+| ``spherical_unipotent_representations:RealForm G->[Param]`` Defined in line number 55.
+| 
+| 
+
 .. _hc_parameter_param_p,kgbelt_x_b->ratvec1:
 
 hc_parameter
 -------------------------------------------------
-| ``hc_parameter:Param p,KGBElt x_b->ratvec`` Defined in line number 55.
+| ``hc_parameter:Param p,KGBElt x_b->ratvec`` Defined in line number 77.
 | 
 | 
 
@@ -104,7 +112,7 @@ hc_parameter
 
 hc_parameter
 -------------------------------------------------
-| ``hc_parameter:Param p->ratvec`` Defined in line number 64.
+| ``hc_parameter:Param p->ratvec`` Defined in line number 86.
 | 
 | 
 
@@ -112,7 +120,7 @@ hc_parameter
 
 discrete_series
 -------------------------------------------------
-| ``discrete_series:KGBElt x,ratvec lambda->Param`` Defined in line number 68.
+| ``discrete_series:KGBElt x,ratvec lambda->Param`` Defined in line number 90.
 | 
 | 
 
@@ -120,7 +128,7 @@ discrete_series
 
 discrete_series
 -------------------------------------------------
-| ``discrete_series:RealForm G,ratvec lambda->Param`` Defined in line number 77.
+| ``discrete_series:RealForm G,ratvec lambda->Param`` Defined in line number 99.
 | 
 | 
 

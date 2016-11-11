@@ -80,8 +80,6 @@ Functions
      - ``int k->poly``
    * - :ref:`divide_by_int_k,poly_v->poly1`
      - ``int k,poly v->poly``
-   * - :ref:`is_non_negative_poly_v->bool1`
-     - ``poly v->bool``
    * - :ref:`principal_minor_poly_mat_m,int_size->poly_mat1`
      - ``poly_mat M,int size->poly_mat``
 

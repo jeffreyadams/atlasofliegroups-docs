@@ -109,7 +109,7 @@ highest_weights
 -------------------------------------------------
 | ``highest_weights:K_Type p->[KHighestWeight]`` Defined in line number 197.
 | 
-| All highest weights of a K-type; R-group acts on one KHighestWeight of    previous function (number of terms is \|R(K)/R(K,mu)\|).
+| All highest weights of a K-type; R-group acts on one KHighestWeight of    previous function (number of terms is |R(K)/R(K,mu)|).
 | 
 
 .. _highest_weights_k_type_p,kgbelt_x_k->[khighestweight]1:

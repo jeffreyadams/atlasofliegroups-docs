@@ -13,7 +13,7 @@ The main functions are:
 corresponding to the K_#-types in the restriction of tau.
 
 (x,lambda) -> {(x_K,mu)} multivalued; find one value (x_K,mu), then
-take the R(K)-orbit <-> \|R(K)/R(K,mu)\| K-highest weights. Here R(K,mu) is
+take the R(K)-orbit <-> |R(K)/R(K,mu)| K-highest weights. Here R(K,mu) is
 the stabilizer of mu in the R-group R(K) of K.
 
 Algorithm:
@@ -33,9 +33,9 @@ the corresponding K_#-type.
 
 (x_K,mu) -> {tau=(x,lambda)} multivalued; find :math:`\theta` -stable data
 (Q=LU,p_L=(x_L,lambda_L,0)) for one K-type tau first, then
-compute all (L-spherical) (L\cap K)-types p_L'=(x_L,lambda_L')
+compute all (L-spherical) :math:`(L\cap K)` -types p_L'=(x_L,lambda_L')
 with the same infinitesimal character. There will be
-\|R(K,mu)\| of them.
+|R(K,mu)| of them.
 
 Algorithm:
 
@@ -47,7 +47,7 @@ Given (x_K,mu), compute mu+2rho_K(x_K), choose positive chamber for G,
 then the simple roots contributing to difference between xi and
 mu_0 determine the :math:`\theta` -stable parabolic Q=LU that is
 part of the :math:`\theta` -stable data for tau=(x,lambda). The parameter for
-(relatively split) L is obtained from xi by a rho-shift.
+(relatively split) L is obtained from xi by a :math:`\rho` -shift.
 
 
 **This script imported the following .at files:**

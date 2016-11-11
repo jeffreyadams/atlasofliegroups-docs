@@ -39,6 +39,7 @@ p_dom=parameter(x, :math:`w^{-1}\cdot` lambda,nu) and return coherent continuati
 **This script imported the following .at files:**
 
 | :ref:`basic.at<basic.at>`
+| :ref:`misc.at<misc.at>`
 | :ref:`parabolics.at<parabolics.at>`
 | :ref:`kl.at<kl.at>`
 | :ref:`coherent.at<coherent.at>`
