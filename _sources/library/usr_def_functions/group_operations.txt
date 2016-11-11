@@ -9,7 +9,6 @@ group_operations.at
 **This script imported the following .at files:**
 
 | :ref:`basic.at<basic.at>`
-| :ref:`misc.at<misc.at>`
 | :ref:`lattice.at<lattice.at>`
 | :ref:`torus.at<torus.at>`
 |

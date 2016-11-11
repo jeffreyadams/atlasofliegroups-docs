@@ -142,8 +142,12 @@ Functions
      - ``[int] v->int``
    * - :ref:`\*_int_c,vec_v->vec1`
      - ``int c,vec v->vec``
+   * - :ref:`sum_vec_v->int1`
+     - ``vec v->int``
    * - :ref:`product_vec_v->1_in_for_e_in_v_do_s*1`
      - ``vec v->1 in for e in v do s*``
+   * - :ref:`half_int_n->int1`
+     - ``int n->int``
    * - :ref:`reverse_vec_v->vec:_v~[1`
      - ``vec v->vec: v~[``
    * - :ref:`lower_int_k,vec_v->vec:_v[1`
@@ -300,10 +304,16 @@ Functions
      - ``Split x->int``
    * - :ref:`s_to_minus_1_split_x->int1`
      - ``Split x->int``
+   * - :ref:`times_s_split_x)_=_let_(a,b->%x_in_split1`
+     - ``Split x) = let (a,b->%x in Split``
    * - :ref:`split_as_int_split_x->int1`
      - ``Split x->int``
    * - :ref:`\%_split_x,_int_n->(split,split)1`
      - ``Split x, int n->(Split,Split)``
+   * - :ref:`half_split_w->split1`
+     - ``Split w->Split``
+   * - :ref:`divide_by_int_n,split_w->split1`
+     - ``int n,Split w->Split``
    * - :ref:`is_pure_split_w->bool1`
      - ``Split w->bool``
    * - :ref:`split_format_split_w->string1`
@@ -480,10 +490,14 @@ Functions
      - ``CartanClass cc->int``
    * - :ref:`split_rank_cartanclass_cc->int1`
      - ``CartanClass cc->int``
-   * - :ref:`compact_rank_innerclass_g->int1`
-     - ``InnerClass G->int``
+   * - :ref:`compact_rank_innerclass_ic->int1`
+     - ``InnerClass ic->int``
    * - :ref:`split_rank_realform_g->int1`
      - ``RealForm G->int``
+   * - :ref:`is_equal_rank_innerclass_ic->bool1`
+     - ``InnerClass ic->bool``
+   * - :ref:`is_split_realform_g->bool1`
+     - ``RealForm G->bool``
    * - :ref:`\=_CartanClass_H,CartanClass_J->bool1`
      - ``CartanClass H,CartanClass J->bool``
    * - :ref:`number_cartanclass_h,realform_g->int1`
@@ -736,6 +750,8 @@ Functions
      - ``ParamPol a, (Split,Param) (c,p)->ParamPol``
    * - :ref:`\*_ParamPol_P,_rat_f->ParamPol1`
      - ``ParamPol P, rat f->ParamPol``
+   * - :ref:`half_parampol_p->parampol1`
+     - ``ParamPol P->ParamPol``
    * - :ref:`divide_by_int_n,_parampol_p->parampol1`
      - ``int n, ParamPol P->ParamPol``
    * - :ref:`root_datum_parampol_p->rootdatum1`
@@ -744,8 +760,8 @@ Functions
      - ``Param p->ParamPol``
    * - :ref:`virtual_realform_g,_[param]_ps->parampol1`
      - ``RealForm G, [Param] ps->ParamPol``
-   * - :ref:`pol_format_parampol_p->void1`
-     - ``ParamPol P->void``
+   * - :ref:`pol_format_parampol_p->string1`
+     - ``ParamPol P->string``
    * - :ref:`infinitesimal_character_parampol_p->ratvec1`
      - ``ParamPol P->ratvec``
    * - :ref:`separate_by_infinitesimal_character_parampol_p->[(ratvec,parampol)]1`

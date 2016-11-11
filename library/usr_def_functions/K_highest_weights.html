@@ -190,7 +190,11 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/principal_series.html">Principal Series</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html">Principal Series of Split Groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html">Principal Series of Split Groups</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html#minimal-principal-series-for-split-groups">Minimal Principal Series for split groups</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html#cuspidal-data">Cuspidal Data</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/syntax_minimalps.html">Minimal Principle Series</a></li>
@@ -1014,7 +1018,7 @@ See also the notes on &#8220;K-types in atlas&#8221; in the Dropbox.</p>
 <p>1) highest_weights: Given a K_type tau=(x,lambda), find all K-highest weights
 corresponding to the K_#-types in the restriction of tau.</p>
 <p>(x,lambda) -&gt; {(x_K,mu)} multivalued; find one value (x_K,mu), then
-take the R(K)-orbit &lt;-&gt; |R(K)/R(K,mu)| K-highest weights. Here R(K,mu) is
+take the R(K)-orbit &lt;-&gt; <a href="#id2"><span class="problematic" id="id3">|R(K)/R(K,mu)|</span></a> K-highest weights. Here R(K,mu) is
 the stabilizer of mu in the R-group R(K) of K.</p>
 <p>Algorithm:</p>
 <p>i) If G is relatively split, Cartan is (relatively) split, all roots in the
@@ -1027,9 +1031,9 @@ from a relatively split L.</p>
 the corresponding K_#-type.</p>
 <p>(x_K,mu) -&gt; {tau=(x,lambda)} multivalued; find <span class="math">\(\theta\)</span> -stable data
 (Q=LU,p_L=(x_L,lambda_L,0)) for one K-type tau first, then
-compute all (L-spherical) (Lcap K)-types p_L&#8217;=(x_L,lambda_L&#8217;)
+compute all (L-spherical) <span class="math">\((L\cap K)\)</span> -types p_L&#8217;=(x_L,lambda_L&#8217;)
 with the same infinitesimal character. There will be
-|R(K,mu)| of them.</p>
+<a href="#id4"><span class="problematic" id="id5">|R(K,mu)|</span></a> of them.</p>
 <p>Algorithm:</p>
 <p>This is the Vogan algorithm, version in [KHatHowe] Section 13, a
 slight modification of Vogan&#8217;s Big Green Book Prop. 5.3.3.</p>
@@ -1038,7 +1042,7 @@ slight modification of Vogan&#8217;s Big Green Book Prop. 5.3.3.</p>
 then the simple roots contributing to difference between xi and
 mu_0 determine the <span class="math">\(\theta\)</span> -stable parabolic Q=LU that is
 part of the <span class="math">\(\theta\)</span> -stable data for tau=(x,lambda). The parameter for
-(relatively split) L is obtained from xi by a rho-shift.</p>
+(relatively split) L is obtained from xi by a <span class="math">\(\rho\)</span> -shift.</p>
 <p><strong>This script imported the following .at files:</strong></p>
 <div class="line-block">
 <div class="line"><a class="reference internal" href="W_K.html#w-k-at"><span>W_K.at</span></a></div>

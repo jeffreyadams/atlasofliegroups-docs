@@ -11,6 +11,7 @@ representations.at
 | :ref:`misc.at<misc.at>`
 | :ref:`group_operations.at<group_operations.at>`
 | :ref:`cross_W_orbit.at<cross_W_orbit.at>`
+| :ref:`nilpotent.at<nilpotent.at>`
 |
 
 

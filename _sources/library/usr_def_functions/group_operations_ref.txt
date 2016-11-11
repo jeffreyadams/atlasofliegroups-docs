@@ -8,7 +8,7 @@ group_operations.at Function References
 
 inner_forms
 -------------------------------------------------
-| ``inner_forms:RealForm G->real_forms(InnerClass`` Defined in line number 12.
+| ``inner_forms:RealForm G->real_forms(InnerClass`` Defined in line number 11.
 | 
 | 
 
@@ -16,7 +16,7 @@ inner_forms
 
 print_real_forms
 -------------------------------------------------
-| ``print_real_forms:InnerClass ic->void`` Defined in line number 14.
+| ``print_real_forms:InnerClass ic->void`` Defined in line number 13.
 | 
 | 
 
@@ -24,7 +24,7 @@ print_real_forms
 
 print_inner_forms
 -------------------------------------------------
-| ``print_inner_forms:RealForm G->void`` Defined in line number 17.
+| ``print_inner_forms:RealForm G->void`` Defined in line number 16.
 | 
 | 
 
@@ -32,7 +32,7 @@ print_inner_forms
 
 split_form
 -------------------------------------------------
-| ``split_form:InnerClass ic->RealForm`` Defined in line number 24.
+| ``split_form:InnerClass ic->RealForm`` Defined in line number 23.
 | 
 | 
 
@@ -40,7 +40,7 @@ split_form
 
 \*
 -------------------------------------------------
-| ``*:RootDatum R,RootDatum S->RootDatum`` Defined in line number 36.
+| ``*:RootDatum R,RootDatum S->RootDatum`` Defined in line number 35.
 | 
 | 
 
@@ -48,7 +48,7 @@ split_form
 
 \*
 -------------------------------------------------
-| ``*:InnerClass ic1,InnerClass ic2->InnerClass`` Defined in line number 40.
+| ``*:InnerClass ic1,InnerClass ic2->InnerClass`` Defined in line number 39.
 | 
 | 
 
@@ -56,7 +56,7 @@ split_form
 
 \*
 -------------------------------------------------
-| ``*:RealForm G,RealForm H->RealForm`` Defined in line number 45.
+| ``*:RealForm G,RealForm H->RealForm`` Defined in line number 44.
 | 
 | 
 
@@ -64,7 +64,7 @@ split_form
 
 radical
 -------------------------------------------------
-| ``radical:RootDatum rd->RootDatum`` Defined in line number 56.
+| ``radical:RootDatum rd->RootDatum`` Defined in line number 55.
 | 
 | 
 
@@ -72,7 +72,7 @@ radical
 
 radical
 -------------------------------------------------
-| ``radical:InnerClass ic->RealForm`` Defined in line number 59.
+| ``radical:InnerClass ic->RealForm`` Defined in line number 58.
 | 
 | 
 
@@ -80,7 +80,7 @@ radical
 
 derived
 -------------------------------------------------
-| ``derived:InnerClass ic->InnerClass`` Defined in line number 69.
+| ``derived:InnerClass ic->InnerClass`` Defined in line number 68.
 | 
 | 
 
@@ -88,7 +88,7 @@ derived
 
 mod_central_torus
 -------------------------------------------------
-| ``mod_central_torus:InnerClass ic->InnerClass`` Defined in line number 73.
+| ``mod_central_torus:InnerClass ic->InnerClass`` Defined in line number 72.
 | 
 | 
 
@@ -96,7 +96,7 @@ mod_central_torus
 
 adjoint_transform
 -------------------------------------------------
-| ``adjoint_transform:RootDatum rd, mat theta->mat`` Defined in line number 78.
+| ``adjoint_transform:RootDatum rd, mat theta->mat`` Defined in line number 77.
 | 
 | 
 
@@ -104,7 +104,7 @@ adjoint_transform
 
 adjoint
 -------------------------------------------------
-| ``adjoint:InnerClass ic->InnerClass`` Defined in line number 83.
+| ``adjoint:InnerClass ic->InnerClass`` Defined in line number 82.
 | 
 | 
 
@@ -112,7 +112,7 @@ adjoint
 
 derived
 -------------------------------------------------
-| ``derived:RealForm G->RealForm`` Defined in line number 89.
+| ``derived:RealForm G->RealForm`` Defined in line number 88.
 | 
 | 
 
@@ -120,23 +120,7 @@ derived
 
 adjoint
 -------------------------------------------------
-| ``adjoint:RealForm G->RealForm`` Defined in line number 100.
-| 
-| 
-
-.. _is_equal_rank_innerclass_g->bool1:
-
-is_equal_rank
--------------------------------------------------
-| ``is_equal_rank:InnerClass G->bool`` Defined in line number 111.
-| 
-| 
-
-.. _is_split_realform_g->bool1:
-
-is_split
--------------------------------------------------
-| ``is_split:RealForm G->bool`` Defined in line number 115.
+| ``adjoint:RealForm G->RealForm`` Defined in line number 99.
 | 
 | 
 
@@ -144,7 +128,7 @@ is_split
 
 is_relatively_split
 -------------------------------------------------
-| ``is_relatively_split:RealForm G->bool`` Defined in line number 118.
+| ``is_relatively_split:RealForm G->bool`` Defined in line number 110.
 | 
 | 
 
