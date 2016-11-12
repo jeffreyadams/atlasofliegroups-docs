@@ -3,7 +3,7 @@ Principal Series of Split Groups
 
 So far the focus has been on Cartan subgroups, whose information is
 encoded on the element ``x`` as the Cartan involution of the complex
-abstract group $H$, which determines the real group :math:`H(\mathbb
+abstract group :math:`H`, which determines the real group :math:`H(\mathbb
 R)`. Now ``x`` is really a :math:`K`-orbit on :math:`G/B`. So, it is
 the support of the corresponding D-module. In order to explain this in
 detail we will look at some easy cases. In particular we will be
@@ -25,7 +25,7 @@ including this Cartan. We can construct the induced representation
 :math:`Ind_B ^G (\chi)` where :math:`\chi` is a character of
 :math:`H(\mathbb R)`.
 
-For example, if :math:`G=SL(2, /mathbb R )` we can look again at the
+For example, if :math:`G=SL(2, \mathbb R )` we can look again at the
 list of parameters with infinitesimal character :math:`\rho`.  
 
 Recall the ``command all_parameters_gamma` takes a real form and an
@@ -159,3 +159,47 @@ Similarly, if we take parameters of a spherical representation with non integral
 
 Cuspidal Data
 --------------
+
+Another thing you can do is get also information about cuspidal data used to construct this representation::
+
+set p=parameter(x,[2],[3/2])
+Identifier p: Param (hiding previous one of type Param)
+atlas> set (P,q)=cuspidal_data(q)
+Identifiers P: ([int],KGBElt), q: Param (hiding previous one of type Param)
+atlas> Levi(P)
+Value: disconnected split real group with Lie algebra 'gl(1,R)'
+atlas> q
+Value: final parameter (x=0,lambda=[1]/1,nu=[1]/1)
+atlas> p
+Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
+
+atlas> 
+atlas> real_form(q)
+Value: disconnected split real group with Lie algebra 'gl(1,R)'
+atlas> Levi(P)
+Value: disconnected split real group with Lie algebra 'gl(1,R)'
+atlas>
+atlas> 
+atlas> real_form(q)
+Value: disconnected split real group with Lie algebra 'gl(1,R)'
+atlas> Levi(P)
+Value: disconnected split real group with Lie algebra 'gl(1,R)'
+atlas>
+atlas> induce_irreducible (q,P,G)
+Value: 
+1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
+
+theta_induce_irreducible
+theta_induce_irreducible_as_sum_of_standards
+theta_induce_standard
+theta_stable_data
+theta_stable_parabolic
+theta_stable_parabolics
+theta_stable_parabolics_type
+atlas> theta_stable_data (p)
+Value: (([0],KGB element #2),final parameter (x=2,lambda=[2]/1,nu=[3]/2))
+atlas> 
+
+In this case the Levi is all of G. So this says that the representation is induced from G to G.
+
+To go back use theta_induced_standard
