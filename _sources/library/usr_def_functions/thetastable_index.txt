@@ -38,13 +38,19 @@ Functions
      - ``Parabolic P->ratvec``
    * - :ref:`rho_u_cap_s_parabolic_p->ratvec1`
      - ``Parabolic P->ratvec``
+   * - :ref:`dim_u_parabolic_p->int1`
+     - ``Parabolic P->int``
+   * - :ref:`dim_u_kgbelt_x->int1`
+     - ``KGBElt x->int``
    * - :ref:`dim_u_cap_k_parabolic_(,x):p->int1`
      - ``Parabolic (,x):P->int``
    * - :ref:`dim_u_cap_k_kgbelt_x->int1`
      - ``KGBElt x->int``
-   * - :ref:`dim_u_cap_p_parabolic_(s,):p->int1`
-     - ``Parabolic (S,):P->int``
-   * - :ref:`dim_u_cap_p_kgbelt_x->int1`
+   * - :ref:`dim_u_cap_k_ratvec_lambda,kgbelt_x->int1`
+     - ``ratvec lambda,KGBElt x->int``
+   * - :ref:`dim_u_cap_p_parabolic_(,x):p->int1`
+     - ``Parabolic (,x):P->int``
+   * - :ref:`dim_u_cap_p_kgbelt_x->int2`
      - ``KGBElt x->int``
    * - :ref:`dim_u_cap_p_ratvec_lambda,kgbelt_x->int1`
      - ``ratvec lambda,KGBElt x->int``

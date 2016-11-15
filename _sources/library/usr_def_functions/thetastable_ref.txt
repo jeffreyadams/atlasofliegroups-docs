@@ -8,143 +8,187 @@ thetastable.at Function References
 
 map_into_distinguished_fiber
 -------------------------------------------------
-| ``map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 36.
+| ``map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 102.
 | 
+| (Auxiliary function)
 | 
 
 .. _strong_map_into_distinguished_fiber_kgbelt_x->kgbelt1:
 
 strong_map_into_distinguished_fiber
 -------------------------------------------------
-| ``strong_map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 52.
+| ``strong_map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 119.
 | 
+| Map KGB element x to x_K in the distinguished fiber; if necessary, use complex   cross actions first to move x to a fiber with no C-roots.
 | 
 
 .. _canonical_x_k_kgbelt_x->kgbelt1:
 
 canonical_x_K
 -------------------------------------------------
-| ``canonical_x_K:KGBElt x->KGBElt`` Defined in line number 55.
+| ``canonical_x_K:KGBElt x->KGBElt`` Defined in line number 123.
 | 
+| Same as previous function.
 | 
 
 .. _canonical_x_k_param_p->kgbelt1:
 
 canonical_x_K
 -------------------------------------------------
-| ``canonical_x_K:Param p->KGBElt`` Defined in line number 56.
+| ``canonical_x_K:Param p->KGBElt`` Defined in line number 126.
 | 
+| Previous function applied to the KGB element of a parameter.
 | 
 
 .. _u_kgbelt_x->mat1:
 
 u
 -------------------------------------------------
-| ``u:KGBElt x->mat`` Defined in line number 61.
+| ``u:KGBElt x->mat`` Defined in line number 130.
 | 
+| Positive coroots in the nilradical of the theta-stable parabolic determined by x.
 | 
 
 .. _rho_u_cx_parabolic_p->ratvec1:
 
 rho_u_cx
 -------------------------------------------------
-| ``rho_u_cx:Parabolic P->ratvec`` Defined in line number 70.
+| ``rho_u_cx:Parabolic P->ratvec`` Defined in line number 141.
 | 
+| Half sum of positive complex roots (on fundamental Cartan) in the nilradical of P;   P must be theta-stable.
 | 
 
 .. _rho_u_cx_t_parabolic_p->vec1:
 
 rho_u_cx_T
 -------------------------------------------------
-| ``rho_u_cx_T:Parabolic P->vec`` Defined in line number 85.
+| ``rho_u_cx_T:Parabolic P->vec`` Defined in line number 157.
 | 
+| Element of :math:`X^*`  with same restriction to :math:`(X^*)^{\theta}`  as rho_u_cx(P);   P must be theta-stable.
 | 
 
 .. _rho_u_ic_parabolic_p->ratvec1:
 
 rho_u_ic
 -------------------------------------------------
-| ``rho_u_ic:Parabolic P->ratvec`` Defined in line number 94.
+| ``rho_u_ic:Parabolic P->ratvec`` Defined in line number 167.
 | 
+| Half sum of imaginary compact roots in nilradical of (theta-stable) P.
 | 
 
 .. _two_rho_u_cap_k_parabolic_p->vec1:
 
 two_rho_u_cap_k
 -------------------------------------------------
-| ``two_rho_u_cap_k:Parabolic P->vec`` Defined in line number 101.
+| ``two_rho_u_cap_k:Parabolic P->vec`` Defined in line number 175.
 | 
+| Sum of compact roots in :math:`\mathfrak u`  (on :math:`\mathfrak t` ) for theta-stable parabolic P.
 | 
 
 .. _two_rho_u_cap_s_parabolic_p->vec1:
 
 two_rho_u_cap_s
 -------------------------------------------------
-| ``two_rho_u_cap_s:Parabolic P->vec`` Defined in line number 103.
+| ``two_rho_u_cap_s:Parabolic P->vec`` Defined in line number 179.
 | 
+| Sum of non-compact roots in :math:`\mathfrak u`  (for theta-stable parabolic).
 | 
 
 .. _rho_u_cap_k_parabolic_p->ratvec1:
 
 rho_u_cap_k
 -------------------------------------------------
-| ``rho_u_cap_k:Parabolic P->ratvec`` Defined in line number 107.
+| ``rho_u_cap_k:Parabolic P->ratvec`` Defined in line number 184.
 | 
+| Half sum of compact roots in :math:`\mathfrak u`  (theta-stable parabolic).
 | 
 
 .. _rho_u_cap_s_parabolic_p->ratvec1:
 
 rho_u_cap_s
 -------------------------------------------------
-| ``rho_u_cap_s:Parabolic P->ratvec`` Defined in line number 108.
+| ``rho_u_cap_s:Parabolic P->ratvec`` Defined in line number 187.
 | 
+| Half sum of non-compact roots in :math:`\mathfrak u`  (for theta-stable parabolic).
+| 
+
+.. _dim_u_parabolic_p->int1:
+
+dim_u
+-------------------------------------------------
+| ``dim_u:Parabolic P->int`` Defined in line number 190.
+| 
+| Dimension of :math:`\mathfrak u`  (nilrad of theta-stable parabolic).
+| 
+
+.. _dim_u_kgbelt_x->int1:
+
+dim_u
+-------------------------------------------------
+| ``dim_u:KGBElt x->int`` Defined in line number 193.
+| 
+| Dimension of the nilradical of the theta-stable parabolic determined by KGB elt x.
 | 
 
 .. _dim_u_cap_k_parabolic_(,x):p->int1:
 
 dim_u_cap_k
 -------------------------------------------------
-| ``dim_u_cap_k:Parabolic (,x):P->int`` Defined in line number 110.
+| ``dim_u_cap_k:Parabolic (,x):P->int`` Defined in line number 199.
 | 
+| Dimension of :math:`\mathfrak u\cap\mathfrak k`  for theta-stable parabolic.
 | 
 
 .. _dim_u_cap_k_kgbelt_x->int1:
 
 dim_u_cap_k
 -------------------------------------------------
-| ``dim_u_cap_k:KGBElt x->int`` Defined in line number 118.
+| ``dim_u_cap_k:KGBElt x->int`` Defined in line number 209.
 | 
+| Dimension of :math:`\mathfrak u\cap\mathfrak k`  for theta-stable parabolic determined by x.
 | 
 
-.. _dim_u_cap_p_parabolic_(s,):p->int1:
+.. _dim_u_cap_k_ratvec_lambda,kgbelt_x->int1:
+
+dim_u_cap_k
+-------------------------------------------------
+| ``dim_u_cap_k:ratvec lambda,KGBElt x->int`` Defined in line number 212.
+| 
+| Dimension of :math:`\mathfrak u\cap\mathfrak k`  for theta-stable parabolic determined by weight lambda.
+| 
+
+.. _dim_u_cap_p_parabolic_(,x):p->int1:
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:Parabolic (S,):P->int`` Defined in line number 120.
+| ``dim_u_cap_p:Parabolic (,x):P->int`` Defined in line number 216.
 | 
+| Dimension of :math:`\mathfrak u\cap\mathfrak p`  for theta-stable parabolic.
 | 
 
-.. _dim_u_cap_p_kgbelt_x->int1:
+.. _dim_u_cap_p_kgbelt_x->int2:
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:KGBElt x->int`` Defined in line number 122.
+| ``dim_u_cap_p:KGBElt x->int`` Defined in line number 226.
 | 
+| Dimension of :math:`\mathfrak u \cap\mathfrak p`  for theta-stable parabolic associated to x.
 | 
 
 .. _dim_u_cap_p_ratvec_lambda,kgbelt_x->int1:
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:ratvec lambda,KGBElt x->int`` Defined in line number 123.
+| ``dim_u_cap_p:ratvec lambda,KGBElt x->int`` Defined in line number 229.
 | 
+| Dimension of :math:`\mathfrak u\cap\mathfrak p`  for theta-stable parabolic determined by weight lambda.
 | 
 
 .. _dim_u_cap_k_2_parabolic_p,ratvec_h->int1:
 
 dim_u_cap_k_2
 -------------------------------------------------
-| ``dim_u_cap_k_2:Parabolic P,ratvec H->int`` Defined in line number 125.
+| ``dim_u_cap_k_2:Parabolic P,ratvec H->int`` Defined in line number 232.
 | 
 | 
 
@@ -152,7 +196,7 @@ dim_u_cap_k_2
 
 dim_u_cap_k_ge2
 -------------------------------------------------
-| ``dim_u_cap_k_ge2:Parabolic P,ratvec H->int`` Defined in line number 135.
+| ``dim_u_cap_k_ge2:Parabolic P,ratvec H->int`` Defined in line number 242.
 | 
 | 
 
@@ -160,7 +204,7 @@ dim_u_cap_k_ge2
 
 dim_u_cap_p_ge2
 -------------------------------------------------
-| ``dim_u_cap_p_ge2:Parabolic P,ratvec H->int`` Defined in line number 145.
+| ``dim_u_cap_p_ge2:Parabolic P,ratvec H->int`` Defined in line number 252.
 | 
 | 
 
@@ -168,7 +212,7 @@ dim_u_cap_p_ge2
 
 dim_u_cap_k_1
 -------------------------------------------------
-| ``dim_u_cap_k_1:Parabolic P,ratvec H->int`` Defined in line number 155.
+| ``dim_u_cap_k_1:Parabolic P,ratvec H->int`` Defined in line number 262.
 | 
 | 
 
@@ -176,119 +220,134 @@ dim_u_cap_k_1
 
 make_dominant
 -------------------------------------------------
-| ``make_dominant:KGBElt x_in,ratvec lambda_in, ratvec lambda_q_in->(KGBElt,ratvec,ratvec)`` Defined in line number 204.
+| ``make_dominant:KGBElt x_in,ratvec lambda_in, ratvec lambda_q_in->(KGBElt,ratvec,ratvec)`` Defined in line number 294.
 | 
+| Conjugate the triple (x,lambda, lambda_q) to make lambda_q weakly   dominant (auxiliary function).
 | 
 
 .. _aq_param_pol_kgbelt_x_in,ratvec_lambda_in,_ratvec_lambda_q->parampol1:
 
 Aq_param_pol
 -------------------------------------------------
-| ``Aq_param_pol:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->ParamPol`` Defined in line number 209.
+| ``Aq_param_pol:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->ParamPol`` Defined in line number 301.
 | 
+| A_q(lambda) module; :math:`\mathfrak q`  is defined by the weight lambda_q; x_in   must be attached to the fundamental Cartan. The module is defined as a ParamPol,   in case it is reducible.
 | 
 
 .. _aq_kgbelt_x_in,ratvec_lambda_in,_ratvec_lambda_q->param1:
 
 Aq
 -------------------------------------------------
-| ``Aq:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 253.
+| ``Aq:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 323.
 | 
+| A_q(lambda) module defined as above, but as a parameter, assuming it is   irreducible.
 | 
 
 .. _aq_kgbelt_x,ratvec_lambda_in->param1:
 
 Aq
 -------------------------------------------------
-| ``Aq:KGBElt x,ratvec lambda_in->Param`` Defined in line number 261.
+| ``Aq:KGBElt x,ratvec lambda_in->Param`` Defined in line number 331.
 | 
+| If not provided, assume lambda_q=lambda_in in the definition of A_q.
 | 
 
 .. _aq_realform_g,ratvec_lambda_in,_ratvec_lambda_q->param1:
 
 Aq
 -------------------------------------------------
-| ``Aq:RealForm G,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 266.
+| ``Aq:RealForm G,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 335.
 | 
+| A_q(lambda), specifying G, and not x, to use x=KGB(G,0).
 | 
 
 .. _aq_realform_g,ratvec_lambda_in->param1:
 
 Aq
 -------------------------------------------------
-| ``Aq:RealForm G,ratvec lambda_in->Param`` Defined in line number 268.
+| ``Aq:RealForm G,ratvec lambda_in->Param`` Defined in line number 339.
 | 
+| A_q(lambda), specifying G, not x, and use lambda_q=lambda_in.
 | 
 
 .. _is_good_param_p_l,parabolic_p,realform_g->bool1:
 
 is_good
 -------------------------------------------------
-| ``is_good:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 299.
+| ``is_good:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 346.
 | 
+| Decide whether parameter for L is in the good range for u.
 | 
 
 .. _is_weakly_good_param_p_l,parabolic_p,realform_g->bool1:
 
 is_weakly_good
 -------------------------------------------------
-| ``is_weakly_good:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 303.
+| ``is_weakly_good:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 351.
 | 
+| Decide whether parameter for L is in the weakly good range for u.
 | 
 
 .. _is_fair_param_p_l,parabolic_p,realform_g->bool1:
 
 is_fair
 -------------------------------------------------
-| ``is_fair:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 307.
+| ``is_fair:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 356.
 | 
+| Decide whether a parameter for L is in the fair range for u.
 | 
 
 .. _is_weakly_fair_param_p_l,parabolic_p,realform_g->bool1:
 
 is_weakly_fair
 -------------------------------------------------
-| ``is_weakly_fair:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 312.
+| ``is_weakly_fair:Param p_L,Parabolic P,RealForm G->bool`` Defined in line number 362.
 | 
+| Decide whether a parameter for L is weakly fair (provided pi_L   is finite dimensional.
 | 
 
 .. _is_good_kgbelt_x_in,ratvec_lambda_in,ratvec_lambda_q_in->bool1:
 
 is_good
 -------------------------------------------------
-| ``is_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 316.
+| ``is_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 367.
 | 
+| Decide whether A_q is in the good range.
 | 
 
 .. _is_weakly_good_kgbelt_x_in,ratvec_lambda_in,ratvec_lambda_q_in->bool1:
 
 is_weakly_good
 -------------------------------------------------
-| ``is_weakly_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 320.
+| ``is_weakly_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 372.
 | 
+| Decide whether A_q is weakly good.
 | 
 
 .. _is_fair_kgbelt_x_in,ratvec_lambda_in,ratvec_lambda_q_in->bool1:
 
 is_fair
 -------------------------------------------------
-| ``is_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 324.
+| ``is_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 377.
 | 
+| Decide whether A_q is fair.
 | 
 
 .. _is_weakly_fair_kgbelt_x_in,ratvec_lambda_in,ratvec_lambda_q_in->bool1:
 
 is_weakly_fair
 -------------------------------------------------
-| ``is_weakly_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 328.
+| ``is_weakly_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 382.
 | 
+| Decide whether A_q is weakly fair.
 | 
 
 .. _goodness_param_p_l,parabolic_p,realform_g->string1:
 
 goodness
 -------------------------------------------------
-| ``goodness:Param p_L,Parabolic P,RealForm G->string`` Defined in line number 332.
+| ``goodness:Param p_L,Parabolic P,RealForm G->string`` Defined in line number 387.
+| 
 | 
 | 
 
@@ -296,7 +355,7 @@ goodness
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,ComplexParabolic P->[Param]`` Defined in line number 366.
+| ``Aq_packet:RealForm G,ComplexParabolic P->[Param]`` Defined in line number 421.
 | 
 | 
 
@@ -304,7 +363,7 @@ Aq_packet
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,[int] S->[Param]:Aq_packet(G,ComplexParabolic`` Defined in line number 373.
+| ``Aq_packet:RealForm G,[int] S->[Param]:Aq_packet(G,ComplexParabolic`` Defined in line number 428.
 | 
 | 
 
@@ -312,7 +371,7 @@ Aq_packet
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,[*] S->[Param]:Aq_packet(G,[int]`` Defined in line number 374.
+| ``Aq_packet:RealForm G,[*] S->[Param]:Aq_packet(G,[int]`` Defined in line number 429.
 | 
 | 
 
@@ -320,7 +379,7 @@ Aq_packet
 
 is_good
 -------------------------------------------------
-| ``is_good:Param p_L,RealForm G->bool`` Defined in line number 376.
+| ``is_good:Param p_L,RealForm G->bool`` Defined in line number 431.
 | 
 | 
 
@@ -328,7 +387,7 @@ is_good
 
 is_weakly_good
 -------------------------------------------------
-| ``is_weakly_good:Param p_L,RealForm G->bool`` Defined in line number 381.
+| ``is_weakly_good:Param p_L,RealForm G->bool`` Defined in line number 436.
 | 
 | 
 
@@ -336,7 +395,7 @@ is_weakly_good
 
 is_fair
 -------------------------------------------------
-| ``is_fair:Param p_L,RealForm G->bool`` Defined in line number 386.
+| ``is_fair:Param p_L,RealForm G->bool`` Defined in line number 441.
 | 
 | 
 
@@ -344,7 +403,7 @@ is_fair
 
 is_weakly_fair
 -------------------------------------------------
-| ``is_weakly_fair:Param p_L,RealForm G->bool`` Defined in line number 392.
+| ``is_weakly_fair:Param p_L,RealForm G->bool`` Defined in line number 447.
 | 
 | 
 
@@ -352,7 +411,7 @@ is_weakly_fair
 
 goodness
 -------------------------------------------------
-| ``goodness:Param p_L,RealForm G->void`` Defined in line number 411.
+| ``goodness:Param p_L,RealForm G->void`` Defined in line number 466.
 | 
 | 
 
@@ -360,7 +419,7 @@ goodness
 
 goodness
 -------------------------------------------------
-| ``goodness:KGBElt x,ratvec lambda_in,ratvec lambda_q->void`` Defined in line number 425.
+| ``goodness:KGBElt x,ratvec lambda_in,ratvec lambda_q->void`` Defined in line number 480.
 | 
 | 
 

@@ -44,10 +44,16 @@ Functions
      - ``Param p->rat``
    * - :ref:`number_real_orthogonal_pairs_kgbelt_x,_mat_delta->int1`
      - ``KGBElt x, mat delta->int``
+   * - :ref:`dim_u_cap_p_kgbelt_x->int1`
+     - ``KGBElt x->int``
+   * - :ref:`mu_terms_param_p,mat_delta->[rat]1`
+     - ``Param p,mat delta->[rat]``
    * - :ref:`mu_param_p,mat_delta->rat1`
      - ``Param p,mat delta->rat``
    * - :ref:`print_mu_param_p->void1`
      - ``Param p->void``
+   * - :ref:`print_mus_parampol_p->void1`
+     - ``ParamPol P->void``
    * - :ref:`convert_cform_hermitian_parampol_p,mat_delta->parampol1`
      - ``ParamPol P,mat delta->ParamPol``
    * - :ref:`convert_cform_hermitian_parampol_p->parampol1`

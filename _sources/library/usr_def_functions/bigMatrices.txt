@@ -6,7 +6,7 @@ bigMatrices.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`extended_misc.at<extended_misc.at>`
 | :ref:`polynomial.at<polynomial.at>`

@@ -451,6 +451,11 @@
 <li class="toctree-l4"><a class="reference internal" href="2r21s_ref.html">2r21s.at Function References</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="A1.html">A1.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="A1_index.html">A1.at Function Index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="A1_ref.html">A1.at Function References</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="all.html">all.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="all_index.html">all.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="all_ref.html">all.at Function References</a></li>
@@ -1025,7 +1030,51 @@
             
   <div class="section" id="thetastable-at">
 <span id="id1"></span><h1>thetastable.at<a class="headerlink" href="#thetastable-at" title="Permalink to this headline">¶</a></h1>
-<p><strong>This script imported the following .at files:</strong></p>
+<p>Some functions related to theta-stable parabolics. The basic functions
+are in parabolics.at and induction.at.</p>
+<p>Main functions:</p>
+<ol class="arabic simple">
+<li><span class="math">\(A_q(\lambda)\)</span>  construction:</li>
+</ol>
+<p>Note: theta_induce_irreducible(pi_L,G) has infinitesimal character
+infinitesimal character(pi_L)+rho(u)</p>
+<p>Aq(x,lambda,lambda_q) is defined as follows:
+if lambda_q is weakly dominant set q=q(x,lambda_q),
+apply derived functor to the one dimensional lambda-rho(u) of L.</p>
+<p>REQUIRE: lambda-rho(u)in X^*.</p>
+<p>Aq(x,lambda,lambda_q) has infinitesimal character lambda+rho_L,
+thus the one-dimensional lambda has infinitesimal character lambda+rho_L
+for L, and goes to a representation with
+infinitesimal character lambda+rho_L for G; i.e.
+Aq takes infinitesimal character gamma_L to SAME infinitesimal character
+for G. For example, in equal rank, with x on the compact Cartan,
+Aq(x,rho(G),rho(G)) is a discrete series with infinitesimal character rho(G).</p>
+<p>If lambda_q is not weakly dominant, define
+Aq(x,lambda,lambda_q)=Aq(wx,wlambda,wlambda_q),
+where wlambda_q is weakly dominant.</p>
+<ol class="arabic simple" start="2">
+<li>Good/Fair conditions:</li>
+</ol>
+<p>i.)  Condition on the roots of <span class="math">\(\mathfrak u\)</span> :</p>
+<p>For theta_induce(pi_L,G),
+gamma_L -&gt; gamma_G=gamma_L+rho_u. Then:</p>
+<p>GOOD:  &lt;gamma_L+rho_u,alpha^vee&gt; &gt; 0;</p>
+<p>WEAKLY GOOD:  &lt;gamma_L+rho_u,alpha^vee&gt; ge 0;</p>
+<p>FAIR: &lt;gamma_L-rho_L+rho_u,alpha^vee&gt; &gt; 0.</p>
+<p>ii.) For  Aq(x,lambda,lambda_q): gamma_L=lambda+rho_L;</p>
+<p>gamma_L -&gt; gamma_G=gamma_L = lambda+rho_L</p>
+<p>Aq(x,lambda)=theta_induce(x,lambda-rho_u)</p>
+<p>GOOD: &lt;lambda+rho_L,alpha^vee&gt; &gt; 0;</p>
+<p>FAIR: &lt;lambda,alpha^vee&gt; &gt; 0;</p>
+<p>WEAKLY FAIR: &lt;lambda,alpha^vee&gt; ge 0.</p>
+<p>theta_induce(pi_L,G) = Euler-Poincare characteristic of the
+cohomological induction functor.</p>
+<p>fair =&gt; vanishing outside middle degree =&gt; honest representation</p>
+<p>weakly fair: same implication</p>
+<p>NB: &lt;gamma_L-rho_L_rho_U,alpha^vee&gt; &gt;= 0 does NOT imply vanishing
+(in general) if pi_L is not one dimensional,
+hence &#8220;weakly fair&#8221; is only defined if pi_L is one dimensional.</p>
+<p><strong>This script imports the following .at files:</strong></p>
 <div class="line-block">
 <div class="line"><a class="reference internal" href="induction.html#induction-at"><span>induction.at</span></a></div>
 <div class="line"><a class="reference internal" href="finite_dimensional.html#finite-dimensional-at"><span>finite_dimensional.at</span></a></div>

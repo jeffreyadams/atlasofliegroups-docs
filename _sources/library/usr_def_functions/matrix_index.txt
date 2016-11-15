@@ -34,3 +34,7 @@ Functions
      - ``mat A->(int,mat)``
    * - :ref:`reduce_mat_m->mat1`
      - ``mat M->mat``
+   * - :ref:`e_int_n,int_i->null(n)_in_v[i]1`
+     - ``int n,int i->null(n) in v[i]``
+   * - :ref:`permutation_matrix_vec_v->#v_in__for_i1`
+     - ``vec v->#v in  for i``

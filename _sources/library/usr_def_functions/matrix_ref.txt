@@ -84,3 +84,19 @@ reduce
 | 
 | 
 
+.. _e_int_n,int_i->null(n)_in_v[i]1:
+
+e
+-------------------------------------------------
+| ``e:int n,int i->null(n) in v[i]`` Defined in line number 47.
+| 
+| 
+
+.. _permutation_matrix_vec_v->#v_in__for_i1:
+
+permutation_matrix
+-------------------------------------------------
+| ``permutation_matrix:vec v->#v in  for i`` Defined in line number 50.
+| 
+| 
+
