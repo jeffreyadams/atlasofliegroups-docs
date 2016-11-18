@@ -128,7 +128,7 @@ Mac
 ---
 
 Compiling atlas for the Mac using MacPorts
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Regardless of how you download the atlas software you will need to
 compile it.  This is the preferred method. For other Mac options see
@@ -140,7 +140,8 @@ first install the XCode C Compiler. See :ref: `C Compilers for the Mac` for an
 explantion.
 
 (1) Install MacPorts. 
----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 (If MacPorts is installed on your system go to
 step (2)). Visit `macports.org <https://www.macports.org>`, go to
 `Installing MacPorts <https://www.macports.org/install.php>`, and
@@ -150,7 +151,7 @@ need to be an administrative user, and will need to enter your
 password.
 
 (2) Install the XCode C compiler. 
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you already have XCode installed, go to step (3) (XCode is not installed by default).
 
@@ -176,7 +177,7 @@ Or if you are using Sierra or El Capitan::
    --with-gxx-include-dir=/usr/include/c++/4.2.1
 
 (3) Install the MacPorts (gcc) C Compiler
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Open a terminal window (Terminal is available in Applications). All further commands are given from within this window. Give the command::
 
@@ -189,7 +190,7 @@ to install the the Macports version of gcc. Be sure to be connected to the inter
 Also the directory /opt/local/bin has been added to your PATH environment variable.
 
 (4) Install readline
----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Do::
 
@@ -198,7 +199,7 @@ Do::
 to install the readline package.
 
 (5) Edit the Makefiles
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You will need to edit two files to tell your computer which compiler to use:
 
@@ -232,7 +233,7 @@ Then edit the last line to read::
    CXX := g++-mp-4.7 -std=c++0x -I/opt/local/include
 
 (6) Compile Fokko and atlas
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The command::
 
@@ -250,7 +251,8 @@ If you get an error::
 see :ref: `installing_cwebx`.
 
 Compilation options: 
---------------------
+~~~~~~~~~~~~~~~~~~~~~~~
+
 We recommend compiling with::
 
    make verbose=true optimize=true
@@ -261,7 +263,7 @@ Other possibilities are::
    readline=false.
 
 (7) Installing Fokko and atlas
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To install the executables in [installation directory] and put symlinks in [binary directory], type::
 
@@ -270,7 +272,7 @@ To install the executables in [installation directory] and put symlinks in [bina
 The default BINDIR is ``INSTALLDIR/../bin``
 
 Example: 
---------
+~~~~~~~~~~~~~
 To install the executables in ``/usr/local/atlas``, and symlinks in ``/usr/local/bin``, type::
 
    sudo make install INSTALLDIR=/usr/local/atlas
@@ -278,13 +280,13 @@ To install the executables in ``/usr/local/atlas``, and symlinks in ``/usr/local
 (This example only works up to OS 10.10, and you need root access).
 
 Example: 
---------
+~~~~~~~~~~
 To install the executables in /home/[userid]/software/atlas, and symlinks in /home/userid/bin, type::
 
    make install INSTALLDIR=/home/[userid]/software BINDIR=/home/[userid]/bin
 
 Example: 
---------
+~~~~~~~~~~~~~
 Say you unpacked the software in /home/[userid]/atlas_0.6. To leave the software there, and create symlinks in /home/[userid]/bin, type::
 
    make install

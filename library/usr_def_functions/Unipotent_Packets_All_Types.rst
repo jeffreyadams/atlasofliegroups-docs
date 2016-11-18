@@ -6,7 +6,7 @@ Unipotent_Packets_All_Types.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`W_Reps_Mod.at<W_Reps_Mod.at>`
 | :ref:`Vogan-dual.at<Vogan-dual.at>`

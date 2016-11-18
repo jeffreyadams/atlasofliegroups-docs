@@ -6,7 +6,7 @@ test_K.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`all.at<all.at>`
 |

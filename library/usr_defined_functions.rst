@@ -7,6 +7,7 @@ User Defined Functions
    usr_def_functions/2i12
    usr_def_functions/2i12s
    usr_def_functions/2r21s
+   usr_def_functions/A1
    usr_def_functions/all
    usr_def_functions/all_Kparameters
    usr_def_functions/basic

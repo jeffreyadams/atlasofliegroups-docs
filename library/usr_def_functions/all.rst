@@ -6,7 +6,7 @@ all.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`extParamPol.at<extParamPol.at>`
 | :ref:`K_types.at<K_types.at>`

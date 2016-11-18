@@ -6,7 +6,7 @@ extParamPol.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`bigMatrices.at<bigMatrices.at>`
 | :ref:`thetastable.at<thetastable.at>`

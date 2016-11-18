@@ -6,7 +6,7 @@ test_unitarity.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`groups.at<groups.at>`
 | :ref:`hermitian.at<hermitian.at>`

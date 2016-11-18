@@ -136,7 +136,7 @@ default
 
 sign
 -------------------------------------------------
-| ``sign:ExtParam E->int`` Defined in line number 248.
+| ``sign:ExtParam E->int`` Defined in line number 247.
 | 
 | 
 
@@ -144,7 +144,7 @@ sign
 
 dual_sign
 -------------------------------------------------
-| ``dual_sign:ExtParam E->int`` Defined in line number 249.
+| ``dual_sign:ExtParam E->int`` Defined in line number 248.
 | 
 | 
 
@@ -152,7 +152,7 @@ dual_sign
 
 \=
 -------------------------------------------------
-| ``=:ExtParam E, ExtParam F->bool`` Defined in line number 250.
+| ``=:ExtParam E, ExtParam F->bool`` Defined in line number 249.
 | 
 | 
 
@@ -160,7 +160,7 @@ dual_sign
 
 is_default
 -------------------------------------------------
-| ``is_default:ExtParam E->bool`` Defined in line number 251.
+| ``is_default:ExtParam E->bool`` Defined in line number 250.
 | 
 | 
 
@@ -168,7 +168,7 @@ is_default
 
 z
 -------------------------------------------------
-| ``z:ExtParam E->rat`` Defined in line number 253.
+| ``z:ExtParam E->rat`` Defined in line number 252.
 | 
 | 
 
@@ -176,7 +176,7 @@ z
 
 z_quot
 -------------------------------------------------
-| ``z_quot:ExtParam E, ExtParam F->int`` Defined in line number 256.
+| ``z_quot:ExtParam E, ExtParam F->int`` Defined in line number 255.
 | 
 | 
 
@@ -184,7 +184,7 @@ z_quot
 
 ext_print_block
 -------------------------------------------------
-| ``ext_print_block:mat delta, [Param] B->void`` Defined in line number 260.
+| ``ext_print_block:mat delta, [Param] B->void`` Defined in line number 259.
 | 
 | 
 
@@ -192,7 +192,7 @@ ext_print_block
 
 ext_print_block
 -------------------------------------------------
-| ``ext_print_block:mat delta,Param p->void`` Defined in line number 281.
+| ``ext_print_block:mat delta,Param p->void`` Defined in line number 280.
 | 
 | 
 
@@ -200,7 +200,7 @@ ext_print_block
 
 ext_print_block
 -------------------------------------------------
-| ``ext_print_block:Param p->void`` Defined in line number 283.
+| ``ext_print_block:Param p->void`` Defined in line number 282.
 | 
 | 
 
@@ -208,7 +208,7 @@ ext_print_block
 
 ext_block_of
 -------------------------------------------------
-| ``ext_block_of:mat delta, Param p, ratvec g->[ExtParam]`` Defined in line number 291.
+| ``ext_block_of:mat delta, Param p, ratvec g->[ExtParam]`` Defined in line number 290.
 | 
 | 
 
@@ -216,7 +216,7 @@ ext_block_of
 
 ext_block_of
 -------------------------------------------------
-| ``ext_block_of:mat delta, Param p->[ExtParam]`` Defined in line number 293.
+| ``ext_block_of:mat delta, Param p->[ExtParam]`` Defined in line number 292.
 | 
 | 
 
@@ -224,7 +224,7 @@ ext_block_of
 
 ext_block_of
 -------------------------------------------------
-| ``ext_block_of:Param p->[ExtParam]`` Defined in line number 295.
+| ``ext_block_of:Param p->[ExtParam]`` Defined in line number 294.
 | 
 | 
 
@@ -232,7 +232,7 @@ ext_block_of
 
 ext_block
 -------------------------------------------------
-| ``ext_block:mat delta, Param p, ratvec g->([ExtParam],int)`` Defined in line number 298.
+| ``ext_block:mat delta, Param p, ratvec g->([ExtParam],int)`` Defined in line number 297.
 | 
 | 
 
@@ -240,7 +240,7 @@ ext_block
 
 ext_block
 -------------------------------------------------
-| ``ext_block:mat delta, Param p->([ExtParam],int)`` Defined in line number 301.
+| ``ext_block:mat delta, Param p->([ExtParam],int)`` Defined in line number 300.
 | 
 | 
 
@@ -248,7 +248,7 @@ ext_block
 
 ext_block
 -------------------------------------------------
-| ``ext_block:Param p->([ExtParam],int)`` Defined in line number 303.
+| ``ext_block:Param p->([ExtParam],int)`` Defined in line number 302.
 | 
 | 
 
@@ -256,7 +256,7 @@ ext_block
 
 sign_find
 -------------------------------------------------
-| ``sign_find:[ExtParam] list,ExtParam E->(int,int)`` Defined in line number 307.
+| ``sign_find:[ExtParam] list,ExtParam E->(int,int)`` Defined in line number 306.
 | 
 | 
 
@@ -264,7 +264,7 @@ sign_find
 
 sign_find
 -------------------------------------------------
-| ``sign_find:ExtParam E,[ExtParam] list->(int,int)`` Defined in line number 311.
+| ``sign_find:ExtParam E,[ExtParam] list->(int,int)`` Defined in line number 310.
 | 
 | 
 
@@ -272,7 +272,7 @@ sign_find
 
 find
 -------------------------------------------------
-| ``find:[ExtParam] list,ExtParam E->int`` Defined in line number 314.
+| ``find:[ExtParam] list,ExtParam E->int`` Defined in line number 313.
 | 
 | 
 
@@ -280,7 +280,7 @@ find
 
 find
 -------------------------------------------------
-| ``find:ExtParam E,[ExtParam] list->int`` Defined in line number 318.
+| ``find:ExtParam E,[ExtParam] list->int`` Defined in line number 317.
 | 
 | 
 
@@ -288,7 +288,7 @@ find
 
 ext_basic
 -------------------------------------------------
-| ``ext_basic:RealForm G->(mat,[Param],ratvec)`` Defined in line number 324.
+| ``ext_basic:RealForm G->(mat,[Param],ratvec)`` Defined in line number 323.
 | 
 | 
 
@@ -296,7 +296,7 @@ ext_basic
 
 folded_bracket
 -------------------------------------------------
-| ``folded_bracket:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 334.
+| ``folded_bracket:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 333.
 | 
 | 
 
@@ -304,7 +304,7 @@ folded_bracket
 
 folded_m
 -------------------------------------------------
-| ``folded_m:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 338.
+| ``folded_m:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 337.
 | 
 | 
 
@@ -312,7 +312,7 @@ folded_m
 
 folded_order
 -------------------------------------------------
-| ``folded_order:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 341.
+| ``folded_order:RootDatum rd, mat delta, int i, int j->int`` Defined in line number 340.
 | 
 | 
 

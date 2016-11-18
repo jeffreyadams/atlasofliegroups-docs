@@ -6,7 +6,7 @@ stable.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`dual.at<dual.at>`
 | :ref:`modules.at<modules.at>`
