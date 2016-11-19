@@ -260,16 +260,15 @@ to install the readline package.
 (5) Edit the Makefiles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You will need to edit two files to tell your computer which compiler to use:
+You will need to edit two files to tell your computer which compiler to use.
 
 (A) In the atlasofliegroups directory, edit the Makefile as follows:
 
 First search for CXX and find the following text::
 
   # the compiler to use, including language switch 
-some C++11
-  # supportneeded (rvalue references, shared_ptr) but g++-4.4 suffices
-  # CXX = g++-mp-4.9 -std=c++0x -I/opt/local/include
+  #some C++11 supportneeded (rvalue references, shared_ptr) but g++-4.4 suffices
+  CXX = g++-mp-4.9 -std=c++0x -I/opt/local/include
 
 Then edit the last line to read::
  
@@ -285,10 +284,14 @@ to read::
 
 (to tell the compiler where to find the readline libraries).
 
-(B) In addition you need to modify the Makefile in the directory atlasofliegroups/sources/intepreter. Search again for CXX and find the following text::
+(B) In addition, in the directory
+``atlasofliegroups/sources/intepreter``, you need to modify the
+Makefile in there. Search again for ``CXX`` and find the following
+text::
 
 
-   # our C++ compiler (call language version c++0x, for backward compatibility)     CXX := g++ -std=c++0x
+   # our C++ compiler (call language version c++0x, for backward compatibility)     
+   CXX := g++ -std=c++0x
 
 Then edit the last line to read::
 
@@ -348,13 +351,9 @@ To install the executables in /home/[userid]/software/atlas, and symlinks in /ho
    make install INSTALLDIR=/home/[userid]/software BINDIR=/home/[userid]/bin
 
 Example: 
-<<<<<<< HEAD
---------
+~~~~~~~~~~~
+
 Say you unpacked the software in /home/[userid]/atlas_0.7. To leave the software there, and create symlinks in /home/[userid]/bin, type::
-=======
-~~~~~~~~~~~~~
-Say you unpacked the software in /home/[userid]/atlas_0.6. To leave the software there, and create symlinks in /home/[userid]/bin, type::
->>>>>>> 2230c22b8905135d33fcf565ea26ea807d97bd85
 
    make install
 
