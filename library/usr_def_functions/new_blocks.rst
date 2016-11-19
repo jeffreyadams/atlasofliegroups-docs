@@ -6,7 +6,7 @@ new_blocks.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 |
 

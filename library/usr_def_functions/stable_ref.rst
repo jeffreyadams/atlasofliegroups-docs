@@ -72,7 +72,7 @@ inverse_permutation
 
 permutation_matrix
 -------------------------------------------------
-| ``permutation_matrix:[int] S->null(#S,#S) in for i:#S do rv[S[i],i]`` Defined in line number 32.
+| ``permutation_matrix:[int] S->null(#S,#S) in for i:#S do rv[S[i],i]`` Defined in line number 33.
 | 
 | 
 
@@ -80,7 +80,7 @@ permutation_matrix
 
 permutation_matrix
 -------------------------------------------------
-| ``permutation_matrix:[int] S,[int] T->null(#S,#S) in for i:#S do rv[find(T,S[i]),find(S,S[i])]`` Defined in line number 35.
+| ``permutation_matrix:[int] S,[int] T->null(#S,#S) in for i:#S do rv[find(T,S[i]),find(S,S[i])]`` Defined in line number 36.
 | 
 | 
 
@@ -88,7 +88,7 @@ permutation_matrix
 
 permutation_matrix_sort
 -------------------------------------------------
-| ``permutation_matrix_sort:[int] S->mat`` Defined in line number 38.
+| ``permutation_matrix_sort:[int] S->mat`` Defined in line number 39.
 | 
 | 
 
@@ -96,7 +96,7 @@ permutation_matrix_sort
 
 in_tau
 -------------------------------------------------
-| ``in_tau:int s,Param p->bool`` Defined in line number 40.
+| ``in_tau:int s,Param p->bool`` Defined in line number 41.
 | 
 | 
 
@@ -104,7 +104,7 @@ in_tau
 
 in_tau
 -------------------------------------------------
-| ``in_tau:[int] S,Param p->bool:all(for i`` Defined in line number 41.
+| ``in_tau:[int] S,Param p->bool:all(for i`` Defined in line number 42.
 | 
 | 
 
@@ -112,7 +112,7 @@ in_tau
 
 in_tau
 -------------------------------------------------
-| ``in_tau:[*] S,Param p->bool:in_tau([int]`` Defined in line number 42.
+| ``in_tau:[*] S,Param p->bool:in_tau([int]`` Defined in line number 43.
 | 
 | 
 
@@ -120,7 +120,7 @@ in_tau
 
 in_tau_complement
 -------------------------------------------------
-| ``in_tau_complement:int s,Param p->bool`` Defined in line number 44.
+| ``in_tau_complement:int s,Param p->bool`` Defined in line number 45.
 | 
 | 
 
@@ -128,7 +128,7 @@ in_tau_complement
 
 in_tau_complement
 -------------------------------------------------
-| ``in_tau_complement:[int] S,Param p->bool:all(for i`` Defined in line number 45.
+| ``in_tau_complement:[int] S,Param p->bool:all(for i`` Defined in line number 46.
 | 
 | 
 
@@ -136,7 +136,7 @@ in_tau_complement
 
 in_tau_complement
 -------------------------------------------------
-| ``in_tau_complement:[*] S,Param p->bool:in_tau_complement([int]`` Defined in line number 46.
+| ``in_tau_complement:[*] S,Param p->bool:in_tau_complement([int]`` Defined in line number 47.
 | 
 | 
 
@@ -144,7 +144,7 @@ in_tau_complement
 
 Psi
 -------------------------------------------------
-| ``Psi:[Param] params,[int] S->[Param]:[] in for p in params do if in_tau_complement(S,p) then rv#`` Defined in line number 49.
+| ``Psi:[Param] params,[int] S->[Param]:[] in for p in params do if in_tau_complement(S,p) then rv#`` Defined in line number 50.
 | 
 | 
 
@@ -152,7 +152,7 @@ Psi
 
 parameters_tau_containing
 -------------------------------------------------
-| ``parameters_tau_containing:[int] S,[Param] params->[int]`` Defined in line number 57.
+| ``parameters_tau_containing:[int] S,[Param] params->[int]`` Defined in line number 58.
 | 
 | 
 
@@ -160,7 +160,7 @@ parameters_tau_containing
 
 parameters_tau_containing
 -------------------------------------------------
-| ``parameters_tau_containing:[*] S,[Param] params->[int]: parameters_tau_containing([int]`` Defined in line number 59.
+| ``parameters_tau_containing:[*] S,[Param] params->[int]: parameters_tau_containing([int]`` Defined in line number 60.
 | 
 | 
 
@@ -168,7 +168,7 @@ parameters_tau_containing
 
 parameters_tau_contained_in_complement
 -------------------------------------------------
-| ``parameters_tau_contained_in_complement:[int] S,[Param] params->[int]`` Defined in line number 61.
+| ``parameters_tau_contained_in_complement:[int] S,[Param] params->[int]`` Defined in line number 62.
 | 
 | 
 
@@ -176,7 +176,7 @@ parameters_tau_contained_in_complement
 
 parameters_tau_contained_in_complement
 -------------------------------------------------
-| ``parameters_tau_contained_in_complement:[*] S,[Param] params->[int]: parameters_tau_contained_in_complement([int]`` Defined in line number 63.
+| ``parameters_tau_contained_in_complement:[*] S,[Param] params->[int]: parameters_tau_contained_in_complement([int]`` Defined in line number 64.
 | 
 | 
 
@@ -184,7 +184,7 @@ parameters_tau_contained_in_complement
 
 permutation
 -------------------------------------------------
-| ``permutation:[Param] B->[int]`` Defined in line number 66.
+| ``permutation:[Param] B->[int]`` Defined in line number 67.
 | 
 | 
 
@@ -192,7 +192,7 @@ permutation
 
 dual_parameters
 -------------------------------------------------
-| ``dual_parameters:[int] S,[Param] B->[int]`` Defined in line number 69.
+| ``dual_parameters:[int] S,[Param] B->[int]`` Defined in line number 70.
 | 
 | 
 
@@ -200,7 +200,7 @@ dual_parameters
 
 dual_parameters
 -------------------------------------------------
-| ``dual_parameters:[*] S,[Param] B->[int]:dual_parameters([int]`` Defined in line number 70.
+| ``dual_parameters:[*] S,[Param] B->[int]:dual_parameters([int]`` Defined in line number 71.
 | 
 | 
 
@@ -208,7 +208,7 @@ dual_parameters
 
 parameters
 -------------------------------------------------
-| ``parameters:[int] S,[Param] B->[int]`` Defined in line number 78.
+| ``parameters:[int] S,[Param] B->[int]`` Defined in line number 79.
 | 
 | 
 
@@ -216,7 +216,7 @@ parameters
 
 parameters
 -------------------------------------------------
-| ``parameters:[*] S,[Param] B->parameters([int]`` Defined in line number 83.
+| ``parameters:[*] S,[Param] B->parameters([int]`` Defined in line number 84.
 | 
 | 
 
@@ -224,7 +224,7 @@ parameters
 
 parameters_singular
 -------------------------------------------------
-| ``parameters_singular:[int] S,[Param] B->[Param]`` Defined in line number 85.
+| ``parameters_singular:[int] S,[Param] B->[Param]`` Defined in line number 86.
 | 
 | 
 
@@ -232,7 +232,7 @@ parameters_singular
 
 parameters_singular
 -------------------------------------------------
-| ``parameters_singular:[*] S,[Param] B->[Param]:parameters_singular([int]`` Defined in line number 86.
+| ``parameters_singular:[*] S,[Param] B->[Param]:parameters_singular([int]`` Defined in line number 87.
 | 
 | 
 
@@ -240,7 +240,7 @@ parameters_singular
 
 lengths_signs
 -------------------------------------------------
-| ``lengths_signs:[Param] params->[int]`` Defined in line number 90.
+| ``lengths_signs:[Param] params->[int]`` Defined in line number 91.
 | 
 | 
 
@@ -248,7 +248,7 @@ lengths_signs
 
 lengths_signs_matrix
 -------------------------------------------------
-| ``lengths_signs_matrix:[Param] params->mat`` Defined in line number 91.
+| ``lengths_signs_matrix:[Param] params->mat`` Defined in line number 92.
 | 
 | 
 
@@ -256,7 +256,7 @@ lengths_signs_matrix
 
 lengths_signs
 -------------------------------------------------
-| ``lengths_signs:[int] S,[Param] B->[int]`` Defined in line number 92.
+| ``lengths_signs:[int] S,[Param] B->[int]`` Defined in line number 93.
 | 
 | 
 
@@ -264,7 +264,7 @@ lengths_signs
 
 lengths_signs
 -------------------------------------------------
-| ``lengths_signs:[*] S,[Param] B->[int]: lengths_signs([int]`` Defined in line number 93.
+| ``lengths_signs:[*] S,[Param] B->[int]: lengths_signs([int]`` Defined in line number 94.
 | 
 | 
 
@@ -272,7 +272,7 @@ lengths_signs
 
 lengths_signs_matrix
 -------------------------------------------------
-| ``lengths_signs_matrix:[int] S,[Param] B->mat`` Defined in line number 94.
+| ``lengths_signs_matrix:[int] S,[Param] B->mat`` Defined in line number 95.
 | 
 | 
 
@@ -280,7 +280,7 @@ lengths_signs_matrix
 
 lengths_signs_matrix
 -------------------------------------------------
-| ``lengths_signs_matrix:[*] S,[Param] B->mat: lengths_signs_matrix([int]`` Defined in line number 95.
+| ``lengths_signs_matrix:[*] S,[Param] B->mat: lengths_signs_matrix([int]`` Defined in line number 96.
 | 
 | 
 
@@ -288,7 +288,7 @@ lengths_signs_matrix
 
 dual_parameters_matrix
 -------------------------------------------------
-| ``dual_parameters_matrix:[int] S,[Param] B->mat`` Defined in line number 97.
+| ``dual_parameters_matrix:[int] S,[Param] B->mat`` Defined in line number 98.
 | 
 | 
 
@@ -296,7 +296,7 @@ dual_parameters_matrix
 
 dual_parameters_matrix
 -------------------------------------------------
-| ``dual_parameters_matrix:[*] S,[Param] B->mat:dual_parameters_matrix([int]`` Defined in line number 102.
+| ``dual_parameters_matrix:[*] S,[Param] B->mat:dual_parameters_matrix([int]`` Defined in line number 103.
 | 
 | 
 
@@ -304,7 +304,7 @@ dual_parameters_matrix
 
 dual_parameters_matrix
 -------------------------------------------------
-| ``dual_parameters_matrix:[Param] B->mat`` Defined in line number 104.
+| ``dual_parameters_matrix:[Param] B->mat`` Defined in line number 105.
 | 
 | 
 
@@ -312,7 +312,7 @@ dual_parameters_matrix
 
 dual_parameters_matrix
 -------------------------------------------------
-| ``dual_parameters_matrix:[Param] B, [int] T->mat`` Defined in line number 107.
+| ``dual_parameters_matrix:[Param] B, [int] T->mat`` Defined in line number 108.
 | 
 | 
 
@@ -320,7 +320,7 @@ dual_parameters_matrix
 
 dual_parameters_standard_basis_poly_mat
 -------------------------------------------------
-| ``dual_parameters_standard_basis_poly_mat:[Param] B->poly_mat`` Defined in line number 110.
+| ``dual_parameters_standard_basis_poly_mat:[Param] B->poly_mat`` Defined in line number 111.
 | 
 | 
 
@@ -328,7 +328,7 @@ dual_parameters_standard_basis_poly_mat
 
 dual_parameters_standard_basis
 -------------------------------------------------
-| ``dual_parameters_standard_basis:[Param] B->mat`` Defined in line number 112.
+| ``dual_parameters_standard_basis:[Param] B->mat`` Defined in line number 113.
 | 
 | 
 
@@ -336,7 +336,7 @@ dual_parameters_standard_basis
 
 dual_parameters_standard_basis
 -------------------------------------------------
-| ``dual_parameters_standard_basis:[int] S,[Param] B->mat`` Defined in line number 115.
+| ``dual_parameters_standard_basis:[int] S,[Param] B->mat`` Defined in line number 116.
 | 
 | 
 
@@ -344,7 +344,7 @@ dual_parameters_standard_basis
 
 dual_parameters_standard_basis
 -------------------------------------------------
-| ``dual_parameters_standard_basis:[*] S,[Param] B->mat:dual_parameters_standard_basis([int]`` Defined in line number 117.
+| ``dual_parameters_standard_basis:[*] S,[Param] B->mat:dual_parameters_standard_basis([int]`` Defined in line number 118.
 | 
 | 
 
@@ -352,7 +352,7 @@ dual_parameters_standard_basis
 
 get_y
 -------------------------------------------------
-| ``get_y:[Param] B->[int]`` Defined in line number 119.
+| ``get_y:[Param] B->[int]`` Defined in line number 120.
 | 
 | 
 
@@ -360,7 +360,7 @@ get_y
 
 vanishing
 -------------------------------------------------
-| ``vanishing:[int] S,[Param] B->mat`` Defined in line number 132.
+| ``vanishing:[int] S,[Param] B->mat`` Defined in line number 133.
 | 
 | 
 
@@ -368,7 +368,7 @@ vanishing
 
 vanishing
 -------------------------------------------------
-| ``vanishing:[*] S,[Param] B->vanishing([int]`` Defined in line number 135.
+| ``vanishing:[*] S,[Param] B->vanishing([int]`` Defined in line number 136.
 | 
 | 
 
@@ -376,7 +376,7 @@ vanishing
 
 kernel_vanishing
 -------------------------------------------------
-| ``kernel_vanishing:[int] S,[Param] B->mat`` Defined in line number 138.
+| ``kernel_vanishing:[int] S,[Param] B->mat`` Defined in line number 139.
 | 
 | 
 
@@ -384,7 +384,7 @@ kernel_vanishing
 
 kernel_vanishing
 -------------------------------------------------
-| ``kernel_vanishing:[*] S,[Param] B->mat:kernel_vanishing([int]`` Defined in line number 139.
+| ``kernel_vanishing:[*] S,[Param] B->mat:kernel_vanishing([int]`` Defined in line number 140.
 | 
 | 
 
@@ -392,7 +392,7 @@ kernel_vanishing
 
 stable_at_singular_unsorted
 -------------------------------------------------
-| ``stable_at_singular_unsorted:[int] S,[Param] B->(mat,[Param])`` Defined in line number 143.
+| ``stable_at_singular_unsorted:[int] S,[Param] B->(mat,[Param])`` Defined in line number 144.
 | 
 | 
 
@@ -400,7 +400,7 @@ stable_at_singular_unsorted
 
 stable_at_singular_unsorted
 -------------------------------------------------
-| ``stable_at_singular_unsorted:[*] S,[Param] B->(mat,[Param]):stable_at_singular_unsorted([int]`` Defined in line number 148.
+| ``stable_at_singular_unsorted:[*] S,[Param] B->(mat,[Param]):stable_at_singular_unsorted([int]`` Defined in line number 149.
 | 
 | 
 
@@ -408,7 +408,7 @@ stable_at_singular_unsorted
 
 stable_at_singular
 -------------------------------------------------
-| ``stable_at_singular:[int] S,[Param] B->(mat,[Param])`` Defined in line number 151.
+| ``stable_at_singular:[int] S,[Param] B->(mat,[Param])`` Defined in line number 152.
 | 
 | 
 
@@ -416,7 +416,7 @@ stable_at_singular
 
 stable_at_singular
 -------------------------------------------------
-| ``stable_at_singular:[*] S,[Param] B->(mat,[Param]):stable_at_singular([int]`` Defined in line number 155.
+| ``stable_at_singular:[*] S,[Param] B->(mat,[Param]):stable_at_singular([int]`` Defined in line number 156.
 | 
 | 
 
@@ -424,7 +424,7 @@ stable_at_singular
 
 print_stable_at_singular_unsorted
 -------------------------------------------------
-| ``print_stable_at_singular_unsorted:[int] S,[Param] B->void`` Defined in line number 157.
+| ``print_stable_at_singular_unsorted:[int] S,[Param] B->void`` Defined in line number 158.
 | 
 | 
 
@@ -432,7 +432,7 @@ print_stable_at_singular_unsorted
 
 print_stable_at_singular_unsorted
 -------------------------------------------------
-| ``print_stable_at_singular_unsorted:[*] S,[Param] B->void:print_stable_at_singular_unsorted([int]`` Defined in line number 162.
+| ``print_stable_at_singular_unsorted:[*] S,[Param] B->void:print_stable_at_singular_unsorted([int]`` Defined in line number 163.
 | 
 | 
 
@@ -440,7 +440,7 @@ print_stable_at_singular_unsorted
 
 print_stable_at_singular
 -------------------------------------------------
-| ``print_stable_at_singular:[int] S,[Param] B->void`` Defined in line number 164.
+| ``print_stable_at_singular:[int] S,[Param] B->void`` Defined in line number 165.
 | 
 | 
 
@@ -448,7 +448,7 @@ print_stable_at_singular
 
 print_stable_at_singular
 -------------------------------------------------
-| ``print_stable_at_singular:[*] S,[Param] B->void:print_stable_at_singular([int]`` Defined in line number 169.
+| ``print_stable_at_singular:[*] S,[Param] B->void:print_stable_at_singular([int]`` Defined in line number 170.
 | 
 | 
 
@@ -456,7 +456,7 @@ print_stable_at_singular
 
 subspace_injection_matrix
 -------------------------------------------------
-| ``subspace_injection_matrix:[Param] B,[Param] subset->mat`` Defined in line number 174.
+| ``subspace_injection_matrix:[Param] B,[Param] subset->mat`` Defined in line number 175.
 | 
 | 
 
@@ -464,7 +464,7 @@ subspace_injection_matrix
 
 stable_at_singular
 -------------------------------------------------
-| ``stable_at_singular:[int] S,[Param] B,[Param] subset_in->(mat,[Param])`` Defined in line number 179.
+| ``stable_at_singular:[int] S,[Param] B,[Param] subset_in->(mat,[Param])`` Defined in line number 180.
 | 
 | 
 
@@ -472,7 +472,7 @@ stable_at_singular
 
 stable_at_singular
 -------------------------------------------------
-| ``stable_at_singular:[*] S,[Param] B,[Param] subset->(mat,[Param]):stable_at_singular([int]`` Defined in line number 195.
+| ``stable_at_singular:[*] S,[Param] B,[Param] subset->(mat,[Param]):stable_at_singular([int]`` Defined in line number 196.
 | 
 | 
 
@@ -480,7 +480,7 @@ stable_at_singular
 
 print_stable_at_singular
 -------------------------------------------------
-| ``print_stable_at_singular:[int] S,[Param] B,[Param] subset->void`` Defined in line number 197.
+| ``print_stable_at_singular:[int] S,[Param] B,[Param] subset->void`` Defined in line number 198.
 | 
 | 
 
@@ -488,7 +488,7 @@ print_stable_at_singular
 
 print_stable_at_singular
 -------------------------------------------------
-| ``print_stable_at_singular:[*] S,[Param] B,[Param] subset->void:print_stable_at_singular([int]`` Defined in line number 202.
+| ``print_stable_at_singular:[*] S,[Param] B,[Param] subset->void:print_stable_at_singular([int]`` Defined in line number 203.
 | 
 | 
 
@@ -496,7 +496,7 @@ print_stable_at_singular
 
 stable
 -------------------------------------------------
-| ``stable:[Param] params->(mat,[Param])`` Defined in line number 204.
+| ``stable:[Param] params->(mat,[Param])`` Defined in line number 205.
 | 
 | 
 
@@ -504,7 +504,7 @@ stable
 
 print_stable
 -------------------------------------------------
-| ``print_stable:[Param] params->void`` Defined in line number 215.
+| ``print_stable:[Param] params->void`` Defined in line number 216.
 | 
 | 
 
@@ -512,7 +512,7 @@ print_stable
 
 stable_test_Aq_packet
 -------------------------------------------------
-| ``stable_test_Aq_packet:RealForm G,[int] complex_parabolic->stable_test_Aq_packet(G,ComplexParabolic`` Defined in line number 222.
+| ``stable_test_Aq_packet:RealForm G,[int] complex_parabolic->stable_test_Aq_packet(G,ComplexParabolic`` Defined in line number 223.
 | 
 | 
 
@@ -520,7 +520,7 @@ stable_test_Aq_packet
 
 stable_test_Aq_packet
 -------------------------------------------------
-| ``stable_test_Aq_packet:RealForm G,[*] complex_parabolic->stable_test_Aq_packet(G,[int]`` Defined in line number 223.
+| ``stable_test_Aq_packet:RealForm G,[*] complex_parabolic->stable_test_Aq_packet(G,[int]`` Defined in line number 224.
 | 
 | 
 

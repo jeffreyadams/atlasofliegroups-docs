@@ -6,7 +6,7 @@
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`extended.at<extended.at>`
 | :ref:`hecke.at<hecke.at>`

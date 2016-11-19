@@ -50,7 +50,7 @@ part of the :math:`\theta` -stable data for tau=(x,lambda). The parameter for
 (relatively split) L is obtained from xi by a :math:`\rho` -shift.
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`W_K.at<W_K.at>`
 | :ref:`thetastable.at<thetastable.at>`

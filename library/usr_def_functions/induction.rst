@@ -36,7 +36,7 @@ p_dom=parameter(x, :math:`w^{-1}\cdot` lambda,nu) and return coherent continuati
 (wrt imaginary roots) of :math:`w`  on p_dom.
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`basic.at<basic.at>`
 | :ref:`misc.at<misc.at>`

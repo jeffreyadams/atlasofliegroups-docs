@@ -6,7 +6,7 @@ print_K_types.at
 
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`K_types.at<K_types.at>`
 | :ref:`basic.at<basic.at>`

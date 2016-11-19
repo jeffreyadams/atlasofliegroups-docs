@@ -48,7 +48,7 @@ parabolics with :math:`\theta` -stable Levi factor;
 real parabolics.
 
 
-**This script imported the following .at files:**
+**This script imports the following .at files:**
 
 | :ref:`sort.at<sort.at>`
 | :ref:`Weylgroup.at<Weylgroup.at>`
