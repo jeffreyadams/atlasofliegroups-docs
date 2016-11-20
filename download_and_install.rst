@@ -147,7 +147,7 @@ the software. Open a terminal window (in the Finder click
 Macintosh/Applications/Utilities/Terminal). Make sure your git client
 is relatively new. Version 1.7.0.4 and above should work.
 
-To check your git version, on the commandline, do::
+To check your git version, on the command line, do::
 
     git --version
 
@@ -268,12 +268,13 @@ First search for CXX and find the following text::
 
   # the compiler to use, including language switch 
   #some C++11 supportneeded (rvalue references, shared_ptr) but g++-4.4 suffices
-  CXX = g++-mp-4.9 -std=c++0x -I/opt/local/include
+  CXX = g++- -std=c++0x
 
 Then edit the last line to read::
  
- CXX = g++-mp-4.9 -std=c++0x -I/opt/local/include
+  CXX = g++-mp-4.9 -std=c++0x
 
+Or modify for the version of of compiler that you have downloaded. 
 and also edit the line::
 
   rl_libs ?= -lreadline
@@ -288,7 +289,6 @@ to read::
 ``atlasofliegroups/sources/intepreter``, you need to modify the
 Makefile in there. Search again for ``CXX`` and find the following
 text::
-
 
    # our C++ compiler (call language version c++0x, for backward compatibility)     
    CXX := g++ -std=c++0x
