@@ -8,7 +8,6 @@ finite_dimensional.at
 
 **This script imports the following .at files:**
 
-| :ref:`basic.at<basic.at>`
 | :ref:`Weylgroup.at<Weylgroup.at>`
 |
 

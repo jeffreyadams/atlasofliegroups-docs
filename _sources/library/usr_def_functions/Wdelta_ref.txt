@@ -8,7 +8,7 @@ Wdelta.at Function References
 
 delta_fixed_root_datum
 -------------------------------------------------
-| ``delta_fixed_root_datum:InnerClass ic->RootDatum`` Defined in line number 9.
+| ``delta_fixed_root_datum:InnerClass ic->RootDatum`` Defined in line number 7.
 | 
 | 
 
@@ -16,7 +16,7 @@ delta_fixed_root_datum
 
 delta_fixed_root_datum
 -------------------------------------------------
-| ``delta_fixed_root_datum:(RootDatum,mat) pair->RootDatum`` Defined in line number 12.
+| ``delta_fixed_root_datum:(RootDatum,mat) pair->RootDatum`` Defined in line number 10.
 | 
 | 
 
@@ -24,7 +24,7 @@ delta_fixed_root_datum
 
 translate_Wdelta_generators
 -------------------------------------------------
-| ``translate_Wdelta_generators:InnerClass ic->[[int]]`` Defined in line number 18.
+| ``translate_Wdelta_generators:InnerClass ic->[[int]]`` Defined in line number 16.
 | 
 | 
 
@@ -32,7 +32,7 @@ translate_Wdelta_generators
 
 translate_Wdelta_generators
 -------------------------------------------------
-| ``translate_Wdelta_generators:(RootDatum,mat) pair->[[int]]`` Defined in line number 33.
+| ``translate_Wdelta_generators:(RootDatum,mat) pair->[[int]]`` Defined in line number 31.
 | 
 | 
 
@@ -40,7 +40,7 @@ translate_Wdelta_generators
 
 length
 -------------------------------------------------
-| ``length:RootDatum rd, int i,int j->int`` Defined in line number 41.
+| ``length:RootDatum rd, int i,int j->int`` Defined in line number 39.
 | 
 | 
 
@@ -48,7 +48,7 @@ length
 
 rewrite_word_Wdelta_to_W
 -------------------------------------------------
-| ``rewrite_word_Wdelta_to_W:InnerClass ic, W_word(,w)->W_word`` Defined in line number 44.
+| ``rewrite_word_Wdelta_to_W:InnerClass ic, W_word(,w)->W_word`` Defined in line number 42.
 | 
 | 
 
@@ -56,7 +56,7 @@ rewrite_word_Wdelta_to_W
 
 rewrite_word_Wdelta_to_W
 -------------------------------------------------
-| ``rewrite_word_Wdelta_to_W:RootDatum rd,mat delta,W_word ww->W_word`` Defined in line number 48.
+| ``rewrite_word_Wdelta_to_W:RootDatum rd,mat delta,W_word ww->W_word`` Defined in line number 46.
 | 
 | 
 
@@ -64,7 +64,7 @@ rewrite_word_Wdelta_to_W
 
 conjugate_to_simple_by_Wdelta
 -------------------------------------------------
-| ``conjugate_to_simple_by_Wdelta:RootDatum rd, mat delta, int j->(W_word,vec)`` Defined in line number 57.
+| ``conjugate_to_simple_by_Wdelta:RootDatum rd, mat delta, int j->(W_word,vec)`` Defined in line number 55.
 | 
 | 
 

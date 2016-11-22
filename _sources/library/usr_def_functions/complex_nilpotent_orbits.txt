@@ -9,8 +9,6 @@ complex_nilpotent_orbits.at
 **This script imports the following .at files:**
 
 | :ref:`misc.at<misc.at>`
-| :ref:`Weylgroup.at<Weylgroup.at>`
-| :ref:`sort.at<sort.at>`
 | :ref:`lattice.at<lattice.at>`
 | :ref:`parabolics.at<parabolics.at>`
 | :ref:`parameters.at<parameters.at>`

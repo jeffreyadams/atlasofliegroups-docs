@@ -8,7 +8,7 @@ W_orbit.at Function References
 
 generate_from_dom
 -------------------------------------------------
-| ``generate_from_dom:[(vec->vec)] S,vec v->([[int]],[vec])`` Defined in line number 21.
+| ``generate_from_dom:[(vec->vec)] S,vec v->([[int]],[vec])`` Defined in line number 20.
 | 
 | 
 
@@ -16,7 +16,7 @@ generate_from_dom
 
 generate_from_dom
 -------------------------------------------------
-| ``generate_from_dom:RootDatum rd,[(vec->vec)] S,vec v->([W_word],[vec])`` Defined in line number 37.
+| ``generate_from_dom:RootDatum rd,[(vec->vec)] S,vec v->([W_word],[vec])`` Defined in line number 36.
 | 
 | 
 
@@ -24,7 +24,7 @@ generate_from_dom
 
 generate_from_dom
 -------------------------------------------------
-| ``generate_from_dom:RootDatum rd,[int] S,vec v->([W_word],[vec])`` Defined in line number 44.
+| ``generate_from_dom:RootDatum rd,[int] S,vec v->([W_word],[vec])`` Defined in line number 43.
 | 
 | 
 
@@ -32,7 +32,7 @@ generate_from_dom
 
 W_orbit
 -------------------------------------------------
-| ``W_orbit:(RootDatum,[int],vec) triple->[vec]`` Defined in line number 52.
+| ``W_orbit:(RootDatum,[int],vec) triple->[vec]`` Defined in line number 51.
 | 
 | 
 
@@ -40,7 +40,7 @@ W_orbit
 
 W_orbit_W_elements
 -------------------------------------------------
-| ``W_orbit_W_elements:(RootDatum,[int],vec) triple->[W_word]`` Defined in line number 56.
+| ``W_orbit_W_elements:(RootDatum,[int],vec) triple->[W_word]`` Defined in line number 55.
 | 
 | 
 
@@ -48,7 +48,7 @@ W_orbit_W_elements
 
 generate_from_dom
 -------------------------------------------------
-| ``generate_from_dom:RootDatum rd,vec v->([W_word],[vec])`` Defined in line number 60.
+| ``generate_from_dom:RootDatum rd,vec v->([W_word],[vec])`` Defined in line number 59.
 | 
 | 
 
@@ -56,7 +56,7 @@ generate_from_dom
 
 W_orbit
 -------------------------------------------------
-| ``W_orbit:(RootDatum,vec) pair->[vec]`` Defined in line number 62.
+| ``W_orbit:(RootDatum,vec) pair->[vec]`` Defined in line number 61.
 | 
 | 
 
@@ -64,7 +64,7 @@ W_orbit
 
 W_orbit_W_elements
 -------------------------------------------------
-| ``W_orbit_W_elements:(RootDatum,vec) pair->[W_word]`` Defined in line number 64.
+| ``W_orbit_W_elements:(RootDatum,vec) pair->[W_word]`` Defined in line number 63.
 | 
 | 
 
@@ -72,7 +72,7 @@ W_orbit_W_elements
 
 generate_W
 -------------------------------------------------
-| ``generate_W:RootDatum rd->[W_word]`` Defined in line number 68.
+| ``generate_W:RootDatum rd->[W_word]`` Defined in line number 67.
 | 
 | 
 
@@ -80,7 +80,7 @@ generate_W
 
 generate
 -------------------------------------------------
-| ``generate:[(vec->vec)] S,vec v->([[int]],[vec])`` Defined in line number 78.
+| ``generate:[(vec->vec)] S,vec v->([[int]],[vec])`` Defined in line number 77.
 | 
 | 
 
@@ -88,7 +88,7 @@ generate
 
 generate
 -------------------------------------------------
-| ``generate:[W_word] S,vec v->([[int]],[vec])`` Defined in line number 95.
+| ``generate:[W_word] S,vec v->([[int]],[vec])`` Defined in line number 94.
 | 
 | 
 
@@ -96,7 +96,7 @@ generate
 
 conjugate_to
 -------------------------------------------------
-| ``conjugate_to:[W_word] S, vec v,vec w->(bool,[int])`` Defined in line number 101.
+| ``conjugate_to:[W_word] S, vec v,vec w->(bool,[int])`` Defined in line number 100.
 | 
 | 
 

@@ -602,8 +602,9 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">induction.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="induction_index.html">induction.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="induction_ref.html">induction.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parabolic-induction">Parabolic induction:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#construction"><span class="math">\(A_q(\lambda)\)</span>  construction:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#good-fair-conditions">Good/Fair conditions:</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="induction_sp4.html">induction_sp4.at</a><ul>
@@ -764,13 +765,6 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="thetastable.html">thetastable.at</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thetastable.html#construction"><span class="math">\(A_q(\lambda)\)</span>  construction:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="thetastable.html#good-fair-conditions">Good/Fair conditions:</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="thetastable_index.html">thetastable.at Function Index</a></li>
-<li class="toctree-l4"><a class="reference internal" href="thetastable_ref.html">thetastable.at Function References</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1033,28 +1027,85 @@
   <div class="section" id="induction-at">
 <span id="id1"></span><h1>induction.at<a class="headerlink" href="#induction-at" title="Permalink to this headline">¶</a></h1>
 <p>Parabolic induction from real and <span class="math">\(\theta\)</span> -stable parabolics; cuspidal and
-<span class="math">\(\theta\)</span> -stable data of a parameter.</p>
-<p>If L is a <span class="math">\(\theta\)</span> -stable Levi subgroup of G, then KGB for L embeds into KGB for G.</p>
-<p>For parabolic induction, a parameter p_L for the Levi L is assigned a parameter
-p_G for G:</p>
-<p>p_L=(x_L,lambda,nu) -&gt; p_G=(embed_KGB(x_L,G),lambda + appropriate rho-shift,nu).</p>
-<p>For real parabolic induction, the rho-shift is:
-<span class="math">\(\rho_r(G)-\rho_r(L)+(1-\theta)(\rho_S(G)-\rho_S(L))\)</span> . (Here <span class="math">\(\rho_S\)</span>  is a certain
-half sum of complex roots.)</p>
-<p>For <span class="math">\(\theta\)</span> -stable induction, the rho-shift is:
-<span class="math">\(\rho_i(G)-\rho_i(L)+\rho_{complex}(G)-\rho_{complex}(L)
-=\rho(G)-\rho_r(G)-\rho(L)+\rho_r(L)\)</span> .
-Since <span class="math">\(\mathfrak q\)</span>  is <span class="math">\(\theta\)</span>  -stable, <span class="math">\(\rho_r(G)-\rho_r(L)=0\)</span> , so the
-shift is <span class="math">\(\rho(G)-\rho(L)=\rho(\mathfrak u)\)</span> .</p>
-<p>Then <span class="math">\(\operatorname{Ind}_P^G I(p_L)=I(p_G)\)</span> .</p>
-<p>In the <span class="math">\(\theta\)</span> -stable case, the shifted parameter p_G may be non-standard
-and needs to be standardized:</p>
-<p>If p=(x,lambda,nu), and <span class="math">\(\langle \text{lambda},\alpha^{\vee}\rangle &lt;0\)</span>  for
-some imaginary root <span class="math">\(\alpha\)</span>  (i.e. non-standard), let
-i_root_system=imaginary roots for x(p). Find <span class="math">\(w\)</span>  so
-that <span class="math">\(w^{-1}\cdot\)</span> lambda is dominant for imaginary roots, set
+<span class="math">\(\theta\)</span> -stable data of a parameter, and some functions related to <span class="math">\(\theta\)</span> -stable parabolics.</p>
+<div class="section" id="parabolic-induction">
+<h2>Parabolic induction:<a class="headerlink" href="#parabolic-induction" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">If L is a <span class="math">\(\theta\)</span> -stable Levi subgroup of G, then KGB for L embeds into KGB for G.</div>
+<div class="line">For parabolic induction, a parameter p_L for the Levi L is assigned a parameter p_G for G:</div>
+<div class="line"><br /></div>
+<div class="line">p_L=(x_L,lambda,nu) -&gt; p_G=(embed_KGB(x_L,G),lambda + appropriate rho-shift,nu).</div>
+<div class="line"><br /></div>
+<div class="line">For real parabolic induction, the rho-shift is: <span class="math">\(\rho_r(G)-\rho_r(L)+(1-\theta)(\rho_S(G)-\rho_S(L))\)</span> .</div>
+<div class="line">(Here <span class="math">\(\rho_S\)</span>  is a certain half sum of complex roots.)</div>
+<div class="line"><br /></div>
+<div class="line">For <span class="math">\(\theta\)</span> -stable induction, the rho-shift is:</div>
+<div class="line"><span class="math">\(\rho_i(G)-\rho_i(L)+\rho_{complex}(G)-\rho_{complex}(L)  =\rho(G)-\rho_r(G)-\rho(L)+\rho_r(L)\)</span> .</div>
+<div class="line-block">
+<div class="line">Since <span class="math">\(\mathfrak q\)</span>  is <span class="math">\(\theta\)</span>  -stable, <span class="math">\(\rho_r(G)-\rho_r(L)=0\)</span> , so the shift is <span class="math">\(\rho(G)-\rho(L)=\rho(\mathfrak u)\)</span> .</div>
+</div>
+<div class="line">Then <span class="math">\(\operatorname{Ind}_P^G I(p_L)=I(p_G)\)</span> .</div>
+<div class="line">In the <span class="math">\(\theta\)</span> -stable case, the shifted parameter p_G may be non-standard and needs to be standardized:</div>
+<div class="line">If p=(x,lambda,nu), and <span class="math">\(\langle \text{lambda},\alpha^{\vee}\rangle &lt;0\)</span>  for some imaginary root <span class="math">\(\alpha\)</span>  (i.e. non-standard),</div>
+<div class="line">let i_root_system=imaginary roots for x(p). Find <span class="math">\(w\)</span>  so</div>
+</div>
+<p>that <span class="math">\(w^{-1}\cdot\)</span> lambda is dominant for imaginary roots, set
 p_dom=parameter(x, <span class="math">\(w^{-1}\cdot\)</span> lambda,nu) and return coherent continuation action
 (wrt imaginary roots) of <span class="math">\(w\)</span>  on p_dom.</p>
+</div>
+<div class="section" id="construction">
+<h2><span class="math">\(A_q(\lambda)\)</span>  construction:<a class="headerlink" href="#construction" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Note: theta_induce_irreducible(pi_L,G) has infinitesimal character:</div>
+<div class="line">infinitesimal character(pi_L)+rho(u).</div>
+<div class="line">Aq(x,lambda,lambda_q) is defined as follows:</div>
+<div class="line">if lambda_q is weakly dominant set q=q(x,lambda_q),</div>
+<div class="line">apply derived functor to the one-dimensional lambda-rho(u) of L.</div>
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line">REQUIRE: lambda-rho(u) must be in X^*.</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">Aq(x,lambda,lambda_q) has infinitesimal character lambda+rho_L,</div>
+<div class="line">thus the one-dimensional with weight lambda has infinitesimal character</div>
+<div class="line">lambda+rho_L for L, and goes to a representation with</div>
+<div class="line">infinitesimal character lambda+rho_L for G; i.e., Aq takes infinitesimal</div>
+<div class="line">character gamma_L to SAME infinitesimal character for G.</div>
+<div class="line">If lambda_q is not weakly dominant, define</div>
+<div class="line">Aq(x,lambda,lambda_q)=Aq(wx,wlambda,wlambda_q),</div>
+<div class="line">where wlambda_q is weakly dominant.</div>
+</div>
+</div>
+<div class="section" id="good-fair-conditions">
+<h2>Good/Fair conditions:<a class="headerlink" href="#good-fair-conditions" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Condition on the roots of <span class="math">\(\mathfrak u\)</span> :</div>
+<div class="line">For theta_induce(pi_L,G), gamma_L -&gt; gamma_G=gamma_L+rho_u.</div>
+<div class="line">Then:</div>
+<div class="line">GOOD:  &lt;gamma_L+rho_u,alpha^vee&gt; &gt; 0;</div>
+<div class="line">WEAKLY GOOD:  &lt;gamma_L+rho_u,alpha^vee&gt; ge 0;</div>
+<div class="line">FAIR: &lt;gamma_L-rho_L+rho_u,alpha^vee&gt; &gt; 0.</div>
+<div class="line"><br /></div>
+<div class="line">For  Aq(x,lambda,lambda_q): gamma_L=lambda+rho_L;</div>
+<div class="line">gamma_L -&gt; gamma_G=gamma_L = lambda+rho_L</div>
+<div class="line">Aq(x,lambda)=theta_induce(x,lambda-rho_u)</div>
+<div class="line">Then:</div>
+<div class="line">GOOD: &lt;lambda+rho_L,alpha^vee&gt; &gt; 0;</div>
+<div class="line">WEAKLY GOOD: &lt;lambda+rho_L,alpha^vee&gt; &gt;= 0;</div>
+<div class="line">FAIR: &lt;lambda,alpha^vee&gt; &gt; 0;</div>
+<div class="line">WEAKLY FAIR: &lt;lambda,alpha^vee&gt; ge 0.</div>
+<div class="line"><br /></div>
+<div class="line">theta_induce(pi_L,G) = Euler-Poincare characteristic of the</div>
+<div class="line">cohomological induction functor.</div>
+<div class="line"><br /></div>
+<div class="line">fair =&gt; vanishing outside middle degree =&gt; honest representation</div>
+<div class="line">weakly fair: same implication.</div>
+<div class="line">NB: &lt;gamma_L-rho_L_rho_u,alpha^vee&gt; &gt;= 0 does NOT imply vanishing</div>
+<div class="line-block">
+<div class="line">(in general) if pi_L is not one-dimensional,</div>
+<div class="line">hence &#8220;weakly fair&#8221; is only defined if pi_L is one-dimensional.</div>
+</div>
+</div>
 <p><strong>This script imports the following .at files:</strong></p>
 <div class="line-block">
 <div class="line"><a class="reference internal" href="basic.html#basic-at"><span>basic.at</span></a></div>
@@ -1064,6 +1115,7 @@ p_dom=parameter(x, <span class="math">\(w^{-1}\cdot\)</span> lambda,nu) and retu
 <div class="line"><a class="reference internal" href="coherent.html#coherent-at"><span>coherent.at</span></a></div>
 <div class="line"><a class="reference internal" href="synthetic.html#synthetic-at"><span>synthetic.at</span></a></div>
 <div class="line"><a class="reference internal" href="K.html#k-at"><span>K.at</span></a></div>
+<div class="line"><a class="reference internal" href="finite_dimensional.html#finite-dimensional-at"><span>finite_dimensional.at</span></a></div>
 <div class="line"><br /></div>
 </div>
 <div class="toctree-wrapper compound">
@@ -1071,6 +1123,7 @@ p_dom=parameter(x, <span class="math">\(w^{-1}\cdot\)</span> lambda,nu) and retu
 <li class="toctree-l1"><a class="reference internal" href="induction_index.html">induction.at Function Index</a></li>
 <li class="toctree-l1"><a class="reference internal" href="induction_ref.html">induction.at Function References</a></li>
 </ul>
+</div>
 </div>
 </div>
 

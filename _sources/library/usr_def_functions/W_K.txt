@@ -8,7 +8,6 @@ W_K.at
 
 **This script imports the following .at files:**
 
-| :ref:`basic.at<basic.at>`
 | :ref:`misc.at<misc.at>`
 | :ref:`K.at<K.at>`
 | :ref:`parabolics.at<parabolics.at>`

@@ -53,7 +53,7 @@ part of the :math:`\theta` -stable data for tau=(x,lambda). The parameter for
 **This script imports the following .at files:**
 
 | :ref:`W_K.at<W_K.at>`
-| :ref:`thetastable.at<thetastable.at>`
+| :ref:`induction.at<induction.at>`
 | :ref:`representations.at<representations.at>`
 |
 

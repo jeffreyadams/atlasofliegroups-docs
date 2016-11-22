@@ -70,7 +70,6 @@ User Defined Functions
    usr_def_functions/synthetic_aux
    usr_def_functions/test_K
    usr_def_functions/test_unitarity
-   usr_def_functions/thetastable
    usr_def_functions/tits
    usr_def_functions/torus
    usr_def_functions/translate

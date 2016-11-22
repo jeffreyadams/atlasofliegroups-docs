@@ -8,7 +8,7 @@ extended_misc.at Function References
 
 canonical_g
 -------------------------------------------------
-| ``canonical_g:RealForm G->ratvec`` Defined in line number 12.
+| ``canonical_g:RealForm G->ratvec`` Defined in line number 11.
 | 
 | 
 
@@ -16,7 +16,7 @@ canonical_g
 
 canonical_g
 -------------------------------------------------
-| ``canonical_g:KGBElt x->ratvec`` Defined in line number 13.
+| ``canonical_g:KGBElt x->ratvec`` Defined in line number 12.
 | 
 | 
 
@@ -24,7 +24,7 @@ canonical_g
 
 canonical_g
 -------------------------------------------------
-| ``canonical_g:Param p->ratvec`` Defined in line number 14.
+| ``canonical_g:Param p->ratvec`` Defined in line number 13.
 | 
 | 
 
@@ -32,7 +32,7 @@ canonical_g
 
 cross
 -------------------------------------------------
-| ``cross:int s,Param p->Param`` Defined in line number 23.
+| ``cross:int s,Param p->Param`` Defined in line number 22.
 | 
 | 
 
@@ -40,7 +40,7 @@ cross
 
 Cayley
 -------------------------------------------------
-| ``Cayley:int s,Param p->Param`` Defined in line number 28.
+| ``Cayley:int s,Param p->Param`` Defined in line number 27.
 | 
 | 
 
@@ -48,7 +48,7 @@ Cayley
 
 Cayley_set
 -------------------------------------------------
-| ``Cayley_set:int j,Param p->[Param]`` Defined in line number 35.
+| ``Cayley_set:int j,Param p->[Param]`` Defined in line number 34.
 | 
 | 
 
@@ -56,7 +56,7 @@ Cayley_set
 
 Cayley_set
 -------------------------------------------------
-| ``Cayley_set:int j, int k, Param p->[Param]`` Defined in line number 40.
+| ``Cayley_set:int j, int k, Param p->[Param]`` Defined in line number 39.
 | 
 | 
 
@@ -64,7 +64,7 @@ Cayley_set
 
 Cayley_set
 -------------------------------------------------
-| ``Cayley_set:[int] kappa, Param p->[Param]`` Defined in line number 44.
+| ``Cayley_set:[int] kappa, Param p->[Param]`` Defined in line number 43.
 | 
 | 
 
@@ -72,7 +72,7 @@ Cayley_set
 
 twist
 -------------------------------------------------
-| ``twist:mat delta,KGBElt x->KGBElt`` Defined in line number 53.
+| ``twist:mat delta,KGBElt x->KGBElt`` Defined in line number 52.
 | 
 | 
 
@@ -80,7 +80,7 @@ twist
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:mat delta, Param p->bool`` Defined in line number 60.
+| ``is_fixed:mat delta, Param p->bool`` Defined in line number 59.
 | 
 | 
 
@@ -88,7 +88,7 @@ is_fixed
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:ratvec gamma, mat delta, KGBElt x,KGBElt y->bool`` Defined in line number 63.
+| ``is_fixed:ratvec gamma, mat delta, KGBElt x,KGBElt y->bool`` Defined in line number 62.
 | 
 | 
 
@@ -96,7 +96,7 @@ is_fixed
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:mat delta, KGBElt x->bool`` Defined in line number 67.
+| ``is_fixed:mat delta, KGBElt x->bool`` Defined in line number 66.
 | 
 | 
 
@@ -104,7 +104,7 @@ is_fixed
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:mat delta, KGBElt x, KGBElt y->bool`` Defined in line number 68.
+| ``is_fixed:mat delta, KGBElt x, KGBElt y->bool`` Defined in line number 67.
 | 
 | 
 
@@ -112,7 +112,7 @@ is_fixed
 
 in_A
 -------------------------------------------------
-| ``in_A:x_rep(v,theta)->bool`` Defined in line number 83.
+| ``in_A:x_rep(v,theta)->bool`` Defined in line number 82.
 | 
 | 
 
@@ -120,7 +120,7 @@ in_A
 
 is_equivalent
 -------------------------------------------------
-| ``is_equivalent:x_rep(v_1,theta_1),x_rep(v_2,theta_2)->bool`` Defined in line number 90.
+| ``is_equivalent:x_rep(v_1,theta_1),x_rep(v_2,theta_2)->bool`` Defined in line number 89.
 | 
 | 
 
@@ -128,7 +128,7 @@ is_equivalent
 
 square_is_central
 -------------------------------------------------
-| ``square_is_central:InnerClass ic,x_rep(v,theta)->bool`` Defined in line number 93.
+| ``square_is_central:InnerClass ic,x_rep(v,theta)->bool`` Defined in line number 92.
 | 
 | 
 
@@ -136,7 +136,7 @@ square_is_central
 
 root_datum
 -------------------------------------------------
-| ``root_datum:ExtParam E->RootDatum`` Defined in line number 104.
+| ``root_datum:ExtParam E->RootDatum`` Defined in line number 103.
 | 
 | 
 
@@ -144,7 +144,7 @@ root_datum
 
 rho
 -------------------------------------------------
-| ``rho:ExtParam E->ratvec`` Defined in line number 105.
+| ``rho:ExtParam E->ratvec`` Defined in line number 104.
 | 
 | 
 
@@ -152,7 +152,7 @@ rho
 
 rho_check
 -------------------------------------------------
-| ``rho_check:ExtParam E->ratvec`` Defined in line number 106.
+| ``rho_check:ExtParam E->ratvec`` Defined in line number 105.
 | 
 | 
 
@@ -160,7 +160,7 @@ rho_check
 
 dual_parameter
 -------------------------------------------------
-| ``dual_parameter:ExtParam(ic, delta, gamma, lambda, theta, g, l, omega, tau,t)->ExtParam`` Defined in line number 108.
+| ``dual_parameter:ExtParam(ic, delta, gamma, lambda, theta, g, l, omega, tau,t)->ExtParam`` Defined in line number 107.
 | 
 | 
 
@@ -168,7 +168,7 @@ dual_parameter
 
 log_z
 -------------------------------------------------
-| ``log_z:mat delta, vec lambda_rho, vec l, vec tau,vec t->rat`` Defined in line number 115.
+| ``log_z:mat delta, vec lambda_rho, vec l, vec tau,vec t->rat`` Defined in line number 114.
 | 
 | 
 
@@ -176,7 +176,7 @@ log_z
 
 log_zeta
 -------------------------------------------------
-| ``log_zeta:mat delta, vec lambda, vec l,vec tau,vec t->rat`` Defined in line number 117.
+| ``log_zeta:mat delta, vec lambda, vec l,vec tau,vec t->rat`` Defined in line number 116.
 | 
 | 
 
@@ -184,7 +184,7 @@ log_zeta
 
 log_z
 -------------------------------------------------
-| ``log_z:ExtParam E->rat`` Defined in line number 120.
+| ``log_z:ExtParam E->rat`` Defined in line number 119.
 | 
 | 
 
@@ -192,7 +192,7 @@ log_z
 
 log_zeta
 -------------------------------------------------
-| ``log_zeta:ExtParam E->rat`` Defined in line number 122.
+| ``log_zeta:ExtParam E->rat`` Defined in line number 121.
 | 
 | 
 
@@ -200,7 +200,7 @@ log_zeta
 
 x
 -------------------------------------------------
-| ``x:ExtParam E->KGBElt`` Defined in line number 127.
+| ``x:ExtParam E->KGBElt`` Defined in line number 126.
 | 
 | 
 
@@ -208,7 +208,7 @@ x
 
 y
 -------------------------------------------------
-| ``y:ExtParam E->KGBElt`` Defined in line number 130.
+| ``y:ExtParam E->KGBElt`` Defined in line number 129.
 | 
 | 
 
@@ -216,7 +216,7 @@ y
 
 parameter
 -------------------------------------------------
-| ``parameter:ExtParam E->Param`` Defined in line number 138.
+| ``parameter:ExtParam E->Param`` Defined in line number 137.
 | 
 | 
 
@@ -224,7 +224,7 @@ parameter
 
 integrality_datum
 -------------------------------------------------
-| ``integrality_datum:ExtParam E->RootDatum`` Defined in line number 140.
+| ``integrality_datum:ExtParam E->RootDatum`` Defined in line number 139.
 | 
 | 
 
@@ -232,7 +232,7 @@ integrality_datum
 
 translate_to_dominant
 -------------------------------------------------
-| ``translate_to_dominant:ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t):E->(ExtParam,vec)`` Defined in line number 151.
+| ``translate_to_dominant:ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t):E->(ExtParam,vec)`` Defined in line number 150.
 | 
 | 
 
@@ -240,7 +240,7 @@ translate_to_dominant
 
 valid
 -------------------------------------------------
-| ``valid:ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t)->bool`` Defined in line number 160.
+| ``valid:ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,omega,tau,t)->bool`` Defined in line number 159.
 | 
 | 
 
@@ -248,7 +248,7 @@ valid
 
 fixed
 -------------------------------------------------
-| ``fixed:mat delta, [Param] B->[Param]`` Defined in line number 182.
+| ``fixed:mat delta, [Param] B->[Param]`` Defined in line number 181.
 | 
 | 
 
@@ -256,7 +256,7 @@ fixed
 
 fixed_block_of
 -------------------------------------------------
-| ``fixed_block_of:mat delta, Param p->[Param]`` Defined in line number 186.
+| ``fixed_block_of:mat delta, Param p->[Param]`` Defined in line number 185.
 | 
 | 
 
@@ -264,7 +264,7 @@ fixed_block_of
 
 fixed_block
 -------------------------------------------------
-| ``fixed_block:mat delta, Param p->([Param],int)`` Defined in line number 188.
+| ``fixed_block:mat delta, Param p->([Param],int)`` Defined in line number 187.
 | 
 | 
 
@@ -272,7 +272,7 @@ fixed_block
 
 format
 -------------------------------------------------
-| ``format:ExtParam E->string`` Defined in line number 191.
+| ``format:ExtParam E->string`` Defined in line number 190.
 | 
 | 
 
@@ -280,7 +280,7 @@ format
 
 short_format
 -------------------------------------------------
-| ``short_format:ExtParam E->string`` Defined in line number 202.
+| ``short_format:ExtParam E->string`` Defined in line number 201.
 | 
 | 
 
@@ -288,7 +288,7 @@ short_format
 
 long_format
 -------------------------------------------------
-| ``long_format:ExtParam E->string`` Defined in line number 204.
+| ``long_format:ExtParam E->string`` Defined in line number 203.
 | 
 | 
 
@@ -296,7 +296,7 @@ long_format
 
 display
 -------------------------------------------------
-| ``display:ExtParam E->void`` Defined in line number 207.
+| ``display:ExtParam E->void`` Defined in line number 206.
 | 
 | 
 
@@ -304,7 +304,7 @@ display
 
 display_one_line
 -------------------------------------------------
-| ``display_one_line:ExtParam E->void`` Defined in line number 208.
+| ``display_one_line:ExtParam E->void`` Defined in line number 207.
 | 
 | 
 
@@ -312,7 +312,7 @@ display_one_line
 
 x_rep
 -----------------------------------------
-| ``(ratvec,mat)`` Defined in line number 78.
+| ``(ratvec,mat)`` Defined in line number 77.
 | 
 | 
 
@@ -320,7 +320,7 @@ x_rep
 
 ExtParam
 -----------------------------------------
-| ``( InnerClass ic, mat delta, ratvec gamma, vec lambda_rho, mat theta, ratvec g, vec l, mat omega, vec tau, vec t)`` Defined in line number 97.
+| ``( InnerClass ic, mat delta, ratvec gamma, vec lambda_rho, mat theta, ratvec g, vec l, mat omega, vec tau, vec t)`` Defined in line number 96.
 | 
 | 
 
