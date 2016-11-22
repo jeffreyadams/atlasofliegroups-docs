@@ -8,7 +8,7 @@ finite_dimensional.at Function References
 
 is_finite_dimensional
 -------------------------------------------------
-| ``is_finite_dimensional:Param p->bool`` Defined in line number 6.
+| ``is_finite_dimensional:Param p->bool`` Defined in line number 5.
 | 
 | 
 
@@ -16,7 +16,7 @@ is_finite_dimensional
 
 fd_only
 -------------------------------------------------
-| ``fd_only:Param p->Param`` Defined in line number 11.
+| ``fd_only:Param p->Param`` Defined in line number 10.
 | 
 | 
 
@@ -24,7 +24,7 @@ fd_only
 
 dimension
 -------------------------------------------------
-| ``dimension:RootDatum rd, vec lambda_in->int`` Defined in line number 15.
+| ``dimension:RootDatum rd, vec lambda_in->int`` Defined in line number 14.
 | 
 | 
 
@@ -32,7 +32,7 @@ dimension
 
 highest_weight_finite_dimensional
 -------------------------------------------------
-| ``highest_weight_finite_dimensional:Param p->vec`` Defined in line number 27.
+| ``highest_weight_finite_dimensional:Param p->vec`` Defined in line number 26.
 | 
 | 
 
@@ -40,7 +40,7 @@ highest_weight_finite_dimensional
 
 dimension
 -------------------------------------------------
-| ``dimension:Param p->int`` Defined in line number 30.
+| ``dimension:Param p->int`` Defined in line number 29.
 | 
 | 
 
@@ -48,7 +48,7 @@ dimension
 
 fundamental_weight_coordinates
 -------------------------------------------------
-| ``fundamental_weight_coordinates:Param p->vec`` Defined in line number 33.
+| ``fundamental_weight_coordinates:Param p->vec`` Defined in line number 32.
 | 
 | 
 
@@ -56,7 +56,7 @@ fundamental_weight_coordinates
 
 complex_LKT
 -------------------------------------------------
-| ``complex_LKT:Param p->vec`` Defined in line number 37.
+| ``complex_LKT:Param p->vec`` Defined in line number 36.
 | 
 | 
 

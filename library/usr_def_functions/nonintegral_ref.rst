@@ -8,7 +8,7 @@ nonintegral.at Function References
 
 cross
 -------------------------------------------------
-| ``cross:mat w, Param p->Param`` Defined in line number 34.
+| ``cross:mat w, Param p->Param`` Defined in line number 33.
 | 
 | 
 
@@ -16,7 +16,7 @@ cross
 
 ext_cross
 -------------------------------------------------
-| ``ext_cross:mat w,ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,,tau,t):E->ExtParam`` Defined in line number 87.
+| ``ext_cross:mat w,ExtParam(ic,delta,gamma,lambda_rho,theta,g,l,,tau,t):E->ExtParam`` Defined in line number 86.
 | 
 | 
 
@@ -24,7 +24,7 @@ ext_cross
 
 posroot_ext_cross
 -------------------------------------------------
-| ``posroot_ext_cross:int i, ExtParam E->ExtParam`` Defined in line number 114.
+| ``posroot_ext_cross:int i, ExtParam E->ExtParam`` Defined in line number 113.
 | 
 | 
 
@@ -32,7 +32,7 @@ posroot_ext_cross
 
 ext_cross
 -------------------------------------------------
-| ``ext_cross:[int] w, ExtParam E->ExtParam`` Defined in line number 124.
+| ``ext_cross:[int] w, ExtParam E->ExtParam`` Defined in line number 123.
 | 
 | 
 
@@ -40,7 +40,7 @@ ext_cross
 
 ext_cross_special
 -------------------------------------------------
-| ``ext_cross_special:int i, ExtParam E, bool show->ExtParam`` Defined in line number 127.
+| ``ext_cross_special:int i, ExtParam E, bool show->ExtParam`` Defined in line number 126.
 | 
 | 
 
@@ -48,7 +48,7 @@ ext_cross_special
 
 ext_cross_special
 -------------------------------------------------
-| ``ext_cross_special:int i, ExtParam E->ExtParam`` Defined in line number 163.
+| ``ext_cross_special:int i, ExtParam E->ExtParam`` Defined in line number 162.
 | 
 | 
 
@@ -56,7 +56,7 @@ ext_cross_special
 
 ext_cross
 -------------------------------------------------
-| ``ext_cross:int i, ExtParam E, bool show->ExtParam`` Defined in line number 173.
+| ``ext_cross:int i, ExtParam E, bool show->ExtParam`` Defined in line number 172.
 | 
 | 
 
@@ -64,7 +64,7 @@ ext_cross
 
 ext_cross
 -------------------------------------------------
-| ``ext_cross:int i, ExtParam E->ExtParam`` Defined in line number 188.
+| ``ext_cross:int i, ExtParam E->ExtParam`` Defined in line number 187.
 | 
 | 
 
@@ -72,7 +72,7 @@ ext_cross
 
 posroot_ext_Cayley
 -------------------------------------------------
-| ``posroot_ext_Cayley:int i,ExtParam E, bool show->[ExtParam]`` Defined in line number 200.
+| ``posroot_ext_Cayley:int i,ExtParam E, bool show->[ExtParam]`` Defined in line number 199.
 | 
 | 
 
@@ -80,7 +80,7 @@ posroot_ext_Cayley
 
 posroot_ext_Cayley
 -------------------------------------------------
-| ``posroot_ext_Cayley:int i,ExtParam E->[ExtParam]`` Defined in line number 222.
+| ``posroot_ext_Cayley:int i,ExtParam E->[ExtParam]`` Defined in line number 221.
 | 
 | 
 
@@ -88,7 +88,7 @@ posroot_ext_Cayley
 
 ext_Cayley
 -------------------------------------------------
-| ``ext_Cayley:int j, ExtParam E, bool show->[ExtParam]`` Defined in line number 231.
+| ``ext_Cayley:int j, ExtParam E, bool show->[ExtParam]`` Defined in line number 230.
 | 
 | 
 
@@ -96,7 +96,7 @@ ext_Cayley
 
 ext_Cayley
 -------------------------------------------------
-| ``ext_Cayley:int j, ExtParam E->[ExtParam]`` Defined in line number 264.
+| ``ext_Cayley:int j, ExtParam E->[ExtParam]`` Defined in line number 263.
 | 
 | 
 

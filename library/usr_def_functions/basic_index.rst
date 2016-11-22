@@ -748,6 +748,8 @@ Functions
      - ``ParamPol P->ParamPol``
    * - :ref:`\-_ParamPol_a,_(Split,Param)_(c,p)->ParamPol1`
      - ``ParamPol a, (Split,Param) (c,p)->ParamPol``
+   * - :ref:`sum_realform_g,[parampol]_ps->parampol1`
+     - ``RealForm G,[ParamPol] Ps->ParamPol``
    * - :ref:`\*_ParamPol_P,_rat_f->ParamPol1`
      - ``ParamPol P, rat f->ParamPol``
    * - :ref:`half_parampol_p->parampol1`

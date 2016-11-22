@@ -8,7 +8,6 @@ extended_misc.at
 
 **This script imports the following .at files:**
 
-| :ref:`basic.at<basic.at>`
 | :ref:`lattice.at<lattice.at>`
 | :ref:`parameters.at<parameters.at>`
 | :ref:`Weylgroup.at<Weylgroup.at>`

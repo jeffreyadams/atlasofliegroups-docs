@@ -8,9 +8,7 @@ ext_deform.at
 
 **This script imports the following .at files:**
 
-| :ref:`basic.at<basic.at>`
 | :ref:`extended.at<extended.at>`
-| :ref:`extended_misc.at<extended_misc.at>`
 | :ref:`polynomial.at<polynomial.at>`
 |
 

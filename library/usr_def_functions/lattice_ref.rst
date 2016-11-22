@@ -8,7 +8,7 @@ lattice.at Function References
 
 submodule_basis
 -------------------------------------------------
-| ``submodule_basis:mat M->mat`` Defined in line number 5.
+| ``submodule_basis:mat M->mat`` Defined in line number 4.
 | 
 | 
 
@@ -16,7 +16,7 @@ submodule_basis
 
 Q_submodule_basis
 -------------------------------------------------
-| ``Q_submodule_basis:mat M->mat`` Defined in line number 9.
+| ``Q_submodule_basis:mat M->mat`` Defined in line number 8.
 | 
 | 
 
@@ -24,7 +24,7 @@ Q_submodule_basis
 
 quotient_module_basis
 -------------------------------------------------
-| ``quotient_module_basis:mat M->mat`` Defined in line number 14.
+| ``quotient_module_basis:mat M->mat`` Defined in line number 13.
 | 
 | 
 
@@ -32,7 +32,7 @@ quotient_module_basis
 
 saturation_quotient_module_basis
 -------------------------------------------------
-| ``saturation_quotient_module_basis:mat M->mat`` Defined in line number 21.
+| ``saturation_quotient_module_basis:mat M->mat`` Defined in line number 20.
 | 
 | 
 
@@ -40,7 +40,7 @@ saturation_quotient_module_basis
 
 Q_quotient_module_basis
 -------------------------------------------------
-| ``Q_quotient_module_basis:mat M->mat`` Defined in line number 25.
+| ``Q_quotient_module_basis:mat M->mat`` Defined in line number 24.
 | 
 | 
 
@@ -48,7 +48,7 @@ Q_quotient_module_basis
 
 projection_mod_image
 -------------------------------------------------
-| ``projection_mod_image:mat M->mat`` Defined in line number 30.
+| ``projection_mod_image:mat M->mat`` Defined in line number 29.
 | 
 | 
 
@@ -56,7 +56,7 @@ projection_mod_image
 
 projection_to_image
 -------------------------------------------------
-| ``projection_to_image:mat M->mat`` Defined in line number 41.
+| ``projection_to_image:mat M->mat`` Defined in line number 40.
 | 
 | 
 
@@ -64,7 +64,7 @@ projection_to_image
 
 projection_to_image
 -------------------------------------------------
-| ``projection_to_image:mat M, ratvec v->ratvec`` Defined in line number 45.
+| ``projection_to_image:mat M, ratvec v->ratvec`` Defined in line number 44.
 | 
 | 
 
@@ -72,7 +72,7 @@ projection_to_image
 
 sub_matrix
 -------------------------------------------------
-| ``sub_matrix:mat A,mat M->mat`` Defined in line number 67.
+| ``sub_matrix:mat A,mat M->mat`` Defined in line number 66.
 | 
 | 
 
@@ -80,7 +80,7 @@ sub_matrix
 
 restrict_action
 -------------------------------------------------
-| ``restrict_action:mat A, mat M->mat`` Defined in line number 78.
+| ``restrict_action:mat A, mat M->mat`` Defined in line number 77.
 | 
 | 
 
@@ -88,7 +88,7 @@ restrict_action
 
 corestrict_action
 -------------------------------------------------
-| ``corestrict_action:mat A, mat M->mat`` Defined in line number 96.
+| ``corestrict_action:mat A, mat M->mat`` Defined in line number 95.
 | 
 | 
 
@@ -96,7 +96,7 @@ corestrict_action
 
 quotient_matrix
 -------------------------------------------------
-| ``quotient_matrix:mat M,mat A->mat`` Defined in line number 103.
+| ``quotient_matrix:mat M,mat A->mat`` Defined in line number 102.
 | 
 | 
 
@@ -104,7 +104,7 @@ quotient_matrix
 
 solve_ratvec
 -------------------------------------------------
-| ``solve_ratvec:mat A, vec v->ratvec`` Defined in line number 110.
+| ``solve_ratvec:mat A, vec v->ratvec`` Defined in line number 109.
 | 
 | 
 
@@ -112,7 +112,7 @@ solve_ratvec
 
 in_lattice
 -------------------------------------------------
-| ``in_lattice:mat M, ratvec u->bool`` Defined in line number 119.
+| ``in_lattice:mat M, ratvec u->bool`` Defined in line number 118.
 | 
 | 
 
@@ -120,7 +120,7 @@ in_lattice
 
 vec_solve
 -------------------------------------------------
-| ``vec_solve:mat A, ratvec u->[vec]`` Defined in line number 123.
+| ``vec_solve:mat A, ratvec u->[vec]`` Defined in line number 122.
 | 
 | 
 
@@ -128,7 +128,7 @@ vec_solve
 
 solve_vec
 -------------------------------------------------
-| ``solve_vec:mat A, vec v->vec`` Defined in line number 127.
+| ``solve_vec:mat A, vec v->vec`` Defined in line number 126.
 | 
 | 
 
@@ -136,7 +136,7 @@ solve_vec
 
 in_lattice_basis
 -------------------------------------------------
-| ``in_lattice_basis:mat A,mat M->mat`` Defined in line number 136.
+| ``in_lattice_basis:mat A,mat M->mat`` Defined in line number 135.
 | 
 | 
 
@@ -144,7 +144,7 @@ in_lattice_basis
 
 solve_in_lattice
 -------------------------------------------------
-| ``solve_in_lattice:[vec] A, vec v->vec`` Defined in line number 140.
+| ``solve_in_lattice:[vec] A, vec v->vec`` Defined in line number 139.
 | 
 | 
 

@@ -2940,11 +2940,19 @@ s_to_minus_1
 | 
 | 
 
+.. _sum_realform_g,[parampol]_ps->parampol1:
+
+sum
+-------------------------------------------------
+| ``sum:RealForm G,[ParamPol] Ps->ParamPol`` Defined in line number 1170.
+| 
+| 
+
 .. _\*_ParamPol_P,_rat_f->ParamPol1:
 
 \*
 -------------------------------------------------
-| ``*:ParamPol P, rat f->ParamPol`` Defined in line number 1171.
+| ``*:ParamPol P, rat f->ParamPol`` Defined in line number 1181.
 | 
 | 
 
@@ -2952,7 +2960,7 @@ s_to_minus_1
 
 half
 -------------------------------------------------
-| ``half:ParamPol P->ParamPol`` Defined in line number 1173.
+| ``half:ParamPol P->ParamPol`` Defined in line number 1183.
 | 
 | 
 
@@ -2960,7 +2968,7 @@ half
 
 divide_by
 -------------------------------------------------
-| ``divide_by:int n, ParamPol P->ParamPol`` Defined in line number 1176.
+| ``divide_by:int n, ParamPol P->ParamPol`` Defined in line number 1186.
 | 
 | 
 
@@ -2968,7 +2976,7 @@ divide_by
 
 root_datum
 -------------------------------------------------
-| ``root_datum:ParamPol P->RootDatum`` Defined in line number 1180.
+| ``root_datum:ParamPol P->RootDatum`` Defined in line number 1190.
 | 
 | 
 
@@ -2976,7 +2984,7 @@ root_datum
 
 virtual
 -------------------------------------------------
-| ``virtual:Param p->ParamPol`` Defined in line number 1182.
+| ``virtual:Param p->ParamPol`` Defined in line number 1192.
 | 
 | 
 
@@ -2984,7 +2992,7 @@ virtual
 
 virtual
 -------------------------------------------------
-| ``virtual:RealForm G, [Param] ps->ParamPol`` Defined in line number 1183.
+| ``virtual:RealForm G, [Param] ps->ParamPol`` Defined in line number 1193.
 | 
 | 
 
@@ -2992,7 +3000,7 @@ virtual
 
 pol_format
 -------------------------------------------------
-| ``pol_format:ParamPol P->string`` Defined in line number 1188.
+| ``pol_format:ParamPol P->string`` Defined in line number 1198.
 | 
 | 
 
@@ -3000,7 +3008,7 @@ pol_format
 
 infinitesimal_character
 -------------------------------------------------
-| ``infinitesimal_character:ParamPol P->ratvec`` Defined in line number 1196.
+| ``infinitesimal_character:ParamPol P->ratvec`` Defined in line number 1206.
 | 
 | 
 
@@ -3008,7 +3016,7 @@ infinitesimal_character
 
 separate_by_infinitesimal_character
 -------------------------------------------------
-| ``separate_by_infinitesimal_character:ParamPol P->[(ratvec,ParamPol)]`` Defined in line number 1205.
+| ``separate_by_infinitesimal_character:ParamPol P->[(ratvec,ParamPol)]`` Defined in line number 1215.
 | 
 | 
 
@@ -3016,7 +3024,7 @@ separate_by_infinitesimal_character
 
 is_pure
 -------------------------------------------------
-| ``is_pure:ParamPol P->bool`` Defined in line number 1217.
+| ``is_pure:ParamPol P->bool`` Defined in line number 1227.
 | 
 | 
 
@@ -3024,7 +3032,7 @@ is_pure
 
 purity
 -------------------------------------------------
-| ``purity:ParamPol P->(int,int,int)`` Defined in line number 1223.
+| ``purity:ParamPol P->(int,int,int)`` Defined in line number 1233.
 | 
 | 
 
@@ -3032,7 +3040,7 @@ purity
 
 find
 -------------------------------------------------
-| ``find:[int] v, int k->int:      first(#v,(int i)bool`` Defined in line number 1236.
+| ``find:[int] v, int k->int:      first(#v,(int i)bool`` Defined in line number 1246.
 | 
 | 
 
@@ -3040,7 +3048,7 @@ find
 
 find
 -------------------------------------------------
-| ``find:[Param] P,Param p->int:   first(#P,(int i)bool`` Defined in line number 1237.
+| ``find:[Param] P,Param p->int:   first(#P,(int i)bool`` Defined in line number 1247.
 | 
 | 
 
@@ -3048,7 +3056,7 @@ find
 
 find
 -------------------------------------------------
-| ``find:[KGBElt] S,KGBElt x->int: first(#S,(int i)bool`` Defined in line number 1238.
+| ``find:[KGBElt] S,KGBElt x->int: first(#S,(int i)bool`` Defined in line number 1248.
 | 
 | 
 
@@ -3056,7 +3064,7 @@ find
 
 find
 -------------------------------------------------
-| ``find:[vec] S,vec v->int:       first(#S,(int i)bool`` Defined in line number 1239.
+| ``find:[vec] S,vec v->int:       first(#S,(int i)bool`` Defined in line number 1249.
 | 
 | 
 
@@ -3064,7 +3072,7 @@ find
 
 in_string_list
 -------------------------------------------------
-| ``in_string_list:string s,[string] S->bool`` Defined in line number 1246.
+| ``in_string_list:string s,[string] S->bool`` Defined in line number 1256.
 | 
 | 
 
@@ -3072,7 +3080,7 @@ in_string_list
 
 delete
 -------------------------------------------------
-| ``delete:[int] v, int k->[int]:     v[:k]##v[k+1`` Defined in line number 1250.
+| ``delete:[int] v, int k->[int]:     v[:k]##v[k+1`` Defined in line number 1260.
 | 
 | 
 
@@ -3080,7 +3088,7 @@ delete
 
 delete
 -------------------------------------------------
-| ``delete:[vec] v, int k->[vec]:     v[:k]##v[k+1`` Defined in line number 1251.
+| ``delete:[vec] v, int k->[vec]:     v[:k]##v[k+1`` Defined in line number 1261.
 | 
 | 
 
@@ -3088,7 +3096,7 @@ delete
 
 delete
 -------------------------------------------------
-| ``delete:[ratvec] v, int k->[ratvec]:  v[:k]##v[k+1`` Defined in line number 1252.
+| ``delete:[ratvec] v, int k->[ratvec]:  v[:k]##v[k+1`` Defined in line number 1262.
 | 
 | 
 
@@ -3096,7 +3104,7 @@ delete
 
 delete
 -------------------------------------------------
-| ``delete:[[ratvec]] v, int k->[[ratvec]]:v[:k]##v[k+1`` Defined in line number 1253.
+| ``delete:[[ratvec]] v, int k->[[ratvec]]:v[:k]##v[k+1`` Defined in line number 1263.
 | 
 | 
 
@@ -3104,7 +3112,7 @@ delete
 
 delete
 -------------------------------------------------
-| ``delete:[[vec]] v, int k->[[vec]]:   v[:k]##v[k+1`` Defined in line number 1254.
+| ``delete:[[vec]] v, int k->[[vec]]:   v[:k]##v[k+1`` Defined in line number 1264.
 | 
 | 
 
@@ -3112,7 +3120,7 @@ delete
 
 delete
 -------------------------------------------------
-| ``delete:[ParamPol] P, int k->[ParamPol]:P[:k]##P[k+1`` Defined in line number 1255.
+| ``delete:[ParamPol] P, int k->[ParamPol]:P[:k]##P[k+1`` Defined in line number 1265.
 | 
 | 
 
@@ -3120,7 +3128,7 @@ delete
 
 imaginary_roots_and_coroots
 -------------------------------------------------
-| ``imaginary_roots_and_coroots:(RootDatum, mat)p->(mat,mat)`` Defined in line number 1260.
+| ``imaginary_roots_and_coroots:(RootDatum, mat)p->(mat,mat)`` Defined in line number 1270.
 | 
 | 
 
@@ -3128,7 +3136,7 @@ imaginary_roots_and_coroots
 
 imaginary_roots_and_coroots
 -------------------------------------------------
-| ``imaginary_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 1262.
+| ``imaginary_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 1272.
 | 
 | 
 
@@ -3136,7 +3144,7 @@ imaginary_roots_and_coroots
 
 real_roots_and_coroots
 -------------------------------------------------
-| ``real_roots_and_coroots:(RootDatum, mat)p->(mat,mat)`` Defined in line number 1268.
+| ``real_roots_and_coroots:(RootDatum, mat)p->(mat,mat)`` Defined in line number 1278.
 | 
 | 
 
@@ -3144,7 +3152,7 @@ real_roots_and_coroots
 
 real_roots_and_coroots
 -------------------------------------------------
-| ``real_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 1270.
+| ``real_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 1280.
 | 
 | 
 
@@ -3152,7 +3160,7 @@ real_roots_and_coroots
 
 complex_posroots
 -------------------------------------------------
-| ``complex_posroots:RootDatum rd,mat theta->mat`` Defined in line number 1273.
+| ``complex_posroots:RootDatum rd,mat theta->mat`` Defined in line number 1283.
 | 
 | 
 
@@ -3160,7 +3168,7 @@ complex_posroots
 
 complex_posroots
 -------------------------------------------------
-| ``complex_posroots:KGBElt x->mat`` Defined in line number 1275.
+| ``complex_posroots:KGBElt x->mat`` Defined in line number 1285.
 | 
 | 
 
@@ -3168,7 +3176,7 @@ complex_posroots
 
 pad
 -------------------------------------------------
-| ``pad:string s,int padding->string`` Defined in line number 1279.
+| ``pad:string s,int padding->string`` Defined in line number 1289.
 | 
 | 
 
@@ -3176,7 +3184,7 @@ pad
 
 monomials
 -------------------------------------------------
-| ``monomials:ParamPol P->[Param]`` Defined in line number 1285.
+| ``monomials:ParamPol P->[Param]`` Defined in line number 1295.
 | 
 | 
 
@@ -3184,7 +3192,7 @@ monomials
 
 monomial
 -------------------------------------------------
-| ``monomial:ParamPol P,int i->Param`` Defined in line number 1286.
+| ``monomial:ParamPol P,int i->Param`` Defined in line number 1296.
 | 
 | 
 

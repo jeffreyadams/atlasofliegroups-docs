@@ -8,7 +8,7 @@ coherent.at Function References
 
 nci_Cayley
 -------------------------------------------------
-| ``nci_Cayley:int k,Param p->ParamPol`` Defined in line number 11.
+| ``nci_Cayley:int k,Param p->ParamPol`` Defined in line number 10.
 | 
 | 
 
@@ -16,7 +16,7 @@ nci_Cayley
 
 r1_Cayley
 -------------------------------------------------
-| ``r1_Cayley:int k,Param p->ParamPol`` Defined in line number 16.
+| ``r1_Cayley:int k,Param p->ParamPol`` Defined in line number 15.
 | 
 | 
 
@@ -24,7 +24,7 @@ r1_Cayley
 
 coherent_std_reg
 -------------------------------------------------
-| ``coherent_std_reg:Param p,int s->ParamPol`` Defined in line number 37.
+| ``coherent_std_reg:Param p,int s->ParamPol`` Defined in line number 36.
 | 
 | 
 
@@ -32,7 +32,7 @@ coherent_std_reg
 
 coherent_std_reg
 -------------------------------------------------
-| ``coherent_std_reg:ParamPol P,int s->ParamPol`` Defined in line number 48.
+| ``coherent_std_reg:ParamPol P,int s->ParamPol`` Defined in line number 47.
 | 
 | 
 
@@ -40,7 +40,7 @@ coherent_std_reg
 
 coherent_std_reg
 -------------------------------------------------
-| ``coherent_std_reg:Param p,[int] w->ParamPol`` Defined in line number 59.
+| ``coherent_std_reg:Param p,[int] w->ParamPol`` Defined in line number 58.
 | 
 | 
 
@@ -48,7 +48,7 @@ coherent_std_reg
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:Param p,int s->ParamPol`` Defined in line number 80.
+| ``coherent_std:Param p,int s->ParamPol`` Defined in line number 79.
 | 
 | 
 
@@ -56,7 +56,7 @@ coherent_std
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:Param p,[int] w->ParamPol`` Defined in line number 90.
+| ``coherent_std:Param p,[int] w->ParamPol`` Defined in line number 89.
 | 
 | 
 
@@ -64,7 +64,7 @@ coherent_std
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:ParamPol P,int s->ParamPol`` Defined in line number 99.
+| ``coherent_std:ParamPol P,int s->ParamPol`` Defined in line number 98.
 | 
 | 
 
@@ -72,7 +72,7 @@ coherent_std
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:ParamPol P,[int] w->ParamPol`` Defined in line number 104.
+| ``coherent_std:ParamPol P,[int] w->ParamPol`` Defined in line number 103.
 | 
 | 
 
@@ -80,7 +80,7 @@ coherent_std
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:W_word v,Param p->ParamPol`` Defined in line number 107.
+| ``coherent_std:W_word v,Param p->ParamPol`` Defined in line number 106.
 | 
 | 
 
@@ -88,7 +88,7 @@ coherent_std
 
 coherent_std
 -------------------------------------------------
-| ``coherent_std:W_word v,ParamPol P->ParamPol`` Defined in line number 108.
+| ``coherent_std:W_word v,ParamPol P->ParamPol`` Defined in line number 107.
 | 
 | 
 
@@ -96,7 +96,7 @@ coherent_std
 
 coherent_irr
 -------------------------------------------------
-| ``coherent_irr:ParamPol P,int s->ParamPol`` Defined in line number 121.
+| ``coherent_irr:ParamPol P,int s->ParamPol`` Defined in line number 120.
 | 
 | 
 
@@ -104,7 +104,7 @@ coherent_irr
 
 coherent_irr
 -------------------------------------------------
-| ``coherent_irr:ParamPol P,[int] w->ParamPol`` Defined in line number 126.
+| ``coherent_irr:ParamPol P,[int] w->ParamPol`` Defined in line number 125.
 | 
 | 
 
@@ -112,7 +112,7 @@ coherent_irr
 
 coherent_family_irr
 -------------------------------------------------
-| ``coherent_family_irr:ParamPol P, ratvec v->ParamPol`` Defined in line number 131.
+| ``coherent_family_irr:ParamPol P, ratvec v->ParamPol`` Defined in line number 130.
 | 
 | 
 

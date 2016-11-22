@@ -8,7 +8,7 @@ galois.at Function References
 
 square_classes
 -------------------------------------------------
-| ``square_classes:InnerClass ic->[[int]]`` Defined in line number 14.
+| ``square_classes:InnerClass ic->[[int]]`` Defined in line number 13.
 | 
 | 
 
@@ -16,7 +16,7 @@ square_classes
 
 print_strong_real
 -------------------------------------------------
-| ``print_strong_real:RealForm G->void`` Defined in line number 19.
+| ``print_strong_real:RealForm G->void`` Defined in line number 18.
 | 
 | 
 
@@ -24,7 +24,7 @@ print_strong_real
 
 real_forms
 -------------------------------------------------
-| ``real_forms:InnerClass ic->[RealForm]`` Defined in line number 25.
+| ``real_forms:InnerClass ic->[RealForm]`` Defined in line number 24.
 | 
 | 
 
@@ -32,7 +32,7 @@ real_forms
 
 real_forms
 -------------------------------------------------
-| ``real_forms:RealForm G->[RealForm]`` Defined in line number 26.
+| ``real_forms:RealForm G->[RealForm]`` Defined in line number 25.
 | 
 | 
 
@@ -40,7 +40,7 @@ real_forms
 
 SOstar
 -------------------------------------------------
-| ``SOstar:int n->RealForm`` Defined in line number 29.
+| ``SOstar:int n->RealForm`` Defined in line number 28.
 | 
 | 
 
@@ -48,7 +48,7 @@ SOstar
 
 PSOstar
 -------------------------------------------------
-| ``PSOstar:int n->RealForm`` Defined in line number 36.
+| ``PSOstar:int n->RealForm`` Defined in line number 35.
 | 
 | 
 
@@ -56,7 +56,7 @@ PSOstar
 
 find
 -------------------------------------------------
-| ``find:[[int]] vecs, int k->int`` Defined in line number 43.
+| ``find:[[int]] vecs, int k->int`` Defined in line number 42.
 | 
 | 
 
@@ -64,7 +64,7 @@ find
 
 part_containing
 -------------------------------------------------
-| ``part_containing:int k->([[int]] parts) [int]`` Defined in line number 45.
+| ``part_containing:int k->([[int]] parts) [int]`` Defined in line number 44.
 | 
 | 
 
@@ -72,7 +72,7 @@ part_containing
 
 central_invariant
 -------------------------------------------------
-| ``central_invariant:InnerClass ic, int k->int`` Defined in line number 60.
+| ``central_invariant:InnerClass ic, int k->int`` Defined in line number 59.
 | 
 | 
 
@@ -80,7 +80,7 @@ central_invariant
 
 central_invariant
 -------------------------------------------------
-| ``central_invariant:RealForm G->int`` Defined in line number 62.
+| ``central_invariant:RealForm G->int`` Defined in line number 61.
 | 
 | 
 
@@ -88,7 +88,7 @@ central_invariant
 
 strong_real_forms_same_type
 -------------------------------------------------
-| ``strong_real_forms_same_type:InnerClass ic, int k->[int]`` Defined in line number 77.
+| ``strong_real_forms_same_type:InnerClass ic, int k->[int]`` Defined in line number 76.
 | 
 | 
 
@@ -96,7 +96,7 @@ strong_real_forms_same_type
 
 H1
 -------------------------------------------------
-| ``H1:RealForm G->int`` Defined in line number 85.
+| ``H1:RealForm G->int`` Defined in line number 84.
 | 
 | 
 
@@ -104,7 +104,7 @@ H1
 
 iterate_H1
 -------------------------------------------------
-| ``iterate_H1:int min_rank, int max_rank->void`` Defined in line number 90.
+| ``iterate_H1:int min_rank, int max_rank->void`` Defined in line number 89.
 | 
 | 
 
@@ -112,7 +112,7 @@ iterate_H1
 
 pi0
 -------------------------------------------------
-| ``pi0:RealForm G->int`` Defined in line number 106.
+| ``pi0:RealForm G->int`` Defined in line number 105.
 | 
 | 
 
@@ -120,7 +120,7 @@ pi0
 
 iterate_H1
 -------------------------------------------------
-| ``iterate_H1:int rank->void`` Defined in line number 107.
+| ``iterate_H1:int rank->void`` Defined in line number 106.
 | 
 | 
 
