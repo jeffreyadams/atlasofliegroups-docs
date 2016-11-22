@@ -54,13 +54,11 @@ Compiling atlas for the Mac using MacPorts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Regardless of how you download the atlas software you will need to
-compile it.  This is the preferred method. For other Mac options see
-:ref: `other methods of installing on the Mac`.
+compile it.  This is the preferred method. 
 
 You are going to install the gcc C compiler (provided by MacPorts),
 which is preferred for installing Fokko and atlas. To do so you must
-first install the XCode C Compiler. See :ref: `C Compilers for the
-Mac` for an explantion.
+first install the XCode C Compiler.
 
 (1) Install MacPorts. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -150,8 +148,10 @@ Then edit the last line to read::
  
   CXX = g++-mp-4.9 -std=c++0x
 
-Or modify for the version of of compiler that you have downloaded. 
-and also edit the line::
+(Remember to change 4.9 to the version of compiler that you have
+downloaded).  
+
+Also edit the line::
 
   rl_libs ?= -lreadline
 
@@ -171,16 +171,19 @@ text::
 
 Then edit the last line to read::
 
-   CXX := g++-mp-4.7 -std=c++0x -I/opt/local/include
+   CXX := g++-mp-4.9 -std=c++0x 
+
+(again remember to change 4.9 to the correct compiler version).
 
 (6) Compile Fokko and atlas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The command::
+The simplest way to compile is with the command::
 
     make
 
-(issued while you are in the atlasofliegroups directory where the Makefile is) should compile both Fokko and atlas.
+(issued while you are in the atlasofliegroups directory where the
+Makefile is). This should compile both Fokko and atlas.
 
 If you get an error related to readline see `installing the readline
 package <http://www.liegroups.org/software/download/readline.html>`.
@@ -191,17 +194,21 @@ If you get an error::
 
 see :ref: `installing_cwebx`.
 
-Compilation options: 
-~~~~~~~~~~~~~~~~~~~~~~~
+Other Compilation options: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We recommend compiling with::
+For more complete compilation, we recommend compiling with::
 
    make verbose=true optimize=true
+
+The option "verbose" makes Fokko print a little more information about what it is  doing, like printing a counter during a long Kazhdan-Lusztig computation. The option "optimize" tells the compiler to work hard to make the code as fast as possible; this takes slightly longer to compile, then runs maybe 10% faster. 
 
 Other possibilities are::
 
    debug=true
    readline=false.
+
+The option "debug" makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren't supposed to happen, to detect code problems early. 
 
 (7) Installing Fokko and atlas
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -238,3 +245,15 @@ Note that the messages (help) directory must be in the same directory as the Fok
    Fokko MESSAGEDIR
 
 to specify where to find this directory.
+
+
+.. _installing_cwebx:
+
+Installing cwebx
++++++++++++++++++
+
+The software cwebx is needed to compile atlas. If you downloaded a tgz file from the downloads page, you should not need to install cwebx. If you downloaded the software from github using git, then cwebx is included in the directory cwebx, or available from www-math.univ-poitiers.fr/~maavl/CWEBx.
+
+Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.
+
+You need to have a working copy of tex in your PATH to run cweavex.
