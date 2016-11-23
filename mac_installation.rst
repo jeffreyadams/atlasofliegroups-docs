@@ -192,7 +192,7 @@ If you get an error::
 
    ctanglex: Command not found
 
-see :ref: `installing_cwebx`.
+see :ref:`installing_cwebx`.
 
 Other Compilation options: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
