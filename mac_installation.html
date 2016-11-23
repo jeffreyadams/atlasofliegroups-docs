@@ -105,7 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#install-readline">(4) Install readline</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#edit-the-makefiles">(5) Edit the Makefiles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#compile-fokko-and-atlas">(6) Compile Fokko and atlas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#compilation-options">Compilation options:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-compilation-options">Other Compilation options:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#installing-fokko-and-atlas">(7) Installing Fokko and atlas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#example">Example:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id1">Example:</a></li>
@@ -1076,12 +1076,10 @@ is relatively new. Version 1.7.0.4 and above should work.</p>
 <div class="section" id="compiling-atlas-for-the-mac-using-macports">
 <h2>Compiling atlas for the Mac using MacPorts<a class="headerlink" href="#compiling-atlas-for-the-mac-using-macports" title="Permalink to this headline">¶</a></h2>
 <p>Regardless of how you download the atlas software you will need to
-compile it.  This is the preferred method. For other Mac options see
-:ref: <cite>other methods of installing on the Mac</cite>.</p>
+compile it.  This is the preferred method.</p>
 <p>You are going to install the gcc C compiler (provided by MacPorts),
 which is preferred for installing Fokko and atlas. To do so you must
-first install the XCode C Compiler. See :ref: <cite>C Compilers for the
-Mac</cite> for an explantion.</p>
+first install the XCode C Compiler.</p>
 </div>
 <div class="section" id="install-macports">
 <h2>(1) Install MacPorts.<a class="headerlink" href="#install-macports" title="Permalink to this headline">¶</a></h2>
@@ -1163,8 +1161,9 @@ CXX = g++- -std=c++0x
 <div class="highlight-python"><div class="highlight"><pre><span></span>CXX = g++-mp-4.9 -std=c++0x
 </pre></div>
 </div>
-<p>Or modify for the version of of compiler that you have downloaded.
-and also edit the line:</p>
+<p>(Remember to change 4.9 to the version of compiler that you have
+downloaded).</p>
+<p>Also edit the line:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>rl_libs ?= -lreadline
 </pre></div>
 </div>
@@ -1182,36 +1181,40 @@ CXX := g++ -std=c++0x
 </pre></div>
 </div>
 <p>Then edit the last line to read:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>CXX := g++-mp-4.7 -std=c++0x -I/opt/local/include
+<div class="highlight-python"><div class="highlight"><pre><span></span>CXX := g++-mp-4.9 -std=c++0x
 </pre></div>
 </div>
+<p>(again remember to change 4.9 to the correct compiler version).</p>
 </div>
 <div class="section" id="compile-fokko-and-atlas">
 <h2>(6) Compile Fokko and atlas<a class="headerlink" href="#compile-fokko-and-atlas" title="Permalink to this headline">¶</a></h2>
-<p>The command:</p>
+<p>The simplest way to compile is with the command:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">make</span>
 </pre></div>
 </div>
-<p>(issued while you are in the atlasofliegroups directory where the Makefile is) should compile both Fokko and atlas.</p>
+<p>(issued while you are in the atlasofliegroups directory where the
+Makefile is). This should compile both Fokko and atlas.</p>
 <p>If you get an error related to readline see <cite>installing the readline
 package &lt;http://www.liegroups.org/software/download/readline.html&gt;</cite>.</p>
 <p>If you get an error:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>ctanglex: Command not found
 </pre></div>
 </div>
-<p>see :ref: <cite>installing_cwebx</cite>.</p>
+<p>see <a class="reference internal" href="#installing-cwebx"><span>Installing cwebx</span></a>.</p>
 </div>
-<div class="section" id="compilation-options">
-<h2>Compilation options:<a class="headerlink" href="#compilation-options" title="Permalink to this headline">¶</a></h2>
-<p>We recommend compiling with:</p>
+<div class="section" id="other-compilation-options">
+<h2>Other Compilation options:<a class="headerlink" href="#other-compilation-options" title="Permalink to this headline">¶</a></h2>
+<p>For more complete compilation, we recommend compiling with:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>make verbose=true optimize=true
 </pre></div>
 </div>
+<p>The option &#8220;verbose&#8221; makes Fokko print a little more information about what it is  doing, like printing a counter during a long Kazhdan-Lusztig computation. The option &#8220;optimize&#8221; tells the compiler to work hard to make the code as fast as possible; this takes slightly longer to compile, then runs maybe 10% faster.</p>
 <p>Other possibilities are:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>debug=true
 readline=false.
 </pre></div>
 </div>
+<p>The option &#8220;debug&#8221; makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren&#8217;t supposed to happen, to detect code problems early.</p>
 </div>
 <div class="section" id="installing-fokko-and-atlas">
 <h2>(7) Installing Fokko and atlas<a class="headerlink" href="#installing-fokko-and-atlas" title="Permalink to this headline">¶</a></h2>
@@ -1247,6 +1250,12 @@ readline=false.
 </pre></div>
 </div>
 <p>to specify where to find this directory.</p>
+<div class="section" id="installing-cwebx">
+<span id="id3"></span><h3>Installing cwebx<a class="headerlink" href="#installing-cwebx" title="Permalink to this headline">¶</a></h3>
+<p>The software cwebx is needed to compile atlas. If you downloaded a tgz file from the downloads page, you should not need to install cwebx. If you downloaded the software from github using git, then cwebx is included in the directory cwebx, or available from www-math.univ-poitiers.fr/~maavl/CWEBx.</p>
+<p>Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.</p>
+<p>You need to have a working copy of tex in your PATH to run cweavex.</p>
+</div>
 </div>
 </div>
 
