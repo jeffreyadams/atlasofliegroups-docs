@@ -15,5 +15,5 @@ Weylgroup.at
 .. toctree::
    :maxdepth: 1
 
-   Weylgroup_index
    Weylgroup_ref
+   Weylgroup_index

@@ -15,5 +15,5 @@ lattice.at
 .. toctree::
    :maxdepth: 1
 
-   lattice_index
    lattice_ref
+   lattice_index

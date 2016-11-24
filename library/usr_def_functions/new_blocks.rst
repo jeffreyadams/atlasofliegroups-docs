@@ -14,5 +14,5 @@ new_blocks.at
 .. toctree::
    :maxdepth: 1
 
-   new_blocks_index
    new_blocks_ref
+   new_blocks_index

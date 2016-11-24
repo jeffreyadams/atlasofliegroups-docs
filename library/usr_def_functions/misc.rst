@@ -15,5 +15,5 @@ misc.at
 .. toctree::
    :maxdepth: 1
 
-   misc_index
    misc_ref
+   misc_index

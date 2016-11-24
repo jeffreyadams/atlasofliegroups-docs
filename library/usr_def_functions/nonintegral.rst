@@ -19,5 +19,5 @@ nonintegral.at
 .. toctree::
    :maxdepth: 1
 
-   nonintegral_index
    nonintegral_ref
+   nonintegral_index

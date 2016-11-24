@@ -16,5 +16,5 @@ KL_polynomial_matrices.at
 .. toctree::
    :maxdepth: 1
 
-   KL_polynomial_matrices_index
    KL_polynomial_matrices_ref
+   KL_polynomial_matrices_index

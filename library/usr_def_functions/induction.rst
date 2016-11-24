@@ -23,10 +23,9 @@ _________________________
 | Then :math:`\operatorname{Ind}_P^G I(p_L)=I(p_G)` .
 | In the :math:`\theta` -stable case, the shifted parameter p_G may be non-standard and needs to be standardized:
 | If p=(x,lambda,nu), and :math:`\langle \text{lambda},\alpha^{\vee}\rangle <0`  for some imaginary root :math:`\alpha`  (i.e. non-standard),
-| let i_root_system=imaginary roots for x(p). Find :math:`w`  so
-that :math:`w^{-1}\cdot` lambda is dominant for imaginary roots, set
-p_dom=parameter(x, :math:`w^{-1}\cdot` lambda,nu) and return coherent continuation action
-(wrt imaginary roots) of :math:`w`  on p_dom.
+| let i_root_system=imaginary roots for x(p). Find :math:`w`  so that :math:`w^{-1}\cdot` lambda is dominant for
+| imaginary roots, set p_dom=parameter(x, :math:`w^{-1}\cdot` lambda,nu) and return coherent continuation
+| action (wrt imaginary roots) of :math:`w`  on p_dom.
 
 :math:`A_q(\lambda)`  construction:
 _______________________________
@@ -37,7 +36,7 @@ _______________________________
 | if lambda_q is weakly dominant set q=q(x,lambda_q),
 | apply derived functor to the one-dimensional lambda-rho(u) of L.
 |
-|  REQUIRE: lambda-rho(u) must be in X^*.
+| REQUIRE: lambda-rho(u) must be in X^*.
 |
 | Aq(x,lambda,lambda_q) has infinitesimal character lambda+rho_L,
 | thus the one-dimensional with weight lambda has infinitesimal character
@@ -47,6 +46,7 @@ _______________________________
 | If lambda_q is not weakly dominant, define
 | Aq(x,lambda,lambda_q)=Aq(wx,w\lambda,w\lambda_q),
 | where w\lambda_q is weakly dominant.
+|
 
 Good/Fair conditions:
 ________________________
@@ -72,14 +72,12 @@ ________________________
 |
 | fair => vanishing outside middle degree => honest representation
 | weakly fair: same implication.
-| NB: <gamma_L-rho_L_rho_u,alpha^vee> >= 0 does NOT imply vanishing
-|  (in general) if pi_L is not one-dimensional,
-|  hence "weakly fair" is only defined if pi_L is one-dimensional.
+| NB: <gamma_L-rho_L_rho_u,alpha^vee> >= 0 does NOT imply vanishing (in general) if pi_L is not
+| one-dimensional, hence "weakly fair" is only defined if pi_L is one-dimensional.
 
 
 **This script imports the following .at files:**
 
-| :ref:`basic.at<basic.at>`
 | :ref:`misc.at<misc.at>`
 | :ref:`parabolics.at<parabolics.at>`
 | :ref:`kl.at<kl.at>`
@@ -93,5 +91,5 @@ ________________________
 .. toctree::
    :maxdepth: 1
 
-   induction_index
    induction_ref
+   induction_index

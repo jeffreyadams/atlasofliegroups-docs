@@ -16,5 +16,5 @@ galois.at
 .. toctree::
    :maxdepth: 1
 
-   galois_index
    galois_ref
+   galois_index

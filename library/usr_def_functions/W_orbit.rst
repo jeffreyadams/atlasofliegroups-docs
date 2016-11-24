@@ -15,5 +15,5 @@ W_orbit.at
 .. toctree::
    :maxdepth: 1
 
-   W_orbit_index
    W_orbit_ref
+   W_orbit_index

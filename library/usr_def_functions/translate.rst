@@ -15,5 +15,5 @@ translate.at
 .. toctree::
    :maxdepth: 1
 
-   translate_index
    translate_ref
+   translate_index

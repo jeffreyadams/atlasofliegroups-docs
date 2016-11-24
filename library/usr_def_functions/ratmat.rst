@@ -15,5 +15,5 @@ ratmat.at
 .. toctree::
    :maxdepth: 1
 
-   ratmat_index
    ratmat_ref
+   ratmat_index

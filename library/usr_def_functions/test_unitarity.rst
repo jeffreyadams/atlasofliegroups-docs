@@ -19,5 +19,5 @@ test_unitarity.at
 .. toctree::
    :maxdepth: 1
 
-   test_unitarity_index
    test_unitarity_ref
+   test_unitarity_index

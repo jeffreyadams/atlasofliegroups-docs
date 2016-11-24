@@ -16,5 +16,5 @@ K_types.at
 .. toctree::
    :maxdepth: 1
 
-   K_types_index
    K_types_ref
+   K_types_index

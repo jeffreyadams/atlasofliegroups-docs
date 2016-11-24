@@ -15,5 +15,5 @@ generate_groups.at
 .. toctree::
    :maxdepth: 1
 
-   generate_groups_index
    generate_groups_ref
+   generate_groups_index

@@ -15,5 +15,5 @@ parameters.at
 .. toctree::
    :maxdepth: 1
 
-   parameters_index
    parameters_ref
+   parameters_index

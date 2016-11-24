@@ -14,9 +14,9 @@ Functions
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`null_wt_int_r->ratvec2`
+   * - :ref:`null_wt_int_r->ratvec1`
      - ``int r->ratvec``
-   * - :ref:`has_nu0_param_p->bool3`
+   * - :ref:`has_nu0_param_p->bool2`
      - ``Param p->bool``
    * - :ref:`weak_lower_param_p->param2`
      - ``Param p->Param``

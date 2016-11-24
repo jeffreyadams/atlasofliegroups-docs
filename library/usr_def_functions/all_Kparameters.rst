@@ -17,5 +17,5 @@ all_Kparameters.at
 .. toctree::
    :maxdepth: 1
 
-   all_Kparameters_index
    all_Kparameters_ref
+   all_Kparameters_index

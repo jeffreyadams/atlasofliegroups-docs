@@ -15,5 +15,5 @@ tits.at
 .. toctree::
    :maxdepth: 1
 
-   tits_index
    tits_ref
+   tits_index

@@ -15,5 +15,5 @@ sort.at
 .. toctree::
    :maxdepth: 1
 
-   sort_index
    sort_ref
+   sort_index

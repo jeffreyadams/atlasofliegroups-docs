@@ -18,5 +18,5 @@ representations.at
 .. toctree::
    :maxdepth: 1
 
-   representations_index
    representations_ref
+   representations_index

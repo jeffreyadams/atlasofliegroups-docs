@@ -14,5 +14,5 @@ sp4.at
 .. toctree::
    :maxdepth: 1
 
-   sp4_index
    sp4_ref
+   sp4_index

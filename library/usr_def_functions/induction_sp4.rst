@@ -17,5 +17,5 @@ induction_sp4.at
 .. toctree::
    :maxdepth: 1
 
-   induction_sp4_index
    induction_sp4_ref
+   induction_sp4_index

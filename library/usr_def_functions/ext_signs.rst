@@ -18,5 +18,5 @@ ext_signs.at
 .. toctree::
    :maxdepth: 1
 
-   ext_signs_index
    ext_signs_ref
+   ext_signs_index

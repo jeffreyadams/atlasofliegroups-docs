@@ -18,5 +18,5 @@ complex_nilpotent_orbits.at
 .. toctree::
    :maxdepth: 1
 
-   complex_nilpotent_orbits_index
    complex_nilpotent_orbits_ref
+   complex_nilpotent_orbits_index
