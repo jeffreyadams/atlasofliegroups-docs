@@ -15,5 +15,5 @@ extended_cayley.at
 .. toctree::
    :maxdepth: 1
 
-   extended_cayley_index
    extended_cayley_ref
+   extended_cayley_index

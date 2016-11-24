@@ -8,7 +8,7 @@ ext_deform.at Function References
 
 KL_block
 -------------------------------------------------
-| ``KL_block:Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)`` Defined in line number 4.
+| ``KL_block:Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)`` Defined in line number 5.
 | 
 | 
 
@@ -16,47 +16,7 @@ KL_block
 
 cook_KL_block
 -------------------------------------------------
-| ``cook_KL_block:[Param] B,int entry_elem,mat KL,[poly] polys,vec stops,vec surv, mat contrib->([Param],int,poly_mat,vec)`` Defined in line number 23.
-| 
-| 
-
-.. _null_wt_int_r->ratvec1:
-
-null_wt
--------------------------------------------------
-| ``null_wt:int r->ratvec`` Defined in line number 48.
-| 
-| 
-
-.. _has_nu0_param_p->bool2:
-
-has_nu0
--------------------------------------------------
-| ``has_nu0:Param p->bool`` Defined in line number 49.
-| 
-| 
-
-.. _kl_p_polynomials_1_[param]_b_fixed,mat_delta->[[poly]]1:
-
-KL_P_polynomials_1
--------------------------------------------------
-| ``KL_P_polynomials_1:[Param] B_fixed,mat delta->[[poly]]`` Defined in line number 56.
-| 
-| 
-
-.. _kl_p_signed_polynomials_1_[param]_b_fixed,mat_delta->[[poly]]1:
-
-KL_P_signed_polynomials_1
--------------------------------------------------
-| ``KL_P_signed_polynomials_1:[Param] B_fixed,mat delta->[[poly]]`` Defined in line number 67.
-| 
-| 
-
-.. _kl_q_polynomials_[param]_b_fixed,_mat_delta->[[poly]]1:
-
-KL_Q_polynomials
--------------------------------------------------
-| ``KL_Q_polynomials:[Param] B_fixed, mat delta->[[poly]]`` Defined in line number 81.
+| ``cook_KL_block:[Param] B,int entry_elem,mat KL,[poly] polys,vec stops,vec surv, mat contrib->([Param],int,poly_mat,vec)`` Defined in line number 24.
 | 
 | 
 
@@ -64,7 +24,7 @@ KL_Q_polynomials
 
 deformation_terms
 -------------------------------------------------
-| ``deformation_terms:Param p, mat delta->ParamPol`` Defined in line number 84.
+| ``deformation_terms:Param p, mat delta->ParamPol`` Defined in line number 49.
 | 
 | 
 
@@ -72,15 +32,7 @@ deformation_terms
 
 recursive_deform
 -------------------------------------------------
-| ``recursive_deform:Param p, mat delta->ParamPol`` Defined in line number 116.
-| 
-| 
-
-.. _c_form_std_param_p,mat_delta->parampol1:
-
-c_form_std
--------------------------------------------------
-| ``c_form_std:Param p,mat delta->ParamPol`` Defined in line number 173.
+| ``recursive_deform:Param p, mat delta->ParamPol`` Defined in line number 82.
 | 
 | 
 

@@ -14,5 +14,5 @@ lietypes.at
 .. toctree::
    :maxdepth: 1
 
-   lietypes_index
    lietypes_ref
+   lietypes_index

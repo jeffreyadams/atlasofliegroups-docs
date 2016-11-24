@@ -19,5 +19,5 @@ W_K.at
 .. toctree::
    :maxdepth: 1
 
-   W_K_index
    W_K_ref
+   W_K_index

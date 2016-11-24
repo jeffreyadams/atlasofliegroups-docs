@@ -15,5 +15,5 @@ conjugacy_classes.at
 .. toctree::
    :maxdepth: 1
 
-   conjugacy_classes_index
    conjugacy_classes_ref
+   conjugacy_classes_index

@@ -15,5 +15,5 @@ finite_dimensional.at
 .. toctree::
    :maxdepth: 1
 
-   finite_dimensional_index
    finite_dimensional_ref
+   finite_dimensional_index

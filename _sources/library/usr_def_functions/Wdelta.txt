@@ -15,5 +15,5 @@ Wdelta.at
 .. toctree::
    :maxdepth: 1
 
-   Wdelta_index
    Wdelta_ref
+   Wdelta_index

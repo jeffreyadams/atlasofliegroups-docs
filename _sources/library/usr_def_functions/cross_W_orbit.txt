@@ -15,5 +15,5 @@ cross_W_orbit.at
 .. toctree::
    :maxdepth: 1
 
-   cross_W_orbit_index
    cross_W_orbit_ref
+   cross_W_orbit_index

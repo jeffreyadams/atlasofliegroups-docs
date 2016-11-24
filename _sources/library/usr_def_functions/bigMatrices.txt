@@ -18,5 +18,5 @@ bigMatrices.at
 .. toctree::
    :maxdepth: 1
 
-   bigMatrices_index
    bigMatrices_ref
+   bigMatrices_index

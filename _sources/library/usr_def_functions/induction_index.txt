@@ -26,6 +26,8 @@ Functions
      - ``(mat,RootDatum)pair->ratvec``
    * - :ref:`rho_s_kgbelt_x->ratvec1`
      - ``KGBElt x->ratvec``
+   * - :ref:`make_parabolic_realform_l,realform_g->parabolic1`
+     - ``RealForm L,RealForm G->Parabolic``
    * - :ref:`real_induce_standard_param_p_l,realform_g->param1`
      - ``Param p_L,RealForm G->Param``
    * - :ref:`real_induce_standard_parampol_p,realform_g->parampol1`
@@ -128,6 +130,16 @@ Functions
      - ``KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool``
    * - :ref:`goodness_kgbelt_x,ratvec_lambda_in,ratvec_lambda_q->void1`
      - ``KGBElt x,ratvec lambda_in,ratvec lambda_q->void``
+   * - :ref:`is_good_param_p_l,parabolic_p->bool1`
+     - ``Param p_L,Parabolic P->bool``
+   * - :ref:`is_weakly_good_param_p_l,parabolic_p->bool1`
+     - ``Param p_L,Parabolic P->bool``
+   * - :ref:`is_fair_param_p_l,parabolic_p->bool1`
+     - ``Param p_L,Parabolic P->bool``
+   * - :ref:`is_weakly_fair_param_p_l,parabolic_p->bool1`
+     - ``Param p_L,Parabolic P->bool``
+   * - :ref:`goodness_param_p_l,parabolic_p->string1`
+     - ``Param p_L,Parabolic P->string``
    * - :ref:`is_good_param_p_l,realform_g->bool1`
      - ``Param p_L,RealForm G->bool``
    * - :ref:`is_weakly_good_param_p_l,realform_g->bool1`

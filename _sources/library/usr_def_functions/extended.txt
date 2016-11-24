@@ -17,5 +17,5 @@ extended.at
 .. toctree::
    :maxdepth: 1
 
-   extended_index
    extended_ref
+   extended_index

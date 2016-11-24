@@ -16,5 +16,5 @@ stable.at
 .. toctree::
    :maxdepth: 1
 
-   stable_index
    stable_ref
+   stable_index

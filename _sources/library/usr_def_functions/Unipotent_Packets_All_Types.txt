@@ -20,5 +20,5 @@ Unipotent_Packets_All_Types.at
 .. toctree::
    :maxdepth: 1
 
-   Unipotent_Packets_All_Types_index
    Unipotent_Packets_All_Types_ref
+   Unipotent_Packets_All_Types_index

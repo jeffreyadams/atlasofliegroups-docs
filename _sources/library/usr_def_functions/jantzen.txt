@@ -15,5 +15,5 @@ jantzen.at
 .. toctree::
    :maxdepth: 1
 
-   jantzen_index
    jantzen_ref
+   jantzen_index

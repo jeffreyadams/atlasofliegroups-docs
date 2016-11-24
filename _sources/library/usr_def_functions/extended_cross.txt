@@ -15,5 +15,5 @@ extended_cross.at
 .. toctree::
    :maxdepth: 1
 
-   extended_cross_index
    extended_cross_ref
+   extended_cross_index

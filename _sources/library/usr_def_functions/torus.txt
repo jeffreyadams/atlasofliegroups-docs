@@ -15,5 +15,5 @@ torus.at
 .. toctree::
    :maxdepth: 1
 
-   torus_index
    torus_ref
+   torus_index

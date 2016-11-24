@@ -14,5 +14,5 @@ unitary.at
 .. toctree::
    :maxdepth: 1
 
-   unitary_index
    unitary_ref
+   unitary_index

@@ -16,5 +16,5 @@ inverse.at
 .. toctree::
    :maxdepth: 1
 
-   inverse_index
    inverse_ref
+   inverse_index

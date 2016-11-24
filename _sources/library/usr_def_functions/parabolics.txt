@@ -59,5 +59,5 @@ real parabolics.
 .. toctree::
    :maxdepth: 1
 
-   parabolics_index
    parabolics_ref
+   parabolics_index

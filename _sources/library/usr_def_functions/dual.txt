@@ -21,5 +21,5 @@ dual.at
 .. toctree::
    :maxdepth: 1
 
-   dual_index
    dual_ref
+   dual_index

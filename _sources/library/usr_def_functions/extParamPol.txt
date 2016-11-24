@@ -16,5 +16,5 @@ extParamPol.at
 .. toctree::
    :maxdepth: 1
 
-   extParamPol_index
    extParamPol_ref
+   extParamPol_index

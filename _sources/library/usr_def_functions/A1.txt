@@ -17,5 +17,5 @@ A1.at
 .. toctree::
    :maxdepth: 1
 
-   A1_index
    A1_ref
+   A1_index

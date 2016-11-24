@@ -15,5 +15,5 @@ polynomial.at
 .. toctree::
    :maxdepth: 1
 
-   polynomial_index
    polynomial_ref
+   polynomial_index

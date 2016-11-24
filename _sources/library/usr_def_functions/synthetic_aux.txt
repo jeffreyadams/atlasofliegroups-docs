@@ -17,5 +17,5 @@ synthetic_aux.at
 .. toctree::
    :maxdepth: 1
 
-   synthetic_aux_index
    synthetic_aux_ref
+   synthetic_aux_index

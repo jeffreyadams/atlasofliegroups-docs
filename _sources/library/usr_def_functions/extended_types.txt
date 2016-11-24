@@ -15,5 +15,5 @@ extended_types.at
 .. toctree::
    :maxdepth: 1
 
-   extended_types_index
    extended_types_ref
+   extended_types_index

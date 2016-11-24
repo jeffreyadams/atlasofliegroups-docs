@@ -17,5 +17,5 @@ K.at
 .. toctree::
    :maxdepth: 1
 
-   K_index
    K_ref
+   K_index

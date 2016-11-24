@@ -19,5 +19,5 @@ W_Reps_Mod.at
 .. toctree::
    :maxdepth: 1
 
-   W_Reps_Mod_index
    W_Reps_Mod_ref
+   W_Reps_Mod_index

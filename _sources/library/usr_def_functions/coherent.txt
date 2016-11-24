@@ -16,5 +16,5 @@ coherent.at
 .. toctree::
    :maxdepth: 1
 
-   coherent_index
    coherent_ref
+   coherent_index

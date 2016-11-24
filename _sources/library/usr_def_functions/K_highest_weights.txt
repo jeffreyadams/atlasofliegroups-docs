@@ -61,5 +61,5 @@ part of the :math:`\theta` -stable data for tau=(x,lambda). The parameter for
 .. toctree::
    :maxdepth: 1
 
-   K_highest_weights_index
    K_highest_weights_ref
+   K_highest_weights_index

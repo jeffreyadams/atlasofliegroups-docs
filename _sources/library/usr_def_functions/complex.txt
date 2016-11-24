@@ -15,5 +15,5 @@ complex.at
 .. toctree::
    :maxdepth: 1
 
-   complex_index
    complex_ref
+   complex_index

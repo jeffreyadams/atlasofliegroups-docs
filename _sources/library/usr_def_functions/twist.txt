@@ -15,5 +15,5 @@ twist.at
 .. toctree::
    :maxdepth: 1
 
-   twist_index
    twist_ref
+   twist_index

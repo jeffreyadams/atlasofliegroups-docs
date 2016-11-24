@@ -4,7 +4,7 @@ iterate_deform.at Function References
 =======================================================
 |
 
-.. _null_wt_int_r->ratvec2:
+.. _null_wt_int_r->ratvec1:
 
 null_wt
 -------------------------------------------------
@@ -12,7 +12,7 @@ null_wt
 | 
 | 
 
-.. _has_nu0_param_p->bool3:
+.. _has_nu0_param_p->bool2:
 
 has_nu0
 -------------------------------------------------

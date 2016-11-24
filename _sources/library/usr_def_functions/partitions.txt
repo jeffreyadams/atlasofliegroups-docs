@@ -15,5 +15,5 @@ partitions.at
 .. toctree::
    :maxdepth: 1
 
-   partitions_index
    partitions_ref
+   partitions_index
