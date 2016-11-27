@@ -5,7 +5,7 @@ We mentionned before that a Cartan may appear in different real forms
 of an inner class. More precisely, for a given inner class there
 is a fixed set of Cartans which may ar may not appear in the different
 real forms associated to this inner class. If we ask for the number
-of Cartan classes of real form ``G``, we get the same number regardless of which
+of Cartan classes of real form :math:`G`, we get the same number regardless of which
 real form in the inner class we are using. This can be misleading unless we
 understand what the software is doing. This is because ``atlas`` is
 implicitly assuming that you are asking for the number of Cartans in
@@ -48,8 +48,8 @@ this inner class can be listed as follows::
 Remember that we type ``void:`` to avoid getting the empty values ``[(),(),(),(),()]``
 
 So, the occurrence matrix says that all 9 Cartans appear in the split
-form SO(5,4), that only the compact Cartan appears in the compact real
-form SO(9,0), that SO(6,3) has only 6 Cartans, etc. Also note that the
+form :math:`SO(5,4)`, that only the compact Cartan appears in the compact real
+form :math:`SO(9,0)`, that :math:`SO(6,3)` has only 6 Cartans, etc. Also note that the
 Compact Cartan appears in all real forms but the split Cartan only
 appears in the split real form.
 
