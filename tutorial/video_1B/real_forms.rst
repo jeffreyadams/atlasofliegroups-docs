@@ -35,8 +35,7 @@ Now something interesting about real forms and Cartan classes is that
 The Cartan classes are the same across all real forms of the same
 complex group. In fact even though within the compact Cartan there is
 only one conjugacy class of Cartans (within the compact group). We
-will have the same Cartan classes for :math:`G=Sp(2)` than for :math:`G=Sp(4,\mathbb R)``.::
-
+will have the same Cartan classes for :math:`G=Sp(2)` than for :math:`G=Sp(4,\mathbb R)`.::
 
     atlas> rf[0]
     Value: compact connected real group with Lie algebra 'sp(2)'
@@ -70,13 +69,12 @@ Now let's look at the real forms of :math:`G=SL(5,\mathbb R)`. It turns out ther
     Value: connected split real group with Lie algebra 'sl(5,R)'
     atlas>
 
-Note that the complexified Lie algebra of :math:`G`, :math:`\mathfrak
-s \mathfrak l (5,\mathbb C)``. Has other real forms. However,
+Note that the complexified Lie algebra of :math:`G`, :math:`\mathfrak{sl} (5,\mathbb C)``. Has other real forms. However,
 associated to :math:`G`, there is only one. This is because atlas
-thinks always in terms of inner classes. That is a real form is a real
+thinks always in terms of inner classes. That is, a real form is a real
 form in a given inner class. And there is a distinquished involution
 in :math:`G` which is non trivial and which atlas uses to determine the
-inner class of the group :math:`G`, and there is only one real form in
+inner class of the group :math:`G`. It turns out there is only one real form in
 this inner class.::
 
     atlas> distinguished_involution(G)
@@ -88,8 +86,8 @@ this inner class.::
     atlas>
 
 Let's look at another real form of type ``A4``, namely
-:math:`SU(3,2)`. THis gives us another inner class. it turns out this
-inner class has the rest of the real forms of :math:`\mathfrak{sl}(5,\mathbb C)`::
+:math:`SU(3,2)`. THis gives us another inner class. This inner class
+has the rest of the real forms of :math:`\mathfrak{sl}(5,\mathbb C)`::
 
     atlas> H:=SU(3,2)
     Value: connected quasisplit real group with Lie algebra 'su(3,2)'
@@ -124,7 +122,7 @@ and for :math:`SL(p+q,\mathbb R)`, with the non trivial diagram automorphism.
 
 So what will happen for :math:`G=SL(6,\mathbb R)`? We can see in the
 following example that there is another real form in the same inner
-class as :math:`SL(6,\mathbb C)`, namely :math:`SL(3,\mathbb H)`. This
+class as :math:`SL(6,\mathbb R)`, namely :math:`SL(3,\mathbb H)`. This
 will be true whenever ``p+q=2n``.::
 
     atlas> set G=SL(6,R)
@@ -141,7 +139,7 @@ will be true whenever ``p+q=2n``.::
     atlas>
 
 More generally, for :math:`Sl(2n,\mathbb R)` has another real form in
-this inner class, the group SL(n,H).
+its inner class, the group SL(n,H).
 
 In fact the distinguished involution is the one attached to the non trivial diagram automorphism. And in this case it flips all the roots except the central root::
 
@@ -173,6 +171,8 @@ In fact the distinguished involution is the one attached to the non trivial diag
 
 In other words, ``delta`` is the outer automorphism that exchanges ``alpha[0]`` and ``alpha[4]``; ``alpha[1]`` and ``alpha[3]`` and fixes ``alpha[2]``.
 
-This gives another way of thinking about coordinates. That is trying to understand the automorphism ``delta`` by looking at what it does to the simple roots.
+This gives another way of thinking about coordinates. That is, trying
+to understand the automorphism ``delta`` by looking at what it does to
+the simple roots.
 
 
