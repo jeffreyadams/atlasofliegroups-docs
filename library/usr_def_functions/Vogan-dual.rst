@@ -15,5 +15,5 @@ Vogan-dual.at
 .. toctree::
    :maxdepth: 1
 
-   Vogan-dual_index
    Vogan-dual_ref
+   Vogan-dual_index

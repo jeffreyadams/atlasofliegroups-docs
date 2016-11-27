@@ -27,5 +27,5 @@ all.at
 .. toctree::
    :maxdepth: 1
 
-   all_index
    all_ref
+   all_index

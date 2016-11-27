@@ -19,5 +19,5 @@ wreps_type_C.at
 .. toctree::
    :maxdepth: 1
 
-   wreps_type_C_index
    wreps_type_C_ref
+   wreps_type_C_index

@@ -17,5 +17,5 @@ hecke.at
 .. toctree::
    :maxdepth: 1
 
-   hecke_index
    hecke_ref
+   hecke_index

@@ -15,5 +15,5 @@ iterate_deform.at
 .. toctree::
    :maxdepth: 1
 
-   iterate_deform_index
    iterate_deform_ref
+   iterate_deform_index

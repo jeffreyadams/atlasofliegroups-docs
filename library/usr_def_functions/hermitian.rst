@@ -16,5 +16,5 @@ hermitian.at
 .. toctree::
    :maxdepth: 1
 
-   hermitian_index
    hermitian_ref
+   hermitian_index

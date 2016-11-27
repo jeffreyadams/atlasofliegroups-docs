@@ -20,5 +20,5 @@ W_reps_type_BC.at
 .. toctree::
    :maxdepth: 1
 
-   W_reps_type_BC_index
    W_reps_type_BC_ref
+   W_reps_type_BC_index

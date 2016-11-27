@@ -17,5 +17,5 @@ modules.at
 .. toctree::
    :maxdepth: 1
 
-   modules_index
    modules_ref
+   modules_index

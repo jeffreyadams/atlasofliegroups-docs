@@ -14,5 +14,5 @@ std_decs.at
 .. toctree::
    :maxdepth: 1
 
-   std_decs_index
    std_decs_ref
+   std_decs_index

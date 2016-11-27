@@ -16,5 +16,5 @@ deform.at
 .. toctree::
    :maxdepth: 1
 
-   deform_index
    deform_ref
+   deform_index

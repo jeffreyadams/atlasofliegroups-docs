@@ -15,5 +15,5 @@ groups.at
 .. toctree::
    :maxdepth: 1
 
-   groups_index
    groups_ref
+   groups_index

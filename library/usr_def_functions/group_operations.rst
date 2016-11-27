@@ -16,5 +16,5 @@ group_operations.at
 .. toctree::
    :maxdepth: 1
 
-   group_operations_index
    group_operations_ref
+   group_operations_index

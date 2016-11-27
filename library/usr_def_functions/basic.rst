@@ -14,5 +14,5 @@ basic.at
 .. toctree::
    :maxdepth: 1
 
-   basic_index
    basic_ref
+   basic_index

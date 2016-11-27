@@ -15,5 +15,5 @@ kl.at
 .. toctree::
    :maxdepth: 1
 
-   kl_index
    kl_ref
+   kl_index

@@ -15,5 +15,5 @@ center.at
 .. toctree::
    :maxdepth: 1
 
-   center_index
    center_ref
+   center_index

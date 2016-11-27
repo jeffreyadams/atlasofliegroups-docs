@@ -15,5 +15,5 @@ elliptic_elements.at
 .. toctree::
    :maxdepth: 1
 
-   elliptic_elements_index
    elliptic_elements_ref
+   elliptic_elements_index

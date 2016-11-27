@@ -15,5 +15,5 @@ coordinates.at
 .. toctree::
    :maxdepth: 1
 
-   coordinates_index
    coordinates_ref
+   coordinates_index

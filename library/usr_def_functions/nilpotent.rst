@@ -15,5 +15,5 @@ nilpotent.at
 .. toctree::
    :maxdepth: 1
 
-   nilpotent_index
    nilpotent_ref
+   nilpotent_index

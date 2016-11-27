@@ -15,5 +15,5 @@ matrix.at
 .. toctree::
    :maxdepth: 1
 
-   matrix_index
    matrix_ref
+   matrix_index

@@ -16,5 +16,5 @@
 .. toctree::
    :maxdepth: 1
 
-   2i12s_index
    2i12s_ref
+   2i12s_index
