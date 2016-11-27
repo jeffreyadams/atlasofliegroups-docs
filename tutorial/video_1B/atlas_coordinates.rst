@@ -1,8 +1,6 @@
 ``atlas`` choice of coordinates
 ========================================
 
-Simple roots for :math:`SL(5,R)`
----------------------------------
 
 How do we interpret the way the software writes the simple roots for
 :math:`SL(n,R)`? Let us look at an example::
