@@ -63,8 +63,8 @@ Now, for this example this was not so necessary since we can use the real form e
     atlas> 
 
 However, the change of basis matrix is needed for example for
-:math:`SL(3,R)`. Moreover, in this case we do not get integral matrices. So
-we need a more general command::
+:math:`SL(3,\mathbb R)`. Moreover, in this case we do not get integral
+matrices. So we need a more general command::
 
 	 atlas> set G=SL(3,R) 
 	 Identifier G: RealForm (hiding previous one of type RealForm)
