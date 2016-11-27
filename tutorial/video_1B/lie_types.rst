@@ -19,8 +19,8 @@ To start let us talk a bit about Lie types. A Lie type is a product of Complex L
 
 This is what ``atlas`` understands as a root datum. The function ``simply_connected`` applied to a Lie type gives you a root datum. This is a set of simple roots and simple coroots.
 
-Recall that a root datum consists of two lattices, ``X^*``, ``X_*``,
-with a perfect pairing: ``X^* x X_*->Z`` (which in these coordinates
+Recall that a root datum consists of two lattices, :math:`X^*`, :math:`X_*`,
+with a perfect pairing: :math:`X^* x X_*->Z` (which in these coordinates
 corresponds to the dot product ) and subsets of simple roots and
 simple coroots respectively. In the above example we have::
 
@@ -38,8 +38,8 @@ simple coroots respectively. In the above example we have::
 
 In atlas, a root datum is a pair of ``m×n`` integral matrices
 ``(A,B)`` such that ``^AB`` is the Cartan matrix for the Lie algebra
-``g`` of the given Lie Type, ``m`` is the rank of ``g``, and ``n`` is
-the semisimple rank of ``g``. In the above example, the rank is 2 and
+:math:`g` of the given Lie Type, ``m`` is the rank of :math:`g`, and ``n`` is
+the semisimple rank of :math:`g`. In the above example, the rank is 2 and
 the semisimple rank is 1. And we have::
 
     atlas> set A=simple_roots (rd)
@@ -104,12 +104,15 @@ the following situation::
     Value: 
     | 2 |
 
-Here the coordinates of the simple roots and coroots are interchanged. In
-these coordinates, for the simply connected case, this means that ``X^* =Z`` and the simple root is ``alpha=[2]``, so ``alpha/2=[1]`` is in X^*`` 
+Here the coordinates of the simple roots and coroots are
+interchanged. In these coordinates, for the simply connected case,
+this means that :math:`X^* ={\mathbb Z}` and the simple root is ``alpha=[2]``, so
+``alpha/2=[1]`` is in :math:`X^*`.
 
-On the other hand, for the adjoint group, we have that ``X^*`` is still ``Z``, the root ``alpha=[1]``  and ``[1]/2`` is NOT in ``X^*``
+On the other hand, for the adjoint group, we have that :math:`X^*` is
+still :math:`\mathbb Z`, the root ``alpha=[1]`` and ``[1]/2`` is NOT in :math:`X^*`.
 
-In general X^* and X_* by definition are Z^n. Where the roots and coroots lie in them has to do with isogenies of the group.
+In general :math:`X^*` and :math:`X_*` by definition are :math:`{\mathbb Z}^n`. Where the roots and coroots lie in them has to do with isogenies of the group.
 
 
 Another useful ``.at`` file that lets you put in Lie types without the quotation marks is the file "lietypes.at". It is also included in the all.at file. This file just defines the Lie types as striings::
