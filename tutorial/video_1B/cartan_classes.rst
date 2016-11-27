@@ -43,10 +43,10 @@ the Cartan. The function ``print_Cartan_info`` takes a Cartan class in
 in the Cartan class.
 
 So this says that the first Cartan is a real cartan subgroup, meaning
-a connected complex torus. It is defined over :math:`\mathbb R`. So, its real points
+a connected complex torus defined over :math:`\mathbb R`. So, its real points
 form a real torus which can be written as a product of :math:`(S^1)^a`,
 :math:`({\mathbb C}^x)^b` and :math:`({\mathbb R}^x)^c` factors. So, atlas gives the numbers
-``(a,b,c)``. In this case the first Cartan is just ``a=1`` circle, ``b=0`` complex
+``(a,b,c)``. In this case the first Cartan has just ``a=1`` circle factor, ``b=0`` complex
 factors and ``c=0`` real factors.
 
 It also tells us the type of roots it has: imaginary, complex or real. Since the Cartan is compact, we only have imaginary roots. And these roots form a system of type ``A1``.
