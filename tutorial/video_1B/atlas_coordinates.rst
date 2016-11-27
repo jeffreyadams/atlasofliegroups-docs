@@ -3,7 +3,7 @@
 
 
 How do we interpret the way the software writes the simple roots for
-:math:`SL(n,R)`? Let us look at an example::
+:math:`SL(n,\mathbb R)`? Let us look at an example::
 
     atlas> set G= SL(5,R)
     Identifier G: RealForm (hiding previous one of type RealForm)
@@ -77,7 +77,9 @@ coordinates the software is using::
 	     Value: [ 1, 0, 0, 1 ]
 	     atlas> 
 
-Note the expression in the case when :math:`G=SL(5,R)`. ``atlas`` is using only four coordinates when it is costumary to use five coordinates to describe the weights in ``G``.
+Note the expression in the case when :math:`G=SL(5,\mathbb
+R)`. ``atlas`` is using only four coordinates when it is costumary to
+use five coordinates to describe the weights in :math:`G`.
 
 Alternatively, you can try to phrase the question in a way that atlas will use coordinates you are familiar with:: 
 	
@@ -177,7 +179,7 @@ So, in fundamental weight coordinates, the coordinates of ``rho`` are all ``1``.
 You can also check that if you use the adjoint root datum for ``C4``, the simple
 roots matrix will be the identity etc.
 
-But now, if we use the defined real form :math:`Sp(8)`, we get root data in the usual coordinates::
+But now, if we use the defined real form :math:`Sp(8,\mathbb R)`, we get root data in the usual coordinates::
 
     atlas> G:=Sp(8,R)
     Value: connected split real group with Lie algebra 'sp(8,R)'
