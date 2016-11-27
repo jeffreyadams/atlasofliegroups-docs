@@ -1,10 +1,11 @@
 ``atlas`` choice of coordinates
 ========================================
 
-Simple roots for ``SL(5,R)``
-----------------------------
+Simple roots for :math:`SL(5,R)`
+---------------------------------
 
-How do we interpret the way the software writes the simple roots for ``SL(n,R)``? Let us look at an example::
+How do we interpret the way the software writes the simple roots for
+:math:`SL(n,R)`? Let us look at an example::
 
     atlas> set G= SL(5,R)
     Identifier G: RealForm (hiding previous one of type RealForm)
@@ -26,8 +27,8 @@ How do we interpret the way the software writes the simple roots for ``SL(n,R)``
     Value: [ 2, 1, 1, 1 ]
     atlas>
 
-So, atlas chooses a set of coordinates to work with. They were chosen
-in the ``roots.at`` file so that the matrix of the simple_coroots for
+So, ``atlas`` chooses a set of coordinates to work with. They were chosen
+in the ``roots.at`` file so that the matrix of the simple coroots for
 the simply connected group is the identity matrix::
 
     atlas> set g=LieType: A4
@@ -59,7 +60,7 @@ But look what happens when we type::
     
     atlas>
 
-If you want to ask atlas about a vector in the Cartan or say an
+If you want to ask ``atlas`` about a vector in the Cartan or say an
 infinitesimal character, you need to write it in terms of the simple
 roots. Then the software will give you the vector in terms of the
 ``atlas`` coordinates. You then have to understand which coordinates
@@ -78,7 +79,7 @@ coordinates the software is using::
 	     Value: [ 1, 0, 0, 1 ]
 	     atlas> 
 
-Note the expression in the case when ``G=SL(5,R)``. ``atlas`` is using only four coordinates when it is costumary to use five coordinates to describe the weights in ``G``.
+Note the expression in the case when :math:`G=SL(5,R)`. ``atlas`` is using only four coordinates when it is costumary to use five coordinates to describe the weights in ``G``.
 
 Alternatively, you can try to phrase the question in a way that atlas will use coordinates you are familiar with:: 
 	
@@ -128,8 +129,8 @@ So this is a root datum of the above Lie type and with some ridiculous coordinat
    atlas>
 
 Notice this is a version of the root_datum command that we had not
-seen. It says asks for the root datum for the given set of
-simple roots and coroots. That is what a root datum is in atlas. So
+seen. It asks for the root datum for the given set of
+simple roots and coroots. That is what a root datum is in ``atlas``. So
 you can define the root datum by giving the matrices you want for the
 simple roots and coroots and atlas will accept them as a root
 datum. 
@@ -178,7 +179,7 @@ So, in fundamental weight coordinates, the coordinates of ``rho`` are all ``1``.
 You can also check that if you use the adjoint root datum for ``C4``, the simple
 roots matrix will be the identity etc.
 
-But now, if we use the defined real form ``Sp(8)``, we get root data in the usual coordinates::
+But now, if we use the defined real form :math:`Sp(8)`, we get root data in the usual coordinates::
 
     atlas> G:=Sp(8,R)
     Value: connected split real group with Lie algebra 'sp(8,R)'
