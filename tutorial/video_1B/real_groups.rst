@@ -27,13 +27,13 @@ group of type ``A1``::
       atlas> rd
       Value: simply connected root datum of Lie type 'A1'
 
-Note that :math:`SL(2,R)` is NOT simply connected. However, it is the
+Note that :math:`SL(2,\mathbb R)` is NOT simply connected. However, it is the
 Lie group whose complexified Lie algebra is is type ``A1`` and its root
 datum corresponds to the the roots of the simply connected complex
-group :math:`SL(2,C)`.
+group :math:`SL(2,\mathbb C)`.
 
 
-Now let's take the non semisimple Lie group :math:`GL(2,R)`. We can define it
+Now let's take the non semisimple Lie group :math:`GL(2,\mathbb R)`. We can define it
 in two ways. Note the different type of information we obtain::
 
     atlas> set G=SL(2,R)
@@ -59,7 +59,7 @@ in two ways. Note the different type of information we obtain::
 
 These are the roots in the basis {e_1, e_2} of the torus :math:`T`. 
 
-Now for :math:`PSL(2,R)` we have::
+Now for :math:`PSL(2,\mathbb R)` we have::
 
     atlas> set G=PSL(2,R)
     Identifier G: RealForm (hiding previous one of type RealForm)
@@ -86,7 +86,7 @@ On the other hand if we type::
    atlas>
 
 
-Which makes sense since :math:`SL(2,C)` is the real Lie group with complexified Lie algebra of type ``A2 x A2``, 
+Which makes sense since :math:`SL(2,\mathbb C)` is the real Lie group with complexified Lie algebra of type ``A2 x A2``, 
 
 
 So, in general, if we use the standard real form notation for the
@@ -109,7 +109,7 @@ example do things like this::
     | 1, 0 |
     | -1, 1 |
 
-These are the usual simple roots for :math:`Sp(4)`. So, using these
+These are the usual simple roots for :math:`Sp(4,\mathbb R)`. So, using these
 pre-defined groups to define our real form gives us, in most cases, the
 familiar coordinates to work with. So we can look at all the positive
 roots and coroots and rho::
@@ -147,7 +147,7 @@ Again the pairing between these sets is the usual dot product::
 This is the natural way of pairing roots with coroots. Pairing roots with roots is not too meaningful in the theory. 
 
 
-Now let us try  :math:`G=GL(3,R)`::
+Now let us try  :math:`G=GL(3,\mathbb R)`::
 
     atlas> set G=GL(3,R)
     Identifier G: RealForm (hiding previous one of type RealForm)
@@ -167,7 +167,7 @@ Now let us try  :math:`G=GL(3,R)`::
     | 0, -1 |
     atlas>
 
-Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are expressed again in the usual coordinates. However look what happens for :math:`SL(3,R)`::
+Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are expressed again in the usual coordinates. However look what happens for :math:`SL(3,\mathbb R)`::
 
     atlas> set G=SL(3,R)
     Identifier G: RealForm (hiding previous one of type RealForm)
