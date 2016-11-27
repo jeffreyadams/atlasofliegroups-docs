@@ -18,14 +18,19 @@ example::
       | 1 |
       atlas>
 
-These is a real Lie group , so the data type is a RealForm. Again the underlying root datum of G, which is the one for the simply connected group of type ``A1``::
+These is a real Lie group , so the data type is a RealForm. Again the
+underlying root datum of :math:`G`, which is the one for the simply connected
+group of type ``A1``::
 
       atlas> set rd=root_datum (G)
       Identifier rd: RootDatum (hiding previous one of type RootDatum)
       atlas> rd
       Value: simply connected root datum of Lie type 'A1'
 
-Note that :math:`SL(2,R)` is NOT simply connected. However, it is the Lie group whose complexified Lie algebra is is type A1 and its root datum corresponds to the the roots of the simply connected complex group :math:`SL(2,C)`. 
+Note that :math:`SL(2,R)` is NOT simply connected. However, it is the
+Lie group whose complexified Lie algebra is is type ``A1`` and its root
+datum corresponds to the the roots of the simply connected complex
+group :math:`SL(2,C)`.
 
 
 Now let's take the non semisimple Lie group :math:`GL(2,R)`. We can define it
@@ -84,7 +89,9 @@ On the other hand if we type::
 Which makes sense since :math:`SL(2,C)` is the real Lie group with complexified Lie algebra of type ``A2 x A2``, 
 
 
-So, in general, if we use the standard real form notation for the groups, atlas normally gives the usual coordinates. So we can for example do things like this::
+So, in general, if we use the standard real form notation for the
+groups, ``atlas`` normally gives the usual coordinates. So we can for
+example do things like this::
 
 
     atlas> set G=Sp(4,R)
