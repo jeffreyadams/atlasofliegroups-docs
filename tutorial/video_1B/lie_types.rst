@@ -20,7 +20,7 @@ To start let us talk a bit about Lie types. A Lie type is a product of Complex L
 This is what ``atlas`` understands as a root datum. The function ``simply_connected`` applied to a Lie type gives you a root datum. This is a set of simple roots and simple coroots.
 
 Recall that a root datum consists of two lattices, :math:`X^*`, :math:`X_*`,
-with a perfect pairing: :math:`X^* x X_*->Z` (which in these coordinates
+with a perfect pairing: :math:`X^* \times X_* \rightarrow Z` (which in these coordinates
 corresponds to the dot product ) and subsets of simple roots and
 simple coroots respectively. In the above example we have::
 
@@ -38,9 +38,10 @@ simple coroots respectively. In the above example we have::
 
 In atlas, a root datum is a pair of ``m×n`` integral matrices
 ``(A,B)`` such that ``^AB`` is the Cartan matrix for the Lie algebra
-:math:`g` of the given Lie Type, ``m`` is the rank of :math:`g`, and ``n`` is
-the semisimple rank of :math:`g`. In the above example, the rank is 2 and
-the semisimple rank is 1. And we have::
+:math:`\mathfrak g` of the given Lie Type, ``m`` is the rank of
+:math:`\mathfrak g`, and ``n`` is the semisimple rank of
+:math:`\mathfrak g`. In the above example, the rank is 2 and the
+semisimple rank is 1. And we have::
 
     atlas> set A=simple_roots (rd)
     Identifier A: mat (hiding previous one of type mat)
