@@ -33,9 +33,9 @@ Cartan Classes Accross Real Forms
 
 Now something interesting about real forms and Cartan classes is that
 The Cartan classes are the same across all real forms of the same
-complex group. In fact even though within the compact Cartan there is
-only one conjugacy class of Cartans (within the compact group). We
-will have the same Cartan classes for :math:`G=Sp(2)` than for :math:`G=Sp(4,\mathbb R)`.::
+complex group. In fact even though within the compact real form there
+is only one conjugacy class of Cartans, we will have the same Cartan
+classes for :math:`G=Sp(2)` than for :math:`G=Sp(4,\mathbb R)`.::
 
     atlas> rf[0]
     Value: compact connected real group with Lie algebra 'sp(2)'
@@ -69,13 +69,14 @@ Now let's look at the real forms of :math:`G=SL(5,\mathbb R)`. It turns out ther
     Value: connected split real group with Lie algebra 'sl(5,R)'
     atlas>
 
-Note that the complexified Lie algebra of :math:`G`, :math:`\mathfrak{sl} (5,\mathbb C)``. Has other real forms. However,
+Note that the complexified Lie algebra of :math:`G`,
+:math:`\mathfrak{sl} (5,\mathbb C)` has other real forms. However,
 associated to :math:`G`, there is only one. This is because atlas
-thinks always in terms of inner classes. That is, a real form is a real
-form in a given inner class. And there is a distinquished involution
-in :math:`G` which is non trivial and which atlas uses to determine the
-inner class of the group :math:`G`. It turns out there is only one real form in
-this inner class.::
+thinks always in terms of inner classes. That is, a real form is a
+real form in a given inner class. And there is a distinquished
+involution in :math:`G` which is non trivial and which atlas uses to
+determine the inner class of the group :math:`G`. It turns out there
+is only one real form in this inner class.::
 
     atlas> distinguished_involution(G)
     Value:
@@ -104,8 +105,10 @@ has the rest of the real forms of :math:`\mathfrak{sl}(5,\mathbb C)`::
 
 So, these three real groups are grouped together because they are all
 in the same inner class. Note that they all have a compact Cartan,
-whereas :math:`SL(5,\mathbb R)` does not. The distinguished involution or
-:math:`H=SU(3,2)` is the identity::
+whereas :math:`SL(5,\mathbb R)` does not. Also, the same result is
+achieved if we choose :math:`H` to be either of the other two groups
+in the above list. The distinguished involution for :math:`H=SU(3,2)`
+is the identity::
 
     atlas> distinguished_involution (H)
     Value:
@@ -115,10 +118,11 @@ whereas :math:`SL(5,\mathbb R)` does not. The distinguished involution or
     | 0, 0, 0, 1 |
     atlas>
 
-Inner classes are associated with outer involutions. That is, a diagram
-automorphism. So, for :math:`SU(p,q)` the inner forms are associated
-with the trivial automorphism of the Dynkin diagram of ``A{p+q-1}``;
-and for :math:`SL(p+q,\mathbb R)`, with the non trivial diagram automorphism.
+Inner classes are associated with outer involutions; that is, with a
+diagram automorphism. So, for :math:`SU(p,q)` the inner forms are
+associated with the trivial automorphism of the Dynkin diagram of
+``A{p+q-1}``; and for :math:`SL(p+q,\mathbb R)`, with the non trivial
+diagram automorphism.
 
 So what will happen for :math:`G=SL(6,\mathbb R)`? We can see in the
 following example that there is another real form in the same inner
@@ -138,7 +142,7 @@ will be true whenever ``p+q=2n``.::
     Value: [(),()]
     atlas>
 
-More generally, for :math:`Sl(2n,\mathbb R)` has another real form in
+More generally, for :math:`SL(2n,\mathbb R)` has another real form in
 its inner class, the group SL(n,H).
 
 In fact the distinguished involution is the one attached to the non trivial diagram automorphism. And in this case it flips all the roots except the central root::
