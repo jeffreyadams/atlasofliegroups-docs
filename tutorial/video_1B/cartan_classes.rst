@@ -106,7 +106,7 @@ Cartan. This is the one associated to a Levi factor :math:`Gl(2)`.
 Finally, the other Cartan is isomorphic to :math:`S^1×{\mathbb
 R}^{\times }`. The distinction between these two Cartans is subtle. Locally
 they are both isomorphic rank one Cartans and look like
-:math:`S^1×{\mathbb R}^{\times }`. But, one is ``{\mathbb C^{\times }`` and ``atlas`` can
+:math:`S^1×{\mathbb R}^{\times }`. But, one is :math:`{\mathbb C^{\times }` and ``atlas`` can
 distinguish the two.
 
 The root systems of these intermediate Cartans also transform accordingly. 
