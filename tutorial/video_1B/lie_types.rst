@@ -39,9 +39,8 @@ simple coroots respectively. In the above example we have::
 In atlas, a root datum is a pair of ``m×n`` integral matrices
 ``(A,B)`` such that ``^AB`` is the Cartan matrix for the Lie algebra
 :math:`\mathfrak g` of the given Lie Type, ``m`` is the rank of
-:math:`\mathfrak g`, and ``n`` is the semisimple rank of
-:math:`\mathfrak g`. In the above example, the rank is 2 and the
-semisimple rank is 1. And we have::
+:math:`\mathfrak g`, and ``n`` is the semisimple rank. In the above
+example, the rank is 2 and the semisimple rank is 1. And we have::
 
     atlas> set A=simple_roots (rd)
     Identifier A: mat (hiding previous one of type mat)

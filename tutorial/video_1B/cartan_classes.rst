@@ -43,18 +43,19 @@ the Cartan. The function ``print_Cartan_info`` takes a Cartan class in
 in the Cartan class.
 
 So this says that the first Cartan is a real cartan subgroup, meaning
-a connected complex torus defined over :math:`\mathbb R`. So, its real points
-form a real torus which can be written as a product of :math:`(S^1)^a`,
-:math:`({\mathbb C}^x)^b` and :math:`({\mathbb R}^x)^c` factors. So, atlas gives the numbers
-``(a,b,c)``. In this case the first Cartan has just ``a=1`` circle factor, ``b=0`` complex
-factors and ``c=0`` real factors.
+a connected complex torus defined over :math:`\mathbb R`. So, its real
+points form a real torus which can be written as a product of
+:math:`(S^1)^a`, :math:`({\mathbb C}^{\times })^b` and
+:math:`({\mathbb R}^{\times })^c` factors. So, atlas gives the numbers
+``(a,b,c)``. In this case the first Cartan has just ``a=1`` circle
+factor, ``b=0`` complex factors and ``c=0`` real factors.
 
-It also tells us the type of roots it has: imaginary, complex or real. Since the Cartan is compact, we only have imaginary roots. And these roots form a system of type ``A1``.
+It also tells us the type of roots it has: imaginary, complex or
+real. Since the Cartan is compact, we only have imaginary roots. And
+these roots form a system of type ``A1``.
 
 Note that we also see that this Cartan occurs in different real forms
-of complex groups of type ``A1``. 
-
-The information about twisted involutions will be discussed later.
+of complex groups of type ``A1``. The information about twisted involutions will be discussed later.
 
 Now for information about the second Cartan subgroup::
 
@@ -71,11 +72,12 @@ Now for information about the second Cartan subgroup::
     complex factor: empty
     atlas>
 
-Here, the Cartan has just 1 copy of :math:`{\mathbb R}^x` and no
-complex or circle factors. And it just has real roots of type
+Here, the Cartan has just 1 copy of :math:`{\mathbb R}^{\times }` and
+no complex or circle factors. And it just has real roots of type
 ``A1``. We will discuss later the information about involutions.
 
-In contrast, the group :math:`SL(2,\mathbb C)` has only one conjugacy class of cartans::
+In contrast, the group :math:`SL(2,\mathbb C)` has only one conjugacy
+class of cartans::
 
    atlas> set G2=SL(2,C)
    Identifier G2: RealForm (hiding previous one of type string)
@@ -97,13 +99,15 @@ In contrast, the group :math:`SL(2,\mathbb C)` has only one conjugacy class of c
 Now for a larger group like :math:`Sp(4,\mathbb R)`, for example, we
 will have a compact cartan which is a product of two circles and all
 its roots are imaginary; a split cartan, that is, a product of
-:math:`({\mathbb R}^x)×({mathbb R}^x)` with all roots real; and two
-intermediate cartans; one complex isomorphic to :math:`{\mathbb
-C}^x`. This is sometimes called the short root Cartan. This is the one
-associated to a Levi factor :math:`Gl(2)`.  Finally, the other Cartan
-is isomorphic to :math:`S^1×{\mathbb R}^x`. The distinction between
-these two Cartans is subtle. Locally they are both isomorphic rank one
-Cartans and look like :math:`S^1×{\mathbb R}^x`. But, one is ``C^x`` and ``atlas`` can distinguish the two.
+:math:`({\mathbb R}^{\times })×({\mathbb R}^{\times })` with all roots
+real; and two intermediate cartans; one complex isomorphic to
+:math:`{\mathbb C}^{\times }`. This is sometimes called the short root
+Cartan. This is the one associated to a Levi factor :math:`Gl(2)`.
+Finally, the other Cartan is isomorphic to :math:`S^1×{\mathbb
+R}^{\times }`. The distinction between these two Cartans is subtle. Locally
+they are both isomorphic rank one Cartans and look like
+:math:`S^1×{\mathbb R}^{\times }`. But, one is ``{\mathbb C^{\times }`` and ``atlas`` can
+distinguish the two.
 
 The root systems of these intermediate Cartans also transform accordingly. 
 For the Compact Cartan we have an imaginary root system of type ``C2``::
