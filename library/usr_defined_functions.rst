@@ -33,6 +33,7 @@ User Defined Functions
    usr_def_functions/finite_dimensional
    usr_def_functions/galois
    usr_def_functions/generate_groups
+   usr_def_functions/gl8H
    usr_def_functions/group_operations
    usr_def_functions/groups
    usr_def_functions/hecke
