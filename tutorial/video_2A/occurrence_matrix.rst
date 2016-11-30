@@ -9,7 +9,7 @@ of Cartan classes of real form :math:`G`, we get the same number regardless of w
 real form in the inner class we are using. This can be misleading unless we
 understand what the software is doing. This is because ``atlas`` is
 implicitly assuming that you are asking for the number of Cartans in
-the inner class of these real forms. For example,::
+the inner class of these real forms. For example::
 
    atlas> set G=SO(5,4)
    Identifier G: RealForm
