@@ -99,7 +99,7 @@ whose differential is equal to ``rho`` are :math:`\{ x\rightarrow x,
 x^{-1},|x|, |x|^{-1} : x\in A \}`, where :math:`|x|=sign(x)x`.
 
 In this case ``-1`` is in the Weyl group of :math:`A`. So, up to conjugacy, we
-have that :math:`{\widehat A}` \rightarrow \{ x, |x| \}`.
+have that :math:`{\widehat A} \rightarrow \{ x, |x| \}`.
 
 This says that we have exactly four representations of :math:`SL(2,\mathbb R)`
 with infinitesimal character ``rho``; two from each Cartan.
