@@ -8,28 +8,29 @@ The basic object in ``atlas`` is a ``parameter`` and the ``parameter
 space`` parametrizes both, the irreducible representations of a
 reductive algebraic group as well as the standard modules. In other
 words, for each ``p`` in the ``parameter space`` there are an
-irreducible module :math:`J(p)` and a standard module :math:`I(p)` associated
-to ``p``. Namely :math:`I(p)` is a representation induced from a limit of
-discrete series and things are set up, following Langlands
-classification, so that this standard module has a unique
-irrudicible quotient :math:`J(p)'. This quotient is also parametrized by the same
-parameter ``p``.
+irreducible module :math:`J(p)` and a standard module :math:`I(p)`
+associated to ``p``. Namely :math:`I(p)` is a representation induced
+from a limit of discrete series and things are set up, following
+Langlands classification, so that this standard module has a unique
+irrudicible quotient :math:`J(p)`. This quotient is also parametrized
+by the same parameter ``p``.
 
-So this parameter ``p`` is the basic object behind this classification theory.
+So this parameter ``p`` is the basic object behind this classification
+theory.
 
 In Adams' and DuCloux's paper, "Algorithms for representations of real
-groups", Section 1, the authors use Langlands classification to describe the
-algorithm that will associate, to each real group, the parameter space
-in question.
+groups", Section 1, the authors use Langlands classification to
+describe the algorithm that will associate, to each real group, the
+parameter space in question.
 
 More precisely, assume for the moment that ``rho`` exponentiates to a
-character of a torus in :math:`G(\\mathbb C )`. Then, the
+character of a torus in :math:`G(\mathbb C )`. Then, the
 representations of :math:`G(\mathbb R)`, with a fixed (regular)
-infinitesimal character``lambda`` are parametrized by :math:`G(\mathbb
+infinitesimal character ``lambda`` are parametrized by :math:`G(\mathbb
 R)`-orbits of pairs :math:`(H(\mathbb R ), \chi )`; where
 :math:`H(\mathbb R )` is a Cartan subgroup of :math:`G(\mathbb R )`
-and :math:`\chi` is a character of :math`H(\mathbb R )` so that the
-differential of :math:`\chi` equals ``lambda`` up to :math`G(\mathbb C
+and :math:`\chi` is a character of :math:`H(\mathbb R )` so that the
+differential of :math:`\chi` equals ``lambda`` up to :math:`G(\mathbb C
 )`-conjugacy.
 
 
@@ -86,19 +87,19 @@ Let's review a few things we know about :math:`SL(2,\mathbb R)`::
 
 
 So, the split form of type ``A1`` has two Cartans, the compact one,
-:math:`T=S^1` and the split one, :math:`A={\mathbb R}^x`.
+:math:`T=S^1` and the split one, :math:`A={\mathbb R}^{\times }`.
 
 Now, the characters for :math:`T` are of the form :math:`e^{ik\theta}`
 with :math:`k \in \mathbb Z`.  The ones corresponding to ``rho`` are
 :math:`{e{^i\theta }, e^{-i\theta }}` and they are not conjugate under the
 Weyl group of :math:`T`, since ``-1`` is not in this Weyl group.
 
-On the other hand, for :math:`A={\mathbb R}^x`, the characters whose
-differential is equal to ``rho`` are :math:`{x\rightarrow x, x^{-1},|x|,
-|x|^{-1} : x\in A}`, where :math:`|x|=sign(x)x`.
+On the other hand, for :math:`A={\mathbb R}^{|times }`, the characters
+whose differential is equal to ``rho`` are :math:`\{ x\rightarrow x,
+x^{-1},|x|, |x|^{-1} : x\in A \}`, where :math:`|x|=sign(x)x`.
 
 In this case ``-1`` is in the Weyl group of :math:`A`. So, up to conjugacy, we
-have that :math:`{\chi \in \widehat A}= {x, |x|}`.
+have that :math:`\{ \chi \in \widehat A}= {x, |x| \}`.
 
 This says that we have exactly four representations of :math:`SL(2,\mathbb R)`
 with infinitesimal character ``rho``; two from each Cartan.
