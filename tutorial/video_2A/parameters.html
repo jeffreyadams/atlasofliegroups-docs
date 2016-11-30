@@ -175,10 +175,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_groups.html">Real Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3"><a class="reference internal" href="occurrence_matrix.html">Occurrence Matrices</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="parameters_real_tori.html">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/group_operations.html">group_operations.at</a><ul>
@@ -1033,32 +1035,34 @@
 <span class="pre">space</span></code> parametrizes both, the irreducible representations of a
 reductive algebraic group as well as the standard modules. In other
 words, for each <code class="docutils literal"><span class="pre">p</span></code> in the <code class="docutils literal"><span class="pre">parameter</span> <span class="pre">space</span></code> there are an
-irreducible module $J(p)$ and a standard module $I(p)$ associated
-to <code class="docutils literal"><span class="pre">p</span></code>. Namely <span class="math">\(I(p)\)</span> is a representation induced from a limit of
-discrete series and things are set up, following Langlands
-classification, so that this standard module has a unique
-irrudicible quotient $J(p)$. This quotient is also parametrized by the same
-parameter <code class="docutils literal"><span class="pre">p</span></code>.</p>
-<p>So this parameter <code class="docutils literal"><span class="pre">p</span></code> is the basic object behind this classification theory.</p>
+irreducible module <span class="math">\(J(p)\)</span> and a standard module <span class="math">\(I(p)\)</span>
+associated to <code class="docutils literal"><span class="pre">p</span></code>. Namely <span class="math">\(I(p)\)</span> is a representation induced
+from a limit of discrete series and things are set up, following
+Langlands classification, so that this standard module has a unique
+irrudicible quotient <span class="math">\(J(p)\)</span>. This quotient is also parametrized
+by the same parameter <code class="docutils literal"><span class="pre">p</span></code>.</p>
+<p>So this parameter <code class="docutils literal"><span class="pre">p</span></code> is the basic object behind this classification
+theory.</p>
 <p>In Adams&#8217; and DuCloux&#8217;s paper, &#8220;Algorithms for representations of real
-groups&#8221;, Section 1, the authors use Langlands classification to describe the
-algorithm that will associate, to each real group, the parameter space
-in question.</p>
+groups&#8221;, Section 1, the authors use Langlands classification to
+describe the algorithm that will associate, to each real group, the
+parameter space in question.</p>
 <p>More precisely, assume for the moment that <code class="docutils literal"><span class="pre">rho</span></code> exponentiates to a
-character of a torus in $G(\mathbb C )$. Then, the representations of
-$G(mathbb R)$, with a fixed (regular) infinitesimal
-character``lambda`` are parametrized by $G(mathbb R)$-orbits of
-pairs $(H(mathbb R ), chi )$; where $H(mathbb R )$ is a Cartan
-subgroup of $G(mathbb R )$ and $chi$ is a character of $H(mathbb R
-)$ so that the differential of $chi$ equals <code class="docutils literal"><span class="pre">lambda</span></code> up to
-$G(mathbb C )$-conjugacy.</p>
+character of a torus in <span class="math">\(G(\mathbb C )\)</span>. Then, the
+representations of <span class="math">\(G(\mathbb R)\)</span>, with a fixed (regular)
+infinitesimal character <code class="docutils literal"><span class="pre">lambda</span></code> are parametrized by <span class="math">\(G(\mathbb
+R)\)</span>-orbits of pairs <span class="math">\((H(\mathbb R ), \chi )\)</span>; where
+<span class="math">\(H(\mathbb R )\)</span> is a Cartan subgroup of <span class="math">\(G(\mathbb R )\)</span>
+and <span class="math">\(\chi\)</span> is a character of <span class="math">\(H(\mathbb R )\)</span> so that the
+differential of <span class="math">\(\chi\)</span> equals <code class="docutils literal"><span class="pre">lambda</span></code> up to <span class="math">\(G(\mathbb C
+)\)</span>-conjugacy.</p>
 </div>
-<div class="section" id="parameters-for-sl-2-r">
-<h2>Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code><a class="headerlink" href="#parameters-for-sl-2-r" title="Permalink to this headline">¶</a></h2>
-<p>Let&#8217;s look at <code class="docutils literal"><span class="pre">G=SL(2,R)</span></code> and representations with infinitesimal
+<div class="section" id="parameters-for">
+<h2>Parameters for <span class="math">\(SL(2,\mathbb R)\)</span><a class="headerlink" href="#parameters-for" title="Permalink to this headline">¶</a></h2>
+<p>Let&#8217;s look at <span class="math">\(G=SL(2,\mathbb R)\)</span> and representations with infinitesimal
 character <code class="docutils literal"><span class="pre">rho</span></code> How many are there? We need to look at conjugacy
 classes of cartans and their characters.</p>
-<p>Let&#8217;s review a few things we know about <code class="docutils literal"><span class="pre">SL(2,R)</span></code>:</p>
+<p>Let&#8217;s review a few things we know about <span class="math">\(SL(2,\mathbb R)\)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SL(2,R)
 Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
 
@@ -1102,19 +1106,20 @@ atlas&gt;
 </pre></div>
 </div>
 <p>So, the split form of type <code class="docutils literal"><span class="pre">A1</span></code> has two Cartans, the compact one,
-$T=S^1$ and the split one, $A={mathbb R}^x$.</p>
-<p>Now, the characters for $T$ are of the form $e^{iktheta}$ with $k in mathbb Z$``.
-The ones corresponding to <code class="docutils literal"><span class="pre">rho</span></code> are ${e{^itheta }, e^{-itheta }}$ and they
-are not conjugate under the Weyl group of $T$, since <code class="docutils literal"><span class="pre">-1</span></code> is not in this Weyl group.</p>
-<p>On the other hand, for $A={mathbb R}^x$, the characters whose differential is
-equal to <code class="docutils literal"><span class="pre">rho</span></code> are ${xrightarrow x, x^{-1},|x|, <a href="#id1"><span class="problematic" id="id2">|</span></a>x|^{-1} : xin A}$, where
-$|x|=sign(x)x$.</p>
-<p>In this case <code class="docutils literal"><span class="pre">-1</span></code> is in the Weyl group of $A$. So, up to conjugacy, we
-have that ${chi in widehat A}= {x, <a href="#id3"><span class="problematic" id="id4">|x|</span></a>}$.</p>
-<p>This says that we have exactly four representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code>
+<span class="math">\(T=S^1\)</span> and the split one, <span class="math">\(A={\mathbb R}^{\times }\)</span>.</p>
+<p>Now, the characters for <span class="math">\(T\)</span> are of the form <span class="math">\(e^{ik\theta}\)</span>
+with <span class="math">\(k \in \mathbb Z\)</span>.  The ones corresponding to <code class="docutils literal"><span class="pre">rho</span></code> are
+<span class="math">\({e{^i\theta }, e^{-i\theta }}\)</span> and they are not conjugate under the
+Weyl group of <span class="math">\(T\)</span>, since <code class="docutils literal"><span class="pre">-1</span></code> is not in this Weyl group.</p>
+<p>On the other hand, for <span class="math">\(A={\mathbb R}^{\times }\)</span>, the characters
+whose differential is equal to <code class="docutils literal"><span class="pre">rho</span></code> are <span class="math">\(\{ x\rightarrow x,
+x^{-1},|x|, |x|^{-1} : x\in A \}\)</span>, where <span class="math">\(|x|=sign(x)x\)</span>.</p>
+<p>In this case <code class="docutils literal"><span class="pre">-1</span></code> is in the Weyl group of <span class="math">\(A\)</span>. So, up to conjugacy, we
+have that <span class="math">\({\widehat A} \rightarrow \{ x, |x| \}\)</span>.</p>
+<p>This says that we have exactly four representations of <span class="math">\(SL(2,\mathbb R)\)</span>
 with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>; two from each Cartan.</p>
-<p>Let us look for those representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code>. The command
-<code class="docutils literal"><span class="pre">parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <code class="docutils literal"><span class="pre">G</span></code>
+<p>Let us look for those representations of <span class="math">\(SL(2,\mathbb R)\)</span>. The command
+<code class="docutils literal"><span class="pre">parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <span class="math">\(G\)</span>
 with that infinitesimal character <code class="docutils literal"><span class="pre">[1]</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set P=all_parameters_gamma (G,[1])
 Identifier P: [Param]
@@ -1129,17 +1134,17 @@ final parameter (x=2,lambda=[2]/1,nu=[1]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>This is the set of parameters for representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> with
+<p>This is the set of parameters for representations of <span class="math">\(SL(2,\mathbb R)\)</span> with
 infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>. Each parameter is a triple. <code class="docutils literal"><span class="pre">(x,</span>
 <span class="pre">lambda,</span> <span class="pre">nu)</span></code>. We will explain each of these later. But for now we can
-say that the representation theory of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> tells us that there
+say that the representation theory of <span class="math">\(SL(2,\mathbb R)\)</span> tells us that there
 are four representations with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>. Two of
 them are the discrete series associated to the compact Cartan and
 correspond to the two parameters above with <code class="docutils literal"><span class="pre">nu=0</span></code>; the other two
 are the trivial representation and an irreducible principal series;
 both, attached to the split Cartan and correspond to the parameters
 with <code class="docutils literal"><span class="pre">nu=1</span></code>.</p>
-<p>We will say more about the representations of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> later. But,
+<p>We will say more about the representations of <span class="math">\(SL(2,\mathbb R)\)</span> later. But,
 as it is illustrated here, the theory tells us we first need to
 understand the characters of Tori. We do this in the next section.</p>
 </div>

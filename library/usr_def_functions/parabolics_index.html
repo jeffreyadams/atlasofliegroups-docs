@@ -175,10 +175,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/real_groups.html">Real Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="group_operations.html">group_operations.at</a><ul>
@@ -1185,25 +1187,28 @@
 <tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#real-levi-kgbelt-x-realform1"><span>real_Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#kgp-realform-g-complexparabolic-rd-s-kgpelt-1"><span>KGP</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#is-standard-levi-realform-l-realform-g-bool1"><span>is_standard_Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">L,RealForm</span> <span class="pre">G-&gt;bool</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#kgp-realform-g-complexparabolic-rd-s-kgpelt-1"><span>KGP</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[KGPElt]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#parabolics-realform-g-complexparabolic-rd-s-parabolic-1"><span>parabolics</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#parabolics-realform-g-complexparabolic-rd-s-parabolic-1"><span>parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-complexparabolic-p-parabolic-1"><span>theta_stable_parabolics</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-complexparabolic-p-parabolic-1"><span>theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">P-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-parabolic-1"><span>theta_stable_parabolics</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-parabolic-1"><span>theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-type-realform-g-int-p-parabolic-1"><span>theta_stable_parabolics_type</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-type-realform-g-int-p-parabolic-1"><span>theta_stable_parabolics_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,[int]</span> <span class="pre">P-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#all-rel-split-theta-stable-parabolics-realform-g-parabolic-1"><span>all_rel_split_theta_stable_parabolics</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#all-rel-split-theta-stable-parabolics-realform-g-parabolic-1"><span>all_rel_split_theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#print-theta-stable-parabolics-realform-g-void1"><span>print_theta_stable_parabolics</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#print-theta-stable-parabolics-realform-g-void1"><span>print_theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;void</span></code></td>
 </tr>
 </tbody>

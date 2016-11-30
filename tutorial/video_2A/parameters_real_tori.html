@@ -175,10 +175,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_groups.html">Real Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3"><a class="reference internal" href="occurrence_matrix.html">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="parameters.html#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/group_operations.html">group_operations.at</a><ul>
@@ -1038,7 +1040,7 @@ Overloaded instances of &#39;torus&#39;
 atlas&gt;
 </pre></div>
 </div>
-<p>We are interested in the first oprtion. So, we can determine a particular torus by assigning three integers:</p>
+<p>We are interested in the first option. So, we can determine a particular torus by assigning three integers:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set H=torus(1,0,0)
 Identifier H: RealForm (hiding previous one of type string (constant))
 atlas&gt; H
@@ -1058,9 +1060,10 @@ atlas&gt;
 </pre></div>
 </div>
 <p>That is, the command <code class="docutils literal"><span class="pre">torus(a,b,c)</span></code> specifies a torus with <code class="docutils literal"><span class="pre">a</span></code>
-$S^1$ factors, <code class="docutils literal"><span class="pre">b</span></code> ${mathbb C}^x$ factors and <code class="docutils literal"><span class="pre">c</span></code> ${mathbb R}^x$ factors.</p>
-<div class="section" id="the-characters-of-s-1">
-<h2>The characters of $S^1$<a class="headerlink" href="#the-characters-of-s-1" title="Permalink to this headline">¶</a></h2>
+<span class="math">\(S^1\)</span> factors, <code class="docutils literal"><span class="pre">b</span></code> <span class="math">\({\mathbb C}^{\times }\)</span> factors and
+<code class="docutils literal"><span class="pre">c</span></code> <span class="math">\({\mathbb R}^{\times }\)</span> factors.</p>
+<div class="section" id="the-characters-of">
+<h2>The characters of <span class="math">\(S^1\)</span><a class="headerlink" href="#the-characters-of" title="Permalink to this headline">¶</a></h2>
 <p>Starting with the circle, let us discuss its representations. From the
 theory we know that they are parametrized by integers. So, starting
 from the trivial representation we can see how the software

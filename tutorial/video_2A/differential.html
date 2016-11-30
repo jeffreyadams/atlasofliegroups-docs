@@ -175,10 +175,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_groups.html">Real Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3"><a class="reference internal" href="occurrence_matrix.html">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="parameters.html#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="parameters_real_tori.html">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/group_operations.html">group_operations.at</a><ul>
@@ -1054,7 +1056,9 @@ Value:
 | 1, 0 |
 </pre></div>
 </div>
-<p>Now, when we have a parameter <code class="docutils literal"><span class="pre">p</span></code>, we can ask for its infinitesimal character. The answer is of course more interesting for a non-trivial character:</p>
+<p>Now, when we have a parameter <code class="docutils literal"><span class="pre">p</span></code>, we can ask for its infinitesimal
+character. The answer is of course more interesting for a non-trivial
+character:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; infinitesimal_character (p)
 Value: [ 0, 0 ]/1
 atlas&gt;
@@ -1068,9 +1072,9 @@ atlas&gt;
 </pre></div>
 </div>
 <p>If we have <code class="docutils literal"><span class="pre">q=(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code> the differential of this character is
-the infinitesimal character which equals $(1+ theta )/2 <em>lambda +(1-
-theta )/2</em> nu$. But <code class="docutils literal"><span class="pre">nu</span></code> is already averaged so this equals
-$(1+ theta)/2 <a href="#id1"><span class="problematic" id="id2">*</span></a>lambda + nu$:</p>
+the infinitesimal character which equals <span class="math">\({(1+ \theta )\over /2}
+\lambda +{(1- \theta )\over 2} \nu\)</span>. But <code class="docutils literal"><span class="pre">nu</span></code> is already averaged so
+this equals :math:<a href="#id1"><span class="problematic" id="id2">`</span></a>{(1+ theta )over 2} lambda + nu <a href="#id3"><span class="problematic" id="id4">`</span></a>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; infinitesimal_character (q)
 Value: [  5, -3 ]/2
 atlas&gt; (1+theta)*lambda(q)/2
@@ -1080,8 +1084,7 @@ Value: [  5, -3 ]/2
 atlas&gt;
 </pre></div>
 </div>
-<p>It is less information than <code class="docutils literal"><span class="pre">lambda</span></code> and <code class="docutils literal"><span class="pre">nu</span></code>. This is because
-$(1+ theta )/2$ looses some of it.</p>
+<p>It is less information than <code class="docutils literal"><span class="pre">lambda</span></code> and <code class="docutils literal"><span class="pre">nu</span></code>. This is because <span class="math">\({(1+ \theta )\over 2}\)</span> looses some of it.</p>
 </div>
 
 

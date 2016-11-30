@@ -175,10 +175,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="real_groups.html">Real Groups</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href=""><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="real_forms.html">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters_real_tori.html">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/group_operations.html">group_operations.at</a><ul>
@@ -1027,9 +1029,8 @@
             
   <div class="section" id="atlas-choice-of-coordinates">
 <h1><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates<a class="headerlink" href="#atlas-choice-of-coordinates" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="simple-roots-for-sl-5-r">
-<h2>Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code><a class="headerlink" href="#simple-roots-for-sl-5-r" title="Permalink to this headline">¶</a></h2>
-<p>How do we interpret the way the software writes the simple roots for <code class="docutils literal"><span class="pre">SL(n,R)</span></code>? Let us look at an example:</p>
+<p>How do we interpret the way the software writes the simple roots for
+<span class="math">\(SL(n,\mathbb R)\)</span>? Let us look at an example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G= SL(5,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; simple_roots(G)
@@ -1051,8 +1052,8 @@ Value: [ 2, 1, 1, 1 ]
 atlas&gt;
 </pre></div>
 </div>
-<p>So, atlas chooses a set of coordinates to work with. They were chosen
-in the <code class="docutils literal"><span class="pre">roots.at</span></code> file so that the matrix of the simple_coroots for
+<p>So, <code class="docutils literal"><span class="pre">atlas</span></code> chooses a set of coordinates to work with. They were chosen
+in the <code class="docutils literal"><span class="pre">roots.at</span></code> file so that the matrix of the simple coroots for
 the simply connected group is the identity matrix:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set g=LieType: A4
 Identifier g: LieType (hiding previous one of type LieType)
@@ -1084,7 +1085,7 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>If you want to ask atlas about a vector in the Cartan or say an
+<p>If you want to ask <code class="docutils literal"><span class="pre">atlas</span></code> about a vector in the Cartan or say an
 infinitesimal character, you need to write it in terms of the simple
 roots. Then the software will give you the vector in terms of the
 <code class="docutils literal"><span class="pre">atlas</span></code> coordinates. You then have to understand which coordinates
@@ -1103,7 +1104,9 @@ Value: [ 1, 0, 0, 1 ]
 atlas&gt;
 </pre></div>
 </div>
-<p>Note the expression in the case when <code class="docutils literal"><span class="pre">G=SL(5,R)</span></code>. <code class="docutils literal"><span class="pre">atlas</span></code> is using only four coordinates when it is costumary to use five coordinates to describe the weights in <code class="docutils literal"><span class="pre">G</span></code>.</p>
+<p>Note the expression in the case when <span class="math">\(G=SL(5,\mathbb
+R)\)</span>. <code class="docutils literal"><span class="pre">atlas</span></code> is using only four coordinates when it is costumary to
+use five coordinates to describe the weights in <span class="math">\(G\)</span>.</p>
 <p>Alternatively, you can try to phrase the question in a way that atlas will use coordinates you are familiar with:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G= GL(5,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
@@ -1152,8 +1155,8 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Notice this is a version of the root_datum command that we had not
-seen. It says asks for the root datum for the given set of
-simple roots and coroots. That is what a root datum is in atlas. So
+seen. It asks for the root datum for the given set of
+simple roots and coroots. That is what a root datum is in <code class="docutils literal"><span class="pre">atlas</span></code>. So
 you can define the root datum by giving the matrices you want for the
 simple roots and coroots and atlas will accept them as a root
 datum.</p>
@@ -1199,7 +1202,7 @@ atlas&gt;
 <p>So, in fundamental weight coordinates, the coordinates of <code class="docutils literal"><span class="pre">rho</span></code> are all <code class="docutils literal"><span class="pre">1</span></code>.
 You can also check that if you use the adjoint root datum for <code class="docutils literal"><span class="pre">C4</span></code>, the simple
 roots matrix will be the identity etc.</p>
-<p>But now, if we use the defined real form <code class="docutils literal"><span class="pre">Sp(8)</span></code>, we get root data in the usual coordinates:</p>
+<p>But now, if we use the defined real form <span class="math">\(Sp(8,\mathbb R)\)</span>, we get root data in the usual coordinates:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=Sp(8,R)
 Value: connected split real group with Lie algebra &#39;sp(8,R)&#39;
 atlas&gt; simple_roots (G)
@@ -1216,7 +1219,6 @@ atlas&gt;
 </div>
 <p>These are isomorphic root data. They are equal up to a change of
 coordinates. We just need to be aware of which coordinates <code class="docutils literal"><span class="pre">atlas</span></code> is using.</p>
-</div>
 </div>
 
 

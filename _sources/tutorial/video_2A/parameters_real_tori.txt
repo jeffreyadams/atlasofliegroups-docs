@@ -12,7 +12,7 @@ command, which we can check as follows::
 	  CartanClass->RealForm
  	atlas>
 
-We are interested in the first oprtion. So, we can determine a particular torus by assigning three integers::
+We are interested in the first option. So, we can determine a particular torus by assigning three integers::
 
 	atlas> set H=torus(1,0,0)
 	Identifier H: RealForm (hiding previous one of type string (constant))
@@ -32,10 +32,11 @@ We are interested in the first oprtion. So, we can determine a particular torus 
 	atlas>
 
 That is, the command ``torus(a,b,c)`` specifies a torus with ``a``
-$S^1$ factors, ``b`` ${\mathbb C}^x$ factors and ``c`` ${\mathbb R}^x$ factors.
+:math:`S^1` factors, ``b`` :math:`{\mathbb C}^{\times }` factors and
+``c`` :math:`{\mathbb R}^{\times }` factors.
 
-The characters of $S^1$
-------------------------
+The characters of :math:`S^1`
+------------------------------
 
 Starting with the circle, let us discuss its representations. From the
 theory we know that they are parametrized by integers. So, starting

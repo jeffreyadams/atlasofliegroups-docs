@@ -175,10 +175,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/real_groups.html">Real Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2A/parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="group_operations.html">group_operations.at</a><ul>
@@ -1272,14 +1274,6 @@
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="pgl-r">
-<span id="pgl-r-int-n-realform1"></span><h2>PGL_R<a class="headerlink" href="#pgl-r" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">PGL_R:int</span> <span class="pre">n-&gt;RealForm</span></code> Defined in line number 140.</div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
 <div class="section" id="sl-c">
 <span id="sl-c-int-n-realform1"></span><h2>SL_C<a class="headerlink" href="#sl-c" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
@@ -1296,14 +1290,6 @@
 <div class="line"><br /></div>
 </div>
 </div>
-<div class="section" id="pgl-c">
-<span id="pgl-c-int-n-realform1"></span><h2>PGL_C<a class="headerlink" href="#pgl-c" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">PGL_C:int</span> <span class="pre">n-&gt;RealForm</span></code> Defined in line number 144.</div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
 <div class="section" id="sl-h">
 <span id="sl-h-int-n-realform1"></span><h2>SL_H<a class="headerlink" href="#sl-h" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
@@ -1316,14 +1302,6 @@
 <span id="psl-h-int-n-realform1"></span><h2>PSL_H<a class="headerlink" href="#psl-h" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">PSL_H:int</span> <span class="pre">n-&gt;RealForm</span></code> Defined in line number 147.</div>
-<div class="line"><br /></div>
-<div class="line"><br /></div>
-</div>
-</div>
-<div class="section" id="pgl-h">
-<span id="pgl-h-int-n-realform1"></span><h2>PGL_H<a class="headerlink" href="#pgl-h" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">PGL_H:int</span> <span class="pre">n-&gt;RealForm</span></code> Defined in line number 148.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

@@ -175,10 +175,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="real_groups.html">Real Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters_real_tori.html">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/group_operations.html">group_operations.at</a><ul>
@@ -1045,18 +1047,18 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Note the <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code> that uses the command <code class="docutils literal"><span class="pre">prints</span></code> discussed
-earlier in the section of basic <code class="docutils literal"><span class="pre">atlas</span></code> commands. It tells the software to go through the string of real forms of <code class="docutils literal"><span class="pre">G</span></code> and print the list.</p>
-<p>So, for <code class="docutils literal"><span class="pre">G=Sp(4,R)</span></code>, we have a list of three real forms: the compact
-real form <code class="docutils literal"><span class="pre">Sp(2)=Sp(2,0)</span></code>, an intermediate real form <code class="docutils literal"><span class="pre">Sp(1,1)</span></code> and
-the split real form <code class="docutils literal"><span class="pre">Sp(4,R)</span></code>. One corresponding to each Lie algebra
-above.</p>
+earlier in the section of basic <code class="docutils literal"><span class="pre">atlas</span></code> commands. It tells the software to go through the string of real forms of <span class="math">\(G\)</span> and print the list.</p>
+<p>So, for <span class="math">\(G=Sp(4,\mathbb R)\)</span>, we have a list of three real forms:
+the compact real form <span class="math">\(Sp(2)=Sp(2,0)\)</span>, an intermediate real form
+<span class="math">\(Sp(1,1)\)</span> and the split real form <span class="math">\(Sp(4,\mathbb R)\)</span>. One corresponding to
+each Lie algebra above.</p>
 <div class="section" id="cartan-classes-accross-real-forms">
 <h2>Cartan Classes Accross Real Forms<a class="headerlink" href="#cartan-classes-accross-real-forms" title="Permalink to this headline">¶</a></h2>
 <p>Now something interesting about real forms and Cartan classes is that
 The Cartan classes are the same across all real forms of the same
-complex group. In fact even though within the compact Cartan there is
-only one conjugacy class of Cartans (within the compact group). We
-will have the same Cartan classes for <code class="docutils literal"><span class="pre">G=Sp(2)</span></code> than for <code class="docutils literal"><span class="pre">G=Sp(4,R)</span></code>.:</p>
+complex group. In fact even though within the compact real form there
+is only one conjugacy class of Cartans, we will have the same Cartan
+classes for <span class="math">\(G=Sp(2)\)</span> than for <span class="math">\(G=Sp(4,\mathbb R)\)</span>.:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rf[0]
 Value: compact connected real group with Lie algebra &#39;sp(2)&#39;
 atlas&gt; nr_of_Cartan_classes (rf[0])
@@ -1077,7 +1079,7 @@ atlas&gt;
 </div>
 <div class="section" id="inner-classes-and-outer-involutions">
 <h2>Inner Classes and Outer Involutions<a class="headerlink" href="#inner-classes-and-outer-involutions" title="Permalink to this headline">¶</a></h2>
-<p>Now let&#8217;s look at the real forms of G=SL(5,R). It turns out there is only one: G itself:</p>
+<p>Now let&#8217;s look at the real forms of <span class="math">\(G=SL(5,\mathbb R)\)</span>. It turns out there is only one: <span class="math">\(G\)</span> itself:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(5,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rf =real_forms(G)
@@ -1090,7 +1092,14 @@ Value: connected split real group with Lie algebra &#39;sl(5,R)&#39;
 atlas&gt;
 </pre></div>
 </div>
-<p>Note that the complexified Lie algebra of <code class="docutils literal"><span class="pre">G</span></code>, <code class="docutils literal"><span class="pre">sl(5,C)</span></code>. Has other real forms. However, associated to <code class="docutils literal"><span class="pre">G</span></code>, there is only one. This is because atlas thinks always in terms of inner classes. That is a real form is a real form in a given inner class. And there is a distinquished involution in <code class="docutils literal"><span class="pre">G</span></code> which is non trivial and which atlas uses to determine the inner class of the group <code class="docutils literal"><span class="pre">G</span></code>, and there is only one real form in this inner class.:</p>
+<p>Note that the complexified Lie algebra of <span class="math">\(G\)</span>,
+<span class="math">\(\mathfrak{sl} (5,\mathbb C)\)</span> has other real forms. However,
+associated to <span class="math">\(G\)</span>, there is only one. This is because atlas
+thinks always in terms of inner classes. That is, a real form is a
+real form in a given inner class. And there is a distinquished
+involution in <span class="math">\(G\)</span> which is non trivial and which atlas uses to
+determine the inner class of the group <span class="math">\(G\)</span>. It turns out there
+is only one real form in this inner class.:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; distinguished_involution(G)
 Value:
 | 1, 0, 0, 0 |
@@ -1100,7 +1109,9 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>Let&#8217;s look at another real form of type <code class="docutils literal"><span class="pre">A4</span></code>, namely <code class="docutils literal"><span class="pre">su(3,2)</span></code>. THis gives us another inner class. it turns out this inner class has the rest of the real forms of <code class="docutils literal"><span class="pre">sl(5,C)</span></code>:</p>
+<p>Let&#8217;s look at another real form of type <code class="docutils literal"><span class="pre">A4</span></code>, namely
+<span class="math">\(SU(3,2)\)</span>. THis gives us another inner class. This inner class
+has the rest of the real forms of <span class="math">\(\mathfrak{sl}(5,\mathbb C)\)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; H:=SU(3,2)
 Value: connected quasisplit real group with Lie algebra &#39;su(3,2)&#39;
 atlas&gt; set rfH=real_forms (H)
@@ -1115,7 +1126,12 @@ Value: [(),(),()]
 atlas&gt;
 </pre></div>
 </div>
-<p>So, these three real groups are grouped together because they are all in the same inner class. Note that they all have a compact Cartan, whereas <code class="docutils literal"><span class="pre">SL(5,R)</span></code> does not. The distinguished involution or <code class="docutils literal"><span class="pre">H=SU(3,2)</span></code> is the identity:</p>
+<p>So, these three real groups are grouped together because they are all
+in the same inner class. Note that they all have a compact Cartan,
+whereas <span class="math">\(SL(5,\mathbb R)\)</span> does not. Also, the same result is
+achieved if we choose <span class="math">\(H\)</span> to be either of the other two groups
+in the above list. The distinguished involution for <span class="math">\(H=SU(3,2)\)</span>
+is the identity:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; distinguished_involution (H)
 Value:
 | 1, 0, 0, 0 |
@@ -1125,13 +1141,15 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>Inner classes are associated with outer involutions. That is a diagram
-automorphism. So, for <code class="docutils literal"><span class="pre">SU(p,q)</span></code> the inner forms are associated
-with the trivial automorphism of the Dynkin diagram of <code class="docutils literal"><span class="pre">A{p+q-1}</span></code>;
-and for <code class="docutils literal"><span class="pre">SL(p+q,R)</span></code>, with the non trivial diagram automorphism.</p>
-<p>So what will happen for G=SL(6,R)? We can see in the following example
-that there is another real form in the same inner class as
-SL(6,C). This will be true whenever p+q=2n, namely SL(n,H):</p>
+<p>Inner classes are associated with outer involutions; that is, with a
+diagram automorphism. So, for <span class="math">\(SU(p,q)\)</span> the inner forms are
+associated with the trivial automorphism of the Dynkin diagram of
+<code class="docutils literal"><span class="pre">A{p+q-1}</span></code>; and for <span class="math">\(SL(p+q,\mathbb R)\)</span>, with the non trivial
+diagram automorphism.</p>
+<p>So what will happen for <span class="math">\(G=SL(6,\mathbb R)\)</span>? We can see in the
+following example that there is another real form in the same inner
+class as <span class="math">\(SL(6,\mathbb R)\)</span>, namely <span class="math">\(SL(3,\mathbb H)\)</span>. This
+will be true whenever <code class="docutils literal"><span class="pre">p+q=2n</span></code>.:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(6,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rf=real_forms (G)
@@ -1146,7 +1164,8 @@ Value: [(),()]
 atlas&gt;
 </pre></div>
 </div>
-<p>More generally, for <code class="docutils literal"><span class="pre">Sl(2n,R)</span></code> has another real form in this inner class, the group SL(n,H).</p>
+<p>More generally, for <span class="math">\(SL(2n,\mathbb R)\)</span> has another real form in
+its inner class, the group SL(n,H).</p>
 <p>In fact the distinguished involution is the one attached to the non trivial diagram automorphism. And in this case it flips all the roots except the central root:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set delta=distinguished_involution (G)
 Identifier delta: mat
@@ -1176,7 +1195,9 @@ atlas&gt;
 </pre></div>
 </div>
 <p>In other words, <code class="docutils literal"><span class="pre">delta</span></code> is the outer automorphism that exchanges <code class="docutils literal"><span class="pre">alpha[0]</span></code> and <code class="docutils literal"><span class="pre">alpha[4]</span></code>; <code class="docutils literal"><span class="pre">alpha[1]</span></code> and <code class="docutils literal"><span class="pre">alpha[3]</span></code> and fixes <code class="docutils literal"><span class="pre">alpha[2]</span></code>.</p>
-<p>This gives another way of thinking about coordinates. That is trying to understand the automorphism <code class="docutils literal"><span class="pre">delta</span></code> by looking at what it does to the simple roots.</p>
+<p>This gives another way of thinking about coordinates. That is, trying
+to understand the automorphism <code class="docutils literal"><span class="pre">delta</span></code> by looking at what it does to
+the simple roots.</p>
 </div>
 </div>
 

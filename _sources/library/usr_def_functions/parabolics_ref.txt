@@ -241,7 +241,7 @@ is_parabolic_real
 
 rho_u
 -------------------------------------------------
-| ``rho_u:ComplexParabolic P->ratvec`` Defined in line number 242.
+| ``rho_u:ComplexParabolic P->ratvec`` Defined in line number 243.
 | 
 | Half sum of positive roots not in the Levi (L must be theta-stable).
 | 
@@ -250,7 +250,7 @@ rho_u
 
 rho_u
 -------------------------------------------------
-| ``rho_u:Parabolic P->ratvec`` Defined in line number 245.
+| ``rho_u:Parabolic P->ratvec`` Defined in line number 246.
 | 
 | Half sum of positive roots not in the Levi (L must be theta-stable).
 | 
@@ -259,7 +259,7 @@ rho_u
 
 rho_l
 -------------------------------------------------
-| ``rho_l:Parabolic P->ratvec`` Defined in line number 248.
+| ``rho_l:Parabolic P->ratvec`` Defined in line number 249.
 | 
 | Half sum of positive roots in the Levi (L must be theta-stable).
 | 
@@ -268,7 +268,7 @@ rho_l
 
 nilrad
 -------------------------------------------------
-| ``nilrad:Parabolic P->mat`` Defined in line number 251.
+| ``nilrad:Parabolic P->mat`` Defined in line number 252.
 | 
 | Positive coroots in the nilradical u of P (L must be theta-stable).
 | 
@@ -277,7 +277,7 @@ nilrad
 
 nilrad_roots
 -------------------------------------------------
-| ``nilrad_roots:Parabolic P->mat`` Defined in line number 256.
+| ``nilrad_roots:Parabolic P->mat`` Defined in line number 257.
 | 
 | Positive roots in the nilradical u of P (L must be theta-stable).
 | 
@@ -286,7 +286,7 @@ nilrad_roots
 
 zero_simple_coroots
 -------------------------------------------------
-| ``zero_simple_coroots:RootDatum rd, vec lambda->[int]`` Defined in line number 269.
+| ``zero_simple_coroots:RootDatum rd, vec lambda->[int]`` Defined in line number 270.
 | 
 | Simple coroots on which weight lambda (in :math:`\mathfrak h^*` ) is zero.
 | 
@@ -295,7 +295,7 @@ zero_simple_coroots
 
 parabolic
 -------------------------------------------------
-| ``parabolic:ratvec lambda,KGBElt x->Parabolic`` Defined in line number 275.
+| ``parabolic:ratvec lambda,KGBElt x->Parabolic`` Defined in line number 276.
 | 
 | Parabolic defined by weight lambda.
 | 
@@ -304,7 +304,7 @@ parabolic
 
 Levi
 -------------------------------------------------
-| ``Levi:ratvec lambda,KGBElt x->RealForm`` Defined in line number 280.
+| ``Levi:ratvec lambda,KGBElt x->RealForm`` Defined in line number 281.
 | 
 | Levi factor of parabolic defined by weight lambda.
 | 
@@ -313,7 +313,7 @@ Levi
 
 nilrad
 -------------------------------------------------
-| ``nilrad:ratvec lambda,KGBElt x->mat`` Defined in line number 283.
+| ``nilrad:ratvec lambda,KGBElt x->mat`` Defined in line number 284.
 | 
 | Positive coroots in nilradical of P defined by weight lambda (if L theta-stable).
 | 
@@ -322,7 +322,7 @@ nilrad
 
 nilrad_roots
 -------------------------------------------------
-| ``nilrad_roots:ratvec lambda,KGBElt x->mat`` Defined in line number 286.
+| ``nilrad_roots:ratvec lambda,KGBElt x->mat`` Defined in line number 287.
 | 
 | Positive roots in nilradical of P defined by weight lambda (if L theta-stable).
 | 
@@ -331,7 +331,7 @@ nilrad_roots
 
 rho_u
 -------------------------------------------------
-| ``rho_u:ratvec lambda,KGBElt x->ratvec`` Defined in line number 291.
+| ``rho_u:ratvec lambda,KGBElt x->ratvec`` Defined in line number 292.
 | 
 | Half sum of positive roots in nilradical of P defined by weight lambda (if L theta-stable).
 | 
@@ -340,7 +340,7 @@ rho_u
 
 zero_simple_roots
 -------------------------------------------------
-| ``zero_simple_roots:RootDatum rd, vec cowt->[int]`` Defined in line number 294.
+| ``zero_simple_roots:RootDatum rd, vec cowt->[int]`` Defined in line number 295.
 | 
 | Simple roots which are zero on coweight H (in :math:`\mathfrak h` ).
 | 
@@ -349,7 +349,7 @@ zero_simple_roots
 
 parabolic_alt
 -------------------------------------------------
-| ``parabolic_alt:ratvec H,KGBElt x->Parabolic`` Defined in line number 300.
+| ``parabolic_alt:ratvec H,KGBElt x->Parabolic`` Defined in line number 301.
 | 
 | Parabolic defined by coweight H.
 | 
@@ -358,7 +358,7 @@ parabolic_alt
 
 Levi_alt
 -------------------------------------------------
-| ``Levi_alt:ratvec H,KGBElt x->RealForm`` Defined in line number 305.
+| ``Levi_alt:ratvec H,KGBElt x->RealForm`` Defined in line number 306.
 | 
 | Levi factor of parabolic defined by coweight H.
 | 
@@ -367,7 +367,7 @@ Levi_alt
 
 nilrad_alt
 -------------------------------------------------
-| ``nilrad_alt:ratvec H,KGBElt x->mat`` Defined in line number 308.
+| ``nilrad_alt:ratvec H,KGBElt x->mat`` Defined in line number 309.
 | 
 | Positive coroots in nilradical of P defined by coweight H (if L theta-stable).
 | 
@@ -376,7 +376,7 @@ nilrad_alt
 
 nilrad_roots_alt
 -------------------------------------------------
-| ``nilrad_roots_alt:ratvec H,KGBElt x->mat`` Defined in line number 311.
+| ``nilrad_roots_alt:ratvec H,KGBElt x->mat`` Defined in line number 312.
 | 
 | Positive roots in nilradical of P defined by coweight H (if L theta-stable).
 | 
@@ -385,7 +385,7 @@ nilrad_roots_alt
 
 rho_u_alt
 -------------------------------------------------
-| ``rho_u_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 315.
+| ``rho_u_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 316.
 | 
 | Half sum of roots in nilradical of P defined by coweight H (if L theta-stable).
 | 
@@ -394,7 +394,7 @@ rho_u_alt
 
 rho_Levi_alt
 -------------------------------------------------
-| ``rho_Levi_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 318.
+| ``rho_Levi_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 319.
 | 
 |  :math:`\rho(L)`  for Levi of P defined by coweight H (if L theta-stable).
 | 
@@ -403,7 +403,7 @@ rho_Levi_alt
 
 real_parabolic
 -------------------------------------------------
-| ``real_parabolic:KGBElt x->Parabolic`` Defined in line number 327.
+| ``real_parabolic:KGBElt x->Parabolic`` Defined in line number 328.
 | 
 | Real parabolic defined by x has Levi factor M=centralizer(A),   :math:`\mathfrak u` =positive roots not in M;   for M to be stable: x must have no C+ roots.
 | 
@@ -412,7 +412,7 @@ real_parabolic
 
 theta_stable_parabolic
 -------------------------------------------------
-| ``theta_stable_parabolic:KGBElt x->Parabolic`` Defined in line number 336.
+| ``theta_stable_parabolic:KGBElt x->Parabolic`` Defined in line number 337.
 | 
 | Theta-stable parabolic defined by x has Levi factor L=centralizer(T),   :math:`\mathfrak u` =positive roots not in L;   for this to be stable: no C- roots.
 | 
@@ -421,16 +421,25 @@ theta_stable_parabolic
 
 real_Levi
 -------------------------------------------------
-| ``real_Levi:KGBElt x->RealForm`` Defined in line number 344.
+| ``real_Levi:KGBElt x->RealForm`` Defined in line number 345.
 | 
 | Levi factor of real cuspidal parabolic;  M=centralizer of A in H=TA, as a RealForm.
+| 
+
+.. _is_standard_levi_realform_l,realform_g->bool1:
+
+is_standard_Levi
+-------------------------------------------------
+| ``is_standard_Levi:RealForm L,RealForm G->bool`` Defined in line number 403.
+| 
+| Check whether a Levi subgroup L is standard in G   (simple roots of L are simple for G).
 | 
 
 .. _kgp_realform_g,complexparabolic_(rd,s)->[kgpelt]1:
 
 KGP
 -------------------------------------------------
-| ``KGP:RealForm G,ComplexParabolic (rd,S)->[KGPElt]`` Defined in line number 400.
+| ``KGP:RealForm G,ComplexParabolic (rd,S)->[KGPElt]`` Defined in line number 412.
 | 
 | List of K-conjugacy classes of given ComplexParabolic (as KGP elts).
 | 
@@ -439,7 +448,7 @@ KGP
 
 parabolics
 -------------------------------------------------
-| ``parabolics:RealForm G,ComplexParabolic (rd,S)->[Parabolic]`` Defined in line number 404.
+| ``parabolics:RealForm G,ComplexParabolic (rd,S)->[Parabolic]`` Defined in line number 416.
 | 
 | List K-conjugacy classes of given ComplexParabolic (as Parabolics).
 | 
@@ -448,7 +457,7 @@ parabolics
 
 theta_stable_parabolics
 -------------------------------------------------
-| ``theta_stable_parabolics:RealForm G,ComplexParabolic P->[Parabolic]`` Defined in line number 408.
+| ``theta_stable_parabolics:RealForm G,ComplexParabolic P->[Parabolic]`` Defined in line number 420.
 | 
 | List K-conjugacy classes of given ComplexParabolic that are theta-stable.
 | 
@@ -457,7 +466,7 @@ theta_stable_parabolics
 
 theta_stable_parabolics
 -------------------------------------------------
-| ``theta_stable_parabolics:RealForm G->[Parabolic]`` Defined in line number 414.
+| ``theta_stable_parabolics:RealForm G->[Parabolic]`` Defined in line number 426.
 | 
 | List all theta-stable parabolics for G.
 | 
@@ -466,7 +475,7 @@ theta_stable_parabolics
 
 theta_stable_parabolics_type
 -------------------------------------------------
-| ``theta_stable_parabolics_type:RealForm G,[int] P->[Parabolic]`` Defined in line number 421.
+| ``theta_stable_parabolics_type:RealForm G,[int] P->[Parabolic]`` Defined in line number 433.
 | 
 | List all theta-stable parabolics of G, of type S.
 | 
@@ -475,7 +484,7 @@ theta_stable_parabolics_type
 
 all_rel_split_theta_stable_parabolics
 -------------------------------------------------
-| ``all_rel_split_theta_stable_parabolics:RealForm G->[Parabolic]`` Defined in line number 427.
+| ``all_rel_split_theta_stable_parabolics:RealForm G->[Parabolic]`` Defined in line number 439.
 | 
 | List all theta-stable parabolics of G with relatively split L.
 | 
@@ -484,7 +493,7 @@ all_rel_split_theta_stable_parabolics
 
 print_theta_stable_parabolics
 -------------------------------------------------
-| ``print_theta_stable_parabolics:RealForm G->void`` Defined in line number 435.
+| ``print_theta_stable_parabolics:RealForm G->void`` Defined in line number 447.
 | 
 | For each theta-stable parabolic of G, print S, Levi factor, and maximal x.
 | 

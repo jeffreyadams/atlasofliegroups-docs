@@ -175,10 +175,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Real Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="real_forms.html">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/occurrence_matrix.html">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/parameters_real_tori.html">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_2A/parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/group_operations.html">group_operations.at</a><ul>
@@ -1043,15 +1045,20 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>These is a real Lie group , so the data type is a RealForm. Again the underlying root datum of G, which is the one for the simply connected group of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
+<p>These is a real Lie group , so the data type is a RealForm. Again the
+underlying root datum of <span class="math">\(G\)</span>, which is the one for the simply connected
+group of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=root_datum (G)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
 atlas&gt; rd
 Value: simply connected root datum of Lie type &#39;A1&#39;
 </pre></div>
 </div>
-<p>Note that SL(2,R) is NOT simply connected. However, it is the Lie group whose complexified Lie algebra is is type A1 and its root datum corresponds to the the roots of the simply connected complex group SL(2,C).</p>
-<p>Now let&#8217;s take the non semisimple Lie group GL(2,R). We can define it
+<p>Note that <span class="math">\(SL(2,\mathbb R)\)</span> is NOT simply connected. However, it is the
+Lie group whose complexified Lie algebra is is type <code class="docutils literal"><span class="pre">A1</span></code> and its root
+datum corresponds to the the roots of the simply connected complex
+group <span class="math">\(SL(2,\mathbb C)\)</span>.</p>
+<p>Now let&#8217;s take the non semisimple Lie group <span class="math">\(GL(2,\mathbb R)\)</span>. We can define it
 in two ways. Note the different type of information we obtain:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
 Identifier G: RealForm
@@ -1075,8 +1082,8 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>These are the roots in the basis {e_1, e_2} of the torus T.</p>
-<p>Now for PSL(2,R) we have:</p>
+<p>These are the roots in the basis {e_1, e_2} of the torus <span class="math">\(T\)</span>.</p>
+<p>Now for <span class="math">\(PSL(2,\mathbb R)\)</span> we have:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=PSL(2,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; simple_roots(G)
@@ -1102,8 +1109,10 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>Which makes sense since <code class="docutils literal"><span class="pre">SL(2,C)</span></code> is the real Lie group with complexified Lie algebra of type <code class="docutils literal"><span class="pre">A2</span> <span class="pre">x</span> <span class="pre">A2</span></code>,</p>
-<p>So, in general, if we use the standard real form notation for the groups, atlas normally gives the usual coordinates. So we can for example do things like this:</p>
+<p>Which makes sense since <span class="math">\(SL(2,\mathbb C)\)</span> is the real Lie group with complexified Lie algebra of type <code class="docutils literal"><span class="pre">A2</span> <span class="pre">x</span> <span class="pre">A2</span></code>,</p>
+<p>So, in general, if we use the standard real form notation for the
+groups, <code class="docutils literal"><span class="pre">atlas</span></code> normally gives the usual coordinates. So we can for
+example do things like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=Sp(4,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rd=root_datum(G)
@@ -1120,7 +1129,7 @@ Value:
 | -1, 1 |
 </pre></div>
 </div>
-<p>These are the usual simple roots for Sp(4). So, using these
+<p>These are the usual simple roots for <span class="math">\(Sp(4,\mathbb R)\)</span>. So, using these
 pre-defined groups to define our real form gives us, in most cases, the
 familiar coordinates to work with. So we can look at all the positive
 roots and coroots and rho:</p>
@@ -1155,7 +1164,7 @@ Value: 2
 </pre></div>
 </div>
 <p>This is the natural way of pairing roots with coroots. Pairing roots with roots is not too meaningful in the theory.</p>
-<p>Now let us try  G=GL(3,R):</p>
+<p>Now let us try  <span class="math">\(G=GL(3,\mathbb R)\)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=GL(3,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rd=root_datum(G)
@@ -1175,7 +1184,7 @@ Value:
 atlas&gt;
 </pre></div>
 </div>
-<p>Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are expressed again in the usual coordinates. However look what happens for SL(3,R):</p>
+<p>Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are expressed again in the usual coordinates. However look what happens for <span class="math">\(SL(3,\mathbb R)\)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(3,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rd=root_datum(G)

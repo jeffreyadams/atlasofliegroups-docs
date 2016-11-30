@@ -108,6 +108,8 @@ Functions
      - ``KGBElt x->Parabolic``
    * - :ref:`real_levi_kgbelt_x->realform1`
      - ``KGBElt x->RealForm``
+   * - :ref:`is_standard_levi_realform_l,realform_g->bool1`
+     - ``RealForm L,RealForm G->bool``
    * - :ref:`kgp_realform_g,complexparabolic_(rd,s)->[kgpelt]1`
      - ``RealForm G,ComplexParabolic (rd,S)->[KGPElt]``
    * - :ref:`parabolics_realform_g,complexparabolic_(rd,s)->[parabolic]1`

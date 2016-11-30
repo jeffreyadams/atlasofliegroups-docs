@@ -175,10 +175,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/lie_types.html">Root Data and Lie Types</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_groups.html">Real Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_1B/atlas_coordinates.html#simple-roots-for-sl-5-r">Simple roots for <code class="docutils literal"><span class="pre">SL(5,R)</span></code></a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
@@ -192,11 +189,11 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="parameters.html#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for-sl-2-r">Parameters for <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="parameters_real_tori.html">Parameters for Real Tori</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-s-1">The characters of $S^1$</a></li>
+<li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
 </ul>
@@ -580,6 +577,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl8H.html">gl8H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_ref.html">gl8H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl8H_index.html">gl8H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/group_operations.html">group_operations.at</a><ul>
@@ -1031,11 +1033,11 @@
 of an inner class. More precisely, for a given inner class there
 is a fixed set of Cartans which may ar may not appear in the different
 real forms associated to this inner class. If we ask for the number
-of Cartan classes of real form <code class="docutils literal"><span class="pre">G</span></code>, we get the same number regardless of which
+of Cartan classes of real form <span class="math">\(G\)</span>, we get the same number regardless of which
 real form in the inner class we are using. This can be misleading unless we
 understand what the software is doing. This is because <code class="docutils literal"><span class="pre">atlas</span></code> is
 implicitly assuming that you are asking for the number of Cartans in
-the inner class of these real forms. For example,:</p>
+the inner class of these real forms. For example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SO(5,4)
 Identifier G: RealForm
 atlas&gt; nr_of_Cartan_classes (G)
@@ -1072,8 +1074,8 @@ atlas&gt;
 </div>
 <p>Remember that we type <code class="docutils literal"><span class="pre">void:</span></code> to avoid getting the empty values <code class="docutils literal"><span class="pre">[(),(),(),(),()]</span></code></p>
 <p>So, the occurrence matrix says that all 9 Cartans appear in the split
-form SO(5,4), that only the compact Cartan appears in the compact real
-form SO(9,0), that SO(6,3) has only 6 Cartans, etc. Also note that the
+form <span class="math">\(SO(5,4)\)</span>, that only the compact Cartan appears in the compact real
+form <span class="math">\(SO(9,0)\)</span>, that <span class="math">\(SO(6,3)\)</span> has only 6 Cartans, etc. Also note that the
 Compact Cartan appears in all real forms but the split Cartan only
 appears in the split real form.</p>
 </div>

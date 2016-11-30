@@ -63,8 +63,8 @@ Now, for this example this was not so necessary since we can use the real form e
     atlas> 
 
 However, the change of basis matrix is needed for example for
-``SL(3,R)``. Moreover, in this case we do not get integral matrices. So
-we need a more general command::
+:math:`SL(3,\mathbb R)`. Moreover, in this case we do not get integral
+matrices. So we need a more general command::
 
 	 atlas> set G=SL(3,R) 
 	 Identifier G: RealForm (hiding previous one of type RealForm)
@@ -102,7 +102,7 @@ we need a more general command::
 
 Note the use of the new command:``make_integral``. Since the end result is an integral matrix, ``atlas`` can re-write it as such.  
 
-Now to translate things back to atlas' coordinates we use the inverse change of coordinates matrix::
+Now to translate things back to ``atlas`` coordinates we use the inverse change of coordinates matrix::
 
     atlas> set D=inverse_change_basis(SL(3,R),A) 
     Identifier D:[ratvec] 

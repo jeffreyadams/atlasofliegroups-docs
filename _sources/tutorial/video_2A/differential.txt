@@ -28,7 +28,9 @@ And remember that for now, the important piece of information about
    | 0, 1 |
    | 1, 0 |
 
-Now, when we have a parameter ``p``, we can ask for its infinitesimal character. The answer is of course more interesting for a non-trivial character::
+Now, when we have a parameter ``p``, we can ask for its infinitesimal
+character. The answer is of course more interesting for a non-trivial
+character::
 
     atlas> infinitesimal_character (p)
     Value: [ 0, 0 ]/1
@@ -42,9 +44,9 @@ Now, when we have a parameter ``p``, we can ask for its infinitesimal character.
     atlas> 
 
 If we have ``q=(x, lambda, nu)`` the differential of this character is
-the infinitesimal character which equals $(1+ \theta )/2 *\lambda +(1-
-\theta )/2* \nu$. But ``nu`` is already averaged so this equals
-$(1+ \theta)/2 *\lambda + \nu$::
+the infinitesimal character which equals :math:`{(1+ \theta )\over /2}
+\lambda +{(1- \theta )\over 2} \nu`. But ``nu`` is already averaged so
+this equals :math:`{(1+ \theta )\over 2} \lambda + \nu `::
 
 	atlas> infinitesimal_character (q)
 	Value: [  5, -3 ]/2
@@ -54,7 +56,6 @@ $(1+ \theta)/2 *\lambda + \nu$::
 	Value: [  5, -3 ]/2
 	atlas>
 
-It is less information than ``lambda`` and ``nu``. This is because
-$(1+ \theta )/2$ looses some of it.
+It is less information than ``lambda`` and ``nu``. This is because :math:`{(1+ \theta )\over 2}` looses some of it.
 
 
