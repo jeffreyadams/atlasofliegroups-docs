@@ -74,19 +74,13 @@ Functions
      - ``int n->RealForm``
    * - :ref:`psl_r_int_n->realform1`
      - ``int n->RealForm``
-   * - :ref:`pgl_r_int_n->realform1`
-     - ``int n->RealForm``
    * - :ref:`sl_c_int_n->realform1`
      - ``int n->RealForm``
    * - :ref:`psl_c_int_n->realform1`
      - ``int n->RealForm``
-   * - :ref:`pgl_c_int_n->realform1`
-     - ``int n->RealForm``
    * - :ref:`sl_h_int_n->realform1`
      - ``int n->RealForm``
    * - :ref:`psl_h_int_n->realform1`
-     - ``int n->RealForm``
-   * - :ref:`pgl_h_int_n->realform1`
      - ``int n->RealForm``
    * - :ref:`gl_r_int_n->realform1`
      - ``int n->RealForm``

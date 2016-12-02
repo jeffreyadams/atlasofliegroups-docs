@@ -244,14 +244,6 @@ PSL_R
 | 
 | 
 
-.. _pgl_r_int_n->realform1:
-
-PGL_R
--------------------------------------------------
-| ``PGL_R:int n->RealForm`` Defined in line number 140.
-| 
-| 
-
 .. _sl_c_int_n->realform1:
 
 SL_C
@@ -268,14 +260,6 @@ PSL_C
 | 
 | 
 
-.. _pgl_c_int_n->realform1:
-
-PGL_C
--------------------------------------------------
-| ``PGL_C:int n->RealForm`` Defined in line number 144.
-| 
-| 
-
 .. _sl_h_int_n->realform1:
 
 SL_H
@@ -289,14 +273,6 @@ SL_H
 PSL_H
 -------------------------------------------------
 | ``PSL_H:int n->RealForm`` Defined in line number 147.
-| 
-| 
-
-.. _pgl_h_int_n->realform1:
-
-PGL_H
--------------------------------------------------
-| ``PGL_H:int n->RealForm`` Defined in line number 148.
 | 
 | 
 
