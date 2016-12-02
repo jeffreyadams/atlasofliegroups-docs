@@ -194,8 +194,8 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Parameters for Real Tori</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#the-characters-of-mathbb-r-x">The characters of ${mathbb R}^x$</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#characters-of-mathbb-c-x">Characters of ${mathbb C}^x$.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">The characters of <span class="math">\({\mathbb R}^{\times}\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#characters-of">Characters of <span class="math">\({\mathbb C}^{\times}\)</span>.</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="differential.html">The Character Differential</a></li>
@@ -1040,7 +1040,8 @@ Overloaded instances of &#39;torus&#39;
 atlas&gt;
 </pre></div>
 </div>
-<p>We are interested in the first option. So, we can determine a particular torus by assigning three integers:</p>
+<p>We are interested in the first option. So, we can determine a
+particular torus by assigning three integers:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set H=torus(1,0,0)
 Identifier H: RealForm (hiding previous one of type string (constant))
 atlas&gt; H
@@ -1059,9 +1060,9 @@ Value: disconnected quasisplit real group with Lie algebra
 atlas&gt;
 </pre></div>
 </div>
-<p>That is, the command <code class="docutils literal"><span class="pre">torus(a,b,c)</span></code> specifies a torus with <code class="docutils literal"><span class="pre">a</span></code>
-<span class="math">\(S^1\)</span> factors, <code class="docutils literal"><span class="pre">b</span></code> <span class="math">\({\mathbb C}^{\times }\)</span> factors and
-<code class="docutils literal"><span class="pre">c</span></code> <span class="math">\({\mathbb R}^{\times }\)</span> factors.</p>
+<p>In other words, the command <code class="docutils literal"><span class="pre">torus(a,b,c)</span></code> specifies a torus with
+<code class="docutils literal"><span class="pre">a</span></code> <span class="math">\(S^1\)</span> factors, <code class="docutils literal"><span class="pre">b</span></code> <span class="math">\({\mathbb C}^{\times }\)</span> factors
+and <code class="docutils literal"><span class="pre">c</span></code> <span class="math">\({\mathbb R}^{\times }\)</span> factors.</p>
 <div class="section" id="the-characters-of">
 <h2>The characters of <span class="math">\(S^1\)</span><a class="headerlink" href="#the-characters-of" title="Permalink to this headline">¶</a></h2>
 <p>Starting with the circle, let us discuss its representations. From the
@@ -1078,7 +1079,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>This is the parameter for the trivial representation. The first
-element <code class="docutils literal"><span class="pre">x</span></code> is a$K\G/B$ element. But it is not important for now. Let
+element <code class="docutils literal"><span class="pre">x</span></code> is a <span class="math">\(K\backslash G/B\)</span> element. But it is not important for now. Let
 us see what involution it corresponds to:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(p)
 Identifier x: KGBElt
@@ -1094,42 +1095,47 @@ atlas&gt;
 <p>In this case it is the identity involution. That is, the torus has a
 Cartan involution whose information is encoded in this element <code class="docutils literal"><span class="pre">x</span></code>
 and in the case of a compact torus it is the identity.</p>
-<p>Now to understand the rest of the parameters, suppose that $H$ is a
-complex torus with Cartan involution $theta$, and defined over
-$mathbb R$. Let $H(mathbb R )$ be the corresponding real group. Denote by
-$X^* (H)$ the characters of $H(mathbb R )$. Then these characters are
-parametrized by triples $(theta, gamma, lambda)$. Here $gamma$ is
-the differential of the character and <code class="docutils literal"><span class="pre">lambda</span></code> is the restriction
-of the character to $H^{theta}$.</p>
+<p>Now to understand the rest of the parameters, suppose that <span class="math">\(H\)</span>
+is a complex torus with Cartan involution <span class="math">\(\theta\)</span>, and defined
+over <span class="math">\(\mathbb R\)</span>. Let <span class="math">\(H(\mathbb R )\)</span> be the corresponding
+real group. Denote by <span class="math">\(X^* (H)\)</span> the characters of
+<span class="math">\(H(\mathbb R )\)</span>. Then these characters are parametrized by
+triples <span class="math">\((\theta, \gamma, \lambda)\)</span>. Here <span class="math">\(\gamma\)</span> is the
+differential of the character and <code class="docutils literal"><span class="pre">lambda</span></code> is the restriction of the
+character to <span class="math">\(H^{\theta}\)</span>.</p>
 <p>The real points are not necessarily connected. So we need to specify
 not only the differential but also information of the disconnected
-part which is encoded in the restriction to $H^{theta}$.</p>
-<p>The basic fact is that the characters of $H^{theta}$ are parametrized by
-$X^*/(1-theta)X^*$.</p>
-<p>So the characters of $H(mathbb R )$ are parametrized by triples
-$(theta, lambda, nu)$ where <code class="docutils literal"><span class="pre">lambda</span></code> is in $X^*/(1-theta)X^*``and
-<code class="docutils literal"><span class="pre">nu</span></code> is in $[X^*otimes mathbb Q]^{-theta}$</p>
-<p>So <code class="docutils literal"><span class="pre">lambda</span></code> is a character on $H^theta$ and <code class="docutils literal"><span class="pre">nu</span></code> gives the
-character on the Lie algebra of the split Cartan $A=H^{-theta}$.</p>
-<p>In the case of the circle, <code class="docutils literal"><span class="pre">lambda</span></code> is in $mathbb Z/(1-theta ){mathbb
-Z}=mathbb Z$, since $theta =1$; and <code class="docutils literal"><span class="pre">nu</span></code> is in ${mattbb Q}^{-1}=0$.</p>
+part which is encoded in the restriction to <span class="math">\(H^{\theta}\)</span>.</p>
+<p>The basic fact is that the characters of <span class="math">\(H^{\theta}\)</span> are
+parametrized by <span class="math">\(X^*/(1-\theta)X^*\)</span>.</p>
+<p>So the characters of <span class="math">\(H(\mathbb R )\)</span> are parametrized by triples
+<span class="math">\((\theta, \lambda, \nu)\)</span> where <code class="docutils literal"><span class="pre">lambda</span></code> is in
+<span class="math">\(X^*/(1-theta)X^*\)</span> and <code class="docutils literal"><span class="pre">nu</span></code> is in <span class="math">\([X^*\otimes \mathbb
+Q]^{-\theta}\)</span>.</p>
+<p>So <code class="docutils literal"><span class="pre">lambda</span></code> is a character on <span class="math">\(H^\theta\)</span> and <code class="docutils literal"><span class="pre">nu</span></code> gives the
+character on the Lie algebra of the split Cartan
+<span class="math">\(A=H^{-\theta}\)</span>.</p>
+<p>In the case of the circle, <code class="docutils literal"><span class="pre">lambda</span></code> is in <span class="math">\(\mathbb Z/(1-\theta
+){\mathbb Z}=\mathbb Z\)</span>, since <span class="math">\(\theta =1\)</span>; and <code class="docutils literal"><span class="pre">nu</span></code> is in
+<span class="math">\({\mathbb Q}^{-1}=0\)</span>.</p>
 <p>So the characters for the compact torus are given by the parameters
-<code class="docutils literal"><span class="pre">(x=0,lambda,</span> <span class="pre">nu=0)</span></code> and there is one for each <code class="docutils literal"><span class="pre">lambda</span></code> in $mathbb Z$
-correspondintg to the character $e^{ilambda} t$.</p>
+<code class="docutils literal"><span class="pre">(x=0,</span> <span class="pre">lambda,</span> <span class="pre">nu=0)</span></code> and there is one for each <code class="docutils literal"><span class="pre">lambda</span></code> in
+<span class="math">\(\mathbb Z\)</span> correspondintg to the character <span class="math">\(e^{i\lambda
+t}\)</span>.</p>
 <p>In the case of the trivial character the parameter is:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>And for the character $e^{i 3} t$ of $S^1$ we have:</p>
+<p>And for the character <span class="math">\(e^{i 3} t\)</span> of <span class="math">\(S^1\)</span> we have:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[3],[0])
 Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>Note that <code class="docutils literal"><span class="pre">nu</span></code> is fixed by $-theta$. So, given any <code class="docutils literal"><span class="pre">nu</span></code> it will
-be replaced by $(1-theta)/2 nu in (X^*_{mathbb Q})^{-theta}$.:</p>
+<p>Note that <code class="docutils literal"><span class="pre">nu</span></code> is fixed by <span class="math">\(-\theta\)</span>. So, given any <code class="docutils literal"><span class="pre">nu</span></code> it will
+be replaced by <span class="math">\((1-\theta)/2 \nu \in (X^*_{\mathbb Q})^{-\theta}\)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[3],[2])
 Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
 atlas&gt;
@@ -1142,8 +1148,8 @@ atlas&gt;
 </pre></div>
 </div>
 </div>
-<div class="section" id="the-characters-of-mathbb-r-x">
-<h2>The characters of ${mathbb R}^x$<a class="headerlink" href="#the-characters-of-mathbb-r-x" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>The characters of <span class="math">\({\mathbb R}^{\times}\)</span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Now lets take the most split one-dimensional torus:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; H:=torus(0,0,1)
 Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
@@ -1157,29 +1163,29 @@ Value:
 </pre></div>
 </div>
 <p>Now our parameters <code class="docutils literal"><span class="pre">(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code> satisfy <code class="docutils literal"><span class="pre">lambda</span></code> is in
-${mathbb Z}/(1-theta){mathbb Z}=mathbb Z/2{mathbb Z}$, and <code class="docutils literal"><span class="pre">nu</span></code>
-is fixed by $-theta=1$. So, <code class="docutils literal"><span class="pre">nu</span></code> is in $mathbb Q$</p>
-<p>Note that the characters of ${mathbb R}^x$ are parametrized by the complex
+<span class="math">\({\mathbb Z}/(1-\theta){\mathbb Z}=\mathbb Z/2{\mathbb Z}\)</span>, and <code class="docutils literal"><span class="pre">nu</span></code>
+is fixed by <span class="math">\(-\theta=1\)</span>. So, <code class="docutils literal"><span class="pre">nu</span></code> is in <span class="math">\(\mathbb Q\)</span>.</p>
+<p>Note that the characters of <span class="math">\({\mathbb R}^{\times}\)</span> are parametrized by the complex
 numbers <code class="docutils literal"><span class="pre">nu</span></code>. However, the software only works with rational
 parameters. So we have to do some extra work in general, depending on
 the information that we want. The idea is that some problems can be
 reduced to the case of rational parameters.</p>
-<p>Le&#8217;s do some examples. For the trivial representation, namely the parameter
-correspondintg to the trivial character on the component group and the character $nu :x rightarrow <a href="#id1"><span class="problematic" id="id2">|</span></a>x|^0$ we have:</p>
+<p>Let us do some examples. For the trivial representation, namely the parameter
+correspondintg to the trivial character on the component group and the character <span class="math">\(\nu :x \rightarrow |x|^0\)</span> we have:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>And for the representation with $nu :x rightarrow <a href="#id3"><span class="problematic" id="id4">|</span></a>x|^{4/3}$</p>
+<p>And for the representation with <span class="math">\(\nu :x \rightarrow |x|^{4/3}\)</span></p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:=parameter (x,[0],[4/3])
 Value: final parameter (x=0,lambda=[0]/1,nu=[4]/3)
 atlas&gt;
 </pre></div>
 </div>
 <p>Now suppose we want a representation with non trivial character on the
-component group ${mathbb Z}/2{mathbb Z}$. For example, the sign
-representation is given by:</p>
+component group <span class="math">\({\mathbb Z}/2{\mathbb Z}\)</span>. For example, the
+sign representation is given by:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[1],[0])
 Value: final parameter (x=0,lambda=[1]/1,nu=[0]/1)
 atlas&gt;
@@ -1190,7 +1196,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Which differs from the trivial by the non trivial character on
-${mathbb Z}/2{mathbb Z}$. And note what happens when we change that
+<span class="math">\({\mathbb Z}/2{\mathbb Z}\)</span>. And note what happens when we change that
 character to <code class="docutils literal"><span class="pre">2</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[2],[0])
 Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
@@ -1199,12 +1205,12 @@ Value: true
 atlas&gt;
 </pre></div>
 </div>
-<p>Which is correct since $2=0(mod2)$. So, sometimes the software will replace the parameters you are using for something equivalent.</p>
+<p>Which is correct since <span class="math">\(2=0(mod2)\)</span>. So, sometimes the software will replace the parameters you are using for something equivalent.</p>
 </div>
-<div class="section" id="characters-of-mathbb-c-x">
-<h2>Characters of ${mathbb C}^x$.<a class="headerlink" href="#characters-of-mathbb-c-x" title="Permalink to this headline">¶</a></h2>
-<p>Now let us look at ${mathbb C}^x cong GL(1, mathbb C) $ and the
-trivial representation:</p>
+<div class="section" id="characters-of">
+<h2>Characters of <span class="math">\({\mathbb C}^{\times}\)</span>.<a class="headerlink" href="#characters-of" title="Permalink to this headline">¶</a></h2>
+<p>Now let us look at <span class="math">\({\mathbb C}^{\times} \cong GL(1, \mathbb C)\)</span> and
+the trivial representation:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; H:=torus(0,1,0)
 Value: connected quasisplit real group with Lie algebra &#39;gl(1,C)&#39;
 atlas&gt; set p=trivial(H)
@@ -1214,7 +1220,7 @@ Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
 </pre></div>
 </div>
 <p>Now we have two coordinates for each parameter because we have a rank-2
-real group, locally isomorphic to  $S^1 x {mathbb R}^x$. Let&#8217;s see what the Cartan involution is for this torus:</p>
+real group, locally isomorphic to  <span class="math">\(S^1 \times {\mathbb R}^{\times}\)</span>. Let&#8217;s see what the Cartan involution is for this torus:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(p)
 Identifier x: KGBElt
 atlas&gt; set theta=involution (x)
@@ -1237,7 +1243,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Here the software leaves <code class="docutils literal"><span class="pre">lambda</span></code> as <code class="docutils literal"><span class="pre">[0,0]</span></code> and it changes <code class="docutils literal"><span class="pre">nu</span></code> to
-<code class="docutils literal"><span class="pre">[-1,1]</span></code>.  Which makes sense since``nu`` is fixed by $-theta$ so it changed <code class="docutils literal"><span class="pre">nu</span></code> to $(1-theta)nu/2$:</p>
+<code class="docutils literal"><span class="pre">[-1,1]</span></code>.  Which makes sense since``nu`` is fixed by <span class="math">\(-\theta\)</span> so it changed <code class="docutils literal"><span class="pre">nu</span></code> to <span class="math">\((1-\theta)\nu/2\)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; (1-theta)*[2,4]/2
 Value: [ -1,  1 ]/1
 atlas&gt;
@@ -1268,8 +1274,8 @@ Value: final parameter (x=0,lambda=[1,0]/1,nu=[0,0]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>As we would expect since these two representations are equivalent modulo $1-theta$</p>
-<p>So, The representations of ${mathbb C}^x are given by ${mathbb Z}^2 /(1-theta) {mathbb Z}^2$ and $mathbb Q$</p>
+<p>As we would expect since these two representations are equivalent modulo <span class="math">\(1-\theta\)</span></p>
+<p>So, The representations of <span class="math">\({\mathbb C}^{\times}\)</span> are given by <span class="math">\({\mathbb Z}^2 /(1-\theta) {\mathbb Z}^2\)</span> and <span class="math">\(\mathbb Q\)</span></p>
 </div>
 </div>
 
