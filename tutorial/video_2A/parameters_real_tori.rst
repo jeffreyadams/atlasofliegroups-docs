@@ -84,7 +84,7 @@ not only the differential but also information of the disconnected
 part which is encoded in the restriction to :math:`H^{\theta}`.
 
 The basic fact is that the characters of :math:`H^{\theta}` are
-parametrized by :math:`X^*/(1-theta)X^*`.
+parametrized by :math:`X^*/(1-\theta)X^*`.
 
 So the characters of :math:`H(\mathbb R )` are parametrized by triples
 :math:`(\theta, \lambda, \nu)` where ``lambda`` is in
@@ -100,9 +100,9 @@ In the case of the circle, ``lambda`` is in :math:`\mathbb Z/(1-\theta
 :math:`{\mathbb Q}^{-1}=0`.
 
 So the characters for the compact torus are given by the parameters
-``(x=0,lambda, nu=0)`` and there is one for each ``lambda`` in
-:math:`\mathbb Z` correspondintg to the character :math:`e^{i\lambda t}
-`.
+``(x=0, lambda, nu=0)`` and there is one for each ``lambda`` in
+:math:`\mathbb Z` correspondintg to the character :math:`e^{i\lambda
+t}`.
 
 In the case of the trivial character the parameter is::
 
@@ -117,7 +117,7 @@ And for the character :math:`e^{i 3} t` of :math:`S^1` we have::
     atlas> 
 
 Note that ``nu`` is fixed by :math:`-\theta`. So, given any ``nu`` it will
-be replaced by :math:`(1-\theta)/2 \nu \in (X^*_{\mathbb Q})^{-\theta}`.::
+be replaced by :math:`(1-\theta)/2 \nu \in (X^*_{\mathbb Q})^{-\theta}`::
 
     atlas> q:=parameter (x,[3],[2])
     Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
