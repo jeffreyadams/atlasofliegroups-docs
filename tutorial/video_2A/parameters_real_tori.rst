@@ -12,7 +12,8 @@ command, which we can check as follows::
 	  CartanClass->RealForm
  	atlas>
 
-We are interested in the first option. So, we can determine a particular torus by assigning three integers::
+We are interested in the first option. So, we can determine a
+particular torus by assigning three integers::
 
 	atlas> set H=torus(1,0,0)
 	Identifier H: RealForm (hiding previous one of type string (constant))
@@ -31,7 +32,7 @@ We are interested in the first option. So, we can determine a particular torus b
 	'u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)' 
 	atlas>
 
-That is, the command ``torus(a,b,c)`` specifies a torus with ``a``
+In other words, the command ``torus(a,b,c)`` specifies a torus with ``a``
 :math:`S^1` factors, ``b`` :math:`{\mathbb C}^{\times }` factors and
 ``c`` :math:`{\mathbb R}^{\times }` factors.
 
