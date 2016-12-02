@@ -32,9 +32,9 @@ particular torus by assigning three integers::
 	'u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)' 
 	atlas>
 
-In other words, the command ``torus(a,b,c)`` specifies a torus with ``a``
-:math:`S^1` factors, ``b`` :math:`{\mathbb C}^{\times }` factors and
-``c`` :math:`{\mathbb R}^{\times }` factors.
+In other words, the command ``torus(a,b,c)`` specifies a torus with
+``a`` :math:`S^1` factors, ``b`` :math:`{\mathbb C}^{\times }` factors
+and ``c`` :math:`{\mathbb R}^{\times }` factors.
 
 The characters of :math:`S^1`
 ------------------------------
@@ -53,7 +53,7 @@ parametrizes them::
 	 atlas>
 
 This is the parameter for the trivial representation. The first
-element ``x`` is a :math:`K\\G/B` element. But it is not important for now. Let
+element ``x`` is a :math:`K\backslash G/B` element. But it is not important for now. Let
 us see what involution it corresponds to::
 
    atlas> set x=x(p)
@@ -91,18 +91,18 @@ So the characters of :math:`H(\mathbb R )` are parametrized by triples
 :math:`X^*/(1-theta)X^*` and ``nu`` is in :math:`[X^*\otimes \mathbb
 Q]^{-\theta}`.
  
-So ``lambda`` is a character on :math:`H^\theta$ and ``nu`` gives the
+So ``lambda`` is a character on :math:`H^\theta` and ``nu`` gives the
 character on the Lie algebra of the split Cartan
 :math:`A=H^{-\theta}`.
 
 In the case of the circle, ``lambda`` is in :math:`\mathbb Z/(1-\theta
 ){\mathbb Z}=\mathbb Z`, since :math:`\theta =1`; and ``nu`` is in
-:math:`{\mattbb Q}^{-1}=0`.
+:math:`{\mathbb Q}^{-1}=0`.
 
 So the characters for the compact torus are given by the parameters
 ``(x=0,lambda, nu=0)`` and there is one for each ``lambda`` in
-:math:`\mathbb Z` correspondintg to the character :math:`e^{i\lambda}
-t`.
+:math:`\mathbb Z` correspondintg to the character :math:`e^{i\lambda t}
+`.
 
 In the case of the trivial character the parameter is::
 
@@ -130,7 +130,7 @@ So, the above parameters are equivalent modulo the above equivalence relation an
    atlas> 
 
 The characters of :math:`{\mathbb R}^{\times}`
------------------------------------------------≈ß
+----------------------------------------------
 
 Now lets take the most split one-dimensional torus::
 
@@ -146,7 +146,7 @@ Now lets take the most split one-dimensional torus::
 
 Now our parameters ``(x, lambda, nu)`` satisfy ``lambda`` is in
 :math:`{\mathbb Z}/(1-\theta){\mathbb Z}=\mathbb Z/2{\mathbb Z}`, and ``nu``
-is fixed by :math:`-theta=1`. So, ``nu`` is in :math:`\mathbb Q`.
+is fixed by :math:`-\theta=1`. So, ``nu`` is in :math:`\mathbb Q`.
 
 Note that the characters of :math:`{\mathbb R}^{\times}` are parametrized by the complex
 numbers ``nu``. However, the software only works with rational
@@ -154,7 +154,7 @@ parameters. So we have to do some extra work in general, depending on
 the information that we want. The idea is that some problems can be
 reduced to the case of rational parameters.
 
-Le's do some examples. For the trivial representation, namely the parameter
+Let us do some examples. For the trivial representation, namely the parameter
 correspondintg to the trivial character on the component group and the character :math:`\nu :x \rightarrow |x|^0` we have::
 
      atlas> p
@@ -195,7 +195,7 @@ Which is correct since :math:`2=0(mod2)`. So, sometimes the software will replac
 Characters of :math:`{\mathbb C}^{\times}`.
 -------------------------------------------
 
-Now let us look at :math:`{\mathbb C}^{\times} \cong GL(1, \mathbb C) ` and
+Now let us look at :math:`{\mathbb C}^{\times} \cong GL(1, \mathbb C)` and
 the trivial representation::
 
     atlas> H:=torus(0,1,0)
@@ -261,7 +261,7 @@ On the other hand, we can change lambda::
    Value: final parameter (x=0,lambda=[1,0]/1,nu=[0,0]/1)
    atlas>
 
-As we would expect since these two representations are equivalent modulo :math:`1-theta`
+As we would expect since these two representations are equivalent modulo :math:`1-\theta`
 
 So, The representations of :math:`{\mathbb C}^{\times}` are given by :math:`{\mathbb Z}^2 /(1-\theta) {\mathbb Z}^2` and :math:`\mathbb Q`
 
