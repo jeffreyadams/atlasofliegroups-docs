@@ -5,15 +5,15 @@ So far the focus has been on Cartan subgroups, whose information is
 encoded on the element ``x`` as the Cartan involution of the complex
 abstract group :math:`H`, which determines the real group :math:`H(\mathbb
 R)`. Now ``x`` is really a :math:`K`-orbit on :math:`G/B`. So, it is
-the support of the corresponding D-module. In order to explain this in
+the support of the corresponding :math:`D`-module. In order to explain this in
 detail we will look at some easy cases. In particular we will be
 talking about the principal series of split groups.
 
-So, we start with a group G and a parameter ``p=(x, lambda, nu)``
+So, we start with a group :math:`G` and a parameter ``p=(x, lambda, nu)``
 where x encodes the above information and :math:`\lambda \in X^*
 /(1-\theta )X^*` and :math:`\nu \in {X^* \otimes \mathbb Q
-}^{-\theta}`. With these data we obtain a character of H(R) with
-differential (1+theta lambda /2 + nu.
+}^{-\theta}`. With these data we obtain a character of :math:`H(\mathbb R)` with
+differential :math:`(1+\theta )lambda /2 + nu`.
 
 From this character we get a representation of the group G. 
 
@@ -28,7 +28,7 @@ including this Cartan. We can construct the induced representation
 For example, if :math:`G=SL(2, \mathbb R )` we can look again at the
 list of parameters with infinitesimal character :math:`\rho`.  
 
-Recall the ``command all_parameters_gamma` takes a real form and an
+Recall the command ``all_parameters_gamma`` takes a real form and an
 ifinitesimal character, which is a rational vector, and gives you a
 list of parameters for the representations of the real form with that
 infinitesimal character::
@@ -90,7 +90,7 @@ We can find out more about the Cartan for each parameter ``p`` as follows::
 So, this is the split Cartan for this group, with one real factor and
 no compact or complex factor. We can ignore the rest of the
 information for the moment.  The last two in the list of parameters
-for ``G`` are the ones associated to this split Cartan subgroup;
+for :math:`G` are the ones associated to this split Cartan subgroup;
 namely the two principal series with parameter ``nu=1``::
 
     atlas> parameters[2]
@@ -138,9 +138,12 @@ series is::
     1*J(x=2,lambda=[1/1],nu=[1/1])
     atlas>
 
-This one has three composition factors, all irreducible. So I(ps1) is the sum in the Grothendieck group of three irreducible composition factors.
+This one has three composition factors, all irreducible. So ``I(ps1)`` is
+the sum in the Grothendieck group of three irreducible composition
+factors.
 
-Similarly, if we take parameters of a spherical representation with non integral infinitesimal character we get irreducibility::
+Similarly, if we take parameters of a spherical representation with
+non-integral infinitesimal character we get irreducibility::
 
     atlas> x
     Value: KGB element #2
@@ -162,44 +165,44 @@ Cuspidal Data
 
 Another thing you can do is get also information about cuspidal data used to construct this representation::
 
-set p=parameter(x,[2],[3/2])
-Identifier p: Param (hiding previous one of type Param)
-atlas> set (P,q)=cuspidal_data(q)
-Identifiers P: ([int],KGBElt), q: Param (hiding previous one of type Param)
-atlas> Levi(P)
-Value: disconnected split real group with Lie algebra 'gl(1,R)'
-atlas> q
-Value: final parameter (x=0,lambda=[1]/1,nu=[1]/1)
-atlas> p
-Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
+   set p=parameter(x,[2],[3/2])
+   Identifier p: Param (hiding previous one of type Param)
+   atlas> set (P,q)=cuspidal_data(q)
+   Identifiers P: ([int],KGBElt), q: Param (hiding previous one of type Param)
+   atlas> Levi(P)
+   Value: disconnected split real group with Lie algebra 'gl(1,R)'
+   atlas> q
+   Value: final parameter (x=0,lambda=[1]/1,nu=[1]/1)
+   atlas> p
+   Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
+   
+   atlas> 
+   atlas> real_form(q)
+   Value: disconnected split real group with Lie algebra 'gl(1,R)'
+   atlas> Levi(P)
+   Value: disconnected split real group with Lie algebra 'gl(1,R)'
+   atlas>
+   atlas> 
+   atlas> real_form(q)
+   Value: disconnected split real group with Lie algebra 'gl(1,R)'
+   atlas> Levi(P)
+   Value: disconnected split real group with Lie algebra 'gl(1,R)'
+   atlas>
+   atlas> induce_irreducible (q,P,G)
+   Value: 
+   1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
 
-atlas> 
-atlas> real_form(q)
-Value: disconnected split real group with Lie algebra 'gl(1,R)'
-atlas> Levi(P)
-Value: disconnected split real group with Lie algebra 'gl(1,R)'
-atlas>
-atlas> 
-atlas> real_form(q)
-Value: disconnected split real group with Lie algebra 'gl(1,R)'
-atlas> Levi(P)
-Value: disconnected split real group with Lie algebra 'gl(1,R)'
-atlas>
-atlas> induce_irreducible (q,P,G)
-Value: 
-1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
+   theta_induce_irreducible
+   theta_induce_irreducible_as_sum_of_standards
+   theta_induce_standard
+   theta_stable_data
+   theta_stable_parabolic
+   theta_stable_parabolics
+   theta_stable_parabolics_type
+   atlas> theta_stable_data (p)
+   Value: (([0],KGB element #2),final parameter (x=2,lambda=[2]/1,nu=[3]/2))
+   atlas> 
 
-theta_induce_irreducible
-theta_induce_irreducible_as_sum_of_standards
-theta_induce_standard
-theta_stable_data
-theta_stable_parabolic
-theta_stable_parabolics
-theta_stable_parabolics_type
-atlas> theta_stable_data (p)
-Value: (([0],KGB element #2),final parameter (x=2,lambda=[2]/1,nu=[3]/2))
-atlas> 
+In this case the Levi is all of :math:`G`. So this says that the representation is induced from :math:`G` to :math:`G`.
 
-In this case the Levi is all of G. So this says that the representation is induced from G to G.
-
-To go back use theta_induced_standard
+To go back use ``theta_induced_standard``
