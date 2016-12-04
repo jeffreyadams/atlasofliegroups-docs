@@ -13,7 +13,7 @@ So, we start with a group :math:`G` and a parameter ``p=(x, lambda, nu)``
 where x encodes the above information and :math:`\lambda \in X^*
 /(1-\theta )X^*` and :math:`\nu \in {X^* \otimes \mathbb Q
 }^{-\theta}`. With these data we obtain a character of :math:`H(\mathbb R)` with
-differential :math:`(1+\theta )lambda /2 + nu`.
+differential :math:`{(1+\theta )\over 2}\lambda + nu`.
 
 From this character we get a representation of the group G. 
 
@@ -36,13 +36,14 @@ infinitesimal character::
     atlas> whattype all_parameters_gamma ?
     Overloaded instances of 'all_parameters_gamma'
       (RealForm,ratvec)->[Param]
+    atlas> set G=SL(2,R)
+    Variable G: RealForm
+    atlas> G
+    Value: connected split real group with Lie algebra 'sl(2,R)'
     atlas> rho(G)
     Value: [ 1 ]/1
-    atlas> 
-    atlas> G:=SL(2,R)
-    Value: connected split real group with Lie algebra 'sl(2,R)'
     atlas> set parameters=all_parameters_gamma (G,[1])
-    Identifier parameters: [Param]
+    Variable parameters: [Param]
     atlas> #parameters
     Value: 4
     atlas> void: for p in parameters do prints(p) od
@@ -51,7 +52,6 @@ infinitesimal character::
     final parameter (x=2,lambda=[1]/1,nu=[1]/1)
     final parameter (x=2,lambda=[2]/1,nu=[1]/1)
     atlas>
-
 
 Here the ``x`` is giving us Cartan involutions of the Cartans::
 
@@ -126,8 +126,8 @@ Here ``J`` stands for an irreducible representation and the single
 line above says that there is only one composition factor in this
 representation. Namely, the irreducible itself.
 
-On the other hand, the composition factor of the spherical principal
-series is::
+On the other hand, the composition factors of the spherical principal
+series are::
 
     atlas> set ps1=parameters[2] 
     Identifier ps1: Param (hiding previous one of type Param) 
@@ -182,15 +182,14 @@ Another thing you can do is get also information about cuspidal data used to con
    atlas> Levi(P)
    Value: disconnected split real group with Lie algebra 'gl(1,R)'
    atlas>
-   atlas> 
-   atlas> real_form(q)
-   Value: disconnected split real group with Lie algebra 'gl(1,R)'
-   atlas> Levi(P)
-   Value: disconnected split real group with Lie algebra 'gl(1,R)'
-   atlas>
+
+
    atlas> induce_irreducible (q,P,G)
    Value: 
    1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
+
+Other possible commands are::
+
 
    theta_induce_irreducible
    theta_induce_irreducible_as_sum_of_standards
