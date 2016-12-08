@@ -26,7 +26,7 @@ _________________________
 | let i_root_system=imaginary roots for x(p). Find :math:`w`  so that :math:`w^{-1}\cdot` lambda is dominant for
 | imaginary roots, set p_dom=parameter(x, :math:`w^{-1}\cdot` lambda,nu) and return coherent continuation
 | action (wrt imaginary roots) of :math:`w`  on p_dom.
-
+|
 :math:`A_q(\lambda)`  construction:
 _______________________________
 
@@ -74,6 +74,7 @@ ________________________
 | weakly fair: same implication.
 | NB: <gamma_L-rho_L_rho_u,alpha^vee> >= 0 does NOT imply vanishing (in general) if pi_L is not
 | one-dimensional, hence "weakly fair" is only defined if pi_L is one-dimensional.
+|
 
 
 **This script imports the following .at files:**

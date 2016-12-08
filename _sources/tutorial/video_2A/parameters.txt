@@ -91,7 +91,7 @@ So, the split form of type ``A1`` has two Cartans, the compact one,
 
 Now, the characters for :math:`T` are of the form :math:`e^{ik\theta}`
 with :math:`k \in \mathbb Z`.  The ones corresponding to ``rho`` are
-:math:`{e^{i\theta }, e^{-i\theta }}` and they are not conjugate under the
+:math:`\{e^{i\theta }, e^{-i\theta }\}` and they are not conjugate under the
 Weyl group of :math:`T`, since ``-1`` is not in this Weyl group.
 
 On the other hand, for :math:`A={\mathbb R}^{\times }`, the characters

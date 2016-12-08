@@ -48,6 +48,8 @@ Functions
      - ``KGBElt x->int``
    * - :ref:`mu_terms_param_p,mat_delta->[rat]1`
      - ``Param p,mat delta->[rat]``
+   * - :ref:`mu_in_terms_of_z_param_p,mat_delta->rat1`
+     - ``Param p,mat delta->rat``
    * - :ref:`mu_param_p,mat_delta->rat1`
      - ``Param p,mat delta->rat``
    * - :ref:`print_mu_param_p->void1`

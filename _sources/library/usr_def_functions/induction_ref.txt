@@ -8,7 +8,7 @@ induction.at Function References
 
 embed_KGB
 -------------------------------------------------
-| ``embed_KGB:KGBElt x_L,RealForm G->KGBElt`` Defined in line number 85.
+| ``embed_KGB:KGBElt x_L,RealForm G->KGBElt`` Defined in line number 86.
 | 
 | If L is a theta-stable Levi factor in G,  KGB for L embeds in KGB for G.
 | 
@@ -17,7 +17,7 @@ embed_KGB
 
 inverse_embed_KGB
 -------------------------------------------------
-| ``inverse_embed_KGB:KGBElt x_G,RealForm L->KGBElt`` Defined in line number 89.
+| ``inverse_embed_KGB:KGBElt x_G,RealForm L->KGBElt`` Defined in line number 90.
 | 
 | Given a KGB element of G, find one for the theta-stable Levi L which maps to it.
 | 
@@ -26,7 +26,7 @@ inverse_embed_KGB
 
 makeS
 -------------------------------------------------
-| ``makeS:mat theta,RootDatum rd->mat`` Defined in line number 98.
+| ``makeS:mat theta,RootDatum rd->mat`` Defined in line number 99.
 | 
 | Given an involution theta and a root datum, return the set S of complex roots    containing the first positive representative of each quadruple    ( :math:`\pm`  alpha, :math:`\pm`  theta(alpha)).
 | 
@@ -35,7 +35,7 @@ makeS
 
 makeS
 -------------------------------------------------
-| ``makeS:KGBElt x->mat`` Defined in line number 103.
+| ``makeS:KGBElt x->mat`` Defined in line number 104.
 | 
 | As the previous function, with argument a KGB element x determining the involution    and root datum
 | 
@@ -44,7 +44,7 @@ makeS
 
 rho_S
 -------------------------------------------------
-| ``rho_S:(mat,RootDatum)pair->ratvec`` Defined in line number 106.
+| ``rho_S:(mat,RootDatum)pair->ratvec`` Defined in line number 107.
 | 
 | Half sum of roots in chosen set S of complex roots, described above.
 | 
@@ -53,7 +53,7 @@ rho_S
 
 rho_S
 -------------------------------------------------
-| ``rho_S:KGBElt x->ratvec`` Defined in line number 109.
+| ``rho_S:KGBElt x->ratvec`` Defined in line number 110.
 | 
 | As previous function, with argument KGB element x.
 | 
@@ -62,7 +62,7 @@ rho_S
 
 make_parabolic
 -------------------------------------------------
-| ``make_parabolic:RealForm L,RealForm G->Parabolic`` Defined in line number 113.
+| ``make_parabolic:RealForm L,RealForm G->Parabolic`` Defined in line number 114.
 | 
 | Given a Levi subgroup L of G, construct the parabolic with Levi L   (this reverses Levi(P) defined in parabolics.at).
 | 
@@ -71,7 +71,7 @@ make_parabolic
 
 real_induce_standard
 -------------------------------------------------
-| ``real_induce_standard:Param p_L,RealForm G->Param`` Defined in line number 120.
+| ``real_induce_standard:Param p_L,RealForm G->Param`` Defined in line number 121.
 | 
 | Real parabolic induction of a standard module of real Levi L to G
 | 
@@ -80,7 +80,7 @@ real_induce_standard
 
 real_induce_standard
 -------------------------------------------------
-| ``real_induce_standard:ParamPol P,RealForm G->ParamPol`` Defined in line number 131.
+| ``real_induce_standard:ParamPol P,RealForm G->ParamPol`` Defined in line number 132.
 | 
 | Real parabolic induction of standards, applied to a formal sum of    parameters (ParamPol).
 | 
@@ -89,7 +89,7 @@ real_induce_standard
 
 real_induce_irreducible_as_sum_of_standards
 -------------------------------------------------
-| ``real_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 139.
+| ``real_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 140.
 | 
 | Write the (real) induced of an irreducible J(p_L) of L as a formal sum of    standards for G; uses the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)
 | 
@@ -98,7 +98,7 @@ real_induce_irreducible_as_sum_of_standards
 
 real_induce_irreducible
 -------------------------------------------------
-| ``real_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 148.
+| ``real_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 149.
 | 
 | Write the (real) induced Ind(J(p_L)) of an irreducible of L as a sum of    irreducibles for G; uses composition series to convert    output of the previous function into sum of irreducibles.
 | 
@@ -107,7 +107,7 @@ real_induce_irreducible
 
 cuspidal_data
 -------------------------------------------------
-| ``cuspidal_data:Param p->(Parabolic,Param)`` Defined in line number 159.
+| ``cuspidal_data:Param p->(Parabolic,Param)`` Defined in line number 160.
 | 
 | Cuspidal data associated to a parameter p: a cuspidal parabolic subgroup P=MN    and parameter p_M for a relative limit of discrete series so that    Ind(I(p_M))=I(p); uses real_parabolic(x) of parabolics.at
 | 
@@ -116,7 +116,7 @@ cuspidal_data
 
 theta_stable_data
 -------------------------------------------------
-| ``theta_stable_data:Param p->(Parabolic,Param)`` Defined in line number 180.
+| ``theta_stable_data:Param p->(Parabolic,Param)`` Defined in line number 181.
 | 
 | Theta-stable data associated to a parameter p: a theta-stable parabolic P=LN    with L relatively split, and parameter p_L for a principal series representation    so that p is obtained by cohomological parabolic induction    from p_L; uses theta_stable_parabolic(x) of parabolics.at.
 | 
@@ -125,7 +125,7 @@ theta_stable_data
 
 coherent_std_imaginary
 -------------------------------------------------
-| ``coherent_std_imaginary:W_word w,Param p->ParamPol`` Defined in line number 197.
+| ``coherent_std_imaginary:W_word w,Param p->ParamPol`` Defined in line number 198.
 | 
 | Auxiliary function
 | 
@@ -134,7 +134,7 @@ coherent_std_imaginary
 
 standardize
 -------------------------------------------------
-| ``standardize:Param p->ParamPol`` Defined in line number 213.
+| ``standardize:Param p->ParamPol`` Defined in line number 214.
 | 
 | Convert a possibly non-standard parameter into a linear combination of   standard ones
 | 
@@ -143,7 +143,7 @@ standardize
 
 standardize
 -------------------------------------------------
-| ``standardize:ParamPol P->ParamPol`` Defined in line number 224.
+| ``standardize:ParamPol P->ParamPol`` Defined in line number 225.
 | 
 | Standardize a formal linear combination of possibly non-standard parameters
 | 
@@ -152,7 +152,7 @@ standardize
 
 theta_induce_standard
 -------------------------------------------------
-| ``theta_induce_standard:Param p_L,RealForm G->ParamPol`` Defined in line number 233.
+| ``theta_induce_standard:Param p_L,RealForm G->ParamPol`` Defined in line number 234.
 | 
 | Theta-stable (cohomological) parabolic induction of a standard module for    the Levi L of a theta-stable parabolic; if outside of weakly good range,    must apply standardize.
 | 
@@ -161,7 +161,7 @@ theta_induce_standard
 
 theta_induce_irreducible_as_sum_of_standards
 -------------------------------------------------
-| ``theta_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 262.
+| ``theta_induce_irreducible_as_sum_of_standards:Param p_L, RealForm G->ParamPol`` Defined in line number 263.
 | 
 | Write the (theta-stable) induced of an irreducible J(p_L) of L as a formal    sum of standards for G; uses the character formula to write J(p_L)    as a formal sum of standards for L first. (Auxiliary function)
 | 
@@ -170,7 +170,7 @@ theta_induce_irreducible_as_sum_of_standards
 
 theta_induce_irreducible
 -------------------------------------------------
-| ``theta_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 277.
+| ``theta_induce_irreducible:Param p_L, RealForm G->ParamPol`` Defined in line number 278.
 | 
 | Write the (theta-stable) induced Ind(J(p_L)) of an irreducible of L    as a sum of irreducibles for G; uses composition series to convert    output of the previous function into sum of irreducibles.
 | 
@@ -179,7 +179,7 @@ theta_induce_irreducible
 
 induce_standard
 -------------------------------------------------
-| ``induce_standard:Param p_L,Parabolic P,RealForm G->ParamPol`` Defined in line number 299.
+| ``induce_standard:Param p_L,Parabolic P,RealForm G->ParamPol`` Defined in line number 300.
 | 
 | Real or theta-stable parabolic induction of a standard module,    depending on whether P=LN a real or theta-stable parabolic    (returns error message if neither).
 | 
@@ -188,7 +188,7 @@ induce_standard
 
 induce_irreducible
 -------------------------------------------------
-| ``induce_irreducible:Param p_L,Parabolic P,RealForm G->ParamPol`` Defined in line number 311.
+| ``induce_irreducible:Param p_L,Parabolic P,RealForm G->ParamPol`` Defined in line number 312.
 | 
 | Write the (real or theta-stable) induced Ind(J(p_L)) of an irreducible    of L as a sum of irreducibles for G; error message if P=LN is not a real    or theta-stable parabolic.
 | 
@@ -197,7 +197,7 @@ induce_irreducible
 
 induce_standard
 -------------------------------------------------
-| ``induce_standard:ParamPol pol,Parabolic P,RealForm G->ParamPol`` Defined in line number 322.
+| ``induce_standard:ParamPol pol,Parabolic P,RealForm G->ParamPol`` Defined in line number 323.
 | 
 | Real or theta-stable parabolic induction applied to a linear combination    of standard modules (error message if P is not real or theta-stable).
 | 
@@ -206,7 +206,7 @@ induce_standard
 
 map_into_distinguished_fiber
 -------------------------------------------------
-| ``map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 356.
+| ``map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 357.
 | 
 | (Auxiliary function)
 | 
@@ -215,7 +215,7 @@ map_into_distinguished_fiber
 
 strong_map_into_distinguished_fiber
 -------------------------------------------------
-| ``strong_map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 373.
+| ``strong_map_into_distinguished_fiber:KGBElt x->KGBElt`` Defined in line number 374.
 | 
 | Map KGB element x to x_K in the distinguished fiber; if necessary, use complex   cross actions first to move x to a fiber with no C- roots.
 | 
@@ -224,7 +224,7 @@ strong_map_into_distinguished_fiber
 
 canonical_x_K
 -------------------------------------------------
-| ``canonical_x_K:KGBElt x->KGBElt`` Defined in line number 377.
+| ``canonical_x_K:KGBElt x->KGBElt`` Defined in line number 378.
 | 
 | Same as previous function.
 | 
@@ -233,7 +233,7 @@ canonical_x_K
 
 canonical_x_K
 -------------------------------------------------
-| ``canonical_x_K:Param p->KGBElt`` Defined in line number 380.
+| ``canonical_x_K:Param p->KGBElt`` Defined in line number 381.
 | 
 | Previous function with input a parameter p; it is applied to x(p).
 | 
@@ -242,7 +242,7 @@ canonical_x_K
 
 u
 -------------------------------------------------
-| ``u:KGBElt x->mat`` Defined in line number 384.
+| ``u:KGBElt x->mat`` Defined in line number 385.
 | 
 | Positive coroots in the nilradical of the theta-stable parabolic determined by x.
 | 
@@ -251,7 +251,7 @@ u
 
 rho_u_cx
 -------------------------------------------------
-| ``rho_u_cx:Parabolic P->ratvec`` Defined in line number 395.
+| ``rho_u_cx:Parabolic P->ratvec`` Defined in line number 396.
 | 
 | Half sum of positive complex roots (on fundamental Cartan) in the nilradical of P;   P must be theta-stable.
 | 
@@ -260,7 +260,7 @@ rho_u_cx
 
 rho_u_cx_T
 -------------------------------------------------
-| ``rho_u_cx_T:Parabolic P->vec`` Defined in line number 411.
+| ``rho_u_cx_T:Parabolic P->vec`` Defined in line number 412.
 | 
 | Element of :math:`X^*`  with same restriction to :math:`(X^*)^{\theta}`  as rho_u_cx(P);   P must be theta-stable.
 | 
@@ -269,7 +269,7 @@ rho_u_cx_T
 
 rho_u_ic
 -------------------------------------------------
-| ``rho_u_ic:Parabolic P->ratvec`` Defined in line number 421.
+| ``rho_u_ic:Parabolic P->ratvec`` Defined in line number 422.
 | 
 | Half sum of imaginary compact roots in nilradical of (theta-stable) P.
 | 
@@ -278,7 +278,7 @@ rho_u_ic
 
 two_rho_u_cap_k
 -------------------------------------------------
-| ``two_rho_u_cap_k:Parabolic P->vec`` Defined in line number 429.
+| ``two_rho_u_cap_k:Parabolic P->vec`` Defined in line number 430.
 | 
 | Sum of compact roots (of :math:`\mathfrak t` ) in :math:`\mathfrak u`  for theta-stable parabolic P.
 | 
@@ -287,7 +287,7 @@ two_rho_u_cap_k
 
 two_rho_u_cap_s
 -------------------------------------------------
-| ``two_rho_u_cap_s:Parabolic P->vec`` Defined in line number 433.
+| ``two_rho_u_cap_s:Parabolic P->vec`` Defined in line number 434.
 | 
 | Sum of non-compact roots in :math:`\mathfrak u`  (for theta-stable parabolic).
 | 
@@ -296,7 +296,7 @@ two_rho_u_cap_s
 
 rho_u_cap_k
 -------------------------------------------------
-| ``rho_u_cap_k:Parabolic P->ratvec`` Defined in line number 438.
+| ``rho_u_cap_k:Parabolic P->ratvec`` Defined in line number 439.
 | 
 | Half sum of compact roots in :math:`\mathfrak u`  (for theta-stable parabolic).
 | 
@@ -305,7 +305,7 @@ rho_u_cap_k
 
 rho_u_cap_s
 -------------------------------------------------
-| ``rho_u_cap_s:Parabolic P->ratvec`` Defined in line number 441.
+| ``rho_u_cap_s:Parabolic P->ratvec`` Defined in line number 442.
 | 
 | Half sum of non-compact roots in :math:`\mathfrak u`  (for theta-stable parabolic).
 | 
@@ -314,7 +314,7 @@ rho_u_cap_s
 
 dim_u
 -------------------------------------------------
-| ``dim_u:Parabolic P->int`` Defined in line number 444.
+| ``dim_u:Parabolic P->int`` Defined in line number 445.
 | 
 | Dimension of :math:`\mathfrak u`  (nilrad of theta-stable parabolic).
 | 
@@ -323,7 +323,7 @@ dim_u
 
 dim_u
 -------------------------------------------------
-| ``dim_u:KGBElt x->int`` Defined in line number 447.
+| ``dim_u:KGBElt x->int`` Defined in line number 448.
 | 
 | Dimension of the nilradical of the theta-stable parabolic determined by KGB elt x.
 | 
@@ -332,7 +332,7 @@ dim_u
 
 dim_u_cap_k
 -------------------------------------------------
-| ``dim_u_cap_k:Parabolic (,x):P->int`` Defined in line number 453.
+| ``dim_u_cap_k:Parabolic (,x):P->int`` Defined in line number 454.
 | 
 | Dimension of :math:`\mathfrak u\cap\mathfrak k`  for theta-stable parabolic.
 | 
@@ -341,7 +341,7 @@ dim_u_cap_k
 
 dim_u_cap_k
 -------------------------------------------------
-| ``dim_u_cap_k:KGBElt x->int`` Defined in line number 464.
+| ``dim_u_cap_k:KGBElt x->int`` Defined in line number 465.
 | 
 | Dimension of :math:`\mathfrak u\cap\mathfrak k`  for theta-stable parabolic determined   by x.
 | 
@@ -350,7 +350,7 @@ dim_u_cap_k
 
 dim_u_cap_k
 -------------------------------------------------
-| ``dim_u_cap_k:ratvec lambda,KGBElt x->int`` Defined in line number 468.
+| ``dim_u_cap_k:ratvec lambda,KGBElt x->int`` Defined in line number 469.
 | 
 | Dimension of :math:`\mathfrak u\cap\mathfrak k`  for theta-stable parabolic determined by   weight lambda.
 | 
@@ -359,7 +359,7 @@ dim_u_cap_k
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:Parabolic (,x):P->int`` Defined in line number 473.
+| ``dim_u_cap_p:Parabolic (,x):P->int`` Defined in line number 474.
 | 
 | Dimension of :math:`\mathfrak u\cap\mathfrak p`  for theta-stable parabolic.
 | 
@@ -368,7 +368,7 @@ dim_u_cap_p
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:KGBElt x->int`` Defined in line number 484.
+| ``dim_u_cap_p:KGBElt x->int`` Defined in line number 485.
 | 
 | Dimension of :math:`\mathfrak u \cap\mathfrak p`  for theta-stable parabolic associated   to x.
 | 
@@ -377,7 +377,7 @@ dim_u_cap_p
 
 dim_u_cap_p
 -------------------------------------------------
-| ``dim_u_cap_p:ratvec lambda,KGBElt x->int`` Defined in line number 488.
+| ``dim_u_cap_p:ratvec lambda,KGBElt x->int`` Defined in line number 489.
 | 
 | Dimension of :math:`\mathfrak u\cap\mathfrak p`  for theta-stable parabolic determined by   weight lambda.
 | 
@@ -386,7 +386,7 @@ dim_u_cap_p
 
 dim_u_cap_k_2
 -------------------------------------------------
-| ``dim_u_cap_k_2:Parabolic P,ratvec H->int`` Defined in line number 493.
+| ``dim_u_cap_k_2:Parabolic P,ratvec H->int`` Defined in line number 494.
 | 
 | (Auxiliary function)
 | 
@@ -395,7 +395,7 @@ dim_u_cap_k_2
 
 dim_u_cap_k_ge2
 -------------------------------------------------
-| ``dim_u_cap_k_ge2:Parabolic P,ratvec H->int`` Defined in line number 504.
+| ``dim_u_cap_k_ge2:Parabolic P,ratvec H->int`` Defined in line number 505.
 | 
 | (Auxiliary function)
 | 
@@ -404,7 +404,7 @@ dim_u_cap_k_ge2
 
 dim_u_cap_p_ge2
 -------------------------------------------------
-| ``dim_u_cap_p_ge2:Parabolic P,ratvec H->int`` Defined in line number 515.
+| ``dim_u_cap_p_ge2:Parabolic P,ratvec H->int`` Defined in line number 516.
 | 
 | (Auxiliary function)
 | 
@@ -413,7 +413,7 @@ dim_u_cap_p_ge2
 
 dim_u_cap_k_1
 -------------------------------------------------
-| ``dim_u_cap_k_1:Parabolic P,ratvec H->int`` Defined in line number 526.
+| ``dim_u_cap_k_1:Parabolic P,ratvec H->int`` Defined in line number 527.
 | 
 | (Auxiliary function)
 | 
@@ -422,7 +422,7 @@ dim_u_cap_k_1
 
 make_dominant
 -------------------------------------------------
-| ``make_dominant:KGBElt x_in,ratvec lambda_in, ratvec lambda_q_in->(KGBElt,ratvec,ratvec)`` Defined in line number 559.
+| ``make_dominant:KGBElt x_in,ratvec lambda_in, ratvec lambda_q_in->(KGBElt,ratvec,ratvec)`` Defined in line number 560.
 | 
 | Conjugate the triple (x,lambda, lambda_q) to make lambda_q weakly   dominant (auxiliary function).
 | 
@@ -431,7 +431,7 @@ make_dominant
 
 Aq_param_pol
 -------------------------------------------------
-| ``Aq_param_pol:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->ParamPol`` Defined in line number 566.
+| ``Aq_param_pol:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->ParamPol`` Defined in line number 567.
 | 
 | A_q(lambda) module; :math:`\mathfrak q`  is defined by the weight lambda_q; x_in   must be attached to the fundamental Cartan. The module is defined as a ParamPol,   in case it is reducible.
 | 
@@ -440,7 +440,7 @@ Aq_param_pol
 
 Aq
 -------------------------------------------------
-| ``Aq:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 588.
+| ``Aq:KGBElt x_in,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 589.
 | 
 | A_q(lambda) module defined as above, but as a parameter, assuming it is   irreducible.
 | 
@@ -449,7 +449,7 @@ Aq
 
 Aq
 -------------------------------------------------
-| ``Aq:KGBElt x,ratvec lambda_in->Param`` Defined in line number 596.
+| ``Aq:KGBElt x,ratvec lambda_in->Param`` Defined in line number 597.
 | 
 | If not provided, assume lambda_q=lambda_in in the definition of A_q.
 | 
@@ -458,7 +458,7 @@ Aq
 
 Aq
 -------------------------------------------------
-| ``Aq:RealForm G,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 600.
+| ``Aq:RealForm G,ratvec lambda_in, ratvec lambda_q->Param`` Defined in line number 601.
 | 
 | A_q(lambda), specify G, not x, to use x=KGB(G,0).
 | 
@@ -467,7 +467,7 @@ Aq
 
 Aq
 -------------------------------------------------
-| ``Aq:RealForm G,ratvec lambda_in->Param`` Defined in line number 604.
+| ``Aq:RealForm G,ratvec lambda_in->Param`` Defined in line number 605.
 | 
 | A_q(lambda), specify G, not x, and use lambda_q=lambda_in.
 | 
@@ -476,7 +476,7 @@ Aq
 
 is_one_dimensional
 -------------------------------------------------
-| ``is_one_dimensional:Param p->bool`` Defined in line number 611.
+| ``is_one_dimensional:Param p->bool`` Defined in line number 612.
 | 
 | Decide whether a parameter defines a one-dimensional representation.
 | 
@@ -485,7 +485,7 @@ is_one_dimensional
 
 is_good
 -------------------------------------------------
-| ``is_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 615.
+| ``is_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 616.
 | 
 | Decide whether A_q(lambda) is good.
 | 
@@ -494,7 +494,7 @@ is_good
 
 is_weakly_good
 -------------------------------------------------
-| ``is_weakly_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 620.
+| ``is_weakly_good:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 621.
 | 
 | Decide whether A_q(lambda) is weakly good.
 | 
@@ -503,7 +503,7 @@ is_weakly_good
 
 is_fair
 -------------------------------------------------
-| ``is_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 625.
+| ``is_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 626.
 | 
 | Decide whether A_q(lambda) is fair.
 | 
@@ -512,7 +512,7 @@ is_fair
 
 is_weakly_fair
 -------------------------------------------------
-| ``is_weakly_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 630.
+| ``is_weakly_fair:KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool`` Defined in line number 631.
 | 
 | Decide whether A_q(lambda) is weakly fair.
 | 
@@ -521,70 +521,25 @@ is_weakly_fair
 
 goodness
 -------------------------------------------------
-| ``goodness:KGBElt x,ratvec lambda_in,ratvec lambda_q->void`` Defined in line number 636.
+| ``goodness:KGBElt x,ratvec lambda_in,ratvec lambda_q->void`` Defined in line number 637.
 | 
 | Determine the "goodness" of an Aq(lambda); returns "good", "weakly good",   "fair", "weakly fair", or "none".
-| 
-
-.. _is_good_param_p_l,parabolic_p->bool1:
-
-is_good
--------------------------------------------------
-| ``is_good:Param p_L,Parabolic P->bool`` Defined in line number 652.
-| 
-| Decide whether a parameter for L is in the good range for u (only   makes sense if L is Levi of P and P is theta-stable).
-| 
-
-.. _is_weakly_good_param_p_l,parabolic_p->bool1:
-
-is_weakly_good
--------------------------------------------------
-| ``is_weakly_good:Param p_L,Parabolic P->bool`` Defined in line number 660.
-| 
-| Decide whether a parameter for L is in the weakly good range for u   (only makes sense if L is Levi of P and P is theta-stable).
-| 
-
-.. _is_fair_param_p_l,parabolic_p->bool1:
-
-is_fair
--------------------------------------------------
-| ``is_fair:Param p_L,Parabolic P->bool`` Defined in line number 668.
-| 
-| Decide whether a parameter for L is in the fair range for u (only   makes sense if L is Levi of P and P is theta-stable).
-| 
-
-.. _is_weakly_fair_param_p_l,parabolic_p->bool1:
-
-is_weakly_fair
--------------------------------------------------
-| ``is_weakly_fair:Param p_L,Parabolic P->bool`` Defined in line number 677.
-| 
-| Decide whether a parameter for L is in the weakly fair range   for u (provided pi_L is one-dimensional; only   makes sense if L is Levi of P and P is theta-stable).
-| 
-
-.. _goodness_param_p_l,parabolic_p->string1:
-
-goodness
--------------------------------------------------
-| ``goodness:Param p_L,Parabolic P->string`` Defined in line number 685.
-| 
-| Determine the "goodness" for :math:`\mathfrak u`  of a parameter for L;    returns "good", "weakly good", "fair", "weakly fair", or "none".
 | 
 
 .. _is_good_param_p_l,realform_g->bool1:
 
 is_good
 -------------------------------------------------
-| ``is_good:Param p_L,RealForm G->bool`` Defined in line number 704.
+| ``is_good:Param p_L,RealForm G->bool`` Defined in line number 708.
 | 
-| Decide whether a parameter for L is in the good range for G; this only    makes sense if L is the Levi of a theta-stable parabolic.
+| Decide whether a parameter for L is in the good range for G; this only    makes sense if L is the Levi of a (standard) theta-stable parabolic.
 | 
 
 .. _is_weakly_good_param_p_l,realform_g->bool1:
 
 is_weakly_good
 -------------------------------------------------
-| ``is_weakly_good:Param p_L,RealForm G->bool`` Defined in line number 717.
+| ``is_weakly_good:Param p_L,RealForm G->bool`` Defined in line number 722.
 | 
 | Decide whether a parameter for L is in the weakly good range for G; this only    makes sense if L is the Levi of a theta-stable parabolic.
 | 
@@ -593,7 +548,7 @@ is_weakly_good
 
 is_fair
 -------------------------------------------------
-| ``is_fair:Param p_L,RealForm G->bool`` Defined in line number 726.
+| ``is_fair:Param p_L,RealForm G->bool`` Defined in line number 732.
 | 
 | Decide whether a parameter for L is in the fair range for G; this only    makes sense if L is the Levi of a theta-stable parabolic.
 | 
@@ -602,7 +557,7 @@ is_fair
 
 is_weakly_fair
 -------------------------------------------------
-| ``is_weakly_fair:Param p_L,RealForm G->bool`` Defined in line number 740.
+| ``is_weakly_fair:Param p_L,RealForm G->bool`` Defined in line number 747.
 | 
 | Decide whether a parameter for L is in the weakly fair range for G; this only    makes sense if L is the Levi of a theta-stable parabolic, and is only defined    if p_L is one-dimensional.
 | 
@@ -611,7 +566,7 @@ is_weakly_fair
 
 goodness
 -------------------------------------------------
-| ``goodness:Param p_L,RealForm G->void`` Defined in line number 751.
+| ``goodness:Param p_L,RealForm G->void`` Defined in line number 759.
 | 
 | Determine the "goodness" of a parameter for L; returns "good", "weakly good",   "fair", "weakly fair", or "none"; only makes sense if L is Levi of theta-stable   parabolic.
 | 
@@ -620,7 +575,7 @@ goodness
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,ComplexParabolic P->[Param]`` Defined in line number 767.
+| ``Aq_packet:RealForm G,ComplexParabolic P->[Param]`` Defined in line number 775.
 | 
 | List all A_q(0) (actually: R_q(trivial): infinitesimal character rho(G)) modules   with Q a theta-stable parabolic of type P.
 | 
@@ -629,7 +584,7 @@ Aq_packet
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,[int] S->[Param]:Aq_packet(G,ComplexParabolic`` Defined in line number 776.
+| ``Aq_packet:RealForm G,[int] S->[Param]:Aq_packet(G,ComplexParabolic`` Defined in line number 784.
 | 
 | List all A_q(0) (infinitesimal character rho(G)) modules   with Q a theta-stable parabolic of type S (list of simple roots).
 | 
@@ -638,7 +593,43 @@ Aq_packet
 
 Aq_packet
 -------------------------------------------------
-| ``Aq_packet:RealForm G,[*] S->[Param]:Aq_packet(G,[int]`` Defined in line number 778.
+| ``Aq_packet:RealForm G,[*] S->[Param]:Aq_packet(G,[int]`` Defined in line number 786.
 | 
+| 
+
+.. _aq_zeros_realform_g->[param]1:
+
+Aq_zeros
+-------------------------------------------------
+| ``Aq_zeros:RealForm G->[Param]`` Defined in line number 790.
+| 
+| List all good Aq(0) (inf. char. rho) of G; this is more or less   blocku (there may be duplications).
+| 
+
+.. _theta_stable_parabolics_max_kgbelt_x->[parabolic]1:
+
+theta_stable_parabolics_max
+-------------------------------------------------
+| ``theta_stable_parabolics_max:KGBElt x->[Parabolic]`` Defined in line number 797.
+| 
+| Given a KGB element x, list all theta-stable parabolics in G   with maximal element x.
+| 
+
+.. _is_x_theta_maximal_param_p->bool1:
+
+is_x_theta_maximal
+-------------------------------------------------
+| ``is_x_theta_maximal:Param p->bool`` Defined in line number 804.
+| 
+| Decide whether a parameter p has KGB element that is maximal for a theta-stable   parabolic.
+| 
+
+.. _is_good_range_induced_from_param_p->[param]1:
+
+is_good_range_induced_from
+-------------------------------------------------
+| ``is_good_range_induced_from:Param p->[Param]`` Defined in line number 809.
+| 
+| List of parameters p_L in the good range for G so that p is theta-induced   from p_L; may be empty, or more than one.
 | 
 

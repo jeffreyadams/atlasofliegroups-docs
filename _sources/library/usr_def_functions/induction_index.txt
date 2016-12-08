@@ -130,16 +130,6 @@ Functions
      - ``KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool``
    * - :ref:`goodness_kgbelt_x,ratvec_lambda_in,ratvec_lambda_q->void1`
      - ``KGBElt x,ratvec lambda_in,ratvec lambda_q->void``
-   * - :ref:`is_good_param_p_l,parabolic_p->bool1`
-     - ``Param p_L,Parabolic P->bool``
-   * - :ref:`is_weakly_good_param_p_l,parabolic_p->bool1`
-     - ``Param p_L,Parabolic P->bool``
-   * - :ref:`is_fair_param_p_l,parabolic_p->bool1`
-     - ``Param p_L,Parabolic P->bool``
-   * - :ref:`is_weakly_fair_param_p_l,parabolic_p->bool1`
-     - ``Param p_L,Parabolic P->bool``
-   * - :ref:`goodness_param_p_l,parabolic_p->string1`
-     - ``Param p_L,Parabolic P->string``
    * - :ref:`is_good_param_p_l,realform_g->bool1`
      - ``Param p_L,RealForm G->bool``
    * - :ref:`is_weakly_good_param_p_l,realform_g->bool1`
@@ -156,3 +146,11 @@ Functions
      - ``RealForm G,[int] S->[Param]:Aq_packet(G,ComplexParabolic``
    * - :ref:`aq_packet_realform_g,[*]_s->[param]:aq_packet(g,[int]1`
      - ``RealForm G,[*] S->[Param]:Aq_packet(G,[int]``
+   * - :ref:`aq_zeros_realform_g->[param]1`
+     - ``RealForm G->[Param]``
+   * - :ref:`theta_stable_parabolics_max_kgbelt_x->[parabolic]1`
+     - ``KGBElt x->[Parabolic]``
+   * - :ref:`is_x_theta_maximal_param_p->bool1`
+     - ``Param p->bool``
+   * - :ref:`is_good_range_induced_from_param_p->[param]1`
+     - ``Param p->[Param]``

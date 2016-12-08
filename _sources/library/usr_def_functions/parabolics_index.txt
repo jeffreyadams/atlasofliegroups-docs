@@ -80,8 +80,16 @@ Functions
      - ``RootDatum rd, vec lambda->[int]``
    * - :ref:`parabolic_ratvec_lambda,kgbelt_x->parabolic1`
      - ``ratvec lambda,KGBElt x->Parabolic``
+   * - :ref:`theta_stable_parabolic_ratvec_lambda,kgbelt_x->parabolic1`
+     - ``ratvec lambda,KGBElt x->Parabolic``
+   * - :ref:`real_parabolic_ratvec_lambda,kgbelt_x->parabolic1`
+     - ``ratvec lambda,KGBElt x->Parabolic``
    * - :ref:`levi_ratvec_lambda,kgbelt_x->realform1`
      - ``ratvec lambda,KGBElt x->RealForm``
+   * - :ref:`theta_stable_levi_ratvec_lambda,_kgbelt_x->realform1`
+     - ``ratvec lambda, KGBElt x->RealForm``
+   * - :ref:`real_levi_ratvec_lambda,_kgbelt_x->realform1`
+     - ``ratvec lambda, KGBElt x->RealForm``
    * - :ref:`nilrad_ratvec_lambda,kgbelt_x->mat1`
      - ``ratvec lambda,KGBElt x->mat``
    * - :ref:`nilrad_roots_ratvec_lambda,kgbelt_x->mat1`
@@ -104,9 +112,11 @@ Functions
      - ``ratvec H,KGBElt x->ratvec``
    * - :ref:`real_parabolic_kgbelt_x->parabolic1`
      - ``KGBElt x->Parabolic``
+   * - :ref:`real_levi_kgbelt_x->realform1`
+     - ``KGBElt x->RealForm``
    * - :ref:`theta_stable_parabolic_kgbelt_x->parabolic1`
      - ``KGBElt x->Parabolic``
-   * - :ref:`real_levi_kgbelt_x->realform1`
+   * - :ref:`theta_stable_levi_kgbelt_x->realform1`
      - ``KGBElt x->RealForm``
    * - :ref:`is_standard_levi_realform_l,realform_g->bool1`
      - ``RealForm L,RealForm G->bool``

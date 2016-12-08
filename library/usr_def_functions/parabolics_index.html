@@ -205,6 +205,8 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html">Principal Series of Split Groups</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html#minimal-principal-series-for-split-groups">Minimal Principal Series for split groups</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html#cuspidal-data">Cuspidal Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html#aside">Aside</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/principal_series_split.html#another-example">Another example <span class="math">\(G=PSL(2,R)\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -1145,8 +1147,20 @@
 <tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#parabolic-ratvec-lambda-kgbelt-x-parabolic1"><span>parabolic</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
 </tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolic-ratvec-lambda-kgbelt-x-parabolic1"><span>theta_stable_parabolic</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#real-parabolic-ratvec-lambda-kgbelt-x-parabolic1"><span>real_parabolic</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
+</tr>
 <tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#levi-ratvec-lambda-kgbelt-x-realform1"><span>Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-levi-ratvec-lambda-kgbelt-x-realform1"><span>theta_stable_Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#real-levi-ratvec-lambda-kgbelt-x-realform1"><span>real_Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#nilrad-ratvec-lambda-kgbelt-x-mat1"><span>nilrad</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
@@ -1181,34 +1195,37 @@
 <tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#real-parabolic-kgbelt-x-parabolic1"><span>real_parabolic</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolic-kgbelt-x-parabolic1"><span>theta_stable_parabolic</span></a></td>
-<td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#real-levi-kgbelt-x-realform1"><span>real_Levi</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#real-levi-kgbelt-x-realform1"><span>real_Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#is-standard-levi-realform-l-realform-g-bool1"><span>is_standard_Levi</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolic-kgbelt-x-parabolic1"><span>theta_stable_parabolic</span></a></td>
+<td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-levi-kgbelt-x-realform1"><span>theta_stable_Levi</span></a></td>
+<td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#is-standard-levi-realform-l-realform-g-bool1"><span>is_standard_Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">L,RealForm</span> <span class="pre">G-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#kgp-realform-g-complexparabolic-rd-s-kgpelt-1"><span>KGP</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#kgp-realform-g-complexparabolic-rd-s-kgpelt-1"><span>KGP</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[KGPElt]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#parabolics-realform-g-complexparabolic-rd-s-parabolic-1"><span>parabolics</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#parabolics-realform-g-complexparabolic-rd-s-parabolic-1"><span>parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-complexparabolic-p-parabolic-1"><span>theta_stable_parabolics</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-complexparabolic-p-parabolic-1"><span>theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">P-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-parabolic-1"><span>theta_stable_parabolics</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-parabolic-1"><span>theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-type-realform-g-int-p-parabolic-1"><span>theta_stable_parabolics_type</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-type-realform-g-int-p-parabolic-1"><span>theta_stable_parabolics_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,[int]</span> <span class="pre">P-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#all-rel-split-theta-stable-parabolics-realform-g-parabolic-1"><span>all_rel_split_theta_stable_parabolics</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#all-rel-split-theta-stable-parabolics-realform-g-parabolic-1"><span>all_rel_split_theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#print-theta-stable-parabolics-realform-g-void1"><span>print_theta_stable_parabolics</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#print-theta-stable-parabolics-realform-g-void1"><span>print_theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;void</span></code></td>
 </tr>
 </tbody>
