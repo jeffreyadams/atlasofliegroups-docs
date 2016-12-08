@@ -8,7 +8,7 @@ complementary_series.at Function References
 
 end_of_complementary_series
 -------------------------------------------------
-| ``end_of_complementary_series:Param p_in->(bool,Param)`` Defined in line number 11.
+| ``end_of_complementary_series:Param p_in->(bool,Param)`` Defined in line number 14.
 | 
 | 
 

@@ -8,6 +8,8 @@ complementary_series.at
 
 **This script imports the following .at files:**
 
+| :ref:`misc.at<misc.at>`
+| :ref:`hermitian.at<hermitian.at>`
 |
 
 
