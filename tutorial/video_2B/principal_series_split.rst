@@ -9,11 +9,12 @@ the support of the corresponding :math:`D`-module. In order to explain this in
 detail we will look at some easy cases. In particular we will be
 talking about the principal series of split groups.
 
-So, we start with a group :math:`G` and a parameter ``p=(x, lambda, nu)``
-where x encodes the above information and :math:`\lambda \in X^*
-/(1-\theta )X^*` and :math:`\nu \in {X^* \otimes \mathbb Q
-}^{-\theta}`. With these data we obtain a character of :math:`H(\mathbb R)` with
-differential :math:`{(1+\theta )\over 2}\lambda + nu`.
+So, we start with a group :math:`G` and a parameter ``p=(x, lambda,
+nu)`` where ``x`` encodes the above information and :math:`\lambda \in
+X^* /(1-\theta )X^*` and :math:`\nu \in {X^* \otimes \mathbb Q
+}^{-\theta}`. With these data we obtain a character of
+:math:`H(\mathbb R)` with differential :math:`{(1+\theta )\over
+2}\lambda + \nu`.
 
 From this character we get a representation of the group G. 
 
@@ -241,7 +242,7 @@ Another group we can look at is::
    Value: disconnected split real group with Lie algebra 'sl(2,R)'
    atlas>
 
-Here the complex Lie group is :math:`G(\matbbC )=PSL(2,\mathbb C
+Here the complex Lie group is :math:`G(\mathbb C )=PSL(2,\mathbb C
 )=SL(2,\mathbb C)/{\pm 1}`. Its real points are disconnected, and they
 are the group :math:`PSL(2, \mathbb R ) \cong SO(2,1)`::
 
@@ -251,8 +252,8 @@ are the group :math:`PSL(2, \mathbb R ) \cong SO(2,1)`::
   Variable parameters: [Param] (overriding previous instance, which had type [Param])
   atlas>
 
-Note we can use ``rho(G)`` instead of the vector value for :math:`rho`.
-The parameters for this group are almost like those  for SL(2,), except that the Weyl group of the compact Cartan has changed and the number of parameters is now just three::
+Note we can use ``rho(G)`` instead of the vector value for :math:`\rho`.
+The parameters for this group are almost like those for :math:`SL(2,\mathbb R)`, except that the Weyl group of the compact Cartan has changed and the number of parameters is now just three::
 
     atlas> #parameters
     Value: 3
@@ -263,10 +264,10 @@ The parameters for this group are almost like those  for SL(2,), except that the
     atlas>
 
 We still have two principal series with infinitesimal character
-rho. But we now only have one discrete series representation
+:math:`\rho`. But we now only have one discrete series representation
 associated to the compact Cartan, namely the sum of the two discrete
 series for SL(2,R) are now a single irreducible representation of
-:math:`PSL(2, R )`.
+:math:`PSL(2, \mathbb R )`.
 
 Now let us look at the trivial representation ::
 
@@ -277,7 +278,7 @@ Now let us look at the trivial representation ::
    Value: 1
    atlas> 
 
-One thing to have in mind is that the trivial representation is always given by the maximal number and lamda and nu =rho
+One thing to have in mind is that the trivial representation is always given by the maximal number ``x`` and :math:`\lambda =\nu =\rho`
 
 This parameter has composition series::
 
@@ -298,11 +299,12 @@ Actually it is best to use the command ``show(composition_series(I(p))))`` ::
 
 So, this induced representation for :math:`PSL(2,\mathbb R )` has two
 factors: the trivial representation (with ``x=1`` and
-``lambda=nu=rho``) and a discrete series (with ``x=0``).
+:math:`\lambda=\nu=\rho` ) and a discrete series (with ``x=0``).
 
 What is the other principal series attached to the split Cartan?  For
-SL(2, R ) the other representation attached to the split Cartan was an
-infinite demensional irreducible principal series. However here we have::
+:math:`SL(2,\mathbb R )` the other representation attached to the
+split Cartan was an infinite demensional irreducible principal
+series. However here we have::
 
    atlas> q:parameters[2]
    Variable q: Param
@@ -325,4 +327,46 @@ disconnected, so ``q`` is the parameter for the sign
 representation. In other words the standard module attached to this
 parameter is a principal series which has as its unique irreducible
 quotient the sign representation of :math:`PSL (2,\mathbb R )`.
+
+Now for another example::
+
+   atlas> set p=parameter(KGB(G,1),[1]/2,[1])
+   Variable p: Param
+   atlas> p
+   Value: final parameter (x=1,lambda=[1]/2,nu=[1]/1)
+   atlas> show(composition_series (I(p)))
+   1*J(x=1,lambda=[1/2],nu=[1/1])
+   atlas> 
+
+So, the composition series gives an irreducible. Even though ``nu`` isan integer this is not an irreducibility point.
+
+Example G=Sp(2,R)
+------------------
+so there are 18 representations with inf;. char rho. 
+The last four parameters have KGB elt 10 so they correspond to the four priincipal series attached to the split Cartan.
+
+More generally G(R) is split rank n and the number of imimal ps is the set of characters of the ;split cartan R^x ^N (Lambda,nu with nu=rho. Therea re 2^ n choices of lambda.
+
+So the parameters, 14, 15, 16, 17 are principal series. How do we tell the difference? All have the same nu, same x=10.
+
+so the tau invariant is big for the 14, which means this is a small
+representation. In fact that is the trivial representation. The
+smallest tau invariant gives the biggest representation. In this case
+this is the irreducible principal series. The other two correspond to
+the long and short root. So each of them are distinquished by their
+tau invariant.
+
+Now lets look at the composition series of for the standard module for
+the trivial rep::
+
+This is the sum of all those irreducibles with certain multiplicities. The last irreducible is the trivial representation.
+This is the biggest composition series. It is the most reducible ps,
+which you can detect by its tau invariant.  The empty tau invariant
+says that the representation is irreducible.
+
+Now if we do the same for the third principal series we get::
+
+
+
+So, we have an irreducible principal series in this case.
 
