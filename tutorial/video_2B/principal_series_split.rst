@@ -191,7 +191,7 @@ Another thing you can do is get also information about cuspidal data used to con
    atlas> p
    Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
 
-So P is a parabolic whith Levifactor GL(1) and q is acharacter of GL(1). So we can extract the character of the Cartan by finding the Cuspidal data for the representation with parameter ``p``::
+So P is a parabolic whith Levi factor GL(1) and q is acharacter of GL(1). So we can extract the character of the Cartan by finding the Cuspidal data for the representation with parameter ``p``::
 
    atlas> 
    atlas> real_form(q)
@@ -390,14 +390,14 @@ In this case the rank is :math:`2`, so there are four, namely the last four in t
 
 Let us make a separate list for them::
 
-atlas> set ps=[parameters[14],parameters[15],parameters[16],parameters[17]]
-Variable ps: [Param] 
-atlas> void: for p in ps do prints(p) od
-final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
-final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1)
-final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1)
-final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
-atlas> 
+   atlas> set ps=[parameters[14],parameters[15],parameters[16],parameters[17]]
+   Variable ps: [Param] 
+   atlas> void: for p in ps do prints(p) od
+   final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1)
+   final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1)
+   final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
+   atlas> 
 
 These parameters are all principal series. How do we tell them apart?
 
@@ -407,12 +407,12 @@ character of :math:`{\mathbb Z}_2 \times {\mathbb Z}_2`. In other words they are
 
 To know which is which we look at their ``tau`` invariant::
 
-atlas> void: for p in ps do prints(p," ",tau(p)) od
-final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1]
-final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [1]
-final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) []
-final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [0]
-atlas>
+   atlas> void: for p in ps do prints(p," ",tau(p)) od
+   final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1]
+   final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [1]
+   final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) []
+   final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [0]
+   atlas>
 
 So the ``tau`` invariant is big for the element ``ps[0]``, which means
 the irreducible is a small representation. In fact that is the trivial
