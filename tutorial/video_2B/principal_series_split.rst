@@ -96,9 +96,9 @@ So, this is the split Cartan for this group, with one real factor and
 no compact or complex factor. We can ignore the rest of the
 information for the moment.  
 
- As we said above, the last two in the list of parameters for
-:math:`G` are the ones associated to this split Cartan subgroup;
-namely the two principal series with parameter ``nu=1``::
+As we said above, the last two in the list of parameters for :math:`G`
+are the ones associated to this split Cartan subgroup; namely the two
+principal series with parameter ``nu=1``::
 
     atlas> parameters[2]
     Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
@@ -191,7 +191,7 @@ Another thing you can do is get also information about cuspidal data used to con
    atlas> p
    Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
 
-So P is a parabolic whith Levi factor GL(1) and q is acharacter of GL(1). So we can extract the character of the Cartan by finding the Cuspidal data for the representation with parameter ``p``::
+So :math:`P` is a parabolic whith Levi factor :math:`GL(1,\mathbb R)` and ``q`` is acharacter of :math:`GL(1,\mathbb R)`. So we can extract the character of the Cartan by finding the Cuspidal data for the representation with parameter ``p``::
 
    atlas> 
    atlas> real_form(q)
@@ -209,7 +209,8 @@ Aside
 -------
 
 NOTE: WHAT FOLLOWS IN THE NEXT LINES IS NOT COMPLETED. I NEED TO WORK A BIT MORE ON WHAT ALL THESE COMMANDS DO. THIS WAS NOT DISCUSSED IN THE VIDEOS AT THIS POINT. BUT I THINK IT WOULD BE GOOD TO HAVE A DISCUSSION HERE ABOUT THESE COMMANDS
-Other possible commands arE:: 
+
+Other possible commands are:: 
 
    theta_induce_irreducible
    theta_induce_irreducible_as_sum_of_standards
@@ -231,7 +232,7 @@ To go back use ``theta_induced_standard``
 
 
 
-Another example :math:`G=PSL(2,R)`
+Example :math:`G=PSL(2,\mathbb R)`
 -----------------------------------
 
 Another group we can look at is::
@@ -338,7 +339,8 @@ Now for another example::
    1*J(x=1,lambda=[1/2],nu=[1/1])
    atlas> 
 
-So, the composition series gives an irreducible. Even though ``nu`` isan integer this is not an irreducibility point.
+So, the composition series gives an irreducible. Even though ``nu``
+is an integer this is not an irreducibility point.
 
 Example G=Sp(2,R)
 ------------------
@@ -376,13 +378,15 @@ Now lets find all representations with infinitesimal character :math:`\rho` ::
    final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
    atlas>
 
-There are 18 representations with infinitesimal character `rho` 
-The last four parameters have :math:`K\backslash G/B` element number 10. They correspond to the four priincipal series attached to the split Cartan.
+There are 18 representations with infinitesimal character
+:math:`\rho`. The last four parameters have :math:`K\backslash G/B`
+element ``x=10``. They correspond to the four priincipal series
+attached to the split Cartan.
 
 More generally if :math:`G(\mathbb R)` is split of rank :math:`n`, the
 number of minimal principal series of infinitesimal character ``rho``
 corresponds to the set of characters of the split cartan
-:math:`({\mathbb R}^{\times}) ^n` . That is the set ``{(ambda,nu)}``
+:math:`({\mathbb R}^{\times}) ^n` . That is the set ``{(lambda,nu)}``
 and up to the Weyl group, ``nu=rho``. So there are :math:`2^n` choices
 of ``lambda`` which is a character of :math:`({\mathbb Z}_2)^n`.
 
@@ -423,7 +427,7 @@ series. The other two, namely the elements ``ps[2]`` and ``ps[4]`` in
 the list, correspond to the long and short roots respectively. So each
 of them are distinquished by their tau invariant.
 
-Now lets look at the composition series of for the standard module for
+Now lets look at the composition series of the standard module for
 the trivial rep::
 
    atlas> p:ps[0]
