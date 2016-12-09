@@ -1,7 +1,7 @@
 .. _windows:
 
 Windows
--------
+---------
 
 You have three options:
 
@@ -11,7 +11,7 @@ You have three options:
 .. _compiling:
 
 Compiling
-+++++++++
++++++++++++
 
 The best option is available on Windows 10. This is the 
 
@@ -26,7 +26,7 @@ On older Windows machines linux software can be run using
 are familiar with it this is not recommended. 
 
 Step-by-Step installation using the bash shell
-~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you haven't done so already, install the bash shell 
 following the instructions from the Microsoft `bash shell <https://msdn.microsoft.com/en-us/commandline/wsl/about>`_ page.
@@ -58,11 +58,9 @@ Go into the proper directory and type make:::
 .. _precompiled:
 
 Pre-compiled
-+++++++++
++++++++++++++++
 
 etc
-
-
 ~~~~~~~~~~~~
 
 Unzip the file you just downloaded, open atlas_windows/bin, double click on atlas.exe or Fokko.exe to run.
