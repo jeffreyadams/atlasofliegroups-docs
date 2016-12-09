@@ -52,12 +52,6 @@ Functions
      - ``Param p_L, RealForm G->ParamPol``
    * - :ref:`theta_induce_irreducible_param_p_l,_realform_g->parampol1`
      - ``Param p_L, RealForm G->ParamPol``
-   * - :ref:`induce_standard_param_p_l,parabolic_p,realform_g->parampol1`
-     - ``Param p_L,Parabolic P,RealForm G->ParamPol``
-   * - :ref:`induce_irreducible_param_p_l,parabolic_p,realform_g->parampol1`
-     - ``Param p_L,Parabolic P,RealForm G->ParamPol``
-   * - :ref:`induce_standard_parampol_pol,parabolic_p,realform_g->parampol1`
-     - ``ParamPol pol,Parabolic P,RealForm G->ParamPol``
    * - :ref:`map_into_distinguished_fiber_kgbelt_x->kgbelt1`
      - ``KGBElt x->KGBElt``
    * - :ref:`strong_map_into_distinguished_fiber_kgbelt_x->kgbelt1`
@@ -150,7 +144,5 @@ Functions
      - ``RealForm G->[Param]``
    * - :ref:`theta_stable_parabolics_max_kgbelt_x->[parabolic]1`
      - ``KGBElt x->[Parabolic]``
-   * - :ref:`is_x_theta_maximal_param_p->bool1`
-     - ``Param p->bool``
    * - :ref:`is_good_range_induced_from_param_p->[param]1`
      - ``Param p->[Param]``
