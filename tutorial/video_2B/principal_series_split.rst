@@ -266,8 +266,8 @@ The parameters for this group are almost like those for :math:`SL(2,\mathbb R)`,
 We still have two principal series with infinitesimal character
 :math:`\rho`. But we now only have one discrete series representation
 associated to the compact Cartan, namely the sum of the two discrete
-series for SL(2,R) are now a single irreducible representation of
-:math:`PSL(2, \mathbb R )`.
+series for :math:`SL(2,\mathbb R)` are now a single irreducible
+representation of :math:`PSL(2, \mathbb R )`.
 
 Now let us look at the trivial representation ::
 
@@ -278,7 +278,7 @@ Now let us look at the trivial representation ::
    Value: 1
    atlas> 
 
-One thing to have in mind is that the trivial representation is always given by the maximal number ``x`` and :math:`\lambda =\nu =\rho`
+One thing to have in mind is that the trivial representation is always given by the maximal number ``x`` and ``lambda=nu=rho``
 
 This parameter has composition series::
 
@@ -342,31 +342,118 @@ So, the composition series gives an irreducible. Even though ``nu`` isan integer
 
 Example G=Sp(2,R)
 ------------------
-so there are 18 representations with inf;. char rho. 
-The last four parameters have KGB elt 10 so they correspond to the four priincipal series attached to the split Cartan.
 
-More generally G(R) is split rank n and the number of imimal ps is the set of characters of the ;split cartan R^x ^N (Lambda,nu with nu=rho. Therea re 2^ n choices of lambda.
+Now lets find all representations with infinitesimal character :math:`\rho` ::
 
-So the parameters, 14, 15, 16, 17 are principal series. How do we tell the difference? All have the same nu, same x=10.
+   atlas> G:Sp(4,R)
+   Variable G: RealForm (overriding previous instance, which had type RealForm)
+   atlas> G
+   Value: connected split real group with Lie algebra 'sp(4,R)'
+   atlas> set parameters=all_parameters_gamma (G, rho(G))
+   Variable parameters: [Param]
+   atlas> rho(G)
+   Value: [ 2, 1 ]/1
+   atlas> #parameters
+   Value: 18
+   atlas> void: for p in parameters do prints(p) od
+   final parameter (x=0,lambda=[2,1]/1,nu=[0,0]/1)
+   final parameter (x=1,lambda=[2,1]/1,nu=[0,0]/1)
+   final parameter (x=2,lambda=[2,1]/1,nu=[0,0]/1)
+   final parameter (x=3,lambda=[2,1]/1,nu=[0,0]/1)
+   final parameter (x=4,lambda=[2,1]/1,nu=[1,-1]/2)
+   final parameter (x=5,lambda=[2,1]/1,nu=[0,1]/1)
+   final parameter (x=5,lambda=[2,2]/1,nu=[0,1]/1)
+   final parameter (x=6,lambda=[2,1]/1,nu=[0,1]/1)
+   final parameter (x=6,lambda=[2,2]/1,nu=[0,1]/1)
+   final parameter (x=7,lambda=[2,1]/1,nu=[2,0]/1)
+   final parameter (x=7,lambda=[3,1]/1,nu=[2,0]/1)
+   final parameter (x=8,lambda=[2,1]/1,nu=[2,0]/1)
+   final parameter (x=8,lambda=[3,1]/1,nu=[2,0]/1)
+   final parameter (x=9,lambda=[2,1]/1,nu=[3,3]/2)
+   final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1)
+   final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1)
+   final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
+   atlas>
 
-so the tau invariant is big for the 14, which means this is a small
-representation. In fact that is the trivial representation. The
-smallest tau invariant gives the biggest representation. In this case
-this is the irreducible principal series. The other two correspond to
-the long and short root. So each of them are distinquished by their
-tau invariant.
+There are 18 representations with infinitesimal character `rho` 
+The last four parameters have :math:`K\backslash G/B` element number 10. They correspond to the four priincipal series attached to the split Cartan.
+
+More generally if :math:`G(\mathbb R)` is split of rank :math:`n`, the
+number of minimal principal series of infinitesimal character ``rho``
+corresponds to the set of characters of the split cartan
+:math:`({\mathbb R}^{\times}) ^n` . That is the set ``{(ambda,nu)}``
+and up to the Weyl group, ``nu=rho``. So there are :math:`2^n` choices
+of ``lambda`` which is a character of :math:`({\mathbb Z}_2)^n`.
+
+In this case the rank is :math:`2`, so there are four, namely the last four in the above list. 
+
+Let us make a separate list for them::
+
+atlas> set ps=[parameters[14],parameters[15],parameters[16],parameters[17]]
+Variable ps: [Param] 
+atlas> void: for p in ps do prints(p) od
+final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
+atlas> 
+
+These parameters are all principal series. How do we tell them apart?
+
+Each one is giving a character of the split Cartan. They have the same
+``nu`` and same ``x=10`` and a different lambda. Each lambda is a
+character of :math:`{\mathbb Z}_2 \times {\mathbb Z}_2`. In other words they are in :math:`X^*/2X^*`.
+
+To know which is which we look at their ``tau`` invariant::
+
+atlas> void: for p in ps do prints(p," ",tau(p)) od
+final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1]
+final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [1]
+final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) []
+final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [0]
+atlas>
+
+So the ``tau`` invariant is big for the element ``ps[0]``, which means
+the irreducible is a small representation. In fact that is the trivial
+representation. In contrast, the smallest tau invariant, the empty
+set, correspnding to the element ``ps[3]`` gives the biggest
+representation. In this case this is the irreducible principal
+series. The other two, namely the elements ``ps[2]`` and ``ps[4]`` in
+the list, correspond to the long and short roots respectively. So each
+of them are distinquished by their tau invariant.
 
 Now lets look at the composition series of for the standard module for
 the trivial rep::
 
-This is the sum of all those irreducibles with certain multiplicities. The last irreducible is the trivial representation.
-This is the biggest composition series. It is the most reducible ps,
-which you can detect by its tau invariant.  The empty tau invariant
-says that the representation is irreducible.
+   atlas> p:ps[0]
+   Variable p: Param
+   atlas> show(composition_series(I(p)))
+   1*J(x=0,lambda=[2/1,1/1],nu=[0/1,0/1])
+   1*J(x=1,lambda=[2/1,1/1],nu=[0/1,0/1])
+   2*J(x=4,lambda=[2/1,1/1],nu=[1/2,-1/2])
+   1*J(x=5,lambda=[2/1,1/1],nu=[0/1,1/1])
+   1*J(x=6,lambda=[2/1,1/1],nu=[0/1,1/1])
+   1*J(x=7,lambda=[2/1,1/1],nu=[2/1,0/1])
+   1*J(x=8,lambda=[2/1,1/1],nu=[2/1,0/1])
+   1*J(x=9,lambda=[2/1,1/1],nu=[3/2,3/2])
+   1*J(x=10,lambda=[2/1,1/1],nu=[2/1,1/1])
+   atlas>
 
-Now if we do the same for the third principal series we get::
+This standard module is the sum of all the above irreducibles with
+certain multiplicities. The last irreducible is the trivial
+representation.  This is the biggest composition series. It is the
+most reducible principal series, which you can detect by its tau
+invariant. 
+
+On the other hand the empty tau invariant says that the
+representation is irreducible::
+
+   atlas> p:ps[2]
+   Variable p: Param (overriding previous instance, which had type Param)
+   atlas> show(composition_series(I(p)))
+   1*J(x=10,lambda=[2/1,2/1],nu=[2/1,1/1])
+   atlas>
 
 
-
-So, we have an irreducible principal series in this case.
 
