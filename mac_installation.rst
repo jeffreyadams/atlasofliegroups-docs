@@ -92,7 +92,7 @@ The response should be, on an earlier OS, something like::
 
     Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr...
 
-Or, if you are using Sierra or El Capitan::
+Or, if you are using El Capitan(OS X 10.11) or later::
 
    Configured with: --prefix=/Library/Developer/CommandLineTools/usr
    --with-gxx-include-dir=/usr/include/c++/4.2.1
