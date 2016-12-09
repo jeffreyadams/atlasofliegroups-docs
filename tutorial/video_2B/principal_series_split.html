@@ -113,8 +113,8 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../windows_installation.html">Windows</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#download">Download</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#installation">Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#compiling">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#pre-compiled">Pre-compiled</a></li>
 </ul>
 </li>
 </ul>
@@ -206,7 +206,8 @@
 <li class="toctree-l4"><a class="reference internal" href="#minimal-principal-series-for-split-groups">Minimal Principal Series for split groups</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cuspidal-data">Cuspidal Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#aside">Aside</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#another-example">Another example <span class="math">\(G=PSL(2,R)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-g-sp-2-r">Example G=Sp(2,R)</a></li>
 </ul>
 </li>
 </ul>
@@ -1038,11 +1039,12 @@ R)\)</span>. Now <code class="docutils literal"><span class="pre">x</span></code
 the support of the corresponding <span class="math">\(D\)</span>-module. In order to explain this in
 detail we will look at some easy cases. In particular we will be
 talking about the principal series of split groups.</p>
-<p>So, we start with a group <span class="math">\(G\)</span> and a parameter <code class="docutils literal"><span class="pre">p=(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code>
-where x encodes the above information and <span class="math">\(\lambda \in X^*
-/(1-\theta )X^*\)</span> and <span class="math">\(\nu \in {X^* \otimes \mathbb Q
-}^{-\theta}\)</span>. With these data we obtain a character of <span class="math">\(H(\mathbb R)\)</span> with
-differential <span class="math">\({(1+\theta )\over 2}\lambda + nu\)</span>.</p>
+<p>So, we start with a group <span class="math">\(G\)</span> and a parameter <code class="docutils literal"><span class="pre">p=(x,</span> <span class="pre">lambda,</span>
+<span class="pre">nu)</span></code> where <code class="docutils literal"><span class="pre">x</span></code> encodes the above information and <span class="math">\(\lambda \in
+X^* /(1-\theta )X^*\)</span> and <span class="math">\(\nu \in {X^* \otimes \mathbb Q
+}^{-\theta}\)</span>. With these data we obtain a character of
+<span class="math">\(H(\mathbb R)\)</span> with differential <span class="math">\({(1+\theta )\over
+2}\lambda + \nu\)</span>.</p>
 <p>From this character we get a representation of the group G.</p>
 <div class="section" id="minimal-principal-series-for-split-groups">
 <h2>Minimal Principal Series for split groups<a class="headerlink" href="#minimal-principal-series-for-split-groups" title="Permalink to this headline">¶</a></h2>
@@ -1117,10 +1119,9 @@ atlas&gt;
 <p>So, this is the split Cartan for this group, with one real factor and
 no compact or complex factor. We can ignore the rest of the
 information for the moment.</p>
-<blockquote>
-<div>As we said above, the last two in the list of parameters for</div></blockquote>
-<p><span class="math">\(G\)</span> are the ones associated to this split Cartan subgroup;
-namely the two principal series with parameter <code class="docutils literal"><span class="pre">nu=1</span></code>:</p>
+<p>As we said above, the last two in the list of parameters for <span class="math">\(G\)</span>
+are the ones associated to this split Cartan subgroup; namely the two
+principal series with parameter <code class="docutils literal"><span class="pre">nu=1</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; parameters[2]
 Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
 atlas&gt; parameters[3]
@@ -1209,7 +1210,7 @@ atlas&gt; p
 Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
 </pre></div>
 </div>
-<p>So P is a parabolic whith Levifactor GL(1) and q is acharacter of GL(1). So we can extract the character of the Cartan by finding the Cuspidal data for the representation with parameter <code class="docutils literal"><span class="pre">p</span></code>:</p>
+<p>So <span class="math">\(P\)</span> is a parabolic whith Levi factor <span class="math">\(GL(1,\mathbb R)\)</span> and <code class="docutils literal"><span class="pre">q</span></code> is acharacter of <span class="math">\(GL(1,\mathbb R)\)</span>. So we can extract the character of the Cartan by finding the Cuspidal data for the representation with parameter <code class="docutils literal"><span class="pre">p</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;
 atlas&gt; real_form(q)
 Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
@@ -1225,8 +1226,8 @@ Value:
 </div>
 <div class="section" id="aside">
 <h2>Aside<a class="headerlink" href="#aside" title="Permalink to this headline">¶</a></h2>
-<p>NOTE: WHAT FOLLOWS IN THE NEXT LINES IS NOT COMPLETED. I NEED TO WORK A BIT MORE ON WHAT ALL THESE COMMANDS DO. THIS WAS NOT DISCUSSED IN THE VIDEOS AT THIS POINT. BUT I THINK IT WOULD BE GOOD TO HAVE A DISCUSSION HERE ABOUT THESE COMMANDS
-Other possible commands arE:</p>
+<p>NOTE: WHAT FOLLOWS IN THE NEXT LINES IS NOT COMPLETED. I NEED TO WORK A BIT MORE ON WHAT ALL THESE COMMANDS DO. THIS WAS NOT DISCUSSED IN THE VIDEOS AT THIS POINT. BUT I THINK IT WOULD BE GOOD TO HAVE A DISCUSSION HERE ABOUT THESE COMMANDS</p>
+<p>Other possible commands are:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">theta_induce_irreducible</span>
 <span class="n">theta_induce_irreducible_as_sum_of_standards</span>
 <span class="n">theta_induce_standard</span>
@@ -1245,8 +1246,8 @@ atlas&gt;
 <p>In this case the Levi is all of <span class="math">\(G\)</span>. So this says that the representation is induced from <span class="math">\(G\)</span> to <span class="math">\(G\)</span>.</p>
 <p>To go back use <code class="docutils literal"><span class="pre">theta_induced_standard</span></code></p>
 </div>
-<div class="section" id="another-example">
-<h2>Another example <span class="math">\(G=PSL(2,R)\)</span><a class="headerlink" href="#another-example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example">
+<h2>Example <span class="math">\(G=PSL(2,\mathbb R)\)</span><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>Another group we can look at is:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:PSL(2,R)
 Variable G: RealForm (overriding previous instance, which had type RealForm)
@@ -1255,7 +1256,7 @@ Value: disconnected split real group with Lie algebra &#39;sl(2,R)&#39;
 atlas&gt;
 </pre></div>
 </div>
-<p>Here the complex Lie group is <span class="math">\(G(\matbbC )=PSL(2,\mathbb C
+<p>Here the complex Lie group is <span class="math">\(G(\mathbb C )=PSL(2,\mathbb C
 )=SL(2,\mathbb C)/{\pm 1}\)</span>. Its real points are disconnected, and they
 are the group <span class="math">\(PSL(2, \mathbb R ) \cong SO(2,1)\)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; rho(G)
@@ -1265,8 +1266,8 @@ Variable parameters: [Param] (overriding previous instance, which had type [Para
 atlas&gt;
 </pre></div>
 </div>
-<p>Note we can use <code class="docutils literal"><span class="pre">rho(G)</span></code> instead of the vector value for <span class="math">\(rho\)</span>.
-The parameters for this group are almost like those  for SL(2,), except that the Weyl group of the compact Cartan has changed and the number of parameters is now just three:</p>
+<p>Note we can use <code class="docutils literal"><span class="pre">rho(G)</span></code> instead of the vector value for <span class="math">\(\rho\)</span>.
+The parameters for this group are almost like those for <span class="math">\(SL(2,\mathbb R)\)</span>, except that the Weyl group of the compact Cartan has changed and the number of parameters is now just three:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; #parameters
 Value: 3
 atlas&gt; void: for p in parameters do prints(p) od
@@ -1277,10 +1278,10 @@ atlas&gt;
 </pre></div>
 </div>
 <p>We still have two principal series with infinitesimal character
-rho. But we now only have one discrete series representation
+<span class="math">\(\rho\)</span>. But we now only have one discrete series representation
 associated to the compact Cartan, namely the sum of the two discrete
-series for SL(2,R) are now a single irreducible representation of
-<span class="math">\(PSL(2, R )\)</span>.</p>
+series for <span class="math">\(SL(2,\mathbb R)\)</span> are now a single irreducible
+representation of <span class="math">\(PSL(2, \mathbb R )\)</span>.</p>
 <p>Now let us look at the trivial representation</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:trivial(G)
 Variable p: Param
@@ -1290,7 +1291,7 @@ Value: 1
 atlas&gt;
 </pre></div>
 </div>
-<p>One thing to have in mind is that the trivial representation is always given by the maximal number and lamda and nu =rho</p>
+<p>One thing to have in mind is that the trivial representation is always given by the maximal number <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">lambda=nu=rho</span></code></p>
 <p>This parameter has composition series:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>Value: final parameter (x=1,lambda=[1]/2,nu=[1]/2)
 atlas&gt; composition_series(I(p))
@@ -1309,10 +1310,11 @@ atlas&gt;
 </div>
 <p>So, this induced representation for <span class="math">\(PSL(2,\mathbb R )\)</span> has two
 factors: the trivial representation (with <code class="docutils literal"><span class="pre">x=1</span></code> and
-<code class="docutils literal"><span class="pre">lambda=nu=rho</span></code>) and a discrete series (with <code class="docutils literal"><span class="pre">x=0</span></code>).</p>
+<span class="math">\(\lambda=\nu=\rho\)</span> ) and a discrete series (with <code class="docutils literal"><span class="pre">x=0</span></code>).</p>
 <p>What is the other principal series attached to the split Cartan?  For
-SL(2, R ) the other representation attached to the split Cartan was an
-infinite demensional irreducible principal series. However here we have:</p>
+<span class="math">\(SL(2,\mathbb R )\)</span> the other representation attached to the
+split Cartan was an infinite demensional irreducible principal
+series. However here we have:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:parameters[2]
 Variable q: Param
 atlas&gt; q
@@ -1335,6 +1337,128 @@ disconnected, so <code class="docutils literal"><span class="pre">q</span></code
 representation. In other words the standard module attached to this
 parameter is a principal series which has as its unique irreducible
 quotient the sign representation of <span class="math">\(PSL (2,\mathbb R )\)</span>.</p>
+<p>Now for another example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set p=parameter(KGB(G,1),[1]/2,[1])
+Variable p: Param
+atlas&gt; p
+Value: final parameter (x=1,lambda=[1]/2,nu=[1]/1)
+atlas&gt; show(composition_series (I(p)))
+1*J(x=1,lambda=[1/2],nu=[1/1])
+atlas&gt;
+</pre></div>
+</div>
+<p>So, the composition series gives an irreducible. Even though <code class="docutils literal"><span class="pre">nu</span></code>
+is an integer this is not an irreducibility point.</p>
+</div>
+<div class="section" id="example-g-sp-2-r">
+<h2>Example G=Sp(2,R)<a class="headerlink" href="#example-g-sp-2-r" title="Permalink to this headline">¶</a></h2>
+<p>Now lets find all representations with infinitesimal character <span class="math">\(\rho\)</span></p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:Sp(4,R)
+Variable G: RealForm (overriding previous instance, which had type RealForm)
+atlas&gt; G
+Value: connected split real group with Lie algebra &#39;sp(4,R)&#39;
+atlas&gt; set parameters=all_parameters_gamma (G, rho(G))
+Variable parameters: [Param]
+atlas&gt; rho(G)
+Value: [ 2, 1 ]/1
+atlas&gt; #parameters
+Value: 18
+atlas&gt; void: for p in parameters do prints(p) od
+final parameter (x=0,lambda=[2,1]/1,nu=[0,0]/1)
+final parameter (x=1,lambda=[2,1]/1,nu=[0,0]/1)
+final parameter (x=2,lambda=[2,1]/1,nu=[0,0]/1)
+final parameter (x=3,lambda=[2,1]/1,nu=[0,0]/1)
+final parameter (x=4,lambda=[2,1]/1,nu=[1,-1]/2)
+final parameter (x=5,lambda=[2,1]/1,nu=[0,1]/1)
+final parameter (x=5,lambda=[2,2]/1,nu=[0,1]/1)
+final parameter (x=6,lambda=[2,1]/1,nu=[0,1]/1)
+final parameter (x=6,lambda=[2,2]/1,nu=[0,1]/1)
+final parameter (x=7,lambda=[2,1]/1,nu=[2,0]/1)
+final parameter (x=7,lambda=[3,1]/1,nu=[2,0]/1)
+final parameter (x=8,lambda=[2,1]/1,nu=[2,0]/1)
+final parameter (x=8,lambda=[3,1]/1,nu=[2,0]/1)
+final parameter (x=9,lambda=[2,1]/1,nu=[3,3]/2)
+final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>There are 18 representations with infinitesimal character
+<span class="math">\(\rho\)</span>. The last four parameters have <span class="math">\(K\backslash G/B\)</span>
+element <code class="docutils literal"><span class="pre">x=10</span></code>. They correspond to the four priincipal series
+attached to the split Cartan.</p>
+<p>More generally if <span class="math">\(G(\mathbb R)\)</span> is split of rank <span class="math">\(n\)</span>, the
+number of minimal principal series of infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>
+corresponds to the set of characters of the split cartan
+<span class="math">\(({\mathbb R}^{\times}) ^n\)</span> . That is the set <code class="docutils literal"><span class="pre">{(lambda,nu)}</span></code>
+and up to the Weyl group, <code class="docutils literal"><span class="pre">nu=rho</span></code>. So there are <span class="math">\(2^n\)</span> choices
+of <code class="docutils literal"><span class="pre">lambda</span></code> which is a character of <span class="math">\(({\mathbb Z}_2)^n\)</span>.</p>
+<p>In this case the rank is <span class="math">\(2\)</span>, so there are four, namely the last four in the above list.</p>
+<p>Let us make a separate list for them:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set ps=[parameters[14],parameters[15],parameters[16],parameters[17]]
+Variable ps: [Param]
+atlas&gt; void: for p in ps do prints(p) od
+final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1)
+final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>These parameters are all principal series. How do we tell them apart?</p>
+<p>Each one is giving a character of the split Cartan. They have the same
+<code class="docutils literal"><span class="pre">nu</span></code> and same <code class="docutils literal"><span class="pre">x=10</span></code> and a different lambda. Each lambda is a
+character of <span class="math">\({\mathbb Z}_2 \times {\mathbb Z}_2\)</span>. In other words they are in <span class="math">\(X^*/2X^*\)</span>.</p>
+<p>To know which is which we look at their <code class="docutils literal"><span class="pre">tau</span></code> invariant:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for p in ps do prints(p,&quot; &quot;,tau(p)) od
+final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1]
+final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [1]
+final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) []
+final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [0]
+atlas&gt;
+</pre></div>
+</div>
+<p>So the <code class="docutils literal"><span class="pre">tau</span></code> invariant is big for the element <code class="docutils literal"><span class="pre">ps[0]</span></code>, which means
+the irreducible is a small representation. In fact that is the trivial
+representation. In contrast, the smallest tau invariant, the empty
+set, correspnding to the element <code class="docutils literal"><span class="pre">ps[3]</span></code> gives the biggest
+representation. In this case this is the irreducible principal
+series. The other two, namely the elements <code class="docutils literal"><span class="pre">ps[2]</span></code> and <code class="docutils literal"><span class="pre">ps[4]</span></code> in
+the list, correspond to the long and short roots respectively. So each
+of them are distinquished by their tau invariant.</p>
+<p>Now lets look at the composition series of the standard module for
+the trivial rep:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:ps[0]
+Variable p: Param
+atlas&gt; show(composition_series(I(p)))
+1*J(x=0,lambda=[2/1,1/1],nu=[0/1,0/1])
+1*J(x=1,lambda=[2/1,1/1],nu=[0/1,0/1])
+2*J(x=4,lambda=[2/1,1/1],nu=[1/2,-1/2])
+1*J(x=5,lambda=[2/1,1/1],nu=[0/1,1/1])
+1*J(x=6,lambda=[2/1,1/1],nu=[0/1,1/1])
+1*J(x=7,lambda=[2/1,1/1],nu=[2/1,0/1])
+1*J(x=8,lambda=[2/1,1/1],nu=[2/1,0/1])
+1*J(x=9,lambda=[2/1,1/1],nu=[3/2,3/2])
+1*J(x=10,lambda=[2/1,1/1],nu=[2/1,1/1])
+atlas&gt;
+</pre></div>
+</div>
+<p>This standard module is the sum of all the above irreducibles with
+certain multiplicities. The last irreducible is the trivial
+representation.  This is the biggest composition series. It is the
+most reducible principal series, which you can detect by its tau
+invariant.</p>
+<p>On the other hand the empty tau invariant says that the
+representation is irreducible:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:ps[2]
+Variable p: Param (overriding previous instance, which had type Param)
+atlas&gt; show(composition_series(I(p)))
+1*J(x=10,lambda=[2/1,2/1],nu=[2/1,1/1])
+atlas&gt;
+</pre></div>
+</div>
 </div>
 </div>
 

@@ -113,8 +113,8 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Windows</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#download">Download</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compiling">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pre-compiled">Pre-compiled</a></li>
 </ul>
 </li>
 </ul>
@@ -206,7 +206,8 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/principal_series_split.html#minimal-principal-series-for-split-groups">Minimal Principal Series for split groups</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/principal_series_split.html#cuspidal-data">Cuspidal Data</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/principal_series_split.html#aside">Aside</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/principal_series_split.html#another-example">Another example <span class="math">\(G=PSL(2,R)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/principal_series_split.html#example">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/principal_series_split.html#example-g-sp-2-r">Example G=Sp(2,R)</a></li>
 </ul>
 </li>
 </ul>
@@ -1031,33 +1032,53 @@
             
   <div class="section" id="windows">
 <span id="id1"></span><h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="download">
-<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
-<p>We recommend you to download the latest version.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="23%" />
-<col width="20%" />
-<col width="57%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Latest atlas-scripts directory</td>
-<td><a href="#id2"><span class="problematic" id="id3">`atlas-scripts.0.6.3.tgz`_</span></a></td>
-<td>supplementary files for atlas</td>
-</tr>
-<tr class="row-even"><td>Latest complete version: 0.6</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.6/atlas_0.6_windows.tgz">atlas_0.6_windows.tgz</a></td>
-<td>executables for Windows, Fokko and atlas, including messages and atlas-scripts</td>
-</tr>
-<tr class="row-odd"><td>Verstion 0.5.9</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.9.windows.zip">atlas_0.5.9.windows.zip</a></td>
-<td>executables for Windows, atlas and realex, including messages and rx-scripts</td>
-</tr>
-</tbody>
-</table>
+<p>You have three options:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#compiling"><span>Compiling</span></a> : recommended method.</li>
+<li><a class="reference internal" href="#precompiled"><span>Pre-compiled</span></a></li>
+</ul>
+<div class="section" id="compiling">
+<span id="id2"></span><h2>Compiling<a class="headerlink" href="#compiling" title="Permalink to this headline">¶</a></h2>
+<p>The best option is available on Windows 10. This is the</p>
+<p><a class="reference external" href="https://msdn.microsoft.com/en-us/commandline/wsl/about">bash shell</a>, which is
+available (currently in beta version) in Windows 10. It provides a
+linux command line environment. This was produced by Canonical, the
+makers of Ubuntu, so it is very close to an Ubuntu linux environment.</p>
+<p>On older Windows machines linux software can be run using
+<cite>Cygwin &lt;https://www.cygwin.com/&gt;_</cite>. Unless you have already installed Cygwin and
+are familiar with it this is not recommended.</p>
+<div class="section" id="step-by-step-installation-using-the-bash-shell">
+<h3>Step-by-Step installation using the bash shell<a class="headerlink" href="#step-by-step-installation-using-the-bash-shell" title="Permalink to this headline">¶</a></h3>
+<p>If you haven&#8217;t done so already, install the bash shell
+following the instructions from the Microsoft <a class="reference external" href="https://msdn.microsoft.com/en-us/commandline/wsl/about">bash shell</a> page.
+We also recommend
+these instructions from <a class="reference external" href="http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10">How-To Geek</a>.</p>
+<p>Open a bash window.</p>
+<p>Install some necessary software::</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>apt-get install git
+apt-get install make
+apt-get install g++
+apt-get install bison
+apt-get install libreadline-dev
+apt-get install emacs (or your favorite text editor)
+</pre></div>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>The remainder of the process follows the standard linux process. See <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a> for details.</p>
+<p>Get a copy of the software using git::</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git clone http://github.com/jeffreyadams/atlasofliegroups.git
+</pre></div>
+</div>
+<p>Go into the proper directory and type make::</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>cd atlasofliegroups
+make
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pre-compiled">
+<span id="precompiled"></span><h2>Pre-compiled<a class="headerlink" href="#pre-compiled" title="Permalink to this headline">¶</a></h2>
+<p>etc</p>
+<hr class="docutils" />
 <p>Unzip the file you just downloaded, open atlas_windows/bin, double click on atlas.exe or Fokko.exe to run.</p>
 <p>If for some reason, you choose to download the source files and would like to compile atlas, see <a class="reference external" href="http://www.liegroups.org/software/download/windows.html">this page</a> for instructions.</p>
 </div>
