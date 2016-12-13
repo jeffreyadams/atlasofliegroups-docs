@@ -1,3 +1,3 @@
 
-Minimal Principle Series
+More Principal Series
 =================================
