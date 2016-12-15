@@ -9,7 +9,7 @@ Download the software
 You have two options:
 
 * :ref:`using_git` : recommended method.
-* :ref:`using_link`
+* :ref:`direct`
 
 .. _using_git:
 
@@ -18,62 +18,25 @@ Using git
 
 For users who are not familiar with git, see :ref:`help_git` to get started with git.
 
-If you choose to use git, you can get the most up-to-date version of the software. Make sure your git client is relatively new. Version 1.7.0.4 and above should work. To check your git version, do::
-
-    git --version
-
 Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type::
 
     git clone https://github.com/jeffreyadams/atlasofliegroups.git
     
 This creates a subdirectory "atlasofliegroups" and stores the files there.
 
-.. _using_link:
+.. _direct:
 
-Using provided links
-++++++++++++++++++++
+Download the source code directly
++++++++++++++++++++++++++++++++++
 
-We recommend you to download the latest version.
+You can download an archive of the source code. These are typically not as up-to-date as
+the git version. 
 
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Latest atlas-scripts directory | `atlas-scripts.0.6.3.tgz`_           | supplementary files for atlas                                                                                                         |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Latest complete version: 0.6   | `atlas_0.6.tgz`_                     | source code, Fokko and atlas                                                                                                          |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                | `atlas_0.6_executables.tgz`_         | pre-compiled 64-bit binaries                                                                                                          |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Verstion 0.5.9                 | `atlas_0.5.9.tgz`_                   | source code, atlas and realex                                                                                                         |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                | `atlas_0.5.9_64bit_executables.tgz`_ | precompiled 64 bit binaries, atlas and realex, including messages and rx-scripts                                                      |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                | `messages_and_rx-scripts0.5.9.tgz`_  | freestanding messages directory (help files for atlas)                                                                                |
-|                                |                                      | and rx-scripts directory (scripts for realex, and also some realex help files).                                                       |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Version 0.5.8                  | `atlas_0.5.8.tgz`_                   | source code, atlas and realex                                                                                                         |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                | `atlas_0.5.8_32bit.executables.tgz`_ | precompiled 32 bit binaries, atlas and realex, including messages and rx-scripts                                                      |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                | `messages_and_rx-scripts0.5.8.tgz`_  | freestanding messages directory (help files for atlas)and rx-scripts directory (scripts for realex, and also some realex help files). |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Version 0.5.7                  | `atlas_0.5.7.tgz`_                   | source code, atlas and realex                                                                                                         |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                | `atlas_0.5.7_32bit.executables.tgz`_ | precompiled 32 bit binaries, atlas and realex, including messages and rx-scripts                                                      |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-|                                | `atlas_0.5.7_64bit.executables.tgz`_ | precompiled 64 bit binaries, atlas and realex, including messages and rx-scripts                                                      |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------+------------------------------+-------------------------------------+
+| Latest atlas-scripts directory |       `atlas_0.8.tgz`_       | source code, Fokko and atlas        |
++--------------------------------+------------------------------+-------------------------------------+
 
-.. _atlas_0.6.tgz: http://www.liegroups.org/software/atlas_0.6/atlas_0.6.tgz
-.. _atlas_0.6_executables.tgz: http://www.liegroups.org/software/atlas_0.6/atlas_0.6_executables.tgz
-.. _atlas-scripts.0.6.3.tgz: http://www.liegroups.org/software/atlas_0.6/atlas_0.6.tgz
-.. _atlas_0.5.9.tgz: http://www.liegroups.org/software/atlas_0.5.9.tgz
-.. _atlas_0.5.9_64bit_executables.tgz: http://www.liegroups.org/software/atlas_0.5.9_64bit_executables.tgz
-.. _messages_and_rx-scripts0.5.9.tgz: http://www.liegroups.org/software/atlas_0.5.9_messages_and_rx-scripts.tgz
-.. _atlas_0.5.8.tgz: http://www.liegroups.org/software/atlas_0.5.8.tgz
-.. _atlas_0.5.8_32bit.executables.tgz: http://www.liegroups.org/software/atlas_0.5.8_32bit.executables.tgz
-.. _messages_and_rx-scripts0.5.8.tgz: http://www.liegroups.org/software/messages_and_rx-scripts.tgz
-.. _atlas_0.5.7.tgz: http://www.liegroups.org/software/atlas_0.5.7.tgz
-.. _atlas_0.5.7_32bit.executables.tgz: http://www.liegroups.org/software/atlas_0.5.7_32bit.executables.tgz
-.. _atlas_0.5.7_64bit.executables.tgz: http://www.liegroups.org/software/atlas_0.5.7_64bit.executables.tgz
+.. _atlas_0.8.tgz: http://www.liegroups.org/software/atlas_0.8.tgz
 
 Installation
 ~~~~~~~~~~~~
