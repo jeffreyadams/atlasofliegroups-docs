@@ -114,6 +114,7 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Windows</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#compiling">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installing-under-cygwin">Installing under Cygwin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#pre-compiled">Pre-compiled</a></li>
 </ul>
 </li>
@@ -1031,20 +1032,20 @@
             
   <div class="section" id="windows">
 <span id="id1"></span><h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
-<p>You have three options:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#compiling"><span>Compiling</span></a> : recommended method.</li>
+<li><a class="reference internal" href="#compiling"><span>Compiling</span></a></li>
 <li><a class="reference internal" href="#precompiled"><span>Pre-compiled</span></a></li>
 </ul>
 <div class="section" id="compiling">
 <span id="id2"></span><h2>Compiling<a class="headerlink" href="#compiling" title="Permalink to this headline">¶</a></h2>
-<p>The best option is available on Windows 10. This is the</p>
-<p><a class="reference external" href="https://msdn.microsoft.com/en-us/commandline/wsl/about">bash shell</a>, which is
+<p>The best option is available on Windows 10. This is the
+<a class="reference external" href="https://msdn.microsoft.com/en-us/commandline/wsl/about">bash shell</a>, which is
 available (currently in beta version) in Windows 10. It provides a
 linux command line environment. This was produced by Canonical, the
 makers of Ubuntu, so it is very close to an Ubuntu linux environment.</p>
 <p>On older Windows machines linux software can be run using
-<cite>Cygwin &lt;https://www.cygwin.com/&gt;_</cite>. Unless you have already installed Cygwin and
+<a class="reference internal" href="#cygwin"><span>Installing under Cygwin</span></a>.
+Unless you have already installed Cygwin and
 are familiar with it this is not recommended.</p>
 <div class="section" id="step-by-step-installation-using-the-bash-shell">
 <h3>Step-by-Step installation using the bash shell<a class="headerlink" href="#step-by-step-installation-using-the-bash-shell" title="Permalink to this headline">¶</a></h3>
@@ -1053,26 +1054,46 @@ following the instructions from the Microsoft <a class="reference external" href
 We also recommend
 these instructions from <a class="reference external" href="http://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10">How-To Geek</a>.</p>
 <p>Open a bash window.</p>
-<p>Install some necessary software::</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>apt-get install git
-apt-get install make
-apt-get install g++
-apt-get install bison
-apt-get install libreadline-dev
-apt-get install emacs (or your favorite text editor)
+<p>Install some necessary software. After the first call of sudo apt-get install you
+need to type your password. (Depending on how you installed the bash shell you
+might not need to use sudo.):</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get install git
+sudo apt-get install make
+sudo apt-get install g++
+sudo apt-get install bison
+sudo apt-get install libreadline-dev
+sudo apt-get install emacs (or your favorite text editor)
 </pre></div>
 </div>
-<p>The remainder of the process follows the standard linux process. See <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a> for details.</p>
-<p>Get a copy of the software using git::</p>
+<p>The remainder of the process follows the standard linux process. See <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a> for details. Briefly:y to</p>
+<p>Get a copy of the software using git:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>git clone http://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
-<p>Go into the proper directory and type make::</p>
+<p>Go into the proper directory and type make:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>cd atlasofliegroups
 make
 </pre></div>
 </div>
 </div>
+</div>
+<div class="section" id="installing-under-cygwin">
+<span id="cygwin"></span><h2>Installing under Cygwin<a class="headerlink" href="#installing-under-cygwin" title="Permalink to this headline">¶</a></h2>
+<p>Download Cygwin. See
+<a class="reference external" href="https://www.cygwin.com">the Cygwin web page</a>.</p>
+<p>Install cygwin: Double-click on setup.exe to run it. At the package menu choose at least the following packages:</p>
+<ul class="simple">
+<li>gcc/g++ (version 4x)</li>
+<li>make</li>
+<li>bison</li>
+<li>libncurses-devel</li>
+<li>libstdc++6-devel</li>
+<li>readline</li>
+<li>git</li>
+</ul>
+<p>Next, open a cygin terminal by double-clicking on the icon. You are now in a linux-like environment.</p>
+<p>The remainder of the process follows the standard linux process, similar to the procedure under bash.
+See <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a> for details.</p>
 </div>
 <div class="section" id="pre-compiled">
 <span id="precompiled"></span><h2>Pre-compiled<a class="headerlink" href="#pre-compiled" title="Permalink to this headline">¶</a></h2>

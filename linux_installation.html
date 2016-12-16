@@ -114,6 +114,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="windows_installation.html">Windows</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="windows_installation.html#compiling">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="windows_installation.html#installing-under-cygwin">Installing under Cygwin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="windows_installation.html#pre-compiled">Pre-compiled</a></li>
 </ul>
 </li>
@@ -1036,79 +1037,31 @@
 <p>You have two options:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#using-git"><span>Using git</span></a> : recommended method.</li>
-<li><a class="reference internal" href="#using-link"><span>Using provided links</span></a></li>
+<li><a class="reference internal" href="#direct"><span>Download the source code directly</span></a></li>
 </ul>
 <div class="section" id="using-git">
 <span id="id2"></span><h3>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h3>
 <p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span>Help with git</span></a> to get started with git.</p>
-<p>If you choose to use git, you can get the most up-to-date version of the software. Make sure your git client is relatively new. Version 1.7.0.4 and above should work. To check your git version, do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
-</pre></div>
-</div>
 <p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>git clone https://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
 <p>This creates a subdirectory &#8220;atlasofliegroups&#8221; and stores the files there.</p>
 </div>
-<div class="section" id="using-provided-links">
-<span id="using-link"></span><h3>Using provided links<a class="headerlink" href="#using-provided-links" title="Permalink to this headline">¶</a></h3>
-<p>We recommend you to download the latest version.</p>
+<div class="section" id="download-the-source-code-directly">
+<span id="direct"></span><h3>Download the source code directly<a class="headerlink" href="#download-the-source-code-directly" title="Permalink to this headline">¶</a></h3>
+<p>You can download an archive of the source code. These are typically not as up-to-date as
+the git version.</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="16%" />
-<col width="19%" />
-<col width="66%" />
+<col width="32%" />
+<col width="30%" />
+<col width="37%" />
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>Latest atlas-scripts directory</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.6/atlas_0.6.tgz">atlas-scripts.0.6.3.tgz</a></td>
-<td>supplementary files for atlas</td>
-</tr>
-<tr class="row-even"><td>Latest complete version: 0.6</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.6/atlas_0.6.tgz">atlas_0.6.tgz</a></td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.8.tgz">atlas_0.8.tgz</a></td>
 <td>source code, Fokko and atlas</td>
-</tr>
-<tr class="row-odd"><td>&nbsp;</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.6/atlas_0.6_executables.tgz">atlas_0.6_executables.tgz</a></td>
-<td>pre-compiled 64-bit binaries</td>
-</tr>
-<tr class="row-even"><td>Verstion 0.5.9</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.9.tgz">atlas_0.5.9.tgz</a></td>
-<td>source code, atlas and realex</td>
-</tr>
-<tr class="row-odd"><td>&nbsp;</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.9_64bit_executables.tgz">atlas_0.5.9_64bit_executables.tgz</a></td>
-<td>precompiled 64 bit binaries, atlas and realex, including messages and rx-scripts</td>
-</tr>
-<tr class="row-even"><td>&nbsp;</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.9_messages_and_rx-scripts.tgz">messages_and_rx-scripts0.5.9.tgz</a></td>
-<td>freestanding messages directory (help files for atlas)
-and rx-scripts directory (scripts for realex, and also some realex help files).</td>
-</tr>
-<tr class="row-odd"><td>Version 0.5.8</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.8.tgz">atlas_0.5.8.tgz</a></td>
-<td>source code, atlas and realex</td>
-</tr>
-<tr class="row-even"><td>&nbsp;</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.8_32bit.executables.tgz">atlas_0.5.8_32bit.executables.tgz</a></td>
-<td>precompiled 32 bit binaries, atlas and realex, including messages and rx-scripts</td>
-</tr>
-<tr class="row-odd"><td>&nbsp;</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/messages_and_rx-scripts.tgz">messages_and_rx-scripts0.5.8.tgz</a></td>
-<td>freestanding messages directory (help files for atlas)and rx-scripts directory (scripts for realex, and also some realex help files).</td>
-</tr>
-<tr class="row-even"><td>Version 0.5.7</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.7.tgz">atlas_0.5.7.tgz</a></td>
-<td>source code, atlas and realex</td>
-</tr>
-<tr class="row-odd"><td>&nbsp;</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.7_32bit.executables.tgz">atlas_0.5.7_32bit.executables.tgz</a></td>
-<td>precompiled 32 bit binaries, atlas and realex, including messages and rx-scripts</td>
-</tr>
-<tr class="row-even"><td>&nbsp;</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.5.7_64bit.executables.tgz">atlas_0.5.7_64bit.executables.tgz</a></td>
-<td>precompiled 64 bit binaries, atlas and realex, including messages and rx-scripts</td>
 </tr>
 </tbody>
 </table>
