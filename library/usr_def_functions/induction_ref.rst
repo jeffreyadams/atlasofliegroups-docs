@@ -588,12 +588,21 @@ theta_stable_parabolics_max
 | Given a KGB element x, list all theta-stable parabolics in G   with maximal element x.
 | 
 
+.. _theta_stable_parabolics_with_kgbelt_x->[parabolic]1:
+
+theta_stable_parabolics_with
+-------------------------------------------------
+| ``theta_stable_parabolics_with:KGBElt x->[Parabolic]`` Defined in line number 706.
+| 
+| Given a KGB element x, list all proper theta-stable parabolics in G   determined by x.
+| 
+
 .. _is_good_range_induced_from_param_p->[param]1:
 
 is_good_range_induced_from
 -------------------------------------------------
-| ``is_good_range_induced_from:Param p->[Param]`` Defined in line number 706.
+| ``is_good_range_induced_from:Param p->[Param]`` Defined in line number 713.
 | 
-| List of parameters p_L in the good range for G so that p is theta-induced   from p_L; may be empty, or more than one.
+| List of parameters p_L in the (weakly) good range for G so that p is   theta-induced from p_L; may be empty, or more than one.
 | 
 

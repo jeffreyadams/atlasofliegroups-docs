@@ -144,5 +144,7 @@ Functions
      - ``RealForm G->[Param]``
    * - :ref:`theta_stable_parabolics_max_kgbelt_x->[parabolic]1`
      - ``KGBElt x->[Parabolic]``
+   * - :ref:`theta_stable_parabolics_with_kgbelt_x->[parabolic]1`
+     - ``KGBElt x->[Parabolic]``
    * - :ref:`is_good_range_induced_from_param_p->[param]1`
      - ``Param p->[Param]``
