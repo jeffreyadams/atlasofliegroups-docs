@@ -1,22 +1,21 @@
 .. _linux:
 
-Linux
------
+######
+LinuxC
+######
 
+*********************
 Download the software
-~~~~~~~~~~~~~~~~~~~~~~
-
-You have two options:
-
+*********************
 * :ref:`using_git` : recommended method.
 * :ref:`direct`
 
 .. _using_git:
 
 Using git
-+++++++++
+=========
 
-For users who are not familiar with git, see :ref:`help_git` to get started with git.
+For users who are not familiar with git, see :ref:`help_git`.
 
 Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type::
 
@@ -27,44 +26,89 @@ This creates a subdirectory "atlasofliegroups" and stores the files there.
 .. _direct:
 
 Download the source code directly
-+++++++++++++++++++++++++++++++++
+=================================
 
 You can download an archive of the source code. These are typically not as up-to-date as
 the git version. 
 
 +--------------------------------+------------------------------+-------------------------------------+
-| Latest atlas-scripts directory |       `atlas_0.8.tgz`_       | source code, Fokko and atlas        |
+| Complete archive               |       `atlas_0.8.tgz`_       | source code, Fokko and atlas        |
 +--------------------------------+------------------------------+-------------------------------------+
 
-.. _atlas_0.8.tgz: http://www.liegroups.org/software/atlas_0.8.tgz
+.. _atlas_0.8.tgz: http://www.liegroups.org/software/atlas_0.8/atlas_0.8.tgz
 
-Installation
-~~~~~~~~~~~~
+************************
+Installation from Source
+************************
 
-**Source code**
+After you have downloaded the source code, cd to the atlasofliegroups directory.
 
-Assuming you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type::
+Type::
 
     make
 
-You can choose turn on the verbose option by typing::
+You may need to edit the Makefile to change the line ``CXX = g++ -std=c++0x`` to something 
+different. You can choose turn on the verbose option by typing::
 
     make verbose=true
 
 This will show you the details of the commands your compiler is using to compile and link the codes.
+Some other compiler options are (you can set multiple options separated by spaces)::
 
-Ideally, this should get the source code compiled. If you encounter any error, see :ref:`installation_troubleshooting`.
+    optimize=false    
+    debug=true
+    readline=false
 
-**Executables**
+Optimize is true by default. ``debug=true`` enables more debugging
+output, and allows the software to abort if certain tests
+fail. ``readline=false`` should only be used if you are getting error
+messages related to readline. See :ref:`installation_troubleshooting`.
 
-Assuming you have downloaded the executables from the provided links, after you unzip the files you are pretty much good to go. Proceed to :ref:`run_atlas`.
+Ideally, this should compile the code, and produce both ``Fokko`` and
+``atlas``. If you encounter any error see see :ref:`installation_troubleshooting`.
 
-If you want to create `symlinks <https://en.wikipedia.org/wiki/Symbolic_link>`_ for atlas, you can do::
+We recommend running::
 
-    make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
-   
-For example, if you want to install the executables in /home/userid/software/atlas, and symlinks in /home/userid/bin, type::
+      make install
 
-    make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
-    
-.. note:: If you have downloaded the messages (help) files, it is recommended that you put it in the same directory as the atlas executables.
+to put make ``atlas`` accessible from anywhere, and guarantee it has
+access to the atlas-scripts directory.  By default this will put a
+shell script in ~/bin and points to the atlas-scripts directory. 
+*[More information is coming]*.
+
+************************
+Installing an executable
+************************
+
+The best method is to compile from source. As a backup option you can 
+try installing an executable. Download a copy of the executable, 
+and the atlas-scripts directory. 
+
++-----------------------------------+------------------------------+-------------------------------------+
+| atlas executable for linux 64 bit |   `atlas_0.8_linux`_         | binary file                         |
++-----------------------------------+------------------------------+-------------------------------------+
+| atlas-scripts directory           |   `atlas-scripts_0.8.tgz`_   | just the atlas scripts (.at files)  |
++-----------------------------------+------------------------------+-------------------------------------+
+
+.. _atlas_0.8_linux: http://www.liegroups.org/software/atlas_0.8/atlas_0.8_linux
+.. _atlas-scripts_0.8.tgz: http://www.liegroups.org/software/atlas_0.8/atlas-scripts_0.8.tgz
+
+Make the file executable::
+
+     chmod u+x atlas_*.*_linux
+
+Where *.* is replaced by the appropriate number, for example ``chmod u+x atlas_0.8``.
+Extract the atlas-scripts directory::
+
+     tar xvfz atlas-scripts.tgz
+
+Run the software with the command::
+
+     ./atlas_*.*_linux  --path=atlas-scripts all
+
+The path argument tells atlas where to find the scripts, and ``all`` says to load
+most of the scripts (not including a few which are under development). 
+
+
+
+
