@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Linux &mdash; atlas 0.6 documentation</title>
+  <title>LinuxC &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -91,9 +91,10 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="download_and_install.html">Download and Install</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Linux</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="">LinuxC</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#download-the-software">Download the software</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="mac_installation.html">Mac</a><ul>
@@ -487,6 +488,11 @@
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/coherent_index.html">coherent.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/complementary_series.html">complementary_series.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/complementary_series_ref.html">complementary_series.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/complementary_series_index.html">complementary_series.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/complex.html">complex.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/complex_ref.html">complex.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/complex_index.html">complex.at Function Index</a></li>
@@ -582,9 +588,9 @@
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/gl8H.html">gl8H.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl8H_ref.html">gl8H.at Function References</a></li>
-<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl8H_index.html">gl8H.at Function Index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/gl4H.html">gl4H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/group_operations.html">group_operations.at</a><ul>
@@ -1004,7 +1010,7 @@
       
           <li><a href="download_and_install.html">Download and Install</a> &raquo;</li>
       
-    <li>Linux</li>
+    <li>LinuxC</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -1030,18 +1036,17 @@
 		  
 <!--endtest-->
             
-  <div class="section" id="linux">
-<span id="id1"></span><h1>Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="linuxc">
+<span id="linux"></span><h1>LinuxC<a class="headerlink" href="#linuxc" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="download-the-software">
 <h2>Download the software<a class="headerlink" href="#download-the-software" title="Permalink to this headline">¶</a></h2>
-<p>You have two options:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#using-git"><span>Using git</span></a> : recommended method.</li>
 <li><a class="reference internal" href="#direct"><span>Download the source code directly</span></a></li>
 </ul>
 <div class="section" id="using-git">
-<span id="id2"></span><h3>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h3>
-<p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span>Help with git</span></a> to get started with git.</p>
+<span id="id1"></span><h3>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h3>
+<p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span>Help with git</span></a>.</p>
 <p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>git clone https://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
@@ -1059,41 +1064,85 @@ the git version.</p>
 <col width="37%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>Latest atlas-scripts directory</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.8.tgz">atlas_0.8.tgz</a></td>
+<tr class="row-odd"><td>Complete archive</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.8/atlas_0.8.tgz">atlas_0.8.tgz</a></td>
 <td>source code, Fokko and atlas</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p><strong>Source code</strong></p>
-<p>Assuming you have downloaded the source code, either using git or the provided links, here is what you do: under the source code directory type:</p>
+<div class="section" id="installation-from-source">
+<h2>Installation from Source<a class="headerlink" href="#installation-from-source" title="Permalink to this headline">¶</a></h2>
+<p>After you have downloaded the source code, cd to the atlasofliegroups directory.</p>
+<p>Type:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">make</span>
 </pre></div>
 </div>
-<p>You can choose turn on the verbose option by typing:</p>
+<p>You may need to edit the Makefile to change the line <code class="docutils literal"><span class="pre">CXX</span> <span class="pre">=</span> <span class="pre">g++</span> <span class="pre">-std=c++0x</span></code> to something
+different. You can choose turn on the verbose option by typing:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>make verbose=true
 </pre></div>
 </div>
-<p>This will show you the details of the commands your compiler is using to compile and link the codes.</p>
-<p>Ideally, this should get the source code compiled. If you encounter any error, see <a class="reference internal" href="ts-install.html#installation-troubleshooting"><span>Installation &#8211; Trouble Shooting</span></a>.</p>
-<p><strong>Executables</strong></p>
-<p>Assuming you have downloaded the executables from the provided links, after you unzip the files you are pretty much good to go. Proceed to <a class="reference internal" href="run_atlas.html#run-atlas"><span>Run atlas</span></a>.</p>
-<p>If you want to create <a class="reference external" href="https://en.wikipedia.org/wiki/Symbolic_link">symlinks</a> for atlas, you can do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR = [installation directory] BINDIR = [desired symlinks directory]
+<p>This will show you the details of the commands your compiler is using to compile and link the codes.
+Some other compiler options are (you can set multiple options separated by spaces):</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">optimize</span><span class="o">=</span><span class="n">false</span>
+<span class="n">debug</span><span class="o">=</span><span class="n">true</span>
+<span class="n">readline</span><span class="o">=</span><span class="n">false</span>
 </pre></div>
 </div>
-<p>For example, if you want to install the executables in /home/userid/software/atlas, and symlinks in /home/userid/bin, type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR=/home/userid/software BINDIR=/home/userid/bin
+<p>Optimize is true by default. <code class="docutils literal"><span class="pre">debug=true</span></code> enables more debugging
+output, and allows the software to abort if certain tests
+fail. <code class="docutils literal"><span class="pre">readline=false</span></code> should only be used if you are getting error
+messages related to readline. See <a class="reference internal" href="ts-install.html#installation-troubleshooting"><span>Installation &#8211; Trouble Shooting</span></a>.</p>
+<p>Ideally, this should compile the code, and produce both <code class="docutils literal"><span class="pre">Fokko</span></code> and
+<code class="docutils literal"><span class="pre">atlas</span></code>. If you encounter any error see see <a class="reference internal" href="ts-install.html#installation-troubleshooting"><span>Installation &#8211; Trouble Shooting</span></a>.</p>
+<p>We recommend running:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install
 </pre></div>
 </div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If you have downloaded the messages (help) files, it is recommended that you put it in the same directory as the atlas executables.</p>
+<p>to put make <code class="docutils literal"><span class="pre">atlas</span></code> accessible from anywhere, and guarantee it has
+access to the atlas-scripts directory.  By default this will put a
+shell script in ~/bin and points to the atlas-scripts directory.
+<em>[More information is coming]</em>.</p>
 </div>
+<div class="section" id="installing-an-executable">
+<h2>Installing an executable<a class="headerlink" href="#installing-an-executable" title="Permalink to this headline">¶</a></h2>
+<p>The best method is to compile from source. As a backup option you can
+try installing an executable. Download a copy of the executable,
+and the atlas-scripts directory.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="29%" />
+<col width="36%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>atlas executable for linux 64 bit</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.8/atlas_0.8_linux">atlas_0.8_linux</a></td>
+<td>binary file</td>
+</tr>
+<tr class="row-even"><td>atlas-scripts directory</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.8/atlas-scripts_0.8.tgz">atlas-scripts_0.8.tgz</a></td>
+<td>just the atlas scripts (.at files)</td>
+</tr>
+</tbody>
+</table>
+<p>Make the file executable:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>chmod u+x atlas_*.*_linux
+</pre></div>
+</div>
+<p>Where <em>.</em> is replaced by the appropriate number, for example <code class="docutils literal"><span class="pre">chmod</span> <span class="pre">u+x</span> <span class="pre">atlas_0.8</span></code>.
+Extract the atlas-scripts directory:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>tar xvfz atlas-scripts.tgz
+</pre></div>
+</div>
+<p>Run the software with the command:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>./atlas_*.*_linux  --path=atlas-scripts all
+</pre></div>
+</div>
+<p>The path argument tells atlas where to find the scripts, and <code class="docutils literal"><span class="pre">all</span></code> says to load
+most of the scripts (not including a few which are under development).</p>
 </div>
 </div>
 

@@ -91,9 +91,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../download_and_install.html">Download and Install</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">LinuxC</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation">Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -487,6 +488,11 @@
 <li class="toctree-l4"><a class="reference internal" href="coherent_index.html">coherent.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="complementary_series.html">complementary_series.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="complementary_series_ref.html">complementary_series.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="complementary_series_index.html">complementary_series.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="complex.html">complex.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="complex_ref.html">complex.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="complex_index.html">complex.at Function Index</a></li>
@@ -582,9 +588,9 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="gl8H.html">gl8H.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="gl8H_ref.html">gl8H.at Function References</a></li>
-<li class="toctree-l4"><a class="reference internal" href="gl8H_index.html">gl8H.at Function Index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="group_operations.html">group_operations.at</a><ul>
@@ -1097,91 +1103,94 @@
 <tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#highest-weight-k-type-p-khighestweight1"><span>highest_weight</span></a></td>
 <td><code class="docutils literal"><span class="pre">K_Type</span> <span class="pre">p-&gt;KHighestWeight</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#highest-weight-param-p-khighestweight1"><span>highest_weight</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#highest-weight-k-type-p-kgbelt-x-k-khighestweight1"><span>highest_weight</span></a></td>
+<td><code class="docutils literal"><span class="pre">K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;KHighestWeight</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#highest-weight-param-p-khighestweight1"><span>highest_weight</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;KHighestWeight</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#centralizer-kgbelt-x-ratvec-v-kgbelt-rootdatum-1"><span>centralizer</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#centralizer-kgbelt-x-ratvec-v-kgbelt-rootdatum-1"><span>centralizer</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">v-&gt;(KGBElt,RootDatum)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#find-nci-root-kgbelt-x-ratvec-tau-int1"><span>find_nci_root</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#find-nci-root-kgbelt-x-ratvec-tau-int1"><span>find_nci_root</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">tau-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#tworho-k-kgbelt-x-ratvec1"><span>tworho_K</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#tworho-k-kgbelt-x-ratvec1"><span>tworho_K</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#project-on-dominant-cone-kgbelt-x-ratvec-mu-kgbelt-ratvec-ratvec-1"><span>project_on_dominant_cone</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#project-on-dominant-cone-kgbelt-x-ratvec-mu-kgbelt-ratvec-ratvec-1"><span>project_on_dominant_cone</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">ratvec</span> <span class="pre">mu-&gt;(KGBElt,ratvec,ratvec)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#project-on-dominant-cone-kgbelt-x-vec-mu-kgbelt-ratvec-ratvec-1"><span>project_on_dominant_cone</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#project-on-dominant-cone-kgbelt-x-vec-mu-kgbelt-ratvec-ratvec-1"><span>project_on_dominant_cone</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">vec</span> <span class="pre">mu-&gt;(KGBElt,ratvec,ratvec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#characters-order-2-kgbelt-x-vec-1"><span>characters_order_2</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#characters-order-2-kgbelt-x-vec-1"><span>characters_order_2</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;[vec]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#all-g-spherical-same-differential-k-type-p-k-type-1"><span>all_G_spherical_same_differential</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#all-g-spherical-same-differential-k-type-p-k-type-1"><span>all_G_spherical_same_differential</span></a></td>
 <td><code class="docutils literal"><span class="pre">K_Type</span> <span class="pre">p-&gt;[K_Type]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#all-g-spherical-same-differential-param-p-k-type-1"><span>all_G_spherical_same_differential</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#all-g-spherical-same-differential-param-p-k-type-1"><span>all_G_spherical_same_differential</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[K_Type]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#parabolic-khighestweight-x-mu-parabolic1"><span>parabolic</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#parabolic-lkt-khighestweight-x-mu-parabolic1"><span>parabolic_LKT</span></a></td>
 <td><code class="docutils literal"><span class="pre">KHighestWeight</span> <span class="pre">(x,mu)-&gt;Parabolic</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#make-strongly-dominant-khighestweight-mu-kgbelt-x-q-khighestweight1"><span>make_strongly_dominant</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#make-strongly-dominant-khighestweight-mu-kgbelt-x-q-khighestweight1"><span>make_strongly_dominant</span></a></td>
 <td><code class="docutils literal"><span class="pre">KHighestWeight</span> <span class="pre">mu,KGBElt</span> <span class="pre">x_Q-&gt;KHighestWeight</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k-types-khighestweight-mu-in-k-type-1"><span>K_types</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k-types-khighestweight-mu-in-k-type-1"><span>K_types</span></a></td>
 <td><code class="docutils literal"><span class="pre">KHighestWeight</span> <span class="pre">mu_in-&gt;[K_Type]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k-type-khighestweight-x-mu-k-type1"><span>K_type</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k-type-khighestweight-x-mu-k-type1"><span>K_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">KHighestWeight(x,mu)-&gt;K_Type</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-highest-weight-khighestweight-x-mu-param1"><span>K0_highest_weight</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-highest-weight-khighestweight-x-mu-param1"><span>K0_highest_weight</span></a></td>
 <td><code class="docutils literal"><span class="pre">KHighestWeight(x,mu)-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#dimension-khighestweight-mu-int1"><span>dimension</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#dimension-khighestweight-mu-int1"><span>dimension</span></a></td>
 <td><code class="docutils literal"><span class="pre">KHighestWeight</span> <span class="pre">mu-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#dimension-k-type-p-int1"><span>dimension</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#dimension-k-type-p-int1"><span>dimension</span></a></td>
 <td><code class="docutils literal"><span class="pre">K_Type</span> <span class="pre">p-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#h-weight-kgbelt-x-vec-mu-k-khighestweight1"><span>H_weight</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#h-weight-kgbelt-x-vec-mu-k-khighestweight1"><span>H_weight</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,vec</span> <span class="pre">mu_K-&gt;KHighestWeight</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#fundamental-weights-k-h-kgbelt-x-ratvec-1"><span>fundamental_weights_K_H</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#fundamental-weights-k-h-kgbelt-x-ratvec-1"><span>fundamental_weights_K_H</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;[ratvec]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-param-k-type-p-kgbelt-x-k-param1"><span>K0_param</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-param-k-type-p-kgbelt-x-k-param1"><span>K0_param</span></a></td>
 <td><code class="docutils literal"><span class="pre">K_Type</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;Param</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-param-k-type-p-param1"><span>K0_param</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-param-k-type-p-param1"><span>K0_param</span></a></td>
 <td><code class="docutils literal"><span class="pre">K_Type</span> <span class="pre">p-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-params-param-p-kgbelt-x-k-param-1"><span>K0_params</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-params-param-p-kgbelt-x-k-param-1"><span>K0_params</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-params-param-p-param-1"><span>K0_params</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-params-param-p-param-1"><span>K0_params</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-param-param-p-kgbelt-x-k-param1"><span>K0_param</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-param-param-p-kgbelt-x-k-param1"><span>K0_param</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,KGBElt</span> <span class="pre">x_K-&gt;Param</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-param-param-p-param1"><span>K0_param</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k0-param-param-p-param1"><span>K0_param</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#fundamental-weight-coordinates-khighestweight-x-mu-vec1"><span>fundamental_weight_coordinates</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#fundamental-weight-coordinates-khighestweight-x-mu-vec1"><span>fundamental_weight_coordinates</span></a></td>
 <td><code class="docutils literal"><span class="pre">KHighestWeight</span> <span class="pre">(x,mu)-&gt;vec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#k-highest-weight-from-fundamental-weights-kgbelt-x-vec-tau-khighestweight1"><span>K_highest_weight_from_fundamental_weights</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#k-highest-weight-from-fundamental-weights-kgbelt-x-vec-tau-khighestweight1"><span>K_highest_weight_from_fundamental_weights</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,vec</span> <span class="pre">tau-&gt;KHighestWeight</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#dimensions-param-p-kgbelt-x-k-int-1"><span>dimensions</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#dimensions-param-p-kgbelt-x-k-int-1"><span>dimensions</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">KGBElt</span> <span class="pre">x_K-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#dimensions-param-p-int-1"><span>dimensions</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#dimensions-param-p-int-1"><span>dimensions</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="K_highest_weights_ref.html#dimensions-param-b-int-1"><span>dimensions</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="K_highest_weights_ref.html#dimensions-param-b-int-1"><span>dimensions</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;[[int]]</span></code></td>
 </tr>
 </tbody>
