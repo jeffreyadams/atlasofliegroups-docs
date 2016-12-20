@@ -145,5 +145,33 @@ Another way to check which of these principal series corresponds to the trivial 
    atlas> 
 
 
+Now suppose we start with the trivial representation and we modify the parameter by an element of the Weyl group.::
+
+   atlas> p:trivial(G)
+   Variable p: Param (overriding previous instance, which had type Param)
+   atlas> p
+   Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas>
+
+   atlas> set q=parameter(KGB(G,10),[2,1],[-1,-2])
+   Variable q: Param
+   atlas> p=q
+   Value: true
+   atlas>
+
+The Weyl group sends ``[-1,-2]`` to``[2,1]``. And, since there is a
+:math:`\rho`-shift in the parameter for the ``lambda``, what really
+matters is what the Weyl group does to :math:`\lambda-\rho`. and in
+this case this is ``[0.0]``.
+
+Let us look at the parameter ``q``. It is one of the parameters in the list and there is a useful function to find it ::
+
+    atlas> q
+    Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
+    atlas> 
+
+
+
+
 We can also look at the lowest :math:`K` types of a representation. For this we need to load another ``.at`` file
 
