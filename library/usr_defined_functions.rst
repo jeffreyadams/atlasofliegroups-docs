@@ -14,6 +14,7 @@ User Defined Functions
    usr_def_functions/bigMatrices
    usr_def_functions/center
    usr_def_functions/coherent
+   usr_def_functions/complementary_series
    usr_def_functions/complex
    usr_def_functions/complex_nilpotent_orbits
    usr_def_functions/conjugacy_classes
@@ -33,7 +34,7 @@ User Defined Functions
    usr_def_functions/finite_dimensional
    usr_def_functions/galois
    usr_def_functions/generate_groups
-   usr_def_functions/gl8H
+   usr_def_functions/gl4H
    usr_def_functions/group_operations
    usr_def_functions/groups
    usr_def_functions/hecke

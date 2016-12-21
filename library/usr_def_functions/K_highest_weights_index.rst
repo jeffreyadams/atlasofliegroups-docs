@@ -46,6 +46,8 @@ Functions
      - ``Param p,KGBElt x_K->[KHighestWeight]``
    * - :ref:`highest_weight_k_type_p->khighestweight1`
      - ``K_Type p->KHighestWeight``
+   * - :ref:`highest_weight_k_type_p,kgbelt_x_k->khighestweight1`
+     - ``K_Type p,KGBElt x_K->KHighestWeight``
    * - :ref:`highest_weight_param_p->khighestweight1`
      - ``Param p->KHighestWeight``
    * - :ref:`centralizer_kgbelt_x,ratvec_v->(kgbelt,rootdatum)1`
@@ -64,7 +66,7 @@ Functions
      - ``K_Type p->[K_Type]``
    * - :ref:`all_g_spherical_same_differential_param_p->[k_type]1`
      - ``Param p->[K_Type]``
-   * - :ref:`parabolic_khighestweight_(x,mu)->parabolic1`
+   * - :ref:`parabolic_lkt_khighestweight_(x,mu)->parabolic1`
      - ``KHighestWeight (x,mu)->Parabolic``
    * - :ref:`make_strongly_dominant_khighestweight_mu,kgbelt_x_q->khighestweight1`
      - ``KHighestWeight mu,KGBElt x_Q->KHighestWeight``
