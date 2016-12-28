@@ -19,7 +19,7 @@ example::
       atlas>
 
 These is a real Lie group , so the data type is a RealForm. Again the
-underlying root datum of :math:`G`, which is the one for the simply connected
+underlying root datum of :math:`G` is the one for the simply connected
 group of type ``A1``::
 
       atlas> set rd=root_datum (G)
@@ -28,13 +28,13 @@ group of type ``A1``::
       Value: simply connected root datum of Lie type 'A1'
 
 Note that :math:`SL(2,\mathbb R)` is NOT simply connected. However, it is the
-Lie group whose complexified Lie algebra is is type ``A1`` and its root
+Lie group whose complexified Lie algebra is type ``A1`` and its root
 datum corresponds to the the roots of the simply connected complex
 group :math:`SL(2,\mathbb C)`.
 
 
-Now let's take the non semisimple Lie group :math:`GL(2,\mathbb R)`. We can define it
-in two ways. Note the different type of information we obtain::
+Now let's take the non-semisimple Lie group :math:`GL(2,\mathbb R)`. We can define it
+in two ways. Note the different types of information we obtain::
 
     atlas> set G=SL(2,R)
     Identifier G: RealForm
@@ -86,12 +86,12 @@ On the other hand if we type::
    atlas>
 
 
-Which makes sense since :math:`SL(2,\mathbb C)` is the real Lie group with complexified Lie algebra of type ``A2 x A2``, 
+Which makes sense since :math:`SL(2,\mathbb C)` is the real Lie group with complexified Lie algebra of type ``A2 x A2``,
 
 
-So, in general, if we use the standard real form notation for the
-groups, ``atlas`` normally gives the usual coordinates. So we can for
-example do things like this::
+In general, if we use the standard real form notation for the
+groups, ``atlas`` normally gives the usual coordinates. For
+example, we can do things like this::
 
 
     atlas> set G=Sp(4,R)
@@ -109,9 +109,9 @@ example do things like this::
     | 1, 0 |
     | -1, 1 |
 
-These are the usual simple roots for :math:`Sp(4,\mathbb R)`. So, using these
-pre-defined groups to define our real form gives us, in most cases, the
-familiar coordinates to work with. So we can look at all the positive
+These are the usual simple roots for :math:`Sp(4,\mathbb R)`. Using these
+pre-defined groups to define our real forms gives us, in most cases, the
+familiar coordinates to work with. We can look at all the positive
 roots and coroots and rho::
 
      atlas> posroots(rd)
@@ -128,7 +128,7 @@ roots and coroots and rho::
      Value: [ 2, 1 ]/1
      atlas>
 
-Again the pairing between these sets is the usual dot product::
+Once again, the pairing between these sets is the usual dot product::
 
 
       atlas> set alpha=posroots(rd)[0]
@@ -144,7 +144,7 @@ Again the pairing between these sets is the usual dot product::
       atlas> alpha*alpha_check
       Value: 2
 
-This is the natural way of pairing roots with coroots. Pairing roots with roots is not too meaningful in the theory. 
+This is the natural way of pairing roots with coroots. Pairing roots with roots is not too meaningful in the theory.
 
 
 Now let us try  :math:`G=GL(3,\mathbb R)`::
