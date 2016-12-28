@@ -12,4 +12,5 @@ Tutorial
    tutorial/minimal_principal
    tutorial/more_principal
    tutorial/general_parameters
+   tutorial/parabolic_induction
    
