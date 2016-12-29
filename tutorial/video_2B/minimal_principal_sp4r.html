@@ -215,6 +215,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../induction/real_induction.html">Real Parabolic Induction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../induction/real_induction.html#defining-a-real-parabolic-subgroup">Defining a Real Parabolic Subgroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../induction/real_induction.html#real-induction">Real Induction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../induction/theta_induction.html">Cohomological Parabolic Induction</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul>
@@ -1138,7 +1147,7 @@ certain multiplicities (note there is one that occurs with
 multiplicity 2). The last irreducible is the trivial representation.
 This is the biggest composition series. It is the most reducible
 principal series, which you can detect by its tau invariant.</p>
-<p>On the other hand the empty tau invariant says that the representation
+<p>On the other hand the empty tau invariant says that the corresponding representation
 is irreducible:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:ps[2]
 Variable p: Param (overriding previous instance, which had type Param)
@@ -1147,6 +1156,56 @@ atlas&gt; show(composition_series(I(p)))
 atlas&gt;
 </pre></div>
 </div>
+<p>Another useful tool is the command <code class="docutils literal"><span class="pre">status_texts</span></code>, which gives a bit more information about the types of real roots involved in the tau invariant of the representation.</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for p in ps do prints(p,&quot; &quot;,tau(p), &quot; &quot;, status_texts(p)) od
+final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1] [&quot;r2&quot;,&quot;r1&quot;]
+final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [1] [&quot;rn&quot;,&quot;r1&quot;]
+final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) [] [&quot;rn&quot;,&quot;rn&quot;]
+final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [0] [&quot;r2&quot;,&quot;rn&quot;]
+atlas&gt;
+</pre></div>
+</div>
+<p>In other words, for a given representation the real roots in the tau
+invariant can be type <code class="docutils literal"><span class="pre">r1</span></code> or <code class="docutils literal"><span class="pre">r2</span></code> depending on whether they are
+long or short; and those not in the tau invariant are denoted by
+<code class="docutils literal"><span class="pre">rn</span></code>.</p>
+<p>Another way to check which of these principal series corresponds to the trivial representation is to look at <span class="math">\(\lambda -\rho\)</span> since this gives the trivial character on M</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:trivial(G)
+Variable p: Param (overriding previous instance, which had type Param)
+atlas&gt; p
+Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+atlas&gt; lambda(p)
+Value: [ 2, 1 ]/1
+atlas&gt; lambda(p) - rho(G)
+Value: [ 0, 0 ]/1
+atlas&gt;
+</pre></div>
+</div>
+<p>Now suppose we start with the trivial representation and we modify the parameter by an element of the Weyl group.:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:trivial(G)
+Variable p: Param (overriding previous instance, which had type Param)
+atlas&gt; p
+Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+atlas&gt;
+
+atlas&gt; set q=parameter(KGB(G,10),[2,1],[-1,-2])
+Variable q: Param
+atlas&gt; p=q
+Value: true
+atlas&gt;
+</pre></div>
+</div>
+<p>The Weyl group sends <code class="docutils literal"><span class="pre">[-1,-2]</span></code> to``[2,1]``. And, since there is a
+<span class="math">\(\rho\)</span>-shift in the parameter for the <code class="docutils literal"><span class="pre">lambda</span></code>, what really
+matters is what the Weyl group does to <span class="math">\(\lambda-\rho\)</span>. and in
+this case this is <code class="docutils literal"><span class="pre">[0.0]</span></code>.</p>
+<p>Let us look at the parameter <code class="docutils literal"><span class="pre">q</span></code>. It is one of the parameters in the list and there is a useful function to find it</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q
+Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>We can also look at the lowest <span class="math">\(K\)</span> types of a representation. For this we need to load another <code class="docutils literal"><span class="pre">.at</span></code> file</p>
 </div>
 
 

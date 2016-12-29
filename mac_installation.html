@@ -215,6 +215,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/more_principal.html">More Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/general_parameters.html">General Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/parabolic_induction.html">Parabolic Induction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/induction/real_induction.html">Real Parabolic Induction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/induction/real_induction.html#defining-a-real-parabolic-subgroup">Defining a Real Parabolic Subgroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/induction/real_induction.html#real-induction">Real Induction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/induction/theta_induction.html">Cohomological Parabolic Induction</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="atlas_lib.html">atlas Library</a><ul>
@@ -1211,7 +1220,15 @@ package &lt;http://www.liegroups.org/software/download/readline.html&gt;</cite>.
 <div class="highlight-python"><div class="highlight"><pre><span></span>ctanglex: Command not found
 </pre></div>
 </div>
-<p>see <a class="reference internal" href="#installing-cwebx"><span>Installing cwebx</span></a>.</p>
+<p>see <a class="reference internal" href="#installing-cwebx"><span>Installing cwebx</span></a>.  If you get an error like the following:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>&lt;assert.h&gt; not found
+</pre></div>
+</div>
+<p>then XCode may not be installed in exactly the right way. Try installing the command-line
+utilities specifically as follows:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="other-compilation-options">
 <h2>Other Compilation options:<a class="headerlink" href="#other-compilation-options" title="Permalink to this headline">¶</a></h2>

@@ -108,7 +108,7 @@ multiplicity 2). The last irreducible is the trivial representation.
 This is the biggest composition series. It is the most reducible
 principal series, which you can detect by its tau invariant.
 
-On the other hand the empty tau invariant says that the representation
+On the other hand the empty tau invariant says that the corresponding representation
 is irreducible::
 
    atlas> p:ps[2]
@@ -116,4 +116,62 @@ is irreducible::
    atlas> show(composition_series(I(p)))
    1*J(x=10,lambda=[2/1,2/1],nu=[2/1,1/1])
    atlas>
+
+Another useful tool is the command ``status_texts``, which gives a bit more information about the types of real roots involved in the tau invariant of the representation. ::
+
+   atlas> void: for p in ps do prints(p," ",tau(p), " ", status_texts(p)) od
+   final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1] ["r2","r1"]
+   final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [1] ["rn","r1"]
+   final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) [] ["rn","rn"]
+   final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [0] ["r2","rn"]
+   atlas>
+
+In other words, for a given representation the real roots in the tau
+invariant can be type ``r1`` or ``r2`` depending on whether they are
+long or short; and those not in the tau invariant are denoted by
+``rn``.
+
+
+Another way to check which of these principal series corresponds to the trivial representation is to look at :math:`\lambda -\rho` since this gives the trivial character on M ::
+
+   atlas> p:trivial(G)
+   Variable p: Param (overriding previous instance, which had type Param)
+   atlas> p
+   Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas> lambda(p)
+   Value: [ 2, 1 ]/1
+   atlas> lambda(p) - rho(G)
+   Value: [ 0, 0 ]/1
+   atlas> 
+
+
+Now suppose we start with the trivial representation and we modify the parameter by an element of the Weyl group.::
+
+   atlas> p:trivial(G)
+   Variable p: Param (overriding previous instance, which had type Param)
+   atlas> p
+   Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas>
+
+   atlas> set q=parameter(KGB(G,10),[2,1],[-1,-2])
+   Variable q: Param
+   atlas> p=q
+   Value: true
+   atlas>
+
+The Weyl group sends ``[-1,-2]`` to``[2,1]``. And, since there is a
+:math:`\rho`-shift in the parameter for the ``lambda``, what really
+matters is what the Weyl group does to :math:`\lambda-\rho`. and in
+this case this is ``[0.0]``.
+
+Let us look at the parameter ``q``. It is one of the parameters in the list and there is a useful function to find it ::
+
+    atlas> q
+    Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
+    atlas> 
+
+
+
+
+We can also look at the lowest :math:`K` types of a representation. For this we need to load another ``.at`` file
 

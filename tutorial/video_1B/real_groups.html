@@ -215,6 +215,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../induction/real_induction.html">Real Parabolic Induction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../induction/real_induction.html#defining-a-real-parabolic-subgroup">Defining a Real Parabolic Subgroup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../induction/real_induction.html#real-induction">Real Induction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../induction/theta_induction.html">Cohomological Parabolic Induction</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../atlas_lib.html">atlas Library</a><ul>
@@ -1055,7 +1064,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>These is a real Lie group , so the data type is a RealForm. Again the
-underlying root datum of <span class="math">\(G\)</span>, which is the one for the simply connected
+underlying root datum of <span class="math">\(G\)</span> is the one for the simply connected
 group of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=root_datum (G)
 Identifier rd: RootDatum (hiding previous one of type RootDatum)
@@ -1064,11 +1073,11 @@ Value: simply connected root datum of Lie type &#39;A1&#39;
 </pre></div>
 </div>
 <p>Note that <span class="math">\(SL(2,\mathbb R)\)</span> is NOT simply connected. However, it is the
-Lie group whose complexified Lie algebra is is type <code class="docutils literal"><span class="pre">A1</span></code> and its root
+Lie group whose complexified Lie algebra is type <code class="docutils literal"><span class="pre">A1</span></code> and its root
 datum corresponds to the the roots of the simply connected complex
 group <span class="math">\(SL(2,\mathbb C)\)</span>.</p>
-<p>Now let&#8217;s take the non semisimple Lie group <span class="math">\(GL(2,\mathbb R)\)</span>. We can define it
-in two ways. Note the different type of information we obtain:</p>
+<p>Now let&#8217;s take the non-semisimple Lie group <span class="math">\(GL(2,\mathbb R)\)</span>. We can define it
+in two ways. Note the different types of information we obtain:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
 Identifier G: RealForm
 atlas&gt; set rd=root_datum (G)
@@ -1119,9 +1128,9 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Which makes sense since <span class="math">\(SL(2,\mathbb C)\)</span> is the real Lie group with complexified Lie algebra of type <code class="docutils literal"><span class="pre">A2</span> <span class="pre">x</span> <span class="pre">A2</span></code>,</p>
-<p>So, in general, if we use the standard real form notation for the
-groups, <code class="docutils literal"><span class="pre">atlas</span></code> normally gives the usual coordinates. So we can for
-example do things like this:</p>
+<p>In general, if we use the standard real form notation for the
+groups, <code class="docutils literal"><span class="pre">atlas</span></code> normally gives the usual coordinates. For
+example, we can do things like this:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=Sp(4,R)
 Identifier G: RealForm (hiding previous one of type RealForm)
 atlas&gt; set rd=root_datum(G)
@@ -1138,9 +1147,9 @@ Value:
 | -1, 1 |
 </pre></div>
 </div>
-<p>These are the usual simple roots for <span class="math">\(Sp(4,\mathbb R)\)</span>. So, using these
-pre-defined groups to define our real form gives us, in most cases, the
-familiar coordinates to work with. So we can look at all the positive
+<p>These are the usual simple roots for <span class="math">\(Sp(4,\mathbb R)\)</span>. Using these
+pre-defined groups to define our real forms gives us, in most cases, the
+familiar coordinates to work with. We can look at all the positive
 roots and coroots and rho:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; posroots(rd)
 Value:
@@ -1157,7 +1166,7 @@ Value: [ 2, 1 ]/1
 atlas&gt;
 </pre></div>
 </div>
-<p>Again the pairing between these sets is the usual dot product:</p>
+<p>Once again, the pairing between these sets is the usual dot product:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set alpha=posroots(rd)[0]
 Identifier alpha: vec
 atlas&gt; alpha

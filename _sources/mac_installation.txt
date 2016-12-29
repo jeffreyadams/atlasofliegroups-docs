@@ -192,7 +192,14 @@ If you get an error::
 
    ctanglex: Command not found
 
-see :ref:`installing_cwebx`.
+see :ref:`installing_cwebx`.  If you get an error like the following::
+
+   <assert.h> not found
+
+then XCode may not be installed in exactly the right way. Try installing the command-line
+utilities specifically as follows::
+
+   xcode-select --install
 
 Other Compilation options: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
