@@ -4,7 +4,9 @@ groups.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 | :ref:`basic.at<basic.at>`
 |
@@ -13,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   groups_index
    groups_ref
+   groups_index

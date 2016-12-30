@@ -4,7 +4,9 @@ coordinates.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 | :ref:`ratmat.at<ratmat.at>`
 |
@@ -13,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   coordinates_index
    coordinates_ref
+   coordinates_index

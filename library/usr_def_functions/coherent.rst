@@ -4,9 +4,10 @@ coherent.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`translate.at<translate.at>`
 | :ref:`W_orbit.at<W_orbit.at>`
 |
@@ -15,5 +16,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   coherent_index
    coherent_ref
+   coherent_index

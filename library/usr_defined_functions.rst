@@ -7,13 +7,14 @@ User Defined Functions
    usr_def_functions/2i12
    usr_def_functions/2i12s
    usr_def_functions/2r21s
+   usr_def_functions/A1
    usr_def_functions/all
    usr_def_functions/all_Kparameters
-   usr_def_functions/all_parameters
    usr_def_functions/basic
-   usr_def_functions/canonical_x_K
+   usr_def_functions/bigMatrices
    usr_def_functions/center
    usr_def_functions/coherent
+   usr_def_functions/complementary_series
    usr_def_functions/complex
    usr_def_functions/complex_nilpotent_orbits
    usr_def_functions/conjugacy_classes
@@ -33,6 +34,7 @@ User Defined Functions
    usr_def_functions/finite_dimensional
    usr_def_functions/galois
    usr_def_functions/generate_groups
+   usr_def_functions/gl4H
    usr_def_functions/group_operations
    usr_def_functions/groups
    usr_def_functions/hecke
@@ -44,21 +46,17 @@ User Defined Functions
    usr_def_functions/jantzen
    usr_def_functions/K
    usr_def_functions/K_highest_weights
-   usr_def_functions/K_norm
-   usr_def_functions/K_parameters
    usr_def_functions/K_types
-   usr_def_functions/kgp
    usr_def_functions/kl
+   usr_def_functions/KL_polynomial_matrices
    usr_def_functions/lattice
    usr_def_functions/lietypes
-   usr_def_functions/LKT
    usr_def_functions/matrix
    usr_def_functions/misc
    usr_def_functions/modules
    usr_def_functions/new_blocks
    usr_def_functions/nilpotent
    usr_def_functions/nonintegral
-   usr_def_functions/orbits
    usr_def_functions/parabolics
    usr_def_functions/parameters
    usr_def_functions/partitions
@@ -66,7 +64,6 @@ User Defined Functions
    usr_def_functions/print_K_types
    usr_def_functions/ratmat
    usr_def_functions/representations
-   usr_def_functions/rho_shifts
    usr_def_functions/sort
    usr_def_functions/sp4
    usr_def_functions/stable
@@ -75,15 +72,17 @@ User Defined Functions
    usr_def_functions/synthetic_aux
    usr_def_functions/test_K
    usr_def_functions/test_unitarity
-   usr_def_functions/thetastable
    usr_def_functions/tits
    usr_def_functions/torus
    usr_def_functions/translate
    usr_def_functions/twist
+   usr_def_functions/Unipotent_Packets_All_Types
    usr_def_functions/unitary
    usr_def_functions/Vogan-dual
    usr_def_functions/W_K
    usr_def_functions/W_orbit
+   usr_def_functions/W_Reps_Mod
+   usr_def_functions/W_reps_type_BC
    usr_def_functions/Wdelta
    usr_def_functions/Weylgroup
    usr_def_functions/wreps_type_C

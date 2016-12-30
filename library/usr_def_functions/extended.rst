@@ -4,14 +4,12 @@ extended.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
-| :ref:`lattice.at<lattice.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`representations.at<representations.at>`
 | :ref:`synthetic.at<synthetic.at>`
-| :ref:`parameters.at<parameters.at>`
-| :ref:`extended_misc.at<extended_misc.at>`
 | :ref:`extended_types.at<extended_types.at>`
 |
 
@@ -19,5 +17,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   extended_index
    extended_ref
+   extended_index

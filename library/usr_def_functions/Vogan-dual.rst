@@ -4,9 +4,10 @@ Vogan-dual.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`parameters.at<parameters.at>`
 |
 
@@ -14,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   Vogan-dual_index
    Vogan-dual_ref
+   Vogan-dual_index

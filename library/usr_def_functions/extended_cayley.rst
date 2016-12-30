@@ -4,10 +4,10 @@ extended_cayley.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
-| :ref:`extended_misc.at<extended_misc.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`extended_types.at<extended_types.at>`
 |
 
@@ -15,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   extended_cayley_index
    extended_cayley_ref
+   extended_cayley_index

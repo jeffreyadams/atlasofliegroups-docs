@@ -4,7 +4,9 @@ inverse.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 | :ref:`basic.at<basic.at>`
 | :ref:`polynomial.at<polynomial.at>`
@@ -14,5 +16,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   inverse_index
    inverse_ref
+   inverse_index

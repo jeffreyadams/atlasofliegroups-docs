@@ -4,9 +4,10 @@ extended_types.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`extended_misc.at<extended_misc.at>`
 |
 
@@ -14,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   extended_types_index
    extended_types_ref
+   extended_types_index

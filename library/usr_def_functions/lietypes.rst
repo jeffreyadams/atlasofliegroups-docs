@@ -4,7 +4,9 @@ lietypes.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 |
 
@@ -12,5 +14,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   lietypes_index
    lietypes_ref
+   lietypes_index

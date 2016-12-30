@@ -1,0 +1,106 @@
+Guidelines for the Atlas Web Interface
+
+1. Groups:
+
+Classical groups of rank <= 8
+[SL(n,R)  (GL(n) coordinates via coordinates.at) after GL(n)]
+GL(n,R)
+[SU(p,q)  (same) GL(n)]
+U(p,q)
+GL(n,H)  
+Sp(2n,R)
+Sp(p,q)
+SO(p,q)
+SO^*(2n)
+Complex Classical Groups (rank <=8) (as real groups)
+[SL(n,C)   coordinates.at]
+GL(n,C)
+Sp(2n,C)
+SO(n,C)
+
+2. Parameters (for irreducible and standard representations)
+For each group there are various options to 
+choose parameters, not all options apply to all groups
+For some there is a choice of infinitesimal character 
+
+Infinitesimal character 
+Specify in standard coordinates Q^rank(G)
+(not necessarily dominant)
+
+trivial representation 
+finite dimensional specified by highest weight or infinitesimal character 
+Large discrete series (G equal rank quasisplit)
+Holomorphic discrete series (G equal rank Hermitian)
+discrete series given by HC parameter (G equal rank)
+spherical principal series by infinitesimal character  (G split) (quasisplit?)
+large fundamental series (G quasisplit)
+all A_q(lambda) with given regular integral infinitesimal character 
+all representations with given infinitesimal character   
+
+Specify an arbitrary parameter (?):
+Specify real parabolic
+M=GL(1,R)^a x GL(2,R)^b x classical
+GL(1,R): (epsilon,nu)
+GL(2,R): (k,nu)
+classical: HC parameter for a discrete series
+
+3. Properties of irreducible representations
+Given an irreducible representation information is available about it
+infinitesimal character 
+lowest K-types, given by highest weights in nice coordinates for 
+G(R) connected (what precisely in the disconnected case?: plus/minus only)
+branching up to given level
+character formula
+is_unitary (fast algorithm at regular integral infinitesimal character: test if an A_q(lamba)
+otherwise is_unitary in equal rank case, unequal rank case will be done soon (I insist)
+[Weakly fair range?]
+cuspidal data
+theta-stable data
+integral root system 
+tau invariant
+
+4. Properites of standard representations
+specified by a parameter
+infinitesimal character 
+composition series
+lowest K-types and branching as for irreducible representations
+Jantzen filtration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

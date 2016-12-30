@@ -4,7 +4,9 @@ sp4.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 |
 
@@ -12,5 +14,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   sp4_index
    sp4_ref
+   sp4_index

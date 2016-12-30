@@ -1,5 +1,7 @@
+.. _basic_commands:
+
 Basic Commands
-===============
+================
 
 Helpful unix tools
 -------------------
@@ -42,46 +44,6 @@ The commands ``ctrl-a`` and ``ctrl-e`` move you to the start and end of a line r
 
 Basic ``atlas`` Operations
 ---------------------------
-
-Redefining a variable. 
-
-Another useful way to redefine a variable is using the command
-``:=``. However this works as long as the new variable is of the same
-data type as the old one. You may notice in the example below that, if we don't
-use this way of redefining our variable, we get a message "hiding previous one of type ...." ::
-
-	atlas> set x=2
-	Identifier x: int (hiding previous one of type int)
-	atlas> x
-	Value: 2
-	atlas> x:=5
-	Value: 5
-	atlas> x:=2/3
-	Error during analysis of expression at <standard input>:33:0-6
-	Type error:
-	  Subexpression /(2,3) at <standard input>:33:3-6
-	  has wrong type: found rat while int was needed.
-	Type check failed
-	atlas>
-
-
-The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity::
-
-   atlas> y:=3
-   Identifier y: int
-   atlas> set z=3/2
-   Identifier z: rat
-   atlas> y+z
-   Value: 9/2
-   atlas> whattype(y+z)
-   type: rat
-   atlas>
-
-
-This works in most cases. However, there are some exceptions when the software does not switch to the appropriate data type. 
-
-Division, ``/``; rounding down, ``\``; remainder, ``%``
--------------------------------------------------------
 
 
 ``atlas`` also performs operations on non-integers and outputs integers or integer tuples. For example you could ask the software to round down to the the largest integer less than a number, to compute the remainder, or to exppress a rational as a pair:: 

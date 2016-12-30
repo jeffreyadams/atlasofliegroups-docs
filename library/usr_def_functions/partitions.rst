@@ -4,14 +4,16 @@ partitions.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
+
+**This script imports the following .at files:**
+
+| :ref:`sort.at<sort.at>`
 |
 
 
 .. toctree::
    :maxdepth: 1
 
-   partitions_index
    partitions_ref
+   partitions_index

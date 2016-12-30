@@ -4,15 +4,16 @@ translate.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
-| :ref:`hermitian.at<hermitian.at>`
+
+**This script imports the following .at files:**
+
+| :ref:`kl.at<kl.at>`
 |
 
 
 .. toctree::
    :maxdepth: 1
 
-   translate_index
    translate_ref
+   translate_index

@@ -4,9 +4,10 @@ synthetic.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`Weylgroup.at<Weylgroup.at>`
 | :ref:`parameters.at<parameters.at>`
 | :ref:`lattice.at<lattice.at>`
@@ -16,5 +17,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   synthetic_index
    synthetic_ref
+   synthetic_index

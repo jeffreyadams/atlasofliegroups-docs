@@ -1,3 +1,0 @@
-
-Minimal Principle Series
-=================================

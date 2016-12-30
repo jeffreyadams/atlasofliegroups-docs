@@ -4,10 +4,10 @@ group_operations.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
-| :ref:`misc.at<misc.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`lattice.at<lattice.at>`
 | :ref:`torus.at<torus.at>`
 |
@@ -16,5 +16,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   group_operations_index
    group_operations_ref
+   group_operations_index

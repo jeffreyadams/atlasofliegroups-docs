@@ -4,11 +4,19 @@ new_blocks.at Function Index
 =======================================================
 |
 
+
+
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
 
    * - Function
      - Argument(s) -> Results
-   * - some function name
-     - some arguments
+   * - :ref:`cross_int_s,param_p->param2`
+     - ``int s,Param p->Param``
+   * - :ref:`cayley_int_s,param_p->param2`
+     - ``int s,Param p->Param``
+   * - :ref:`block_param_p->([param],int)1`
+     - ``Param p->([Param],int)``

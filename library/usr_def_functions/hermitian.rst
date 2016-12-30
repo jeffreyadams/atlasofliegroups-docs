@@ -4,16 +4,17 @@ hermitian.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
-| :ref:`representations.at<representations.at>`
-| :ref:`kl.at<kl.at>`
+
+**This script imports the following .at files:**
+
+| :ref:`ext_deform.at<ext_deform.at>`
+| :ref:`induction.at<induction.at>`
 |
 
 
 .. toctree::
    :maxdepth: 1
 
-   hermitian_index
    hermitian_ref
+   hermitian_index

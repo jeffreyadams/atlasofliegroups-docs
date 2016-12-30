@@ -4,10 +4,10 @@ tits.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
-| :ref:`Weylgroup.at<Weylgroup.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`W_orbit.at<W_orbit.at>`
 |
 
@@ -15,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   tits_index
    tits_ref
+   tits_index

@@ -4,7 +4,9 @@ induction_sp4.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 | :ref:`basic.at<basic.at>`
 | :ref:`groups.at<groups.at>`
@@ -15,5 +17,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   induction_sp4_index
    induction_sp4_ref
+   induction_sp4_index

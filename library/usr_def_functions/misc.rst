@@ -4,7 +4,9 @@ misc.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 | :ref:`basic.at<basic.at>`
 |
@@ -13,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   misc_index
    misc_ref
+   misc_index

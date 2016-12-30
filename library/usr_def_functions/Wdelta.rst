@@ -4,16 +4,16 @@ Wdelta.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`K.at<K.at>`
-| :ref:`Weylgroup.at<Weylgroup.at>`
 |
 
 
 .. toctree::
    :maxdepth: 1
 
-   Wdelta_index
    Wdelta_ref
+   Wdelta_index

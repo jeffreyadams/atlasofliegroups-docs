@@ -4,7 +4,9 @@ wreps_type_C.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 | :ref:`basic.at<basic.at>`
 | :ref:`sort.at<sort.at>`
@@ -17,5 +19,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   wreps_type_C_index
    wreps_type_C_ref
+   wreps_type_C_index

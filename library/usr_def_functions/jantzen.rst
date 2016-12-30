@@ -4,7 +4,9 @@ jantzen.at
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 | :ref:`dual.at<dual.at>`
 |
@@ -13,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   jantzen_index
    jantzen_ref
+   jantzen_index

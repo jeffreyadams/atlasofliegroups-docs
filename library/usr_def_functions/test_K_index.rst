@@ -4,11 +4,15 @@ test_K.at Function Index
 =======================================================
 |
 
+
+
+Functions
+
 .. list-table::
    :widths: 10 20
    :header-rows: 1
 
    * - Function
      - Argument(s) -> Results
-   * - some function name
-     - some arguments
+   * - :ref:`test_k_[param]_b->void1`
+     - ``[Param] B->void``

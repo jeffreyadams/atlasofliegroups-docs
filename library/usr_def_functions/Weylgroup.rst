@@ -4,9 +4,10 @@ Weylgroup.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`center.at<center.at>`
 |
 
@@ -14,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   Weylgroup_index
    Weylgroup_ref
+   Weylgroup_index

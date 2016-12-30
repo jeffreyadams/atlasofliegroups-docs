@@ -4,7 +4,9 @@
 =====================================
 
 
-This script imported the following .at files:
+
+
+**This script imports the following .at files:**
 
 | :ref:`basic.at<basic.at>`
 | :ref:`extended.at<extended.at>`
@@ -14,5 +16,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   2i12s_index
    2i12s_ref
+   2i12s_index

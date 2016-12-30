@@ -4,9 +4,10 @@ lattice.at
 =====================================
 
 
-This script imported the following .at files:
 
-| :ref:`basic.at<basic.at>`
+
+**This script imports the following .at files:**
+
 | :ref:`matrix.at<matrix.at>`
 |
 
@@ -14,5 +15,5 @@ This script imported the following .at files:
 .. toctree::
    :maxdepth: 1
 
-   lattice_index
    lattice_ref
+   lattice_index
