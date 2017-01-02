@@ -59,7 +59,7 @@ An alternate way to define a (real) parabolic subgroup of a real group :math:`G`
 is using a weight :math:`\lambda`. The simple roots orthogonal to the weight
 determine the type of the (underlying complex) parabolic. For the resulting
 parabolic subgroup to
-be real, the weight :math:`\lambda` must be real; i.e., it must satisfy
+be real, the weight :math:`\lambda` must satisfy
 :math:`\theta_x(\lambda)=-\lambda`::
 
 
