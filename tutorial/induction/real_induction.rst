@@ -87,8 +87,12 @@ Let's check that we have defined the same parabolic as before::
 Real Induction
 ----------------
 
+Real parabolic induction in ``atlas`` is normalized; the
+infinitesimal character is preserved.
+
 Now that we have a real parabolic subgroup of :math:`G`, let's compute an
-induced representation. First we need to choose and write down a representation,
+induced representation.
+First we need to choose and write down a representation,
 i.e., a parameter, for the Levi factor :math:`L`. For example, let's take the
 trivial representation::
 
@@ -117,8 +121,8 @@ There are two ways in ``atlas`` to induce a representation on :math:`L` to
 module for :math:`G`::
 
 
-        atlas> real_induce_standard(t,G)
-	Value: final parameter (x=10,lambda=[2,1]/1,nu=[0,1]/1)
+       atlas> real_induce_standard(t,G)
+       Value: final parameter (x=10,lambda=[2,1]/1,nu=[0,1]/1)
 
 
 If you start with a single parameter, the output will be a single parameter
