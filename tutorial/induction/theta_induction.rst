@@ -289,39 +289,89 @@ must be weakly dominant::
    Parabolic is theta-stable.
    None
 
-The function ``Aq(x,lam,lamq)`` returns a parameter, PROVIDED that the module
-is irreducible. If it is not, the function ``Aq_param_pol`` must be used::
+
+Let's look at another example; this is discussed in Chapter 9 of Knapp-Vogan,
+"Cohomological Induction and Unitary Representations".
+Here :math:`G=SO(5,4)`, and :math:`P` is the unique :math:`\theta`-stable parabolic with Levi factor :math:`U(2,2)`::
 
 
-   atlas> set M2=Aq(x,[1,1,1,5]/2,lamq)
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is real.
-   Parabolic is real.
-   Parabolic is real.
-   Aq is not irreducible. Use Aq_param_pol(x,lambda) instead
-   (in call at basic.at:8:57-71 of error@string, built-in)
-   ...(output truncated)
+     atlas> set G=SO(5,4)
+     Variable G: RealForm
+     atlas> set x=KGB(G,5)
+     Variable x: KGBElt
+     atlas> set lamq=[1,1,1,1]
+     Variable lamq: [int]
 
-   atlas> set M3=Aq_param_pol(x,[1,1,1,5]/2,lamq)
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is real.
-   Parabolic is real.
-   Parabolic is real.
-   Variable M3: ParamPol
-   atlas> M3
-   Value:
-   1*final parameter (x=13,lambda=[5,3,1,-1]/2,nu=[0,1,0,-1]/1)
-   -1*final parameter (x=20,lambda=[5,3,1,-1]/2,nu=[3,1,-1,-3]/2)
+     atlas> set P=parabolic(lamq,x)
+     Parabolic is theta-stable.
+     Variable P: ([int],KGBElt)
+     atlas> P
+     Value: ([0,1,2],KGB element #5)
+     atlas> rho_u(P)
+     Value: [ 2, 2, 2, 2 ]/1
+
+     atlas> set L=Levi(P)
+     Variable L: RealForm
+     atlas> L
+     Value: connected quasisplit real group with Lie algebra 'su(2,2).u(1)'
+
+We can construct the good :math:`A_{\mathfrak q}(\lambda)` at infinitesimal
+character :math:`\rho` using the two methods learned; let's do that, just to
+check and confirm::
+
+
+      atlas> theta_induce_irreducible(trivial(L),G)
+      Value:
+      1*final parameter (x=43,lambda=[7,5,3,1]/2,nu=[3,1,-1,-3]/2)
+
+      atlas> Aq(x,[2,2,2,2],lamq)
+      Parabolic is theta-stable.
+      Parabolic is theta-stable.
+      Parabolic is theta-stable.
+      Value: final parameter (x=43,lambda=[7,5,3,1]/2,nu=[3,1,-1,-3]/2)
+
+Notice that our :math:`\lambda=(2,2,2,2)` could also serve to define the
+parabolic; in this case, we could have omitted the additional entry ``lamq``::
+
+       atlas> Aq(x,[2,2,2,2])
+       Parabolic is theta-stable.
+       Parabolic is theta-stable.
+       Parabolic is theta-stable.
+       Value: final parameter (x=43,lambda=[7,5,3,1]/2,nu=[3,1,-1,-3]/2)
+
+If we now move to the edge of the weakly fair range, Knapp/Vogan predict
+that the module will be reducible. The command ``Aq(x,lam,lamq)`` returns
+a parameter PROVIDED that the module is irreducible. Otherwise, the command
+``Aq_param_pol`` must be used::
+
+      atlas> Aq(x,[0,0,0,0],lamq)
+      Parabolic is theta-stable.
+      Parabolic is theta-stable.
+      ....
+      Parabolic is real.
+      Parabolic is real.
+      Runtime error:
+      Aq is not irreducible. Use Aq_param_pol(x,lambda) instead
+      (in call at basic.at:8:57-71 of error@string, built-in)
+      ...(output truncated)
+
+Here (as well as below) we have deleted many lines of output, both messages
+about parabolics in the middle
+and the tail end of the error message.::
+
+
+     atlas> Aq_param_pol(x,[0,0,0,0],lamq)
+     Parabolic is theta-stable.
+     Parabolic is theta-stable.
+     ...
+     Parabolic is real.
+     Parabolic is real.
+     Value:
+     1*final parameter (x=84,lambda=[7,7,1,1]/2,nu=[3,3,0,0]/2)
+     1*final parameter (x=101,lambda=[7,7,3,3]/2,nu=[3,3,1,1]/2)
+
+This weakly fair :math:`A_{\mathfrak q}(\lambda)` module is indeed reducible,
+with two constituents.
 
 
 
