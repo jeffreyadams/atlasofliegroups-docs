@@ -21,7 +21,7 @@ subalgebra, the first step is to choose a ``KGB`` element ``x`` attached to
 the fundamental Cartan. It also needs to be in the distinguished fiber (which
 is automatic in the equal rank case). In order to obtain a
 :math:`\theta`-stable parabolic subalgebra, you need to choose a weight
-:math:`\lambda` that is fixed be the involution :math:`\theta_x`. In the
+:math:`\lambda` that is fixed by the involution :math:`\theta_x`. In the
 equal rank case, this is, of course, also automatic for this choice of ``x``.
 
 Let's look at an example: Let :math:`G=Sp(4,\mathbb R)` once again, and let's
@@ -119,7 +119,7 @@ The equivalence class of ``P`` is the set of ``KGB`` elements obtained from
 ``x`` by cross actions and Cayley transforms through simple root #0 (in general,
 through any of the simple roots listed). Each of
 these ``KGB`` elements will define the same parabolic. (See the summary for the
-script file ``parabolics.at`` on the ``atlas`` Library page for more details.)
+script file ``parabolics.at`` on the ``atlas Library`` page for more details.)
 
 
 Theta-Stable Induction
@@ -196,10 +196,11 @@ reducible. The calculation involves wall crossings and coherent continuation
 action. The messages "Parabolic is theta-stable." are
 created because during this calculation certain new parabolics are defined.
 (See the summary for the
-script file ``induction.at`` on the ``atlas`` Library page for more details.)
+script file ``induction.at`` on the ``atlas  Library`` page for more details.)
 
 Notice that the induction functions will accept only parameters on Levi factors
-of the right kind of parabolics::
+of the right kind of parabolics; entering a parameter on a Levi subgroup that
+does not come from a real parabolic subgroup will result in an error message::
 
 
        atlas> real_induce_irreducible(t,G)
@@ -210,7 +211,10 @@ of the right kind of parabolics::
        ...(output truncated)
 
 
-Indeed, a Levi subgroup of :math:`G` uniquely defines the parabolic it came
-from. The command ``make_parabolic(L,G)`` reverses the function ``Levi(P)``.
+Similarly, the function ``theta_induce_irreducible`` requires the input of
+a parameter on a Levi subgroup coming from a :math:`\theta`-stable parabolic
+subalgebra. Indeed, a Levi subgroup of :math:`G` uniquely defines the parabolic
+it came from. The command ``make_parabolic(L,G)`` reverses the function
+``Levi(P)``.
 
 

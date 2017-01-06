@@ -6,8 +6,8 @@ first define parabolic subgroups. The corresponding ``atlas`` data type is
 ``Parabolic``, or, equivalently, ``KGPElt``, and consists of a pair ``(S,x)``,
 where ``S`` is a list of integers corresponding to the set of simple roots which
 determine the conjugacy class of complex parabolics, and ``x`` is a ``KGB``
-element. For some details, see the summary for the script file parabolics.at
-on the ``atlas`` Library page.
+element. For some details, see the summary for the script file ``parabolics.at``
+on the ``atlas Library`` page.
 
 Let's do an example to see how this works.
 
@@ -93,7 +93,7 @@ infinitesimal character is preserved.
 Now that we have a real parabolic subgroup of :math:`G`, let's compute an
 induced representation.
 First we need to choose and write down a representation,
-i.e., a parameter, for the Levi factor :math:`L`. For example, let's take the
+i.e., a parameter, for the Levi subgroup :math:`L`. For example, let's take the
 trivial representation::
 
 
@@ -166,7 +166,7 @@ is a different group::
        1:  1  [r]   1    *  (0,0)#1 1^e
 
 
-These are the data for :math:`GL(2,\mathbb R)`. Now let's induce::
+These are indeed the data for :math:`GL(2,\mathbb R)`. Now let's induce::
 
 
        atlas> t:=trivial(L)
