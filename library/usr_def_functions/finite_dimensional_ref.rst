@@ -20,19 +20,19 @@ fd_only
 | 
 | 
 
-.. _dimension_rootdatum_rd,_vec_lambda_in->int1:
+.. _dimension_rootdatum_rd,_ratvec_lambda_in->int1:
 
 dimension
 -------------------------------------------------
-| ``dimension:RootDatum rd, vec lambda_in->int`` Defined in line number 14.
+| ``dimension:RootDatum rd, ratvec lambda_in->int`` Defined in line number 14.
 | 
 | 
 
-.. _highest_weight_finite_dimensional_param_p->vec1:
+.. _highest_weight_finite_dimensional_param_p->ratvec1:
 
 highest_weight_finite_dimensional
 -------------------------------------------------
-| ``highest_weight_finite_dimensional:Param p->vec`` Defined in line number 26.
+| ``highest_weight_finite_dimensional:Param p->ratvec`` Defined in line number 26.
 | 
 | 
 

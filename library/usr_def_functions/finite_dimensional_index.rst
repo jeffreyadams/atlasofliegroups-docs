@@ -18,10 +18,10 @@ Functions
      - ``Param p->bool``
    * - :ref:`fd_only_param_p->param1`
      - ``Param p->Param``
-   * - :ref:`dimension_rootdatum_rd,_vec_lambda_in->int1`
-     - ``RootDatum rd, vec lambda_in->int``
-   * - :ref:`highest_weight_finite_dimensional_param_p->vec1`
-     - ``Param p->vec``
+   * - :ref:`dimension_rootdatum_rd,_ratvec_lambda_in->int1`
+     - ``RootDatum rd, ratvec lambda_in->int``
+   * - :ref:`highest_weight_finite_dimensional_param_p->ratvec1`
+     - ``Param p->ratvec``
    * - :ref:`dimension_param_p->int1`
      - ``Param p->int``
    * - :ref:`fundamental_weight_coordinates_param_p->vec1`

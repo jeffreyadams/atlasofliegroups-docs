@@ -134,6 +134,10 @@ Functions
      - ``RealForm G->[Parabolic]``
    * - :ref:`print_theta_stable_parabolics_realform_g->void1`
      - ``RealForm G->void``
+   * - :ref:`support_kgbelt_x->[int]2`
+     - ``KGBElt x->[int]``
+   * - :ref:`support_alt_kgbelt_x->[int]1`
+     - ``KGBElt x->[int]``
 
 
 Data Types

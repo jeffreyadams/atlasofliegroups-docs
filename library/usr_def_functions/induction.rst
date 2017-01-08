@@ -32,7 +32,7 @@ _________________________
 | action (wrt imaginary roots) of :math:`w`  on p_dom.
 |
 :math:`A_q(\lambda)`  construction:
-_______________________________
+______________________________________________
 
 | Note: theta_induce_irreducible(pi_L,G) has infinitesimal character:
 | infinitesimal character(pi_L)+rho(u).

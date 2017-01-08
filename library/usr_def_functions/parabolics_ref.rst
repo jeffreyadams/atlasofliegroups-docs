@@ -543,6 +543,24 @@ print_theta_stable_parabolics
 | For each theta-stable parabolic of G, print S, Levi factor, and maximal x.
 | 
 
+.. _support_kgbelt_x->[int]2:
+
+support
+-------------------------------------------------
+| ``support:KGBElt x->[int]`` Defined in line number 427.
+| 
+| The smallest list of simple roots such that descents lead to the   distinguished fiber.
+| 
+
+.. _support_alt_kgbelt_x->[int]1:
+
+support_alt
+-------------------------------------------------
+| ``support_alt:KGBElt x->[int]`` Defined in line number 436.
+| 
+| Auxiliary function.
+| 
+
 .. _KGPElt1:
 
 KGPElt
