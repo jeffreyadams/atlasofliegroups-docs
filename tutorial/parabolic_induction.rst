@@ -7,3 +7,4 @@ Parabolic Induction
 
    induction/real_induction
    induction/theta_induction
+   induction/aq_lambda

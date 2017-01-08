@@ -6,8 +6,8 @@ first define parabolic subgroups. The corresponding ``atlas`` data type is
 ``Parabolic``, or, equivalently, ``KGPElt``, and consists of a pair ``(S,x)``,
 where ``S`` is a list of integers corresponding to the set of simple roots which
 determine the conjugacy class of complex parabolics, and ``x`` is a ``KGB``
-element. For some details, see the summary for the script file parabolics.at
-on the ``atlas`` Library page.
+element. For some details, see the summary for the script file ``parabolics.at``
+on the ``atlas Library`` page.
 
 Let's do an example to see how this works.
 
@@ -59,7 +59,7 @@ An alternate way to define a (real) parabolic subgroup of a real group :math:`G`
 is using a weight :math:`\lambda`. The simple roots orthogonal to the weight
 determine the type of the (underlying complex) parabolic. For the resulting
 parabolic subgroup to
-be real, the weight :math:`\lambda` must be real; i.e., it must satisfy
+be real, the weight :math:`\lambda` must satisfy
 :math:`\theta_x(\lambda)=-\lambda`::
 
 
@@ -87,9 +87,13 @@ Let's check that we have defined the same parabolic as before::
 Real Induction
 ----------------
 
+Real parabolic induction in ``atlas`` is normalized; the
+infinitesimal character is preserved.
+
 Now that we have a real parabolic subgroup of :math:`G`, let's compute an
-induced representation. First we need to choose and write down a representation,
-i.e., a parameter, for the Levi factor :math:`L`. For example, let's take the
+induced representation.
+First we need to choose and write down a representation,
+i.e., a parameter, for the Levi subgroup :math:`L`. For example, let's take the
 trivial representation::
 
 
@@ -117,8 +121,8 @@ There are two ways in ``atlas`` to induce a representation on :math:`L` to
 module for :math:`G`::
 
 
-        atlas> real_induce_standard(t,G)
-	Value: final parameter (x=10,lambda=[2,1]/1,nu=[0,1]/1)
+       atlas> real_induce_standard(t,G)
+       Value: final parameter (x=10,lambda=[2,1]/1,nu=[0,1]/1)
 
 
 If you start with a single parameter, the output will be a single parameter
@@ -162,7 +166,7 @@ is a different group::
        1:  1  [r]   1    *  (0,0)#1 1^e
 
 
-These are the data for :math:`GL(2,\mathbb R)`. Now let's induce::
+These are indeed the data for :math:`GL(2,\mathbb R)`. Now let's induce::
 
 
        atlas> t:=trivial(L)
