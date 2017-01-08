@@ -221,7 +221,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../../tutorial/induction/real_induction.html#real-induction">Real Induction</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/induction/theta_induction.html">Cohomological Parabolic Induction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/induction/theta_induction.html">Cohomological Parabolic Induction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/induction/theta_induction.html#defining-a-stable-parabolic-subalgebra">Defining a <span class="math">\(\theta\)</span>-Stable Parabolic Subalgebra</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/induction/theta_induction.html#theta-stable-induction">Theta-Stable Induction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/induction/aq_lambda.html"><span class="math">\(A_{\mathfrak q}(\lambda)\)</span> Construction</a></li>
 </ul>
 </li>
 </ul>
@@ -1641,16 +1646,61 @@
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics_with:KGBElt</span> <span class="pre">x-&gt;[Parabolic]</span></code> Defined in line number 706.</div>
 <div class="line"><br /></div>
-<div class="line">Given a KGB element x, list all proper theta-stable parabolics in G   determined by x.</div>
+<div class="line">Given a KGB element x, list all theta-stable parabolics in G   determined by x.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="theta-stable-parabolics-with-parabolic-tsp-kgbelt-x-parabolic-1">
+<span id="id21"></span><h2>theta_stable_parabolics_with<a class="headerlink" href="#theta-stable-parabolics-with-parabolic-tsp-kgbelt-x-parabolic-1" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics_with:[Parabolic]</span> <span class="pre">tsp,KGBElt</span> <span class="pre">x-&gt;[Parabolic]</span></code> Defined in line number 713.</div>
+<div class="line"><br /></div>
+<div class="line">Same as previous function, but takes the output of   theta_stable_parabolics(G) as additional input for efficiency.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="is-theta-x">
+<span id="is-theta-x-kgbelt-x-bool1"></span><h2>is_theta_x<a class="headerlink" href="#is-theta-x" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">is_theta_x:KGBElt</span> <span class="pre">x-&gt;bool</span></code> Defined in line number 720.</div>
+<div class="line"><br /></div>
+<div class="line">Decide whether there is a theta-stable parabolic determined by x.</div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="section" id="is-good-range-induced-from">
 <span id="is-good-range-induced-from-param-p-param-1"></span><h2>is_good_range_induced_from<a class="headerlink" href="#is-good-range-induced-from" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">is_good_range_induced_from:Param</span> <span class="pre">p-&gt;[Param]</span></code> Defined in line number 713.</div>
+<div class="line"><code class="docutils literal"><span class="pre">is_good_range_induced_from:Param</span> <span class="pre">p-&gt;[Param]</span></code> Defined in line number 724.</div>
 <div class="line"><br /></div>
-<div class="line">List of parameters p_L in the (weakly) good range for G so that p is   theta-induced from p_L; may be empty, or more than one.</div>
+<div class="line">List of parameters p_L in the (weakly) good range for G so that p is   theta-induced from p_L; may be more than one.</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="reduce-good-range">
+<span id="reduce-good-range-param-p-param1"></span><h2>reduce_good_range<a class="headerlink" href="#reduce-good-range" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">reduce_good_range:Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 814.</div>
+<div class="line"><br /></div>
+<div class="line">Find the parameter p_L so that p is cohomologically induced, in the   (weakly) good range, from p_L, with L minimal (may be G).</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="is-good-aq">
+<span id="is-good-aq-param-p-bool1"></span><h2>is_good_Aq<a class="headerlink" href="#is-good-aq" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">is_good_Aq:Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 828.</div>
+<div class="line"><br /></div>
+<div class="line">Determine whether p is a (weakly) good Aq(lambda).</div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="is-proper-aq">
+<span id="is-proper-aq-param-p-bool1"></span><h2>is_proper_Aq<a class="headerlink" href="#is-proper-aq" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">is_proper_Aq:Param</span> <span class="pre">p-&gt;bool</span></code> Defined in line number 833.</div>
+<div class="line"><br /></div>
+<div class="line">Determine whether p is a proper (weakly) good Aq(lambda).</div>
 <div class="line"><br /></div>
 </div>
 </div>

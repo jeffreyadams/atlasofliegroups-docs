@@ -221,7 +221,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#real-induction">Real Induction</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="theta_induction.html">Cohomological Parabolic Induction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="theta_induction.html">Cohomological Parabolic Induction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="theta_induction.html#defining-a-stable-parabolic-subalgebra">Defining a <span class="math">\(\theta\)</span>-Stable Parabolic Subalgebra</a></li>
+<li class="toctree-l4"><a class="reference internal" href="theta_induction.html#theta-stable-induction">Theta-Stable Induction</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="aq_lambda.html"><span class="math">\(A_{\mathfrak q}(\lambda)\)</span> Construction</a></li>
 </ul>
 </li>
 </ul>
@@ -1052,8 +1057,8 @@ first define parabolic subgroups. The corresponding <code class="docutils litera
 <code class="docutils literal"><span class="pre">Parabolic</span></code>, or, equivalently, <code class="docutils literal"><span class="pre">KGPElt</span></code>, and consists of a pair <code class="docutils literal"><span class="pre">(S,x)</span></code>,
 where <code class="docutils literal"><span class="pre">S</span></code> is a list of integers corresponding to the set of simple roots which
 determine the conjugacy class of complex parabolics, and <code class="docutils literal"><span class="pre">x</span></code> is a <code class="docutils literal"><span class="pre">KGB</span></code>
-element. For some details, see the summary for the script file parabolics.at
-on the <code class="docutils literal"><span class="pre">atlas</span></code> Library page.</p>
+element. For some details, see the summary for the script file <code class="docutils literal"><span class="pre">parabolics.at</span></code>
+on the <code class="docutils literal"><span class="pre">atlas</span> <span class="pre">Library</span></code> page.</p>
 <p>Let&#8217;s do an example to see how this works.</p>
 <div class="section" id="defining-a-real-parabolic-subgroup">
 <h2>Defining a Real Parabolic Subgroup<a class="headerlink" href="#defining-a-real-parabolic-subgroup" title="Permalink to this headline">¶</a></h2>
@@ -1098,7 +1103,7 @@ Value:
 is using a weight <span class="math">\(\lambda\)</span>. The simple roots orthogonal to the weight
 determine the type of the (underlying complex) parabolic. For the resulting
 parabolic subgroup to
-be real, the weight <span class="math">\(\lambda\)</span> must be real; i.e., it must satisfy
+be real, the weight <span class="math">\(\lambda\)</span> must satisfy
 <span class="math">\(\theta_x(\lambda)=-\lambda\)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set lambda=[1,0]
 Variable lambda: [int]
@@ -1119,9 +1124,12 @@ Value: true
 </div>
 <div class="section" id="real-induction">
 <h2>Real Induction<a class="headerlink" href="#real-induction" title="Permalink to this headline">¶</a></h2>
+<p>Real parabolic induction in <code class="docutils literal"><span class="pre">atlas</span></code> is normalized; the
+infinitesimal character is preserved.</p>
 <p>Now that we have a real parabolic subgroup of <span class="math">\(G\)</span>, let&#8217;s compute an
-induced representation. First we need to choose and write down a representation,
-i.e., a parameter, for the Levi factor <span class="math">\(L\)</span>. For example, let&#8217;s take the
+induced representation.
+First we need to choose and write down a representation,
+i.e., a parameter, for the Levi subgroup <span class="math">\(L\)</span>. For example, let&#8217;s take the
 trivial representation:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set t=trivial(L)
 Variable t: Param
@@ -1184,7 +1192,7 @@ Base grading: [1].
 1:  1  [r]   1    *  (0,0)#1 1^e
 </pre></div>
 </div>
-<p>These are the data for <span class="math">\(GL(2,\mathbb R)\)</span>. Now let&#8217;s induce:</p>
+<p>These are indeed the data for <span class="math">\(GL(2,\mathbb R)\)</span>. Now let&#8217;s induce:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; t:=trivial(L)
 Value: final parameter (x=1,lambda=[1,-1]/2,nu=[1,-1]/2)
 atlas&gt; real_induce_irreducible(t,G)

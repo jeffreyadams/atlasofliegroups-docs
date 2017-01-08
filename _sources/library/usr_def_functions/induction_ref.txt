@@ -594,15 +594,60 @@ theta_stable_parabolics_with
 -------------------------------------------------
 | ``theta_stable_parabolics_with:KGBElt x->[Parabolic]`` Defined in line number 706.
 | 
-| Given a KGB element x, list all proper theta-stable parabolics in G   determined by x.
+| Given a KGB element x, list all theta-stable parabolics in G   determined by x.
+| 
+
+.. _theta_stable_parabolics_with_[parabolic]_tsp,kgbelt_x->[parabolic]1:
+
+theta_stable_parabolics_with
+-------------------------------------------------
+| ``theta_stable_parabolics_with:[Parabolic] tsp,KGBElt x->[Parabolic]`` Defined in line number 713.
+| 
+| Same as previous function, but takes the output of   theta_stable_parabolics(G) as additional input for efficiency.
+| 
+
+.. _is_theta_x_kgbelt_x->bool1:
+
+is_theta_x
+-------------------------------------------------
+| ``is_theta_x:KGBElt x->bool`` Defined in line number 720.
+| 
+| Decide whether there is a theta-stable parabolic determined by x.
 | 
 
 .. _is_good_range_induced_from_param_p->[param]1:
 
 is_good_range_induced_from
 -------------------------------------------------
-| ``is_good_range_induced_from:Param p->[Param]`` Defined in line number 713.
+| ``is_good_range_induced_from:Param p->[Param]`` Defined in line number 724.
 | 
-| List of parameters p_L in the (weakly) good range for G so that p is   theta-induced from p_L; may be empty, or more than one.
+| List of parameters p_L in the (weakly) good range for G so that p is   theta-induced from p_L; may be more than one.
+| 
+
+.. _reduce_good_range_param_p->param1:
+
+reduce_good_range
+-------------------------------------------------
+| ``reduce_good_range:Param p->Param`` Defined in line number 814.
+| 
+| Find the parameter p_L so that p is cohomologically induced, in the   (weakly) good range, from p_L, with L minimal (may be G).
+| 
+
+.. _is_good_aq_param_p->bool1:
+
+is_good_Aq
+-------------------------------------------------
+| ``is_good_Aq:Param p->bool`` Defined in line number 828.
+| 
+| Determine whether p is a (weakly) good Aq(lambda).
+| 
+
+.. _is_proper_aq_param_p->bool1:
+
+is_proper_Aq
+-------------------------------------------------
+| ``is_proper_Aq:Param p->bool`` Defined in line number 833.
+| 
+| Determine whether p is a proper (weakly) good Aq(lambda).
 | 
 
