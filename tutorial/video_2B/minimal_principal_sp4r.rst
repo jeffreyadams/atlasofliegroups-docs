@@ -144,8 +144,13 @@ Another way to check which of these principal series corresponds to the trivial 
    Value: [ 0, 0 ]/1
    atlas> 
 
+The problem is that it is not always that easy to determine which is
+the trivial representation this way. For example, if the group is not
+simply connected. But in any case, this is often another way to
+determine it.
 
-Now suppose we start with the trivial representation and we modify the parameter by an element of the Weyl group.::
+Now suppose we start with the trivial representation and we modify the
+parameter by an element of the Weyl group.::
 
    atlas> p:trivial(G)
    Variable p: Param (overriding previous instance, which had type Param)
@@ -170,8 +175,35 @@ Let us look at the parameter ``q``. It is one of the parameters in the list and 
     Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
     atlas> 
 
+Lowest :math:`K` Types
+-----------------------
+
+We can also look at the lowest :math:`K` types of a
+representation. For this we need the command ``highest_weights``::
 
 
+  atlas> whattype highest_weights ?
+  Overloaded instances of 'highest_weights'
+    (KGBElt,ratvec)->[(KGBElt,vec)]
+    ((KGBElt,ratvec),KGBElt)->[(KGBElt,vec)]
+    Param->[(KGBElt,vec)]
+    (Param,KGBElt)->[(KGBElt,vec)]
+  atlas> 
 
-We can also look at the lowest :math:`K` types of a representation. For this we need to load another ``.at`` file
+We will use the first instance of the usage of this function in this
+case. Let's find the lowest :math:`K` types of each minimal principal
+series of :math:`Sp(4,\mathbb R ). 'We proceed as follows ::
 
+   atlas> void: for p in ps do prints(p, " ", highest_weights (p, KGB(G,2))) od
+   final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [(KGB element #2,[ 0, 0 ])]
+   final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),(KGB element #2,[  0, -1 ])]
+   final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),(KGB element #2,[  0, -1 ])]
+   final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 1 ]),(KGB element #2,[ -1, -1 ])]
+   atlas>
+
+The first representation, the trivial one, has lowest :math:`K` type
+[0,0]. The next two have lowest weights [1,0] and [0,-1] and the las
+one has lowest weights [1,1] and [-1,-1].
+
+COMMENT: WE NEED HERE AN EXPLANATION FOR THE CHOICE OF 2 IN KGB(G,2)
+I WILL ADRESS THIS LATER.
