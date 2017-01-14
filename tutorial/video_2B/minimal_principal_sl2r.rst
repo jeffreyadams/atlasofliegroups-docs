@@ -205,8 +205,54 @@ So :math:`P` is a parabolic whith Levi factor :math:`GL(1,\mathbb R)` and ``q`` 
    Value: 
    1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
 
+Translation Principle
+----------------------
+
+Now let's change infinitesimal character usintg the translation
+principle. Let us start again with thetrivial representation::
+
+   atlas> set p=trivial(G)
+   Variable p: Param (overriding previous instance, which had type Param)
+   atlas> p
+   Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+   atlas> infinitesimal_character(p)
+   Value: [ 1 ]/1
+   atlas> is_finite_dimensional(p)
+   Value: true
+   atlas> dimension(p)
+   Value: 1
+
+We need to use the command ``T`` ::
+
+   atlas> whattype T ?
+   Overloaded instances of 'T'
+     (Param,ratvec)->Param
+     (ParamPol,ratvec)->ParamPol
+   atlas>
+
+   atlas> set q= T(p,[2])
+   Variable q: Param (overriding previous instance, which had type Param)
+
+   atlas> q
+   Value: final parameter (x=2,lambda=[2]/1,nu=[2]/1)
+   atlas> p
+   Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+   atlas> 
 
 
+This means translate p from ``nu = 1`` to ``2`` by applying the Zuckerman
+translation principle. Note that you also changed ``lambda``. this is
+a feature of the translation principle. Which representation is this
+translated one? ::
 
+   atlas> is_finite_dimensional(q)
+   Value: true
+   atlas> dimension(q)
+   Value: 2
+   atlas> infinitesimal_character(q)
+   Value: [ 2 ]/1
+   atlas>
 
+So, this way we obtain the two dimensional representation with infinitesimal character ``2``.
 
+So the translation principle is a great tool to move around by changing infinitesimal characters without changing the nature of the representation. For example, an irreducible will stay irreducible.

@@ -162,6 +162,8 @@ parameter by an element of the Weyl group.::
 
    atlas> set q=parameter(KGB(G,10),[2,1],[-1,-2])
    Variable q: Param
+   atlas> q
+   Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
    atlas> p=q
    Value: true
    atlas>
@@ -176,6 +178,31 @@ Let us look at the parameter ``q``. It is one of the parameters in the list and 
     atlas> q
     Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
     atlas> 
+
+We can also find ``q`` in our list of 18 parameters of representations
+using the command ``find`` ::
+
+    atlas> whattype find ?
+    Overloaded instances of 'find'
+      ([int],int)->int
+      ([Param],Param)->int
+      ([KGBElt],KGBElt)->int
+      ([vec],vec)->int
+      ([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))->int
+      ((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])->int 
+      ([(int,int)],(int,int))->int
+      atlas> 
+
+We want to use the second instance of the use of this function: ::
+
+   atlas> find(parameters,q)
+   Value: -1
+   atlas> find( parameters,p)
+   Value: 14
+   
+   atlas> parameters[14]
+   Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas>
 
 Lowest :math:`K`-types
 -----------------------
@@ -222,3 +249,5 @@ one has :math:`K`-types [1,1] and [-1,-1].
 COMMENT: WE NEED HERE AN EXPLANATION FOR THE CHOICE OF 2 IN KGB(G,2)
 
 I WILL ADRESS THIS LATER.
+
+Varying nu
