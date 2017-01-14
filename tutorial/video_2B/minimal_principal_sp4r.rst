@@ -61,7 +61,6 @@ Let us make a separate list for them::
    atlas>
 
 These parameters are all principal series. How do we tell them apart?
-
 Each one is giving a character of the split Cartan. They have the same
 ``nu`` and same ``x=10`` and a different lambda. Each lambda is a
 character of :math:`{\mathbb Z}_2 \times {\mathbb Z}_2`. In other
@@ -78,13 +77,17 @@ To know which is which we look at their ``tau`` invariant::
 
 So the ``tau`` invariant is big for the element ``ps[0]``, which means
 the irreducible is a small representation. In fact that is the trivial
-representation. In contrast, the smallest tau invariant, the empty
+representation. In contrast, the smallest ``tau`` invariant, the empty
 set, correspnding to the element ``ps[2]`` gives the biggest
 representation. In this case this is the irreducible principal
 series. The other two, namely the elements ``ps[1]`` and ``ps[3]`` on
 the list, correspond to the long and short roots respectively. So each
-of them are distinquished by their tau invariant.
+of them are distinquished by their ``tau`` invariant.
 
+A good reference on ``tau`` invariant for Harish Chandra modules is
+David Vogan's paper: Irreducible Characters I. Definition 3.3. Duke
+Mathematical Journal (1979). Vol 46, No 1 pp 61-108.
+ 
 Now lets look at the composition series of the standard module
 containing the trivial representation ::
 
@@ -129,8 +132,7 @@ Another useful tool is the command ``status_texts``, which gives a bit more info
 In other words, for a given representation the real roots in the tau
 invariant can be type ``r1`` or ``r2`` depending on whether they are
 long or short; and those not in the tau invariant are denoted by
-``rn``.
-
+``rn``. 
 
 Another way to check which of these principal series corresponds to the trivial representation is to look at :math:`\lambda -\rho` since this gives the trivial character on M ::
 
@@ -218,4 +220,5 @@ The first representation, the trivial one, has lowest :math:`K`-type
 one has :math:`K`-types [1,1] and [-1,-1].
 
 COMMENT: WE NEED HERE AN EXPLANATION FOR THE CHOICE OF 2 IN KGB(G,2)
+
 I WILL ADRESS THIS LATER.
