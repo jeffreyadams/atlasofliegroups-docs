@@ -33,17 +33,11 @@ Since :math:`\rho(\mathfrak u)` is half-integral, we must choose
 
 
    atlas> set M1=Aq(x,[1,1,1,-1]/2,lamq)
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
    Variable M1: Param
    atlas> M1
    Value: final parameter (x=15,lambda=[3,1,-1,-1]/2,nu=[1,0,-1,0]/1)
 
    atlas> goodness(x,[1,1,1,-1]/2,lamq)
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
    Weakly good
 
 
@@ -59,15 +53,9 @@ must be weakly dominant::
 
 
    atlas> goodness(x,[1,1,1,1]/2,lamq)
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
    Weakly fair
 
    atlas> goodness(x,[1,1,1,3]/2,lamq)
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
-   Parabolic is theta-stable.
    None
 
 
@@ -106,18 +94,12 @@ check and confirm::
       1*final parameter (x=43,lambda=[7,5,3,1]/2,nu=[3,1,-1,-3]/2)
 
       atlas> Aq(x,[2,2,2,2],lamq)
-      Parabolic is theta-stable.
-      Parabolic is theta-stable.
-      Parabolic is theta-stable.
       Value: final parameter (x=43,lambda=[7,5,3,1]/2,nu=[3,1,-1,-3]/2)
 
 Notice that our :math:`\lambda=(2,2,2,2)` could also serve to define the
 parabolic; in this case, we could have omitted the additional entry ``lamq``::
 
        atlas> Aq(x,[2,2,2,2])
-       Parabolic is theta-stable.
-       Parabolic is theta-stable.
-       Parabolic is theta-stable.
        Value: final parameter (x=43,lambda=[7,5,3,1]/2,nu=[3,1,-1,-3]/2)
 
 If we now move to the edge of the weakly fair range, Knapp/Vogan predict
@@ -125,28 +107,16 @@ that the module will be reducible. The command ``Aq(x,lam,lamq)`` returns
 a parameter PROVIDED that the module is irreducible::
 
       atlas> Aq(x,[0,0,0,0],lamq)
-      Parabolic is theta-stable.
-      Parabolic is theta-stable.
-      ....
-      Parabolic is real.
-      Parabolic is real.
       Runtime error:
       Aq is not irreducible. Use Aq_param_pol(x,lambda) instead
       (in call at basic.at:8:57-71 of error@string, built-in)
       ...(output truncated)
 
-Here (as well as below) we have deleted many lines of output, such as messages
-about parabolics in the middle
-and parts of the error message at the end. Since the module is reducible, we
+Since the module is reducible, we
 need to use the command ``Aq_param_pol`` instead::
 
 
      atlas> Aq_param_pol(x,[0,0,0,0],lamq)
-     Parabolic is theta-stable.
-     Parabolic is theta-stable.
-     ...
-     Parabolic is real.
-     Parabolic is real.
      Value:
      1*final parameter (x=84,lambda=[7,7,1,1]/2,nu=[3,3,0,0]/2)
      1*final parameter (x=101,lambda=[7,7,3,3]/2,nu=[3,3,1,1]/2)
