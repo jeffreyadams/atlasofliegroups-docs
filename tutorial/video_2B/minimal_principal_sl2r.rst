@@ -286,5 +286,5 @@ Comparing composition series of these two we have::
    atlas>
 
 So ``q`` is an irreducible spherical principal series at ``0``. In other words,
-changing ``nu`` without changing ``lamba`` changes the reducibility
+changing ``nu`` without changing ``lambda`` changes the reducibility
 feature of the representation.
