@@ -285,6 +285,6 @@ Comparing composition series of these two we have::
    1*J(x=2,lambda=[1/1],nu=[0/1])
    atlas>
 
-So this is an irreducible spherical principal series at ``0``. In other words,
+So ``q`` is an irreducible spherical principal series at ``0``. In other words,
 changing ``nu`` without changing ``lamba`` changes the reducibility
-feature of the representations
+feature of the representation.
