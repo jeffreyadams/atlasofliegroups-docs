@@ -242,7 +242,7 @@ We need to use the command ``T`` ::
 
 This means translate p from ``nu = 1`` to ``2`` by applying the Zuckerman
 translation principle. Note that you also changed ``lambda``. this is
-a feature of the translation principle. Which representation is this
+a feature of the translation principle. Which representation is this new
 translated one? ::
 
    atlas> is_finite_dimensional(q)
@@ -253,6 +253,38 @@ translated one? ::
    Value: [ 2 ]/1
    atlas>
 
-So, this way we obtain the two dimensional representation with infinitesimal character ``2``.
+So, this way we obtain the two dimensional representation with
+infinitesimal character ``2``.
 
-So the translation principle is a great tool to move around by changing infinitesimal characters without changing the nature of the representation. For example, an irreducible will stay irreducible.
+So the translation principle is a great tool to move around by
+changing infinitesimal characters without changing the nature of the
+representation. For example, an irreducible will stay irreducible.
+
+It is interesting to see what happens when we change ``nu`` but
+keep ``lambda``.
+
+   atlas> set q=parameter(KGB(G,2), [1], [0])
+   Variable q: Param (overriding previous instance, which had type Param)
+   atlas> q
+   Value: final parameter (x=2,lambda=[1]/1,nu=[0]/1)
+   atlas> infinitesimal_character(q)
+   Value: [ 0 ]/1
+   atlas> 
+
+Comparing composition series of these two we have::
+
+   atlas> p
+   Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+   atlas> show(composition_series(I(p)))
+   1*J(x=0,lambda=[1/1],nu=[0/1])
+   1*J(x=1,lambda=[1/1],nu=[0/1])
+   1*J(x=2,lambda=[1/1],nu=[1/1])
+   atlas> q
+   Value: final parameter (x=2,lambda=[1]/1,nu=[0]/1)
+   atlas> show(composition_series(I(q)))
+   1*J(x=2,lambda=[1/1],nu=[0/1])
+   atlas>
+
+So this is an irreducible spherical principal series at ``0``. In other words,
+changing ``nu`` without changing lamba`` changes the reducibility
+feature of the representations
