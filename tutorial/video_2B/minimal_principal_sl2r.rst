@@ -260,8 +260,8 @@ So the translation principle is a great tool to move around by
 changing infinitesimal characters without changing the nature of the
 representation. For example, an irreducible will stay irreducible.
 
-It is interesting to see what happens when we change ``nu`` but
-keep ``lambda``.
+In contrast, it is interesting to see what happens when we change ``nu`` but
+keep ``lambda``::
 
    atlas> set q=parameter(KGB(G,2), [1], [0])
    Variable q: Param (overriding previous instance, which had type Param)
@@ -286,5 +286,5 @@ Comparing composition series of these two we have::
    atlas>
 
 So this is an irreducible spherical principal series at ``0``. In other words,
-changing ``nu`` without changing lamba`` changes the reducibility
+changing ``nu`` without changing ``lamba`` changes the reducibility
 feature of the representations
