@@ -88,7 +88,7 @@ Functions
      - ``ratvec lambda,KGBElt x->int``
    * - :ref:`dim_u_cap_p_parabolic_(,x):p->int1`
      - ``Parabolic (,x):P->int``
-   * - :ref:`dim_u_cap_p_kgbelt_x->int2`
+   * - :ref:`dim_u_cap_p_kgbelt_x->int3`
      - ``KGBElt x->int``
    * - :ref:`dim_u_cap_p_ratvec_lambda,kgbelt_x->int1`
      - ``ratvec lambda,KGBElt x->int``

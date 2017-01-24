@@ -8,6 +8,7 @@ Vogan-dual.at
 
 **This script imports the following .at files:**
 
+| :ref:`basic.at<basic.at>`
 | :ref:`parameters.at<parameters.at>`
 |
 

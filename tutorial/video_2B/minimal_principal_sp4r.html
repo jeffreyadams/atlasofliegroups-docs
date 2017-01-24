@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/hermitian.html">hermitian.at</a><ul>
@@ -1108,8 +1119,8 @@ final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>These parameters are all principal series. How do we tell them apart?</p>
-<p>Each one is giving a character of the split Cartan. They have the same
+<p>These parameters are all principal series. How do we tell them apart?
+Each one is giving a character of the split Cartan. They have the same
 <code class="docutils literal"><span class="pre">nu</span></code> and same <code class="docutils literal"><span class="pre">x=10</span></code> and a different lambda. Each lambda is a
 character of <span class="math">\({\mathbb Z}_2 \times {\mathbb Z}_2\)</span>. In other
 words they are in <span class="math">\(X^*/2X^*\)</span>.</p>
@@ -1124,12 +1135,15 @@ atlas&gt;
 </div>
 <p>So the <code class="docutils literal"><span class="pre">tau</span></code> invariant is big for the element <code class="docutils literal"><span class="pre">ps[0]</span></code>, which means
 the irreducible is a small representation. In fact that is the trivial
-representation. In contrast, the smallest tau invariant, the empty
+representation. In contrast, the smallest <code class="docutils literal"><span class="pre">tau</span></code> invariant, the empty
 set, correspnding to the element <code class="docutils literal"><span class="pre">ps[2]</span></code> gives the biggest
 representation. In this case this is the irreducible principal
 series. The other two, namely the elements <code class="docutils literal"><span class="pre">ps[1]</span></code> and <code class="docutils literal"><span class="pre">ps[3]</span></code> on
 the list, correspond to the long and short roots respectively. So each
-of them are distinquished by their tau invariant.</p>
+of them are distinquished by their <code class="docutils literal"><span class="pre">tau</span></code> invariant.</p>
+<p>A good reference on <code class="docutils literal"><span class="pre">tau</span></code> invariant for Harish Chandra modules is
+David Vogan&#8217;s paper: Irreducible Characters I. Definition 3.3. Duke
+Mathematical Journal (1979). Vol 46, No 1 pp 61-108.</p>
 <p>Now lets look at the composition series of the standard module
 containing the trivial representation</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:ps[0]
@@ -1186,7 +1200,12 @@ Value: [ 0, 0 ]/1
 atlas&gt;
 </pre></div>
 </div>
-<p>Now suppose we start with the trivial representation and we modify the parameter by an element of the Weyl group.:</p>
+<p>The problem is that it is not always that easy to determine which is
+the trivial representation this way. For example, if the group is not
+simply connected. But in any case, this is often another way to
+determine it.</p>
+<p>Now suppose we start with the trivial representation and we modify the
+parameter by an element of the Weyl group.:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:trivial(G)
 Variable p: Param (overriding previous instance, which had type Param)
 atlas&gt; p
@@ -1195,6 +1214,8 @@ atlas&gt;
 
 atlas&gt; set q=parameter(KGB(G,10),[2,1],[-1,-2])
 Variable q: Param
+atlas&gt; q
+Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
 atlas&gt; p=q
 Value: true
 atlas&gt;
@@ -1210,7 +1231,71 @@ Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
 atlas&gt;
 </pre></div>
 </div>
-<p>We can also look at the lowest <span class="math">\(K\)</span> types of a representation. For this we need to load another <code class="docutils literal"><span class="pre">.at</span></code> file</p>
+<p>We can also find <code class="docutils literal"><span class="pre">q</span></code> in our list of 18 parameters of representations
+using the command <code class="docutils literal"><span class="pre">find</span></code></p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype find ?
+Overloaded instances of &#39;find&#39;
+  ([int],int)-&gt;int
+  ([Param],Param)-&gt;int
+  ([KGBElt],KGBElt)-&gt;int
+  ([vec],vec)-&gt;int
+  ([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))-&gt;int
+  ((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])-&gt;int
+  ([(int,int)],(int,int))-&gt;int
+  atlas&gt;
+</pre></div>
+</div>
+<p>We want to use the second instance of the use of this function:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; find(parameters,q)
+Value: -1
+atlas&gt; find( parameters,p)
+Value: 14
+
+atlas&gt; parameters[14]
+Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+atlas&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="lowest-types">
+<h1>Lowest <span class="math">\(K\)</span>-types<a class="headerlink" href="#lowest-types" title="Permalink to this headline">¶</a></h1>
+<p>We can also look at the lowest <span class="math">\(K\)</span> types of a
+representation. For this we need the command <code class="docutils literal"><span class="pre">highest_weights</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype highest_weights ?
+Overloaded instances of &#39;highest_weights&#39;
+  (KGBElt,ratvec)-&gt;[(KGBElt,vec)]
+  ((KGBElt,ratvec),KGBElt)-&gt;[(KGBElt,vec)]
+  Param-&gt;[(KGBElt,vec)]
+  (Param,KGBElt)-&gt;[(KGBElt,vec)]
+atlas&gt;
+</pre></div>
+</div>
+<p>We will use the first instance of the usage of this function in this
+case.</p>
+<p>A good reference on how to obtain the highest weights of the lowest
+<span class="math">\(K\)</span>-types of a representation is Anthony Knapp&#8217;s paper, &#8220;Minimal
+<span class="math">\(K\)</span>-type formula&#8221;. Noncommutative harmonic analysis and Lie
+groups (Marseille, 1982), 107-118.</p>
+<p>To learn about the reverse process of attaching a series of
+representations to a given <span class="math">\(K\)</span>-type see David Vogan&#8217;s book,
+&#8220;Representations of real reductive Lie groups&#8221;. Birkhäusser, 1981</p>
+<p>Let&#8217;s find the lowest <span class="math">\(K\)</span>-types of each
+minimal principal series of <span class="math">\(Sp(4,\mathbb R )\)</span>. We proceed as
+follows</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for p in ps do prints(p, &quot; &quot;, highest_weights (p, KGB(G,2))) od
+final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [(KGB element #2,[ 0, 0 ])]
+final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),(KGB element #2,[  0, -1 ])]
+final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),(KGB element #2,[  0, -1 ])]
+final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 1 ]),(KGB element #2,[ -1, -1 ])]
+atlas&gt;
+</pre></div>
+</div>
+<p>The first representation, the trivial one, has lowest <span class="math">\(K\)</span>-type
+[0,0]. The next two have lowest <span class="math">\(K\)</span>-types [1,0] and [0,-1] and the las
+one has <span class="math">\(K\)</span>-types [1,1] and [-1,-1].</p>
+<p>COMMENT: WE NEED HERE AN EXPLANATION FOR THE CHOICE OF 2 IN KGB(G,2)</p>
+<p>I WILL ADRESS THIS LATER.</p>
+<p>Varying nu</p>
 </div>
 
 

@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hermitian.html">hermitian.at</a><ul>
@@ -1060,7 +1071,7 @@
 <div class="section" id="fac">
 <span id="fac-int-n-1-in-for-i-n-1-from-2-do-p-1"></span><h2>fac<a class="headerlink" href="#fac" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">fac:int</span> <span class="pre">n-&gt;1</span> <span class="pre">in</span> <span class="pre">for</span> <span class="pre">i:n-1</span> <span class="pre">from</span> <span class="pre">2</span> <span class="pre">do</span> <span class="pre">p</span> <span class="pre">*</span></code> Defined in line number 5.</div>
+<div class="line"><code class="docutils literal"><span class="pre">fac:int</span> <span class="pre">n-&gt;1</span> <span class="pre">in</span> <span class="pre">for</span> <span class="pre">i:n-1</span> <span class="pre">from</span> <span class="pre">2</span> <span class="pre">do</span> <span class="pre">p</span> <span class="pre">*</span></code> Defined in line number 6.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1068,7 +1079,7 @@
 <div class="section" id="transpose">
 <span id="transpose-partition-p-partition1"></span><h2>transpose<a class="headerlink" href="#transpose" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">transpose:Partition</span> <span class="pre">P-&gt;Partition</span></code> Defined in line number 8.</div>
+<div class="line"><code class="docutils literal"><span class="pre">transpose:Partition</span> <span class="pre">P-&gt;Partition</span></code> Defined in line number 9.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1076,7 +1087,7 @@
 <div class="section" id="size">
 <span id="size-partition-p-int-sum-vec1"></span><h2>size<a class="headerlink" href="#size" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">size:Partition</span> <span class="pre">P-&gt;int:</span> <span class="pre">sum(vec</span></code> Defined in line number 14.</div>
+<div class="line"><code class="docutils literal"><span class="pre">size:Partition</span> <span class="pre">P-&gt;int:</span> <span class="pre">sum(vec</span></code> Defined in line number 15.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1084,7 +1095,7 @@
 <div class="section" id="hook-length">
 <span id="hook-length-partition-p-int-i-int-j-int1"></span><h2>hook_length<a class="headerlink" href="#hook-length" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">hook_length:Partition</span> <span class="pre">P,</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">int</span> <span class="pre">j-&gt;int</span></code> Defined in line number 16.</div>
+<div class="line"><code class="docutils literal"><span class="pre">hook_length:Partition</span> <span class="pre">P,</span> <span class="pre">int</span> <span class="pre">i,</span> <span class="pre">int</span> <span class="pre">j-&gt;int</span></code> Defined in line number 17.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1092,7 +1103,7 @@
 <div class="section" id="dim-rep">
 <span id="dim-rep-partition-p-int1"></span><h2>dim_rep<a class="headerlink" href="#dim-rep" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dim_rep:Partition</span> <span class="pre">P-&gt;int</span></code> Defined in line number 19.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dim_rep:Partition</span> <span class="pre">P-&gt;int</span></code> Defined in line number 20.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1100,7 +1111,7 @@
 <div class="section" id="rec-fun-compositions-le">
 <span id="rec-fun-compositions-le-int-limit-int-n-int-1"></span><h2>rec_fun compositions_le<a class="headerlink" href="#rec-fun-compositions-le" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">rec_fun</span> <span class="pre">compositions_le:int</span> <span class="pre">limit,</span> <span class="pre">int</span> <span class="pre">n-&gt;[[int]]</span></code> Defined in line number 24.</div>
+<div class="line"><code class="docutils literal"><span class="pre">rec_fun</span> <span class="pre">compositions_le:int</span> <span class="pre">limit,</span> <span class="pre">int</span> <span class="pre">n-&gt;[[int]]</span></code> Defined in line number 25.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1108,7 +1119,7 @@
 <div class="section" id="partition">
 <span id="partition1"></span><h2>Partition<a class="headerlink" href="#partition" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">[int]</span></code> Defined in line number 3.</div>
+<div class="line"><code class="docutils literal"><span class="pre">[int]</span></code> Defined in line number 4.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

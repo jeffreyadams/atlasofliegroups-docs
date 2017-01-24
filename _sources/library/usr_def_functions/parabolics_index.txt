@@ -80,6 +80,8 @@ Functions
      - ``RootDatum rd, vec lambda->[int]``
    * - :ref:`parabolic_ratvec_lambda,kgbelt_x->parabolic1`
      - ``ratvec lambda,KGBElt x->Parabolic``
+   * - :ref:`parabolic_mute_ratvec_lambda,kgbelt_x->parabolic1`
+     - ``ratvec lambda,KGBElt x->Parabolic``
    * - :ref:`theta_stable_parabolic_ratvec_lambda,kgbelt_x->parabolic1`
      - ``ratvec lambda,KGBElt x->Parabolic``
    * - :ref:`real_parabolic_ratvec_lambda,kgbelt_x->parabolic1`

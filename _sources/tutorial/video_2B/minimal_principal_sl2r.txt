@@ -206,7 +206,3 @@ So :math:`P` is a parabolic whith Levi factor :math:`GL(1,\mathbb R)` and ``q`` 
    1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
 
 
-
-
-
-

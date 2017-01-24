@@ -8,7 +8,7 @@ tits.at Function References
 
 \=
 -------------------------------------------------
-| ``=:Tits_elt(,v,theta),Tits_elt(,u,eta)->bool`` Defined in line number 19.
+| ``=:Tits_elt(,v,theta),Tits_elt(,u,eta)->bool`` Defined in line number 21.
 | 
 | 
 
@@ -16,7 +16,7 @@ tits.at Function References
 
 \!=
 -------------------------------------------------
-| ``!=:(Tits_elt,Tits_elt)p->bool`` Defined in line number 20.
+| ``!=:(Tits_elt,Tits_elt)p->bool`` Defined in line number 22.
 | 
 | 
 
@@ -24,7 +24,7 @@ tits.at Function References
 
 tits_identity
 -------------------------------------------------
-| ``tits_identity:RootDatum rd->Tits_elt`` Defined in line number 23.
+| ``tits_identity:RootDatum rd->Tits_elt`` Defined in line number 25.
 | 
 | 
 
@@ -32,7 +32,7 @@ tits_identity
 
 tits_delta
 -------------------------------------------------
-| ``tits_delta:RootDatum rd,mat delta->Tits_elt`` Defined in line number 27.
+| ``tits_delta:RootDatum rd,mat delta->Tits_elt`` Defined in line number 29.
 | 
 | 
 
@@ -40,7 +40,7 @@ tits_delta
 
 tits_delta
 -------------------------------------------------
-| ``tits_delta:RealForm G->Tits_elt`` Defined in line number 28.
+| ``tits_delta:RealForm G->Tits_elt`` Defined in line number 30.
 | 
 | 
 
@@ -48,7 +48,7 @@ tits_delta
 
 left
 -------------------------------------------------
-| ``left:int s,Tits_elt(rd,v,theta)->Tits_elt`` Defined in line number 32.
+| ``left:int s,Tits_elt(rd,v,theta)->Tits_elt`` Defined in line number 34.
 | 
 | 
 
@@ -56,7 +56,7 @@ left
 
 right
 -------------------------------------------------
-| ``right:Tits_elt(rd,v,theta), int s->Tits_elt`` Defined in line number 43.
+| ``right:Tits_elt(rd,v,theta), int s->Tits_elt`` Defined in line number 45.
 | 
 | 
 
@@ -64,7 +64,7 @@ right
 
 left
 -------------------------------------------------
-| ``left:W_word(,w),Tits_elt xi->Tits_elt`` Defined in line number 53.
+| ``left:W_word(,w),Tits_elt xi->Tits_elt`` Defined in line number 55.
 | 
 | 
 
@@ -72,7 +72,7 @@ left
 
 right
 -------------------------------------------------
-| ``right:Tits_elt xi, W_word(,w)->Tits_elt`` Defined in line number 56.
+| ``right:Tits_elt xi, W_word(,w)->Tits_elt`` Defined in line number 58.
 | 
 | 
 
@@ -80,7 +80,7 @@ right
 
 left
 -------------------------------------------------
-| ``left:(ratvec,int)(v,s), Tits_elt xi->Tits_elt`` Defined in line number 60.
+| ``left:(ratvec,int)(v,s), Tits_elt xi->Tits_elt`` Defined in line number 62.
 | 
 | 
 
@@ -88,7 +88,7 @@ left
 
 right
 -------------------------------------------------
-| ``right:Tits_elt xi, (ratvec,int)(v,s)->Tits_elt`` Defined in line number 64.
+| ``right:Tits_elt xi, (ratvec,int)(v,s)->Tits_elt`` Defined in line number 66.
 | 
 | 
 
@@ -96,7 +96,7 @@ right
 
 conjugate
 -------------------------------------------------
-| ``conjugate:int s, Tits_elt xi->Tits_elt`` Defined in line number 68.
+| ``conjugate:int s, Tits_elt xi->Tits_elt`` Defined in line number 70.
 | 
 | 
 
@@ -104,7 +104,7 @@ conjugate
 
 conjugate
 -------------------------------------------------
-| ``conjugate:W_word(,w), Tits_elt xi->Tits_elt`` Defined in line number 72.
+| ``conjugate:W_word(,w), Tits_elt xi->Tits_elt`` Defined in line number 74.
 | 
 | 
 
@@ -112,7 +112,7 @@ conjugate
 
 multiply
 -------------------------------------------------
-| ``multiply:Tits_elt(rd,v,theta), Tits_elt(,u,eta)->Tits_elt`` Defined in line number 89.
+| ``multiply:Tits_elt(rd,v,theta), Tits_elt(,u,eta)->Tits_elt`` Defined in line number 91.
 | 
 | 
 
@@ -120,7 +120,7 @@ multiply
 
 inverse
 -------------------------------------------------
-| ``inverse:Tits_elt(rd,v,theta)->Tits_elt`` Defined in line number 108.
+| ``inverse:Tits_elt(rd,v,theta)->Tits_elt`` Defined in line number 110.
 | 
 | 
 
@@ -128,7 +128,7 @@ inverse
 
 lift
 -------------------------------------------------
-| ``lift:W_word w->Tits_elt`` Defined in line number 112.
+| ``lift:W_word w->Tits_elt`` Defined in line number 114.
 | 
 | 
 
@@ -136,7 +136,7 @@ lift
 
 lift
 -------------------------------------------------
-| ``lift:mat delta, W_word w->Tits_elt`` Defined in line number 115.
+| ``lift:mat delta, W_word w->Tits_elt`` Defined in line number 117.
 | 
 | 
 
@@ -144,7 +144,7 @@ lift
 
 lift
 -------------------------------------------------
-| ``lift:RealForm G, W_word w->Tits_elt`` Defined in line number 117.
+| ``lift:RealForm G, W_word w->Tits_elt`` Defined in line number 119.
 | 
 | 
 
@@ -152,7 +152,7 @@ lift
 
 \^
 -------------------------------------------------
-| ``^:Tits_elt !xi, int n->Tits_elt`` Defined in line number 121.
+| ``^:Tits_elt !xi, int n->Tits_elt`` Defined in line number 123.
 | 
 | 
 
@@ -160,7 +160,7 @@ lift
 
 order
 -------------------------------------------------
-| ``order:Tits_elt xi->int`` Defined in line number 128.
+| ``order:Tits_elt xi->int`` Defined in line number 130.
 | 
 | 
 
@@ -168,7 +168,7 @@ order
 
 Tits_elt
 -----------------------------------------
-| ``(RootDatum root_datum,ratvec torus_part,mat theta)`` Defined in line number 16.
+| ``(RootDatum root_datum,ratvec torus_part,mat theta)`` Defined in line number 18.
 | 
 | 
 

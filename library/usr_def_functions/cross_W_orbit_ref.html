@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hermitian.html">hermitian.at</a><ul>
@@ -1060,7 +1071,7 @@
 <div class="section" id="cross-w-orbit-extra">
 <span id="cross-w-orbit-extra-int-s-kgbelt-x-w-word-kgbelt-1"></span><h2>cross_W_orbit_extra<a class="headerlink" href="#cross-w-orbit-extra" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cross_W_orbit_extra:[int]</span> <span class="pre">S,KGBElt</span> <span class="pre">x-&gt;([W_word],[KGBElt])</span></code> Defined in line number 20.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cross_W_orbit_extra:[int]</span> <span class="pre">S,KGBElt</span> <span class="pre">x-&gt;([W_word],[KGBElt])</span></code> Defined in line number 21.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1068,7 +1079,7 @@
 <div class="section" id="cross-w-orbit">
 <span id="cross-w-orbit-int-kgbelt-pair-kgbelt-1"></span><h2>cross_W_orbit<a class="headerlink" href="#cross-w-orbit" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cross_W_orbit:([int],KGBElt)</span> <span class="pre">pair-&gt;[KGBElt]</span></code> Defined in line number 36.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cross_W_orbit:([int],KGBElt)</span> <span class="pre">pair-&gt;[KGBElt]</span></code> Defined in line number 37.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1076,7 +1087,7 @@
 <div class="section" id="cross-w-orbit-extra-kgbelt-x-w-word-kgbelt-1">
 <span id="id1"></span><h2>cross_W_orbit_extra<a class="headerlink" href="#cross-w-orbit-extra-kgbelt-x-w-word-kgbelt-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cross_W_orbit_extra:KGBElt</span> <span class="pre">x-&gt;([W_word],[KGBElt])</span></code> Defined in line number 40.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cross_W_orbit_extra:KGBElt</span> <span class="pre">x-&gt;([W_word],[KGBElt])</span></code> Defined in line number 41.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1084,7 +1095,7 @@
 <div class="section" id="cross-w-orbit-w-elements">
 <span id="cross-w-orbit-w-elements-kgbelt-x-w-word-1"></span><h2>cross_W_orbit_W_elements<a class="headerlink" href="#cross-w-orbit-w-elements" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cross_W_orbit_W_elements:KGBElt</span> <span class="pre">x-&gt;[W_word]</span></code> Defined in line number 44.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cross_W_orbit_W_elements:KGBElt</span> <span class="pre">x-&gt;[W_word]</span></code> Defined in line number 45.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1092,7 +1103,7 @@
 <div class="section" id="find-w-cross">
 <span id="find-w-cross-kgbelt-x-kgbelt-y-w-word1"></span><h2>find_W_cross<a class="headerlink" href="#find-w-cross" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">find_W_cross:KGBElt</span> <span class="pre">x,KGBElt</span> <span class="pre">y-&gt;W_word</span></code> Defined in line number 48.</div>
+<div class="line"><code class="docutils literal"><span class="pre">find_W_cross:KGBElt</span> <span class="pre">x,KGBElt</span> <span class="pre">y-&gt;W_word</span></code> Defined in line number 49.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

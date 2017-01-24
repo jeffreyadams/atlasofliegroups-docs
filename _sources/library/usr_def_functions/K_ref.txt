@@ -8,7 +8,7 @@ K.at Function References
 
 cocharacter_lattice_K
 -------------------------------------------------
-| ``cocharacter_lattice_K:InnerClass ic->mat`` Defined in line number 28.
+| ``cocharacter_lattice_K:InnerClass ic->mat`` Defined in line number 31.
 | 
 | 
 
@@ -16,7 +16,7 @@ cocharacter_lattice_K
 
 cocharacter_lattice_K
 -------------------------------------------------
-| ``cocharacter_lattice_K:KGBElt x->mat`` Defined in line number 43.
+| ``cocharacter_lattice_K:KGBElt x->mat`` Defined in line number 46.
 | 
 | 
 
@@ -24,7 +24,7 @@ cocharacter_lattice_K
 
 projection_to_K_matrix
 -------------------------------------------------
-| ``projection_to_K_matrix:InnerClass ic->mat`` Defined in line number 51.
+| ``projection_to_K_matrix:InnerClass ic->mat`` Defined in line number 54.
 | 
 | 
 
@@ -32,7 +32,7 @@ projection_to_K_matrix
 
 projection_to_K_matrix
 -------------------------------------------------
-| ``projection_to_K_matrix:KGBElt x->mat`` Defined in line number 52.
+| ``projection_to_K_matrix:KGBElt x->mat`` Defined in line number 55.
 | 
 | 
 
@@ -40,7 +40,7 @@ projection_to_K_matrix
 
 project_K
 -------------------------------------------------
-| ``project_K:InnerClass ic,vec v->vec`` Defined in line number 58.
+| ``project_K:InnerClass ic,vec v->vec`` Defined in line number 61.
 | 
 | 
 
@@ -48,7 +48,7 @@ project_K
 
 project_K
 -------------------------------------------------
-| ``project_K:KGBElt x,vec v->vec`` Defined in line number 59.
+| ``project_K:KGBElt x,vec v->vec`` Defined in line number 62.
 | 
 | 
 
@@ -56,7 +56,7 @@ project_K
 
 project_K
 -------------------------------------------------
-| ``project_K:InnerClass ic,ratvec v->vec`` Defined in line number 60.
+| ``project_K:InnerClass ic,ratvec v->vec`` Defined in line number 63.
 | 
 | 
 
@@ -64,7 +64,7 @@ project_K
 
 project_K
 -------------------------------------------------
-| ``project_K:KGBElt x,ratvec v->vec`` Defined in line number 62.
+| ``project_K:KGBElt x,ratvec v->vec`` Defined in line number 65.
 | 
 | 
 
@@ -72,7 +72,7 @@ project_K
 
 inject_K
 -------------------------------------------------
-| ``inject_K:InnerClass ic,ratvec v->vec`` Defined in line number 72.
+| ``inject_K:InnerClass ic,ratvec v->vec`` Defined in line number 75.
 | 
 | 
 
@@ -80,7 +80,7 @@ inject_K
 
 inject_K
 -------------------------------------------------
-| ``inject_K:KGBElt x,ratvec v->vec`` Defined in line number 74.
+| ``inject_K:KGBElt x,ratvec v->vec`` Defined in line number 77.
 | 
 | 
 
@@ -88,7 +88,7 @@ inject_K
 
 coinject_from_K
 -------------------------------------------------
-| ``coinject_from_K:InnerClass ic,ratvec v->ratvec`` Defined in line number 88.
+| ``coinject_from_K:InnerClass ic,ratvec v->ratvec`` Defined in line number 91.
 | 
 | 
 
@@ -96,7 +96,7 @@ coinject_from_K
 
 coinject_from_K
 -------------------------------------------------
-| ``coinject_from_K:KGBElt x,ratvec v->ratvec`` Defined in line number 90.
+| ``coinject_from_K:KGBElt x,ratvec v->ratvec`` Defined in line number 93.
 | 
 | 
 
@@ -104,7 +104,7 @@ coinject_from_K
 
 rank_K
 -------------------------------------------------
-| ``rank_K:InnerClass ic->int`` Defined in line number 93.
+| ``rank_K:InnerClass ic->int`` Defined in line number 96.
 | 
 | 
 
@@ -112,7 +112,7 @@ rank_K
 
 G_K_roots_and_coroots_raw
 -------------------------------------------------
-| ``G_K_roots_and_coroots_raw:KGBElt x->((mat,mat),(mat,mat))`` Defined in line number 111.
+| ``G_K_roots_and_coroots_raw:KGBElt x->((mat,mat),(mat,mat))`` Defined in line number 114.
 | 
 | 
 
@@ -120,7 +120,7 @@ G_K_roots_and_coroots_raw
 
 G_K_roots_and_coroots
 -------------------------------------------------
-| ``G_K_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 148.
+| ``G_K_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 151.
 | 
 | 
 
@@ -128,7 +128,7 @@ G_K_roots_and_coroots
 
 G_K_simple_roots_and_coroots
 -------------------------------------------------
-| ``G_K_simple_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 153.
+| ``G_K_simple_roots_and_coroots:KGBElt x->(mat,mat)`` Defined in line number 156.
 | 
 | 
 
@@ -136,7 +136,7 @@ G_K_simple_roots_and_coroots
 
 rank_K
 -------------------------------------------------
-| ``rank_K:RealForm G->int`` Defined in line number 156.
+| ``rank_K:RealForm G->int`` Defined in line number 159.
 | 
 | 
 
@@ -144,7 +144,7 @@ rank_K
 
 K_root_datum
 -------------------------------------------------
-| ``K_root_datum:KGBElt x->RootDatum`` Defined in line number 159.
+| ``K_root_datum:KGBElt x->RootDatum`` Defined in line number 162.
 | 
 | 
 
@@ -152,7 +152,7 @@ K_root_datum
 
 K_0
 -------------------------------------------------
-| ``K_0:KGBElt x->RealForm`` Defined in line number 161.
+| ``K_0:KGBElt x->RealForm`` Defined in line number 164.
 | 
 | 
 
@@ -160,7 +160,7 @@ K_0
 
 K_0
 -------------------------------------------------
-| ``K_0:RealForm G->RealForm`` Defined in line number 164.
+| ``K_0:RealForm G->RealForm`` Defined in line number 167.
 | 
 | 
 
@@ -168,7 +168,7 @@ K_0
 
 rho_K
 -------------------------------------------------
-| ``rho_K:KGBElt x->ratvec`` Defined in line number 167.
+| ``rho_K:KGBElt x->ratvec`` Defined in line number 170.
 | 
 | 
 
@@ -176,7 +176,7 @@ rho_K
 
 rho_K
 -------------------------------------------------
-| ``rho_K:RealForm G->ratvec`` Defined in line number 168.
+| ``rho_K:RealForm G->ratvec`` Defined in line number 171.
 | 
 | 
 
@@ -184,7 +184,7 @@ rho_K
 
 rho_c
 -------------------------------------------------
-| ``rho_c:KGBElt x->ratvec`` Defined in line number 170.
+| ``rho_c:KGBElt x->ratvec`` Defined in line number 173.
 | 
 | 
 
@@ -192,7 +192,7 @@ rho_c
 
 rho_c
 -------------------------------------------------
-| ``rho_c:RealForm G->ratvec`` Defined in line number 172.
+| ``rho_c:RealForm G->ratvec`` Defined in line number 175.
 | 
 | 
 
@@ -200,7 +200,7 @@ rho_c
 
 tworho_c
 -------------------------------------------------
-| ``tworho_c:KGBElt x->ratvec`` Defined in line number 174.
+| ``tworho_c:KGBElt x->ratvec`` Defined in line number 177.
 | 
 | 
 
@@ -208,7 +208,7 @@ tworho_c
 
 tworho_c
 -------------------------------------------------
-| ``tworho_c:RealForm G->ratvec`` Defined in line number 175.
+| ``tworho_c:RealForm G->ratvec`` Defined in line number 178.
 | 
 | 
 
@@ -216,7 +216,7 @@ tworho_c
 
 convert_K_type
 -------------------------------------------------
-| ``convert_K_type:RealForm G,vec two_lambda, vec torus_bits, int cartan->Param`` Defined in line number 188.
+| ``convert_K_type:RealForm G,vec two_lambda, vec torus_bits, int cartan->Param`` Defined in line number 191.
 | 
 | 
 
@@ -224,7 +224,7 @@ convert_K_type
 
 convert_K_type
 -------------------------------------------------
-| ``convert_K_type:RealForm G,(vec two_lambda, vec torus_bits, int cartan)->Param`` Defined in line number 195.
+| ``convert_K_type:RealForm G,(vec two_lambda, vec torus_bits, int cartan)->Param`` Defined in line number 198.
 | 
 | 
 
@@ -232,7 +232,7 @@ convert_K_type
 
 x
 -------------------------------------------------
-| ``x:K_Type p->KGBElt`` Defined in line number 225.
+| ``x:K_Type p->KGBElt`` Defined in line number 228.
 | 
 | 
 
@@ -240,7 +240,7 @@ x
 
 lambda
 -------------------------------------------------
-| ``lambda:K_Type p->ratvec`` Defined in line number 226.
+| ``lambda:K_Type p->ratvec`` Defined in line number 229.
 | 
 | 
 
@@ -248,7 +248,7 @@ lambda
 
 dlambda
 -------------------------------------------------
-| ``dlambda:K_Type p->ratvec`` Defined in line number 233.
+| ``dlambda:K_Type p->ratvec`` Defined in line number 236.
 | 
 | 
 
@@ -256,7 +256,7 @@ dlambda
 
 dlambda
 -------------------------------------------------
-| ``dlambda:Param p->ratvec`` Defined in line number 234.
+| ``dlambda:Param p->ratvec`` Defined in line number 237.
 | 
 | 
 
@@ -264,7 +264,7 @@ dlambda
 
 K_type
 -------------------------------------------------
-| ``K_type:Param p->K_Type`` Defined in line number 236.
+| ``K_type:Param p->K_Type`` Defined in line number 239.
 | 
 | 
 
@@ -272,7 +272,7 @@ K_type
 
 parameter
 -------------------------------------------------
-| ``parameter:K_Type p->Param`` Defined in line number 238.
+| ``parameter:K_Type p->Param`` Defined in line number 241.
 | 
 | 
 
@@ -280,7 +280,7 @@ parameter
 
 \=
 -------------------------------------------------
-| ``=:K_Type p,K_Type q->bool`` Defined in line number 242.
+| ``=:K_Type p,K_Type q->bool`` Defined in line number 245.
 | 
 | 
 
@@ -288,7 +288,7 @@ parameter
 
 make_no_Cminus
 -------------------------------------------------
-| ``make_no_Cminus:K_Type p->K_Type`` Defined in line number 244.
+| ``make_no_Cminus:K_Type p->K_Type`` Defined in line number 247.
 | 
 | 
 
@@ -296,7 +296,7 @@ make_no_Cminus
 
 length
 -------------------------------------------------
-| ``length:KHighestWeight (x,mu)->rat`` Defined in line number 252.
+| ``length:KHighestWeight (x,mu)->rat`` Defined in line number 255.
 | 
 | 
 
@@ -304,7 +304,7 @@ length
 
 K_norm
 -------------------------------------------------
-| ``K_norm:ratvec _->(K_Type->int): (K_Type(x,lambda))`` Defined in line number 262.
+| ``K_norm:ratvec _->(K_Type->int): (K_Type(x,lambda))`` Defined in line number 265.
 | 
 | 
 
@@ -312,7 +312,7 @@ K_norm
 
 K_norm
 -------------------------------------------------
-| ``K_norm:ratvec v,K_Type p->int`` Defined in line number 267.
+| ``K_norm:ratvec v,K_Type p->int`` Defined in line number 270.
 | 
 | 
 
@@ -320,7 +320,7 @@ K_norm
 
 K_norm
 -------------------------------------------------
-| ``K_norm:ratvec v,Param p->int`` Defined in line number 268.
+| ``K_norm:ratvec v,Param p->int`` Defined in line number 271.
 | 
 | 
 
@@ -328,7 +328,7 @@ K_norm
 
 K_norm
 -------------------------------------------------
-| ``K_norm:ratvec v,Split s,K_Type p->int`` Defined in line number 270.
+| ``K_norm:ratvec v,Split s,K_Type p->int`` Defined in line number 273.
 | 
 | 
 
@@ -336,7 +336,7 @@ K_norm
 
 K_norm
 -------------------------------------------------
-| ``K_norm:ratvec v,Split s,Param p->int`` Defined in line number 271.
+| ``K_norm:ratvec v,Split s,Param p->int`` Defined in line number 274.
 | 
 | 
 
@@ -344,7 +344,7 @@ K_norm
 
 K_norm
 -------------------------------------------------
-| ``K_norm:K_Type p->int`` Defined in line number 277.
+| ``K_norm:K_Type p->int`` Defined in line number 280.
 | 
 | 
 
@@ -352,7 +352,7 @@ K_norm
 
 K_norm
 -------------------------------------------------
-| ``K_norm:Param p->int`` Defined in line number 278.
+| ``K_norm:Param p->int`` Defined in line number 281.
 | 
 | 
 
@@ -360,7 +360,7 @@ K_norm
 
 K_norm
 -------------------------------------------------
-| ``K_norm:Split s,K_Type p->int`` Defined in line number 279.
+| ``K_norm:Split s,K_Type p->int`` Defined in line number 282.
 | 
 | 
 
@@ -368,7 +368,7 @@ K_norm
 
 K_norms
 -------------------------------------------------
-| ``K_norms:ratvec v->K_norm(v) in (K_Type_Pol P) [int]`` Defined in line number 292.
+| ``K_norms:ratvec v->K_norm(v) in (K_Type_Pol P) [int]`` Defined in line number 295.
 | 
 | 
 
@@ -376,7 +376,7 @@ K_norms
 
 K_norms
 -------------------------------------------------
-| ``K_norms:K_Type_Pol P->[int]`` Defined in line number 295.
+| ``K_norms:K_Type_Pol P->[int]`` Defined in line number 298.
 | 
 | 
 
@@ -384,7 +384,7 @@ K_norms
 
 K_norm
 -------------------------------------------------
-| ``K_norm:ratvec v,K_Type_Pol P->int`` Defined in line number 297.
+| ``K_norm:ratvec v,K_Type_Pol P->int`` Defined in line number 300.
 | 
 | 
 
@@ -392,7 +392,7 @@ K_norm
 
 K_norm
 -------------------------------------------------
-| ``K_norm:K_Type_Pol P->int`` Defined in line number 300.
+| ``K_norm:K_Type_Pol P->int`` Defined in line number 303.
 | 
 | 
 
@@ -400,7 +400,7 @@ K_norm
 
 leading_terms
 -------------------------------------------------
-| ``leading_terms:ratvec v->K_norm(v) in (K_Type_Pol P): K_Type_Pol`` Defined in line number 302.
+| ``leading_terms:ratvec v->K_norm(v) in (K_Type_Pol P): K_Type_Pol`` Defined in line number 305.
 | 
 | 
 
@@ -408,7 +408,7 @@ leading_terms
 
 all_K_norms
 -------------------------------------------------
-| ``all_K_norms:ratvec v->K_norm(v) in (K_Type_Pol P) [int]`` Defined in line number 306.
+| ``all_K_norms:ratvec v->K_norm(v) in (K_Type_Pol P) [int]`` Defined in line number 309.
 | 
 | 
 
@@ -416,7 +416,7 @@ all_K_norms
 
 all_K_norms
 -------------------------------------------------
-| ``all_K_norms:K_Type_Pol P->[int]`` Defined in line number 309.
+| ``all_K_norms:K_Type_Pol P->[int]`` Defined in line number 312.
 | 
 | 
 
@@ -424,7 +424,7 @@ all_K_norms
 
 sort_by_K_norm
 -------------------------------------------------
-| ``sort_by_K_norm:ratvec v->([K_Type] -> [K_Type])`` Defined in line number 312.
+| ``sort_by_K_norm:ratvec v->([K_Type] -> [K_Type])`` Defined in line number 315.
 | 
 | 
 
@@ -432,7 +432,7 @@ sort_by_K_norm
 
 print_by_K_norm
 -------------------------------------------------
-| ``print_by_K_norm:ratvec v->K_norm(v) in (K_Type_Pol P) void`` Defined in line number 321.
+| ``print_by_K_norm:ratvec v->K_norm(v) in (K_Type_Pol P) void`` Defined in line number 324.
 | 
 | 
 
@@ -440,7 +440,7 @@ print_by_K_norm
 
 print_by_K_norm
 -------------------------------------------------
-| ``print_by_K_norm:ratvec v,K_Type_Pol P->void`` Defined in line number 325.
+| ``print_by_K_norm:ratvec v,K_Type_Pol P->void`` Defined in line number 328.
 | 
 | 
 
@@ -448,7 +448,7 @@ print_by_K_norm
 
 print_by_K_norm
 -------------------------------------------------
-| ``print_by_K_norm:K_Type_Pol P->void`` Defined in line number 327.
+| ``print_by_K_norm:K_Type_Pol P->void`` Defined in line number 330.
 | 
 | 
 
@@ -456,7 +456,7 @@ print_by_K_norm
 
 leading_terms
 -------------------------------------------------
-| ``leading_terms:K_Type_Pol P->K_Type_Pol`` Defined in line number 330.
+| ``leading_terms:K_Type_Pol P->K_Type_Pol`` Defined in line number 333.
 | 
 | 
 
@@ -464,7 +464,7 @@ leading_terms
 
 K_Type
 -----------------------------------------
-| ``(KGBElt,ratvec)`` Defined in line number 221.
+| ``(KGBElt,ratvec)`` Defined in line number 224.
 | 
 | 
 
@@ -472,7 +472,7 @@ K_Type
 
 K_Type_Pol
 -----------------------------------------
-| ``ParamPol`` Defined in line number 222.
+| ``ParamPol`` Defined in line number 225.
 | 
 | 
 
@@ -480,7 +480,7 @@ K_Type_Pol
 
 KHighestWeight
 -----------------------------------------
-| ``(KGBElt,vec)`` Defined in line number 223.
+| ``(KGBElt,vec)`` Defined in line number 226.
 | 
 | 
 

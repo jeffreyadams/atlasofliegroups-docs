@@ -8,7 +8,7 @@ Weylgroup.at Function References
 
 root_datum
 -------------------------------------------------
-| ``root_datum:W_word(rd,)->RootDatum`` Defined in line number 7.
+| ``root_datum:W_word(rd,)->RootDatum`` Defined in line number 8.
 | 
 | 
 
@@ -16,7 +16,7 @@ root_datum
 
 word
 -------------------------------------------------
-| ``word:W_word(,w)->[int]`` Defined in line number 8.
+| ``word:W_word(,w)->[int]`` Defined in line number 9.
 | 
 | 
 
@@ -24,7 +24,7 @@ word
 
 \#
 -------------------------------------------------
-| ``#:W_word(,w)->int`` Defined in line number 9.
+| ``#:W_word(,w)->int`` Defined in line number 10.
 | 
 | 
 
@@ -32,7 +32,7 @@ word
 
 act
 -------------------------------------------------
-| ``act:W_word(rd,w), vec v->vec`` Defined in line number 13.
+| ``act:W_word(rd,w), vec v->vec`` Defined in line number 14.
 | 
 | 
 
@@ -40,7 +40,7 @@ act
 
 act
 -------------------------------------------------
-| ``act:W_word ww, ratvec rv->ratvec`` Defined in line number 17.
+| ``act:W_word ww, ratvec rv->ratvec`` Defined in line number 18.
 | 
 | 
 
@@ -48,7 +48,7 @@ act
 
 co_act
 -------------------------------------------------
-| ``co_act:vec cowt, W_word(rd,w)->ratvec`` Defined in line number 20.
+| ``co_act:vec cowt, W_word(rd,w)->ratvec`` Defined in line number 21.
 | 
 | 
 
@@ -56,7 +56,7 @@ co_act
 
 co_act
 -------------------------------------------------
-| ``co_act:ratvec rcv, W_word ww->ratvec`` Defined in line number 24.
+| ``co_act:ratvec rcv, W_word ww->ratvec`` Defined in line number 25.
 | 
 | 
 
@@ -64,7 +64,7 @@ co_act
 
 w_matrix
 -------------------------------------------------
-| ``w_matrix:W_word(rd,w)->mat`` Defined in line number 27.
+| ``w_matrix:W_word(rd,w)->mat`` Defined in line number 28.
 | 
 | 
 
@@ -72,7 +72,7 @@ w_matrix
 
 equal
 -------------------------------------------------
-| ``equal:W_word w, W_word u->bool`` Defined in line number 32.
+| ``equal:W_word w, W_word u->bool`` Defined in line number 33.
 | 
 | 
 
@@ -80,7 +80,7 @@ equal
 
 inverse
 -------------------------------------------------
-| ``inverse:W_word(rd,w)->W_word:  (rd,w~[`` Defined in line number 34.
+| ``inverse:W_word(rd,w)->W_word:  (rd,w~[`` Defined in line number 35.
 | 
 | 
 
@@ -88,7 +88,7 @@ inverse
 
 non_dominant_index
 -------------------------------------------------
-| ``non_dominant_index:RootDatum rd, vec v->int`` Defined in line number 38.
+| ``non_dominant_index:RootDatum rd, vec v->int`` Defined in line number 39.
 | 
 | 
 
@@ -96,7 +96,7 @@ non_dominant_index
 
 dual_non_dominant_index
 -------------------------------------------------
-| ``dual_non_dominant_index:RootDatum rd, vec cowt->int`` Defined in line number 41.
+| ``dual_non_dominant_index:RootDatum rd, vec cowt->int`` Defined in line number 42.
 | 
 | 
 
@@ -104,7 +104,7 @@ dual_non_dominant_index
 
 make_dominant
 -------------------------------------------------
-| ``make_dominant:RootDatum rd, vec v->(vec,W_word)`` Defined in line number 47.
+| ``make_dominant:RootDatum rd, vec v->(vec,W_word)`` Defined in line number 48.
 | 
 | 
 
@@ -112,7 +112,7 @@ make_dominant
 
 dual_make_dominant
 -------------------------------------------------
-| ``dual_make_dominant:RootDatum rd, vec cowt->(vec,W_word)`` Defined in line number 56.
+| ``dual_make_dominant:RootDatum rd, vec cowt->(vec,W_word)`` Defined in line number 57.
 | 
 | 
 
@@ -120,7 +120,7 @@ dual_make_dominant
 
 make_dominant
 -------------------------------------------------
-| ``make_dominant:RootDatum rd, ratvec v->(ratvec,W_word)`` Defined in line number 63.
+| ``make_dominant:RootDatum rd, ratvec v->(ratvec,W_word)`` Defined in line number 64.
 | 
 | 
 
@@ -128,7 +128,7 @@ make_dominant
 
 dual_make_dominant
 -------------------------------------------------
-| ``dual_make_dominant:RootDatum rd, ratvec cowt->(ratvec,W_word)`` Defined in line number 66.
+| ``dual_make_dominant:RootDatum rd, ratvec cowt->(ratvec,W_word)`` Defined in line number 67.
 | 
 | 
 
@@ -136,7 +136,7 @@ dual_make_dominant
 
 rho
 -------------------------------------------------
-| ``rho:RootDatum rd, ratvec v->ratvec`` Defined in line number 70.
+| ``rho:RootDatum rd, ratvec v->ratvec`` Defined in line number 71.
 | 
 | 
 
@@ -144,7 +144,7 @@ rho
 
 dual_rho
 -------------------------------------------------
-| ``dual_rho:RootDatum rd, ratvec cowt->ratvec`` Defined in line number 72.
+| ``dual_rho:RootDatum rd, ratvec cowt->ratvec`` Defined in line number 73.
 | 
 | 
 
@@ -152,7 +152,7 @@ dual_rho
 
 w_long
 -------------------------------------------------
-| ``w_long:RootDatum rd->W_word`` Defined in line number 75.
+| ``w_long:RootDatum rd->W_word`` Defined in line number 76.
 | 
 | 
 
@@ -160,7 +160,7 @@ w_long
 
 dominant
 -------------------------------------------------
-| ``dominant:RootDatum rd, vec v->vec`` Defined in line number 79.
+| ``dominant:RootDatum rd, vec v->vec`` Defined in line number 80.
 | 
 | 
 
@@ -168,7 +168,7 @@ dominant
 
 dominant
 -------------------------------------------------
-| ``dominant:RootDatum rd, ratvec v->ratvec`` Defined in line number 81.
+| ``dominant:RootDatum rd, ratvec v->ratvec`` Defined in line number 82.
 | 
 | 
 
@@ -176,7 +176,7 @@ dominant
 
 word
 -------------------------------------------------
-| ``word:RootDatum rd, mat M->W_word`` Defined in line number 85.
+| ``word:RootDatum rd, mat M->W_word`` Defined in line number 86.
 | 
 | 
 
@@ -184,7 +184,7 @@ word
 
 word
 -------------------------------------------------
-| ``word:RootDatum rd,mat delta, mat M->W_word`` Defined in line number 90.
+| ``word:RootDatum rd,mat delta, mat M->W_word`` Defined in line number 91.
 | 
 | 
 
@@ -192,7 +192,7 @@ word
 
 length
 -------------------------------------------------
-| ``length:RootDatum rd, mat M->int`` Defined in line number 93.
+| ``length:RootDatum rd, mat M->int`` Defined in line number 94.
 | 
 | 
 
@@ -200,7 +200,7 @@ length
 
 length
 -------------------------------------------------
-| ``length:W_word (rd,):ww->int`` Defined in line number 97.
+| ``length:W_word (rd,):ww->int`` Defined in line number 98.
 | 
 | 
 
@@ -208,7 +208,7 @@ length
 
 lengthens
 -------------------------------------------------
-| ``lengthens:RootDatum rd, mat M, int s->bool`` Defined in line number 100.
+| ``lengthens:RootDatum rd, mat M, int s->bool`` Defined in line number 101.
 | 
 | 
 
@@ -216,7 +216,7 @@ lengthens
 
 lengthens
 -------------------------------------------------
-| ``lengthens:RootDatum rd, int s, mat M->bool`` Defined in line number 102.
+| ``lengthens:RootDatum rd, int s, mat M->bool`` Defined in line number 103.
 | 
 | 
 
@@ -224,7 +224,7 @@ lengthens
 
 make_simple_sequence
 -------------------------------------------------
-| ``make_simple_sequence:RootDatum rd, vec !root->(W_word, int)`` Defined in line number 109.
+| ``make_simple_sequence:RootDatum rd, vec !root->(W_word, int)`` Defined in line number 110.
 | 
 | 
 
@@ -232,7 +232,7 @@ make_simple_sequence
 
 make_simple
 -------------------------------------------------
-| ``make_simple:RootDatum rd, vec root->(mat, int)`` Defined in line number 120.
+| ``make_simple:RootDatum rd, vec root->(mat, int)`` Defined in line number 121.
 | 
 | 
 
@@ -240,7 +240,7 @@ make_simple
 
 reduce
 -------------------------------------------------
-| ``reduce:W_word (rd,):w->W_word`` Defined in line number 125.
+| ``reduce:W_word (rd,):w->W_word`` Defined in line number 126.
 | 
 | 
 
@@ -248,7 +248,7 @@ reduce
 
 cross
 -------------------------------------------------
-| ``cross:W_word (,w),KGBElt x->KGBElt`` Defined in line number 129.
+| ``cross:W_word (,w),KGBElt x->KGBElt`` Defined in line number 130.
 | 
 | 
 
@@ -256,7 +256,7 @@ cross
 
 cross
 -------------------------------------------------
-| ``cross:W_word (,w),Param p->Param`` Defined in line number 131.
+| ``cross:W_word (,w),Param p->Param`` Defined in line number 132.
 | 
 | 
 
@@ -264,7 +264,7 @@ cross
 
 make_dominant_using_roots
 -------------------------------------------------
-| ``make_dominant_using_roots:RootDatum rd, ratvec gamma->(ratvec,vec)`` Defined in line number 144.
+| ``make_dominant_using_roots:RootDatum rd, ratvec gamma->(ratvec,vec)`` Defined in line number 145.
 | 
 | 
 
@@ -272,7 +272,7 @@ make_dominant_using_roots
 
 make_dominant_using_roots
 -------------------------------------------------
-| ``make_dominant_using_roots:RootDatum rd, vec v->(vec,vec)`` Defined in line number 152.
+| ``make_dominant_using_roots:RootDatum rd, vec v->(vec,vec)`` Defined in line number 153.
 | 
 | 
 
@@ -280,7 +280,7 @@ make_dominant_using_roots
 
 translate_to_dominant
 -------------------------------------------------
-| ``translate_to_dominant:Param p->(Param,vec)`` Defined in line number 159.
+| ``translate_to_dominant:Param p->(Param,vec)`` Defined in line number 160.
 | 
 | 
 
@@ -288,7 +288,7 @@ translate_to_dominant
 
 make_integrally_dominant
 -------------------------------------------------
-| ``make_integrally_dominant:RootDatum rd,ratvec v->(ratvec,W_word)`` Defined in line number 169.
+| ``make_integrally_dominant:RootDatum rd,ratvec v->(ratvec,W_word)`` Defined in line number 170.
 | 
 | 
 
@@ -296,7 +296,7 @@ make_integrally_dominant
 
 int_dom_act
 -------------------------------------------------
-| ``int_dom_act:W_word(rd,):ww,ratvec v->ratvec`` Defined in line number 173.
+| ``int_dom_act:W_word(rd,):ww,ratvec v->ratvec`` Defined in line number 174.
 | 
 | 
 
@@ -304,7 +304,7 @@ int_dom_act
 
 left_mult
 -------------------------------------------------
-| ``left_mult:int i,W_word(rd,w)->W_word`` Defined in line number 178.
+| ``left_mult:int i,W_word(rd,w)->W_word`` Defined in line number 179.
 | 
 | 
 
@@ -312,7 +312,7 @@ left_mult
 
 right_mult
 -------------------------------------------------
-| ``right_mult:int i,W_word(rd,w)->W_word`` Defined in line number 179.
+| ``right_mult:int i,W_word(rd,w)->W_word`` Defined in line number 180.
 | 
 | 
 
@@ -320,7 +320,7 @@ right_mult
 
 conjugate
 -------------------------------------------------
-| ``conjugate:int i, W_word(rd,w)->W_word`` Defined in line number 180.
+| ``conjugate:int i, W_word(rd,w)->W_word`` Defined in line number 181.
 | 
 | 
 
@@ -328,7 +328,7 @@ conjugate
 
 multiply
 -------------------------------------------------
-| ``multiply:W_word(rd,v), W_word(,w)->W_word`` Defined in line number 182.
+| ``multiply:W_word(rd,v), W_word(,w)->W_word`` Defined in line number 183.
 | 
 | 
 
@@ -336,7 +336,7 @@ multiply
 
 conjugate
 -------------------------------------------------
-| ``conjugate:W_word(rd,v), W_word(,w)->W_word`` Defined in line number 185.
+| ``conjugate:W_word(rd,v), W_word(,w)->W_word`` Defined in line number 186.
 | 
 | 
 
@@ -344,7 +344,7 @@ conjugate
 
 \^
 -------------------------------------------------
-| ``^:W_word (!rd,w), int n->W_word`` Defined in line number 189.
+| ``^:W_word (!rd,w), int n->W_word`` Defined in line number 190.
 | 
 | 
 
@@ -352,7 +352,7 @@ conjugate
 
 involution
 -------------------------------------------------
-| ``involution:InnerClass ic, W_word(,w)->mat`` Defined in line number 198.
+| ``involution:InnerClass ic, W_word(,w)->mat`` Defined in line number 199.
 | 
 | 
 
@@ -360,7 +360,7 @@ involution
 
 imaginary_roots
 -------------------------------------------------
-| ``imaginary_roots:InnerClass ic, W_word tw->mat`` Defined in line number 203.
+| ``imaginary_roots:InnerClass ic, W_word tw->mat`` Defined in line number 204.
 | 
 | 
 
@@ -368,7 +368,7 @@ imaginary_roots
 
 real_roots
 -------------------------------------------------
-| ``real_roots:InnerClass ic, W_word tw->mat`` Defined in line number 205.
+| ``real_roots:InnerClass ic, W_word tw->mat`` Defined in line number 206.
 | 
 | 
 
@@ -376,7 +376,7 @@ real_roots
 
 imaginary_coroots
 -------------------------------------------------
-| ``imaginary_coroots:InnerClass ic, W_word tw->mat`` Defined in line number 207.
+| ``imaginary_coroots:InnerClass ic, W_word tw->mat`` Defined in line number 208.
 | 
 | 
 
@@ -384,7 +384,7 @@ imaginary_coroots
 
 real_coroots
 -------------------------------------------------
-| ``real_coroots:InnerClass ic, W_word tw->mat`` Defined in line number 209.
+| ``real_coroots:InnerClass ic, W_word tw->mat`` Defined in line number 210.
 | 
 | 
 
@@ -392,7 +392,7 @@ real_coroots
 
 invariant_form
 -------------------------------------------------
-| ``invariant_form:RootDatum rd->mat`` Defined in line number 219.
+| ``invariant_form:RootDatum rd->mat`` Defined in line number 220.
 | 
 | 
 
@@ -400,7 +400,7 @@ invariant_form
 
 invariant_form
 -------------------------------------------------
-| ``invariant_form:RootDatum rd, ratvec v, ratvec w->rat`` Defined in line number 220.
+| ``invariant_form:RootDatum rd, ratvec v, ratvec w->rat`` Defined in line number 221.
 | 
 | 
 
@@ -408,7 +408,7 @@ invariant_form
 
 nondegenerate_invariant_form
 -------------------------------------------------
-| ``nondegenerate_invariant_form:(RootDatum,ratvec,ratvec)(rd,v,):args->rat`` Defined in line number 223.
+| ``nondegenerate_invariant_form:(RootDatum,ratvec,ratvec)(rd,v,):args->rat`` Defined in line number 224.
 | 
 | 
 
@@ -416,7 +416,7 @@ nondegenerate_invariant_form
 
 co_invariant_form
 -------------------------------------------------
-| ``co_invariant_form:RootDatum rd->mat`` Defined in line number 227.
+| ``co_invariant_form:RootDatum rd->mat`` Defined in line number 228.
 | 
 | 
 
@@ -424,7 +424,7 @@ co_invariant_form
 
 co_invariant_form
 -------------------------------------------------
-| ``co_invariant_form:RootDatum rd, ratvec v, ratvec w->rat`` Defined in line number 228.
+| ``co_invariant_form:RootDatum rd, ratvec v, ratvec w->rat`` Defined in line number 229.
 | 
 | 
 
@@ -432,7 +432,7 @@ co_invariant_form
 
 delete
 -------------------------------------------------
-| ``delete:[W_word] list, int k->[W_word]: list[:k]##list[k+1`` Defined in line number 232.
+| ``delete:[W_word] list, int k->[W_word]: list[:k]##list[k+1`` Defined in line number 233.
 | 
 | 
 
@@ -440,7 +440,7 @@ delete
 
 order
 -------------------------------------------------
-| ``order:W_word w->int`` Defined in line number 235.
+| ``order:W_word w->int`` Defined in line number 236.
 | 
 | 
 
@@ -448,7 +448,7 @@ order
 
 is_elliptic
 -------------------------------------------------
-| ``is_elliptic:W_word w->bool`` Defined in line number 237.
+| ``is_elliptic:W_word w->bool`` Defined in line number 238.
 | 
 | 
 
@@ -456,7 +456,7 @@ is_elliptic
 
 is_regular
 -------------------------------------------------
-| ``is_regular:W_word w->bool`` Defined in line number 238.
+| ``is_regular:W_word w->bool`` Defined in line number 239.
 | 
 | 
 
@@ -464,7 +464,7 @@ is_regular
 
 move_towards_no_Cminus
 -------------------------------------------------
-| ``move_towards_no_Cminus:KGBElt x->(KGBElt,int)`` Defined in line number 245.
+| ``move_towards_no_Cminus:KGBElt x->(KGBElt,int)`` Defined in line number 246.
 | 
 | 
 
@@ -472,7 +472,7 @@ move_towards_no_Cminus
 
 make_no_Cminus
 -------------------------------------------------
-| ``make_no_Cminus:KGBElt x->(KGBElt,W_word)`` Defined in line number 249.
+| ``make_no_Cminus:KGBElt x->(KGBElt,W_word)`` Defined in line number 250.
 | 
 | 
 
@@ -480,7 +480,7 @@ make_no_Cminus
 
 move_towards_no_Cplus
 -------------------------------------------------
-| ``move_towards_no_Cplus:KGBElt x->(KGBElt,int)`` Defined in line number 256.
+| ``move_towards_no_Cplus:KGBElt x->(KGBElt,int)`` Defined in line number 257.
 | 
 | 
 
@@ -488,7 +488,7 @@ move_towards_no_Cplus
 
 make_no_Cplus
 -------------------------------------------------
-| ``make_no_Cplus:KGBElt x->(KGBElt,W_word)`` Defined in line number 260.
+| ``make_no_Cplus:KGBElt x->(KGBElt,W_word)`` Defined in line number 261.
 | 
 | 
 
@@ -496,7 +496,7 @@ make_no_Cplus
 
 make_no_Cminus
 -------------------------------------------------
-| ``make_no_Cminus:Param p->Param`` Defined in line number 267.
+| ``make_no_Cminus:Param p->Param`` Defined in line number 268.
 | 
 | 
 
@@ -504,7 +504,7 @@ make_no_Cminus
 
 make_no_Cplus
 -------------------------------------------------
-| ``make_no_Cplus:Param p->Param`` Defined in line number 270.
+| ``make_no_Cplus:Param p->Param`` Defined in line number 271.
 | 
 | 
 
@@ -512,7 +512,7 @@ make_no_Cplus
 
 W_word
 -----------------------------------------
-| ``(RootDatum,[int])`` Defined in line number 5.
+| ``(RootDatum,[int])`` Defined in line number 6.
 | 
 | 
 

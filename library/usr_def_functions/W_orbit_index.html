@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hermitian.html">hermitian.at</a><ul>
@@ -1069,41 +1080,41 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#generate-from-dom-vec-vec-s-vec-v-int-vec-1"><span>generate_from_dom</span></a></td>
-<td><code class="docutils literal"><span class="pre">[(vec-&gt;vec)]</span> <span class="pre">S,vec</span> <span class="pre">v-&gt;([[int]],[vec])</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#generate-from-dom-ratvec-ratvec-s-ratvec-v-int-ratvec-1"><span>generate_from_dom</span></a></td>
+<td><code class="docutils literal"><span class="pre">[(ratvec-&gt;ratvec)]</span> <span class="pre">S,ratvec</span> <span class="pre">v-&gt;([[int]],[ratvec])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#generate-from-dom-rootdatum-rd-vec-vec-s-vec-v-w-word-vec-1"><span>generate_from_dom</span></a></td>
-<td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,[(vec-&gt;vec)]</span> <span class="pre">S,vec</span> <span class="pre">v-&gt;([W_word],[vec])</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#generate-from-dom-rootdatum-rd-ratvec-ratvec-s-ratvec-v-w-word-ratvec-1"><span>generate_from_dom</span></a></td>
+<td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,[(ratvec-&gt;ratvec)]</span> <span class="pre">S,ratvec</span> <span class="pre">v-&gt;([W_word],[ratvec])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#generate-from-dom-rootdatum-rd-int-s-vec-v-w-word-vec-1"><span>generate_from_dom</span></a></td>
-<td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,[int]</span> <span class="pre">S,vec</span> <span class="pre">v-&gt;([W_word],[vec])</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#generate-from-dom-rootdatum-rd-int-s-ratvec-v-w-word-ratvec-1"><span>generate_from_dom</span></a></td>
+<td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,[int]</span> <span class="pre">S,ratvec</span> <span class="pre">v-&gt;([W_word],[ratvec])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#w-orbit-rootdatum-int-vec-triple-vec-1"><span>W_orbit</span></a></td>
-<td><code class="docutils literal"><span class="pre">(RootDatum,[int],vec)</span> <span class="pre">triple-&gt;[vec]</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#w-orbit-rootdatum-int-ratvec-triple-ratvec-1"><span>W_orbit</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,[int],ratvec)</span> <span class="pre">triple-&gt;[ratvec]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#w-orbit-w-elements-rootdatum-int-vec-triple-w-word-1"><span>W_orbit_W_elements</span></a></td>
-<td><code class="docutils literal"><span class="pre">(RootDatum,[int],vec)</span> <span class="pre">triple-&gt;[W_word]</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#w-orbit-w-elements-rootdatum-int-ratvec-triple-w-word-1"><span>W_orbit_W_elements</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,[int],ratvec)</span> <span class="pre">triple-&gt;[W_word]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#generate-from-dom-rootdatum-rd-vec-v-w-word-vec-1"><span>generate_from_dom</span></a></td>
-<td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,vec</span> <span class="pre">v-&gt;([W_word],[vec])</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#generate-from-dom-rootdatum-rd-ratvec-v-w-word-ratvec-1"><span>generate_from_dom</span></a></td>
+<td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,ratvec</span> <span class="pre">v-&gt;([W_word],[ratvec])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#w-orbit-rootdatum-vec-pair-vec-1"><span>W_orbit</span></a></td>
-<td><code class="docutils literal"><span class="pre">(RootDatum,vec)</span> <span class="pre">pair-&gt;[vec]</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#w-orbit-rootdatum-ratvec-pair-ratvec-1"><span>W_orbit</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,ratvec)</span> <span class="pre">pair-&gt;[ratvec]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#w-orbit-w-elements-rootdatum-vec-pair-w-word-1"><span>W_orbit_W_elements</span></a></td>
-<td><code class="docutils literal"><span class="pre">(RootDatum,vec)</span> <span class="pre">pair-&gt;[W_word]</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#w-orbit-w-elements-rootdatum-ratvec-pair-w-word-1"><span>W_orbit_W_elements</span></a></td>
+<td><code class="docutils literal"><span class="pre">(RootDatum,ratvec)</span> <span class="pre">pair-&gt;[W_word]</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#generate-w-rootdatum-rd-w-word-1"><span>generate_W</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd-&gt;[W_word]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#generate-vec-vec-s-vec-v-int-vec-1"><span>generate</span></a></td>
-<td><code class="docutils literal"><span class="pre">[(vec-&gt;vec)]</span> <span class="pre">S,vec</span> <span class="pre">v-&gt;([[int]],[vec])</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#generate-ratvec-ratvec-s-ratvec-v-int-ratvec-1"><span>generate</span></a></td>
+<td><code class="docutils literal"><span class="pre">[(ratvec-&gt;ratvec)]</span> <span class="pre">S,ratvec</span> <span class="pre">v-&gt;([[int]],[ratvec])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#generate-w-word-s-vec-v-int-vec-1"><span>generate</span></a></td>
-<td><code class="docutils literal"><span class="pre">[W_word]</span> <span class="pre">S,vec</span> <span class="pre">v-&gt;([[int]],[vec])</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="W_orbit_ref.html#generate-w-word-s-ratvec-v-int-ratvec-1"><span>generate</span></a></td>
+<td><code class="docutils literal"><span class="pre">[W_word]</span> <span class="pre">S,ratvec</span> <span class="pre">v-&gt;([[int]],[ratvec])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#conjugate-to-w-word-s-vec-v-vec-w-bool-int-1"><span>conjugate_to</span></a></td>
-<td><code class="docutils literal"><span class="pre">[W_word]</span> <span class="pre">S,</span> <span class="pre">vec</span> <span class="pre">v,vec</span> <span class="pre">w-&gt;(bool,[int])</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="W_orbit_ref.html#conjugate-to-w-word-s-ratvec-v-ratvec-w-bool-int-1"><span>conjugate_to</span></a></td>
+<td><code class="docutils literal"><span class="pre">[W_word]</span> <span class="pre">S,</span> <span class="pre">ratvec</span> <span class="pre">v,ratvec</span> <span class="pre">w-&gt;(bool,[int])</span></code></td>
 </tr>
 </tbody>
 </table>

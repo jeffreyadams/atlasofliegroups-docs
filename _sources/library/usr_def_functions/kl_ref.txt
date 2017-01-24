@@ -8,7 +8,7 @@ kl.at Function References
 
 character_formula
 -------------------------------------------------
-| ``character_formula:Param p->ParamPol`` Defined in line number 27.
+| ``character_formula:Param p->ParamPol`` Defined in line number 28.
 | 
 | 
 
@@ -16,7 +16,7 @@ character_formula
 
 character_formula
 -------------------------------------------------
-| ``character_formula:ParamPol P->ParamPol`` Defined in line number 28.
+| ``character_formula:ParamPol P->ParamPol`` Defined in line number 29.
 | 
 | 
 
@@ -24,7 +24,7 @@ character_formula
 
 composition_series
 -------------------------------------------------
-| ``composition_series:Param p->ParamPol`` Defined in line number 36.
+| ``composition_series:Param p->ParamPol`` Defined in line number 37.
 | 
 | 
 
@@ -32,7 +32,7 @@ composition_series
 
 composition_series
 -------------------------------------------------
-| ``composition_series:ParamPol P->ParamPol`` Defined in line number 45.
+| ``composition_series:ParamPol P->ParamPol`` Defined in line number 46.
 | 
 | 
 
@@ -40,7 +40,7 @@ composition_series
 
 tabulate_at_1
 -------------------------------------------------
-| ``tabulate_at_1:[Param] block, (Param->ParamPol) f->mat`` Defined in line number 49.
+| ``tabulate_at_1:[Param] block, (Param->ParamPol) f->mat`` Defined in line number 50.
 | 
 | 
 
@@ -48,7 +48,7 @@ tabulate_at_1
 
 signed_KL_mat_at_1
 -------------------------------------------------
-| ``signed_KL_mat_at_1:Param p->mat`` Defined in line number 54.
+| ``signed_KL_mat_at_1:Param p->mat`` Defined in line number 55.
 | 
 | 
 
@@ -56,7 +56,7 @@ signed_KL_mat_at_1
 
 KL_inverse_mat_at_1
 -------------------------------------------------
-| ``KL_inverse_mat_at_1:Param p->mat`` Defined in line number 59.
+| ``KL_inverse_mat_at_1:Param p->mat`` Defined in line number 60.
 | 
 | 
 
@@ -64,7 +64,7 @@ KL_inverse_mat_at_1
 
 full_signed_KL_mat_at_1
 -------------------------------------------------
-| ``full_signed_KL_mat_at_1:Param p->mat`` Defined in line number 65.
+| ``full_signed_KL_mat_at_1:Param p->mat`` Defined in line number 66.
 | 
 | 
 
@@ -72,7 +72,7 @@ full_signed_KL_mat_at_1
 
 full_KL_inverse_mat_at_1
 -------------------------------------------------
-| ``full_KL_inverse_mat_at_1:Param p->mat`` Defined in line number 67.
+| ``full_KL_inverse_mat_at_1:Param p->mat`` Defined in line number 68.
 | 
 | 
 
@@ -80,7 +80,7 @@ full_KL_inverse_mat_at_1
 
 print_formatted
 -------------------------------------------------
-| ``print_formatted:ParamPol P->void`` Defined in line number 71.
+| ``print_formatted:ParamPol P->void`` Defined in line number 72.
 | 
 | 
 
@@ -88,7 +88,7 @@ print_formatted
 
 print_character_formula
 -------------------------------------------------
-| ``print_character_formula:Param p->void`` Defined in line number 74.
+| ``print_character_formula:Param p->void`` Defined in line number 75.
 | 
 | 
 
@@ -96,7 +96,7 @@ print_character_formula
 
 print_composition_series
 -------------------------------------------------
-| ``print_composition_series:Param p->void`` Defined in line number 77.
+| ``print_composition_series:Param p->void`` Defined in line number 78.
 | 
 | 
 

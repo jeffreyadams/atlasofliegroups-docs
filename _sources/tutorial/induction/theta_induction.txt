@@ -184,8 +184,6 @@ a non-unitary example, here is a finite dimensional representation::
   None
 
   atlas> theta_induce_irreducible(p,G)
-  Parabolic is theta-stable.
-  Parabolic is theta-stable.
   Value:
   1*final parameter (x=4,lambda=[2,1]/1,nu=[1,-1]/2)
   1*final parameter (x=9,lambda=[2,1]/1,nu=[3,3]/2)
@@ -193,8 +191,7 @@ a non-unitary example, here is a finite dimensional representation::
 
 This parameter is outside the fair range, and the induced representation is
 reducible. The calculation involves wall crossings and coherent continuation
-action. The messages "Parabolic is theta-stable." are
-created because during this calculation certain new parabolics are defined.
+action.
 (See the summary for the
 script file ``induction.at`` on the ``atlas  Library`` page for more details.)
 
@@ -216,5 +213,3 @@ a parameter on a Levi subgroup coming from a :math:`\theta`-stable parabolic
 subalgebra. Indeed, a Levi subgroup of :math:`G` uniquely defines the parabolic
 it came from. The command ``make_parabolic(L,G)`` reverses the function
 ``Levi(P)``.
-
-

@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hermitian.html">hermitian.at</a><ul>
@@ -1060,7 +1071,7 @@
 <div class="section" id="grading-coweight">
 <span id="grading-coweight-kgbelt-x-ratvec1"></span><h2>grading_coweight<a class="headerlink" href="#grading-coweight" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">grading_coweight:KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 6.</div>
+<div class="line"><code class="docutils literal"><span class="pre">grading_coweight:KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 7.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1068,7 +1079,7 @@
 <div class="section" id="make-kgb">
 <span id="make-kgb-realform-g-mat-theta-ratvec-grading-cowt-kgbelt1"></span><h2>make_KGB<a class="headerlink" href="#make-kgb" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_KGB:RealForm</span> <span class="pre">G,</span> <span class="pre">mat</span> <span class="pre">theta,</span> <span class="pre">ratvec</span> <span class="pre">grading_cowt-&gt;KGBElt</span></code> Defined in line number 9.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_KGB:RealForm</span> <span class="pre">G,</span> <span class="pre">mat</span> <span class="pre">theta,</span> <span class="pre">ratvec</span> <span class="pre">grading_cowt-&gt;KGBElt</span></code> Defined in line number 10.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1076,7 +1087,7 @@
 <div class="section" id="cross">
 <span id="cross-mat-w-kgbelt-x-kgbelt1"></span><h2>cross<a class="headerlink" href="#cross" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cross:mat</span> <span class="pre">w,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code> Defined in line number 14.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cross:mat</span> <span class="pre">w,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code> Defined in line number 15.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1084,7 +1095,7 @@
 <div class="section" id="posroot-cross">
 <span id="posroot-cross-int-i-kgbelt-x-kgbelt1"></span><h2>posroot_cross<a class="headerlink" href="#posroot-cross" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">posroot_cross:int</span> <span class="pre">i,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code> Defined in line number 18.</div>
+<div class="line"><code class="docutils literal"><span class="pre">posroot_cross:int</span> <span class="pre">i,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code> Defined in line number 19.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1092,7 +1103,7 @@
 <div class="section" id="posroot-cross-int-i-param-p-param1">
 <span id="id1"></span><h2>posroot_cross<a class="headerlink" href="#posroot-cross-int-i-param-p-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">posroot_cross:int</span> <span class="pre">i,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 21.</div>
+<div class="line"><code class="docutils literal"><span class="pre">posroot_cross:int</span> <span class="pre">i,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 22.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1100,7 +1111,7 @@
 <div class="section" id="posroot-cross-vec-alpha-param-p-param1">
 <span id="id2"></span><h2>posroot_cross<a class="headerlink" href="#posroot-cross-vec-alpha-param-p-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">posroot_cross:vec</span> <span class="pre">alpha,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 27.</div>
+<div class="line"><code class="docutils literal"><span class="pre">posroot_cross:vec</span> <span class="pre">alpha,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 28.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1108,7 +1119,7 @@
 <div class="section" id="posroot-cayley">
 <span id="posroot-cayley-int-i-kgbelt-x-kgbelt1"></span><h2>posroot_Cayley<a class="headerlink" href="#posroot-cayley" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">posroot_Cayley:int</span> <span class="pre">i,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code> Defined in line number 35.</div>
+<div class="line"><code class="docutils literal"><span class="pre">posroot_Cayley:int</span> <span class="pre">i,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code> Defined in line number 36.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1116,7 +1127,7 @@
 <div class="section" id="posroot-cayley-int-i-param-p-param1">
 <span id="id3"></span><h2>posroot_Cayley<a class="headerlink" href="#posroot-cayley-int-i-param-p-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">posroot_Cayley:int</span> <span class="pre">i,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 52.</div>
+<div class="line"><code class="docutils literal"><span class="pre">posroot_Cayley:int</span> <span class="pre">i,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 53.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1124,7 +1135,7 @@
 <div class="section" id="posroot-inv-cayley">
 <span id="posroot-inv-cayley-int-i-param-p-param1"></span><h2>posroot_inv_Cayley<a class="headerlink" href="#posroot-inv-cayley" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">posroot_inv_Cayley:int</span> <span class="pre">i,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 68.</div>
+<div class="line"><code class="docutils literal"><span class="pre">posroot_inv_Cayley:int</span> <span class="pre">i,</span> <span class="pre">Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 69.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1132,7 +1143,7 @@
 <div class="section" id="find-posroot">
 <span id="find-posroot-rootdatum-rd-vec-alpha-int1"></span><h2>find_posroot<a class="headerlink" href="#find-posroot" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">find_posroot:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">alpha-&gt;int</span></code> Defined in line number 91.</div>
+<div class="line"><code class="docutils literal"><span class="pre">find_posroot:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">alpha-&gt;int</span></code> Defined in line number 92.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1140,7 +1151,7 @@
 <div class="section" id="concat">
 <span id="concat-string-l-string-open-string-sep-string-close-string1"></span><h2>concat<a class="headerlink" href="#concat" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">concat:[string]</span> <span class="pre">l,string</span> <span class="pre">open,</span> <span class="pre">string</span> <span class="pre">sep,</span> <span class="pre">string</span> <span class="pre">close-&gt;string</span></code> Defined in line number 95.</div>
+<div class="line"><code class="docutils literal"><span class="pre">concat:[string]</span> <span class="pre">l,string</span> <span class="pre">open,</span> <span class="pre">string</span> <span class="pre">sep,</span> <span class="pre">string</span> <span class="pre">close-&gt;string</span></code> Defined in line number 96.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1148,7 +1159,7 @@
 <div class="section" id="posroot-status">
 <span id="posroot-status-int-i-param-p-int1"></span><h2>posroot_status<a class="headerlink" href="#posroot-status" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">posroot_status:int</span> <span class="pre">i,</span> <span class="pre">Param</span> <span class="pre">p-&gt;int</span></code> Defined in line number 98.</div>
+<div class="line"><code class="docutils literal"><span class="pre">posroot_status:int</span> <span class="pre">i,</span> <span class="pre">Param</span> <span class="pre">p-&gt;int</span></code> Defined in line number 99.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1156,7 +1167,7 @@
 <div class="section" id="new-block-line">
 <span id="new-block-line-param-b-int-i-string1"></span><h2>new_block_line<a class="headerlink" href="#new-block-line" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">new_block_line:[Param]</span> <span class="pre">B,int</span> <span class="pre">i-&gt;string</span></code> Defined in line number 107.</div>
+<div class="line"><code class="docutils literal"><span class="pre">new_block_line:[Param]</span> <span class="pre">B,int</span> <span class="pre">i-&gt;string</span></code> Defined in line number 108.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1164,7 +1175,7 @@
 <div class="section" id="is-conjugate">
 <span id="is-conjugate-ratvec-v-ratvec-w-mat-theta-bool1"></span><h2>is_conjugate<a class="headerlink" href="#is-conjugate" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">is_conjugate:ratvec</span> <span class="pre">v,ratvec</span> <span class="pre">w,mat</span> <span class="pre">theta-&gt;bool</span></code> Defined in line number 133.</div>
+<div class="line"><code class="docutils literal"><span class="pre">is_conjugate:ratvec</span> <span class="pre">v,ratvec</span> <span class="pre">w,mat</span> <span class="pre">theta-&gt;bool</span></code> Defined in line number 134.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1172,7 +1183,7 @@
 <div class="section" id="inner-class">
 <span id="inner-class-kgbelt-gen-ic-innerclass1"></span><h2>inner_class<a class="headerlink" href="#inner-class" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">inner_class:KGBElt_gen(ic,,)-&gt;InnerClass</span></code> Defined in line number 145.</div>
+<div class="line"><code class="docutils literal"><span class="pre">inner_class:KGBElt_gen(ic,,)-&gt;InnerClass</span></code> Defined in line number 146.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1180,7 +1191,7 @@
 <div class="section" id="involution">
 <span id="involution-kgbelt-gen-theta-mat1"></span><h2>involution<a class="headerlink" href="#involution" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">involution:KGBElt_gen(,theta,)-&gt;mat</span></code> Defined in line number 146.</div>
+<div class="line"><code class="docutils literal"><span class="pre">involution:KGBElt_gen(,theta,)-&gt;mat</span></code> Defined in line number 147.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1188,7 +1199,7 @@
 <div class="section" id="torus-factor">
 <span id="torus-factor-kgbelt-gen-t-ratvec1"></span><h2>torus_factor<a class="headerlink" href="#torus-factor" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">torus_factor:KGBElt_gen(,,t)-&gt;ratvec</span></code> Defined in line number 147.</div>
+<div class="line"><code class="docutils literal"><span class="pre">torus_factor:KGBElt_gen(,,t)-&gt;ratvec</span></code> Defined in line number 148.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1196,7 +1207,7 @@
 <div class="section" id="unnormalized-torus-factor">
 <span id="unnormalized-torus-factor-kgbelt-gen-ic-t-ratvec1"></span><h2>unnormalized_torus_factor<a class="headerlink" href="#unnormalized-torus-factor" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">unnormalized_torus_factor:KGBElt_gen(ic,,t)-&gt;ratvec</span></code> Defined in line number 148.</div>
+<div class="line"><code class="docutils literal"><span class="pre">unnormalized_torus_factor:KGBElt_gen(ic,,t)-&gt;ratvec</span></code> Defined in line number 149.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1204,7 +1215,7 @@
 <div class="section" id="kgbelt-gen-x1-kgbelt-gen-x2-bool1">
 <span id="id4"></span><h2>=<a class="headerlink" href="#kgbelt-gen-x1-kgbelt-gen-x2-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">=:KGBElt_gen</span> <span class="pre">x1,KGBElt_gen</span> <span class="pre">x2-&gt;bool</span></code> Defined in line number 158.</div>
+<div class="line"><code class="docutils literal"><span class="pre">=:KGBElt_gen</span> <span class="pre">x1,KGBElt_gen</span> <span class="pre">x2-&gt;bool</span></code> Defined in line number 159.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1212,7 +1223,7 @@
 <div class="section" id="kgbelt-gen-kgbelt-gen-p-bool1">
 <span id="id5"></span><h2>!=<a class="headerlink" href="#kgbelt-gen-kgbelt-gen-p-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">!=:(KGBElt_gen,KGBElt_gen)p-&gt;bool</span></code> Defined in line number 165.</div>
+<div class="line"><code class="docutils literal"><span class="pre">!=:(KGBElt_gen,KGBElt_gen)p-&gt;bool</span></code> Defined in line number 166.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1220,7 +1231,7 @@
 <div class="section" id="mat-delta-kgbelt-gen-ic-theta-t-kgbelt-gen1">
 <span id="id6"></span><h2>*<a class="headerlink" href="#mat-delta-kgbelt-gen-ic-theta-t-kgbelt-gen1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">*:mat</span> <span class="pre">delta,KGBElt_gen(ic,theta,t)-&gt;KGBElt_gen</span></code> Defined in line number 173.</div>
+<div class="line"><code class="docutils literal"><span class="pre">*:mat</span> <span class="pre">delta,KGBElt_gen(ic,theta,t)-&gt;KGBElt_gen</span></code> Defined in line number 174.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1228,7 +1239,7 @@
 <div class="section" id="is-fixed">
 <span id="is-fixed-mat-delta-kgbelt-gen-y-bool1"></span><h2>is_fixed<a class="headerlink" href="#is-fixed" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">is_fixed:mat</span> <span class="pre">delta,KGBElt_gen</span> <span class="pre">y-&gt;bool</span></code> Defined in line number 176.</div>
+<div class="line"><code class="docutils literal"><span class="pre">is_fixed:mat</span> <span class="pre">delta,KGBElt_gen</span> <span class="pre">y-&gt;bool</span></code> Defined in line number 177.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1236,7 +1247,7 @@
 <div class="section" id="kgbelt-gen">
 <span id="kgbelt-gen1"></span><h2>KGBElt_gen<a class="headerlink" href="#kgbelt-gen" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">(InnerClass,mat,ratvec)</span></code> Defined in line number 143.</div>
+<div class="line"><code class="docutils literal"><span class="pre">(InnerClass,mat,ratvec)</span></code> Defined in line number 144.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

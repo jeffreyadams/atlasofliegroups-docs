@@ -8,7 +8,7 @@ extended_types.at Function References
 
 ext_length
 -------------------------------------------------
-| ``ext_length:RootDatum rd,mat delta, int j->int`` Defined in line number 16.
+| ``ext_length:RootDatum rd,mat delta, int j->int`` Defined in line number 17.
 | 
 | 
 
@@ -16,7 +16,7 @@ ext_length
 
 ext_length
 -------------------------------------------------
-| ``ext_length:int j, ExtParam E->int`` Defined in line number 21.
+| ``ext_length:int j, ExtParam E->int`` Defined in line number 22.
 | 
 | 
 
@@ -24,7 +24,7 @@ ext_length
 
 ext_type_1
 -------------------------------------------------
-| ``ext_type_1:mat delta,int j,Param p->string`` Defined in line number 27.
+| ``ext_type_1:mat delta,int j,Param p->string`` Defined in line number 28.
 | 
 | 
 
@@ -32,7 +32,7 @@ ext_type_1
 
 ext_type_2
 -------------------------------------------------
-| ``ext_type_2:mat delta,int j,Param p->string`` Defined in line number 37.
+| ``ext_type_2:mat delta,int j,Param p->string`` Defined in line number 38.
 | 
 | 
 
@@ -40,7 +40,7 @@ ext_type_2
 
 ext_type_3
 -------------------------------------------------
-| ``ext_type_3:mat delta,int j,Param p->string`` Defined in line number 62.
+| ``ext_type_3:mat delta,int j,Param p->string`` Defined in line number 63.
 | 
 | 
 
@@ -48,7 +48,7 @@ ext_type_3
 
 ext_type
 -------------------------------------------------
-| ``ext_type:mat delta,int j,Param p->string`` Defined in line number 82.
+| ``ext_type:mat delta,int j,Param p->string`` Defined in line number 83.
 | 
 | 
 
@@ -56,7 +56,7 @@ ext_type
 
 ext_type
 -------------------------------------------------
-| ``ext_type:int j,ExtParam E->string`` Defined in line number 96.
+| ``ext_type:int j,ExtParam E->string`` Defined in line number 97.
 | 
 | 
 
@@ -64,7 +64,7 @@ ext_type
 
 ext_types
 -------------------------------------------------
-| ``ext_types:ExtParam (ic,delta,,,,,,,,):E->[string]`` Defined in line number 100.
+| ``ext_types:ExtParam (ic,delta,,,,,,,,):E->[string]`` Defined in line number 101.
 | 
 | 
 

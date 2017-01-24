@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hermitian.html">hermitian.at</a><ul>
@@ -1060,7 +1071,7 @@
 <div class="section" id="tits-elt-v-theta-tits-elt-u-eta-bool1">
 <span id="id1"></span><h2>=<a class="headerlink" href="#tits-elt-v-theta-tits-elt-u-eta-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">=:Tits_elt(,v,theta),Tits_elt(,u,eta)-&gt;bool</span></code> Defined in line number 19.</div>
+<div class="line"><code class="docutils literal"><span class="pre">=:Tits_elt(,v,theta),Tits_elt(,u,eta)-&gt;bool</span></code> Defined in line number 21.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1068,7 +1079,7 @@
 <div class="section" id="tits-elt-tits-elt-p-bool1">
 <span id="id2"></span><h2>!=<a class="headerlink" href="#tits-elt-tits-elt-p-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">!=:(Tits_elt,Tits_elt)p-&gt;bool</span></code> Defined in line number 20.</div>
+<div class="line"><code class="docutils literal"><span class="pre">!=:(Tits_elt,Tits_elt)p-&gt;bool</span></code> Defined in line number 22.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1076,7 +1087,7 @@
 <div class="section" id="tits-identity">
 <span id="tits-identity-rootdatum-rd-tits-elt1"></span><h2>tits_identity<a class="headerlink" href="#tits-identity" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">tits_identity:RootDatum</span> <span class="pre">rd-&gt;Tits_elt</span></code> Defined in line number 23.</div>
+<div class="line"><code class="docutils literal"><span class="pre">tits_identity:RootDatum</span> <span class="pre">rd-&gt;Tits_elt</span></code> Defined in line number 25.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1084,7 +1095,7 @@
 <div class="section" id="tits-delta">
 <span id="tits-delta-rootdatum-rd-mat-delta-tits-elt1"></span><h2>tits_delta<a class="headerlink" href="#tits-delta" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">tits_delta:RootDatum</span> <span class="pre">rd,mat</span> <span class="pre">delta-&gt;Tits_elt</span></code> Defined in line number 27.</div>
+<div class="line"><code class="docutils literal"><span class="pre">tits_delta:RootDatum</span> <span class="pre">rd,mat</span> <span class="pre">delta-&gt;Tits_elt</span></code> Defined in line number 29.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1092,7 +1103,7 @@
 <div class="section" id="tits-delta-realform-g-tits-elt1">
 <span id="id3"></span><h2>tits_delta<a class="headerlink" href="#tits-delta-realform-g-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">tits_delta:RealForm</span> <span class="pre">G-&gt;Tits_elt</span></code> Defined in line number 28.</div>
+<div class="line"><code class="docutils literal"><span class="pre">tits_delta:RealForm</span> <span class="pre">G-&gt;Tits_elt</span></code> Defined in line number 30.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1100,7 +1111,7 @@
 <div class="section" id="left">
 <span id="left-int-s-tits-elt-rd-v-theta-tits-elt1"></span><h2>left<a class="headerlink" href="#left" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">left:int</span> <span class="pre">s,Tits_elt(rd,v,theta)-&gt;Tits_elt</span></code> Defined in line number 32.</div>
+<div class="line"><code class="docutils literal"><span class="pre">left:int</span> <span class="pre">s,Tits_elt(rd,v,theta)-&gt;Tits_elt</span></code> Defined in line number 34.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1108,7 +1119,7 @@
 <div class="section" id="right">
 <span id="right-tits-elt-rd-v-theta-int-s-tits-elt1"></span><h2>right<a class="headerlink" href="#right" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">right:Tits_elt(rd,v,theta),</span> <span class="pre">int</span> <span class="pre">s-&gt;Tits_elt</span></code> Defined in line number 43.</div>
+<div class="line"><code class="docutils literal"><span class="pre">right:Tits_elt(rd,v,theta),</span> <span class="pre">int</span> <span class="pre">s-&gt;Tits_elt</span></code> Defined in line number 45.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1116,7 +1127,7 @@
 <div class="section" id="left-w-word-w-tits-elt-xi-tits-elt1">
 <span id="id4"></span><h2>left<a class="headerlink" href="#left-w-word-w-tits-elt-xi-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">left:W_word(,w),Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code> Defined in line number 53.</div>
+<div class="line"><code class="docutils literal"><span class="pre">left:W_word(,w),Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code> Defined in line number 55.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1124,7 +1135,7 @@
 <div class="section" id="right-tits-elt-xi-w-word-w-tits-elt1">
 <span id="id5"></span><h2>right<a class="headerlink" href="#right-tits-elt-xi-w-word-w-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">right:Tits_elt</span> <span class="pre">xi,</span> <span class="pre">W_word(,w)-&gt;Tits_elt</span></code> Defined in line number 56.</div>
+<div class="line"><code class="docutils literal"><span class="pre">right:Tits_elt</span> <span class="pre">xi,</span> <span class="pre">W_word(,w)-&gt;Tits_elt</span></code> Defined in line number 58.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1132,7 +1143,7 @@
 <div class="section" id="left-ratvec-int-v-s-tits-elt-xi-tits-elt1">
 <span id="id6"></span><h2>left<a class="headerlink" href="#left-ratvec-int-v-s-tits-elt-xi-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">left:(ratvec,int)(v,s),</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code> Defined in line number 60.</div>
+<div class="line"><code class="docutils literal"><span class="pre">left:(ratvec,int)(v,s),</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code> Defined in line number 62.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1140,7 +1151,7 @@
 <div class="section" id="right-tits-elt-xi-ratvec-int-v-s-tits-elt1">
 <span id="id7"></span><h2>right<a class="headerlink" href="#right-tits-elt-xi-ratvec-int-v-s-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">right:Tits_elt</span> <span class="pre">xi,</span> <span class="pre">(ratvec,int)(v,s)-&gt;Tits_elt</span></code> Defined in line number 64.</div>
+<div class="line"><code class="docutils literal"><span class="pre">right:Tits_elt</span> <span class="pre">xi,</span> <span class="pre">(ratvec,int)(v,s)-&gt;Tits_elt</span></code> Defined in line number 66.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1148,7 +1159,7 @@
 <div class="section" id="conjugate">
 <span id="conjugate-int-s-tits-elt-xi-tits-elt1"></span><h2>conjugate<a class="headerlink" href="#conjugate" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">conjugate:int</span> <span class="pre">s,</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code> Defined in line number 68.</div>
+<div class="line"><code class="docutils literal"><span class="pre">conjugate:int</span> <span class="pre">s,</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code> Defined in line number 70.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1156,7 +1167,7 @@
 <div class="section" id="conjugate-w-word-w-tits-elt-xi-tits-elt1">
 <span id="id8"></span><h2>conjugate<a class="headerlink" href="#conjugate-w-word-w-tits-elt-xi-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">conjugate:W_word(,w),</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code> Defined in line number 72.</div>
+<div class="line"><code class="docutils literal"><span class="pre">conjugate:W_word(,w),</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code> Defined in line number 74.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1164,7 +1175,7 @@
 <div class="section" id="multiply">
 <span id="multiply-tits-elt-rd-v-theta-tits-elt-u-eta-tits-elt1"></span><h2>multiply<a class="headerlink" href="#multiply" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">multiply:Tits_elt(rd,v,theta),</span> <span class="pre">Tits_elt(,u,eta)-&gt;Tits_elt</span></code> Defined in line number 89.</div>
+<div class="line"><code class="docutils literal"><span class="pre">multiply:Tits_elt(rd,v,theta),</span> <span class="pre">Tits_elt(,u,eta)-&gt;Tits_elt</span></code> Defined in line number 91.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1172,7 +1183,7 @@
 <div class="section" id="inverse">
 <span id="inverse-tits-elt-rd-v-theta-tits-elt1"></span><h2>inverse<a class="headerlink" href="#inverse" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">inverse:Tits_elt(rd,v,theta)-&gt;Tits_elt</span></code> Defined in line number 108.</div>
+<div class="line"><code class="docutils literal"><span class="pre">inverse:Tits_elt(rd,v,theta)-&gt;Tits_elt</span></code> Defined in line number 110.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1180,7 +1191,7 @@
 <div class="section" id="lift">
 <span id="lift-w-word-w-tits-elt1"></span><h2>lift<a class="headerlink" href="#lift" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">lift:W_word</span> <span class="pre">w-&gt;Tits_elt</span></code> Defined in line number 112.</div>
+<div class="line"><code class="docutils literal"><span class="pre">lift:W_word</span> <span class="pre">w-&gt;Tits_elt</span></code> Defined in line number 114.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1188,7 +1199,7 @@
 <div class="section" id="lift-mat-delta-w-word-w-tits-elt1">
 <span id="id9"></span><h2>lift<a class="headerlink" href="#lift-mat-delta-w-word-w-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">lift:mat</span> <span class="pre">delta,</span> <span class="pre">W_word</span> <span class="pre">w-&gt;Tits_elt</span></code> Defined in line number 115.</div>
+<div class="line"><code class="docutils literal"><span class="pre">lift:mat</span> <span class="pre">delta,</span> <span class="pre">W_word</span> <span class="pre">w-&gt;Tits_elt</span></code> Defined in line number 117.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1196,7 +1207,7 @@
 <div class="section" id="lift-realform-g-w-word-w-tits-elt1">
 <span id="id10"></span><h2>lift<a class="headerlink" href="#lift-realform-g-w-word-w-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">lift:RealForm</span> <span class="pre">G,</span> <span class="pre">W_word</span> <span class="pre">w-&gt;Tits_elt</span></code> Defined in line number 117.</div>
+<div class="line"><code class="docutils literal"><span class="pre">lift:RealForm</span> <span class="pre">G,</span> <span class="pre">W_word</span> <span class="pre">w-&gt;Tits_elt</span></code> Defined in line number 119.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1204,7 +1215,7 @@
 <div class="section" id="tits-elt-xi-int-n-tits-elt1">
 <span id="id11"></span><h2>^<a class="headerlink" href="#tits-elt-xi-int-n-tits-elt1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">^:Tits_elt</span> <span class="pre">!xi,</span> <span class="pre">int</span> <span class="pre">n-&gt;Tits_elt</span></code> Defined in line number 121.</div>
+<div class="line"><code class="docutils literal"><span class="pre">^:Tits_elt</span> <span class="pre">!xi,</span> <span class="pre">int</span> <span class="pre">n-&gt;Tits_elt</span></code> Defined in line number 123.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1212,7 +1223,7 @@
 <div class="section" id="order">
 <span id="order-tits-elt-xi-int1"></span><h2>order<a class="headerlink" href="#order" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">order:Tits_elt</span> <span class="pre">xi-&gt;int</span></code> Defined in line number 128.</div>
+<div class="line"><code class="docutils literal"><span class="pre">order:Tits_elt</span> <span class="pre">xi-&gt;int</span></code> Defined in line number 130.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1220,7 +1231,7 @@
 <div class="section" id="tits-elt">
 <span id="tits-elt1"></span><h2>Tits_elt<a class="headerlink" href="#tits-elt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">(RootDatum</span> <span class="pre">root_datum,ratvec</span> <span class="pre">torus_part,mat</span> <span class="pre">theta)</span></code> Defined in line number 16.</div>
+<div class="line"><code class="docutils literal"><span class="pre">(RootDatum</span> <span class="pre">root_datum,ratvec</span> <span class="pre">torus_part,mat</span> <span class="pre">theta)</span></code> Defined in line number 18.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

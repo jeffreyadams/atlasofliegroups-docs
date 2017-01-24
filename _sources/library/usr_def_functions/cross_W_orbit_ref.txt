@@ -8,7 +8,7 @@ cross_W_orbit.at Function References
 
 cross_W_orbit_extra
 -------------------------------------------------
-| ``cross_W_orbit_extra:[int] S,KGBElt x->([W_word],[KGBElt])`` Defined in line number 20.
+| ``cross_W_orbit_extra:[int] S,KGBElt x->([W_word],[KGBElt])`` Defined in line number 21.
 | 
 | 
 
@@ -16,7 +16,7 @@ cross_W_orbit_extra
 
 cross_W_orbit
 -------------------------------------------------
-| ``cross_W_orbit:([int],KGBElt) pair->[KGBElt]`` Defined in line number 36.
+| ``cross_W_orbit:([int],KGBElt) pair->[KGBElt]`` Defined in line number 37.
 | 
 | 
 
@@ -24,7 +24,7 @@ cross_W_orbit
 
 cross_W_orbit_extra
 -------------------------------------------------
-| ``cross_W_orbit_extra:KGBElt x->([W_word],[KGBElt])`` Defined in line number 40.
+| ``cross_W_orbit_extra:KGBElt x->([W_word],[KGBElt])`` Defined in line number 41.
 | 
 | 
 
@@ -32,7 +32,7 @@ cross_W_orbit_extra
 
 cross_W_orbit_W_elements
 -------------------------------------------------
-| ``cross_W_orbit_W_elements:KGBElt x->[W_word]`` Defined in line number 44.
+| ``cross_W_orbit_W_elements:KGBElt x->[W_word]`` Defined in line number 45.
 | 
 | 
 
@@ -40,7 +40,7 @@ cross_W_orbit_W_elements
 
 find_W_cross
 -------------------------------------------------
-| ``find_W_cross:KGBElt x,KGBElt y->W_word`` Defined in line number 48.
+| ``find_W_cross:KGBElt x,KGBElt y->W_word`` Defined in line number 49.
 | 
 | 
 

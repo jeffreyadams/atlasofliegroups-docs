@@ -208,6 +208,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -479,6 +480,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_index.html">basic.at Function Index</a></li>
@@ -617,6 +623,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/hermitian.html">hermitian.at</a><ul>
@@ -1063,7 +1074,7 @@ atlas&gt;
 <p>We are looking only at the minimal principal series. So we are for the
 moment only interested in the last four representations corresponding
 to the <code class="docutils literal"><span class="pre">KGB</span></code> element <code class="docutils literal"><span class="pre">x=6</span></code>.</p>
-<p>Let us look at the tau invariants for these standard
+<p>Let us look at the <code class="docutils literal"><span class="pre">tau</span></code> invariants for these standard
 representations:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for p in parameters do prints(p, &quot; &quot;, tau(p)) od
 final parameter (x=0,lambda=[3,1]/2,nu=[0,0]/1) []
@@ -1083,11 +1094,11 @@ atlas&gt;
 </div>
 <p>Now if we look again only at the last four parameters we see that two
 of them have tau invariant <code class="docutils literal"><span class="pre">[0,1]</span></code>. This is because they are both
-one-dimensional representations. the group is disconnected and has two
+one-dimensional representations. The group is disconnected and has two
 one-dimensional representations. Each is equivalent to the other one
 tenssor the sign representation. This interchanges the two
 representations. And likewise, the two representations labeled with
-the tau invariant <code class="docutils literal"><span class="pre">[1]</span></code> get interchanged.</p>
+the <code class="docutils literal"><span class="pre">tau</span></code> invariant <code class="docutils literal"><span class="pre">[1]</span></code> get interchanged.</p>
 <p>Now let us look at composition series for one of those pairs of
 representations</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:parameters[11]
@@ -1115,8 +1126,8 @@ atlas&gt; show(composition_series(I(p)))
 atlas&gt;
 </pre></div>
 </div>
-<p>These are almost identical except the <code class="docutils literal"><span class="pre">lambdas</span></code> are different in
-lines 5 and 7.</p>
+<p>These are almost identical but not quite. For example, the <code class="docutils literal"><span class="pre">lambdas</span></code>
+are different in lines 5 and 7.</p>
 <p>Similarly if we look at parameters 9 and 10 we have</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:parameters[9]
 Variable p: Param (overriding previous instance, which had type Param)
@@ -1141,6 +1152,7 @@ atlas&gt; show(composition_series(I(p)))
 atlas&gt;
 </pre></div>
 </div>
+<p>These are smaller standard representations, have less complicated and also very similar composition series.</p>
 
 
            </div>

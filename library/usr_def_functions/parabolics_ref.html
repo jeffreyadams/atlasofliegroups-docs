@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hermitian.html">hermitian.at</a><ul>
@@ -1353,10 +1364,19 @@
 <div class="line"><br /></div>
 </div>
 </div>
+<div class="section" id="parabolic-mute">
+<span id="parabolic-mute-ratvec-lambda-kgbelt-x-parabolic1"></span><h2>parabolic_mute<a class="headerlink" href="#parabolic-mute" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">parabolic_mute:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 289.</div>
+<div class="line"><br /></div>
+<div class="line">Parabolic defined by weight lambda; NO message whether parabolic is real   or theta-stable.</div>
+<div class="line"><br /></div>
+</div>
+</div>
 <div class="section" id="theta-stable-parabolic">
 <span id="theta-stable-parabolic-ratvec-lambda-kgbelt-x-parabolic1"></span><h2>theta_stable_parabolic<a class="headerlink" href="#theta-stable-parabolic" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolic:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 288.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolic:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 296.</div>
 <div class="line"><br /></div>
 <div class="line">Theta-stable parabolic defined by weight lambda.</div>
 <div class="line"><br /></div>
@@ -1365,7 +1385,7 @@
 <div class="section" id="real-parabolic">
 <span id="real-parabolic-ratvec-lambda-kgbelt-x-parabolic1"></span><h2>real_parabolic<a class="headerlink" href="#real-parabolic" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_parabolic:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 292.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_parabolic:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 300.</div>
 <div class="line"><br /></div>
 <div class="line">Real parabolic defined by weight lambda.</div>
 <div class="line"><br /></div>
@@ -1374,7 +1394,7 @@
 <div class="section" id="levi-ratvec-lambda-kgbelt-x-realform1">
 <span id="id4"></span><h2>Levi<a class="headerlink" href="#levi-ratvec-lambda-kgbelt-x-realform1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">Levi:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 296.</div>
+<div class="line"><code class="docutils literal"><span class="pre">Levi:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 304.</div>
 <div class="line"><br /></div>
 <div class="line">Levi factor of parabolic defined by weight lambda.</div>
 <div class="line"><br /></div>
@@ -1383,7 +1403,7 @@
 <div class="section" id="theta-stable-levi">
 <span id="theta-stable-levi-ratvec-lambda-kgbelt-x-realform1"></span><h2>theta_stable_Levi<a class="headerlink" href="#theta-stable-levi" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_stable_Levi:ratvec</span> <span class="pre">lambda,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 299.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_Levi:ratvec</span> <span class="pre">lambda,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 307.</div>
 <div class="line"><br /></div>
 <div class="line">Levi factor of theta-stable parabolic defined by weight lambda.</div>
 <div class="line"><br /></div>
@@ -1392,7 +1412,7 @@
 <div class="section" id="real-levi">
 <span id="real-levi-ratvec-lambda-kgbelt-x-realform1"></span><h2>real_Levi<a class="headerlink" href="#real-levi" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_Levi:ratvec</span> <span class="pre">lambda,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 303.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_Levi:ratvec</span> <span class="pre">lambda,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 311.</div>
 <div class="line"><br /></div>
 <div class="line">Levi factor of real parabolic defined by weight lambda.</div>
 <div class="line"><br /></div>
@@ -1401,7 +1421,7 @@
 <div class="section" id="nilrad-ratvec-lambda-kgbelt-x-mat1">
 <span id="id5"></span><h2>nilrad<a class="headerlink" href="#nilrad-ratvec-lambda-kgbelt-x-mat1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">nilrad:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 307.</div>
+<div class="line"><code class="docutils literal"><span class="pre">nilrad:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 315.</div>
 <div class="line"><br /></div>
 <div class="line">Positive coroots in nilradical of P defined by weight lambda (if L theta-stable).</div>
 <div class="line"><br /></div>
@@ -1410,7 +1430,7 @@
 <div class="section" id="nilrad-roots-ratvec-lambda-kgbelt-x-mat1">
 <span id="id6"></span><h2>nilrad_roots<a class="headerlink" href="#nilrad-roots-ratvec-lambda-kgbelt-x-mat1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">nilrad_roots:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 310.</div>
+<div class="line"><code class="docutils literal"><span class="pre">nilrad_roots:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 318.</div>
 <div class="line"><br /></div>
 <div class="line">Positive roots in nilradical of P defined by weight lambda (if L theta-stable).</div>
 <div class="line"><br /></div>
@@ -1419,7 +1439,7 @@
 <div class="section" id="rho-u-ratvec-lambda-kgbelt-x-ratvec1">
 <span id="id7"></span><h2>rho_u<a class="headerlink" href="#rho-u-ratvec-lambda-kgbelt-x-ratvec1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">rho_u:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 315.</div>
+<div class="line"><code class="docutils literal"><span class="pre">rho_u:ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 323.</div>
 <div class="line"><br /></div>
 <div class="line">Half sum of positive roots in nilradical of P defined by weight lambda (if L theta-stable).</div>
 <div class="line"><br /></div>
@@ -1428,7 +1448,7 @@
 <div class="section" id="zero-simple-roots">
 <span id="zero-simple-roots-rootdatum-rd-vec-cowt-int-1"></span><h2>zero_simple_roots<a class="headerlink" href="#zero-simple-roots" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">zero_simple_roots:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">cowt-&gt;[int]</span></code> Defined in line number 318.</div>
+<div class="line"><code class="docutils literal"><span class="pre">zero_simple_roots:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">cowt-&gt;[int]</span></code> Defined in line number 326.</div>
 <div class="line"><br /></div>
 <div class="line">Simple roots which are zero on coweight H (in <span class="math">\(\mathfrak h\)</span> ).</div>
 <div class="line"><br /></div>
@@ -1437,7 +1457,7 @@
 <div class="section" id="parabolic-alt">
 <span id="parabolic-alt-ratvec-h-kgbelt-x-parabolic1"></span><h2>parabolic_alt<a class="headerlink" href="#parabolic-alt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">parabolic_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 325.</div>
+<div class="line"><code class="docutils literal"><span class="pre">parabolic_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 333.</div>
 <div class="line"><br /></div>
 <div class="line">Parabolic defined by coweight H; message whether parabolic is real    or theta-stable.</div>
 <div class="line"><br /></div>
@@ -1446,7 +1466,7 @@
 <div class="section" id="levi-alt">
 <span id="levi-alt-ratvec-h-kgbelt-x-realform1"></span><h2>Levi_alt<a class="headerlink" href="#levi-alt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">Levi_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 335.</div>
+<div class="line"><code class="docutils literal"><span class="pre">Levi_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 343.</div>
 <div class="line"><br /></div>
 <div class="line">Levi factor of parabolic defined by coweight H.</div>
 <div class="line"><br /></div>
@@ -1455,7 +1475,7 @@
 <div class="section" id="nilrad-alt">
 <span id="nilrad-alt-ratvec-h-kgbelt-x-mat1"></span><h2>nilrad_alt<a class="headerlink" href="#nilrad-alt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">nilrad_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 338.</div>
+<div class="line"><code class="docutils literal"><span class="pre">nilrad_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 346.</div>
 <div class="line"><br /></div>
 <div class="line">Positive coroots in nilradical of P defined by coweight H (if L theta-stable).</div>
 <div class="line"><br /></div>
@@ -1464,7 +1484,7 @@
 <div class="section" id="nilrad-roots-alt">
 <span id="nilrad-roots-alt-ratvec-h-kgbelt-x-mat1"></span><h2>nilrad_roots_alt<a class="headerlink" href="#nilrad-roots-alt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">nilrad_roots_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 341.</div>
+<div class="line"><code class="docutils literal"><span class="pre">nilrad_roots_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;mat</span></code> Defined in line number 349.</div>
 <div class="line"><br /></div>
 <div class="line">Positive roots in nilradical of P defined by coweight H (if L theta-stable).</div>
 <div class="line"><br /></div>
@@ -1473,7 +1493,7 @@
 <div class="section" id="rho-u-alt">
 <span id="rho-u-alt-ratvec-h-kgbelt-x-ratvec1"></span><h2>rho_u_alt<a class="headerlink" href="#rho-u-alt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">rho_u_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 345.</div>
+<div class="line"><code class="docutils literal"><span class="pre">rho_u_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 353.</div>
 <div class="line"><br /></div>
 <div class="line">Half sum of roots in nilradical of P defined by coweight H (if L theta-stable).</div>
 <div class="line"><br /></div>
@@ -1482,7 +1502,7 @@
 <div class="section" id="rho-levi-alt">
 <span id="rho-levi-alt-ratvec-h-kgbelt-x-ratvec1"></span><h2>rho_Levi_alt<a class="headerlink" href="#rho-levi-alt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">rho_Levi_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 348.</div>
+<div class="line"><code class="docutils literal"><span class="pre">rho_Levi_alt:ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code> Defined in line number 356.</div>
 <div class="line"><br /></div>
 <div class="line-block">
 <div class="line"><span class="math">\(\rho(L)\)</span>  for Levi of P defined by coweight H (if L theta-stable).</div>
@@ -1493,7 +1513,7 @@
 <div class="section" id="real-parabolic-kgbelt-x-parabolic1">
 <span id="id8"></span><h2>real_parabolic<a class="headerlink" href="#real-parabolic-kgbelt-x-parabolic1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_parabolic:KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 356.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_parabolic:KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 364.</div>
 <div class="line"><br /></div>
 <div class="line">Real parabolic defined by x has Levi factor M=centralizer(A),   <span class="math">\(\mathfrak u\)</span> =positive roots not in M;   for M to be stable: x must have no C+ roots.</div>
 <div class="line"><br /></div>
@@ -1502,7 +1522,7 @@
 <div class="section" id="real-levi-kgbelt-x-realform1">
 <span id="id9"></span><h2>real_Levi<a class="headerlink" href="#real-levi-kgbelt-x-realform1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_Levi:KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 361.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_Levi:KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 369.</div>
 <div class="line"><br /></div>
 <div class="line">Levi factor of real parabolic defined by x (must have no C+ roots).</div>
 <div class="line"><br /></div>
@@ -1511,7 +1531,7 @@
 <div class="section" id="theta-stable-parabolic-kgbelt-x-parabolic1">
 <span id="id10"></span><h2>theta_stable_parabolic<a class="headerlink" href="#theta-stable-parabolic-kgbelt-x-parabolic1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolic:KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 368.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolic:KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code> Defined in line number 376.</div>
 <div class="line"><br /></div>
 <div class="line">Theta-stable parabolic defined by x has Levi factor L=centralizer(T),   <span class="math">\(\mathfrak u\)</span> =positive roots not in L;   for this to be stable: no C- roots.</div>
 <div class="line"><br /></div>
@@ -1520,7 +1540,7 @@
 <div class="section" id="theta-stable-levi-kgbelt-x-realform1">
 <span id="id11"></span><h2>theta_stable_Levi<a class="headerlink" href="#theta-stable-levi-kgbelt-x-realform1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_stable_Levi:KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 373.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_Levi:KGBElt</span> <span class="pre">x-&gt;RealForm</span></code> Defined in line number 381.</div>
 <div class="line"><br /></div>
 <div class="line">Levi factor of theta-stable parabolic defined by x (must have no C- roots).</div>
 <div class="line"><br /></div>
@@ -1529,7 +1549,7 @@
 <div class="section" id="is-standard-levi">
 <span id="is-standard-levi-realform-l-realform-g-bool1"></span><h2>is_standard_Levi<a class="headerlink" href="#is-standard-levi" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">is_standard_Levi:RealForm</span> <span class="pre">L,RealForm</span> <span class="pre">G-&gt;bool</span></code> Defined in line number 377.</div>
+<div class="line"><code class="docutils literal"><span class="pre">is_standard_Levi:RealForm</span> <span class="pre">L,RealForm</span> <span class="pre">G-&gt;bool</span></code> Defined in line number 385.</div>
 <div class="line"><br /></div>
 <div class="line">Check whether a Levi subgroup L is standard in G   (simple roots of L are simple for G).</div>
 <div class="line"><br /></div>
@@ -1538,7 +1558,7 @@
 <div class="section" id="kgp-realform-g-complexparabolic-rd-s-kgpelt-1">
 <span id="id12"></span><h2>KGP<a class="headerlink" href="#kgp-realform-g-complexparabolic-rd-s-kgpelt-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">KGP:RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[KGPElt]</span></code> Defined in line number 386.</div>
+<div class="line"><code class="docutils literal"><span class="pre">KGP:RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[KGPElt]</span></code> Defined in line number 394.</div>
 <div class="line"><br /></div>
 <div class="line">List of K-conjugacy classes of given ComplexParabolic (as KGP elts).</div>
 <div class="line"><br /></div>
@@ -1547,7 +1567,7 @@
 <div class="section" id="parabolics">
 <span id="parabolics-realform-g-complexparabolic-rd-s-parabolic-1"></span><h2>parabolics<a class="headerlink" href="#parabolics" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">parabolics:RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[Parabolic]</span></code> Defined in line number 390.</div>
+<div class="line"><code class="docutils literal"><span class="pre">parabolics:RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[Parabolic]</span></code> Defined in line number 398.</div>
 <div class="line"><br /></div>
 <div class="line">List K-conjugacy classes of given ComplexParabolic (as Parabolics).</div>
 <div class="line"><br /></div>
@@ -1556,7 +1576,7 @@
 <div class="section" id="theta-stable-parabolics">
 <span id="theta-stable-parabolics-realform-g-complexparabolic-p-parabolic-1"></span><h2>theta_stable_parabolics<a class="headerlink" href="#theta-stable-parabolics" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics:RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">P-&gt;[Parabolic]</span></code> Defined in line number 394.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics:RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">P-&gt;[Parabolic]</span></code> Defined in line number 402.</div>
 <div class="line"><br /></div>
 <div class="line">List K-conjugacy classes of given ComplexParabolic that are theta-stable.</div>
 <div class="line"><br /></div>
@@ -1565,7 +1585,7 @@
 <div class="section" id="theta-stable-parabolics-realform-g-parabolic-1">
 <span id="id13"></span><h2>theta_stable_parabolics<a class="headerlink" href="#theta-stable-parabolics-realform-g-parabolic-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code> Defined in line number 400.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code> Defined in line number 408.</div>
 <div class="line"><br /></div>
 <div class="line">List all theta-stable parabolics for G.</div>
 <div class="line"><br /></div>
@@ -1574,7 +1594,7 @@
 <div class="section" id="theta-stable-parabolics-type">
 <span id="theta-stable-parabolics-type-realform-g-int-p-parabolic-1"></span><h2>theta_stable_parabolics_type<a class="headerlink" href="#theta-stable-parabolics-type" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics_type:RealForm</span> <span class="pre">G,[int]</span> <span class="pre">P-&gt;[Parabolic]</span></code> Defined in line number 407.</div>
+<div class="line"><code class="docutils literal"><span class="pre">theta_stable_parabolics_type:RealForm</span> <span class="pre">G,[int]</span> <span class="pre">P-&gt;[Parabolic]</span></code> Defined in line number 415.</div>
 <div class="line"><br /></div>
 <div class="line">List all theta-stable parabolics of G, of type S.</div>
 <div class="line"><br /></div>
@@ -1583,7 +1603,7 @@
 <div class="section" id="all-rel-split-theta-stable-parabolics">
 <span id="all-rel-split-theta-stable-parabolics-realform-g-parabolic-1"></span><h2>all_rel_split_theta_stable_parabolics<a class="headerlink" href="#all-rel-split-theta-stable-parabolics" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">all_rel_split_theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code> Defined in line number 413.</div>
+<div class="line"><code class="docutils literal"><span class="pre">all_rel_split_theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code> Defined in line number 421.</div>
 <div class="line"><br /></div>
 <div class="line">List all theta-stable parabolics of G with relatively split L.</div>
 <div class="line"><br /></div>
@@ -1592,7 +1612,7 @@
 <div class="section" id="print-theta-stable-parabolics">
 <span id="print-theta-stable-parabolics-realform-g-void1"></span><h2>print_theta_stable_parabolics<a class="headerlink" href="#print-theta-stable-parabolics" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">print_theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;void</span></code> Defined in line number 421.</div>
+<div class="line"><code class="docutils literal"><span class="pre">print_theta_stable_parabolics:RealForm</span> <span class="pre">G-&gt;void</span></code> Defined in line number 429.</div>
 <div class="line"><br /></div>
 <div class="line">For each theta-stable parabolic of G, print S, Levi factor, and maximal x.</div>
 <div class="line"><br /></div>
@@ -1601,7 +1621,7 @@
 <div class="section" id="support">
 <span id="support-kgbelt-x-int-2"></span><h2>support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">support:KGBElt</span> <span class="pre">x-&gt;[int]</span></code> Defined in line number 427.</div>
+<div class="line"><code class="docutils literal"><span class="pre">support:KGBElt</span> <span class="pre">x-&gt;[int]</span></code> Defined in line number 435.</div>
 <div class="line"><br /></div>
 <div class="line">The smallest list of simple roots such that descents lead to the   distinguished fiber.</div>
 <div class="line"><br /></div>
@@ -1610,7 +1630,7 @@
 <div class="section" id="support-alt">
 <span id="support-alt-kgbelt-x-int-1"></span><h2>support_alt<a class="headerlink" href="#support-alt" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">support_alt:KGBElt</span> <span class="pre">x-&gt;[int]</span></code> Defined in line number 436.</div>
+<div class="line"><code class="docutils literal"><span class="pre">support_alt:KGBElt</span> <span class="pre">x-&gt;[int]</span></code> Defined in line number 444.</div>
 <div class="line"><br /></div>
 <div class="line">Auxiliary function.</div>
 <div class="line"><br /></div>

@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/hermitian.html">hermitian.at</a><ul>
@@ -1223,8 +1234,6 @@ atlas&gt; goodness (p,G)
 None
 
 atlas&gt; theta_induce_irreducible(p,G)
-Parabolic is theta-stable.
-Parabolic is theta-stable.
 Value:
 1*final parameter (x=4,lambda=[2,1]/1,nu=[1,-1]/2)
 1*final parameter (x=9,lambda=[2,1]/1,nu=[3,3]/2)
@@ -1232,8 +1241,7 @@ Value:
 </div>
 <p>This parameter is outside the fair range, and the induced representation is
 reducible. The calculation involves wall crossings and coherent continuation
-action. The messages &#8220;Parabolic is theta-stable.&#8221; are
-created because during this calculation certain new parabolics are defined.
+action.
 (See the summary for the
 script file <code class="docutils literal"><span class="pre">induction.at</span></code> on the <code class="docutils literal"><span class="pre">atlas</span>&nbsp; <span class="pre">Library</span></code> page for more details.)</p>
 <p>Notice that the induction functions will accept only parameters on Levi factors

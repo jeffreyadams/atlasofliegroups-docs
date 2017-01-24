@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hermitian.html">hermitian.at</a><ul>
@@ -1060,7 +1071,7 @@
 <div class="section" id="root-datum">
 <span id="root-datum-w-word-rd-rootdatum1"></span><h2>root_datum<a class="headerlink" href="#root-datum" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">root_datum:W_word(rd,)-&gt;RootDatum</span></code> Defined in line number 7.</div>
+<div class="line"><code class="docutils literal"><span class="pre">root_datum:W_word(rd,)-&gt;RootDatum</span></code> Defined in line number 8.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1068,7 +1079,7 @@
 <div class="section" id="word">
 <span id="word-w-word-w-int-1"></span><h2>word<a class="headerlink" href="#word" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">word:W_word(,w)-&gt;[int]</span></code> Defined in line number 8.</div>
+<div class="line"><code class="docutils literal"><span class="pre">word:W_word(,w)-&gt;[int]</span></code> Defined in line number 9.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1076,7 +1087,7 @@
 <div class="section" id="w-word-w-int1">
 <span id="id1"></span><h2>#<a class="headerlink" href="#w-word-w-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">#:W_word(,w)-&gt;int</span></code> Defined in line number 9.</div>
+<div class="line"><code class="docutils literal"><span class="pre">#:W_word(,w)-&gt;int</span></code> Defined in line number 10.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1084,7 +1095,7 @@
 <div class="section" id="act">
 <span id="act-w-word-rd-w-vec-v-vec1"></span><h2>act<a class="headerlink" href="#act" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">act:W_word(rd,w),</span> <span class="pre">vec</span> <span class="pre">v-&gt;vec</span></code> Defined in line number 13.</div>
+<div class="line"><code class="docutils literal"><span class="pre">act:W_word(rd,w),</span> <span class="pre">vec</span> <span class="pre">v-&gt;vec</span></code> Defined in line number 14.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1092,7 +1103,7 @@
 <div class="section" id="act-w-word-ww-ratvec-rv-ratvec1">
 <span id="id2"></span><h2>act<a class="headerlink" href="#act-w-word-ww-ratvec-rv-ratvec1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">act:W_word</span> <span class="pre">ww,</span> <span class="pre">ratvec</span> <span class="pre">rv-&gt;ratvec</span></code> Defined in line number 17.</div>
+<div class="line"><code class="docutils literal"><span class="pre">act:W_word</span> <span class="pre">ww,</span> <span class="pre">ratvec</span> <span class="pre">rv-&gt;ratvec</span></code> Defined in line number 18.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1100,7 +1111,7 @@
 <div class="section" id="co-act">
 <span id="co-act-vec-cowt-w-word-rd-w-ratvec1"></span><h2>co_act<a class="headerlink" href="#co-act" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">co_act:vec</span> <span class="pre">cowt,</span> <span class="pre">W_word(rd,w)-&gt;ratvec</span></code> Defined in line number 20.</div>
+<div class="line"><code class="docutils literal"><span class="pre">co_act:vec</span> <span class="pre">cowt,</span> <span class="pre">W_word(rd,w)-&gt;ratvec</span></code> Defined in line number 21.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1108,7 +1119,7 @@
 <div class="section" id="co-act-ratvec-rcv-w-word-ww-ratvec1">
 <span id="id3"></span><h2>co_act<a class="headerlink" href="#co-act-ratvec-rcv-w-word-ww-ratvec1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">co_act:ratvec</span> <span class="pre">rcv,</span> <span class="pre">W_word</span> <span class="pre">ww-&gt;ratvec</span></code> Defined in line number 24.</div>
+<div class="line"><code class="docutils literal"><span class="pre">co_act:ratvec</span> <span class="pre">rcv,</span> <span class="pre">W_word</span> <span class="pre">ww-&gt;ratvec</span></code> Defined in line number 25.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1116,7 +1127,7 @@
 <div class="section" id="w-matrix">
 <span id="w-matrix-w-word-rd-w-mat1"></span><h2>w_matrix<a class="headerlink" href="#w-matrix" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">w_matrix:W_word(rd,w)-&gt;mat</span></code> Defined in line number 27.</div>
+<div class="line"><code class="docutils literal"><span class="pre">w_matrix:W_word(rd,w)-&gt;mat</span></code> Defined in line number 28.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1124,7 +1135,7 @@
 <div class="section" id="equal">
 <span id="equal-w-word-w-w-word-u-bool1"></span><h2>equal<a class="headerlink" href="#equal" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">equal:W_word</span> <span class="pre">w,</span> <span class="pre">W_word</span> <span class="pre">u-&gt;bool</span></code> Defined in line number 32.</div>
+<div class="line"><code class="docutils literal"><span class="pre">equal:W_word</span> <span class="pre">w,</span> <span class="pre">W_word</span> <span class="pre">u-&gt;bool</span></code> Defined in line number 33.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1132,7 +1143,7 @@
 <div class="section" id="inverse">
 <span id="inverse-w-word-rd-w-w-word-rd-w-1"></span><h2>inverse<a class="headerlink" href="#inverse" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">inverse:W_word(rd,w)-&gt;W_word:</span>&nbsp; <span class="pre">(rd,w~[</span></code> Defined in line number 34.</div>
+<div class="line"><code class="docutils literal"><span class="pre">inverse:W_word(rd,w)-&gt;W_word:</span>&nbsp; <span class="pre">(rd,w~[</span></code> Defined in line number 35.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1140,7 +1151,7 @@
 <div class="section" id="non-dominant-index">
 <span id="non-dominant-index-rootdatum-rd-vec-v-int1"></span><h2>non_dominant_index<a class="headerlink" href="#non-dominant-index" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">non_dominant_index:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">v-&gt;int</span></code> Defined in line number 38.</div>
+<div class="line"><code class="docutils literal"><span class="pre">non_dominant_index:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">v-&gt;int</span></code> Defined in line number 39.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1148,7 +1159,7 @@
 <div class="section" id="dual-non-dominant-index">
 <span id="dual-non-dominant-index-rootdatum-rd-vec-cowt-int1"></span><h2>dual_non_dominant_index<a class="headerlink" href="#dual-non-dominant-index" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dual_non_dominant_index:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">cowt-&gt;int</span></code> Defined in line number 41.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dual_non_dominant_index:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">cowt-&gt;int</span></code> Defined in line number 42.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1156,7 +1167,7 @@
 <div class="section" id="make-dominant">
 <span id="make-dominant-rootdatum-rd-vec-v-vec-w-word-1"></span><h2>make_dominant<a class="headerlink" href="#make-dominant" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">v-&gt;(vec,W_word)</span></code> Defined in line number 47.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">v-&gt;(vec,W_word)</span></code> Defined in line number 48.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1164,7 +1175,7 @@
 <div class="section" id="dual-make-dominant">
 <span id="dual-make-dominant-rootdatum-rd-vec-cowt-vec-w-word-1"></span><h2>dual_make_dominant<a class="headerlink" href="#dual-make-dominant" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dual_make_dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">cowt-&gt;(vec,W_word)</span></code> Defined in line number 56.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dual_make_dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">cowt-&gt;(vec,W_word)</span></code> Defined in line number 57.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1172,7 +1183,7 @@
 <div class="section" id="make-dominant-rootdatum-rd-ratvec-v-ratvec-w-word-1">
 <span id="id4"></span><h2>make_dominant<a class="headerlink" href="#make-dominant-rootdatum-rd-ratvec-v-ratvec-w-word-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v-&gt;(ratvec,W_word)</span></code> Defined in line number 63.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v-&gt;(ratvec,W_word)</span></code> Defined in line number 64.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1180,7 +1191,7 @@
 <div class="section" id="dual-make-dominant-rootdatum-rd-ratvec-cowt-ratvec-w-word-1">
 <span id="id5"></span><h2>dual_make_dominant<a class="headerlink" href="#dual-make-dominant-rootdatum-rd-ratvec-cowt-ratvec-w-word-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dual_make_dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">cowt-&gt;(ratvec,W_word)</span></code> Defined in line number 66.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dual_make_dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">cowt-&gt;(ratvec,W_word)</span></code> Defined in line number 67.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1188,7 +1199,7 @@
 <div class="section" id="rho">
 <span id="rho-rootdatum-rd-ratvec-v-ratvec1"></span><h2>rho<a class="headerlink" href="#rho" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">rho:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v-&gt;ratvec</span></code> Defined in line number 70.</div>
+<div class="line"><code class="docutils literal"><span class="pre">rho:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v-&gt;ratvec</span></code> Defined in line number 71.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1196,7 +1207,7 @@
 <div class="section" id="dual-rho">
 <span id="dual-rho-rootdatum-rd-ratvec-cowt-ratvec1"></span><h2>dual_rho<a class="headerlink" href="#dual-rho" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dual_rho:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">cowt-&gt;ratvec</span></code> Defined in line number 72.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dual_rho:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">cowt-&gt;ratvec</span></code> Defined in line number 73.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1204,7 +1215,7 @@
 <div class="section" id="w-long">
 <span id="w-long-rootdatum-rd-w-word1"></span><h2>w_long<a class="headerlink" href="#w-long" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">w_long:RootDatum</span> <span class="pre">rd-&gt;W_word</span></code> Defined in line number 75.</div>
+<div class="line"><code class="docutils literal"><span class="pre">w_long:RootDatum</span> <span class="pre">rd-&gt;W_word</span></code> Defined in line number 76.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1212,7 +1223,7 @@
 <div class="section" id="dominant">
 <span id="dominant-rootdatum-rd-vec-v-vec1"></span><h2>dominant<a class="headerlink" href="#dominant" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">v-&gt;vec</span></code> Defined in line number 79.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">v-&gt;vec</span></code> Defined in line number 80.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1220,7 +1231,7 @@
 <div class="section" id="dominant-rootdatum-rd-ratvec-v-ratvec1">
 <span id="id6"></span><h2>dominant<a class="headerlink" href="#dominant-rootdatum-rd-ratvec-v-ratvec1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v-&gt;ratvec</span></code> Defined in line number 81.</div>
+<div class="line"><code class="docutils literal"><span class="pre">dominant:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v-&gt;ratvec</span></code> Defined in line number 82.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1228,7 +1239,7 @@
 <div class="section" id="word-rootdatum-rd-mat-m-w-word1">
 <span id="id7"></span><h2>word<a class="headerlink" href="#word-rootdatum-rd-mat-m-w-word1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">word:RootDatum</span> <span class="pre">rd,</span> <span class="pre">mat</span> <span class="pre">M-&gt;W_word</span></code> Defined in line number 85.</div>
+<div class="line"><code class="docutils literal"><span class="pre">word:RootDatum</span> <span class="pre">rd,</span> <span class="pre">mat</span> <span class="pre">M-&gt;W_word</span></code> Defined in line number 86.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1236,7 +1247,7 @@
 <div class="section" id="word-rootdatum-rd-mat-delta-mat-m-w-word1">
 <span id="id8"></span><h2>word<a class="headerlink" href="#word-rootdatum-rd-mat-delta-mat-m-w-word1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">word:RootDatum</span> <span class="pre">rd,mat</span> <span class="pre">delta,</span> <span class="pre">mat</span> <span class="pre">M-&gt;W_word</span></code> Defined in line number 90.</div>
+<div class="line"><code class="docutils literal"><span class="pre">word:RootDatum</span> <span class="pre">rd,mat</span> <span class="pre">delta,</span> <span class="pre">mat</span> <span class="pre">M-&gt;W_word</span></code> Defined in line number 91.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1244,7 +1255,7 @@
 <div class="section" id="length">
 <span id="length-rootdatum-rd-mat-m-int1"></span><h2>length<a class="headerlink" href="#length" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">length:RootDatum</span> <span class="pre">rd,</span> <span class="pre">mat</span> <span class="pre">M-&gt;int</span></code> Defined in line number 93.</div>
+<div class="line"><code class="docutils literal"><span class="pre">length:RootDatum</span> <span class="pre">rd,</span> <span class="pre">mat</span> <span class="pre">M-&gt;int</span></code> Defined in line number 94.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1252,7 +1263,7 @@
 <div class="section" id="length-w-word-rd-ww-int1">
 <span id="id9"></span><h2>length<a class="headerlink" href="#length-w-word-rd-ww-int1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">length:W_word</span> <span class="pre">(rd,):ww-&gt;int</span></code> Defined in line number 97.</div>
+<div class="line"><code class="docutils literal"><span class="pre">length:W_word</span> <span class="pre">(rd,):ww-&gt;int</span></code> Defined in line number 98.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1260,7 +1271,7 @@
 <div class="section" id="lengthens">
 <span id="lengthens-rootdatum-rd-mat-m-int-s-bool1"></span><h2>lengthens<a class="headerlink" href="#lengthens" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">lengthens:RootDatum</span> <span class="pre">rd,</span> <span class="pre">mat</span> <span class="pre">M,</span> <span class="pre">int</span> <span class="pre">s-&gt;bool</span></code> Defined in line number 100.</div>
+<div class="line"><code class="docutils literal"><span class="pre">lengthens:RootDatum</span> <span class="pre">rd,</span> <span class="pre">mat</span> <span class="pre">M,</span> <span class="pre">int</span> <span class="pre">s-&gt;bool</span></code> Defined in line number 101.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1268,7 +1279,7 @@
 <div class="section" id="lengthens-rootdatum-rd-int-s-mat-m-bool1">
 <span id="id10"></span><h2>lengthens<a class="headerlink" href="#lengthens-rootdatum-rd-int-s-mat-m-bool1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">lengthens:RootDatum</span> <span class="pre">rd,</span> <span class="pre">int</span> <span class="pre">s,</span> <span class="pre">mat</span> <span class="pre">M-&gt;bool</span></code> Defined in line number 102.</div>
+<div class="line"><code class="docutils literal"><span class="pre">lengthens:RootDatum</span> <span class="pre">rd,</span> <span class="pre">int</span> <span class="pre">s,</span> <span class="pre">mat</span> <span class="pre">M-&gt;bool</span></code> Defined in line number 103.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1276,7 +1287,7 @@
 <div class="section" id="make-simple-sequence">
 <span id="make-simple-sequence-rootdatum-rd-vec-root-w-word-int-1"></span><h2>make_simple_sequence<a class="headerlink" href="#make-simple-sequence" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_simple_sequence:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">!root-&gt;(W_word,</span> <span class="pre">int)</span></code> Defined in line number 109.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_simple_sequence:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">!root-&gt;(W_word,</span> <span class="pre">int)</span></code> Defined in line number 110.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1284,7 +1295,7 @@
 <div class="section" id="make-simple">
 <span id="make-simple-rootdatum-rd-vec-root-mat-int-1"></span><h2>make_simple<a class="headerlink" href="#make-simple" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_simple:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">root-&gt;(mat,</span> <span class="pre">int)</span></code> Defined in line number 120.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_simple:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">root-&gt;(mat,</span> <span class="pre">int)</span></code> Defined in line number 121.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1292,7 +1303,7 @@
 <div class="section" id="reduce">
 <span id="reduce-w-word-rd-w-w-word1"></span><h2>reduce<a class="headerlink" href="#reduce" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">reduce:W_word</span> <span class="pre">(rd,):w-&gt;W_word</span></code> Defined in line number 125.</div>
+<div class="line"><code class="docutils literal"><span class="pre">reduce:W_word</span> <span class="pre">(rd,):w-&gt;W_word</span></code> Defined in line number 126.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1300,7 +1311,7 @@
 <div class="section" id="cross">
 <span id="cross-w-word-w-kgbelt-x-kgbelt1"></span><h2>cross<a class="headerlink" href="#cross" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cross:W_word</span> <span class="pre">(,w),KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code> Defined in line number 129.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cross:W_word</span> <span class="pre">(,w),KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code> Defined in line number 130.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1308,7 +1319,7 @@
 <div class="section" id="cross-w-word-w-param-p-param1">
 <span id="id11"></span><h2>cross<a class="headerlink" href="#cross-w-word-w-param-p-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">cross:W_word</span> <span class="pre">(,w),Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 131.</div>
+<div class="line"><code class="docutils literal"><span class="pre">cross:W_word</span> <span class="pre">(,w),Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 132.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1316,7 +1327,7 @@
 <div class="section" id="make-dominant-using-roots">
 <span id="make-dominant-using-roots-rootdatum-rd-ratvec-gamma-ratvec-vec-1"></span><h2>make_dominant_using_roots<a class="headerlink" href="#make-dominant-using-roots" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_dominant_using_roots:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">gamma-&gt;(ratvec,vec)</span></code> Defined in line number 144.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_dominant_using_roots:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">gamma-&gt;(ratvec,vec)</span></code> Defined in line number 145.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1324,7 +1335,7 @@
 <div class="section" id="make-dominant-using-roots-rootdatum-rd-vec-v-vec-vec-1">
 <span id="id12"></span><h2>make_dominant_using_roots<a class="headerlink" href="#make-dominant-using-roots-rootdatum-rd-vec-v-vec-vec-1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_dominant_using_roots:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">v-&gt;(vec,vec)</span></code> Defined in line number 152.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_dominant_using_roots:RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">v-&gt;(vec,vec)</span></code> Defined in line number 153.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1332,7 +1343,7 @@
 <div class="section" id="translate-to-dominant">
 <span id="translate-to-dominant-param-p-param-vec-1"></span><h2>translate_to_dominant<a class="headerlink" href="#translate-to-dominant" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">translate_to_dominant:Param</span> <span class="pre">p-&gt;(Param,vec)</span></code> Defined in line number 159.</div>
+<div class="line"><code class="docutils literal"><span class="pre">translate_to_dominant:Param</span> <span class="pre">p-&gt;(Param,vec)</span></code> Defined in line number 160.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1340,7 +1351,7 @@
 <div class="section" id="make-integrally-dominant">
 <span id="make-integrally-dominant-rootdatum-rd-ratvec-v-ratvec-w-word-1"></span><h2>make_integrally_dominant<a class="headerlink" href="#make-integrally-dominant" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_integrally_dominant:RootDatum</span> <span class="pre">rd,ratvec</span> <span class="pre">v-&gt;(ratvec,W_word)</span></code> Defined in line number 169.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_integrally_dominant:RootDatum</span> <span class="pre">rd,ratvec</span> <span class="pre">v-&gt;(ratvec,W_word)</span></code> Defined in line number 170.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1348,7 +1359,7 @@
 <div class="section" id="int-dom-act">
 <span id="int-dom-act-w-word-rd-ww-ratvec-v-ratvec1"></span><h2>int_dom_act<a class="headerlink" href="#int-dom-act" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">int_dom_act:W_word(rd,):ww,ratvec</span> <span class="pre">v-&gt;ratvec</span></code> Defined in line number 173.</div>
+<div class="line"><code class="docutils literal"><span class="pre">int_dom_act:W_word(rd,):ww,ratvec</span> <span class="pre">v-&gt;ratvec</span></code> Defined in line number 174.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1356,7 +1367,7 @@
 <div class="section" id="left-mult">
 <span id="left-mult-int-i-w-word-rd-w-w-word1"></span><h2>left_mult<a class="headerlink" href="#left-mult" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">left_mult:int</span> <span class="pre">i,W_word(rd,w)-&gt;W_word</span></code> Defined in line number 178.</div>
+<div class="line"><code class="docutils literal"><span class="pre">left_mult:int</span> <span class="pre">i,W_word(rd,w)-&gt;W_word</span></code> Defined in line number 179.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1364,7 +1375,7 @@
 <div class="section" id="right-mult">
 <span id="right-mult-int-i-w-word-rd-w-w-word1"></span><h2>right_mult<a class="headerlink" href="#right-mult" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">right_mult:int</span> <span class="pre">i,W_word(rd,w)-&gt;W_word</span></code> Defined in line number 179.</div>
+<div class="line"><code class="docutils literal"><span class="pre">right_mult:int</span> <span class="pre">i,W_word(rd,w)-&gt;W_word</span></code> Defined in line number 180.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1372,7 +1383,7 @@
 <div class="section" id="conjugate">
 <span id="conjugate-int-i-w-word-rd-w-w-word1"></span><h2>conjugate<a class="headerlink" href="#conjugate" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">conjugate:int</span> <span class="pre">i,</span> <span class="pre">W_word(rd,w)-&gt;W_word</span></code> Defined in line number 180.</div>
+<div class="line"><code class="docutils literal"><span class="pre">conjugate:int</span> <span class="pre">i,</span> <span class="pre">W_word(rd,w)-&gt;W_word</span></code> Defined in line number 181.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1380,7 +1391,7 @@
 <div class="section" id="multiply">
 <span id="multiply-w-word-rd-v-w-word-w-w-word1"></span><h2>multiply<a class="headerlink" href="#multiply" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">multiply:W_word(rd,v),</span> <span class="pre">W_word(,w)-&gt;W_word</span></code> Defined in line number 182.</div>
+<div class="line"><code class="docutils literal"><span class="pre">multiply:W_word(rd,v),</span> <span class="pre">W_word(,w)-&gt;W_word</span></code> Defined in line number 183.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1388,7 +1399,7 @@
 <div class="section" id="conjugate-w-word-rd-v-w-word-w-w-word1">
 <span id="id13"></span><h2>conjugate<a class="headerlink" href="#conjugate-w-word-rd-v-w-word-w-w-word1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">conjugate:W_word(rd,v),</span> <span class="pre">W_word(,w)-&gt;W_word</span></code> Defined in line number 185.</div>
+<div class="line"><code class="docutils literal"><span class="pre">conjugate:W_word(rd,v),</span> <span class="pre">W_word(,w)-&gt;W_word</span></code> Defined in line number 186.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1396,7 +1407,7 @@
 <div class="section" id="w-word-rd-w-int-n-w-word1">
 <span id="id14"></span><h2>^<a class="headerlink" href="#w-word-rd-w-int-n-w-word1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">^:W_word</span> <span class="pre">(!rd,w),</span> <span class="pre">int</span> <span class="pre">n-&gt;W_word</span></code> Defined in line number 189.</div>
+<div class="line"><code class="docutils literal"><span class="pre">^:W_word</span> <span class="pre">(!rd,w),</span> <span class="pre">int</span> <span class="pre">n-&gt;W_word</span></code> Defined in line number 190.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1404,7 +1415,7 @@
 <div class="section" id="involution">
 <span id="involution-innerclass-ic-w-word-w-mat1"></span><h2>involution<a class="headerlink" href="#involution" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">involution:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word(,w)-&gt;mat</span></code> Defined in line number 198.</div>
+<div class="line"><code class="docutils literal"><span class="pre">involution:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word(,w)-&gt;mat</span></code> Defined in line number 199.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1412,7 +1423,7 @@
 <div class="section" id="imaginary-roots">
 <span id="imaginary-roots-innerclass-ic-w-word-tw-mat1"></span><h2>imaginary_roots<a class="headerlink" href="#imaginary-roots" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">imaginary_roots:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word</span> <span class="pre">tw-&gt;mat</span></code> Defined in line number 203.</div>
+<div class="line"><code class="docutils literal"><span class="pre">imaginary_roots:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word</span> <span class="pre">tw-&gt;mat</span></code> Defined in line number 204.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1420,7 +1431,7 @@
 <div class="section" id="real-roots">
 <span id="real-roots-innerclass-ic-w-word-tw-mat1"></span><h2>real_roots<a class="headerlink" href="#real-roots" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_roots:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word</span> <span class="pre">tw-&gt;mat</span></code> Defined in line number 205.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_roots:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word</span> <span class="pre">tw-&gt;mat</span></code> Defined in line number 206.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1428,7 +1439,7 @@
 <div class="section" id="imaginary-coroots">
 <span id="imaginary-coroots-innerclass-ic-w-word-tw-mat1"></span><h2>imaginary_coroots<a class="headerlink" href="#imaginary-coroots" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">imaginary_coroots:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word</span> <span class="pre">tw-&gt;mat</span></code> Defined in line number 207.</div>
+<div class="line"><code class="docutils literal"><span class="pre">imaginary_coroots:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word</span> <span class="pre">tw-&gt;mat</span></code> Defined in line number 208.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1436,7 +1447,7 @@
 <div class="section" id="real-coroots">
 <span id="real-coroots-innerclass-ic-w-word-tw-mat1"></span><h2>real_coroots<a class="headerlink" href="#real-coroots" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">real_coroots:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word</span> <span class="pre">tw-&gt;mat</span></code> Defined in line number 209.</div>
+<div class="line"><code class="docutils literal"><span class="pre">real_coroots:InnerClass</span> <span class="pre">ic,</span> <span class="pre">W_word</span> <span class="pre">tw-&gt;mat</span></code> Defined in line number 210.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1444,7 +1455,7 @@
 <div class="section" id="invariant-form">
 <span id="invariant-form-rootdatum-rd-mat1"></span><h2>invariant_form<a class="headerlink" href="#invariant-form" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">invariant_form:RootDatum</span> <span class="pre">rd-&gt;mat</span></code> Defined in line number 219.</div>
+<div class="line"><code class="docutils literal"><span class="pre">invariant_form:RootDatum</span> <span class="pre">rd-&gt;mat</span></code> Defined in line number 220.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1452,7 +1463,7 @@
 <div class="section" id="invariant-form-rootdatum-rd-ratvec-v-ratvec-w-rat1">
 <span id="id15"></span><h2>invariant_form<a class="headerlink" href="#invariant-form-rootdatum-rd-ratvec-v-ratvec-w-rat1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">invariant_form:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v,</span> <span class="pre">ratvec</span> <span class="pre">w-&gt;rat</span></code> Defined in line number 220.</div>
+<div class="line"><code class="docutils literal"><span class="pre">invariant_form:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v,</span> <span class="pre">ratvec</span> <span class="pre">w-&gt;rat</span></code> Defined in line number 221.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1460,7 +1471,7 @@
 <div class="section" id="nondegenerate-invariant-form">
 <span id="nondegenerate-invariant-form-rootdatum-ratvec-ratvec-rd-v-args-rat1"></span><h2>nondegenerate_invariant_form<a class="headerlink" href="#nondegenerate-invariant-form" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">nondegenerate_invariant_form:(RootDatum,ratvec,ratvec)(rd,v,):args-&gt;rat</span></code> Defined in line number 223.</div>
+<div class="line"><code class="docutils literal"><span class="pre">nondegenerate_invariant_form:(RootDatum,ratvec,ratvec)(rd,v,):args-&gt;rat</span></code> Defined in line number 224.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1468,7 +1479,7 @@
 <div class="section" id="co-invariant-form">
 <span id="co-invariant-form-rootdatum-rd-mat1"></span><h2>co_invariant_form<a class="headerlink" href="#co-invariant-form" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">co_invariant_form:RootDatum</span> <span class="pre">rd-&gt;mat</span></code> Defined in line number 227.</div>
+<div class="line"><code class="docutils literal"><span class="pre">co_invariant_form:RootDatum</span> <span class="pre">rd-&gt;mat</span></code> Defined in line number 228.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1476,7 +1487,7 @@
 <div class="section" id="co-invariant-form-rootdatum-rd-ratvec-v-ratvec-w-rat1">
 <span id="id16"></span><h2>co_invariant_form<a class="headerlink" href="#co-invariant-form-rootdatum-rd-ratvec-v-ratvec-w-rat1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">co_invariant_form:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v,</span> <span class="pre">ratvec</span> <span class="pre">w-&gt;rat</span></code> Defined in line number 228.</div>
+<div class="line"><code class="docutils literal"><span class="pre">co_invariant_form:RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v,</span> <span class="pre">ratvec</span> <span class="pre">w-&gt;rat</span></code> Defined in line number 229.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1484,7 +1495,7 @@
 <div class="section" id="delete">
 <span id="delete-w-word-list-int-k-w-word-list-k-list-k-11"></span><h2>delete<a class="headerlink" href="#delete" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">delete:[W_word]</span> <span class="pre">list,</span> <span class="pre">int</span> <span class="pre">k-&gt;[W_word]:</span> <span class="pre">list[:k]##list[k+1</span></code> Defined in line number 232.</div>
+<div class="line"><code class="docutils literal"><span class="pre">delete:[W_word]</span> <span class="pre">list,</span> <span class="pre">int</span> <span class="pre">k-&gt;[W_word]:</span> <span class="pre">list[:k]##list[k+1</span></code> Defined in line number 233.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1492,7 +1503,7 @@
 <div class="section" id="order">
 <span id="order-w-word-w-int1"></span><h2>order<a class="headerlink" href="#order" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">order:W_word</span> <span class="pre">w-&gt;int</span></code> Defined in line number 235.</div>
+<div class="line"><code class="docutils literal"><span class="pre">order:W_word</span> <span class="pre">w-&gt;int</span></code> Defined in line number 236.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1500,7 +1511,7 @@
 <div class="section" id="is-elliptic">
 <span id="is-elliptic-w-word-w-bool1"></span><h2>is_elliptic<a class="headerlink" href="#is-elliptic" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">is_elliptic:W_word</span> <span class="pre">w-&gt;bool</span></code> Defined in line number 237.</div>
+<div class="line"><code class="docutils literal"><span class="pre">is_elliptic:W_word</span> <span class="pre">w-&gt;bool</span></code> Defined in line number 238.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1508,7 +1519,7 @@
 <div class="section" id="is-regular">
 <span id="is-regular-w-word-w-bool1"></span><h2>is_regular<a class="headerlink" href="#is-regular" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">is_regular:W_word</span> <span class="pre">w-&gt;bool</span></code> Defined in line number 238.</div>
+<div class="line"><code class="docutils literal"><span class="pre">is_regular:W_word</span> <span class="pre">w-&gt;bool</span></code> Defined in line number 239.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1516,7 +1527,7 @@
 <div class="section" id="move-towards-no-cminus">
 <span id="move-towards-no-cminus-kgbelt-x-kgbelt-int-1"></span><h2>move_towards_no_Cminus<a class="headerlink" href="#move-towards-no-cminus" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">move_towards_no_Cminus:KGBElt</span> <span class="pre">x-&gt;(KGBElt,int)</span></code> Defined in line number 245.</div>
+<div class="line"><code class="docutils literal"><span class="pre">move_towards_no_Cminus:KGBElt</span> <span class="pre">x-&gt;(KGBElt,int)</span></code> Defined in line number 246.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1524,7 +1535,7 @@
 <div class="section" id="make-no-cminus">
 <span id="make-no-cminus-kgbelt-x-kgbelt-w-word-1"></span><h2>make_no_Cminus<a class="headerlink" href="#make-no-cminus" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_no_Cminus:KGBElt</span> <span class="pre">x-&gt;(KGBElt,W_word)</span></code> Defined in line number 249.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_no_Cminus:KGBElt</span> <span class="pre">x-&gt;(KGBElt,W_word)</span></code> Defined in line number 250.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1532,7 +1543,7 @@
 <div class="section" id="move-towards-no-cplus">
 <span id="move-towards-no-cplus-kgbelt-x-kgbelt-int-1"></span><h2>move_towards_no_Cplus<a class="headerlink" href="#move-towards-no-cplus" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">move_towards_no_Cplus:KGBElt</span> <span class="pre">x-&gt;(KGBElt,int)</span></code> Defined in line number 256.</div>
+<div class="line"><code class="docutils literal"><span class="pre">move_towards_no_Cplus:KGBElt</span> <span class="pre">x-&gt;(KGBElt,int)</span></code> Defined in line number 257.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1540,7 +1551,7 @@
 <div class="section" id="make-no-cplus">
 <span id="make-no-cplus-kgbelt-x-kgbelt-w-word-1"></span><h2>make_no_Cplus<a class="headerlink" href="#make-no-cplus" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_no_Cplus:KGBElt</span> <span class="pre">x-&gt;(KGBElt,W_word)</span></code> Defined in line number 260.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_no_Cplus:KGBElt</span> <span class="pre">x-&gt;(KGBElt,W_word)</span></code> Defined in line number 261.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1548,7 +1559,7 @@
 <div class="section" id="make-no-cminus-param-p-param1">
 <span id="id17"></span><h2>make_no_Cminus<a class="headerlink" href="#make-no-cminus-param-p-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_no_Cminus:Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 267.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_no_Cminus:Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 268.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1556,7 +1567,7 @@
 <div class="section" id="make-no-cplus-param-p-param1">
 <span id="id18"></span><h2>make_no_Cplus<a class="headerlink" href="#make-no-cplus-param-p-param1" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">make_no_Cplus:Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 270.</div>
+<div class="line"><code class="docutils literal"><span class="pre">make_no_Cplus:Param</span> <span class="pre">p-&gt;Param</span></code> Defined in line number 271.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>
@@ -1564,7 +1575,7 @@
 <div class="section" id="w-word">
 <span id="w-word1"></span><h2>W_word<a class="headerlink" href="#w-word" title="Permalink to this headline">¶</a></h2>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">(RootDatum,[int])</span></code> Defined in line number 5.</div>
+<div class="line"><code class="docutils literal"><span class="pre">(RootDatum,[int])</span></code> Defined in line number 6.</div>
 <div class="line"><br /></div>
 <div class="line"><br /></div>
 </div>

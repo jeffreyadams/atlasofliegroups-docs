@@ -211,6 +211,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -482,6 +483,11 @@
 <li class="toctree-l4"><a class="reference internal" href="all_Kparameters_index.html">all_Kparameters.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="aql.html">aql.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="aql_ref.html">aql.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="aql_index.html">aql.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="basic.html">basic.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basic_ref.html">basic.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="basic_index.html">basic.at Function Index</a></li>
@@ -620,6 +626,11 @@
 <li class="toctree-l3"><a class="reference internal" href="hecke.html">hecke.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="hecke_ref.html">hecke.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="hecke_index.html">hecke.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="herm.html">herm.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="herm_ref.html">herm.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="herm_index.html">herm.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hermitian.html">hermitian.at</a><ul>
@@ -1168,91 +1179,94 @@
 <tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#parabolic-ratvec-lambda-kgbelt-x-parabolic1"><span>parabolic</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolic-ratvec-lambda-kgbelt-x-parabolic1"><span>theta_stable_parabolic</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#parabolic-mute-ratvec-lambda-kgbelt-x-parabolic1"><span>parabolic_mute</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#real-parabolic-ratvec-lambda-kgbelt-x-parabolic1"><span>real_parabolic</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolic-ratvec-lambda-kgbelt-x-parabolic1"><span>theta_stable_parabolic</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#levi-ratvec-lambda-kgbelt-x-realform1"><span>Levi</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#real-parabolic-ratvec-lambda-kgbelt-x-parabolic1"><span>real_parabolic</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#levi-ratvec-lambda-kgbelt-x-realform1"><span>Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-levi-ratvec-lambda-kgbelt-x-realform1"><span>theta_stable_Levi</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-levi-ratvec-lambda-kgbelt-x-realform1"><span>theta_stable_Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#real-levi-ratvec-lambda-kgbelt-x-realform1"><span>real_Levi</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#real-levi-ratvec-lambda-kgbelt-x-realform1"><span>real_Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,</span> <span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#nilrad-ratvec-lambda-kgbelt-x-mat1"><span>nilrad</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#nilrad-ratvec-lambda-kgbelt-x-mat1"><span>nilrad</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#nilrad-roots-ratvec-lambda-kgbelt-x-mat1"><span>nilrad_roots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#nilrad-roots-ratvec-lambda-kgbelt-x-mat1"><span>nilrad_roots</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#rho-u-ratvec-lambda-kgbelt-x-ratvec1"><span>rho_u</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#rho-u-ratvec-lambda-kgbelt-x-ratvec1"><span>rho_u</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">lambda,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#zero-simple-roots-rootdatum-rd-vec-cowt-int-1"><span>zero_simple_roots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#zero-simple-roots-rootdatum-rd-vec-cowt-int-1"><span>zero_simple_roots</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,</span> <span class="pre">vec</span> <span class="pre">cowt-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#parabolic-alt-ratvec-h-kgbelt-x-parabolic1"><span>parabolic_alt</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#parabolic-alt-ratvec-h-kgbelt-x-parabolic1"><span>parabolic_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#levi-alt-ratvec-h-kgbelt-x-realform1"><span>Levi_alt</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#levi-alt-ratvec-h-kgbelt-x-realform1"><span>Levi_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#nilrad-alt-ratvec-h-kgbelt-x-mat1"><span>nilrad_alt</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#nilrad-alt-ratvec-h-kgbelt-x-mat1"><span>nilrad_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#nilrad-roots-alt-ratvec-h-kgbelt-x-mat1"><span>nilrad_roots_alt</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#nilrad-roots-alt-ratvec-h-kgbelt-x-mat1"><span>nilrad_roots_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#rho-u-alt-ratvec-h-kgbelt-x-ratvec1"><span>rho_u_alt</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#rho-u-alt-ratvec-h-kgbelt-x-ratvec1"><span>rho_u_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#rho-levi-alt-ratvec-h-kgbelt-x-ratvec1"><span>rho_Levi_alt</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#rho-levi-alt-ratvec-h-kgbelt-x-ratvec1"><span>rho_Levi_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">H,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#real-parabolic-kgbelt-x-parabolic1"><span>real_parabolic</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#real-parabolic-kgbelt-x-parabolic1"><span>real_parabolic</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#real-levi-kgbelt-x-realform1"><span>real_Levi</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#real-levi-kgbelt-x-realform1"><span>real_Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolic-kgbelt-x-parabolic1"><span>theta_stable_parabolic</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolic-kgbelt-x-parabolic1"><span>theta_stable_parabolic</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;Parabolic</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-levi-kgbelt-x-realform1"><span>theta_stable_Levi</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-levi-kgbelt-x-realform1"><span>theta_stable_Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#is-standard-levi-realform-l-realform-g-bool1"><span>is_standard_Levi</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#is-standard-levi-realform-l-realform-g-bool1"><span>is_standard_Levi</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">L,RealForm</span> <span class="pre">G-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#kgp-realform-g-complexparabolic-rd-s-kgpelt-1"><span>KGP</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#kgp-realform-g-complexparabolic-rd-s-kgpelt-1"><span>KGP</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[KGPElt]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#parabolics-realform-g-complexparabolic-rd-s-parabolic-1"><span>parabolics</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#parabolics-realform-g-complexparabolic-rd-s-parabolic-1"><span>parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">(rd,S)-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-complexparabolic-p-parabolic-1"><span>theta_stable_parabolics</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-complexparabolic-p-parabolic-1"><span>theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ComplexParabolic</span> <span class="pre">P-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-parabolic-1"><span>theta_stable_parabolics</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-realform-g-parabolic-1"><span>theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-type-realform-g-int-p-parabolic-1"><span>theta_stable_parabolics_type</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#theta-stable-parabolics-type-realform-g-int-p-parabolic-1"><span>theta_stable_parabolics_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,[int]</span> <span class="pre">P-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#all-rel-split-theta-stable-parabolics-realform-g-parabolic-1"><span>all_rel_split_theta_stable_parabolics</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#all-rel-split-theta-stable-parabolics-realform-g-parabolic-1"><span>all_rel_split_theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#print-theta-stable-parabolics-realform-g-void1"><span>print_theta_stable_parabolics</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#print-theta-stable-parabolics-realform-g-void1"><span>print_theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#support-kgbelt-x-int-2"><span>support</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#support-kgbelt-x-int-2"><span>support</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parabolics_ref.html#support-alt-kgbelt-x-int-1"><span>support_alt</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parabolics_ref.html#support-alt-kgbelt-x-int-1"><span>support_alt</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;[int]</span></code></td>
 </tr>
 </tbody>
