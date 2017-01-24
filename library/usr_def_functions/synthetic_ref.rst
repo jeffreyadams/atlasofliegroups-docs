@@ -8,7 +8,7 @@ synthetic.at Function References
 
 grading_coweight
 -------------------------------------------------
-| ``grading_coweight:KGBElt x->ratvec`` Defined in line number 6.
+| ``grading_coweight:KGBElt x->ratvec`` Defined in line number 7.
 | 
 | 
 
@@ -16,7 +16,7 @@ grading_coweight
 
 make_KGB
 -------------------------------------------------
-| ``make_KGB:RealForm G, mat theta, ratvec grading_cowt->KGBElt`` Defined in line number 9.
+| ``make_KGB:RealForm G, mat theta, ratvec grading_cowt->KGBElt`` Defined in line number 10.
 | 
 | 
 
@@ -24,7 +24,7 @@ make_KGB
 
 cross
 -------------------------------------------------
-| ``cross:mat w, KGBElt x->KGBElt`` Defined in line number 14.
+| ``cross:mat w, KGBElt x->KGBElt`` Defined in line number 15.
 | 
 | 
 
@@ -32,7 +32,7 @@ cross
 
 posroot_cross
 -------------------------------------------------
-| ``posroot_cross:int i, KGBElt x->KGBElt`` Defined in line number 18.
+| ``posroot_cross:int i, KGBElt x->KGBElt`` Defined in line number 19.
 | 
 | 
 
@@ -40,7 +40,7 @@ posroot_cross
 
 posroot_cross
 -------------------------------------------------
-| ``posroot_cross:int i, Param p->Param`` Defined in line number 21.
+| ``posroot_cross:int i, Param p->Param`` Defined in line number 22.
 | 
 | 
 
@@ -48,7 +48,7 @@ posroot_cross
 
 posroot_cross
 -------------------------------------------------
-| ``posroot_cross:vec alpha, Param p->Param`` Defined in line number 27.
+| ``posroot_cross:vec alpha, Param p->Param`` Defined in line number 28.
 | 
 | 
 
@@ -56,7 +56,7 @@ posroot_cross
 
 posroot_Cayley
 -------------------------------------------------
-| ``posroot_Cayley:int i, KGBElt x->KGBElt`` Defined in line number 35.
+| ``posroot_Cayley:int i, KGBElt x->KGBElt`` Defined in line number 36.
 | 
 | 
 
@@ -64,7 +64,7 @@ posroot_Cayley
 
 posroot_Cayley
 -------------------------------------------------
-| ``posroot_Cayley:int i, Param p->Param`` Defined in line number 52.
+| ``posroot_Cayley:int i, Param p->Param`` Defined in line number 53.
 | 
 | 
 
@@ -72,7 +72,7 @@ posroot_Cayley
 
 posroot_inv_Cayley
 -------------------------------------------------
-| ``posroot_inv_Cayley:int i, Param p->Param`` Defined in line number 68.
+| ``posroot_inv_Cayley:int i, Param p->Param`` Defined in line number 69.
 | 
 | 
 
@@ -80,7 +80,7 @@ posroot_inv_Cayley
 
 find_posroot
 -------------------------------------------------
-| ``find_posroot:RootDatum rd, vec alpha->int`` Defined in line number 91.
+| ``find_posroot:RootDatum rd, vec alpha->int`` Defined in line number 92.
 | 
 | 
 
@@ -88,7 +88,7 @@ find_posroot
 
 concat
 -------------------------------------------------
-| ``concat:[string] l,string open, string sep, string close->string`` Defined in line number 95.
+| ``concat:[string] l,string open, string sep, string close->string`` Defined in line number 96.
 | 
 | 
 
@@ -96,7 +96,7 @@ concat
 
 posroot_status
 -------------------------------------------------
-| ``posroot_status:int i, Param p->int`` Defined in line number 98.
+| ``posroot_status:int i, Param p->int`` Defined in line number 99.
 | 
 | 
 
@@ -104,7 +104,7 @@ posroot_status
 
 new_block_line
 -------------------------------------------------
-| ``new_block_line:[Param] B,int i->string`` Defined in line number 107.
+| ``new_block_line:[Param] B,int i->string`` Defined in line number 108.
 | 
 | 
 
@@ -112,7 +112,7 @@ new_block_line
 
 is_conjugate
 -------------------------------------------------
-| ``is_conjugate:ratvec v,ratvec w,mat theta->bool`` Defined in line number 133.
+| ``is_conjugate:ratvec v,ratvec w,mat theta->bool`` Defined in line number 134.
 | 
 | 
 
@@ -120,7 +120,7 @@ is_conjugate
 
 inner_class
 -------------------------------------------------
-| ``inner_class:KGBElt_gen(ic,,)->InnerClass`` Defined in line number 145.
+| ``inner_class:KGBElt_gen(ic,,)->InnerClass`` Defined in line number 146.
 | 
 | 
 
@@ -128,7 +128,7 @@ inner_class
 
 involution
 -------------------------------------------------
-| ``involution:KGBElt_gen(,theta,)->mat`` Defined in line number 146.
+| ``involution:KGBElt_gen(,theta,)->mat`` Defined in line number 147.
 | 
 | 
 
@@ -136,7 +136,7 @@ involution
 
 torus_factor
 -------------------------------------------------
-| ``torus_factor:KGBElt_gen(,,t)->ratvec`` Defined in line number 147.
+| ``torus_factor:KGBElt_gen(,,t)->ratvec`` Defined in line number 148.
 | 
 | 
 
@@ -144,7 +144,7 @@ torus_factor
 
 unnormalized_torus_factor
 -------------------------------------------------
-| ``unnormalized_torus_factor:KGBElt_gen(ic,,t)->ratvec`` Defined in line number 148.
+| ``unnormalized_torus_factor:KGBElt_gen(ic,,t)->ratvec`` Defined in line number 149.
 | 
 | 
 
@@ -152,7 +152,7 @@ unnormalized_torus_factor
 
 \=
 -------------------------------------------------
-| ``=:KGBElt_gen x1,KGBElt_gen x2->bool`` Defined in line number 158.
+| ``=:KGBElt_gen x1,KGBElt_gen x2->bool`` Defined in line number 159.
 | 
 | 
 
@@ -160,7 +160,7 @@ unnormalized_torus_factor
 
 \!=
 -------------------------------------------------
-| ``!=:(KGBElt_gen,KGBElt_gen)p->bool`` Defined in line number 165.
+| ``!=:(KGBElt_gen,KGBElt_gen)p->bool`` Defined in line number 166.
 | 
 | 
 
@@ -168,7 +168,7 @@ unnormalized_torus_factor
 
 \*
 -------------------------------------------------
-| ``*:mat delta,KGBElt_gen(ic,theta,t)->KGBElt_gen`` Defined in line number 173.
+| ``*:mat delta,KGBElt_gen(ic,theta,t)->KGBElt_gen`` Defined in line number 174.
 | 
 | 
 
@@ -176,7 +176,7 @@ unnormalized_torus_factor
 
 is_fixed
 -------------------------------------------------
-| ``is_fixed:mat delta,KGBElt_gen y->bool`` Defined in line number 176.
+| ``is_fixed:mat delta,KGBElt_gen y->bool`` Defined in line number 177.
 | 
 | 
 
@@ -184,7 +184,7 @@ is_fixed
 
 KGBElt_gen
 -----------------------------------------
-| ``(InnerClass,mat,ratvec)`` Defined in line number 143.
+| ``(InnerClass,mat,ratvec)`` Defined in line number 144.
 | 
 | 
 

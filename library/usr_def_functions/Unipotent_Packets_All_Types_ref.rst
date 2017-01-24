@@ -144,7 +144,7 @@ ind_one_dim_from_parabolic
 
 closed_real_parabolics_associated_to_a_lambda
 -------------------------------------------------
-| ``closed_real_parabolics_associated_to_a_lambda:RealForm G, [int] H->[Parabolic]`` Defined in line number 130.
+| ``closed_real_parabolics_associated_to_a_lambda:RealForm G, [int] H->[Parabolic]`` Defined in line number 129.
 | 
 | 
 
@@ -152,7 +152,7 @@ closed_real_parabolics_associated_to_a_lambda
 
 dual_Cell
 -------------------------------------------------
-| ``dual_Cell:Block B, int Cell->int`` Defined in line number 136.
+| ``dual_Cell:Block B, int Cell->int`` Defined in line number 135.
 | 
 | 
 
@@ -160,7 +160,7 @@ dual_Cell
 
 cells_with_given_AV
 -------------------------------------------------
-| ``cells_with_given_AV:[int] O, [[int]] AV_Cells->(int, [int])`` Defined in line number 150.
+| ``cells_with_given_AV:[int] O, [[int]] AV_Cells->(int, [int])`` Defined in line number 149.
 | 
 | 
 
@@ -168,7 +168,7 @@ cells_with_given_AV
 
 subset
 -------------------------------------------------
-| ``subset:[int] V, [int] W->bool`` Defined in line number 156.
+| ``subset:[int] V, [int] W->bool`` Defined in line number 155.
 | 
 | 
 
@@ -176,7 +176,7 @@ subset
 
 delete_sub_vector
 -------------------------------------------------
-| ``delete_sub_vector:[int] Q, [int] W->[int]`` Defined in line number 162.
+| ``delete_sub_vector:[int] Q, [int] W->[int]`` Defined in line number 161.
 | 
 | 
 
@@ -184,7 +184,7 @@ delete_sub_vector
 
 good_KGB_C
 -------------------------------------------------
-| ``good_KGB_C:RealForm G->[KGBElt]`` Defined in line number 174.
+| ``good_KGB_C:RealForm G->[KGBElt]`` Defined in line number 173.
 | 
 | 
 
@@ -192,7 +192,7 @@ good_KGB_C
 
 if_same_len_B
 -------------------------------------------------
-| ``if_same_len_B:[int] R, [int] S->([int], [int])`` Defined in line number 182.
+| ``if_same_len_B:[int] R, [int] S->([int], [int])`` Defined in line number 181.
 | 
 | 
 
@@ -200,7 +200,7 @@ if_same_len_B
 
 orbit_from_W_rep_B
 -------------------------------------------------
-| ``orbit_from_W_rep_B:Wrep W->[int]`` Defined in line number 188.
+| ``orbit_from_W_rep_B:Wrep W->[int]`` Defined in line number 187.
 | 
 | 
 
@@ -208,7 +208,7 @@ orbit_from_W_rep_B
 
 AV_for_given_block_B
 -------------------------------------------------
-| ``AV_for_given_block_B:Block B->[[int]]`` Defined in line number 197.
+| ``AV_for_given_block_B:Block B->[[int]]`` Defined in line number 196.
 | 
 | 
 
@@ -216,7 +216,7 @@ AV_for_given_block_B
 
 orbit_H_Bn_Step1
 -------------------------------------------------
-| ``orbit_H_Bn_Step1:RealForm G, [int] p->([int], [int])`` Defined in line number 203.
+| ``orbit_H_Bn_Step1:RealForm G, [int] p->([int], [int])`` Defined in line number 202.
 | 
 | 
 
@@ -224,7 +224,7 @@ orbit_H_Bn_Step1
 
 orbit_H_Bn
 -------------------------------------------------
-| ``orbit_H_Bn:RealForm G, [int] r->[int]`` Defined in line number 225.
+| ``orbit_H_Bn:RealForm G, [int] r->[int]`` Defined in line number 224.
 | 
 | 
 
@@ -232,7 +232,7 @@ orbit_H_Bn
 
 induced_from_closed_parabolics_B
 -------------------------------------------------
-| ``induced_from_closed_parabolics_B:RealForm G, [int] P->[Param]`` Defined in line number 241.
+| ``induced_from_closed_parabolics_B:RealForm G, [int] P->[Param]`` Defined in line number 240.
 | 
 | 
 
@@ -240,7 +240,7 @@ induced_from_closed_parabolics_B
 
 real_forms_of_complex_orbit_as_Reps_B
 -------------------------------------------------
-| ``real_forms_of_complex_orbit_as_Reps_B:Block B, [int] P->[Param]`` Defined in line number 248.
+| ``real_forms_of_complex_orbit_as_Reps_B:Block B, [int] P->[Param]`` Defined in line number 246.
 | 
 | 
 
@@ -248,7 +248,7 @@ real_forms_of_complex_orbit_as_Reps_B
 
 real_forms_of_complex_orbit_as_Cells_B
 -------------------------------------------------
-| ``real_forms_of_complex_orbit_as_Cells_B:Block B, [int] P->[int]`` Defined in line number 260.
+| ``real_forms_of_complex_orbit_as_Cells_B:Block B, [int] P->[int]`` Defined in line number 258.
 | 
 | 
 
@@ -256,7 +256,7 @@ real_forms_of_complex_orbit_as_Cells_B
 
 all_Cells_with_Aq_Lambda_B
 -------------------------------------------------
-| ``all_Cells_with_Aq_Lambda_B:Block B, [int] P->[int]`` Defined in line number 273.
+| ``all_Cells_with_Aq_Lambda_B:Block B, [int] P->[int]`` Defined in line number 271.
 | 
 | 
 
@@ -264,7 +264,7 @@ all_Cells_with_Aq_Lambda_B
 
 all_Cells_with_Aq_Lambda_as_Real_forms_B
 -------------------------------------------------
-| ``all_Cells_with_Aq_Lambda_as_Real_forms_B:Block B, [int] P->[[int]]`` Defined in line number 286.
+| ``all_Cells_with_Aq_Lambda_as_Real_forms_B:Block B, [int] P->[[int]]`` Defined in line number 284.
 | 
 | 
 
@@ -272,7 +272,7 @@ all_Cells_with_Aq_Lambda_as_Real_forms_B
 
 Unipotent_Algo_test_B
 -------------------------------------------------
-| ``Unipotent_Algo_test_B:Block B, [int] P->bool`` Defined in line number 305.
+| ``Unipotent_Algo_test_B:Block B, [int] P->bool`` Defined in line number 303.
 | 
 | 
 
@@ -280,7 +280,7 @@ Unipotent_Algo_test_B
 
 Unipotent_Packet_B
 -------------------------------------------------
-| ``Unipotent_Packet_B:Block B, [int] P->[[Param]]`` Defined in line number 314.
+| ``Unipotent_Packet_B:Block B, [int] P->[[Param]]`` Defined in line number 312.
 | 
 | 
 
@@ -288,7 +288,7 @@ Unipotent_Packet_B
 
 Missing_Parts_of_Uni_Packet_B
 -------------------------------------------------
-| ``Missing_Parts_of_Uni_Packet_B:Block B, [int] P->[[Param]]`` Defined in line number 334.
+| ``Missing_Parts_of_Uni_Packet_B:Block B, [int] P->[[Param]]`` Defined in line number 332.
 | 
 | 
 
@@ -296,7 +296,7 @@ Missing_Parts_of_Uni_Packet_B
 
 if_same_len_C
 -------------------------------------------------
-| ``if_same_len_C:[int] R, [int] S->([int], [int])`` Defined in line number 386.
+| ``if_same_len_C:[int] R, [int] S->([int], [int])`` Defined in line number 384.
 | 
 | 
 
@@ -304,7 +304,7 @@ if_same_len_C
 
 orbit_from_W_rep_C
 -------------------------------------------------
-| ``orbit_from_W_rep_C:Wrep W->[int]`` Defined in line number 392.
+| ``orbit_from_W_rep_C:Wrep W->[int]`` Defined in line number 390.
 | 
 | 
 
@@ -312,7 +312,7 @@ orbit_from_W_rep_C
 
 AV_for_given_block_C
 -------------------------------------------------
-| ``AV_for_given_block_C:Block B->[[int]]`` Defined in line number 402.
+| ``AV_for_given_block_C:Block B->[[int]]`` Defined in line number 400.
 | 
 | 
 
@@ -320,7 +320,7 @@ AV_for_given_block_C
 
 orbit_H_Cn
 -------------------------------------------------
-| ``orbit_H_Cn:RealForm G, [int] P->[int]`` Defined in line number 409.
+| ``orbit_H_Cn:RealForm G, [int] P->[int]`` Defined in line number 407.
 | 
 | 
 
@@ -328,7 +328,7 @@ orbit_H_Cn
 
 induced_from_closed_parabolics_C
 -------------------------------------------------
-| ``induced_from_closed_parabolics_C:RealForm G, [int] P->[Param]`` Defined in line number 430.
+| ``induced_from_closed_parabolics_C:RealForm G, [int] P->[Param]`` Defined in line number 428.
 | 
 | 
 
@@ -336,7 +336,7 @@ induced_from_closed_parabolics_C
 
 real_forms_of_complex_orbit_as_Reps_C
 -------------------------------------------------
-| ``real_forms_of_complex_orbit_as_Reps_C:Block B, [int] P->[Param]`` Defined in line number 438.
+| ``real_forms_of_complex_orbit_as_Reps_C:Block B, [int] P->[Param]`` Defined in line number 435.
 | 
 | 
 
@@ -344,7 +344,7 @@ real_forms_of_complex_orbit_as_Reps_C
 
 real_forms_of_complex_orbit_as_Cells_C
 -------------------------------------------------
-| ``real_forms_of_complex_orbit_as_Cells_C:Block B, [int] P->[int]`` Defined in line number 450.
+| ``real_forms_of_complex_orbit_as_Cells_C:Block B, [int] P->[int]`` Defined in line number 447.
 | 
 | 
 
@@ -352,7 +352,7 @@ real_forms_of_complex_orbit_as_Cells_C
 
 all_Cells_with_Aq_Lambda_C
 -------------------------------------------------
-| ``all_Cells_with_Aq_Lambda_C:Block B, [int] P->[int]`` Defined in line number 467.
+| ``all_Cells_with_Aq_Lambda_C:Block B, [int] P->[int]`` Defined in line number 464.
 | 
 | 
 
@@ -360,7 +360,7 @@ all_Cells_with_Aq_Lambda_C
 
 all_Cells_with_Aq_Lambda_as_Real_forms_C
 -------------------------------------------------
-| ``all_Cells_with_Aq_Lambda_as_Real_forms_C:Block B, [int] P->[[int]]`` Defined in line number 480.
+| ``all_Cells_with_Aq_Lambda_as_Real_forms_C:Block B, [int] P->[[int]]`` Defined in line number 477.
 | 
 | 
 
@@ -368,7 +368,7 @@ all_Cells_with_Aq_Lambda_as_Real_forms_C
 
 Unipotent_Algo_test_C
 -------------------------------------------------
-| ``Unipotent_Algo_test_C:Block B, [int] P->bool`` Defined in line number 499.
+| ``Unipotent_Algo_test_C:Block B, [int] P->bool`` Defined in line number 496.
 | 
 | 
 
@@ -376,7 +376,7 @@ Unipotent_Algo_test_C
 
 Unipotent_Packet_C
 -------------------------------------------------
-| ``Unipotent_Packet_C:Block B, [int] P->[[Param]]`` Defined in line number 508.
+| ``Unipotent_Packet_C:Block B, [int] P->[[Param]]`` Defined in line number 505.
 | 
 | 
 
@@ -384,7 +384,7 @@ Unipotent_Packet_C
 
 Missing_Parts_of_Uni_Packet_C
 -------------------------------------------------
-| ``Missing_Parts_of_Uni_Packet_C:Block B, [int] P->[[Param]]`` Defined in line number 528.
+| ``Missing_Parts_of_Uni_Packet_C:Block B, [int] P->[[Param]]`` Defined in line number 525.
 | 
 | 
 
@@ -392,7 +392,7 @@ Missing_Parts_of_Uni_Packet_C
 
 is_valid_pair
 -------------------------------------------------
-| ``is_valid_pair:Block B, [int] P->bool`` Defined in line number 580.
+| ``is_valid_pair:Block B, [int] P->bool`` Defined in line number 577.
 | 
 | 
 
@@ -400,7 +400,7 @@ is_valid_pair
 
 Unipotent_Packets
 -------------------------------------------------
-| ``Unipotent_Packets:Block B, [int] P->[[Param]]`` Defined in line number 589.
+| ``Unipotent_Packets:Block B, [int] P->[[Param]]`` Defined in line number 586.
 | 
 | 
 

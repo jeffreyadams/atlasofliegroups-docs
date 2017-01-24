@@ -60,11 +60,19 @@ all_parameters
 | 
 | 
 
+.. _all_parameters_x_gamma_kgbelt_x,ratvec_gamma->[param]1:
+
+all_parameters_x_gamma
+-------------------------------------------------
+| ``all_parameters_x_gamma:KGBElt x,ratvec gamma->[Param]`` Defined in line number 68.
+| 
+| 
+
 .. _all_parameters_gamma_realform_g,ratvec_gamma->[param]1:
 
 all_parameters_gamma
 -------------------------------------------------
-| ``all_parameters_gamma:RealForm G,ratvec gamma->[Param]`` Defined in line number 68.
+| ``all_parameters_gamma:RealForm G,ratvec gamma->[Param]`` Defined in line number 79.
 | 
 | 
 
@@ -72,7 +80,7 @@ all_parameters_gamma
 
 all_dominant_norm_upto
 -------------------------------------------------
-| ``all_dominant_norm_upto:InnerClass ic, ratvec cowt,int N->mat`` Defined in line number 96.
+| ``all_dominant_norm_upto:InnerClass ic, ratvec cowt,int N->mat`` Defined in line number 107.
 | 
 | 
 
@@ -80,7 +88,7 @@ all_dominant_norm_upto
 
 lambda_rho_from_dominant_norm_upto
 -------------------------------------------------
-| ``lambda_rho_from_dominant_norm_upto:KGBElt x, ratvec v, int N->mat`` Defined in line number 110.
+| ``lambda_rho_from_dominant_norm_upto:KGBElt x, ratvec v, int N->mat`` Defined in line number 121.
 | 
 | 
 
@@ -88,7 +96,7 @@ lambda_rho_from_dominant_norm_upto
 
 K_parameters_norm_upto
 -------------------------------------------------
-| ``K_parameters_norm_upto:(KGBElt,ratvec,int)(x,,):triple->[K_Type]`` Defined in line number 115.
+| ``K_parameters_norm_upto:(KGBElt,ratvec,int)(x,,):triple->[K_Type]`` Defined in line number 126.
 | 
 | 
 

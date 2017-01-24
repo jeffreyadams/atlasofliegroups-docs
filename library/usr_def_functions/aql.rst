@@ -1,6 +1,6 @@
-.. _tits.at:
+.. _aql.at:
 
-tits.at
+aql.at
 =====================================
 
 
@@ -8,14 +8,14 @@ tits.at
 
 **This script imports the following .at files:**
 
-| :ref:`basic.at<basic.at>`
-| :ref:`Weylgroup.at<Weylgroup.at>`
 | :ref:`W_orbit.at<W_orbit.at>`
+| :ref:`induction.at<induction.at>`
+| :ref:`all_Kparameters.at<all_Kparameters.at>`
 |
 
 
 .. toctree::
    :maxdepth: 1
 
-   tits_ref
-   tits_index
+   aql_ref
+   aql_index

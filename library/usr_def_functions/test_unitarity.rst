@@ -11,6 +11,7 @@ test_unitarity.at
 | :ref:`groups.at<groups.at>`
 | :ref:`hermitian.at<hermitian.at>`
 | :ref:`unitary.at<unitary.at>`
+| :ref:`nilpotent.at<nilpotent.at>`
 | :ref:`lietypes.at<lietypes.at>`
 | :ref:`representations.at<representations.at>`
 |

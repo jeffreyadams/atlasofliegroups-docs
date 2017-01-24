@@ -337,7 +337,7 @@ dim_u_cap_p
 | Dimension of :math:`\mathfrak u\cap\mathfrak p`  for theta-stable parabolic.
 | 
 
-.. _dim_u_cap_p_kgbelt_x->int2:
+.. _dim_u_cap_p_kgbelt_x->int3:
 
 dim_u_cap_p
 -------------------------------------------------
@@ -637,7 +637,7 @@ reduce_good_range
 
 is_good_Aq
 -------------------------------------------------
-| ``is_good_Aq:Param p->bool`` Defined in line number 828.
+| ``is_good_Aq:Param p->bool`` Defined in line number 829.
 | 
 | Determine whether p is a (weakly) good Aq(lambda).
 | 
@@ -646,7 +646,7 @@ is_good_Aq
 
 is_proper_Aq
 -------------------------------------------------
-| ``is_proper_Aq:Param p->bool`` Defined in line number 833.
+| ``is_proper_Aq:Param p->bool`` Defined in line number 834.
 | 
 | Determine whether p is a proper (weakly) good Aq(lambda).
 | 

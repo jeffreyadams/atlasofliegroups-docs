@@ -14,27 +14,27 @@ Functions
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`generate_from_dom_[(vec->vec)]_s,vec_v->([[int]],[vec])1`
-     - ``[(vec->vec)] S,vec v->([[int]],[vec])``
-   * - :ref:`generate_from_dom_rootdatum_rd,[(vec->vec)]_s,vec_v->([w_word],[vec])1`
-     - ``RootDatum rd,[(vec->vec)] S,vec v->([W_word],[vec])``
-   * - :ref:`generate_from_dom_rootdatum_rd,[int]_s,vec_v->([w_word],[vec])1`
-     - ``RootDatum rd,[int] S,vec v->([W_word],[vec])``
-   * - :ref:`w_orbit_(rootdatum,[int],vec)_triple->[vec]1`
-     - ``(RootDatum,[int],vec) triple->[vec]``
-   * - :ref:`w_orbit_w_elements_(rootdatum,[int],vec)_triple->[w_word]1`
-     - ``(RootDatum,[int],vec) triple->[W_word]``
-   * - :ref:`generate_from_dom_rootdatum_rd,vec_v->([w_word],[vec])1`
-     - ``RootDatum rd,vec v->([W_word],[vec])``
-   * - :ref:`w_orbit_(rootdatum,vec)_pair->[vec]1`
-     - ``(RootDatum,vec) pair->[vec]``
-   * - :ref:`w_orbit_w_elements_(rootdatum,vec)_pair->[w_word]1`
-     - ``(RootDatum,vec) pair->[W_word]``
+   * - :ref:`generate_from_dom_[(ratvec->ratvec)]_s,ratvec_v->([[int]],[ratvec])1`
+     - ``[(ratvec->ratvec)] S,ratvec v->([[int]],[ratvec])``
+   * - :ref:`generate_from_dom_rootdatum_rd,[(ratvec->ratvec)]_s,ratvec_v->([w_word],[ratvec])1`
+     - ``RootDatum rd,[(ratvec->ratvec)] S,ratvec v->([W_word],[ratvec])``
+   * - :ref:`generate_from_dom_rootdatum_rd,[int]_s,ratvec_v->([w_word],[ratvec])1`
+     - ``RootDatum rd,[int] S,ratvec v->([W_word],[ratvec])``
+   * - :ref:`w_orbit_(rootdatum,[int],ratvec)_triple->[ratvec]1`
+     - ``(RootDatum,[int],ratvec) triple->[ratvec]``
+   * - :ref:`w_orbit_w_elements_(rootdatum,[int],ratvec)_triple->[w_word]1`
+     - ``(RootDatum,[int],ratvec) triple->[W_word]``
+   * - :ref:`generate_from_dom_rootdatum_rd,ratvec_v->([w_word],[ratvec])1`
+     - ``RootDatum rd,ratvec v->([W_word],[ratvec])``
+   * - :ref:`w_orbit_(rootdatum,ratvec)_pair->[ratvec]1`
+     - ``(RootDatum,ratvec) pair->[ratvec]``
+   * - :ref:`w_orbit_w_elements_(rootdatum,ratvec)_pair->[w_word]1`
+     - ``(RootDatum,ratvec) pair->[W_word]``
    * - :ref:`generate_w_rootdatum_rd->[w_word]1`
      - ``RootDatum rd->[W_word]``
-   * - :ref:`generate_[(vec->vec)]_s,vec_v->([[int]],[vec])1`
-     - ``[(vec->vec)] S,vec v->([[int]],[vec])``
-   * - :ref:`generate_[w_word]_s,vec_v->([[int]],[vec])1`
-     - ``[W_word] S,vec v->([[int]],[vec])``
-   * - :ref:`conjugate_to_[w_word]_s,_vec_v,vec_w->(bool,[int])1`
-     - ``[W_word] S, vec v,vec w->(bool,[int])``
+   * - :ref:`generate_[(ratvec->ratvec)]_s,ratvec_v->([[int]],[ratvec])1`
+     - ``[(ratvec->ratvec)] S,ratvec v->([[int]],[ratvec])``
+   * - :ref:`generate_[w_word]_s,ratvec_v->([[int]],[ratvec])1`
+     - ``[W_word] S,ratvec v->([[int]],[ratvec])``
+   * - :ref:`conjugate_to_[w_word]_s,_ratvec_v,ratvec_w->(bool,[int])1`
+     - ``[W_word] S, ratvec v,ratvec w->(bool,[int])``

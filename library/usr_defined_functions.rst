@@ -10,6 +10,7 @@ User Defined Functions
    usr_def_functions/A1
    usr_def_functions/all
    usr_def_functions/all_Kparameters
+   usr_def_functions/aql
    usr_def_functions/basic
    usr_def_functions/bigMatrices
    usr_def_functions/center
@@ -38,6 +39,7 @@ User Defined Functions
    usr_def_functions/group_operations
    usr_def_functions/groups
    usr_def_functions/hecke
+   usr_def_functions/herm
    usr_def_functions/hermitian
    usr_def_functions/induction
    usr_def_functions/induction_sp4

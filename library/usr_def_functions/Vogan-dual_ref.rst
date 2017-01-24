@@ -8,7 +8,7 @@ Vogan-dual.at Function References
 
 fixed_lift
 -------------------------------------------------
-| ``fixed_lift:mat theta_1,ratvec z->(ratvec,(vec,mat,mat))`` Defined in line number 55.
+| ``fixed_lift:mat theta_1,ratvec z->(ratvec,(vec,mat,mat))`` Defined in line number 56.
 | 
 | 
 
@@ -16,7 +16,7 @@ fixed_lift
 
 integral_shift
 -------------------------------------------------
-| ``integral_shift:ratvec v, mat simples,(vec d,mat L,mat R)->vec`` Defined in line number 83.
+| ``integral_shift:ratvec v, mat simples,(vec d,mat L,mat R)->vec`` Defined in line number 84.
 | 
 | 
 
@@ -24,7 +24,7 @@ integral_shift
 
 dual_KGB
 -------------------------------------------------
-| ``dual_KGB:Param p, InnerClass dual_int_ic->KGBElt`` Defined in line number 91.
+| ``dual_KGB:Param p, InnerClass dual_int_ic->KGBElt`` Defined in line number 92.
 | 
 | 
 
@@ -32,7 +32,7 @@ dual_KGB
 
 central_cocharacter
 -------------------------------------------------
-| ``central_cocharacter:RealForm G->ratvec`` Defined in line number 118.
+| ``central_cocharacter:RealForm G->ratvec`` Defined in line number 119.
 | 
 | 
 
@@ -40,7 +40,7 @@ central_cocharacter
 
 dual_shift
 -------------------------------------------------
-| ``dual_shift:RootDatum rd, ratvec gamma->ratvec`` Defined in line number 122.
+| ``dual_shift:RootDatum rd, ratvec gamma->ratvec`` Defined in line number 123.
 | 
 | 
 
@@ -48,7 +48,7 @@ dual_shift
 
 ell
 -------------------------------------------------
-| ``ell:KGBElt x->vec`` Defined in line number 133.
+| ``ell:KGBElt x->vec`` Defined in line number 134.
 | 
 | 
 
@@ -56,7 +56,7 @@ ell
 
 dual_gamma
 -------------------------------------------------
-| ``dual_gamma:Param p->ratvec`` Defined in line number 138.
+| ``dual_gamma:Param p->ratvec`` Defined in line number 139.
 | 
 | 
 
@@ -64,7 +64,7 @@ dual_gamma
 
 dual_lambda
 -------------------------------------------------
-| ``dual_lambda:Param p->ratvec`` Defined in line number 141.
+| ``dual_lambda:Param p->ratvec`` Defined in line number 142.
 | 
 | 
 
@@ -72,7 +72,7 @@ dual_lambda
 
 check_dual_lambda
 -------------------------------------------------
-| ``check_dual_lambda:Param p->bool`` Defined in line number 144.
+| ``check_dual_lambda:Param p->bool`` Defined in line number 145.
 | 
 | 
 
@@ -80,7 +80,7 @@ check_dual_lambda
 
 dual
 -------------------------------------------------
-| ``dual:Param p, InnerClass dual_integral_class->Param`` Defined in line number 148.
+| ``dual:Param p, InnerClass dual_integral_class->Param`` Defined in line number 149.
 | 
 | 
 
@@ -88,7 +88,7 @@ dual
 
 dual
 -------------------------------------------------
-| ``dual:KGBElt x,KGBElt y, ratvec gamma->Param`` Defined in line number 152.
+| ``dual:KGBElt x,KGBElt y, ratvec gamma->Param`` Defined in line number 153.
 | 
 | 
 
@@ -96,7 +96,7 @@ dual
 
 dual
 -------------------------------------------------
-| ``dual:KGBElt x,KGBElt y->Param`` Defined in line number 154.
+| ``dual:KGBElt x,KGBElt y->Param`` Defined in line number 155.
 | 
 | 
 
@@ -104,7 +104,7 @@ dual
 
 test1
 -------------------------------------------------
-| ``test1:Param p->[bool]`` Defined in line number 166.
+| ``test1:Param p->[bool]`` Defined in line number 167.
 | 
 | 
 
@@ -112,7 +112,7 @@ test1
 
 test2
 -------------------------------------------------
-| ``test2:Param p->[bool]`` Defined in line number 170.
+| ``test2:Param p->[bool]`` Defined in line number 171.
 | 
 | 
 
