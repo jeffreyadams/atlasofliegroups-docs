@@ -1,5 +1,5 @@
-Cuspidal Data
-==============
+Cuspidal Data for Minimal principal series
+===========================================
 
 Given a parameter ``(x, lambda, nu)`` we can obtain information about
 the cuspidal data used to construct the representation. Let us review the parameters of all the representations of :math:`G=SL(2,\mathbb R)` with infinitesimal character ``rho`` ::

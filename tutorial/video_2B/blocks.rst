@@ -1,8 +1,10 @@
-Blocks
-=======
+Blocks of the Minimal Principal Series
+=======================================
 
-Let :math:`G=Sp(4, \mathbb R)` A very useful thing is to find the
-block of a representation ::
+Recall that blocks is where the Kazshdan-Lusztig polynomials live. So
+it is vey useful to find the block of a single representation.
+
+Let :math:`G=Sp(4, \mathbb R)` and let us find the block of the trivial representation ::
 
    atlas> G:Sp(4,R)
    Variable G: RealForm (overriding previous instance, which had type RealForm)
@@ -89,7 +91,7 @@ This matrix gives information about the block sizes of all the real
 forms of :math:`Sp(4,\mathbb R)`. The last row gives the block sizes for the split
 group.
 
-Recall that blocks is where the Kazshdan-Lusztig polynomials live. Also a block is a singleton if and only if the representation is irreducible.
+Recall that a block is a singleton if and only if the representation is irreducible.
 
 Now do something similar for the real forms of ``E8`` ::
 
