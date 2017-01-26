@@ -204,14 +204,20 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../minimal_principal.html">Minimal Principal Series.</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Minimal Principal Series of Split Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#example">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#cuspidal-data">Cuspidal Data</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Minimal Principal Series of Split Groups</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Infinitesimal Character Zero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translation_principle.html">Translation Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blocks.html">Blocks</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -1078,9 +1084,8 @@ X^* /(1-\theta )X^*\)</span> and <span class="math">\(\nu \in {X^* \otimes \math
 2}\lambda + \nu\)</span>.</p>
 <p>From this character we get a representation of the group G.</p>
 <p>In this section we will focus on the Minimal Principal Series for split groups</p>
-</div>
 <div class="section" id="example">
-<h1>Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h1>
+<h2>Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>If <span class="math">\(H\)</span> is the split Cartan of <span class="math">\(G\)</span>. Let <span class="math">\(B\)</span> be a borel
 including this Cartan. We can construct the induced representation
 <span class="math">\(Ind_B ^G (\chi)\)</span> where <span class="math">\(\chi\)</span> is a character of
@@ -1227,34 +1232,7 @@ atlas&gt;
 <p>So there are two large families of irreducible principal series, one
 with parameters of the form <code class="docutils literal"><span class="pre">(x,</span> <span class="pre">[1],</span> <span class="pre">nu)</span></code>, and the other with
 parameters <code class="docutils literal"><span class="pre">x,</span> <span class="pre">[0],</span> <span class="pre">nu</span> <span class="pre">),</span> <span class="pre">where</span> <span class="pre">``nu</span></code> is non-integral:</p>
-<div class="section" id="cuspidal-data">
-<h2>Cuspidal Data<a class="headerlink" href="#cuspidal-data" title="Permalink to this headline">¶</a></h2>
-<p>Another thing you can do is get also information about cuspidal data used to construct this representation:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>set p=parameter(x,[2],[3/2])
-Identifier p: Param (hiding previous one of type Param)
-atlas&gt; set (P,q)=cuspidal_data(q)
-Identifiers P: ([int],KGBElt), q: Param (hiding previous one of type Param)
-atlas&gt; Levi(P)
-Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
-atlas&gt; q
-Value: final parameter (x=0,lambda=[1]/1,nu=[1]/1)
-atlas&gt; p
-Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
-</pre></div>
-</div>
-<p>So <span class="math">\(P\)</span> is a parabolic whith Levi factor <span class="math">\(GL(1,\mathbb R)\)</span> and <code class="docutils literal"><span class="pre">q</span></code> is acharacter of <span class="math">\(GL(1,\mathbb R)\)</span>. So we can extract the character of the Cartan by finding the Cuspidal data for the representation with parameter <code class="docutils literal"><span class="pre">p</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;
-atlas&gt; real_form(q)
-Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
-atlas&gt; Levi(P)
-Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
-atlas&gt;
-
-atlas&gt; induce_irreducible (q,P,G)
-Value:
-1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
-</pre></div>
-</div>
+<p>Another thing you can do is get also information about cuspidal data used to construct this representation. This is discussed in a separate section.</p>
 </div>
 </div>
 

@@ -4,6 +4,8 @@ Translation Principle
 Now let's change infinitesimal character usintg the translation
 principle. Let us start again with the trivial representation::
 
+   atlas> set G=SL(2,R)
+   Variable G: RealForm (overriding previous instance, which had type RealForm)
    atlas> set p=trivial(G)
    Variable p: Param (overriding previous instance, which had type Param)
    atlas> p

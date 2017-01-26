@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/> 
+    <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
+        <link rel="up" title="Minimal Principal Series." href="../minimal_principal.html"/>
+        <link rel="next" title="Infinitesimal Character Zero" href="zero_infinitesimal_character.html"/>
+        <link rel="prev" title="Example \(G=SO(3,2)\)" href="minimal_principal_so32.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -80,7 +83,7 @@
             
             
                 <p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../about_atlas.html">About the Software</a></li>
@@ -136,7 +139,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../preliminaries.html">Preliminaries</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/basics.html">Getting started using the software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/basics.html#the-basic-at-file">The <code class="docutils literal"><span class="pre">basic.at</span></code> file</a></li>
@@ -200,15 +203,21 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/differential.html">The Character Differential</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../minimal_principal.html">Minimal Principal Series.</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sl2r.html">Minimal Principal Series of Split Groups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sl2r.html#example">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="minimal_principal_sl2r.html#cuspidal-data">Cuspidal Data</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../minimal_principal.html">Minimal Principal Series.</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sl2r.html">Minimal Principal Series of Split Groups</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="minimal_principal_sl2r.html#example">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Cuspidal Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Infinitesimal Character Zero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translation_principle.html">Translation Principle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blocks.html">Blocks</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -1028,6 +1037,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../index.html">Docs</a> &raquo;</li>
       
+          <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
+      
+          <li><a href="../minimal_principal.html">Minimal Principal Series.</a> &raquo;</li>
+      
     <li>Cuspidal Data</li>
       <li class="wy-breadcrumbs-aside">
         
@@ -1043,49 +1056,153 @@
            <div itemprop="articleBody">
 <!--test-->
 		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="zero_infinitesimal_character.html" class="btn btn-neutral float-right" title="Infinitesimal Character Zero" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="minimal_principal_so32.html" class="btn btn-neutral float-right" title="Example \(G=SO(3,2)\)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
 <!--endtest-->
             
   <div class="section" id="cuspidal-data">
 <h1>Cuspidal Data<a class="headerlink" href="#cuspidal-data" title="Permalink to this headline">¶</a></h1>
-<p>Another thing you can do is get also information about cuspidal data
-used to construct this representation:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>set p=parameter(x,[2],[3/2])
-Identifier p: Param (hiding previous one of type Param)
-atlas&gt; set (P,q)=cuspidal_data(q)
-Identifiers P: ([int],KGBElt), q: Param (hiding previous one of type Param)
+<p>Given a parameter <code class="docutils literal"><span class="pre">(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code> we can obtain information about
+the cuspidal data used to construct the representation. Let us review the parameters of all the representations of <span class="math">\(G=SL(2,\mathbb R)\)</span> with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code></p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
+Variable G: RealForm
+atlas&gt; G
+Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
+atlas&gt; rho(G)
+Value: [ 1 ]/1
+atlas&gt; set parameters=all_parameters_gamma(G,rho(G))
+Variable parameters: [Param]
+atlas&gt; void: for p in parameters do prints(p) od
+final parameter (x=0,lambda=[1]/1,nu=[0]/1)
+final parameter (x=1,lambda=[1]/1,nu=[0]/1)
+final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+final parameter (x=2,lambda=[2]/1,nu=[1]/1)
+atlas&gt;
+atlas&gt; set t=trivial(G)
+Variable t: Param
+atlas&gt; t
+Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>Now, let us find the cuspidal data for``t``</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set (P,q)=cuspidal_data(t)
+Variable P: ([int],KGBElt)
+Variable q: Param
+atlas&gt; q
+Value: final parameter (x=0,lambda=[0]/1,nu=[1]/1)
 atlas&gt; Levi(P)
+Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
+atlas&gt; real_form(q)
+Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
+atlas&gt; induce_irreducible (q,P,G)
+Value:
+1*final parameter (x=0,lambda=[1]/1,nu=[0]/1)
+1*final parameter (x=1,lambda=[1]/1,nu=[0]/1)
+1*final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>Recall that the Cartan for this parameter is the split Cartan:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(t)
+Variable x: KGBElt
+atlas&gt; x
+Value: KGB element #2
+atlas&gt; set H=Cartan_class(x)
+Variable H: CartanClass (overriding previous instance, which had type string (constant))
+atlas&gt; H
+Value: Cartan class #1, occurring for 1 real form and for 2 dual real forms
+atlas&gt; print_Cartan_info(H)
+compact: 0, complex: 0, split: 1
+canonical twisted involution: 1
+twisted involution orbit size: 1; fiber size: 1; strong inv: 1
+imaginary root system: empty
+real root system: A1
+complex factor: empty
+</pre></div>
+</div>
+<p>So, we can extract the character of the Cartan by finding the Cuspidal
+data for the representation with parameter <code class="docutils literal"><span class="pre">t</span></code>.</p>
+<p>The standard representation containing the trivial is induced from a
+parabolic subgroup P with Levi factor equal to <span class="math">\(GL(1,R)\)</span> and a
+character <code class="docutils literal"><span class="pre">q</span></code> of <span class="math">\(GL(1,R)\)</span> with <code class="docutils literal"><span class="pre">lambda=0</span></code> and <code class="docutils literal"><span class="pre">nu=1</span></code>.</p>
+<p>Moreover, we can see above that when we induce we obtain the composition series
+of the spherical principal series that contains the trivial
+representation and the two discrete series:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; t
+Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+atlas&gt;
+</pre></div>
+</div>
+<p>Similarly we can do the same for the non-spherical principal series:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set p=parameters[3]
+Variable p: Param
+atlas&gt; p
+Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
+atlas&gt; set (P,q)=cuspidal_data(p)
+Variable P: ([int],KGBElt) (overriding previous instance, which had type ([int],KGBElt))
+Variable q: Param (overriding previous instance, which had type Param)
+atlas&gt; real_form(q)
 Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
 atlas&gt; q
 Value: final parameter (x=0,lambda=[1]/1,nu=[1]/1)
-atlas&gt; p
-Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
-</pre></div>
-</div>
-<dl class="docutils">
-<dt>So <span class="math">\(P\)</span> is a parabolic whith Levi factor <span class="math">\(GL(1,\mathbb R)\)</span></dt>
-<dd><p class="first">and <code class="docutils literal"><span class="pre">q``is</span> <span class="pre">acharacter</span> <span class="pre">of</span> <span class="pre">:math:`GL(1,\mathbb</span> <span class="pre">R)`.</span> <span class="pre">So</span> <span class="pre">we</span> <span class="pre">can</span>
-<span class="pre">extract</span> <span class="pre">the</span> <span class="pre">character</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">Cartan</span> <span class="pre">by</span> <span class="pre">finding</span> <span class="pre">the</span> <span class="pre">Cuspidal</span> <span class="pre">data</span>
-<span class="pre">for</span> <span class="pre">the</span> <span class="pre">representation</span> <span class="pre">with</span> <span class="pre">parameter</span> <span class="pre">``p</span></code>:</p>
-<div class="last highlight-python"><div class="highlight"><pre><span></span>atlas&gt;
-atlas&gt; real_form(q)
-Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
-atlas&gt; Levi(P)
-Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
-atlas&gt;
-
 atlas&gt; induce_irreducible (q,P,G)
 Value:
-1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
+1*final parameter (x=2,lambda=[2]/1,nu=[1]/1)
+atlas&gt;
+atlas&gt; p
+Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
+atlas&gt;
 </pre></div>
 </div>
-</dd>
-</dl>
+<p>So, we get the irreducible, non-spherical principal series by inducing
+the character on <span class="math">\(GL(1,R)\)</span> with <code class="docutils literal"><span class="pre">lambda</span></code> and <code class="docutils literal"><span class="pre">nu</span></code> both equal
+to <code class="docutils literal"><span class="pre">1</span></code> and from the same parabolic subgroup as in the previous
+case.</p>
+<p>Similarly, just to look at another example with non-integral infinitesimal character:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set u=parameter(x, [2], [3/2])
+Variable u: Param
+atlas&gt; u
+Value: final parameter (x=2,lambda=[2]/1,nu=[3]/2)
+atlas&gt;
+atlas&gt; set (P,q)=cuspidal_data(u)
+Variable P: ([int],KGBElt) (overriding previous instance, which had type ([int],KGBElt))
+Variable q: Param (overriding previous instance, which had type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[1]/1,nu=[3]/2)
+atlas&gt; Levi(P)
+Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
+atlas&gt; induce_irreducible(q,P,G)
+Value:
+1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
+atlas&gt; u
+Value: final parameter (x=2,lambda=[2]/1,nu=[3]/2)
+atlas&gt;
+</pre></div>
+</div>
+<p>So the induced representation is also irreducible as was expected.</p>
 </div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="zero_infinitesimal_character.html" class="btn btn-neutral float-right" title="Infinitesimal Character Zero" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="minimal_principal_so32.html" class="btn btn-neutral float-right" title="Example \(G=SO(3,2)\)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
