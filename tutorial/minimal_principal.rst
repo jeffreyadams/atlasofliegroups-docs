@@ -12,3 +12,4 @@ Minimal Principal Series.
    video_2B/minimal_principal_so32 
    video_2B/cuspidal_data
    video_2B/translation_principle
+   video_2B/blocks
