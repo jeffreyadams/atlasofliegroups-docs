@@ -1,4 +1,5 @@
 Example :math:`G=SO(3,2)`
+=========================
 
 Let's study the minimal principal series for this group> ::
 
