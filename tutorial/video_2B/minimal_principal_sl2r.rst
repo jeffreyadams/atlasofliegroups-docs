@@ -21,7 +21,8 @@ From this character we get a representation of the group G.
 In this section we will focus on the Minimal Principal Series for split groups
 
 Example :math:`G=SL(2,\mathbb R)`.
-==================================
+-----------------------------------
+
 If :math:`H` is the split Cartan of :math:`G`. Let :math:`B` be a borel
 including this Cartan. We can construct the induced representation
 :math:`Ind_B ^G (\chi)` where :math:`\chi` is a character of

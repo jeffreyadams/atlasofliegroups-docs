@@ -1,5 +1,5 @@
 Example :math:`G=Sp(4,\mathbb R)`
-----------------------------------
+=================================
 
 Now lets find all representations with infinitesimal character :math:`\rho` ::
 

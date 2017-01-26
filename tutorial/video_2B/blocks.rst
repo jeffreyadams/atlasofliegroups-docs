@@ -77,7 +77,7 @@ because it is an irreducible principal series. Let us find the other one ::
 
 This is a smaller block but it has the last 5 of the representations with infinitesimal character ``rho``.
 
-So, the blocks are three of sizes 1, 5 and 12 for this group. In fact we can get block sizes information doing the following ::
+So, there are three blocks of sizes 1, 5 and 12 each. In fact we can get block sizes information doing the following ::
 
    atlas> block_sizes (Sp(4,R))
    Value: 
