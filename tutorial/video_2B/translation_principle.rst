@@ -1,5 +1,5 @@
-Translation Principle on Minimal Pricipal Series
-=================================================
+Translation Principle on Minimal Principal Series
+==================================================
 
 Now let's change infinitesimal character usintg the translation
 principle. Let us start again with the trivial representation::
