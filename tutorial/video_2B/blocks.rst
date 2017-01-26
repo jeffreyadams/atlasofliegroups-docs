@@ -1,32 +1,12 @@
 Blocks
 =======
 
-Let :math:`G=Sp(4, \mathbb R)`. Let us compute all the representations with
-infinitesimal character zero ::
+Let :math:`G=Sp(4, \mathbb R)` A very useful thing is to find the
+block of a representation ::
 
-    atlas> G:Sp(4,R)
-    Variable G: RealForm (overriding previous instance, which had type RealForm)
-    atlas> set parameters=all_parameters_gamma(G,[0,0])
-    Variable parameters: [Param] (overriding previous instance, which had type [Param])
-    atlas> #parameters
-    Value: 5
-    atlas> void: for p in parameters do prints(p) od
-    final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
-    final parameter (x=1,lambda=[0,0]/1,nu=[0,0]/1)
-    final parameter (x=5,lambda=[0,1]/1,nu=[0,0]/1)
-    final parameter (x=6,lambda=[0,1]/1,nu=[0,0]/1)
-    final parameter (x=10,lambda=[2,1]/1,nu=[0,0]/1)
-    atlas>
-
-Note that ``nu`` is always ``0``. The last row is the spherical
-principal series at infinitesimal character ``0`` and lambda is
-essentially ``rho``. But this is only telling you what the character
-is on the :math:`{\math Z}_2` factors. On the other hand the first two
-are the limits of discrete series. 
-
-Now let us see where these representations fit in. A very useful thing
-is to find the block of a representation ::
-
+   atlas> G:Sp(4,R)
+   Variable G: RealForm (overriding previous instance, which had type RealForm)
+   atlas> 
    atlas> set t=trivial(G)
    Variable t: Param (overriding previous instance, which had type Param)
    atlas> print_block(t)
@@ -82,7 +62,7 @@ This is again the block of the trivial ::
   atlas>
 
 This is another principal series, all by itself in another block
-because it is an irreducible principal series. Let us find the other one.
+because it is an irreducible principal series. Let us find the other one ::
 
    atlas> print_block(params[15])
    Parameter defines element 4 of the following block:
@@ -97,7 +77,7 @@ because it is an irreducible principal series. Let us find the other one.
 
 This is a smaller block but it has the last 5 of the representations with infinitesimal character ``rho``.
 
-So, the blocks are three of sizes are 1, 5, 12 for this group. In fact we can get block sizes information doing the following L::
+So, the blocks are three of sizes 1, 5 and 12 for this group. In fact we can get block sizes information doing the following ::
 
    atlas> block_sizes (Sp(4,R))
    Value: 
@@ -105,7 +85,9 @@ So, the blocks are three of sizes are 1, 5, 12 for this group. In fact we can ge
    | 0, 0,  4 |
    | 1, 5, 12 |
 
-This matrix gives information about the block sizes of all the real forms of Sp(4,R). The last row gives the block sizes for the split group. 
+This matrix gives information about the block sizes of all the real
+forms of :math:`Sp(4,\mathbb R)`. The last row gives the block sizes for the split
+group.
 
 Recall that blocks is where the Kazshdan-Lusztig polynomials live. Also a block is a singleton if and only if the representation is irreducible.
 
@@ -129,4 +111,4 @@ We have three real forms, the compact one, an intermediate one and the split one
 
 Again the last row gives the block sizes of the blocks of the split real form of ``E8``. There is only one irreducible principal series and 255 reducible ones. 120 are in the second block and 135 in the other block.
 
-As an exercise it is interesting to print each one of thos blocks. 
+As an exercise it is interesting to print each block. 
