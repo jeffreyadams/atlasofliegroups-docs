@@ -2,7 +2,7 @@ Cuspidal Data
 ==============
 
 Given a parameter ``(x, lambda, nu)`` we can obtain information about
-the cuspidal data used to construct the representation. Let us review the parameters of all the representations of :math:`G=SL(2,\mathbb R)` with infinitesimal character ``rho``.::
+the cuspidal data used to construct the representation. Let us review the parameters of all the representations of :math:`G=SL(2,\mathbb R)` with infinitesimal character ``rho`` ::
 
     atlas> set G=SL(2,R)
     Variable G: RealForm
@@ -60,11 +60,14 @@ Recall that the Cartan for this parameter is the split Cartan::
     real root system: A1
     complex factor: empty
 
-So, the standard representation containing the trivial is induced from
-a parabolic subgroup P with Levi factor equal to :math:`GL(1,R)` and a
-character ``q`` of :math:`GL(1,R)` with ``lambda=0`` and ``nu=1``. 
+So, we can extract the character of the Cartan by finding the Cuspidal
+data for the representation with parameter ``t``. 
 
-We can see above that when we induce we obtain the composition series
+The standard representation containing the trivial is induced from a
+parabolic subgroup P with Levi factor equal to :math:`GL(1,R)` and a
+character ``q`` of :math:`GL(1,R)` with ``lambda=0`` and ``nu=1``.
+ 
+Moreover, we can see above that when we induce we obtain the composition series
 of the spherical principal series that contains the trivial
 representation and the two discrete series::
 
@@ -94,12 +97,12 @@ Similarly we can do the same for the non-spherical principal series::
     atlas>
 
 So, we get the irreducible, non-spherical principal series by inducing
-the character on :math:`GL(1,R)`  with ``lambda`` and ``nu`` both
-equal to ``1`` and from the same parabolic subgroup as in the previous
-case.
+the character on :math:`GL(1,R)` with ``lambda`` and ``nu`` both equal
+to ``1`` and from the same parabolic subgroup as in the previous
+case. 
 
 
-Just to look at another example with non-integral infinitesimal character::
+Similarly, just to look at another example with non-integral infinitesimal character::
 
    atlas> set u=parameter(x, [2], [3/2])
    Variable u: Param
@@ -120,20 +123,7 @@ Just to look at another example with non-integral infinitesimal character::
    Value: final parameter (x=2,lambda=[2]/1,nu=[3]/2)
    atlas> 
 
+So the induced representation is also irreducible as was expected.
 
-So :math:`P` is a parabolic whith Levi factor :math:`GL(1,\mathbb R)`
- and ``q`` is a character of :math:`GL(1,\mathbb R)`. So we can
- extract the character of the Cartan by finding the Cuspidal data
- for the representation with parameter ``p``::
 
-   atlas>
-   atlas> real_form(q)
-   Value: disconnected split real group with Lie algebra 'gl(1,R)'
-   atlas> Levi(P)
-   Value: disconnected split real group with Lie algebra 'gl(1,R)'
-   atlas>
-
-   atlas> induce_irreducible (q,P,G)
-   Value:
-   1*final parameter (x=2,lambda=[2]/1,nu=[3]/2)
 
