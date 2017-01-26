@@ -27,7 +27,7 @@ block of a representation ::
 
 This is the block of the trivial representation, which as it says
 above, it is parameter number 10 in this block, whith real roots
-labeled ``r2`` and ``r1``in the ``tau`` invariant. This block has two
+labeled ``r2`` and ``r1`` in the ``tau`` invariant. This block has two
 principal series in it. Namely the two with ``x=10``. This block has
 12 representations and we have seen that there are 18 representations
 with infinitesimal character ``rho``. it turns out they are divided
