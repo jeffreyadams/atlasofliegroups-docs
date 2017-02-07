@@ -3,7 +3,7 @@
 Help with git
 =============
 
-`git <https://git-scm.com/>`_ is a distributed version control system. It helps developers handle their projects. Git is easy to learn. It is also free and open source.
+`git <https://git-scm.com/>`_ is a distributed version control system. It helps developers handle their projects. Git is easy to learn. It is also free and open source. One advantage of using ``git`` is that the latest version of the software is always there 
 
 
 This page is organized into the following sections:
@@ -34,7 +34,6 @@ To update the software, do::
     git pull origin
     
 will update your local copy of the software with the any latest changes.
-
 
 
 .. _branch:
@@ -88,15 +87,17 @@ However, you need to have `gitk <https://git-scm.com/docs/gitk>`_ installed.
 
 Many commands of git have help options::
 
-    git    # This gives short git help.
-    git --help    # This gives longer git help.
-    git tag --help    # This gives help on tagging.
+    git # This gives short git help.  git --help # This gives longer git help. 
+    git tag --help # This gives help on tagging.  
+    git pull origin # This downloads objects from the origin repository (stored
+on GitHub )and integrates witn another repository or local branch.
+    git pull origin master # This downloads the latest version from the master branch where the software is.
     
 Some commands have dry-run versions::
 
     git pull origin --dry-run
 
-says what the command will do, but doesn't do anything.
+says what the command will do, but doesn't do anything. 
 
 
 
