@@ -33,7 +33,7 @@ To update the software, do::
 
     git pull origin
     
-will update your local copy of the software with the any latest changes.
+will update your local copy of the software with the latest changes.
 
 
 .. _branch:
@@ -58,6 +58,12 @@ To switch into other branches from the current branch, do::
     git checkout latest
     
 This will switch you into the branch named "latest".
+
+To update only one the master branch do::
+
+   git pull origin master
+
+This will also update the atlas software.
 
 
 .. _other_commands:
@@ -87,11 +93,10 @@ However, you need to have `gitk <https://git-scm.com/docs/gitk>`_ installed.
 
 Many commands of git have help options::
 
-    git # This gives short git help.  git --help # This gives longer git help. 
+    git # This gives short git help.  
+    git --help # This gives longer git help. 
     git tag --help # This gives help on tagging.  
-    git pull origin # This downloads objects from the origin repository (stored
-on GitHub )and integrates witn another repository or local branch.
-    git pull origin master # This downloads the latest version from the master branch where the software is.
+
     
 Some commands have dry-run versions::
 
