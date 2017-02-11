@@ -158,6 +158,53 @@ And to make the first output look nicer we can split the ``prints`` command in t
    Value: 8
    atlas>
 
-Local variables in ``for`` statements
---------------------------------------
+Use of ``;`` and local variables in ``for`` statements
+--------------------------------------------------------
+
+Recall some examples of ``for`` loops::
+
+   atlas> for i:4 do i od
+   Value: [0,1,2,3]
+   atlas> for i:4 do 2*i od
+   Value: [0,2,4,6]
+   atlas>
+   
+   atlas> for i:4 do v#:=2*i od
+   Value: [[0],[0,2],[0,2,4],[0,2,4,6]]
+   atlas> v
+   Value: [0,2,4,6]
+   atlas>
+
+The last ``for`` loop uses ``#`` which means append the ith expression
+to the previous one. Now if we only care about the last value of
+``v``, we can use ``;`` as follows::
+
+   atlas> v:=[]
+   Value: []
+   atlas> for i:4 do v#:=2*i od;v
+   Value: [0,2,4,6]
+   atlas>
+
+We can repeat the proces to tack on the same string to the previous one::
+
+   atlas> set w=for i:4 do v#:=2*i od;v
+   Variable w: [int]
+   atlas> w
+   Value: [0,2,4,6,0,2,4,6]
+   atlas> set w=for i:4 do v#:=2*i od;v
+   Variable w: [int] (overriding previous instance, which had type [int])
+   atlas> w
+   Value: [0,2,4,6,0,2,4,6,0,2,4,6]
+   atlas>
+
+Another way of getting the same output ``v`` is using local variables ::
+
+   atlas> v:=[]
+   Value: []
+   atlas> v
+   Value: []
+   atlas> let a=for i:4 do v#:=2*i od in v
+   Value: [0,2,4,6]
+   atlas>
+
 
