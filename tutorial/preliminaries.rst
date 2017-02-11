@@ -11,3 +11,4 @@ Preliminaries
    video_1A/matrices
    video_1A/functions_and_loops
    video_1A/rat_mat   
+   video_1A/local_variables
