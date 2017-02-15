@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Blocks &mdash; atlas 0.6 documentation</title>
+  <title>Blocks of the Minimal Principal Series &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -32,8 +32,8 @@
   
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Minimal Principal Series." href="../minimal_principal.html"/>
-        <link rel="next" title="More Principal Series" href="../more_principal.html"/>
-        <link rel="prev" title="Translation Principle" href="translation_principle.html"/> 
+        <link rel="next" title="Coordinates and \(KGB\) elements" href="coordinates_and_KGB_elements.html"/>
+        <link rel="prev" title="Translation Principle on Minimal Principal Series" href="translation_principle.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -172,6 +172,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/functions_and_loops.html#functions-defined-using-loops">Functions defined using loops</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/rat_mat.html">Rational Matrices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/local_variables.html">Local Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
@@ -204,20 +210,17 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../minimal_principal.html">Minimal Principal Series.</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sl2r.html">Minimal Principal Series of Split Groups</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="minimal_principal_sl2r.html#example">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sl2r.html">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Infinitesimal Character Zero</a></li>
-<li class="toctree-l3"><a class="reference internal" href="translation_principle.html">Translation Principle</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data for Minimal principal series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Minimal Principal Series at Zero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translation_principle.html">Translation Principle on Minimal Principal Series</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Blocks of the Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -1041,7 +1044,7 @@
       
           <li><a href="../minimal_principal.html">Minimal Principal Series.</a> &raquo;</li>
       
-    <li>Blocks</li>
+    <li>Blocks of the Minimal Principal Series</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -1058,19 +1061,20 @@
 		  
 		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
 		      
-			<a href="../more_principal.html" class="btn btn-neutral float-right" title="More Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+			<a href="coordinates_and_KGB_elements.html" class="btn btn-neutral float-right" title="Coordinates and \(KGB\) elements" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
 		      
 		      
-			<a href="translation_principle.html" class="btn btn-neutral float-right" title="Translation Principle" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+			<a href="translation_principle.html" class="btn btn-neutral float-right" title="Translation Principle on Minimal Principal Series" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
 		      
 		    </div>
 		  
 <!--endtest-->
             
-  <div class="section" id="blocks">
-<h1>Blocks<a class="headerlink" href="#blocks" title="Permalink to this headline">¶</a></h1>
-<p>Let <span class="math">\(G=Sp(4, \mathbb R)\)</span> A very useful thing is to find the
-block of a representation</p>
+  <div class="section" id="blocks-of-the-minimal-principal-series">
+<h1>Blocks of the Minimal Principal Series<a class="headerlink" href="#blocks-of-the-minimal-principal-series" title="Permalink to this headline">¶</a></h1>
+<p>Recall that blocks is where the Kazshdan-Lusztig polynomials live. So
+it is vey useful to find the block of a single representation.</p>
+<p>Let <span class="math">\(G=Sp(4, \mathbb R)\)</span> and let us find the block of the trivial representation</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:Sp(4,R)
 Variable G: RealForm (overriding previous instance, which had type RealForm)
 atlas&gt;
@@ -1155,7 +1159,7 @@ Value:
 <p>This matrix gives information about the block sizes of all the real
 forms of <span class="math">\(Sp(4,\mathbb R)\)</span>. The last row gives the block sizes for the split
 group.</p>
-<p>Recall that blocks is where the Kazshdan-Lusztig polynomials live. Also a block is a singleton if and only if the representation is irreducible.</p>
+<p>Recall that a block is a singleton if and only if the representation is irreducible.</p>
 <p>Now do something similar for the real forms of <code class="docutils literal"><span class="pre">E8</span></code></p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for H in real_forms(G) do prints(H) od
 compact connected real group with Lie algebra &#39;e8&#39;
@@ -1185,10 +1189,10 @@ atlas&gt;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../more_principal.html" class="btn btn-neutral float-right" title="More Principal Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="coordinates_and_KGB_elements.html" class="btn btn-neutral float-right" title="Coordinates and \(KGB\) elements" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="translation_principle.html" class="btn btn-neutral float-right" title="Translation Principle" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="translation_principle.html" class="btn btn-neutral float-right" title="Translation Principle on Minimal Principal Series" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

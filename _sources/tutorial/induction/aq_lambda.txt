@@ -104,22 +104,51 @@ parabolic; in this case, we could have omitted the additional entry ``lamq``::
 
 If we now move to the edge of the weakly fair range, Knapp/Vogan predict
 that the module will be reducible. The command ``Aq(x,lam,lamq)`` returns
-a parameter PROVIDED that the module is irreducible::
+a parameter PROVIDED that the module is irreducible and nonzero::
 
       atlas> Aq(x,[0,0,0,0],lamq)
       Runtime error:
-      Aq is not irreducible. Use Aq_param_pol(x,lambda) instead
+      Aq is not irreducible. Use Aq_reducible(x,lambda) instead
       (in call at basic.at:8:57-71 of error@string, built-in)
       ...(output truncated)
 
 Since the module is reducible, we
-need to use the command ``Aq_param_pol`` instead::
+need to use the command ``Aq_reducible`` instead::
 
 
-     atlas> Aq_param_pol(x,[0,0,0,0],lamq)
+     atlas> Aq_reducible(x,[0,0,0,0],lamq)
      Value:
      1*final parameter (x=84,lambda=[7,7,1,1]/2,nu=[3,3,0,0]/2)
      1*final parameter (x=101,lambda=[7,7,3,3]/2,nu=[3,3,1,1]/2)
 
 This weakly fair :math:`A_{\mathfrak q}(\lambda)` module is indeed reducible,
 with two constituents.
+
+Similarly, if our :math:`A_{\mathfrak q}(\lambda)` module is zero, the
+command ``Aq(x,lam,lamq)`` will return an error message. Here is an
+example in :math:`Sp(4,\mathbb R)`::
+
+    atlas> G:=Sp(4,R)
+    Value: connected split real group with Lie algebra 'sp(4,R)'
+    atlas> x:=KGB(G,2)
+    Value: KGB element #2
+    atlas> lam:=[0,0]
+    Value: [0,0]
+    atlas> lamq:=[2,1]
+    Value: [2,1]
+    atlas> goodness(x,lam,lamq)
+    Value: "Weakly good"
+    atlas> Aq(x,lam,lamq)
+    Runtime error:
+      index 0 out of range (0<= . <0) in subscription P[0]
+      [P=[]]
+      ...(output truncated)
+
+The parabolic has compact Levi factor, and the module is zero because
+there is a compact simple root that is orthogonal to :math:`\lambda`. In
+this case as well, the command ``Aq_reducible`` yields a nicer answer::
+
+    atlas> Aq_reducible(x,lam,lamq)
+    Value: Empty sum of standard modules
+
+

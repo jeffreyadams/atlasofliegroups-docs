@@ -172,6 +172,12 @@
 <li class="toctree-l4"><a class="reference internal" href="functions_and_loops.html#functions-defined-using-loops">Functions defined using loops</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="rat_mat.html">Rational Matrices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="local_variables.html">Local Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
@@ -204,20 +210,17 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../minimal_principal.html">Minimal Principal Series.</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_sl2r.html">Minimal Principal Series of Split Groups</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_2B/minimal_principal_sl2r.html#example">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_sl2r.html">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2B/cuspidal_data.html">Cuspidal Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2B/zero_infinitesimal_character.html">Infinitesimal Character Zero</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2B/translation_principle.html">Translation Principle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2B/blocks.html">Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/cuspidal_data.html">Cuspidal Data for Minimal principal series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/zero_infinitesimal_character.html">Minimal Principal Series at Zero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/translation_principle.html">Translation Principle on Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/blocks.html">Blocks of the Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -1095,9 +1098,10 @@ atlas&gt;
 </div>
 <p>A useful way to change the value assigned to a variable is using the
 command <code class="docutils literal"><span class="pre">:=</span></code>. However this works as long as the new value is of the
-same data type as the old one. You may also  notice in the example below
-that, if we don&#8217;t use this way of assigning a new value to the variable, we get a
-message &#8220;hiding previous one of type ....&#8221;</p>
+same data type as the old one. You may also notice in the example
+below that, if we don&#8217;t use this way of assigning a new value to the
+variable, we get a message &#8220;(hiding previous one of type ....)&#8221;</p>
+<p>However there are other reasons why this second method of redefining the value of a variable. They have to do with the software functionality</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=2
 Identifier x: int (hiding previous one of type int)
 atlas&gt; x
@@ -1110,6 +1114,21 @@ Type error:
   Subexpression /(2,3) at &lt;standard input&gt;:33:3-6
   has wrong type: found rat while int was needed.
 Type check failed
+atlas&gt;
+</pre></div>
+</div>
+<p>Note that if you have not assigned a value to a variable you cannot
+use this method. You need to first use <code class="docutils literal"><span class="pre">set</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; z:=1
+Error during analysis of expression at &lt;standard input&gt;:2:0-4
+  Undefined identifier &#39;z&#39; in assignment z:=1
+Expression analysis failed
+atlas&gt; set z=1
+Variable z: int
+atlas&gt; z
+Value: 1
+atlas&gt; z:=2
+Value: 2
 atlas&gt;
 </pre></div>
 </div>

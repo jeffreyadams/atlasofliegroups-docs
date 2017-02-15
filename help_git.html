@@ -172,6 +172,12 @@
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/functions_and_loops.html#functions-defined-using-loops">Functions defined using loops</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/rat_mat.html">Rational Matrices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/local_variables.html">Local Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/structure_theory.html">Structure Theory</a><ul>
@@ -204,20 +210,17 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/minimal_principal.html">Minimal Principal Series.</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/minimal_principal_sl2r.html">Minimal Principal Series of Split Groups</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/minimal_principal_sl2r.html#example">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/minimal_principal_sl2r.html">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/minimal_principal_sp4r.html#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/cuspidal_data.html">Cuspidal Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/zero_infinitesimal_character.html">Infinitesimal Character Zero</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/blocks.html">Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/cuspidal_data.html">Cuspidal Data for Minimal principal series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/zero_infinitesimal_character.html">Minimal Principal Series at Zero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/translation_principle.html">Translation Principle on Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/blocks.html">Blocks of the Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/more_principal.html">More Principal Series</a></li>
@@ -1067,7 +1070,7 @@
             
   <div class="section" id="help-with-git">
 <span id="help-git"></span><h1>Help with git<a class="headerlink" href="#help-with-git" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://git-scm.com/">git</a> is a distributed version control system. It helps developers handle their projects. Git is easy to learn. It is also free and open source.</p>
+<p><a class="reference external" href="https://git-scm.com/">git</a> is a distributed version control system. It helps developers handle their projects. Git is easy to learn. It is also free and open source. One advantage of using <code class="docutils literal"><span class="pre">git</span></code> is that the latest version of the software is always there</p>
 <p>This page is organized into the following sections:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#primary-commands"><span>Primary commands</span></a></li>
@@ -1089,7 +1092,7 @@
 <div class="highlight-python"><div class="highlight"><pre><span></span>git pull origin
 </pre></div>
 </div>
-<p>will update your local copy of the software with the any latest changes.</p>
+<p>will update your local copy of the software with the latest changes.</p>
 </div>
 <div class="section" id="branches">
 <span id="branch"></span><h2>Branches<a class="headerlink" href="#branches" title="Permalink to this headline">¶</a></h2>
@@ -1110,6 +1113,11 @@
 </pre></div>
 </div>
 <p>This will switch you into the branch named &#8220;latest&#8221;.</p>
+<p>To update only one the master branch do:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git pull origin master
+</pre></div>
+</div>
+<p>This will also update the atlas software.</p>
 </div>
 <div class="section" id="other-helpful-commands">
 <span id="other-commands"></span><h2>Other helpful commands<a class="headerlink" href="#other-helpful-commands" title="Permalink to this headline">¶</a></h2>
@@ -1130,9 +1138,9 @@ git log --oneline
 </div>
 <p>However, you need to have <a class="reference external" href="https://git-scm.com/docs/gitk">gitk</a> installed.</p>
 <p>Many commands of git have help options:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>git    # This gives short git help.
-git --help    # This gives longer git help.
-git tag --help    # This gives help on tagging.
+<div class="highlight-python"><div class="highlight"><pre><span></span>git # This gives short git help.
+git --help # This gives longer git help.
+git tag --help # This gives help on tagging.
 </pre></div>
 </div>
 <p>Some commands have dry-run versions:</p>

@@ -35,9 +35,11 @@ Sometimes we want to ask ``atlas`` to repeat the previous value or to use it to 
 
 A useful way to change the value assigned to a variable is using the
 command ``:=``. However this works as long as the new value is of the
-same data type as the old one. You may also  notice in the example below
-that, if we don't use this way of assigning a new value to the variable, we get a
-message "hiding previous one of type ...." ::
+same data type as the old one. You may also notice in the example
+below that, if we don't use this way of assigning a new value to the
+variable, we get a message "(hiding previous one of type ....)"  
+
+However there are other reasons why this second method of redefining the value of a variable. They have to do with the software functionality ::
 
 	atlas> set x=2 
 	Identifier x: int (hiding previous one of type int) 
@@ -53,6 +55,20 @@ message "hiding previous one of type ...." ::
 	Type check failed 
 	atlas>
 
+Note that if you have not assigned a value to a variable you cannot
+use this method. You need to first use ``set``::
+
+    atlas> z:=1
+    Error during analysis of expression at <standard input>:2:0-4
+      Undefined identifier 'z' in assignment z:=1
+    Expression analysis failed
+    atlas> set z=1
+    Variable z: int
+    atlas> z
+    Value: 1
+    atlas> z:=2
+    Value: 2
+    atlas>
 
 The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity::
 

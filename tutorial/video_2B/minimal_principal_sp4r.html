@@ -172,6 +172,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/functions_and_loops.html#functions-defined-using-loops">Functions defined using loops</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/rat_mat.html">Rational Matrices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_1A/local_variables.html">Local Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul>
@@ -204,20 +210,17 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../minimal_principal.html">Minimal Principal Series.</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sl2r.html">Minimal Principal Series of Split Groups</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="minimal_principal_sl2r.html#example">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimal_principal_sl2r.html">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#lowest-types">Lowest <span class="math">\(K\)</span>-types</a></li>
-</ul>
-</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Infinitesimal Character Zero</a></li>
-<li class="toctree-l3"><a class="reference internal" href="translation_principle.html">Translation Principle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="blocks.html">Blocks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data for Minimal principal series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Minimal Principal Series at Zero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translation_principle.html">Translation Principle on Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blocks.html">Blocks of the Minimal Principal Series</a></li>
+<li class="toctree-l3"><a class="reference internal" href="coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -1261,45 +1264,6 @@ atlas&gt; parameters[14]
 Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
 atlas&gt;
 </pre></div>
-</div>
-<div class="section" id="lowest-types">
-<h2>Lowest <span class="math">\(K\)</span>-types<a class="headerlink" href="#lowest-types" title="Permalink to this headline">¶</a></h2>
-<p>We can also look at the lowest <span class="math">\(K\)</span> types of a
-representation. For this we need the command <code class="docutils literal"><span class="pre">highest_weights</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype highest_weights ?
-Overloaded instances of &#39;highest_weights&#39;
-  (KGBElt,ratvec)-&gt;[(KGBElt,vec)]
-  ((KGBElt,ratvec),KGBElt)-&gt;[(KGBElt,vec)]
-  Param-&gt;[(KGBElt,vec)]
-  (Param,KGBElt)-&gt;[(KGBElt,vec)]
-atlas&gt;
-</pre></div>
-</div>
-<p>We will use the first instance of the usage of this function in this
-case.</p>
-<p>A good reference on how to obtain the highest weights of the lowest
-<span class="math">\(K\)</span>-types of a representation is Anthony Knapp&#8217;s paper, &#8220;Minimal
-<span class="math">\(K\)</span>-type formula&#8221;. Noncommutative harmonic analysis and Lie
-groups (Marseille, 1982), 107-118.</p>
-<p>To learn about the reverse process of attaching a series of
-representations to a given <span class="math">\(K\)</span>-type see David Vogan&#8217;s book,
-&#8220;Representations of real reductive Lie groups&#8221;. Birkhäusser, 1981</p>
-<p>Let&#8217;s find the lowest <span class="math">\(K\)</span>-types of each
-minimal principal series of <span class="math">\(Sp(4,\mathbb R )\)</span>. We proceed as
-follows</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for p in ps do prints(p, &quot; &quot;, highest_weights (p, KGB(G,2))) od
-final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [(KGB element #2,[ 0, 0 ])]
-final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),(KGB element #2,[  0, -1 ])]
-final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),(KGB element #2,[  0, -1 ])]
-final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 1 ]),(KGB element #2,[ -1, -1 ])]
-atlas&gt;
-</pre></div>
-</div>
-<p>The first representation, the trivial one, has lowest <span class="math">\(K\)</span>-type
-[0,0]. The next two have lowest <span class="math">\(K\)</span>-types [1,0] and [0,-1] and the las
-one has <span class="math">\(K\)</span>-types [1,1] and [-1,-1].</p>
-<p>COMMENT: WE NEED HERE AN EXPLANATION FOR THE CHOICE OF 2 IN KGB(G,2)</p>
-<p>I WILL ADRESS THIS LATER.</p>
 </div>
 </div>
 
