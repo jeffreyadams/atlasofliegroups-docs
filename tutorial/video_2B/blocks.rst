@@ -1,10 +1,12 @@
-Blocks of the Minimal Principal Series
-=======================================
+Blocks of Representations
+==========================
 
-Recall that blocks is where the Kazshdan-Lusztig polynomials live. So
-it is vey useful to find the block of a single representation.
+Recall that blocks of a representation are where the Kazshdan-Lusztig
+polynomials live. So it is vey useful to find the block of a single
+representation.
 
-Let :math:`G=Sp(4, \mathbb R)` and let us find the block of the trivial representation ::
+Let :math:`G=Sp(4, \mathbb R)` and let us find the block of the
+trivial representation ::
 
    atlas> G:Sp(4,R)
    Variable G: RealForm (overriding previous instance, which had type RealForm)
