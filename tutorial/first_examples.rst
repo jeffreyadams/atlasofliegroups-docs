@@ -1,5 +1,5 @@
-Minimal Principal Series.
-==========================
+First Examples of Representations.
+===================================
 
 
 
