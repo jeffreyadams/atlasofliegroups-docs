@@ -1,5 +1,5 @@
-Lowest :math:`K`-types of Minimal Principal Series
-===================================================
+Lowest :math:`K`-types of a Representation
+===========================================
 
 We can also look at the lowest :math:`K` types of a
 representation. For this we need the command ``highest_weights``::
