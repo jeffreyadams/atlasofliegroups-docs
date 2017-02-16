@@ -1,7 +1,7 @@
-Translation Principle on Minimal Principal Series
-==================================================
+Translation Principle
+======================
 
-Now let's change infinitesimal character usintg the translation
+Now let's change infinitesimal character using the translation
 principle. Let us start again with the trivial representation::
 
    atlas> set G=SL(2,R)
