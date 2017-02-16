@@ -102,7 +102,7 @@ Now let us look at another command::
    Overloaded instances of 'all_parameters_Cartan_gamma'
      (CartanClass,RealForm,ratvec)->[Param]
 
-In other words, we hand in a Cartan Class, a real form and rational
+IN other words, we hand in a Cartan Class, a real form and rational
 vector and we obtain all the parameters with that infinitesimal
 character coming from that Cartan. First we need a different syntax to
 define our Cartan class. Note that above we picked a Cartan class
