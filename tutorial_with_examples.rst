@@ -9,7 +9,7 @@ Tutorial
    tutorial/preliminaries
    tutorial/structure_theory
    tutorial/coordinates_characters
-   tutorial/minimal_principal
+   tutorial/first_examples
    tutorial/more_principal
    tutorial/general_parameters
    tutorial/parabolic_induction
