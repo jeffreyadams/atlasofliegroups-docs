@@ -215,6 +215,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/more_minimal_principal.html">More on minimal pricipal series.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/cuspidal_data.html">Cuspidal Data for Minimal principal series</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of Minimal Principal Series</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Minimal Principal Series at Zero</a></li>
@@ -617,6 +618,11 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -811,6 +817,11 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1050,8 +1061,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/aql_index.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1089,29 +1098,62 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#inf-chars-for-l-param-p-parabolic-p-ratvec-1"><span>inf_chars_for_L</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#inf-chars-dom-for-l-param-p-parabolic-p-ratvec-1"><span>inf_chars_dom_for_L</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[ratvec]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#inf-chars-for-l-param-p-parabolic-p-ratvec-1"><span>inf_chars_for_L</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,Parabolic</span> <span class="pre">P-&gt;[ratvec]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#wf-one-dim-params-ratvec-ic-parabolic-p-param-1"><span>wf_one_dim_params</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#inf-chars-for-l-ratvec-gamma-parabolic-p-ratvec-1"><span>inf_chars_for_L</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">gamma,Parabolic</span> <span class="pre">P-&gt;[ratvec]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#one-dim-params-gamma-ratvec-ic-parabolic-p-param-1"><span>one_dim_params_gamma</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">ic,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#wf-aqs-param-pol-param-p-parabolic-p-param-parampol-1"><span>wf_aqs_param_pol</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#wf-one-dim-params-ratvec-ic-parabolic-p-param-1"><span>wf_one_dim_params</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">ic,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[Param]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#wf-aqs-param-pol-param-p-parabolic-p-param-parampol-1"><span>wf_aqs_param_pol</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[(Param,ParamPol)]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#wf-aqs-param-param-p-parabolic-p-param-param-1"><span>wf_aqs_param</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#wf-aqs-param-param-p-parabolic-p-param-param-1"><span>wf_aqs_param</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[(Param,Param)]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#is-weakly-fair-aq-from-p-param-p-parabolic-p-bool1"><span>is_weakly_fair_Aq_from_P</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#is-weakly-fair-aq-from-p-param-p-parabolic-p-bool1"><span>is_weakly_fair_Aq_from_P</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#special-theta-stable-parabolics-realform-g-parabolic-1"><span>special_theta_stable_parabolics</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#special-theta-stable-parabolics-realform-g-parabolic-1"><span>special_theta_stable_parabolics</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[Parabolic]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#all-wf-aq-with-ic-of-param-p-param-1"><span>all_wf_Aq_with_ic_of</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[Param]</span></code></td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="aql_ref.html#is-weakly-fair-aq-param-p-bool1"><span>is_weakly_fair_Aq</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#is-wf-induced-from-one-dim-param-p-param-1"><span>is_wf_induced_from_one_dim</span></a></td>
-<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[Param]</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#is-wf-induced-from-one-dim-param-p-parabolic-param-1"><span>is_wf_induced_from_one_dim</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[(Parabolic,Param)]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#one-dim-real-induced-param-pol-param-p-parabolic-p-param-parampol-1"><span>one_dim_real_induced_param_pol</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[(Param,ParamPol)]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#one-dim-real-induced-param-param-p-parabolic-p-param-param-1"><span>one_dim_real_induced_param</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[(Param,Param)]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#is-real-induced-from-character-from-p-param-p-parabolic-p-bool1"><span>is_real_induced_from_character_from_P</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;bool</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#is-real-induced-from-one-dimensional-param-p-bool1"><span>is_real_induced_from_one_dimensional</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#real-induced-from-one-dim-param-p-parabolic-param-1"><span>real_induced_from_one_dim</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[(Parabolic,Param)]</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="aql_ref.html#wf-aqs-param-pol-ratvec-gamma-parabolic-p-param-parampol-1"><span>wf_aqs_param_pol</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">gamma,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[(Param,ParamPol)]</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="aql_ref.html#wf-aqs-param-ratvec-gamma-parabolic-p-param-param-1"><span>wf_aqs_param</span></a></td>
+<td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">gamma,</span> <span class="pre">Parabolic</span> <span class="pre">P-&gt;[(Param,Param)]</span></code></td>
 </tr>
 </tbody>
 </table>

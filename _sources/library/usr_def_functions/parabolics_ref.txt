@@ -547,7 +547,7 @@ all_rel_split_theta_stable_parabolics
 
 print_theta_stable_parabolics
 -------------------------------------------------
-| ``print_theta_stable_parabolics:RealForm G->void`` Defined in line number 429.
+| ``print_theta_stable_parabolics:RealForm G->void`` Defined in line number 434.
 | 
 | For each theta-stable parabolic of G, print S, Levi factor, and maximal x.
 | 
@@ -556,7 +556,7 @@ print_theta_stable_parabolics
 
 support
 -------------------------------------------------
-| ``support:KGBElt x->[int]`` Defined in line number 435.
+| ``support:KGBElt x->[int]`` Defined in line number 440.
 | 
 | The smallest list of simple roots such that descents lead to the   distinguished fiber.
 | 
@@ -565,7 +565,7 @@ support
 
 support_alt
 -------------------------------------------------
-| ``support_alt:KGBElt x->[int]`` Defined in line number 444.
+| ``support_alt:KGBElt x->[int]`` Defined in line number 449.
 | 
 | Auxiliary function.
 | 

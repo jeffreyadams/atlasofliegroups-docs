@@ -28,6 +28,10 @@ Functions
      - ``Param p_K,Param p->int``
    * - :ref:`mult_irr_param_p_k,param_p->int1`
      - ``Param p_K,Param p->int``
+   * - :ref:`mult_std_param_p_k,_parampol_p->split:0_in_for_c@p_in_p_do_rv+1`
+     - ``Param p_K, ParamPol P->Split:0 in for c@p in P do rv+``
+   * - :ref:`mult_irr_param_p_k,_parampol_p->split:0_in_for_c@p_in_p_do_rv+1`
+     - ``Param p_K, ParamPol P->Split:0 in for c@p in P do rv+``
    * - :ref:`k_signature_irr_param_p,int_bound->(parampol,parampol)1`
      - ``Param p,int bound->(ParamPol,ParamPol)``
    * - :ref:`signed_mult_param_p_k,param_p->(int,int)1`

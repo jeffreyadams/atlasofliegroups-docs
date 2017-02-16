@@ -35,6 +35,7 @@ User Defined Functions
    usr_def_functions/finite_dimensional
    usr_def_functions/galois
    usr_def_functions/generate_groups
+   usr_def_functions/genuine
    usr_def_functions/gl4H
    usr_def_functions/group_operations
    usr_def_functions/groups
@@ -74,6 +75,7 @@ User Defined Functions
    usr_def_functions/synthetic_aux
    usr_def_functions/test_K
    usr_def_functions/test_unitarity
+   usr_def_functions/tests
    usr_def_functions/tits
    usr_def_functions/torus
    usr_def_functions/translate
