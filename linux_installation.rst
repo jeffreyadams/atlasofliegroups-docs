@@ -32,10 +32,10 @@ You can download an archive of the source code. These are typically not as up-to
 the git version. 
 
 +--------------------------------+------------------------------+-------------------------------------+
-| Complete archive               |       `atlas_0.8.tgz`_       | source code, Fokko and atlas        |
+| Complete archive               |       `atlas_1.0.tgz`_       | source code, Fokko and atlas        |
 +--------------------------------+------------------------------+-------------------------------------+
 
-.. _atlas_0.8.tgz: http://www.liegroups.org/software/atlas_0.8/atlas_0.8.tgz
+.. _atlas_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz
 
 ************************
 Installation from Source
@@ -95,7 +95,7 @@ development). You can also run
 
 ./Fokko
 
- ************************
+************************
 Installing an executable
 ************************
 
@@ -104,26 +104,30 @@ try installing an executable. Download a copy of the executable,
 and the atlas-scripts directory. 
 
 +-----------------------------------+------------------------------+-------------------------------------+
-| atlas executable for linux 64 bit |   `atlas_0.8_linux`_         | binary file                         |
+| linux 64 compiled                 |   `atlas_1.0_pre.tgz`_       |  executable and                     |
+|                                   |                              |  atlas-scripts directory            |
 +-----------------------------------+------------------------------+-------------------------------------+
-| atlas-scripts directory           |   `atlas-scripts_0.8.tgz`_   | just the atlas scripts (.at files)  |
-+-----------------------------------+------------------------------+-------------------------------------+
 
-.. _atlas_0.8_linux: http://www.liegroups.org/software/atlas_0.8/atlas_0.8_linux
-.. _atlas-scripts_0.8.tgz: http://www.liegroups.org/software/atlas_0.8/atlas-scripts_0.8.tgz
+.. _atlas_1.0_pre: http://www.liegroups.org/software/source/1.0/atlas_1.0_pre.tgz
+.. _atlas-scripts_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas-scripts_1.0.tgz
 
-Make the file executable::
+Extract the file:
 
-     chmod u+x atlas_*.*_linux
+     tar xvfz atlas_1.0_pre.tgz
 
-Where *.* is replaced by the appropriate number, for example ``chmod u+x atlas_0.8``.
+cd to the directory:
+
+     cd atlas_1.0_pre
+
+Make the file executable:
+
+    chmod u+x atlas
+
 Extract the atlas-scripts directory::
-
-     tar xvfz atlas-scripts.tgz
 
 Run the software with the command::
 
-     ./atlas_*.*_linux  --path=atlas-scripts all
+     ./atlas  --path=atlas-scripts all
 
 The path argument tells atlas where to find the scripts, and ``all`` says to load
 most of the scripts (not including a few which are under development). 
