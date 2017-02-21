@@ -1,7 +1,7 @@
 .. _linux:
 
 ######
-LinuxC
+Linux
 ######
 
 *********************
@@ -73,10 +73,29 @@ We recommend running::
 
 to put make ``atlas`` accessible from anywhere, and guarantee it has
 access to the atlas-scripts directory.  By default this will put a
-shell script in ~/bin and points to the atlas-scripts directory. 
-*[More information is coming]*.
+shell script in ~/bin and points to the atlas-scripts directory.  Make
+sure thath ~/bin is in your path. Then the commands ``atlas`` and
+``Fokko`` will run the software, (and make the atlas-scripts (for
+atlas) and messages (for Fokko) directories available.
 
-************************
+To install the excecutable elsewhere run::
+
+   make install BINDIR=path-to-bin-directory
+
+See the Makefile for further options.
+
+Alternatively, in the directory in which you built the software you
+can execute 
+
+./atlas --path=atlas-scripts all
+
+The path argument tells atlas where to find the scripts, and ``all``
+says to load most of the scripts (not including a few which are under
+development). You can also run
+
+./Fokko
+
+ ************************
 Installing an executable
 ************************
 

@@ -3,8 +3,8 @@
 Mac
 ---
 
-Download the software
-~~~~~~~~~~~~~~~~~~~~~~
+Download the source code
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 You have two options:
 
@@ -35,8 +35,8 @@ This creates a subdirectory "atlasofliegroups" and stores the files there.
 
 .. _using_link_Mac:
 
-Using provided links
-++++++++++++++++++++
+Donwload a tar file
++++++++++++++++++++
 
 We recommend you to download the latest version.
 
@@ -53,8 +53,8 @@ We recommend you to download the latest version.
 Compiling atlas for the Mac using MacPorts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Regardless of how you download the atlas software you will need to
-compile it.  This is the preferred method. 
+Regardless of how you download the source code you will need to
+compile it.  Here is the preferred method.
 
 You are going to install the gcc C compiler (provided by MacPorts),
 which is preferred for installing Fokko and atlas. To do so you must
