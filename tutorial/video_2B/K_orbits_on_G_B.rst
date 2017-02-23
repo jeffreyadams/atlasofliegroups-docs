@@ -122,12 +122,12 @@ Definition.  Denote the above set by
 and :math`\Chi` is the collection of all the sets for all the base
 points. Which give all strong real forms of :math:`G`. The above set only has to do with one strong real form. 
 
-NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE THE "Algorithms for Representation Theory of Real Reductive Groups, by Adams and du Cloux, in www.liegroups.org/papers/.
+NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE:  "Algorithms
+for Representation Theory of Real Reductive Groups", by Adams and du
+Cloux, in www.liegroups.org/papers/.
 
 Since this set is finite, it makes sense to have an ``atlas`` command ``KGB`` that will give a finite list of the elements in :math:`\Chi` 
 
 :math:`KGB \rightarrow \{x_0 , \dots ,x_{n-1} \}`
-
-
 
 
