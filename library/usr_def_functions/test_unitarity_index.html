@@ -30,12 +30,9 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="test_unitarity.at" href="test_unitarity.html"/>
-        <link rel="next" title="tits.at" href="tits.html"/>
+        <link rel="next" title="tests.at" href="tests.html"/>
         <link rel="prev" title="test_unitarity.at Function References" href="test_unitarity_ref.html"/> 
 
   
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -813,7 +819,12 @@
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">test_unitarity.at Function Index</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1053,8 +1064,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/test_unitarity_index.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1062,6 +1071,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="tests.html" class="btn btn-neutral float-right" title="tests.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="test_unitarity_ref.html" class="btn btn-neutral float-right" title="test_unitarity.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="test-unitarity-at-function-index">
 <span id="test-unitarity-at-index"></span><h1>test_unitarity.at Function Index<a class="headerlink" href="#test-unitarity-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1080,23 +1101,32 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="test_unitarity_ref.html#test-param-bool-parameters-bool1"><span class="std std-ref">test</span></a></td>
-<td><code class="docutils literal"><span class="pre">[(Param,bool)]</span> <span class="pre">parameters-&gt;bool</span></code></td>
+<tr class="row-even"><td><a class="reference internal" href="test_unitarity_ref.html#uflag-int-predicted-string1"><span>uflag</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">predicted-&gt;string</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="test_unitarity_ref.html#test-param-parameters-bool1"><span class="std std-ref">test</span></a></td>
-<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">parameters-&gt;bool</span></code></td>
+<tr class="row-odd"><td><a class="reference internal" href="test_unitarity_ref.html#uflag-bool-flag-string1"><span>uflag</span></a></td>
+<td><code class="docutils literal"><span class="pre">bool</span> <span class="pre">flag-&gt;string</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="test_unitarity_ref.html#test-spherical-unipotent-realform-g-void1"><span class="std std-ref">test_spherical_unipotent</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="test_unitarity_ref.html#passedflag-int-predicted-bool-unitary-string1"><span>passedflag</span></a></td>
+<td><code class="docutils literal"><span class="pre">int</span> <span class="pre">predicted,</span> <span class="pre">bool</span> <span class="pre">unitary-&gt;string</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test_unitarity_ref.html#passedflag-bool-flag-string1"><span>passedflag</span></a></td>
+<td><code class="docutils literal"><span class="pre">bool</span> <span class="pre">flag-&gt;string</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test_unitarity_ref.html#test-param-int-parameters-bool-param-parampol-int-bool-1"><span>test</span></a></td>
+<td><code class="docutils literal"><span class="pre">[(Param,int)]</span> <span class="pre">parameters-&gt;(bool,[(Param,ParamPol,int,bool)])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test_unitarity_ref.html#print-test-param-int-parameters-void1"><span>print_test</span></a></td>
+<td><code class="docutils literal"><span class="pre">[(Param,int)]</span> <span class="pre">parameters-&gt;void</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test_unitarity_ref.html#test-aq-param-b-bool-param-parampol-int-bool-1"><span>test_Aq</span></a></td>
+<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;(bool,[(Param,ParamPol,int,bool)])</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test_unitarity_ref.html#print-test-aq-param-b-void1"><span>print_test_Aq</span></a></td>
+<td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B-&gt;void</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test_unitarity_ref.html#print-test-aq-realform-g-void1"><span>print_test_Aq</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;void</span></code></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="test_unitarity_ref.html#test7-bool1"><span class="std std-ref">test7</span></a></td>
-<td><code class="docutils literal"><span class="pre">-&gt;bool</span></code></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="test_unitarity_ref.html#test8-bool1"><span class="std std-ref">test8</span></a></td>
-<td><code class="docutils literal"><span class="pre">-&gt;bool</span></code></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="test_unitarity_ref.html#test9-bool1"><span class="std std-ref">test9</span></a></td>
-<td><code class="docutils literal"><span class="pre">-&gt;bool</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -1109,10 +1139,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="tits.html" class="btn btn-neutral float-right" title="tits.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="tests.html" class="btn btn-neutral float-right" title="tests.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="test_unitarity_ref.html" class="btn btn-neutral" title="test_unitarity.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="test_unitarity_ref.html" class="btn btn-neutral float-right" title="test_unitarity.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

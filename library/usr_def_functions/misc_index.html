@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="misc.at" href="misc.html"/>
         <link rel="next" title="modules.at" href="modules.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -718,7 +724,7 @@
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="misc.html">misc.at</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="misc_ref.html">misc.at Function References</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">misc.at Function Index</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">misc.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="modules.html">modules.at</a><ul>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1053,8 +1064,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/misc_index.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1062,6 +1071,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="modules.html" class="btn btn-neutral float-right" title="modules.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="misc_ref.html" class="btn btn-neutral float-right" title="misc.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="misc-at-function-index">
 <span id="misc-at-index"></span><h1>misc.at Function Index<a class="headerlink" href="#misc-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1080,79 +1101,79 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#is-nonnegative-vec-v-bool1"><span class="std std-ref">is_nonnegative</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#is-nonnegative-vec-v-bool1"><span>is_nonnegative</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#is-positive-vec-v-bool1"><span class="std std-ref">is_positive</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#is-positive-vec-v-bool1"><span>is_positive</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#is-positive-ratvec-v-bool1"><span class="std std-ref">is_positive</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#is-positive-ratvec-v-bool1"><span>is_positive</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">v-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#is-nonnegative-ratvec-v-bool1"><span class="std std-ref">is_nonnegative</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#is-nonnegative-ratvec-v-bool1"><span>is_nonnegative</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">v-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#parampol-p-split-param-1"><span class="std std-ref">%</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#parampol-p-split-param-1"><span>%</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;[(Split,Param)]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#integer-part-parampol-p-parampol1"><span class="std std-ref">integer_part</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#integer-part-parampol-p-parampol1"><span>integer_part</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#s-part-parampol-p-parampol1"><span class="std std-ref">s_part</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#s-part-parampol-p-parampol1"><span>s_part</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#param-realform-g-int-k-vec-lambda-rho-ratvec-nu-param1"><span class="std std-ref">param</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#param-realform-g-int-k-vec-lambda-rho-ratvec-nu-param1"><span>param</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,int</span> <span class="pre">k,</span> <span class="pre">vec</span> <span class="pre">lambda_rho,ratvec</span> <span class="pre">nu-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#finalize-param-p-param-for-c-q-in-parampol1"><span class="std std-ref">finalize</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#finalize-param-p-param-for-c-q-in-parampol1"><span>finalize</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[Param]:</span> <span class="pre">for</span> <span class="pre">c&#64;q</span> <span class="pre">in</span> <span class="pre">ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#finalize-parampol-p-parampol1"><span class="std std-ref">finalize</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#finalize-parampol-p-parampol1"><span>finalize</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#finalize-param-p-param-1"><span class="std std-ref">finalize</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#finalize-param-p-param-1"><span>finalize</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">P-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#split-w-int-t-let-a-b-w-in-int1"><span class="std std-ref">#</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#split-w-int-t-let-a-b-w-in-int1"><span>#</span></a></td>
 <td><code class="docutils literal"><span class="pre">Split</span> <span class="pre">w,int</span> <span class="pre">t)=let</span> <span class="pre">(a,b-&gt;%w</span> <span class="pre">in</span> <span class="pre">int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#split-w-rat-t-let-a-b-w-in-rat1"><span class="std std-ref">#</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#split-w-rat-t-let-a-b-w-in-rat1"><span>#</span></a></td>
 <td><code class="docutils literal"><span class="pre">Split</span> <span class="pre">w,rat</span> <span class="pre">t)=let</span> <span class="pre">(a,b-&gt;%w</span> <span class="pre">in</span> <span class="pre">rat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#parampol-p-int-t-parampol1"><span class="std std-ref">#</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#parampol-p-int-t-parampol1"><span>#</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P,int</span> <span class="pre">t-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#fiber-partition-realform-g-int-1"><span class="std std-ref">fiber_partition</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#fiber-partition-realform-g-int-1"><span>fiber_partition</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#in-distinguished-fiber-kgbelt-x-bool1"><span class="std std-ref">in_distinguished_fiber</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#in-distinguished-fiber-kgbelt-x-bool1"><span>in_distinguished_fiber</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#distinguished-fiber-realform-g-int-1"><span class="std std-ref">distinguished_fiber</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#distinguished-fiber-realform-g-int-1"><span>distinguished_fiber</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#root-length-rootdatum-rd-vec-alpha-int1"><span class="std std-ref">root_length</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#root-length-rootdatum-rd-vec-alpha-int1"><span>root_length</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,vec</span> <span class="pre">alpha-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#is-simple-root-rootdatum-rd-int-alpha-bool1"><span class="std std-ref">is_simple_root</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#is-simple-root-rootdatum-rd-int-alpha-bool1"><span>is_simple_root</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,[int]</span> <span class="pre">alpha-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#simple-imaginary-subsystem-kgbelt-x-mat-mat-1"><span class="std std-ref">simple_imaginary_subsystem</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#simple-imaginary-subsystem-kgbelt-x-mat-mat-1"><span>simple_imaginary_subsystem</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(mat,mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#simple-real-subsystem-kgbelt-x-mat-mat-1"><span class="std std-ref">simple_real_subsystem</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#simple-real-subsystem-kgbelt-x-mat-mat-1"><span>simple_real_subsystem</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(mat,mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#to-binary-int-length-int-n-vec1"><span class="std std-ref">to_binary</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#to-binary-int-length-int-n-vec1"><span>to_binary</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">length,</span> <span class="pre">int</span> <span class="pre">n-&gt;vec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#generate-all-subsets-int-s-int-1"><span class="std std-ref">generate_all_subsets</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#generate-all-subsets-int-s-int-1"><span>generate_all_subsets</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">S-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#prettyprint-split-w-string1"><span class="std std-ref">prettyPrint</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="misc_ref.html#prettyprint-split-w-string1"><span>prettyPrint</span></a></td>
 <td><code class="docutils literal"><span class="pre">Split</span> <span class="pre">w-&gt;string</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#prettyprint-parampol-p-void1"><span class="std std-ref">prettyPrint</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="misc_ref.html#prettyprint-parampol-p-void1"><span>prettyPrint</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;void</span></code></td>
 </tr>
 </tbody>
@@ -1169,7 +1190,7 @@
         <a href="modules.html" class="btn btn-neutral float-right" title="modules.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="misc_ref.html" class="btn btn-neutral" title="misc.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="misc_ref.html" class="btn btn-neutral float-right" title="misc.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

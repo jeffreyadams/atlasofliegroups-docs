@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="index.html"/>
         <link rel="up" title="Download and Install" href="download_and_install.html"/>
         <link rel="next" title="Windows" href="windows_installation.html"/>
@@ -97,12 +94,23 @@
 <li class="toctree-l3"><a class="reference internal" href="linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Mac</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#download-the-software">Download the software</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#installation-from-source">Installation from Source</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#download-and-install-an-executable">Download and Install an executable</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Mac</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#download-the-source-code">Download the source code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compiling-atlas-for-the-mac-using-macports">Compiling atlas for the Mac using MacPorts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-macports">(1) Install MacPorts.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-the-xcode-c-compiler">(2) Install the XCode C compiler.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-the-macports-gcc-c-compiler">(3) Install the MacPorts (gcc) C Compiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-readline">(4) Install readline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#edit-the-makefiles">(5) Edit the Makefiles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#compile-fokko-and-atlas">(6) Compile Fokko and atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-compilation-options">Other Compilation options:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installing-fokko-and-atlas">(7) Installing Fokko and atlas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Example:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Example:</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="windows_installation.html">Windows</a><ul>
@@ -213,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/more_principal.html">More Principal Series</a></li>
@@ -610,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -804,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/tits.html">tits.at</a><ul>
@@ -1025,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1041,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/mac_installation.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1050,57 +1069,69 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="windows_installation.html" class="btn btn-neutral float-right" title="Windows" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="linux_installation.html" class="btn btn-neutral float-right" title="Linux" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="mac">
 <span id="macs"></span><h1>Mac<a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="download-the-software">
-<h2>Download the software<a class="headerlink" href="#download-the-software" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="download-the-source-code">
+<h2>Download the source code<a class="headerlink" href="#download-the-source-code" title="Permalink to this headline">¶</a></h2>
+<p>You have two options:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#direct"><span class="std std-ref">Download source code in a single file</span></a></li>
-<li><a class="reference internal" href="#using-git-mac"><span class="std std-ref">Using git</span></a></li>
-<li><a class="reference internal" href="#executable-mac"><span class="std std-ref">Download and Install an executable</span></a></li>
+<li><a class="reference internal" href="#using-git-mac"><span>Using git</span></a> : recommended method.</li>
+<li><a class="reference internal" href="#using-link-mac"><span>Donwload a tar file</span></a></li>
 </ul>
-<div class="section" id="download-source-code-in-a-single-file">
-<span id="direct"></span><h3>Download source code in a single file<a class="headerlink" href="#download-source-code-in-a-single-file" title="Permalink to this headline">¶</a></h3>
-<p>This is the latest stable version.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="27%" />
-<col width="32%" />
-<col width="41%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Version 1.0</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz">atlas_1.0.tgz</a></td>
-<td>source code for Fokko and atlas
-including messages and atlas-scripts</td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="section" id="using-git">
 <span id="using-git-mac"></span><h3>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h3>
-<p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span class="std std-ref">Help with git</span></a> to get started with git.</p>
+<p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span>Help with git</span></a> to get started with git.</p>
 <p>If you choose to use git, you can get the most up-to-date version of
 the software. Open a terminal window (in the Finder click
 Macintosh/Applications/Utilities/Terminal). Make sure your git client
 is relatively new. Version 1.7.0.4 and above should work.</p>
 <p>To check your git version, on the command line, do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="o">--</span><span class="n">version</span>
 </pre></div>
 </div>
 <p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git clone https://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
 <p>This creates a subdirectory &#8220;atlasofliegroups&#8221; and stores the files there.</p>
 </div>
+<div class="section" id="donwload-a-tar-file">
+<span id="using-link-mac"></span><h3>Donwload a tar file<a class="headerlink" href="#donwload-a-tar-file" title="Permalink to this headline">¶</a></h3>
+<p>We recommend you to download the latest version.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="19%" />
+<col width="66%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Latest atlas-scripts directory</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.7/atlas_0.7.0.tgz">atlas-scripts.0.7.0.tgz</a></td>
+<td>supplementary files for atlas</td>
+</tr>
+<tr class="row-even"><td>Latest complete version: 0.7</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.7/atlas_0.7.tgz">atlas_0.7.tgz</a></td>
+<td>source code, Fokko and atlas</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="section" id="installation-from-source">
-<h2>Installation from Source<a class="headerlink" href="#installation-from-source" title="Permalink to this headline">¶</a></h2>
-<p>After you have the source code, cd to the atlasofliegroups directory.</p>
+</div>
 <div class="section" id="compiling-atlas-for-the-mac-using-macports">
-<h3>Compiling atlas for the Mac using MacPorts<a class="headerlink" href="#compiling-atlas-for-the-mac-using-macports" title="Permalink to this headline">¶</a></h3>
+<h2>Compiling atlas for the Mac using MacPorts<a class="headerlink" href="#compiling-atlas-for-the-mac-using-macports" title="Permalink to this headline">¶</a></h2>
 <p>Regardless of how you download the source code you will need to
 compile it.  Here is the preferred method.</p>
 <p>You are going to install the gcc C compiler (provided by MacPorts),
@@ -1108,7 +1139,7 @@ which is preferred for installing Fokko and atlas. To do so you must
 first install the XCode C Compiler.</p>
 </div>
 <div class="section" id="install-macports">
-<h3>(1) Install MacPorts.<a class="headerlink" href="#install-macports" title="Permalink to this headline">¶</a></h3>
+<h2>(1) Install MacPorts.<a class="headerlink" href="#install-macports" title="Permalink to this headline">¶</a></h2>
 <p>(If MacPorts is installed on your system go to
 step (2)). Visit <cite>macports.org &lt;https://www.macports.org&gt;</cite>, go to
 <cite>Installing MacPorts &lt;https://www.macports.org/install.php&gt;</cite>, and
@@ -1118,7 +1149,7 @@ need to be an administrative user, and will need to enter your
 password.</p>
 </div>
 <div class="section" id="install-the-xcode-c-compiler">
-<h3>(2) Install the XCode C compiler.<a class="headerlink" href="#install-the-xcode-c-compiler" title="Permalink to this headline">¶</a></h3>
+<h2>(2) Install the XCode C compiler.<a class="headerlink" href="#install-the-xcode-c-compiler" title="Permalink to this headline">¶</a></h2>
 <p>If you already have XCode installed, go to step (3) (XCode is not installed by default).</p>
 <p>The XCode package is huge, and includes a lot of unnecessary tools. We
 recommend downloading and installing just the <cite>XCode command line
@@ -1127,23 +1158,23 @@ have everything you need.</p>
 <p>Alternatively install the entire <cite>Xcode &lt;https://developer.apple.com/xcode&gt;</cite>
 package. In either case you will need a (free) Apple ID.</p>
 <p>Once you have the XCode command line tools, you will have a C compiler /usr/bin/gcc. You can test this in a terminal window by typing:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">gcc</span> <span class="o">-</span><span class="n">v</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">gcc</span> <span class="o">-</span><span class="n">v</span>
 </pre></div>
 </div>
 <p>The response should be, on an earlier OS, something like:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Configured</span> <span class="k">with</span><span class="p">:</span> <span class="o">--</span><span class="n">prefix</span><span class="o">=/</span><span class="n">Applications</span><span class="o">/</span><span class="n">Xcode</span><span class="o">.</span><span class="n">app</span><span class="o">/</span><span class="n">Contents</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">usr</span><span class="o">...</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr...
 </pre></div>
 </div>
 <p>Or, if you are using El Capitan(OS X 10.11) or later:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Configured</span> <span class="k">with</span><span class="p">:</span> <span class="o">--</span><span class="n">prefix</span><span class="o">=/</span><span class="n">Library</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">CommandLineTools</span><span class="o">/</span><span class="n">usr</span>
-<span class="o">--</span><span class="k">with</span><span class="o">-</span><span class="n">gxx</span><span class="o">-</span><span class="n">include</span><span class="o">-</span><span class="nb">dir</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">c</span><span class="o">++/</span><span class="mf">4.2</span><span class="o">.</span><span class="mi">1</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Configured with: --prefix=/Library/Developer/CommandLineTools/usr
+--with-gxx-include-dir=/usr/include/c++/4.2.1
 </pre></div>
 </div>
 </div>
 <div class="section" id="install-the-macports-gcc-c-compiler">
-<h3>(3) Install the MacPorts (gcc) C Compiler<a class="headerlink" href="#install-the-macports-gcc-c-compiler" title="Permalink to this headline">¶</a></h3>
+<h2>(3) Install the MacPorts (gcc) C Compiler<a class="headerlink" href="#install-the-macports-gcc-c-compiler" title="Permalink to this headline">¶</a></h2>
 <p>Open a terminal window (Terminal is available in Applications). All further commands are given from within this window. Give the command:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">gcc49</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo port install gcc49
 </pre></div>
 </div>
 <p>to install the Macports version of gcc.</p>
@@ -1158,43 +1189,43 @@ connected to a power source] you should have /opt/local/bin/gcc-mp-4.9
 (the MacPorts C compiler) and /opt/local/bin/g++-mp-4.9 (the MacPorts
 C++ compiler). You can check these things in a terminal window by
 typing:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ls</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">g</span><span class="o">*</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>ls /opt/local/bin/g*
 </pre></div>
 </div>
 <p>Also the directory /opt/local/bin has been added to your PATH environment variable.</p>
 </div>
 <div class="section" id="install-readline">
-<h3>(4) Install readline<a class="headerlink" href="#install-readline" title="Permalink to this headline">¶</a></h3>
+<h2>(4) Install readline<a class="headerlink" href="#install-readline" title="Permalink to this headline">¶</a></h2>
 <p>Do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">readline</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo port install readline
 </pre></div>
 </div>
 <p>to install the readline package.</p>
 </div>
 <div class="section" id="edit-the-makefiles">
-<h3>(5) Edit the Makefiles<a class="headerlink" href="#edit-the-makefiles" title="Permalink to this headline">¶</a></h3>
+<h2>(5) Edit the Makefiles<a class="headerlink" href="#edit-the-makefiles" title="Permalink to this headline">¶</a></h2>
 <p>You will need to edit two files to tell your computer which compiler to use.</p>
 <ol class="upperalpha simple">
 <li>In the atlasofliegroups directory, edit the Makefile as follows:</li>
 </ol>
 <p>First search for CXX and find the following text:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># the compiler to use, including language switch</span>
-<span class="c1">#some C++11 supportneeded (rvalue references, shared_ptr) but g++-4.4 suffices</span>
-<span class="n">CXX</span> <span class="o">=</span> <span class="n">g</span><span class="o">++-</span> <span class="o">-</span><span class="n">std</span><span class="o">=</span><span class="n">c</span><span class="o">++</span><span class="mi">0</span><span class="n">x</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span># the compiler to use, including language switch
+#some C++11 supportneeded (rvalue references, shared_ptr) but g++-4.4 suffices
+CXX = g++- -std=c++0x
 </pre></div>
 </div>
 <p>Then edit the last line to read:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CXX</span> <span class="o">=</span> <span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.9</span> <span class="o">-</span><span class="n">std</span><span class="o">=</span><span class="n">c</span><span class="o">++</span><span class="mi">0</span><span class="n">x</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>CXX = g++-mp-4.9 -std=c++0x
 </pre></div>
 </div>
 <p>(Remember to change 4.9 to the version of compiler that you have
 downloaded).</p>
 <p>Also edit the line:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>rl_libs ?= -lreadline
+<div class="highlight-python"><div class="highlight"><pre><span></span>rl_libs ?= -lreadline
 </pre></div>
 </div>
 <p>to read:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>rl_libs ?= -lreadline -lcurses -L/opt/local/lib
+<div class="highlight-python"><div class="highlight"><pre><span></span>rl_libs ?= -lreadline -lcurses -L/opt/local/lib
 </pre></div>
 </div>
 <p>(to tell the compiler where to find the readline libraries).</p>
@@ -1202,20 +1233,20 @@ downloaded).</p>
 <code class="docutils literal"><span class="pre">atlasofliegroups/sources/intepreter</span></code>, you need to modify the
 Makefile in there. Search again for <code class="docutils literal"><span class="pre">CXX</span></code> and find the following
 text:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># our C++ compiler (call language version c++0x, for backward compatibility)</span>
-<span class="n">CXX</span> <span class="p">:</span><span class="o">=</span> <span class="n">g</span><span class="o">++</span> <span class="o">-</span><span class="n">std</span><span class="o">=</span><span class="n">c</span><span class="o">++</span><span class="mi">0</span><span class="n">x</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span># our C++ compiler (call language version c++0x, for backward compatibility)
+CXX := g++ -std=c++0x
 </pre></div>
 </div>
 <p>Then edit the last line to read:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CXX</span> <span class="p">:</span><span class="o">=</span> <span class="n">g</span><span class="o">++-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.9</span> <span class="o">-</span><span class="n">std</span><span class="o">=</span><span class="n">c</span><span class="o">++</span><span class="mi">0</span><span class="n">x</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>CXX := g++-mp-4.9 -std=c++0x
 </pre></div>
 </div>
 <p>(again remember to change 4.9 to the correct compiler version).</p>
 </div>
 <div class="section" id="compile-fokko-and-atlas">
-<h3>(6) Compile Fokko and atlas<a class="headerlink" href="#compile-fokko-and-atlas" title="Permalink to this headline">¶</a></h3>
+<h2>(6) Compile Fokko and atlas<a class="headerlink" href="#compile-fokko-and-atlas" title="Permalink to this headline">¶</a></h2>
 <p>The simplest way to compile is with the command:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">make</span>
 </pre></div>
 </div>
 <p>(issued while you are in the atlasofliegroups directory where the
@@ -1223,105 +1254,73 @@ Makefile is). This should compile both Fokko and atlas.</p>
 <p>If you get an error related to readline see <cite>installing the readline
 package &lt;http://www.liegroups.org/software/download/readline.html&gt;</cite>.</p>
 <p>If you get an error:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ctanglex</span><span class="p">:</span> <span class="n">Command</span> <span class="ow">not</span> <span class="n">found</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>ctanglex: Command not found
 </pre></div>
 </div>
-<p>see <a class="reference internal" href="#installing-cwebx"><span class="std std-ref">Installing cwebx</span></a>.  If you get an error like the following:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="k">assert</span><span class="o">.</span><span class="n">h</span><span class="o">&gt;</span> <span class="ow">not</span> <span class="n">found</span>
+<p>see <a class="reference internal" href="#installing-cwebx"><span>Installing cwebx</span></a>.  If you get an error like the following:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>&lt;assert.h&gt; not found
 </pre></div>
 </div>
 <p>then XCode may not be installed in exactly the right way. Try installing the command-line
 utilities specifically as follows:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
 </pre></div>
 </div>
+</div>
 <div class="section" id="other-compilation-options">
-<h4>Other Compilation options:<a class="headerlink" href="#other-compilation-options" title="Permalink to this headline">¶</a></h4>
+<h2>Other Compilation options:<a class="headerlink" href="#other-compilation-options" title="Permalink to this headline">¶</a></h2>
 <p>For more complete compilation, we recommend compiling with:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">verbose</span><span class="o">=</span><span class="n">true</span> <span class="n">optimize</span><span class="o">=</span><span class="n">true</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>make verbose=true optimize=true
 </pre></div>
 </div>
 <p>The option &#8220;verbose&#8221; makes Fokko print a little more information about what it is  doing, like printing a counter during a long Kazhdan-Lusztig computation. The option &#8220;optimize&#8221; tells the compiler to work hard to make the code as fast as possible; this takes slightly longer to compile, then runs maybe 10% faster.</p>
 <p>Other possibilities are:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">debug</span><span class="o">=</span><span class="n">true</span>
-<span class="n">readline</span><span class="o">=</span><span class="n">false</span><span class="o">.</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>debug=true
+readline=false.
 </pre></div>
 </div>
 <p>The option &#8220;debug&#8221; makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren&#8217;t supposed to happen, to detect code problems early.</p>
 </div>
 <div class="section" id="installing-fokko-and-atlas">
-<h4>(7) Installing Fokko and atlas<a class="headerlink" href="#installing-fokko-and-atlas" title="Permalink to this headline">¶</a></h4>
+<h2>(7) Installing Fokko and atlas<a class="headerlink" href="#installing-fokko-and-atlas" title="Permalink to this headline">¶</a></h2>
 <p>To install the executables in [installation directory] and put symlinks in [binary directory], type:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=</span><span class="p">[</span><span class="n">installation</span> <span class="n">directory</span><span class="p">]</span> <span class="n">BINDIR</span><span class="o">=</span><span class="p">[</span><span class="n">binary</span> <span class="n">directory</span><span class="p">]</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR=[installation directory] BINDIR=[binary directory]
 </pre></div>
 </div>
 <p>The default BINDIR is <code class="docutils literal"><span class="pre">INSTALLDIR/../bin</span></code></p>
 </div>
 <div class="section" id="example">
-<h4>Example:<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<h2>Example:<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
 <p>To install the executables in <code class="docutils literal"><span class="pre">/usr/local/atlas</span></code>, and symlinks in <code class="docutils literal"><span class="pre">/usr/local/bin</span></code>, type:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">atlas</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo make install INSTALLDIR=/usr/local/atlas
 </pre></div>
 </div>
 <p>(This example only works up to OS 10.10, and you need root access).</p>
 </div>
 <div class="section" id="id1">
-<h4>Example:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<h2>Example:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>To install the executables in /home/[userid]/software/atlas, and symlinks in /home/userid/bin, type:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="p">[</span><span class="n">userid</span><span class="p">]</span><span class="o">/</span><span class="n">software</span> <span class="n">BINDIR</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="p">[</span><span class="n">userid</span><span class="p">]</span><span class="o">/</span><span class="nb">bin</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install INSTALLDIR=/home/[userid]/software BINDIR=/home/[userid]/bin
 </pre></div>
 </div>
 </div>
 <div class="section" id="id2">
-<h4>Example:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<h2>Example:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Say you unpacked the software in /home/[userid]/atlas_0.7. To leave the software there, and create symlinks in /home/[userid]/bin, type:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>make install
 </pre></div>
 </div>
 <p>Note that the messages (help) directory must be in the same directory as the Fokko executable. Alternatively you can run Fokko with the command:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Fokko</span> <span class="n">MESSAGEDIR</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>Fokko MESSAGEDIR
 </pre></div>
 </div>
 <p>to specify where to find this directory.</p>
 <div class="section" id="installing-cwebx">
-<span id="id3"></span><h5>Installing cwebx<a class="headerlink" href="#installing-cwebx" title="Permalink to this headline">¶</a></h5>
+<span id="id3"></span><h3>Installing cwebx<a class="headerlink" href="#installing-cwebx" title="Permalink to this headline">¶</a></h3>
 <p>The software cwebx is needed to compile atlas. If you downloaded a tgz file from the downloads page, you should not need to install cwebx. If you downloaded the software from github using git, then cwebx is included in the directory cwebx, or available from www-math.univ-poitiers.fr/~maavl/CWEBx.</p>
 <p>Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.</p>
 <p>You need to have a working copy of tex in your PATH to run cweavex.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="download-and-install-an-executable">
-<span id="executable-mac"></span><h2>Download and Install an executable<a class="headerlink" href="#download-and-install-an-executable" title="Permalink to this headline">¶</a></h2>
-<p>The best method is to compile from source. As a backup option you can
-download install an executable file.</p>
-<p>Download a copy of the executable, and the atlas-scripts directory here:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="24%" />
-<col width="32%" />
-<col width="44%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>mac 64 compiled</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/source/1.0/atlas_1.0_pre.tgz">atlas_mac_pre_1.0.tgz</a></td>
-<td>executables and atlas-scripts directory</td>
-</tr>
-</tbody>
-</table>
-<p>Double-click on the file to extract it.</p>
-<p>Open a terminal window, and cd to the directory where the files were downloaded.</p>
-<p>Make the file executable:</p>
-<blockquote>
-<div>chmod u+x atlas</div></blockquote>
-<p>Run the software with the command:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span>  <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span>
-</pre></div>
-</div>
-<p>The path argument tells atlas where to find the scripts, and <code class="docutils literal"><span class="pre">all</span></code> says to load
-most of the scripts (not including a few which are under development). (Double-clicking
-on the file will launch the application, but will not make the atlas-scripts available.)</p>
 </div>
 </div>
 
@@ -1335,7 +1334,7 @@ on the file will launch the application, but will not make the atlas-scripts ava
         <a href="windows_installation.html" class="btn btn-neutral float-right" title="Windows" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="linux_installation.html" class="btn btn-neutral" title="Linux" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="linux_installation.html" class="btn btn-neutral float-right" title="Linux" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="index.html"/>
         <link rel="up" title="Download and Install" href="download_and_install.html"/>
         <link rel="next" title="Run atlas" href="run_atlas.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="mac_installation.html">Mac</a><ul>
@@ -115,7 +113,7 @@
 <li class="toctree-l4"><a class="reference internal" href="mac_installation.html#id2">Example:</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Windows</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Windows</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#compiling">Compiling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#installing-under-cygwin">Installing under Cygwin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#pre-compiled">Pre-compiled</a></li>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/windows_installation.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,12 +1069,24 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="mac_installation.html" class="btn btn-neutral float-right" title="Mac" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="windows">
 <span id="id1"></span><h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="#compiling"><span class="std std-ref">Compiling</span></a></li>
-<li><a class="reference internal" href="#precompiled"><span class="std std-ref">Pre-compiled</span></a></li>
+<li><a class="reference internal" href="#compiling"><span>Compiling</span></a></li>
+<li><a class="reference internal" href="#precompiled"><span>Pre-compiled</span></a></li>
 </ul>
 <div class="section" id="compiling">
 <span id="id2"></span><h2>Compiling<a class="headerlink" href="#compiling" title="Permalink to this headline">¶</a></h2>
@@ -1075,7 +1096,7 @@ available (currently in beta version) in Windows 10. It provides a
 linux command line environment. This was produced by Canonical, the
 makers of Ubuntu, so it is very close to an Ubuntu linux environment.</p>
 <p>On older Windows machines linux software can be run using
-<a class="reference internal" href="#cygwin"><span class="std std-ref">Installing under Cygwin</span></a>.
+<a class="reference internal" href="#cygwin"><span>Installing under Cygwin</span></a>.
 Unless you have already installed Cygwin and
 are familiar with it this is not recommended.</p>
 <div class="section" id="step-by-step-installation-using-the-bash-shell">
@@ -1088,25 +1109,25 @@ these instructions from <a class="reference external" href="http://www.howtogeek
 <p>Install some necessary software. After the first call of sudo apt-get install you
 need to type your password. (Depending on how you installed the bash shell you
 might not need to use sudo.):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">git</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">make</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">g</span><span class="o">++</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">bison</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libreadline</span><span class="o">-</span><span class="n">dev</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">emacs</span> <span class="p">(</span><span class="ow">or</span> <span class="n">your</span> <span class="n">favorite</span> <span class="n">text</span> <span class="n">editor</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get install git
+sudo apt-get install make
+sudo apt-get install g++
+sudo apt-get install bison
+sudo apt-get install libreadline-dev
+sudo apt-get install emacs (or your favorite text editor)
 </pre></div>
 </div>
-<p>The remainder of the process follows the standard linux process. See <a class="reference internal" href="linux_installation.html#linux"><span class="std std-ref">Linux</span></a> for details. Briefly:</p>
+<p>The remainder of the process follows the standard linux process. See <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a> for details. Briefly:</p>
 <p>Get a copy of the software using git:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git clone http://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
 <p>Go into the proper directory and type make:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span>
-<span class="n">make</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>cd atlasofliegroups
+make
 </pre></div>
 </div>
-<p>Follow the instructions in <a class="reference internal" href="linux_installation.html#linux"><span class="std std-ref">Linux</span></a>.</p>
+<p>Follow the instructions in <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a>.</p>
 </div>
 </div>
 <div class="section" id="installing-under-cygwin">
@@ -1125,7 +1146,7 @@ might not need to use sudo.):</p>
 </ul>
 <p>Next, open a cygin terminal by double-clicking on the icon. You are now in a linux-like environment.</p>
 <p>The remainder of the process follows the standard linux process, similar to the procedure under bash.
-See <a class="reference internal" href="linux_installation.html#linux"><span class="std std-ref">Linux</span></a> for details.</p>
+See <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a> for details.</p>
 </div>
 <div class="section" id="pre-compiled">
 <span id="precompiled"></span><h2>Pre-compiled<a class="headerlink" href="#pre-compiled" title="Permalink to this headline">¶</a></h2>
@@ -1144,7 +1165,7 @@ See <a class="reference internal" href="linux_installation.html#linux"><span cla
 </table>
 <p>Unzip the file you just downloaded, open atlas_windows/bin, double click on atlas.exe or Fokko.exe to run.</p>
 <p>Note: using this option readline (command line tools) will not work. For this reason we recommend
-<a class="reference internal" href="#compiling"><span class="std std-ref">Compiling</span></a> the software yourself.</p>
+<a class="reference internal" href="#compiling"><span>Compiling</span></a> the software yourself.</p>
 </div>
 </div>
 
@@ -1158,7 +1179,7 @@ See <a class="reference internal" href="linux_installation.html#linux"><span cla
         <a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mac_installation.html" class="btn btn-neutral" title="Mac" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="mac_installation.html" class="btn btn-neutral float-right" title="Mac" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

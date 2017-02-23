@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="complex.at" href="complex.html"/>
         <link rel="next" title="complex_nilpotent_orbits.at" href="complex_nilpotent_orbits.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -527,7 +528,7 @@
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="complex.html">complex.at</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="complex_ref.html">complex.at Function References</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">complex.at Function Index</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">complex.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="complex_nilpotent_orbits.html">complex_nilpotent_orbits.at</a><ul>
@@ -618,6 +619,11 @@
 <li class="toctree-l3"><a class="reference internal" href="generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1053,8 +1064,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/complex_index.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1062,6 +1071,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="complex_nilpotent_orbits.html" class="btn btn-neutral float-right" title="complex_nilpotent_orbits.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="complex_ref.html" class="btn btn-neutral float-right" title="complex.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="complex-at-function-index">
 <span id="complex-at-index"></span><h1>complex.at Function Index<a class="headerlink" href="#complex-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1080,40 +1101,40 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#left-vec-v-vec-v-1"><span class="std std-ref">left</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#left-vec-v-vec-v-1"><span>left</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v-&gt;vec:</span> <span class="pre">v[</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#right-vec-v-vec-v-v21"><span class="std std-ref">right</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#right-vec-v-vec-v-v21"><span>right</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v-&gt;vec:</span> <span class="pre">v[#v\2</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#left-ratvec-v-ratvec-v-1"><span class="std std-ref">left</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#left-ratvec-v-ratvec-v-1"><span>left</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">v-&gt;ratvec:</span> <span class="pre">v[</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#right-ratvec-v-ratvec-v-v21"><span class="std std-ref">right</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#right-ratvec-v-ratvec-v-v21"><span>right</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">v-&gt;ratvec:</span> <span class="pre">v[#v\2</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#up-right-corner-mat-m-mat1"><span class="std std-ref">up_right_corner</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#up-right-corner-mat-m-mat1"><span>up_right_corner</span></a></td>
 <td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">M-&gt;mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#left-w-kgbelt-x-mat1"><span class="std std-ref">left_w</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#left-w-kgbelt-x-mat1"><span>left_w</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#mu-c-param-p-vec1"><span class="std std-ref">mu_C</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#mu-c-param-p-vec1"><span>mu_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;vec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#nu-c-param-p-ratvec1"><span class="std std-ref">nu_C</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#nu-c-param-p-ratvec1"><span>nu_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#gamma-l-param-p-ratvec1"><span class="std std-ref">gamma_L</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#gamma-l-param-p-ratvec1"><span>gamma_L</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#gamma-r-param-p-ratvec1"><span class="std std-ref">gamma_R</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#gamma-r-param-p-ratvec1"><span>gamma_R</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#gparameter-realform-g-ratvec-gamma-l-ratvec-gamma-r-param1"><span class="std std-ref">gparameter</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="complex_ref.html#gparameter-realform-g-ratvec-gamma-l-ratvec-gamma-r-param1"><span>gparameter</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,ratvec</span> <span class="pre">gamma_L,</span> <span class="pre">ratvec</span> <span class="pre">gamma_R-&gt;Param</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#mparameter-realform-g-vec-mu-ratvec-nu-param1"><span class="std std-ref">mparameter</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="complex_ref.html#mparameter-realform-g-vec-mu-ratvec-nu-param1"><span>mparameter</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">vec</span> <span class="pre">mu,</span> <span class="pre">ratvec</span> <span class="pre">nu-&gt;Param</span></code></td>
 </tr>
 </tbody>
@@ -1130,7 +1151,7 @@
         <a href="complex_nilpotent_orbits.html" class="btn btn-neutral float-right" title="complex_nilpotent_orbits.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="complex_ref.html" class="btn btn-neutral" title="complex.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="complex_ref.html" class="btn btn-neutral float-right" title="complex.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
         <link rel="next" title="The Character Differential" href="differential.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -202,7 +200,7 @@
 <li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Parameters for Real Tori</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Parameters for Real Tori</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#the-characters-of">The characters of <span class="math">\(S^1\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id1">The characters of <span class="math">\({\mathbb R}^{\times}\)</span></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#characters-of">Characters of <span class="math">\({\mathbb C}^{\times}\)</span>.</a></li>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/tutorial/video_2A/parameters_real_tori.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,6 +1069,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="differential.html" class="btn btn-neutral float-right" title="The Character Differential" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="parameters-for-real-tori">
 <h1>Parameters for Real Tori<a class="headerlink" href="#parameters-for-real-tori" title="Permalink to this headline">¶</a></h1>
@@ -1067,7 +1088,7 @@
 understands what a torus is. In order to specify which torus we want
 we use the command <code class="docutils literal"><span class="pre">torus</span></code>. There are two ways of using this
 command, which we can check as follows:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype torus ?
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype torus ?
 Overloaded instances of &#39;torus&#39;
   (int,int,int)-&gt;RealForm
   CartanClass-&gt;RealForm
@@ -1076,22 +1097,22 @@ atlas&gt;
 </div>
 <p>We are interested in the first option. So, we can determine a
 particular torus by assigning three integers:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">H</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">H</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">string</span> <span class="p">(</span><span class="n">constant</span><span class="p">))</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">compact</span> <span class="n">connected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;u(1)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">H</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">H</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">connected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,C)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span>  <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,R)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set H=torus(1,0,0)
+Identifier H: RealForm (hiding previous one of type string (constant))
+atlas&gt; H
+Value: compact connected quasisplit real group with Lie algebra &#39;u(1)&#39;
+atlas&gt; set H=torus(0,1,0)
+Identifier H: RealForm (hiding previous one of type RealForm)
+atlas&gt; H
+Value: connected quasisplit real group with Lie algebra &#39;gl(1,C)&#39;
+atlas&gt;  H:=torus(0,0,1)
+Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
+atlas&gt;
 
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span>
-<span class="s1">&#39;u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+atlas&gt; H:=torus(1,2,3)
+Value: disconnected quasisplit real group with Lie algebra
+&#39;u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)&#39;
+atlas&gt;
 </pre></div>
 </div>
 <p>In other words, the command <code class="docutils literal"><span class="pre">torus(a,b,c)</span></code> specifies a torus with
@@ -1103,27 +1124,27 @@ and <code class="docutils literal"><span class="pre">c</span></code> <span class
 theory we know that they are parametrized by integers. So, starting
 from the trivial representation we can see how the software
 parametrizes them:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span>  <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">compact</span> <span class="n">connected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;u(1)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">p</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;  H:=torus(1,0,0)
+Value: compact connected quasisplit real group with Lie algebra &#39;u(1)&#39;
+atlas&gt; set p=trivial(H)
+Identifier p: Param
+atlas&gt; p
+Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>This is the parameter for the trivial representation. The first
 element <code class="docutils literal"><span class="pre">x</span></code> is a <span class="math">\(K\backslash G/B\)</span> element. But it is not important for now. Let
 us see what involution it corresponds to:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="n">KGBElt</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">theta</span><span class="o">=</span><span class="n">involution</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">theta</span><span class="p">:</span> <span class="n">mat</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">theta</span>
-<span class="n">Value</span><span class="p">:</span>
-<span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(p)
+Identifier x: KGBElt
+atlas&gt; set theta=involution(x)
+Identifier theta: mat
+atlas&gt; theta
+Value:
+| 1 |
 
-<span class="n">atlas</span><span class="o">&gt;</span>
+atlas&gt;
 </pre></div>
 </div>
 <p>In this case it is the identity involution. That is, the torus has a
@@ -1157,43 +1178,43 @@ character on the Lie algebra of the split Cartan
 <span class="math">\(\mathbb Z\)</span> correspondintg to the character <span class="math">\(e^{i\lambda
 t}\)</span>.</p>
 <p>In the case of the trivial character the parameter is:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
+Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>And for the character <span class="math">\(e^{i 3} t\)</span> of <span class="math">\(S^1\)</span> we have:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">:</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[3],[0])
+Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>Note that <code class="docutils literal"><span class="pre">nu</span></code> is fixed by <span class="math">\(-\theta\)</span>. So, given any <code class="docutils literal"><span class="pre">nu</span></code> it will
 be replaced by <span class="math">\((1-\theta)/2 \nu \in (X^*_{\mathbb Q})^{-\theta}\)</span>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">:</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">])</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[3],[2])
+Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>So, the above parameters are equivalent modulo the above equivalence relation and parametrize the same character. For example, we can ask <code class="docutils literal"><span class="pre">atlas</span></code> if</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">])</span><span class="o">=</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">true</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; parameter (x,[3],[3])= parameter (x,[3],[0])
+Value: true
+atlas&gt;
 </pre></div>
 </div>
 </div>
 <div class="section" id="id1">
 <h2>The characters of <span class="math">\({\mathbb R}^{\times}\)</span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Now lets take the most split one-dimensional torus:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,R)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="o">=</span><span class="n">trivial</span> <span class="p">(</span><span class="n">H</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="n">KGBElt</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">KGBElt</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">theta</span><span class="p">:</span><span class="o">=</span><span class="n">involution</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span>
-<span class="o">|</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; H:=torus(0,0,1)
+Value: disconnected split real group with Lie algebra &#39;gl(1,R)&#39;
+atlas&gt; p:=trivial (H)
+Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
+atlas&gt; set x=x(p)
+Identifier x: KGBElt (hiding previous one of type KGBElt)
+atlas&gt; theta:=involution(x)
+Value:
+| -1 |
 </pre></div>
 </div>
 <p>Now our parameters <code class="docutils literal"><span class="pre">(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code> satisfy <code class="docutils literal"><span class="pre">lambda</span></code> is in
@@ -1206,37 +1227,37 @@ the information that we want. The idea is that some problems can be
 reduced to the case of rational parameters.</p>
 <p>Let us do some examples. For the trivial representation, namely the parameter
 correspondintg to the trivial character on the component group and the character <span class="math">\(\nu :x \rightarrow |x|^0\)</span> we have:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
+Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>And for the representation with <span class="math">\(\nu :x \rightarrow |x|^{4/3}\)</span></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">0</span><span class="p">],[</span><span class="mi">4</span><span class="o">/</span><span class="mi">3</span><span class="p">])</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:=parameter (x,[0],[4/3])
+Value: final parameter (x=0,lambda=[0]/1,nu=[4]/3)
+atlas&gt;
 </pre></div>
 </div>
 <p>Now suppose we want a representation with non trivial character on the
 component group <span class="math">\({\mathbb Z}/2{\mathbb Z}\)</span>. For example, the
 sign representation is given by:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">:</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[1],[0])
+Value: final parameter (x=0,lambda=[1]/1,nu=[0]/1)
+atlas&gt;
 
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+atlas&gt; p:=trivial(H)
+Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>Which differs from the trivial by the non trivial character on
 <span class="math">\({\mathbb Z}/2{\mathbb Z}\)</span>. And note what happens when we change that
 character to <code class="docutils literal"><span class="pre">2</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">:</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">2</span><span class="p">],[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="o">=</span><span class="n">q</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">true</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; q:=parameter (x,[2],[0])
+Value: final parameter (x=0,lambda=[0]/1,nu=[0]/1)
+atlas&gt; p=q
+Value: true
+atlas&gt;
 </pre></div>
 </div>
 <p>Which is correct since <span class="math">\(2=0(mod2)\)</span>. So, sometimes the software will replace the parameters you are using for something equivalent.</p>
@@ -1245,67 +1266,67 @@ character to <code class="docutils literal"><span class="pre">2</span></code>:</
 <h2>Characters of <span class="math">\({\mathbb C}^{\times}\)</span>.<a class="headerlink" href="#characters-of" title="Permalink to this headline">¶</a></h2>
 <p>Now let us look at <span class="math">\({\mathbb C}^{\times} \cong GL(1, \mathbb C)\)</span> and
 the trivial representation:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">connected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,C)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">p</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; H:=torus(0,1,0)
+Value: connected quasisplit real group with Lie algebra &#39;gl(1,C)&#39;
+atlas&gt; set p=trivial(H)
+Identifier p: Param
+atlas&gt; p
+Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
 </pre></div>
 </div>
 <p>Now we have two coordinates for each parameter because we have a rank-2
 real group, locally isomorphic to  <span class="math">\(S^1 \times {\mathbb R}^{\times}\)</span>. Let&#8217;s see what the Cartan involution is for this torus:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="n">KGBElt</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">theta</span><span class="o">=</span><span class="n">involution</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">theta</span><span class="p">:</span> <span class="n">mat</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">theta</span>
-<span class="n">Value</span><span class="p">:</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=x(p)
+Identifier x: KGBElt
+atlas&gt; set theta=involution (x)
+Identifier theta: mat
+atlas&gt; theta
+Value:
+| 0, 1 |
+| 1, 0 |
 
-<span class="n">atlas</span><span class="o">&gt;</span>
+atlas&gt;
 </pre></div>
 </div>
 <p>So the Cartan involution of the complex torus switches the two coordinates.
 For example if <code class="docutils literal"><span class="pre">lambda</span> <span class="pre">=</span> <span class="pre">[0,0]</span></code> and <code class="docutils literal"><span class="pre">nu=</span> <span class="pre">[2,4]</span></code>, we have:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
-<span class="n">Identifier</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">vec</span> <span class="p">(</span><span class="n">constant</span><span class="p">))</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set q=parameter (x,[0,0],[2,4])
+Identifier q: Param (hiding previous one of type vec (constant))
+atlas&gt; q
+Value: final parameter (x=0,lambda=[0,0]/1,nu=[-1,1]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>Here the software leaves <code class="docutils literal"><span class="pre">lambda</span></code> as <code class="docutils literal"><span class="pre">[0,0]</span></code> and it changes <code class="docutils literal"><span class="pre">nu</span></code> to
 <code class="docutils literal"><span class="pre">[-1,1]</span></code>.  Which makes sense since``nu`` is fixed by <span class="math">\(-\theta\)</span> so it changed <code class="docutils literal"><span class="pre">nu</span></code> to <span class="math">\((1-\theta)\nu/2\)</span>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">theta</span><span class="p">)</span><span class="o">*</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span>
-<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">1</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; (1-theta)*[2,4]/2
+Value: [ -1,  1 ]/1
+atlas&gt;
 </pre></div>
 </div>
 <p>So, in fact for this group the <code class="docutils literal"><span class="pre">nu</span></code> will always look like <code class="docutils literal"><span class="pre">[x,-x]</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span>
-<span class="n">Identifier</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
-<span class="n">Identifier</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set q=parameter (x,[0,0],[3,-3])
+Identifier q: Param (hiding previous one of type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[0,0]/1,nu=[3,-3]/1)
+atlas&gt;
+atlas&gt; set q=parameter (x,[0,0],[3,3])
+Identifier q: Param (hiding previous one of type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>On the other hand, we can change lambda:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">Identifier</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">Identifier</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set q=parameter (x,[1,0],[0,0])
+Identifier q: Param (hiding previous one of type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[1,0]/1,nu=[0,0]/1)
+atlas&gt; set q=parameter (x,[0,1],[0,0])
+Identifier q: Param (hiding previous one of type Param)
+atlas&gt; q
+Value: final parameter (x=0,lambda=[1,0]/1,nu=[0,0]/1)
+atlas&gt;
 </pre></div>
 </div>
 <p>As we would expect since these two representations are equivalent modulo <span class="math">\(1-\theta\)</span></p>
@@ -1323,7 +1344,7 @@ For example if <code class="docutils literal"><span class="pre">lambda</span> <s
         <a href="differential.html" class="btn btn-neutral float-right" title="The Character Differential" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="parameters.html" class="btn btn-neutral" title="Parameters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

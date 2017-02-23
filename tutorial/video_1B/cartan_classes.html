@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Structure Theory" href="../structure_theory.html"/>
         <link rel="next" title="Real Forms of a Complex Group" href="real_forms.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -187,7 +185,7 @@
 <li class="toctree-l3"><a class="reference internal" href="real_groups.html">Real Groups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_coordinates.html">Change of Coordinates</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Cartan Subgroups</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Cartan Subgroups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="real_forms.html">Real Forms of a Complex Group</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="real_forms.html#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../library/usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../library/usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/tutorial/video_1B/cartan_classes.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,22 +1069,34 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="real_forms.html" class="btn btn-neutral float-right" title="Real Forms of a Complex Group" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="change_coordinates.html" class="btn btn-neutral float-right" title="Change of Coordinates" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="cartan-subgroups">
 <h1>Cartan Subgroups<a class="headerlink" href="#cartan-subgroups" title="Permalink to this headline">¶</a></h1>
 <p>When we give atlas a specific Lie group <span class="math">\(G\)</span>, the software knows
 several characteristics of the group. And depending on what you ask
 about <span class="math">\(G\)</span>, <code class="docutils literal"><span class="pre">atlas</span></code> will provide more information:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G</span><span class="p">:</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">connected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sl(2,R)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span>  <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">PSL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sl(2,R)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SL(2,R)
+Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
+atlas&gt;  H:=PSL(2,R)
+Value: disconnected split real group with Lie algebra &#39;sl(2,R)&#39;
+atlas&gt;
 </pre></div>
 </div>
 <p>Recall that <span class="math">\(H\cong SO(2,1)\)</span>.</p>
 <p>Now, one of the main structural facts about a group is what its Cartan subgroups are. For that we can type the following sequence of commands:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; nr_of_Cartan_classes (G)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; nr_of_Cartan_classes (G)
 Value: 2
 atlas&gt; set cartans =Cartan_classes (G)
 Identifier cartans: [CartanClass]
@@ -1115,7 +1136,7 @@ these roots form a system of type <code class="docutils literal"><span class="pr
 <p>Note that we also see that this Cartan occurs in different real forms
 of complex groups of type <code class="docutils literal"><span class="pre">A1</span></code>. The information about twisted involutions will be discussed later.</p>
 <p>Now for information about the second Cartan subgroup:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; set A=cartans[1]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set A=cartans[1]
 Identifier A: CartanClass
 atlas&gt; A
 Value: Cartan class #1, occurring for 1 real form and for 2 dual real forms
@@ -1134,7 +1155,7 @@ no complex or circle factors. And it just has real roots of type
 <code class="docutils literal"><span class="pre">A1</span></code>. We will discuss later the information about involutions.</p>
 <p>In contrast, the group <span class="math">\(SL(2,\mathbb C)\)</span> has only one conjugacy
 class of cartans:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; set G2=SL(2,C)
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G2=SL(2,C)
 Identifier G2: RealForm (hiding previous one of type string)
 atlas&gt; nr_of_Cartan_classes (G2)
 Value: 1
@@ -1166,37 +1187,37 @@ they are both isomorphic rank one Cartans and look like
 distinguish the two.</p>
 <p>The root systems of these intermediate Cartans also transform accordingly.
 For the Compact Cartan we have an imaginary root system of type <code class="docutils literal"><span class="pre">C2</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G1</span><span class="o">=</span><span class="n">Sp</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">G1</span><span class="p">:</span> <span class="n">RealForm</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G1</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">connected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sp(4,R)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">nr_of_Cartan_classes</span> <span class="p">(</span><span class="n">G1</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="mi">4</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">cartans</span> <span class="o">=</span><span class="n">Cartan_classes</span> <span class="p">(</span><span class="n">G1</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">cartans</span><span class="p">:</span> <span class="p">[</span><span class="n">CartanClass</span><span class="p">]</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="p">[</span><span class="n">CartanClass</span><span class="p">])</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">print_Cartan_info</span> <span class="p">(</span><span class="n">cartans</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-<span class="n">compact</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">complex</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">split</span><span class="p">:</span> <span class="mi">0</span>
-<span class="n">canonical</span> <span class="n">twisted</span> <span class="n">involution</span><span class="p">:</span> <span class="n">e</span>
-<span class="n">twisted</span> <span class="n">involution</span> <span class="n">orbit</span> <span class="n">size</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="n">fiber</span> <span class="n">size</span><span class="p">:</span> <span class="mi">4</span><span class="p">;</span> <span class="n">strong</span> <span class="n">inv</span><span class="p">:</span> <span class="mi">4</span>
-<span class="n">imaginary</span> <span class="n">root</span> <span class="n">system</span><span class="p">:</span> <span class="n">C2</span>
-<span class="n">real</span> <span class="n">root</span> <span class="n">system</span><span class="p">:</span> <span class="n">empty</span>
-<span class="nb">complex</span> <span class="n">factor</span><span class="p">:</span> <span class="n">empty</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G1=Sp(4,R)
+Identifier G1: RealForm
+atlas&gt; G1
+Value: connected split real group with Lie algebra &#39;sp(4,R)&#39;
+atlas&gt; nr_of_Cartan_classes (G1)
+Value: 4
+atlas&gt; set cartans =Cartan_classes (G1)
+Identifier cartans: [CartanClass] (hiding previous one of type [CartanClass])
+atlas&gt;
+atlas&gt; print_Cartan_info (cartans[0])
+compact: 2, complex: 0, split: 0
+canonical twisted involution: e
+twisted involution orbit size: 1; fiber size: 4; strong inv: 4
+imaginary root system: C2
+real root system: empty
+complex factor: empty
 </pre></div>
 </div>
 <p>Now for the most split Cartan, the last one, all of the roots are real:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">print_Cartan_info</span> <span class="p">(</span><span class="n">cartans</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-<span class="n">compact</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">complex</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">split</span><span class="p">:</span> <span class="mi">2</span>
-<span class="n">canonical</span> <span class="n">twisted</span> <span class="n">involution</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span>
-<span class="n">twisted</span> <span class="n">involution</span> <span class="n">orbit</span> <span class="n">size</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="n">fiber</span> <span class="n">size</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="n">strong</span> <span class="n">inv</span><span class="p">:</span> <span class="mi">1</span>
-<span class="n">imaginary</span> <span class="n">root</span> <span class="n">system</span><span class="p">:</span> <span class="n">empty</span>
-<span class="n">real</span> <span class="n">root</span> <span class="n">system</span><span class="p">:</span> <span class="n">C2</span>
-<span class="nb">complex</span> <span class="n">factor</span><span class="p">:</span> <span class="n">empty</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; print_Cartan_info (cartans[3])
+compact: 0, complex: 0, split: 2
+canonical twisted involution: 2,1,2,1
+twisted involution orbit size: 1; fiber size: 1; strong inv: 1
+imaginary root system: empty
+real root system: C2
+complex factor: empty
+atlas&gt;
 </pre></div>
 </div>
 <p>For the complex intermidiate Cartan, we have an imaginary root system and a real root system, both of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; cartans[1]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; cartans[1]
 Value: Cartan class #1, occurring for 2 real forms and for 1 dual real form
 atlas&gt; print_Cartan_info (cartans[1])
 compact: 0, complex: 1, split: 0
@@ -1209,7 +1230,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Lastly, the other intermidiate Cartan has also an imaginary and a real root system of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; cartans[2]
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; cartans[2]
 Value: Cartan class #2, occurring for 1 real form and for 2 dual real forms
 atlas&gt; print_Cartan_info (cartans[2])
 compact: 1, complex: 0, split: 1
@@ -1234,7 +1255,7 @@ atlas&gt;
         <a href="real_forms.html" class="btn btn-neutral float-right" title="Real Forms of a Complex Group" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="change_coordinates.html" class="btn btn-neutral" title="Change of Coordinates" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="change_coordinates.html" class="btn btn-neutral float-right" title="Change of Coordinates" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

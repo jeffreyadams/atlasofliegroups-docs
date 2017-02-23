@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="User Defined Functions" href="../usr_defined_functions.html"/>
         <link rel="next" title="induction.at Function References" href="induction_ref.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -650,7 +656,7 @@
 <li class="toctree-l4"><a class="reference internal" href="hermitian_index.html">hermitian.at Function Index</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">induction.at</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="">induction.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#parabolic-induction">Parabolic induction:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#construction"><span class="math">\(A_q(\lambda)\)</span>  construction:</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#good-fair-conditions">Good/Fair conditions:</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/induction.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,6 +1069,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="induction_ref.html" class="btn btn-neutral float-right" title="induction.at Function References" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="hermitian_index.html" class="btn btn-neutral float-right" title="hermitian.at Function Index" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="induction-at">
 <span id="id1"></span><h1>induction.at<a class="headerlink" href="#induction-at" title="Permalink to this headline">¶</a></h1>
@@ -1124,7 +1145,6 @@
 <div class="line">Then:</div>
 <div class="line">GOOD:  &lt;gamma_L+rho_u,alpha^vee&gt; &gt; 0;</div>
 <div class="line">WEAKLY GOOD:  &lt;gamma_L+rho_u,alpha^vee&gt; ge 0;</div>
-<div class="line">FAIR: &lt;gamma_L-rho_L+rho_u,alpha^vee&gt; &gt; 0.</div>
 <div class="line"><br /></div>
 <div class="line">For  Aq(x,lambda,lambda_q): gamma_L=lambda+rho_L;</div>
 <div class="line">gamma_L -&gt; gamma_G=gamma_L = lambda+rho_L</div>
@@ -1140,19 +1160,19 @@
 <div class="line"><br /></div>
 <div class="line">fair =&gt; vanishing outside middle degree =&gt; honest representation</div>
 <div class="line">weakly fair: same implication.</div>
-<div class="line">NB: &lt;gamma_L-rho_L_rho_u,alpha^vee&gt; &gt;= 0 does NOT imply vanishing (in general) if pi_L is not</div>
-<div class="line">one-dimensional, hence &#8220;weakly fair&#8221; is only defined if pi_L is one-dimensional.</div>
+<div class="line">NB: &lt;gamma_L-rho_L_rho_u,alpha^vee&gt; &gt;= 0 does NOT imply vanishing (in general) if pi_L is not weakly unipotent (e.g.,</div>
+<div class="line">one-dimensional), hence &#8220;weakly fair&#8221; is only defined if pi_L is one-dimensional.</div>
 <div class="line"><br /></div>
 </div>
 <p><strong>This script imports the following .at files:</strong></p>
 <div class="line-block">
-<div class="line"><a class="reference internal" href="misc.html#misc-at"><span class="std std-ref">misc.at</span></a></div>
-<div class="line"><a class="reference internal" href="parabolics.html#parabolics-at"><span class="std std-ref">parabolics.at</span></a></div>
-<div class="line"><a class="reference internal" href="kl.html#kl-at"><span class="std std-ref">kl.at</span></a></div>
-<div class="line"><a class="reference internal" href="coherent.html#coherent-at"><span class="std std-ref">coherent.at</span></a></div>
-<div class="line"><a class="reference internal" href="synthetic.html#synthetic-at"><span class="std std-ref">synthetic.at</span></a></div>
-<div class="line"><a class="reference internal" href="K.html#k-at"><span class="std std-ref">K.at</span></a></div>
-<div class="line"><a class="reference internal" href="finite_dimensional.html#finite-dimensional-at"><span class="std std-ref">finite_dimensional.at</span></a></div>
+<div class="line"><a class="reference internal" href="misc.html#misc-at"><span>misc.at</span></a></div>
+<div class="line"><a class="reference internal" href="parabolics.html#parabolics-at"><span>parabolics.at</span></a></div>
+<div class="line"><a class="reference internal" href="kl.html#kl-at"><span>kl.at</span></a></div>
+<div class="line"><a class="reference internal" href="coherent.html#coherent-at"><span>coherent.at</span></a></div>
+<div class="line"><a class="reference internal" href="synthetic.html#synthetic-at"><span>synthetic.at</span></a></div>
+<div class="line"><a class="reference internal" href="K.html#k-at"><span>K.at</span></a></div>
+<div class="line"><a class="reference internal" href="finite_dimensional.html#finite-dimensional-at"><span>finite_dimensional.at</span></a></div>
 <div class="line"><br /></div>
 </div>
 <div class="toctree-wrapper compound">
@@ -1174,7 +1194,7 @@
         <a href="induction_ref.html" class="btn btn-neutral float-right" title="induction.at Function References" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="hermitian_index.html" class="btn btn-neutral" title="hermitian.at Function Index" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="hermitian_index.html" class="btn btn-neutral float-right" title="hermitian.at Function Index" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

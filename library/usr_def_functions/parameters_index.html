@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="parameters.at" href="parameters.html"/>
         <link rel="next" title="partitions.at" href="partitions.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -748,7 +754,7 @@
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="parameters.html">parameters.at</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="parameters_ref.html">parameters.at Function References</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">parameters.at Function Index</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">parameters.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="partitions.html">partitions.at</a><ul>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1053,8 +1064,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/parameters_index.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1062,6 +1071,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="partitions.html" class="btn btn-neutral float-right" title="partitions.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="parameters_ref.html" class="btn btn-neutral float-right" title="parameters.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="parameters-at-function-index">
 <span id="parameters-at-index"></span><h1>parameters.at Function Index<a class="headerlink" href="#parameters-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1080,61 +1101,61 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#unnormalized-torus-factor-kgbelt-x-ratvec1"><span class="std std-ref">unnormalized_torus_factor</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#unnormalized-torus-factor-kgbelt-x-ratvec1"><span>unnormalized_torus_factor</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#square-unnormalized-innerclass-ic-mat-theta-ratvec-unnormalized-torus-factor-ratvec1"><span class="std std-ref">square_unnormalized</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#square-unnormalized-innerclass-ic-mat-theta-ratvec-unnormalized-torus-factor-ratvec1"><span>square_unnormalized</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic,mat</span> <span class="pre">theta,ratvec</span> <span class="pre">unnormalized_torus_factor-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#square-normalized-innerclass-ic-mat-theta-ratvec-torus-factor-ratvec1"><span class="std std-ref">square_normalized</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#square-normalized-innerclass-ic-mat-theta-ratvec-torus-factor-ratvec1"><span>square_normalized</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic,mat</span> <span class="pre">theta,ratvec</span> <span class="pre">torus_factor-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#square2-innerclass-ic-mat-theta-ratvec-tf-ratvec1"><span class="std std-ref">square2</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#square2-innerclass-ic-mat-theta-ratvec-tf-ratvec1"><span>square2</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic,mat</span> <span class="pre">theta,ratvec</span> <span class="pre">tf-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#square-realform-g-ratvec1"><span class="std std-ref">square</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#square-realform-g-ratvec1"><span>square</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#square-kgbelt-x-ratvec1"><span class="std std-ref">square</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#square-kgbelt-x-ratvec1"><span>square</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#square-is-central-innerclass-ic-mat-theta-ratvec-tf-bool1"><span class="std std-ref">square_is_central</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#square-is-central-innerclass-ic-mat-theta-ratvec-tf-bool1"><span>square_is_central</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic,mat</span> <span class="pre">theta,ratvec</span> <span class="pre">tf-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#parity-param-p-vec-alpha-hat-bool1"><span class="std std-ref">parity</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#parity-param-p-vec-alpha-hat-bool1"><span>parity</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,vec</span> <span class="pre">alpha_hat-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#dual-inner-class-param-p-innerclass1"><span class="std std-ref">dual_inner_class</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#dual-inner-class-param-p-innerclass1"><span>dual_inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;InnerClass</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#lambda-ratvec-gamma-mat-theta-kgbelt-y-ratvec1"><span class="std std-ref">lambda</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#lambda-ratvec-gamma-mat-theta-kgbelt-y-ratvec1"><span>lambda</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">gamma,mat</span> <span class="pre">theta,KGBElt</span> <span class="pre">y-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#lambda-ratvec-gamma-kgbelt-x-kgbelt-y-ratvec1"><span class="std std-ref">lambda</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#lambda-ratvec-gamma-kgbelt-x-kgbelt-y-ratvec1"><span>lambda</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">gamma,KGBElt</span> <span class="pre">x,KGBElt</span> <span class="pre">y-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#nu-ratvec-gamma-kgbelt-x-ratvec1"><span class="std std-ref">nu</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#nu-ratvec-gamma-kgbelt-x-ratvec1"><span>nu</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">gamma,KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#nu-ratvec-gamma-kgbelt-x-kgbelt-y-ratvec1"><span class="std std-ref">nu</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#nu-ratvec-gamma-kgbelt-x-kgbelt-y-ratvec1"><span>nu</span></a></td>
 <td><code class="docutils literal"><span class="pre">ratvec</span> <span class="pre">gamma,KGBElt</span> <span class="pre">x,KGBElt</span> <span class="pre">y-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#make-regular-rootdatum-rd-ratvec-v-ratvec1"><span class="std std-ref">make_regular</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#make-regular-rootdatum-rd-ratvec-v-ratvec1"><span>make_regular</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,</span> <span class="pre">ratvec</span> <span class="pre">v-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#choose-g-realform-g-rootdatum-dual-integral-ratvec1"><span class="std std-ref">choose_g</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#choose-g-realform-g-rootdatum-dual-integral-ratvec1"><span>choose_g</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">RootDatum</span> <span class="pre">dual_integral-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#choose-g-kgbelt-x-kgbelt-y-ratvec1"><span class="std std-ref">choose_g</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#choose-g-kgbelt-x-kgbelt-y-ratvec1"><span>choose_g</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">KGBElt</span> <span class="pre">y-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#choose-g-param-p-ratvec1"><span class="std std-ref">choose_g</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#choose-g-param-p-ratvec1"><span>choose_g</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#parameter-kgbelt-x-kgbelt-y-ratvec-gamma-param1"><span class="std std-ref">parameter</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="parameters_ref.html#parameter-kgbelt-x-kgbelt-y-ratvec-gamma-param1"><span>parameter</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,KGBElt</span> <span class="pre">y,ratvec</span> <span class="pre">gamma-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#parameter-kgbelt-x-kgbelt-y-param1"><span class="std std-ref">parameter</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="parameters_ref.html#parameter-kgbelt-x-kgbelt-y-param1"><span>parameter</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">KGBElt</span> <span class="pre">y-&gt;Param</span></code></td>
 </tr>
 </tbody>
@@ -1151,7 +1172,7 @@
         <a href="partitions.html" class="btn btn-neutral float-right" title="partitions.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="parameters_ref.html" class="btn btn-neutral" title="parameters.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="parameters_ref.html" class="btn btn-neutral float-right" title="parameters.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Miscellaneous Commands" href="misc.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -274,7 +275,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Output, Input, and Redirection</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Output, Input, and Redirection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="summary.html#command-level">Command level</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/axis/in_out_redir.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,6 +1069,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="output-input-and-redirection">
 <h1>Output, Input, and Redirection<a class="headerlink" href="#output-input-and-redirection" title="Permalink to this headline">¶</a></h1>
@@ -1077,15 +1098,15 @@ case it can contain spaces); all terminal output will be redirected to that
 file for the duration of the command. In case of &#8220;&gt;&#8221; a new file will be
 created, in case of &#8220;&gt;&gt;&#8221; the output is appended to an existing file. For
 instance:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">output_file</span> <span class="n">block_sizes</span><span class="p">(</span><span class="n">ic</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&gt;&gt;</span><span class="n">output_file</span> <span class="n">print_KGB</span><span class="p">(</span><span class="n">real_form</span><span class="p">(</span><span class="n">ic</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&gt;&gt;</span><span class="n">output_file</span> <span class="n">print_KL_list</span><span class="p">(</span><span class="n">real_form</span><span class="p">(</span><span class="n">ic</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="n">dual_quasisplit_form</span><span class="p">(</span><span class="n">ic</span><span class="p">))</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &gt; output_file block_sizes(ic)
+atlas&gt; &gt;&gt;output_file print_KGB(real_form(ic,2))
+atlas&gt; &gt;&gt;output_file print_KL_list(real_form(ic,2),dual_quasisplit_form(ic))
 </pre></div>
 </div>
 <p>will produce in the current directory the file &#8216;output_file&#8217; with the results
 of the indicated calls to block_sizes&#8217;, &#8216;print_KGB&#8217;, and &#8216;print_KL_list&#8217;.</p>
 <p>One can also redirect command input from a file. Simply type:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">filename</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;filename
 </pre></div>
 </div>
 <p>on a line by itself to execute the contents of &#8216;filename&#8217; as a series of
@@ -1106,7 +1127,7 @@ suppresses subsequent attempts to read that file as input. This is so that
 scripts can freely start by including other scripts whose definitions they
 depend on, without having multiple dependencies on the same script result in
 it being executed many times. The user can circumvent this check by writing:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&lt;&lt;</span><span class="n">filename</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;&lt;filename
 </pre></div>
 </div>
 <p>in which case the file will be read as input, even if it had been before. This
@@ -1144,7 +1165,7 @@ is usually pointless to continue); then control is given back to the terminal.</
         <a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="split_comm.html" class="btn btn-neutral" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

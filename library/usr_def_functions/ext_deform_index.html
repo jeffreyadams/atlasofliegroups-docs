@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="ext_deform.at" href="ext_deform.html"/>
         <link rel="next" title="ext_signs.at" href="ext_signs.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -567,7 +568,7 @@
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="ext_deform.html">ext_deform.at</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="ext_deform_ref.html">ext_deform.at Function References</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">ext_deform.at Function Index</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">ext_deform.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="ext_signs.html">ext_signs.at</a><ul>
@@ -618,6 +619,11 @@
 <li class="toctree-l3"><a class="reference internal" href="generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1053,8 +1064,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/ext_deform_index.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1062,6 +1071,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="ext_signs.html" class="btn btn-neutral float-right" title="ext_signs.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="ext_deform_ref.html" class="btn btn-neutral float-right" title="ext_deform.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="ext-deform-at-function-index">
 <span id="ext-deform-at-index"></span><h1>ext_deform.at Function Index<a class="headerlink" href="#ext-deform-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1080,17 +1101,20 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="ext_deform_ref.html#kl-block-param-p-mat-delta-param-int-mat-vec-vec-vec-mat-1"><span class="std std-ref">KL_block</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="ext_deform_ref.html#kl-block-param-p-mat-delta-param-int-mat-vec-vec-vec-mat-1"><span>KL_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;([Param],int,mat,[vec],vec,vec,mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="ext_deform_ref.html#cook-kl-block-param-b-int-entry-elem-mat-kl-poly-polys-vec-stops-vec-surv-mat-contrib-param-int-poly-mat-vec-1"><span class="std std-ref">cook_KL_block</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="ext_deform_ref.html#cook-kl-block-param-b-int-entry-elem-mat-kl-poly-polys-vec-stops-vec-surv-mat-contrib-param-int-poly-mat-vec-1"><span>cook_KL_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">B,int</span> <span class="pre">entry_elem,mat</span> <span class="pre">KL,[poly]</span> <span class="pre">polys,vec</span> <span class="pre">stops,vec</span> <span class="pre">surv,</span> <span class="pre">mat</span> <span class="pre">contrib-&gt;([Param],int,poly_mat,vec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="ext_deform_ref.html#deformation-terms-param-p-mat-delta-parampol1"><span class="std std-ref">deformation_terms</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="ext_deform_ref.html#deformation-terms-param-p-mat-delta-parampol1"><span>deformation_terms</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="ext_deform_ref.html#recursive-deform-param-p-mat-delta-parampol1"><span class="std std-ref">recursive_deform</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="ext_deform_ref.html#recursive-deform-param-p-mat-delta-parampol1"><span>recursive_deform</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;ParamPol</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="ext_deform_ref.html#twisted-recursive-deform-param-p-parampol1"><span>twisted_recursive_deform</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ParamPol</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -1106,7 +1130,7 @@
         <a href="ext_signs.html" class="btn btn-neutral float-right" title="ext_signs.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ext_deform_ref.html" class="btn btn-neutral" title="ext_deform.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ext_deform_ref.html" class="btn btn-neutral float-right" title="ext_deform.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Splitting Commands" href="split_comm.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -272,7 +273,7 @@
 <li class="toctree-l4"><a class="reference internal" href="control_structures.html#loops">Loops</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Recursion</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Recursion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/axis/recursion.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,6 +1069,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="control_structures.html" class="btn btn-neutral float-right" title="Control Structures" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="recursion">
 <h1>Recursion<a class="headerlink" href="#recursion" title="Permalink to this headline">¶</a></h1>
@@ -1077,11 +1098,11 @@ type must be explicitly specified (while it is option for ordinary functions);
 failing to do so after rec_fun will result in a syntax error.</p>
 <p>Here is the classical (but silly, as using a loop would do quite as well)
 example of the factorial function &#8216;fac&#8217;:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rec_fun</span> <span class="n">fac</span> <span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="nb">int</span><span class="p">:</span> <span class="p">{</span> <span class="k">return</span> <span class="nb">type</span> <span class="nb">int</span> <span class="ow">is</span> <span class="n">specified</span> <span class="p">}</span>
-  <span class="k">if</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">0</span> <span class="n">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span><span class="o">*</span><span class="n">fac</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="n">fi</span>
-<span class="n">Defined</span> <span class="n">fac</span><span class="p">:</span> <span class="p">(</span><span class="nb">int</span><span class="o">-&gt;</span><span class="nb">int</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">fac</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="mi">5040</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rec_fun fac (int n) = int: { return type int is specified }
+  if n&lt;=0 then 1 else n*fac(n-1) fi
+Defined fac: (int-&gt;int)
+atlas&gt; fac(7)
+Value: 5040
 </pre></div>
 </div>
 <p>However, in practice it is often better to achieve recursion locally rather
@@ -1091,16 +1112,16 @@ call. For instance if in the above definition one wants to signal negative
 arguments as errors rather than returning the (mathematically meaningless)
 value 1 for them, this can be done as follows (the example also shows that the
 recursive function need not have the same name as the global one:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">fac</span> <span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span> <span class="n">no</span> <span class="k">return</span> <span class="nb">type</span> <span class="n">needed</span> <span class="n">here</span> <span class="p">}</span>
-<span class="k">if</span> <span class="n">n</span><span class="o">&lt;</span><span class="mi">0</span> <span class="n">then</span> <span class="n">error</span><span class="p">(</span><span class="s2">&quot;factorial of negative number &quot;</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s2">&quot; is not defined&quot;</span><span class="p">)</span> <span class="n">fi</span><span class="p">;</span>
-<span class="n">let</span> <span class="n">rec_fun</span> <span class="n">f</span><span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="nb">int</span><span class="p">:</span> <span class="p">{</span> <span class="k">return</span> <span class="nb">type</span> <span class="n">required</span> <span class="n">here</span> <span class="p">}</span>
-            <span class="k">if</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">0</span> <span class="n">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="n">fi</span>
-<span class="ow">in</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac (int n) = { no return type needed here }
+if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not defined&quot;) fi;
+let rec_fun f(int n) = int: { return type required here }
+            if n&lt;=0 then 1 else n*f(n-1) fi
+in f(n)
 </pre></div>
 </div>
 <p>Since the local function f is defined only to be immediately called, one can
 even make the recursive function anonymous to the outside, as follows:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; set fac (int n) = { no return type needed here }
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac (int n) = { no return type needed here }
 if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not defined&quot;) fi;
 (rec_fun f(int n) = int: if n&lt;=0 then 1 else n*f(n-1) fi) (n) { call it! }
 </pre></div>
@@ -1108,13 +1129,13 @@ if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not d
 <p>Finally, one could avoid making a new (local) recursive function each time the
 global function is called by postponing the introduction of its arguments;
 this gives the following (optimal though maybe not optimally readable) style:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">fac</span> <span class="o">=</span> <span class="p">{</span> <span class="n">no</span> <span class="n">arguments</span> <span class="n">yet</span> <span class="p">}</span>
-<span class="n">let</span> <span class="n">rec_fun</span> <span class="n">f</span><span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="nb">int</span><span class="p">:</span> <span class="k">if</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">0</span> <span class="n">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span><span class="o">*</span><span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="n">fi</span> <span class="p">{</span> <span class="n">build</span> <span class="n">once</span> <span class="p">}</span>
-<span class="ow">in</span> <span class="p">{</span> <span class="n">now</span> <span class="n">comes</span> <span class="n">that</span> <span class="n">actual</span> <span class="n">definition</span> <span class="n">of</span> <span class="n">fac</span><span class="p">,</span> <span class="n">an</span> <span class="n">anonymous</span> <span class="n">function</span> <span class="p">}</span>
-<span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">):</span> <span class="p">{</span> <span class="n">introduce</span> <span class="n">argument</span> <span class="n">of</span> <span class="n">fac</span> <span class="p">}</span>
-  <span class="k">if</span> <span class="n">n</span><span class="o">&lt;</span><span class="mi">0</span> <span class="n">then</span> <span class="n">error</span><span class="p">(</span><span class="s2">&quot;factorial of negative number &quot;</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="s2">&quot; is not defined&quot;</span><span class="p">)</span>
-  <span class="k">else</span> <span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span> <span class="n">call</span> <span class="n">the</span> <span class="n">recursive</span> <span class="n">function</span> <span class="p">}</span>
-  <span class="n">fi</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set fac = { no arguments yet }
+let rec_fun f(int n) = int: if n&lt;=0 then 1 else n*f(n-1) fi { build once }
+in { now comes that actual definition of fac, an anonymous function }
+(int n): { introduce argument of fac }
+  if n&lt;0 then error(&quot;factorial of negative number &quot;,n,&quot; is not defined&quot;)
+  else f(n) { call the recursive function }
+  fi
 </pre></div>
 </div>
 </div>
@@ -1129,7 +1150,7 @@ this gives the following (optimal though maybe not optimally readable) style:</p
         <a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="control_structures.html" class="btn btn-neutral" title="Control Structures" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="control_structures.html" class="btn btn-neutral float-right" title="Control Structures" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

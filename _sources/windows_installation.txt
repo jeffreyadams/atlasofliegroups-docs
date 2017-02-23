@@ -44,7 +44,7 @@ might not need to use sudo.)::
   sudo apt-get install libreadline-dev
   sudo apt-get install emacs (or your favorite text editor)
 
-The remainder of the process follows the standard linux process. See :ref:`linux` for details. Briefly:y to
+The remainder of the process follows the standard linux process. See :ref:`linux` for details. Briefly:: 
 
 Get a copy of the software using git::
 
@@ -54,6 +54,8 @@ Go into the proper directory and type make::
    
    cd atlasofliegroups
    make
+
+Follow the instructions in :ref:`linux`.
 
 .. _cygwin:
 
@@ -84,13 +86,12 @@ See :ref:`linux` for details.
 Pre-compiled
 ++++++++++++++++++
 
-
-
-
-
-etc
-~~~~~~~~~~~~
++-----------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+| Windows         | `atlas_windows_executables.tgz`_     | executables + messages and atlas-scripts                                                                                              |
++-----------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
 
 Unzip the file you just downloaded, open atlas_windows/bin, double click on atlas.exe or Fokko.exe to run.
 
-If for some reason, you choose to download the source files and would like to compile atlas, see `this page <http://www.liegroups.org/software/download/windows.html>`_ for instructions.
+Note: using this option readline (command line tools) will not work. For this reason we recommend
+:ref:`compiling` the software yourself.
+

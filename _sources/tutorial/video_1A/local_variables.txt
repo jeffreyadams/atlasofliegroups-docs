@@ -1,7 +1,7 @@
 Local Variables
 ================
 
-There is some sytax for the software which is convenient when
+There is some syntax for the software which is convenient when
 performing operations on variables that we need for just a temporary
 operation. For example, to calculate ``2^3``, we may proceed as
 we have been doing::

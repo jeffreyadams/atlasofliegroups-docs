@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Implicit Conversions" href="implicit_conversion.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -261,7 +262,7 @@
 <li class="toctree-l4"><a class="reference internal" href="array.html#other-array-like-types">Other Array-Like Types</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tuple Displays and Pattern Matching</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Tuple Displays and Pattern Matching</a></li>
 <li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/axis/tuple_pattern.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,6 +1069,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="array.html" class="btn btn-neutral float-right" title="Array" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="tuple-displays-and-pattern-matching">
 <h1>Tuple Displays and Pattern Matching<a class="headerlink" href="#tuple-displays-and-pattern-matching" title="Permalink to this headline">¶</a></h1>
@@ -1083,10 +1104,10 @@ One could even for instance multiply the components of &#8216;z&#8217; by writin
 (giving 12 in the example); indeed the expression <code class="docutils literal"><span class="pre">3*4</span></code> is transformed by the
 parser into <code class="docutils literal"><span class="pre">*(3,4)</span></code>, and (currently) this form is also used in error
 messages, for instance in:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">GL</span><span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">Error</span> <span class="ow">in</span> <span class="n">expression</span> <span class="n">GL</span><span class="p">(</span><span class="o">/</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="o">...</span>
-  <span class="n">Failed</span> <span class="n">to</span> <span class="n">match</span> <span class="s1">&#39;GL&#39;</span> <span class="k">with</span> <span class="n">argument</span> <span class="nb">type</span> <span class="n">rat</span>
-<span class="n">Type</span> <span class="n">check</span> <span class="n">failed</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; GL(10/2)
+Error in expression GL(/(10,2)) at &lt;standard input&gt;:...
+  Failed to match &#39;GL&#39; with argument type rat
+Type check failed
 </pre></div>
 </div>
 <p>(The operator &#8216;/&#8217; on integers produces a rational number; for integer division
@@ -1095,7 +1116,7 @@ ignoring the remainder one should write 10\2 instead).</p>
 an identifier can be introduced, one may also specify a tuple of identifiers,
 if the type of the value is appropriate, and the components will be bound to
 the corresponding identifiers. So whereas:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span> <span class="o">=</span> <span class="n">E</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x = E
 </pre></div>
 </div>
 <p>introduces the identifier &#8216;x&#8217; whose value (and type) are set to that of the
@@ -1107,12 +1128,12 @@ expression &#8216;E&#8217;, one can alternatively say</p>
 variable &#8216;x&#8217; will be set to the first component of the pair, and &#8216;y&#8217; to the
 second component. In either case, the types of the variables introduced will
 be reported, as in:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">r</span><span class="p">)</span> <span class="o">=</span> <span class="mi">22</span> \<span class="o">%</span> <span class="mi">7</span>   <span class="p">{</span> <span class="n">Euclidean</span> <span class="n">division</span> <span class="k">with</span> <span class="n">remainder</span> <span class="p">}</span>
-<span class="n">Identifiers</span> <span class="n">q</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">r</span><span class="p">:</span> <span class="nb">int</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>    <span class="p">{</span> <span class="n">quotient</span> <span class="p">}</span>
-<span class="n">Value</span><span class="p">:</span> <span class="mi">3</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">r</span>    <span class="p">{</span> <span class="n">remainder</span> <span class="p">}</span>
-<span class="n">Value</span><span class="p">:</span> <span class="mi">1</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set (q,r) = 22 \% 7   { Euclidean division with remainder }
+Identifiers q: int, r: int
+atlas&gt; q    { quotient }
+Value: 3
+atlas&gt; r    { remainder }
+Value: 1
 </pre></div>
 </div>
 <p>The same pattern-matching is also allowed when introducing parameters of
@@ -1137,27 +1158,27 @@ longer refer to the local name outside the expression following &#8216;in&#8217;
 cases references to them made from inside that expression may survive though.)</p>
 <p>Using a local variable, the initial example could have been given in a form
 that does not permanently bind the identifier &#8216;ic&#8217;:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">ic</span> <span class="o">=</span> <span class="n">inner_class</span><span class="p">(</span><span class="s2">&quot;B5.A3.T1&quot;</span><span class="p">,[[</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">]],</span><span class="s2">&quot;scc&quot;</span><span class="p">)</span>
-<span class="n">L</span> <span class="o">&gt;</span> <span class="ow">in</span> <span class="n">block_sizes</span><span class="p">(</span><span class="n">ic</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>     <span class="mi">1</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">11</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">10</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">75</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>   <span class="mi">110</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">3</span><span class="p">,</span>    <span class="mi">21</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>   <span class="mi">305</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>   <span class="mi">750</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>   <span class="mi">33</span><span class="p">,</span>   <span class="mi">231</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>   <span class="mi">810</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>  <span class="mi">3050</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>  <span class="mi">225</span><span class="p">,</span>  <span class="mi">1575</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span><span class="p">,</span>  <span class="mi">25</span><span class="p">,</span>  <span class="mi">130</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>  <span class="mi">1342</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>  <span class="mi">8100</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span>  <span class="mi">915</span><span class="p">,</span>  <span class="mi">6405</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">1300</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span> <span class="mi">13420</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>   <span class="mi">0</span><span class="p">,</span>    <span class="mi">0</span><span class="p">,</span> <span class="mi">2430</span><span class="p">,</span> <span class="mi">17010</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">390</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">525</span><span class="p">,</span> <span class="mi">2730</span><span class="p">,</span> <span class="mi">4026</span><span class="p">,</span> <span class="mi">28182</span> <span class="o">|</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let ic = inner_class(&quot;B5.A3.T1&quot;,[[1/2,0,0],[0,1/2,1/2]],&quot;scc&quot;)
+L &gt; in block_sizes(ic)
+Value:
+| 0,  0,   0,  0,   0,    0,    0,     1 |
+| 0,  0,   0,  0,   0,    0,    0,    11 |
+| 0,  0,   0,  0,   0,    0,    0,    10 |
+| 0,  0,   0,  0,   0,    0,    0,    75 |
+| 0,  0,   0,  0,   0,    0,    0,   110 |
+| 0,  0,   0,  0,   0,    0,    3,    21 |
+| 0,  0,   0,  0,   0,    0,    0,   305 |
+| 0,  0,   0,  0,   0,    0,    0,   750 |
+| 0,  0,   0,  0,   0,    0,   33,   231 |
+| 0,  0,   0,  0,   0,    0,    0,   810 |
+| 0,  0,   0,  0,   0,    0,    0,  3050 |
+| 0,  0,   0,  0,   0,    0,  225,  1575 |
+| 0,  0,   0,  1,  25,  130,    0,  1342 |
+| 0,  0,   0,  0,   0,    0,    0,  8100 |
+| 0,  0,   0,  0,   0,    0,  915,  6405 |
+| 0,  0,   0, 10, 250, 1300,    0, 13420 |
+| 0,  0,   0,  0,   0,    0, 2430, 17010 |
+| 3, 75, 390, 21, 525, 2730, 4026, 28182 |
 </pre></div>
 </div>
 <p>Note that axis recognized that the let-expression was incomplete after the
@@ -1174,7 +1195,7 @@ first line, changing the prompt to &#8216;L &gt;&#8217; in the second line to in
         <a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="array.html" class="btn btn-neutral" title="Array" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="array.html" class="btn btn-neutral float-right" title="Array" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

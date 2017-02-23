@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Recursion" href="recursion.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -266,7 +267,7 @@
 <li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Control Structures</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Control Structures</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#sequenced-expressions">Sequenced expressions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#conditional-expressions-and-case-expressions">Conditional expressions and case expressions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#loops">Loops</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/axis/control_structures.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,6 +1069,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="recursion.html" class="btn btn-neutral float-right" title="Recursion" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="overload_redef_conflicts.html" class="btn btn-neutral float-right" title="Overloading v.s. Redefining, and Conflicts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="control-structures">
 <span id="control-struc"></span><h1>Control Structures<a class="headerlink" href="#control-structures" title="Permalink to this headline">¶</a></h1>
@@ -1108,28 +1129,28 @@ large sequences of expressions separated by semicolon with the keywords
 <div class="section" id="conditional-expressions-and-case-expressions">
 <h2>Conditional expressions and case expressions<a class="headerlink" href="#conditional-expressions-and-case-expressions" title="Permalink to this headline">¶</a></h2>
 <p>Conditional expressions take the form:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">...</span> <span class="n">then</span> <span class="o">...</span> <span class="k">else</span> <span class="o">...</span> <span class="n">fi</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>if ... then ... else ... fi
 </pre></div>
 </div>
 <p>for a simple 2-way branch, or a more elaborate multi-way branch:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">if</span>   <span class="o">...</span> <span class="n">then</span> <span class="o">...</span>
-<span class="k">elif</span> <span class="o">...</span> <span class="n">then</span> <span class="o">...</span>
-<span class="k">elif</span> <span class="o">...</span> <span class="n">then</span> <span class="o">...</span>
-<span class="o">...</span>
-<span class="k">else</span> <span class="o">...</span>
-<span class="n">fi</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>if   ... then ...
+elif ... then ...
+elif ... then ...
+...
+else ...
+fi
 </pre></div>
 </div>
 <p>The else branch may be omitted, the implied branch then being void: &#8216;else ()&#8217;.</p>
 <p>If the selection is determined by an integral expression &#8216;I&#8217; with values in the
 range 0,1,...,n-1 (for instance the result of a reduction modulo n), then the
 multi-way branching is better done using a case-expressions, of the form:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">case</span> <span class="n">I</span>
-<span class="ow">in</span> <span class="n">E_0</span>
-<span class="p">,</span> <span class="n">E_1</span>
-<span class="p">,</span> <span class="o">...</span>
-<span class="p">,</span> <span class="n">E_</span><span class="p">{</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">}</span>
-<span class="n">esac</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>case I
+in E_0
+, E_1
+, ...
+, E_{n-1}
+esac
 </pre></div>
 </div>
 <p>In the conditional expression, the branches after &#8216;then&#8217; and &#8216;else&#8217; should all
@@ -1159,7 +1180,7 @@ axis will rewrite internally to an equivalent expression without &#8216;not&#821
 <p>Loops come in various flavors, each one returning a row value with one
 component for each iteration of the loop (however for loops in voided context,
 no result is constructed). There are simple while loops:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="o">...</span> <span class="n">do</span> <span class="o">...</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>while ... do ... od
 </pre></div>
 </div>
 <p>with as usual a continuation condition after &#8216;while&#8217;. This condition is
@@ -1171,13 +1192,13 @@ the evaluations of the loop body for, in order, the components of the row
 value returned by the loop. Obviously evaluating the loop body (or maybe of the
 condition itself) must potentially involve a a side effect susceptible of
 changing the loop condition, if the loop is ever to terminate. So the loop in:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span> <span class="ow">in</span> <span class="k">while</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span> <span class="n">do</span> <span class="n">i</span><span class="o">+</span><span class="p">:</span><span class="o">=</span><span class="mi">1</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>let i=0 in while i&lt;=n do i+:=1 od
 </pre></div>
 </div>
 <p>will produce a row [1,2,...,n]. Often the side effect is required to
 take place after a component to the row result is contributed; to that end and
 expression sequenced by &#8216;next&#8217; can be used. So for instance the variation:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span> <span class="ow">in</span> <span class="k">while</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span> <span class="n">do</span> <span class="n">i</span> <span class="nb">next</span> <span class="n">i</span><span class="o">+</span><span class="p">:</span><span class="o">=</span><span class="n">i</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>let i=0 in while i&lt;=n do i next i+:=i od
 </pre></div>
 </div>
 <p>produces the row [0,1,...,n-1].</p>
@@ -1199,29 +1220,29 @@ iteration count is interpreted as no iterations). The iteration count is
 preceded by &#8216;:&#8217;, the direction by the keyword &#8216;from&#8217; (increasing) or &#8216;downto&#8217;
 (decreasing), and the lower bound follows. In the common case of increasing
 iteration starting at 0, the part &#8216;from 0&#8217; may be omitted. So:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="p">:</span> <span class="n">n</span> <span class="kn">from</span> <span class="mi">0</span> <span class="n">do</span> <span class="n">i</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 0 do i od
 </pre></div>
 </div>
 <p>is an alternative way to produce [0,1,...,n-1], and it may be abbreviated:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="p">:</span> <span class="n">n</span> <span class="n">do</span> <span class="n">i</span> <span class="n">od</span> <span class="o">.</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n do i od .
 </pre></div>
 </div>
 <p>To obtain a more traditional range [1,2,...,n], one may say:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="p">:</span> <span class="n">n</span> <span class="kn">from</span> <span class="mi">1</span> <span class="n">do</span> <span class="n">i</span> <span class="n">od</span> <span class="o">.</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 1 do i od .
 </pre></div>
 </div>
 <p>For the reverse list [n-1,...,1,0] use &#8216;~&#8217; as in:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="p">:</span> <span class="n">n</span> <span class="o">~</span> <span class="n">do</span> <span class="n">i</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n ~ do i od
 </pre></div>
 </div>
 <p>and the shifted reversed list [n,...,1] is produced by:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="p">:</span> <span class="n">n</span> <span class="kn">from</span> <span class="mi">1</span> <span class="o">~</span> <span class="n">do</span> <span class="n">i</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for i : n from 1 ~ do i od
 </pre></div>
 </div>
 <p>(This used to be written as &#8216;for i : n downto 1 do i od&#8217;, but this syntax is
 redundant given the new more flexible tilde syntax, and is now deprecated.)</p>
 <p>If something is just to be repeated n times, the loop index can be omitted:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="p">:</span><span class="n">n</span> <span class="n">do</span> <span class="mi">1</span> <span class="n">od</span> <span class="p">{</span> <span class="n">generate</span> <span class="n">a</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">n</span> <span class="n">ones</span> <span class="p">}</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for :n do 1 od { generate a list of n ones }
 </pre></div>
 </div>
 </div>
@@ -1230,14 +1251,14 @@ redundant given the new more flexible tilde syntax, and is now deprecated.)</p>
 <p>Rather than counted iteration, it is often convenient to use iteration over an
 existing composite value. If V is a row value, or vector, rational vector
 string or matrix then:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">V</span> <span class="n">do</span> <span class="o">...</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for e in V do ... od
 </pre></div>
 </div>
 <p>iterates over the components of V (for a string these components are
 one-character strings; for a matrix they are its columns), setting e to such a
 component before evaluating the loop body. For instance, one can produce the
 scalar multiple by 3 of a vector V using:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">vec</span><span class="p">:</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">V</span> <span class="n">do</span> <span class="mi">3</span><span class="o">*</span><span class="n">e</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>vec: for e in V do 3*e od
 </pre></div>
 </div>
 <p>(the &#8216;vec:&#8217; serves to assemble the entries in a vector rather than a list).
@@ -1245,12 +1266,12 @@ In some cases it is useful to know the index of the component taken as well
 inside the loop body, in other words the iteration count starting from 0; this
 can be accessed by writing &#8216;&#64; index&#8217; before &#8216;in&#8217; where &#8216;index&#8217; is an
 identifier used to bind the index to, This explains the vector addition above:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="o">+</span><span class="p">(</span><span class="n">vec</span> <span class="n">v</span><span class="p">,</span><span class="n">vec</span> <span class="n">w</span><span class="p">)</span> <span class="o">=</span> <span class="n">vec</span><span class="p">:</span> <span class="k">for</span> <span class="n">vi</span><span class="nd">@i</span> <span class="ow">in</span> <span class="n">v</span> <span class="n">do</span> <span class="n">vi</span><span class="o">+</span><span class="n">w</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>set +(vec v,vec w) = vec: for vi@i in v do vi+w[i] od
 </pre></div>
 </div>
 <p>where the index i is needed to select the corresponding entry from the other
 vector. These value-returning loops are quite flexible, for instance:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mat</span><span class="p">:</span> <span class="k">for</span> <span class="n">j</span> <span class="o">=</span> <span class="n">n</span> <span class="n">do</span> <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="n">m</span> <span class="n">do</span> <span class="k">if</span> <span class="n">i</span><span class="o">=</span><span class="n">j</span> <span class="n">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="n">fi</span> <span class="n">od</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>mat: for j = n do for i = m do if i=j then 1 else 0 fi od od
 </pre></div>
 </div>
 <p>produces an m*n matrix with unit diagonal entries and zeroes elsewhere. Of
@@ -1263,7 +1284,7 @@ to a value of type &#8216;mat&#8217;; but all these conventions are &#8220;colum
 compatibility.) To add such a matrix to an existing matrix M it suffices to
 write (with again columns being traversed in the outer loop and rows in the
 inner loop):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">col</span><span class="nd">@j</span> <span class="ow">in</span> <span class="n">M</span> <span class="n">do</span> <span class="k">for</span> <span class="n">entry</span><span class="nd">@i</span> <span class="ow">in</span> <span class="n">col</span> <span class="n">do</span> <span class="n">entry</span><span class="o">+</span><span class="k">if</span> <span class="n">i</span><span class="o">=</span><span class="n">j</span> <span class="n">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">0</span> <span class="n">fi</span> <span class="n">od</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for col@j in M do for entry@i in col do entry+if i=j then 1 else 0 fi od od
 </pre></div>
 </div>
 <p>By the way the standard definitions in basic.at allow replacing the expression
@@ -1286,7 +1307,7 @@ coefficient associated in the ParamPol &#8216;pol&#8217; to the Param value &#82
 written as &#8216;pol[p]&#8217;. Then iterating over a &#8216;pol&#8217;, a term with Param &#8216;p&#8217; and
 coefficient &#8216;c&#8217; is presented as a component &#8216;c&#8217; stored at index &#8216;p&#8217;. Therefore
 a loop over such terms will take the form:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">c</span><span class="nd">@p</span> <span class="ow">in</span> <span class="n">pol</span> <span class="n">do</span> <span class="o">...</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>for c@p in pol do ... od
 </pre></div>
 </div>
 <p>During execution, each time &#8216;c&#8217; will be a nonzero &#8216;Split&#8217; coefficient, and &#8216;p&#8217;
@@ -1325,7 +1346,7 @@ one really needs a modified version of an iteration value, copy it to a local
 variable and modify that.) In fact the loop variables are distinct for each
 iteration: if one captures them in functions, each one stays at its initial
 value; so to create a list of functions that add respectively 1,3,6, doing:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">functions</span> <span class="p">:</span><span class="o">=</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="n">do</span> <span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">):</span> <span class="n">n</span><span class="o">+</span><span class="n">x</span> <span class="n">od</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>functions := for x in [1,3,6] do (int n): n+x od
 </pre></div>
 </div>
 <p>has the desired effect (functions[1] adds 3, not the &#8220;final value&#8221; 6 of &#8216;x&#8217;).</p>
@@ -1343,7 +1364,7 @@ value; so to create a list of functions that add respectively 1,3,6, doing:</p>
         <a href="recursion.html" class="btn btn-neutral float-right" title="Recursion" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="overload_redef_conflicts.html" class="btn btn-neutral" title="Overloading v.s. Redefining, and Conflicts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="overload_redef_conflicts.html" class="btn btn-neutral float-right" title="Overloading v.s. Redefining, and Conflicts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

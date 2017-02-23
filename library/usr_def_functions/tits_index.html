@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="tits.at" href="tits.html"/>
         <link rel="next" title="torus.at" href="torus.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -816,9 +822,14 @@
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3 current"><a class="reference internal" href="tits.html">tits.at</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="tits_ref.html">tits.at Function References</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">tits.at Function Index</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">tits.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="torus.html">torus.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1053,8 +1064,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/tits_index.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1062,6 +1071,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="torus.html" class="btn btn-neutral float-right" title="torus.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="tits_ref.html" class="btn btn-neutral float-right" title="tits.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="tits-at-function-index">
 <span id="tits-at-index"></span><h1>tits.at Function Index<a class="headerlink" href="#tits-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1080,64 +1101,64 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-elt-v-theta-tits-elt-u-eta-bool1"><span class="std std-ref">=</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-elt-v-theta-tits-elt-u-eta-bool1"><span>=</span></a></td>
 <td><code class="docutils literal"><span class="pre">Tits_elt(,v,theta),Tits_elt(,u,eta)-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#tits-elt-tits-elt-p-bool1"><span class="std std-ref">!=</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#tits-elt-tits-elt-p-bool1"><span>!=</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Tits_elt,Tits_elt)p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-identity-rootdatum-rd-tits-elt1"><span class="std std-ref">tits_identity</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-identity-rootdatum-rd-tits-elt1"><span>tits_identity</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#tits-delta-rootdatum-rd-mat-delta-tits-elt1"><span class="std std-ref">tits_delta</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#tits-delta-rootdatum-rd-mat-delta-tits-elt1"><span>tits_delta</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,mat</span> <span class="pre">delta-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-delta-realform-g-tits-elt1"><span class="std std-ref">tits_delta</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-delta-realform-g-tits-elt1"><span>tits_delta</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#left-int-s-tits-elt-rd-v-theta-tits-elt1"><span class="std std-ref">left</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#left-int-s-tits-elt-rd-v-theta-tits-elt1"><span>left</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,Tits_elt(rd,v,theta)-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#right-tits-elt-rd-v-theta-int-s-tits-elt1"><span class="std std-ref">right</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#right-tits-elt-rd-v-theta-int-s-tits-elt1"><span>right</span></a></td>
 <td><code class="docutils literal"><span class="pre">Tits_elt(rd,v,theta),</span> <span class="pre">int</span> <span class="pre">s-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#left-w-word-w-tits-elt-xi-tits-elt1"><span class="std std-ref">left</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#left-w-word-w-tits-elt-xi-tits-elt1"><span>left</span></a></td>
 <td><code class="docutils literal"><span class="pre">W_word(,w),Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#right-tits-elt-xi-w-word-w-tits-elt1"><span class="std std-ref">right</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#right-tits-elt-xi-w-word-w-tits-elt1"><span>right</span></a></td>
 <td><code class="docutils literal"><span class="pre">Tits_elt</span> <span class="pre">xi,</span> <span class="pre">W_word(,w)-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#left-ratvec-int-v-s-tits-elt-xi-tits-elt1"><span class="std std-ref">left</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#left-ratvec-int-v-s-tits-elt-xi-tits-elt1"><span>left</span></a></td>
 <td><code class="docutils literal"><span class="pre">(ratvec,int)(v,s),</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#right-tits-elt-xi-ratvec-int-v-s-tits-elt1"><span class="std std-ref">right</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#right-tits-elt-xi-ratvec-int-v-s-tits-elt1"><span>right</span></a></td>
 <td><code class="docutils literal"><span class="pre">Tits_elt</span> <span class="pre">xi,</span> <span class="pre">(ratvec,int)(v,s)-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#conjugate-int-s-tits-elt-xi-tits-elt1"><span class="std std-ref">conjugate</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#conjugate-int-s-tits-elt-xi-tits-elt1"><span>conjugate</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#conjugate-w-word-w-tits-elt-xi-tits-elt1"><span class="std std-ref">conjugate</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#conjugate-w-word-w-tits-elt-xi-tits-elt1"><span>conjugate</span></a></td>
 <td><code class="docutils literal"><span class="pre">W_word(,w),</span> <span class="pre">Tits_elt</span> <span class="pre">xi-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#multiply-tits-elt-rd-v-theta-tits-elt-u-eta-tits-elt1"><span class="std std-ref">multiply</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#multiply-tits-elt-rd-v-theta-tits-elt-u-eta-tits-elt1"><span>multiply</span></a></td>
 <td><code class="docutils literal"><span class="pre">Tits_elt(rd,v,theta),</span> <span class="pre">Tits_elt(,u,eta)-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#inverse-tits-elt-rd-v-theta-tits-elt1"><span class="std std-ref">inverse</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#inverse-tits-elt-rd-v-theta-tits-elt1"><span>inverse</span></a></td>
 <td><code class="docutils literal"><span class="pre">Tits_elt(rd,v,theta)-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#lift-w-word-w-tits-elt1"><span class="std std-ref">lift</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#lift-w-word-w-tits-elt1"><span>lift</span></a></td>
 <td><code class="docutils literal"><span class="pre">W_word</span> <span class="pre">w-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#lift-mat-delta-w-word-w-tits-elt1"><span class="std std-ref">lift</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#lift-mat-delta-w-word-w-tits-elt1"><span>lift</span></a></td>
 <td><code class="docutils literal"><span class="pre">mat</span> <span class="pre">delta,</span> <span class="pre">W_word</span> <span class="pre">w-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#lift-realform-g-w-word-w-tits-elt1"><span class="std std-ref">lift</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#lift-realform-g-w-word-w-tits-elt1"><span>lift</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">W_word</span> <span class="pre">w-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-elt-xi-int-n-tits-elt1"><span class="std std-ref">^</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-elt-xi-int-n-tits-elt1"><span>^</span></a></td>
 <td><code class="docutils literal"><span class="pre">Tits_elt</span> <span class="pre">!xi,</span> <span class="pre">int</span> <span class="pre">n-&gt;Tits_elt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#order-tits-elt-xi-int1"><span class="std std-ref">order</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="tits_ref.html#order-tits-elt-xi-int1"><span>order</span></a></td>
 <td><code class="docutils literal"><span class="pre">Tits_elt</span> <span class="pre">xi-&gt;int</span></code></td>
 </tr>
 </tbody>
@@ -1154,7 +1175,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-elt1"><span class="std std-ref">Tits_elt</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="tits_ref.html#tits-elt1"><span>Tits_elt</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum</span> <span class="pre">root_datum,ratvec</span> <span class="pre">torus_part,mat</span> <span class="pre">theta)</span></code></td>
 </tr>
 </tbody>
@@ -1171,7 +1192,7 @@
         <a href="torus.html" class="btn btn-neutral float-right" title="torus.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="tits_ref.html" class="btn btn-neutral" title="tits.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="tits_ref.html" class="btn btn-neutral float-right" title="tits.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

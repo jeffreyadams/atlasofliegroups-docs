@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="index.html"/>
         <link rel="up" title="Getting Started" href="getting_started.html"/>
         <link rel="next" title="Tutorial" href="tutorial_with_examples.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="mac_installation.html">Mac</a><ul>
@@ -129,7 +127,7 @@
 <li class="toctree-l3"><a class="reference internal" href="run_atlas.html#quit-atlas">Quit atlas</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Help with git</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Help with git</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#primary-commands">Primary commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#branches">Branches</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#other-helpful-commands">Other helpful commands</a></li>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="library/usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="library/usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1049,8 +1060,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/help_git.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1058,29 +1067,41 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="tutorial_with_examples.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="help-with-git">
 <span id="help-git"></span><h1>Help with git<a class="headerlink" href="#help-with-git" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://git-scm.com/">git</a> is a distributed version control system. It helps developers handle their projects. Git is easy to learn. It is also free and open source. One advantage of using <code class="docutils literal"><span class="pre">git</span></code> is that the latest version of the software is always there</p>
 <p>This page is organized into the following sections:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#primary-commands"><span class="std std-ref">Primary commands</span></a></li>
-<li><a class="reference internal" href="#branch"><span class="std std-ref">Branches</span></a></li>
-<li><a class="reference internal" href="#other-commands"><span class="std std-ref">Other helpful commands</span></a></li>
-<li><a class="reference internal" href="#unstuck"><span class="std std-ref">Getting unstuck</span></a></li>
-<li><a class="reference internal" href="#more-git"><span class="std std-ref">More on git objects</span></a></li>
-<li><a class="reference internal" href="#tagging-and-branches"><span class="std std-ref">Tagging and branches</span></a></li>
-<li><a class="reference internal" href="#other-refs"><span class="std std-ref">Git references</span></a></li>
+<li><a class="reference internal" href="#primary-commands"><span>Primary commands</span></a></li>
+<li><a class="reference internal" href="#branch"><span>Branches</span></a></li>
+<li><a class="reference internal" href="#other-commands"><span>Other helpful commands</span></a></li>
+<li><a class="reference internal" href="#unstuck"><span>Getting unstuck</span></a></li>
+<li><a class="reference internal" href="#more-git"><span>More on git objects</span></a></li>
+<li><a class="reference internal" href="#tagging-and-branches"><span>Tagging and branches</span></a></li>
+<li><a class="reference internal" href="#other-refs"><span>Git references</span></a></li>
 </ul>
 <div class="section" id="primary-commands">
 <span id="id1"></span><h2>Primary commands<a class="headerlink" href="#primary-commands" title="Permalink to this headline">¶</a></h2>
 <p>To download the software, do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git clone https://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
 <p>Once you have done git clone, most other commands operate locally. Everything is done from within the atlasofliegroups directory, using meta-information in the .git subdirectory.</p>
 <p>To update the software, do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git pull origin
 </pre></div>
 </div>
 <p>will update your local copy of the software with the latest changes.</p>
@@ -1088,24 +1109,24 @@
 <div class="section" id="branches">
 <span id="branch"></span><h2>Branches<a class="headerlink" href="#branches" title="Permalink to this headline">¶</a></h2>
 <p>There are several branches (versions) of the atlas code. The main branch is named master. Most users never need any other branch. After you have done <code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span></code> you can cd into the newly downloaded directory and do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git branch
 </pre></div>
 </div>
 <p>This will show you which branch you are on (the default is master). To generate a list of all remote branches, do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">r</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git branch -r
 </pre></div>
 </div>
 <p>The primary branches are master, unitary, and latest. The The master branch is probably what most users would want. If you choose to download a specific branch, say the branch with name &#8220;unitary&#8221;, you can do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="o">-</span><span class="n">b</span> <span class="n">unitary</span> <span class="o">--</span><span class="n">single</span><span class="o">-</span><span class="n">branch</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git clone -b unitary --single-branch https://github.com/jeffreyadams/atlasofliegroups.git
 </pre></div>
 </div>
 <p>To switch into other branches from the current branch, do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">checkout</span> <span class="n">latest</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git checkout latest
 </pre></div>
 </div>
 <p>This will switch you into the branch named &#8220;latest&#8221;.</p>
 <p>To update only one the master branch do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git pull origin master
 </pre></div>
 </div>
 <p>This will also update the atlas software.</p>
@@ -1114,28 +1135,28 @@
 <span id="other-commands"></span><h2>Other helpful commands<a class="headerlink" href="#other-helpful-commands" title="Permalink to this headline">¶</a></h2>
 <p>Again, after you have done <cite>git clone</cite>, most of these commands operate locally. Use you terminal to navigate into &#8220;atlasofliegroups&#8221; directory.</p>
 <p>To show the status of your local repository, compared to the remote one, do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">status</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git status
 </pre></div>
 </div>
 <p>To show a lot of information about the repository, including recent activities, do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">log</span>
-<span class="n">git</span> <span class="n">log</span> <span class="o">--</span><span class="n">oneline</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git log
+git log --oneline
 </pre></div>
 </div>
 <p>The <code class="docutils literal"><span class="pre">--oneline</span></code> option gives you a more succinct output.</p>
 <p>To launch a graphical git browser, do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">gitk</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">gitk</span>
 </pre></div>
 </div>
 <p>However, you need to have <a class="reference external" href="https://git-scm.com/docs/gitk">gitk</a> installed.</p>
 <p>Many commands of git have help options:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="c1"># This gives short git help.</span>
-<span class="n">git</span> <span class="o">--</span><span class="n">help</span> <span class="c1"># This gives longer git help.</span>
-<span class="n">git</span> <span class="n">tag</span> <span class="o">--</span><span class="n">help</span> <span class="c1"># This gives help on tagging.</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git # This gives short git help.
+git --help # This gives longer git help.
+git tag --help # This gives help on tagging.
 </pre></div>
 </div>
 <p>Some commands have dry-run versions:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="o">--</span><span class="n">dry</span><span class="o">-</span><span class="n">run</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git pull origin --dry-run
 </pre></div>
 </div>
 <p>says what the command will do, but doesn&#8217;t do anything.</p>
@@ -1144,17 +1165,17 @@
 <span id="unstuck"></span><h2>Getting unstuck<a class="headerlink" href="#getting-unstuck" title="Permalink to this headline">¶</a></h2>
 <p>If all you ever do is pull code, from a single branch, hopefully you won&#8217;t run in to trouble.
 Suppose this happens:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
-<span class="n">file</span> <span class="n">test</span><span class="o">.</span><span class="n">rx</span> <span class="ow">not</span> <span class="n">up</span> <span class="n">to</span> <span class="n">date</span><span class="p">,</span> <span class="n">cannot</span> <span class="n">merge</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git pull origin master
+file test.rx not up to date, cannot merge
 </pre></div>
 </div>
 <p>and the update from google will not execute (at all). Do this:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">stash</span>
-<span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git stash
+git pull origin master
 </pre></div>
 </div>
 <p>to stash your local changes, and execute the update from google. The do:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">stash</span> <span class="n">pop</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git stash pop
 </pre></div>
 </div>
 <p>to bring back your modified files. There are other variants of git stash, see the references.</p>
@@ -1165,36 +1186,36 @@ Suppose this happens:</p>
 <p>This is a quick overview. See The <a class="reference external" href="https://git-scm.com/book/en/v2/Git-Internals-Git-Objects">Git Objects</a> for more detail. The main git object is a commit.</p>
 <p>A commit contains a tree, which is a snapshot of a directory, together with some meta-information.
 Here are some commands for working with git objects:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">log</span>
-<span class="n">git</span> <span class="n">log</span> <span class="o">--</span><span class="n">oneline</span>    <span class="c1"># This shows list of commits</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git log
+git log --oneline    # This shows list of commits
 </pre></div>
 </div>
 <p>The output is something like:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">4826100</span> <span class="o">...</span>
-<span class="mi">94</span><span class="n">a5663</span> <span class="o">...</span>
-<span class="mi">268</span><span class="n">f5d4</span> <span class="o">...</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>4826100 ...
+94a5663 ...
+268f5d4 ...
 </pre></div>
 </div>
 <p>You can refer to each commit by the first few letters of the hex name. For example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">show</span> <span class="mi">94</span><span class="n">a5</span>   <span class="c1"># This will show you details about the second commit</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git show 94a5   # This will show you details about the second commit
 </pre></div>
 </div>
 </div>
 <div class="section" id="tagging-and-branches">
 <span id="id2"></span><h2>Tagging and branches<a class="headerlink" href="#tagging-and-branches" title="Permalink to this headline">¶</a></h2>
 <p>Tags are (mainly) a way to give user-friendly names to commits:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">tag</span>    <span class="c1"># Print list of tags</span>
-<span class="n">git</span> <span class="n">tag</span> <span class="o">-</span><span class="n">n</span>    <span class="c1"># Print list of tags with more information</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git tag    # Print list of tags
+git tag -n    # Print list of tags with more information
 </pre></div>
 </div>
 <p>Here is how I created the version_0_4_6 tag:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">log</span> <span class="o">--</span><span class="n">oneline</span>
-<span class="n">b1c0fdd</span> <span class="n">Updated</span> <span class="n">version</span> <span class="n">to</span> <span class="mf">0.4</span><span class="o">.</span><span class="mi">6</span> <span class="ow">in</span> <span class="n">version</span><span class="o">.</span><span class="n">h</span>
-<span class="n">bbca5d3</span> <span class="n">deleted</span> <span class="n">README</span><span class="o">-</span><span class="n">git</span>
-<span class="n">bb64257</span> <span class="n">edited</span> <span class="n">README</span><span class="o">-</span><span class="n">git</span>
-<span class="o">...</span>
-<span class="n">git</span> <span class="n">tag</span> <span class="n">version_0_4_6</span> <span class="n">b1c0f</span>
-<span class="n">git</span> <span class="n">push</span> <span class="o">--</span><span class="n">tags</span>    <span class="c1"># To make the changes on the server</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>git log --oneline
+b1c0fdd Updated version to 0.4.6 in version.h
+bbca5d3 deleted README-git
+bb64257 edited README-git
+...
+git tag version_0_4_6 b1c0f
+git push --tags    # To make the changes on the server
 </pre></div>
 </div>
 </div>
@@ -1221,7 +1242,7 @@ Here are some commands for working with git objects:</p>
         <a href="tutorial_with_examples.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="run_atlas.html" class="btn btn-neutral" title="Run atlas" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

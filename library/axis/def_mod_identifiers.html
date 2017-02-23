@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Defining Functions and Operators" href="def_func_op.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -263,7 +264,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
 <li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Defining and Modifying Identifiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a><ul>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/gl4H_index.html">gl4H.at Function Index</a></li>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../usr_def_functions/tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../usr_def_functions/tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1051,8 +1062,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/axis/def_mod_identifiers.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1060,6 +1069,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="def_func_op.html" class="btn btn-neutral float-right" title="Defining Functions and Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="defining-and-modifying-identifiers">
 <h1>Defining and Modifying Identifiers<a class="headerlink" href="#defining-and-modifying-identifiers" title="Permalink to this headline">¶</a></h1>
@@ -1073,8 +1094,8 @@ equality test (probably leading to an error due to an undefined left operand).</
 &#8216;:=&#8217; is provided. It is mainly intended for programming use rather than for
 expression evaluation. For instance, a function returning a list of numbers
 1,...,n may be written as follows (while-loops are explained later):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">initial</span> <span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="n">let</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span> <span class="ow">in</span> <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span> <span class="n">do</span> <span class="n">i</span><span class="p">:</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="n">od</span>
-<span class="n">Defined</span> <span class="n">initial</span><span class="p">:</span> <span class="p">(</span><span class="nb">int</span><span class="o">-&gt;</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set initial (int n) = let i=0 in while i&lt;n do i:=i+1 od
+Defined initial: (int-&gt;[int])
 </pre></div>
 </div>
 <p>Here the part &#8216;let i=0 in&#8217; serves to introduce &#8216;i&#8217; as a variable, whose value
@@ -1084,8 +1105,8 @@ into a row-of-integer value; a property of axis that is uncommon in other
 languages.) Any identifier can be used as a variable, including one introduced
 as a function argument; for instance for a decreasing list n-1,...,1,0 one
 could write:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">initial_downwards</span> <span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="k">while</span> <span class="p">(</span><span class="n">n</span><span class="p">:</span><span class="o">=</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">0</span> <span class="n">do</span> <span class="n">n</span> <span class="n">od</span>
-<span class="n">Defined</span> <span class="n">initial_downwards</span><span class="p">:</span> <span class="p">(</span><span class="nb">int</span><span class="o">-&gt;</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set initial_downwards (int n) = while (n:=n-1)&gt;=0 do n od
+Defined initial_downwards: (int-&gt;[int])
 </pre></div>
 </div>
 <p>For identifiers holding an array, vector or matrix, one can also assign to
@@ -1150,7 +1171,7 @@ already used this fact in the examples above.</p>
         <a href="def_func_op.html" class="btn btn-neutral float-right" title="Defining Functions and Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="implicit_conversion.html" class="btn btn-neutral" title="Implicit Conversions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

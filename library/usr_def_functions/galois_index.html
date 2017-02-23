@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="galois.at" href="galois.html"/>
         <link rel="next" title="generate_groups.at" href="generate_groups.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -612,12 +613,17 @@
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="galois.html">galois.at</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="galois_ref.html">galois.at Function References</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">galois.at Function Index</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">galois.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="generate_groups.html">generate_groups.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_ref.html">generate_groups.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
@@ -814,6 +820,11 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1053,8 +1064,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/galois_index.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1062,6 +1071,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="generate_groups.html" class="btn btn-neutral float-right" title="generate_groups.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="galois_ref.html" class="btn btn-neutral float-right" title="galois.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="galois-at-function-index">
 <span id="galois-at-index"></span><h1>galois.at Function Index<a class="headerlink" href="#galois-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1080,49 +1101,49 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#square-classes-innerclass-ic-int-1"><span class="std std-ref">square_classes</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#square-classes-innerclass-ic-int-1"><span>square_classes</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#print-strong-real-realform-g-void1"><span class="std std-ref">print_strong_real</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#print-strong-real-realform-g-void1"><span>print_strong_real</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#real-forms-innerclass-ic-realform-2"><span class="std std-ref">real_forms</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#real-forms-innerclass-ic-realform-2"><span>real_forms</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic-&gt;[RealForm]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#real-forms-realform-g-realform-1"><span class="std std-ref">real_forms</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#real-forms-realform-g-realform-1"><span>real_forms</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[RealForm]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#sostar-int-n-realform1"><span class="std std-ref">SOstar</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#sostar-int-n-realform1"><span>SOstar</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#psostar-int-n-realform1"><span class="std std-ref">PSOstar</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#psostar-int-n-realform1"><span>PSOstar</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;RealForm</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#find-int-vecs-int-k-int1"><span class="std std-ref">find</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#find-int-vecs-int-k-int1"><span>find</span></a></td>
 <td><code class="docutils literal"><span class="pre">[[int]]</span> <span class="pre">vecs,</span> <span class="pre">int</span> <span class="pre">k-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#part-containing-int-k-int-parts-int-1"><span class="std std-ref">part_containing</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#part-containing-int-k-int-parts-int-1"><span>part_containing</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">k-&gt;([[int]]</span> <span class="pre">parts)</span> <span class="pre">[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#central-invariant-innerclass-ic-int-k-int1"><span class="std std-ref">central_invariant</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#central-invariant-innerclass-ic-int-k-int1"><span>central_invariant</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic,</span> <span class="pre">int</span> <span class="pre">k-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#central-invariant-realform-g-int1"><span class="std std-ref">central_invariant</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#central-invariant-realform-g-int1"><span>central_invariant</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#strong-real-forms-same-type-innerclass-ic-int-k-int-1"><span class="std std-ref">strong_real_forms_same_type</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#strong-real-forms-same-type-innerclass-ic-int-k-int-1"><span>strong_real_forms_same_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic,</span> <span class="pre">int</span> <span class="pre">k-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#h1-realform-g-int1"><span class="std std-ref">H1</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#h1-realform-g-int1"><span>H1</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#iterate-h1-int-min-rank-int-max-rank-void1"><span class="std std-ref">iterate_H1</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#iterate-h1-int-min-rank-int-max-rank-void1"><span>iterate_H1</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">min_rank,</span> <span class="pre">int</span> <span class="pre">max_rank-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#pi0-realform-g-int1"><span class="std std-ref">pi0</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="galois_ref.html#pi0-realform-g-int1"><span>pi0</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#iterate-h1-int-rank-void1"><span class="std std-ref">iterate_H1</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="galois_ref.html#iterate-h1-int-rank-void1"><span>iterate_H1</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">rank-&gt;void</span></code></td>
 </tr>
 </tbody>
@@ -1139,7 +1160,7 @@
         <a href="generate_groups.html" class="btn btn-neutral float-right" title="generate_groups.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="galois_ref.html" class="btn btn-neutral" title="galois.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="galois_ref.html" class="btn btn-neutral float-right" title="galois.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

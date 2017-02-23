@@ -1,5 +1,5 @@
-Minimal Principal Series at Zero
-=================================
+Representations with Zero Infinitesimal Character
+==================================================
 
 Let :math:`G=Sp(4, \mathbb R)`. Let us compute all the representations with
 infinitesimal character zero ::

@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Unipotent_Packets_All_Types.at" href="Unipotent_Packets_All_Types.html"/>
         <link rel="next" title="unitary.at" href="unitary.html"/>
@@ -97,6 +94,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
@@ -223,7 +221,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/blocks.html">Blocks of Representations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/coordinates_and_KGB_elements.html">Coordinates and <span class="math">\(KGB\)</span> elements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../tutorial/video_2B/K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../tutorial/more_principal.html">More Principal Series</a></li>
@@ -620,6 +621,11 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -816,6 +822,11 @@
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tits_ref.html">tits.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tits_index.html">tits.at Function Index</a></li>
@@ -838,7 +849,7 @@
 </li>
 <li class="toctree-l3 current"><a class="reference internal" href="Unipotent_Packets_All_Types.html">Unipotent_Packets_All_Types.at</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html">Unipotent_Packets_All_Types.at Function References</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Unipotent_Packets_All_Types.at Function Index</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="">Unipotent_Packets_All_Types.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="unitary.html">unitary.at</a><ul>
@@ -1035,7 +1046,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1053,8 +1064,6 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../../_sources/library/usr_def_functions/Unipotent_Packets_All_Types_index.rst.txt" rel="nofollow"> View page source</a>
-          
         
       </li>
   </ul>
@@ -1062,6 +1071,18 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="unitary.html" class="btn btn-neutral float-right" title="unitary.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="Unipotent_Packets_All_Types_ref.html" class="btn btn-neutral float-right" title="Unipotent_Packets_All_Types.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="unipotent-packets-all-types-at-function-index">
 <span id="unipotent-packets-all-types-at-index"></span><h1>Unipotent_Packets_All_Types.at Function Index<a class="headerlink" href="#unipotent-packets-all-types-at-function-index" title="Permalink to this headline">¶</a></h1>
@@ -1080,154 +1101,154 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#get-non-empty-block-indices-realform-g-int-1"><span class="std std-ref">get_non_empty_block_indices</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#get-non-empty-block-indices-realform-g-int-1"><span>get_non_empty_block_indices</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#vec-as-int-vec-v-int-1"><span class="std std-ref">vec_as_int</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#vec-as-int-vec-v-int-1"><span>vec_as_int</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#vecs-as-int-vec-v-int-1"><span class="std std-ref">vecs_as_int</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#vecs-as-int-vec-v-int-1"><span>vecs_as_int</span></a></td>
 <td><code class="docutils literal"><span class="pre">[vec]</span> <span class="pre">V-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#find-kgbelt-kgbelt-k-kgbelt-kgbelt-k-int1"><span class="std std-ref">find</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#find-kgbelt-kgbelt-k-kgbelt-kgbelt-k-int1"><span>find</span></a></td>
 <td><code class="docutils literal"><span class="pre">[(KGBElt,</span> <span class="pre">KGBElt)]</span> <span class="pre">K,</span> <span class="pre">(KGBElt,</span> <span class="pre">KGBElt)</span> <span class="pre">k-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#find-reps-in-cells-int-w-cells-param-t-int1"><span class="std std-ref">find_reps_in_Cells</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#find-reps-in-cells-int-w-cells-param-t-int1"><span>find_reps_in_Cells</span></a></td>
 <td><code class="docutils literal"><span class="pre">[[int]]</span> <span class="pre">W_Cells,</span> <span class="pre">Param</span> <span class="pre">t-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#vec-as-int-vec-v-int-2"><span class="std std-ref">vec_as_int</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#vec-as-int-vec-v-int-2"><span>vec_as_int</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#vecs-as-int-vec-v-int-2"><span class="std std-ref">vecs_as_int</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#vecs-as-int-vec-v-int-2"><span>vecs_as_int</span></a></td>
 <td><code class="docutils literal"><span class="pre">[vec]</span> <span class="pre">V-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#x-min-parabolic-in-dis-fiber-step1-realform-g-int-h-kgbelt-1"><span class="std std-ref">x_min_parabolic_in_dis_fiber_Step1</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#x-min-parabolic-in-dis-fiber-step1-realform-g-int-h-kgbelt-1"><span>x_min_parabolic_in_dis_fiber_Step1</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,[int]</span> <span class="pre">H-&gt;([KGBElt])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#x-min-parabolic-in-dis-fiber-realform-g-int-h-kgbelt-1"><span class="std std-ref">x_min_parabolic_in_dis_fiber</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#x-min-parabolic-in-dis-fiber-realform-g-int-h-kgbelt-1"><span>x_min_parabolic_in_dis_fiber</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,[int]</span> <span class="pre">H-&gt;([KGBElt])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#closed-real-parabolics-associated-to-a-lambda-realform-g-int-h-parabolic-1"><span class="std std-ref">closed_real_parabolics_associated_to_a_lambda</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#closed-real-parabolics-associated-to-a-lambda-realform-g-int-h-parabolic-1"><span>closed_real_parabolics_associated_to_a_lambda</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">[int]</span> <span class="pre">H-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#partition-from-multiplicity-int-p-int-1"><span class="std std-ref">partition_from_multiplicity</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#partition-from-multiplicity-int-p-int-1"><span>partition_from_multiplicity</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">p-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#h-gl-int-n-int-1"><span class="std std-ref">H_GL</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#h-gl-int-n-int-1"><span>H_GL</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#h-sp-int-n-int-1"><span class="std std-ref">H_Sp</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#h-sp-int-n-int-1"><span>H_Sp</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#h-so-int-n-int-1"><span class="std std-ref">H_SO</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#h-so-int-n-int-1"><span>H_SO</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#h-so-pair-int-n-int-m-int-1"><span class="std std-ref">H_SO_pair</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#h-so-pair-int-n-int-m-int-1"><span>H_SO_pair</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n,</span> <span class="pre">int</span> <span class="pre">m-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#one-dimensionals-realform-g-param-1"><span class="std std-ref">one_dimensionals</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#one-dimensionals-realform-g-param-1"><span>one_dimensionals</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;([Param])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#ind-one-dim-from-parabolic-parabolic-q-param-1"><span class="std std-ref">ind_one_dim_from_parabolic</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#ind-one-dim-from-parabolic-parabolic-q-param-1"><span>ind_one_dim_from_parabolic</span></a></td>
 <td><code class="docutils literal"><span class="pre">Parabolic</span> <span class="pre">Q-&gt;([Param])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#closed-real-parabolics-associated-to-a-lambda-realform-g-int-h-parabolic-2"><span class="std std-ref">closed_real_parabolics_associated_to_a_lambda</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#closed-real-parabolics-associated-to-a-lambda-realform-g-int-h-parabolic-2"><span>closed_real_parabolics_associated_to_a_lambda</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">[int]</span> <span class="pre">H-&gt;[Parabolic]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#dual-cell-block-b-int-cell-int1"><span class="std std-ref">dual_Cell</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#dual-cell-block-b-int-cell-int1"><span>dual_Cell</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">int</span> <span class="pre">Cell-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#cells-with-given-av-int-o-int-av-cells-int-int-1"><span class="std std-ref">cells_with_given_AV</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#cells-with-given-av-int-o-int-av-cells-int-int-1"><span>cells_with_given_AV</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">O,</span> <span class="pre">[[int]]</span> <span class="pre">AV_Cells-&gt;(int,</span> <span class="pre">[int])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#subset-int-v-int-w-bool1"><span class="std std-ref">subset</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#subset-int-v-int-w-bool1"><span>subset</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">V,</span> <span class="pre">[int]</span> <span class="pre">W-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#delete-sub-vector-int-q-int-w-int-1"><span class="std std-ref">delete_sub_vector</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#delete-sub-vector-int-q-int-w-int-1"><span>delete_sub_vector</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">Q,</span> <span class="pre">[int]</span> <span class="pre">W-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#good-kgb-c-realform-g-kgbelt-1"><span class="std std-ref">good_KGB_C</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#good-kgb-c-realform-g-kgbelt-1"><span>good_KGB_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;[KGBElt]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#if-same-len-b-int-r-int-s-int-int-1"><span class="std std-ref">if_same_len_B</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#if-same-len-b-int-r-int-s-int-int-1"><span>if_same_len_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">R,</span> <span class="pre">[int]</span> <span class="pre">S-&gt;([int],</span> <span class="pre">[int])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-from-w-rep-b-wrep-w-int-1"><span class="std std-ref">orbit_from_W_rep_B</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-from-w-rep-b-wrep-w-int-1"><span>orbit_from_W_rep_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Wrep</span> <span class="pre">W-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#av-for-given-block-b-block-b-int-1"><span class="std std-ref">AV_for_given_block_B</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#av-for-given-block-b-block-b-int-1"><span>AV_for_given_block_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-h-bn-step1-realform-g-int-p-int-int-1"><span class="std std-ref">orbit_H_Bn_Step1</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-h-bn-step1-realform-g-int-p-int-int-1"><span>orbit_H_Bn_Step1</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">[int]</span> <span class="pre">p-&gt;([int],</span> <span class="pre">[int])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-h-bn-realform-g-int-r-int-1"><span class="std std-ref">orbit_H_Bn</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-h-bn-realform-g-int-r-int-1"><span>orbit_H_Bn</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">[int]</span> <span class="pre">r-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#induced-from-closed-parabolics-b-realform-g-int-p-param-1"><span class="std std-ref">induced_from_closed_parabolics_B</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#induced-from-closed-parabolics-b-realform-g-int-p-param-1"><span>induced_from_closed_parabolics_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#real-forms-of-complex-orbit-as-reps-b-block-b-int-p-param-1"><span class="std std-ref">real_forms_of_complex_orbit_as_Reps_B</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#real-forms-of-complex-orbit-as-reps-b-block-b-int-p-param-1"><span>real_forms_of_complex_orbit_as_Reps_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#real-forms-of-complex-orbit-as-cells-b-block-b-int-p-int-1"><span class="std std-ref">real_forms_of_complex_orbit_as_Cells_B</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#real-forms-of-complex-orbit-as-cells-b-block-b-int-p-int-1"><span>real_forms_of_complex_orbit_as_Cells_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#all-cells-with-aq-lambda-b-block-b-int-p-int-1"><span class="std std-ref">all_Cells_with_Aq_Lambda_B</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#all-cells-with-aq-lambda-b-block-b-int-p-int-1"><span>all_Cells_with_Aq_Lambda_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#all-cells-with-aq-lambda-as-real-forms-b-block-b-int-p-int-1"><span class="std std-ref">all_Cells_with_Aq_Lambda_as_Real_forms_B</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#all-cells-with-aq-lambda-as-real-forms-b-block-b-int-p-int-1"><span>all_Cells_with_Aq_Lambda_as_Real_forms_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-algo-test-b-block-b-int-p-bool1"><span class="std std-ref">Unipotent_Algo_test_B</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-algo-test-b-block-b-int-p-bool1"><span>Unipotent_Algo_test_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-packet-b-block-b-int-p-param-1"><span class="std std-ref">Unipotent_Packet_B</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-packet-b-block-b-int-p-param-1"><span>Unipotent_Packet_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[[Param]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#missing-parts-of-uni-packet-b-block-b-int-p-param-1"><span class="std std-ref">Missing_Parts_of_Uni_Packet_B</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#missing-parts-of-uni-packet-b-block-b-int-p-param-1"><span>Missing_Parts_of_Uni_Packet_B</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[[Param]]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#if-same-len-c-int-r-int-s-int-int-1"><span class="std std-ref">if_same_len_C</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#if-same-len-c-int-r-int-s-int-int-1"><span>if_same_len_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">R,</span> <span class="pre">[int]</span> <span class="pre">S-&gt;([int],</span> <span class="pre">[int])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-from-w-rep-c-wrep-w-int-1"><span class="std std-ref">orbit_from_W_rep_C</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-from-w-rep-c-wrep-w-int-1"><span>orbit_from_W_rep_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Wrep</span> <span class="pre">W-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#av-for-given-block-c-block-b-int-1"><span class="std std-ref">AV_for_given_block_C</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#av-for-given-block-c-block-b-int-1"><span>AV_for_given_block_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-h-cn-realform-g-int-p-int-1"><span class="std std-ref">orbit_H_Cn</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#orbit-h-cn-realform-g-int-p-int-1"><span>orbit_H_Cn</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#induced-from-closed-parabolics-c-realform-g-int-p-param-1"><span class="std std-ref">induced_from_closed_parabolics_C</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#induced-from-closed-parabolics-c-realform-g-int-p-param-1"><span>induced_from_closed_parabolics_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#real-forms-of-complex-orbit-as-reps-c-block-b-int-p-param-1"><span class="std std-ref">real_forms_of_complex_orbit_as_Reps_C</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#real-forms-of-complex-orbit-as-reps-c-block-b-int-p-param-1"><span>real_forms_of_complex_orbit_as_Reps_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#real-forms-of-complex-orbit-as-cells-c-block-b-int-p-int-1"><span class="std std-ref">real_forms_of_complex_orbit_as_Cells_C</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#real-forms-of-complex-orbit-as-cells-c-block-b-int-p-int-1"><span>real_forms_of_complex_orbit_as_Cells_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#all-cells-with-aq-lambda-c-block-b-int-p-int-1"><span class="std std-ref">all_Cells_with_Aq_Lambda_C</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#all-cells-with-aq-lambda-c-block-b-int-p-int-1"><span>all_Cells_with_Aq_Lambda_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#all-cells-with-aq-lambda-as-real-forms-c-block-b-int-p-int-1"><span class="std std-ref">all_Cells_with_Aq_Lambda_as_Real_forms_C</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#all-cells-with-aq-lambda-as-real-forms-c-block-b-int-p-int-1"><span>all_Cells_with_Aq_Lambda_as_Real_forms_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[[int]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-algo-test-c-block-b-int-p-bool1"><span class="std std-ref">Unipotent_Algo_test_C</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-algo-test-c-block-b-int-p-bool1"><span>Unipotent_Algo_test_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-packet-c-block-b-int-p-param-1"><span class="std std-ref">Unipotent_Packet_C</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-packet-c-block-b-int-p-param-1"><span>Unipotent_Packet_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[[Param]]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#missing-parts-of-uni-packet-c-block-b-int-p-param-1"><span class="std std-ref">Missing_Parts_of_Uni_Packet_C</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#missing-parts-of-uni-packet-c-block-b-int-p-param-1"><span>Missing_Parts_of_Uni_Packet_C</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[[Param]]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#is-valid-pair-block-b-int-p-bool1"><span class="std std-ref">is_valid_pair</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#is-valid-pair-block-b-int-p-bool1"><span>is_valid_pair</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-packets-block-b-int-p-param-1"><span class="std std-ref">Unipotent_Packets</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="Unipotent_Packets_All_Types_ref.html#unipotent-packets-block-b-int-p-param-1"><span>Unipotent_Packets</span></a></td>
 <td><code class="docutils literal"><span class="pre">Block</span> <span class="pre">B,</span> <span class="pre">[int]</span> <span class="pre">P-&gt;[[Param]]</span></code></td>
 </tr>
 </tbody>
@@ -1244,7 +1265,7 @@
         <a href="unitary.html" class="btn btn-neutral float-right" title="unitary.at" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Unipotent_Packets_All_Types_ref.html" class="btn btn-neutral" title="Unipotent_Packets_All_Types.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Unipotent_Packets_All_Types_ref.html" class="btn btn-neutral float-right" title="Unipotent_Packets_All_Types.at Function References" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
