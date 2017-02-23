@@ -101,6 +101,8 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="mac_installation.html">Mac</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="mac_installation.html#download-the-software">Download the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="windows_installation.html">Windows</a><ul>
@@ -1054,24 +1056,24 @@
 <div class="section" id="download-the-software">
 <h2>Download the software<a class="headerlink" href="#download-the-software" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="mac_installation.html#direct"><span class="std std-ref">Download a tar file</span></a></li>
+<li><a class="reference internal" href="mac_installation.html#direct"><span class="std std-ref">Download source code in a single file</span></a></li>
 <li><a class="reference internal" href="#using-git"><span class="std std-ref">Get the source code using git</span></a></li>
 <li><a class="reference internal" href="#executable"><span class="std std-ref">Download and Install an executable</span></a></li>
 </ul>
-<div class="section" id="download-the-source-code-directly">
-<span id="direct"></span><h3>Download the source code directly<a class="headerlink" href="#download-the-source-code-directly" title="Permalink to this headline">¶</a></h3>
-<p>You can download an archive of the source code. These are typically not as up-to-date as
-the git version.</p>
+<div class="section" id="download-source-code-in-a-single-file">
+<span id="direct"></span><h3>Download source code in a single  file<a class="headerlink" href="#download-source-code-in-a-single-file" title="Permalink to this headline">¶</a></h3>
+<p>This is the latest stable version.</p>
 <table border="1" class="docutils">
 <colgroup>
+<col width="27%" />
 <col width="32%" />
-<col width="30%" />
-<col width="37%" />
+<col width="41%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>Complete archive</td>
+<tr class="row-odd"><td>Version 1.0</td>
 <td><a class="reference external" href="http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz">atlas_1.0.tgz</a></td>
-<td>source code, Fokko and atlas</td>
+<td>source code for Fokko and atlas
+including messages and atlas-scripts</td>
 </tr>
 </tbody>
 </table>
@@ -1147,7 +1149,7 @@ download install an executable file.</p>
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>linux 64 compiled</td>
-<td><a href="#id2"><span class="problematic" id="id3">`atlas_1.0_pre.tgz`_</span></a></td>
+<td><a class="reference external" href="http://www.liegroups.org/software/source/1.0/atlas_linux_pre_1.0.tgz">atlas_linux_pre_1.0.tgz</a></td>
 <td>executable and
 atlas-scripts directory</td>
 </tr>
@@ -1155,14 +1157,13 @@ atlas-scripts directory</td>
 </table>
 <p>Extract the file:</p>
 <blockquote>
-<div>tar xvfz atlas_1.0_pre.tgz</div></blockquote>
+<div>tar xvfz atlas_linux_pre_1.0.tgz</div></blockquote>
 <p>cd to the directory:</p>
 <blockquote>
-<div>cd atlas_1.0_pre</div></blockquote>
+<div>cd atlasofliegroups</div></blockquote>
 <p>Make the file executable:</p>
 <blockquote>
 <div>chmod u+x atlas</div></blockquote>
-<p>Extract the atlas-scripts directory:</p>
 <p>Run the software with the command:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span>  <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span>
 </pre></div>

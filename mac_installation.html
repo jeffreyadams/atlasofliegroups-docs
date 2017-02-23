@@ -101,6 +101,8 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Mac</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#download-the-software">Download the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="windows_installation.html">Windows</a><ul>
@@ -1054,19 +1056,30 @@
 <div class="section" id="download-the-software">
 <h2>Download the software<a class="headerlink" href="#download-the-software" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="#using-git-mac"><span class="std std-ref">Using git</span></a> : recommended method</li>
-<li><a class="reference internal" href="#direct"><span class="std std-ref">Download a tar file</span></a></li>
-<li><span class="xref std std-ref">executable_mac</span></li>
+<li><a class="reference internal" href="#direct"><span class="std std-ref">Download source code in a single file</span></a></li>
+<li><a class="reference internal" href="#using-git-mac"><span class="std std-ref">Using git</span></a></li>
+<li><a class="reference internal" href="#executable-mac"><span class="std std-ref">Download and Install an executable</span></a></li>
 </ul>
-<div class="section" id="download-the-source-code">
-<h3>Download the source code<a class="headerlink" href="#download-the-source-code" title="Permalink to this headline">¶</a></h3>
-<p>You have two options:</p>
-<ul class="simple">
-<li><a class="reference internal" href="#using-git-mac"><span class="std std-ref">Using git</span></a> : recommended method.</li>
-<li><a class="reference internal" href="#direct"><span class="std std-ref">Download a tar file</span></a></li>
-</ul>
+<div class="section" id="download-source-code-in-a-single-file">
+<span id="direct"></span><h3>Download source code in a single file<a class="headerlink" href="#download-source-code-in-a-single-file" title="Permalink to this headline">¶</a></h3>
+<p>This is the latest stable version.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="32%" />
+<col width="41%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Version 1.0</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz">atlas_1.0.tgz</a></td>
+<td>source code for Fokko and atlas
+including messages and atlas-scripts</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="using-git">
-<span id="using-git-mac"></span><h4>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h4>
+<span id="using-git-mac"></span><h3>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h3>
 <p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span class="std std-ref">Help with git</span></a> to get started with git.</p>
 <p>If you choose to use git, you can get the most up-to-date version of
 the software. Open a terminal window (in the Finder click
@@ -1082,28 +1095,10 @@ is relatively new. Version 1.7.0.4 and above should work.</p>
 </div>
 <p>This creates a subdirectory &#8220;atlasofliegroups&#8221; and stores the files there.</p>
 </div>
-<div class="section" id="download-a-tar-file">
-<span id="direct"></span><h4>Download a tar file<a class="headerlink" href="#download-a-tar-file" title="Permalink to this headline">¶</a></h4>
-<p>We recommend you to download the latest version.</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="16%" />
-<col width="19%" />
-<col width="66%" />
-</colgroup>
-<tbody valign="top">
-<tr class="row-odd"><td>Latest atlas-scripts directory</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.7/atlas_0.7.0.tgz">atlas-scripts.0.7.0.tgz</a></td>
-<td>supplementary files for atlas</td>
-</tr>
-<tr class="row-even"><td>Latest complete version: 0.7</td>
-<td><a class="reference external" href="http://www.liegroups.org/software/atlas_0.7/atlas_0.7.tgz">atlas_0.7.tgz</a></td>
-<td>source code, Fokko and atlas</td>
-</tr>
-</tbody>
-</table>
 </div>
-</div>
+<div class="section" id="installation-from-source">
+<h2>Installation from Source<a class="headerlink" href="#installation-from-source" title="Permalink to this headline">¶</a></h2>
+<p>After you have the source code, cd to the atlasofliegroups directory.</p>
 <div class="section" id="compiling-atlas-for-the-mac-using-macports">
 <h3>Compiling atlas for the Mac using MacPorts<a class="headerlink" href="#compiling-atlas-for-the-mac-using-macports" title="Permalink to this headline">¶</a></h3>
 <p>Regardless of how you download the source code you will need to
@@ -1240,9 +1235,8 @@ utilities specifically as follows:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
 </pre></div>
 </div>
-</div>
 <div class="section" id="other-compilation-options">
-<h3>Other Compilation options:<a class="headerlink" href="#other-compilation-options" title="Permalink to this headline">¶</a></h3>
+<h4>Other Compilation options:<a class="headerlink" href="#other-compilation-options" title="Permalink to this headline">¶</a></h4>
 <p>For more complete compilation, we recommend compiling with:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">verbose</span><span class="o">=</span><span class="n">true</span> <span class="n">optimize</span><span class="o">=</span><span class="n">true</span>
 </pre></div>
@@ -1256,7 +1250,7 @@ utilities specifically as follows:</p>
 <p>The option &#8220;debug&#8221; makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren&#8217;t supposed to happen, to detect code problems early.</p>
 </div>
 <div class="section" id="installing-fokko-and-atlas">
-<h3>(7) Installing Fokko and atlas<a class="headerlink" href="#installing-fokko-and-atlas" title="Permalink to this headline">¶</a></h3>
+<h4>(7) Installing Fokko and atlas<a class="headerlink" href="#installing-fokko-and-atlas" title="Permalink to this headline">¶</a></h4>
 <p>To install the executables in [installation directory] and put symlinks in [binary directory], type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=</span><span class="p">[</span><span class="n">installation</span> <span class="n">directory</span><span class="p">]</span> <span class="n">BINDIR</span><span class="o">=</span><span class="p">[</span><span class="n">binary</span> <span class="n">directory</span><span class="p">]</span>
 </pre></div>
@@ -1264,7 +1258,7 @@ utilities specifically as follows:</p>
 <p>The default BINDIR is <code class="docutils literal"><span class="pre">INSTALLDIR/../bin</span></code></p>
 </div>
 <div class="section" id="example">
-<h3>Example:<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<h4>Example:<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
 <p>To install the executables in <code class="docutils literal"><span class="pre">/usr/local/atlas</span></code>, and symlinks in <code class="docutils literal"><span class="pre">/usr/local/bin</span></code>, type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">atlas</span>
 </pre></div>
@@ -1272,14 +1266,14 @@ utilities specifically as follows:</p>
 <p>(This example only works up to OS 10.10, and you need root access).</p>
 </div>
 <div class="section" id="id1">
-<h3>Example:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<h4>Example:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>To install the executables in /home/[userid]/software/atlas, and symlinks in /home/userid/bin, type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="p">[</span><span class="n">userid</span><span class="p">]</span><span class="o">/</span><span class="n">software</span> <span class="n">BINDIR</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="p">[</span><span class="n">userid</span><span class="p">]</span><span class="o">/</span><span class="nb">bin</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id2">
-<h3>Example:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h4>Example:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
 <p>Say you unpacked the software in /home/[userid]/atlas_0.7. To leave the software there, and create symlinks in /home/[userid]/bin, type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span>
 </pre></div>
@@ -1290,50 +1284,44 @@ utilities specifically as follows:</p>
 </div>
 <p>to specify where to find this directory.</p>
 <div class="section" id="installing-cwebx">
-<span id="id3"></span><h4>Installing cwebx<a class="headerlink" href="#installing-cwebx" title="Permalink to this headline">¶</a></h4>
+<span id="id3"></span><h5>Installing cwebx<a class="headerlink" href="#installing-cwebx" title="Permalink to this headline">¶</a></h5>
 <p>The software cwebx is needed to compile atlas. If you downloaded a tgz file from the downloads page, you should not need to install cwebx. If you downloaded the software from github using git, then cwebx is included in the directory cwebx, or available from www-math.univ-poitiers.fr/~maavl/CWEBx.</p>
 <p>Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.</p>
 <p>You need to have a working copy of tex in your PATH to run cweavex.</p>
-<p>:</p>
+</div>
+</div>
+</div>
+</div>
 <div class="section" id="download-and-install-an-executable">
-<h5>Download and Install an executable<a class="headerlink" href="#download-and-install-an-executable" title="Permalink to this headline">¶</a></h5>
+<span id="executable-mac"></span><h2>Download and Install an executable<a class="headerlink" href="#download-and-install-an-executable" title="Permalink to this headline">¶</a></h2>
 <p>The best method is to compile from source. As a backup option you can
 download install an executable file.</p>
 <p>Download a copy of the executable, and the atlas-scripts directory here:</p>
-<p>[UNDER CONSTRUCTION currently just copied from linux page...]</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="34%" />
-<col width="29%" />
-<col width="36%" />
+<col width="24%" />
+<col width="32%" />
+<col width="44%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td>linux 64 compiled</td>
-<td><a href="#id4"><span class="problematic" id="id5">`atlas_1.0_pre.tgz`_</span></a></td>
-<td>executable and
-atlas-scripts directory</td>
+<tr class="row-odd"><td>mac 64 compiled</td>
+<td><a class="reference external" href="http://www.liegroups.org/software/source/1.0/atlas_1.0_pre.tgz">atlas_mac_pre_1.0.tgz</a></td>
+<td>executables and atlas-scripts directory</td>
 </tr>
 </tbody>
 </table>
-<p>Extract the file:</p>
-<blockquote>
-<div>tar xvfz atlas_1.0_pre.tgz</div></blockquote>
-<p>cd to the directory:</p>
-<blockquote>
-<div>cd atlas_1.0_pre</div></blockquote>
+<p>Double-click on the file to extract it.</p>
+<p>Open a terminal window, and cd to the directory where the files were downloaded.</p>
 <p>Make the file executable:</p>
 <blockquote>
 <div>chmod u+x atlas</div></blockquote>
-<p>Extract the atlas-scripts directory:</p>
 <p>Run the software with the command:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span>  <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span>
 </pre></div>
 </div>
 <p>The path argument tells atlas where to find the scripts, and <code class="docutils literal"><span class="pre">all</span></code> says to load
-most of the scripts (not including a few which are under development).</p>
-</div>
-</div>
-</div>
+most of the scripts (not including a few which are under development). (Double-clicking
+on the file will launch the application, but will not make the atlas-scripts available.)</p>
 </div>
 </div>
 
