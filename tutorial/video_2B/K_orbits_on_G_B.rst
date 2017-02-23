@@ -49,11 +49,14 @@ induced representation
 :math:`Ind_B ^G (\chi \otimes \nu)`,  where :math:`\chi=\rho -\lambda`
 is in :math:`X^*`, since :math:`\lambda \in X^* + \rho`.
 
-So :math:`\chi(exp(2\pi i\mu ^{\check})=exp(2\pi i(\<\rho -\lambda ,
-\mu^{\vee}\>)`, with :math:`\mu^{\vee}\in \frac{1}{2}X_*`,
-is well defined.
+So 
+:math:`\chi(exp(2\pi i\mu ^{\vee}))=exp(2\pi i(<\rho -\lambda ,
+\mu^{\vee}>)`, 
+with :math:`\mu^{\vee}\in \frac{1}{2}X_*`,
+is a well defined pairing between :math:`X^*` and :math:`X_*`.
 
-This pairing is the value of the character on the compact part of the Cartan and it is :math:`\pm 1`
+This pairing is the value of the character on the compact part of the
+Cartan and it equals :math:`\pm 1`
 
 Discrete Series
 ----------------
@@ -85,8 +88,8 @@ whose complexified maximal compact subgroup is :math:`K`.
 
 We are interested in the following space
 
-:math:`K\G/B=\{K-\text{orbits on the flag variety} G/B\}`
-:math:`=\{K \text{conjugacy classes of Borel subgroups of} G\}`
+:math:`K\G/B=\{K-\text{orbits on the flag variety } G/B\}`
+:math:`=\{K \text{-conjugacy classes of Borel subgroups of } G\}`
 
 :math:`G/B` is a complex projective variety and :math:`K` is an
 algebraic group acting on it with finitely many orbits. And
