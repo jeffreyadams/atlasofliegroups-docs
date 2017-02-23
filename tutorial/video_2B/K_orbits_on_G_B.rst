@@ -49,11 +49,12 @@ induced representation
 :math:`Ind_B ^G (\chi \otimes \nu)`,  where :math:`\chi=\rho -\lambda`
 is in :math:`X^*`, since :math:`\lambda \in X^* + \rho`.
 
-So 
+So
+ 
 :math:`\chi(exp(2\pi i\mu ^{\vee}))=exp(2\pi i(<\rho -\lambda ,
 \mu^{\vee}>)`, 
-with :math:`\mu^{\vee}\in \frac{1}{2}X_*`,
-is a well defined pairing between :math:`X^*` and :math:`X_*`.
+
+with :math:`\mu^{\vee}\in \frac{1}{2}X_*`, is a well defined pairing between :math:`X^*` and :math:`X_*`.
 
 This pairing is the value of the character on the compact part of the
 Cartan and it equals :math:`\pm 1`
@@ -107,6 +108,26 @@ This is a finite set. The map is given as follows:
 If :math:`x=gx_b g^{-1}` then associate to x the element :math:`[g^{-1}Bg]`,
 the :math:`K`-conjugacy class of the Borel subgroup.
 
-Now we check the map is well defined:
+Now we check the map is well defined on :math:`K`-conjugcy classes of Borel subgroups:
 
-If :math:`x=(gk)x_b (gk)^{-1} \rightarrow [k^{-1}(g^{-1}Bg)k]=[gBg]`
+:math:`x=(gk)x_b (gk)^{-1} \rightarrow [k^{-1}(g^{-1}Bg)k]=[gBg]`
+
+On the right hand side the brackets mean :math:`K`-conjugacy class. So conjugating by :math:`K` we get the same conjugacy class of Borels.
+
+Definition.  Denote the above set by
+
+:Math:`\Chi=\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H`
+
+(Note: this set is really denoted :math:`\Chi [x_b]` in other sources
+and :math`\Chi` is the collection of all the sets for all the base
+points. Which give all strong real forms of :math:`G`. The above set only has to do with one strong real form. 
+
+NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE THE "Algorithms for Representation Theory of Real Reductive Groups, by Adams and du Cloux, in www.liegroups.org/papers/.
+
+Since this set is finite, it makes sense to have an ``atlas`` command ``KGB`` that will give a finite list of the elements in :math:`\Chi` 
+
+:math:`KGB \rightarrow \{x_0 , \dots ,x_{n-1} \}`
+
+
+
+
