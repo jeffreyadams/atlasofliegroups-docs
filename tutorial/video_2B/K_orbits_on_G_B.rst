@@ -1,7 +1,8 @@
 :math:`K` orbits on :math:`G/B`
 ================================
 
-In order to explain how ``atlas`` uses the ``KGB`` we need to discuss the theory a little bit.
+In order to explain how ``atlas`` uses the ``KGB`` machinery we need
+to discuss the theory a little bit.
 
 Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`
 
@@ -19,5 +20,5 @@ right hand side.
 
 So the infinitesimal character can be written as
 
-:math:`\gamma =\frac{1+\theta _x}{2}\lambda + frac{1-\theta _x
+:math:`\gamma =\frac{1+\theta _x}{2}\lambda + \frac{1-\theta _x
 }{2}\nu`
