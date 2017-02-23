@@ -1,5 +1,6 @@
 :math:`K` orbits on :math:`G/B`
 ================================
+
 In order to explain how ``atlas`` uses the ``KGB`` we need to discuss the theory a little bit.
 
 Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`
