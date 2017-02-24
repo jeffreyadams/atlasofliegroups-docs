@@ -17,5 +17,5 @@ First Examples of Representations.
    video_2B/zero_infinitesimal_character
    video_2B/translation_principle
    video_2B/blocks
-   video_2B/coordinates_and_KGB_elements
+   video_2B/K_orbits_on_G_B
 
