@@ -111,8 +111,8 @@ download install an executable file.
 Download a copy of the executable, and the atlas-scripts directory here:
 
 +-----------------------------------+------------------------------+-------------------------------------+
-| linux 64 compiled                 | `atlas_linux_pre_1.0.tgz`_   |  executable and                     |
-|                                   |                              |  atlas-scripts directory            |
+| linux 64 compiled                 | `atlas_linux_pre_1.0.tgz`_   |  executable, and messages           |
+|                                   |                              |  atlas-scripts directories          |
 +-----------------------------------+------------------------------+-------------------------------------+
 
 .. _atlas_linux_pre_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_linux_pre_1.0.tgz
