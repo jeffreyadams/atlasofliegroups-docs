@@ -285,7 +285,7 @@ Download a copy of the executable, and the atlas-scripts directory here:
 | mac 64 compiled       | `atlas_mac_pre_1.0.tgz`_     |  executables and atlas-scripts directory |
 +-----------------------+------------------------------+------------------------------------------+
 
-.. _atlas_mac_pre_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0_pre.tgz
+.. _atlas_mac_pre_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_mac_pre_1.0.tgz
 
 Double-click on the file to extract it. 
 
