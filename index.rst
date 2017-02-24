@@ -3,13 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to atlas' Documentation Page!
-=====================================
+Welcome to the Atlas Documentation Site!
+========================================
 
 .. raw:: html
 
         <div align="right">
-            <h3>Back home to <a href="http://liegroups.org/">liegroups.org</a> </h3>
+            <h3>Back to <a href="http://liegroups.org/">liegroups.org</a> </h3>
         </div>
         
 

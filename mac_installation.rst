@@ -1,20 +1,34 @@
 .. _macs:
 
+###
 Mac
----
+###
 
-Download the source code
-~~~~~~~~~~~~~~~~~~~~~~~~
+*********************
+Download the software
+*********************
+* :ref:`direct`
+* :ref:`using_git_Mac`
+* :ref:`executable_mac`
 
-You have two options:
+.. _direct:
 
-* :ref:`using_git_Mac` : recommended method.
-* :ref:`using_link_Mac`
+Download source code in a single file
+=====================================
+
+This is the latest stable version.
+
++--------------------------+------------------------------+---------------------------------------+
+| Version 1.0              |   `atlas_1.0.tgz`_           | source code for Fokko and atlas       |
+|                          |                              | including messages and atlas-scripts  |
++--------------------------+------------------------------+---------------------------------------+
+
+.. _atlas_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz
 
 .. _using_git_Mac:
 
 Using git
-+++++++++
+=========
 
 For users who are not familiar with git, see :ref:`help_git` to get started with git.
 
@@ -33,25 +47,16 @@ Choose a directory on your machine to store the source code. Use your terminal t
     
 This creates a subdirectory "atlasofliegroups" and stores the files there.
 
-.. _using_link_Mac:
 
-Donwload a tar file
-+++++++++++++++++++
+************************
+Installation from Source
+************************
 
-We recommend you to download the latest version.
-
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Latest atlas-scripts directory | `atlas-scripts.0.7.0.tgz`_           | supplementary files for atlas                                                                                                         |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Latest complete version: 0.7   | `atlas_0.7.tgz`_                     | source code, Fokko and atlas                                                                                                          |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-
-.. _atlas_0.7.tgz: http://www.liegroups.org/software/atlas_0.7/atlas_0.7.tgz
-.. _atlas-scripts.0.7.0.tgz: http://www.liegroups.org/software/atlas_0.7/atlas_0.7.0.tgz
+After you have the source code, cd to the atlasofliegroups directory.
 
 
 Compiling atlas for the Mac using MacPorts
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==========================================
 
 Regardless of how you download the source code you will need to
 compile it.  Here is the preferred method.
@@ -61,7 +66,7 @@ which is preferred for installing Fokko and atlas. To do so you must
 first install the XCode C Compiler.
 
 (1) Install MacPorts. 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================
 
 (If MacPorts is installed on your system go to
 step (2)). Visit `macports.org <https://www.macports.org>`, go to
@@ -72,7 +77,7 @@ need to be an administrative user, and will need to enter your
 password.
 
 (2) Install the XCode C compiler. 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==================================
 
 If you already have XCode installed, go to step (3) (XCode is not installed by default).
 
@@ -98,7 +103,7 @@ Or, if you are using El Capitan(OS X 10.11) or later::
    --with-gxx-include-dir=/usr/include/c++/4.2.1
 
 (3) Install the MacPorts (gcc) C Compiler
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=========================================
 
 Open a terminal window (Terminal is available in Applications). All further commands are given from within this window. Give the command::
 
@@ -123,7 +128,7 @@ typing::
 Also the directory /opt/local/bin has been added to your PATH environment variable.
 
 (4) Install readline
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=====================
 
 Do::
 
@@ -132,7 +137,7 @@ Do::
 to install the readline package.
 
 (5) Edit the Makefiles
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+=======================
 
 You will need to edit two files to tell your computer which compiler to use.
 
@@ -176,7 +181,7 @@ Then edit the last line to read::
 (again remember to change 4.9 to the correct compiler version).
 
 (6) Compile Fokko and atlas
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+===========================
 
 The simplest way to compile is with the command::
 
@@ -264,3 +269,36 @@ The software cwebx is needed to compile atlas. If you downloaded a tgz file from
 Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.
 
 You need to have a working copy of tex in your PATH to run cweavex.
+
+.. _executable_mac:
+
+***********************************
+Download and Install an executable
+***********************************
+
+The best method is to compile from source. As a backup option you can 
+download install an executable file. 
+
+Download a copy of the executable, and the atlas-scripts directory here:
+
++-----------------------+------------------------------+------------------------------------------+
+| mac 64 compiled       | `atlas_mac_pre_1.0.tgz`_     |  executables and atlas-scripts directory |
++-----------------------+------------------------------+------------------------------------------+
+
+.. _atlas_mac_pre_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0_pre.tgz
+
+Double-click on the file to extract it. 
+
+Open a terminal window, and cd to the directory where the files were downloaded.
+
+Make the file executable:
+
+    chmod u+x atlas
+
+Run the software with the command::
+
+     ./atlas  --path=atlas-scripts all
+
+The path argument tells atlas where to find the scripts, and ``all`` says to load
+most of the scripts (not including a few which are under development). (Double-clicking
+on the file will launch the application, but will not make the atlas-scripts available.) 
