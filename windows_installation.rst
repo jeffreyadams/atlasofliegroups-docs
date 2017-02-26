@@ -101,11 +101,19 @@ download and install an executable file.
 Download a copy of the executable, and the atlas-scripts directory here:
 
 +-------------------------------+--------------------------------+-------------------------------------+
-| Windows compiled              | `atlas_windows_pre_1.0.tgz`_   |  executable, and messages           |
+| Windows compiled              | `atlas_windows_pre_1.0.tar`_   |  executable, and messages           |
 |                               |                                |  atlas-scripts directories          |
 +-------------------------------+--------------------------------+-------------------------------------+
 
-Unzip the file you just downloaded, open atlas_windows/bin, and double click on atlas.exe or Fokko.exe to run.
+.. _atlas_windows_pre_1.0.tar: http://www.liegroups.org/software/source/1.0/atlas_windows_pre_1.0.tar
+
+Double click on the file and extract the software. This will create a folder 
+atlas_windows_pre_1.0. Double click on the folder, and then on the atlas icon. Then do
+
+
+      <all
+
+to load the scripts.
 
 Note: using this option readline (command line tools) will not work. For this reason we recommend
 :ref:`compiling` the software yourself.
