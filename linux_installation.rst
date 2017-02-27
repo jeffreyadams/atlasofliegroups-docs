@@ -136,6 +136,9 @@ Run the software with the command::
 The path argument tells atlas where to find the scripts, and ``all`` says to load
 most of the scripts (not including a few which are under development). 
 
+Unfortunately with the precompiled software readline (command line
+tools) does not work. For this reason we recommend installing from source.
+
 
 
 
