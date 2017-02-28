@@ -3,11 +3,15 @@
 About Us
 ========
 
-The Atlas project is a collaboration between a large group of mathematicians and computer scientists. The principal members are:
+The currently active members are:
 
 Jeffrey Adams:  `www.math.umd.edu/~jda <http://www.math.umd.edu/~jda>`_ jda@math.umd.edu
 
+Ran Cui: `cuiran.github.io <http://cuiran.github.io>`_  cranmail@gmail.com                                                                                                                         
+                                                                       
 Annegret Paul: `homepages.wmich.edu/~paul <http://homepages.wmich.edu/~paul>`_   annegret.paul@wmich.edu
+
+Susana Salamanca-Riba: `www.math.nmsu.edu/SusanSalamanca-Riba.html <http://www.math.nmsu.edu/SusanSalamanca-Riba.html>`_ ssalaman@nmsu.edu      
 
 Peter Trapa:  `www.math.utah.edu/~ptrapa <http://www.math.utah.edu/~ptrapa>`_ ptrapa@math.umd.edu
 
