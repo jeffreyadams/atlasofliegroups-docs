@@ -190,8 +190,8 @@ The simplest way to compile is with the command::
 (issued while you are in the atlasofliegroups directory where the
 Makefile is). This should compile both Fokko and atlas.
 
-If you get an error related to readline see `installing the readline
-package <http://www.liegroups.org/software/download/readline.html>`.
+If you get an error related to readline see
+`installing the readline package: <http://www.liegroups.org/software/download/readline.html>`_
 
 If you get an error::
 
