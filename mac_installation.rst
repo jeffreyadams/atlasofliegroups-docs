@@ -133,8 +133,8 @@ Other possibilities are::
 
 The option "debug" makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren't supposed to happen, to detect code problems early. 
 
-(7) Installing Fokko and atlas
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Installing Fokko and atlas
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To install the executables in [installation directory] and put symlinks in [binary directory], type::
 

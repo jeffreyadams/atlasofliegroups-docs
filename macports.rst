@@ -14,8 +14,8 @@ first install the XCode C Compiler.
 ======================
 
 (If MacPorts is installed on your system go to
-step (2)). Visit `macports.org <https://www.macports.org>`, go to
-`Installing MacPorts <https://www.macports.org/install.php>`, and
+step (2)). Visit `macports.org <https://www.macports.org>`_. Go to
+`Installing MacPorts <https://www.macports.org/install.php>`_, and
 download the dmg file for your version of MAC OSX (for example
 10.7.*=Lion). Double click on the dmg file to install MacPorts. You
 need to be an administrative user, and will need to enter your
@@ -28,10 +28,10 @@ If you already have XCode installed, go to step (3) (XCode is not installed by d
 
 The XCode package is huge, and includes a lot of unnecessary tools. We
 recommend downloading and installing just the `XCode command line
-tools <https://developer.apple.com/downloads/index.action#>`, which
+tools <https://developer.apple.com/downloads/index.action#>`_, which
 have everything you need. 
 
-Alternatively install the entire `Xcode <https://developer.apple.com/xcode>`
+Alternatively install the entire `Xcode <https://developer.apple.com/xcode>`_
 package. In either case you will need a (free) Apple ID.
 
 Once you have the XCode command line tools, you will have a C compiler /usr/bin/gcc. You can test this in a terminal window by typing::
