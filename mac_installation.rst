@@ -54,166 +54,77 @@ Installation from Source
 
 After you have the source code, cd to the atlasofliegroups directory.
 
+Compiling atlas for the Mac using Homebrew
+===========================================
 
-Compiling atlas for the Mac using MacPorts
-==========================================
+To compile atlas on a Mac you need to install a C++ compiler (the
+default Mac compiler is not up to the task). Homebrew is a package
+manager for the Mac, which is an alternative to the more standard MacPorts. 
+Homebrew is the preferred method. Alternatively see 
+:ref:`macports`.
 
-Regardless of how you download the source code you will need to
-compile it.  Here is the preferred method.
+Install Homebrew
+++++++++++++++++
 
-You are going to install the gcc C compiler (provided by MacPorts),
-which is preferred for installing Fokko and atlas. To do so you must
-first install the XCode C Compiler.
+Go to `Homebrew <https://brew.sh>`_  and follow the instructions there to install Homebrew.
 
-(1) Install MacPorts. 
-======================
+(This  is a single command /usr/bin/ruby... executed in a terminal window)
 
-(If MacPorts is installed on your system go to
-step (2)). Visit `macports.org <https://www.macports.org>`, go to
-`Installing MacPorts <https://www.macports.org/install.php>`, and
-download the dmg file for your version of MAC OSX (for example
-10.7.*=Lion). Double click on the dmg file to install MacPorts. You
-need to be an administrative user, and will need to enter your
-password.
+Install the C++ compiler
+++++++++++++++++++++++++
 
-(2) Install the XCode C compiler. 
-==================================
+Open a terminal window and give the command
 
-If you already have XCode installed, go to step (3) (XCode is not installed by default).
+     brew install gcc49
 
-The XCode package is huge, and includes a lot of unnecessary tools. We
-recommend downloading and installing just the `XCode command line
-tools <https://developer.apple.com/downloads/index.action#>`, which
-have everything you need. 
+Edit two Makefiles
+++++++++++++++++++
 
-Alternatively install the entire `Xcode <https://developer.apple.com/xcode>`
-package. In either case you will need a (free) Apple ID.
+cd to the directory where you downloaded the source code. Edit the file Makefile 
+to replace CXX = g++ -std=c++0x with:
 
-Once you have the XCode command line tools, you will have a C compiler /usr/bin/gcc. You can test this in a terminal window by typing::
+      CXX = /usr/local/Cellar/gcc@4.9/4.9.3_1/bin/g++-4.9  -std=c++0x
 
-     gcc -v
+The correct path for you might be slightly different from this. cd to /usr/local/Cellar and 
+find a file .../bin/g++... and use this.
 
-The response should be, on an earlier OS, something like::
+Make the same change to the file ./sources/interpreter/Makefile
 
-    Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr...
+Enable readline
+++++++++++++++++++
 
-Or, if you are using El Capitan(OS X 10.11) or later::
+Give the command 
 
-   Configured with: --prefix=/Library/Developer/CommandLineTools/usr
-   --with-gxx-include-dir=/usr/include/c++/4.2.1
+    brew link --force readline
 
-(3) Install the MacPorts (gcc) C Compiler
-=========================================
+to install some symbolic links necessary for readline
 
-Open a terminal window (Terminal is available in Applications). All further commands are given from within this window. Give the command::
+Compile
++++++++
 
-   sudo port install gcc49
+Give the command
 
-to install the Macports version of gcc. 
+     make atlas
 
-Be sure to be connected to the internet at this point! (Other Macports
-versions of gcc starting with 4.4 should also work; if you have or
-download a different version, you'll need to change "4.9"
-appropriately below.) If you are using only the command line tools of
-Xcode (not the full XCode installation) ignore the warning about not
-finding XCode. After a few minutes [or a few hours: some MacPorts
-things can take a VERY long time. Safest to do this overnight,
-connected to a power source] you should have /opt/local/bin/gcc-mp-4.9
-(the MacPorts C compiler) and /opt/local/bin/g++-mp-4.9 (the MacPorts
-C++ compiler). You can check these things in a terminal window by
-typing::
+To compile atlas. 
 
-   ls /opt/local/bin/g*
+Note: This compiles atlas, with readline. It does *not* compile Fokko. 
+To compile Fokko use the command
 
-Also the directory /opt/local/bin has been added to your PATH environment variable.
-
-(4) Install readline
-=====================
-
-Do::
-
-   sudo port install readline
-
-to install the readline package.
-
-(5) Edit the Makefiles
-=======================
-
-You will need to edit two files to tell your computer which compiler to use.
-
-(A) In the atlasofliegroups directory, edit the Makefile as follows:
-
-First search for CXX and find the following text::
-
-  # the compiler to use, including language switch 
-  #some C++11 supportneeded (rvalue references, shared_ptr) but g++-4.4 suffices
-  CXX = g++- -std=c++0x
-
-Then edit the last line to read::
- 
-  CXX = g++-mp-4.9 -std=c++0x
-
-(Remember to change 4.9 to the version of compiler that you have
-downloaded).  
-
-Also edit the line::
-
-  rl_libs ?= -lreadline
-
-to read::
-
-   rl_libs ?= -lreadline -lcurses -L/opt/local/lib
-
-(to tell the compiler where to find the readline libraries).
-
-(B) In addition, in the directory
-``atlasofliegroups/sources/intepreter``, you need to modify the
-Makefile in there. Search again for ``CXX`` and find the following
-text::
-
-   # our C++ compiler (call language version c++0x, for backward compatibility)     
-   CXX := g++ -std=c++0x
-
-Then edit the last line to read::
-
-   CXX := g++-mp-4.9 -std=c++0x 
-
-(again remember to change 4.9 to the correct compiler version).
-
-(6) Compile Fokko and atlas
-===========================
-
-The simplest way to compile is with the command::
-
-    make
-
-(issued while you are in the atlasofliegroups directory where the
-Makefile is). This should compile both Fokko and atlas.
-
-If you get an error related to readline see
-`installing the readline package: <http://www.liegroups.org/software/download/readline.html>`_
-
-If you get an error::
-
-   ctanglex: Command not found
-
-see :ref:`installing_cwebx`.  If you get an error like the following::
-
-   <assert.h> not found
-
-then XCode may not be installed in exactly the right way. Try installing the command-line
-utilities specifically as follows::
-
-   xcode-select --install
+     make Fokko readline=false
 
 Other Compilation options: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For more complete compilation, we recommend compiling with::
+We recommend compiling with::
 
-   make verbose=true optimize=true
+   make atlas verbose=true optimize=true
 
-The option "verbose" makes Fokko print a little more information about what it is  doing, like printing a counter during a long Kazhdan-Lusztig computation. The option "optimize" tells the compiler to work hard to make the code as fast as possible; this takes slightly longer to compile, then runs maybe 10% faster. 
+The option "verbose" makes atlas print a little more information about
+what it is doing, like printing a counter during a long
+Kazhdan-Lusztig computation. The option "optimize" tells the compiler
+to work hard to make the code as fast as possible; this takes slightly
+longer to compile, then runs maybe 10% faster.
 
 Other possibilities are::
 
@@ -252,11 +163,7 @@ Say you unpacked the software in /home/[userid]/atlas_0.7. To leave the software
 
    make install
 
-Note that the messages (help) directory must be in the same directory as the Fokko executable. Alternatively you can run Fokko with the command::
-
-   Fokko MESSAGEDIR
-
-to specify where to find this directory.
+Next: see :ref:`Running Atlas <run_atlas>` 
 
 
 .. _installing_cwebx:
