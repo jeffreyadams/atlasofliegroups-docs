@@ -9,7 +9,7 @@ extParamPol.at
 **This script imports the following .at files:**
 
 | :ref:`bigMatrices.at<bigMatrices.at>`
-| :ref:`herm.at<herm.at>`
+| :ref:`hermitian.at<hermitian.at>`
 |
 
 

@@ -16,7 +16,7 @@ c_form_std
 
 c_form_irreducible
 -------------------------------------------------
-| ``c_form_irreducible:Param p->ParamPol`` Defined in line number 19.
+| ``c_form_irreducible:Param p->ParamPol`` Defined in line number 23.
 | 
 | 
 
@@ -24,7 +24,7 @@ c_form_irreducible
 
 c_form_irreducible_long
 -------------------------------------------------
-| ``c_form_irreducible_long:Param p->(ParamPol,[(Param,Split,ParamPol)],ParamPol)`` Defined in line number 41.
+| ``c_form_irreducible_long:Param p->(ParamPol,[(Param,Split,ParamPol)],ParamPol)`` Defined in line number 45.
 | 
 | 
 
@@ -32,7 +32,7 @@ c_form_irreducible_long
 
 c_form_irreducible_twisted
 -------------------------------------------------
-| ``c_form_irreducible_twisted:Param p->ParamPol`` Defined in line number 71.
+| ``c_form_irreducible_twisted:Param p->ParamPol`` Defined in line number 75.
 | 
 | 
 
@@ -40,7 +40,7 @@ c_form_irreducible_twisted
 
 c_form_irr_twisted_as_sum_of_standards
 -------------------------------------------------
-| ``c_form_irr_twisted_as_sum_of_standards:Param p->ParamPol`` Defined in line number 91.
+| ``c_form_irr_twisted_as_sum_of_standards:Param p->ParamPol`` Defined in line number 95.
 | 
 | 
 
@@ -48,7 +48,7 @@ c_form_irr_twisted_as_sum_of_standards
 
 c_form_irreducible_twisted_long
 -------------------------------------------------
-| ``c_form_irreducible_twisted_long:Param p->(ParamPol,[(Param,Split,ParamPol)],ParamPol)`` Defined in line number 105.
+| ``c_form_irreducible_twisted_long:Param p->(ParamPol,[(Param,Split,ParamPol)],ParamPol)`` Defined in line number 109.
 | 
 | 
 
@@ -56,7 +56,7 @@ c_form_irreducible_twisted_long
 
 print_c_form_irreducible_twisted_long
 -------------------------------------------------
-| ``print_c_form_irreducible_twisted_long:Param p->void`` Defined in line number 133.
+| ``print_c_form_irreducible_twisted_long:Param p->void`` Defined in line number 137.
 | 
 | 
 
@@ -64,7 +64,7 @@ print_c_form_irreducible_twisted_long
 
 mixed
 -------------------------------------------------
-| ``mixed:Split w->bool`` Defined in line number 149.
+| ``mixed:Split w->bool`` Defined in line number 153.
 | 
 | 
 
@@ -72,7 +72,7 @@ mixed
 
 mixed_terms
 -------------------------------------------------
-| ``mixed_terms:ParamPol P->ParamPol`` Defined in line number 150.
+| ``mixed_terms:ParamPol P->ParamPol`` Defined in line number 154.
 | 
 | 
 
@@ -80,7 +80,7 @@ mixed_terms
 
 analyse
 -------------------------------------------------
-| ``analyse:ParamPol P->void`` Defined in line number 152.
+| ``analyse:ParamPol P->void`` Defined in line number 156.
 | 
 | 
 
@@ -88,7 +88,7 @@ analyse
 
 lambda_plus_rho_res_T
 -------------------------------------------------
-| ``lambda_plus_rho_res_T:KGBElt x,ratvec lambda->ratvec`` Defined in line number 168.
+| ``lambda_plus_rho_res_T:KGBElt x,ratvec lambda->ratvec`` Defined in line number 172.
 | 
 | 
 
@@ -96,7 +96,7 @@ lambda_plus_rho_res_T
 
 mu
 -------------------------------------------------
-| ``mu:Param p->rat`` Defined in line number 173.
+| ``mu:Param p->rat`` Defined in line number 177.
 | 
 | 
 
@@ -104,7 +104,7 @@ mu
 
 number_real_orthogonal_pairs
 -------------------------------------------------
-| ``number_real_orthogonal_pairs:KGBElt x, mat delta->int`` Defined in line number 191.
+| ``number_real_orthogonal_pairs:KGBElt x, mat delta->int`` Defined in line number 195.
 | 
 | 
 
@@ -112,7 +112,7 @@ number_real_orthogonal_pairs
 
 DIM_u_cap_p
 -------------------------------------------------
-| ``DIM_u_cap_p:KGBElt x->int`` Defined in line number 207.
+| ``DIM_u_cap_p:KGBElt x->int`` Defined in line number 211.
 | 
 | 
 
@@ -120,7 +120,7 @@ DIM_u_cap_p
 
 mu_terms
 -------------------------------------------------
-| ``mu_terms:Param p,mat delta->[rat]`` Defined in line number 223.
+| ``mu_terms:Param p,mat delta->[rat]`` Defined in line number 227.
 | 
 | 
 
@@ -128,7 +128,7 @@ mu_terms
 
 mu
 -------------------------------------------------
-| ``mu:Param p,mat delta->rat`` Defined in line number 236.
+| ``mu:Param p,mat delta->rat`` Defined in line number 240.
 | 
 | 
 
@@ -136,7 +136,7 @@ mu
 
 print_mu
 -------------------------------------------------
-| ``print_mu:Param p->void`` Defined in line number 241.
+| ``print_mu:Param p->void`` Defined in line number 245.
 | 
 | 
 
@@ -144,7 +144,7 @@ print_mu
 
 print_mus
 -------------------------------------------------
-| ``print_mus:ParamPol P->void`` Defined in line number 247.
+| ``print_mus:ParamPol P->void`` Defined in line number 251.
 | 
 | 
 
@@ -152,7 +152,7 @@ print_mus
 
 convert_cform_hermitian
 -------------------------------------------------
-| ``convert_cform_hermitian:ParamPol P,mat delta->ParamPol`` Defined in line number 264.
+| ``convert_cform_hermitian:ParamPol P,mat delta->ParamPol`` Defined in line number 268.
 | 
 | 
 
@@ -160,7 +160,7 @@ convert_cform_hermitian
 
 convert_cform_hermitian
 -------------------------------------------------
-| ``convert_cform_hermitian:ParamPol P->ParamPol`` Defined in line number 272.
+| ``convert_cform_hermitian:ParamPol P->ParamPol`` Defined in line number 286.
 | 
 | 
 
@@ -168,7 +168,7 @@ convert_cform_hermitian
 
 hermitian_form_irreducible
 -------------------------------------------------
-| ``hermitian_form_irreducible:Param p->ParamPol`` Defined in line number 278.
+| ``hermitian_form_irreducible:Param p->ParamPol`` Defined in line number 292.
 | 
 | 
 
@@ -176,7 +176,7 @@ hermitian_form_irreducible
 
 hermitian_form_irreducible_long
 -------------------------------------------------
-| ``hermitian_form_irreducible_long:Param p->(ParamPol,[(Param,Split,ParamPol)],ParamPol)`` Defined in line number 288.
+| ``hermitian_form_irreducible_long:Param p->(ParamPol,[(Param,Split,ParamPol)],ParamPol)`` Defined in line number 302.
 | 
 | 
 
@@ -184,7 +184,7 @@ hermitian_form_irreducible_long
 
 print_hermitian_form_irreducible
 -------------------------------------------------
-| ``print_hermitian_form_irreducible:Param p,mat delta->void`` Defined in line number 303.
+| ``print_hermitian_form_irreducible:Param p,mat delta->void`` Defined in line number 317.
 | 
 | 
 
@@ -192,7 +192,7 @@ print_hermitian_form_irreducible
 
 print_hermitian_form_irreducible_long
 -------------------------------------------------
-| ``print_hermitian_form_irreducible_long:Param p->void`` Defined in line number 306.
+| ``print_hermitian_form_irreducible_long:Param p->void`` Defined in line number 320.
 | 
 | 
 
@@ -200,7 +200,7 @@ print_hermitian_form_irreducible_long
 
 print_hermitian_form_irreducible
 -------------------------------------------------
-| ``print_hermitian_form_irreducible:[Param] P,mat delta->void`` Defined in line number 321.
+| ``print_hermitian_form_irreducible:[Param] P,mat delta->void`` Defined in line number 335.
 | 
 | 
 
@@ -208,7 +208,7 @@ print_hermitian_form_irreducible
 
 print_hermitian_form_irreducible
 -------------------------------------------------
-| ``print_hermitian_form_irreducible:Param p->void`` Defined in line number 328.
+| ``print_hermitian_form_irreducible:Param p->void`` Defined in line number 342.
 | 
 | 
 
@@ -216,7 +216,7 @@ print_hermitian_form_irreducible
 
 print_hermitian_form_irreducible
 -------------------------------------------------
-| ``print_hermitian_form_irreducible:[Param] P->void`` Defined in line number 332.
+| ``print_hermitian_form_irreducible:[Param] P->void`` Defined in line number 346.
 | 
 | 
 
@@ -224,7 +224,7 @@ print_hermitian_form_irreducible
 
 is_unitary
 -------------------------------------------------
-| ``is_unitary:Param p->bool`` Defined in line number 348.
+| ``is_unitary:Param p->bool`` Defined in line number 362.
 | 
 | 
 
@@ -232,7 +232,7 @@ is_unitary
 
 print_is_unitary
 -------------------------------------------------
-| ``print_is_unitary:Param p->void`` Defined in line number 350.
+| ``print_is_unitary:Param p->void`` Defined in line number 364.
 | 
 | 
 
@@ -240,7 +240,7 @@ print_is_unitary
 
 is_weakly_unitary
 -------------------------------------------------
-| ``is_weakly_unitary:ParamPol P->bool`` Defined in line number 361.
+| ``is_weakly_unitary:ParamPol P->bool`` Defined in line number 375.
 | 
 | 
 
@@ -248,7 +248,7 @@ is_weakly_unitary
 
 is_weakly_unitary
 -------------------------------------------------
-| ``is_weakly_unitary:Param p->bool`` Defined in line number 365.
+| ``is_weakly_unitary:Param p->bool`` Defined in line number 379.
 | 
 | 
 
@@ -256,7 +256,7 @@ is_weakly_unitary
 
 test_line
 -------------------------------------------------
-| ``test_line:Param p->void`` Defined in line number 374.
+| ``test_line:Param p->void`` Defined in line number 388.
 | 
 | 
 
@@ -264,7 +264,7 @@ test_line
 
 weak_test
 -------------------------------------------------
-| ``weak_test:Param p->bool`` Defined in line number 398.
+| ``weak_test:Param p->bool`` Defined in line number 412.
 | 
 | 
 
@@ -272,7 +272,7 @@ weak_test
 
 strong_test
 -------------------------------------------------
-| ``strong_test:Param p,mat delta->bool`` Defined in line number 407.
+| ``strong_test:Param p,mat delta->bool`` Defined in line number 421.
 | 
 | 
 

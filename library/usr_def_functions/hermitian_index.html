@@ -94,29 +94,18 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#download-the-source-code">Download the source code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#compiling-atlas-for-the-mac-using-macports">Compiling atlas for the Mac using MacPorts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#install-macports">(1) Install MacPorts.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#install-the-xcode-c-compiler">(2) Install the XCode C compiler.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#install-the-macports-gcc-c-compiler">(3) Install the MacPorts (gcc) C Compiler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#install-readline">(4) Install readline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#edit-the-makefiles">(5) Edit the Makefiles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#compile-fokko-and-atlas">(6) Compile Fokko and atlas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#other-compilation-options">Other Compilation options:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#installing-fokko-and-atlas">(7) Installing Fokko and atlas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#example">Example:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#id1">Example:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#id2">Example:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#download-the-software">Download the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../windows_installation.html">Windows</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#compiling">Compiling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#installing-under-cygwin">Installing under Cygwin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#pre-compiled">Pre-compiled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
 </ul>
@@ -621,11 +610,6 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
-<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -820,11 +804,6 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1064,6 +1043,8 @@
       <li class="wy-breadcrumbs-aside">
         
           
+            <a href="../../_sources/library/usr_def_functions/hermitian_index.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -1119,97 +1100,100 @@
 <tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#c-form-irreducible-twisted-param-p-parampol2"><span>c_form_irreducible_twisted</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#c-form-irreducible-twisted-long-param-p-parampol-param-split-parampol-parampol-2"><span>c_form_irreducible_twisted_long</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#c-form-irreducible-twisted-long-param-p-mat-delta-parampol-param-split-parampol-parampol-1"><span>c_form_irreducible_twisted_long</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;(ParamPol,[(Param,Split,ParamPol)],ParamPol)</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#c-form-irreducible-twisted-long-param-p-parampol-param-split-parampol-parampol-2"><span>c_form_irreducible_twisted_long</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;(ParamPol,[(Param,Split,ParamPol)],ParamPol)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#print-c-form-irreducible-twisted-long-param-p-void2"><span>print_c_form_irreducible_twisted_long</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#print-c-form-irreducible-twisted-long-param-p-void2"><span>print_c_form_irreducible_twisted_long</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#mixed-split-w-bool2"><span>mixed</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#mixed-split-w-bool2"><span>mixed</span></a></td>
 <td><code class="docutils literal"><span class="pre">Split</span> <span class="pre">w-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#mixed-terms-parampol-p-parampol2"><span>mixed_terms</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#mixed-terms-parampol-p-parampol2"><span>mixed_terms</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#analyse-parampol-p-void2"><span>analyse</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#analyse-parampol-p-void2"><span>analyse</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#lambda-plus-rho-res-t-kgbelt-x-ratvec-lambda-ratvec2"><span>lambda_plus_rho_res_T</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#lambda-plus-rho-res-t-kgbelt-x-ratvec-lambda-ratvec2"><span>lambda_plus_rho_res_T</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">lambda-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#mu-param-p-rat2"><span>mu</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#mu-param-p-rat2"><span>mu</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;rat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#number-real-orthogonal-pairs-kgbelt-x-mat-delta-int2"><span>number_real_orthogonal_pairs</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#number-real-orthogonal-pairs-kgbelt-x-mat-delta-int2"><span>number_real_orthogonal_pairs</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">mat</span> <span class="pre">delta-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#dim-u-cap-p-kgbelt-x-int2"><span>DIM_u_cap_p</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#dim-u-cap-p-kgbelt-x-int2"><span>DIM_u_cap_p</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#mu-terms-param-p-mat-delta-rat-2"><span>mu_terms</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#mu-terms-param-p-mat-delta-rat-2"><span>mu_terms</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;[rat]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#mu-in-terms-of-z-param-p-mat-delta-rat1"><span>mu_in_terms_of_z</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#mu-in-terms-of-z-param-p-mat-delta-rat1"><span>mu_in_terms_of_z</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;rat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#mu-param-p-mat-delta-rat2"><span>mu</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#mu-param-p-mat-delta-rat2"><span>mu</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;rat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#print-mu-param-p-void2"><span>print_mu</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#print-mu-param-p-void2"><span>print_mu</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#print-mus-parampol-p-void2"><span>print_mus</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#print-mus-parampol-p-void2"><span>print_mus</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#convert-cform-hermitian-parampol-p-mat-delta-parampol2"><span>convert_cform_hermitian</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#convert-cform-hermitian-parampol-p-mat-delta-parampol2"><span>convert_cform_hermitian</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P,mat</span> <span class="pre">delta-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#convert-cform-hermitian-parampol-p-parampol2"><span>convert_cform_hermitian</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#convert-cform-hermitian-parampol-p-parampol2"><span>convert_cform_hermitian</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#hermitian-form-irreducible-param-p-parampol2"><span>hermitian_form_irreducible</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#hermitian-form-irreducible-param-p-parampol2"><span>hermitian_form_irreducible</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#hermitian-form-irreducible-long-param-p-parampol-param-split-parampol-parampol-2"><span>hermitian_form_irreducible_long</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#hermitian-form-irreducible-long-param-p-parampol-param-split-parampol-parampol-2"><span>hermitian_form_irreducible_long</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;(ParamPol,[(Param,Split,ParamPol)],ParamPol)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#print-hermitian-form-irreducible-param-p-mat-delta-void2"><span>print_hermitian_form_irreducible</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#print-hermitian-form-irreducible-param-p-mat-delta-void2"><span>print_hermitian_form_irreducible</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#print-hermitian-form-irreducible-long-param-p-void2"><span>print_hermitian_form_irreducible_long</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#print-hermitian-form-irreducible-long-param-p-void2"><span>print_hermitian_form_irreducible_long</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#id4"><span>print_hermitian_form_irreducible</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#id5"><span>print_hermitian_form_irreducible</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">P,mat</span> <span class="pre">delta-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#print-hermitian-form-irreducible-param-p-void2"><span>print_hermitian_form_irreducible</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#print-hermitian-form-irreducible-param-p-void2"><span>print_hermitian_form_irreducible</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#id7"><span>print_hermitian_form_irreducible</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#id8"><span>print_hermitian_form_irreducible</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">P-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#is-unitary-param-p-bool2"><span>is_unitary</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#is-unitary-param-p-bool2"><span>is_unitary</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#print-is-unitary-param-p-void2"><span>print_is_unitary</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#print-is-unitary-param-p-void2"><span>print_is_unitary</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#is-weakly-unitary-parampol-p-bool2"><span>is_weakly_unitary</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#is-weakly-unitary-parampol-p-bool2"><span>is_weakly_unitary</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#is-weakly-unitary-param-p-bool2"><span>is_weakly_unitary</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#is-weakly-unitary-param-p-bool2"><span>is_weakly_unitary</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#test-line-param-p-void2"><span>test_line</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#test-line-param-p-void2"><span>test_line</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#weak-test-param-p-bool2"><span>weak_test</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#weak-test-param-p-bool2"><span>weak_test</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#strong-test-param-p-mat-delta-bool2"><span>strong_test</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#strong-test-param-p-mat-delta-bool2"><span>strong_test</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,mat</span> <span class="pre">delta-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="hermitian_ref.html#init-realform-g-realform-mat-param-1"><span>init</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="hermitian_ref.html#init-realform-g-realform-mat-param-1"><span>init</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;(RealForm,mat,Param)</span></code></td>
 </tr>
 </tbody>

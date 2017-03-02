@@ -94,29 +94,18 @@
 <li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installing-an-executable">Installing an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../mac_installation.html">Mac</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#download-the-source-code">Download the source code</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#compiling-atlas-for-the-mac-using-macports">Compiling atlas for the Mac using MacPorts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#install-macports">(1) Install MacPorts.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#install-the-xcode-c-compiler">(2) Install the XCode C compiler.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#install-the-macports-gcc-c-compiler">(3) Install the MacPorts (gcc) C Compiler</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#install-readline">(4) Install readline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#edit-the-makefiles">(5) Edit the Makefiles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#compile-fokko-and-atlas">(6) Compile Fokko and atlas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#other-compilation-options">Other Compilation options:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#installing-fokko-and-atlas">(7) Installing Fokko and atlas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#example">Example:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#id1">Example:</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#id2">Example:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#download-the-software">Download the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../mac_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../windows_installation.html">Windows</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#compiling">Compiling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#installing-under-cygwin">Installing under Cygwin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#pre-compiled">Pre-compiled</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../windows_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
 </ul>
@@ -621,11 +610,6 @@
 <li class="toctree-l4"><a class="reference internal" href="generate_groups_index.html">generate_groups.at Function Index</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="genuine.html">genuine.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="genuine_ref.html">genuine.at Function References</a></li>
-<li class="toctree-l4"><a class="reference internal" href="genuine_index.html">genuine.at Function Index</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="gl4H.html">gl4H.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_ref.html">gl4H.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="gl4H_index.html">gl4H.at Function Index</a></li>
@@ -820,11 +804,6 @@
 <li class="toctree-l3"><a class="reference internal" href="test_unitarity.html">test_unitarity.at</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_ref.html">test_unitarity.at Function References</a></li>
 <li class="toctree-l4"><a class="reference internal" href="test_unitarity_index.html">test_unitarity.at Function Index</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="tests.html">tests.at</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="tests_ref.html">tests.at Function References</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tests_index.html">tests.at Function Index</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tits.html">tits.at</a><ul>
@@ -1063,6 +1042,8 @@
     <li>basic.at Function Index</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="../../_sources/library/usr_def_functions/basic_index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -1791,44 +1772,50 @@
 <tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#fundamental-coweights-rootdatum-rd-ratvec-1"><span>fundamental_coweights</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd-&gt;[ratvec]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#dual-integral-innerclass-ic-ratvec-gamma-innerclass1"><span>dual_integral</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#innerclass-x-innerclass-y-bool1"><span>!=</span></a></td>
+<td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">x,InnerClass</span> <span class="pre">y-&gt;bool</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#dual-integral-innerclass-ic-ratvec-gamma-innerclass1"><span>dual_integral</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic,</span> <span class="pre">ratvec</span> <span class="pre">gamma-&gt;InnerClass</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#cartan-classes-innerclass-ic-cartanclass-1"><span>Cartan_classes</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#cartan-classes-innerclass-ic-cartanclass-1"><span>Cartan_classes</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic-&gt;[CartanClass]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-cartan-info-cartanclass-cc-void1"><span>print_Cartan_info</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-cartan-info-cartanclass-cc-void1"><span>print_Cartan_info</span></a></td>
 <td><code class="docutils literal"><span class="pre">CartanClass</span> <span class="pre">cc-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#fundamental-cartan-innerclass-ic-cartanclass1"><span>fundamental_Cartan</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#fundamental-cartan-innerclass-ic-cartanclass1"><span>fundamental_Cartan</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic-&gt;CartanClass</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#most-split-cartan-innerclass-ic-cartanclass1"><span>most_split_Cartan</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#most-split-cartan-innerclass-ic-cartanclass1"><span>most_split_Cartan</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic-&gt;CartanClass</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#compact-rank-cartanclass-cc-int1"><span>compact_rank</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#compact-rank-cartanclass-cc-int1"><span>compact_rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">CartanClass</span> <span class="pre">cc-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#split-rank-cartanclass-cc-int1"><span>split_rank</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#split-rank-cartanclass-cc-int1"><span>split_rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">CartanClass</span> <span class="pre">cc-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#compact-rank-innerclass-ic-int1"><span>compact_rank</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#compact-rank-innerclass-ic-int1"><span>compact_rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#split-rank-realform-g-int1"><span>split_rank</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#split-rank-realform-g-int1"><span>split_rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-equal-rank-innerclass-ic-bool1"><span>is_equal_rank</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-equal-rank-innerclass-ic-bool1"><span>is_equal_rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-split-realform-g-bool1"><span>is_split</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-split-realform-g-bool1"><span>is_split</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#cartanclass-h-cartanclass-j-bool1"><span>=</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#cartanclass-h-cartanclass-j-bool1"><span>=</span></a></td>
 <td><code class="docutils literal"><span class="pre">CartanClass</span> <span class="pre">H,CartanClass</span> <span class="pre">J-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#number-cartanclass-h-realform-g-int1"><span>number</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#number-cartanclass-h-realform-g-int1"><span>number</span></a></td>
 <td><code class="docutils literal"><span class="pre">CartanClass</span> <span class="pre">H,RealForm</span> <span class="pre">G-&gt;int</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#realform-f-realform-g-bool1"><span>!=</span></a></td>
+<td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">f,</span> <span class="pre">RealForm</span> <span class="pre">g-&gt;bool</span></code></td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#form-name-realform-f-string1"><span>form_name</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">f-&gt;string</span></code></td>
@@ -1860,427 +1847,436 @@
 <tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-compact-realform-g-bool1"><span>is_compact</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#root-datum-kgbelt-x-rootdatum1"><span>root_datum</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#kgbelt-x-kgbelt-y-bool1"><span>!=</span></a></td>
+<td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,KGBElt</span> <span class="pre">y-&gt;bool</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#root-datum-kgbelt-x-rootdatum1"><span>root_datum</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;RootDatum</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#inner-class-kgbelt-x-innerclass1"><span>inner_class</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#inner-class-kgbelt-x-innerclass1"><span>inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;InnerClass</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#kgb-realform-rf-kgbelt-for-i1"><span>KGB</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#kgb-realform-rf-kgbelt-for-i1"><span>KGB</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">rf-&gt;[KGBElt]:</span> <span class="pre">for</span> <span class="pre">i</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#kgb-cartanclass-h-realform-g-kgbelt-1"><span>KGB</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#kgb-cartanclass-h-realform-g-kgbelt-1"><span>KGB</span></a></td>
 <td><code class="docutils literal"><span class="pre">CartanClass</span> <span class="pre">H,RealForm</span> <span class="pre">G-&gt;[KGBElt]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#kgb-elt-innerclass-mat-ratvec-theta-v-all-kgbelt1"><span>KGB_elt</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#kgb-elt-innerclass-mat-ratvec-theta-v-all-kgbelt1"><span>KGB_elt</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass,</span> <span class="pre">mat,</span> <span class="pre">ratvec)</span> <span class="pre">(,theta,v):all-&gt;KGBElt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#kgb-elt-rootdatum-rd-mat-theta-ratvec-v-kgbelt1"><span>KGB_elt</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#kgb-elt-rootdatum-rd-mat-theta-ratvec-v-kgbelt1"><span>KGB_elt</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,</span> <span class="pre">mat</span> <span class="pre">theta,</span> <span class="pre">ratvec</span> <span class="pre">v-&gt;KGBElt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#cartan-class-innerclass-ic-mat-theta-cartanclass1"><span>Cartan_class</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#cartan-class-innerclass-ic-mat-theta-cartanclass1"><span>Cartan_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic,</span> <span class="pre">mat</span> <span class="pre">theta-&gt;CartanClass</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-vec-alpha-kgbelt-x-int1"><span>status</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-vec-alpha-kgbelt-x-int1"><span>status</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">alpha,KGBElt</span> <span class="pre">x-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#cross-vec-alpha-kgbelt-x-kgbelt1"><span>cross</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#cross-vec-alpha-kgbelt-x-kgbelt1"><span>cross</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">alpha,KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#cayley-vec-alpha-kgbelt-x-kgbelt1"><span>Cayley</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#cayley-vec-alpha-kgbelt-x-kgbelt1"><span>Cayley</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">alpha,KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#w-cross-int-w-kgbelt-x-kgbelt1"><span>W_cross</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#w-cross-int-w-kgbelt-x-kgbelt1"><span>W_cross</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">w,KGBElt</span> <span class="pre">x-&gt;KGBElt</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#kgb-status-text-int-i-string1"><span>KGB_status_text</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#kgb-status-text-int-i-string1"><span>KGB_status_text</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i-&gt;string</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-text-int-kgbelt-p-string1"><span>status_text</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-text-int-kgbelt-p-string1"><span>status_text</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,KGBElt)p-&gt;string</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-text-vec-kgbelt-p-string1"><span>status_text</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-text-vec-kgbelt-p-string1"><span>status_text</span></a></td>
 <td><code class="docutils literal"><span class="pre">(vec,KGBElt)p-&gt;string</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-texts-kgbelt-x-string-1"><span>status_texts</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-texts-kgbelt-x-string-1"><span>status_texts</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;[string]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-imaginary-kgbelt-x-vec-bool-1"><span>is_imaginary</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-imaginary-kgbelt-x-vec-bool-1"><span>is_imaginary</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(vec-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-real-kgbelt-x-vec-bool-1"><span>is_real</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-real-kgbelt-x-vec-bool-1"><span>is_real</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(vec-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-complex-kgbelt-x-vec-bool-1"><span>is_complex</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-complex-kgbelt-x-vec-bool-1"><span>is_complex</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(vec-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#imaginary-posroots-kgbelt-x-mat1"><span>imaginary_posroots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#imaginary-posroots-kgbelt-x-mat1"><span>imaginary_posroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#real-posroots-kgbelt-x-mat1"><span>real_posroots</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#real-posroots-kgbelt-x-mat1"><span>real_posroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#imaginary-poscoroots-kgbelt-x-mat1"><span>imaginary_poscoroots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#imaginary-poscoroots-kgbelt-x-mat1"><span>imaginary_poscoroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#real-poscoroots-kgbelt-x-mat1"><span>real_poscoroots</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#real-poscoroots-kgbelt-x-mat1"><span>real_poscoroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#imaginary-sys-kgbelt-x-mat-mat-1"><span>imaginary_sys</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#imaginary-sys-kgbelt-x-mat-mat-1"><span>imaginary_sys</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(mat,mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#real-sys-kgbelt-x-mat-mat-1"><span>real_sys</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#real-sys-kgbelt-x-mat-mat-1"><span>real_sys</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(mat,mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-i-kgbelt-x-ratvec1"><span>rho_i</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-i-kgbelt-x-ratvec1"><span>rho_i</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-r-kgbelt-x-ratvec1"><span>rho_r</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-r-kgbelt-x-ratvec1"><span>rho_r</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-check-i-kgbelt-x-ratvec1"><span>rho_check_i</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-check-i-kgbelt-x-ratvec1"><span>rho_check_i</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-check-r-kgbelt-x-ratvec1"><span>rho_check_r</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-check-r-kgbelt-x-ratvec1"><span>rho_check_r</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-i-rootdatum-mat-rd-theta-ratvec1"><span>rho_i</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-i-rootdatum-mat-rd-theta-ratvec1"><span>rho_i</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,mat)</span> <span class="pre">rd_theta-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-r-rootdatum-mat-rd-theta-ratvec1"><span>rho_r</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-r-rootdatum-mat-rd-theta-ratvec1"><span>rho_r</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,mat)</span> <span class="pre">rd_theta-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-check-i-rootdatum-mat-rd-theta-ratvec1"><span>rho_check_i</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-check-i-rootdatum-mat-rd-theta-ratvec1"><span>rho_check_i</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,mat)</span> <span class="pre">rd_theta-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-check-r-rootdatum-mat-rd-theta-ratvec1"><span>rho_check_r</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-check-r-rootdatum-mat-rd-theta-ratvec1"><span>rho_check_r</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,mat)</span> <span class="pre">rd_theta-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-compact-kgbelt-x-vec-bool-1"><span>is_compact</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-compact-kgbelt-x-vec-bool-1"><span>is_compact</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(vec-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-noncompact-kgbelt-x-vec-bool-1"><span>is_noncompact</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-noncompact-kgbelt-x-vec-bool-1"><span>is_noncompact</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(vec-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-compact-imaginary-kgbelt-x-vec-bool-1"><span>is_compact_imaginary</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-compact-imaginary-kgbelt-x-vec-bool-1"><span>is_compact_imaginary</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(vec-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-noncompact-imaginary-kgbelt-x-vec-bool-1"><span>is_noncompact_imaginary</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-noncompact-imaginary-kgbelt-x-vec-bool-1"><span>is_noncompact_imaginary</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(vec-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#compact-posroots-kgbelt-x-mat1"><span>compact_posroots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#compact-posroots-kgbelt-x-mat1"><span>compact_posroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#noncompact-posroots-kgbelt-x-mat1"><span>noncompact_posroots</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#noncompact-posroots-kgbelt-x-mat1"><span>noncompact_posroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-ci-kgbelt-x-ratvec1"><span>rho_ci</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-ci-kgbelt-x-ratvec1"><span>rho_ci</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#rho-nci-kgbelt-x-ratvec1"><span>rho_nci</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#rho-nci-kgbelt-x-ratvec1"><span>rho_nci</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-imaginary-vec-v-kgbelt-x-bool1"><span>is_imaginary</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-imaginary-vec-v-kgbelt-x-bool1"><span>is_imaginary</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v,KGBElt</span> <span class="pre">x-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-real-vec-v-kgbelt-x-bool1"><span>is_real</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-real-vec-v-kgbelt-x-bool1"><span>is_real</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v,KGBElt</span> <span class="pre">x-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-complex-vec-v-kgbelt-x-bool1"><span>is_complex</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-complex-vec-v-kgbelt-x-bool1"><span>is_complex</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v,KGBElt</span> <span class="pre">x-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-compact-imaginary-vec-v-kgbelt-x-bool1"><span>is_compact_imaginary</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-compact-imaginary-vec-v-kgbelt-x-bool1"><span>is_compact_imaginary</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v,KGBElt</span> <span class="pre">x-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-noncompact-imaginary-vec-v-kgbelt-x-bool1"><span>is_noncompact_imaginary</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-noncompact-imaginary-vec-v-kgbelt-x-bool1"><span>is_noncompact_imaginary</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">v,KGBElt</span> <span class="pre">x-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-kgb-kgbelt-x-void1"><span>print_KGB</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-kgb-kgbelt-x-void1"><span>print_KGB</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#no-cminus-roots-kgbelt-x-bool1"><span>no_Cminus_roots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#no-cminus-roots-kgbelt-x-bool1"><span>no_Cminus_roots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#no-cplus-roots-kgbelt-x-bool1"><span>no_Cplus_roots</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#no-cplus-roots-kgbelt-x-bool1"><span>no_Cplus_roots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#blocks-innerclass-ic-block-1"><span>blocks</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#blocks-innerclass-ic-block-1"><span>blocks</span></a></td>
 <td><code class="docutils literal"><span class="pre">InnerClass</span> <span class="pre">ic-&gt;[Block]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#raw-kl-realform-realform-p-mat-vec-vec-1"><span>raw_KL</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#raw-kl-realform-realform-p-mat-vec-vec-1"><span>raw_KL</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;(mat,[vec],vec)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#dual-kl-realform-realform-p-mat-vec-vec-1"><span>dual_KL</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#dual-kl-realform-realform-p-mat-vec-vec-1"><span>dual_KL</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;(mat,[vec],vec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-block-realform-realform-p-void1"><span>print_block</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-block-realform-realform-p-void1"><span>print_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-blocku-realform-realform-p-void1"><span>print_blocku</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-blocku-realform-realform-p-void1"><span>print_blocku</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-blockd-realform-realform-p-void1"><span>print_blockd</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-blockd-realform-realform-p-void1"><span>print_blockd</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-kl-basis-realform-realform-p-void1"><span>print_KL_basis</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-kl-basis-realform-realform-p-void1"><span>print_KL_basis</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-prim-kl-realform-realform-p-void1"><span>print_prim_KL</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-prim-kl-realform-realform-p-void1"><span>print_prim_KL</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-kl-list-realform-realform-p-void1"><span>print_KL_list</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-kl-list-realform-realform-p-void1"><span>print_KL_list</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-w-cells-realform-realform-p-void1"><span>print_W_cells</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-w-cells-realform-realform-p-void1"><span>print_W_cells</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#print-w-graph-realform-realform-p-void1"><span>print_W_graph</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#print-w-graph-realform-realform-p-void1"><span>print_W_graph</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm)</span> <span class="pre">p-&gt;void</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#root-datum-param-p-rootdatum1"><span>root_datum</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#param-x-param-y-bool1"><span>!=</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">x,Param</span> <span class="pre">y-&gt;bool</span></code></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#equals-param-p-param-q-bool1"><span>equals</span></a></td>
+<td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,Param</span> <span class="pre">q-&gt;bool</span></code></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#root-datum-param-p-rootdatum1"><span>root_datum</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;RootDatum</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#inner-class-param-p-innerclass1"><span>inner_class</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#inner-class-param-p-innerclass1"><span>inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;InnerClass</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#null-module-param-p-parampol1"><span>null_module</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#null-module-param-p-parampol1"><span>null_module</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#param-p-rat-f-param1"><span>*</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#param-p-rat-f-param1"><span>*</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,rat</span> <span class="pre">f-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#x-param-p-kgbelt1"><span>x</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#x-param-p-kgbelt1"><span>x</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;KGBElt</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#lambda-minus-rho-param-p-vec1"><span>lambda_minus_rho</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#lambda-minus-rho-param-p-vec1"><span>lambda_minus_rho</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;vec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#lambda-param-p-ratvec1"><span>lambda</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#lambda-param-p-ratvec1"><span>lambda</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#infinitesimal-character-param-p-ratvec1"><span>infinitesimal_character</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#infinitesimal-character-param-p-ratvec1"><span>infinitesimal_character</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#nu-param-p-ratvec1"><span>nu</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#nu-param-p-ratvec1"><span>nu</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#cartan-class-param-p-cartanclass1"><span>Cartan_class</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#cartan-class-param-p-cartanclass1"><span>Cartan_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;CartanClass</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#integrality-datum-param-p-rootdatum1"><span>integrality_datum</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#integrality-datum-param-p-rootdatum1"><span>integrality_datum</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;RootDatum</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-regular-param-p-bool1"><span>is_regular</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-regular-param-p-bool1"><span>is_regular</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#survives-param-p-bool1"><span>survives</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#survives-param-p-bool1"><span>survives</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#trivial-realform-g-param1"><span>trivial</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#trivial-realform-g-param1"><span>trivial</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#w-cross-int-w-param-p-param1"><span>W_cross</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#w-cross-int-w-param-p-param1"><span>W_cross</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">w,Param</span> <span class="pre">p-&gt;Param</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#parameter-realform-g-int-x-ratvec-lambda-ratvec-nu-param1"><span>parameter</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#parameter-realform-g-int-x-ratvec-lambda-ratvec-nu-param1"><span>parameter</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,int</span> <span class="pre">x,ratvec</span> <span class="pre">lambda,ratvec</span> <span class="pre">nu-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#parameter-kgbelt-x-ratvec-lambda-ratvec-nu-param1"><span>parameter</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#parameter-kgbelt-x-ratvec-lambda-ratvec-nu-param1"><span>parameter</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,ratvec</span> <span class="pre">lambda,ratvec</span> <span class="pre">nu-&gt;Param</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#parameter-gamma-kgbelt-x-ratvec-lambda-ratvec-gamma-param1"><span>parameter_gamma</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#parameter-gamma-kgbelt-x-ratvec-lambda-ratvec-gamma-param1"><span>parameter_gamma</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x,</span> <span class="pre">ratvec</span> <span class="pre">lambda,</span> <span class="pre">ratvec</span> <span class="pre">gamma-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#singular-block-param-p-param-int-1"><span>singular_block</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#singular-block-param-p-param-int-1"><span>singular_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;([Param],int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#block-of-param-p-param-1"><span>block_of</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#block-of-param-p-param-1"><span>block_of</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#singular-block-of-param-p-param-1"><span>singular_block_of</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#singular-block-of-param-p-param-1"><span>singular_block_of</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#imaginary-type-int-s-param-p-int1"><span>imaginary_type</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#imaginary-type-int-s-param-p-int1"><span>imaginary_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,</span> <span class="pre">Param</span> <span class="pre">p-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#real-type-int-s-param-p-int1"><span>real_type</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#real-type-int-s-param-p-int1"><span>real_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,Param</span> <span class="pre">p-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#imaginary-type-vec-alpha-param-p-int1"><span>imaginary_type</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#imaginary-type-vec-alpha-param-p-int1"><span>imaginary_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">alpha,</span> <span class="pre">Param</span> <span class="pre">p-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#real-type-vec-alpha-param-p-int1"><span>real_type</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#real-type-vec-alpha-param-p-int1"><span>real_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">alpha,</span> <span class="pre">Param</span> <span class="pre">p-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-nonparity-int-s-param-p-bool1"><span>is_nonparity</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-nonparity-int-s-param-p-bool1"><span>is_nonparity</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-parity-int-s-param-p-bool1"><span>is_parity</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-parity-int-s-param-p-bool1"><span>is_parity</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-nonparity-vec-alpha-param-p-bool1"><span>is_nonparity</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-nonparity-vec-alpha-param-p-bool1"><span>is_nonparity</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">alpha,Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-parity-vec-alpha-param-p-bool1"><span>is_parity</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-parity-vec-alpha-param-p-bool1"><span>is_parity</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">alpha,Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-vec-alpha-param-p-int1"><span>status</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-vec-alpha-param-p-int1"><span>status</span></a></td>
 <td><code class="docutils literal"><span class="pre">vec</span> <span class="pre">alpha,Param</span> <span class="pre">p-&gt;int</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-int-s-param-p-int1"><span>status</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-int-s-param-p-int1"><span>status</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,Param</span> <span class="pre">p-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#block-status-text-int-i-string1"><span>block_status_text</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#block-status-text-int-i-string1"><span>block_status_text</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">i-&gt;string</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-text-int-s-param-p-string1"><span>status_text</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-text-int-s-param-p-string1"><span>status_text</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,Param</span> <span class="pre">p-&gt;string</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-texts-param-p-string-1"><span>status_texts</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-texts-param-p-string-1"><span>status_texts</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[string]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#status-text-vec-param-ap-string1"><span>status_text</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#status-text-vec-param-ap-string1"><span>status_text</span></a></td>
 <td><code class="docutils literal"><span class="pre">(vec,Param)</span> <span class="pre">ap-&gt;string</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#parity-poscoroots-param-p-mat1"><span>parity_poscoroots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#parity-poscoroots-param-p-mat1"><span>parity_poscoroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#nonparity-poscoroots-param-p-mat1"><span>nonparity_poscoroots</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#nonparity-poscoroots-param-p-mat1"><span>nonparity_poscoroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-descent-int-s-param-p-bool1"><span>is_descent</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-descent-int-s-param-p-bool1"><span>is_descent</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">s,Param</span> <span class="pre">p-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#tau-bitset-param-p-int-bool-int-1"><span>tau_bitset</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#tau-bitset-param-p-int-bool-int-1"><span>tau_bitset</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;((int-&gt;bool),int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#tau-param-p-int-1"><span>tau</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#tau-param-p-int-1"><span>tau</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#tau-complement-param-p-int-1"><span>tau_complement</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#tau-complement-param-p-int-1"><span>tau_complement</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;[int]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-descent-vec-param-ap-bool1"><span>is_descent</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-descent-vec-param-ap-bool1"><span>is_descent</span></a></td>
 <td><code class="docutils literal"><span class="pre">(vec,Param)</span> <span class="pre">ap-&gt;bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#lookup-param-p-param-block-int1"><span>lookup</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#lookup-param-p-param-block-int1"><span>lookup</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p,</span> <span class="pre">[Param]</span> <span class="pre">block-&gt;int</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#null-module-parampol-p-parampol1"><span>null_module</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#null-module-parampol-p-parampol1"><span>null_module</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#parampol-p-parampol1"><span>-</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#parampol-p-parampol1"><span>-</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#first-param-parampol-p-param1"><span>first_param</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#first-param-parampol-p-param1"><span>first_param</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;Param</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#last-param-parampol-p-param1"><span>last_param</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#last-param-parampol-p-param1"><span>last_param</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;Param</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#s-to-1-parampol-p-parampol1"><span>s_to_1</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#s-to-1-parampol-p-parampol1"><span>s_to_1</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#s-to-minus-1-parampol-p-parampol1"><span>s_to_minus_1</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#s-to-minus-1-parampol-p-parampol1"><span>s_to_minus_1</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#parampol-a-split-param-c-p-parampol1"><span>-</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#parampol-a-split-param-c-p-parampol1"><span>-</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">a,</span> <span class="pre">(Split,Param)</span> <span class="pre">(c,p)-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#sum-realform-g-parampol-ps-parampol1"><span>sum</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#sum-realform-g-parampol-ps-parampol1"><span>sum</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,[ParamPol]</span> <span class="pre">Ps-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#parampol-p-rat-f-parampol1"><span>*</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#parampol-p-rat-f-parampol1"><span>*</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P,</span> <span class="pre">rat</span> <span class="pre">f-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#half-parampol-p-parampol1"><span>half</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#half-parampol-p-parampol1"><span>half</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#divide-by-int-n-parampol-p-parampol1"><span>divide_by</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#divide-by-int-n-parampol-p-parampol1"><span>divide_by</span></a></td>
 <td><code class="docutils literal"><span class="pre">int</span> <span class="pre">n,</span> <span class="pre">ParamPol</span> <span class="pre">P-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#root-datum-parampol-p-rootdatum1"><span>root_datum</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#root-datum-parampol-p-rootdatum1"><span>root_datum</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;RootDatum</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#virtual-param-p-parampol1"><span>virtual</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#virtual-param-p-parampol1"><span>virtual</span></a></td>
 <td><code class="docutils literal"><span class="pre">Param</span> <span class="pre">p-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#virtual-realform-g-param-ps-parampol1"><span>virtual</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#virtual-realform-g-param-ps-parampol1"><span>virtual</span></a></td>
 <td><code class="docutils literal"><span class="pre">RealForm</span> <span class="pre">G,</span> <span class="pre">[Param]</span> <span class="pre">ps-&gt;ParamPol</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#pol-format-parampol-p-string1"><span>pol_format</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#pol-format-parampol-p-string1"><span>pol_format</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;string</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#infinitesimal-character-parampol-p-ratvec1"><span>infinitesimal_character</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#infinitesimal-character-parampol-p-ratvec1"><span>infinitesimal_character</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;ratvec</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#separate-by-infinitesimal-character-parampol-p-ratvec-parampol-1"><span>separate_by_infinitesimal_character</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#separate-by-infinitesimal-character-parampol-p-ratvec-parampol-1"><span>separate_by_infinitesimal_character</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;[(ratvec,ParamPol)]</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#is-pure-parampol-p-bool1"><span>is_pure</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#is-pure-parampol-p-bool1"><span>is_pure</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#purity-parampol-p-int-int-int-1"><span>purity</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#purity-parampol-p-int-int-int-1"><span>purity</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;(int,int,int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#find-int-v-int-k-int-first-v-int-i-bool1"><span>find</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#find-int-v-int-k-int-first-v-int-i-bool1"><span>find</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">v,</span> <span class="pre">int</span> <span class="pre">k-&gt;int:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="pre">first(#v,(int</span> <span class="pre">i)bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#find-param-p-param-p-int-first-p-int-i-bool1"><span>find</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#find-param-p-param-p-int-first-p-int-i-bool1"><span>find</span></a></td>
 <td><code class="docutils literal"><span class="pre">[Param]</span> <span class="pre">P,Param</span> <span class="pre">p-&gt;int:</span>&nbsp;&nbsp; <span class="pre">first(#P,(int</span> <span class="pre">i)bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#find-kgbelt-s-kgbelt-x-int-first-s-int-i-bool1"><span>find</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#find-kgbelt-s-kgbelt-x-int-first-s-int-i-bool1"><span>find</span></a></td>
 <td><code class="docutils literal"><span class="pre">[KGBElt]</span> <span class="pre">S,KGBElt</span> <span class="pre">x-&gt;int:</span> <span class="pre">first(#S,(int</span> <span class="pre">i)bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#find-vec-s-vec-v-int-first-s-int-i-bool1"><span>find</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#find-vec-s-vec-v-int-first-s-int-i-bool1"><span>find</span></a></td>
 <td><code class="docutils literal"><span class="pre">[vec]</span> <span class="pre">S,vec</span> <span class="pre">v-&gt;int:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="pre">first(#S,(int</span> <span class="pre">i)bool</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#in-string-list-string-s-string-s-bool1"><span>in_string_list</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#in-string-list-string-s-string-s-bool1"><span>in_string_list</span></a></td>
 <td><code class="docutils literal"><span class="pre">string</span> <span class="pre">s,[string]</span> <span class="pre">S-&gt;bool</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#delete-int-v-int-k-int-v-k-v-k-11"><span>delete</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#delete-int-v-int-k-int-v-k-v-k-11"><span>delete</span></a></td>
 <td><code class="docutils literal"><span class="pre">[int]</span> <span class="pre">v,</span> <span class="pre">int</span> <span class="pre">k-&gt;[int]:</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="pre">v[:k]##v[k+1</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#delete-vec-v-int-k-vec-v-k-v-k-11"><span>delete</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#delete-vec-v-int-k-vec-v-k-v-k-11"><span>delete</span></a></td>
 <td><code class="docutils literal"><span class="pre">[vec]</span> <span class="pre">v,</span> <span class="pre">int</span> <span class="pre">k-&gt;[vec]:</span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="pre">v[:k]##v[k+1</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#delete-ratvec-v-int-k-ratvec-v-k-v-k-11"><span>delete</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#delete-ratvec-v-int-k-ratvec-v-k-v-k-11"><span>delete</span></a></td>
 <td><code class="docutils literal"><span class="pre">[ratvec]</span> <span class="pre">v,</span> <span class="pre">int</span> <span class="pre">k-&gt;[ratvec]:</span>&nbsp; <span class="pre">v[:k]##v[k+1</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#id169"><span>delete</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#id173"><span>delete</span></a></td>
 <td><code class="docutils literal"><span class="pre">[[ratvec]]</span> <span class="pre">v,</span> <span class="pre">int</span> <span class="pre">k-&gt;[[ratvec]]:v[:k]##v[k+1</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#id171"><span>delete</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#id175"><span>delete</span></a></td>
 <td><code class="docutils literal"><span class="pre">[[vec]]</span> <span class="pre">v,</span> <span class="pre">int</span> <span class="pre">k-&gt;[[vec]]:</span>&nbsp;&nbsp; <span class="pre">v[:k]##v[k+1</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#delete-parampol-p-int-k-parampol-p-k-p-k-11"><span>delete</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#delete-parampol-p-int-k-parampol-p-k-p-k-11"><span>delete</span></a></td>
 <td><code class="docutils literal"><span class="pre">[ParamPol]</span> <span class="pre">P,</span> <span class="pre">int</span> <span class="pre">k-&gt;[ParamPol]:P[:k]##P[k+1</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#imaginary-roots-and-coroots-rootdatum-mat-p-mat-mat-1"><span>imaginary_roots_and_coroots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#imaginary-roots-and-coroots-rootdatum-mat-p-mat-mat-1"><span>imaginary_roots_and_coroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,</span> <span class="pre">mat)p-&gt;(mat,mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#imaginary-roots-and-coroots-kgbelt-x-mat-mat-1"><span>imaginary_roots_and_coroots</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#imaginary-roots-and-coroots-kgbelt-x-mat-mat-1"><span>imaginary_roots_and_coroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(mat,mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#real-roots-and-coroots-rootdatum-mat-p-mat-mat-1"><span>real_roots_and_coroots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#real-roots-and-coroots-rootdatum-mat-p-mat-mat-1"><span>real_roots_and_coroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,</span> <span class="pre">mat)p-&gt;(mat,mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#real-roots-and-coroots-kgbelt-x-mat-mat-1"><span>real_roots_and_coroots</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#real-roots-and-coroots-kgbelt-x-mat-mat-1"><span>real_roots_and_coroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;(mat,mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#complex-posroots-rootdatum-rd-mat-theta-mat1"><span>complex_posroots</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#complex-posroots-rootdatum-rd-mat-theta-mat1"><span>complex_posroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">RootDatum</span> <span class="pre">rd,mat</span> <span class="pre">theta-&gt;mat</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#complex-posroots-kgbelt-x-mat1"><span>complex_posroots</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#complex-posroots-kgbelt-x-mat1"><span>complex_posroots</span></a></td>
 <td><code class="docutils literal"><span class="pre">KGBElt</span> <span class="pre">x-&gt;mat</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#pad-string-s-int-padding-string1"><span>pad</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#pad-string-s-int-padding-string1"><span>pad</span></a></td>
 <td><code class="docutils literal"><span class="pre">string</span> <span class="pre">s,int</span> <span class="pre">padding-&gt;string</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#monomials-parampol-p-param-1"><span>monomials</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#monomials-parampol-p-param-1"><span>monomials</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P-&gt;[Param]</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="basic_ref.html#monomial-parampol-p-int-i-param1"><span>monomial</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="basic_ref.html#monomial-parampol-p-int-i-param1"><span>monomial</span></a></td>
 <td><code class="docutils literal"><span class="pre">ParamPol</span> <span class="pre">P,int</span> <span class="pre">i-&gt;Param</span></code></td>
 </tr>
 </tbody>

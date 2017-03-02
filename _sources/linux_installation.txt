@@ -7,13 +7,29 @@ Linux
 *********************
 Download the software
 *********************
-* :ref:`using_git` : recommended method.
 * :ref:`direct`
+* :ref:`using_git`
+* :ref:`executable`
+
+.. _direct:
+
+Download source code in a single  file
+======================================
+
+This is the latest stable version.
+
++--------------------------+------------------------------+---------------------------------------+
+| Version 1.0              |   `atlas_1.0.tgz`_           | source code for Fokko and atlas       |
+|                          |                              | including messages and atlas-scripts  |
++--------------------------+------------------------------+---------------------------------------+
+
+.. _atlas_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz
+
 
 .. _using_git:
 
-Using git
-=========
+Get the source code using git
+=============================
 
 For users who are not familiar with git, see :ref:`help_git`.
 
@@ -23,32 +39,21 @@ Choose a directory on your machine to store the source code. Use your terminal t
     
 This creates a subdirectory "atlasofliegroups" and stores the files there.
 
-.. _direct:
-
-Download the source code directly
-=================================
-
-You can download an archive of the source code. These are typically not as up-to-date as
-the git version. 
-
-+--------------------------------+------------------------------+-------------------------------------+
-| Complete archive               |       `atlas_1.0.tgz`_       | source code, Fokko and atlas        |
-+--------------------------------+------------------------------+-------------------------------------+
-
-.. _atlas_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz
 
 ************************
 Installation from Source
 ************************
 
-After you have downloaded the source code, cd to the atlasofliegroups directory.
+After you have the source code, cd to the atlasofliegroups directory.
 
 Type::
 
     make
 
 You may need to edit the Makefile to change the line ``CXX = g++ -std=c++0x`` to something 
-different. You can choose turn on the verbose option by typing::
+different, depending on your system. This is specifyingi the C++ compiler.
+
+You can choose turn on the verbose option by typing::
 
     make verbose=true
 
@@ -90,40 +95,39 @@ can execute
 ./atlas --path=atlas-scripts all
 
 The path argument tells atlas where to find the scripts, and ``all``
-says to load most of the scripts (not including a few which are under
+says to load most of the scripts (possibly excluding a few which are under
 development). You can also run
 
 ./Fokko
 
-************************
-Installing an executable
-************************
+.. _executable:
+
+Download and Install an executable
+==================================
 
 The best method is to compile from source. As a backup option you can 
-try installing an executable. Download a copy of the executable, 
-and the atlas-scripts directory. 
+download install an executable file. 
+
+Download a copy of the executable, and the atlas-scripts directory here:
 
 +-----------------------------------+------------------------------+-------------------------------------+
-| linux 64 compiled                 |   `atlas_1.0_pre.tgz`_       |  executable and                     |
-|                                   |                              |  atlas-scripts directory            |
+| linux 64 compiled                 | `atlas_linux_pre_1.0.tgz`_   |  executable, and messages           |
+|                                   |                              |  atlas-scripts directories          |
 +-----------------------------------+------------------------------+-------------------------------------+
 
-.. _atlas_1.0_pre: http://www.liegroups.org/software/source/1.0/atlas_1.0_pre.tgz
-.. _atlas-scripts_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas-scripts_1.0.tgz
+.. _atlas_linux_pre_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_linux_pre_1.0.tgz
 
 Extract the file:
 
-     tar xvfz atlas_1.0_pre.tgz
+     tar xvfz atlas_linux_pre_1.0.tgz
 
 cd to the directory:
 
-     cd atlas_1.0_pre
+     cd atlasofliegroups
 
 Make the file executable:
 
     chmod u+x atlas
-
-Extract the atlas-scripts directory::
 
 Run the software with the command::
 
@@ -131,6 +135,9 @@ Run the software with the command::
 
 The path argument tells atlas where to find the scripts, and ``all`` says to load
 most of the scripts (not including a few which are under development). 
+
+Unfortunately with the precompiled software readline (command line
+tools) does not work. For this reason we recommend installing from source.
 
 
 

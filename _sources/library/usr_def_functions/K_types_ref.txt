@@ -60,27 +60,11 @@ mult_irr
 | 
 | 
 
-.. _mult_std_param_p_k,_parampol_p->split:0_in_for_c@p_in_p_do_rv+1:
-
-mult_std
--------------------------------------------------
-| ``mult_std:Param p_K, ParamPol P->Split:0 in for c@p in P do rv+`` Defined in line number 111.
-| 
-| 
-
-.. _mult_irr_param_p_k,_parampol_p->split:0_in_for_c@p_in_p_do_rv+1:
-
-mult_irr
--------------------------------------------------
-| ``mult_irr:Param p_K, ParamPol P->Split:0 in for c@p in P do rv+`` Defined in line number 112.
-| 
-| 
-
 .. _k_signature_irr_param_p,int_bound->(parampol,parampol)1:
 
 K_signature_irr
 -------------------------------------------------
-| ``K_signature_irr:Param p,int bound->(ParamPol,ParamPol)`` Defined in line number 114.
+| ``K_signature_irr:Param p,int bound->(ParamPol,ParamPol)`` Defined in line number 111.
 | 
 | 
 
@@ -88,7 +72,7 @@ K_signature_irr
 
 signed_mult
 -------------------------------------------------
-| ``signed_mult:Param p_K,Param p->(int,int)`` Defined in line number 134.
+| ``signed_mult:Param p_K,Param p->(int,int)`` Defined in line number 131.
 | 
 | 
 
@@ -96,7 +80,7 @@ signed_mult
 
 print_K_types
 -------------------------------------------------
-| ``print_K_types:ParamPol P->void`` Defined in line number 141.
+| ``print_K_types:ParamPol P->void`` Defined in line number 138.
 | 
 | 
 
@@ -104,7 +88,7 @@ print_K_types
 
 print_K_types
 -------------------------------------------------
-| ``print_K_types:ParamPol P, KGBElt x_K->void`` Defined in line number 149.
+| ``print_K_types:ParamPol P, KGBElt x_K->void`` Defined in line number 146.
 | 
 | 
 

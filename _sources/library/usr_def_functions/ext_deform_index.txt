@@ -22,5 +22,3 @@ Functions
      - ``Param p, mat delta->ParamPol``
    * - :ref:`recursive_deform_param_p,_mat_delta->parampol1`
      - ``Param p, mat delta->ParamPol``
-   * - :ref:`twisted_recursive_deform_param_p->parampol1`
-     - ``Param p->ParamPol``

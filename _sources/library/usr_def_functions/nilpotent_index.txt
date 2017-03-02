@@ -48,5 +48,7 @@ Functions
      - ``RootDatum rd,[int] p->ratvec``
    * - :ref:`nilpotent_lambdas_e_int_n->[ratvec]1`
      - ``int n->[ratvec]``
+   * - :ref:`nilpotent_lambdas_rootdatum_rd->[ratvec]1`
+     - ``RootDatum rd->[ratvec]``
    * - :ref:`nilpotent_lambdas_realform_g->[ratvec]1`
      - ``RealForm G->[ratvec]``

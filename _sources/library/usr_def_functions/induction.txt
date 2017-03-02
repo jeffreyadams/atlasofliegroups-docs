@@ -60,6 +60,7 @@ ________________________
 | Then:
 | GOOD:  <gamma_L+rho_u,alpha^vee> > 0;
 | WEAKLY GOOD:  <gamma_L+rho_u,alpha^vee> \ge 0;
+| FAIR: <gamma_L-rho_L+rho_u,alpha^vee> > 0.
 |
 | For  Aq(x,lambda,lambda_q): gamma_L=lambda+rho_L;
 | gamma_L -> gamma_G=gamma_L = lambda+rho_L
@@ -75,8 +76,8 @@ ________________________
 |
 | fair => vanishing outside middle degree => honest representation
 | weakly fair: same implication.
-| NB: <gamma_L-rho_L_rho_u,alpha^vee> >= 0 does NOT imply vanishing (in general) if pi_L is not weakly unipotent (e.g.,
-| one-dimensional), hence "weakly fair" is only defined if pi_L is one-dimensional.
+| NB: <gamma_L-rho_L_rho_u,alpha^vee> >= 0 does NOT imply vanishing (in general) if pi_L is not
+| one-dimensional, hence "weakly fair" is only defined if pi_L is one-dimensional.
 |
 
 
