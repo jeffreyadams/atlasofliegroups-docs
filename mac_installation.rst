@@ -83,12 +83,28 @@ Edit two Makefiles
 cd to the directory where you downloaded the source code. Edit the file Makefile 
 to replace CXX = g++ -std=c++0x with:
 
-      CXX = /usr/local/Cellar/gcc@4.9/4.9.3_1/bin/g++-4.9  -std=c++0x
+      CXX = /usr/local/Cellar/gcc\@4.9/4.9.3_1/bin/g++-4.9  -std=c++0x
 
 The correct path for you might be slightly different from this. cd to /usr/local/Cellar and 
-find a file .../bin/g++... and use this.
+find a file .../bin/g++... and use this. Also make the following changes: add **-L/usr/local/opt/readline/lib** to the end of two lines
+as follows:
 
-Make the same change to the file ./sources/interpreter/Makefile
+    ifdef LDFLAGS
+    
+    LDFLAGS := $(LDFLAGS) $(rl_libs) -L/usr/local/opt/readline/lib
+     
+    else
+      
+    LDFLAGS := $(rl_libs) -L/usr/local/opt/readline/lib
+    
+    endif
+
+
+Also make the first change
+
+      CXX = /usr/local/Cellar/gcc\@4.9/4.9.3_1/bin/g++-4.9  -std=c++0x
+
+to the file ./sources/interpreter/Makefile
 
 Enable readline
 ++++++++++++++++++
@@ -104,14 +120,9 @@ Compile
 
 Give the command
 
-     make atlas
+     make 
 
-To compile atlas. 
-
-Note: This compiles atlas, with readline. It does *not* compile Fokko. 
-To compile Fokko use the command
-
-     make Fokko readline=false
+To compile atlas and Fokko, with readline.
 
 Other Compilation options: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
