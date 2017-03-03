@@ -42,7 +42,7 @@ which sphinx-quickstart
 
 Under desired directory on your machine, do 
 ```
-git clone https://github.com/cuiran/atlas_documentation.git
+git clone https://github.com/jeffreyadams/atlasofliegroups-docs.git
 ```	
 Go to the atlas_documentation directory 
 ```
