@@ -883,8 +883,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="source_library.html">Source Code Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="web_interface.html">Web Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">Videos</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="videos/online_training.html">Online Training Videos</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="videos/session_1A.html">Online Training Session 1, Part A</a><ul>
@@ -1006,6 +1004,9 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_interface.html">Web Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discussions.html">Discussions</a></li>
 </ul>
 
             
@@ -1125,10 +1126,21 @@ Homebrew is the preferred method. Alternatively see
 <p>cd to the directory where you downloaded the source code. Edit the file Makefile
 to replace CXX = g++ -std=c++0x with:</p>
 <blockquote>
-<div>CXX = <a class="reference external" href="mailto:/usr/local/Cellar/gcc&#37;&#52;&#48;4&#46;9/4&#46;9&#46;3_1/bin/g++-4&#46;9">/usr/local/Cellar/gcc<span>&#64;</span>4<span>&#46;</span>9/4<span>&#46;</span>9<span>&#46;</span>3_1/bin/g++-4<span>&#46;</span>9</a>  -std=c++0x</div></blockquote>
+<div>CXX = /usr/local/Cellar/gcc&#64;4.9/4.9.3_1/bin/g++-4.9  -std=c++0x</div></blockquote>
 <p>The correct path for you might be slightly different from this. cd to /usr/local/Cellar and
-find a file .../bin/g++... and use this.</p>
-<p>Make the same change to the file ./sources/interpreter/Makefile</p>
+find a file .../bin/g++... and use this. Also make the following changes: add <strong>-L/usr/local/opt/readline/lib</strong> to the end of two lines
+as follows:</p>
+<blockquote>
+<div><p>ifdef LDFLAGS</p>
+<p>LDFLAGS := $(LDFLAGS) $(rl_libs) -L/usr/local/opt/readline/lib</p>
+<p>else</p>
+<p>LDFLAGS := $(rl_libs) -L/usr/local/opt/readline/lib</p>
+<p>endif</p>
+</div></blockquote>
+<p>Also make the first change</p>
+<blockquote>
+<div>CXX = /usr/local/Cellar/gcc&#64;4.9/4.9.3_1/bin/g++-4.9  -std=c++0x</div></blockquote>
+<p>to the file ./sources/interpreter/Makefile</p>
 </div>
 <div class="section" id="enable-readline">
 <h4>Enable readline<a class="headerlink" href="#enable-readline" title="Permalink to this headline">¶</a></h4>
@@ -1141,12 +1153,8 @@ find a file .../bin/g++... and use this.</p>
 <h4>Compile<a class="headerlink" href="#compile" title="Permalink to this headline">¶</a></h4>
 <p>Give the command</p>
 <blockquote>
-<div>make atlas</div></blockquote>
-<p>To compile atlas.</p>
-<p>Note: This compiles atlas, with readline. It does <em>not</em> compile Fokko.
-To compile Fokko use the command</p>
-<blockquote>
-<div>make Fokko readline=false</div></blockquote>
+<div>make</div></blockquote>
+<p>To compile atlas and Fokko, with readline.</p>
 <div class="section" id="other-compilation-options">
 <h5>Other Compilation options:<a class="headerlink" href="#other-compilation-options" title="Permalink to this headline">¶</a></h5>
 <p>We recommend compiling with:</p>
