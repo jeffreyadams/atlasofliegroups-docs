@@ -40,8 +40,14 @@ mathematics.
    getting_started
    tutorial_with_examples
    atlas_lib
-   source_library
-   web_interface
    videos
    trouble_shooting
+   source_library
+   web_interface
+   discussions
+   
+   
+   
+
+        
 
