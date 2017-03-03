@@ -14,21 +14,15 @@ Functions
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`uflag_int_predicted->string1`
-     - ``int predicted->string``
-   * - :ref:`uflag_bool_flag->string1`
-     - ``bool flag->string``
-   * - :ref:`passedflag_int_predicted,_bool_unitary->string1`
-     - ``int predicted, bool unitary->string``
-   * - :ref:`passedflag_bool_flag->string1`
-     - ``bool flag->string``
-   * - :ref:`test_[(param,int)]_parameters->(bool,[(param,parampol,int,bool)])1`
-     - ``[(Param,int)] parameters->(bool,[(Param,ParamPol,int,bool)])``
-   * - :ref:`print_test_[(param,int)]_parameters->void1`
-     - ``[(Param,int)] parameters->void``
-   * - :ref:`test_aq_[param]_b->(bool,[(param,parampol,int,bool)])1`
-     - ``[Param] B->(bool,[(Param,ParamPol,int,bool)])``
-   * - :ref:`print_test_aq_[param]_b->void1`
-     - ``[Param] B->void``
-   * - :ref:`print_test_aq_realform_g->void1`
+   * - :ref:`test_[(param,bool)]_parameters->bool1`
+     - ``[(Param,bool)] parameters->bool``
+   * - :ref:`test_[param]_parameters->bool1`
+     - ``[Param] parameters->bool``
+   * - :ref:`test_spherical_unipotent_realform_g->void1`
      - ``RealForm G->void``
+   * - :ref:`test7_->bool1`
+     - ``->bool``
+   * - :ref:`test8_->bool1`
+     - ``->bool``
+   * - :ref:`test9_->bool1`
+     - ``->bool``

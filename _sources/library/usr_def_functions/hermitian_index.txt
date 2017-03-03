@@ -26,6 +26,8 @@ Functions
      - ``Param p, mat delta->ParamPol``
    * - :ref:`c_form_irreducible_twisted_param_p->parampol2`
      - ``Param p->ParamPol``
+   * - :ref:`c_form_irreducible_twisted_long_param_p,mat_delta->(parampol,[(param,split,parampol)],parampol)1`
+     - ``Param p,mat delta->(ParamPol,[(Param,Split,ParamPol)],ParamPol)``
    * - :ref:`c_form_irreducible_twisted_long_param_p->(parampol,[(param,split,parampol)],parampol)2`
      - ``Param p->(ParamPol,[(Param,Split,ParamPol)],ParamPol)``
    * - :ref:`print_c_form_irreducible_twisted_long_param_p->void2`

@@ -474,6 +474,8 @@ Functions
      - ``RootDatum rd->[ratvec]``
    * - :ref:`fundamental_coweights_rootdatum_rd->[ratvec]1`
      - ``RootDatum rd->[ratvec]``
+   * - :ref:`\!=_InnerClass_x,InnerClass_y->bool1`
+     - ``InnerClass x,InnerClass y->bool``
    * - :ref:`dual_integral_innerclass_ic,_ratvec_gamma->innerclass1`
      - ``InnerClass ic, ratvec gamma->InnerClass``
    * - :ref:`cartan_classes_innerclass_ic->[cartanclass]1`
@@ -500,6 +502,8 @@ Functions
      - ``CartanClass H,CartanClass J->bool``
    * - :ref:`number_cartanclass_h,realform_g->int1`
      - ``CartanClass H,RealForm G->int``
+   * - :ref:`\!=_RealForm_f,_RealForm_g->bool1`
+     - ``RealForm f, RealForm g->bool``
    * - :ref:`form_name_realform_f->string1`
      - ``RealForm f->string``
    * - :ref:`real_forms_innerclass_ic->[realform]1`
@@ -520,6 +524,8 @@ Functions
      - ``RealForm f, RealForm g->bool``
    * - :ref:`is_compact_realform_g->bool1`
      - ``RealForm G->bool``
+   * - :ref:`\!=_KGBElt_x,KGBElt_y->bool1`
+     - ``KGBElt x,KGBElt y->bool``
    * - :ref:`root_datum_kgbelt_x->rootdatum1`
      - ``KGBElt x->RootDatum``
    * - :ref:`inner_class_kgbelt_x->innerclass1`
@@ -638,6 +644,10 @@ Functions
      - ``(RealForm,RealForm) p->void``
    * - :ref:`print_w_graph_(realform,realform)_p->void1`
      - ``(RealForm,RealForm) p->void``
+   * - :ref:`\!=_Param_x,Param_y->bool1`
+     - ``Param x,Param y->bool``
+   * - :ref:`equals_param_p,param_q->bool1`
+     - ``Param p,Param q->bool``
    * - :ref:`root_datum_param_p->rootdatum1`
      - ``Param p->RootDatum``
    * - :ref:`inner_class_param_p->innerclass1`

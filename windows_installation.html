@@ -30,9 +30,6 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="index.html"/>
         <link rel="up" title="Download and Install" href="download_and_install.html"/>
         <link rel="next" title="Run atlas" href="run_atlas.html"/>
@@ -105,7 +102,7 @@
 <li class="toctree-l4"><a class="reference internal" href="mac_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Windows</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Windows</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#compiling">Compiling</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#installing-under-cygwin">Installing under Cygwin</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#download-and-install-an-executable">Download and Install an executable</a></li>
@@ -883,8 +880,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="source_library.html">Source Code Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="web_interface.html">Web Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="videos.html">Videos</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="videos/online_training.html">Online Training Videos</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="videos/session_1A.html">Online Training Session 1, Part A</a><ul>
@@ -1006,6 +1001,9 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="source_library.html">Source Code Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web_interface.html">Web Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discussions.html">Discussions</a></li>
 </ul>
 
             
@@ -1028,7 +1026,7 @@
         <div class="rst-content">
           
 
- 
+
 
 
 
@@ -1044,7 +1042,8 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/windows_installation.rst.txt" rel="nofollow"> View page source</a>
+            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Comment on page</a>
+            <!--<a href="_sources/windows_installation.txt" rel="nofollow"> View page source</a>-->
           
         
       </li>
@@ -1053,12 +1052,24 @@
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
+<!--test-->
+		  
+		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+		      
+			<a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+		      
+		      
+			<a href="mac_installation.html" class="btn btn-neutral float-right" title="Mac" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+		      
+		    </div>
+		  
+<!--endtest-->
             
   <div class="section" id="windows">
 <span id="id1"></span><h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="#compiling"><span class="std std-ref">Compiling</span></a></li>
-<li><a class="reference internal" href="#precompiled"><span class="std std-ref">Download and Install an executable</span></a></li>
+<li><a class="reference internal" href="#compiling"><span>Compiling</span></a></li>
+<li><a class="reference internal" href="#precompiled"><span>Download and Install an executable</span></a></li>
 </ul>
 <div class="section" id="compiling">
 <span id="id2"></span><h2>Compiling<a class="headerlink" href="#compiling" title="Permalink to this headline">¶</a></h2>
@@ -1068,7 +1079,7 @@ available (currently in beta version) in Windows 10. It provides a
 linux command line environment. This was produced by Canonical, the
 makers of Ubuntu, so it is very close to an Ubuntu linux environment.</p>
 <p>On older Windows machines linux software can be run using
-<a class="reference internal" href="#cygwin"><span class="std std-ref">Installing under Cygwin</span></a>.
+<a class="reference internal" href="#cygwin"><span>Installing under Cygwin</span></a>.
 Unless you have already installed Cygwin and
 are familiar with it this is not recommended.</p>
 <div class="section" id="step-by-step-installation-using-the-bash-shell">
@@ -1081,15 +1092,15 @@ these instructions from <a class="reference external" href="http://www.howtogeek
 <p>Install some necessary software. After the first call of sudo apt-get install you
 need to type your password. (Depending on how you installed the bash shell you
 might not need to use sudo.):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">git</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">make</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">g</span><span class="o">++</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">bison</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libreadline</span><span class="o">-</span><span class="n">dev</span>
-<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">emacs</span> <span class="p">(</span><span class="ow">or</span> <span class="n">your</span> <span class="n">favorite</span> <span class="n">text</span> <span class="n">editor</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>sudo apt-get install git
+sudo apt-get install make
+sudo apt-get install g++
+sudo apt-get install bison
+sudo apt-get install libreadline-dev
+sudo apt-get install emacs (or your favorite text editor)
 </pre></div>
 </div>
-<p>The remainder of the process follows the standard linux process. See <a class="reference internal" href="linux_installation.html#linux"><span class="std std-ref">Linux</span></a> for details. Briefly:</p>
+<p>The remainder of the process follows the standard linux process. See <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a> for details. Briefly:</p>
 <p>Download the source code:</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -1106,15 +1117,15 @@ including messages and atlas-scripts</td>
 </tbody>
 </table>
 <p>Unpack the file:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tar</span> <span class="n">xvf</span> <span class="n">atlas_1</span><span class="o">.</span><span class="mf">0.</span><span class="n">tgz</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>tar xvf atlas_1.0.tgz
 </pre></div>
 </div>
 <p>Go into the proper directory and type make:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span>
-<span class="n">make</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span>cd atlasofliegroups
+make
 </pre></div>
 </div>
-<p>Follow the instructions in <a class="reference internal" href="linux_installation.html#linux"><span class="std std-ref">Linux</span></a>.</p>
+<p>Follow the instructions in <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a>.</p>
 </div>
 </div>
 <div class="section" id="installing-under-cygwin">
@@ -1133,7 +1144,7 @@ including messages and atlas-scripts</td>
 </ul>
 <p>Next, open a cygwin terminal by double-clicking on the icon. You are now in a linux-like environment.</p>
 <p>The remainder of the process follows the standard linux process, similar to the procedure under bash.
-See <a class="reference internal" href="linux_installation.html#linux"><span class="std std-ref">Linux</span></a> for details.</p>
+See <a class="reference internal" href="linux_installation.html#linux"><span>Linux</span></a> for details.</p>
 </div>
 <div class="section" id="download-and-install-an-executable">
 <span id="precompiled"></span><h2>Download and Install an executable<a class="headerlink" href="#download-and-install-an-executable" title="Permalink to this headline">¶</a></h2>
@@ -1160,7 +1171,7 @@ atlas_windows_pre_1.0. Double click on the folder, and then on the atlas icon. T
 <div>&lt;all</div></blockquote>
 <p>to load the scripts.</p>
 <p>Note: using this option readline (command line tools) will not work. For this reason we recommend
-<a class="reference internal" href="#compiling"><span class="std std-ref">Compiling</span></a> the software yourself.</p>
+<a class="reference internal" href="#compiling"><span>Compiling</span></a> the software yourself.</p>
 </div>
 </div>
 
@@ -1174,7 +1185,7 @@ atlas_windows_pre_1.0. Double click on the folder, and then on the atlas icon. T
         <a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mac_installation.html" class="btn btn-neutral" title="Mac" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="mac_installation.html" class="btn btn-neutral float-right" title="Mac" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

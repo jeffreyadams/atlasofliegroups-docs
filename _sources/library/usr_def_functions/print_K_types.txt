@@ -10,7 +10,7 @@ print_K_types.at
 
 | :ref:`K_types.at<K_types.at>`
 | :ref:`basic.at<basic.at>`
-| :ref:`herm.at<herm.at>`
+| :ref:`hermitian.at<hermitian.at>`
 |
 
 
