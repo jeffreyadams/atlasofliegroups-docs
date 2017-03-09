@@ -24,7 +24,7 @@ So the infinitesimal character can be written as
 
 :math:`=\frac{1+\theta _x}{2}\lambda +\nu`
 
-since :math:`\nu` is normally fixed by :math:`\theta`
+since :math:`\nu` is normally fixed by :math:`\theta`.
 
 Recall that roughly the :math:`KGB` element ``x`` determines a
 :math:`G(\mathbb R)`-conjugacy class of Cartan subgroups :math:`H` and
@@ -49,12 +49,13 @@ induced representation
 :math:`Ind_B ^G (\chi \otimes \nu)`,  where :math:`\chi=\rho -\lambda`
 is in :math:`X^*`, since :math:`\lambda \in X^* + \rho`.
 
-So
- 
+So, we have a well defined pairing between :math:`X^*` and :math:`X_*`:
+
 :math:`\chi(exp(2\pi i\mu ^{\vee}))=exp(2\pi i(<\rho -\lambda ,
 \mu^{\vee}>)`, 
 
-with :math:`\mu^{\vee}\in \frac{1}{2}X_*`, is a well defined pairing between :math:`X^*` and :math:`X_*`.
+with :math:`\mu^{\vee}\in \frac{1}{2}X_*`.
+
 
 This pairing is the value of the character on the compact part of the
 Cartan and it equals :math:`\pm 1`
@@ -130,7 +131,7 @@ Since this set is finite, it makes sense to have an ``atlas`` command ``KGB`` th
 
 :math:`KGB \rightarrow \{x_0 , \dots ,x_{n-1} \}`
 
-Example: :math:`SL(2,\mathbb C)`.
+Example: :math:`SL(2,\mathbb R)`.
 ----------------------------------
 
 Let us start with the group :math:`G=SL(2,\mathbb C)`. For this group set 
@@ -141,7 +142,9 @@ Then :math:`(x_b)^2 =-Id \in Z(G)`
 
 The stabilizer in :math:`K` of this element is the diagonal torus 
 
-:math:`K^{\theta }_x =\{ diag(z,\frac{1]{z}) :z\in {\mathbb C}^x
+:math:`K^{\theta }_x =\{ diag(\left( \begin{array}{cc}
+z & 0 \\
+0 & \frac{1}{z} \end{array} \right)z,\frac{1]{z}) :z\in {\mathbb C}^{\times }
 \}\cong SO(2,\mathbb C)`
 
 So the real points of this groups is the compact real form
@@ -154,13 +157,13 @@ and the real form of :math:`G` with this maximal compact subgroup is
 In this setting it is better to think of :math:`G(\mathbb R)` as
 :math:`SU(1,1)`
 
-Then :math:`K\G/B` consists of three elements:
+Then, the :math:`K` orbits on:math:`G/B` consist of three elements:
 
 :math:`x_b = \left( \begin{array}{cc}
 i & 0 \\
-0 & -i \end{array} \right)`, :math:`-x_b=\left(\begin{array}{cc}
+0 & -i \end{array} \right) , -x_b=\left(\begin{array}{cc}
 -i & 0 \\
-0 & i \end{array} \right)` and :math:`u=\left(\begin{array}{cc}
+0 & i \end{array} \right) , u=\left(\begin{array}{cc}
 0 & 1 \\
 -1 & 0 \end{array} \right)`
 
@@ -175,43 +178,42 @@ we can replace :math:`u` by any element of the form
 
 :math:`\left(\begin{array}{cc}
 0 & z \\
--1/z & 0 \end{array} \right)`
+-\frac{1}{z} & 0 \end{array} \right)`
 
-So, :math:`K` acting on :math:`G/B` has three elements.
+So, :math:`K` acting on :math:`G/B` has three elements, representatives of the :math:`K` orbits on the conjugacy classes of Borel subgroups.
 
-Observation: this is the usual action of :math:`Sl(2,\mathbb C)` on
+Observation: This is the usual action of :math:`Sl(2,\mathbb C)` on
 the projective plane that gives three orbits, :math:`0`,
-:math:`\infty` and :math:`{\mathbb C}^x`.
+:math:`\infty` and :math:`{\mathbb C}^{\times }`.
 
-Now as representatives of Borels we have:
+Now as representatives of Borels we have
 
     :math:`x_b \mapsto B=\left( \begin{array}{cc}
 z & w \\
-0 & 1/z \end{array} \right)`, 
+0 & \frac{1}{z} \end{array} \right)`, 
 
-which is the fixed Borel.
+which is the Borel that was fixed at the begining. Now, taking an element that conjugates $x_b$ to its negative we have:
 
-     :math:`-x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha
-}(B)=\left( \begin{array}{cc} 
-z & 0 \\ w & 1/z \end{array} \right)`
+     :math:`-x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha }(B)=\left( \begin{array}{cc} 
+z & 0 \\ 
+w & 1/z \end{array} \right)`.
 
-and for :math:`u`, the element that conjugates :math:`u` to
-:math:`x_b` is :math:`g=\frac{1}{\sqrt{2}} \left(\begin{array}{cc}
-1 & -1 \\
-1 & 1 \end{array} \right)`. Then
+and for :math:`u`, the element that conjugates :math:`x_b` to
+:math:`u` is
 
-:math:`B''=gBg^{-1} =\left(\begin{array}{cc}
+     :math:`g=\frac{1}{\sqrt{2}} \left(\begin{array}{cc} 1 &
+ -1 \\ 1 & 1 \end{array} \right)`. Then
+
+     :math:`B''=gBg^{-1} =\left(\begin{array}{cc} cosh(z) & sinh(z) \\
+sinh(z) & cosh(z) \end{array} \right) + \frac{1}{2}
+\left(\begin{array}{cc} w & w \\ -w & w \end{array} \right)`
+
+One of the key points comes from just looking at the Cartan part of
+the last :math`B''`:
+
+    :math:`H''=\left(\begin{array}{cc}
 cosh(z) & sinh(z) \\
-sinh(z) & cosh(z) \end{array} \right)` + \frac{1}{2} \left(\begin{array}{cc}
-w & w \\
--w & w \end{array} \right)`
-
-One of the key points is that if you just look at the Cartan part of
-the last Borel:
-
-:math:`H''=\left(\begin{array}{cc}
-cosh(z) & sinh(z) \\
-sinh(z) & cosh(z) \end{array} \right)`
+sinh(z) & cosh(z) \end{array} \right)`.
 
 Since we fixed the Cartan involution :math:`{\theta }_{x_b} =
 diag(i,-i)`, it is acting on this Cartan by :math:`-1`. It acts
@@ -221,7 +223,7 @@ The real points of this Cartan is
 
     :math:`H''(\mathbb R)=\{ \pm Id \left(\begin{array}{cc}
 cosh(x) & sinh(x) \\
-sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \} \cong {\mathbb R}^x` 
+sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \} \cong {\mathbb R}^{\times }` 
 
 Which is the split Cartan in :math:SU(1,1)`.
 
