@@ -89,7 +89,7 @@ whose complexified maximal compact subgroup is :math:`K`.
 
 We are interested in the following space
 
-:math:`K\G/B=\{K-\text{orbits on the flag variety } G/B\}`
+:math:`K\\G/B=\{K-\text{orbits on the flag variety } G/B\}`
 :math:`=\{K \text{-conjugacy classes of Borel subgroups of } G\}`
 
 :math:`G/B` is a complex projective variety and :math:`K` is an
@@ -110,23 +110,23 @@ the :math:`K`-conjugacy class of the Borel subgroup.
 
 Now we check the map is well defined on :math:`K`-conjugcy classes of Borel subgroups:
 
-:math:`x=(gk)x_b (gk)^{-1} \rightarrow [k^{-1}(g^{-1}Bg)k]=[gBg]`
+:math:`x=(gk)x_b (gk)^{-1} \mapsto [k^{-1}(g^{-1}Bg)k]=[gBg]`
 
 On the right hand side the brackets mean :math:`K`-conjugacy class. So conjugating by :math:`K` we get the same conjugacy class of Borels.
 
 Definition.  Denote the above set by
 
-:Math:`\Chi=\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H`
+:Math:`\chi =\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H`
 
-(Note: this set is really denoted :math:`\Chi [x_b]` in other sources
-and :math`\Chi` is the collection of all the sets for all the base
+(Note: this set is really denoted :math:`\chi [x_b]` in other sources
+and :math:`\chi` is the collection of all the sets for all the base
 points. Which give all strong real forms of :math:`G`. The above set only has to do with one strong real form. 
 
 NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE:  "Algorithms
 for Representation Theory of Real Reductive Groups", by Adams and du
 Cloux, in www.liegroups.org/papers/.
 
-Since this set is finite, it makes sense to have an ``atlas`` command ``KGB`` that will give a finite list of the elements in :math:`\Chi` 
+Since this set is finite, it makes sense to have an ``atlas`` command ``KGB`` that will give a finite list of the elements in :math:`\chi` 
 
 :math:`KGB \rightarrow \{x_0 , \dots ,x_{n-1} \}`
 
