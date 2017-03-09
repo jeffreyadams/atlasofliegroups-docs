@@ -26,7 +26,7 @@ So the infinitesimal character can be written as
 
 since :math:`\nu` is normally fixed by :math:`\theta`
 
-Recall that roughly the :math:`KGB` element `x` determines a
+Recall that roughly the :math:`KGB` element ``x`` determines a
 :math:`G(\mathbb R)`-conjugacy class of Cartan subgroups :math:`H` and
 we denote by :math:`\theta _x` the Cartan involution of
 :math:`H(\mathbb R)`
@@ -89,7 +89,7 @@ whose complexified maximal compact subgroup is :math:`K`.
 
 We are interested in the following space
 
-:math:`K\\G/B=\{K-\text{orbits on the flag variety } G/B\}`
+:math:`K\G//B=\{K-\text{orbits on the flag variety } G/B\}`
 :math:`=\{K \text{-conjugacy classes of Borel subgroups of } G\}`
 
 :math:`G/B` is a complex projective variety and :math:`K` is an
@@ -130,4 +130,130 @@ Since this set is finite, it makes sense to have an ``atlas`` command ``KGB`` th
 
 :math:`KGB \rightarrow \{x_0 , \dots ,x_{n-1} \}`
 
+Example: :math:`SL(2,\mathbb C)`.
+----------------------------------
 
+Let us start with the group :math:`G=SL(2,\mathbb C)`. For this group set 
+
+:math:`x_b = diag(i,-i)`.
+
+Then :math:`(x_b)^2 =-Id \in Z(G)`
+
+The stabilizer in :math:`K` of this element is the diagonal torus 
+
+:math:`K^{\theta _x }=\{diag(z,\frac{1]{z}:z\in \{mathbb C}^x \cong
+SO(2,\mathbb C)`
+
+So the real points of this groups is the compact real form
+
+:math:`K(\mathbb R)=SO(2)`
+
+and the real form of :math:`G` with this maximal compact subgroup is
+:math:`G(\mathbb R)=SL(2,\mathbb R)`
+
+In this setting it is better to think of :math:`G(\mathbb R)` as
+:math:`SU(1,1)`
+
+Then :math:`K/G/B` consists of three elements:
+
+;math:`x_b = \left(\begin{array}{cc}
+i & 0 \\
+0 & -i \end{array} \right)`, :math:`-x_b=\left(\begin{array}{cc}
+-i & 0 \\
+0 & i \end{array} \right)` and :math:`\left(\begin{array}{cc}
+0 & 1 \\
+-1 & 0 \end{array} \right)`
+
+So, :math:`x_b` and :math:`-x_b` are all the elements of the cartan
+that are conjugate to :math:`x_b`. And there is only one other
+element, :math:`u`, up to conjugacy by :math:`H`, which is in the
+normalizer of the Cartan and is conjugate to :math:`x_b`.
+
+Note that :math:`x_b` and :math:`-x_b` are both fixed by conjugation
+by :math:`H` and :math:`H` acts by conjugation on :math:`u`. Moreover,
+we can replace :math:`u` by any element of the form
+
+:math:`\left(\begin{array}{cc}
+0 & z \\
+-1/z & 0 \end{array} \right)`
+
+So, :math:`K` acting on :math:`G/B` has three elements.
+
+Observation: this is the usual action of :math:`Sl(2,\mathbb C)` on
+the projective plane that gives three orbits, :math:`0`,
+:math:`\infty` and :math:`{\mathbb C}^x`.
+
+Now as representatives of Borels we have:
+
+    :math:`x_b \mapsto B=:math:`\left(\begin{array}{cc}
+z & w \\
+0 & 1/z \end{array} \right)`
+
+This is the fixed Borel.
+
+     :math:`-x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha
+}(B)=\left(\begin{array}{cc} 
+z & 0 \\ w & 1/z \end{array} \right)`
+
+and for :math:`u`, the element that conjugates :math:`u` to
+:math:`x_b` is :math:`g=\frac{1}{\sqrt{2}} \left(\begin{array}{cc}
+1 & -1 \\
+1 & 1 \end{array} \right)`. Then
+
+:math:`B''=gBg^{-1} =\left(\begin{array}{cc}
+cosh(z) & sinh(z) \\
+sinh(z) & cosh(z) \end{array} \right)` + \frac{1}{2} \left(\begin{array}{cc}
+w & w \\
+-w & w \end{array} \right)`
+
+One of the key points is that if you just look at the Cartan part of
+the last Borel:
+
+:math:`H''=\left(\begin{array}{cc}
+cosh(z) & sinh(z) \\
+sinh(z) & cosh(z) \end{array} \right)`
+
+Since we fixed the Cartan involution :math:`{\theta }_{x_b} = diag(i,-i), it is acting on this Cartan by :math:`-1`. It acts trivially on the diagonal Cartan.
+
+The real points of this Cartan is 
+
+    :math:`H''(\mathbb R)=\{ \pm Id \left(\begin{array}{cc}
+cosh(x) & sinh(x) \\
+sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \} \cong {\mathbb R}^x` 
+
+Which is the split Cartan in :math:SU(1,1)`.
+
+Now what happens is that, the pair :math:`(H'', {\theta }_{x_b} ) is conjugate under :math:`G` to the pair :math:`(H,  {\theta }_u )`.
+
+So, in other words, the first pair is how we normally think of this
+Cartans in the real group: we fix the Cartan involution and vary the
+Cartans. The second is how ``atlas`` thinks of it. That is, it fixes
+the Cartan and varies the Cartan involution which acts by :math:`-1` on the fixed diagonal Cartan. 
+
+In other words the Moral of the Story is that we always fix:
+:math:`H\subset B`, :math:`x_b`, :math:`\theta = int(x_b )` and :math:`K=G^{\theta }`
+
+And vary; :math:`x\in \chi`, :math:`{\theta }_x`
+
+And map :math:`\{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
+}_{x} ) | x\in \chi \}`
+
+So, rather than talking about the Cartan subgroups of :math:`G' with
+their action of the fixed theta up to conjugacy by ;math:`K`, we
+conjugate everything beck to the fixed :math:`H` and we vary the :math:`{\theta }_x`
+
+Similarly for the Borels we have:
+
+:math:`\{ (B',\theta ) \}/K \leftrightarrow \{ (B, {\theta }_{x} ) |
+x\in \chi \}`
+
+Another important point is that we now will be talking about
+:math:`(\mathfrak g , K_x )` modules as we vary :math:`x`
+ 
+The Kx are all conjugate to K but they are not equal. So the 
+:math:`(\mathfrak g , K_x )` are also conjugate but not equal.
+
+In other words if :math:`\pi' and :math:`{\pi }'` are
+:math:`(\mathfrak g , K_x )` and :math:`(\mathfrak g , K_{x'} )`
+modules respectively, then :math:`\pi \cong {\pi }'` if
+:math:`gxg^{-1} =x'`, :math:`{\pi }^g \cong {\pi}'`
