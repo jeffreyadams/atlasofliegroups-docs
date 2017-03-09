@@ -141,8 +141,8 @@ Then :math:`(x_b)^2 =-Id \in Z(G)`
 
 The stabilizer in :math:`K` of this element is the diagonal torus 
 
-:math:`K^{\theta _x }=\{diag(z,\frac{1]{z}:z\in \{mathbb C}^x \cong
-SO(2,\mathbb C)`
+:math:`K^{\theta }_x =\{ diag(z,\frac{1]{z}) :z\in {\mathbb C}^x
+\}\cong SO(2,\mathbb C)`
 
 So the real points of this groups is the compact real form
 
@@ -154,13 +154,13 @@ and the real form of :math:`G` with this maximal compact subgroup is
 In this setting it is better to think of :math:`G(\mathbb R)` as
 :math:`SU(1,1)`
 
-Then :math:`K/G/B` consists of three elements:
+Then :math:`K\G/B` consists of three elements:
 
-;math:`x_b = \left(\begin{array}{cc}
+:math:`x_b = \left( \begin{array}{cc}
 i & 0 \\
 0 & -i \end{array} \right)`, :math:`-x_b=\left(\begin{array}{cc}
 -i & 0 \\
-0 & i \end{array} \right)` and :math:`\left(\begin{array}{cc}
+0 & i \end{array} \right)` and :math:`u=\left(\begin{array}{cc}
 0 & 1 \\
 -1 & 0 \end{array} \right)`
 
@@ -185,14 +185,14 @@ the projective plane that gives three orbits, :math:`0`,
 
 Now as representatives of Borels we have:
 
-    :math:`x_b \mapsto B=:math:`\left(\begin{array}{cc}
+    :math:`x_b \mapsto B=\left( \begin{array}{cc}
 z & w \\
-0 & 1/z \end{array} \right)`
+0 & 1/z \end{array} \right)`, 
 
-This is the fixed Borel.
+which is the fixed Borel.
 
      :math:`-x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha
-}(B)=\left(\begin{array}{cc} 
+}(B)=\left( \begin{array}{cc} 
 z & 0 \\ w & 1/z \end{array} \right)`
 
 and for :math:`u`, the element that conjugates :math:`u` to
@@ -213,7 +213,9 @@ the last Borel:
 cosh(z) & sinh(z) \\
 sinh(z) & cosh(z) \end{array} \right)`
 
-Since we fixed the Cartan involution :math:`{\theta }_{x_b} = diag(i,-i), it is acting on this Cartan by :math:`-1`. It acts trivially on the diagonal Cartan.
+Since we fixed the Cartan involution :math:`{\theta }_{x_b} =
+diag(i,-i)`, it is acting on this Cartan by :math:`-1`. It acts
+trivially on the diagonal Cartan.
 
 The real points of this Cartan is 
 
@@ -223,10 +225,10 @@ sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \} \cong {\mathbb R}^x`
 
 Which is the split Cartan in :math:SU(1,1)`.
 
-Now what happens is that, the pair :math:`(H'', {\theta }_{x_b} ) is conjugate under :math:`G` to the pair :math:`(H,  {\theta }_u )`.
+Now what happens is that, the pair :math:`(H'', {\theta }_{x_b} )` is conjugate under :math:`G` to the pair :math:`(H,  {\theta }_u )`.
 
 So, in other words, the first pair is how we normally think of this
-Cartans in the real group: we fix the Cartan involution and vary the
+Cartan in the real group: we fix the Cartan involution and vary the
 Cartans. The second is how ``atlas`` thinks of it. That is, it fixes
 the Cartan and varies the Cartan involution which acts by :math:`-1` on the fixed diagonal Cartan. 
 
@@ -238,9 +240,9 @@ And vary; :math:`x\in \chi`, :math:`{\theta }_x`
 And map :math:`\{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
 }_{x} ) | x\in \chi \}`
 
-So, rather than talking about the Cartan subgroups of :math:`G' with
-their action of the fixed theta up to conjugacy by ;math:`K`, we
-conjugate everything beck to the fixed :math:`H` and we vary the :math:`{\theta }_x`
+So, rather than talking about the Cartan subgroups of :math:`G` with
+their action of the fixed theta up to conjugacy by :math:`K`, we
+conjugate everything back to the fixed :math:`H` and we vary the :math:`{\theta }_x`
 
 Similarly for the Borels we have:
 
@@ -250,10 +252,10 @@ x\in \chi \}`
 Another important point is that we now will be talking about
 :math:`(\mathfrak g , K_x )` modules as we vary :math:`x`
  
-The Kx are all conjugate to K but they are not equal. So the 
+The :math:`K_x` are all conjugate to K but they are not equal. So the 
 :math:`(\mathfrak g , K_x )` are also conjugate but not equal.
 
-In other words if :math:`\pi' and :math:`{\pi }'` are
+In other words if :math:`\pi` and :math:`\pi '` are
 :math:`(\mathfrak g , K_x )` and :math:`(\mathfrak g , K_{x'} )`
 modules respectively, then :math:`\pi \cong {\pi }'` if
 :math:`gxg^{-1} =x'`, :math:`{\pi }^g \cong {\pi}'`
