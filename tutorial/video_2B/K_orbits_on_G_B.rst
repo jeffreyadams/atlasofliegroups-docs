@@ -6,7 +6,7 @@ to discuss the theory a little bit.
 
 Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`
 
-where :math:`x \in K\G/B` which determines an involution :math:`\theta _x` of the Cartan.
+where :math:`x \in K\backslash G/B` which determines an involution :math:`\theta _x` of the Cartan.
 
 :math:`\lambda \in(X^* +\rho )/(1-{\theta }_x)X^*`
 
@@ -73,9 +73,11 @@ Borel :math:`B`. This avoids having to work with different Cartans
 and roots and different choices of identifications. We will be working
 with the same Cartan all the time.
 
-The choice of Cartan does not matter. We can think of :math:`H` as close to diagonal and :math:`B` upper triangular.
+The choice of Cartan does not matter. We can think of :math:`H` as
+close to diagonal and :math:`B` upper triangular.
 
-Now let us take a base point element :math:`x_b \in G`, so that :math:`x_b ^2 \in Z(G)`
+Now let us take a base point element :math:`x_b \in G`, so that
+:math:`x_b ^2 \in Z(G)`
 
 Attached to :math:`x_b` is the involution 
 
@@ -90,7 +92,7 @@ whose complexified maximal compact subgroup is :math:`K`.
 
 We are interested in the following space
 
-:math:`K\G//B=\{K-\text{orbits on the flag variety } G/B\}`
+:math:`K\backslash G/B=\{K-\text{orbits on the flag variety } G/B\}`
 :math:`=\{K \text{-conjugacy classes of Borel subgroups of } G\}`
 
 :math:`G/B` is a complex projective variety and :math:`K` is an
@@ -101,19 +103,22 @@ and the :math:`K`-orbits are the Borel subgroups up to conjugacy by
 
 Theorem
 
-:math:`K\G/B \leftrightarrow \{x\in Norm_G (H) | x{\backsim }_G
-x_b\}/H`
+:math:`K\backslash G/B \leftrightarrow \{x\in Norm_G (H) | x{\backsim
+}_G x_b\}/H`
 
 This is a finite set. The map is given as follows:
 
-If :math:`x=gx_b g^{-1}` then associate to x the element :math:`[g^{-1}Bg]`,
-the :math:`K`-conjugacy class of the Borel subgroup.
+If :math:`x=gx_b g^{-1}` then associate to x the element
+:math:`[g^{-1}Bg]`, the :math:`K`-conjugacy class of the Borel
+subgroup.
 
-Now we check the map is well defined on :math:`K`-conjugcy classes of Borel subgroups:
+Now we check the map is well defined on :math:`K`-conjugcy classes of
+Borel subgroups:
 
 :math:`x=(gk)x_b (gk)^{-1} \mapsto [k^{-1}(g^{-1}Bg)k]=[gBg]`
 
-On the right hand side the brackets mean :math:`K`-conjugacy class. So conjugating by :math:`K` we get the same conjugacy class of Borels.
+On the right hand side the brackets mean :math:`K`-conjugacy class. So
+conjugating by :math:`K` we get the same conjugacy class of Borels.
 
 Definition.  Denote the above set by
 
@@ -123,13 +128,14 @@ Definition.  Denote the above set by
 and :math:`\chi` is the collection of all the sets for all the base
 points. Which give all strong real forms of :math:`G`. The above set only has to do with one strong real form. 
 
-NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE:  "Algorithms
-for Representation Theory of Real Reductive Groups", by Adams and du
+NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE: "Algorithms for
+Representation Theory of Real Reductive Groups", by Adams and du
 Cloux, in www.liegroups.org/papers/.
 
-Since this set is finite, it makes sense to have an ``atlas`` command ``KGB`` that will give a finite list of the elements in :math:`\chi` 
+Since this set is finite, it makes sense to have an ``atlas`` command
+``KGB`` that will give a finite list of the elements in :math:`\chi`
 
-:math:`KGB \rightarrow \{x_0 , \dots ,x_{n-1} \}`
+:math:`KGB \leftrightarrow \{x_0 , \dots ,x_{n-1} \}`
 
 Example: :math:`SL(2,\mathbb R)`.
 ----------------------------------
@@ -138,16 +144,14 @@ Let us start with the group :math:`G=SL(2,\mathbb C)`. For this group set
 
 :math:`x_b = diag(i,-i)`.
 
-Then :math:`(x_b)^2 =-Id \in Z(G)`
+Then :math:`(x_b)^2 =-Id \in Z(G)`. The stabilizer in :math:`K` of this element is the diagonal torus 
 
-The stabilizer in :math:`K` of this element is the diagonal torus 
-
-:math:`K^{\theta }_x =\{ diag(\left( \begin{array}{cc}
+:math:`K^{\theta _x} =\{ (\left( \begin{array}{cc}
 z & 0 \\
-0 & \frac{1}{z} \end{array} \right)z,\frac{1]{z}) :z\in {\mathbb C}^{\times }
+0 & \frac{1}{z} \end{array} \right) :z\in {\mathbb C}^{\times }
 \}\cong SO(2,\mathbb C)`
 
-So the real points of this groups is the compact real form
+So the real points of this group is the compact real form
 
 :math:`K(\mathbb R)=SO(2)`
 
@@ -186,70 +190,88 @@ Observation: This is the usual action of :math:`Sl(2,\mathbb C)` on
 the projective plane that gives three orbits, :math:`0`,
 :math:`\infty` and :math:`{\mathbb C}^{\times }`.
 
-Now as representatives of Borels we have
+Now as representatives of Borels we have:
 
-    :math:`x_b \mapsto B=\left( \begin{array}{cc}
+:math:`x_b \mapsto B=\left( \begin{array}{cc}
 z & w \\
 0 & \frac{1}{z} \end{array} \right)`, 
 
-which is the Borel that was fixed at the begining. Now, taking an element that conjugates $x_b$ to its negative we have:
+which is the Borel that was fixed at the begining. Now, taking an
+element that conjugates $x_b$ to its negative we have:
 
-     :math:`-x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha }(B)=\left( \begin{array}{cc} 
-z & 0 \\ 
-w & 1/z \end{array} \right)`.
+:math:`-x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha }(B)=\left(
+\begin{array}{cc} z & 0 \\ w & 1/z \end{array} \right)`.
 
 and for :math:`u`, the element that conjugates :math:`x_b` to
 :math:`u` is
 
-     :math:`g=\frac{1}{\sqrt{2}} \left(\begin{array}{cc} 1 &
- -1 \\ 1 & 1 \end{array} \right)`. Then
+:math:`g=\frac{1}{\sqrt{2}} \left( \begin{array}{cc} 
+1 & -1 \\ 
+1 & 1 \end{array} \right)`. Then
 
-     :math:`B''=gBg^{-1} =\left(\begin{array}{cc} cosh(z) & sinh(z) \\
+:math:`B''=gBg^{-1} =\left(\begin{array}{cc} cosh(z) & sinh(z) \\
 sinh(z) & cosh(z) \end{array} \right) + \frac{1}{2}
 \left(\begin{array}{cc} w & w \\ -w & w \end{array} \right)`
 
 One of the key points comes from just looking at the Cartan part of
-the last :math`B''`:
+the last :math:`B''`:
 
-    :math:`H''=\left(\begin{array}{cc}
+:math:`H''=\left(\begin{array}{cc}
 cosh(z) & sinh(z) \\
 sinh(z) & cosh(z) \end{array} \right)`.
 
 Since we fixed the Cartan involution :math:`{\theta }_{x_b} =
-diag(i,-i)`, it is acting on this Cartan by :math:`-1`. It acts
-trivially on the diagonal Cartan.
+diag(i,-i)`, it is acting on this Cartan by :math:`-1` (i.e. by taking
+the inverse). It acts trivially on the diagonal Cartan.
 
-The real points of this Cartan is 
+The set of real points of this Cartan is 
 
-    :math:`H''(\mathbb R)=\{ \pm Id \left(\begin{array}{cc}
+:math:`H''(\mathbb R)=\{ \pm Id \left(\begin{array}{cc}
 cosh(x) & sinh(x) \\
 sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \} \cong {\mathbb R}^{\times }` 
 
-Which is the split Cartan in :math:SU(1,1)`.
+Which is the ususal way of writing split Cartan in :math:`SU(1,1)`.
 
-Now what happens is that, the pair :math:`(H'', {\theta }_{x_b} )` is conjugate under :math:`G` to the pair :math:`(H,  {\theta }_u )`.
+The point is that, the pair :math:`(H'', {\theta }_{x_b} )` is
+conjugate under :math:`G` to the pair :math:`(H, {\theta }_u )`. That
+is, to :math:`H` and the conjugation action of this element :math:`u`.
 
-So, in other words, the first pair is how we normally think of this
-Cartan in the real group: we fix the Cartan involution and vary the
-Cartans. The second is how ``atlas`` thinks of it. That is, it fixes
-the Cartan and varies the Cartan involution which acts by :math:`-1` on the fixed diagonal Cartan. 
+In other words, the first pair is how we normally think of this Cartan
+in the real group: we fix a real form (determined by the Cartan
+involution :math:`{\theta }_{x_b}`) and vary the Cartans within this
+real group. And in this case there are two Cartans, one compact and
+one split.
 
-In other words the Moral of the Story is that we always fix:
-:math:`H\subset B`, :math:`x_b`, :math:`\theta = int(x_b )` and :math:`K=G^{\theta }`
+The second pair is how ``atlas`` thinks of it. That is, it fixes the
+original (diagonal) Cartan and varies the Cartan involution which acts
+by :math:`-1` on the fixed diagonal Cartan.
 
-And vary; :math:`x\in \chi`, :math:`{\theta }_x`
+Moral of the Story 
+------------------- 
 
-And map :math:`\{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
-}_{x} ) | x\in \chi \}`
+To summarize, we always fix: :math:`H\subset B`, :math:`x_b`,
+:math:`\theta = int(x_b )` and :math:`K=G^{\theta }`;
+
+we vary 
+
+:math:`x\in \chi`, :math:`{\theta }_x`;
+
+and map 
+
+:math:`\{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
+}_{x} ) | x\in \chi \}`.
 
 So, rather than talking about the Cartan subgroups of :math:`G` with
-their action of the fixed theta up to conjugacy by :math:`K`, we
-conjugate everything back to the fixed :math:`H` and we vary the :math:`{\theta }_x`
+their action of the fixed :math:`\theta` up to conjugacy by :math:`K`, we
+conjugate everything back to the fixed :math:`H` and we vary the :math:`{\theta }_x`.
 
 Similarly for the Borels we have:
 
 :math:`\{ (B',\theta ) \}/K \leftrightarrow \{ (B, {\theta }_{x} ) |
 x\in \chi \}`
+
+Effect on :math:`(\mathfrak g , K_x)`.
+---------------------------------------
 
 Another important point is that we now will be talking about
 :math:`(\mathfrak g , K_x )` modules as we vary :math:`x`
@@ -257,7 +279,7 @@ Another important point is that we now will be talking about
 The :math:`K_x` are all conjugate to K but they are not equal. So the 
 :math:`(\mathfrak g , K_x )` are also conjugate but not equal.
 
-In other words if :math:`\pi` and :math:`\pi '` are
-:math:`(\mathfrak g , K_x )` and :math:`(\mathfrak g , K_{x'} )`
-modules respectively, then :math:`\pi \cong {\pi }'` if
+More precisely, if :math:`\pi` (resp. :math:`\pi '`) are
+:math:`(\mathfrak g , K_x )` (resp. :math:`(\mathfrak g , K_{x'} )`
+modules, then :math:`\pi \cong {\pi }'` if
 :math:`gxg^{-1} =x'`, :math:`{\pi }^g \cong {\pi}'`
