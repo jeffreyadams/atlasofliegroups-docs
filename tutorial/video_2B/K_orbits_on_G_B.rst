@@ -207,7 +207,9 @@ and for :math:`u`, the element that conjugates :math:`x_b` to
 
 :math:`g=\frac{1}{\sqrt{2}} \left( \begin{array}{cc} 
 1 & -1 \\ 
-1 & 1 \end{array} \right)`. Then
+1 & 1 \end{array} \right)`. 
+
+Then
 
 :math:`B''=gBg^{-1} =\left(\begin{array}{cc} cosh(z) & sinh(z) \\
 sinh(z) & cosh(z) \end{array} \right) + \frac{1}{2}
@@ -249,16 +251,18 @@ by :math:`-1` on the fixed diagonal Cartan.
 Moral of the Story 
 ------------------- 
 
-To summarize, we always fix: :math:`H\subset B`, :math:`x_b`,
-:math:`\theta = int(x_b )` and :math:`K=G^{\theta }`;
+To summarize, we always fix: 
+
+:math:`H\subset B`, \ \ \ x_b ,\ \ \ \theta = int(x_b )\ \ \
+\text{and} \ \ \ K=G^{\theta }`;
 
 we vary 
 
-:math:`x\in \chi`, :math:`{\theta }_x`;
+:math:`\ \ \ \ \ x\in \chi`  \ \ \  \text{and} \ \ \ {\theta }_x`;
 
 and map 
 
-:math:`\{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
+:math:`\ \ \ \ \{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
 }_{x} ) | x\in \chi \}`.
 
 So, rather than talking about the Cartan subgroups of :math:`G` with
