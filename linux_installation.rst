@@ -1,8 +1,11 @@
 .. _linux:
 
-######
-Linux
-######
+###################
+Linux (and Solaris)
+###################
+
+These instructions apply to most Linux distributions. They have 
+apply to Solaris with little or no change.
 
 *********************
 Download the software
@@ -51,7 +54,14 @@ Type::
     make
 
 You may need to edit the Makefile to change the line ``CXX = g++ -std=c++0x`` to something 
-different, depending on your system. This is specifyingi the C++ compiler.
+different, depending on your system. This is specifying the C++ compiler. 
+
+To find out your default compiler give the command::
+
+    g++ --version
+
+The software has been well tested with g++ versions 4.8 and above, and
+should compile correctly with at least version 4.4.
 
 You can choose turn on the verbose option by typing::
 
