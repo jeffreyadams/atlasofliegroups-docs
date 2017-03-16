@@ -91,7 +91,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../download_and_install.html">Download and Install</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../linux_installation.html">Linux (and Solaris)</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#download-the-software">Download the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../linux_installation.html#installation-from-source">Installation from Source</a></li>
 </ul>
@@ -196,6 +196,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/differential.html">The Character Differential</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/trivial_sl2r.html">Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../first_examples.html">First Examples of Representations.</a><ul class="current">
@@ -212,6 +213,10 @@
 <li class="toctree-l3"><a class="reference internal" href="blocks.html">Blocks of Representations</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href=""><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#discrete-series">Discrete Series</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example: <span class="math">\(SL(2,\mathbb R)\)</span>.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#moral-of-the-story">Moral of the Story</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#more-about">More About <span class="math">\(KGB\)</span></a></li>
 </ul>
 </li>
 </ul>
@@ -1003,7 +1008,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../source_library.html">Source Code Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../web_interface.html">Web Interface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../discussions.html">Discussions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discussions.html">Atlas Forum</a></li>
 </ul>
 
             
@@ -1042,7 +1047,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Comment on page</a>
+            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
             <!--<a href="../../_sources/tutorial/video_2B/K_orbits_on_G_B.txt" rel="nofollow"> View page source</a>-->
           
         
@@ -1070,7 +1075,7 @@
 <p>In order to explain how <code class="docutils literal"><span class="pre">atlas</span></code> uses the <code class="docutils literal"><span class="pre">KGB</span></code> machinery we need
 to discuss the theory a little bit.</p>
 <p>Recall that a parameter is a triple <span class="math">\(p=(x,\lambda, \nu)\)</span></p>
-<p>where <span class="math">\(x \in K\G/B\)</span> which determines an involution <span class="math">\(\theta _x\)</span> of the Cartan.</p>
+<p>where <span class="math">\(x \in K\backslash G/B\)</span> which determines an involution <span class="math">\(\theta _x\)</span> of the Cartan.</p>
 <p><span class="math">\(\lambda \in(X^* +\rho )/(1-{\theta }_x)X^*\)</span></p>
 <p><span class="math">\(\nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*
 \cong (X_{\mathbb Q} ^*)^{-\theta _x}\)</span></p>
@@ -1079,16 +1084,16 @@ to discuss the theory a little bit.</p>
 <p><span class="math">\(\gamma =\frac{1+\theta _x}{2}\lambda + \frac{1-\theta _x
 }{2}\nu\)</span></p>
 <p><span class="math">\(=\frac{1+\theta _x}{2}\lambda +\nu\)</span></p>
-<p>since <span class="math">\(\nu\)</span> is normally fixed by <span class="math">\(\theta\)</span></p>
-<p>Recall that roughly the <span class="math">\(KGB\)</span> element <cite>x</cite> determines a
+<p>since <span class="math">\(\nu\)</span> is normally fixed by <span class="math">\(\theta\)</span>.</p>
+<p>Recall that roughly the <span class="math">\(KGB\)</span> element <code class="docutils literal"><span class="pre">x</span></code> determines a
 <span class="math">\(G(\mathbb R)\)</span>-conjugacy class of Cartan subgroups <span class="math">\(H\)</span> and
 we denote by <span class="math">\(\theta _x\)</span> the Cartan involution of
 <span class="math">\(H(\mathbb R)\)</span></p>
 <p>Previously we focused on the case when <span class="math">\(\theta _x\)</span> is acting by
 <span class="math">\(-Id\)</span> This corresponded to the split Cartan <span class="math">\(H(\mathbb
 R)={\mathbb R}^{*n}\)</span></p>
-<p>In this case <span class="math">\(\lambda \in (X^* + \rho )/2X^*\)</span> gives a character of
-<span class="math">\(H(\mathbb R)^{\theta _x}=(\mathbb Z/2\mathbb Z)^n\)</span></p>
+<p>In this case <span class="math">\(\lambda \in (X^* + \rho )/2X^*\)</span> gives a character
+of <span class="math">\(H(\mathbb R)^{\theta _x}=(\mathbb Z/2\mathbb Z)^n\)</span></p>
 <p>So we get a character of the compact piece of the Cartan.</p>
 <p>Warning: we are assuming the <span class="math">\(\rho \in X^*\)</span>. Otherwise we need
 to go to a covering.</p>
@@ -1096,10 +1101,10 @@ to go to a covering.</p>
 induced representation</p>
 <p><span class="math">\(Ind_B ^G (\chi \otimes \nu)\)</span>,  where <span class="math">\(\chi=\rho -\lambda\)</span>
 is in <span class="math">\(X^*\)</span>, since <span class="math">\(\lambda \in X^* + \rho\)</span>.</p>
-<p>So</p>
+<p>So, we have a well defined pairing between <span class="math">\(X^*\)</span> and <span class="math">\(X_*\)</span>:</p>
 <p><span class="math">\(\chi(exp(2\pi i\mu ^{\vee}))=exp(2\pi i(&lt;\rho -\lambda ,
 \mu^{\vee}&gt;)\)</span>,</p>
-<p>with <span class="math">\(\mu^{\vee}\in \frac{1}{2}X_*\)</span>, is a well defined pairing between <span class="math">\(X^*\)</span> and <span class="math">\(X_*\)</span>.</p>
+<p>with <span class="math">\(\mu^{\vee}\in \frac{1}{2}X_*\)</span>.</p>
 <p>This pairing is the value of the character on the compact part of the
 Cartan and it equals <span class="math">\(\pm 1\)</span></p>
 <div class="section" id="discrete-series">
@@ -1111,8 +1116,10 @@ Cartan and it equals <span class="math">\(\pm 1\)</span></p>
 Borel <span class="math">\(B\)</span>. This avoids having to work with different Cartans
 and roots and different choices of identifications. We will be working
 with the same Cartan all the time.</p>
-<p>The choice of Cartan does not matter. We can think of <span class="math">\(H\)</span> as close to diagonal and <span class="math">\(B\)</span> upper triangular.</p>
-<p>Now let us take a base point element <span class="math">\(x_b \in G\)</span>, so that <span class="math">\(x_b ^2 \in Z(G)\)</span></p>
+<p>The choice of Cartan does not matter. We can think of <span class="math">\(H\)</span> as
+close to diagonal and <span class="math">\(B\)</span> upper triangular.</p>
+<p>Now let us take a base point element <span class="math">\(x_b \in G\)</span>, so that
+<span class="math">\(x_b ^2 \in Z(G)\)</span></p>
 <p>Attached to <span class="math">\(x_b\)</span> is the involution</p>
 <p><span class="math">\(\theta=int(x_b)\)</span>.</p>
 <p>By Cartan&#8217;s theory of real forms this gives a real form of <span class="math">\(G\)</span>.
@@ -1121,7 +1128,7 @@ subgroup of <span class="math">\(G(\mathbb R)\)</span>.</p>
 <p>In other words the real form obtained by the involution is the one
 whose complexified maximal compact subgroup is <span class="math">\(K\)</span>.</p>
 <p>We are interested in the following space</p>
-<p><span class="math">\(K\G/B=\{K-\text{orbits on the flag variety } G/B\}\)</span>
+<p><span class="math">\(K\backslash G/B=\{K-\text{orbits on the flag variety } G/B\}\)</span>
 <span class="math">\(=\{K \text{-conjugacy classes of Borel subgroups of } G\}\)</span></p>
 <p><span class="math">\(G/B\)</span> is a complex projective variety and <span class="math">\(K\)</span> is an
 algebraic group acting on it with finitely many orbits. And
@@ -1129,22 +1136,188 @@ algebraic group acting on it with finitely many orbits. And
 and the <span class="math">\(K\)</span>-orbits are the Borel subgroups up to conjugacy by
 <span class="math">\(K\)</span>.</p>
 <p>Theorem</p>
-<p><span class="math">\(K\G/B \leftrightarrow \{x\in Norm_G (H) | x{\backsim }_G
-x_b\}/H\)</span></p>
+<p><span class="math">\(K\backslash G/B \leftrightarrow \{x\in Norm_G (H) | x{\backsim
+}_G x_b\}/H\)</span></p>
 <p>This is a finite set. The map is given as follows:</p>
-<p>If <span class="math">\(x=gx_b g^{-1}\)</span> then associate to x the element <span class="math">\([g^{-1}Bg]\)</span>,
-the <span class="math">\(K\)</span>-conjugacy class of the Borel subgroup.</p>
-<p>Now we check the map is well defined on <span class="math">\(K\)</span>-conjugcy classes of Borel subgroups:</p>
-<p><span class="math">\(x=(gk)x_b (gk)^{-1} \rightarrow [k^{-1}(g^{-1}Bg)k]=[gBg]\)</span></p>
-<p>On the right hand side the brackets mean <span class="math">\(K\)</span>-conjugacy class. So conjugating by <span class="math">\(K\)</span> we get the same conjugacy class of Borels.</p>
+<p>If <span class="math">\(x=gx_b g^{-1}\)</span> then associate to x the element
+<span class="math">\([g^{-1}Bg]\)</span>, the <span class="math">\(K\)</span>-conjugacy class of the Borel
+subgroup.</p>
+<p>Now we check the map is well defined on <span class="math">\(K\)</span>-conjugcy classes of
+Borel subgroups:</p>
+<p><span class="math">\(x=(gk)x_b (gk)^{-1} \mapsto [k^{-1}(g^{-1}Bg)k]=[gBg]\)</span></p>
+<p>On the right hand side the brackets mean <span class="math">\(K\)</span>-conjugacy class. So
+conjugating by <span class="math">\(K\)</span> we get the same conjugacy class of Borels.</p>
 <p>Definition.  Denote the above set by</p>
-<p><span class="math">\(\Chi=\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H\)</span></p>
-<p>(Note: this set is really denoted <span class="math">\(\Chi [x_b]\)</span> in other sources
-and :math`Chi` is the collection of all the sets for all the base
-points. Which give all strong real forms of <span class="math">\(G\)</span>. The above set only has to do with one strong real form.</p>
-<p>NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE THE &#8220;Algorithms for Representation Theory of Real Reductive Groups, by Adams and du Cloux, in www.liegroups.org/papers/.</p>
-<p>Since this set is finite, it makes sense to have an <code class="docutils literal"><span class="pre">atlas</span></code> command <code class="docutils literal"><span class="pre">KGB</span></code> that will give a finite list of the elements in <span class="math">\(\Chi\)</span></p>
-<p><span class="math">\(KGB \rightarrow \{x_0 , \dots ,x_{n-1} \}\)</span></p>
+<p><span class="math">\(\mathcal X =\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H\)</span></p>
+<p>(Note: this set is really denoted <span class="math">\(\mathcal X [x_b]\)</span> in other
+sources and <span class="math">\(\mathcal X\)</span> is the collection of all the sets for
+all the base points. Which give all strong real forms of
+<span class="math">\(G\)</span>. The above set only has to do with one strong real form.</p>
+<p>NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE: &#8220;Algorithms for
+Representation Theory of Real Reductive Groups&#8221;, by Adams and du
+Cloux, in www.liegroups.org/papers/.</p>
+<p>Since this set is finite, it makes sense to have an <code class="docutils literal"><span class="pre">atlas</span></code> command
+<code class="docutils literal"><span class="pre">KGB</span></code> that will give a finite list of the elements in <span class="math">\(\mathcal X\)</span></p>
+<p><span class="math">\(KGB \leftrightarrow \{x_0 , \dots ,x_{n-1} \}\)</span></p>
+</div>
+<div class="section" id="example">
+<h2>Example: <span class="math">\(SL(2,\mathbb R)\)</span>.<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<p>Let us start with the group <span class="math">\(G=SL(2,\mathbb C)\)</span>. For this group set</p>
+<p><span class="math">\(x_b = diag(i,-i)\)</span>.</p>
+<p>Then <span class="math">\((x_b)^2 =-Id \in Z(G)\)</span>. The stabilizer in <span class="math">\(K\)</span> of this element is the diagonal torus</p>
+<p><span class="math">\(K^{\theta _x} =\{ (\left( \begin{array}{cc}
+z &amp; 0 \\
+0 &amp; \frac{1}{z} \end{array} \right) :z\in {\mathbb C}^{\times }
+\}\cong SO(2,\mathbb C)\)</span></p>
+<p>So the real points of this group is the compact real form</p>
+<p><span class="math">\(K(\mathbb R)=SO(2)\)</span></p>
+<p>and the real form of <span class="math">\(G\)</span> with this maximal compact subgroup is
+<span class="math">\(G(\mathbb R)=SL(2,\mathbb R)\)</span></p>
+<p>In this setting it is better to think of <span class="math">\(G(\mathbb R)\)</span> as
+<span class="math">\(SU(1,1)\)</span></p>
+<p>Then, the <span class="math">\(K\)</span> orbits on:math:<cite>G/B</cite> consist of three elements:</p>
+<p><span class="math">\(x_b = \left( \begin{array}{cc}
+i &amp; 0 \\
+0 &amp; -i \end{array} \right) , -x_b=\left(\begin{array}{cc}
+-i &amp; 0 \\
+0 &amp; i \end{array} \right) , u=\left(\begin{array}{cc}
+0 &amp; 1 \\
+-1 &amp; 0 \end{array} \right)\)</span></p>
+<p>So, <span class="math">\(x_b\)</span> and <span class="math">\(-x_b\)</span> are all the elements of the cartan
+that are conjugate to <span class="math">\(x_b\)</span>. And there is only one other
+element, <span class="math">\(u\)</span>, up to conjugacy by <span class="math">\(H\)</span>, which is in the
+normalizer of the Cartan and is conjugate to <span class="math">\(x_b\)</span>.</p>
+<p>Note that <span class="math">\(x_b\)</span> and <span class="math">\(-x_b\)</span> are both fixed by conjugation
+by <span class="math">\(H\)</span> and <span class="math">\(H\)</span> acts by conjugation on <span class="math">\(u\)</span>. Moreover,
+we can replace <span class="math">\(u\)</span> by any element of the form</p>
+<p><span class="math">\(\left(\begin{array}{cc}
+0 &amp; z \\
+-\frac{1}{z} &amp; 0 \end{array} \right)\)</span></p>
+<p>So, <span class="math">\(K\)</span> acting on <span class="math">\(G/B\)</span> has three elements, representatives of the <span class="math">\(K\)</span> orbits on the conjugacy classes of Borel subgroups.</p>
+<p>Observation: This is the usual action of <span class="math">\(Sl(2,\mathbb C)\)</span> on
+the projective plane that gives three orbits, <span class="math">\(0\)</span>,
+<span class="math">\(\infty\)</span> and <span class="math">\({\mathbb C}^{\times }\)</span>.</p>
+<p>Now as representatives of Borels we have:</p>
+<p><span class="math">\(x_b \mapsto B=\left( \begin{array}{cc}
+z &amp; w \\
+0 &amp; \frac{1}{z} \end{array} \right)\)</span>,</p>
+<p>which is the Borel that was fixed at the begining. Now, taking an
+element that conjugates $x_b$ to its negative we have:</p>
+<p><span class="math">\(-x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha }(B)=\left(
+\begin{array}{cc} z &amp; 0 \\ w &amp; 1/z \end{array} \right)\)</span>.</p>
+<p>and for <span class="math">\(u\)</span>, the element that conjugates <span class="math">\(x_b\)</span> to
+<span class="math">\(u\)</span> is</p>
+<p><span class="math">\(g=\frac{1}{\sqrt{2}} \left( \begin{array}{cc}
+1 &amp; -1 \\
+1 &amp; 1 \end{array} \right)\)</span>.</p>
+<p>Then</p>
+<p><span class="math">\(B''=gBg^{-1} =\left(\begin{array}{cc} cosh(z) &amp; sinh(z) \\
+sinh(z) &amp; cosh(z) \end{array} \right) + \frac{1}{2}
+\left(\begin{array}{cc} w &amp; w \\ -w &amp; w \end{array} \right)\)</span></p>
+<p>One of the key points comes from just looking at the Cartan part of
+the last <span class="math">\(B''\)</span>:</p>
+<p><span class="math">\(H''=\left(\begin{array}{cc}
+cosh(z) &amp; sinh(z) \\
+sinh(z) &amp; cosh(z) \end{array} \right)\)</span>.</p>
+<p>Since we fixed the Cartan involution <span class="math">\({\theta }_{x_b} =
+diag(i,-i)\)</span>, it is acting on this Cartan by <span class="math">\(-1\)</span> (i.e. by taking
+the inverse). It acts trivially on the diagonal Cartan.</p>
+<p>The set of real points of this Cartan is</p>
+<p><span class="math">\(H''(\mathbb R)=\{ \pm Id \left(\begin{array}{cc}
+cosh(x) &amp; sinh(x) \\
+sinh(x) &amp; cosh(x) \end{array} \right) | x\in \mathbb R \} \cong {\mathbb R}^{\times }\)</span></p>
+<p>Which is the ususal way of writing split Cartan in <span class="math">\(SU(1,1)\)</span>.</p>
+<p>The point is that, the pair <span class="math">\((H'', {\theta }_{x_b} )\)</span> is
+conjugate under <span class="math">\(G\)</span> to the pair <span class="math">\((H, {\theta }_u )\)</span>. That
+is, to <span class="math">\(H\)</span> and the conjugation action of this element <span class="math">\(u\)</span>.</p>
+<p>In other words, the first pair is how we normally think of this Cartan
+in the real group: we fix a real form (determined by the Cartan
+involution <span class="math">\({\theta }_{x_b}\)</span>) and vary the Cartans within this
+real group. And in this case there are two Cartans, one compact and
+one split.</p>
+<p>The second pair is how <code class="docutils literal"><span class="pre">atlas</span></code> thinks of it. That is, it fixes the
+original (diagonal) Cartan and varies the Cartan involution which acts
+by <span class="math">\(-1\)</span> on the fixed diagonal Cartan.</p>
+</div>
+<div class="section" id="moral-of-the-story">
+<h2>Moral of the Story<a class="headerlink" href="#moral-of-the-story" title="Permalink to this headline">¶</a></h2>
+<p>To summarize, we always fix:</p>
+<p><span class="math">\(\[H\subset B, x_b ,\theta = int(x_b ), \text{and}
+K=G^{\theta },\]\)</span></p>
+<p>noindent we vary</p>
+<p><span class="math">\(\[x\in \mathcal X , \text{and} \  {\theta }_x \]\)</span>;</p>
+<p>noindent and we map</p>
+<p><span class="math">\(\ \ \ \{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
+}_{x} ) | x\in \mathcal X \}\)</span>.</p>
+<p>So, rather than talking about the Cartan subgroups of <span class="math">\(G\)</span> with
+their action of the fixed <span class="math">\(\theta\)</span> up to conjugacy by <span class="math">\(K\)</span>, we
+conjugate everything back to the fixed <span class="math">\(H\)</span> and we vary the <span class="math">\({\theta }_x\)</span>.</p>
+<p>Similarly for the Borels we have:</p>
+<p><span class="math">\(\{ (B',\theta ) \}/K \leftrightarrow \{ (B, {\theta }_{x} ) |
+x\in \mathcal X \}\)</span></p>
+</div>
+<div class="section" id="effect-on-modules">
+<h2>Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.<a class="headerlink" href="#effect-on-modules" title="Permalink to this headline">¶</a></h2>
+<p>Another important point is that we now will be talking about
+<span class="math">\((\mathfrak g , K_x )\)</span> modules as we vary <span class="math">\(x\)</span>. The
+<span class="math">\(x`s are all conjugate to :math:`x_b\)</span>, but not literally equal.</p>
+<p>Therefore, the <span class="math">\(K_x\)</span>  are all conjugate to K but they are not
+equal. So, we get all these <span class="math">\((\mathfrak g , K_x )\)</span> modules that
+are all equivalent to <span class="math">\((\mathfrak g , {K_x}_b )\)</span> modules; and by
+using this conjugation we can conjugate them all back to a
+<span class="math">\((\mathfrak g , {K_x}_b )\)</span> module.</p>
+<p>More precisely, if <span class="math">\(\pi\)</span> (resp. <span class="math">\(\pi '\)</span>) are
+<span class="math">\((\mathfrak g , K_x )\)</span> (resp. <span class="math">\((\mathfrak g , K_{x'} )\)</span>
+modules, then <span class="math">\(\pi \cong {\pi }'\)</span> if there is :math`g in G`
+with</p>
+<p><span class="math">\(\ \ \ \ gxg^{-1} =x'\)</span>, <span class="math">\({\pi }^g \cong {\pi}'\)</span></p>
+<p>In this way, the software is varying <span class="math">\(x\)</span>, but in the end you can
+conjugate back to <span class="math">\(x_b\)</span>.</p>
+</div>
+<div class="section" id="more-about">
+<h2>More About <span class="math">\(KGB\)</span><a class="headerlink" href="#more-about" title="Permalink to this headline">¶</a></h2>
+<p>Again, we are fixing  <span class="math">\(x_b\)</span>, <span class="math">\(\mathcal X =\mathcal X (x_b )\)</span></p>
+<p>This gives a fixed <span class="math">\(K\)</span> and <span class="math">\(\mathcal X\)</span> parametrizes:</p>
+<p><span class="math">\(\ \ \ \ \  K\backslash G/B \leftrightarrow \mathcal X\)</span></p>
+<p>And in the software, this gives a finite set of parameters:</p>
+<p><span class="math">\(\ \ \ \ \ KGB= \mathcal X = \{x_0, \ldots x_{n-1} \}\)</span></p>
+<p>Now the Weyl group <span class="math">\(W\)</span> acts naturally by conjugation
+:math:<a href="#id1"><span class="problematic" id="id2">`</span></a>mathcal X <a href="#id3"><span class="problematic" id="id4">`</span></a>. Then,</p>
+<p><span class="math">\(\mathcal X /W \leftrightarrow\)</span> conjugacy classes of Cartan
+subgroups.  This is how we associate a Cartan to an element
+<span class="math">\(x\)</span>. Namely, via this map from <span class="math">\(\mathcal X\)</span>.</p>
+<p>Moreover</p>
+<p><span class="math">\(Stab_W (x) \simeq W(K,H) \simeq W(G(\mathbb R ), H(\mathbb
+R))\)</span>,</p>
+<p>This is the rational Weyl group of the real form of the group with
+respect to the real Cartan, Which in the $theta$ world we think of it
+as <span class="math">\(W(K,H)\)</span>.</p>
+<p>Finally, there is a map <span class="math">\(\rho : \mathcal X \rightarrow {\mathcal
+I}_W\)</span> (involutions in <span class="math">\(W\)</span>). The map is the obvious one:
+<span class="math">\(x\)</span> is an element in the normalizer of <span class="math">\(H\)</span> so we take its
+image in the Weyl group and that is an involution. Taking the conjugacy classes of involutions in W gives a map:</p>
+<p><span class="math">\(\mathcal I /W \leftrightarrow \text{conjugacy classes of
+Cartans in quasisplit group.}\)</span></p>
+<p>The map <span class="math">\(\rho\)</span> is not necessarily surjective. But it is
+surjective if the group is quasisplit. So this <span class="math">\(\mathcal I\)</span> is
+telling us about Cartans of the quasisplit form.</p>
+<p>The Algorithms paper has a picture of the <span class="math">\(KGB\)</span> space for
+<span class="math">\(Sp(4,R)\)</span>. They are 11 elements in the space. The picture gives
+the fibers of elements in <span class="math">\(KGB\)</span> that go to the same conjugacy
+class of involutions and in turn to the same CartanFour elements get
+mapped to the identity involution which corresponds to the compact
+Cartan; two are mapped to the involutions from the short root
+reflections <span class="math">\(s_{\alpha _1}\)</span> and <span class="math">\(s_{\alpha _2}\)</span>
+corresponding to the intermediate Cartan isomorphic to <span class="math">\({\mathbb
+C}^\times `; four are mapped to the long root reflections
+:math:`s_{\beta _1}\)</span>, <span class="math">\(s_{\beta _2}\)</span>, which correspond to the
+Cartan isomorphic to <span class="math">\(S^1 \times {\mathbb R}^\times\)</span>; and one
+element is mapped to <span class="math">\(-Id\)</span>, corresponding to the split Cartan.</p>
+<p>In terms of representations, looking at each fiber of <span class="math">\(KGB\)</span>
+elements corresponding to a given Cartan, will give us representations
+attached to that Cartan. For example all the representations attached
+to the split Cartan correspond to the last element <span class="math">\(x_10\)</span> which
+is the fiber above the involution <span class="math">\(-1\)</span>, etc.</p>
 </div>
 </div>
 
