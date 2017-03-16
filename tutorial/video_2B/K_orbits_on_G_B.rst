@@ -254,12 +254,12 @@ Moral of the Story
 
 To summarize, we always fix: 
 
-:math:`:math: `H\subset B, x_b ,\theta = int(x_b ), \text{and}
-K=G^{\theta },``
+:math:`\[H\subset B, x_b ,\theta = int(x_b ), \text{and}
+K=G^{\theta },\]`
 
 \noindent we vary 
 
-:math:`\ \ \ \ x\in \mathcal X, \text{and} {\theta }_x`;
+:math:`\[x\in \mathcal X , \text{and} \  {\theta }_x \]`;
 
 \noindent and we map 
 
@@ -338,3 +338,22 @@ Cartans in quasisplit group.}`
 The map :math:`\rho` is not necessarily surjective. But it is
 surjective if the group is quasisplit. So this :math:`\mathcal I` is
 telling us about Cartans of the quasisplit form.
+
+The Algorithms paper has a picture of the :math:`KGB` space for
+:math:`Sp(4,R)`. They are 11 elements in the space. The picture gives
+the fibers of elements in :math:`KGB` that go to the same conjugacy
+class of involutions and in turn to the same CartanFour elements get
+mapped to the identity involution which corresponds to the compact
+Cartan; two are mapped to the involutions from the short root
+reflections :math:`s_{\alpha _1}` and :math:`s_{\alpha _2}`
+corresponding to the intermediate Cartan isomorphic to :math:`{\mathbb
+C}^\times `; four are mapped to the long root reflections
+:math:`s_{\beta _1}`, :math:`s_{\beta _2}`, which correspond to the
+Cartan isomorphic to :math:`S^1 \times {\mathbb R}^\times`; and one
+element is mapped to :math:`-Id`, corresponding to the split Cartan.
+
+In terms of representations, looking at each fiber of :math:`KGB`
+elements corresponding to a given Cartan, will give us representations
+attached to that Cartan. For example all the representations attached
+to the split Cartan correspond to the last element :math:`x_10` which
+is the fiber above the involution :math:`-1`, etc.
