@@ -254,16 +254,16 @@ Moral of the Story
 
 To summarize, we always fix: 
 
-:math:`H\subset B`, \ \ \ x_b ,\ \ \ \theta = int(x_b )\ \ \
-\text{and} \ \ \ K=G^{\theta }`;
+:math:`:math: `H\subset B, x_b ,\theta = int(x_b ), \text{and}
+K=G^{\theta },``
 
-we vary 
+\noindent we vary 
 
-:math:`\ \ \ \ \ x\in \mathcal X`  \ \ \  \text{and} \ \ \ {\theta }_x`;
+:math:`\ \ \ \ x\in \mathcal X, \text{and} {\theta }_x`;
 
-and we map 
+\noindent and we map 
 
-:math:`\ \ \ \ \{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
+:math:`\ \ \ \{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
 }_{x} ) | x\in \mathcal X \}`.
 
 So, rather than talking about the Cartan subgroups of :math:`G` with
@@ -282,7 +282,7 @@ Another important point is that we now will be talking about
 :math:`(\mathfrak g , K_x )` modules as we vary :math:`x`. The
 :math:`x`s are all conjugate to :math:`x_b`, but not literally equal.
  
-Therefore, the :math:`K_x`s are all conjugate to K but they are not
+Therefore, the :math:`K_x`  are all conjugate to K but they are not
 equal. So, we get all these :math:`(\mathfrak g , K_x )` modules that
 are all equivalent to :math:`(\mathfrak g , {K_x}_b )` modules; and by
 using this conjugation we can conjugate them all back to a
@@ -309,7 +309,7 @@ This gives a fixed :math:`K` and :math:`\mathcal X` parametrizes:
 
 And in the software, this gives a finite set of parameters:
 
-:math:` \ \ \ \ \ KGB= \mathcal X = \{x_0, \ldots x_{n-1} \}`
+:math:`\ \ \ \ \ KGB= \mathcal X = \{x_0, \ldots x_{n-1} \}`
 
 Now the Weyl group :math:`W` acts naturally by conjugation
 :math:`\mathcal X `. Then,
@@ -335,6 +335,6 @@ image in the Weyl group and that is an involution. Taking the conjugacy classes 
 :math:`\mathcal I /W \leftrightarrow \text{conjugacy classes of
 Cartans in quasisplit group.}`
 
-The map :math:`rho` is not necessarily surjective. But it is
+The map :math:`\rho` is not necessarily surjective. But it is
 surjective if the group is quasisplit. So this :math:`\mathcal I` is
 telling us about Cartans of the quasisplit form.
