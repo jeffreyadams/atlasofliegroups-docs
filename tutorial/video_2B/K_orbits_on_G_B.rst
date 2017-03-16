@@ -35,8 +35,8 @@ Previously we focused on the case when :math:`\theta _x` is acting by
 :math:`-Id` This corresponded to the split Cartan :math:`H(\mathbb
 R)={\mathbb R}^{*n}`
 
-In this case :math:`\lambda \in (X^* + \rho )/2X^*` gives a character of
-:math:`H(\mathbb R)^{\theta _x}=(\mathbb Z/2\mathbb Z)^n`
+In this case :math:`\lambda \in (X^* + \rho )/2X^*` gives a character
+of :math:`H(\mathbb R)^{\theta _x}=(\mathbb Z/2\mathbb Z)^n`
 
 So we get a character of the compact piece of the Cartan. 
 
@@ -122,18 +122,19 @@ conjugating by :math:`K` we get the same conjugacy class of Borels.
 
 Definition.  Denote the above set by
 
-:Math:`\chi =\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H`
+:Math:`\mathcal X =\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H`
 
-(Note: this set is really denoted :math:`\chi [x_b]` in other sources
-and :math:`\chi` is the collection of all the sets for all the base
-points. Which give all strong real forms of :math:`G`. The above set only has to do with one strong real form. 
+(Note: this set is really denoted :math:`\mathcal X [x_b]` in other
+sources and :math:`\mathcal X` is the collection of all the sets for
+all the base points. Which give all strong real forms of
+:math:`G`. The above set only has to do with one strong real form.
 
 NOTE: FOR MORE INFORMATION ON STRONG REAL FORMS SEE: "Algorithms for
 Representation Theory of Real Reductive Groups", by Adams and du
 Cloux, in www.liegroups.org/papers/.
 
 Since this set is finite, it makes sense to have an ``atlas`` command
-``KGB`` that will give a finite list of the elements in :math:`\chi`
+``KGB`` that will give a finite list of the elements in :math:`\mathcal X`
 
 :math:`KGB \leftrightarrow \{x_0 , \dots ,x_{n-1} \}`
 
@@ -258,12 +259,12 @@ To summarize, we always fix:
 
 we vary 
 
-:math:`\ \ \ \ \ x\in \chi`  \ \ \  \text{and} \ \ \ {\theta }_x`;
+:math:`\ \ \ \ \ x\in \mathcal X`  \ \ \  \text{and} \ \ \ {\theta }_x`;
 
-and map 
+and we map 
 
 :math:`\ \ \ \ \{ (H',\theta ) \}/K \leftrightarrow \{ (H, {\theta
-}_{x} ) | x\in \chi \}`.
+}_{x} ) | x\in \mathcal X \}`.
 
 So, rather than talking about the Cartan subgroups of :math:`G` with
 their action of the fixed :math:`\theta` up to conjugacy by :math:`K`, we
@@ -272,18 +273,68 @@ conjugate everything back to the fixed :math:`H` and we vary the :math:`{\theta 
 Similarly for the Borels we have:
 
 :math:`\{ (B',\theta ) \}/K \leftrightarrow \{ (B, {\theta }_{x} ) |
-x\in \chi \}`
+x\in \mathcal X \}`
 
-Effect on :math:`(\mathfrak g , K_x)`.
----------------------------------------
+Effect on :math:`(\mathfrak g , K_x)` modules.
+-----------------------------------------------
 
 Another important point is that we now will be talking about
-:math:`(\mathfrak g , K_x )` modules as we vary :math:`x`
+:math:`(\mathfrak g , K_x )` modules as we vary :math:`x`. The
+:math:`x`s are all conjugate to :math:`x_b`, but not literally equal.
  
-The :math:`K_x` are all conjugate to K but they are not equal. So the 
-:math:`(\mathfrak g , K_x )` are also conjugate but not equal.
+Therefore, the :math:`K_x`s are all conjugate to K but they are not
+equal. So, we get all these :math:`(\mathfrak g , K_x )` modules that
+are all equivalent to :math:`(\mathfrak g , {K_x}_b )` modules; and by
+using this conjugation we can conjugate them all back to a
+:math:`(\mathfrak g , {K_x}_b )` module.
 
 More precisely, if :math:`\pi` (resp. :math:`\pi '`) are
 :math:`(\mathfrak g , K_x )` (resp. :math:`(\mathfrak g , K_{x'} )`
-modules, then :math:`\pi \cong {\pi }'` if
-:math:`gxg^{-1} =x'`, :math:`{\pi }^g \cong {\pi}'`
+modules, then :math:`\pi \cong {\pi }'` if there is :math`g \in G`
+with
+
+:math:`\ \ \ \ gxg^{-1} =x'`, \ \ \ \ :math:`{\pi }^g \cong {\pi}'`
+
+In this way, the software is varying :math:`x`, but in the end you can
+conjugate back to :math:`x_b`.
+
+More About :math:`KGB`
+-----------------------
+
+Again, we are fixing  :math:`x_b`, :math:`\mathcal X =\mathcal X (x_b )`
+
+This gives a fixed :math:`K` and :math:`\mathcal X` parametrizes:
+
+:math:`\ \ \ \ \  K\backslash G/B \leftrightarrow \mathcal X`
+
+And in the software, this gives a finite set of parameters:
+
+:math:` \ \ \ \ \ KGB= \mathcal X = \{x_0, \ldots x_{n-1} \}`
+
+Now the Weyl group :math:`W` acts naturally by conjugation
+:math:`\mathcal X `. Then,
+
+:math:`\mathcal X /W \leftrightarrow` conjugacy classes of Cartan
+subgroups.  This is how we associate a Cartan to an element
+:math:`x`. Namely, via this map from :math:`\mathcal X`.
+
+Moreover
+
+:math:`Stab_W (x) \simeq W(K,H) \simeq W(G(\mathbb R ), H(\mathbb
+R))`,
+
+This is the rational Weyl group of the real form of the group with
+respect to the real Cartan, Which in the $\theta$ world we think of it
+as :math:`W(K,H)`.
+
+Finally, there is a map :math:`\rho : \mathcal X \rightarrow {\mathcal
+I}_W` (involutions in :math:`W`). The map is the obvious one:
+:math:`x` is an element in the normalizer of :math:`H` so we take its
+image in the Weyl group and that is an involution. Taking the conjugacy classes of involutions in W gives a map:
+
+:math:`\mathcal I /W \leftrightarrow \text{conjugacy classes of
+Cartans in quasisplit group.}`
+
+The map :math:`rho` is not necessarily surjective. But it is
+surjective if the group is quasisplit. So this :math:`\mathcal I` is
+telling us about Cartans of the quasisplit form.
