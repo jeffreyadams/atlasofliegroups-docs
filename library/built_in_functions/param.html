@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
         <link rel="next" title="More Advanced Functions" href="more_advanced.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -391,7 +400,7 @@
 <li class="toctree-l4"><a class="reference internal" href="kgb_related.html#status3">status</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Parameter, KL, print, etc.</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Parameter, KL, print, etc.</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#param">param</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#operator-4">%</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#real-form">real_form</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,44 +1046,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
-      
-    <li>Parameter, KL, print, etc.</li>
+        
+      <li>Parameter, KL, print, etc.</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/built_in_functions/param.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/built_in_functions/param.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="more_advanced.html" class="btn btn-neutral float-right" title="More Advanced Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="kgb_related.html" class="btn btn-neutral" title="KGB Related" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="more_advanced.html" class="btn btn-neutral float-right" title="More Advanced Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="kgb_related.html" class="btn btn-neutral float-right" title="KGB Related" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="parameter-kl-print-etc">
 <h1>Parameter, KL, print, etc.<a class="headerlink" href="#parameter-kl-print-etc" title="Permalink to this headline">¶</a></h1>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="33%" />
 <col width="67%" />
@@ -1083,73 +1107,73 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#param2"><span>param</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#param2"><span class="std std-ref">param</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt,vec,ratvec-&gt;Param)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#operator-4"><span>%</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#operator-4"><span class="std std-ref">%</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;KGBElt,vec,ratvec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#real-form3"><span>real_form</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#real-form3"><span class="std std-ref">real_form</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;RealForm)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#infinitesimal-character"><span>infinitesimal_character</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#infinitesimal-character"><span class="std std-ref">infinitesimal_character</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;ratvec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#is-standard"><span>is_standard</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#is-standard"><span class="std std-ref">is_standard</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#is-zero"><span>is_zero</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#is-zero"><span class="std std-ref">is_zero</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#is-final"><span>is_final</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#is-final"><span class="std std-ref">is_final</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#dominant"><span>dominant</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#dominant"><span class="std std-ref">dominant</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;Param)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#id7"><span>=</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#id7"><span class="std std-ref">=</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param,Param-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#cross2"><span>cross</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#cross2"><span class="std std-ref">cross</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,Param-&gt;Param)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#cayley2"><span>Cayley</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#cayley2"><span class="std std-ref">Cayley</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,Param-&gt;Param)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#inv-cayley"><span>inv_Cayley</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#inv-cayley"><span class="std std-ref">inv_Cayley</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,Param-&gt;Param)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#cross3"><span>cross</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#cross3"><span class="std std-ref">cross</span></a></td>
 <td><code class="docutils literal"><span class="pre">(vec,Param-&gt;Param)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#cayley3"><span>Cayley</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#cayley3"><span class="std std-ref">Cayley</span></a></td>
 <td><code class="docutils literal"><span class="pre">(vec,Param-&gt;Param)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twist2"><span>twist</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#twist2"><span class="std std-ref">twist</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;Param)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#orientation-nr"><span>orientation_nr</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#orientation-nr"><span class="std std-ref">orientation_nr</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#reducibility-points"><span>reducibility_points</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#reducibility-points"><span class="std std-ref">reducibility_points</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;[rat])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#print-block"><span>print_block</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#print-block"><span class="std std-ref">print_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#block3"><span>block</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#block3"><span class="std std-ref">block</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;[Param],int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#partial-block"><span>partial_block</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#partial-block"><span class="std std-ref">partial_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;[Param])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#length2"><span>length</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#length2"><span class="std std-ref">length</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#kl-block"><span>KL_block</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#kl-block"><span class="std std-ref">KL_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;[Param],int,mat,[vec],vec,vec,mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#partial-kl-block"><span>partial_KL_block</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#partial-kl-block"><span class="std std-ref">partial_KL_block</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Param-&gt;[Param],mat,[vec],vec,vec,mat)</span></code></td>
 </tr>
 </tbody>
@@ -1388,15 +1412,18 @@ print_W_graph: (Block-&gt;):</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="more_advanced.html" class="btn btn-neutral float-right" title="More Advanced Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="more_advanced.html" class="btn btn-neutral float-right" title="More Advanced Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="kgb_related.html" class="btn btn-neutral float-right" title="KGB Related" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="kgb_related.html" class="btn btn-neutral" title="KGB Related" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1430,7 +1457,8 @@ print_W_graph: (Block-&gt;):</p>
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

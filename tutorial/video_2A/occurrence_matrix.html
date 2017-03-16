@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
         <link rel="next" title="Parameters" href="parameters.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -183,7 +192,7 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Occurrence Matrices</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Occurrence Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="parameters.html">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="parameters.html#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="parameters.html#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../coordinates_characters.html">Coordinates and Characters</a> &raquo;</li>
-      
-    <li>Occurrence Matrices</li>
+        
+      <li>Occurrence Matrices</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_2A/occurrence_matrix.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_2A/occurrence_matrix.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../coordinates_characters.html" class="btn btn-neutral" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="occurrence-matrices">
 <h1>Occurrence Matrices<a class="headerlink" href="#occurrence-matrices" title="Permalink to this headline">¶</a></h1>
@@ -1081,38 +1105,38 @@ real form in the inner class we are using. This can be misleading unless we
 understand what the software is doing. This is because <code class="docutils literal"><span class="pre">atlas</span></code> is
 implicitly assuming that you are asking for the number of Cartans in
 the inner class of these real forms. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SO(5,4)
-Identifier G: RealForm
-atlas&gt; nr_of_Cartan_classes (G)
-Value: 9
-atlas&gt; G:=SO(9,0)
-Value: compact connected real group with Lie algebra &#39;so(9)&#39;
-atlas&gt; nr_of_Cartan_classes (G)
-Value: 9
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SO</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">nr_of_Cartan_classes</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">9</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G</span><span class="p">:</span><span class="o">=</span><span class="n">SO</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">compact</span> <span class="n">connected</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;so(9)&#39;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">nr_of_Cartan_classes</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">9</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So, to find out which Cartans appear in each individual real form there is an <code class="docutils literal"><span class="pre">occurrence</span> <span class="pre">matrix</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; occurrence_matrix (G)
-Value:
-| 1, 0, 0, 0, 0, 0, 0, 0, 0 |
-| 1, 0, 1, 0, 0, 0, 0, 0, 0 |
-| 1, 1, 1, 1, 0, 0, 0, 0, 0 |
-| 1, 1, 1, 1, 0, 1, 0, 1, 0 |
-| 1, 1, 1, 1, 1, 1, 1, 1, 1 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">occurrence_matrix</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>Which again, is the same matrix for all the real forms in the inner class.</p>
 <p>This matrix has 9 columns for all the Cartan classes and 5 rows for all the
 real forms of the group of type <code class="docutils literal"><span class="pre">B4</span></code>. Recall that the real forms for
 this inner class can be listed as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for H in real_forms (G) do prints(H) od
-compact connected real group with Lie algebra &#39;so(9)&#39;
-disconnected real group with Lie algebra &#39;so(8,1)&#39;
-disconnected real group with Lie algebra &#39;so(7,2)&#39;
-disconnected real group with Lie algebra &#39;so(6,3)&#39;
-disconnected split real group with Lie algebra &#39;so(5,4)&#39;
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">H</span> <span class="ow">in</span> <span class="n">real_forms</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">H</span><span class="p">)</span> <span class="n">od</span>
+<span class="n">compact</span> <span class="n">connected</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;so(9)&#39;</span>
+<span class="n">disconnected</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;so(8,1)&#39;</span>
+<span class="n">disconnected</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;so(7,2)&#39;</span>
+<span class="n">disconnected</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;so(6,3)&#39;</span>
+<span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;so(5,4)&#39;</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Remember that we type <code class="docutils literal"><span class="pre">void:</span></code> to avoid getting the empty values <code class="docutils literal"><span class="pre">[(),(),(),(),()]</span></code></p>
@@ -1125,15 +1149,18 @@ appears in the split real form.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="parameters.html" class="btn btn-neutral float-right" title="Parameters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../coordinates_characters.html" class="btn btn-neutral float-right" title="Coordinates and Characters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../coordinates_characters.html" class="btn btn-neutral" title="Coordinates and Characters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1167,7 +1194,8 @@ appears in the split real form.</p>
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

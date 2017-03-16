@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="index.html"/>
         <link rel="up" title="Getting Started" href="getting_started.html"/>
         <link rel="next" title="Help with git" href="help_git.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="about_us.html">About Us</a></li>
@@ -110,7 +119,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Run atlas</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Run atlas</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#get-atlas-running">Get atlas running</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#load-scripts">Load scripts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#quit-atlas">Quit atlas</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,62 +1046,75 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
           <li><a href="getting_started.html">Getting Started</a> &raquo;</li>
-      
-    <li>Run atlas</li>
+        
+      <li>Run atlas</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="_sources/run_atlas.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="_sources/run_atlas.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="help_git.html" class="btn btn-neutral float-right" title="Help with git" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="windows_installation.html" class="btn btn-neutral" title="Windows" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="help_git.html" class="btn btn-neutral float-right" title="Help with git" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="windows_installation.html" class="btn btn-neutral float-right" title="Windows" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="run-atlas">
 <span id="id1"></span><h1>Run atlas<a class="headerlink" href="#run-atlas" title="Permalink to this headline">¶</a></h1>
-<p>This document will tell you how to start running atlas after you have done <a class="reference internal" href="download_and_install.html#download-and-install"><span>Download and Install</span></a>. These instructions work best for the latest version.</p>
+<p>This document will tell you how to start running atlas after you have done <a class="reference internal" href="download_and_install.html#download-and-install"><span class="std std-ref">Download and Install</span></a>. These instructions work best for the latest version.</p>
 <div class="section" id="get-atlas-running">
 <h2>Get atlas running<a class="headerlink" href="#get-atlas-running" title="Permalink to this headline">¶</a></h2>
 <p>Let&#8217;s say you compiled the software in a directory atlasofliegroups, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. It should contain the executable files Fokko and atlas, and subdirectories &#8220;messages&#8221; (help files for Fokko) and &#8220;atlas-scripts&#8221; (auxiliary and help files for atlas).</p>
 <p>Once you are there, depending on your setting, do either:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>./atlas --path=atlas-scripts
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
 </pre></div>
 </div>
 <p>or:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
 </pre></div>
 </div>
 <p>You should then see something like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>This is &#39;atlas&#39; (version 0.6, axis language version 0.9),
-the Atlas of Lie Groups and Representations interpreter,
-compiled on Jan 19 2016 at 02:21:55.   http://www.liegroups.org/
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="s1">&#39;atlas&#39;</span> <span class="p">(</span><span class="n">version</span> <span class="mf">0.6</span><span class="p">,</span> <span class="n">axis</span> <span class="n">language</span> <span class="n">version</span> <span class="mf">0.9</span><span class="p">),</span>
+<span class="n">the</span> <span class="n">Atlas</span> <span class="n">of</span> <span class="n">Lie</span> <span class="n">Groups</span> <span class="ow">and</span> <span class="n">Representations</span> <span class="n">interpreter</span><span class="p">,</span>
+<span class="n">compiled</span> <span class="n">on</span> <span class="n">Jan</span> <span class="mi">19</span> <span class="mi">2016</span> <span class="n">at</span> <span class="mi">02</span><span class="p">:</span><span class="mi">21</span><span class="p">:</span><span class="mf">55.</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">liegroups</span><span class="o">.</span><span class="n">org</span><span class="o">/</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Alternatively, you can cd into the atlas-scripts folder, then do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>../atlas
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">../</span><span class="n">atlas</span>
 </pre></div>
 </div>
 </div>
@@ -1098,41 +1122,41 @@ atlas&gt;
 <h2>Load scripts<a class="headerlink" href="#load-scripts" title="Permalink to this headline">¶</a></h2>
 <p>The folder atlas-scripts includes scripts, like &#8220;basics.at&#8221;, that define a collection of functions complementing the primitive functions built into atlas.</p>
 <p>Assuming you are in the atlas environment (when you see <code class="docutils literal"><span class="pre">atlas&gt;</span></code> in your terminal), here is how to load some scripts. For example, to load the file &#8220;basic.at&#8221; do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;basic
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">basic</span>
 </pre></div>
 </div>
 <p>You will see atlas output:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>Starting to read from file &#39;atlas-scripts//basic.at&#39;.
-Added definition [12] of #: (int-&gt;[int])
-Added definition [13] of #: (bool-&gt;int)
-...
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Starting</span> <span class="n">to</span> <span class="n">read</span> <span class="kn">from</span> <span class="nn">file</span> <span class="s1">&#39;atlas-scripts//basic.at&#39;</span><span class="o">.</span>
+<span class="n">Added</span> <span class="n">definition</span> <span class="p">[</span><span class="mi">12</span><span class="p">]</span> <span class="n">of</span> <span class="c1">#: (int-&gt;[int])</span>
+<span class="n">Added</span> <span class="n">definition</span> <span class="p">[</span><span class="mi">13</span><span class="p">]</span> <span class="n">of</span> <span class="c1">#: (bool-&gt;int)</span>
+<span class="o">...</span>
 </pre></div>
 </div>
-<p>The symbol &#8220;&lt;&#8221; means read a file. If this doesn&#8217;t work, please see <a class="reference internal" href="trouble_shooting.html#trouble-shooting"><span>Trouble Shooting</span></a>. Also, there is a <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">video</a> explaining how to launch atlas so that it finds the necessary .at files.</p>
+<p>The symbol &#8220;&lt;&#8221; means read a file. If this doesn&#8217;t work, please see <a class="reference internal" href="trouble_shooting.html#trouble-shooting"><span class="std std-ref">Trouble Shooting</span></a>. Also, there is a <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">video</a> explaining how to launch atlas so that it finds the necessary .at files.</p>
 <p>Once this is working, you can and should load other files. Load &#8220;all.at&#8221; to get a recommended set of files:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;all
-[... some atlas output ...]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nb">all</span>
+<span class="p">[</span><span class="o">...</span> <span class="n">some</span> <span class="n">atlas</span> <span class="n">output</span> <span class="o">...</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>To check if readline (command completion, recalling previous commands, etc.) is working, hit <strong>TAB</strong> on your keyboard twice. You should see something like:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt;
 Display all 902 possibilities? (y or n)
 </pre></div>
 </div>
 <p>This indicates that command completion is working. Now do a few simple commands:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; 1+1
-Value: 2
-atlas&gt; set G=SL(2,R)
-Identifier G: RealForm
-atlas&gt; print_block(trivial (G))
-Parameter defines element 2 of the following block:
-0:  0  [i1]  1   (2,*)  *(x=0,lam=rho+  [0], nu=  [0]/1)  e
-1:  0  [i1]  0   (2,*)  *(x=1,lam=rho+  [0], nu=  [0]/1)  e
-2:  1  [r1]  2   (0,1)  *(x=2,lam=rho+  [0], nu=  [1]/1)  1^e
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">print_block</span><span class="p">(</span><span class="n">trivial</span> <span class="p">(</span><span class="n">G</span><span class="p">))</span>
+<span class="n">Parameter</span> <span class="n">defines</span> <span class="n">element</span> <span class="mi">2</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">block</span><span class="p">:</span>
+<span class="mi">0</span><span class="p">:</span>  <span class="mi">0</span>  <span class="p">[</span><span class="n">i1</span><span class="p">]</span>  <span class="mi">1</span>   <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="o">*</span><span class="p">)</span>  <span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">lam</span><span class="o">=</span><span class="n">rho</span><span class="o">+</span>  <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">nu</span><span class="o">=</span>  <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>  <span class="n">e</span>
+<span class="mi">1</span><span class="p">:</span>  <span class="mi">0</span>  <span class="p">[</span><span class="n">i1</span><span class="p">]</span>  <span class="mi">0</span>   <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="o">*</span><span class="p">)</span>  <span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">lam</span><span class="o">=</span><span class="n">rho</span><span class="o">+</span>  <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">nu</span><span class="o">=</span>  <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>  <span class="n">e</span>
+<span class="mi">2</span><span class="p">:</span>  <span class="mi">1</span>  <span class="p">[</span><span class="n">r1</span><span class="p">]</span>  <span class="mi">2</span>   <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>  <span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="n">lam</span><span class="o">=</span><span class="n">rho</span><span class="o">+</span>  <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">nu</span><span class="o">=</span>  <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>  <span class="mi">1</span><span class="o">^</span><span class="n">e</span>
 </pre></div>
 </div>
-<p>Congratulations! Now you have atlas working on your machine! Proceed to <a class="reference internal" href="tutorial_with_examples.html#tutorial-with-examples"><span>Tutorial</span></a> for some examples of what you can do with atlas.</p>
+<p>Congratulations! Now you have atlas working on your machine! Proceed to <a class="reference internal" href="tutorial_with_examples.html#tutorial-with-examples"><span class="std std-ref">Tutorial</span></a> for some examples of what you can do with atlas.</p>
 </div>
 <div class="section" id="quit-atlas">
 <h2>Quit atlas<a class="headerlink" href="#quit-atlas" title="Permalink to this headline">¶</a></h2>
@@ -1142,15 +1166,18 @@ Parameter defines element 2 of the following block:
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="help_git.html" class="btn btn-neutral float-right" title="Help with git" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="help_git.html" class="btn btn-neutral float-right" title="Help with git" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="windows_installation.html" class="btn btn-neutral float-right" title="Windows" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="windows_installation.html" class="btn btn-neutral" title="Windows" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1184,7 +1211,8 @@ Parameter defines element 2 of the following block:
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Syntax Summary" href="summary.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -270,7 +279,7 @@
 <li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="in_out_redir.html">Output, Input, and Redirection</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Miscellaneous Commands</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Miscellaneous Commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="summary.html#command-level">Command level</a></li>
 <li class="toctree-l4"><a class="reference internal" href="summary.html#quaternary-expressions-let-anonymous-functions-casts-sequences">Quaternary expressions: &#8216;let&#8217;, anonymous functions, casts, sequences</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,60 +1046,73 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
-      
-    <li>Miscellaneous Commands</li>
+        
+      <li>Miscellaneous Commands</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/axis/misc.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/axis/misc.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="summary.html" class="btn btn-neutral float-right" title="Syntax Summary" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="in_out_redir.html" class="btn btn-neutral" title="Output, Input, and Redirection" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="summary.html" class="btn btn-neutral float-right" title="Syntax Summary" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="in_out_redir.html" class="btn btn-neutral float-right" title="Output, Input, and Redirection" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="miscellaneous-commands">
 <h1>Miscellaneous Commands<a class="headerlink" href="#miscellaneous-commands" title="Permalink to this headline">¶</a></h1>
 <p>Some operations, including the type checker, can be made more verbose by
 giving the command:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set verbose
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">verbose</span>
 </pre></div>
 </div>
 <p>which remains in effect until a subsequent command:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set quiet
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">quiet</span>
 </pre></div>
 </div>
 <p>is given.</p>
 <p>One can ask the state of all known identifiers by typing:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">showall</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">showall</span>
 </pre></div>
 </div>
 <p>which prints the type and value of every defined function and variable. If one
 just needs to know the type of one expression, one can type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype expr
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">whattype</span> <span class="n">expr</span>
 </pre></div>
 </div>
 <p>This performs type analysis of the expression and prints the result, but does
@@ -1096,7 +1120,7 @@ not evaluate anything. Overloaded function names by themselves are not a valid
 expressions, so this form cannot be used to find out function overloading.
 However by suffixing a question mark to the command, it will print the types
 of all overloads of the given (function or operator) symbol:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype + ?
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype + ?
 Overloaded instances of +
   (int,int)-&gt;int
   (rat,int)-&gt;rat
@@ -1119,23 +1143,26 @@ Overloaded instances of +
 </pre></div>
 </div>
 <p>Finally when you get tired of using atlas, type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; quit
-Bye.
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">quit</span>
+<span class="n">Bye</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="summary.html" class="btn btn-neutral float-right" title="Syntax Summary" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="summary.html" class="btn btn-neutral float-right" title="Syntax Summary" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="in_out_redir.html" class="btn btn-neutral float-right" title="Output, Input, and Redirection" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="in_out_redir.html" class="btn btn-neutral" title="Output, Input, and Redirection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1169,7 +1196,8 @@ Bye.
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

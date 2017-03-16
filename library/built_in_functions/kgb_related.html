@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
         <link rel="next" title="Parameter, KL, print, etc." href="param.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -367,7 +376,7 @@
 <li class="toctree-l4"><a class="reference internal" href="roots_weights.html#integrality-points">integrality_points</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">KGB Related</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">KGB Related</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#kgb">KGB</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#operator-2">%</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cartan-class">Cartan_class</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,44 +1046,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
-      
-    <li>KGB Related</li>
+        
+      <li>KGB Related</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/built_in_functions/kgb_related.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/built_in_functions/kgb_related.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="param.html" class="btn btn-neutral float-right" title="Parameter, KL, print, etc." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="roots_weights.html" class="btn btn-neutral" title="Roots and Weights" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="param.html" class="btn btn-neutral float-right" title="Parameter, KL, print, etc." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="kgb-related">
 <h1>KGB Related<a class="headerlink" href="#kgb-related" title="Permalink to this headline">¶</a></h1>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="33%" />
 <col width="67%" />
@@ -1083,64 +1107,64 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#kgb"><span>KGB</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#kgb"><span class="std std-ref">KGB</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealFrom,int-&gt;KGBElt)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#operator-2"><span>%</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#operator-2"><span class="std std-ref">%</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt-&gt;RealForm,int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#cartan-class4"><span>Cartan_class</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-class4"><span class="std std-ref">Cartan_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt-&gt;CartanClass)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#involution3"><span>involution</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#involution3"><span class="std std-ref">involution</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#length"><span>length</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#length"><span class="std std-ref">length</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt-&gt;int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#status"><span>status</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#status"><span class="std std-ref">status</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,KGBElt-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#status2"><span>status</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#status2"><span class="std std-ref">status</span></a></td>
 <td><code class="docutils literal"><span class="pre">(vec,KGBElt-&gt;int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#cross"><span>cross</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#cross"><span class="std std-ref">cross</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,KGBElt-&gt;KGBElt)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#cayley"><span>Cayley</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#cayley"><span class="std std-ref">Cayley</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,KGBElt-&gt;KGBElt)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#twist"><span>twist</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#twist"><span class="std std-ref">twist</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt-&gt;KGBElt)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#torus-factor"><span>torus_factor</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#torus-factor"><span class="std std-ref">torus_factor</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt-&gt;ratvec)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#torus-bits"><span>torus_bits</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#torus-bits"><span class="std std-ref">torus_bits</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt-&gt;vec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#operator-3"><span>=</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#operator-3"><span class="std std-ref">=</span></a></td>
 <td><code class="docutils literal"><span class="pre">(KGBElt,KGBElt)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#block2"><span>block</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#block2"><span class="std std-ref">block</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm-&gt;Block)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#id13"><span>%</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#id13"><span class="std std-ref">%</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Block-&gt;RealForm,RealForm)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="lie_basics.html#operator"><span>#</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="lie_basics.html#operator"><span class="std std-ref">#</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Block-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#element"><span>element</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#element"><span class="std std-ref">element</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Block,int-&gt;KGBElt,KGBElt)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#index"><span>index</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#index"><span class="std std-ref">index</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Block,KGBElt,KGBElt-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#dual2"><span>dual</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#dual2"><span class="std std-ref">dual</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Block-&gt;Block)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#status3"><span>status</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#status3"><span class="std std-ref">status</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,Block,int-&gt;)</span></code></td>
 </tr>
 </tbody>
@@ -1275,15 +1299,18 @@ This is the inverse of the map defined by element&#64;(Block,int): given a compa
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="param.html" class="btn btn-neutral float-right" title="Parameter, KL, print, etc." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="param.html" class="btn btn-neutral float-right" title="Parameter, KL, print, etc." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="roots_weights.html" class="btn btn-neutral" title="Roots and Weights" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1317,7 +1344,8 @@ This is the inverse of the map defined by element&#64;(Block,int): given a compa
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

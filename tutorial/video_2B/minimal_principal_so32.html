@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="First Examples of Representations." href="../first_examples.html"/>
         <link rel="next" title="More on minimal pricipal series." href="more_minimal_principal.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -204,7 +213,7 @@
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_sl2r.html">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="more_minimal_principal.html">More on minimal pricipal series.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data for Representations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of a Representation</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,66 +1046,79 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../first_examples.html">First Examples of Representations.</a> &raquo;</li>
-      
-    <li>Example <span class="math">\(G=SO(3,2)\)</span></li>
+        
+      <li>Example <span class="math">\(G=SO(3,2)\)</span></li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_2B/minimal_principal_so32.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_2B/minimal_principal_so32.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="more_minimal_principal.html" class="btn btn-neutral float-right" title="More on minimal pricipal series." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="minimal_principal_sp4r.html" class="btn btn-neutral" title="Example \(G=Sp(4,\mathbb R)\)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="more_minimal_principal.html" class="btn btn-neutral float-right" title="More on minimal pricipal series." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="minimal_principal_sp4r.html" class="btn btn-neutral float-right" title="Example \(G=Sp(4,\mathbb R)\)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="example">
 <h1>Example <span class="math">\(G=SO(3,2)\)</span><a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h1>
 <p>Let&#8217;s study the minimal principal series for this group&gt;</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:SO(3,2)
-Variable G: RealForm (overriding previous instance, which had type RealForm)
-atlas&gt; set parameters=all_parameters_gamma (G, rho(G))
-Variable parameters: [Param] (overriding previous instance, which had type [Param])
-atlas&gt; rho(G)
-Value: [ 3, 1 ]/2
-atlas&gt; #parameters
-Value: 12
-atlas&gt; void: for p in parameters do prints(p) od
-final parameter (x=0,lambda=[3,1]/2,nu=[0,0]/1)
-final parameter (x=1,lambda=[3,1]/2,nu=[0,0]/1)
-final parameter (x=2,lambda=[3,1]/2,nu=[1,-1]/2)
-final parameter (x=3,lambda=[3,1]/2,nu=[0,1]/2)
-final parameter (x=3,lambda=[3,3]/2,nu=[0,1]/2)
-final parameter (x=4,lambda=[3,1]/2,nu=[3,0]/2)
-final parameter (x=4,lambda=[5,1]/2,nu=[3,0]/2)
-final parameter (x=5,lambda=[3,1]/2,nu=[1,1]/1)
-final parameter (x=6,lambda=[3,1]/2,nu=[3,1]/2)
-final parameter (x=6,lambda=[5,1]/2,nu=[3,1]/2)
-final parameter (x=6,lambda=[3,3]/2,nu=[3,1]/2)
-final parameter (x=6,lambda=[5,3]/2,nu=[3,1]/2)
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G</span><span class="p">:</span><span class="n">SO</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">Variable</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">parameters</span><span class="o">=</span><span class="n">all_parameters_gamma</span> <span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">rho</span><span class="p">(</span><span class="n">G</span><span class="p">))</span>
+<span class="n">Variable</span> <span class="n">parameters</span><span class="p">:</span> <span class="p">[</span><span class="n">Param</span><span class="p">]</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="p">[</span><span class="n">Param</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">rho</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span> <span class="p">]</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="c1">#parameters</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">12</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">parameters</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="n">od</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>We are looking only at the minimal principal series. So we are for the
@@ -1102,20 +1126,20 @@ moment only interested in the last four representations corresponding
 to the <code class="docutils literal"><span class="pre">KGB</span></code> element <code class="docutils literal"><span class="pre">x=6</span></code>.</p>
 <p>Let us look at the <code class="docutils literal"><span class="pre">tau</span></code> invariants for these standard
 representations:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for p in parameters do prints(p, &quot; &quot;, tau(p)) od
-final parameter (x=0,lambda=[3,1]/2,nu=[0,0]/1) []
-final parameter (x=1,lambda=[3,1]/2,nu=[0,0]/1) [1]
-final parameter (x=2,lambda=[3,1]/2,nu=[1,-1]/2) [0]
-final parameter (x=3,lambda=[3,1]/2,nu=[0,1]/2) [1]
-final parameter (x=3,lambda=[3,3]/2,nu=[0,1]/2) [1]
-final parameter (x=4,lambda=[3,1]/2,nu=[3,0]/2) [0]
-final parameter (x=4,lambda=[5,1]/2,nu=[3,0]/2) [0]
-final parameter (x=5,lambda=[3,1]/2,nu=[1,1]/1) [1]
-final parameter (x=6,lambda=[3,1]/2,nu=[3,1]/2) [0,1]
-final parameter (x=6,lambda=[5,1]/2,nu=[3,1]/2) [1]
-final parameter (x=6,lambda=[3,3]/2,nu=[3,1]/2) [1]
-final parameter (x=6,lambda=[5,3]/2,nu=[3,1]/2) [0,1]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">parameters</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">tau</span><span class="p">(</span><span class="n">p</span><span class="p">))</span> <span class="n">od</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Now if we look again only at the last four parameters we see that two
@@ -1127,55 +1151,55 @@ representations. And likewise, the two representations labeled with
 the <code class="docutils literal"><span class="pre">tau</span></code> invariant <code class="docutils literal"><span class="pre">[1]</span></code> get interchanged.</p>
 <p>Now let us look at composition series for one of those pairs of
 representations</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:parameters[11]
-Variable p: Param (overriding previous instance, which had type Param)
-atlas&gt; show(composition_series(I(p)))
-1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
-1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
-1*J(x=3,lambda=[3/2,1/2],nu=[0/1,1/2])
-1*J(x=3,lambda=[3/2,3/2],nu=[0/1,1/2])
-1*J(x=4,lambda=[5/2,1/2],nu=[3/2,0/1])
-1*J(x=5,lambda=[3/2,1/2],nu=[1/1,1/1])
-1*J(x=6,lambda=[5/2,3/2],nu=[3/2,1/2])
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="n">parameters</span><span class="p">[</span><span class="mi">11</span><span class="p">]</span>
+<span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">p</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 
-atlas&gt; p:parameters[8]
-Variable p: Param (overriding previous instance, which had type Param)
-atlas&gt; show(composition_series(I(p)))
-1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
-1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
-1*J(x=3,lambda=[3/2,1/2],nu=[0/1,1/2])
-1*J(x=3,lambda=[3/2,3/2],nu=[0/1,1/2])
-1*J(x=4,lambda=[3/2,1/2],nu=[3/2,0/1])
-1*J(x=5,lambda=[3/2,1/2],nu=[1/1,1/1])
-1*J(x=6,lambda=[3/2,1/2],nu=[3/2,1/2])
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="n">parameters</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span>
+<span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">p</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>These are almost identical but not quite. For example, the <code class="docutils literal"><span class="pre">lambdas</span></code>
 are different in lines 5 and 7.</p>
 <p>Similarly if we look at parameters 9 and 10 we have</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p:parameters[9]
-Variable p: Param (overriding previous instance, which had type Param)
-atlas&gt; show(composition_series(I(p)))
-1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
-1*J(x=1,lambda=[3/2,1/2],nu=[0/1,0/1])
-1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
-1*J(x=3,lambda=[3/2,3/2],nu=[0/1,1/2])
-1*J(x=4,lambda=[5/2,1/2],nu=[3/2,0/1])
-1*J(x=6,lambda=[5/2,1/2],nu=[3/2,1/2])
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="n">parameters</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+<span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">p</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 
-atlas&gt; p:parameters[10]
-Variable p: Param (overriding previous instance, which had type Param)
-atlas&gt; show(composition_series(I(p)))
-1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
-1*J(x=1,lambda=[3/2,1/2],nu=[0/1,0/1])
-1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
-1*J(x=3,lambda=[3/2,1/2],nu=[0/1,1/2])
-1*J(x=4,lambda=[3/2,1/2],nu=[3/2,0/1])
-1*J(x=6,lambda=[3/2,3/2],nu=[3/2,1/2])
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="n">parameters</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
+<span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">p</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>These are smaller standard representations, have less complicated and also very similar composition series.</p>
@@ -1183,15 +1207,18 @@ atlas&gt;
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="more_minimal_principal.html" class="btn btn-neutral float-right" title="More on minimal pricipal series." accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="more_minimal_principal.html" class="btn btn-neutral float-right" title="More on minimal pricipal series." accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="minimal_principal_sp4r.html" class="btn btn-neutral float-right" title="Example \(G=Sp(4,\mathbb R)\)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="minimal_principal_sp4r.html" class="btn btn-neutral" title="Example \(G=Sp(4,\mathbb R)\)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1225,7 +1252,8 @@ atlas&gt;
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

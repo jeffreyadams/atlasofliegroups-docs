@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Defining and Modifying Identifiers" href="def_mod_identifiers.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -257,7 +266,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Implicit Conversions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Implicit Conversions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="def_mod_identifiers.html">Defining and Modifying Identifiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
-      
-    <li>Implicit Conversions</li>
+        
+      <li>Implicit Conversions</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/axis/implicit_conversion.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/axis/implicit_conversion.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="def_mod_identifiers.html" class="btn btn-neutral float-right" title="Defining and Modifying Identifiers" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tuple_pattern.html" class="btn btn-neutral" title="Tuple Displays and Pattern Matching" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="def_mod_identifiers.html" class="btn btn-neutral float-right" title="Defining and Modifying Identifiers" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="tuple_pattern.html" class="btn btn-neutral float-right" title="Tuple Displays and Pattern Matching" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="implicit-conversions">
 <span id="implicit-conversion"></span><h1>Implicit Conversions<a class="headerlink" href="#implicit-conversions" title="Permalink to this headline">¶</a></h1>
@@ -1110,19 +1134,19 @@ into a matrix; a built-in operator &#8216;#&#8217; of signature &#8216;(int,[vec
 provided that allows explicitly specifying the size of the vectors, and thus
 producing a correct result even when the row of vectors is empty.</p>
 <p>Here is a list of all implicit type conversions:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>vec       &lt;-&gt; [int]
-mat       &lt;-&gt; [vec]    (vectors are columns of the matrix)
-mat       &lt;-&gt; [[int]]  (inner arrays are columns of the matrix)
-int        -&gt; rat      (denominator 1)
-ratvec    &lt;-&gt; [rat]    (ratvec has least common denominator)
-vec        -&gt; ratvec   (denominator 1)
-[int]      -&gt; ratvec
-int        -&gt; Split
-string     -&gt; LieType  (applies Lie_type function)
-InnerClass -&gt; RootDatum
-RealForm   -&gt; InnerClass
-RealForm   -&gt; RootDatum
-Param      -&gt; ParamPol (parameter is converted to final parameter(s) first)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">vec</span>       <span class="o">&lt;-&gt;</span> <span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+<span class="n">mat</span>       <span class="o">&lt;-&gt;</span> <span class="p">[</span><span class="n">vec</span><span class="p">]</span>    <span class="p">(</span><span class="n">vectors</span> <span class="n">are</span> <span class="n">columns</span> <span class="n">of</span> <span class="n">the</span> <span class="n">matrix</span><span class="p">)</span>
+<span class="n">mat</span>       <span class="o">&lt;-&gt;</span> <span class="p">[[</span><span class="nb">int</span><span class="p">]]</span>  <span class="p">(</span><span class="n">inner</span> <span class="n">arrays</span> <span class="n">are</span> <span class="n">columns</span> <span class="n">of</span> <span class="n">the</span> <span class="n">matrix</span><span class="p">)</span>
+<span class="nb">int</span>        <span class="o">-&gt;</span> <span class="n">rat</span>      <span class="p">(</span><span class="n">denominator</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">ratvec</span>    <span class="o">&lt;-&gt;</span> <span class="p">[</span><span class="n">rat</span><span class="p">]</span>    <span class="p">(</span><span class="n">ratvec</span> <span class="n">has</span> <span class="n">least</span> <span class="n">common</span> <span class="n">denominator</span><span class="p">)</span>
+<span class="n">vec</span>        <span class="o">-&gt;</span> <span class="n">ratvec</span>   <span class="p">(</span><span class="n">denominator</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">[</span><span class="nb">int</span><span class="p">]</span>      <span class="o">-&gt;</span> <span class="n">ratvec</span>
+<span class="nb">int</span>        <span class="o">-&gt;</span> <span class="n">Split</span>
+<span class="n">string</span>     <span class="o">-&gt;</span> <span class="n">LieType</span>  <span class="p">(</span><span class="n">applies</span> <span class="n">Lie_type</span> <span class="n">function</span><span class="p">)</span>
+<span class="n">InnerClass</span> <span class="o">-&gt;</span> <span class="n">RootDatum</span>
+<span class="n">RealForm</span>   <span class="o">-&gt;</span> <span class="n">InnerClass</span>
+<span class="n">RealForm</span>   <span class="o">-&gt;</span> <span class="n">RootDatum</span>
+<span class="n">Param</span>      <span class="o">-&gt;</span> <span class="n">ParamPol</span> <span class="p">(</span><span class="n">parameter</span> <span class="ow">is</span> <span class="n">converted</span> <span class="n">to</span> <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">first</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>At most one implicit conversion is applied to a given subexpression, so there
@@ -1132,39 +1156,39 @@ desired, writing a cast &#8216;ratvec:&#8217; will allow it (the first conversio
 inside the cast, the second applied to the result of the cast).</p>
 <p>The one-directional conversions int-&gt;rat and string-&gt;LieType are mainly a
 convenience to users, as these conversion could be written out explicitly:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; 3+1/7       { same as 3/1+1/7 }
-Value: 22/7
-atlas&gt; Cartan_matrix(&quot;E8&quot;)  { same as Cartan_matrix(LieType(&quot;E8&quot;)) }
-Value:
-|  2,  0, -1,  0,  0,  0,  0,  0 |
-|  0,  2,  0, -1,  0,  0,  0,  0 |
-| -1,  0,  2, -1,  0,  0,  0,  0 |
-|  0, -1, -1,  2, -1,  0,  0,  0 |
-|  0,  0,  0, -1,  2, -1,  0,  0 |
-|  0,  0,  0,  0, -1,  2, -1,  0 |
-|  0,  0,  0,  0,  0, -1,  2, -1 |
-|  0,  0,  0,  0,  0,  0, -1,  2 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="o">/</span><span class="mi">7</span>       <span class="p">{</span> <span class="n">same</span> <span class="k">as</span> <span class="mi">3</span><span class="o">/</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="o">/</span><span class="mi">7</span> <span class="p">}</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">22</span><span class="o">/</span><span class="mi">7</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">Cartan_matrix</span><span class="p">(</span><span class="s2">&quot;E8&quot;</span><span class="p">)</span>  <span class="p">{</span> <span class="n">same</span> <span class="k">as</span> <span class="n">Cartan_matrix</span><span class="p">(</span><span class="n">LieType</span><span class="p">(</span><span class="s2">&quot;E8&quot;</span><span class="p">))</span> <span class="p">}</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>If desired, a context requiring a given type can be created by a cast: writing
 the desired type name followed by a colon and the expression. So while one
 (currently, this may change in the future) gets an error for:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; [1,1/2,1/3,1/4]
-Error during analysis of expression at &lt;standard input&gt;:...
-Type error:
-  Subexpression /(1,2) at &lt;standard input&gt;:...
-  has wrong type: found rat while int was needed.
-Type check failed
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">Error</span> <span class="n">during</span> <span class="n">analysis</span> <span class="n">of</span> <span class="n">expression</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="o">...</span>
+<span class="n">Type</span> <span class="n">error</span><span class="p">:</span>
+  <span class="n">Subexpression</span> <span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="o">...</span>
+  <span class="n">has</span> <span class="n">wrong</span> <span class="nb">type</span><span class="p">:</span> <span class="n">found</span> <span class="n">rat</span> <span class="k">while</span> <span class="nb">int</span> <span class="n">was</span> <span class="n">needed</span><span class="o">.</span>
+<span class="n">Type</span> <span class="n">check</span> <span class="n">failed</span>
 </pre></div>
 </div>
 <p>this can be repaired by asking for a list of &#8216;rat&#8217;:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; [rat]: [1,1/2,1/3,1/4]
-Value: [1/1,1/2,1/3,1/4]
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">rat</span><span class="p">]:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Alternatively this input could be turned into a &#8216;ratvec&#8217;:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; ratvec: [1,1/2,1/3,1/4]
-Value: [ 12,  6,  4,  3 ]/12
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">ratvec</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">12</span><span class="p">,</span>  <span class="mi">6</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span>  <span class="mi">3</span> <span class="p">]</span><span class="o">/</span><span class="mi">12</span>
 </pre></div>
 </div>
 <p>Note that here in addition to the conversion of the initial &#8216;1&#8217; from integer
@@ -1172,9 +1196,9 @@ to rational, a conversion of the row from &#8216;[rat]&#8217; to &#8216;ratvec&#
 <p>This conversion is applied whenever a list of rationals (or integers) is given
 in place of a &#8216;ratvec&#8217;; for instance inner_class takes a list of &#8216;ratvec&#8217;
 values as second &#8220;kernel generators&#8221; argument, and they can be specified as:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; inner_class (&quot;D4.A3&quot;,[ratvec]:[[0,1/2,1/4],[0,0,1/2]],&quot;ss&quot;)
-Value: Complex reductive group of type D4.A3, with involution defining
-inner class of type &#39;cs&#39;, with 10 real forms and 15 dual real forms
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">inner_class</span> <span class="p">(</span><span class="s2">&quot;D4.A3&quot;</span><span class="p">,[</span><span class="n">ratvec</span><span class="p">]:[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">]],</span><span class="s2">&quot;ss&quot;</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">Complex</span> <span class="n">reductive</span> <span class="n">group</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">D4</span><span class="o">.</span><span class="n">A3</span><span class="p">,</span> <span class="k">with</span> <span class="n">involution</span> <span class="n">defining</span>
+<span class="n">inner</span> <span class="k">class</span> <span class="nc">of</span> <span class="nb">type</span> <span class="s1">&#39;cs&#39;</span><span class="p">,</span> <span class="k">with</span> <span class="mi">10</span> <span class="n">real</span> <span class="n">forms</span> <span class="ow">and</span> <span class="mi">15</span> <span class="n">dual</span> <span class="n">real</span> <span class="n">forms</span>
 </pre></div>
 </div>
 <p>Note that the cast &#8216;[ratvec]:&#8217; to a row of rational vectors is needed because
@@ -1193,22 +1217,22 @@ other hand admit such an argument by defining an additional overload of
 &#8216;inner_class&#8217; that accepts a single &#8216;ratvec&#8217; and builds a singleton row from
 it with which it then calls the built-in version of &#8216;inner_class&#8217;.)</p>
 <p>Matrices can be built from lists of columns by requiring type &#8216;mat&#8217;:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; mat: [[1,2,4],[3,5,7]]
-Value:
-| 1, 3 |
-| 2, 5 |
-| 4, 7 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">mat</span><span class="p">:</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">]]</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>Each list of integers giving a column is in fact first converted to a vector,
 and one could also use a vector-valued expression in its place (for instance
 an identifier bound to a vector value).</p>
 <p>For specifying a matrix by rows, a special syntax is provided:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; [ 1,2,4 | 3,5,7 | 0,-1,6 ]
-Value:
-| 1,  2, 4 |
-| 3,  5, 7 |
-| 0, -1, 6 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span> <span class="o">|</span> <span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span> <span class="o">|</span> <span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span> <span class="p">]</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">3</span><span class="p">,</span>  <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>Note that &#8216;mat:&#8217; is not required here, the syntax itself forces a matrix
@@ -1227,15 +1251,18 @@ an n times 0 empty matrix rather than an error when &#8216;rows&#8217; is an emp
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="def_mod_identifiers.html" class="btn btn-neutral float-right" title="Defining and Modifying Identifiers" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="def_mod_identifiers.html" class="btn btn-neutral float-right" title="Defining and Modifying Identifiers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="tuple_pattern.html" class="btn btn-neutral float-right" title="Tuple Displays and Pattern Matching" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="tuple_pattern.html" class="btn btn-neutral" title="Tuple Displays and Pattern Matching" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1269,7 +1296,8 @@ an n times 0 empty matrix rather than an error when &#8216;rows&#8217; is an emp
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

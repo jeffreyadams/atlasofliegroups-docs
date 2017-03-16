@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
         <link rel="next" title="User Defined Functions" href="../usr_defined_functions.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -417,7 +426,7 @@
 <li class="toctree-l4"><a class="reference internal" href="param.html#partial-kl-block">partial_KL_block</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">More Advanced Functions</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">More Advanced Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#classify-involution">classify_involution</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inner-class">inner_class</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#twisted-involution">twisted_involution</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,44 +1046,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
-      
-    <li>More Advanced Functions</li>
+        
+      <li>More Advanced Functions</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/built_in_functions/more_advanced.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/built_in_functions/more_advanced.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="../usr_defined_functions.html" class="btn btn-neutral float-right" title="User Defined Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="param.html" class="btn btn-neutral" title="Parameter, KL, print, etc." accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="../usr_defined_functions.html" class="btn btn-neutral float-right" title="User Defined Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="param.html" class="btn btn-neutral float-right" title="Parameter, KL, print, etc." accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="more-advanced-functions">
 <h1>More Advanced Functions<a class="headerlink" href="#more-advanced-functions" title="Permalink to this headline">¶</a></h1>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="33%" />
 <col width="67%" />
@@ -1083,118 +1107,118 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#classify-involution"><span>classify_involution</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#classify-involution"><span class="std std-ref">classify_involution</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;int,int,int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#inner-class"><span>inner_class</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#inner-class"><span class="std std-ref">inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;InnerClass)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#twisted-involution"><span>twisted_involution</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#twisted-involution"><span class="std std-ref">twisted_involution</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;InnerClass,vec)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#inner-class2"><span>inner_class</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#inner-class2"><span class="std std-ref">inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,string-&gt;InnerClass)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#inner-class3"><span>inner_class</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#inner-class3"><span class="std std-ref">inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">(Lie_type,[ratvec],string-&gt;InnerClass)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#operator"><span>=</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#operator"><span class="std std-ref">=</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass,InnerClass-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#nr-of-real-forms"><span>nr_of_real_forms</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#nr-of-real-forms"><span class="std std-ref">nr_of_real_forms</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#nr-of-dual-real-forms"><span>nr_of_dual_real_forms</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#nr-of-dual-real-forms"><span class="std std-ref">nr_of_dual_real_forms</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#nr-of-cartan-classes"><span>nr_of_Cartan_classes</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#nr-of-cartan-classes"><span class="std std-ref">nr_of_Cartan_classes</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#block-sizes"><span>block_sizes</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#block-sizes"><span class="std std-ref">block_sizes</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#form-names"><span>form_names</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#form-names"><span class="std std-ref">form_names</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;[string])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#dual-form-names"><span>dual_form_names</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#dual-form-names"><span class="std std-ref">dual_form_names</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;[string])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#occurrence-matrix"><span>occurrence_matrix</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#occurrence-matrix"><span class="std std-ref">occurrence_matrix</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#dual-occurrence-matrix"><span>dual_occurrence_matrix</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#dual-occurrence-matrix"><span class="std std-ref">dual_occurrence_matrix</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#real-form"><span>real_form</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#real-form"><span class="std std-ref">real_form</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;RealForm)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#inner-class"><span>inner_class</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#inner-class"><span class="std std-ref">inner_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;InnerClass)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#form-number"><span>form_number</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#form-number"><span class="std std-ref">form_number</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quasisplit-form"><span>quasisplit_form</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#quasisplit-form"><span class="std std-ref">quasisplit_form</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;RealForm)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#components-rank"><span>components_rank</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#components-rank"><span class="std std-ref">components_rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#count-cartans"><span>count_Cartans</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#count-cartans"><span class="std std-ref">count_Cartans</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#operator-2"><span>=</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#operator-2"><span class="std std-ref">=</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,RealForm-&gt;bool)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#kgb-size"><span>KGB_size</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#kgb-size"><span class="std std-ref">KGB_size</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#base-grading-vector"><span>base_grading_vector</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#base-grading-vector"><span class="std std-ref">base_grading_vector</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;ratvec)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#cartan-order"><span>Cartan_order</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#cartan-order"><span class="std std-ref">Cartan_order</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#dual-real-form"><span>dual_real_form</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#dual-real-form"><span class="std std-ref">dual_real_form</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;RealForm)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#dual-quasisplit-form"><span>dual_quasisplit_form</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#dual-quasisplit-form"><span class="std std-ref">dual_quasisplit_form</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;RealForm)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#cartan-class"><span>Cartan_class</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-class"><span class="std std-ref">Cartan_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass,int-&gt;CartanClass)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#cartan-class2"><span>Cartan_class</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#cartan-class2"><span class="std std-ref">Cartan_class</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm,int-&gt;CartanClass)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#most-split-cartan"><span>most_split_Cartan</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#most-split-cartan"><span class="std std-ref">most_split_Cartan</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;CartanClass)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#involution4"><span>involution</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#involution4"><span class="std std-ref">involution</span></a></td>
 <td><code class="docutils literal"><span class="pre">(CartanClass-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#cartan-info"><span>Cartan_info</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-info"><span class="std std-ref">Cartan_info</span></a></td>
 <td><code class="docutils literal"><span class="pre">(CartanClass-&gt;(int,int,int),vec,(int,int),(LieType,LieType,LieType))</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#real-forms"><span>real_forms</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#real-forms"><span class="std std-ref">real_forms</span></a></td>
 <td><code class="docutils literal"><span class="pre">(CartanClass-&gt;[RealForm])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#dual-real-forms"><span>dual_real_forms</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#dual-real-forms"><span class="std std-ref">dual_real_forms</span></a></td>
 <td><code class="docutils literal"><span class="pre">(CartanClass-&gt;[RealForm])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#square-classes"><span>square_classes</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#square-classes"><span class="std std-ref">square_classes</span></a></td>
 <td><code class="docutils literal"><span class="pre">(CartanClass-&gt;[[int]])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#fiber-partition"><span>fiber_partition</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#fiber-partition"><span class="std std-ref">fiber_partition</span></a></td>
 <td><code class="docutils literal"><span class="pre">(CartanClass,RealForm-&gt;[int])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#real-form2"><span>real_form</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#real-form2"><span class="std std-ref">real_form</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass,mat,ratvec-&gt;RealForm)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#central-fiber"><span>central_fiber</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#central-fiber"><span class="std std-ref">central_fiber</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;[vec])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#initial-torus-bits"><span>initial_torus_bits</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#initial-torus-bits"><span class="std std-ref">initial_torus_bits</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RealForm-&gt;vec)</span></code></td>
 </tr>
 </tbody>
@@ -1444,15 +1468,18 @@ Build a complex reductive group directly from a root datum, but compute the dist
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../usr_defined_functions.html" class="btn btn-neutral float-right" title="User Defined Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../usr_defined_functions.html" class="btn btn-neutral float-right" title="User Defined Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="param.html" class="btn btn-neutral float-right" title="Parameter, KL, print, etc." accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="param.html" class="btn btn-neutral" title="Parameter, KL, print, etc." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1486,7 +1513,8 @@ Build a complex reductive group directly from a root datum, but compute the dist
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
         <link rel="next" title="Roots and Weights" href="roots_weights.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -319,7 +328,7 @@
 <li class="toctree-l4"><a class="reference internal" href="matrix.html#subspace-normal">subspace_normal</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Lie Group Basics</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Lie Group Basics</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#lie-type">Lie_type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#lie-type2">Lie_type</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cartan-matrix">Cartan_matrix</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,44 +1046,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
-      
-    <li>Lie Group Basics</li>
+        
+      <li>Lie Group Basics</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/built_in_functions/lie_basics.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/built_in_functions/lie_basics.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="matrix.html" class="btn btn-neutral" title="Matrix Manipulating Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="matrix.html" class="btn btn-neutral float-right" title="Matrix Manipulating Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="lie-group-basics">
 <h1>Lie Group Basics<a class="headerlink" href="#lie-group-basics" title="Permalink to this headline">¶</a></h1>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="33%" />
 <col width="67%" />
@@ -1083,85 +1107,85 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#lie-type"><span>Lie_type</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#lie-type"><span class="std std-ref">Lie_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">(string-&gt;LieType)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#lie-type2"><span>Lie_type</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#lie-type2"><span class="std std-ref">Lie_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum-&gt;LieType)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#cartan-matrix"><span>Cartan_matrix</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-matrix"><span class="std std-ref">Cartan_matrix</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#cartan-matrix2"><span>Cartan_matrix</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#cartan-matrix2"><span class="std std-ref">Cartan_matrix</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#cartan-matrix-type"><span>Cartan_matrix_type</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#cartan-matrix-type"><span class="std std-ref">Cartan_matrix_type</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;LieType,vec)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#rank"><span>rank</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#rank"><span class="std std-ref">rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#semisimple-rank"><span>semisimple_rank</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#semisimple-rank"><span class="std std-ref">semisimple_rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#operator"><span>#</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#operator"><span class="std std-ref">#</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#id9"><span>%</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#id9"><span class="std std-ref">%</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType-&gt;[LieType])</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#smith-cartan"><span>Smith_Cartan</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#smith-cartan"><span class="std std-ref">Smith_Cartan</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType-&gt;mat,vec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#filter-units"><span>filter_units</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#filter-units"><span class="std std-ref">filter_units</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat,vec-&gt;mat,vec)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#ann-mod"><span>ann_mod</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#ann-mod"><span class="std std-ref">ann_mod</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat,int-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#replace-gen"><span>replace_gen</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#replace-gen"><span class="std std-ref">replace_gen</span></a></td>
 <td><code class="docutils literal"><span class="pre">((mat,vec),mat-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#involution"><span>involution</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#involution"><span class="std std-ref">involution</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType,string-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#involution2"><span>involution</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#involution2"><span class="std std-ref">involution</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType,mat,string-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#root-datum"><span>root_datum</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#root-datum"><span class="std std-ref">root_datum</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat,mat-&gt;RootDatum)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#root-datum2"><span>root_datum</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#root-datum2"><span class="std std-ref">root_datum</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType,mat-&gt;RootDatum)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#root-datum3"><span>root_datum</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#root-datum3"><span class="std std-ref">root_datum</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum,mat-&gt;RootDatum)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#root-datum4"><span>root_datum</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#root-datum4"><span class="std std-ref">root_datum</span></a></td>
 <td><code class="docutils literal"><span class="pre">(InnerClass-&gt;RootDatum)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#quotient-basis"><span>quotient_basis</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#quotient-basis"><span class="std std-ref">quotient_basis</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType,[ratvec]-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#simply-connected"><span>simply_connected</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#simply-connected"><span class="std std-ref">simply_connected</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType-&gt;RootDatum)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#adjoint"><span>adjoint</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#adjoint"><span class="std std-ref">adjoint</span></a></td>
 <td><code class="docutils literal"><span class="pre">(LieType-&gt;RootDatum)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#dual"><span>dual</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#dual"><span class="std std-ref">dual</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#derived-info"><span>derived_info</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#derived-info"><span class="std std-ref">derived_info</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum,mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mod-central-torus-info"><span>mod_central_torus_info</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#mod-central-torus-info"><span class="std std-ref">mod_central_torus_info</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum-&gt;RootDatum,mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#rank2"><span>rank</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#rank2"><span class="std std-ref">rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum-&gt;int)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#semisimple-rank2"><span>semisimple_rank</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#semisimple-rank2"><span class="std std-ref">semisimple_rank</span></a></td>
 <td><code class="docutils literal"><span class="pre">(RootDatum-&gt;int)</span></code></td>
 </tr>
 </tbody>
@@ -1310,13 +1334,13 @@
 <blockquote>
 <div><code class="docutils literal"><span class="pre">(LieType-&gt;RootDatum)</span></code>: adjoint root datum for given type.
 Here the sublattice for the semisimple factor is the root lattice, with simple roots as basis; for the central torus an arbitrary basis is used. Therefore the this function could be defined as</div></blockquote>
-<div class="highlight-python"><div class="highlight"><pre><span></span>set adjoint_datum(LieType type) =
-let M= for alpha@j in ^Cartan_matrix(type)
-       do for entry@i in alpha
-          do if i=j and entry=0 then 1 else entry fi
-          od
-       od
-in root_datum(type,M)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">adjoint_datum</span><span class="p">(</span><span class="n">LieType</span> <span class="nb">type</span><span class="p">)</span> <span class="o">=</span>
+<span class="n">let</span> <span class="n">M</span><span class="o">=</span> <span class="k">for</span> <span class="n">alpha</span><span class="nd">@j</span> <span class="ow">in</span> <span class="o">^</span><span class="n">Cartan_matrix</span><span class="p">(</span><span class="nb">type</span><span class="p">)</span>
+       <span class="n">do</span> <span class="k">for</span> <span class="n">entry</span><span class="nd">@i</span> <span class="ow">in</span> <span class="n">alpha</span>
+          <span class="n">do</span> <span class="k">if</span> <span class="n">i</span><span class="o">=</span><span class="n">j</span> <span class="ow">and</span> <span class="n">entry</span><span class="o">=</span><span class="mi">0</span> <span class="n">then</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">entry</span> <span class="n">fi</span>
+          <span class="n">od</span>
+       <span class="n">od</span>
+<span class="ow">in</span> <span class="n">root_datum</span><span class="p">(</span><span class="nb">type</span><span class="p">,</span><span class="n">M</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1353,15 +1377,18 @@ in root_datum(type,M)
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="roots_weights.html" class="btn btn-neutral float-right" title="Roots and Weights" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="matrix.html" class="btn btn-neutral float-right" title="Matrix Manipulating Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="matrix.html" class="btn btn-neutral" title="Matrix Manipulating Functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1395,7 +1422,8 @@ in root_datum(type,M)
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

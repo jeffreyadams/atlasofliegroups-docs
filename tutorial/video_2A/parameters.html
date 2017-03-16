@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
         <link rel="next" title="Parameters for Real Tori" href="parameters_real_tori.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -184,7 +193,7 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../coordinates_characters.html">Coordinates and Characters</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="occurrence_matrix.html">Occurrence Matrices</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Parameters</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#parameters-for">Parameters for <span class="math">\(SL(2,\mathbb R)\)</span></a></li>
 </ul>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../coordinates_characters.html">Coordinates and Characters</a> &raquo;</li>
-      
-    <li>Parameters</li>
+        
+      <li>Parameters</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_2A/parameters.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_2A/parameters.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Real Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="occurrence_matrix.html" class="btn btn-neutral" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Real Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="parameters">
 <h1>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h1>
@@ -1106,7 +1130,7 @@ differential of <span class="math">\(\chi\)</span> equals <code class="docutils 
 character <code class="docutils literal"><span class="pre">rho</span></code> How many are there? We need to look at conjugacy
 classes of cartans and their characters.</p>
 <p>Let&#8217;s review a few things we know about <span class="math">\(SL(2,\mathbb R)\)</span>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; G:=SL(2,R)
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; G:=SL(2,R)
 Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
 
 atlas&gt; root_datum (G)
@@ -1164,17 +1188,17 @@ with infinitesimal character <code class="docutils literal"><span class="pre">rh
 <p>Let us look for those representations of <span class="math">\(SL(2,\mathbb R)\)</span>. The command
 <code class="docutils literal"><span class="pre">parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <span class="math">\(G\)</span>
 with that infinitesimal character <code class="docutils literal"><span class="pre">[1]</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set P=all_parameters_gamma (G,[1])
-Identifier P: [Param]
-atlas&gt; #P
-Value: 4
-atlas&gt;
-atlas&gt; void: for p in P do prints(p) od
-final parameter (x=0,lambda=[1]/1,nu=[0]/1)
-final parameter (x=1,lambda=[1]/1,nu=[0]/1)
-final parameter (x=2,lambda=[1]/1,nu=[1]/1)
-final parameter (x=2,lambda=[2]/1,nu=[1]/1)
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">P</span><span class="o">=</span><span class="n">all_parameters_gamma</span> <span class="p">(</span><span class="n">G</span><span class="p">,[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">Identifier</span> <span class="n">P</span><span class="p">:</span> <span class="p">[</span><span class="n">Param</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="c1">#P</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">4</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">P</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="n">od</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>This is the set of parameters for representations of <span class="math">\(SL(2,\mathbb R)\)</span> with
@@ -1195,15 +1219,18 @@ understand the characters of Tori. We do this in the next section.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Real Tori" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Real Tori" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="occurrence_matrix.html" class="btn btn-neutral float-right" title="Occurrence Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="occurrence_matrix.html" class="btn btn-neutral" title="Occurrence Matrices" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1237,7 +1264,8 @@ understand the characters of Tori. We do this in the next section.</p>
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

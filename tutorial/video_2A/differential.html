@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Coordinates and Characters" href="../coordinates_characters.html"/>
         <link rel="next" title="Trivial Representation of SL(2,R)" href="trivial_sl2r.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -195,7 +204,7 @@
 <li class="toctree-l4"><a class="reference internal" href="parameters_real_tori.html#characters-of">Characters of <span class="math">\({\mathbb C}^{\times}\)</span>.</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">The Character Differential</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">The Character Differential</a></li>
 <li class="toctree-l3"><a class="reference internal" href="trivial_sl2r.html">Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
 </ul>
 </li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,96 +1046,109 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../coordinates_characters.html">Coordinates and Characters</a> &raquo;</li>
-      
-    <li>The Character Differential</li>
+        
+      <li>The Character Differential</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_2A/differential.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_2A/differential.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="trivial_sl2r.html" class="btn btn-neutral float-right" title="Trivial Representation of SL(2,R)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="parameters_real_tori.html" class="btn btn-neutral" title="Parameters for Real Tori" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="trivial_sl2r.html" class="btn btn-neutral float-right" title="Trivial Representation of SL(2,R)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Real Tori" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="the-character-differential">
 <h1>The Character Differential<a class="headerlink" href="#the-character-differential" title="Permalink to this headline">¶</a></h1>
 <p>To talk about the differential of a character let us use the example of a complex torus:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set H=torus(0,1,0)
-Identifier H: RealForm (hiding previous one of type string (constant))
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">H</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">H</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">string</span> <span class="p">(</span><span class="n">constant</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>If we have a parameter <code class="docutils literal"><span class="pre">p</span></code> we can extract the coordinates of the parameter when needed:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set p=trivial(H)
-Identifier p: Param
-atlas&gt; p
-Value: final parameter (x=0,lambda=[0,0]/1,nu=[0,0]/1)
-atlas&gt; x(p)
-Value: KGB element #0
-atlas&gt; lambda(p)
-Value: [ 0, 0 ]/1
-atlas&gt; nu(p)
-Value: [0, 0 ]/1
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">p</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">KGB</span> <span class="n">element</span> <span class="c1">#0</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="k">lambda</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">nu</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>And remember that for now, the important piece of information about
 <code class="docutils literal"><span class="pre">x</span></code> is the Cartan involution of this Cartan:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; involution (x)
-Value:
-| 0, 1 |
-| 1, 0 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">involution</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>Now, when we have a parameter <code class="docutils literal"><span class="pre">p</span></code>, we can ask for its infinitesimal
 character. The answer is of course more interesting for a non-trivial
 character:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; infinitesimal_character (p)
-Value: [ 0, 0 ]/1
-atlas&gt;
-atlas&gt; set q=parameter(x,[1,0],[2,-2])
-Identifier q: Param (hiding previous one of type Param)
-atlas&gt; q
-Value: final parameter (x=0,lambda=[1,0]/1,nu=[2,-2]/1)
-atlas&gt; infinitesimal_character (q)
-Value: [  5, -3 ]/2
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">infinitesimal_character</span> <span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">Identifier</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">infinitesimal_character</span> <span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span>  <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span> <span class="p">]</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>If we have <code class="docutils literal"><span class="pre">q=(x,</span> <span class="pre">lambda,</span> <span class="pre">nu)</span></code> the differential of this character is
 the infinitesimal character which equals <span class="math">\({(1+ \theta )\over /2}
 \lambda +{(1- \theta )\over 2} \nu\)</span>. But <code class="docutils literal"><span class="pre">nu</span></code> is already averaged so
 this equals :math:<a href="#id1"><span class="problematic" id="id2">`</span></a>{(1+ theta )over 2} lambda + nu <a href="#id3"><span class="problematic" id="id4">`</span></a>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; infinitesimal_character (q)
-Value: [  5, -3 ]/2
-atlas&gt; (1+theta)*lambda(q)/2
-Value: [ 1, 1 ]/2
-atlas&gt; (1+theta)*lambda(q)/2+nu(q)
-Value: [  5, -3 ]/2
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">infinitesimal_character</span> <span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span>  <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span> <span class="p">]</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">theta</span><span class="p">)</span><span class="o">*</span><span class="k">lambda</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="p">]</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">theta</span><span class="p">)</span><span class="o">*</span><span class="k">lambda</span><span class="p">(</span><span class="n">q</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">+</span><span class="n">nu</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span>  <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span> <span class="p">]</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>It is less information than <code class="docutils literal"><span class="pre">lambda</span></code> and <code class="docutils literal"><span class="pre">nu</span></code>. This is because <span class="math">\({(1+ \theta )\over 2}\)</span> looses some of it.</p>
@@ -1132,15 +1156,18 @@ atlas&gt;
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="trivial_sl2r.html" class="btn btn-neutral float-right" title="Trivial Representation of SL(2,R)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="trivial_sl2r.html" class="btn btn-neutral float-right" title="Trivial Representation of SL(2,R)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="parameters_real_tori.html" class="btn btn-neutral float-right" title="Parameters for Real Tori" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="parameters_real_tori.html" class="btn btn-neutral" title="Parameters for Real Tori" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1174,7 +1201,8 @@ atlas&gt;
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

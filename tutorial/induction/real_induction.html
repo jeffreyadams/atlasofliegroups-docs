@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Parabolic Induction" href="../parabolic_induction.html"/>
         <link rel="next" title="Cohomological Parabolic Induction" href="theta_induction.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -224,7 +233,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../more_principal.html">More Principal Series</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Real Parabolic Induction</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Real Parabolic Induction</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#defining-a-real-parabolic-subgroup">Defining a Real Parabolic Subgroup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#real-induction">Real Induction</a></li>
 </ul>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../parabolic_induction.html">Parabolic Induction</a> &raquo;</li>
-      
-    <li>Real Parabolic Induction</li>
+        
+      <li>Real Parabolic Induction</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/induction/real_induction.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/induction/real_induction.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="theta_induction.html" class="btn btn-neutral float-right" title="Cohomological Parabolic Induction" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../parabolic_induction.html" class="btn btn-neutral" title="Parabolic Induction" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="theta_induction.html" class="btn btn-neutral float-right" title="Cohomological Parabolic Induction" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="../parabolic_induction.html" class="btn btn-neutral float-right" title="Parabolic Induction" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="real-parabolic-induction">
 <h1>Real Parabolic Induction<a class="headerlink" href="#real-parabolic-induction" title="Permalink to this headline">¶</a></h1>
@@ -1088,35 +1112,35 @@ Levi is attached to the long (simple) root in <span class="math">\(G\)</span> wh
 numbered 1. In order to obtain a real parabolic subgroup, we choose <code class="docutils literal"><span class="pre">x</span></code> to
 to be the <code class="docutils literal"><span class="pre">KGB</span></code> element associated to the maximally split Cartan, which
 you may remember is the last element in <code class="docutils literal"><span class="pre">KGB(G)</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=Sp(4,R)
-Variable G: RealForm
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">Sp</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Variable</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
 
-atlas&gt; #KGB(G)
-Value: 11
-atlas&gt; set x=KGB(G,10)
-Variable x: KGBElt
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="c1">#KGB(G)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">11</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">Variable</span> <span class="n">x</span><span class="p">:</span> <span class="n">KGBElt</span>
 
-atlas&gt; set P=Parabolic:([1],x)
-Variable P: ([int],KGBElt)
-atlas&gt; P
-Value: ([1],KGB element #10)
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">P</span><span class="o">=</span><span class="n">Parabolic</span><span class="p">:([</span><span class="mi">1</span><span class="p">],</span><span class="n">x</span><span class="p">)</span>
+<span class="n">Variable</span> <span class="n">P</span><span class="p">:</span> <span class="p">([</span><span class="nb">int</span><span class="p">],</span><span class="n">KGBElt</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">P</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">([</span><span class="mi">1</span><span class="p">],</span><span class="n">KGB</span> <span class="n">element</span> <span class="c1">#10)</span>
 </pre></div>
 </div>
 <p>To be sure that we have done this correctly, now check whether the parabolic
 we have defined is indeed real, and that the Levi factor is the one we
 wanted:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; is_parabolic_real(P)
-Value: true
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">is_parabolic_real</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">true</span>
 
-atlas&gt; set L=Levi(P)
-Variable L: RealForm
-atlas&gt; L
-Value: disconnected split real group with Lie algebra &#39;sl(2,R).gl(1,R)&#39;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">L</span><span class="o">=</span><span class="n">Levi</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+<span class="n">Variable</span> <span class="n">L</span><span class="p">:</span> <span class="n">RealForm</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">L</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sl(2,R).gl(1,R)&#39;</span>
 
-atlas&gt; simple_roots(L)
-Value:
-| 0 |
-| 2 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">2</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>An alternate way to define a (real) parabolic subgroup of a real group <span class="math">\(G\)</span>
@@ -1125,20 +1149,20 @@ determine the type of the (underlying complex) parabolic. For the resulting
 parabolic subgroup to
 be real, the weight <span class="math">\(\lambda\)</span> must satisfy
 <span class="math">\(\theta_x(\lambda)=-\lambda\)</span>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set lambda=[1,0]
-Variable lambda: [int]
-atlas&gt; set Q=parabolic(lambda,x)
-Parabolic is real.
-Variable Q: ([int],KGBElt)
-atlas&gt; Q
-Value: ([1],KGB element #10)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Variable</span> <span class="k">lambda</span><span class="p">:</span> <span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">Q</span><span class="o">=</span><span class="n">parabolic</span><span class="p">(</span><span class="k">lambda</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+<span class="n">Parabolic</span> <span class="ow">is</span> <span class="n">real</span><span class="o">.</span>
+<span class="n">Variable</span> <span class="n">Q</span><span class="p">:</span> <span class="p">([</span><span class="nb">int</span><span class="p">],</span><span class="n">KGBElt</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">Q</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">([</span><span class="mi">1</span><span class="p">],</span><span class="n">KGB</span> <span class="n">element</span> <span class="c1">#10)</span>
 </pre></div>
 </div>
 <p>Notice that if you define a parabolic subgroup using this command, <code class="docutils literal"><span class="pre">atlas</span></code>
 will tell you what kind of parabolic you have: real, theta-stable, or neither.
 Let&#8217;s check that we have defined the same parabolic as before:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; P=Q
-Value: true
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">P</span><span class="o">=</span><span class="n">Q</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">true</span>
 </pre></div>
 </div>
 </div>
@@ -1151,30 +1175,30 @@ induced representation.
 First we need to choose and write down a representation,
 i.e., a parameter, for the Levi subgroup <span class="math">\(L\)</span>. For example, let&#8217;s take the
 trivial representation:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set t=trivial(L)
-Variable t: Param
-atlas&gt; t
-Value: final parameter (x=2,lambda=[0,1]/1,nu=[0,1]/1)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">t</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="n">Variable</span> <span class="n">t</span><span class="p">:</span> <span class="n">Param</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">t</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Keep in mind how <span class="math">\(L\)</span> is embedded in <span class="math">\(G\)</span>; the first coordinate
 of lambda and nu corresponds to the <span class="math">\(\mathbb R^{\times}\)</span> factor, the
 second is the parameter for <span class="math">\(SL(2,\mathbb R)\)</span>. You can see <code class="docutils literal"><span class="pre">KGB</span></code> for
 <span class="math">\(L\)</span>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; print_KGB(L)
-kgbsize: 3
-Base grading: [1].
-0:  0  [n]   1    2  (0,0)#0 e
-1:  0  [n]   0    2  (0,1)#0 e
-2:  1  [r]   2    *  (0,0)#1 1^e
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">print_KGB</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="n">kgbsize</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">Base</span> <span class="n">grading</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span>
+<span class="mi">0</span><span class="p">:</span>  <span class="mi">0</span>  <span class="p">[</span><span class="n">n</span><span class="p">]</span>   <span class="mi">1</span>    <span class="mi">2</span>  <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="c1">#0 e</span>
+<span class="mi">1</span><span class="p">:</span>  <span class="mi">0</span>  <span class="p">[</span><span class="n">n</span><span class="p">]</span>   <span class="mi">0</span>    <span class="mi">2</span>  <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="c1">#0 e</span>
+<span class="mi">2</span><span class="p">:</span>  <span class="mi">1</span>  <span class="p">[</span><span class="n">r</span><span class="p">]</span>   <span class="mi">2</span>    <span class="o">*</span>  <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="c1">#1 1^e</span>
 </pre></div>
 </div>
 <p>There are two ways in <code class="docutils literal"><span class="pre">atlas</span></code> to induce a representation on <span class="math">\(L\)</span> to
 <span class="math">\(G\)</span>. The command <code class="docutils literal"><span class="pre">real_induce_standard</span></code> takes the parameter for
 <span class="math">\(L\)</span> to represent a standard module, and writes the answer as a standard
 module for <span class="math">\(G\)</span>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; real_induce_standard(t,G)
-Value: final parameter (x=10,lambda=[2,1]/1,nu=[0,1]/1)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">real_induce_standard</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>If you start with a single parameter, the output will be a single parameter
@@ -1182,42 +1206,42 @@ as well. You can also apply this function to a <code class="docutils literal"><s
 interest will be the command <code class="docutils literal"><span class="pre">real_induce_irreducible</span></code> which takes the
 parameter of <span class="math">\(L\)</span> to represent an irreducible representation, and returns
 the composition series of the induced representation of <span class="math">\(G\)</span>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; real_induce_irreducible(t,G)
-Value:
-1*final parameter (x=4,lambda=[1,0]/1,nu=[1,-1]/2)
-1*final parameter (x=10,lambda=[2,1]/1,nu=[1,0]/1)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">real_induce_irreducible</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>You see that this induced representation is reducible, with two pieces.</p>
 <p>Let&#8217;s look at a second example: this time, let&#8217;s take the real parabolic with
 Levi factor <span class="math">\(GL(2,\mathbb R)\)</span> and compute the representation of <span class="math">\(G\)</span>
 obtained by inducing the trivial on this Levi:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; Q:=([0],x)
-Value: ([0],KGB element #10)
-atlas&gt; L:=Levi(Q)
-Value: disconnected split real group with Lie algebra &#39;sl(2,R).gl(1,R)&#39;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">Q</span><span class="p">:</span><span class="o">=</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span><span class="n">x</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">([</span><span class="mi">0</span><span class="p">],</span><span class="n">KGB</span> <span class="n">element</span> <span class="c1">#10)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">L</span><span class="p">:</span><span class="o">=</span><span class="n">Levi</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sl(2,R).gl(1,R)&#39;</span>
 </pre></div>
 </div>
 <p>Although the description of <span class="math">\(L\)</span> is the same as in our first example, it
 is a different group:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; simple_roots(L)
-Value:
-|  1 |
-| -1 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
 
-atlas&gt; print_KGB(L)
-kgbsize: 2
-Base grading: [1].
-0:  0  [n]   0    1  (0,0)#0 e
-1:  1  [r]   1    *  (0,0)#1 1^e
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">print_KGB</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="n">kgbsize</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">Base</span> <span class="n">grading</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span>
+<span class="mi">0</span><span class="p">:</span>  <span class="mi">0</span>  <span class="p">[</span><span class="n">n</span><span class="p">]</span>   <span class="mi">0</span>    <span class="mi">1</span>  <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="c1">#0 e</span>
+<span class="mi">1</span><span class="p">:</span>  <span class="mi">1</span>  <span class="p">[</span><span class="n">r</span><span class="p">]</span>   <span class="mi">1</span>    <span class="o">*</span>  <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span><span class="c1">#1 1^e</span>
 </pre></div>
 </div>
 <p>These are indeed the data for <span class="math">\(GL(2,\mathbb R)\)</span>. Now let&#8217;s induce:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; t:=trivial(L)
-Value: final parameter (x=1,lambda=[1,-1]/2,nu=[1,-1]/2)
-atlas&gt; real_induce_irreducible(t,G)
-Value:
-1*final parameter (x=10,lambda=[2,1]/1,nu=[1,1]/2)
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">t</span><span class="p">:</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">real_induce_irreducible</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>So this time, the induced representation is irreducible.</p>
@@ -1226,15 +1250,18 @@ Value:
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="theta_induction.html" class="btn btn-neutral float-right" title="Cohomological Parabolic Induction" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="theta_induction.html" class="btn btn-neutral float-right" title="Cohomological Parabolic Induction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../parabolic_induction.html" class="btn btn-neutral float-right" title="Parabolic Induction" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../parabolic_induction.html" class="btn btn-neutral" title="Parabolic Induction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1268,7 +1295,8 @@ Value:
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

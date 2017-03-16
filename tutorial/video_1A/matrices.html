@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Preliminaries" href="../preliminaries.html"/>
         <link rel="next" title="Functions and Loops" href="functions_and_loops.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -150,7 +159,7 @@
 <li class="toctree-l4"><a class="reference internal" href="vectors.html#operations-and-coordinates">Operations and coordinates</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Matrices</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Matrices</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#operations-on-matrices">Operations on Matrices</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#basic-linear-algebra-operations">Basic Linear Algebra operations</a></li>
 </ul>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../preliminaries.html">Preliminaries</a> &raquo;</li>
-      
-    <li>Matrices</li>
+        
+      <li>Matrices</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_1A/matrices.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_1A/matrices.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="functions_and_loops.html" class="btn btn-neutral float-right" title="Functions and Loops" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="vectors.html" class="btn btn-neutral" title="Vectors" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="functions_and_loops.html" class="btn btn-neutral float-right" title="Functions and Loops" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="vectors.html" class="btn btn-neutral float-right" title="Vectors" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="matrices">
 <h1>Matrices<a class="headerlink" href="#matrices" title="Permalink to this headline">¶</a></h1>
@@ -1076,117 +1100,117 @@
 vectors, we define a matrix using <code class="docutils literal"><span class="pre">:</span></code> as illustrated below, and listing the entries as sets of n-tuples
 in order by columns. Note, as for vectors, the <code class="docutils literal"><span class="pre">:</span></code> distinguishes the matrix
 from an array of integers. For example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set A=mat:[[1,2],[3,4]]
-Identifier A: mat
-atlas&gt; A
-Value:
-| 1, 3 |
-| 2, 4 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">A</span><span class="o">=</span><span class="n">mat</span><span class="p">:[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+<span class="n">Identifier</span> <span class="n">A</span><span class="p">:</span> <span class="n">mat</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span> <span class="o">|</span>
 
-atlas&gt; set B=[[1,2],[3,4]]
-Identifier B: [[int]]
-atlas&gt;
-atlas&gt; B
-Value: [[1,2],[3,4]]
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">B</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+<span class="n">Identifier</span> <span class="n">B</span><span class="p">:</span> <span class="p">[[</span><span class="nb">int</span><span class="p">]]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">B</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Note what happens if we add <code class="docutils literal"><span class="pre">A</span></code> and <code class="docutils literal"><span class="pre">B</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A+B
-Internal error: forced value is no vector
-Evaluation aborted.
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span><span class="o">+</span><span class="n">B</span>
+<span class="n">Internal</span> <span class="n">error</span><span class="p">:</span> <span class="n">forced</span> <span class="n">value</span> <span class="ow">is</span> <span class="n">no</span> <span class="n">vector</span>
+<span class="n">Evaluation</span> <span class="n">aborted</span><span class="o">.</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <div class="section" id="operations-on-matrices">
 <h2>Operations on Matrices<a class="headerlink" href="#operations-on-matrices" title="Permalink to this headline">¶</a></h2>
 <p>Multiplication on the left, resp. on the right of <code class="docutils literal"><span class="pre">A</span></code> by a vector automatically converts the product into the product of <code class="docutils literal"><span class="pre">A</span></code> by column or row vector respectively.   The transpose of A is obtained using <code class="docutils literal"><span class="pre">^A</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A*[1,1]
-Value: [ 4, 6 ]
-atlas&gt; [1,1]*A
-Value: [ 3, 7 ]
-atlas&gt; ^A
-Value:
-| 1, 2 |
-| 3, 4 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span><span class="o">*</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">A</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="o">^</span><span class="n">A</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span> <span class="o">|</span>
 
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p><code class="docutils literal"><span class="pre">atlas</span></code> has two commands related to the inverse: The first one, <code class="docutils literal"><span class="pre">invert(A)</span></code> gives
 a pair <code class="docutils literal"><span class="pre">(B,d)</span></code> Where <code class="docutils literal"><span class="pre">B</span></code> is an integral multiple, <code class="docutils literal"><span class="pre">d</span></code> of the inverse of
 <code class="docutils literal"><span class="pre">A</span></code>. If <code class="docutils literal"><span class="pre">A</span></code> is invertible over the integers then <code class="docutils literal"><span class="pre">B</span></code> is the
 inverse of <code class="docutils literal"><span class="pre">A</span></code> and <code class="docutils literal"><span class="pre">d=1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; invert(A)
-Value: (
-| -4,  3 |
-|  2, -1 |
-,2)
-atlas&gt;
-atlas&gt; set (B,d)=invert(A)
-Identifiers B: mat (hiding previous one of type [[int]]), d: int
-atlas&gt; B
-Value:
-| -4,  3 |
-|  2, -1 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">invert</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">(</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span>  <span class="mi">3</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
+<span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="p">(</span><span class="n">B</span><span class="p">,</span><span class="n">d</span><span class="p">)</span><span class="o">=</span><span class="n">invert</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">Identifiers</span> <span class="n">B</span><span class="p">:</span> <span class="n">mat</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="p">[[</span><span class="nb">int</span><span class="p">]]),</span> <span class="n">d</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">B</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span>  <span class="mi">3</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
 
-atlas&gt; d
-Value: 2
-atlas&gt; A*B
-Value:
-| 2, 0 |
-| 0, 2 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">d</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span><span class="o">*</span><span class="n">B</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span>
 
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span>
 
 
-  atlas&gt; set C=mat:[[1,0],[1,1]]
-  Identifier C: mat
-  atlas&gt; C
-  Value:
-  | 1, 1 |
-  | 0, 1 |
-  atlas&gt; invert(C)
-  Value: (
-  | 1, -1 |
-  | 0,  1 |
-  ,1)
-  atlas&gt;
+  <span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">C</span><span class="o">=</span><span class="n">mat</span><span class="p">:[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
+  <span class="n">Identifier</span> <span class="n">C</span><span class="p">:</span> <span class="n">mat</span>
+  <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">C</span>
+  <span class="n">Value</span><span class="p">:</span>
+  <span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+  <span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+  <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">invert</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+  <span class="n">Value</span><span class="p">:</span> <span class="p">(</span>
+  <span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
+  <span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span> <span class="o">|</span>
+  <span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+  <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The second command <code class="docutils literal"><span class="pre">inverse(A)</span></code> is not in the initial software commands. It is defined in the supplementary file <code class="docutils literal"><span class="pre">basic.at</span></code>. This command calculates the inverse of matrix over the integers.</p>
 <p>Recall that to tell <code class="docutils literal"><span class="pre">atlas</span></code> where to find the <code class="docutils literal"><span class="pre">.at</span></code> files, you need to launch your software using the command <code class="docutils literal"><span class="pre">./atlas</span> <span class="pre">--path=atlas-scripts</span></code>. If you have not done this yet, you can quit the software and launch it again with this command.</p>
 <p>You can then input the file <code class="docutils literal"><span class="pre">basic.at</span></code> and continue.</p>
 <p>Now we can see if we can calculate the inverse of these matrices over the integers:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; A
-Value:
-| 1, 3 |
-| 2, 4 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span> <span class="o">|</span>
 
-atlas&gt; inverse(A)
-Runtime error:
-  Matrix not invertible over the integers
-  (in call of error, built-in)
-  (in call of inverse@mat, defined at atlas-scripts/basic.at:254:4--256:74)
-  Evaluation aborted.
-atlas&gt; det(A)
-Value: -2
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">inverse</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">Runtime</span> <span class="n">error</span><span class="p">:</span>
+  <span class="n">Matrix</span> <span class="ow">not</span> <span class="n">invertible</span> <span class="n">over</span> <span class="n">the</span> <span class="n">integers</span>
+  <span class="p">(</span><span class="ow">in</span> <span class="n">call</span> <span class="n">of</span> <span class="n">error</span><span class="p">,</span> <span class="n">built</span><span class="o">-</span><span class="ow">in</span><span class="p">)</span>
+  <span class="p">(</span><span class="ow">in</span> <span class="n">call</span> <span class="n">of</span> <span class="n">inverse</span><span class="nd">@mat</span><span class="p">,</span> <span class="n">defined</span> <span class="n">at</span> <span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span><span class="o">/</span><span class="n">basic</span><span class="o">.</span><span class="n">at</span><span class="p">:</span><span class="mi">254</span><span class="p">:</span><span class="mi">4</span><span class="o">--</span><span class="mi">256</span><span class="p">:</span><span class="mi">74</span><span class="p">)</span>
+  <span class="n">Evaluation</span> <span class="n">aborted</span><span class="o">.</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">det</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="o">-</span><span class="mi">2</span>
 
-atlas&gt; C
-Value:
-| 1, 1 |
-| 0, 1 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">C</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
 
-atlas&gt; inverse(C)
-Value:
-| 1, -1 |
-| 0,  1 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">inverse</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span>  <span class="mi">1</span> <span class="o">|</span>
 
-atlas&gt; C*inverse(C)
-Value:
-| 1, 0 |
-| 0, 1 |
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">C</span><span class="o">*</span><span class="n">inverse</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1195,7 +1219,7 @@ atlas&gt;
 <p>Now lets use a new matrix and try to solve a linear equation. We use
 the function <code class="docutils literal"><span class="pre">solve</span></code>, that has as input, a matrix and a vector; and as output,
 and array of vectors:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;  A:=[[1,0,0],[0,2,0],[1,1,0]]
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt;  A:=[[1,0,0],[0,2,0],[1,1,0]]
 Value:
 | 1, 0, 1 |
 | 0, 2, 1 |
@@ -1215,71 +1239,71 @@ case, only one <code class="docutils literal"><span class="pre">vec</span></code
 dimensional vector space. <code class="docutils literal"><span class="pre">atlas</span></code> just chooses a single integer
 solution of the equation. To find all the solutions you need to find the kernel.</p>
 <p>If we try to solve an equation with no solutions we would get the empty array:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; solve(A,[0,0,1])
-Value: []
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Now we can check our answer. We can do that by identifying the 0th
 entry of our array as the vector solution of the linear equation. We
 call this vector <code class="docutils literal"><span class="pre">v</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set answer=solve(A,[3,4,0])
-Identifier answer: [vec]
-atlas&gt; answer
-Value: [[ -1,  0,  4 ]]
-atlas&gt; set v=answer[0]
-Identifier v: vec
-atlas&gt; A*v
-Value: [ 3, 4, 0 ]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">answer</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">A</span><span class="p">,[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">Identifier</span> <span class="n">answer</span><span class="p">:</span> <span class="p">[</span><span class="n">vec</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">answer</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[[</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">0</span><span class="p">,</span>  <span class="mi">4</span> <span class="p">]]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">v</span><span class="o">=</span><span class="n">answer</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Identifier</span> <span class="n">v</span><span class="p">:</span> <span class="n">vec</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span><span class="o">*</span><span class="n">v</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Now let&#8217;s calculate the kernel of our singular matrix. We use the function <code class="docutils literal"><span class="pre">kernel</span></code> with input a matrix and output another matrix whose columns are a basis of the kernel:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; kernel (A)
-Value:
-|  2 |
-|  1 |
-| -2 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">kernel</span> <span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span>  <span class="mi">2</span> <span class="o">|</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">2</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>Note this is a matrix. We can multiply it by A and get 0. However, <code class="docutils literal"><span class="pre">atlas</span></code> will not think of it as a vector solution to the matrix equation. In fact, if we call this matrix w, look what happens when we try to multiply <code class="docutils literal"><span class="pre">v+w</span></code> by A:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set w= kernel (A)
-Identifier w: mat
-atlas&gt; A*(v+w)
-Error in expression +(v,w) at &lt;standard input&gt;:36:3-6
-  Failed to match &#39;+&#39; with argument type (vec,mat)
-Type check failed
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">w</span><span class="o">=</span> <span class="n">kernel</span> <span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">w</span><span class="p">:</span> <span class="n">mat</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span><span class="o">*</span><span class="p">(</span><span class="n">v</span><span class="o">+</span><span class="n">w</span><span class="p">)</span>
+<span class="n">Error</span> <span class="ow">in</span> <span class="n">expression</span> <span class="o">+</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="n">w</span><span class="p">)</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">36</span><span class="p">:</span><span class="mi">3</span><span class="o">-</span><span class="mi">6</span>
+  <span class="n">Failed</span> <span class="n">to</span> <span class="n">match</span> <span class="s1">&#39;+&#39;</span> <span class="k">with</span> <span class="n">argument</span> <span class="nb">type</span> <span class="p">(</span><span class="n">vec</span><span class="p">,</span><span class="n">mat</span><span class="p">)</span>
+<span class="n">Type</span> <span class="n">check</span> <span class="n">failed</span>
 </pre></div>
 </div>
 <p>We need to rename the column vector of <code class="docutils literal"><span class="pre">w</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set u=w[0]
-Identifier u: vec
-atlas&gt; u
-Value: [ 2, 1, -2 ]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">u</span><span class="o">=</span><span class="n">w</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Identifier</span> <span class="n">u</span><span class="p">:</span> <span class="n">vec</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">u</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 
-atlas&gt; A*(v+u)
-Value: [ 3, 4, 0 ]
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span><span class="o">*</span><span class="p">(</span><span class="n">v</span><span class="o">+</span><span class="n">u</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 
-atlas&gt; A*(v+3*u)
-Value: [ 3, 4, 0 ]
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span><span class="o">*</span><span class="p">(</span><span class="n">v</span><span class="o">+</span><span class="mi">3</span><span class="o">*</span><span class="n">u</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">0</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>They are all solutions of our matrix equation as was expected.</p>
 <p>Let&#8217;s try another matrix:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt;  A:=[[1,0,0],[0,0,0],[0,0,0]]
-Value:
-| 1, 0, 0 |
-| 0, 0, 0 |
-| 0, 0, 0 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span>  <span class="n">A</span><span class="p">:</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
 
-atlas&gt; kernel (A)
-Value:
-| 0, 0 |
-| 0, 1 |
-| 1, 0 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">kernel</span> <span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
 </pre></div>
 </div>
 </div>
@@ -1287,15 +1311,18 @@ Value:
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="functions_and_loops.html" class="btn btn-neutral float-right" title="Functions and Loops" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="functions_and_loops.html" class="btn btn-neutral float-right" title="Functions and Loops" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="vectors.html" class="btn btn-neutral float-right" title="Vectors" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="vectors.html" class="btn btn-neutral" title="Vectors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1329,7 +1356,8 @@ Value:
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

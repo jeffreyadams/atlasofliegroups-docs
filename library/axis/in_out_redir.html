@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Miscellaneous Commands" href="misc.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -269,7 +278,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="recursion.html">Recursion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="split_comm.html">Splitting Commands</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Output, Input, and Redirection</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Output, Input, and Redirection</a></li>
 <li class="toctree-l3"><a class="reference internal" href="misc.html">Miscellaneous Commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="summary.html">Syntax Summary</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="summary.html#command-level">Command level</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
-      
-    <li>Output, Input, and Redirection</li>
+        
+      <li>Output, Input, and Redirection</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/axis/in_out_redir.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/axis/in_out_redir.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="split_comm.html" class="btn btn-neutral" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="output-input-and-redirection">
 <h1>Output, Input, and Redirection<a class="headerlink" href="#output-input-and-redirection" title="Permalink to this headline">¶</a></h1>
@@ -1086,15 +1110,15 @@ case it can contain spaces); all terminal output will be redirected to that
 file for the duration of the command. In case of &#8220;&gt;&#8221; a new file will be
 created, in case of &#8220;&gt;&gt;&#8221; the output is appended to an existing file. For
 instance:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &gt; output_file block_sizes(ic)
-atlas&gt; &gt;&gt;output_file print_KGB(real_form(ic,2))
-atlas&gt; &gt;&gt;output_file print_KL_list(real_form(ic,2),dual_quasisplit_form(ic))
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">output_file</span> <span class="n">block_sizes</span><span class="p">(</span><span class="n">ic</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&gt;&gt;</span><span class="n">output_file</span> <span class="n">print_KGB</span><span class="p">(</span><span class="n">real_form</span><span class="p">(</span><span class="n">ic</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&gt;&gt;</span><span class="n">output_file</span> <span class="n">print_KL_list</span><span class="p">(</span><span class="n">real_form</span><span class="p">(</span><span class="n">ic</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="n">dual_quasisplit_form</span><span class="p">(</span><span class="n">ic</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>will produce in the current directory the file &#8216;output_file&#8217; with the results
 of the indicated calls to block_sizes&#8217;, &#8216;print_KGB&#8217;, and &#8216;print_KL_list&#8217;.</p>
 <p>One can also redirect command input from a file. Simply type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;filename
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">filename</span>
 </pre></div>
 </div>
 <p>on a line by itself to execute the contents of &#8216;filename&#8217; as a series of
@@ -1115,7 +1139,7 @@ suppresses subsequent attempts to read that file as input. This is so that
 scripts can freely start by including other scripts whose definitions they
 depend on, without having multiple dependencies on the same script result in
 it being executed many times. The user can circumvent this check by writing:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;&lt;filename
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&lt;&lt;</span><span class="n">filename</span>
 </pre></div>
 </div>
 <p>in which case the file will be read as input, even if it had been before. This
@@ -1145,15 +1169,18 @@ is usually pointless to continue); then control is given back to the terminal.</
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="misc.html" class="btn btn-neutral float-right" title="Miscellaneous Commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="split_comm.html" class="btn btn-neutral float-right" title="Splitting Commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="split_comm.html" class="btn btn-neutral" title="Splitting Commands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1187,7 +1214,8 @@ is usually pointless to continue); then control is given back to the terminal.</
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

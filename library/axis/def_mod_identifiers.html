@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="The Axis Language" href="../axis.html"/>
         <link rel="next" title="Defining Functions and Operators" href="def_func_op.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -258,7 +267,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tuple_pattern.html">Tuple Displays and Pattern Matching</a></li>
 <li class="toctree-l3"><a class="reference internal" href="implicit_conversion.html">Implicit Conversions</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Defining and Modifying Identifiers</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Defining and Modifying Identifiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="def_func_op.html">Defining Functions and Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="overload_redef_conflicts.html">Overloading v.s. Redefining, and Conflicts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="control_structures.html">Control Structures</a><ul>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../axis.html">The Axis Language</a> &raquo;</li>
-      
-    <li>Defining and Modifying Identifiers</li>
+        
+      <li>Defining and Modifying Identifiers</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/axis/def_mod_identifiers.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/axis/def_mod_identifiers.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="def_func_op.html" class="btn btn-neutral float-right" title="Defining Functions and Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="implicit_conversion.html" class="btn btn-neutral" title="Implicit Conversions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="def_func_op.html" class="btn btn-neutral float-right" title="Defining Functions and Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="defining-and-modifying-identifiers">
 <h1>Defining and Modifying Identifiers<a class="headerlink" href="#defining-and-modifying-identifiers" title="Permalink to this headline">¶</a></h1>
@@ -1082,8 +1106,8 @@ equality test (probably leading to an error due to an undefined left operand).</
 &#8216;:=&#8217; is provided. It is mainly intended for programming use rather than for
 expression evaluation. For instance, a function returning a list of numbers
 1,...,n may be written as follows (while-loops are explained later):</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set initial (int n) = let i=0 in while i&lt;n do i:=i+1 od
-Defined initial: (int-&gt;[int])
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">initial</span> <span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="n">let</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span> <span class="ow">in</span> <span class="k">while</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span> <span class="n">do</span> <span class="n">i</span><span class="p">:</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="n">od</span>
+<span class="n">Defined</span> <span class="n">initial</span><span class="p">:</span> <span class="p">(</span><span class="nb">int</span><span class="o">-&gt;</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>Here the part &#8216;let i=0 in&#8217; serves to introduce &#8216;i&#8217; as a variable, whose value
@@ -1093,8 +1117,8 @@ into a row-of-integer value; a property of axis that is uncommon in other
 languages.) Any identifier can be used as a variable, including one introduced
 as a function argument; for instance for a decreasing list n-1,...,1,0 one
 could write:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set initial_downwards (int n) = while (n:=n-1)&gt;=0 do n od
-Defined initial_downwards: (int-&gt;[int])
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">initial_downwards</span> <span class="p">(</span><span class="nb">int</span> <span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="k">while</span> <span class="p">(</span><span class="n">n</span><span class="p">:</span><span class="o">=</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">&gt;=</span><span class="mi">0</span> <span class="n">do</span> <span class="n">n</span> <span class="n">od</span>
+<span class="n">Defined</span> <span class="n">initial_downwards</span><span class="p">:</span> <span class="p">(</span><span class="nb">int</span><span class="o">-&gt;</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>For identifiers holding an array, vector or matrix, one can also assign to
@@ -1151,15 +1175,18 @@ already used this fact in the examples above.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="def_func_op.html" class="btn btn-neutral float-right" title="Defining Functions and Operators" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="def_func_op.html" class="btn btn-neutral float-right" title="Defining Functions and Operators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="implicit_conversion.html" class="btn btn-neutral float-right" title="Implicit Conversions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="implicit_conversion.html" class="btn btn-neutral" title="Implicit Conversions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1193,7 +1220,8 @@ already used this fact in the examples above.</p>
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

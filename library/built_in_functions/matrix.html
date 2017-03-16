@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Built-In atlas Functions" href="../builtin_atlas_functions.html"/>
         <link rel="next" title="Lie Group Basics" href="lie_basics.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -301,7 +310,7 @@
 <li class="toctree-l4"><a class="reference internal" href="basic_functions.html#null2">null</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Matrix Manipulating Functions</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Matrix Manipulating Functions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id-mat">id_mat</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#diagonal">diagonal</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#swiss-matix-knife">swiss_matix_knife</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,44 +1046,57 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../atlas_lib.html">atlas Library</a> &raquo;</li>
-      
+        
           <li><a href="../builtin_atlas_functions.html">Built-In <strong>atlas</strong> Functions</a> &raquo;</li>
-      
-    <li>Matrix Manipulating Functions</li>
+        
+      <li>Matrix Manipulating Functions</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/library/built_in_functions/matrix.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/library/built_in_functions/matrix.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="lie_basics.html" class="btn btn-neutral float-right" title="Lie Group Basics" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="basic_functions.html" class="btn btn-neutral" title="Basic Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="lie_basics.html" class="btn btn-neutral float-right" title="Lie Group Basics" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="basic_functions.html" class="btn btn-neutral float-right" title="Basic Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="matrix-manipulating-functions">
 <h1>Matrix Manipulating Functions<a class="headerlink" href="#matrix-manipulating-functions" title="Permalink to this headline">¶</a></h1>
-<table border="1" class="docutils">
+<table border="1" class="colwidths-given docutils">
 <colgroup>
 <col width="33%" />
 <col width="67%" />
@@ -1083,49 +1107,49 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#id-mat"><span>id_mat</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#id-mat"><span class="std std-ref">id_mat</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#diagonal"><span>diagonal</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#diagonal"><span class="std std-ref">diagonal</span></a></td>
 <td><code class="docutils literal"><span class="pre">(vec-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#swiss-matrix-knife"><span>swiss_matix_knife</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#swiss-matrix-knife"><span class="std std-ref">swiss_matix_knife</span></a></td>
 <td><code class="docutils literal"><span class="pre">(int,mat,int,int,int,int-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#echelon"><span>echelon</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#echelon"><span class="std std-ref">echelon</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat,[int])</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#diagonalize"><span>diagonalize</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#diagonalize"><span class="std std-ref">diagonalize</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;vec,mat,mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#adapted-basis"><span>adapted_basis</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#adapted-basis"><span class="std std-ref">adapted_basis</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat,vec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#kernel"><span>kernel</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#kernel"><span class="std std-ref">kernel</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#eigen-lattice"><span>eigen_lattice</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#eigen-lattice"><span class="std std-ref">eigen_lattice</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat,int-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#row-saturate"><span>row_saturate</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#row-saturate"><span class="std std-ref">row_saturate</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#inv-fact"><span>inv_fact</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#inv-fact"><span class="std std-ref">inv_fact</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;vec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#smith-basis"><span>Smith_basis</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#smith-basis"><span class="std std-ref">Smith_basis</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#smith"><span>Smith</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#smith"><span class="std std-ref">Smith</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat,vec)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#invert"><span>invert</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#invert"><span class="std std-ref">invert</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat,int)</span></code></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#mod2-section"><span>mod2_section</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#mod2-section"><span class="std std-ref">mod2_section</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat)</span></code></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#subspace-normal"><span>subspace_normal</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#subspace-normal"><span class="std std-ref">subspace_normal</span></a></td>
 <td><code class="docutils literal"><span class="pre">(mat-&gt;mat,mat,mat,[int])</span></code></td>
 </tr>
 </tbody>
@@ -1229,15 +1253,18 @@ the multiples <code class="docutils literal"><span class="pre">c_j*B_j</span></c
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="lie_basics.html" class="btn btn-neutral float-right" title="Lie Group Basics" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="lie_basics.html" class="btn btn-neutral float-right" title="Lie Group Basics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="basic_functions.html" class="btn btn-neutral float-right" title="Basic Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="basic_functions.html" class="btn btn-neutral" title="Basic Functions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1271,7 +1298,8 @@ the multiples <code class="docutils literal"><span class="pre">c_j*B_j</span></c
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

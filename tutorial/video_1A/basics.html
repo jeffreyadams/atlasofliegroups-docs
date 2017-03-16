@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Preliminaries" href="../preliminaries.html"/>
         <link rel="next" title="Help files" href="atlas_help_files.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -130,7 +139,7 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../preliminaries.html">Preliminaries</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Getting started using the software</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Getting started using the software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#the-basic-at-file">The <code class="docutils literal"><span class="pre">basic.at</span></code> file</a></li>
 </ul>
 </li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,61 +1046,74 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../preliminaries.html">Preliminaries</a> &raquo;</li>
-      
-    <li>Getting started using the software</li>
+        
+      <li>Getting started using the software</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_1A/basics.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_1A/basics.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../preliminaries.html" class="btn btn-neutral" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="../preliminaries.html" class="btn btn-neutral float-right" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="getting-started-using-the-software">
 <h1>Getting started using the software<a class="headerlink" href="#getting-started-using-the-software" title="Permalink to this headline">¶</a></h1>
-<p>This document will tell you about how to get started using <code class="docutils literal"><span class="pre">atlas</span></code>. To learn about how to launch <code class="code docutils literal"><span class="pre">atlas</span></code> see <a class="reference internal" href="../../run_atlas.html#run-atlas"><span>Run atlas</span></a>.</p>
+<p>This document will tell you about how to get started using <code class="docutils literal"><span class="pre">atlas</span></code>. To learn about how to launch <code class="code docutils literal"><span class="pre">atlas</span></code> see <a class="reference internal" href="../../run_atlas.html#run-atlas"><span class="std std-ref">Run atlas</span></a>.</p>
 <p>To quit <code class="docutils literal"><span class="pre">atlas</span></code> just type <code class="docutils literal"><span class="pre">quit</span></code></p>
 <p>(Or type <code class="docutils literal"><span class="pre">^Z</span></code> to quit it momentarily and put it in the background. Then type <code class="docutils literal"><span class="pre">fg</span></code> to get it back in the foreground)</p>
 <p>The <code class="docutils literal"><span class="pre">atlas</span></code> software will do basic arithmetic operations on integers, vectors, and matrices with integral or rational coefficients. These are the basic types of data that``atlas`` uses to store and give information on Lie groups structure and representations.</p>
 <p>You can ask the software to compute basic operations on the different data types.</p>
 <p>To set up a variable, for example <code class="docutils literal"><span class="pre">x=1</span></code>, type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=1
-Identifier x: int
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The second line is <code class="docutils literal"><span class="pre">atlas</span></code> telling us that it recognizes <code class="docutils literal"><span class="pre">x</span></code> as an integer. <code class="docutils literal"><span class="pre">atlas</span></code> assigns a memory location in the computer for future operations involving the value assigned to that variable. We can verify we assigned the correct value to the variable by typing just <code class="docutils literal"><span class="pre">x</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; x
-Value: 1
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <p>Sometimes we want to ask <code class="docutils literal"><span class="pre">atlas</span></code> to repeat the previous value or to use it to perform an operation on it. We use <code class="docutils literal"><span class="pre">$</span></code> for this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; $
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; $
 Value: 1
 atlas&gt; $+2
 Value: 3
@@ -1102,56 +1126,56 @@ same data type as the old one. You may also notice in the example
 below that, if we don&#8217;t use this way of assigning a new value to the
 variable, we get a message &#8220;(hiding previous one of type ....)&#8221;</p>
 <p>However there are other reasons why this second method of redefining the value of a variable. They have to do with the software functionality</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=2
-Identifier x: int (hiding previous one of type int)
-atlas&gt; x
-Value: 2
-atlas&gt; x:=5
-Value: 5
-atlas&gt; x:=2/3
-Error during analysis of expression at &lt;standard input&gt;:33:0-6
-Type error:
-  Subexpression /(2,3) at &lt;standard input&gt;:33:3-6
-  has wrong type: found rat while int was needed.
-Type check failed
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="nb">int</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span><span class="o">=</span><span class="mi">5</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">5</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span><span class="o">=</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">Error</span> <span class="n">during</span> <span class="n">analysis</span> <span class="n">of</span> <span class="n">expression</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">6</span>
+<span class="n">Type</span> <span class="n">error</span><span class="p">:</span>
+  <span class="n">Subexpression</span> <span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">3</span><span class="o">-</span><span class="mi">6</span>
+  <span class="n">has</span> <span class="n">wrong</span> <span class="nb">type</span><span class="p">:</span> <span class="n">found</span> <span class="n">rat</span> <span class="k">while</span> <span class="nb">int</span> <span class="n">was</span> <span class="n">needed</span><span class="o">.</span>
+<span class="n">Type</span> <span class="n">check</span> <span class="n">failed</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Note that if you have not assigned a value to a variable you cannot
 use this method. You need to first use <code class="docutils literal"><span class="pre">set</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; z:=1
-Error during analysis of expression at &lt;standard input&gt;:2:0-4
-  Undefined identifier &#39;z&#39; in assignment z:=1
-Expression analysis failed
-atlas&gt; set z=1
-Variable z: int
-atlas&gt; z
-Value: 1
-atlas&gt; z:=2
-Value: 2
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">z</span><span class="p">:</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">Error</span> <span class="n">during</span> <span class="n">analysis</span> <span class="n">of</span> <span class="n">expression</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">4</span>
+  <span class="n">Undefined</span> <span class="n">identifier</span> <span class="s1">&#39;z&#39;</span> <span class="ow">in</span> <span class="n">assignment</span> <span class="n">z</span><span class="p">:</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">Expression</span> <span class="n">analysis</span> <span class="n">failed</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">z</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">Variable</span> <span class="n">z</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">z</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">z</span><span class="p">:</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; y:=3
-Identifier y: int
-atlas&gt; set z=3/2
-Identifier z: rat
-atlas&gt; y+z
-Value: 9/2
-atlas&gt; whattype(y+z)
-type: rat
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">Identifier</span> <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">z</span><span class="o">=</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">Identifier</span> <span class="n">z</span><span class="p">:</span> <span class="n">rat</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">y</span><span class="o">+</span><span class="n">z</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">9</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">whattype</span><span class="p">(</span><span class="n">y</span><span class="o">+</span><span class="n">z</span><span class="p">)</span>
+<span class="nb">type</span><span class="p">:</span> <span class="n">rat</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>This works in most cases. However, there are some exceptions when the software does not switch to the appropriate data type.</p>
 <p>Another useful command is whattype:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype x
-type: int
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">whattype</span> <span class="n">x</span>
+<span class="nb">type</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>This tells us the data type (int) of the variable x. For more information on data types go to <a class="reference internal" href="basic_commands.html#basic-commands"><span>Basic Commands</span></a>.</p>
+<p>This tells us the data type (int) of the variable x. For more information on data types go to <a class="reference internal" href="basic_commands.html#basic-commands"><span class="std std-ref">Basic Commands</span></a>.</p>
 <div class="section" id="the-basic-at-file">
 <h2>The <code class="docutils literal"><span class="pre">basic.at</span></code> file<a class="headerlink" href="#the-basic-at-file" title="Permalink to this headline">¶</a></h2>
 <p>When you launch <code class="docutils literal"><span class="pre">atlas</span></code> with the standard built-in commands only,
@@ -1168,13 +1192,13 @@ remember, you can type <code class="docutils literal"><span class="pre">&lt;basi
 saying it failed to input the file, you need to quit <code class="docutils literal"><span class="pre">atlas</span></code> for a moment to learn how to do that.</p>
 <p>The supplementary files are in the directory <code class="docutils literal"><span class="pre">atlas-scripts</span></code>. But
 <code class="docutils literal"><span class="pre">atlas</span></code> needs to know where they are. So you need to launch <code class="docutils literal"><span class="pre">atlas</span></code> again
-providing the path for these files. Go to <a class="reference internal" href="../../run_atlas.html#run-atlas"><span>Run atlas</span></a> for
+providing the path for these files. Go to <a class="reference internal" href="../../run_atlas.html#run-atlas"><span class="std std-ref">Run atlas</span></a> for
 information about this. (Make sure you are in the directory
 where you downloaded <code class="docutils literal"><span class="pre">atlas</span></code> and type <code class="docutils literal"><span class="pre">ls</span></code> to verify that the <code class="docutils literal"><span class="pre">atlas-scripts</span></code> directory is there).</p>
 <p>You can also <code class="docutils literal"><span class="pre">cd</span></code> into that directory to see all the supplementary files available. These are all the <code class="docutils literal"><span class="pre">.at</span></code> files listed there.</p>
 <p>After you launched the software with the path information, you can load the file <code class="docutils literal"><span class="pre">basic.at</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; &lt;basic.at
-Starting to read from file &#39;atlas-scripts/basic.at&#39;.
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">basic</span><span class="o">.</span><span class="n">at</span>
+<span class="n">Starting</span> <span class="n">to</span> <span class="n">read</span> <span class="kn">from</span> <span class="nn">file</span> <span class="s1">&#39;atlas-scripts/basic.at&#39;</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>After this the software will list all the scripts included in the <code class="docutils literal"><span class="pre">basic.at</span></code>
@@ -1185,15 +1209,18 @@ file that are now added to the built-in commands. You can see what you have now 
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="atlas_help_files.html" class="btn btn-neutral float-right" title="Help files" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../preliminaries.html" class="btn btn-neutral float-right" title="Preliminaries" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../preliminaries.html" class="btn btn-neutral" title="Preliminaries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1227,7 +1254,8 @@ file that are now added to the built-in commands. You can see what you have now 
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

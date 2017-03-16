@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="First Examples of Representations." href="../first_examples.html"/>
         <link rel="next" title="Example \(G=PSL(2,\mathbb R)\)" href="minimal_principal_psl2r.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -201,7 +210,7 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../first_examples.html">First Examples of Representations.</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../first_examples.html">First Examples of Representations.</a> &raquo;</li>
-      
-    <li>Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</li>
+        
+      <li>Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_2B/minimal_principal_sl2r.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_2B/minimal_principal_sl2r.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="minimal_principal_psl2r.html" class="btn btn-neutral float-right" title="Example \(G=PSL(2,\mathbb R)\)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="minimal_principal_psl2r.html" class="btn btn-neutral float-right" title="Example \(G=PSL(2,\mathbb R)\)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="example">
 <h1>Example <span class="math">\(G=SL(2,\mathbb R)\)</span>.<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h1>
@@ -1082,7 +1106,7 @@ list of parameters with infinitesimal character <span class="math">\(\rho\)</spa
 ifinitesimal character, which is a rational vector, and gives you a
 list of parameters for the representations of the real form with that
 infinitesimal character:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype all_parameters_gamma ?
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype all_parameters_gamma ?
 Overloaded instances of &#39;all_parameters_gamma&#39;
   (RealForm,ratvec)-&gt;[Param]
 atlas&gt; set G=SL(2,R)
@@ -1104,40 +1128,40 @@ atlas&gt;
 </pre></div>
 </div>
 <p>Here the <code class="docutils literal"><span class="pre">x</span></code> is giving us Cartan involutions of the Cartans:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; involution(KGB(G,0))
-Value:
-| 1 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">involution</span><span class="p">(</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
 
-atlas&gt; involution(KGB(G,1))
-Value:
-| 1 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">involution</span><span class="p">(</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
 
-atlas&gt; involution(KGB(G,2))
-Value:
-| -1 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">involution</span><span class="p">(</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>So, the first two parameters in the list are associated to the compact
 Cartan; the last two to the split one.</p>
 <p>We can find out more about the Cartan for each parameter <code class="docutils literal"><span class="pre">p</span></code> as
 follows:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set p= parameters[3]
-Identifier p: Param (hiding previous one of type Param)
-atlas&gt; p
-Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
-atlas&gt;
-atlas&gt; x:=x(p)
-Value: KGB element #2
-atlas&gt; set H=Cartan_class(x)
-Identifier H: CartanClass (hiding previous one of type RealForm)
-atlas&gt; print_Cartan_info(H)
-compact: 0, complex: 0, split: 1
-canonical twisted involution: 1
-twisted involution orbit size: 1; fiber size: 1; strong inv: 1
-imaginary root system: empty
-real root system: A1
-complex factor: empty
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">p</span><span class="o">=</span> <span class="n">parameters</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">Identifier</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span><span class="o">=</span><span class="n">x</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">H</span><span class="o">=</span><span class="n">Cartan_class</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">H</span><span class="p">:</span> <span class="n">CartanClass</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">print_Cartan_info</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+<span class="n">compact</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">complex</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">split</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">canonical</span> <span class="n">twisted</span> <span class="n">involution</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">twisted</span> <span class="n">involution</span> <span class="n">orbit</span> <span class="n">size</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="n">fiber</span> <span class="n">size</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span> <span class="n">strong</span> <span class="n">inv</span><span class="p">:</span> <span class="mi">1</span>
+<span class="n">imaginary</span> <span class="n">root</span> <span class="n">system</span><span class="p">:</span> <span class="n">empty</span>
+<span class="n">real</span> <span class="n">root</span> <span class="n">system</span><span class="p">:</span> <span class="n">A1</span>
+<span class="nb">complex</span> <span class="n">factor</span><span class="p">:</span> <span class="n">empty</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So, this is the split Cartan for this group, with one real factor and
@@ -1146,17 +1170,17 @@ information for the moment.</p>
 <p>As we said above, the last two in the list of parameters for <span class="math">\(G\)</span>
 are the ones associated to this split Cartan subgroup; namely the two
 principal series with parameter <code class="docutils literal"><span class="pre">nu=1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; parameters[2]
-Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
-atlas&gt; parameters[3]
-Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">parameters</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">parameters</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The difference between these two are the <code class="docutils literal"><span class="pre">lambda</span></code>. The trivial representation of <span class="math">\(G\)</span> is:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; trivial(G)
-Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">trivial</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So, the parameter is the induced representation that has the trivial
@@ -1164,19 +1188,19 @@ as its irreducible quotient. This is the spherical principal
 series. There is a rho shift for the <code class="docutils literal"><span class="pre">lambda</span></code> so that the spherical
 pricipal series has <code class="docutils literal"><span class="pre">lambda=1</span></code> instead of <code class="docutils literal"><span class="pre">0</span></code> as you might
 expect. The other principal series is the non spherical irreducible:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set ps2=parameters[3]
-Identifier ps2: Param
-atlas&gt; ps2
-Value: final parameter (x=2,lambda=[2]/1,nu=[1]/1)
-atlas&gt;
-atlas&gt; set std=I(ps2)
-Identifier I: (Param,string)
-atlas&gt; std
-Value: (final parameter (x=2,lambda=[2]/1,nu=[1]/1),&quot;std&quot;)
-atlas&gt;
-atlas&gt; show(composition_series (std))
-1*J(x=2,lambda=[2/1],nu=[1/1])
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">ps2</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">Identifier</span> <span class="n">ps2</span><span class="p">:</span> <span class="n">Param</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">ps2</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">std</span><span class="o">=</span><span class="n">I</span><span class="p">(</span><span class="n">ps2</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">I</span><span class="p">:</span> <span class="p">(</span><span class="n">Param</span><span class="p">,</span><span class="n">string</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">std</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">(</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">),</span><span class="s2">&quot;std&quot;</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span> <span class="p">(</span><span class="n">std</span><span class="p">))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Here <code class="docutils literal"><span class="pre">J</span></code> stands for an irreducible representation and the single
@@ -1184,14 +1208,14 @@ line above says that there is only one composition factor in this
 representation. Namely, the irreducible principal series itself.</p>
 <p>On the other hand, the composition factors of the spherical principal
 series are:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set ps1=parameters[2]
-Identifier ps1: Param (hiding previous one of type Param)
-atlas&gt;
-atlas&gt; show(composition_series (I(ps1)))
-1*J(x=0,lambda=[1/1],nu=[0/1])
-1*J(x=1,lambda=[1/1],nu=[0/1])
-1*J(x=2,lambda=[1/1],nu=[1/1])
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">ps1</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">Identifier</span> <span class="n">ps1</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span> <span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">ps1</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>This standard module defined by the above parameter has three
@@ -1199,20 +1223,20 @@ composition factors, all irreducible. So <code class="docutils literal"><span cl
 Grothendieck group of three irreducible composition factors.</p>
 <p>Similarly, if we take parameters of a spherical representation with
 non-integral infinitesimal character we get irreducibility:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; x
-Value: KGB element #2
-atlas&gt; set q=parameter (x, [1], [3/2])
-Identifier q: Param (hiding previous one of type Param)
-atlas&gt; infinitesimal_character (q)
-Value: [ 3 ]/2
-atlas&gt; show(composition_series (I(q)))
-1*J(x=2,lambda=[1/1],nu=[3/2])
-atlas&gt;
-atlas&gt; set q=parameter (x, [0], [3/2])
-Identifier q: Param (hiding previous one of type Param)
-atlas&gt; show(composition_series (I(q)))
-1*J(x=2,lambda=[2/1],nu=[3/2])
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">Identifier</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">infinitesimal_character</span> <span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">3</span> <span class="p">]</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span> <span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">q</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">Identifier</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span> <span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">q</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So there are two large families of irreducible principal series, one
@@ -1223,15 +1247,18 @@ parameters <code class="docutils literal"><span class="pre">x,</span> <span clas
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="minimal_principal_psl2r.html" class="btn btn-neutral float-right" title="Example \(G=PSL(2,\mathbb R)\)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="minimal_principal_psl2r.html" class="btn btn-neutral float-right" title="Example \(G=PSL(2,\mathbb R)\)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="introduction.html" class="btn btn-neutral float-right" title="Introduction" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1265,7 +1292,8 @@ parameters <code class="docutils literal"><span class="pre">x,</span> <span clas
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

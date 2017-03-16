@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="First Examples of Representations." href="../first_examples.html"/>
         <link rel="next" title="Representations with Zero Infinitesimal Character" href="zero_infinitesimal_character.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -207,7 +216,7 @@
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="more_minimal_principal.html">More on minimal pricipal series.</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data for Representations</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Lowest <span class="math">\(K\)</span>-types of a Representation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Lowest <span class="math">\(K\)</span>-types of a Representation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
 <li class="toctree-l3"><a class="reference internal" href="translation_principle.html">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="blocks.html">Blocks of Representations</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,46 +1046,59 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../first_examples.html">First Examples of Representations.</a> &raquo;</li>
-      
-    <li>Lowest <span class="math">\(K\)</span>-types of a Representation</li>
+        
+      <li>Lowest <span class="math">\(K\)</span>-types of a Representation</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_2B/lowest_K_types.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_2B/lowest_K_types.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="zero_infinitesimal_character.html" class="btn btn-neutral float-right" title="Representations with Zero Infinitesimal Character" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cuspidal_data.html" class="btn btn-neutral" title="Cuspidal Data for Representations" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="zero_infinitesimal_character.html" class="btn btn-neutral float-right" title="Representations with Zero Infinitesimal Character" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="cuspidal_data.html" class="btn btn-neutral float-right" title="Cuspidal Data for Representations" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="lowest-types-of-a-representation">
 <h1>Lowest <span class="math">\(K\)</span>-types of a Representation<a class="headerlink" href="#lowest-types-of-a-representation" title="Permalink to this headline">¶</a></h1>
 <p>We can also look at the lowest <span class="math">\(K\)</span> types of a
 representation. For this we need the command <code class="docutils literal"><span class="pre">highest_weights</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype highest_weights ?
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype highest_weights ?
 Overloaded instances of &#39;highest_weights&#39;
   (KGBElt,ratvec)-&gt;[(KGBElt,vec)]
   ((KGBElt,ratvec),KGBElt)-&gt;[(KGBElt,vec)]
@@ -1095,12 +1119,12 @@ representations to a given <span class="math">\(K\)</span>-type see David Vogan&
 <p>Let&#8217;s find the lowest <span class="math">\(K\)</span>-types of each
 minimal principal series of <span class="math">\(Sp(4,\mathbb R )\)</span>. We proceed as
 follows</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; void: for p in ps do prints(p, &quot; &quot;, highest_weights (p, KGB(G,2))) od
-final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [(KGB element #2,[ 0, 0 ])]
-final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),(KGB element #2,[ 0, -1 ])]
-final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),(KGB element #2\ ,[ 0, -1 ])
-final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 1 ]),(KGB element #2\ ,[ -1, -1 ])]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ps</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">highest_weights</span> <span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">2</span><span class="p">)))</span> <span class="n">od</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[(</span><span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2,[ 0, 0 ])]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[(</span><span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2,[ 1, 0 ]),(KGB element #2,[ 0, -1 ])]</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[(</span><span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2,[ 1, 0 ]),(KGB element #2\ ,[ 0, -1 ])</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[(</span><span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2,[ 1, 1 ]),(KGB element #2\ ,[ -1, -1 ])]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The first representation, the trivial one, has lowest <span class="math">\(K\)</span>-type
@@ -1111,15 +1135,18 @@ one has <span class="math">\(K\)</span>-types [1,1] and [-1,-1].</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="zero_infinitesimal_character.html" class="btn btn-neutral float-right" title="Representations with Zero Infinitesimal Character" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="zero_infinitesimal_character.html" class="btn btn-neutral float-right" title="Representations with Zero Infinitesimal Character" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="cuspidal_data.html" class="btn btn-neutral float-right" title="Cuspidal Data for Representations" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cuspidal_data.html" class="btn btn-neutral" title="Cuspidal Data for Representations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1153,7 +1180,8 @@ one has <span class="math">\(K\)</span>-types [1,1] and [-1,-1].</p>
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

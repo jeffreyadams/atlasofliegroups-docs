@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Preliminaries" href="../preliminaries.html"/>
         <link rel="next" title="Structure Theory" href="../structure_theory.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -162,7 +171,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="rat_mat.html">Rational Matrices</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Local Variables</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Local Variables</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
 </ul>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../preliminaries.html">Preliminaries</a> &raquo;</li>
-      
-    <li>Local Variables</li>
+        
+      <li>Local Variables</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_1A/local_variables.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_1A/local_variables.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="rat_mat.html" class="btn btn-neutral" title="Rational Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="rat_mat.html" class="btn btn-neutral float-right" title="Rational Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="local-variables">
 <h1>Local Variables<a class="headerlink" href="#local-variables" title="Permalink to this headline">¶</a></h1>
@@ -1076,50 +1100,50 @@
 performing operations on variables that we need for just a temporary
 operation. For example, to calculate <code class="docutils literal"><span class="pre">2^3</span></code>, we may proceed as
 we have been doing:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set x=2
-Variable x: int
-atlas&gt; x^3
-Value: 8
-atlas&gt; set y=x^3
-Variable y: int
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">Variable</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span><span class="o">^</span><span class="mi">3</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">y</span><span class="o">=</span><span class="n">x</span><span class="o">^</span><span class="mi">3</span>
+<span class="n">Variable</span> <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Another way is to do:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let a=2 in a^3
-Value: 8
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span> <span class="ow">in</span> <span class="n">a</span><span class="o">^</span><span class="mi">3</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So <code class="docutils literal"><span class="pre">a</span></code> here is a local variable that goes away after the operation is performed:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; a
-Error during analysis of expression at &lt;standard input&gt;:16:0-1
-  Undefined identifier &#39;a&#39;
-Expression analysis failed
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">a</span>
+<span class="n">Error</span> <span class="n">during</span> <span class="n">analysis</span> <span class="n">of</span> <span class="n">expression</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">16</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">1</span>
+  <span class="n">Undefined</span> <span class="n">identifier</span> <span class="s1">&#39;a&#39;</span>
+<span class="n">Expression</span> <span class="n">analysis</span> <span class="n">failed</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Here are other examples where the expressions can be more complicated
 or more than one local variable is used:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let a=2 in 3*a^2+4*a+1
-Value: 21
-atlas&gt;
-atlas&gt; let a=2 in let b=3 in a^b
-Value: 8
-atlas&gt; let a=2 in let b=3 in let c=4 in a*b*c
-Value: 24
-atlas&gt;
-atlas&gt; let a=2 then b=3 then c=4 in a*b*c
-Value: 24
-atlas&gt;
-atlas&gt; let a=2,  b=3, c=4 in a*b*c
-Value: 24
-atlas&gt;
-atlas&gt; set d=let a=2 then b=3 then c=4 in a*b*c
-Variable d: int
-atlas&gt; d
-Value: 24
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span> <span class="ow">in</span> <span class="mi">3</span><span class="o">*</span><span class="n">a</span><span class="o">^</span><span class="mi">2</span><span class="o">+</span><span class="mi">4</span><span class="o">*</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">21</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span> <span class="ow">in</span> <span class="n">let</span> <span class="n">b</span><span class="o">=</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">a</span><span class="o">^</span><span class="n">b</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span> <span class="ow">in</span> <span class="n">let</span> <span class="n">b</span><span class="o">=</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">let</span> <span class="n">c</span><span class="o">=</span><span class="mi">4</span> <span class="ow">in</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">c</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">24</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span> <span class="n">then</span> <span class="n">b</span><span class="o">=</span><span class="mi">3</span> <span class="n">then</span> <span class="n">c</span><span class="o">=</span><span class="mi">4</span> <span class="ow">in</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">c</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">24</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>  <span class="n">b</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">4</span> <span class="ow">in</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">c</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">24</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">d</span><span class="o">=</span><span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span> <span class="n">then</span> <span class="n">b</span><span class="o">=</span><span class="mi">3</span> <span class="n">then</span> <span class="n">c</span><span class="o">=</span><span class="mi">4</span> <span class="ow">in</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span><span class="o">*</span><span class="n">c</span>
+<span class="n">Variable</span> <span class="n">d</span><span class="p">:</span> <span class="nb">int</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">d</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">24</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Note the last four examples involve the same expression, except we use
@@ -1131,25 +1155,25 @@ are terminated with <a href="#id1"><span class="problematic" id="id2">``</span><
 nested expressions you want can get complicated and it is hard to keep
 track. So the software keeps track and reminds you that more
 information is needed to finish the expression:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let a=2
-L &gt; in let b=3
-L &gt; in a*b
-Value: 6
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">L</span> <span class="o">&gt;</span> <span class="ow">in</span> <span class="n">let</span> <span class="n">b</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">L</span> <span class="o">&gt;</span> <span class="ow">in</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">6</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Another thing to notice, for example, if we use <code class="docutils literal"><span class="pre">y</span></code> in
 the expression above, this will not interfere with the process even
 though <code class="docutils literal"><span class="pre">y</span></code> was assigned a different value before:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let a=2, y=3 in a*y
-Value: 6
-atlas&gt; a
-Error during analysis of expression at &lt;standard input&gt;:71:0-1
-  Undefined identifier &#39;a&#39;
-Expression analysis failed
-atlas&gt; y
-Value: 8
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">a</span><span class="o">*</span><span class="n">y</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">6</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">a</span>
+<span class="n">Error</span> <span class="n">during</span> <span class="n">analysis</span> <span class="n">of</span> <span class="n">expression</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">71</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">1</span>
+  <span class="n">Undefined</span> <span class="n">identifier</span> <span class="s1">&#39;a&#39;</span>
+<span class="n">Expression</span> <span class="n">analysis</span> <span class="n">failed</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">y</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So, <code class="docutils literal"><span class="pre">a</span></code> did go away since it was a local variable. However, the
@@ -1159,9 +1183,9 @@ operation was performed and did not interfered with anything outside. Moreover, 
 <h2>The <code class="docutils literal"><span class="pre">;</span></code> syntax::<a class="headerlink" href="#the-syntax" title="Permalink to this headline">¶</a></h2>
 <p>Another useful syntax symbol is <code class="docutils literal"><span class="pre">;</span></code>. It is used between
 expressions to ask <code class="docutils literal"><span class="pre">atlas</span></code> to just perform the last operation:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let x=2 in let y=3 in x^y; x+y
-Value: 5
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span> <span class="ow">in</span> <span class="n">let</span> <span class="n">y</span><span class="o">=</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">x</span><span class="o">^</span><span class="n">y</span><span class="p">;</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">5</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>A more useful application of this is, for example, with the <code class="docutils literal"><span class="pre">prints</span></code>
@@ -1169,13 +1193,13 @@ statements. We may ask atlas to print some output. But if we want
 <code class="docutils literal"><span class="pre">atlas</span></code> to perform an operation with te output and print both the
 intitial output and the result, we may run into the following types of
 problems:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let x=2 in let y=3 in prints(&quot;x=&quot; ,x,&quot;y=&quot;,y)
-x=2y=3
-set t=prints(&quot;x=&quot; ,x,&quot;y=&quot;,y)
-x=2y=8
-Variable t: void
-atlas&gt; t
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span> <span class="ow">in</span> <span class="n">let</span> <span class="n">y</span><span class="o">=</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">prints</span><span class="p">(</span><span class="s2">&quot;x=&quot;</span> <span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="n">y</span><span class="o">=</span><span class="mi">3</span>
+<span class="nb">set</span> <span class="n">t</span><span class="o">=</span><span class="n">prints</span><span class="p">(</span><span class="s2">&quot;x=&quot;</span> <span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="n">y</span><span class="o">=</span><span class="mi">8</span>
+<span class="n">Variable</span> <span class="n">t</span><span class="p">:</span> <span class="n">void</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">t</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>There are two problems happenning here. When we ask on the first line
@@ -1189,88 +1213,88 @@ local or not, the <code class="docutils literal"><span class="pre">prints</span>
 typing <code class="docutils literal"><span class="pre">t</span></code> again does not give us back what we had asked <code class="docutils literal"><span class="pre">atlas</span></code>
 to print.</p>
 <p>This second problem does not get fixed by redefining <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; x:=2
-Value: 2
-atlas&gt; y:=3
-Value: 3
-atlas&gt; t:=prints(&quot;x=&quot; ,x,&quot;y=&quot;,y)
-x=2y=3
-atlas&gt; t
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">3</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">t</span><span class="p">:</span><span class="o">=</span><span class="n">prints</span><span class="p">(</span><span class="s2">&quot;x=&quot;</span> <span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="n">y</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">t</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So, as before, typing <code class="docutils literal"><span class="pre">t</span></code> again does not recall the values of <code class="docutils literal"><span class="pre">x</span></code>
 and <code class="docutils literal"><span class="pre">y</span></code>.</p>
 <p>If we want to perform an operation on <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code> and have <code class="docutils literal"><span class="pre">atlas</span></code> provide the values we had for those variables. Here is how we
 can do this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let x=2 in let y=3 in prints(&quot;x=&quot; ,x,&quot;y=&quot;,y);x^y
-x=2y=3
-Value: 8
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span> <span class="ow">in</span> <span class="n">let</span> <span class="n">y</span><span class="o">=</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">prints</span><span class="p">(</span><span class="s2">&quot;x=&quot;</span> <span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span><span class="n">x</span><span class="o">^</span><span class="n">y</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="n">y</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Or, if we want to use the most natural syntax,</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let x=2, y=3 in prints(&quot;x=&quot; ,x,&quot;y=&quot;,y);x^y
-x=2y=3
-Value: 8
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">prints</span><span class="p">(</span><span class="s2">&quot;x=&quot;</span> <span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span><span class="n">x</span><span class="o">^</span><span class="n">y</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="n">y</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>And to make the first output look nicer we can split the <code class="docutils literal"><span class="pre">prints</span></code> command in two:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; let x=2, y=3 in prints(&quot;x=&quot; ,x);prints(&quot;y=&quot;,y);x^y
-x=2
-y=3
-Value: 8
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">prints</span><span class="p">(</span><span class="s2">&quot;x=&quot;</span> <span class="p">,</span><span class="n">x</span><span class="p">);</span><span class="n">prints</span><span class="p">(</span><span class="s2">&quot;y=&quot;</span><span class="p">,</span><span class="n">y</span><span class="p">);</span><span class="n">x</span><span class="o">^</span><span class="n">y</span>
+<span class="n">x</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">y</span><span class="o">=</span><span class="mi">3</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">8</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="use-of-and-local-variables-in-for-statements">
 <h2>Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements<a class="headerlink" href="#use-of-and-local-variables-in-for-statements" title="Permalink to this headline">¶</a></h2>
 <p>Recall some examples of <code class="docutils literal"><span class="pre">for</span></code> loops:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; for i:4 do i od
-Value: [0,1,2,3]
-atlas&gt; for i:4 do 2*i od
-Value: [0,2,4,6]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="k">for</span> <span class="n">i</span><span class="p">:</span><span class="mi">4</span> <span class="n">do</span> <span class="n">i</span> <span class="n">od</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="k">for</span> <span class="n">i</span><span class="p">:</span><span class="mi">4</span> <span class="n">do</span> <span class="mi">2</span><span class="o">*</span><span class="n">i</span> <span class="n">od</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 
-atlas&gt; for i:4 do v#:=2*i od
-Value: [[0],[0,2],[0,2,4],[0,2,4,6]]
-atlas&gt; v
-Value: [0,2,4,6]
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="k">for</span> <span class="n">i</span><span class="p">:</span><span class="mi">4</span> <span class="n">do</span> <span class="n">v</span><span class="c1">#:=2*i od</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[[</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">v</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>The last <code class="docutils literal"><span class="pre">for</span></code> loop uses <code class="docutils literal"><span class="pre">#</span></code> which means append the ith expression
 to the previous one. Now if we only care about the last value of
 <code class="docutils literal"><span class="pre">v</span></code>, we can use <code class="docutils literal"><span class="pre">;</span></code> as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; v:=[]
-Value: []
-atlas&gt; for i:4 do v#:=2*i od;v
-Value: [0,2,4,6]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">v</span><span class="p">:</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="k">for</span> <span class="n">i</span><span class="p">:</span><span class="mi">4</span> <span class="n">do</span> <span class="n">v</span><span class="c1">#:=2*i od;v</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>We can repeat the proces to tack on the same string to the previous one:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set w=for i:4 do v#:=2*i od;v
-Variable w: [int]
-atlas&gt; w
-Value: [0,2,4,6,0,2,4,6]
-atlas&gt; set w=for i:4 do v#:=2*i od;v
-Variable w: [int] (overriding previous instance, which had type [int])
-atlas&gt; w
-Value: [0,2,4,6,0,2,4,6,0,2,4,6]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">w</span><span class="o">=</span><span class="k">for</span> <span class="n">i</span><span class="p">:</span><span class="mi">4</span> <span class="n">do</span> <span class="n">v</span><span class="c1">#:=2*i od;v</span>
+<span class="n">Variable</span> <span class="n">w</span><span class="p">:</span> <span class="p">[</span><span class="nb">int</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">w</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">w</span><span class="o">=</span><span class="k">for</span> <span class="n">i</span><span class="p">:</span><span class="mi">4</span> <span class="n">do</span> <span class="n">v</span><span class="c1">#:=2*i od;v</span>
+<span class="n">Variable</span> <span class="n">w</span><span class="p">:</span> <span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="p">[</span><span class="nb">int</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">w</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Another way of getting the same output <code class="docutils literal"><span class="pre">v</span></code> is using local variables</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; v:=[]
-Value: []
-atlas&gt; v
-Value: []
-atlas&gt; let a=for i:4 do v#:=2*i od in v
-Value: [0,2,4,6]
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">v</span><span class="p">:</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">v</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">let</span> <span class="n">a</span><span class="o">=</span><span class="k">for</span> <span class="n">i</span><span class="p">:</span><span class="mi">4</span> <span class="n">do</span> <span class="n">v</span><span class="c1">#:=2*i od in v</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </div>
@@ -1278,15 +1302,18 @@ atlas&gt;
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../structure_theory.html" class="btn btn-neutral float-right" title="Structure Theory" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="rat_mat.html" class="btn btn-neutral float-right" title="Rational Matrices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="rat_mat.html" class="btn btn-neutral" title="Rational Matrices" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1320,7 +1347,8 @@ atlas&gt;
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

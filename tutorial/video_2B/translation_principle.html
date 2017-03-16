@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="First Examples of Representations." href="../first_examples.html"/>
         <link rel="next" title="Blocks of Representations" href="blocks.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -209,7 +218,7 @@
 <li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data for Representations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of a Representation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Translation Principle</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Translation Principle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="blocks.html">Blocks of Representations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="K_orbits_on_G_B.html"><span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="K_orbits_on_G_B.html#discrete-series">Discrete Series</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,61 +1046,74 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../first_examples.html">First Examples of Representations.</a> &raquo;</li>
-      
-    <li>Translation Principle</li>
+        
+      <li>Translation Principle</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_2B/translation_principle.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_2B/translation_principle.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="blocks.html" class="btn btn-neutral float-right" title="Blocks of Representations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="zero_infinitesimal_character.html" class="btn btn-neutral" title="Representations with Zero Infinitesimal Character" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="blocks.html" class="btn btn-neutral float-right" title="Blocks of Representations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="zero_infinitesimal_character.html" class="btn btn-neutral float-right" title="Representations with Zero Infinitesimal Character" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="translation-principle">
 <h1>Translation Principle<a class="headerlink" href="#translation-principle" title="Permalink to this headline">¶</a></h1>
 <p>Now let&#8217;s change infinitesimal character using the translation
 principle. Let us start again with the trivial representation:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
-Variable G: RealForm (overriding previous instance, which had type RealForm)
-atlas&gt; set p=trivial(G)
-Variable p: Param (overriding previous instance, which had type Param)
-atlas&gt; p
-Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
-atlas&gt; infinitesimal_character(p)
-Value: [ 1 ]/1
-atlas&gt; is_finite_dimensional(p)
-Value: true
-atlas&gt; dimension(p)
-Value: 1
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Variable</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">p</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">infinitesimal_character</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">1</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">is_finite_dimensional</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">true</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">dimension</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">1</span>
 </pre></div>
 </div>
 <p>We need to use the command <code class="docutils literal"><span class="pre">T</span></code></p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype T ?
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype T ?
 Overloaded instances of &#39;T&#39;
   (Param,ratvec)-&gt;Param
   (ParamPol,ratvec)-&gt;ParamPol
@@ -1109,13 +1133,13 @@ atlas&gt;
 translation principle. Note that you also changed <code class="docutils literal"><span class="pre">lambda</span></code>. This is
 a feature of the translation principle. What representation is this new
 translated one?</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; is_finite_dimensional(q)
-Value: true
-atlas&gt; dimension(q)
-Value: 2
-atlas&gt; infinitesimal_character(q)
-Value: [ 2 ]/1
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">is_finite_dimensional</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">true</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">dimension</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">2</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">infinitesimal_character</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">2</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So, this way we obtain the two dimensional representation with
@@ -1125,27 +1149,27 @@ changing infinitesimal characters without changing the nature of the
 representation. For example, a reducible will stay reducible.</p>
 <p>In contrast, it is interesting to see what happens when we change <code class="docutils literal"><span class="pre">nu</span></code> but
 keep <code class="docutils literal"><span class="pre">lambda</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set q=parameter(KGB(G,2), [1], [0])
-Variable q: Param (overriding previous instance, which had type Param)
-atlas&gt; q
-Value: final parameter (x=2,lambda=[1]/1,nu=[0]/1)
-atlas&gt; infinitesimal_character(q)
-Value: [ 0 ]/1
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span><span class="p">(</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">Variable</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">infinitesimal_character</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">0</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Comparing composition series of these two we have:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; p
-Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
-atlas&gt; show(composition_series(I(p)))
-1*J(x=0,lambda=[1/1],nu=[0/1])
-1*J(x=1,lambda=[1/1],nu=[0/1])
-1*J(x=2,lambda=[1/1],nu=[1/1])
-atlas&gt; q
-Value: final parameter (x=2,lambda=[1]/1,nu=[0]/1)
-atlas&gt; show(composition_series(I(q)))
-1*J(x=2,lambda=[1/1],nu=[0/1])
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">p</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">q</span><span class="p">)))</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>So <code class="docutils literal"><span class="pre">q</span></code> is an irreducible spherical principal series at <code class="docutils literal"><span class="pre">0</span></code>. In other words,
@@ -1155,15 +1179,18 @@ feature of the representation.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="blocks.html" class="btn btn-neutral float-right" title="Blocks of Representations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="blocks.html" class="btn btn-neutral float-right" title="Blocks of Representations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="zero_infinitesimal_character.html" class="btn btn-neutral float-right" title="Representations with Zero Infinitesimal Character" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="zero_infinitesimal_character.html" class="btn btn-neutral" title="Representations with Zero Infinitesimal Character" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1197,7 +1224,8 @@ feature of the representation.</p>
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>

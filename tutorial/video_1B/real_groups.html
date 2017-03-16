@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -30,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Structure Theory" href="../structure_theory.html"/>
         <link rel="next" title="atlas choice of coordinates" href="atlas_coordinates.html"/>
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -82,7 +88,10 @@
           
             
             
-                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../about_us.html">About Us</a></li>
@@ -171,7 +180,7 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../structure_theory.html">Structure Theory</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="lie_types.html">Root Data and Lie Types</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">Real Groups</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Real Groups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
@@ -1021,8 +1030,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">atlas</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">atlas</a>
+        
       </nav>
 
 
@@ -1035,40 +1046,53 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
-      
+        
           <li><a href="../structure_theory.html">Structure Theory</a> &raquo;</li>
-      
-    <li>Real Groups</li>
+        
+      <li>Real Groups</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="https://jeffreyadams.github.io/atlasofliegroups-docs/discussions.html"> Atlas Forum</a>
-            <!--<a href="../../_sources/tutorial/video_1B/real_groups.txt" rel="nofollow"> View page source</a>-->
+            
+            <a href="../../_sources/tutorial/video_1B/real_groups.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lie_types.html" class="btn btn-neutral" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-<!--test-->
-		  
-		    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-		      
-			<a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-		      
-		      
-			<a href="lie_types.html" class="btn btn-neutral float-right" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-		      
-		    </div>
-		  
-<!--endtest-->
             
   <div class="section" id="real-groups">
 <h1>Real Groups<a class="headerlink" href="#real-groups" title="Permalink to this headline">¶</a></h1>
@@ -1077,24 +1101,24 @@ you can scroll up and see the list of all the real forms of all the
 familiar complex reductive Lie groups that are defined. This way you
 can work with a particular group that you are interested in. For
 example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; simple_roots(G)
-Value:
-| 2 |
-atlas&gt;simple_coroots(G)
-Value:
-| 1 |
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">2</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span><span class="n">simple_coroots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>These is a real Lie group , so the data type is a RealForm. Again the
 underlying root datum of <span class="math">\(G\)</span> is the one for the simply connected
 group of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set rd=root_datum (G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;A1&#39;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rd</span><span class="o">=</span><span class="n">root_datum</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">rd</span><span class="p">:</span> <span class="n">RootDatum</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RootDatum</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">rd</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">simply</span> <span class="n">connected</span> <span class="n">root</span> <span class="n">datum</span> <span class="n">of</span> <span class="n">Lie</span> <span class="nb">type</span> <span class="s1">&#39;A1&#39;</span>
 </pre></div>
 </div>
 <p>Note that <span class="math">\(SL(2,\mathbb R)\)</span> is NOT simply connected. However, it is the
@@ -1103,155 +1127,155 @@ datum corresponds to the the roots of the simply connected complex
 group <span class="math">\(SL(2,\mathbb C)\)</span>.</p>
 <p>Now let&#8217;s take the non-semisimple Lie group <span class="math">\(GL(2,\mathbb R)\)</span>. We can define it
 in two ways. Note the different types of information we obtain:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,R)
-Identifier G: RealForm
-atlas&gt; set rd=root_datum (G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;A1&#39;
-atlas&gt; G:=GL(2,R)
-Value: disconnected split real group with Lie algebra &#39;sl(2,R).gl(1,R)&#39;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rd</span><span class="o">=</span><span class="n">root_datum</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">rd</span><span class="p">:</span> <span class="n">RootDatum</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RootDatum</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">rd</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">simply</span> <span class="n">connected</span> <span class="n">root</span> <span class="n">datum</span> <span class="n">of</span> <span class="n">Lie</span> <span class="nb">type</span> <span class="s1">&#39;A1&#39;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G</span><span class="p">:</span><span class="o">=</span><span class="n">GL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sl(2,R).gl(1,R)&#39;</span>
 
-atlas&gt; simple_roots (G)
-Value:
-|  1 |
-| -1 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
 
-atlas&gt; simple_coroots (G)
-Value:
-|  1 |
-| -1 |
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_coroots</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span>  <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
 
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>These are the roots in the basis {e_1, e_2} of the torus <span class="math">\(T\)</span>.</p>
 <p>Now for <span class="math">\(PSL(2,\mathbb R)\)</span> we have:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=PSL(2,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; simple_roots(G)
-Value:
-| 1 |
-atlas&gt; simple_coroots(G)
-Value:
-| 2 |
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">PSL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_coroots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">2</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>On the other hand if we type:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(2,C)
-Identifier G: RealForm
-atlas&gt; simple_roots(G)
-Value:
-| 2, 0 |
-| 0, 2 |
-atlas&gt; simple_coroots(G)
-Value:
-| 1, 0 |
-| 0, 1 |
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_coroots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Which makes sense since <span class="math">\(SL(2,\mathbb C)\)</span> is the real Lie group with complexified Lie algebra of type <code class="docutils literal"><span class="pre">A2</span> <span class="pre">x</span> <span class="pre">A2</span></code>,</p>
 <p>In general, if we use the standard real form notation for the
 groups, <code class="docutils literal"><span class="pre">atlas</span></code> normally gives the usual coordinates. For
 example, we can do things like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=Sp(4,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; set rd=root_datum(G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;C2&#39;
-atlas&gt; simple_roots(rd)
-Value:
-| 1, 0 |
-| -1, 2 |
-atlas&gt; simple_coroots(rd)
-Value:
-| 1, 0 |
-| -1, 1 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">Sp</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rd</span><span class="o">=</span><span class="n">root_datum</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">rd</span><span class="p">:</span> <span class="n">RootDatum</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RootDatum</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">rd</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">simply</span> <span class="n">connected</span> <span class="n">root</span> <span class="n">datum</span> <span class="n">of</span> <span class="n">Lie</span> <span class="nb">type</span> <span class="s1">&#39;C2&#39;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_coroots</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
 </pre></div>
 </div>
 <p>These are the usual simple roots for <span class="math">\(Sp(4,\mathbb R)\)</span>. Using these
 pre-defined groups to define our real forms gives us, in most cases, the
 familiar coordinates to work with. We can look at all the positive
 roots and coroots and rho:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; posroots(rd)
-Value:
-| 1, 0, 1, 2 |
-| -1, 2, 1, 0 |
-atlas&gt; poscoroots(rd)
-Value:
-| 1, 0, 1, 1 |
-| -1, 1, 1, 0 |
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">posroots</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">poscoroots</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
 
 
-atlas&gt; rho(rd)
-Value: [ 2, 1 ]/1
-atlas&gt;
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">rho</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Once again, the pairing between these sets is the usual dot product:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set alpha=posroots(rd)[0]
-Identifier alpha: vec
-atlas&gt; alpha
-Value: [ 1, -1 ]
-atlas&gt; set alpha_check=poscoroots(rd)[0]
-Identifier alpha_check: vec
-atlas&gt; alpha_check
-Value: [ 1, -1 ]
-atlas&gt; alpha_check
-Value: [ 1, -1 ]
-atlas&gt; alpha*alpha_check
-Value: 2
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">alpha</span><span class="o">=</span><span class="n">posroots</span><span class="p">(</span><span class="n">rd</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Identifier</span> <span class="n">alpha</span><span class="p">:</span> <span class="n">vec</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">alpha</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">alpha_check</span><span class="o">=</span><span class="n">poscoroots</span><span class="p">(</span><span class="n">rd</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Identifier</span> <span class="n">alpha_check</span><span class="p">:</span> <span class="n">vec</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">alpha_check</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">alpha_check</span>
+<span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">alpha</span><span class="o">*</span><span class="n">alpha_check</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">2</span>
 </pre></div>
 </div>
 <p>This is the natural way of pairing roots with coroots. Pairing roots with roots is not too meaningful in the theory.</p>
 <p>Now let us try  <span class="math">\(G=GL(3,\mathbb R)\)</span>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=GL(3,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; set rd=root_datum(G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected adjoint root datum of Lie type &#39;A2.T1&#39;
-atlas&gt; simple_roots(rd)
-Value:
-| 1, 0 |
-| -1, 1 |
-| 0, -1 |
-atlas&gt; simple_coroots(rd)
-Value:
-| 1, 0 |
-| -1, 1 |
-| 0, -1 |
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">GL</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rd</span><span class="o">=</span><span class="n">root_datum</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">rd</span><span class="p">:</span> <span class="n">RootDatum</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RootDatum</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">rd</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">simply</span> <span class="n">connected</span> <span class="n">adjoint</span> <span class="n">root</span> <span class="n">datum</span> <span class="n">of</span> <span class="n">Lie</span> <span class="nb">type</span> <span class="s1">&#39;A2.T1&#39;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_coroots</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are expressed again in the usual coordinates. However look what happens for <span class="math">\(SL(3,\mathbb R)\)</span>:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; set G=SL(3,R)
-Identifier G: RealForm (hiding previous one of type RealForm)
-atlas&gt; set rd=root_datum(G)
-Identifier rd: RootDatum (hiding previous one of type RootDatum)
-atlas&gt; rd
-Value: simply connected root datum of Lie type &#39;A2&#39;
-atlas&gt; simple_roots(rd)
-Value:
-| 1, 1 |
-| -1, 2 |
-atlas&gt; simple_coroots(rd)
-Value:
-| 1, 0 |
-| -1, 1 |
-atlas&gt; ^simple_roots(G)*simple_coroots(G)
-Value:
-| 2, -1 |
-| -1, 2 |
-atlas&gt;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rd</span><span class="o">=</span><span class="n">root_datum</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">rd</span><span class="p">:</span> <span class="n">RootDatum</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RootDatum</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">rd</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">simply</span> <span class="n">connected</span> <span class="n">root</span> <span class="n">datum</span> <span class="n">of</span> <span class="n">Lie</span> <span class="nb">type</span> <span class="s1">&#39;A2&#39;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_coroots</span><span class="p">(</span><span class="n">rd</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="o">^</span><span class="n">simple_roots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span><span class="o">*</span><span class="n">simple_coroots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>Unfortunately these are not the usual coordinates for this group. Nevertheless the Cartan matrix is the usual one.</p>
 <p>There is also a function called Cartan_matrix. The possible arguments and outputs are given below:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span>atlas&gt; whattype Cartan_matrix ?
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype Cartan_matrix ?
 Overloaded instances of &#39;Cartan_matrix&#39;
 LieType-&gt;mat
 RootDatum-&gt;mat
@@ -1267,15 +1291,18 @@ Value:
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="atlas_coordinates.html" class="btn btn-neutral float-right" title="atlas choice of coordinates" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="lie_types.html" class="btn btn-neutral float-right" title="Root Data and Lie Types" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="lie_types.html" class="btn btn-neutral" title="Root Data and Lie Types" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1309,7 +1336,8 @@ Value:
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
