@@ -357,3 +357,18 @@ elements corresponding to a given Cartan, will give us representations
 attached to that Cartan. For example all the representations attached
 to the split Cartan correspond to the last element :math:`x_10` which
 is the fiber above the involution :math:`-1`, etc.
+
+KGB ordering
+-------------
+
+There is a partial order on the :math:`KGB` elements coming from the
+closure relations of the corresponding orbits.
+
+
+Now let us fix :math:`x_b` and define the set
+
+.. class:: center
+
+:math:`\mathcal F := {\rho }^{-1}(Id)=\{x\in \mathcal X |x\in H \}
+
+This is the distinguished fiber above 
