@@ -369,6 +369,6 @@ Now let us fix :math:`x_b` and define the set
 
 .. class:: center
 
-:math:`\mathcal F := {\rho }^{-1}(Id)=\{x\in \mathcal X |x\in H \}
+:math:`\mathcal F := {\rho }^{-1}(Id)=\{x\in \mathcal X |x\in H \}`..
 
-This is the distinguished fiber above 
+This is the distinguished fiber above the identity involution 
