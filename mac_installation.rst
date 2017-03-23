@@ -4,17 +4,24 @@
 Mac
 ###
 
-*********************
-Download the software
-*********************
-* :ref:`direct`
-* :ref:`using_git_Mac`
+Ways to download and install the software
+*****************************************
+
+The options, in order of preference, are:
+
+* :ref:`compile_mac`
+* :ref:`using_git_mac`
 * :ref:`executable_mac`
 
-.. _direct:
+.. _compile_mac:
+
+Download the source code and compile it yourself
+================================================
+
+.. _source_mac:
 
 Download source code in a single file
-=====================================
+++++++++++++++++++++++++++++++++++++++
 
 This is the latest stable version.
 
@@ -27,8 +34,8 @@ This is the latest stable version.
 
 .. _using_git_Mac:
 
-Using git
-=========
+Download the source code using git
+++++++++++++++++++++++++++++++++++
 
 For users who are not familiar with git, see :ref:`help_git` to get started with git.
 
@@ -49,7 +56,7 @@ This creates a subdirectory "atlasofliegroups" and stores the files there.
 
 
 ************************
-Installation from Source
+Compiling from source
 ************************
 
 After you have the source code, cd to the atlasofliegroups directory.
@@ -73,9 +80,13 @@ Go to `Homebrew <https://brew.sh>`_  and follow the instructions there to instal
 Install the C++ compiler
 ++++++++++++++++++++++++
 
-Open a terminal window and give the command
+Open a terminal window and give the commands
 
      brew install gcc49
+
+and
+
+     brew install readline
 
 Edit two Makefiles
 ++++++++++++++++++
@@ -190,9 +201,37 @@ You need to have a working copy of tex in your PATH to run cweavex.
 
 .. _executable_mac:
 
-***********************************
+.. _docker:
+
+Using Docker
+============
+
+The preferred method is to :ref:`compile the software from source <compile_mac>`.
+
+The next choice is using `the Docker container system <https://www.docker.com>`_.
+
+This installs a *container*, which is a self-contained linux
+environment (similar to a virtual machine) and runs the software in
+the container. This is less dependent on the details of your system,
+and is a good option of you have trouble compiling the software
+yourself. It requires adminsitrative privileges, so is mainly used for
+personal machines, and not instutional machines under the control of a
+system administrator.
+
+
+Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
+Double click on the dmg file to install it. This requires typing your password.
+
+Give the command
+
+      docker run -it jeffreyadams/atlasofliegroups
+
+to download the software and run it (it launches atlas and read in the
+fill all.at). The first time you do this it takes up
+to a few minutes.  Subsequent times it is much faster.
+
 Download and Install an executable
-***********************************
+==================================
 
 The best method is to compile from source. As a backup option you can 
 download install an executable file. 
