@@ -18,8 +18,7 @@ So we often see :math:`\nu` as being an element in the space on the right hand s
 
 So the infinitesimal character can be written as
 
-.. math:: 
-\gamma =\frac{1+\theta _x}{2}\lambda + \frac{1-\theta _x }{2}\nu
+.. math:: \gamma =\frac{1+\theta _x}{2}\lambda + \frac{1-\theta _x }{2}\nu
 
 .. math:: =\frac{1+\theta _x}{2}\lambda +\nu
 
@@ -84,8 +83,8 @@ whose complexified maximal compact subgroup is :math:`K`.
 
 We are interested in the following space
 
-.. math:: K\backslash G/B=\{K-\text{orbits on the flag variety G/B\}
-.. math:: =\{K \text{-conjugacy classes of Borel subgroups of G\}
+.. math:: K\backslash G/B=\{K-\text{orbits on the flag variety} G/B\}
+.. math:: =\{K \text{-conjugacy classes of Borel subgroups of} G\}
 
 :math:`G/B` is a complex projective variety and :math:`K` is an
 algebraic group acting on it with finitely many orbits. And
@@ -280,7 +279,7 @@ More precisely, if :math:`\pi` (resp. :math:`\pi '`) are
 modules, then :math:`\pi \cong {\pi }'` if there is :math:`g \in G`
 with
 
-.. math:: gxg^{-1} =x'`, \quad {\pi }^g \cong {\pi}'
+.. math:: gxg^{-1} =x'`, \quad {\pi }^g \cong {\pi}
 
 In this way, the software is varying :math:`x`, but in the end you can
 conjugate back to :math:`x_b`.
@@ -288,15 +287,15 @@ conjugate back to :math:`x_b`.
 More About :math:`KGB`
 -----------------------
 
-Again, we are fixing  :math:`x_b`, :math:`\mathcal X =\mathcal X (x_b )`
+Recall that we are fixing  :math:`x_b` and  :math:`\mathcal X =\mathcal X (x_b )`
 
 This gives a fixed :math:`K` and :math:`\mathcal X` parametrizes:
 
-:math:`\ \ \ \ \  K\backslash G/B \leftrightarrow \mathcal X`
+.. math:: K\backslash G/B \leftrightarrow \mathcal X
 
 And in the software, this gives a finite set of parameters:
 
-:math:`\ \ \ \ \ KGB= \mathcal X = \{x_0, \ldots x_{n-1} \}`
+.. math:: KGB= \mathcal X = \{x_0, \ldots x_{n-1} \}
 
 Now the Weyl group :math:`W` acts naturally by conjugation
 :math:`\mathcal X `. Then,
