@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -47,7 +45,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -88,10 +85,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="about_us.html">About Us</a></li>
@@ -101,19 +95,19 @@
 <li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="download_and_install.html">Download and Install</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="linux_installation.html">Linux (and Solaris)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#download-the-software">Download the software</a></li>
-<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#ways-to-download-and-install-the-software">Ways to download and install the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="mac_installation.html">Mac</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#download-the-software">Download the software</a></li>
-<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#installation-from-source">Installation from Source</a></li>
-<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#ways-to-download-and-install-the-software">Ways to download and install the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#compiling-from-source">Compiling from source</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Windows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ways-to-download-and-install-the-software">Ways to download and install the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#compiling">Compiling</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#installing-under-cygwin">Installing under Cygwin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-docker">Using Docker</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
@@ -1030,10 +1024,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">atlas</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">atlas</a>
       </nav>
 
 
@@ -1042,68 +1034,45 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
           <li><a href="getting_started.html">Getting Started</a> &raquo;</li>
-        
+      
           <li><a href="download_and_install.html">Download and Install</a> &raquo;</li>
-        
-      <li>Windows</li>
-    
-    
+      
+    <li>Windows</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="discussions.html">Atlas Forum</a>
-            <!--<a href="_sources/windows_installation.rst.txt" rel="nofollow"> View page source</a>-->
+          
+            <a href="_sources/windows_installation.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
-  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
-      
-        <a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="mac_installation.html" class="btn btn-neutral" title="Mac" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-  </div>
-  
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="section" id="windows">
 <span id="id1"></span><h1>Windows<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ways-to-download-and-install-the-software">
+<h2>Ways to download and install the software<a class="headerlink" href="#ways-to-download-and-install-the-software" title="Permalink to this headline">¶</a></h2>
+<p>The options, in order of preference, are:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#compiling"><span class="std std-ref">Compiling</span></a></li>
-<li><a class="reference internal" href="#precompiled"><span class="std std-ref">Download and Install an executable</span></a></li>
+<li><a class="reference internal" href="#compile-windows"><span class="std std-ref">Compiling</span></a></li>
+<li><a class="reference internal" href="#docker-windows"><span class="std std-ref">Using Docker</span></a></li>
+<li><a class="reference internal" href="#executable-windows"><span class="std std-ref">Download and Install an executable</span></a></li>
 </ul>
+</div>
 <div class="section" id="compiling">
-<span id="id2"></span><h2>Compiling<a class="headerlink" href="#compiling" title="Permalink to this headline">¶</a></h2>
+<span id="compile-windows"></span><h2>Compiling<a class="headerlink" href="#compiling" title="Permalink to this headline">¶</a></h2>
 <p>The best option is available on Windows 10. This is the
 <a class="reference external" href="https://msdn.microsoft.com/en-us/commandline/wsl/about">bash shell</a>, which is
 available (currently in beta version) in Windows 10. It provides a
@@ -1157,10 +1126,8 @@ including messages and atlas-scripts</td>
 </pre></div>
 </div>
 <p>Follow the instructions in <a class="reference internal" href="linux_installation.html#linux"><span class="std std-ref">Linux (and Solaris)</span></a>.</p>
-</div>
-</div>
 <div class="section" id="installing-under-cygwin">
-<span id="cygwin"></span><h2>Installing under Cygwin<a class="headerlink" href="#installing-under-cygwin" title="Permalink to this headline">¶</a></h2>
+<span id="cygwin"></span><h4>Installing under Cygwin<a class="headerlink" href="#installing-under-cygwin" title="Permalink to this headline">¶</a></h4>
 <p>Download Cygwin. See
 <a class="reference external" href="https://www.cygwin.com">the Cygwin web page</a>.</p>
 <p>Install cygwin: Double-click on setup.exe to run it. At the package menu choose at least the following packages:</p>
@@ -1177,8 +1144,30 @@ including messages and atlas-scripts</td>
 <p>The remainder of the process follows the standard linux process, similar to the procedure under bash.
 See <a class="reference internal" href="linux_installation.html#linux"><span class="std std-ref">Linux (and Solaris)</span></a> for details.</p>
 </div>
+</div>
+</div>
+<div class="section" id="using-docker">
+<span id="docker-windows"></span><h2>Using Docker<a class="headerlink" href="#using-docker" title="Permalink to this headline">¶</a></h2>
+<p>The preferred method is to <a class="reference internal" href="#compile-windows"><span class="std std-ref">compile the software from source</span></a>.</p>
+<p>The next choice is using <a class="reference external" href="https://www.docker.com">the Docker container system</a>.</p>
+<p>This installs a <em>container</em>, which is a self-contained linux
+environment (similar to a virtual machine) and runs the software in
+the container. This is less dependent on the details of your system,
+and is a good option of you have trouble compiling the software
+yourself. It requires adminsitrative privileges, so is mainly used for
+personal machines, and not instutional machines under the control of a
+system administrator.</p>
+<p>Install docker (community version) for your system from <a class="reference external" href="https://www.docker.com/community-edition">https://www.docker.com/community-edition</a>
+Double click on the file to install it. This requires typing your password.</p>
+<p>Open a command window and give the command</p>
+<blockquote>
+<div>docker run -it jeffreyadams/atlasofliegroups</div></blockquote>
+<p>to download the software and run it (it launches atlas and read in the
+fill all.at). The first time you do this it takes up
+to a few minutes.  Subsequent times it is much faster.</p>
+</div>
 <div class="section" id="download-and-install-an-executable">
-<span id="precompiled"></span><h2>Download and Install an executable<a class="headerlink" href="#download-and-install-an-executable" title="Permalink to this headline">¶</a></h2>
+<span id="executable-windows"></span><h2>Download and Install an executable<a class="headerlink" href="#download-and-install-an-executable" title="Permalink to this headline">¶</a></h2>
 <p>The best method is to compile from source. As a backup option you can
 download and install an executable file.</p>
 <p>Download a copy of the executable, and the atlas-scripts directory here:</p>
@@ -1201,25 +1190,22 @@ atlas_windows_pre_1.0. Double click on the folder, and then on the atlas icon. T
 <blockquote>
 <div>&lt;all</div></blockquote>
 <p>to load the scripts.</p>
-<p>Note: using this option readline (command line tools) will not work. For this reason we recommend
-<a class="reference internal" href="#compiling"><span class="std std-ref">Compiling</span></a> the software yourself.</p>
+<p>Note: using this option readline (command line tools) will not work. For this reason
+this is the least desirable option.</p>
 </div>
 </div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="run_atlas.html" class="btn btn-neutral float-right" title="Run atlas" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="mac_installation.html" class="btn btn-neutral" title="Mac" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="mac_installation.html" class="btn btn-neutral" title="Mac" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1253,8 +1239,7 @@ atlas_windows_pre_1.0. Double click on the folder, and then on the atlas icon. T
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
