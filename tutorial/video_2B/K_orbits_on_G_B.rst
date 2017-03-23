@@ -10,8 +10,7 @@ where :math:`x \in K\backslash G/B` which determines an involution :math:`\theta
 
 .. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
-.. math:: \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*
-\cong (X_{\mathbb Q} ^*)^{-\theta _x}
+.. math:: \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*\cong (X_{\mathbb Q} ^*)^{-\theta _x}
 
 
 So we often see :math:`\nu` as being an element in the space on the right hand side. But we can also think of it as being in the quotient space.
@@ -19,8 +18,8 @@ So we often see :math:`\nu` as being an element in the space on the right hand s
 
 So the infinitesimal character can be written as
 
-.. math:: \gamma =\frac{1+\theta _x}{2}\lambda + \frac{1-\theta _x
-}{2}\nu
+.. math:: 
+\gamma =\frac{1+\theta _x}{2}\lambda + \frac{1-\theta _x }{2}\nu
 
 .. math:: =\frac{1+\theta _x}{2}\lambda +\nu
 
