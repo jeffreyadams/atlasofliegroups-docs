@@ -14,15 +14,15 @@ where :math:`x \in K\backslash G/B` which determines an involution :math:`\theta
 \cong (X_{\mathbb Q} ^*)^{-\theta _x}
 
 
-So we often see :math:`nu` as being an element in the space on the right hand side. But we can also think of it as being in the quotient space.
+So we often see :math:`\nu` as being an element in the space on the right hand side. But we can also think of it as being in the quotient space.
 
 
 So the infinitesimal character can be written as
 
-:math:`\gamma =\frac{1+\theta _x}{2}\lambda + \frac{1-\theta _x
-}{2}\nu`
+.. math:: \gamma =\frac{1+\theta _x}{2}\lambda + \frac{1-\theta _x
+}{2}\nu
 
-:math:`=\frac{1+\theta _x}{2}\lambda +\nu`
+.. math:: =\frac{1+\theta _x}{2}\lambda +\nu
 
 since :math:`\nu` is normally fixed by :math:`\theta`.
 
@@ -36,23 +36,25 @@ Previously we focused on the case when :math:`\theta _x` is acting by
 R)={\mathbb R}^{*n}`
 
 In this case :math:`\lambda \in (X^* + \rho )/2X^*` gives a character
-of :math:`H(\mathbb R)^{\theta _x}=(\mathbb Z/2\mathbb Z)^n`
+of 
+.. math:: H(\mathbb R)^{\theta _x}=(\mathbb Z/2\mathbb Z)^n
 
 So we get a character of the compact piece of the Cartan. 
 
-Warning: we are assuming the :math:`\rho \in X^*`. Otherwise we need
+Warning: we are assuming the :math:`\rho \in X^*` . Otherwise we need
 to go to a covering.
 
 Now :math:`\nu \in {X}_{\mathbb Q} ^*` and we had constructed the
 induced representation
 
-:math:`Ind_B ^G (\chi \otimes \nu)`,  where :math:`\chi=\rho -\lambda`
-is in :math:`X^*`, since :math:`\lambda \in X^* + \rho`.
+.. math:: Ind_B ^G (\chi \otimes \nu)`,  
+
+where :math:`\chi=\rho -\lambda \in X^*`, since :math:`\lambda \in X^* + \rho`.
 
 So, we have a well defined pairing between :math:`X^*` and :math:`X_*`:
 
-:math:`\chi(exp(2\pi i\mu ^{\vee}))=exp(2\pi i(<\rho -\lambda ,
-\mu^{\vee}>)`, 
+.. math:: \chi(exp(2\pi i\mu ^{\vee}))=exp(2\pi i(<\rho -\lambda ,
+\mu^{\vee}>), 
 
 with :math:`\mu^{\vee}\in \frac{1}{2}X_*`.
 
@@ -60,13 +62,8 @@ with :math:`\mu^{\vee}\in \frac{1}{2}X_*`.
 This pairing is the value of the character on the compact part of the
 Cartan and it equals :math:`\pm 1`
 
-Discrete Series
-----------------
-
-Now we can focus on the case when :math:`\theta _x` is acting by
-:math:`Id` which corresponds to the discrete series representations.
-
-So, let us assume that :math:`G=G(\mathbb C)` has discrete series representations. This is equivalent to having a distinguished involution equal to the Identity. 
+:math:`KGB` elements`
+----------------------
 
 We fix once and for all a Cartan subgroup :math:`H` included in a
 Borel :math:`B`. This avoids having to work with different Cartans
@@ -79,9 +76,7 @@ close to diagonal and :math:`B` upper triangular.
 Now let us take a base point element :math:`x_b \in G`, so that
 :math:`x_b ^2 \in Z(G)`
 
-Attached to :math:`x_b` is the involution 
-
-:math:`\theta=int(x_b)`. 
+Attached to :math:`x_b` is the involution :math:`\theta=int(x_b)`. 
 
 By Cartan's theory of real forms this gives a real form of :math:`G`.
 Denote by :math:`K=G^{\theta}`, the complexified maximal compact
@@ -92,8 +87,7 @@ whose complexified maximal compact subgroup is :math:`K`.
 
 We are interested in the following space
 
-:math:`K\backslash G/B=\{K-\text{orbits on the flag variety } G/B\}`
-:math:`=\{K \text{-conjugacy classes of Borel subgroups of } G\}`
+.. math:: K\backslash G/B=\{K-\text{orbits on the flag variety } G/B\}=\{K \text{-conjugacy classes of Borel subgroups of } G\}
 
 :math:`G/B` is a complex projective variety and :math:`K` is an
 algebraic group acting on it with finitely many orbits. And
@@ -103,8 +97,8 @@ and the :math:`K`-orbits are the Borel subgroups up to conjugacy by
 
 Theorem
 
-:math:`K\backslash G/B \leftrightarrow \{x\in Norm_G (H) | x{\backsim
-}_G x_b\}/H`
+.. math:: K\backslash G/B \leftrightarrow \{x\in Norm_G (H) |
+x{\backsim }_G x_b\}/H
 
 This is a finite set. The map is given as follows:
 
@@ -115,14 +109,14 @@ subgroup.
 Now we check the map is well defined on :math:`K`-conjugcy classes of
 Borel subgroups:
 
-:math:`x=(gk)x_b (gk)^{-1} \mapsto [k^{-1}(g^{-1}Bg)k]=[gBg]`
+.. math:: x=(gk)x_b (gk)^{-1} \mapsto [k^{-1}(g^{-1}Bg)k]=[gBg]
 
 On the right hand side the brackets mean :math:`K`-conjugacy class. So
 conjugating by :math:`K` we get the same conjugacy class of Borels.
 
 Definition.  Denote the above set by
 
-:Math:`\mathcal X =\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H`
+.. math:: \mathcal X =\{x\in Norm_G (H) | x{\backsim }_G x_b\}/H
 
 (Note: this set is really denoted :math:`\mathcal X [x_b]` in other
 sources and :math:`\mathcal X` is the collection of all the sets for
@@ -136,7 +130,7 @@ Cloux, in www.liegroups.org/papers/.
 Since this set is finite, it makes sense to have an ``atlas`` command
 ``KGB`` that will give a finite list of the elements in :math:`\mathcal X`
 
-:math:`KGB \leftrightarrow \{x_0 , \dots ,x_{n-1} \}`
+.. math:: KGB \leftrightarrow \{x_0 , \dots ,x_{n-1} \}
 
 Example: :math:`SL(2,\mathbb R)`.
 ----------------------------------
@@ -387,3 +381,12 @@ this just means that the elements in this preimage are in the Cartan. Hence it c
 
 So, this :math:`\mathcal F` parametrizes the Borel subgroups
 containing a compact Cartan up to conjugation by :math:`K`
+
+
+
+Now we can focus on the case when :math:`\theta _x` is acting by
+:math:`Id` which corresponds to the discrete series representations.
+
+So, let us assume that :math:`G=G(\mathbb C)` has discrete series repr\
+esentations. This is equivalent to having a distinguished involution e\
+qual to the Identity.
