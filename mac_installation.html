@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -47,7 +45,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -88,10 +85,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="gen_info.html">General Information</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="about_us.html">About Us</a></li>
@@ -101,14 +95,12 @@
 <li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="download_and_install.html">Download and Install</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="linux_installation.html">Linux (and Solaris)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#download-the-software">Download the software</a></li>
-<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#installation-from-source">Installation from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#ways-to-download-and-install-the-software">Ways to download and install the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#download-and-install-an-executable">Download and Install an executable</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Mac</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#download-the-software">Download the software</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#installation-from-source">Installation from Source</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#download-and-install-an-executable">Download and Install an executable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ways-to-download-and-install-the-software">Ways to download and install the software</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="windows_installation.html">Windows</a><ul>
@@ -1030,10 +1022,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">atlas</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">atlas</a>
       </nav>
 
 
@@ -1042,71 +1032,46 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
           <li><a href="getting_started.html">Getting Started</a> &raquo;</li>
-        
+      
           <li><a href="download_and_install.html">Download and Install</a> &raquo;</li>
-        
-      <li>Mac</li>
-    
-    
+      
+    <li>Mac</li>
       <li class="wy-breadcrumbs-aside">
         
-            
-            <a href="discussions.html">Atlas Forum</a>
-            <!--<a href="_sources/mac_installation.rst.txt" rel="nofollow"> View page source</a>-->
+          
+            <a href="_sources/mac_installation.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
-  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
-      
-        <a href="windows_installation.html" class="btn btn-neutral float-right" title="Windows" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="linux_installation.html" class="btn btn-neutral" title="Linux (and Solaris)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-  </div>
-  
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
   <div class="section" id="mac">
 <span id="macs"></span><h1>Mac<a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="download-the-software">
-<h2>Download the software<a class="headerlink" href="#download-the-software" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ways-to-download-and-install-the-software">
+<h2>Ways to download and install the software<a class="headerlink" href="#ways-to-download-and-install-the-software" title="Permalink to this headline">¶</a></h2>
+<p>The options, in order of preference, are:</p>
 <ul class="simple">
-<li><a class="reference internal" href="#direct"><span class="std std-ref">Download source code in a single file</span></a></li>
-<li><a class="reference internal" href="#using-git-mac"><span class="std std-ref">Using git</span></a></li>
-<li><a class="reference internal" href="#executable-mac"><span class="std std-ref">Download and Install an executable</span></a></li>
+<li><a class="reference internal" href="#compile-mac"><span class="std std-ref">Download the source code and compile it yourself</span></a></li>
+<li><a class="reference internal" href="#using-git-mac"><span class="std std-ref">Download the source code using git</span></a></li>
+<li><a class="reference internal" href="#executable-mac"><span class="std std-ref">Using Docker</span></a></li>
 </ul>
+<div class="section" id="download-the-source-code-and-compile-it-yourself">
+<span id="compile-mac"></span><h3>Download the source code and compile it yourself<a class="headerlink" href="#download-the-source-code-and-compile-it-yourself" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="download-source-code-in-a-single-file">
-<span id="direct"></span><h3>Download source code in a single file<a class="headerlink" href="#download-source-code-in-a-single-file" title="Permalink to this headline">¶</a></h3>
+<span id="source-mac"></span><h4>Download source code in a single file<a class="headerlink" href="#download-source-code-in-a-single-file" title="Permalink to this headline">¶</a></h4>
 <p>This is the latest stable version.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -1123,8 +1088,8 @@ including messages and atlas-scripts</td>
 </tbody>
 </table>
 </div>
-<div class="section" id="using-git">
-<span id="using-git-mac"></span><h3>Using git<a class="headerlink" href="#using-git" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="download-the-source-code-using-git">
+<span id="using-git-mac"></span><h4>Download the source code using git<a class="headerlink" href="#download-the-source-code-using-git" title="Permalink to this headline">¶</a></h4>
 <p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span class="std std-ref">Help with git</span></a> to get started with git.</p>
 <p>If you choose to use git, you can get the most up-to-date version of
 the software. Open a terminal window (in the Finder click
@@ -1139,11 +1104,12 @@ is relatively new. Version 1.7.0.4 and above should work.</p>
 </pre></div>
 </div>
 <p>This creates a subdirectory &#8220;atlasofliegroups&#8221; and stores the files there.</p>
-</div>
-</div>
-<div class="section" id="installation-from-source">
-<h2>Installation from Source<a class="headerlink" href="#installation-from-source" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="compiling-from-source">
+<h5>Compiling from source<a class="headerlink" href="#compiling-from-source" title="Permalink to this headline">¶</a></h5>
 <p>After you have the source code, cd to the atlasofliegroups directory.</p>
+</div>
+</div>
+</div>
 <div class="section" id="compiling-atlas-for-the-mac-using-homebrew">
 <h3>Compiling atlas for the Mac using Homebrew<a class="headerlink" href="#compiling-atlas-for-the-mac-using-homebrew" title="Permalink to this headline">¶</a></h3>
 <p>To compile atlas on a Mac you need to install a C++ compiler (the
@@ -1158,9 +1124,12 @@ Homebrew is the preferred method. Alternatively see
 </div>
 <div class="section" id="install-the-c-compiler">
 <h4>Install the C++ compiler<a class="headerlink" href="#install-the-c-compiler" title="Permalink to this headline">¶</a></h4>
-<p>Open a terminal window and give the command</p>
+<p>Open a terminal window and give the commands</p>
 <blockquote>
 <div>brew install gcc49</div></blockquote>
+<p>and</p>
+<blockquote>
+<div>brew install readline</div></blockquote>
 </div>
 <div class="section" id="edit-two-makefiles">
 <h4>Edit two Makefiles<a class="headerlink" href="#edit-two-makefiles" title="Permalink to this headline">¶</a></h4>
@@ -1196,8 +1165,6 @@ as follows:</p>
 <blockquote>
 <div>make</div></blockquote>
 <p>To compile atlas and Fokko, with readline.</p>
-<div class="section" id="other-compilation-options">
-<h5>Other Compilation options:<a class="headerlink" href="#other-compilation-options" title="Permalink to this headline">¶</a></h5>
 <p>We recommend compiling with:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">atlas</span> <span class="n">verbose</span><span class="o">=</span><span class="n">true</span> <span class="n">optimize</span><span class="o">=</span><span class="n">true</span>
 </pre></div>
@@ -1213,49 +1180,55 @@ longer to compile, then runs maybe 10% faster.</p>
 </pre></div>
 </div>
 <p>The option &#8220;debug&#8221; makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren&#8217;t supposed to happen, to detect code problems early.</p>
-</div>
-<div class="section" id="installing-fokko-and-atlas">
-<h5>Installing Fokko and atlas<a class="headerlink" href="#installing-fokko-and-atlas" title="Permalink to this headline">¶</a></h5>
 <p>To install the executables in [installation directory] and put symlinks in [binary directory], type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=</span><span class="p">[</span><span class="n">installation</span> <span class="n">directory</span><span class="p">]</span> <span class="n">BINDIR</span><span class="o">=</span><span class="p">[</span><span class="n">binary</span> <span class="n">directory</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>The default BINDIR is <code class="docutils literal"><span class="pre">INSTALLDIR/../bin</span></code></p>
-</div>
-<div class="section" id="example">
-<h5>Example:<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h5>
 <p>To install the executables in <code class="docutils literal"><span class="pre">/usr/local/atlas</span></code>, and symlinks in <code class="docutils literal"><span class="pre">/usr/local/bin</span></code>, type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">atlas</span>
 </pre></div>
 </div>
 <p>(This example only works up to OS 10.10, and you need root access).</p>
-</div>
-<div class="section" id="id1">
-<h5>Example:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h5>
 <p>To install the executables in /home/[userid]/software/atlas, and symlinks in /home/userid/bin, type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">INSTALLDIR</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="p">[</span><span class="n">userid</span><span class="p">]</span><span class="o">/</span><span class="n">software</span> <span class="n">BINDIR</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="p">[</span><span class="n">userid</span><span class="p">]</span><span class="o">/</span><span class="nb">bin</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id2">
-<h5>Example:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h5>
 <p>Say you unpacked the software in /home/[userid]/atlas_0.7. To leave the software there, and create symlinks in /home/[userid]/bin, type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span>
 </pre></div>
 </div>
 <p>Next: see <a class="reference internal" href="run_atlas.html#run-atlas"><span class="std std-ref">Running Atlas</span></a></p>
 </div>
-</div>
 <div class="section" id="installing-cwebx">
-<span id="id3"></span><h4>Installing cwebx<a class="headerlink" href="#installing-cwebx" title="Permalink to this headline">¶</a></h4>
+<span id="id1"></span><h4>Installing cwebx<a class="headerlink" href="#installing-cwebx" title="Permalink to this headline">¶</a></h4>
 <p>The software cwebx is needed to compile atlas. If you downloaded a tgz file from the downloads page, you should not need to install cwebx. If you downloaded the software from github using git, then cwebx is included in the directory cwebx, or available from www-math.univ-poitiers.fr/~maavl/CWEBx.</p>
 <p>Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.</p>
 <p>You need to have a working copy of tex in your PATH to run cweavex.</p>
 </div>
 </div>
+<div class="section" id="using-docker">
+<span id="docker"></span><span id="executable-mac"></span><h3>Using Docker<a class="headerlink" href="#using-docker" title="Permalink to this headline">¶</a></h3>
+<p>The preferred method is to <a class="reference internal" href="#compile-mac"><span class="std std-ref">compile the software from source</span></a>.</p>
+<p>The next choice is using <a class="reference external" href="https://www.docker.com">the Docker container system</a>.</p>
+<p>This installs a <em>container</em>, which is a self-contained linux
+environment (similar to a virtual machine) and runs the software in
+the container. This is less dependent on the details of your system,
+and is a good option of you have trouble compiling the software
+yourself. It requires adminsitrative privileges, so is mainly used for
+personal machines, and not instutional machines under the control of a
+system administrator.</p>
+<p>Install docker (community version) for your system from <a class="reference external" href="https://www.docker.com/community-edition">https://www.docker.com/community-edition</a>
+Double click on the dmg file to install it. This requires typing your password.</p>
+<p>Give the command</p>
+<blockquote>
+<div>docker run -it jeffreyadams/atlasofliegroups</div></blockquote>
+<p>to download the software and run it (it launches atlas and read in the
+fill all.at). The first time you do this it takes up
+to a few minutes.  Subsequent times it is much faster.</p>
 </div>
 <div class="section" id="download-and-install-an-executable">
-<span id="executable-mac"></span><h2>Download and Install an executable<a class="headerlink" href="#download-and-install-an-executable" title="Permalink to this headline">¶</a></h2>
+<h3>Download and Install an executable<a class="headerlink" href="#download-and-install-an-executable" title="Permalink to this headline">¶</a></h3>
 <p>The best method is to compile from source. As a backup option you can
 download install an executable file.</p>
 <p>Download a copy of the executable, and the atlas-scripts directory here:</p>
@@ -1287,21 +1260,19 @@ most of the scripts (not including a few which are under development). (Double-c
 on the file will launch the application, but will not make the atlas-scripts available.)</p>
 </div>
 </div>
+</div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="windows_installation.html" class="btn btn-neutral float-right" title="Windows" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="windows_installation.html" class="btn btn-neutral float-right" title="Windows" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="linux_installation.html" class="btn btn-neutral" title="Linux (and Solaris)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="linux_installation.html" class="btn btn-neutral" title="Linux (and Solaris)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1335,8 +1306,7 @@ on the file will launch the application, but will not make the atlas-scripts ava
             VERSION:'0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
