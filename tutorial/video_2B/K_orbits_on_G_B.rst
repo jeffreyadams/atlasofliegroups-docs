@@ -8,13 +8,9 @@ Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`
 
 where :math:`x \in K\backslash G/B` which determines an involution :math:`\theta _x` of the Cartan.
 
-.. math::
+.. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
-   \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
-
-.. math::
-
-   \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*
+.. math:: \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*
 \cong (X_{\mathbb Q} ^*)^{-\theta _x}
 
 
