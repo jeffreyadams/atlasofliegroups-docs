@@ -239,11 +239,11 @@ download install an executable file.
 Download a copy of the executable, and the atlas-scripts directory here:
 
 +-------------------------------+------------------------------+-------------------------------------+
-| Mac  compiled                 | `atlas_mac_pre_1.0.tgz`_     |  executable, and messages           |
+| Mac  compiled                 | `atlas_mac_pre_1.01.tgz`_     |  executable, and messages           |
 |                               |                              |  atlas-scripts directories          |
 +-------------------------------+------------------------------+-------------------------------------+
 
-.. _atlas_mac_pre_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_mac_pre_1.0.tgz
+.. _atlas_mac_pre_1.01.tgz: http://www.liegroups.org/software/source/1.01/atlas_mac_pre_1.01.tgz
 
 Double-click on the file to extract it. 
 

@@ -56,15 +56,15 @@ The remainder of the process follows the standard linux process. See :ref:`linux
 Download the source code:
 
 +--------------------------+------------------------------+---------------------------------------+
-| Version 1.0              |   `atlas_1.0.tgz`_           | source code for Fokko and atlas       |
+| Version 1.01              |   `atlas_1.01.tgz`_           | source code for Fokko and atlas       |
 |                          |                              | including messages and atlas-scripts  |
 +--------------------------+------------------------------+---------------------------------------+
 
-.. _atlas_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz
+.. _atlas_1.01.tgz: http://www.liegroups.org/software/source/1.01/atlas_1.01.tgz
 
 Unpack the file::
 
-   tar xvf atlas_1.0.tgz
+   tar xvf atlas_1.01.tgz
   
 Go into the proper directory and type make::
    
@@ -137,14 +137,14 @@ download and install an executable file.
 Download a copy of the executable, and the atlas-scripts directory here:
 
 +-------------------------------+--------------------------------+-------------------------------------+
-| Windows compiled              | `atlas_windows_pre_1.0.tar`_   |  executable, and messages           |
+| Windows compiled              | `atlas_windows_pre_1.01.tar`_   |  executable, and messages           |
 |                               |                                |  atlas-scripts directories          |
 +-------------------------------+--------------------------------+-------------------------------------+
 
-.. _atlas_windows_pre_1.0.tar: http://www.liegroups.org/software/source/1.0/atlas_windows_pre_1.0.tar
+.. _atlas_windows_pre_1.01.tar: http://www.liegroups.org/software/source/1.01/atlas_windows_pre_1.01.tar
 
 Double click on the file and extract the software. This will create a folder 
-atlas_windows_pre_1.0. Double click on the folder, and then on the atlas icon. Then do
+atlas_windows_pre_1.01. Double click on the folder, and then on the atlas icon. Then do
 
 
       <all
