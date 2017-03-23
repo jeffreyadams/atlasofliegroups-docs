@@ -10,8 +10,9 @@ Ways to download and install the software
 The options, in order of preference, are:
 
 * :ref:`compile_mac`
-* :ref:`using_git_mac`
+* :ref:`docker`
 * :ref:`executable_mac`
+
 
 .. _compile_mac:
 
@@ -55,7 +56,6 @@ Choose a directory on your machine to store the source code. Use your terminal t
 This creates a subdirectory "atlasofliegroups" and stores the files there.
 
 
-************************
 Compiling from source
 ************************
 
@@ -136,7 +136,7 @@ Give the command
 To compile atlas and Fokko, with readline.
 
 Other Compilation options: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 We recommend compiling with::
 
@@ -156,7 +156,7 @@ Other possibilities are::
 The option "debug" makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren't supposed to happen, to detect code problems early. 
 
 Installing Fokko and atlas
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 To install the executables in [installation directory] and put symlinks in [binary directory], type::
 
@@ -199,8 +199,6 @@ Running make in the directory cwebx should compile cwebx, and produce the execut
 
 You need to have a working copy of tex in your PATH to run cweavex.
 
-.. _executable_mac:
-
 .. _docker:
 
 Using Docker
@@ -222,13 +220,15 @@ system administrator.
 Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
 Double click on the dmg file to install it. This requires typing your password.
 
-Give the command
+Open a terminal window and give the command
 
       docker run -it jeffreyadams/atlasofliegroups
 
 to download the software and run it (it launches atlas and read in the
 fill all.at). The first time you do this it takes up
 to a few minutes.  Subsequent times it is much faster.
+
+.. _executable_mac:
 
 Download and Install an executable
 ==================================
