@@ -55,9 +55,7 @@ the projective plane that gives three orbits, :math:`0`,
 
 Now as representatives of Borels we have:
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_b \mapsto B=\left\{ \left( \begin{array}{cc}
-z & w \\
-0 & \frac{1}{z} \end{array} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C right\},`
+:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_b \mapsto B=\left\{ \left( \begin{array}{cc}z & w \\ 0 & \frac{1}{z} \end{array} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C right\},`
 
 which is the Borel that was fixed at the begining. Now, taking an
 element that conjugates $x_b$ to its negative we have:
@@ -82,7 +80,7 @@ sinh(z) & cosh(z) \end{array} \right) + \frac{1}{2}
 One of the key points comes from just looking at the Cartan part of
 the last :math:`B''`:
 
-.. math:: H''=\left\{ \left(\begin{array}{cc}cosh(z)&sinh(z)\\ sinh(z)&cosh(z)\end{array}\right) \right\}.
+.. math:: H''=\left\{ \left(\begin{array}{cc}cosh(z)&sinh(z)\\ sinh(z)&cosh(z)\end{array}\right) |z\in {\mathbb C}^{\times} \right\}.
 
 Since we fixed the Cartan involution :math:`{\theta }_{x_b} =
 diag(i,-i)`, it is acting on this Cartan by :math:`-1` (i.e. by taking
@@ -90,9 +88,7 @@ the inverse). It acts trivially on the diagonal Cartan.
 
 The set of real points of this Cartan is
 
-:math:`H''(\mathbb R)=\left\{ \pm Id \left(\begin{array}{cc}
-cosh(x) & sinh(x) \\
-sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \right\} \cong {\mathbb R}^{\times }`
+:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ H''(\mathbb R)=\left\{ \pm Id \left(\begin{array}{cc} cosh(x) & sinh(x) \\ sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \right\} \cong {\mathbb R}^{\times }`
 
 Which is the ususal way of writing split Cartan in :math:`SU(1,1)`.
 
