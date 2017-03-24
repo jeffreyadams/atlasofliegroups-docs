@@ -136,20 +136,19 @@ Let us start with the group :math:`G=SL(2,\mathbb C)`. For this group set :math:
 
 Then :math:`(x_b)^2 =-Id \in Z(G)`. The stabilizer in :math:`K` of this element is the diagonal torus 
 
-:math:`\ \ \ \ \ \ K^{\theta _x}=\left\{\left(\begin{array}{cc}z & 0 \\ 0 & \frac{1}{z}\end{array}\right):z\in {\mathbb C}^{\times}\right\}\cong SO(2,\mathbb C)`
+:math:`\ \ \ \ \ \ \ \ \ \ \ \ K^{\theta _x}=\left\{\left(\begin{array}{cc}z & 0 \\ 0 & \frac{1}{z}\end{array}\right):z\in {\mathbb C}^{\times}\right\}\cong SO(2,\mathbb C)`
 
 So the real points of this group is the compact real form
-:math:`K(\mathbb R)=SO(2)` and the real form of :math:`G` with this maximal compact subgroup is
-:math:`G(\mathbb R)=SL(2,\mathbb R)`
+:math:`K(\mathbb R)=SO(2)` and the real form of :math:`G` with this maximal compact subgroup is :math:`G(\mathbb R)=SL(2,\mathbb R)`
 
 In this setting it is better to think of :math:`G(\mathbb R)` as
 :math:`SU(1,1)`
 
 Then, the :math:`K` orbits on :math:`G/B` consist of three elements:
 
-.. math:: x_b =\left(\begin{array}{cc}i&0\\ 0&-i\end{array}\right),\quad -x_b=\left(\begin{array}{cc}-i&0\\ 0&i\end{array}\right),\quad u=\left(\begin{array}{cc}
+:math:`x_b =\left(\begin{array}{cc}i&0\\ 0&-i\end{array}\right),\quad -x_b=\left(\begin{array}{cc}-i&0\\ 0&i\end{array}\right),\quad u=\left(\begin{array}{cc}
 0 & 1 \\
--1 & 0 \end{array} \right)
+-1 & 0 \end{array} \right)`
 
 So, :math:`x_b` and :math:`-x_b` are all the elements of the cartan
 that are conjugate to :math:`x_b`. And there is only one other
@@ -160,9 +159,9 @@ Note that :math:`x_b` and :math:`-x_b` are both fixed by conjugation
 by :math:`H` and :math:`H` acts by conjugation on :math:`u`. Moreover,
 we can replace :math:`u` by any element of the form
 
-.. math:: \left(\begin{array}{cc}
+:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \left(\begin{array}{cc}
 0 & z \\
--\frac{1}{z} & 0 \end{array} \right)
+-\frac{1}{z} & 0 \end{array} \right)`
 
 So, :math:`K` acting on :math:`G/B` has three elements, representatives of the :math:`K` orbits on the conjugacy classes of Borel subgroups.
 
