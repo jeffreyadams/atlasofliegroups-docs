@@ -55,7 +55,9 @@ the projective plane that gives three orbits, :math:`0`,
 
 Now as representatives of Borels we have:
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_b \mapsto B=\left\{ \left( \begin{array}{cc}z & w \\ 0 & \frac{1}{z} \end{array} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C right\},`
+:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_b \mapsto B=\left\{ \left( \begin{array}{cc}
+z & w \\
+0 & \frac{1}{z} \end{array} \right)  |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}`
 
 which is the Borel that was fixed at the begining. Now, taking an
 element that conjugates $x_b$ to its negative we have:
