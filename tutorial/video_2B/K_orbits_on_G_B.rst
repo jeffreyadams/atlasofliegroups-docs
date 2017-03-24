@@ -136,7 +136,7 @@ Let us start with the group :math:`G=SL(2,\mathbb C)`. For this group set :math:
 
 Then :math:`(x_b)^2 =-Id \in Z(G)`. The stabilizer in :math:`K` of this element is the diagonal torus 
 
-.. math:: K^{\theta _x}=\left{\left(\begin{array}{cc}z & 0 \\ 0 & \frac{1}{z}\end{array}\right):z\in {\mathbb C}^{\times}\right}\cong SO(2,\mathbb C) 
+:math:`\begin{equation}K^{\theta _x}=\left{\left(\begin{array}{cc}z & 0 \\ 0 & \frac{1}{z}\end{array}\right):z\in {\mathbb C}^{\times}\right}\cong SO(2,\mathbb C)\end{equation}`
 
 So the real points of this group is the compact real form
 :math:`K(\mathbb R)=SO(2)` and the real form of :math:`G` with this maximal compact subgroup is
