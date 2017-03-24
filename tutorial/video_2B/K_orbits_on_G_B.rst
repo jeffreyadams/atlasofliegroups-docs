@@ -8,10 +8,10 @@ Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`
 
 where :math:`x \in K\backslash G/B` which determines an involution :math:`\theta _x` of the Cartan.
 
-:math:`\lambda \in(X^* +\rho )/(1-{\theta }_x)X^*`
+.. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
-:math:`\nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*
-\cong (X_{\mathbb Q} ^*)^{-\theta _x}`
+.. math:: \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*
+\cong (X_{\mathbb Q} ^*)^{-\theta _x}
 
 
 So we often see :math:`nu` as being an element in the space on the right hand side. But we can also think of it as being in the quotient space.
@@ -342,18 +342,48 @@ telling us about Cartans of the quasisplit form.
 The Algorithms paper has a picture of the :math:`KGB` space for
 :math:`Sp(4,R)`. They are 11 elements in the space. The picture gives
 the fibers of elements in :math:`KGB` that go to the same conjugacy
-class of involutions and in turn to the same CartanFour elements get
-mapped to the identity involution which corresponds to the compact
-Cartan; two are mapped to the involutions from the short root
-reflections :math:`s_{\alpha _1}` and :math:`s_{\alpha _2}`
+class of involutions and in turn to the same Cartan:
+
+Four elements get mapped to the identity involution which corresponds
+to the compact Cartan; two are mapped to the involutions from the
+short root reflections :math:`s_{\alpha _1}` and :math:`s_{\alpha _2}`
 corresponding to the intermediate Cartan isomorphic to :math:`{\mathbb
-C}^\times `; four are mapped to the long root reflections
+C}^{\times}`; four are mapped to the long root reflections
 :math:`s_{\beta _1}`, :math:`s_{\beta _2}`, which correspond to the
-Cartan isomorphic to :math:`S^1 \times {\mathbb R}^\times`; and one
-element is mapped to :math:`-Id`, corresponding to the split Cartan.
+Cartan :math:`S^1 \times {\mathbb R}^\times`; and one element is
+mapped to :math:`-Id`, corresponding to the split Cartan.
 
 In terms of representations, looking at each fiber of :math:`KGB`
 elements corresponding to a given Cartan, will give us representations
 attached to that Cartan. For example all the representations attached
 to the split Cartan correspond to the last element :math:`x_10` which
 is the fiber above the involution :math:`-1`, etc.
+
+KGB ordering
+-------------
+
+There is a partial order on the :math:`KGB` elements coming from the
+closure relations of the corresponding orbits. For example in the
+Hasse diagram for KGB for Sp(4,R), the vertical lines indicate closure
+relations. There are four closed orbits at the bottom of the diagram
+which correspond to the elements :math:`x_0 ,x_1 ,x_3 ` and
+:math:`x_4` , which in turn get mapped to the identity involution. At
+the top of the diagram there is only one open orbit which is the
+element :math:`x_{10}`, mapped to :math:`-Id`.  Below :math:`x_{10}` we have the elements corresponding to  :math:`x_7 ,x_8` and :math:`x_9` and below them we have :math:`x_4 ,x_5` and :math:`x_6`.
+
+The output of the software respects this partial order. More on this later.
+
+
+Discrete Series
+----------------
+
+Now let us fix :math:`x_b` and define the set
+
+
+:math:`\mathcal F := {\rho }^{-1}(Id)=\{x\in \mathcal X |x\in H \}`
+
+This is the distinguished fiber above the identity element in the Weyl group or the identity involution in :math:`{\mathcal I}_W`
+this just means that the elements in this preimage are in the Cartan. Hence it corresponds to those elements in :math:`\mathcal X` which are actually in the Cartan :math:`H`.
+
+So, this :math:`\mathcal F` parametrizes the Borel subgroups
+containing a compact Cartan up to conjugation by :math:`K`
