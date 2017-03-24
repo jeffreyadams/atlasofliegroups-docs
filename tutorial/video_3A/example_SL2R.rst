@@ -90,10 +90,9 @@ the inverse). It acts trivially on the diagonal Cartan.
 
 The set of real points of this Cartan is
 
-:math:`H''(\mathbb R)=\left\{\pm Id\left( \begin{array}{cc}
-cosh(x)&sinh(x)\\ 
-sinh(x)&cosh(x)
-\end{array}\right) | x\in \mathbb R \left\} \cong {\mathbb R}^{\times }`
+:math:`H''(\mathbb R)=\left\{ \pm Id \left(\begin{array}{cc}
+cosh(x) & sinh(x) \\
+sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \right\} \cong {\mathbb R}^{\times }`
 
 Which is the ususal way of writing split Cartan in :math:`SU(1,1)`.
 
