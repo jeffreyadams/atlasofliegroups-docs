@@ -10,7 +10,7 @@ Tutorial
    tutorial/structure_theory
    tutorial/coordinates_characters
    tutorial/first_examples
-   tutorial/more_principal
+   tutorial/K_orbits_on_G_B
    tutorial/general_parameters
    tutorial/parabolic_induction
    
