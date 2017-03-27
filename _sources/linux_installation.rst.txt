@@ -4,20 +4,28 @@
 Linux (and Solaris)
 ###################
 
-These instructions apply to most Linux distributions. They have 
+These instructions apply to most Linux distributions. They 
 apply to Solaris with little or no change.
 
-*********************
-Download the software
-*********************
-* :ref:`direct`
-* :ref:`using_git`
+
+Ways to download and install the software
+*****************************************
+
+The options, in order of preference, are:
+
+* :ref:`compile`
+* :ref:`docker`
 * :ref:`executable`
+
+.. _compile:
+
+Download the source code and compile it yourself
+================================================
 
 .. _direct:
 
 Download source code in a single  file
-======================================
+++++++++++++++++++++++++++++++++++++++
 
 This is the latest stable version.
 
@@ -31,8 +39,8 @@ This is the latest stable version.
 
 .. _using_git:
 
-Get the source code using git
-=============================
+Download the source code using git
+++++++++++++++++++++++++++++++++++
 
 For users who are not familiar with git, see :ref:`help_git`.
 
@@ -44,7 +52,7 @@ This creates a subdirectory "atlasofliegroups" and stores the files there.
 
 
 ************************
-Installation from Source
+Compiling from source
 ************************
 
 After you have the source code, cd to the atlasofliegroups directory.
@@ -110,15 +118,41 @@ development). You can also run
 
 ./Fokko
 
+.. _docker:
+
+Using Docker
+============
+
+The preferred method is to :ref:`compile the software from source <compile>`.
+
+The next choice is using `the Docker container system <https://www.docker.com>`_.
+
+This installs a *container*, which is a self-contained linux
+environment (similar to a virtual machine) and runs the software in
+the container. This is less dependent on the details of your system,
+and is a good option of you have trouble compiling the software
+yourself. It requires adminsitrative privileges, so is mainly used for
+personal machines, and not instutional machines under the control of a
+system administrator.
+
+
+Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
+
+Give the command
+
+      docker run -it jeffreyadams/atlasofliegroups
+
+to download the software and run it (it launches atlas and read in the
+fill all.at). Depending on your system you might need to log on a
+root, or run docker using sudo. The first time you do this it takes up
+to a few minutes.  Subsequent times it is much faster.
+
 .. _executable:
 
 Download and Install an executable
-==================================
+************************************
 
-The best method is to compile from source. As a backup option you can 
-download install an executable file. 
-
-Download a copy of the executable, and the atlas-scripts directory here:
+If the previous two methods fail, you can download and install  an executable file.
 
 +-----------------------------------+------------------------------+-------------------------------------+
 | linux 64 compiled                 | `atlas_linux_pre_1.0.tgz`_   |  executable, and messages           |
