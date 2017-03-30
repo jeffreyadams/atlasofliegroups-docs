@@ -27,8 +27,8 @@ conjugate back to :math:`x_b`.
 Involutions and Conjugacy classes of Cartans
 ---------------------------------------------
 
-Recall that we are fixing  :math:`x_b` and  :math:`\mathcal X =\mathcal X (\
-x_b )`
+Recall that we are fixing :math:`x_b` and :math:`\mathcal X =\mathcal
+X (\ x_b )`
 
 This determines a fixed :math:`K` and :math:`\mathcal X` parametrizes:
 
@@ -41,15 +41,13 @@ And in the software, this gives a finite set of parameters:
 Now the Weyl group :math:`W` acts naturally by conjugation
 :math:`\mathcal X`. Then,
 
-:math:\ \ \ \ \ \ `\mathcal X /W \leftrightarrow` conjugacy classes of Cartan
-subgroups.  
+.. math:: \mathcal X /W \leftrightarrow \text{conjugacy classes of Cartan subgroups}  
 
 This is how we associate a Cartan to an element :math:`x`. Namely, via this map from :math:`\mathcal X`.
 
 Moreover
 
-.. math:: Stab_W (x) \simeq W(K,H) \simeq W(G(\mathbb R ), H(\mathbb
-R)),
+.. math:: Stab_W (x)\simeq W(K,H)\simeq W(G(\mathbb R), H(\mathbb R)),
 
 This is the rational Weyl group of the real form of the group with
 respect to the real Cartan, Which in the :math:`\theta` world we think
