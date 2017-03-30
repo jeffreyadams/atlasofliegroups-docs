@@ -81,7 +81,7 @@ to last column give the number of the Cartan. So the first two
 elements correspond to the compact Cartan and the last one to the
 split Cartan.
 
-Now let us look at the block of the trivial representation of :math:`G`.
+Now let us look at the block of the trivial representation of :math:`G`::
 
    atlas> set B=block_of (trivial (G))
    Variable B: [Param]
@@ -94,7 +94,7 @@ Now let us look at the block of the trivial representation of :math:`G`.
 Another way to do this is to define a new function, say ``show`` as
 follows:: 
 
-   atlas> set show([Param] params)= void: for p in B do prints(p) od 
+   atlas> set show([Param] params)= void: for p in params do prints(p) od 
    Added definition [6] of show: ([Param]->) 
    atlas> show(B)
    final parameter (x=0,lambda=[1]/1,nu=[0]/1) 

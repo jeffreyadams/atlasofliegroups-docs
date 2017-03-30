@@ -42,7 +42,7 @@ Example :math:`SL(2,R)`
  
 Recall the :math:`K\backslash G/B` elements of :math:`SL(2,R)`::
 
-atlas> set G=SL(2,R)
+   atlas> set G=SL(2,R)
    Variable G: RealForm
    atlas> G
    Value: connected split real group with Lie algebra 'sl(2,R)'
@@ -105,12 +105,12 @@ Example :math:`Sp(4,R)`
 
 There are a couple of commands that will give you discrete series::
 
-atlas> whattype discrete_series ?
-Overloaded instances of 'discrete_series'
-  (KGBElt,ratvec)->Param
-  (RealForm,ratvec)->Param
+   atlas> whattype discrete_series ?
+   Overloaded instances of 'discrete_series'
+     (KGBElt,ratvec)->Param
+     (RealForm,ratvec)->Param
    atlas>
    atlas> 
    atlas> whattype all_discrete_series_gamma ?
-No overloads for 'all_discrete_series_gamma'
-atlas>
+   No overloads for 'all_discrete_series_gamma'
+   atlas>
