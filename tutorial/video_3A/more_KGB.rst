@@ -48,11 +48,11 @@ This is how we associate a Cartan to an element :math:`x`. Namely, via this map 
 
 Moreover
 
-:math:`Stab_W (x) \simeq W(K,H) \simeq W(G(\mathbb R ), H(\mathbb
-R))`,
+.. math:: Stab_W (x) \simeq W(K,H) \simeq W(G(\mathbb R ), H(\mathbb
+R)),
 
 This is the rational Weyl group of the real form of the group with
-respect to the real Cartan, Which in the :math`\theta` world we think
+respect to the real Cartan, Which in the :math:`\theta` world we think
 of it as :math:`W(K,H)`.
 
 Finally, there is a map :math:`\rho : \mathcal X \rightarrow {\mathcal

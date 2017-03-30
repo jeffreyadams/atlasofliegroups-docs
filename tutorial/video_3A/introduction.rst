@@ -133,31 +133,3 @@ Since this set is finite, it makes sense to have an ``atlas`` command
 
 .. math:: KGB \leftrightarrow \{x_0 , \dots ,x_{n-1} \}
 
-
-
-
-
-
-
-Discrete Series
-----------------
-
-Now let us fix :math:`x_b` and define the set
-
-
-:math:`\mathcal F := {\rho }^{-1}(Id)=\{x\in \mathcal X |x\in H \}`
-
-This is the distinguished fiber above the identity element in the Weyl group or the identity involution in :math:`{\mathcal I}_W`
-this just means that the elements in this preimage are in the Cartan. Hence it corresponds to those elements in :math:`\mathcal X` which are actually in the Cartan :math:`H`.
-
-So, this :math:`\mathcal F` parametrizes the Borel subgroups
-containing a compact Cartan up to conjugation by :math:`K`
-
-
-
-Now we can focus on the case when :math:`\theta _x` is acting by
-:math:`Id` which corresponds to the discrete series representations.
-
-So, let us assume that :math:`G=G(\mathbb C)` has discrete series repr\
-esentations. This is equivalent to having a distinguished involution e\
-qual to the Identity.
