@@ -47,19 +47,19 @@ This is how we associate a Cartan to an element :math:`x`. Namely, via this map 
 
 Moreover
 
-.. math:: Stab_W (x)\simeq W(K,H)\simeq W(G(\mathbb R), H(\mathbb R)),
+.. math:: Stab_W (x)\simeq W(K,H)\simeq W(G(\mathbb R),H(\mathbb R)),
 
 This is the rational Weyl group of the real form of the group with
 respect to the real Cartan, Which in the :math:`\theta` world we think
 of it as :math:`W(K,H)`.
 
-Finally, there is a map :math:`\rho : \mathcal X \rightarrow {\mathcal
+Finally, there is a map :math:`\rho :\mathcal X\rightarrow {\mathcal
 I}_W` (involutions in :math:`W`). The map is the obvious one:
 :math:`x` is an element in the normalizer of :math:`H` so we take its
 image in the Weyl group and that is an involution. Taking the
-conjugacy cla\ sses of involutions in W gives a map:
+conjugacy classes of involutions in W gives a map:
 
-:math:`\mathcal I /W \leftrightarrow \text{conjugacy classes of
+:math:`{\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of
 Cartans in quasisplit group.}`
 
 The map :math:`\rho` is not necessarily surjective. But it is

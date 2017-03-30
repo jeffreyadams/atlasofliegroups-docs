@@ -21,7 +21,7 @@ In this setting it is better to think of :math:`G(\mathbb R)` as
 
 Then, the :math:`K` orbits on :math:`G/B` consist of three elements:
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_b =\left( \begin{array}{cc}
+:math:`\ \ \\ \ \ \ \ \ \ \ \ \ x_b =\left( \begin{array}{cc}
 i&0\\ 
 0&-i
 \end{array}\right),\quad-x_b=\left(\begin{array}{cc}
@@ -31,6 +31,7 @@ i&0\\
 0 & 1 \\ 
 -1 & 0 
 \end{array} \right)`
+
 
 So, :math:`x_b` and :math:`-x_b` are all the elements of the cartan
 that are conjugate to :math:`x_b`. And there is only one other
@@ -52,6 +53,59 @@ Borel subgroups.
 Observation: This is the usual action of :math:`Sl(2,\mathbb C)` on
 the projective plane that gives three orbits, :math:`0`,
 :math:`\infty` and :math:`{\mathbb C}^{\times }`.
+
+To obtain these elements with the software there is a command
+``print_KGB (G)``::
+
+   atlas> whattype print_KGB ?
+   Overloaded instances of 'print_KGB'
+     RealForm->void
+     KGBElt->void
+   atlas>
+
+   atlas> set G=SL(2,R)
+   Variable G: RealForm
+   atlas> G
+   Value: connected split real group with Lie algebra 'sl(2,R)'
+   atlas>
+   atlas> print_KGB (G)
+   kgbsize: 3
+   Base grading: [1].
+   0:  0  [n]   1    2  (0)#0 e
+   1:  0  [n]   0    2  (1)#0 e
+   2:  1  [r]   2    *  (0)#1 1^e
+   atlas>
+
+So :math:`KGB` has three elements labeled ``0, 1, 2`` and the second
+to last column give the number of the Cartan. So the first two
+elements correspond to the compact Cartan and the last one to the
+split Cartan.
+
+Now let us look at the block of the trivial representation of :math:`G`.
+
+   atlas> set B=block_of (trivial (G))
+   Variable B: [Param]
+   atlas> void: for p in B do prints(p) od
+   final parameter (x=0,lambda=[1]/1,nu=[0]/1)
+   final parameter (x=1,lambda=[1]/1,nu=[0]/1)
+   final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+   atlas>
+
+Another way to do this is to define a new function, say ``show`` as
+follows:: 
+
+   atlas> set show([Param] params)= void: for p in B do prints(p) od 
+   Added definition [6] of show: ([Param]->) 
+   atlas> show(B)
+   final parameter (x=0,lambda=[1]/1,nu=[0]/1) 
+   final parameter (x=1,lambda=[1]/1,nu=[0]/1) 
+   final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+   atlas>
+
+Then you can use the same function ``show`` for different parameter sets.
+
+So, the first two elements parametrize the discrete series with Harish Chandra parameters :math:`\rho` and :math:`-\rho`. More on this later.
+
 
 Now as representatives of Borels we have:
 
