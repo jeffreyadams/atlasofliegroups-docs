@@ -71,7 +71,7 @@ The Algorithms paper has a picture of the :math:`KGB` space for
 the fibers of elements in :math:`KGB` that go to the same conjugacy
 class of involutions and in turn to the same Cartan:
 
-.. image:: stars.jpg
+.. image:: KGB_Sp4.jpg
     :width: 800px
     :align: center
     :height: 800px
