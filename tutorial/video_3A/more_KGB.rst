@@ -71,6 +71,13 @@ The Algorithms paper has a picture of the :math:`KGB` space for
 the fibers of elements in :math:`KGB` that go to the same conjugacy
 class of involutions and in turn to the same Cartan:
 
+.. figure:: KGB_Sp4.jpg
+    :width: 1000px
+    :align: center
+    :height: 1000px
+    :alt: alternate text
+    :figclass: align-center
+
 Four elements get mapped to the identity involution which corresponds
 to the compact Cartan; two are mapped to the involutions from the
 short root reflections :math:`s_{\alpha _1}` and :math:`s_{\alpha _2}`
