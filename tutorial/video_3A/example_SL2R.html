@@ -227,17 +227,23 @@
 <li class="toctree-l4"><a class="reference internal" href="introduction.html#elements"><span class="math">\(KGB\)</span> elements</a></li>
 <li class="toctree-l4"><a class="reference internal" href="introduction.html#parametrization-theorem">Parametrization Theorem</a></li>
 <li class="toctree-l4"><a class="reference internal" href="introduction.html#parameter-set">Parameter Set</a></li>
-<li class="toctree-l4"><a class="reference internal" href="introduction.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="introduction.html#more-about">More About <span class="math">\(KGB\)</span></a></li>
-<li class="toctree-l4"><a class="reference internal" href="introduction.html#kgb-ordering">KGB ordering</a></li>
-<li class="toctree-l4"><a class="reference internal" href="introduction.html#discrete-series">Discrete Series</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Example: <span class="math">\(SL(2,\mathbb R)\)</span></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#moral-of-the-story">Moral of the Story</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="more_KGB.html">More on <span class="math">\(K\backslash G/B\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="more_KGB.html">More on <span class="math">\(K\backslash G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#involutions-and-conjugacy-classes-of-cartans">Involutions and Conjugacy classes of Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#kgb-ordering">KGB ordering</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="discrete_series.html">Discrete Series</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="discrete_series.html#example">Example <span class="math">\(SL(2,R)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="discrete_series.html#id1">Example <span class="math">\(Sp(4,R)\)</span></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
@@ -1111,7 +1117,7 @@
 set :math:<cite>x_b = diag(i,-i)</cite>.</p>
 <p>Then <span class="math">\((x_b)^2 =-Id \in Z(G)\)</span>. The stabilizer in <span class="math">\(K\)</span> of
 this element is the diagonal torus</p>
-<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ K^{\theta }_x=\left\{ \left( \begin{array}{cc}
+<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ K^{{\theta }_x}=\left\{ \left( \begin{array}{cc}
 z &amp; 0 \\
 0 &amp; \frac{1}{z} \end{array}\right) :z\in {\mathbb C}^{\times }\right\}\cong
 SO(2,\mathbb C)\)</span></p>
@@ -1121,7 +1127,7 @@ maximal compact subgroup is <span class="math">\(G(\mathbb R)=SL(2,\mathbb R)\)<
 <p>In this setting it is better to think of <span class="math">\(G(\mathbb R)\)</span> as
 <span class="math">\(SU(1,1)\)</span></p>
 <p>Then, the <span class="math">\(K\)</span> orbits on <span class="math">\(G/B\)</span> consist of three elements:</p>
-<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ x_b =\left( \begin{array}{cc}
+<p><span class="math">\(\ \ \\ \ \ \ \ \ \ \ \ \ x_b =\left( \begin{array}{cc}
 i&amp;0\\
 0&amp;-i
 \end{array}\right),\quad-x_b=\left(\begin{array}{cc}
@@ -1147,35 +1153,82 @@ Borel subgroups.</p>
 <p>Observation: This is the usual action of <span class="math">\(Sl(2,\mathbb C)\)</span> on
 the projective plane that gives three orbits, <span class="math">\(0\)</span>,
 <span class="math">\(\infty\)</span> and <span class="math">\({\mathbb C}^{\times }\)</span>.</p>
+<p>To obtain these elements with the software there is a command
+<code class="docutils literal"><span class="pre">print_KGB</span> <span class="pre">(G)</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype print_KGB ?
+Overloaded instances of &#39;print_KGB&#39;
+  RealForm-&gt;void
+  KGBElt-&gt;void
+atlas&gt;
+
+atlas&gt; set G=SL(2,R)
+Variable G: RealForm
+atlas&gt; G
+Value: connected split real group with Lie algebra &#39;sl(2,R)&#39;
+atlas&gt;
+atlas&gt; print_KGB (G)
+kgbsize: 3
+Base grading: [1].
+0:  0  [n]   1    2  (0)#0 e
+1:  0  [n]   0    2  (1)#0 e
+2:  1  [r]   2    *  (0)#1 1^e
+atlas&gt;
+</pre></div>
+</div>
+<p>So <span class="math">\(KGB\)</span> has three elements labeled <code class="docutils literal"><span class="pre">0,</span> <span class="pre">1,</span> <span class="pre">2</span></code> and the second
+to last column give the number of the Cartan. So the first two
+elements correspond to the compact Cartan and the last one to the
+split Cartan.</p>
+<p>Now let us look at the block of the trivial representation of <span class="math">\(G\)</span>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">B</span><span class="o">=</span><span class="n">block_of</span> <span class="p">(</span><span class="n">trivial</span> <span class="p">(</span><span class="n">G</span><span class="p">))</span>
+<span class="n">Variable</span> <span class="n">B</span><span class="p">:</span> <span class="p">[</span><span class="n">Param</span><span class="p">]</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">B</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="n">od</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Another way to do this is to define a new function, say <code class="docutils literal"><span class="pre">show</span></code> as
+follows:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">show</span><span class="p">([</span><span class="n">Param</span><span class="p">]</span> <span class="n">params</span><span class="p">)</span><span class="o">=</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">params</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="n">od</span>
+<span class="n">Added</span> <span class="n">definition</span> <span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="n">of</span> <span class="n">show</span><span class="p">:</span> <span class="p">([</span><span class="n">Param</span><span class="p">]</span><span class="o">-&gt;</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">B</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Then you can use the same function <code class="docutils literal"><span class="pre">show</span></code> for different parameter sets.</p>
+<p>So, the first two elements parametrize the discrete series with Harish Chandra parameters <span class="math">\(\rho\)</span> and <span class="math">\(-\rho\)</span>. More on this later.</p>
 <p>Now as representatives of Borels we have:</p>
-<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_b \mapsto B=\left( \begin{array}{cc}
+<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_b \mapsto B=\left\{ \left( \begin{array}{cc}
 z &amp; w \\
-0 &amp; \frac{1}{z} \end{array} \right),\)</span></p>
+0 &amp; \frac{1}{z} \end{array} \right)  |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}\)</span></p>
 <p>which is the Borel that was fixed at the begining. Now, taking an
 element that conjugates $x_b$ to its negative we have:</p>
-<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -x_b=s_{\alpha }(x_b) \mapsto
-B'=s_{\alpha }(B)=\left( \begin{array}{cc} z &amp; 0 \\ w &amp; 1/z
-\end{array} \right)\)</span>;</p>
+<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -x_b=s_{\alpha }(x_b) \mapsto
+B'=s_{\alpha }(B)=\left\{ \left( \begin{array}{cc} z &amp; 0 \\ w &amp; 1/z
+\end{array} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}\)</span>;</p>
 <p>and for <span class="math">\(u\)</span>, the element that conjugates <span class="math">\(x_b\)</span> to
 <span class="math">\(u\)</span> is</p>
 <p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ g=\frac{1}{\sqrt{2}} \left( \begin{array}{cc}
 1 &amp; -1 \\
 1 &amp; 1 \end{array} \right)\)</span>.</p>
 <p>Then</p>
-<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ B''=gBg^{-1} =\left(\begin{array}{cc} cosh(z) &amp; sinh(z) \\
+<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ B''=gBg^{-1} =\left\{ \left(\begin{array}{cc} cosh(z) &amp; sinh(z) \\
 sinh(z) &amp; cosh(z) \end{array} \right) + \frac{1}{2}
-\left(\begin{array}{cc} w &amp; w \\ -w &amp; w \end{array} \right)\)</span>.</p>
+\left(\begin{array}{cc} w &amp; w \\ -w &amp; w \end{array} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}\)</span>.</p>
 <p>One of the key points comes from just looking at the Cartan part of
 the last <span class="math">\(B''\)</span>:</p>
 <div class="math">
-\[\begin{split}H''=\left(\begin{array}{cc}cosh(z)&amp;sinh(z)\\ sinh(z)&amp;cosh(z)\end{array}\right).\end{split}\]</div>
+\[\begin{split}H''=\left\{ \left(\begin{array}{cc}cosh(z)&amp;sinh(z)\\ sinh(z)&amp;cosh(z)\end{array}\right) |z\in {\mathbb C}^{\times} \right\}.\end{split}\]</div>
 <p>Since we fixed the Cartan involution <span class="math">\({\theta }_{x_b} =
 diag(i,-i)\)</span>, it is acting on this Cartan by <span class="math">\(-1\)</span> (i.e. by taking
 the inverse). It acts trivially on the diagonal Cartan.</p>
 <p>The set of real points of this Cartan is</p>
-<p><span class="math">\(H''(\mathbb R)=\left\{ \pm Id \left(\begin{array}{cc}
-cosh(x) &amp; sinh(x) \\
-sinh(x) &amp; cosh(x) \end{array} \right) | x\in \mathbb R \right\} \cong {\mathbb R}^{\times }\)</span></p>
+<p><span class="math">\(\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ H''(\mathbb R)=\left\{ \pm Id \left(\begin{array}{cc} cosh(x) &amp; sinh(x) \\ sinh(x) &amp; cosh(x) \end{array} \right) | x\in \mathbb R \right\} \cong {\mathbb R}^{\times }\)</span></p>
 <p>Which is the ususal way of writing split Cartan in <span class="math">\(SU(1,1)\)</span>.</p>
 <p>The point is that, the pair <span class="math">\((H'', {\theta }_{x_b} )\)</span> is
 conjugate under <span class="math">\(G\)</span> to the pair <span class="math">\((H, {\theta }_u )\)</span>. That

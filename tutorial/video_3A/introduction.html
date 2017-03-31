@@ -227,17 +227,23 @@
 <li class="toctree-l4"><a class="reference internal" href="#elements"><span class="math">\(KGB\)</span> elements</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#parametrization-theorem">Parametrization Theorem</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#parameter-set">Parameter Set</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#more-about">More About <span class="math">\(KGB\)</span></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#kgb-ordering">KGB ordering</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#discrete-series">Discrete Series</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="example_SL2R.html">Example: <span class="math">\(SL(2,\mathbb R)\)</span></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="example_SL2R.html#moral-of-the-story">Moral of the Story</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="more_KGB.html">More on <span class="math">\(K\backslash G/B\)</span></a></li>
+<li class="toctree-l3"><a class="reference internal" href="more_KGB.html">More on <span class="math">\(K\backslash G/B\)</span></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#involutions-and-conjugacy-classes-of-cartans">Involutions and Conjugacy classes of Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#kgb-ordering">KGB ordering</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="discrete_series.html">Discrete Series</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="discrete_series.html#example">Example <span class="math">\(SL(2,R)\)</span></a></li>
+<li class="toctree-l4"><a class="reference internal" href="discrete_series.html#id1">Example <span class="math">\(Sp(4,R)\)</span></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a></li>
@@ -1205,96 +1211,6 @@ Cloux, in www.liegroups.org/papers/.</p>
 <code class="docutils literal"><span class="pre">KGB</span></code> that will give a finite list of the elements in <span class="math">\(\mathcal X\)</span></p>
 <div class="math">
 \[KGB \leftrightarrow \{x_0 , \dots ,x_{n-1} \}\]</div>
-</div>
-<div class="section" id="effect-on-modules">
-<h2>Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.<a class="headerlink" href="#effect-on-modules" title="Permalink to this headline">¶</a></h2>
-<p>Another important point is that now we will be talking about
-<span class="math">\((\mathfrak g , K_x )\)</span> modules as we vary <span class="math">\(x\)</span>. The
-<span class="math">\(x\)</span>&#8216;s are all conjugate to <span class="math">\(x_b\)</span>, but not literally equal.</p>
-<p>Therefore, the <span class="math">\(K_x\)</span>  are all conjugate to K but they are not
-equal. So, we get all these <span class="math">\((\mathfrak g , K_x )\)</span> modules that
-are all equivalent to <span class="math">\((\mathfrak g , {K_x}_b )\)</span> modules; and by
-using this conjugation we can conjugate them all back to a
-<span class="math">\((\mathfrak g , {K_x}_b )\)</span> module.</p>
-<p>More precisely, if <span class="math">\(\pi\)</span> (resp. <span class="math">\(\pi '\)</span>) are
-<span class="math">\((\mathfrak g , K_x )\)</span> (resp. <span class="math">\((\mathfrak g , K_{x'} )\)</span>
-modules, then <span class="math">\(\pi \cong {\pi }'\)</span> if there is <span class="math">\(g \in G\)</span>
-with</p>
-<div class="math">
-\[gxg^{-1} =x'`, \quad {\pi }^g \cong {\pi}\]</div>
-<p>In this way, the software is varying <span class="math">\(x\)</span>, but in the end you can
-conjugate back to <span class="math">\(x_b\)</span>.</p>
-</div>
-<div class="section" id="more-about">
-<h2>More About <span class="math">\(KGB\)</span><a class="headerlink" href="#more-about" title="Permalink to this headline">¶</a></h2>
-<p>Recall that we are fixing  <span class="math">\(x_b\)</span> and  <span class="math">\(\mathcal X =\mathcal X (x_b )\)</span></p>
-<p>This gives a fixed <span class="math">\(K\)</span> and <span class="math">\(\mathcal X\)</span> parametrizes:</p>
-<div class="math">
-\[K\backslash G/B \leftrightarrow \mathcal X\]</div>
-<p>And in the software, this gives a finite set of parameters:</p>
-<div class="math">
-\[KGB= \mathcal X = \{x_0, \ldots x_{n-1} \}\]</div>
-<p>Now the Weyl group <span class="math">\(W\)</span> acts naturally by conjugation
-:math:<a href="#id1"><span class="problematic" id="id2">`</span></a>mathcal X <a href="#id3"><span class="problematic" id="id4">`</span></a>. Then,</p>
-<p><span class="math">\(\mathcal X /W \leftrightarrow\)</span> conjugacy classes of Cartan
-subgroups.  This is how we associate a Cartan to an element
-<span class="math">\(x\)</span>. Namely, via this map from <span class="math">\(\mathcal X\)</span>.</p>
-<p>Moreover</p>
-<p><span class="math">\(Stab_W (x) \simeq W(K,H) \simeq W(G(\mathbb R ), H(\mathbb
-R))\)</span>,</p>
-<p>This is the rational Weyl group of the real form of the group with
-respect to the real Cartan, Which in the $theta$ world we think of it
-as <span class="math">\(W(K,H)\)</span>.</p>
-<p>Finally, there is a map <span class="math">\(\rho : \mathcal X \rightarrow {\mathcal
-I}_W\)</span> (involutions in <span class="math">\(W\)</span>). The map is the obvious one:
-<span class="math">\(x\)</span> is an element in the normalizer of <span class="math">\(H\)</span> so we take its
-image in the Weyl group and that is an involution. Taking the conjugacy classes of involutions in W gives a map:</p>
-<p><span class="math">\(\mathcal I /W \leftrightarrow \text{conjugacy classes of
-Cartans in quasisplit group.}\)</span></p>
-<p>The map <span class="math">\(\rho\)</span> is not necessarily surjective. But it is
-surjective if the group is quasisplit. So this <span class="math">\(\mathcal I\)</span> is
-telling us about Cartans of the quasisplit form.</p>
-<p>The Algorithms paper has a picture of the <span class="math">\(KGB\)</span> space for
-<span class="math">\(Sp(4,R)\)</span>. They are 11 elements in the space. The picture gives
-the fibers of elements in <span class="math">\(KGB\)</span> that go to the same conjugacy
-class of involutions and in turn to the same Cartan:</p>
-<p>Four elements get mapped to the identity involution which corresponds
-to the compact Cartan; two are mapped to the involutions from the
-short root reflections <span class="math">\(s_{\alpha _1}\)</span> and <span class="math">\(s_{\alpha _2}\)</span>
-corresponding to the intermediate Cartan isomorphic to <span class="math">\({\mathbb
-C}^{\times}\)</span>; four are mapped to the long root reflections
-<span class="math">\(s_{\beta _1}\)</span>, <span class="math">\(s_{\beta _2}\)</span>, which correspond to the
-Cartan <span class="math">\(S^1 \times {\mathbb R}^\times\)</span>; and one element is
-mapped to <span class="math">\(-Id\)</span>, corresponding to the split Cartan.</p>
-<p>In terms of representations, looking at each fiber of <span class="math">\(KGB\)</span>
-elements corresponding to a given Cartan, will give us representations
-attached to that Cartan. For example all the representations attached
-to the split Cartan correspond to the last element <span class="math">\(x_10\)</span> which
-is the fiber above the involution <span class="math">\(-1\)</span>, etc.</p>
-</div>
-<div class="section" id="kgb-ordering">
-<h2>KGB ordering<a class="headerlink" href="#kgb-ordering" title="Permalink to this headline">¶</a></h2>
-<p>There is a partial order on the <span class="math">\(KGB\)</span> elements coming from the
-closure relations of the corresponding orbits. For example in the
-Hasse diagram for KGB for Sp(4,R), the vertical lines indicate closure
-relations. There are four closed orbits at the bottom of the diagram
-which correspond to the elements <span class="math">\(x_0 ,x_1 ,x_3 ` and
-:math:`x_4\)</span> , which in turn get mapped to the identity involution. At
-the top of the diagram there is only one open orbit which is the
-element <span class="math">\(x_{10}\)</span>, mapped to <span class="math">\(-Id\)</span>.  Below <span class="math">\(x_{10}\)</span> we have the elements corresponding to  <span class="math">\(x_7 ,x_8\)</span> and <span class="math">\(x_9\)</span> and below them we have <span class="math">\(x_4 ,x_5\)</span> and <span class="math">\(x_6\)</span>.</p>
-<p>The output of the software respects this partial order. More on this later.</p>
-</div>
-<div class="section" id="discrete-series">
-<h2>Discrete Series<a class="headerlink" href="#discrete-series" title="Permalink to this headline">¶</a></h2>
-<p>Now let us fix <span class="math">\(x_b\)</span> and define the set</p>
-<p><span class="math">\(\mathcal F := {\rho }^{-1}(Id)=\{x\in \mathcal X |x\in H \}\)</span></p>
-<p>This is the distinguished fiber above the identity element in the Weyl group or the identity involution in <span class="math">\({\mathcal I}_W\)</span>
-this just means that the elements in this preimage are in the Cartan. Hence it corresponds to those elements in <span class="math">\(\mathcal X\)</span> which are actually in the Cartan <span class="math">\(H\)</span>.</p>
-<p>So, this <span class="math">\(\mathcal F\)</span> parametrizes the Borel subgroups
-containing a compact Cartan up to conjugation by <span class="math">\(K\)</span></p>
-<p>Now we can focus on the case when <span class="math">\(\theta _x\)</span> is acting by
-<span class="math">\(Id\)</span> which corresponds to the discrete series representations.</p>
-<p>So, let us assume that <span class="math">\(G=G(\mathbb C)\)</span> has discrete series representations. This is equivalent to having a distinguished involution equal to the Identity.</p>
 </div>
 </div>
 
