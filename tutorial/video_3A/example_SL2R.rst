@@ -42,9 +42,9 @@ Note that :math:`x_b` and :math:`-x_b` are both fixed by conjugation
 by :math:`H` and :math:`H` acts by conjugation on :math:`u`. Moreover,
 we can replace :math:`u` by any element of the form
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \left(\begin{array}{cc}
+\centerline{:math:`\left(\begin{array}{cc}
 0 & z \\
--\frac{1}{z} & 0 \end{array} \right)`
+-\frac{1}{z} & 0 \end{array} \right)`}
 
 So, :math:`K` acting on :math:`G/B` has three elements,
 representatives of the :math:`K` orbits on the conjugacy classes of
