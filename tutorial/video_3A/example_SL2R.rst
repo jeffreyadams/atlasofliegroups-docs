@@ -2,7 +2,7 @@ Example: :math:`SL(2,\mathbb R)`
 ==================================
 
 Let us start with the group :math:`G=SL(2,\mathbb C)`. For this group
-set :\ math:`x_b = diag(i,-i)`.
+set :math:`x_b = diag(i,-i)`.
 
 Then :math:`(x_b)^2 =-Id \in Z(G)`. The stabilizer in :math:`K` of
 this element is the diagonal torus
