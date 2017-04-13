@@ -45,7 +45,7 @@ mathematics.
    source_library
    web_interface
    discussions
-   
+   collapsible_text   
    
    
 

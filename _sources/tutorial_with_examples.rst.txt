@@ -11,6 +11,6 @@ Tutorial
    tutorial/coordinates_characters
    tutorial/first_examples
    tutorial/K_orbits_on_G_B
-   tutorial/general_parameters
+   tutorial/discrete_series
    tutorial/parabolic_induction
    
