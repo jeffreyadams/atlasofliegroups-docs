@@ -1,5 +1,5 @@
-Discrete Series
-================
+Background
+===========
 
 Recall that there is a map :math:`\rho :\mathcal X\rightarrow
 {\mathcal I}_W` (involutions in :math:`W`). And the conjugacy classes
@@ -36,17 +36,3 @@ In other words, assuming that :math:`G=G(\mathbb C)` has discrete
 series representations is equivalent to having a distinguished
 involution equal to the Identity.
 
-Example :math:`Sp(4,R)`
------------------------
-
-There are a couple of commands that will give you discrete series::
-
-   atlas> whattype discrete_series ?
-   Overloaded instances of 'discrete_series'
-     (KGBElt,ratvec)->Param
-     (RealForm,ratvec)->Param
-   atlas>
-   atlas> 
-   atlas> whattype all_discrete_series_gamma ?
-   No overloads for 'all_discrete_series_gamma'
-   atlas>

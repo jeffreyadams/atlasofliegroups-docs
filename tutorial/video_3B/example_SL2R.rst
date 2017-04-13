@@ -28,7 +28,6 @@ If we again look at the block of the trivial ::
    final parameter (x=2,lambda=[1]/1,nu=[1]/1)
    atlas>
 
-
 We focus on the first two elements::
 
    atlas> B[0]
@@ -38,11 +37,9 @@ We focus on the first two elements::
    atlas>
 
 Recall that these are the (discrete series) representations associated
-to the compact Cartan. Note that they both have parameter
+to the compact Cartan. Note that they both have Harish-Chandra parameter
 ``lambda=rho``. This is because the software is using a different
-``x``. In order to understand which representation is which, we need
-to conjugate ``x=1`` to ``x=0``. This will conjugate ``lambda`` to
-``-lambda``.  Remember that we have to fix a ``KGB`` element ``x_b``
+``x``.   Remember that we have to fix a ``KGB`` element ``x_b``
 to fix a real group :math:`K`. Let us fix it to be ``x=0``::
 
   atlas> set x_b=KGB(G,0)
@@ -51,8 +48,11 @@ to fix a real group :math:`K`. Let us fix it to be ``x=0``::
    Value: KGB element #0
    atlas>
 
-Then the harish chandra parameters of the discrete series with respect
-to the fixed element ``x=0`` will be::
+Now, in order to identify the representation associated to ``x=1` with
+a representation associated to ``x=0``, we need to conjugate ``x=1``
+to ``x=0``. This will conjugate ``lambda`` to ``-lambda``.  Then the
+harish chandra parameters of the discrete series with respect to the
+fixed element ``x=0`` will be::
 
    atlas> hc_parameter(B[0],x_b)
    Value: [ 1 ]/1
@@ -60,5 +60,10 @@ to the fixed element ``x=0`` will be::
    Value: [ -1 ]/1
    atlas>
 
-But by choosing ``x_b =1`` we get the opposite situation for the
- Harish Chandra parameters.
+So, one is the holomorphic discrete series and the other is the anti
+holomorphic one.  But by choosing ``x_b =1`` we get the opposite
+situation for the Harish Chandra parameters and  holomorphic convention.
+
+
+
+
