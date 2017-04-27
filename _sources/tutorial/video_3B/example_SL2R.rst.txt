@@ -36,6 +36,11 @@ We focus on the first two elements::
    Value: final parameter (x=1,lambda=[1]/1,nu=[0]/1)
    atlas>
 
+Remark: There are two commands that give us discrete series directly. For
+other groups with more representations it is more helpful to list them
+directly. See the example of :math:`Sp(4,R)` in the next section.
+
+   
 Recall that these are the (discrete series) representations associated
 to the compact Cartan. Note that they both have Harish-Chandra parameter
 ``lambda=rho``. This is because the software is using a different
@@ -60,9 +65,10 @@ fixed element ``x=0`` will be::
    Value: [ -1 ]/1
    atlas>
 
-So, one is the holomorphic discrete series and the other is the anti
-holomorphic one.  But by choosing ``x_b =1`` we get the opposite
-situation for the Harish Chandra parameters and  holomorphic convention.
+So, one is the holomorphic discrete series and the other is the
+anti-holomorphic one.  But by choosing ``x_b =1`` we get the opposite
+situation for the Harish Chandra parameters and holomorphic
+convention.
 
 
 
