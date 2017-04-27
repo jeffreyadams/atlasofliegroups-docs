@@ -1,15 +1,22 @@
 .. _windows:
 
+#######
 Windows
----------
+#######
 
-* :ref:`compiling` 
-* :ref:`precompiled`
+Ways to download and install the software
+=========================================
 
-.. _compiling:
+The options, in order of preference, are:
+
+* :ref:`compile_windows`
+* :ref:`docker_windows`
+* :ref:`executable_windows`
+
+.. _compile_windows:
 
 Compiling
-+++++++++++
+=========
 
 The best option is available on Windows 10. This is the
 `bash shell
@@ -44,21 +51,32 @@ might not need to use sudo.)::
   sudo apt-get install libreadline-dev
   sudo apt-get install emacs (or your favorite text editor)
 
-The remainder of the process follows the standard linux process. See :ref:`linux` for details. Briefly:y to
+The remainder of the process follows the standard linux process. See :ref:`linux` for details. Briefly:
 
-Get a copy of the software using git::
+Download the source code:
 
-  git clone http://github.com/jeffreyadams/atlasofliegroups.git
++--------------------------+------------------------------+---------------------------------------+
+| Version 1.0              |   `atlas_1.0.tgz`_           | source code for Fokko and atlas       |
+|                          |                              | including messages and atlas-scripts  |
++--------------------------+------------------------------+---------------------------------------+
+
+.. _atlas_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz
+
+Unpack the file::
+
+   tar xvf atlas_1.0.tgz
   
 Go into the proper directory and type make::
    
    cd atlasofliegroups
    make
 
+Follow the instructions in :ref:`linux`.
+
 .. _cygwin:
 
 Installing under Cygwin
-+++++++++++++++++++++++++++
+++++++++++++++++++++++++
 
 Download Cygwin. See
 `the Cygwin web page <https://www.cygwin.com>`_. 
@@ -74,23 +92,65 @@ Install cygwin: Double-click on setup.exe to run it. At the package menu choose 
 * readline
 * git
 
-Next, open a cygin terminal by double-clicking on the icon. You are now in a linux-like environment.
+Next, open a cygwin terminal by double-clicking on the icon. You are now in a linux-like environment.
 
 The remainder of the process follows the standard linux process, similar to the procedure under bash.
 See :ref:`linux` for details.
 
-.. _precompiled:
+.. _docker_windows:
 
-Pre-compiled
-++++++++++++++++++
+Using Docker
+============
+
+The preferred method is to :ref:`compile the software from source <compile_windows>`.
+
+The next choice is using `the Docker container system <https://www.docker.com>`_.
+
+This installs a *container*, which is a self-contained linux
+environment (similar to a virtual machine) and runs the software in
+the container. This is less dependent on the details of your system,
+and is a good option of you have trouble compiling the software
+yourself. It requires adminsitrative privileges, so is mainly used for
+personal machines, and not instutional machines under the control of a
+system administrator.
 
 
+Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
+Double click on the file to install it. This requires typing your password.
+
+Open a command window and give the command
+
+      docker run -it jeffreyadams/atlasofliegroups
+
+to download the software and run it (it launches atlas and read in the
+fill all.at). The first time you do this it takes up
+to a few minutes.  Subsequent times it is much faster.
+
+.. _executable_windows:
+
+Download and Install an executable
+==================================
+
+The best method is to compile from source. As a backup option you can 
+download and install an executable file. 
+
+Download a copy of the executable, and the atlas-scripts directory here:
+
++-------------------------------+--------------------------------+-------------------------------------+
+| Windows compiled              | `atlas_windows_pre_1.0.tar`_   |  executable, and messages           |
+|                               |                                |  atlas-scripts directories          |
++-------------------------------+--------------------------------+-------------------------------------+
+
+.. _atlas_windows_pre_1.0.tar: http://www.liegroups.org/software/source/1.0/atlas_windows_pre_1.0.tar
+
+Double click on the file and extract the software. This will create a folder 
+atlas_windows_pre_1.0. Double click on the folder, and then on the atlas icon. Then do
 
 
+      <all
 
-etc
-~~~~~~~~~~~~
+to load the scripts.
 
-Unzip the file you just downloaded, open atlas_windows/bin, double click on atlas.exe or Fokko.exe to run.
+Note: using this option readline (command line tools) will not work. For this reason 
+this is the least desirable option.
 
-If for some reason, you choose to download the source files and would like to compile atlas, see `this page <http://www.liegroups.org/software/download/windows.html>`_ for instructions.

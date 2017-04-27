@@ -8,7 +8,7 @@ twist.at Function References
 
 check
 -------------------------------------------------
-| ``check:InnerClass ic, mat delta->bool`` Defined in line number 5.
+| ``check:InnerClass ic, mat delta->bool`` Defined in line number 6.
 | 
 | 
 
@@ -16,7 +16,7 @@ check
 
 KGB_twist
 -------------------------------------------------
-| ``KGB_twist:InnerClass ic, mat delta->(KGBElt x) KGBElt`` Defined in line number 13.
+| ``KGB_twist:InnerClass ic, mat delta->(KGBElt x) KGBElt`` Defined in line number 14.
 | 
 | 
 
@@ -24,7 +24,7 @@ KGB_twist
 
 is_twist_fixed
 -------------------------------------------------
-| ``is_twist_fixed:(InnerClass, mat) icm->(RealForm->bool)`` Defined in line number 16.
+| ``is_twist_fixed:(InnerClass, mat) icm->(RealForm->bool)`` Defined in line number 17.
 | 
 | 
 
@@ -32,7 +32,7 @@ is_twist_fixed
 
 test
 -------------------------------------------------
-| ``test:RealForm rf->bool`` Defined in line number 21.
+| ``test:RealForm rf->bool`` Defined in line number 22.
 | 
 | 
 
@@ -40,7 +40,7 @@ test
 
 block_is_twist_fixed
 -------------------------------------------------
-| ``block_is_twist_fixed:(InnerClass, mat) (ic,delta):icd->(int,int->bool)`` Defined in line number 25.
+| ``block_is_twist_fixed:(InnerClass, mat) (ic,delta):icd->(int,int->bool)`` Defined in line number 26.
 | 
 | 
 
@@ -48,7 +48,7 @@ block_is_twist_fixed
 
 block_twist
 -------------------------------------------------
-| ``block_twist:InnerClass ic, mat delta->(Block->(int->int))`` Defined in line number 32.
+| ``block_twist:InnerClass ic, mat delta->(Block->(int->int))`` Defined in line number 33.
 | 
 | 
 
@@ -56,7 +56,7 @@ block_twist
 
 show_pairs
 -------------------------------------------------
-| ``show_pairs:(int->int) f, int n->string`` Defined in line number 45.
+| ``show_pairs:(int->int) f, int n->string`` Defined in line number 46.
 | 
 | 
 
@@ -64,7 +64,7 @@ show_pairs
 
 show_block_twists
 -------------------------------------------------
-| ``show_block_twists:(InnerClass, mat) (ic,delta):icd->void`` Defined in line number 52.
+| ``show_block_twists:(InnerClass, mat) (ic,delta):icd->void`` Defined in line number 53.
 | 
 | 
 
@@ -72,7 +72,7 @@ show_block_twists
 
 quotient
 -------------------------------------------------
-| ``quotient:InnerClass ic, mat delta, mat sublattice->(InnerClass,mat)`` Defined in line number 65.
+| ``quotient:InnerClass ic, mat delta, mat sublattice->(InnerClass,mat)`` Defined in line number 66.
 | 
 | 
 
@@ -80,7 +80,7 @@ quotient
 
 show_kernel
 -------------------------------------------------
-| ``show_kernel:RootDatum rd->void`` Defined in line number 71.
+| ``show_kernel:RootDatum rd->void`` Defined in line number 72.
 | 
 | 
 
@@ -88,7 +88,7 @@ show_kernel
 
 common_denominator
 -------------------------------------------------
-| ``common_denominator:[ratvec] list->int`` Defined in line number 80.
+| ``common_denominator:[ratvec] list->int`` Defined in line number 81.
 | 
 | 
 
@@ -96,7 +96,7 @@ common_denominator
 
 kernel_sublattice
 -------------------------------------------------
-| ``kernel_sublattice:RootDatum rd, [ratvec] generators->mat`` Defined in line number 83.
+| ``kernel_sublattice:RootDatum rd, [ratvec] generators->mat`` Defined in line number 84.
 | 
 | 
 
@@ -104,7 +104,7 @@ kernel_sublattice
 
 twist
 -------------------------------------------------
-| ``twist:Param p, mat delta->Param`` Defined in line number 92.
+| ``twist:Param p, mat delta->Param`` Defined in line number 93.
 | 
 | 
 
@@ -112,7 +112,7 @@ twist
 
 perm_mat
 -------------------------------------------------
-| ``perm_mat:[int] pi->mat`` Defined in line number 96.
+| ``perm_mat:[int] pi->mat`` Defined in line number 97.
 | 
 | 
 
@@ -120,7 +120,7 @@ perm_mat
 
 invol_mat
 -------------------------------------------------
-| ``invol_mat:[(int,int)] transp, int n->mat`` Defined in line number 99.
+| ``invol_mat:[(int,int)] transp, int n->mat`` Defined in line number 100.
 | 
 | 
 
@@ -128,7 +128,7 @@ invol_mat
 
 show
 -------------------------------------------------
-| ``show:Block b, int i->void`` Defined in line number 104.
+| ``show:Block b, int i->void`` Defined in line number 105.
 | 
 | 
 

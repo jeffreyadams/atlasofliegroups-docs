@@ -300,11 +300,20 @@ parabolic
 | Parabolic defined by weight lambda; message whether parabolic is real   or theta-stable.
 | 
 
+.. _parabolic_mute_ratvec_lambda,kgbelt_x->parabolic1:
+
+parabolic_mute
+-------------------------------------------------
+| ``parabolic_mute:ratvec lambda,KGBElt x->Parabolic`` Defined in line number 289.
+| 
+| Parabolic defined by weight lambda; NO message whether parabolic is real   or theta-stable.
+| 
+
 .. _theta_stable_parabolic_ratvec_lambda,kgbelt_x->parabolic1:
 
 theta_stable_parabolic
 -------------------------------------------------
-| ``theta_stable_parabolic:ratvec lambda,KGBElt x->Parabolic`` Defined in line number 288.
+| ``theta_stable_parabolic:ratvec lambda,KGBElt x->Parabolic`` Defined in line number 296.
 | 
 | Theta-stable parabolic defined by weight lambda.
 | 
@@ -313,7 +322,7 @@ theta_stable_parabolic
 
 real_parabolic
 -------------------------------------------------
-| ``real_parabolic:ratvec lambda,KGBElt x->Parabolic`` Defined in line number 292.
+| ``real_parabolic:ratvec lambda,KGBElt x->Parabolic`` Defined in line number 300.
 | 
 | Real parabolic defined by weight lambda.
 | 
@@ -322,7 +331,7 @@ real_parabolic
 
 Levi
 -------------------------------------------------
-| ``Levi:ratvec lambda,KGBElt x->RealForm`` Defined in line number 296.
+| ``Levi:ratvec lambda,KGBElt x->RealForm`` Defined in line number 304.
 | 
 | Levi factor of parabolic defined by weight lambda.
 | 
@@ -331,7 +340,7 @@ Levi
 
 theta_stable_Levi
 -------------------------------------------------
-| ``theta_stable_Levi:ratvec lambda, KGBElt x->RealForm`` Defined in line number 299.
+| ``theta_stable_Levi:ratvec lambda, KGBElt x->RealForm`` Defined in line number 307.
 | 
 | Levi factor of theta-stable parabolic defined by weight lambda.
 | 
@@ -340,7 +349,7 @@ theta_stable_Levi
 
 real_Levi
 -------------------------------------------------
-| ``real_Levi:ratvec lambda, KGBElt x->RealForm`` Defined in line number 303.
+| ``real_Levi:ratvec lambda, KGBElt x->RealForm`` Defined in line number 311.
 | 
 | Levi factor of real parabolic defined by weight lambda.
 | 
@@ -349,7 +358,7 @@ real_Levi
 
 nilrad
 -------------------------------------------------
-| ``nilrad:ratvec lambda,KGBElt x->mat`` Defined in line number 307.
+| ``nilrad:ratvec lambda,KGBElt x->mat`` Defined in line number 315.
 | 
 | Positive coroots in nilradical of P defined by weight lambda (if L theta-stable).
 | 
@@ -358,7 +367,7 @@ nilrad
 
 nilrad_roots
 -------------------------------------------------
-| ``nilrad_roots:ratvec lambda,KGBElt x->mat`` Defined in line number 310.
+| ``nilrad_roots:ratvec lambda,KGBElt x->mat`` Defined in line number 318.
 | 
 | Positive roots in nilradical of P defined by weight lambda (if L theta-stable).
 | 
@@ -367,7 +376,7 @@ nilrad_roots
 
 rho_u
 -------------------------------------------------
-| ``rho_u:ratvec lambda,KGBElt x->ratvec`` Defined in line number 315.
+| ``rho_u:ratvec lambda,KGBElt x->ratvec`` Defined in line number 323.
 | 
 | Half sum of positive roots in nilradical of P defined by weight lambda (if L theta-stable).
 | 
@@ -376,7 +385,7 @@ rho_u
 
 zero_simple_roots
 -------------------------------------------------
-| ``zero_simple_roots:RootDatum rd, vec cowt->[int]`` Defined in line number 318.
+| ``zero_simple_roots:RootDatum rd, vec cowt->[int]`` Defined in line number 326.
 | 
 | Simple roots which are zero on coweight H (in :math:`\mathfrak h` ).
 | 
@@ -385,7 +394,7 @@ zero_simple_roots
 
 parabolic_alt
 -------------------------------------------------
-| ``parabolic_alt:ratvec H,KGBElt x->Parabolic`` Defined in line number 325.
+| ``parabolic_alt:ratvec H,KGBElt x->Parabolic`` Defined in line number 333.
 | 
 | Parabolic defined by coweight H; message whether parabolic is real    or theta-stable.
 | 
@@ -394,7 +403,7 @@ parabolic_alt
 
 Levi_alt
 -------------------------------------------------
-| ``Levi_alt:ratvec H,KGBElt x->RealForm`` Defined in line number 335.
+| ``Levi_alt:ratvec H,KGBElt x->RealForm`` Defined in line number 343.
 | 
 | Levi factor of parabolic defined by coweight H.
 | 
@@ -403,7 +412,7 @@ Levi_alt
 
 nilrad_alt
 -------------------------------------------------
-| ``nilrad_alt:ratvec H,KGBElt x->mat`` Defined in line number 338.
+| ``nilrad_alt:ratvec H,KGBElt x->mat`` Defined in line number 346.
 | 
 | Positive coroots in nilradical of P defined by coweight H (if L theta-stable).
 | 
@@ -412,7 +421,7 @@ nilrad_alt
 
 nilrad_roots_alt
 -------------------------------------------------
-| ``nilrad_roots_alt:ratvec H,KGBElt x->mat`` Defined in line number 341.
+| ``nilrad_roots_alt:ratvec H,KGBElt x->mat`` Defined in line number 349.
 | 
 | Positive roots in nilradical of P defined by coweight H (if L theta-stable).
 | 
@@ -421,7 +430,7 @@ nilrad_roots_alt
 
 rho_u_alt
 -------------------------------------------------
-| ``rho_u_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 345.
+| ``rho_u_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 353.
 | 
 | Half sum of roots in nilradical of P defined by coweight H (if L theta-stable).
 | 
@@ -430,7 +439,7 @@ rho_u_alt
 
 rho_Levi_alt
 -------------------------------------------------
-| ``rho_Levi_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 348.
+| ``rho_Levi_alt:ratvec H,KGBElt x->ratvec`` Defined in line number 356.
 | 
 |  :math:`\rho(L)`  for Levi of P defined by coweight H (if L theta-stable).
 | 
@@ -439,7 +448,7 @@ rho_Levi_alt
 
 real_parabolic
 -------------------------------------------------
-| ``real_parabolic:KGBElt x->Parabolic`` Defined in line number 356.
+| ``real_parabolic:KGBElt x->Parabolic`` Defined in line number 364.
 | 
 | Real parabolic defined by x has Levi factor M=centralizer(A),   :math:`\mathfrak u` =positive roots not in M;   for M to be stable: x must have no C+ roots.
 | 
@@ -448,7 +457,7 @@ real_parabolic
 
 real_Levi
 -------------------------------------------------
-| ``real_Levi:KGBElt x->RealForm`` Defined in line number 361.
+| ``real_Levi:KGBElt x->RealForm`` Defined in line number 369.
 | 
 | Levi factor of real parabolic defined by x (must have no C+ roots).
 | 
@@ -457,7 +466,7 @@ real_Levi
 
 theta_stable_parabolic
 -------------------------------------------------
-| ``theta_stable_parabolic:KGBElt x->Parabolic`` Defined in line number 368.
+| ``theta_stable_parabolic:KGBElt x->Parabolic`` Defined in line number 376.
 | 
 | Theta-stable parabolic defined by x has Levi factor L=centralizer(T),   :math:`\mathfrak u` =positive roots not in L;   for this to be stable: no C- roots.
 | 
@@ -466,7 +475,7 @@ theta_stable_parabolic
 
 theta_stable_Levi
 -------------------------------------------------
-| ``theta_stable_Levi:KGBElt x->RealForm`` Defined in line number 373.
+| ``theta_stable_Levi:KGBElt x->RealForm`` Defined in line number 381.
 | 
 | Levi factor of theta-stable parabolic defined by x (must have no C- roots).
 | 
@@ -475,7 +484,7 @@ theta_stable_Levi
 
 is_standard_Levi
 -------------------------------------------------
-| ``is_standard_Levi:RealForm L,RealForm G->bool`` Defined in line number 377.
+| ``is_standard_Levi:RealForm L,RealForm G->bool`` Defined in line number 385.
 | 
 | Check whether a Levi subgroup L is standard in G   (simple roots of L are simple for G).
 | 
@@ -484,7 +493,7 @@ is_standard_Levi
 
 KGP
 -------------------------------------------------
-| ``KGP:RealForm G,ComplexParabolic (rd,S)->[KGPElt]`` Defined in line number 386.
+| ``KGP:RealForm G,ComplexParabolic (rd,S)->[KGPElt]`` Defined in line number 394.
 | 
 | List of K-conjugacy classes of given ComplexParabolic (as KGP elts).
 | 
@@ -493,7 +502,7 @@ KGP
 
 parabolics
 -------------------------------------------------
-| ``parabolics:RealForm G,ComplexParabolic (rd,S)->[Parabolic]`` Defined in line number 390.
+| ``parabolics:RealForm G,ComplexParabolic (rd,S)->[Parabolic]`` Defined in line number 398.
 | 
 | List K-conjugacy classes of given ComplexParabolic (as Parabolics).
 | 
@@ -502,7 +511,7 @@ parabolics
 
 theta_stable_parabolics
 -------------------------------------------------
-| ``theta_stable_parabolics:RealForm G,ComplexParabolic P->[Parabolic]`` Defined in line number 394.
+| ``theta_stable_parabolics:RealForm G,ComplexParabolic P->[Parabolic]`` Defined in line number 402.
 | 
 | List K-conjugacy classes of given ComplexParabolic that are theta-stable.
 | 
@@ -511,7 +520,7 @@ theta_stable_parabolics
 
 theta_stable_parabolics
 -------------------------------------------------
-| ``theta_stable_parabolics:RealForm G->[Parabolic]`` Defined in line number 400.
+| ``theta_stable_parabolics:RealForm G->[Parabolic]`` Defined in line number 408.
 | 
 | List all theta-stable parabolics for G.
 | 
@@ -520,7 +529,7 @@ theta_stable_parabolics
 
 theta_stable_parabolics_type
 -------------------------------------------------
-| ``theta_stable_parabolics_type:RealForm G,[int] P->[Parabolic]`` Defined in line number 407.
+| ``theta_stable_parabolics_type:RealForm G,[int] P->[Parabolic]`` Defined in line number 415.
 | 
 | List all theta-stable parabolics of G, of type S.
 | 
@@ -529,7 +538,7 @@ theta_stable_parabolics_type
 
 all_rel_split_theta_stable_parabolics
 -------------------------------------------------
-| ``all_rel_split_theta_stable_parabolics:RealForm G->[Parabolic]`` Defined in line number 413.
+| ``all_rel_split_theta_stable_parabolics:RealForm G->[Parabolic]`` Defined in line number 421.
 | 
 | List all theta-stable parabolics of G with relatively split L.
 | 
@@ -538,9 +547,27 @@ all_rel_split_theta_stable_parabolics
 
 print_theta_stable_parabolics
 -------------------------------------------------
-| ``print_theta_stable_parabolics:RealForm G->void`` Defined in line number 421.
+| ``print_theta_stable_parabolics:RealForm G->void`` Defined in line number 429.
 | 
 | For each theta-stable parabolic of G, print S, Levi factor, and maximal x.
+| 
+
+.. _support_kgbelt_x->[int]2:
+
+support
+-------------------------------------------------
+| ``support:KGBElt x->[int]`` Defined in line number 435.
+| 
+| The smallest list of simple roots such that descents lead to the   distinguished fiber.
+| 
+
+.. _support_alt_kgbelt_x->[int]1:
+
+support_alt
+-------------------------------------------------
+| ``support_alt:KGBElt x->[int]`` Defined in line number 444.
+| 
+| Auxiliary function.
 | 
 
 .. _KGPElt1:

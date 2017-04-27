@@ -10,3 +10,4 @@ Coordinates and Characters
    video_2A/parameters
    video_2A/parameters_real_tori
    video_2A/differential
+   video_2A/trivial_sl2r

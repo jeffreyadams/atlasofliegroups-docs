@@ -1,6 +1,6 @@
-.. _gl8H.at:
+.. _herm.at:
 
-gl8H.at
+herm.at
 =====================================
 
 
@@ -8,11 +8,13 @@ gl8H.at
 
 **This script imports the following .at files:**
 
+| :ref:`basic.at<basic.at>`
+| :ref:`extended.at<extended.at>`
 |
 
 
 .. toctree::
    :maxdepth: 1
 
-   gl8H_ref
-   gl8H_index
+   herm_ref
+   herm_index

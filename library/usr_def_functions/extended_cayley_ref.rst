@@ -8,7 +8,7 @@ extended_cayley.at Function References
 
 test_ext_cayley
 -------------------------------------------------
-| ``test_ext_cayley:Param p, int j, string ext_type, ExtParam E->void`` Defined in line number 4.
+| ``test_ext_cayley:Param p, int j, string ext_type, ExtParam E->void`` Defined in line number 6.
 | 
 | 
 
@@ -16,7 +16,7 @@ test_ext_cayley
 
 ext_Cayley_1
 -------------------------------------------------
-| ``ext_Cayley_1:int j, ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[ExtParam]`` Defined in line number 34.
+| ``ext_Cayley_1:int j, ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[ExtParam]`` Defined in line number 36.
 | 
 | 
 
@@ -24,7 +24,7 @@ ext_Cayley_1
 
 ext_Cayley_2
 -------------------------------------------------
-| ``ext_Cayley_2:int j,ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[ExtParam]`` Defined in line number 108.
+| ``ext_Cayley_2:int j,ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[ExtParam]`` Defined in line number 110.
 | 
 | 
 
@@ -32,7 +32,7 @@ ext_Cayley_2
 
 ext_Cayley_3
 -------------------------------------------------
-| ``ext_Cayley_3:int j,ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[ExtParam]`` Defined in line number 287.
+| ``ext_Cayley_3:int j,ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[ExtParam]`` Defined in line number 289.
 | 
 | 
 
@@ -40,7 +40,7 @@ ext_Cayley_3
 
 ext_Cayley_simple
 -------------------------------------------------
-| ``ext_Cayley_simple:int j,ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[ExtParam]`` Defined in line number 303.
+| ``ext_Cayley_simple:int j,ExtParam(ic,delta,gamma,lambda,theta,g,l,omega,tau,t):E->[ExtParam]`` Defined in line number 305.
 | 
 | 
 

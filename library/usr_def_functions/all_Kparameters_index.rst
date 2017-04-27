@@ -28,6 +28,8 @@ Functions
      - ``K_Type(x,lambda)->[K_Type]``
    * - :ref:`all_parameters_param_p->[param]1`
      - ``Param p->[Param]``
+   * - :ref:`all_parameters_x_gamma_kgbelt_x,ratvec_gamma->[param]1`
+     - ``KGBElt x,ratvec gamma->[Param]``
    * - :ref:`all_parameters_gamma_realform_g,ratvec_gamma->[param]1`
      - ``RealForm G,ratvec gamma->[Param]``
    * - :ref:`all_dominant_norm_upto_innerclass_ic,_ratvec_cowt,int_n->mat1`

@@ -9,8 +9,8 @@ Tutorial
    tutorial/preliminaries
    tutorial/structure_theory
    tutorial/coordinates_characters
-   tutorial/minimal_principal
-   tutorial/more_principal
-   tutorial/general_parameters
+   tutorial/first_examples
+   tutorial/K_orbits_on_G_B
+   tutorial/discrete_series
    tutorial/parabolic_induction
    

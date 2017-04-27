@@ -1,20 +1,42 @@
 .. _macs:
 
+###
 Mac
----
+###
 
-Download the software
-~~~~~~~~~~~~~~~~~~~~~~
+Ways to download and install the software
+*****************************************
 
-You have two options:
+The options, in order of preference, are:
 
-* :ref:`using_git_Mac` : recommended method.
-* :ref:`using_link_Mac`
+* :ref:`compile_mac`
+* :ref:`docker`
+* :ref:`executable_mac`
+
+
+.. _compile_mac:
+
+Download the source code and compile it yourself
+================================================
+
+.. _source_mac:
+
+Download source code in a single file
+++++++++++++++++++++++++++++++++++++++
+
+This is the latest stable version.
+
++--------------------------+------------------------------+---------------------------------------+
+| Version 1.0              |   `atlas_1.0.tgz`_           | source code for Fokko and atlas       |
+|                          |                              | including messages and atlas-scripts  |
++--------------------------+------------------------------+---------------------------------------+
+
+.. _atlas_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz
 
 .. _using_git_Mac:
 
-Using git
-+++++++++
+Download the source code using git
+++++++++++++++++++++++++++++++++++
 
 For users who are not familiar with git, see :ref:`help_git` to get started with git.
 
@@ -33,182 +55,98 @@ Choose a directory on your machine to store the source code. Use your terminal t
     
 This creates a subdirectory "atlasofliegroups" and stores the files there.
 
-.. _using_link_Mac:
 
-Using provided links
-++++++++++++++++++++
+Compiling from source
+************************
 
-We recommend you to download the latest version.
+After you have the source code, cd to the atlasofliegroups directory.
 
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Latest atlas-scripts directory | `atlas-scripts.0.7.0.tgz`_           | supplementary files for atlas                                                                                                         |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
-| Latest complete version: 0.7   | `atlas_0.7.tgz`_                     | source code, Fokko and atlas                                                                                                          |
-+--------------------------------+--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------+
+Compiling atlas for the Mac using Homebrew
+===========================================
 
-.. _atlas_0.7.tgz: http://www.liegroups.org/software/atlas_0.7/atlas_0.7.tgz
-.. _atlas-scripts.0.7.0.tgz: http://www.liegroups.org/software/atlas_0.7/atlas_0.7.0.tgz
+To compile atlas on a Mac you need to install a C++ compiler (the
+default Mac compiler is not up to the task). Homebrew is a package
+manager for the Mac, which is an alternative to the more standard MacPorts. 
+Homebrew is the preferred method. Alternatively see 
+:ref:`macports`.
+
+Install Homebrew
+++++++++++++++++
+
+Go to `Homebrew <https://brew.sh>`_  and follow the instructions there to install Homebrew.
+
+(This  is a single command /usr/bin/ruby... executed in a terminal window)
+
+Install the C++ compiler
+++++++++++++++++++++++++
+
+Open a terminal window and give the commands
+
+     brew install gcc49
+
+and
+
+     brew install readline
+
+Edit two Makefiles
+++++++++++++++++++
+
+cd to the directory where you downloaded the source code. Edit the file Makefile 
+to replace CXX = g++ -std=c++0x with:
+
+      CXX = /usr/local/Cellar/gcc\@4.9/4.9.3_1/bin/g++-4.9  -std=c++0x
+
+The correct path for you might be slightly different from this. cd to /usr/local/Cellar and 
+find a file .../bin/g++... and use this. Also make the following changes: add **-L/usr/local/opt/readline/lib** to the end of two lines
+as follows:
+
+    ifdef LDFLAGS
+    
+    LDFLAGS := $(LDFLAGS) $(rl_libs) -L/usr/local/opt/readline/lib
+     
+    else
+      
+    LDFLAGS := $(rl_libs) -L/usr/local/opt/readline/lib
+    
+    endif
 
 
-Compiling atlas for the Mac using MacPorts
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Also make the first change
 
-Regardless of how you download the atlas software you will need to
-compile it.  This is the preferred method. 
+      CXX = /usr/local/Cellar/gcc\@4.9/4.9.3_1/bin/g++-4.9  -std=c++0x
 
-You are going to install the gcc C compiler (provided by MacPorts),
-which is preferred for installing Fokko and atlas. To do so you must
-first install the XCode C Compiler.
+to the file ./sources/interpreter/Makefile
 
-(1) Install MacPorts. 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Enable readline
+++++++++++++++++++
 
-(If MacPorts is installed on your system go to
-step (2)). Visit `macports.org <https://www.macports.org>`, go to
-`Installing MacPorts <https://www.macports.org/install.php>`, and
-download the dmg file for your version of MAC OSX (for example
-10.7.*=Lion). Double click on the dmg file to install MacPorts. You
-need to be an administrative user, and will need to enter your
-password.
+Give the command 
 
-(2) Install the XCode C compiler. 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    brew link --force readline
 
-If you already have XCode installed, go to step (3) (XCode is not installed by default).
+to install some symbolic links necessary for readline
 
-The XCode package is huge, and includes a lot of unnecessary tools. We
-recommend downloading and installing just the `XCode command line
-tools <https://developer.apple.com/downloads/index.action#>`, which
-have everything you need. 
+Compile
++++++++
 
-Alternatively install the entire `Xcode <https://developer.apple.com/xcode>`
-package. In either case you will need a (free) Apple ID.
+Give the command
 
-Once you have the XCode command line tools, you will have a C compiler /usr/bin/gcc. You can test this in a terminal window by typing::
+     make 
 
-     gcc -v
-
-The response should be, on an earlier OS, something like::
-
-    Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr...
-
-Or, if you are using El Capitan(OS X 10.11) or later::
-
-   Configured with: --prefix=/Library/Developer/CommandLineTools/usr
-   --with-gxx-include-dir=/usr/include/c++/4.2.1
-
-(3) Install the MacPorts (gcc) C Compiler
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Open a terminal window (Terminal is available in Applications). All further commands are given from within this window. Give the command::
-
-   sudo port install gcc49
-
-to install the Macports version of gcc. 
-
-Be sure to be connected to the internet at this point! (Other Macports
-versions of gcc starting with 4.4 should also work; if you have or
-download a different version, you'll need to change "4.9"
-appropriately below.) If you are using only the command line tools of
-Xcode (not the full XCode installation) ignore the warning about not
-finding XCode. After a few minutes [or a few hours: some MacPorts
-things can take a VERY long time. Safest to do this overnight,
-connected to a power source] you should have /opt/local/bin/gcc-mp-4.9
-(the MacPorts C compiler) and /opt/local/bin/g++-mp-4.9 (the MacPorts
-C++ compiler). You can check these things in a terminal window by
-typing::
-
-   ls /opt/local/bin/g*
-
-Also the directory /opt/local/bin has been added to your PATH environment variable.
-
-(4) Install readline
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Do::
-
-   sudo port install readline
-
-to install the readline package.
-
-(5) Edit the Makefiles
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You will need to edit two files to tell your computer which compiler to use.
-
-(A) In the atlasofliegroups directory, edit the Makefile as follows:
-
-First search for CXX and find the following text::
-
-  # the compiler to use, including language switch 
-  #some C++11 supportneeded (rvalue references, shared_ptr) but g++-4.4 suffices
-  CXX = g++- -std=c++0x
-
-Then edit the last line to read::
- 
-  CXX = g++-mp-4.9 -std=c++0x
-
-(Remember to change 4.9 to the version of compiler that you have
-downloaded).  
-
-Also edit the line::
-
-  rl_libs ?= -lreadline
-
-to read::
-
-   rl_libs ?= -lreadline -lcurses -L/opt/local/lib
-
-(to tell the compiler where to find the readline libraries).
-
-(B) In addition, in the directory
-``atlasofliegroups/sources/intepreter``, you need to modify the
-Makefile in there. Search again for ``CXX`` and find the following
-text::
-
-   # our C++ compiler (call language version c++0x, for backward compatibility)     
-   CXX := g++ -std=c++0x
-
-Then edit the last line to read::
-
-   CXX := g++-mp-4.9 -std=c++0x 
-
-(again remember to change 4.9 to the correct compiler version).
-
-(6) Compile Fokko and atlas
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The simplest way to compile is with the command::
-
-    make
-
-(issued while you are in the atlasofliegroups directory where the
-Makefile is). This should compile both Fokko and atlas.
-
-If you get an error related to readline see `installing the readline
-package <http://www.liegroups.org/software/download/readline.html>`.
-
-If you get an error::
-
-   ctanglex: Command not found
-
-see :ref:`installing_cwebx`.  If you get an error like the following::
-
-   <assert.h> not found
-
-then XCode may not be installed in exactly the right way. Try installing the command-line
-utilities specifically as follows::
-
-   xcode-select --install
+To compile atlas and Fokko, with readline.
 
 Other Compilation options: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
-For more complete compilation, we recommend compiling with::
+We recommend compiling with::
 
-   make verbose=true optimize=true
+   make atlas verbose=true optimize=true
 
-The option "verbose" makes Fokko print a little more information about what it is  doing, like printing a counter during a long Kazhdan-Lusztig computation. The option "optimize" tells the compiler to work hard to make the code as fast as possible; this takes slightly longer to compile, then runs maybe 10% faster. 
+The option "verbose" makes atlas print a little more information about
+what it is doing, like printing a counter during a long
+Kazhdan-Lusztig computation. The option "optimize" tells the compiler
+to work hard to make the code as fast as possible; this takes slightly
+longer to compile, then runs maybe 10% faster.
 
 Other possibilities are::
 
@@ -217,8 +155,8 @@ Other possibilities are::
 
 The option "debug" makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren't supposed to happen, to detect code problems early. 
 
-(7) Installing Fokko and atlas
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Installing Fokko and atlas
+--------------------------
 
 To install the executables in [installation directory] and put symlinks in [binary directory], type::
 
@@ -247,11 +185,7 @@ Say you unpacked the software in /home/[userid]/atlas_0.7. To leave the software
 
    make install
 
-Note that the messages (help) directory must be in the same directory as the Fokko executable. Alternatively you can run Fokko with the command::
-
-   Fokko MESSAGEDIR
-
-to specify where to find this directory.
+Next: see :ref:`Running Atlas <run_atlas>` 
 
 
 .. _installing_cwebx:
@@ -264,3 +198,65 @@ The software cwebx is needed to compile atlas. If you downloaded a tgz file from
 Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.
 
 You need to have a working copy of tex in your PATH to run cweavex.
+
+.. _docker:
+
+Using Docker
+============
+
+The preferred method is to :ref:`compile the software from source <compile_mac>`.
+
+The next choice is using `the Docker container system <https://www.docker.com>`_.
+
+This installs a *container*, which is a self-contained linux
+environment (similar to a virtual machine) and runs the software in
+the container. This is less dependent on the details of your system,
+and is a good option of you have trouble compiling the software
+yourself. It requires adminsitrative privileges, so is mainly used for
+personal machines, and not instutional machines under the control of a
+system administrator.
+
+
+Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
+Double click on the dmg file to install it. This requires typing your password.
+
+Open a terminal window and give the command
+
+      docker run -it jeffreyadams/atlasofliegroups
+
+to download the software and run it (it launches atlas and read in the
+fill all.at). The first time you do this it takes up
+to a few minutes.  Subsequent times it is much faster.
+
+.. _executable_mac:
+
+Download and Install an executable
+==================================
+
+The best method is to compile from source. As a backup option you can 
+download install an executable file. 
+
+Download a copy of the executable, and the atlas-scripts directory here:
+
++-------------------------------+------------------------------+-------------------------------------+
+| Mac  compiled                 | `atlas_mac_pre_1.0.tgz`_     |  executable, and messages           |
+|                               |                              |  atlas-scripts directories          |
++-------------------------------+------------------------------+-------------------------------------+
+
+.. _atlas_mac_pre_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_mac_pre_1.0.tgz
+
+Double-click on the file to extract it. 
+
+Open a terminal window, and cd to the directory where the files were downloaded.
+
+Make the file executable:
+
+    chmod u+x atlas
+
+Run the software with the command::
+
+     ./atlas  --path=atlas-scripts all
+
+The path argument tells atlas where to find the scripts, and ``all`` says to load
+most of the scripts (not including a few which are under development). (Double-clicking
+on the file will launch the application, but will not make the atlas-scripts available.) 

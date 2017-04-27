@@ -80,6 +80,8 @@ Functions
      - ``RootDatum rd, vec lambda->[int]``
    * - :ref:`parabolic_ratvec_lambda,kgbelt_x->parabolic1`
      - ``ratvec lambda,KGBElt x->Parabolic``
+   * - :ref:`parabolic_mute_ratvec_lambda,kgbelt_x->parabolic1`
+     - ``ratvec lambda,KGBElt x->Parabolic``
    * - :ref:`theta_stable_parabolic_ratvec_lambda,kgbelt_x->parabolic1`
      - ``ratvec lambda,KGBElt x->Parabolic``
    * - :ref:`real_parabolic_ratvec_lambda,kgbelt_x->parabolic1`
@@ -134,6 +136,10 @@ Functions
      - ``RealForm G->[Parabolic]``
    * - :ref:`print_theta_stable_parabolics_realform_g->void1`
      - ``RealForm G->void``
+   * - :ref:`support_kgbelt_x->[int]2`
+     - ``KGBElt x->[int]``
+   * - :ref:`support_alt_kgbelt_x->[int]1`
+     - ``KGBElt x->[int]``
 
 
 Data Types

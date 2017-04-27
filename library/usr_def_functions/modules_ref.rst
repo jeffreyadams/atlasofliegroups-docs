@@ -8,7 +8,7 @@ modules.at Function References
 
 I
 -------------------------------------------------
-| ``I:Param p->tag_Param`` Defined in line number 12.
+| ``I:Param p->tag_Param`` Defined in line number 13.
 | 
 | 
 
@@ -16,7 +16,7 @@ I
 
 J
 -------------------------------------------------
-| ``J:Param p->tag_Param`` Defined in line number 14.
+| ``J:Param p->tag_Param`` Defined in line number 15.
 | 
 | 
 
@@ -24,7 +24,7 @@ J
 
 to_str
 -------------------------------------------------
-| ``to_str:Param p->string`` Defined in line number 21.
+| ``to_str:Param p->string`` Defined in line number 22.
 | 
 | 
 
@@ -32,7 +32,7 @@ to_str
 
 to_str_std
 -------------------------------------------------
-| ``to_str_std:Param p->string`` Defined in line number 24.
+| ``to_str_std:Param p->string`` Defined in line number 25.
 | 
 | 
 
@@ -40,7 +40,7 @@ to_str_std
 
 to_str_irr
 -------------------------------------------------
-| ``to_str_irr:Param p->string`` Defined in line number 26.
+| ``to_str_irr:Param p->string`` Defined in line number 27.
 | 
 | 
 
@@ -48,7 +48,7 @@ to_str_irr
 
 to_str_K_types
 -------------------------------------------------
-| ``to_str_K_types:Param p->string`` Defined in line number 28.
+| ``to_str_K_types:Param p->string`` Defined in line number 29.
 | 
 | 
 
@@ -56,7 +56,7 @@ to_str_K_types
 
 to_str
 -------------------------------------------------
-| ``to_str:tag_Param(p,type)->string`` Defined in line number 31.
+| ``to_str:tag_Param(p,type)->string`` Defined in line number 32.
 | 
 | 
 
@@ -64,7 +64,7 @@ to_str
 
 to_str
 -------------------------------------------------
-| ``to_str:ParamPol P->[string]`` Defined in line number 39.
+| ``to_str:ParamPol P->[string]`` Defined in line number 40.
 | 
 | 
 
@@ -72,7 +72,7 @@ to_str
 
 to_str
 -------------------------------------------------
-| ``to_str:ParamPol P,string type->[string]`` Defined in line number 42.
+| ``to_str:ParamPol P,string type->[string]`` Defined in line number 43.
 | 
 | 
 
@@ -80,7 +80,7 @@ to_str
 
 array_prints
 -------------------------------------------------
-| ``array_prints:[string] A->void`` Defined in line number 45.
+| ``array_prints:[string] A->void`` Defined in line number 46.
 | 
 | 
 
@@ -88,7 +88,7 @@ array_prints
 
 composition_series
 -------------------------------------------------
-| ``composition_series:Param p,string type->tag_ParamPol`` Defined in line number 49.
+| ``composition_series:Param p,string type->tag_ParamPol`` Defined in line number 50.
 | 
 | 
 
@@ -96,7 +96,7 @@ composition_series
 
 composition_series
 -------------------------------------------------
-| ``composition_series:tag_ParamPol(P,type)->tag_ParamPol`` Defined in line number 54.
+| ``composition_series:tag_ParamPol(P,type)->tag_ParamPol`` Defined in line number 55.
 | 
 | 
 
@@ -104,7 +104,7 @@ composition_series
 
 character_formula
 -------------------------------------------------
-| ``character_formula:tag_Param(p,type)->tag_ParamPol`` Defined in line number 59.
+| ``character_formula:tag_Param(p,type)->tag_ParamPol`` Defined in line number 60.
 | 
 | 
 
@@ -112,7 +112,7 @@ character_formula
 
 character_formula
 -------------------------------------------------
-| ``character_formula:tag_ParamPol(P,type)->tag_ParamPol`` Defined in line number 64.
+| ``character_formula:tag_ParamPol(P,type)->tag_ParamPol`` Defined in line number 65.
 | 
 | 
 
@@ -120,7 +120,7 @@ character_formula
 
 show
 -------------------------------------------------
-| ``show:ParamPol P->void`` Defined in line number 68.
+| ``show:ParamPol P->void`` Defined in line number 69.
 | 
 | 
 
@@ -128,7 +128,7 @@ show
 
 show
 -------------------------------------------------
-| ``show:tag_ParamPol(,type):tP->void`` Defined in line number 69.
+| ``show:tag_ParamPol(,type):tP->void`` Defined in line number 70.
 | 
 | 
 
@@ -136,7 +136,7 @@ show
 
 show
 -------------------------------------------------
-| ``show:tag_Param tp->void`` Defined in line number 72.
+| ``show:tag_Param tp->void`` Defined in line number 73.
 | 
 | 
 
@@ -144,7 +144,7 @@ show
 
 show
 -------------------------------------------------
-| ``show:KGBElt x,ratvec lambda->void`` Defined in line number 75.
+| ``show:KGBElt x,ratvec lambda->void`` Defined in line number 76.
 | 
 | 
 
@@ -152,7 +152,7 @@ show
 
 virtual
 -------------------------------------------------
-| ``virtual:tag_Param(p,type)->tag_ParamPol`` Defined in line number 79.
+| ``virtual:tag_Param(p,type)->tag_ParamPol`` Defined in line number 80.
 | 
 | 
 
@@ -160,7 +160,7 @@ virtual
 
 \=
 -------------------------------------------------
-| ``=:tag_Param(p,type_p),tag_Param(q,type_q)->bool`` Defined in line number 84.
+| ``=:tag_Param(p,type_p),tag_Param(q,type_q)->bool`` Defined in line number 85.
 | 
 | 
 
@@ -168,7 +168,7 @@ virtual
 
 character
 -------------------------------------------------
-| ``character:tag_ParamPol (P,type)->ParamPol`` Defined in line number 89.
+| ``character:tag_ParamPol (P,type)->ParamPol`` Defined in line number 90.
 | 
 | 
 
@@ -176,7 +176,7 @@ character
 
 \=
 -------------------------------------------------
-| ``=:tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->bool`` Defined in line number 94.
+| ``=:tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->bool`` Defined in line number 95.
 | 
 | 
 
@@ -184,7 +184,7 @@ character
 
 \+
 -------------------------------------------------
-| ``+:tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->tag_ParamPol`` Defined in line number 98.
+| ``+:tag_ParamPol(P,type_P):tP,tag_ParamPol(Q,type_Q):tQ->tag_ParamPol`` Defined in line number 99.
 | 
 | 
 
@@ -192,7 +192,7 @@ character
 
 \+
 -------------------------------------------------
-| ``+:tag_Param(p,type_p),tag_Param(q,type_q)->tag_ParamPol`` Defined in line number 104.
+| ``+:tag_Param(p,type_p),tag_Param(q,type_q)->tag_ParamPol`` Defined in line number 105.
 | 
 | 
 
@@ -200,7 +200,7 @@ character
 
 \+
 -------------------------------------------------
-| ``+:tag_ParamPol(P,type_P),tag_Param(q,typeq)->tag_ParamPol`` Defined in line number 107.
+| ``+:tag_ParamPol(P,type_P),tag_Param(q,typeq)->tag_ParamPol`` Defined in line number 108.
 | 
 | 
 
@@ -208,7 +208,7 @@ character
 
 \-
 -------------------------------------------------
-| ``-:tag_ParamPol(P,type)->tag_ParamPol`` Defined in line number 113.
+| ``-:tag_ParamPol(P,type)->tag_ParamPol`` Defined in line number 114.
 | 
 | 
 
@@ -216,7 +216,7 @@ character
 
 \-
 -------------------------------------------------
-| ``-:tag_Param(p,type)->tag_ParamPol`` Defined in line number 114.
+| ``-:tag_Param(p,type)->tag_ParamPol`` Defined in line number 115.
 | 
 | 
 
@@ -224,7 +224,7 @@ character
 
 \-
 -------------------------------------------------
-| ``-:tag_ParamPol(P,type_P),tag_ParamPol(Q,type_Q)->tag_ParamPol`` Defined in line number 117.
+| ``-:tag_ParamPol(P,type_P),tag_ParamPol(Q,type_Q)->tag_ParamPol`` Defined in line number 118.
 | 
 | 
 
@@ -232,7 +232,7 @@ character
 
 \-
 -------------------------------------------------
-| ``-:tag_Param(p,typep),tag_ParamPol(Q,type_Q)->tag_ParamPol`` Defined in line number 119.
+| ``-:tag_Param(p,typep),tag_ParamPol(Q,type_Q)->tag_ParamPol`` Defined in line number 120.
 | 
 | 
 
@@ -240,7 +240,7 @@ character
 
 \-
 -------------------------------------------------
-| ``-:tag_Param(p,typep),tag_Param(q,typeq)->tag_ParamPol`` Defined in line number 121.
+| ``-:tag_Param(p,typep),tag_Param(q,typeq)->tag_ParamPol`` Defined in line number 122.
 | 
 | 
 
@@ -248,7 +248,7 @@ character
 
 \*
 -------------------------------------------------
-| ``*:Split w,tag_ParamPol(P,type)->tag_ParamPol`` Defined in line number 124.
+| ``*:Split w,tag_ParamPol(P,type)->tag_ParamPol`` Defined in line number 125.
 | 
 | 
 
@@ -256,7 +256,7 @@ character
 
 \*
 -------------------------------------------------
-| ``*:Split w,tag_Param(p,type)->tag_ParamPol`` Defined in line number 125.
+| ``*:Split w,tag_Param(p,type)->tag_ParamPol`` Defined in line number 126.
 | 
 | 
 
@@ -264,7 +264,7 @@ character
 
 \=
 -------------------------------------------------
-| ``=:tag_ParamPol(P,type_P),tag_Param(q,typeq)->bool`` Defined in line number 127.
+| ``=:tag_ParamPol(P,type_P),tag_Param(q,typeq)->bool`` Defined in line number 128.
 | 
 | 
 
@@ -272,7 +272,7 @@ character
 
 infinitesimal_character
 -------------------------------------------------
-| ``infinitesimal_character:Param p,string type->ratvec`` Defined in line number 130.
+| ``infinitesimal_character:Param p,string type->ratvec`` Defined in line number 131.
 | 
 | 
 
@@ -280,7 +280,7 @@ infinitesimal_character
 
 has_infinitesimal_character
 -------------------------------------------------
-| ``has_infinitesimal_character:ParamPol P->bool`` Defined in line number 133.
+| ``has_infinitesimal_character:ParamPol P->bool`` Defined in line number 134.
 | 
 | 
 
@@ -288,7 +288,7 @@ has_infinitesimal_character
 
 infinitesimal_character
 -------------------------------------------------
-| ``infinitesimal_character:ParamPol P, string type->ratvec`` Defined in line number 139.
+| ``infinitesimal_character:ParamPol P, string type->ratvec`` Defined in line number 140.
 | 
 | 
 
@@ -296,7 +296,7 @@ infinitesimal_character
 
 tau
 -------------------------------------------------
-| ``tau:Param p,string type->[int]`` Defined in line number 142.
+| ``tau:Param p,string type->[int]`` Defined in line number 143.
 | 
 | 
 
@@ -304,7 +304,7 @@ tau
 
 in_tau
 -------------------------------------------------
-| ``in_tau:int s,tag_Param(p,type)->bool`` Defined in line number 143.
+| ``in_tau:int s,tag_Param(p,type)->bool`` Defined in line number 144.
 | 
 | 
 
@@ -312,7 +312,7 @@ in_tau
 
 in_tau_complement
 -------------------------------------------------
-| ``in_tau_complement:int s,tag_Param ps->bool`` Defined in line number 145.
+| ``in_tau_complement:int s,tag_Param ps->bool`` Defined in line number 146.
 | 
 | 
 
@@ -320,7 +320,7 @@ in_tau_complement
 
 status
 -------------------------------------------------
-| ``status:int s,tag_Param (p,type)->int`` Defined in line number 148.
+| ``status:int s,tag_Param (p,type)->int`` Defined in line number 149.
 | 
 | 
 
@@ -328,7 +328,7 @@ status
 
 branch
 -------------------------------------------------
-| ``branch:(Param p,string type), int bound->(ParamPol,string)`` Defined in line number 150.
+| ``branch:(Param p,string type), int bound->(ParamPol,string)`` Defined in line number 151.
 | 
 | 
 
@@ -336,7 +336,7 @@ branch
 
 tag_Param
 -----------------------------------------
-| ``(Param,string)`` Defined in line number 5.
+| ``(Param,string)`` Defined in line number 6.
 | 
 | 
 
@@ -344,7 +344,7 @@ tag_Param
 
 tag_ParamPol
 -----------------------------------------
-| ``(ParamPol,string)`` Defined in line number 6.
+| ``(ParamPol,string)`` Defined in line number 7.
 | 
 | 
 

@@ -88,7 +88,7 @@ Functions
      - ``ratvec lambda,KGBElt x->int``
    * - :ref:`dim_u_cap_p_parabolic_(,x):p->int1`
      - ``Parabolic (,x):P->int``
-   * - :ref:`dim_u_cap_p_kgbelt_x->int2`
+   * - :ref:`dim_u_cap_p_kgbelt_x->int3`
      - ``KGBElt x->int``
    * - :ref:`dim_u_cap_p_ratvec_lambda,kgbelt_x->int1`
      - ``ratvec lambda,KGBElt x->int``
@@ -146,5 +146,15 @@ Functions
      - ``KGBElt x->[Parabolic]``
    * - :ref:`theta_stable_parabolics_with_kgbelt_x->[parabolic]1`
      - ``KGBElt x->[Parabolic]``
+   * - :ref:`theta_stable_parabolics_with_[parabolic]_tsp,kgbelt_x->[parabolic]1`
+     - ``[Parabolic] tsp,KGBElt x->[Parabolic]``
+   * - :ref:`is_theta_x_kgbelt_x->bool1`
+     - ``KGBElt x->bool``
    * - :ref:`is_good_range_induced_from_param_p->[param]1`
      - ``Param p->[Param]``
+   * - :ref:`reduce_good_range_param_p->param1`
+     - ``Param p->Param``
+   * - :ref:`is_good_aq_param_p->bool1`
+     - ``Param p->bool``
+   * - :ref:`is_proper_aq_param_p->bool1`
+     - ``Param p->bool``

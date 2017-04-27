@@ -8,6 +8,7 @@ coherent.at
 
 **This script imports the following .at files:**
 
+| :ref:`basic.at<basic.at>`
 | :ref:`translate.at<translate.at>`
 | :ref:`W_orbit.at<W_orbit.at>`
 |

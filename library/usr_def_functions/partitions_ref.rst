@@ -8,7 +8,7 @@ partitions.at Function References
 
 fac
 -------------------------------------------------
-| ``fac:int n->1 in for i:n-1 from 2 do p *`` Defined in line number 5.
+| ``fac:int n->1 in for i:n-1 from 2 do p *`` Defined in line number 6.
 | 
 | 
 
@@ -16,7 +16,7 @@ fac
 
 transpose
 -------------------------------------------------
-| ``transpose:Partition P->Partition`` Defined in line number 8.
+| ``transpose:Partition P->Partition`` Defined in line number 9.
 | 
 | 
 
@@ -24,7 +24,7 @@ transpose
 
 size
 -------------------------------------------------
-| ``size:Partition P->int: sum(vec`` Defined in line number 14.
+| ``size:Partition P->int: sum(vec`` Defined in line number 15.
 | 
 | 
 
@@ -32,7 +32,7 @@ size
 
 hook_length
 -------------------------------------------------
-| ``hook_length:Partition P, int i, int j->int`` Defined in line number 16.
+| ``hook_length:Partition P, int i, int j->int`` Defined in line number 17.
 | 
 | 
 
@@ -40,7 +40,7 @@ hook_length
 
 dim_rep
 -------------------------------------------------
-| ``dim_rep:Partition P->int`` Defined in line number 19.
+| ``dim_rep:Partition P->int`` Defined in line number 20.
 | 
 | 
 
@@ -48,7 +48,7 @@ dim_rep
 
 rec_fun compositions_le
 -------------------------------------------------
-| ``rec_fun compositions_le:int limit, int n->[[int]]`` Defined in line number 24.
+| ``rec_fun compositions_le:int limit, int n->[[int]]`` Defined in line number 25.
 | 
 | 
 
@@ -56,7 +56,7 @@ rec_fun compositions_le
 
 Partition
 -----------------------------------------
-| ``[int]`` Defined in line number 3.
+| ``[int]`` Defined in line number 4.
 | 
 | 
 

@@ -8,7 +8,7 @@ translate.at Function References
 
 translate_by
 -------------------------------------------------
-| ``translate_by:Param p, vec shift->Param`` Defined in line number 17.
+| ``translate_by:Param p, vec shift->Param`` Defined in line number 18.
 | 
 | 
 
@@ -16,7 +16,7 @@ translate_by
 
 T
 -------------------------------------------------
-| ``T:Param p, ratvec gamma_new->Param`` Defined in line number 19.
+| ``T:Param p, ratvec gamma_new->Param`` Defined in line number 20.
 | 
 | 
 
@@ -24,7 +24,7 @@ T
 
 T
 -------------------------------------------------
-| ``T:ParamPol P, ratvec gamma_new->ParamPol`` Defined in line number 23.
+| ``T:ParamPol P, ratvec gamma_new->ParamPol`` Defined in line number 24.
 | 
 | 
 
@@ -32,7 +32,7 @@ T
 
 to_wall
 -------------------------------------------------
-| ``to_wall:RootDatum id, int k, ratvec gamma->vec`` Defined in line number 31.
+| ``to_wall:RootDatum id, int k, ratvec gamma->vec`` Defined in line number 32.
 | 
 | 
 
@@ -40,7 +40,7 @@ to_wall
 
 Psi
 -------------------------------------------------
-| ``Psi:Param p,int k->Param`` Defined in line number 36.
+| ``Psi:Param p,int k->Param`` Defined in line number 37.
 | 
 | 
 
@@ -48,7 +48,7 @@ Psi
 
 Psi
 -------------------------------------------------
-| ``Psi:ParamPol P,int k->ParamPol`` Defined in line number 45.
+| ``Psi:ParamPol P,int k->ParamPol`` Defined in line number 46.
 | 
 | 
 
@@ -56,7 +56,7 @@ Psi
 
 Psi
 -------------------------------------------------
-| ``Psi:ParamPol P,ratvec gamma,int k->ParamPol`` Defined in line number 49.
+| ``Psi:ParamPol P,ratvec gamma,int k->ParamPol`` Defined in line number 50.
 | 
 | 
 
@@ -64,7 +64,7 @@ Psi
 
 Psi
 -------------------------------------------------
-| ``Psi:Param p,[int] v->Param`` Defined in line number 55.
+| ``Psi:Param p,[int] v->Param`` Defined in line number 56.
 | 
 | 
 
@@ -72,7 +72,7 @@ Psi
 
 Psi
 -------------------------------------------------
-| ``Psi:ParamPol P,[int] v->ParamPol`` Defined in line number 62.
+| ``Psi:ParamPol P,[int] v->ParamPol`` Defined in line number 63.
 | 
 | 
 
@@ -80,7 +80,7 @@ Psi
 
 Psi
 -------------------------------------------------
-| ``Psi:ParamPol P,ratvec gamma,[int] v->ParamPol`` Defined in line number 65.
+| ``Psi:ParamPol P,ratvec gamma,[int] v->ParamPol`` Defined in line number 66.
 | 
 | 
 
@@ -88,7 +88,7 @@ Psi
 
 pseudo_tau_bitset
 -------------------------------------------------
-| ``pseudo_tau_bitset:Param p->((int->bool),int)`` Defined in line number 91.
+| ``pseudo_tau_bitset:Param p->((int->bool),int)`` Defined in line number 92.
 | 
 | 
 
@@ -96,7 +96,7 @@ pseudo_tau_bitset
 
 pseudo_tau
 -------------------------------------------------
-| ``pseudo_tau:Param p->[int]`` Defined in line number 103.
+| ``pseudo_tau:Param p->[int]`` Defined in line number 104.
 | 
 | 
 
@@ -104,7 +104,7 @@ pseudo_tau
 
 pseudo_tau_complement
 -------------------------------------------------
-| ``pseudo_tau_complement:Param p->[int]`` Defined in line number 106.
+| ``pseudo_tau_complement:Param p->[int]`` Defined in line number 107.
 | 
 | 
 
@@ -112,7 +112,7 @@ pseudo_tau_complement
 
 make_maximally_singular
 -------------------------------------------------
-| ``make_maximally_singular:Param p->Param`` Defined in line number 111.
+| ``make_maximally_singular:Param p->Param`` Defined in line number 112.
 | 
 | 
 

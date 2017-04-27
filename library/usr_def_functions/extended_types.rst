@@ -8,6 +8,7 @@ extended_types.at
 
 **This script imports the following .at files:**
 
+| :ref:`basic.at<basic.at>`
 | :ref:`extended_misc.at<extended_misc.at>`
 |
 

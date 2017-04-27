@@ -1,5 +1,5 @@
 Example :math:`G=Sp(4,\mathbb R)`
-----------------------------------
+=================================
 
 Now lets find all representations with infinitesimal character :math:`\rho` ::
 
@@ -61,7 +61,6 @@ Let us make a separate list for them::
    atlas>
 
 These parameters are all principal series. How do we tell them apart?
-
 Each one is giving a character of the split Cartan. They have the same
 ``nu`` and same ``x=10`` and a different lambda. Each lambda is a
 character of :math:`{\mathbb Z}_2 \times {\mathbb Z}_2`. In other
@@ -78,13 +77,17 @@ To know which is which we look at their ``tau`` invariant::
 
 So the ``tau`` invariant is big for the element ``ps[0]``, which means
 the irreducible is a small representation. In fact that is the trivial
-representation. In contrast, the smallest tau invariant, the empty
+representation. In contrast, the smallest ``tau`` invariant, the empty
 set, correspnding to the element ``ps[2]`` gives the biggest
 representation. In this case this is the irreducible principal
 series. The other two, namely the elements ``ps[1]`` and ``ps[3]`` on
 the list, correspond to the long and short roots respectively. So each
-of them are distinquished by their tau invariant.
+of them are distinquished by their ``tau`` invariant.
 
+A good reference on ``tau`` invariant for Harish Chandra modules is
+David Vogan's paper: Irreducible Characters I. Definition 3.3. Duke
+Mathematical Journal (1979). Vol 46, No 1 pp 61-108.
+ 
 Now lets look at the composition series of the standard module
 containing the trivial representation ::
 
@@ -129,8 +132,7 @@ Another useful tool is the command ``status_texts``, which gives a bit more info
 In other words, for a given representation the real roots in the tau
 invariant can be type ``r1`` or ``r2`` depending on whether they are
 long or short; and those not in the tau invariant are denoted by
-``rn``.
-
+``rn``. 
 
 Another way to check which of these principal series corresponds to the trivial representation is to look at :math:`\lambda -\rho` since this gives the trivial character on M ::
 
@@ -144,8 +146,13 @@ Another way to check which of these principal series corresponds to the trivial 
    Value: [ 0, 0 ]/1
    atlas> 
 
+The problem is that it is not always that easy to determine which is
+the trivial representation this way. For example, if the group is not
+simply connected. But in any case, this is often another way to
+determine it.
 
-Now suppose we start with the trivial representation and we modify the parameter by an element of the Weyl group.::
+Now suppose we start with the trivial representation and we modify the
+parameter by an element of the Weyl group.::
 
    atlas> p:trivial(G)
    Variable p: Param (overriding previous instance, which had type Param)
@@ -155,6 +162,8 @@ Now suppose we start with the trivial representation and we modify the parameter
 
    atlas> set q=parameter(KGB(G,10),[2,1],[-1,-2])
    Variable q: Param
+   atlas> q
+   Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
    atlas> p=q
    Value: true
    atlas>
@@ -170,8 +179,30 @@ Let us look at the parameter ``q``. It is one of the parameters in the list and 
     Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
     atlas> 
 
+We can also find ``q`` in our list of 18 parameters of representations
+using the command ``find`` ::
+
+    atlas> whattype find ?
+    Overloaded instances of 'find'
+      ([int],int)->int
+      ([Param],Param)->int
+      ([KGBElt],KGBElt)->int
+      ([vec],vec)->int
+      ([(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)],(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec))->int
+      ((InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec),[(InnerClass,mat,ratvec,vec,mat,ratvec,vec,mat,vec,vec)])->int 
+      ([(int,int)],(int,int))->int
+      atlas> 
+
+We want to use the second instance of the use of this function: ::
+
+   atlas> find(parameters,q)
+   Value: -1
+   atlas> find( parameters,p)
+   Value: 14
+   
+   atlas> parameters[14]
+   Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas>
 
 
-
-We can also look at the lowest :math:`K` types of a representation. For this we need to load another ``.at`` file
 
