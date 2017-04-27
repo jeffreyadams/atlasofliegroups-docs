@@ -2,13 +2,13 @@ Example: :math:`SL(2,\mathbb R)`
 ==================================
 
 Let us start with the group :math:`G=SL(2,\mathbb C)`. For this group
-set :math:`x_b = diag(i,-i)`.
+set :math:`x_b = \operatorname{diag}(i,-i)`.
 
-Then :math:`(x_b)^2 =-Id \in Z(G)`. The stabilizer in :math:`K` of
+Then :math:`(x_b)^2 =-\operatorname{Id} \in Z(G)`. The stabilizer in :math:`K` of
 this element is the diagonal torus
 
-.. math:: K^{{\theta }_x}=\left\{ \left( \begin{array}{cc} z & 0 \\ 0 & z^{-1}
-	  \end{array}\right) :z\in {\mathbb C}^{\times }\right\}
+.. math:: K^{{\theta }_x}=\left\{ \begin{pmatrix} z & 0 \\ 0 & z^{-1}
+	  \end{pmatrix} :z\in {\mathbb C}^{\times }\right\}
 	  \cong SO(2,\mathbb C)
 
 So the real points of this group is the compact real form
@@ -124,12 +124,12 @@ the last :math:`B''`:
 	  \right\}.
 
 Since we fixed the Cartan involution :math:`{\theta }_{x_b} =
-diag(i,-i)`, it is acting on this Cartan by :math:`-1` (i.e. by taking
+\operatorname{diag}(i,-i)`, it is acting on this Cartan by :math:`-1` (i.e. by taking
 the inverse). It acts trivially on the diagonal Cartan.
 
 The set of real points of this Cartan is
 
-.. math:: H''(\mathbb R)=\left\{ \pm Id \left(\begin{array}{cc} \cosh(x)
+.. math:: H''(\mathbb R)=\left\{ \pm \operatorname{Id} \left(\begin{array}{cc} \cosh(x)
 	  & \sinh(x) \\ \sinh(x) & \cosh(x) \end{array} \right)
 	  | x\in \mathbb R \right\} \cong {\mathbb R}^{\times },
 
