@@ -21,15 +21,15 @@ Let us find the discrete series for this group::
    parameter(x=6,lambda=[3,2,1]/1,nu=[0,0,0]/1),final
    parameter(x=7,lambda=[3,2,1]/1,nu=[0,0,0]/1)] 
 
-   atlas> show(ds) final
-   parameter(x=0,lambda=[3,2,1]/1,nu=[0,0,0]/1) final
-   parameter(x=1,lambda=[3,2,1]/1,nu=[0,0,0]/1) final
-   parameter(x=2,lambda=[3,2,1]/1,nu=[0,0,0]/1) final
-   parameter(x=3,lambda=[3,2,1]/1,nu=[0,0,0]/1) final
-   parameter(x=4,lambda=[3,2,1]/1,nu=[0,0,0]/1) final
-   parameter(x=5,lambda=[3,2,1]/1,nu=[0,0,0]/1) final
-   parameter(x=6,lambda=[3,2,1]/1,nu=[0,0,0]/1) final
-   parameter(x=7,lambda=[3,2,1]/1,nu=[0,0,0]/1) atlas>
+   atlas> show(ds)
+   final parameter(x=0,lambda=[3,2,1]/1,nu=[0,0,0]/1)
+   final parameter(x=1,lambda=[3,2,1]/1,nu=[0,0,0]/1)
+   final parameter(x=2,lambda=[3,2,1]/1,nu=[0,0,0]/1)
+   final parameter(x=3,lambda=[3,2,1]/1,nu=[0,0,0]/1)
+   final parameter(x=4,lambda=[3,2,1]/1,nu=[0,0,0]/1)
+   final parameter(x=5,lambda=[3,2,1]/1,nu=[0,0,0]/1)
+   final parameter(x=6,lambda=[3,2,1]/1,nu=[0,0,0]/1)
+   final parameter(x=7,lambda=[3,2,1]/1,nu=[0,0,0]/1)   
 
 Again, like in the case of :math:`Sp(4,\mathbb R)` we can try to write
 each parameter in terms of a single ``x`` that has the usual compact
@@ -79,9 +79,9 @@ eight discrete series of :math:`Sp(6,\mathbb R)`.
 
 Now, as for previous examples we can write::
 
-atlas> p:=discrete_series (x_b,[-1,-2,-3])
-Value: final parameter(x=7,lambda=[3,2,1]/1,nu=[0,0,0]/1)
-atlas>
+   atlas> p:=discrete_series (x_b,[-1,-2,-3])
+   Value: final parameter(x=7,lambda=[3,2,1]/1,nu=[0,0,0]/1)
+   atlas>
 
 So ``atlas`` knows what this is and makes ``lambda`` dominant and conjugates ``x_b`` to ``x_7``.
 
