@@ -7,10 +7,9 @@ set :math:`x_b = diag(i,-i)`.
 Then :math:`(x_b)^2 =-Id \in Z(G)`. The stabilizer in :math:`K` of
 this element is the diagonal torus
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ K^{{\theta }_x}=\left\{ \left( \begin{array}{cc} 
-z & 0 \\ 
-0 & \frac{1}{z} \end{array}\right) :z\in {\mathbb C}^{\times }\right\}\cong
-SO(2,\mathbb C)`
+.. math:: K^{{\theta }_x}=\left\{ \left( \begin{array}{cc} z & 0 \\ 0 & z^{-1}
+	  \end{array}\right) :z\in {\mathbb C}^{\times }\right\}
+	  \cong SO(2,\mathbb C)
 
 So the real points of this group is the compact real form
 :math:`K(\mathbb R)=SO(2)` and the real form of :math:`G` with this
@@ -21,19 +20,10 @@ In this setting it is better to think of :math:`G(\mathbb R)` as
 
 Then, the :math:`K` orbits on :math:`G/B` consist of three elements:
 
-:math:`\ \ \\ \ \ \ \ \ \ \ \ \ x_b =\left( \begin{array}{cc}
-i&0\\ 
-0&-i
-\end{array}\right),\quad-x_b=\left(\begin{array}{cc}
--i&0\\ 
-0&i
-\end{array}\right) ,\quad u=\left( \begin{array}{cc} 
-0 & 1 \\ 
--1 & 0 
-\end{array} \right)`
+.. math:: x_b =\left( \begin{array}{cc} i&0\\ 0&-i \end{array}\right),\quad-x_b=\left(\begin{array}{cc} -i&0\\ 0&i \end{array}\right) ,\quad u=\left( \begin{array}{cc} 0 & 1 \\ -1 & 0 \end{array} \right)
 
 
-So, :math:`x_b` and :math:`-x_b` are all the elements of the cartan
+So, :math:`x_b` and :math:`-x_b` are all the elements of the Cartan
 that are conjugate to :math:`x_b`. And there is only one other
 element, :math:`u`, up to conjugacy by :math:`H`, which is in the
 normalizer of the Cartan and is conjugate to :math:`x_b`.
@@ -42,9 +32,7 @@ Note that :math:`x_b` and :math:`-x_b` are both fixed by conjugation
 by :math:`H` and :math:`H` acts by conjugation on :math:`u`. Moreover,
 we can replace :math:`u` by any element of the form
 
-:math:`\left(\begin{array}{cc}
-0 & z \\
--\frac{1}{z} & 0 \end{array} \right)`
+.. math:: \left(\begin{array}{cc} 0 & z \\ -z^{-1} & 0 \end{array} \right)
 
 So, :math:`K` acting on :math:`G/B` has three elements,
 representatives of the :math:`K` orbits on the conjugacy classes of
@@ -109,34 +97,31 @@ So, the first two elements parametrize the discrete series with Harish Chandra p
 
 Now as representatives of Borels we have:
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ x_b \mapsto B=\left\{ \left( \begin{array}{cc}
-z & w \\
-0 & \frac{1}{z} \end{array} \right)  |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}`
+.. math:: x_b \mapsto B=\left\{ \left( \begin{array}{cc} z & w \\ 0 & z^{-1} \end{array} \right)  |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}
 
 which is the Borel that was fixed at the begining. Now, taking an
 element that conjugates $x_b$ to its negative we have:
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -x_b=s_{\alpha }(x_b) \mapsto
-B'=s_{\alpha }(B)=\left\{ \left( \begin{array}{cc} z & 0 \\ w & 1/z
-\end{array} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}`;
+.. math:: -x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha }(B)=\left\{ \left( \begin{array}{cc} z & 0 \\ w & z^{-1} \end{array} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C \right\};
 
 and for :math:`u`, the element that conjugates :math:`x_b` to
 :math:`u` is
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ g=\frac{1}{\sqrt{2}} \left( \begin{array}{cc}
-1 & -1 \\
-1 & 1 \end{array} \right)`.
+.. math:: g=\frac{1}{\sqrt{2}} \left( \begin{array}{cc} 1 & -1 \\ 1 & 1 \end{array} \right).
 
 Then
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ B''=gBg^{-1} =\left\{ \left(\begin{array}{cc} cosh(z) & sinh(z) \\
-sinh(z) & cosh(z) \end{array} \right) + \frac{1}{2}
-\left(\begin{array}{cc} w & w \\ -w & w \end{array} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}`.
+.. math:: B''=gBg^{-1} =\left\{ \left(\begin{array}{cc} \cosh(z) &
+	  \sinh(z) \\ \sinh(z) & \cosh(z) \end{array} \right) + \frac{1}{2}
+	  \left(\begin{array}{cc} w & w \\ -w & w \end{array} \right)
+	  |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}.
 
 One of the key points comes from just looking at the Cartan part of
 the last :math:`B''`:
 
-.. math:: H''=\left\{ \left(\begin{array}{cc}cosh(z)&sinh(z)\\ sinh(z)&cosh(z)\end{array}\right) |z\in {\mathbb C}^{\times} \right\}.
+.. math:: H''=\left\{ \left(\begin{array}{cc}\cosh(z)&\sinh(z)\\
+	  \sinh(z)&\cosh(z)\end{array}\right) |z\in {\mathbb C}^{\times}
+	  \right\}.
 
 Since we fixed the Cartan involution :math:`{\theta }_{x_b} =
 diag(i,-i)`, it is acting on this Cartan by :math:`-1` (i.e. by taking
@@ -144,11 +129,13 @@ the inverse). It acts trivially on the diagonal Cartan.
 
 The set of real points of this Cartan is
 
-:math:`\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ H''(\mathbb R)=\left\{ \pm Id \left(\begin{array}{cc} cosh(x) & sinh(x) \\ sinh(x) & cosh(x) \end{array} \right) | x\in \mathbb R \right\} \cong {\mathbb R}^{\times }`
+.. math:: H''(\mathbb R)=\left\{ \pm Id \left(\begin{array}{cc} \cosh(x)
+	  & \sinh(x) \\ \sinh(x) & \cosh(x) \end{array} \right)
+	  | x\in \mathbb R \right\} \cong {\mathbb R}^{\times },
 
-Which is the ususal way of writing split Cartan in :math:`SU(1,1)`.
+which is the usual way of writing split Cartan in :math:`SU(1,1)`.
 
-The point is that, the pair :math:`(H'', {\theta }_{x_b} )` is
+The point is that the pair :math:`(H'', {\theta }_{x_b} )` is
 conjugate under :math:`G` to the pair :math:`(H, {\theta }_u )`. That
 is, to :math:`H` and the conjugation action of this element :math:`u`.
 
