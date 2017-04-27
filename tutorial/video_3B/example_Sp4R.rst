@@ -136,13 +136,13 @@ To chek this we do the following ::
    final parameter(x=3,lambda=[2,1]/1,nu=[0,0]/1) [ -1, -2 ]/1 ["ic","nc"]
    atlas>
 
-So this gives us more information about each representation. Namely, the status of the simple roots for the corresponding ``x``. 
+So, this gives us more information about each representation. Namely, the status of the simple roots for the corresponding ``x``. 
 
 The software always chooses, for the quasisplit group, ``x=0`` to be
 the large Borel; that is, both of the simple roots are non compact. In
 this case the simple roots are :math:`e_1 + e_2` and
 :math:`2e_2`. Similarly, for ``x=1``. So these correspond to the large
-discrete series.  And since we chose the base eleemt to be ``x=2`` and
+discrete series.  And since we chose the base element to be ``x=2`` and
 the simple root for :math:`K` is :math:`[1,-1]`, then ``[2,1]`` is the usual
 parameter for this choice of simple roots. The first simple root is
 compact. so this corresponds to the holomorphic case.
@@ -173,7 +173,7 @@ Or we could use the other format using the ``KGBElt``::
    atlas> p:=discrete_series (x_b,[2,-1])
    Value: final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1)
    
-So the software conjugates the Harish-Chandra parameter ``[1,-2]`` to ``[2,1]``
+So, the software conjugates the Harish-Chandra parameter ``[1,-2]`` to ``[2,1]``
 and conjugates, via the reflection on the long simple root, the base element to ``x=0``. 
 
 To find the elements in W that do this we do the following::
@@ -192,7 +192,7 @@ To find the elements in W that do this we do the following::
    simply connected root datum of Lie type 'C2'[1,0,1]
    simply connected root datum of Lie type 'C2'[1,0,1,0]
 
-This is a list of pairs ``root datum, w``. Now to find out these elements act on ``x_b=0`` we do::
+This is a list of pairs ``root datum, w``. Now to find out how these elements act on ``x_b=2`` we do::
 
 
    atlas> void: for w in W do prints(cross(w,x_b)) od
@@ -206,8 +206,8 @@ This is a list of pairs ``root datum, w``. Now to find out these elements act on
    KGB element #3
    atlas> 
 
-This lists the cross action of each element of :mat:`W` on
-``x_b=2``. The ``Id`` takes it to itself, the simple reflection by
+This lists the cross action of each element of :math:`W` on
+``x_b=2``. The ``Id`` takes ``x=2`` to itself, the simple reflection by
 root [0], which is the compact root, also fixes it. The other
 simple root, ``[1]`` sends ``x=2`` to ``x=0`` and so on. 
 
