@@ -27,11 +27,11 @@ F`. That is, those who, map to the (conjugacy class of) the identity
 involution in the Weyl group. The ``0`` in the last collumn next to
 the # sign tells us that these :math:`K\backslash G/B` elements are in
 the Compact Cartan and, up to conjugacy by :math:`K`, parametrize the
-Borel subgroups containing the Compact Cartan. so, these parametrize
+Borel subgroups containing the Compact Cartan. So, these parametrize
 the discrete series of :math:`Sp(4, \mathbb R)` with a fixed
 infinitesimal character. That is, if we fix :math:`x_b`,
 
-.. math:: x=wx_b \rightarrow \text{discete series with Harish-Chandra parameter} w\rho.
+.. math:: x=wx_b \rightarrow \text{discete series with Harish-Chandra parameter} \ w\rho.
 
 There are a couple of commands that will
 give you discrete series::
@@ -79,7 +79,7 @@ know we do the following. We first fix a base element
    Variable K: RealForm
    atlas> 
 
-Which is the maximal compact subgroup of :math:`Sp(4,R)`. Now when we ask for the simple roots for this element we get::
+which is the standard maximal compact subgroup of :math:`Sp(4,R)`. Now when we ask for the simple roots for this element we get::
 
    atlas> simple_roots (K)
    Value: 
@@ -88,7 +88,8 @@ Which is the maximal compact subgroup of :math:`Sp(4,R)`. Now when we ask for th
    
    atlas>
 
-Which is not the canonical set of simple roots. So we try a different elements until we get the simple roots we want::
+Which is not the canonical set of simple roots. So we try different
+elements until we get the simple roots we want::
 
    atlas> x_b:=KGB(G,1)
    Value: KGB element #1
@@ -121,7 +122,7 @@ So we fix ``x_b`` as our base element. And now with respect to this parameter we
    atlas> 
 
 So, this is a way to go from ``atlas`` parameters to the
-Harish-Chandra parameters expressed in the usual way with
+Harish-Chandra parameters expressed, in the usual way, with
 respect to the fixed base element. The one corresponding to ``x=2`` is
 the holomorphic discrete series, the one for ``x=3`` is the
 antiholomorphic one and the other two are the large discrete series.
@@ -135,14 +136,16 @@ To chek this we do the following ::
    final parameter(x=3,lambda=[2,1]/1,nu=[0,0]/1) [ -1, -2 ]/1 ["ic","nc"]
    atlas>
 
-So this gives us more information about each representation. Namely,the status of the simple roots for the corresponding ``x``. 
+So this gives us more information about each representation. Namely, the status of the simple roots for the corresponding ``x``. 
 
 The software always chooses, for the quasisplit group, ``x=0`` to be
 the large Borel; that is, both of the simple roots are non compact. In
 this case the simple roots are :math:`e_1 + e_2` and
 :math:`2e_2`. Similarly, for ``x=1``. So these correspond to the large
 discrete series.  And since we chose the base eleemt to be ``x=2`` and
-the simple root is :math:`[1,-1]`, then ``[2,1]`` is the usual parameter for this choice of simple roots. The first simple rootis compact. so this corresponds to the holomorphic case.
+the simple root for :math:`K` is :math:`[1,-1]`, then ``[2,1]`` is the usual
+parameter for this choice of simple roots. The first simple root is
+compact. so this corresponds to the holomorphic case.
 
 Now to go the other way we use::
 
@@ -171,9 +174,9 @@ Or we could use the other format using the ``KGBElt``::
    Value: final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1)
    
 So the software conjugates the Harish-Chandra parameter ``[1,-2]`` to ``[2,1]``
-and conjugates the base element to ``x=0``. 
+and conjugates, via the reflection on the long simple root, the base element to ``x=0``. 
 
-To find the elements in w that do this we do the following::
+To find the elements in W that do this we do the following::
 
    atlas> set W=generate_W (G)
    Variable W: [(RootDatum,[int])]
@@ -188,6 +191,10 @@ To find the elements in w that do this we do the following::
    simply connected root datum of Lie type 'C2'[0,1,0]
    simply connected root datum of Lie type 'C2'[1,0,1]
    simply connected root datum of Lie type 'C2'[1,0,1,0]
+
+This is a list of pairs ``root datum, w``. Now to find out these elements act on ``x_b=0`` we do::
+
+
    atlas> void: for w in W do prints(cross(w,x_b)) od
    KGB element #2
    KGB element #2
@@ -200,7 +207,7 @@ To find the elements in w that do this we do the following::
    atlas> 
 
 This lists the cross action of each element of :mat:`W` on
-``x_b=2``. The Id takes it to itself, the first simple reflection for
+``x_b=2``. The ``Id`` takes it to itself, the simple reflection by
 root [0], which is the compact root, also fixes it. The other
 simple root, ``[1]`` sends ``x=2`` to ``x=0`` and so on. 
 
@@ -223,7 +230,7 @@ The action is trivial there. There is only one :math:`K\backslash G/B`
 element and the stabilizer is the entire Weyl group.
 
 
-Now, recall the command to write representations in the usual way
+Now, recall the command to write representations in the usual way::
  
    atlas> void: for p in ds do prints(p," ", hc_parameter(p,x_b)) od
    final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1) [  2, -1 ]/1
@@ -231,7 +238,10 @@ Now, recall the command to write representations in the usual way
    final parameter(x=2,lambda=[2,1]/1,nu=[0,0]/1) [ 2, 1 ]/1
    final parameter(x=3,lambda=[2,1]/1,nu=[0,0]/1) [ -1, -2 ]/1
 
-and suppose we use ``x=0`` as our base point. Then we get a more strange set of parameters because the compact root is now ``[1,1]`` instead of the usual one. so the Harish-Chandrra parameters are not wht we expect.::
+and suppose we use ``x=0`` as our base point. Then we get a more
+strange set of parameters because the compact root is now ``[1,1]``
+instead of the usual one. So, the Harish-Chandrra parameters are not
+what we expect::
 
    atlas> void: for p in ds do prints(p," ", hc_parameter(p,KGB(G,0))) od
    final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1) [ 2, 1 ]/1
