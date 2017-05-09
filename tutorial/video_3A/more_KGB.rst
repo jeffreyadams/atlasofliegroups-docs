@@ -59,8 +59,8 @@ I}_W` (involutions in :math:`W`). The map is the obvious one:
 image in the Weyl group and that is an involution. Taking the
 conjugacy classes of involutions in W gives a map:
 
-:math:`{\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of
-Cartans in quasisplit group.}`
+.. math:: {\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of
+Cartans in quasisplit group.}
 
 The map :math:`\rho` is not necessarily surjective. But it is
 surjective if the group is quasisplit. So this :math:`\mathcal I` is
@@ -71,17 +71,12 @@ The Algorithms paper has a picture of the :math:`KGB` space for
 the fibers of elements in :math:`KGB` that go to the same conjugacy
 class of involutions and in turn to the same Cartan:
 
-.. image:: kgb_sp4r.jpg
-    :width: 800px
-    :align: center
-    :height: 800px
-    :alt: alternate text
-
 .. image:: kgb_sp4r.pdf
     :width: 800px
     :align: center
     :height: 800px
     :alt: alternate text
+
 Four elements get mapped to the identity involution which corresponds
 to the compact Cartan; two are mapped to the involutions from the
 short root reflections :math:`s_{\alpha _1}` and :math:`s_{\alpha _2}`
