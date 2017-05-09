@@ -20,7 +20,7 @@ In this setting it is better to think of :math:`G(\mathbb R)` as
 
 Then, the :math:`K` orbits on :math:`G/B` consist of three elements:
 
-.. math:: x_b =\left( \begin{array}{cc} i&0\\ 0&-i \end{array}\right),\quad-x_b=\left(\begin{array}{cc} -i&0\\ 0&i \end{array}\right) ,\quad u=\left( \begin{array}{cc} 0 & 1 \\ -1 & 0 \end{array} \right)
+.. math:: x_b =\left( \begin{pmatrix} i&0\\ 0&-i \end{pmatrix}\right),\quad-x_b=\left(\begin{pmatrix} -i&0\\ 0&i \end{pmatrix}\right) ,\quad u=\left( \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \right)
 
 
 So, :math:`x_b` and :math:`-x_b` are all the elements of the Cartan
