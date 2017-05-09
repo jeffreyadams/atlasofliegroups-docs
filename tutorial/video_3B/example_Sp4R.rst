@@ -64,7 +64,7 @@ Now we can list all the discrete series of :math:`G`::
    final parameter(x=3,lambda=[2,1]/1,nu=[0,0]/1)
    atlas>
 
-Again, as in the example of :math:`SL(2,R)`, these all have the same
+Again, as in the example of :math:`SL(2,R)`, these all have
 ``lambda=rho`` and ``nu=0``. The only difference is the element
 ``x``. In order to identify them with the usual parameters that we
 know we do the following. We first fix a base element
