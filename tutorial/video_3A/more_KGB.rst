@@ -59,8 +59,7 @@ I}_W` (involutions in :math:`W`). The map is the obvious one:
 image in the Weyl group and that is an involution. Taking the
 conjugacy classes of involutions in W gives a map:
 
-.. math:: {\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of
-Cartans in quasisplit group.}
+.. math:: {\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of Cartans in quasisplit group.}
 
 The map :math:`\rho` is not necessarily surjective. But it is
 surjective if the group is quasisplit. So this :math:`\mathcal I` is
