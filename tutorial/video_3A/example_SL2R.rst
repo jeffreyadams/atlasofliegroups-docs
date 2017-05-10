@@ -23,10 +23,10 @@ Then, the :math:`K` orbits on :math:`G/B` consist of three elements:
 .. math:: x_b =\left( \begin{pmatrix} i&0\\ 0&-i \end{pmatrix}\right),\quad-x_b=\left(\begin{pmatrix} -i&0\\ 0&i \end{pmatrix}\right) ,\quad u=\left( \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \right)
 
 
-So, :math:`x_b` and :math:`-x_b` are all the elements of the Cartan
+So, :math:`x_b` and :math:`-x_b` are all the elements of the Cartan subgroup
 that are conjugate to :math:`x_b`. And there is only one other
 element, :math:`u`, up to conjugacy by :math:`H`, which is in the
-normalizer of the Cartan and is conjugate to :math:`x_b`.
+normalizer of the Cartan subgroup and is conjugate to :math:`x_b`.
 
 Note that :math:`x_b` and :math:`-x_b` are both fixed by conjugation
 by :math:`H` and :math:`H` acts by conjugation on :math:`u`. Moreover,
@@ -65,9 +65,9 @@ To obtain these elements with the software there is a command
    atlas>
 
 So :math:`KGB` has three elements labeled ``0, 1, 2`` and the second
-to last column give the number of the Cartan. So the first two
-elements correspond to the compact Cartan and the last one to the
-split Cartan.
+to last column give the number of the Cartan subgroup. So the first two
+elements correspond to the compact Cartan subgroup and the last one to the
+split Cartan subgroup.
 
 Now let us look at the block of the trivial representation of :math:`G`::
 
@@ -95,11 +95,11 @@ Then you can use the same function ``show`` for different parameter sets.
 So, the first two elements parametrize the discrete series with Harish Chandra parameters :math:`\rho` and :math:`-\rho`. More on this later.
 
 
-Now as representatives of Borels we have:
+Now as representatives of Borel subgroups we have:
 
 .. math:: x_b \mapsto B=\left\{ \left( \begin{pmatrix} z & w \\ 0 & z^{-1} \end{pmatrix} \right)  |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}
 
-which is the Borel that was fixed at the begining. Now, taking an
+which is the Borel subgroup that was fixed at the begining. Now, taking an
 element that conjugates $x_b$ to its negative we have:
 
 .. math:: -x_b=s_{\alpha }(x_b) \mapsto B'=s_{\alpha }(B)=\left\{ \left( \begin{pmatrix} z & 0 \\ w & z^{-1} \end{pmatrix} \right) |z\in {\mathbb C}^{\times },w\in \mathbb C \right\};
@@ -116,7 +116,7 @@ Then
 	  \left(\begin{pmatrix} w & w \\ -w & w \end{pmatrix} \right)
 	  |z\in {\mathbb C}^{\times },w\in \mathbb C \right\}.
 
-One of the key points comes from just looking at the Cartan part of
+One of the key points comes from just looking at the Cartan subgroup part of
 the last :math:`B''`:
 
 .. math:: H''=\left\{ \left(\begin{pmatrix}\cosh(z)&\sinh(z)\\
@@ -124,28 +124,28 @@ the last :math:`B''`:
 	  \right\}.
 
 Since we fixed the Cartan involution :math:`{\theta }_{x_b} =
-\operatorname{diag}(i,-i)`, it is acting on this Cartan by :math:`-1` (i.e. by taking
-the inverse). It acts trivially on the diagonal Cartan.
+\operatorname{diag}(i,-i)`, it is acting on this Cartan subgroup by :math:`-1` (i.e. by taking
+the inverse). It acts trivially on the diagonal Cartan subgroup.
 
-The set of real points of this Cartan is
+The set of real points of this Cartan subgroup is
 
 .. math:: H''(\mathbb R)=\left\{ \pm \operatorname{Id} \left(\begin{pmatrix} \cosh(x)  & \sinh(x) \\ \sinh(x) & \cosh(x) \end{pmatrix} \right) | x\in \mathbb R \right\} \cong {\mathbb R}^{\times },
 
-which is the usual way of writing split Cartan in :math:`SU(1,1)`.
+which is the usual way of writing split Cartan subgroup in :math:`SU(1,1)`.
 
 The point is that the pair :math:`(H'', {\theta }_{x_b} )` is
 conjugate under :math:`G` to the pair :math:`(H, {\theta }_u )`. That
 is, to :math:`H` and the conjugation action of this element :math:`u`.
 
-In other words, the first pair is how we normally think of this Cartan
-in the real group: we fix a real form (determined by the Cartan
-involution :math:`{\theta }_{x_b}`) and vary the Cartans within this
-real group. And in this case there are two Cartans, one compact and
+In other words, the first pair is how we normally think of this Cartan subgroup
+in the real group: we fix a real form (determined by the Cartan subgroup
+involution :math:`{\theta }_{x_b}`) and vary the Cartan subgroups within this
+real group. And in this case there are two Cartan subgroups, one compact and
 one split.
 
 The second pair is how ``atlas`` thinks of it. That is, it fixes the
-original (diagonal) Cartan and varies the Cartan involution which acts
-by :math:`-1` on the fixed diagonal Cartan.
+original (diagonal) Cartan subgroup and varies the Cartan involution which acts
+by :math:`-1` on the fixed diagonal Cartan subgroup.
 
 Moral of the Story
 -------------------
@@ -167,6 +167,6 @@ their action of the fixed :math:`\theta` up to conjugacy by :math:`K`,
 we conjugate everything back to the fixed :math:`H` and we vary the
 :math:`{\theta }_x`.
 
-Similarly for the Borels we have:
+Similarly for the Borel subgroups we have:
 
 .. math:: \{ (B',\theta )\}/K\leftrightarrow \{ (B,{\theta _x})|x\in \mathcal X \}
