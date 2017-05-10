@@ -129,8 +129,7 @@ the inverse). It acts trivially on the diagonal Cartan.
 
 The set of real points of this Cartan is
 
-.. math:: H''(\mathbb R)=\left\{ \pm \operatorname{Id} \left(\begin{pmatrix} \cosh(x)  & \sinh(x) \\ \sinh(x) & \cosh(x) \end{pmatrix} \right)
-	  | x\in \mathbb R \right\} \cong {\mathbb R}^{\times },
+.. math:: H''(\mathbb R)=\left\{ \pm \operatorname{Id} \left(\begin{pmatrix} \cosh(x)  & \sinh(x) \\ \sinh(x) & \cosh(x) \end{pmatrix} \right) | x\in \mathbb R \right\} \cong {\mathbb R}^{\times },
 
 which is the usual way of writing split Cartan in :math:`SU(1,1)`.
 
