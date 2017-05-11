@@ -1,4 +1,4 @@
-:math:`K\backslash G/B for other Cartan subgroups
+:math:`K\backslash G/B for other Cartan subgroups`
 ===================================================
 
 Let us look at :math:`G=Sp(4,R)`. The :math:`K\backslash G/B` elements are::
@@ -24,9 +24,9 @@ Let us look at :math:`G=Sp(4,R)`. The :math:`K\backslash G/B` elements are::
 Recall that the first four form the fundamental fiber that go to the
 Cartan subgroup ``0``, the compact one. Elements ``5`` through ``8``
 are attached to Cartan subgroup number ``2``, etc. The last collumn
-tells us that the fiber attached to the involution ``2^e``consists of
+tells us that the fiber attached to the involution ``2^e`` consists of
 elements 5 and 6 and the fiber corresponding to the element ``1x2^e``
-is elements ``7`` and ``8``.  Here ``2^e`` is just Cayley transform by
+are elements ``7`` and ``8``.  Here ``2^e`` is just Cayley transform by
 :math:`{\alpha}_2`, whereas ``1x2^e`` corresponds to conjugation by :math:`{\alpha}_1` composed with the Cayley transform by :math:`{\alpha}_2`.
 
 Let us recall which Cartan subgroups and Weyl groups correspond to each fibre::
@@ -195,7 +195,7 @@ Now for completeness, let us look at the split Cartan subgroup::
    1
    2
 
-A Cartan Subgroup isomorphic to :math:`{\mathbb C}^\times \times {\mathbb C}^\times and Weylgroup of type ``B2``. So the number of ``KGB`` orbits is ``8/8=1``::
+A Cartan Subgroup isomorphic to :math:`{\mathbb C}^\times \times {\mathbb C}^\times` and Weylgroup of type ``B2``. So the number of ``KGB`` orbits is ``8/8=1``::
 
    atlas> set x=KGB(G,10)
    Variable x: KGBElt (overriding previous instance, which had type KGBElt)
@@ -214,9 +214,9 @@ A Cartan Subgroup isomorphic to :math:`{\mathbb C}^\times \times {\mathbb C}^\ti
    KGB element #10
    atlas> 
 
-
-In the next chapter we will discuss the representations associated to
-the intermediate Cartan subgroups. The parameter includes a discrete
+This concludes this deiscussion on :math:`K\backslashG/B` orbits. In
+the next chapter we will discuss the representations associated to the
+intermediate Cartan subgroups. The parameter includes a discrete
 series of a Levi factor of a parabolic subgroup. So, to some extent it
 reduces to the case of discrete series.
 
