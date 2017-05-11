@@ -26,8 +26,8 @@ The first four elements form the "distinguished fiber" :math:`\mathcal
 F`. That is, those who, map to the (conjugacy class of) the identity
 involution in the Weyl group. The ``0`` in the last collumn next to
 the # sign tells us that these :math:`K\backslash G/B` elements are in
-the Compact Cartan and, up to conjugacy by :math:`K`, parametrize the
-Borel subgroups containing the Compact Cartan. So, these parametrize
+the Compact Cartan subgroup and, up to conjugacy by :math:`K`, parametrize the
+Borel subgroups containing the Compact Cartan subgroup. So, these parametrize
 the discrete series of :math:`Sp(4, \mathbb R)` with a fixed
 infinitesimal character. That is, if we fix :math:`x_b`,
 
@@ -79,7 +79,7 @@ know we do the following. We first fix a base element
    Variable K: RealForm
    atlas> 
 
-which is the standard maximal compact subgroup of :math:`Sp(4,R)`. Now when we ask for the simple roots for this element we get::
+This is the standard maximal compact subgroup of :math:`Sp(4,R)`. Now when we ask for the simple roots for this element we get::
 
    atlas> simple_roots (K)
    Value: 
@@ -88,7 +88,7 @@ which is the standard maximal compact subgroup of :math:`Sp(4,R)`. Now when we a
    
    atlas>
 
-Which is not the canonical set of simple roots. So we try different
+which is not the canonical set of compact simple roots. So we try different
 elements until we get the simple roots we want::
 
    atlas> x_b:=KGB(G,1)
@@ -116,7 +116,7 @@ So we fix ``x_b`` as our base element. And now with respect to this parameter we
    final parameter(x=3,lambda=[2,1]/1,nu=[0,0]/1) [ -1, -2 ]/1
    atlas> 
 
-So, this is a way to go from ``atlas`` parameters to the
+This is a way to go from ``atlas`` parameters to the
 Harish-Chandra parameters expressed, in the usual way, with
 respect to the fixed base element. The one corresponding to ``x=2`` is
 the holomorphic discrete series, the one for ``x=3`` is the
@@ -131,7 +131,7 @@ To chek this we do the following ::
    final parameter(x=3,lambda=[2,1]/1,nu=[0,0]/1) [ -1, -2 ]/1 ["ic","nc"]
    atlas>
 
-So, this gives us more information about each representation. Namely, the status of the simple roots for the corresponding ``x``. 
+This gives us more information about each representation. Namely, the status of the simple roots for the corresponding ``x``. 
 
 The software always chooses, for the quasisplit group, ``x=0`` to be
 the large Borel; that is, both of the simple roots are non compact. In
@@ -168,8 +168,9 @@ Or we could use the other format using the ``KGBElt``::
    atlas> p:=discrete_series (x_b,[2,-1])
    Value: final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1)
    
-So, the software conjugates the Harish-Chandra parameter ``[1,-2]`` to ``[2,1]``
-and conjugates, via the reflection on the long simple root, the base element to ``x=0``. 
+In other words, the software conjugates the Harish-Chandra parameter ``[1,-2]`` to
+``[2,1]`` and conjugates, via the reflection on the long simple root,
+the base element to ``x=0``.
 
 To find the elements in W that do this we do the following::
 
@@ -187,7 +188,10 @@ To find the elements in W that do this we do the following::
    simply connected root datum of Lie type 'C2'[1,0,1]
    simply connected root datum of Lie type 'C2'[1,0,1,0]
 
-This is the entire Weyl group of type ``C2`` in the form of a list of pairs ``root datum, product of simple roots, starting from the identity and ending in the long element of the Weyl group``. Now to find out how these elements act on ``x_b=2`` we do::
+This is the entire Weyl group of type ``C2`` in the form of a list of
+pairs ``root datum, product of simple roots``, starting from the
+identity and ending in the long element of the Weyl group. Now to
+find out how these elements act on ``x_b=2`` we do::
 
 
    atlas> void: for w in W do prints(cross(w,x_b)) od
@@ -221,7 +225,7 @@ Also, by contrast notice the action on the element ``x=10``::
    KGB element #10
    atlas> 
 
-The action on the split Cartan is trivial. There is only one
+The action on the split Cartan subgroup is trivial. There is only one
 :math:`K\backslash G/B` element and the stabilizer is the entire Weyl
 group.
 
