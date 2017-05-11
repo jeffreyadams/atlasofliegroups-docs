@@ -6,7 +6,7 @@ to discuss the theory a little bit.
 
 Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`
 
-where :math:`x \in K\backslash G/B` which determines an involution :math:`\theta _x` of the Cartan.
+where :math:`x \in K\backslash G/B` which determines an involution :math:`\theta _x` of the Cartan subgroup.
 
 .. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
@@ -30,14 +30,14 @@ we denote by :math:`\theta _x` the Cartan involution of
 :math:`H(\mathbb R)`
 
 Previously we focused on the case when :math:`\theta _x` is acting by
-:math:`-Id` This corresponded to the split Cartan :math:`H(\mathbb
+:math:`-Id` This corresponded to the split Cartan subgroup :math:`H(\mathbb
 R)={\mathbb R}^{*n}`
 
 In this case :math:`\lambda \in (X^* + \rho )/2X^*` gives a character
 of 
 .. math:: H(\mathbb R)^{\theta _x}=(\mathbb Z/2\mathbb Z)^n
 
-So we get a character of the compact piece of the Cartan. 
+So we get a character of the compact piece of the Cartan subgroup. 
 
 Warning: we are assuming the :math:`\rho \in X^*` . Otherwise we need
 to go to a covering.
@@ -57,17 +57,17 @@ with :math:`\mu^{\vee}\in \frac{1}{2}X_*`.
 
 
 This pairing is the value of the character on the compact part of the
-Cartan and it equals :math:`\pm 1`
+Cartan subgroup and it equals :math:`\pm 1`
 
 :math:`KGB` elements
 ---------------------
 
 We fix once and for all a Cartan subgroup :math:`H` included in a
-Borel :math:`B`. This avoids having to work with different Cartans
+Borel subgroup :math:`B`. This avoids having to work with different Cartan subgroups
 and roots and different choices of identifications. We will be working
-with the same Cartan all the time.
+with the same Cartan subgroup all the time.
 
-The choice of Cartan does not matter. We can think of :math:`H` as
+The choice of Cartan subgroup does not matter. We can think of :math:`H` as
 close to diagonal and :math:`B` upper triangular.
 
 Now let us take a base point element :math:`x_b \in G`, so that
@@ -110,7 +110,7 @@ Borel subgroups:
 
 On the right hand side the brackets mean :math:`K`-conjugacy
 class. So, by conjugating by :math:`K` we get the same conjugacy class
-of Borels.
+of Borel subgroupns.
 
 Parameter Set
 --------------

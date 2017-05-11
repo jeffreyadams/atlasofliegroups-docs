@@ -234,11 +234,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3A/more_KGB.html">More on <span class="math">\(K\backslash G/B\)</span></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#involutions-and-conjugacy-classes-of-cartans">Involutions and Conjugacy classes of Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#involutions-and-conjugacy-classes-of-cartan-subgroups">Involutions and Conjugacy classes of Cartan subgroups</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#kgb-ordering">KGB ordering</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../video_3A/kgb_other_cartans.html"><span class="math">\(K\backslash G/B for other Cartan subgroups\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../discrete_series.html">Discrete Series</a><ul class="current">
@@ -1139,8 +1140,8 @@
 F\)</span>. That is, those who, map to the (conjugacy class of) the identity
 involution in the Weyl group. The <code class="docutils literal"><span class="pre">0</span></code> in the last collumn next to
 the # sign tells us that these <span class="math">\(K\backslash G/B\)</span> elements are in
-the Compact Cartan and, up to conjugacy by <span class="math">\(K\)</span>, parametrize the
-Borel subgroups containing the Compact Cartan. So, these parametrize
+the Compact Cartan subgroup and, up to conjugacy by <span class="math">\(K\)</span>, parametrize the
+Borel subgroups containing the Compact Cartan subgroup. So, these parametrize
 the discrete series of <span class="math">\(Sp(4, \mathbb R)\)</span> with a fixed
 infinitesimal character. That is, if we fix <span class="math">\(x_b\)</span>,</p>
 <div class="math">
@@ -1176,7 +1177,7 @@ atlas&gt;
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Again, as in the example of <span class="math">\(SL(2,R)\)</span>, these all have the same
+<p>Again, as in the example of <span class="math">\(SL(2,R)\)</span>, these all have
 <code class="docutils literal"><span class="pre">lambda=rho</span></code> and <code class="docutils literal"><span class="pre">nu=0</span></code>. The only difference is the element
 <code class="docutils literal"><span class="pre">x</span></code>. In order to identify them with the usual parameters that we
 know we do the following. We first fix a base element
@@ -1191,7 +1192,7 @@ know we do the following. We first fix a base element
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>which is the standard maximal compact subgroup of <span class="math">\(Sp(4,R)\)</span>. Now when we ask for the simple roots for this element we get:</p>
+<p>This is the standard maximal compact subgroup of <span class="math">\(Sp(4,R)\)</span>. Now when we ask for the simple roots for this element we get:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span> <span class="p">(</span><span class="n">K</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span>
 <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
@@ -1200,15 +1201,10 @@ know we do the following. We first fix a base element
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Which is not the canonical set of simple roots. So we try different
+<p>which is not the canonical set of compact simple roots. So we try different
 elements until we get the simple roots we want:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x_b</span><span class="p">:</span><span class="o">=</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">KGB</span> <span class="n">element</span> <span class="c1">#1</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span> <span class="p">(</span><span class="n">K</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span>
-<span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
-<span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
-
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span> <span class="p">(</span><span class="n">K_0</span><span class="p">(</span><span class="n">x_b</span><span class="p">))</span>
 <span class="n">Value</span><span class="p">:</span>
 <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
@@ -1233,7 +1229,7 @@ elements until we get the simple roots we want:</p>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>So, this is a way to go from <code class="docutils literal"><span class="pre">atlas</span></code> parameters to the
+<p>This is a way to go from <code class="docutils literal"><span class="pre">atlas</span></code> parameters to the
 Harish-Chandra parameters expressed, in the usual way, with
 respect to the fixed base element. The one corresponding to <code class="docutils literal"><span class="pre">x=2</span></code> is
 the holomorphic discrete series, the one for <code class="docutils literal"><span class="pre">x=3</span></code> is the
@@ -1247,7 +1243,7 @@ antiholomorphic one and the other two are the large discrete series.</p>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>So, this gives us more information about each representation. Namely, the status of the simple roots for the corresponding <code class="docutils literal"><span class="pre">x</span></code>.</p>
+<p>This gives us more information about each representation. Namely, the status of the simple roots for the corresponding <code class="docutils literal"><span class="pre">x</span></code>.</p>
 <p>The software always chooses, for the quasisplit group, <code class="docutils literal"><span class="pre">x=0</span></code> to be
 the large Borel; that is, both of the simple roots are non compact. In
 this case the simple roots are <span class="math">\(e_1 + e_2\)</span> and
@@ -1282,8 +1278,9 @@ Overloaded instances of &#39;discrete_series&#39;
 <span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>So, the software conjugates the Harish-Chandra parameter <code class="docutils literal"><span class="pre">[1,-2]</span></code> to <code class="docutils literal"><span class="pre">[2,1]</span></code>
-and conjugates, via the reflection on the long simple root, the base element to <code class="docutils literal"><span class="pre">x=0</span></code>.</p>
+<p>In other words, the software conjugates the Harish-Chandra parameter <code class="docutils literal"><span class="pre">[1,-2]</span></code> to
+<code class="docutils literal"><span class="pre">[2,1]</span></code> and conjugates, via the reflection on the long simple root,
+the base element to <code class="docutils literal"><span class="pre">x=0</span></code>.</p>
 <p>To find the elements in W that do this we do the following:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">W</span><span class="o">=</span><span class="n">generate_W</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
 <span class="n">Variable</span> <span class="n">W</span><span class="p">:</span> <span class="p">[(</span><span class="n">RootDatum</span><span class="p">,[</span><span class="nb">int</span><span class="p">])]</span>
@@ -1300,7 +1297,10 @@ and conjugates, via the reflection on the long simple root, the base element to 
 <span class="n">simply</span> <span class="n">connected</span> <span class="n">root</span> <span class="n">datum</span> <span class="n">of</span> <span class="n">Lie</span> <span class="nb">type</span> <span class="s1">&#39;C2&#39;</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>This is a list of pairs <code class="docutils literal"><span class="pre">root</span> <span class="pre">datum,</span> <span class="pre">w</span></code>. Now to find out how these elements act on <code class="docutils literal"><span class="pre">x_b=2</span></code> we do:</p>
+<p>This is the entire Weyl group of type <code class="docutils literal"><span class="pre">C2</span></code> in the form of a list of
+pairs <code class="docutils literal"><span class="pre">root</span> <span class="pre">datum,</span> <span class="pre">product</span> <span class="pre">of</span> <span class="pre">simple</span> <span class="pre">roots</span></code>, starting from the
+identity and ending in the long element of the Weyl group. Now to
+find out how these elements act on <code class="docutils literal"><span class="pre">x_b=2</span></code> we do:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">W</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">cross</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">x_b</span><span class="p">))</span> <span class="n">od</span>
 <span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2</span>
 <span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2</span>
@@ -1317,7 +1317,7 @@ and conjugates, via the reflection on the long simple root, the base element to 
 <code class="docutils literal"><span class="pre">x_b=2</span></code>. The <code class="docutils literal"><span class="pre">Id</span></code> takes <code class="docutils literal"><span class="pre">x=2</span></code> to itself, the simple reflection by
 root [0], which is the compact root, also fixes it. The other
 simple root, <code class="docutils literal"><span class="pre">[1]</span></code> sends <code class="docutils literal"><span class="pre">x=2</span></code> to <code class="docutils literal"><span class="pre">x=0</span></code> and so on.</p>
-<p>Note that the action of <span class="math">\(W\)</span> on this set is transitive and the stabilizer is <span class="math">\(W_K\)</span></p>
+<p>Note that the action of <span class="math">\(W\)</span> on this set is transitive and the stabilizer of <code class="docutils literal"><span class="pre">x_b</span></code> is <span class="math">\(W_K\)</span></p>
 <p>Also, by contrast notice the action on the element <code class="docutils literal"><span class="pre">x=10</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">W</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">cross</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">10</span><span class="p">)))</span> <span class="n">od</span>
 <span class="n">KGB</span> <span class="n">element</span> <span class="c1">#10</span>
@@ -1331,9 +1331,11 @@ simple root, <code class="docutils literal"><span class="pre">[1]</span></code> 
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>The action is trivial there. There is only one <span class="math">\(K\backslash G/B\)</span>
-element and the stabilizer is the entire Weyl group.</p>
-<p>Now, recall the command to write representations in the usual way:</p>
+<p>The action on the split Cartan subgroup is trivial. There is only one
+<span class="math">\(K\backslash G/B\)</span> element and the stabilizer is the entire Weyl
+group.</p>
+<p>Now, recall the command to write the Harish-Chandra parameter in the
+usual way:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ds</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">hc_parameter</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">x_b</span><span class="p">))</span> <span class="n">od</span>
 <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span>  <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
 <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span>  <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
@@ -1341,10 +1343,10 @@ element and the stabilizer is the entire Weyl group.</p>
 <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
 </pre></div>
 </div>
-<p>and suppose we use <code class="docutils literal"><span class="pre">x=0</span></code> as our base point. Then we get a more
-strange set of parameters because the compact root is now <code class="docutils literal"><span class="pre">[1,1]</span></code>
-instead of the usual one. So, the Harish-Chandrra parameters are not
-what we expect:</p>
+<p>and suppose we use <code class="docutils literal"><span class="pre">x=0</span></code> as our base point. Then we get a strange
+set of parameters because the compact root is now <code class="docutils literal"><span class="pre">[1,1]</span></code> instead of
+the usual one. So, the Harish-Chandrra parameters are not what we
+expect:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ds</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">hc_parameter</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">0</span><span class="p">)))</span> <span class="n">od</span>
 <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
 <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
@@ -1353,6 +1355,10 @@ what we expect:</p>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
+<p>That is what we get if we decide to define our group where <span class="math">\(K\)</span>
+is given by <code class="docutils literal"><span class="pre">x=0</span></code>. The compact root in this case is <code class="docutils literal"><span class="pre">[1,1]</span></code> and if
+you we start with <code class="docutils literal"><span class="pre">[2,1]</span></code> you apply the Weyl group, modulo the
+action of <span class="math">\(W_K\)</span> to it, you get the above representatives.</p>
 </div>
 
 

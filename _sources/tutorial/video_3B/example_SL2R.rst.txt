@@ -42,10 +42,11 @@ directly. See the example of :math:`Sp(4,R)` in the next section.
 
    
 Recall that these are the (discrete series) representations associated
-to the compact Cartan. Note that they both have Harish-Chandra parameter
-``lambda=rho``. This is because the software is using a different
-``x``.   Remember that we have to fix a ``KGB`` element ``x_b``
-to fix a real group :math:`K`. Let us fix it to be ``x=0``::
+to the compact Cartan subgroup. Note that they both have
+Harish-Chandra parameter ``lambda=rho``. This is because the software
+is using a different ``x``.  Remember that we have to fix a ``KGB``
+element ``x_b`` to fix a real group :math:`K`. Let us fix it to be
+``x=0``::
 
   atlas> set x_b=KGB(G,0)
    Variable x_b: KGBElt

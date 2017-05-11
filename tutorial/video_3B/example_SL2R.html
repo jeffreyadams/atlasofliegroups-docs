@@ -234,11 +234,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3A/more_KGB.html">More on <span class="math">\(K\backslash G/B\)</span></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#involutions-and-conjugacy-classes-of-cartans">Involutions and Conjugacy classes of Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#involutions-and-conjugacy-classes-of-cartan-subgroups">Involutions and Conjugacy classes of Cartan subgroups</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_3A/more_KGB.html#kgb-ordering">KGB ordering</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../video_3A/kgb_other_cartans.html"><span class="math">\(K\backslash G/B for other Cartan subgroups\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../discrete_series.html">Discrete Series</a><ul class="current">
@@ -1153,10 +1154,11 @@
 other groups with more representations it is more helpful to list them
 directly. See the example of <span class="math">\(Sp(4,R)\)</span> in the next section.</p>
 <p>Recall that these are the (discrete series) representations associated
-to the compact Cartan. Note that they both have Harish-Chandra parameter
-<code class="docutils literal"><span class="pre">lambda=rho</span></code>. This is because the software is using a different
-<code class="docutils literal"><span class="pre">x</span></code>.   Remember that we have to fix a <code class="docutils literal"><span class="pre">KGB</span></code> element <code class="docutils literal"><span class="pre">x_b</span></code>
-to fix a real group <span class="math">\(K\)</span>. Let us fix it to be <code class="docutils literal"><span class="pre">x=0</span></code>:</p>
+to the compact Cartan subgroup. Note that they both have
+Harish-Chandra parameter <code class="docutils literal"><span class="pre">lambda=rho</span></code>. This is because the software
+is using a different <code class="docutils literal"><span class="pre">x</span></code>.  Remember that we have to fix a <code class="docutils literal"><span class="pre">KGB</span></code>
+element <code class="docutils literal"><span class="pre">x_b</span></code> to fix a real group <span class="math">\(K\)</span>. Let us fix it to be
+<code class="docutils literal"><span class="pre">x=0</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x_b</span><span class="o">=</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
  <span class="n">Variable</span> <span class="n">x_b</span><span class="p">:</span> <span class="n">KGBElt</span>
  <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x_b</span>

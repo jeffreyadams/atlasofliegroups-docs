@@ -234,11 +234,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="more_KGB.html">More on <span class="math">\(K\backslash G/B\)</span></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#involutions-and-conjugacy-classes-of-cartans">Involutions and Conjugacy classes of Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_KGB.html#involutions-and-conjugacy-classes-of-cartan-subgroups">Involutions and Conjugacy classes of Cartan subgroups</a></li>
 <li class="toctree-l4"><a class="reference internal" href="more_KGB.html#kgb-ordering">KGB ordering</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="kgb_other_cartans.html"><span class="math">\(K\backslash G/B for other Cartan subgroups\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../discrete_series.html">Discrete Series</a><ul>
@@ -1117,7 +1118,7 @@
 <p>In order to explain how <code class="docutils literal"><span class="pre">atlas</span></code> uses the <code class="docutils literal"><span class="pre">KGB</span></code> machinery we need
 to discuss the theory a little bit.</p>
 <p>Recall that a parameter is a triple <span class="math">\(p=(x,\lambda, \nu)\)</span></p>
-<p>where <span class="math">\(x \in K\backslash G/B\)</span> which determines an involution <span class="math">\(\theta _x\)</span> of the Cartan.</p>
+<p>where <span class="math">\(x \in K\backslash G/B\)</span> which determines an involution <span class="math">\(\theta _x\)</span> of the Cartan subgroup.</p>
 <div class="math">
 \[\lambda \in(X^* +\rho )/(1-{\theta }_x)X^*\]</div>
 <div class="math">
@@ -1134,12 +1135,12 @@ to discuss the theory a little bit.</p>
 we denote by <span class="math">\(\theta _x\)</span> the Cartan involution of
 <span class="math">\(H(\mathbb R)\)</span></p>
 <p>Previously we focused on the case when <span class="math">\(\theta _x\)</span> is acting by
-<span class="math">\(-Id\)</span> This corresponded to the split Cartan <span class="math">\(H(\mathbb
+<span class="math">\(-Id\)</span> This corresponded to the split Cartan subgroup <span class="math">\(H(\mathbb
 R)={\mathbb R}^{*n}\)</span></p>
 <p>In this case <span class="math">\(\lambda \in (X^* + \rho )/2X^*\)</span> gives a character
 of
 .. math:: H(mathbb R)^{theta _x}=(mathbb Z/2mathbb Z)^n</p>
-<p>So we get a character of the compact piece of the Cartan.</p>
+<p>So we get a character of the compact piece of the Cartan subgroup.</p>
 <p>Warning: we are assuming the <span class="math">\(\rho \in X^*\)</span> . Otherwise we need
 to go to a covering.</p>
 <p>Now <span class="math">\(\nu \in {X}_{\mathbb Q} ^*\)</span> and we had constructed the
@@ -1152,14 +1153,14 @@ induced representation</p>
 \[\chi(exp(2\pi i\mu ^{\vee}))=exp(2\pi i(&lt;\rho -\lambda ,\mu^{\vee}&gt;),\]</div>
 <p>with <span class="math">\(\mu^{\vee}\in \frac{1}{2}X_*\)</span>.</p>
 <p>This pairing is the value of the character on the compact part of the
-Cartan and it equals <span class="math">\(\pm 1\)</span></p>
+Cartan subgroup and it equals <span class="math">\(\pm 1\)</span></p>
 <div class="section" id="elements">
 <h2><span class="math">\(KGB\)</span> elements<a class="headerlink" href="#elements" title="Permalink to this headline">¶</a></h2>
 <p>We fix once and for all a Cartan subgroup <span class="math">\(H\)</span> included in a
-Borel <span class="math">\(B\)</span>. This avoids having to work with different Cartans
+Borel subgroup <span class="math">\(B\)</span>. This avoids having to work with different Cartan subgroups
 and roots and different choices of identifications. We will be working
-with the same Cartan all the time.</p>
-<p>The choice of Cartan does not matter. We can think of <span class="math">\(H\)</span> as
+with the same Cartan subgroup all the time.</p>
+<p>The choice of Cartan subgroup does not matter. We can think of <span class="math">\(H\)</span> as
 close to diagonal and <span class="math">\(B\)</span> upper triangular.</p>
 <p>Now let us take a base point element <span class="math">\(x_b \in G\)</span>, so that
 <span class="math">\(x_b ^2 \in Z(G)\)</span>. Attached to <span class="math">\(x_b\)</span> is the involution
@@ -1194,7 +1195,7 @@ Borel subgroups:</p>
 \[x=(gk)x_b (gk)^{-1} \mapsto [k^{-1}(g^{-1}Bg)k]=[gBg]\]</div>
 <p>On the right hand side the brackets mean <span class="math">\(K\)</span>-conjugacy
 class. So, by conjugating by <span class="math">\(K\)</span> we get the same conjugacy class
-of Borels.</p>
+of Borel subgroupns.</p>
 </div>
 <div class="section" id="parameter-set">
 <h2>Parameter Set<a class="headerlink" href="#parameter-set" title="Permalink to this headline">¶</a></h2>

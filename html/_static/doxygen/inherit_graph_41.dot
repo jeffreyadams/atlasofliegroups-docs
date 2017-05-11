@@ -1,0 +1,23 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="other",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="atlas::containers::\lsimple_list\< T, Alloc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1simple__list.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="atlas::containers::\lmirrored_simple_list\l\< T, Alloc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1mirrored__simple__list.html"];
+  Node1 -> Node4 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="atlas::containers::\lsl_list\< T, Alloc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1sl__list.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="atlas::containers::\lmirrored_sl_list\< T,\l Alloc \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1mirrored__sl__list.html"];
+  Node1 -> Node6 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="atlas::containers::\lsimple_list\< local_dest \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1simple__list.html"];
+  Node1 -> Node7 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="atlas::containers::\lsimple_list\< shared\l_share \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1simple__list.html"];
+  Node1 -> Node8 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="atlas::containers::\lsimple_list\< struct\l id_pat \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1simple__list.html"];
+  Node1 -> Node9 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="atlas::containers::\lsl_list\< atlas::interpreter\l::type_expr \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1sl__list.html"];
+}

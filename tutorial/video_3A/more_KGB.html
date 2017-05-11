@@ -37,7 +37,7 @@
         <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="\(K\) orbits on \(G/B\)." href="../K_orbits_on_G_B.html"/>
-        <link rel="next" title="Discrete Series" href="../discrete_series.html"/>
+        <link rel="next" title="\(K\backslash G/B for other Cartan subgroups\)" href="kgb_other_cartans.html"/>
         <link rel="prev" title="Example: \(SL(2,\mathbb R)\)" href="example_SL2R.html"/> 
 
   
@@ -234,11 +234,12 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">More on <span class="math">\(K\backslash G/B\)</span></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#involutions-and-conjugacy-classes-of-cartans">Involutions and Conjugacy classes of Cartans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#effect-on-modules">Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#involutions-and-conjugacy-classes-of-cartan-subgroups">Involutions and Conjugacy classes of Cartan subgroups</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#kgb-ordering">KGB ordering</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="kgb_other_cartans.html"><span class="math">\(K\backslash G/B for other Cartan subgroups\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../discrete_series.html">Discrete Series</a><ul>
@@ -1099,7 +1100,7 @@
   
   <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
       
-        <a href="../discrete_series.html" class="btn btn-neutral float-right" title="Discrete Series" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kgb_other_cartans.html" class="btn btn-neutral float-right" title="\(K\backslash G/B for other Cartan subgroups\)" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="example_SL2R.html" class="btn btn-neutral" title="Example: \(SL(2,\mathbb R)\)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -1115,7 +1116,7 @@
   <div class="section" id="more-on">
 <h1>More on <span class="math">\(K\backslash G/B\)</span><a class="headerlink" href="#more-on" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="effect-on-modules">
-<h2>Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules.<a class="headerlink" href="#effect-on-modules" title="Permalink to this headline">¶</a></h2>
+<h2>Effect on <span class="math">\((\mathfrak g , K_x)\)</span> modules<a class="headerlink" href="#effect-on-modules" title="Permalink to this headline">¶</a></h2>
 <p>Another important point is that now we will be talking about
 <span class="math">\((\mathfrak g , K_x )\)</span> modules as we vary <span class="math">\(x\)</span>. The
 <span class="math">\(x\)</span>&#8216;s are all conjugate to <span class="math">\(x_b\)</span>, but not literally equal.</p>
@@ -1133,8 +1134,8 @@ with</p>
 <p>In this way, the software is varying <span class="math">\(x\)</span>, but in the end you can
 conjugate back to <span class="math">\(x_b\)</span>.</p>
 </div>
-<div class="section" id="involutions-and-conjugacy-classes-of-cartans">
-<h2>Involutions and Conjugacy classes of Cartans<a class="headerlink" href="#involutions-and-conjugacy-classes-of-cartans" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="involutions-and-conjugacy-classes-of-cartan-subgroups">
+<h2>Involutions and Conjugacy classes of Cartan subgroups<a class="headerlink" href="#involutions-and-conjugacy-classes-of-cartan-subgroups" title="Permalink to this headline">¶</a></h2>
 <p>Recall that we are fixing <span class="math">\(x_b\)</span> and <span class="math">\(\mathcal X =\mathcal
 X (\ x_b )\)</span></p>
 <p>This determines a fixed <span class="math">\(K\)</span> and <span class="math">\(\mathcal X\)</span> parametrizes:</p>
@@ -1147,41 +1148,40 @@ X (\ x_b )\)</span></p>
 <span class="math">\(\mathcal X\)</span>. Then,</p>
 <div class="math">
 \[\mathcal X /W \leftrightarrow \text{conjugacy classes of Cartan subgroups}\]</div>
-<p>This is how we associate a Cartan to an element <span class="math">\(x\)</span>. Namely, via this map from <span class="math">\(\mathcal X\)</span>.</p>
+<p>This is how we associate a Cartan subgroup to an element <span class="math">\(x\)</span>. Namely, via this map from <span class="math">\(\mathcal X\)</span>.</p>
 <p>Moreover</p>
 <div class="math">
 \[Stab_W (x)\simeq W(K,H)\simeq W(G(\mathbb R),H(\mathbb R)),\]</div>
 <p>This is the rational Weyl group of the real form of the group with
-respect to the real Cartan, Which in the <span class="math">\(\theta\)</span> world we think
+respect to the real Cartan subgroup, Which in the <span class="math">\(\theta\)</span> world we think
 of it as <span class="math">\(W(K,H)\)</span>.</p>
 <p>Finally, there is a map <span class="math">\(\rho :\mathcal X\rightarrow {\mathcal
 I}_W\)</span> (involutions in <span class="math">\(W\)</span>). The map is the obvious one:
 <span class="math">\(x\)</span> is an element in the normalizer of <span class="math">\(H\)</span> so we take its
 image in the Weyl group and that is an involution. Taking the
 conjugacy classes of involutions in W gives a map:</p>
-<p><span class="math">\({\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of
-Cartans in quasisplit group.}\)</span></p>
+<div class="math">
+\[{\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of Cartan subgroups in quasisplit group.}\]</div>
 <p>The map <span class="math">\(\rho\)</span> is not necessarily surjective. But it is
 surjective if the group is quasisplit. So this <span class="math">\(\mathcal I\)</span> is
-telling us about Cartans of the quasisplit form.</p>
+telling us about Cartan subgroups of the quasisplit form.</p>
 <p>The Algorithms paper has a picture of the <span class="math">\(KGB\)</span> space for
 <span class="math">\(Sp(4,R)\)</span>. There are 11 elements in the space. The picture gives
 the fibers of elements in <span class="math">\(KGB\)</span> that go to the same conjugacy
-class of involutions and in turn to the same Cartan:</p>
-<a class="reference internal image-reference" href="../../_images/kgb_sp4r.jpg"><img alt="alternate text" class="align-center" src="../../_images/kgb_sp4r.jpg" style="width: 800px; height: 800px;" /></a>
+class of involutions and in turn to the same Cartan subgroup:</p>
 <a class="reference internal image-reference" href="../../_images/kgb_sp4r.pdf"><img alt="alternate text" class="align-center" src="../../_images/kgb_sp4r.pdf" style="width: 800px; height: 800px;" /></a>
 <p>Four elements get mapped to the identity involution which corresponds
-to the compact Cartan; two are mapped to the involutions from the
+to the compact Cartan subgroup; two are mapped to the involutions from the
 short root reflections <span class="math">\(s_{\alpha _1}\)</span> and <span class="math">\(s_{\alpha _2}\)</span>
-corresponding to the intermediate Cartan isomorphic to <span class="math">\({\mathbb
+corresponding to the intermediate Cartan subgroup isomorphic to <span class="math">\({\mathbb
 C}^{\times}\)</span>; four are mapped to the long root reflections
 <span class="math">\(s_{\beta _1}\)</span>, <span class="math">\(s_{\beta _2}\)</span>, which correspond to the
-Cartan <span class="math">\(S^1 \times {\mathbb R}^\times\)</span>; and one element is
-mapped to <span class="math">\(-Id\)</span>, corresponding to the split Cartan.</p>
+Cartan subgroup <span class="math">\(S^1 \times {\mathbb R}^\times\)</span>; and one element is
+mapped to <span class="math">\(-Id\)</span>, corresponding to the split Cartan subgroup.</p>
 <p>In terms of representations, looking at each fiber of <span class="math">\(KGB\)</span>
-elements corresponding to a given Cartan, will give us representations
-attached to that Cartan. For example all the representations attached
-to the split Cartan correspond to the last element <span class="math">\(x_10\)</span> which
+elements corresponding to a given Cartan subgroup, will give us representations
+attached to that subgroup. For example all the representations attached
+to the split Cartan subgroup correspond to the last element <span class="math">\(x_10\)</span> which
 is the fiber above the involution <span class="math">\(-1\)</span>, etc.</p>
 </div>
 <div class="section" id="kgb-ordering">
@@ -1211,7 +1211,7 @@ and below them we have <span class="math">\(x_4 ,x_5\)</span> and <span class="m
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../discrete_series.html" class="btn btn-neutral float-right" title="Discrete Series" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kgb_other_cartans.html" class="btn btn-neutral float-right" title="\(K\backslash G/B for other Cartan subgroups\)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="example_SL2R.html" class="btn btn-neutral" title="Example: \(SL(2,\mathbb R)\)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

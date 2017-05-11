@@ -1,0 +1,23 @@
+digraph "atlas::interpreter::Lexical_analyser"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="atlas::interpreter\l::Lexical_analyser",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" id_table" ,fontname="Helvetica"];
+  Node2 [label="atlas::interpreter\l::Hash_table",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1interpreter_1_1Hash__table.html"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pool" ,fontname="Helvetica"];
+  Node3 [label="atlas::interpreter\l::String_pool",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1interpreter_1_1String__pool.html"];
+  Node3 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" prev" ,fontname="Helvetica"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" input" ,fontname="Helvetica"];
+  Node4 [label="atlas::interpreter\l::BufferedInput",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1interpreter_1_1BufferedInput.html"];
+  Node2 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" input_files_seen" ,fontname="Helvetica"];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" input_files_completed" ,fontname="Helvetica"];
+  Node5 [label="BitMap",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" input_stack" ,fontname="Helvetica"];
+  Node6 [label="atlas::containers::\lmirrored_sl_list\< atlas\l::interpreter::BufferedInput\l::input_record \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1mirrored__sl__list.html"];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="atlas::containers::\lsl_list\< atlas::interpreter\l::BufferedInput::input_record,\l std::allocator\< atlas::interpreter\l::BufferedInput::input_record \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classatlas_1_1containers_1_1sl__list.html"];
+  Node8 -> Node7 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="std::allocator\< atlas\l::interpreter::BufferedInput\l::input_record \> ::template\l rebind\< sl_node\< atlas::interpreter\l::BufferedInput::input_record , std\l::allocator\< atlas::interpreter::BufferedInput\l::input_record \>  \> \>::other",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+}

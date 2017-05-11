@@ -9,4 +9,4 @@
    video_3A/introduction
    video_3A/example_SL2R
    video_3A/more_KGB
-   video_3A/discrete_series
+   video_3A/kgb_other_cartans

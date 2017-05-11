@@ -1,7 +1,7 @@
 More on :math:`K\backslash G/B`
 ================================
 
-Effect on :math:`(\mathfrak g , K_x)` modules.
+Effect on :math:`(\mathfrak g , K_x)` modules
 -----------------------------------------------
 
 Another important point is that now we will be talking about
@@ -24,8 +24,8 @@ with
 In this way, the software is varying :math:`x`, but in the end you can
 conjugate back to :math:`x_b`.
 
-Involutions and Conjugacy classes of Cartans
----------------------------------------------
+Involutions and Conjugacy classes of Cartan subgroups
+------------------------------------------------------
 
 Recall that we are fixing :math:`x_b` and :math:`\mathcal X =\mathcal
 X (\ x_b )`
@@ -43,14 +43,14 @@ Now the Weyl group :math:`W` acts naturally by conjugation
 
 .. math:: \mathcal X /W \leftrightarrow \text{conjugacy classes of Cartan subgroups}  
 
-This is how we associate a Cartan to an element :math:`x`. Namely, via this map from :math:`\mathcal X`.
+This is how we associate a Cartan subgroup to an element :math:`x`. Namely, via this map from :math:`\mathcal X`.
 
 Moreover
 
 .. math:: Stab_W (x)\simeq W(K,H)\simeq W(G(\mathbb R),H(\mathbb R)),
 
 This is the rational Weyl group of the real form of the group with
-respect to the real Cartan, Which in the :math:`\theta` world we think
+respect to the real Cartan subgroup, Which in the :math:`\theta` world we think
 of it as :math:`W(K,H)`.
 
 Finally, there is a map :math:`\rho :\mathcal X\rightarrow {\mathcal
@@ -59,42 +59,36 @@ I}_W` (involutions in :math:`W`). The map is the obvious one:
 image in the Weyl group and that is an involution. Taking the
 conjugacy classes of involutions in W gives a map:
 
-:math:`{\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of
-Cartans in quasisplit group.}`
+.. math:: {\mathcal I}_W /W\leftrightarrow \text{conjugacy classes of Cartan subgroups in quasisplit group.}
 
 The map :math:`\rho` is not necessarily surjective. But it is
 surjective if the group is quasisplit. So this :math:`\mathcal I` is
-telling us about Cartans of the quasisplit form.
+telling us about Cartan subgroups of the quasisplit form.
 
 The Algorithms paper has a picture of the :math:`KGB` space for
 :math:`Sp(4,R)`. There are 11 elements in the space. The picture gives
 the fibers of elements in :math:`KGB` that go to the same conjugacy
-class of involutions and in turn to the same Cartan:
-
-.. image:: kgb_sp4r.jpg
-    :width: 800px
-    :align: center
-    :height: 800px
-    :alt: alternate text
+class of involutions and in turn to the same Cartan subgroup:
 
 .. image:: kgb_sp4r.pdf
     :width: 800px
     :align: center
     :height: 800px
     :alt: alternate text
+
 Four elements get mapped to the identity involution which corresponds
-to the compact Cartan; two are mapped to the involutions from the
+to the compact Cartan subgroup; two are mapped to the involutions from the
 short root reflections :math:`s_{\alpha _1}` and :math:`s_{\alpha _2}`
-corresponding to the intermediate Cartan isomorphic to :math:`{\mathbb
+corresponding to the intermediate Cartan subgroup isomorphic to :math:`{\mathbb
 C}^{\times}`; four are mapped to the long root reflections
 :math:`s_{\beta _1}`, :math:`s_{\beta _2}`, which correspond to the
-Cartan :math:`S^1 \times {\mathbb R}^\times`; and one element is
-mapped to :math:`-Id`, corresponding to the split Cartan.
+Cartan subgroup :math:`S^1 \times {\mathbb R}^\times`; and one element is
+mapped to :math:`-Id`, corresponding to the split Cartan subgroup.
 
 In terms of representations, looking at each fiber of :math:`KGB`
-elements corresponding to a given Cartan, will give us representations
-attached to that Cartan. For example all the representations attached
-to the split Cartan correspond to the last element :math:`x_10` which
+elements corresponding to a given Cartan subgroup, will give us representations
+attached to that subgroup. For example all the representations attached
+to the split Cartan subgroup correspond to the last element :math:`x_10` which
 is the fiber above the involution :math:`-1`, etc.
 
 KGB ordering
