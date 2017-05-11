@@ -171,7 +171,7 @@ Then the number of ``KGB`` orbits is ``8/2=4`` and we can verify also that each 
    [1,0,1,0]
    atlas>
 
-Now for completeness, let us look at the split Cartan subgroup.
+Now for completeness, let us look at the split Cartan subgroup::
 
    atlas> H:=Cartan_class(G,3)
    Value: Cartan class #3, occurring for 1 real form and for 3 dual real forms
