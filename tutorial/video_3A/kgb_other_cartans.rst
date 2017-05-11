@@ -1,4 +1,4 @@
-:math:`K\backslash G/B for other Cartan subgroups`
+:math:`K\backslash G/B` for other Cartan subgroups
 ===================================================
 
 Let us look at :math:`G=Sp(4,R)`. The :math:`K\backslash G/B` elements are::
@@ -214,7 +214,7 @@ A Cartan Subgroup isomorphic to :math:`{\mathbb C}^\times \times {\mathbb C}^\ti
    KGB element #10
    atlas> 
 
-This concludes this deiscussion on :math:`K\backslashG/B` orbits. In
+This concludes this deiscussion on :math:`K\backslash G/B` orbits. In
 the next chapter we will discuss the representations associated to the
 intermediate Cartan subgroups. The parameter includes a discrete
 series of a Levi factor of a parabolic subgroup. So, to some extent it
