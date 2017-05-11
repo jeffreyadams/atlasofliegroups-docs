@@ -93,11 +93,6 @@ elements until we get the simple roots we want::
 
    atlas> x_b:=KGB(G,1)
    Value: KGB element #1
-   atlas> simple_roots (K)
-   Value: 
-   | 1 |
-   | 1 |
-   
    atlas> simple_roots (K_0(x_b))
    Value: 
    | 1 |
@@ -192,7 +187,7 @@ To find the elements in W that do this we do the following::
    simply connected root datum of Lie type 'C2'[1,0,1]
    simply connected root datum of Lie type 'C2'[1,0,1,0]
 
-This is a list of pairs ``root datum, w``. Now to find out how these elements act on ``x_b=2`` we do::
+This is the entire Weyl group of type ``C2`` in the form of a list of pairs ``root datum, product of simple roots, starting from the identity and ending in the long element of the Weyl group``. Now to find out how these elements act on ``x_b=2`` we do::
 
 
    atlas> void: for w in W do prints(cross(w,x_b)) od
@@ -211,7 +206,7 @@ This lists the cross action of each element of :math:`W` on
 root [0], which is the compact root, also fixes it. The other
 simple root, ``[1]`` sends ``x=2`` to ``x=0`` and so on. 
 
-Note that the action of :math:`W` on this set is transitive and the stabilizer is :math:`W_K`
+Note that the action of :math:`W` on this set is transitive and the stabilizer of ``x_b`` is :math:`W_K`
 
 Also, by contrast notice the action on the element ``x=10``::
 
@@ -226,11 +221,13 @@ Also, by contrast notice the action on the element ``x=10``::
    KGB element #10
    atlas> 
 
-The action is trivial there. There is only one :math:`K\backslash G/B`
-element and the stabilizer is the entire Weyl group.
+The action on the split Cartan is trivial. There is only one
+:math:`K\backslash G/B` element and the stabilizer is the entire Weyl
+group.
 
 
-Now, recall the command to write representations in the usual way::
+Now, recall the command to write the Harish-Chandra parameter in the
+usual way::
  
    atlas> void: for p in ds do prints(p," ", hc_parameter(p,x_b)) od
    final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1) [  2, -1 ]/1
@@ -238,10 +235,10 @@ Now, recall the command to write representations in the usual way::
    final parameter(x=2,lambda=[2,1]/1,nu=[0,0]/1) [ 2, 1 ]/1
    final parameter(x=3,lambda=[2,1]/1,nu=[0,0]/1) [ -1, -2 ]/1
 
-and suppose we use ``x=0`` as our base point. Then we get a more
-strange set of parameters because the compact root is now ``[1,1]``
-instead of the usual one. So, the Harish-Chandrra parameters are not
-what we expect::
+and suppose we use ``x=0`` as our base point. Then we get a strange
+set of parameters because the compact root is now ``[1,1]`` instead of
+the usual one. So, the Harish-Chandrra parameters are not what we
+expect::
 
    atlas> void: for p in ds do prints(p," ", hc_parameter(p,KGB(G,0))) od
    final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1) [ 2, 1 ]/1
@@ -250,4 +247,7 @@ what we expect::
    final parameter(x=3,lambda=[2,1]/1,nu=[0,0]/1) [ -1,  2 ]/1
    atlas>
 
-
+That is what we get if we decide to define our group where :math:`K`
+is given by ``x=0``. The compact root in this case is ``[1,1]`` and if
+you we start with ``[2,1]`` you apply the Weyl group, modulo the
+action of :math:`W_K` to it, you get the above representatives.
