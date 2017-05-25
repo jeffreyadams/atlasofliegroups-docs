@@ -4,11 +4,11 @@ representations.at Function References
 =======================================================
 |
 
-.. _finite_dimensional_realform_g,vec_gamma->param1:
+.. _finite_dimensional_realform_g,vec_lambda->param1:
 
 finite_dimensional
 -------------------------------------------------
-| ``finite_dimensional:RealForm G,vec gamma->Param`` Defined in line number 14.
+| ``finite_dimensional:RealForm G,vec lambda->Param`` Defined in line number 13.
 | 
 | 
 
@@ -24,7 +24,7 @@ finite_dimensional_fundamental_weight_coordinates
 
 trivial_block
 -------------------------------------------------
-| ``trivial_block:RealForm G->[Param]`` Defined in line number 24.
+| ``trivial_block:RealForm G->[Param]`` Defined in line number 25.
 | 
 | 
 
@@ -32,7 +32,7 @@ trivial_block
 
 large_fundamental_series
 -------------------------------------------------
-| ``large_fundamental_series:RealForm G,ratvec lambda->Param`` Defined in line number 27.
+| ``large_fundamental_series:RealForm G,ratvec lambda->Param`` Defined in line number 28.
 | 
 | 
 
@@ -40,7 +40,7 @@ large_fundamental_series
 
 large_fundamental_series
 -------------------------------------------------
-| ``large_fundamental_series:RealForm G->Param`` Defined in line number 32.
+| ``large_fundamental_series:RealForm G->Param`` Defined in line number 33.
 | 
 | 
 
@@ -48,7 +48,7 @@ large_fundamental_series
 
 large_discrete_series
 -------------------------------------------------
-| ``large_discrete_series:RealForm G,ratvec lambda->Param`` Defined in line number 37.
+| ``large_discrete_series:RealForm G,ratvec lambda->Param`` Defined in line number 38.
 | 
 | 
 
@@ -56,7 +56,7 @@ large_discrete_series
 
 large_discrete_series
 -------------------------------------------------
-| ``large_discrete_series:RealForm G->Param`` Defined in line number 41.
+| ``large_discrete_series:RealForm G->Param`` Defined in line number 42.
 | 
 | 
 
@@ -64,7 +64,7 @@ large_discrete_series
 
 minimal_principal_series
 -------------------------------------------------
-| ``minimal_principal_series:RealForm G,ratvec lambda,ratvec nu->Param`` Defined in line number 44.
+| ``minimal_principal_series:RealForm G,ratvec lambda,ratvec nu->Param`` Defined in line number 47.
 | 
 | 
 
@@ -72,7 +72,7 @@ minimal_principal_series
 
 minimal_principal_series
 -------------------------------------------------
-| ``minimal_principal_series:RealForm G->Param`` Defined in line number 46.
+| ``minimal_principal_series:RealForm G->Param`` Defined in line number 52.
 | 
 | 
 
@@ -80,7 +80,7 @@ minimal_principal_series
 
 minimal_spherical_principal_series
 -------------------------------------------------
-| ``minimal_spherical_principal_series:RealForm G,ratvec nu->Param`` Defined in line number 48.
+| ``minimal_spherical_principal_series:RealForm G,ratvec nu->Param`` Defined in line number 54.
 | 
 | 
 
@@ -88,7 +88,7 @@ minimal_spherical_principal_series
 
 minimal_spherical_principal_series
 -------------------------------------------------
-| ``minimal_spherical_principal_series:RealForm G->Param`` Defined in line number 50.
+| ``minimal_spherical_principal_series:RealForm G->Param`` Defined in line number 56.
 | 
 | 
 
@@ -96,7 +96,7 @@ minimal_spherical_principal_series
 
 spherical_unipotent_representations
 -------------------------------------------------
-| ``spherical_unipotent_representations:RealForm G->[Param]`` Defined in line number 55.
+| ``spherical_unipotent_representations:RealForm G->[Param]`` Defined in line number 62.
 | 
 | 
 
@@ -104,7 +104,7 @@ spherical_unipotent_representations
 
 hc_parameter
 -------------------------------------------------
-| ``hc_parameter:Param p,KGBElt x_b->ratvec`` Defined in line number 77.
+| ``hc_parameter:Param p,KGBElt x_b->ratvec`` Defined in line number 82.
 | 
 | 
 
@@ -112,7 +112,7 @@ hc_parameter
 
 hc_parameter
 -------------------------------------------------
-| ``hc_parameter:Param p->ratvec`` Defined in line number 86.
+| ``hc_parameter:Param p->ratvec`` Defined in line number 91.
 | 
 | 
 
@@ -120,7 +120,7 @@ hc_parameter
 
 discrete_series
 -------------------------------------------------
-| ``discrete_series:KGBElt x,ratvec lambda->Param`` Defined in line number 90.
+| ``discrete_series:KGBElt x,ratvec lambda->Param`` Defined in line number 95.
 | 
 | 
 
@@ -128,7 +128,7 @@ discrete_series
 
 discrete_series
 -------------------------------------------------
-| ``discrete_series:RealForm G,ratvec lambda->Param`` Defined in line number 99.
+| ``discrete_series:RealForm G,ratvec lambda->Param`` Defined in line number 104.
 | 
 | 
 

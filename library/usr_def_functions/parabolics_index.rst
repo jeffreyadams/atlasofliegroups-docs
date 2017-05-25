@@ -40,9 +40,9 @@ Functions
      - ``KGPElt y->KGPElt``
    * - :ref:`\=_KGPElt_(S,x),KGPElt_(T,y)->bool1`
      - ``KGPElt (S,x),KGPElt (T,y)->bool``
-   * - :ref:`equivalence_class_of_kgpelt(s,x):y->[kgbelt]1`
-     - ``KGPElt(S,x):y->[KGBElt]``
-   * - :ref:`x_min_kgpelt_p->kgbelt1`
+   * - :ref:`equivalence_class_of_kgpelt(s,x)->[kgbelt]1`
+     - ``KGPElt(S,x)->[KGBElt]``
+   * - :ref:`rec_fun x_min_kgpelt_p->kgbelt1`
      - ``KGPElt P->KGBElt``
    * - :ref:`kgp_realform_g,[int]_s->[kgpelt]1`
      - ``RealForm G,[int] S->[KGPElt]``

@@ -8,7 +8,7 @@ ratmat.at Function References
 
 gcd
 -------------------------------------------------
-| ``gcd:mat M->int`` Defined in line number 12.
+| ``gcd:mat M->int`` Defined in line number 13.
 | 
 | 
 
@@ -16,7 +16,7 @@ gcd
 
 simplify
 -------------------------------------------------
-| ``simplify:ratmat(M,,d)->ratmat`` Defined in line number 15.
+| ``simplify:ratmat(M,,d)->ratmat`` Defined in line number 16.
 | 
 | 
 
@@ -24,7 +24,7 @@ simplify
 
 \/
 -------------------------------------------------
-| ``/:mat M,int d->ratmat`` Defined in line number 18.
+| ``/:mat M,int d->ratmat`` Defined in line number 19.
 | 
 | 
 
@@ -32,7 +32,7 @@ simplify
 
 \*
 -------------------------------------------------
-| ``*:rat f,mat M->ratmat`` Defined in line number 22.
+| ``*:rat f,mat M->ratmat`` Defined in line number 23.
 | 
 | 
 
@@ -40,7 +40,7 @@ simplify
 
 \/
 -------------------------------------------------
-| ``/:mat M,rat f->ratmat`` Defined in line number 23.
+| ``/:mat M,rat f->ratmat`` Defined in line number 24.
 | 
 | 
 
@@ -48,7 +48,7 @@ simplify
 
 entry
 -------------------------------------------------
-| ``entry:ratmat(M,,d),int i,int j->rat`` Defined in line number 25.
+| ``entry:ratmat(M,,d),int i,int j->rat`` Defined in line number 26.
 | 
 | 
 
@@ -56,7 +56,7 @@ entry
 
 matrix
 -------------------------------------------------
-| ``matrix:(int,int)(r,c),(int,int->rat) f->ratmat`` Defined in line number 28.
+| ``matrix:(int,int)(r,c),(int,int->rat) f->ratmat`` Defined in line number 29.
 | 
 | 
 
@@ -64,7 +64,7 @@ matrix
 
 n_rows
 -------------------------------------------------
-| ``n_rows:ratmat(M,,)->int`` Defined in line number 33.
+| ``n_rows:ratmat(M,,)->int`` Defined in line number 34.
 | 
 | 
 
@@ -72,7 +72,7 @@ n_rows
 
 n_columns
 -------------------------------------------------
-| ``n_columns:ratmat(M,,)->int`` Defined in line number 34.
+| ``n_columns:ratmat(M,,)->int`` Defined in line number 35.
 | 
 | 
 
@@ -80,7 +80,7 @@ n_columns
 
 columns
 -------------------------------------------------
-| ``columns:ratmat(M,,d)->[ratvec]`` Defined in line number 36.
+| ``columns:ratmat(M,,d)->[ratvec]`` Defined in line number 37.
 | 
 | 
 
@@ -88,7 +88,7 @@ columns
 
 rows
 -------------------------------------------------
-| ``rows:ratmat(M,,d)->[ratvec]`` Defined in line number 37.
+| ``rows:ratmat(M,,d)->[ratvec]`` Defined in line number 38.
 | 
 | 
 
@@ -96,7 +96,7 @@ rows
 
 column
 -------------------------------------------------
-| ``column:ratmat(M,,d),int j->ratvec`` Defined in line number 38.
+| ``column:ratmat(M,,d),int j->ratvec`` Defined in line number 39.
 | 
 | 
 
@@ -104,7 +104,7 @@ column
 
 row
 -------------------------------------------------
-| ``row:ratmat(M,,d),int i->ratvec`` Defined in line number 39.
+| ``row:ratmat(M,,d),int i->ratvec`` Defined in line number 40.
 | 
 | 
 
@@ -112,7 +112,7 @@ row
 
 columns_with
 -------------------------------------------------
-| ``columns_with:(int,ratvec->bool) p,ratmat(M,,d)->ratmat`` Defined in line number 41.
+| ``columns_with:(int,ratvec->bool) p,ratmat(M,,d)->ratmat`` Defined in line number 42.
 | 
 | 
 
@@ -120,7 +120,7 @@ columns_with
 
 columns_with
 -------------------------------------------------
-| ``columns_with:(ratvec->bool) p,ratmat T->ratmat`` Defined in line number 44.
+| ``columns_with:(ratvec->bool) p,ratmat T->ratmat`` Defined in line number 45.
 | 
 | 
 
@@ -128,7 +128,7 @@ columns_with
 
 columns_with
 -------------------------------------------------
-| ``columns_with:(int->bool) p,ratmat(M,,d)->ratmat`` Defined in line number 46.
+| ``columns_with:(int->bool) p,ratmat(M,,d)->ratmat`` Defined in line number 47.
 | 
 | 
 
@@ -136,7 +136,7 @@ columns_with
 
 rows_with
 -------------------------------------------------
-| ``rows_with:(int,ratvec->bool) p,ratmat(M,,d)->ratmat`` Defined in line number 49.
+| ``rows_with:(int,ratvec->bool) p,ratmat(M,,d)->ratmat`` Defined in line number 50.
 | 
 | 
 
@@ -144,7 +144,7 @@ rows_with
 
 rows_with
 -------------------------------------------------
-| ``rows_with:(ratvec->bool) p,ratmat T->ratmat`` Defined in line number 52.
+| ``rows_with:(ratvec->bool) p,ratmat T->ratmat`` Defined in line number 53.
 | 
 | 
 
@@ -152,7 +152,7 @@ rows_with
 
 rows_with
 -------------------------------------------------
-| ``rows_with:(int->bool) p,ratmat(M,,d)->ratmat`` Defined in line number 54.
+| ``rows_with:(int->bool) p,ratmat(M,,d)->ratmat`` Defined in line number 55.
 | 
 | 
 
@@ -160,7 +160,7 @@ rows_with
 
 det
 -------------------------------------------------
-| ``det:ratmat(M,,d)->rat`` Defined in line number 57.
+| ``det:ratmat(M,,d)->rat`` Defined in line number 58.
 | 
 | 
 
@@ -168,7 +168,7 @@ det
 
 \^
 -------------------------------------------------
-| ``^:ratmat(M,,d)->ratmat`` Defined in line number 59.
+| ``^:ratmat(M,,d)->ratmat`` Defined in line number 60.
 | 
 | 
 
@@ -176,7 +176,7 @@ det
 
 \+
 -------------------------------------------------
-| ``+:ratmat(M,,d),ratmat(MM,,dd)->ratmat`` Defined in line number 61.
+| ``+:ratmat(M,,d),ratmat(MM,,dd)->ratmat`` Defined in line number 62.
 | 
 | 
 
@@ -184,7 +184,7 @@ det
 
 \-
 -------------------------------------------------
-| ``-:ratmat(M,,d),ratmat(MM,,dd)->ratmat`` Defined in line number 62.
+| ``-:ratmat(M,,d),ratmat(MM,,dd)->ratmat`` Defined in line number 63.
 | 
 | 
 
@@ -192,7 +192,7 @@ det
 
 \*
 -------------------------------------------------
-| ``*:ratvec v,ratmat(M,,d)->ratvec`` Defined in line number 65.
+| ``*:ratvec v,ratmat(M,,d)->ratvec`` Defined in line number 66.
 | 
 | 
 
@@ -200,7 +200,7 @@ det
 
 \*
 -------------------------------------------------
-| ``*:ratmat(M,,d),ratvec v->ratvec`` Defined in line number 66.
+| ``*:ratmat(M,,d),ratvec v->ratvec`` Defined in line number 67.
 | 
 | 
 
@@ -208,7 +208,7 @@ det
 
 \*
 -------------------------------------------------
-| ``*:ratmat(M,,d),mat MM->ratmat`` Defined in line number 68.
+| ``*:ratmat(M,,d),mat MM->ratmat`` Defined in line number 69.
 | 
 | 
 
@@ -216,7 +216,7 @@ det
 
 \*
 -------------------------------------------------
-| ``*:mat M,ratmat(MM,,d)->ratmat`` Defined in line number 69.
+| ``*:mat M,ratmat(MM,,d)->ratmat`` Defined in line number 70.
 | 
 | 
 
@@ -224,7 +224,7 @@ det
 
 \*
 -------------------------------------------------
-| ``*:ratmat(M,,d),ratmat(MM,,dd)->ratmat`` Defined in line number 70.
+| ``*:ratmat(M,,d),ratmat(MM,,dd)->ratmat`` Defined in line number 71.
 | 
 | 
 
@@ -232,7 +232,7 @@ det
 
 \/
 -------------------------------------------------
-| ``/:ratmat(M,,d)->ratmat`` Defined in line number 72.
+| ``/:ratmat(M,,d)->ratmat`` Defined in line number 73.
 | 
 | 
 
@@ -240,7 +240,7 @@ det
 
 \^
 -------------------------------------------------
-| ``^:ratmat(M,,d):Md,int e->ratmat`` Defined in line number 76.
+| ``^:ratmat(M,,d):Md,int e->ratmat`` Defined in line number 77.
 | 
 | 
 
@@ -248,7 +248,7 @@ det
 
 ratmat_as_mat
 -------------------------------------------------
-| ``ratmat_as_mat:ratmat(M,,d)->mat`` Defined in line number 79.
+| ``ratmat_as_mat:ratmat(M,,d)->mat`` Defined in line number 80.
 | 
 | 
 
@@ -256,7 +256,7 @@ ratmat_as_mat
 
 mat_as_ratmat
 -------------------------------------------------
-| ``mat_as_ratmat:mat M->ratmat`` Defined in line number 80.
+| ``mat_as_ratmat:mat M->ratmat`` Defined in line number 82.
 | 
 | 
 
@@ -264,7 +264,7 @@ mat_as_ratmat
 
 diagonal
 -------------------------------------------------
-| ``diagonal:ratvec v->ratmat`` Defined in line number 81.
+| ``diagonal:ratvec v->ratmat`` Defined in line number 83.
 | 
 | 
 
@@ -272,7 +272,7 @@ diagonal
 
 ratvecs_as_ratmat
 -------------------------------------------------
-| ``ratvecs_as_ratmat:[ratvec] A->ratmat`` Defined in line number 84.
+| ``ratvecs_as_ratmat:[ratvec] A->ratmat`` Defined in line number 86.
 | 
 | 
 
@@ -280,7 +280,7 @@ ratvecs_as_ratmat
 
 det
 -------------------------------------------------
-| ``det:[ratvec] M->rat`` Defined in line number 87.
+| ``det:[ratvec] M->rat`` Defined in line number 89.
 | 
 | 
 
@@ -288,7 +288,7 @@ det
 
 \^
 -------------------------------------------------
-| ``^:[ratvec] M->ratmat`` Defined in line number 88.
+| ``^:[ratvec] M->ratmat`` Defined in line number 90.
 | 
 | 
 
@@ -296,7 +296,7 @@ det
 
 \*
 -------------------------------------------------
-| ``*:[ratvec] M,ratmat MM->ratmat`` Defined in line number 89.
+| ``*:[ratvec] M,ratmat MM->ratmat`` Defined in line number 91.
 | 
 | 
 
@@ -304,7 +304,7 @@ det
 
 \*
 -------------------------------------------------
-| ``*:ratmat M,[ratvec] MM->ratmat`` Defined in line number 90.
+| ``*:ratmat M,[ratvec] MM->ratmat`` Defined in line number 92.
 | 
 | 
 
@@ -312,7 +312,7 @@ det
 
 \+
 -------------------------------------------------
-| ``+:[ratvec] M,ratmat MM->ratmat`` Defined in line number 91.
+| ``+:[ratvec] M,ratmat MM->ratmat`` Defined in line number 93.
 | 
 | 
 
@@ -320,7 +320,7 @@ det
 
 \+
 -------------------------------------------------
-| ``+:ratmat M,[ratvec] MM->ratmat`` Defined in line number 92.
+| ``+:ratmat M,[ratvec] MM->ratmat`` Defined in line number 94.
 | 
 | 
 
@@ -328,7 +328,7 @@ det
 
 \-
 -------------------------------------------------
-| ``-:[ratvec] M,ratmat MM->ratmat`` Defined in line number 93.
+| ``-:[ratvec] M,ratmat MM->ratmat`` Defined in line number 95.
 | 
 | 
 
@@ -336,7 +336,7 @@ det
 
 \-
 -------------------------------------------------
-| ``-:ratmat M,[ratvec] MM->ratmat`` Defined in line number 94.
+| ``-:ratmat M,[ratvec] MM->ratmat`` Defined in line number 96.
 | 
 | 
 
@@ -344,7 +344,15 @@ det
 
 inverse
 -------------------------------------------------
-| ``inverse:ratmat(M,,d)->ratmat`` Defined in line number 95.
+| ``inverse:ratmat(M,,d)->ratmat`` Defined in line number 98.
+| 
+| 
+
+.. _solve_ratmat(m,,d),_ratvec_v->[ratvec]1:
+
+solve
+-------------------------------------------------
+| ``solve:ratmat(M,,d), ratvec v->[ratvec]`` Defined in line number 99.
 | 
 | 
 
@@ -352,7 +360,7 @@ inverse
 
 \*
 -------------------------------------------------
-| ``*:[ratvec] M,mat MM->ratmat`` Defined in line number 98.
+| ``*:[ratvec] M,mat MM->ratmat`` Defined in line number 102.
 | 
 | 
 
@@ -360,7 +368,7 @@ inverse
 
 \*
 -------------------------------------------------
-| ``*:mat M,[ratvec] MM->ratmat`` Defined in line number 99.
+| ``*:mat M,[ratvec] MM->ratmat`` Defined in line number 103.
 | 
 | 
 
@@ -368,7 +376,7 @@ inverse
 
 \+
 -------------------------------------------------
-| ``+:[ratvec] M,mat MM->ratmat`` Defined in line number 100.
+| ``+:[ratvec] M,mat MM->ratmat`` Defined in line number 104.
 | 
 | 
 
@@ -376,7 +384,7 @@ inverse
 
 \+
 -------------------------------------------------
-| ``+:mat M,[ratvec] MM->ratmat`` Defined in line number 101.
+| ``+:mat M,[ratvec] MM->ratmat`` Defined in line number 105.
 | 
 | 
 
@@ -384,7 +392,7 @@ inverse
 
 \-
 -------------------------------------------------
-| ``-:[ratvec] M,mat MM->ratmat`` Defined in line number 102.
+| ``-:[ratvec] M,mat MM->ratmat`` Defined in line number 106.
 | 
 | 
 
@@ -392,7 +400,7 @@ inverse
 
 \-
 -------------------------------------------------
-| ``-:mat M,[ratvec] MM->ratmat`` Defined in line number 103.
+| ``-:mat M,[ratvec] MM->ratmat`` Defined in line number 107.
 | 
 | 
 
@@ -400,15 +408,33 @@ inverse
 
 rational_inverse
 -------------------------------------------------
-| ``rational_inverse:mat M->ratmat`` Defined in line number 106.
+| ``rational_inverse:mat M->ratmat`` Defined in line number 110.
 | 
+| 
+
+.. _right_inverse_ratmat_m->ratmat1:
+
+right_inverse
+-------------------------------------------------
+| ``right_inverse:ratmat M->ratmat`` Defined in line number 113.
+| 
+| Right inverse of a rational matrix
+| 
+
+.. _left_inverse_ratmat_m->ratmat1:
+
+left_inverse
+-------------------------------------------------
+| ``left_inverse:ratmat M->ratmat`` Defined in line number 117.
+| 
+| Left inverse of rational matrix
 | 
 
 .. _ratvec_to_string_ratvec_v->string1:
 
 ratvec_to_string
 -------------------------------------------------
-| ``ratvec_to_string:ratvec v->string`` Defined in line number 108.
+| ``ratvec_to_string:ratvec v->string`` Defined in line number 119.
 | 
 | 
 
@@ -416,7 +442,7 @@ ratvec_to_string
 
 show
 -------------------------------------------------
-| ``show:ratmat(M,,d)->void`` Defined in line number 113.
+| ``show:ratmat(M,,d)->void`` Defined in line number 126.
 | 
 | 
 
@@ -424,7 +450,7 @@ show
 
 ratmat
 -----------------------------------------
-| ``(mat,string,int)`` Defined in line number 9.
+| ``(mat,string,int)`` Defined in line number 10.
 | 
 | 
 

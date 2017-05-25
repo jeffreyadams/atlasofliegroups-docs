@@ -12,11 +12,19 @@ strip
 | 
 | 
 
+.. _degree_poly_p->int1:
+
+degree
+-------------------------------------------------
+| ``degree:poly P->int`` Defined in line number 33.
+| 
+| 
+
 .. _eval_poly_v,int_k->int1:
 
 eval
 -------------------------------------------------
-| ``eval:poly v,int k->int`` Defined in line number 37.
+| ``eval:poly v,int k->int`` Defined in line number 38.
 | 
 | 
 
@@ -24,7 +32,7 @@ eval
 
 eval
 -------------------------------------------------
-| ``eval:vec v,Split w->Split`` Defined in line number 41.
+| ``eval:vec v,Split w->Split`` Defined in line number 42.
 | 
 | 
 
@@ -32,7 +40,7 @@ eval
 
 at_s
 -------------------------------------------------
-| ``at_s:vec v->Split: eval(v,Split`` Defined in line number 44.
+| ``at_s:vec v->Split: eval(v,Split`` Defined in line number 45.
 | 
 | 
 
@@ -40,7 +48,7 @@ at_s
 
 transpose
 -------------------------------------------------
-| ``transpose:poly_mat M->poly_mat`` Defined in line number 55.
+| ``transpose:poly_mat M->poly_mat`` Defined in line number 56.
 | 
 | 
 
@@ -48,7 +56,7 @@ transpose
 
 dot_product
 -------------------------------------------------
-| ``dot_product:[poly] v,[poly] w->poly`` Defined in line number 62.
+| ``dot_product:[poly] v,[poly] w->poly`` Defined in line number 63.
 | 
 | 
 
@@ -56,7 +64,7 @@ dot_product
 
 \*
 -------------------------------------------------
-| ``*:poly_mat A,poly_mat B->poly_mat`` Defined in line number 68.
+| ``*:poly_mat A,poly_mat B->poly_mat`` Defined in line number 69.
 | 
 | 
 
@@ -64,7 +72,7 @@ dot_product
 
 poly_list_add
 -------------------------------------------------
-| ``poly_list_add:[poly] v,[poly] w->[poly]`` Defined in line number 74.
+| ``poly_list_add:[poly] v,[poly] w->[poly]`` Defined in line number 75.
 | 
 | 
 
@@ -72,7 +80,7 @@ poly_list_add
 
 poly_list_sub
 -------------------------------------------------
-| ``poly_list_sub:[poly] v,[poly] w->[poly]`` Defined in line number 78.
+| ``poly_list_sub:[poly] v,[poly] w->[poly]`` Defined in line number 79.
 | 
 | 
 
@@ -80,7 +88,7 @@ poly_list_sub
 
 \-
 -------------------------------------------------
-| ``-:poly_mat M->poly_mat`` Defined in line number 83.
+| ``-:poly_mat M->poly_mat`` Defined in line number 84.
 | 
 | 
 
@@ -88,7 +96,7 @@ poly_list_sub
 
 \+
 -------------------------------------------------
-| ``+:poly_mat A,poly_mat B->poly_mat`` Defined in line number 86.
+| ``+:poly_mat A,poly_mat B->poly_mat`` Defined in line number 87.
 | 
 | 
 
@@ -96,7 +104,7 @@ poly_list_sub
 
 \-
 -------------------------------------------------
-| ``-:poly_mat A,poly_mat B->poly_mat`` Defined in line number 90.
+| ``-:poly_mat A,poly_mat B->poly_mat`` Defined in line number 91.
 | 
 | 
 
@@ -104,7 +112,7 @@ poly_list_sub
 
 scalar_multiply
 -------------------------------------------------
-| ``scalar_multiply:[poly] v,poly f->[poly]`` Defined in line number 95.
+| ``scalar_multiply:[poly] v,poly f->[poly]`` Defined in line number 96.
 | 
 | 
 
@@ -112,7 +120,7 @@ scalar_multiply
 
 \*
 -------------------------------------------------
-| ``*:poly f,poly_mat M->poly_mat`` Defined in line number 99.
+| ``*:poly f,poly_mat M->poly_mat`` Defined in line number 100.
 | 
 | 
 
@@ -120,7 +128,7 @@ scalar_multiply
 
 \*
 -------------------------------------------------
-| ``*:int c, poly_mat M->poly_mat`` Defined in line number 102.
+| ``*:int c, poly_mat M->poly_mat`` Defined in line number 103.
 | 
 | 
 
@@ -128,7 +136,7 @@ scalar_multiply
 
 update_row
 -------------------------------------------------
-| ``update_row:[poly] R, int j,poly v->[poly]: R[j]`` Defined in line number 106.
+| ``update_row:[poly] R, int j,poly v->[poly]: R[j]`` Defined in line number 107.
 | 
 | 
 
@@ -136,7 +144,7 @@ update_row
 
 update_matrix_row
 -------------------------------------------------
-| ``update_matrix_row:poly_mat M, int i, [poly] row->poly_mat: M[i]`` Defined in line number 108.
+| ``update_matrix_row:poly_mat M, int i, [poly] row->poly_mat: M[i]`` Defined in line number 109.
 | 
 | 
 
@@ -144,7 +152,7 @@ update_matrix_row
 
 update_matrix_entry
 -------------------------------------------------
-| ``update_matrix_entry:poly_mat M, int i, int j, poly v->poly_mat`` Defined in line number 110.
+| ``update_matrix_entry:poly_mat M, int i, int j, poly v->poly_mat`` Defined in line number 111.
 | 
 | 
 
@@ -152,7 +160,7 @@ update_matrix_entry
 
 zero_poly_row
 -------------------------------------------------
-| ``zero_poly_row:int n->[poly]: for i`` Defined in line number 115.
+| ``zero_poly_row:int n->[poly]: for i`` Defined in line number 116.
 | 
 | 
 
@@ -160,7 +168,7 @@ zero_poly_row
 
 zero_poly_matrix
 -------------------------------------------------
-| ``zero_poly_matrix:int n->poly_mat`` Defined in line number 118.
+| ``zero_poly_matrix:int n->poly_mat`` Defined in line number 119.
 | 
 | 
 
@@ -168,7 +176,7 @@ zero_poly_matrix
 
 scalar_poly_matrix
 -------------------------------------------------
-| ``scalar_poly_matrix:int n, int c->poly_mat`` Defined in line number 119.
+| ``scalar_poly_matrix:int n, int c->poly_mat`` Defined in line number 120.
 | 
 | 
 
@@ -176,7 +184,7 @@ scalar_poly_matrix
 
 \+
 -------------------------------------------------
-| ``+:poly_mat M, poly p->poly_mat`` Defined in line number 128.
+| ``+:poly_mat M, poly p->poly_mat`` Defined in line number 129.
 | 
 | 
 
@@ -184,7 +192,7 @@ scalar_poly_matrix
 
 \-
 -------------------------------------------------
-| ``-:poly_mat M, poly p->poly_mat`` Defined in line number 130.
+| ``-:poly_mat M, poly p->poly_mat`` Defined in line number 131.
 | 
 | 
 
@@ -192,7 +200,7 @@ scalar_poly_matrix
 
 \=
 -------------------------------------------------
-| ``=:poly_mat A,poly_mat B->bool`` Defined in line number 141.
+| ``=:poly_mat A,poly_mat B->bool`` Defined in line number 142.
 | 
 | 
 
@@ -200,7 +208,7 @@ scalar_poly_matrix
 
 is_zero
 -------------------------------------------------
-| ``is_zero:poly_mat M->bool`` Defined in line number 145.
+| ``is_zero:poly_mat M->bool`` Defined in line number 146.
 | 
 | 
 
@@ -208,7 +216,7 @@ is_zero
 
 upper_unitriangular_inverse
 -------------------------------------------------
-| ``upper_unitriangular_inverse:poly_mat P->poly_mat`` Defined in line number 148.
+| ``upper_unitriangular_inverse:poly_mat P->poly_mat`` Defined in line number 149.
 | 
 | 
 
@@ -216,7 +224,7 @@ upper_unitriangular_inverse
 
 poly_permute_basis
 -------------------------------------------------
-| ``poly_permute_basis:poly P, poly_mat A->poly_mat`` Defined in line number 166.
+| ``poly_permute_basis:poly P, poly_mat A->poly_mat`` Defined in line number 167.
 | 
 | 
 
@@ -224,7 +232,7 @@ poly_permute_basis
 
 stringPoly
 -------------------------------------------------
-| ``stringPoly:poly v, string q->string`` Defined in line number 173.
+| ``stringPoly:poly v, string q->string`` Defined in line number 174.
 | 
 | 
 
@@ -232,7 +240,7 @@ stringPoly
 
 printPoly
 -------------------------------------------------
-| ``printPoly:poly v->void`` Defined in line number 189.
+| ``printPoly:poly v->void`` Defined in line number 190.
 | 
 | 
 
@@ -240,7 +248,7 @@ printPoly
 
 printPolyMatrix
 -------------------------------------------------
-| ``printPolyMatrix:poly_mat M,int space_size->void`` Defined in line number 198.
+| ``printPolyMatrix:poly_mat M,int space_size->void`` Defined in line number 199.
 | 
 | 
 
@@ -248,7 +256,7 @@ printPolyMatrix
 
 printPolyMatrix
 -------------------------------------------------
-| ``printPolyMatrix:poly_mat M->void`` Defined in line number 205.
+| ``printPolyMatrix:poly_mat M->void`` Defined in line number 206.
 | 
 | 
 
@@ -256,7 +264,7 @@ printPolyMatrix
 
 sgn_poly
 -------------------------------------------------
-| ``sgn_poly:int k->poly`` Defined in line number 217.
+| ``sgn_poly:int k->poly`` Defined in line number 218.
 | 
 | 
 
@@ -264,7 +272,7 @@ sgn_poly
 
 divide_by
 -------------------------------------------------
-| ``divide_by:int k,poly v->poly`` Defined in line number 220.
+| ``divide_by:int k,poly v->poly`` Defined in line number 221.
 | 
 | 
 
@@ -272,7 +280,24 @@ divide_by
 
 principal_minor
 -------------------------------------------------
-| ``principal_minor:poly_mat M,int size->poly_mat`` Defined in line number 225.
+| ``principal_minor:poly_mat M,int size->poly_mat`` Defined in line number 226.
+| 
+| 
+
+.. _divide_poly_p,poly_d->(poly,poly)1:
+
+divide
+-------------------------------------------------
+| ``divide:poly p,poly d->(poly,poly)`` Defined in line number 231.
+| 
+| Division of integer polynomials p=dq+r
+| 
+
+.. _monic_divide_poly_p,_poly_d->(poly,poly)1:
+
+monic_divide
+-------------------------------------------------
+| ``monic_divide:poly P, poly D->(poly,poly)`` Defined in line number 241.
 | 
 | 
 
@@ -288,7 +313,7 @@ poly
 
 poly_mat
 -----------------------------------------
-| ``[[poly]]`` Defined in line number 53.
+| ``[[poly]]`` Defined in line number 54.
 | 
 | 
 

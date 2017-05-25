@@ -14,8 +14,8 @@ Functions
 
    * - Function
      - Argument(s) -> Results
-   * - :ref:`finite_dimensional_realform_g,vec_gamma->param1`
-     - ``RealForm G,vec gamma->Param``
+   * - :ref:`finite_dimensional_realform_g,vec_lambda->param1`
+     - ``RealForm G,vec lambda->Param``
    * - :ref:`finite_dimensional_fundamental_weight_coordinates_realform_g,vec_tau->param1`
      - ``RealForm G,vec tau->Param``
    * - :ref:`trivial_block_realform_g->[param]1`

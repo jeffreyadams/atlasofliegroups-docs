@@ -30,12 +30,10 @@ Functions
      - ``ParamPol P->ParamPol``
    * - :ref:`param_realform_g,int_k,_vec_lambda_rho,ratvec_nu->param1`
      - ``RealForm G,int k, vec lambda_rho,ratvec nu->Param``
-   * - :ref:`finalize_param_p->[param]:_for_c@q_in_parampol1`
-     - ``Param p->[Param]: for c@q in ParamPol``
-   * - :ref:`finalize_parampol_p->parampol1`
-     - ``ParamPol P->ParamPol``
-   * - :ref:`finalize_[param]_p->[param]1`
-     - ``[Param] P->[Param]``
+   * - :ref:`finalize_param_p->parampol1`
+     - ``Param p->ParamPol``
+   * - :ref:`finalize_[param]_p->parampol1`
+     - ``[Param] P->ParamPol``
    * - :ref:`\#_Split_w,int_t)=let_(a,b->%w_in_int1`
      - ``Split w,int t)=let (a,b->%w in int``
    * - :ref:`\#_Split_w,rat_t)=let_(a,b->%w_in_rat1`
@@ -64,3 +62,9 @@ Functions
      - ``Split w->string``
    * - :ref:`prettyprint_parampol_p->void1`
      - ``ParamPol P->void``
+   * - :ref:`smash_[int]_v,[[int]]_a->[[int]]1`
+     - ``[int] v,[[int]] A->[[int]]``
+   * - :ref:`rec_fun box_int_height,_int_rank->[[int]]1`
+     - ``int height, int rank->[[int]]``
+   * - :ref:`rec_fun box_[int]_heights->[[int]]1`
+     - ``[int] heights->[[int]]``

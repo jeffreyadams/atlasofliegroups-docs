@@ -11,6 +11,7 @@ group_operations.at
 | :ref:`basic.at<basic.at>`
 | :ref:`lattice.at<lattice.at>`
 | :ref:`torus.at<torus.at>`
+| :ref:`ratmat.at<ratmat.at>`
 |
 
 

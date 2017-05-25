@@ -312,12 +312,20 @@ Functions
      - ``Split x, int n->(Split,Split)``
    * - :ref:`half_split_w->split1`
      - ``Split w->Split``
-   * - :ref:`divide_by_int_n,split_w->split1`
-     - ``int n,Split w->Split``
+   * - :ref:`\/_Split_w,int_n->Split1`
+     - ``Split w,int n->Split``
+   * - :ref:`\%_Split_w,int_n->Split1`
+     - ``Split w,int n->Split``
+   * - :ref:`exp_s_int_n->split1`
+     - ``int n->Split``
    * - :ref:`is_pure_split_w->bool1`
      - ``Split w->bool``
    * - :ref:`split_format_split_w->string1`
      - ``Split w->string``
+   * - :ref:`^ =let rec_fun split_power_split_x,int_n->split1`
+     - ``Split x,int n->Split``
+   * - :ref:`sum_[split]_list->split1`
+     - ``[Split] list->Split``
    * - :ref:`root_datum_[vec]_simple_roots,_[vec]_simple_coroots,_int_r->rootdatum1`
      - ``[vec] simple_roots, [vec] simple_coroots, int r->RootDatum``
    * - :ref:`root_datum_lietype_t,_[ratvec]_gens->rootdatum1`
@@ -474,8 +482,6 @@ Functions
      - ``RootDatum rd->[ratvec]``
    * - :ref:`fundamental_coweights_rootdatum_rd->[ratvec]1`
      - ``RootDatum rd->[ratvec]``
-   * - :ref:`\!=_InnerClass_x,InnerClass_y->bool1`
-     - ``InnerClass x,InnerClass y->bool``
    * - :ref:`dual_integral_innerclass_ic,_ratvec_gamma->innerclass1`
      - ``InnerClass ic, ratvec gamma->InnerClass``
    * - :ref:`cartan_classes_innerclass_ic->[cartanclass]1`
@@ -502,8 +508,6 @@ Functions
      - ``CartanClass H,CartanClass J->bool``
    * - :ref:`number_cartanclass_h,realform_g->int1`
      - ``CartanClass H,RealForm G->int``
-   * - :ref:`\!=_RealForm_f,_RealForm_g->bool1`
-     - ``RealForm f, RealForm g->bool``
    * - :ref:`form_name_realform_f->string1`
      - ``RealForm f->string``
    * - :ref:`real_forms_innerclass_ic->[realform]1`
@@ -524,8 +528,6 @@ Functions
      - ``RealForm f, RealForm g->bool``
    * - :ref:`is_compact_realform_g->bool1`
      - ``RealForm G->bool``
-   * - :ref:`\!=_KGBElt_x,KGBElt_y->bool1`
-     - ``KGBElt x,KGBElt y->bool``
    * - :ref:`root_datum_kgbelt_x->rootdatum1`
      - ``KGBElt x->RootDatum``
    * - :ref:`inner_class_kgbelt_x->innerclass1`
@@ -540,6 +542,8 @@ Functions
      - ``RootDatum rd, mat theta, ratvec v->KGBElt``
    * - :ref:`cartan_class_innerclass_ic,_mat_theta->cartanclass1`
      - ``InnerClass ic, mat theta->CartanClass``
+   * - :ref:`bruhat_order_realform_g->(kgbelt,kgbelt->bool)1`
+     - ``RealForm G->(KGBElt,KGBElt->bool)``
    * - :ref:`status_vec_alpha,kgbelt_x->int1`
      - ``vec alpha,KGBElt x->int``
    * - :ref:`cross_vec_alpha,kgbelt_x->kgbelt1`
@@ -644,18 +648,12 @@ Functions
      - ``(RealForm,RealForm) p->void``
    * - :ref:`print_w_graph_(realform,realform)_p->void1`
      - ``(RealForm,RealForm) p->void``
-   * - :ref:`\!=_Param_x,Param_y->bool1`
-     - ``Param x,Param y->bool``
-   * - :ref:`equals_param_p,param_q->bool1`
-     - ``Param p,Param q->bool``
    * - :ref:`root_datum_param_p->rootdatum1`
      - ``Param p->RootDatum``
    * - :ref:`inner_class_param_p->innerclass1`
      - ``Param p->InnerClass``
    * - :ref:`null_module_param_p->parampol1`
      - ``Param p->ParamPol``
-   * - :ref:`\*_Param_p,rat_f->Param1`
-     - ``Param p,rat f->Param``
    * - :ref:`x_param_p->kgbelt1`
      - ``Param p->KGBElt``
    * - :ref:`lambda_minus_rho_param_p->vec1`
@@ -750,8 +748,10 @@ Functions
      - ``ParamPol a, (Split,Param) (c,p)->ParamPol``
    * - :ref:`sum_realform_g,[parampol]_ps->parampol1`
      - ``RealForm G,[ParamPol] Ps->ParamPol``
-   * - :ref:`\*_ParamPol_P,_rat_f->ParamPol1`
-     - ``ParamPol P, rat f->ParamPol``
+   * - :ref:`map_(param->param)f,_parampol_p->parampol1`
+     - ``(Param->Param)f, ParamPol P->ParamPol``
+   * - :ref:`map_(param->parampol)f,_parampol_p->parampol1`
+     - ``(Param->ParamPol)f, ParamPol P->ParamPol``
    * - :ref:`half_parampol_p->parampol1`
      - ``ParamPol P->ParamPol``
    * - :ref:`divide_by_int_n,_parampol_p->parampol1`
@@ -762,12 +762,22 @@ Functions
      - ``Param p->ParamPol``
    * - :ref:`virtual_realform_g,_[param]_ps->parampol1`
      - ``RealForm G, [Param] ps->ParamPol``
+   * - :ref:`branch_param_std,_param_k_type->int1`
+     - ``Param std, Param K_type->int``
+   * - :ref:`branch_parampol_p,_param_k_type->split1`
+     - ``ParamPol P, Param K_type->Split``
    * - :ref:`pol_format_parampol_p->string1`
      - ``ParamPol P->string``
    * - :ref:`infinitesimal_character_parampol_p->ratvec1`
      - ``ParamPol P->ratvec``
+   * - :ref:`height_split_parampol_p,_int_h->(parampol,parampol)1`
+     - ``ParamPol P, int h->(ParamPol,ParamPol)``
    * - :ref:`separate_by_infinitesimal_character_parampol_p->[(ratvec,parampol)]1`
      - ``ParamPol P->[(ratvec,ParamPol)]``
+   * - :ref:`is_pure_1_parampol_p->bool1`
+     - ``ParamPol P->bool``
+   * - :ref:`is_pure_s_parampol_p->bool1`
+     - ``ParamPol P->bool``
    * - :ref:`is_pure_parampol_p->bool1`
      - ``ParamPol P->bool``
    * - :ref:`purity_parampol_p->(int,int,int)1`

@@ -1,6 +1,6 @@
-.. _all_Kparameters.at:
+.. _all_parameters.at:
 
-all_Kparameters.at
+all_parameters.at
 =====================================
 
 
@@ -17,5 +17,5 @@ all_Kparameters.at
 .. toctree::
    :maxdepth: 1
 
-   all_Kparameters_ref
-   all_Kparameters_index
+   all_parameters_ref
+   all_parameters_index

@@ -46,3 +46,13 @@ Functions
      - ``RealForm G->RealForm``
    * - :ref:`is_relatively_split_realform_g->bool1`
      - ``RealForm G->bool``
+   * - :ref:`adjoint_info_rootdatum_rd->(rootdatum,mat)1`
+     - ``RootDatum rd->(RootDatum,mat)``
+   * - :ref:`simply_connected_cover_info_rootdatum_rd->(rootdatum,_ratmat)1`
+     - ``RootDatum rd->(RootDatum, ratmat)``
+   * - :ref:`simply_connected_cover_rootdatum_rd->rootdatum1`
+     - ``RootDatum rd->RootDatum``
+   * - :ref:`simply_connected_cover_derived_info_rootdatum_rd->(rootdatum,ratmat)1`
+     - ``RootDatum rd->(RootDatum,ratmat)``
+   * - :ref:`simply_connected_cover_derived_rootdatum_rd->rootdatum1`
+     - ``RootDatum rd->RootDatum``

@@ -44,12 +44,6 @@ Functions
      - ``RealForm G->[Param]``
    * - :ref:`sort_by_((vec,_rat)->_rat)_f->([(vec,rat)]_v)_[(vec,rat)]1`
      - ``((vec, rat)-> rat) f->([(vec,rat)] v) [(vec,rat)]``
-   * - :ref:`smash_[int]_v,[[int]]_a->[[int]]1`
-     - ``[int] v,[[int]] A->[[int]]``
-   * - :ref:`rec_fun box_int_height,_int_rank->[[int]]1`
-     - ``int height, int rank->[[int]]``
-   * - :ref:`rec_fun box_[int]_heights->[[int]]1`
-     - ``[int] heights->[[int]]``
    * - :ref:`all_h_rootdatum_rd->[(vec,rat)]1`
      - ``RootDatum rd->[(vec,rat)]``
    * - :ref:`all_h_dimensions_rootdatum_rd->[int]1`

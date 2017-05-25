@@ -9,7 +9,7 @@ User Defined Functions
    usr_def_functions/2r21s
    usr_def_functions/A1
    usr_def_functions/all
-   usr_def_functions/all_Kparameters
+   usr_def_functions/all_parameters
    usr_def_functions/aql
    usr_def_functions/basic
    usr_def_functions/bigMatrices
@@ -19,8 +19,11 @@ User Defined Functions
    usr_def_functions/complex
    usr_def_functions/complex_nilpotent_orbits
    usr_def_functions/conjugacy_classes
+   usr_def_functions/convert_c_form
    usr_def_functions/coordinates
+   usr_def_functions/coxeter
    usr_def_functions/cross_W_orbit
+   usr_def_functions/cyclotomic
    usr_def_functions/deform
    usr_def_functions/dual
    usr_def_functions/elliptic_elements
@@ -33,14 +36,16 @@ User Defined Functions
    usr_def_functions/extended_types
    usr_def_functions/extParamPol
    usr_def_functions/finite_dimensional
+   usr_def_functions/finite_dimensional_signature
    usr_def_functions/galois
    usr_def_functions/generate_groups
+   usr_def_functions/genuine
    usr_def_functions/gl4H
    usr_def_functions/group_operations
    usr_def_functions/groups
    usr_def_functions/hecke
-   usr_def_functions/herm
    usr_def_functions/hermitian
+   usr_def_functions/hermitian_debug
    usr_def_functions/induction
    usr_def_functions/induction_sp4
    usr_def_functions/inverse
@@ -64,6 +69,7 @@ User Defined Functions
    usr_def_functions/partitions
    usr_def_functions/polynomial
    usr_def_functions/print_K_types
+   usr_def_functions/rational_polynomial
    usr_def_functions/ratmat
    usr_def_functions/representations
    usr_def_functions/sort
@@ -74,6 +80,7 @@ User Defined Functions
    usr_def_functions/synthetic_aux
    usr_def_functions/test_K
    usr_def_functions/test_unitarity
+   usr_def_functions/tests
    usr_def_functions/tits
    usr_def_functions/torus
    usr_def_functions/translate
@@ -86,5 +93,6 @@ User Defined Functions
    usr_def_functions/W_Reps_Mod
    usr_def_functions/W_reps_type_BC
    usr_def_functions/Wdelta
+   usr_def_functions/weyl_character_formula
    usr_def_functions/Weylgroup
    usr_def_functions/wreps_type_C

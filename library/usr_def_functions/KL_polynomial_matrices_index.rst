@@ -44,8 +44,8 @@ Functions
      - ``Param p->poly_mat``
    * - :ref:`kl_q_polynomials_[param]_b->poly_mat1`
      - ``[Param] B->poly_mat``
-   * - :ref:`final_subset_[param]_b->[]_in_for_p_in_b_do_if_is_final(p)_then_rv#1`
-     - ``[Param] B->[] in for p in B do if is_final(p) then rv#``
+   * - :ref:`final_subset_[param]_b->[param]1`
+     - ``[Param] B->[Param]``
    * - :ref:`kl_block_alt_param_p,_mat_delta->([param],int,mat,[vec],vec,vec,mat)1`
      - ``Param p, mat delta->([Param],int,mat,[vec],vec,vec,mat)``
    * - :ref:`kl_p_polynomials_param_p,mat_delta->poly_mat1`
