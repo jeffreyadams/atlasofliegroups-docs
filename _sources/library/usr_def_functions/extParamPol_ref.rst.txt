@@ -84,11 +84,11 @@ find
 | 
 | 
 
-.. _deform_unreduced_param_p,_mat_delta,_int_sign->extparampol1:
+.. _deform_unreduced_param_p,_mat_delta,_int_type->extparampol1:
 
 deform_unreduced
 -------------------------------------------------
-| ``deform_unreduced:Param p, mat delta, int sign->ExtParamPol`` Defined in line number 46.
+| ``deform_unreduced:Param p, mat delta, int type->ExtParamPol`` Defined in line number 46.
 | 
 | 
 
@@ -96,7 +96,7 @@ deform_unreduced
 
 deform
 -------------------------------------------------
-| ``deform:Param p,mat delta, int type->ExtParamPol`` Defined in line number 87.
+| ``deform:Param p,mat delta, int type->ExtParamPol`` Defined in line number 90.
 | 
 | 
 
@@ -104,7 +104,7 @@ deform
 
 deform_old
 -------------------------------------------------
-| ``deform_old:Param p, mat delta, int type->ExtParamPol`` Defined in line number 89.
+| ``deform_old:Param p, mat delta, int type->ExtParamPol`` Defined in line number 92.
 | 
 | 
 
@@ -112,7 +112,7 @@ deform_old
 
 deform
 -------------------------------------------------
-| ``deform:ExtParam E, mat delta->ExtParamPol`` Defined in line number 147.
+| ``deform:ExtParam E, mat delta->ExtParamPol`` Defined in line number 150.
 | 
 | 
 
@@ -120,7 +120,7 @@ deform
 
 change_nu
 -------------------------------------------------
-| ``change_nu:Param p, rat factor, int type->ExtParamPol`` Defined in line number 152.
+| ``change_nu:Param p, rat factor, int type->ExtParamPol`` Defined in line number 155.
 | 
 | 
 
@@ -128,7 +128,7 @@ change_nu
 
 \%
 -------------------------------------------------
-| ``%:ExtParamPol P->[(Split,Param,int)]`` Defined in line number 165.
+| ``%:ExtParamPol P->[(Split,Param,int)]`` Defined in line number 173.
 | 
 | 
 
@@ -136,7 +136,7 @@ change_nu
 
 recursive_deform
 -------------------------------------------------
-| ``recursive_deform:Param p, mat delta, int type_p->ExtParamPol`` Defined in line number 172.
+| ``recursive_deform:Param p, mat delta, int type_p->ExtParamPol`` Defined in line number 180.
 | 
 | 
 
@@ -144,7 +144,7 @@ recursive_deform
 
 print_extended_character_formula
 -------------------------------------------------
-| ``print_extended_character_formula:Param p,[Param] B,mat delta->void`` Defined in line number 233.
+| ``print_extended_character_formula:Param p,[Param] B,mat delta->void`` Defined in line number 240.
 | 
 | 
 
@@ -152,7 +152,7 @@ print_extended_character_formula
 
 print_extended_character_formula
 -------------------------------------------------
-| ``print_extended_character_formula:Param p,mat delta->void`` Defined in line number 241.
+| ``print_extended_character_formula:Param p,mat delta->void`` Defined in line number 248.
 | 
 | 
 
@@ -160,7 +160,7 @@ print_extended_character_formula
 
 print_extended_composition_series
 -------------------------------------------------
-| ``print_extended_composition_series:Param p,[Param] B,mat delta->void`` Defined in line number 243.
+| ``print_extended_composition_series:Param p,[Param] B,mat delta->void`` Defined in line number 250.
 | 
 | 
 
@@ -168,7 +168,7 @@ print_extended_composition_series
 
 print_extended_composition_series
 -------------------------------------------------
-| ``print_extended_composition_series:Param p,mat delta->void`` Defined in line number 251.
+| ``print_extended_composition_series:Param p,mat delta->void`` Defined in line number 258.
 | 
 | 
 
@@ -176,23 +176,56 @@ print_extended_composition_series
 
 print_extended_indices
 -------------------------------------------------
-| ``print_extended_indices:[Param] B,mat delta->void`` Defined in line number 253.
+| ``print_extended_indices:[Param] B,mat delta->void`` Defined in line number 260.
 | 
 | 
 
-.. _character_formula_param_p,mat_delta->extparampol1:
+.. _character_formula_param_p,mat_delta,int_type->extparampol1:
 
 character_formula
 -------------------------------------------------
-| ``character_formula:Param p,mat delta->ExtParamPol`` Defined in line number 258.
+| ``character_formula:Param p,mat delta,int type->ExtParamPol`` Defined in line number 264.
 | 
 | 
 
-.. _c_form_irreducible_big_long_param_p,mat_delta,_int_type->(extparampol,[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],extparampol)1:
+.. _c_form_std_big_param_p,mat_delta,_int_type->extparampol1:
+
+c_form_std_big
+-------------------------------------------------
+| ``c_form_std_big:Param p,mat delta, int type->ExtParamPol`` Defined in line number 283.
+| 
+| C-form of std module for the extended group is just full_def
+| 
+
+.. _c_form_irreducible_big_param_p,mat_delta,_int_type,extparampol_cf->extparampol1:
+
+c_form_irreducible_big
+-------------------------------------------------
+| ``c_form_irreducible_big:Param p,mat delta, int type,ExtParamPol cf->ExtParamPol`` Defined in line number 285.
+| 
+| 
+
+.. _c_form_irreducible_big_param_p,mat_delta,_int_type->extparampol1:
+
+c_form_irreducible_big
+-------------------------------------------------
+| ``c_form_irreducible_big:Param p,mat delta, int type->ExtParamPol`` Defined in line number 298.
+| 
+| 
+
+.. _c_form_irreducible_big_as_sum_of_standards_param_p,mat_delta,_int_type->extparampol1:
+
+c_form_irreducible_big_as_sum_of_standards
+-------------------------------------------------
+| ``c_form_irreducible_big_as_sum_of_standards:Param p,mat delta, int type->ExtParamPol`` Defined in line number 300.
+| 
+| 
+
+.. _c_form_irreducible_big_long_param_p,mat_delta,_int_type->(extparampol,[((split,param),extparampol)],[((split,param),extparampol)],[((split,param),extparampol)],extparampol)1:
 
 c_form_irreducible_big_long
 -------------------------------------------------
-| ``c_form_irreducible_big_long:Param p,mat delta, int type->(ExtParamPol,[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],ExtParamPol)`` Defined in line number 296.
+| ``c_form_irreducible_big_long:Param p,mat delta, int type->(ExtParamPol,[((Split,Param),ExtParamPol)],[((Split,Param),ExtParamPol)],[((Split,Param),ExtParamPol)],ExtParamPol)`` Defined in line number 308.
 | 
 | 
 
@@ -200,7 +233,7 @@ c_form_irreducible_big_long
 
 print_c_form_irreducible_big_long
 -------------------------------------------------
-| ``print_c_form_irreducible_big_long:ExtParamPol cf, [((Split,Param),ExtParamPol)] plus,[((Split,Param),ExtParamPol)] minus,[((Split,Param),ExtParamPol)] induced,ExtParamPol answer->void`` Defined in line number 314.
+| ``print_c_form_irreducible_big_long:ExtParamPol cf, [((Split,Param),ExtParamPol)] plus,[((Split,Param),ExtParamPol)] minus,[((Split,Param),ExtParamPol)] induced,ExtParamPol answer->void`` Defined in line number 326.
 | 
 | 
 
@@ -208,7 +241,7 @@ print_c_form_irreducible_big_long
 
 print_c_form_irreducible_big_long
 -------------------------------------------------
-| ``print_c_form_irreducible_big_long:Param p,mat delta, int type->void`` Defined in line number 326.
+| ``print_c_form_irreducible_big_long:Param p,mat delta, int type->void`` Defined in line number 338.
 | 
 | 
 
@@ -216,7 +249,7 @@ print_c_form_irreducible_big_long
 
 hermitian_form_irreducible_big
 -------------------------------------------------
-| ``hermitian_form_irreducible_big:Param p->ParamPol`` Defined in line number 334.
+| ``hermitian_form_irreducible_big:Param p->ParamPol`` Defined in line number 346.
 | 
 | 
 
@@ -224,7 +257,7 @@ hermitian_form_irreducible_big
 
 is_unitary_big
 -------------------------------------------------
-| ``is_unitary_big:Param p->bool`` Defined in line number 338.
+| ``is_unitary_big:Param p->bool`` Defined in line number 350.
 | 
 | 
 
@@ -232,7 +265,7 @@ is_unitary_big
 
 print_is_unitary_big
 -------------------------------------------------
-| ``print_is_unitary_big:Param p->void`` Defined in line number 340.
+| ``print_is_unitary_big:Param p->void`` Defined in line number 352.
 | 
 | 
 
@@ -240,7 +273,7 @@ print_is_unitary_big
 
 is_weakly_unitary_big
 -------------------------------------------------
-| ``is_weakly_unitary_big:Param p->bool`` Defined in line number 347.
+| ``is_weakly_unitary_big:Param p->bool`` Defined in line number 359.
 | 
 | 
 

@@ -16,6 +16,8 @@ Functions
      - Argument(s) -> Results
    * - :ref:`strip_poly_v->poly1`
      - ``poly v->poly``
+   * - :ref:`degree_poly_p->int1`
+     - ``poly P->int``
    * - :ref:`eval_poly_v,int_k->int1`
      - ``poly v,int k->int``
    * - :ref:`eval_vec_v,split_w->split1`
@@ -82,6 +84,10 @@ Functions
      - ``int k,poly v->poly``
    * - :ref:`principal_minor_poly_mat_m,int_size->poly_mat1`
      - ``poly_mat M,int size->poly_mat``
+   * - :ref:`divide_poly_p,poly_d->(poly,poly)1`
+     - ``poly p,poly d->(poly,poly)``
+   * - :ref:`monic_divide_poly_p,_poly_d->(poly,poly)1`
+     - ``poly P, poly D->(poly,poly)``
 
 
 Data Types

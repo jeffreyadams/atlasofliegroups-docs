@@ -124,35 +124,11 @@ sort_by
 | 
 | 
 
-.. _smash_[int]_v,[[int]]_a->[[int]]1:
-
-smash
--------------------------------------------------
-| ``smash:[int] v,[[int]] A->[[int]]`` Defined in line number 93.
-| 
-| 
-
-.. _rec_fun box_int_height,_int_rank->[[int]]1:
-
-rec_fun box
--------------------------------------------------
-| ``rec_fun box:int height, int rank->[[int]]`` Defined in line number 98.
-| 
-| 
-
-.. _rec_fun box_[int]_heights->[[int]]1:
-
-rec_fun box
--------------------------------------------------
-| ``rec_fun box:[int] heights->[[int]]`` Defined in line number 102.
-| 
-| 
-
 .. _all_h_rootdatum_rd->[(vec,rat)]1:
 
 all_H
 -------------------------------------------------
-| ``all_H:RootDatum rd->[(vec,rat)]`` Defined in line number 111.
+| ``all_H:RootDatum rd->[(vec,rat)]`` Defined in line number 95.
 | 
 | 
 
@@ -160,7 +136,7 @@ all_H
 
 all_H_dimensions
 -------------------------------------------------
-| ``all_H_dimensions:RootDatum rd->[int]`` Defined in line number 124.
+| ``all_H_dimensions:RootDatum rd->[int]`` Defined in line number 108.
 | 
 | 
 
@@ -168,7 +144,7 @@ all_H_dimensions
 
 sort_by
 -------------------------------------------------
-| ``sort_by:((ratvec, [vec])-> int) f->([(ratvec,[vec])] v) [(ratvec,[vec])]`` Defined in line number 129.
+| ``sort_by:((ratvec, [vec])-> int) f->([(ratvec,[vec])] v) [(ratvec,[vec])]`` Defined in line number 113.
 | 
 | 
 
@@ -176,7 +152,7 @@ sort_by
 
 find_H
 -------------------------------------------------
-| ``find_H:Parabolic P->[(vec,[vec])]`` Defined in line number 149.
+| ``find_H:Parabolic P->[(vec,[vec])]`` Defined in line number 133.
 | 
 | 
 
@@ -184,7 +160,7 @@ find_H
 
 max_only
 -------------------------------------------------
-| ``max_only:[(vec,[vec])] arg->[(vec,[vec])]`` Defined in line number 168.
+| ``max_only:[(vec,[vec])] arg->[(vec,[vec])]`` Defined in line number 152.
 | 
 | 
 
@@ -192,7 +168,7 @@ max_only
 
 <=
 -------------------------------------------------
-| ``<=:[int] a,[int] b->all(for i`` Defined in line number 229.
+| ``<=:[int] a,[int] b->all(for i`` Defined in line number 213.
 | 
 | 
 
@@ -200,7 +176,7 @@ max_only
 
 principal_block
 -------------------------------------------------
-| ``principal_block:RealForm G->Block`` Defined in line number 232.
+| ``principal_block:RealForm G->Block`` Defined in line number 216.
 | 
 | 
 
@@ -208,7 +184,7 @@ principal_block
 
 real_form
 -------------------------------------------------
-| ``real_form:Block B->RealForm`` Defined in line number 252.
+| ``real_form:Block B->RealForm`` Defined in line number 236.
 | 
 | 
 
@@ -216,7 +192,7 @@ real_form
 
 rho
 -------------------------------------------------
-| ``rho:Block B->ratvec`` Defined in line number 253.
+| ``rho:Block B->ratvec`` Defined in line number 237.
 | 
 | 
 
@@ -224,7 +200,7 @@ rho
 
 choose_gamma
 -------------------------------------------------
-| ``choose_gamma:KGBElt x,KGBElt y->ratvec`` Defined in line number 256.
+| ``choose_gamma:KGBElt x,KGBElt y->ratvec`` Defined in line number 240.
 | 
 | 
 
@@ -232,7 +208,7 @@ choose_gamma
 
 choose_gamma
 -------------------------------------------------
-| ``choose_gamma:Block B->ratvec`` Defined in line number 259.
+| ``choose_gamma:Block B->ratvec`` Defined in line number 243.
 | 
 | 
 
@@ -240,7 +216,7 @@ choose_gamma
 
 convert_list_W_cells
 -------------------------------------------------
-| ``convert_list_W_cells:Block B,ratvec gamma,[[int]] Wcells->[[Param]]`` Defined in line number 265.
+| ``convert_list_W_cells:Block B,ratvec gamma,[[int]] Wcells->[[Param]]`` Defined in line number 249.
 | 
 | 
 
@@ -248,7 +224,7 @@ convert_list_W_cells
 
 tau_invariants
 -------------------------------------------------
-| ``tau_invariants:Block B->[[int]]`` Defined in line number 273.
+| ``tau_invariants:Block B->[[int]]`` Defined in line number 257.
 | 
 | 
 
@@ -256,7 +232,7 @@ tau_invariants
 
 tau_invariants_of_cell
 -------------------------------------------------
-| ``tau_invariants_of_cell:Block B, [int] cell->[(int,[int])]`` Defined in line number 277.
+| ``tau_invariants_of_cell:Block B, [int] cell->[(int,[int])]`` Defined in line number 261.
 | 
 | 
 
@@ -264,7 +240,7 @@ tau_invariants_of_cell
 
 tau_invariants_of_cell_raw
 -------------------------------------------------
-| ``tau_invariants_of_cell_raw:Block B, [int] cell->[[int]]`` Defined in line number 281.
+| ``tau_invariants_of_cell_raw:Block B, [int] cell->[[int]]`` Defined in line number 265.
 | 
 | 
 
@@ -272,7 +248,7 @@ tau_invariants_of_cell_raw
 
 tau_containing
 -------------------------------------------------
-| ``tau_containing:Block B,[int] P->[int]`` Defined in line number 285.
+| ``tau_containing:Block B,[int] P->[int]`` Defined in line number 269.
 | 
 | 
 
@@ -280,7 +256,7 @@ tau_containing
 
 is_Aq
 -------------------------------------------------
-| ``is_Aq:Param p->bool`` Defined in line number 290.
+| ``is_Aq:Param p->bool`` Defined in line number 274.
 | 
 | 
 
@@ -288,7 +264,7 @@ is_Aq
 
 Blocku
 -------------------------------------------------
-| ``Blocku:RealForm G->[int]`` Defined in line number 300.
+| ``Blocku:RealForm G->[int]`` Defined in line number 284.
 | 
 | 
 
@@ -296,7 +272,7 @@ Blocku
 
 is_Aq_cell
 -------------------------------------------------
-| ``is_Aq_cell:Block B,[int] C->bool`` Defined in line number 305.
+| ``is_Aq_cell:Block B,[int] C->bool`` Defined in line number 289.
 | 
 | 
 
@@ -304,7 +280,7 @@ is_Aq_cell
 
 is_Aq
 -------------------------------------------------
-| ``is_Aq:Block B,int i->bool`` Defined in line number 308.
+| ``is_Aq:Block B,int i->bool`` Defined in line number 292.
 | 
 | 
 

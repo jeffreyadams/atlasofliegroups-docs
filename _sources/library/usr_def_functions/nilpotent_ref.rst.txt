@@ -8,7 +8,7 @@ nilpotent.at Function References
 
 get_type
 -------------------------------------------------
-| ``get_type:LieType t->int`` Defined in line number 17.
+| ``get_type:LieType t->int`` Defined in line number 19.
 | 
 | 
 
@@ -16,7 +16,7 @@ get_type
 
 get_type
 -------------------------------------------------
-| ``get_type:RootDatum rd->int`` Defined in line number 28.
+| ``get_type:RootDatum rd->int`` Defined in line number 30.
 | 
 | 
 
@@ -24,7 +24,7 @@ get_type
 
 get_type
 -------------------------------------------------
-| ``get_type:RealForm G->int`` Defined in line number 29.
+| ``get_type:RealForm G->int`` Defined in line number 31.
 | 
 | 
 
@@ -32,7 +32,7 @@ get_type
 
 partition_multiplicities
 -------------------------------------------------
-| ``partition_multiplicities:[int] p->vec`` Defined in line number 58.
+| ``partition_multiplicities:[int] p->vec`` Defined in line number 60.
 | 
 | 
 
@@ -40,7 +40,7 @@ partition_multiplicities
 
 partitions_parity
 -------------------------------------------------
-| ``partitions_parity:int n, int parity->[[int]]`` Defined in line number 66.
+| ``partitions_parity:int n, int parity->[[int]]`` Defined in line number 68.
 | 
 | 
 
@@ -48,7 +48,7 @@ partitions_parity
 
 nilpotent_orbits
 -------------------------------------------------
-| ``nilpotent_orbits:LieType t->[[int]]`` Defined in line number 79.
+| ``nilpotent_orbits:LieType t->[[int]]`` Defined in line number 81.
 | 
 | 
 
@@ -56,7 +56,7 @@ nilpotent_orbits
 
 nilpotent_orbits
 -------------------------------------------------
-| ``nilpotent_orbits:RootDatum rd->[[int]]`` Defined in line number 89.
+| ``nilpotent_orbits:RootDatum rd->[[int]]`` Defined in line number 91.
 | 
 | 
 
@@ -64,7 +64,7 @@ nilpotent_orbits
 
 nilpotent_orbits
 -------------------------------------------------
-| ``nilpotent_orbits:RealForm G->[[int]]`` Defined in line number 90.
+| ``nilpotent_orbits:RealForm G->[[int]]`` Defined in line number 92.
 | 
 | 
 
@@ -72,7 +72,7 @@ nilpotent_orbits
 
 is_valid
 -------------------------------------------------
-| ``is_valid:string type,[int] P->bool`` Defined in line number 93.
+| ``is_valid:string type,[int] P->bool`` Defined in line number 95.
 | 
 | 
 
@@ -80,7 +80,7 @@ is_valid
 
 is_valid
 -------------------------------------------------
-| ``is_valid:LieType t,[int] P->bool`` Defined in line number 103.
+| ``is_valid:LieType t,[int] P->bool`` Defined in line number 105.
 | 
 | 
 
@@ -88,7 +88,7 @@ is_valid
 
 dual_nilpotent_orbits
 -------------------------------------------------
-| ``dual_nilpotent_orbits:RootDatum rd->[[int]]`` Defined in line number 106.
+| ``dual_nilpotent_orbits:RootDatum rd->[[int]]`` Defined in line number 108.
 | 
 | 
 
@@ -96,7 +96,7 @@ dual_nilpotent_orbits
 
 dual_nilpotent_orbits
 -------------------------------------------------
-| ``dual_nilpotent_orbits:RealForm G->[[int]]`` Defined in line number 107.
+| ``dual_nilpotent_orbits:RealForm G->[[int]]`` Defined in line number 109.
 | 
 | 
 
@@ -104,7 +104,7 @@ dual_nilpotent_orbits
 
 rho
 -------------------------------------------------
-| ``rho:int n->[rat]: for k`` Defined in line number 111.
+| ``rho:int n->[rat]: for k`` Defined in line number 113.
 | 
 | 
 
@@ -112,7 +112,7 @@ rho
 
 String
 -------------------------------------------------
-| ``String:int n->[rat]: for k`` Defined in line number 112.
+| ``String:int n->[rat]: for k`` Defined in line number 114.
 | 
 | 
 
@@ -120,7 +120,7 @@ String
 
 nilpotent_lambda
 -------------------------------------------------
-| ``nilpotent_lambda:LieType t,[int] P->ratvec`` Defined in line number 117.
+| ``nilpotent_lambda:LieType t,[int] P->ratvec`` Defined in line number 119.
 | 
 | 
 
@@ -128,7 +128,7 @@ nilpotent_lambda
 
 nilpotent_lambda
 -------------------------------------------------
-| ``nilpotent_lambda:RootDatum rd,[int] p->ratvec`` Defined in line number 127.
+| ``nilpotent_lambda:RootDatum rd,[int] p->ratvec`` Defined in line number 129.
 | 
 | 
 
@@ -136,15 +136,7 @@ nilpotent_lambda
 
 nilpotent_lambdas_E
 -------------------------------------------------
-| ``nilpotent_lambdas_E:int n->[ratvec]`` Defined in line number 305.
-| 
-| 
-
-.. _nilpotent_lambdas_rootdatum_rd->[ratvec]1:
-
-nilpotent_lambdas
--------------------------------------------------
-| ``nilpotent_lambdas:RootDatum rd->[ratvec]`` Defined in line number 317.
+| ``nilpotent_lambdas_E:int n->[ratvec]`` Defined in line number 307.
 | 
 | 
 
@@ -152,7 +144,7 @@ nilpotent_lambdas
 
 nilpotent_lambdas
 -------------------------------------------------
-| ``nilpotent_lambdas:RealForm G->[ratvec]`` Defined in line number 330.
+| ``nilpotent_lambdas:RealForm G->[ratvec]`` Defined in line number 365.
 | 
 | 
 

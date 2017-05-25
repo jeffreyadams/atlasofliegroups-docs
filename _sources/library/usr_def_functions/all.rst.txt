@@ -18,9 +18,12 @@ all.at
 | :ref:`elliptic_elements.at<elliptic_elements.at>`
 | :ref:`tits.at<tits.at>`
 | :ref:`dual.at<dual.at>`
-| :ref:`all_Kparameters.at<all_Kparameters.at>`
+| :ref:`all_parameters.at<all_parameters.at>`
 | :ref:`coordinates.at<coordinates.at>`
 | :ref:`print_K_types.at<print_K_types.at>`
+| :ref:`galois.at<galois.at>`
+| :ref:`jantzen.at<jantzen.at>`
+| :ref:`finite_dimensional_signature.at<finite_dimensional_signature.at>`
 |
 
 

@@ -16,10 +16,6 @@ Functions
      - Argument(s) -> Results
    * - :ref:`sort_by_height_parampol_p->[(split,param)]1`
      - ``ParamPol P->[(Split,Param)]``
-   * - :ref:`branch_std_param_p,_int_bound->parampol1`
-     - ``Param p, int bound->ParamPol``
-   * - :ref:`branch_std_parampol_p,int_bound->parampol1`
-     - ``ParamPol P,int bound->ParamPol``
    * - :ref:`branch_irr_param_p,_int_bound->parampol1`
      - ``Param p, int bound->ParamPol``
    * - :ref:`branch_irr_parampol_p,int_bound->parampol1`
@@ -28,6 +24,10 @@ Functions
      - ``Param p_K,Param p->int``
    * - :ref:`mult_irr_param_p_k,param_p->int1`
      - ``Param p_K,Param p->int``
+   * - :ref:`mult_std_param_p_k,_parampol_p->split1`
+     - ``Param p_K, ParamPol P->Split``
+   * - :ref:`mult_irr_param_p_k,_parampol_p->split1`
+     - ``Param p_K, ParamPol P->Split``
    * - :ref:`k_signature_irr_param_p,int_bound->(parampol,parampol)1`
      - ``Param p,int bound->(ParamPol,ParamPol)``
    * - :ref:`signed_mult_param_p_k,param_p->(int,int)1`
