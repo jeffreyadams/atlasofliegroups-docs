@@ -42,7 +42,7 @@ Now, let us find the cuspidal data for``t`` ::
     1*final parameter (x=2,lambda=[1]/1,nu=[1]/1)
     atlas> 
 
-Recall that the Cartan for this parameter is the split Cartan::
+Recall that the Cartan subgroup for this parameter is the split Cartan subgroup::
 
     atlas> set x=x(t)
     Variable x: KGBElt
@@ -60,7 +60,7 @@ Recall that the Cartan for this parameter is the split Cartan::
     real root system: A1
     complex factor: empty
 
-So, we can extract the character of the Cartan by finding the Cuspidal
+So, we can extract the character of the Cartan subgroup by finding the Cuspidal
 data for the representation with parameter ``t``. 
 
 The standard representation containing the trivial is induced from a

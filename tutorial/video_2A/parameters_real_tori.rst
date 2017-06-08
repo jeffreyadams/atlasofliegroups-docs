@@ -92,7 +92,7 @@ So the characters of :math:`H(\mathbb R )` are parametrized by triples
 Q]^{-\theta}`.
  
 So ``lambda`` is a character on :math:`H^\theta` and ``nu`` gives the
-character on the Lie algebra of the split Cartan
+character on the Lie algebra of the split Cartan subgroup
 :math:`A=H^{-\theta}`.
 
 In the case of the circle, ``lambda`` is in :math:`\mathbb Z/(1-\theta
@@ -264,10 +264,5 @@ On the other hand, we can change lambda::
 As we would expect since these two representations are equivalent modulo :math:`1-\theta`
 
 So, The representations of :math:`{\mathbb C}^{\times}` are given by :math:`{\mathbb Z}^2 /(1-\theta) {\mathbb Z}^2` and :math:`\mathbb Q`
-
-
-
-
-
 
 

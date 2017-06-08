@@ -22,7 +22,7 @@ Let us consider again the case of ``SL(2,R)`` and the trivial representation.::
 So the parameter for the trivial representation contains information
 of the Cartan subgroup and its cartan involution, $\theta$, encoded in
 the $K\\G/B$ element ``x``. In this case $\theta=-1$. This means it
-is the split Cartan, which is isomorphic to ${\mathbb R }^x$
+is the split Cartan subgroup, which is isomorphic to ${\mathbb R }^x$
 
 We also have encoded information about he character which, as we saw in the
 section on characters of real tori, is given by ``lambda`` and

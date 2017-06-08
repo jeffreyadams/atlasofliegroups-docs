@@ -1,14 +1,14 @@
 Occurrence Matrices
 ====================
 
-We mentionned before that a Cartan may appear in different real forms
+We mentionned before that a Cartan subgroup may appear in different real forms
 of an inner class. More precisely, for a given inner class there
-is a fixed set of Cartans which may ar may not appear in the different
+is a fixed set of Cartan subgroups which may or may not appear in the different
 real forms associated to this inner class. If we ask for the number
 of Cartan classes of real form :math:`G`, we get the same number regardless of which
 real form in the inner class we are using. This can be misleading unless we
 understand what the software is doing. This is because ``atlas`` is
-implicitly assuming that you are asking for the number of Cartans in
+implicitly assuming that you are asking for the number of Cartan subgroups in
 the inner class of these real forms. For example::
 
    atlas> set G=SO(5,4)
@@ -21,7 +21,7 @@ the inner class of these real forms. For example::
    Value: 9
    atlas>
 
-So, to find out which Cartans appear in each individual real form there is an ``occurrence matrix``::
+So, to find out which Cartan subgroups appear in each individual real form there is an ``occurrence matrix``::
 
     atlas> occurrence_matrix (G)
     Value: 
@@ -47,10 +47,10 @@ this inner class can be listed as follows::
 
 Remember that we type ``void:`` to avoid getting the empty values ``[(),(),(),(),()]``
 
-So, the occurrence matrix says that all 9 Cartans appear in the split
-form :math:`SO(5,4)`, that only the compact Cartan appears in the compact real
-form :math:`SO(9,0)`, that :math:`SO(6,3)` has only 6 Cartans, etc. Also note that the
-Compact Cartan appears in all real forms but the split Cartan only
+So, the occurrence matrix says that all 9 Cartan subgroups appear in the split
+form :math:`SO(5,4)`, that only the compact Cartan subgroup appears in the compact real
+form :math:`SO(9,0)`, that :math:`SO(6,3)` has only 6 Cartan subgroups, etc. Also note that the
+Compact Cartan subgroup appears in all real forms but the split Cartan subgroup only
 appears in the split real form.
 
 

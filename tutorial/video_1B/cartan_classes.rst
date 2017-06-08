@@ -38,23 +38,23 @@ Now, one of the main structural facts about a group is what its Cartan subgroups
 
 Wich gives us the number of conjugacy classes of Cartan subgroups of :math:`G`
 and choosing one of those subgroups atlas gives more information about
-the Cartan. The function ``print_Cartan_info`` takes a Cartan class in
+the Cartan subgroup. The function ``print_Cartan_info`` takes a Cartan class in
 :math:`G` and provides the basic structural data of any representative
 in the Cartan class.
 
-So this says that the first Cartan is a real cartan subgroup, meaning
+So this says that the first Cartan subgroup is a real cartan subgroup, meaning
 a connected complex torus defined over :math:`\mathbb R`. So, its real
 points form a real torus which can be written as a product of
 :math:`(S^1)^a`, :math:`({\mathbb C}^{\times })^b` and
 :math:`({\mathbb R}^{\times })^c` factors. So, atlas gives the numbers
-``(a,b,c)``. In this case the first Cartan has just ``a=1`` circle
+``(a,b,c)``. In this case the first Cartan subgroup has just ``a=1`` circle
 factor, ``b=0`` complex factors and ``c=0`` real factors.
 
 It also tells us the type of roots it has: imaginary, complex or
-real. Since the Cartan is compact, we only have imaginary roots. And
+real. Since the Cartan subgroup is compact, we only have imaginary roots. And
 these roots form a system of type ``A1``.
 
-Note that we also see that this Cartan occurs in different real forms
+Note that we also see that this Cartan subgroup occurs in different real forms
 of complex groups of type ``A1``. The information about twisted involutions will be discussed later.
 
 Now for information about the second Cartan subgroup::
@@ -72,7 +72,7 @@ Now for information about the second Cartan subgroup::
     complex factor: empty
     atlas>
 
-Here, the Cartan has just 1 copy of :math:`{\mathbb R}^{\times }` and
+Here, the Cartan subgroup has just 1 copy of :math:`{\mathbb R}^{\times }` and
 no complex or circle factors. And it just has real roots of type
 ``A1``. We will discuss later the information about involutions.
 
@@ -103,14 +103,14 @@ its roots are imaginary; a split cartan, that is, a product of
 real; and two intermediate cartans; one complex isomorphic to
 :math:`{\mathbb C}^{\times }`. This is sometimes called the short root
 Cartan. This is the one associated to a Levi factor :math:`Gl(2)`.
-Finally, the other Cartan is isomorphic to :math:`S^1×{\mathbb
-R}^{\times }`. The distinction between these two Cartans is subtle. Locally
-they are both isomorphic rank one Cartans and look like
-:math:`S^1×{\mathbb R}^{\times }`. But, one is :math:`{\mathbb C}^{\times }` and ``atlas`` can
-distinguish the two.
+Finally, the other Cartan subgroup is isomorphic to
+:math:`S^1×{\mathbb R}^{\times }`. The distinction between these two
+Cartan subgroups is subtle. Locally they are both isomorphic rank one
+Cartan subgroups and look like :math:`S^1×{\mathbb R}^{\times }`. But, one is
+:math:`{\mathbb C}^{\times }` and ``atlas`` can distinguish the two.
 
-The root systems of these intermediate Cartans also transform accordingly. 
-For the Compact Cartan we have an imaginary root system of type ``C2``::
+The root systems of these intermediate Cartan subgroups also transform accordingly. 
+For the Compact Cartan subgroup we have an imaginary root system of type ``C2``::
 
     atlas> set G1=Sp(4,R)
     Identifier G1: RealForm
@@ -129,7 +129,7 @@ For the Compact Cartan we have an imaginary root system of type ``C2``::
     real root system: empty
     complex factor: empty
     
-Now for the most split Cartan, the last one, all of the roots are real::
+Now for the most split Cartan subgroup, the last one, all of the roots are real::
 
     atlas> print_Cartan_info (cartans[3])
     compact: 0, complex: 0, split: 2
@@ -140,7 +140,7 @@ Now for the most split Cartan, the last one, all of the roots are real::
     complex factor: empty
     atlas>
 
-For the complex intermidiate Cartan, we have an imaginary root system and a real root system, both of type ``A1``::
+For the complex intermidiate Cartan subgroup, we have an imaginary root system and a real root system, both of type ``A1``::
 
     atlas> cartans[1]
     Value: Cartan class #1, occurring for 2 real forms and for 1 dual real form
@@ -153,7 +153,7 @@ For the complex intermidiate Cartan, we have an imaginary root system and a real
     complex factor: empty
     atlas>
 
-Lastly, the other intermidiate Cartan has also an imaginary and a real root system of type ``A1``::
+Lastly, the other intermidiate Cartan subgroup has also an imaginary and a real root system of type ``A1``::
 
     atlas> cartans[2]
     Value: Cartan class #2, occurring for 1 real form and for 2 dual real forms
