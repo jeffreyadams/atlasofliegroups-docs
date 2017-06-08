@@ -1174,7 +1174,7 @@ are the group <span class="math">\(PSL(2, \mathbb R ) \cong SO(2,1)\)</span>:</p
 <p>Note we can use <code class="docutils literal"><span class="pre">rho(G)</span></code> instead of the vector value for
 <span class="math">\(\rho\ \)</span>.  The parameters for this group are almost like those
 for <span class="math">\(SL(2,\mathbb R)\)</span>, except that the Weyl group of the compact
-Cartan has changed and the number of parameters is now just three:</p>
+Cartan subgroup has changed and the number of parameters is now just three:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="c1">#parameters</span>
 <span class="n">Value</span><span class="p">:</span> <span class="mi">3</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">parameters</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="n">od</span>
@@ -1186,7 +1186,7 @@ Cartan has changed and the number of parameters is now just three:</p>
 </div>
 <p>We still have two principal series with infinitesimal character
 <span class="math">\(\rho\)</span>. But we now only have one discrete series representation
-associated to the compact Cartan, namely the sum of the two discrete
+associated to the compact Cartan subgroup, namely the sum of the two discrete
 series for <span class="math">\(SL(2,\mathbb R)\)</span> are now a single irreducible
 representation of <span class="math">\(PSL(2, \mathbb R )\)</span>.</p>
 <p>Now let us look at the trivial representation</p>
@@ -1221,9 +1221,9 @@ representation of <span class="math">\(PSL(2, \mathbb R )\)</span>.</p>
 <p>So, this induced representation for <span class="math">\(PSL(2,\mathbb R )\)</span> has two
 factors: the trivial representation (with <code class="docutils literal"><span class="pre">x=1</span></code> and
 <span class="math">\(\lambda=\nu=\rho\)</span> ) and a discrete series (with <code class="docutils literal"><span class="pre">x=0</span></code>).</p>
-<p>What is the other principal series attached to the split Cartan?  For
+<p>What is the other principal series attached to the split Cartan subgroup?  For
 <span class="math">\(SL(2,\mathbb R )\)</span> the other representation attached to the
-split Cartan was an infinite demensional irreducible principal
+split Cartan subgroup was an infinite demensional irreducible principal
 series. However here we have:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">:</span><span class="n">parameters</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 <span class="n">Variable</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span>

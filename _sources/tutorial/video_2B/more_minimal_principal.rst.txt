@@ -74,7 +74,7 @@ Also, :math:`G` does not have to be split either::
    final parameter (x=17,lambda=[3,1,-1,-3]/2,nu=[1,1,-1,-1]/1)
    final parameter (x=20,lambda=[3,1,-1,-3]/2,nu=[3,1,-1,-3]/2)
 
-Recall the all Cartans of :math:`U(2,2)` are connected. And we can find the information on the Cartan associated to each parameter as follows:: 
+Recall the all Cartan subgroups of :math:`U(2,2)` are connected. And we can find the information on the Cartan subgroup associated to each parameter as follows:: 
 
    atlas> set p=ps[0]
    Variable p: Param
@@ -90,10 +90,10 @@ Recall the all Cartans of :math:`U(2,2)` are connected. And we can find the info
    complex factor: A1
    atlas>
 
-This is the most split Cartan in :math:`U(2,2)`. It is just two copies
+This is the most split Cartan subgroup in :math:`U(2,2)`. It is just two copies
 of :math`{\mathbb C}^x. So it is connected. In fact this group has
 three minimal principal series not comming from the disconnectedness
-of the Cartan but from the Weyl group. We will address this later.
+of the Cartan subgroup but from the Weyl group. We will address this later.
 
 
 Now let us look at another command::
@@ -104,10 +104,10 @@ Now let us look at another command::
 
 In other words, we hand in a Cartan Class, a real form and rational
 vector and we obtain all the parameters with that infinitesimal
-character coming from that Cartan. First we need a different syntax to
+character coming from that Cartan subgroup. First we need a different syntax to
 define our Cartan class. Note that above we picked a Cartan class
 associated to a parameter ``p``. Here we want to take a particular
-Cartan class, for example Cartan number 1 in the list of Cartan
+Cartan class, for example Cartan subgroup number 1 in the list of Cartan
 classes for :math:`G`::
 
    atlas> G:=Sp(4,R)
@@ -161,7 +161,7 @@ Another example::
    atlas>
 
 So this is a list of representations which are similar and coming from
-the same Cartan. So, we can study a representation by looking at similar ones and comparing them.
+the same Cartan subgroup. So, we can study a representation by looking at similar ones and comparing them.
 
 Another useful command helps you find all parameters with the same differential::
 
@@ -177,4 +177,4 @@ Another useful command helps you find all parameters with the same differential:
    final parameter (x=8,lambda=[2,0]/1,nu=[2,0]/1)
    atlas>
 
-This Cartan has two connected components. So if you hand in a parameter for this Cartan, the total number of parameters with the same differential is two and this commands gives the list of all of them
+This Cartan subgroup has two connected components. So if you hand in a parameter for this subgroup, the total number of parameters with the same differential is two and this commands gives the list of all of them

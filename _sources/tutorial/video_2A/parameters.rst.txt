@@ -86,7 +86,7 @@ Let's review a few things we know about :math:`SL(2,\mathbb R)`::
       atlas>
 
 
-So, the split form of type ``A1`` has two Cartans, the compact one,
+So, the split form of type ``A1`` has two Cartan subgroups, the compact one,
 :math:`T=S^1` and the split one, :math:`A={\mathbb R}^{\times }`.
 
 Now, the characters for :math:`T` are of the form :math:`e^{ik\theta}`
@@ -102,7 +102,7 @@ In this case ``-1`` is in the Weyl group of :math:`A`. So, up to conjugacy, we
 have that :math:`{\widehat A} \rightarrow \{ x, |x| \}`.
 
 This says that we have exactly four representations of :math:`SL(2,\mathbb R)`
-with infinitesimal character ``rho``; two from each Cartan.
+with infinitesimal character ``rho``; two from each Cartan subgroup.
 
 Let us look for those representations of :math:`SL(2,\mathbb R)`. The command
 ``parameters_gamma (G,[1])`` looks for all the parameters of :math:`G`
@@ -125,10 +125,10 @@ infinitesimal character ``rho``. Each parameter is a triple. ``(x,
 lambda, nu)``. We will explain each of these later. But for now we can
 say that the representation theory of :math:`SL(2,\mathbb R)` tells us that there
 are four representations with infinitesimal character ``rho``. Two of
-them are the discrete series associated to the compact Cartan and
+them are the discrete series associated to the compact Cartan subgroup and
 correspond to the two parameters above with ``nu=0``; the other two
 are the trivial representation and an irreducible principal series;
-both, attached to the split Cartan and correspond to the parameters
+both, attached to the split Cartan subgroup and correspond to the parameters
 with ``nu=1``.
 
 We will say more about the representations of :math:`SL(2,\mathbb R)` later. But,

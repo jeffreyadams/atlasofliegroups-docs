@@ -29,7 +29,7 @@ elements 5 and 6 and the fiber corresponding to the element ``1x2^e``
 are elements ``7`` and ``8``.  Here ``2^e`` is just Cayley transform by
 :math:`{\alpha}_2`, whereas ``1x2^e`` corresponds to conjugation by :math:`{\alpha}_1` composed with the Cayley transform by :math:`{\alpha}_2`.
 
-Let us recall which Cartan subgroups and Weyl groups correspond to each fibre::
+Let us recall which Cartan subgroups and Weyl groups correspond to each fiber::
 
    atlas> set H=Cartan_class(G,0)
    Variable H: CartanClass (overriding previous instance, which had type string (constant))
@@ -42,7 +42,7 @@ Let us recall which Cartan subgroups and Weyl groups correspond to each fibre::
    complex factor: empty
    atlas>
 
-As we know this is the Compact Cartan subgroup associated to the distinguished fibre::
+As we know this is the Compact Cartan subgroup associated to the distinguished fiber::
 
    atlas> print_real_Weyl (G,H)
    real weyl group is W^C.((A.W_ic) x W^R), where:

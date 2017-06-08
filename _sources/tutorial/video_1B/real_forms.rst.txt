@@ -34,7 +34,7 @@ Cartan Classes Accross Real Forms
 Now something interesting about real forms and Cartan classes is that
 The Cartan classes are the same across all real forms of the same
 complex group. In fact even though within the compact real form there
-is only one conjugacy class of Cartans, we will have the same Cartan
+is only one conjugacy class of Cartan subgroups, we will have the same Cartan
 classes for :math:`G=Sp(2)` than for :math:`G=Sp(4,\mathbb R)`.::
 
     atlas> rf[0]
@@ -104,7 +104,7 @@ has the rest of the real forms of :math:`\mathfrak{sl}(5,\mathbb C)`::
     atlas>
 
 So, these three real groups are grouped together because they are all
-in the same inner class. Note that they all have a compact Cartan,
+in the same inner class. Note that they all have a compact Cartan subgroup,
 whereas :math:`SL(5,\mathbb R)` does not. Also, the same result is
 achieved if we choose :math:`H` to be either of the other two groups
 in the above list. The distinguished involution for :math:`H=SU(3,2)`

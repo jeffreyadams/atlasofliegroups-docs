@@ -1223,7 +1223,7 @@ atlas&gt;
 <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Recall the all Cartans of <span class="math">\(U(2,2)\)</span> are connected. And we can find the information on the Cartan associated to each parameter as follows:</p>
+<p>Recall the all Cartan subgroups of <span class="math">\(U(2,2)\)</span> are connected. And we can find the information on the Cartan subgroup associated to each parameter as follows:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; set p=ps[0]
 Variable p: Param
 atlas&gt; H:=Cartan_class(p)
@@ -1239,10 +1239,10 @@ complex factor: A1
 atlas&gt;
 </pre></div>
 </div>
-<p>This is the most split Cartan in <span class="math">\(U(2,2)\)</span>. It is just two copies
+<p>This is the most split Cartan subgroup in <span class="math">\(U(2,2)\)</span>. It is just two copies
 of :math`{mathbb C}^x. So it is connected. In fact this group has
 three minimal principal series not comming from the disconnectedness
-of the Cartan but from the Weyl group. We will address this later.</p>
+of the Cartan subgroup but from the Weyl group. We will address this later.</p>
 <p>Now let us look at another command:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype all_parameters_Cartan_gamma ?
 Overloaded instances of &#39;all_parameters_Cartan_gamma&#39;
@@ -1251,10 +1251,10 @@ Overloaded instances of &#39;all_parameters_Cartan_gamma&#39;
 </div>
 <p>In other words, we hand in a Cartan Class, a real form and rational
 vector and we obtain all the parameters with that infinitesimal
-character coming from that Cartan. First we need a different syntax to
+character coming from that Cartan subgroup. First we need a different syntax to
 define our Cartan class. Note that above we picked a Cartan class
 associated to a parameter <code class="docutils literal"><span class="pre">p</span></code>. Here we want to take a particular
-Cartan class, for example Cartan number 1 in the list of Cartan
+Cartan class, for example Cartan subgroup number 1 in the list of Cartan
 classes for <span class="math">\(G\)</span>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; G:=Sp(4,R)
 Value: connected split real group with Lie algebra &#39;sp(4,R)&#39;
@@ -1308,7 +1308,7 @@ atlas&gt;
 </pre></div>
 </div>
 <p>So this is a list of representations which are similar and coming from
-the same Cartan. So, we can study a representation by looking at similar ones and comparing them.</p>
+the same Cartan subgroup. So, we can study a representation by looking at similar ones and comparing them.</p>
 <p>Another useful command helps you find all parameters with the same differential:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="o">=</span> <span class="n">params</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
@@ -1323,7 +1323,7 @@ the same Cartan. So, we can study a representation by looking at similar ones an
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>This Cartan has two connected components. So if you hand in a parameter for this Cartan, the total number of parameters with the same differential is two and this commands gives the list of all of them</p>
+<p>This Cartan subgroup has two connected components. So if you hand in a parameter for this subgroup, the total number of parameters with the same differential is two and this commands gives the list of all of them</p>
 </div>
 
 

@@ -1189,20 +1189,20 @@ atlas&gt;
 </div>
 <p>Wich gives us the number of conjugacy classes of Cartan subgroups of <span class="math">\(G\)</span>
 and choosing one of those subgroups atlas gives more information about
-the Cartan. The function <code class="docutils literal"><span class="pre">print_Cartan_info</span></code> takes a Cartan class in
+the Cartan subgroup. The function <code class="docutils literal"><span class="pre">print_Cartan_info</span></code> takes a Cartan class in
 <span class="math">\(G\)</span> and provides the basic structural data of any representative
 in the Cartan class.</p>
-<p>So this says that the first Cartan is a real cartan subgroup, meaning
+<p>So this says that the first Cartan subgroup is a real cartan subgroup, meaning
 a connected complex torus defined over <span class="math">\(\mathbb R\)</span>. So, its real
 points form a real torus which can be written as a product of
 <span class="math">\((S^1)^a\)</span>, <span class="math">\(({\mathbb C}^{\times })^b\)</span> and
 <span class="math">\(({\mathbb R}^{\times })^c\)</span> factors. So, atlas gives the numbers
-<code class="docutils literal"><span class="pre">(a,b,c)</span></code>. In this case the first Cartan has just <code class="docutils literal"><span class="pre">a=1</span></code> circle
+<code class="docutils literal"><span class="pre">(a,b,c)</span></code>. In this case the first Cartan subgroup has just <code class="docutils literal"><span class="pre">a=1</span></code> circle
 factor, <code class="docutils literal"><span class="pre">b=0</span></code> complex factors and <code class="docutils literal"><span class="pre">c=0</span></code> real factors.</p>
 <p>It also tells us the type of roots it has: imaginary, complex or
-real. Since the Cartan is compact, we only have imaginary roots. And
+real. Since the Cartan subgroup is compact, we only have imaginary roots. And
 these roots form a system of type <code class="docutils literal"><span class="pre">A1</span></code>.</p>
-<p>Note that we also see that this Cartan occurs in different real forms
+<p>Note that we also see that this Cartan subgroup occurs in different real forms
 of complex groups of type <code class="docutils literal"><span class="pre">A1</span></code>. The information about twisted involutions will be discussed later.</p>
 <p>Now for information about the second Cartan subgroup:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; set A=cartans[1]
@@ -1219,7 +1219,7 @@ complex factor: empty
 atlas&gt;
 </pre></div>
 </div>
-<p>Here, the Cartan has just 1 copy of <span class="math">\({\mathbb R}^{\times }\)</span> and
+<p>Here, the Cartan subgroup has just 1 copy of <span class="math">\({\mathbb R}^{\times }\)</span> and
 no complex or circle factors. And it just has real roots of type
 <code class="docutils literal"><span class="pre">A1</span></code>. We will discuss later the information about involutions.</p>
 <p>In contrast, the group <span class="math">\(SL(2,\mathbb C)\)</span> has only one conjugacy
@@ -1249,13 +1249,13 @@ its roots are imaginary; a split cartan, that is, a product of
 real; and two intermediate cartans; one complex isomorphic to
 <span class="math">\({\mathbb C}^{\times }\)</span>. This is sometimes called the short root
 Cartan. This is the one associated to a Levi factor <span class="math">\(Gl(2)\)</span>.
-Finally, the other Cartan is isomorphic to <span class="math">\(S^1×{\mathbb
-R}^{\times }\)</span>. The distinction between these two Cartans is subtle. Locally
-they are both isomorphic rank one Cartans and look like
-<span class="math">\(S^1×{\mathbb R}^{\times }\)</span>. But, one is <span class="math">\({\mathbb C}^{\times }\)</span> and <code class="docutils literal"><span class="pre">atlas</span></code> can
-distinguish the two.</p>
-<p>The root systems of these intermediate Cartans also transform accordingly.
-For the Compact Cartan we have an imaginary root system of type <code class="docutils literal"><span class="pre">C2</span></code>:</p>
+Finally, the other Cartan subgroup is isomorphic to
+<span class="math">\(S^1×{\mathbb R}^{\times }\)</span>. The distinction between these two
+Cartan subgroups is subtle. Locally they are both isomorphic rank one
+Cartan subgroups and look like <span class="math">\(S^1×{\mathbb R}^{\times }\)</span>. But, one is
+<span class="math">\({\mathbb C}^{\times }\)</span> and <code class="docutils literal"><span class="pre">atlas</span></code> can distinguish the two.</p>
+<p>The root systems of these intermediate Cartan subgroups also transform accordingly.
+For the Compact Cartan subgroup we have an imaginary root system of type <code class="docutils literal"><span class="pre">C2</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G1</span><span class="o">=</span><span class="n">Sp</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
 <span class="n">Identifier</span> <span class="n">G1</span><span class="p">:</span> <span class="n">RealForm</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G1</span>
@@ -1274,7 +1274,7 @@ For the Compact Cartan we have an imaginary root system of type <code class="doc
 <span class="nb">complex</span> <span class="n">factor</span><span class="p">:</span> <span class="n">empty</span>
 </pre></div>
 </div>
-<p>Now for the most split Cartan, the last one, all of the roots are real:</p>
+<p>Now for the most split Cartan subgroup, the last one, all of the roots are real:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">print_Cartan_info</span> <span class="p">(</span><span class="n">cartans</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
 <span class="n">compact</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">complex</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="n">split</span><span class="p">:</span> <span class="mi">2</span>
 <span class="n">canonical</span> <span class="n">twisted</span> <span class="n">involution</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span>
@@ -1285,7 +1285,7 @@ For the Compact Cartan we have an imaginary root system of type <code class="doc
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>For the complex intermidiate Cartan, we have an imaginary root system and a real root system, both of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
+<p>For the complex intermidiate Cartan subgroup, we have an imaginary root system and a real root system, both of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; cartans[1]
 Value: Cartan class #1, occurring for 2 real forms and for 1 dual real form
 atlas&gt; print_Cartan_info (cartans[1])
@@ -1298,7 +1298,7 @@ complex factor: empty
 atlas&gt;
 </pre></div>
 </div>
-<p>Lastly, the other intermidiate Cartan has also an imaginary and a real root system of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
+<p>Lastly, the other intermidiate Cartan subgroup has also an imaginary and a real root system of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; cartans[2]
 Value: Cartan class #2, occurring for 1 real form and for 2 dual real forms
 atlas&gt; print_Cartan_info (cartans[2])

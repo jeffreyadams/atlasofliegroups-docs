@@ -22,7 +22,7 @@ are the group :math:`PSL(2, \mathbb R ) \cong SO(2,1)`::
 Note we can use ``rho(G)`` instead of the vector value for
 :math:`\rho\ `.  The parameters for this group are almost like those
 for :math:`SL(2,\mathbb R)`, except that the Weyl group of the compact
-Cartan has changed and the number of parameters is now just three::
+Cartan subgroup has changed and the number of parameters is now just three::
 
     atlas> #parameters
     Value: 3
@@ -34,7 +34,7 @@ Cartan has changed and the number of parameters is now just three::
 
 We still have two principal series with infinitesimal character
 :math:`\rho`. But we now only have one discrete series representation
-associated to the compact Cartan, namely the sum of the two discrete
+associated to the compact Cartan subgroup, namely the sum of the two discrete
 series for :math:`SL(2,\mathbb R)` are now a single irreducible
 representation of :math:`PSL(2, \mathbb R )`.
 
@@ -70,9 +70,9 @@ So, this induced representation for :math:`PSL(2,\mathbb R )` has two
 factors: the trivial representation (with ``x=1`` and
 :math:`\lambda=\nu=\rho` ) and a discrete series (with ``x=0``).
 
-What is the other principal series attached to the split Cartan?  For
+What is the other principal series attached to the split Cartan subgroup?  For
 :math:`SL(2,\mathbb R )` the other representation attached to the
-split Cartan was an infinite demensional irreducible principal
+split Cartan subgroup was an infinite demensional irreducible principal
 series. However here we have::
 
    atlas> q:parameters[2]
