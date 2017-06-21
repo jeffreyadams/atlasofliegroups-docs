@@ -48,7 +48,9 @@ example,::
 Gives you the argument and output for the function ``inverse``. It
 says that the function takes a matrix and produces another matrix.
     
-Note: Remember that the command ``whattype`' without the question mark gives a data type. To get atlas to give you and argument you need to add the ``?`` ::
+Note: Remember that the command ``whattype`` without the question mark
+gives a data type. To get atlas to give you and argument you need to
+add the ``?`` ::
 
       atlas> whattype invert ?
       Overloaded instances of 'invert'
@@ -245,7 +247,7 @@ writes them concatenated into a single row::
    Value: [ 1, 2, 3, 4 ]
    atlas> 
 
-Again the command above that does this is a loop. The first part
+Again the command above is a loop. The first part
 says that the function takes a matrix and outputs a vector.  The
 second part defines an empty vector ``rv``. The third part is the loop that
 says that for each vector v in the matrix A, append it to what you
