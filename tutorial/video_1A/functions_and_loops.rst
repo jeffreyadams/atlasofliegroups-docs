@@ -99,7 +99,7 @@ matrix. Then we type::
 	error("Matrix not invertible over the integers") fi
 	atlas>
 
-Note that it also tells you in which .at file you can find the script
+Note that it also tells you in which ``.at`` file you can find the script
 of the function ::
 
      atlas> +@(string,string)
