@@ -30,26 +30,32 @@ We can also specify what the output will be by including it in the definition of
 
 More functions are defined in the ``.at`` files and we can copy and paste more complicated functions from there.
 
+In addition, for a quick search, recall that the atlas library within this doccumentation lists all the functions already available.
+
 Arguments and Outputs
 ---------------------
 
-To find out about the usage of a function you type ``whattype <function name> ?``. ``atlas`` will list all the instances where that function is used with the type of input and output for each case. For example,::
+To find out about the usage of a function you type ``whattype
+<function name> ?``. ``atlas`` will list all the instances where that
+function is used with the type of input and output for each case. For
+example,::
 
    atlas> whattype inverse ?
    Overloaded instances of 'inverse'
    mat->mat
    atlas>
 
-Gives you the argument and output for the function 'inverse'. It says that the function 'inverse' takes a matrix and produces another matrix.
+Gives you the argument and output for the function ``inverse``. It
+says that the function takes a matrix and produces another matrix.
     
-Note: Remember that the command `whattype' without the question mark gives a data type. To get atlas to give you and argument you need to add ``?``::
+Note: Remember that the command ``whattype`' without the question mark gives a data type. To get atlas to give you and argument you need to add the ``?`` ::
 
       atlas> whattype invert ?
       Overloaded instances of 'invert'
       mat->(mat,int)
       atlas>
 
-This says that the function 'invert' takes a matrix and gives back a pair of a matrix and an integer (See the section on Matrices for more information).
+This says that the function ``invert`` takes a matrix and gives back a pair of a matrix and an integer (See the section on Matrices for more information).
 
 To find all usages of the function ``+`` we do::
 
@@ -80,30 +86,37 @@ To find all usages of the function ``+`` we do::
    ((ParamPol,string),(ParamPol,string))->(ParamPol,string)
    atlas>
 
-Another command that tells us more about function usage for a given input is the command ``@``, which we use in the following format. suppose we want to know what the function inverse does to a matrix. Then we type::
+Another command that tells us more about function usage for a given
+input is the command ``@``, which we use in the following
+format. Suppose we want to know what the function inverse does to a
+matrix. Then we type::
 
 	atlas> inverse@mat
 	Value: Function defined at atlas-scripts/basic.at:254:4--256:74
-	(M): let (inv,d)=invert@mat(M) in if =@(int,int)(d,1) then inv else error("Matrix not invertible over the integers") fi
+	(M): let (inv,d)=invert@mat(M) in if =@(int,int)(d,1) then inv else 
+	error("Matrix not invertible over the integers") fi
 	atlas>
 
-Note that it also tells you in which .at file you can find the script of the function::
+Note that it also tells you in which .at file you can find the script
+of the function ::
 
      atlas> +@(string,string)
      Value: Function defined at atlas-scripts/basic.at:108:0-70
      (s,t): #@(string,string)(s,t)
      atlas>
 
-This is defined in basic, takes a pair of strings and concatenates them
+This is defined in basic, takes a pair of strings and concatenates them. 
 
-However, if you want to know what '+' does to a matrix and an integer you get::
+However, if you want to know what '+' does to a matrix and an
+integer you get::
 
-    atlas>
     atlas> +@(mat,int)
     Value: {+@(mat,int)}
     atlas>
 
-This means this is a built-in function that you can find in the ``atlas-functions.help`` file for information. But, in this case we can also try it to see what it does::
+This means this is a built-in function that you can find in the
+``atlas-functions.help`` file for information. But, in this case we
+can also try it to see what it does::
 
      atlas> set A =id_mat(3)
      Identifier A: mat
@@ -114,14 +127,30 @@ This means this is a built-in function that you can find in the ``atlas-function
      | 0, 0, 1 |
      atlas> {A quick way to write the nxn id. matrix}
      atlas>
+
      atlas> +(A,1)
      Value:
      | 2, 0, 0 |
      | 0, 2, 0 |
      | 0, 0, 2 |
      atlas>
+     atlas> set A=mat:[[1,0,0],[0,2,0],[1,1,0]]
+     Variable A: mat (overriding previous instance, which had type mat)
+     atlas> +(A,1)
+     Value: 
+     | 2, 0, 1 |
+     | 0, 3, 1 |
+     | 0, 0, 1 |
+     
+     atlas> A
+     Value: 
+     | 1, 0, 1 |
+     | 0, 2, 1 |
+     | 0, 0, 0 |
+     
+     atlas> 
 
-So, it adds a 1 to the diagonal of a matrix.
+In other words, the function ``+(A,1)`` adds a 1 to the diagonal of the matrix ``A``.
 
 Loops
 -----
@@ -137,7 +166,12 @@ Some of the simplest examples of loops are the ``for loops``. For example::
      atlas> v
      Value: [0,1,2]
 
-If we do not want ``atlass`` to print the result we can use either ``void:`` before the loop or ``;()`` at the end of the loop::
+Here ``od`` tells ``atlas`` to end the loop once all the vectors of A
+were listed.  
+
+If we do not want ``atlas`` to print the result we can
+use either ``void:`` before the loop or ``;()`` at the end of the
+loop::
 
    atlas> void:for i:3 do i od
    atlas>
@@ -179,7 +213,8 @@ We can define some functions using loops. For example, one basic loop lists the 
    Value: [[ 1, 2 ],[ 3, 4 ]]
    atlas> 
 
-This is an example of a ``for loop``. Which tells the software that for each v in A you return something. Here od tells ``atlas`` to end the loop once all the vectors of A were listed.
+This is an example of a ``for loop``. Which tells the software that
+for each v in A you return something. 
 
 Another example is::
 
