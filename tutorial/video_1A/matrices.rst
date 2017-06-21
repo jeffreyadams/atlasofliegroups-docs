@@ -102,7 +102,7 @@ Recall that to tell ``atlas`` where to find the ``.at`` files, you need to launc
 You can then input the file ``basic.at`` and continue.
 
 
-Now we can see if we can calculate the inverse of these matrices over the integers::
+Now we can see if we can calculate the inverse of these matrices over the integers ::
 
 
     atlas> A
