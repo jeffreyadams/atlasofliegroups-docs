@@ -49,7 +49,7 @@ Gives you the argument and output for the function ``inverse``. It
 says that the function takes a matrix and produces another matrix.
     
 Note: Remember that the command ``whattype`` without the question mark
-gives a data type. To get atlas to give you and argument you need to
+gives a data type. To get atlas to give you an argument you need to
 add the ``?`` ::
 
       atlas> whattype invert ?
