@@ -57,7 +57,7 @@ natural and, in the last case, we assign the value of the whole
 expression to a new variable ``d``. So this is something we can do in case we need to use d in the future. You can check that the other variables are gone and only ``d`` remains in the ``atlas`` memory
 
 We just need to make sure that the strings of ``let <variable> = something``
-are terminated with ``in <expression>''. There are times when the
+are terminated with ``in <expression>``. There are times when the
 nested expressions you want can get complicated and it is hard to keep
 track. So the software keeps track and reminds you that more
 information is needed to finish the expression::
@@ -84,10 +84,10 @@ though ``y`` was assigned a different value before::
 
 So, ``a`` did go away since it was a local variable. However, the
 local value of ``y`` inside the ``let`` syntax dissapeared after the
-operation was performed and did not interfered with anything outside. Moreover, its first assigned (non-local) value was retained.
+operation was performed and did not interfere with anything outside. Moreover, its first assigned (non-local) value was retained.
 
-The ``;`` syntax::
--------------------
+The ``;`` syntax
+-----------------
 Another useful syntax symbol is ``;``. It is used between
 expressions to ask ``atlas`` to just perform the last operation::
 
