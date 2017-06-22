@@ -10,8 +10,8 @@ so the Cartan involution is determined by ``x``
 
 .. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
-
 .. math:: \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*\cong (X_{\mathbb Q} ^*)^{-\theta _x}
+
 
 
 So that each term in the expression of the infinitesimal character 
@@ -31,32 +31,31 @@ http://www.liegroups.org/papers/equivalenceOfParameters.pdf
 The point is that the definition of equivalence is chosen so that we
 have the following
 
-Theorem
+.. Theorem:: 
 
-There are canonical bijections between
-
-1. Parameters for :math:`G`
-2. Standard modules for :math:`G`
-3. Irreducible representations of :math:`G`
-
-
-Moreover, the bijections are given as follows:
-
-.. math:: 1\rightarrow 2: p\rightarrow I(p)=Ind_P^G (\sigma ).
-
-The full induced from :math:`\sigma =` (limit of) discrete series
-This is called the standard module with parameter ``p``.
-
-.. math:: 2\rightarrow 3: Ind_P ^G (\sigma ) \rightarrow J
-
-where :math:`J` is the unique irreducible quotient of the standard
-module, which always exists in this setup. 
-
-Hence
-
-.. math:: 1\rightarrow 3: p\rightarrow J(p)
-
-the unique irreducible quotient of :math:`I(p)`
+   There are canonical bijections between
+   
+   1. Parameters for :math:`G`
+   2. Standard modules for :math:`G`
+   3. Irreducible representations of :math:`G`
+   
+   Moreover, the bijections are given as follows:
+   
+   .. math:: 1\rightarrow 2: p\rightarrow I(p)=Ind_P^G (\sigma ).
+   
+   The full induced from :math:`\sigma =` (limit of) discrete series
+   This is called the standard module with parameter ``p``.
+   
+   .. math:: 2\rightarrow 3: Ind_P ^G (\sigma ) \rightarrow J
+   
+   where :math:`J` is the unique irreducible quotient of the standard
+   module, which always exists in this setup. 
+   
+   Hence
+   
+   .. math:: 1\rightarrow 3: p\rightarrow J(p)
+   
+   the unique irreducible quotient of :math:`I(p)`
 
 
 Composition series and character formulas
