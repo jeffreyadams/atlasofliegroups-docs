@@ -1,7 +1,7 @@
 Composition Series and Character formulas
 ==========================================
 
-Let us start with some basic examples ::
+Let us review some basic examples ::
 
    atlas> set G=SL(2,R)
    Variable G: RealForm
@@ -84,7 +84,7 @@ In this case we only have one discrete series and two minimal principal series :
    Value: [ 1 ]/2
    atlas> 
 
-Note that :math:`rho=1/2` in this case. So :math:`X^* +\rho \cong \mathbb Z +1/2` 
+Note that :math:`\rho=1/2` in this case. So :math:`X^* +\rho \cong \mathbb Z +1/2` 
 
 Also there are only two KGB elements in this group ::
 
@@ -100,7 +100,7 @@ the Weyl group of :math:`K`, which is disconnected in this case.
 
 On the other hand, we have two principal series in this block
 associated to the ``KGB`` element ``x=1``. They both have
-infinitesimal character ``rho``. But they differ in the disconnectedness of :math:`K`.
+infinitesimal character ``rho``. But they differ in the disconnectedness of :math:`G`.
 
 Now to know about more representations we look at other blocks ::
 
