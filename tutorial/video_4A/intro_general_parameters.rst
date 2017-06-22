@@ -31,7 +31,7 @@ http://www.liegroups.org/papers/equivalenceOfParameters.pdf
 The point is that the definition of equivalence is chosen so that we
 have the following
 
-.. Theorem:: 
+**Theorem** 
 
    There are canonical bijections between
    
