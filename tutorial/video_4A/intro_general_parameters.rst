@@ -10,7 +10,9 @@ so the Cartan involution is determined by ``x``
 
 .. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
-.. math:: \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x )X_{\mathbb Q}^*\cong (X_\{\mathbb Q} ^*)^{-\theta _x}
+
+.. math:: \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*\cong (X_{\mathbb Q} ^*)^{-\theta _x}
+
 
 So that each term in the expression of the infinitesimal character 
 
@@ -30,6 +32,7 @@ The point is that the definition of equivalence is chosen so that we
 have the following
 
 Theorem
+
 There are canonical bijections between
 
 1. Parameters for :math:`G`
