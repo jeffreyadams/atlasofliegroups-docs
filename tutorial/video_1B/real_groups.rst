@@ -1,7 +1,6 @@
 Real Groups
 ============
 
-
 Now we can load another file called ``groups.at``. After doing this
 you can scroll up and see the list of all the real forms of all the
 familiar complex reductive Lie groups that are defined. This way you
@@ -18,7 +17,7 @@ example::
       | 1 |
       atlas>
 
-These is a real Lie group , so the data type is a RealForm. Again the
+These is a real Lie group , so the data type is a Real Form. Again the
 underlying root datum of :math:`G` is the one for the simply connected
 group of type ``A1``::
 
@@ -33,15 +32,8 @@ datum corresponds to the the roots of the simply connected complex
 group :math:`SL(2,\mathbb C)`.
 
 
-Now let's take the non-semisimple Lie group :math:`GL(2,\mathbb R)`. We can define it
-in two ways. Note the different types of information we obtain::
+Now let's take the non-semisimple Lie group :math:`GL(2,\mathbb R)` ::
 
-    atlas> set G=SL(2,R)
-    Identifier G: RealForm
-    atlas> set rd=root_datum (G)
-    Identifier rd: RootDatum (hiding previous one of type RootDatum)
-    atlas> rd
-    Value: simply connected root datum of Lie type 'A1'
     atlas> G:=GL(2,R)
     Value: disconnected split real group with Lie algebra 'sl(2,R).gl(1,R)'
     
@@ -71,7 +63,7 @@ Now for :math:`PSL(2,\mathbb R)` we have::
     | 2 |
     atlas>
 
-On the other hand if we type::
+On the other hand if we type ::
 
    atlas> set G=SL(2,C)
    Identifier G: RealForm
@@ -191,14 +183,14 @@ Here, the semisimple rank is 2, the full rank is 3 and the roots and coroots are
 
 Unfortunately these are not the usual coordinates for this group. Nevertheless the Cartan matrix is the usual one.
 
-There is also a function called Cartan_matrix. The possible arguments and outputs are given below::
+There is also a function called ``Cartan_matrix``. The possible arguments and outputs are given below::
 
       atlas> whattype Cartan_matrix ?
       Overloaded instances of 'Cartan_matrix'
       LieType->mat
       RootDatum->mat
       (int,int)->mat
-      <example/>atlas> Cartan_matrix(rd)
+      atlas> Cartan_matrix(rd)
       Value:
       | 2, -1 |
       | -1, 2 | 
