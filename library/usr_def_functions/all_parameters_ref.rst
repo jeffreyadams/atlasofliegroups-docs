@@ -1,6 +1,6 @@
-.. _all_Kparameters.at_ref:
+.. _all_parameters.at_ref:
 
-all_Kparameters.at Function References
+all_parameters.at Function References
 =======================================================
 |
 
@@ -32,7 +32,7 @@ cone
 
 basis_lambda_differential_0
 -------------------------------------------------
-| ``basis_lambda_differential_0:KGBElt x->mat`` Defined in line number 41.
+| ``basis_lambda_differential_0:KGBElt x->mat`` Defined in line number 44.
 | 
 | 
 
@@ -40,7 +40,7 @@ basis_lambda_differential_0
 
 all_lambda_differential_0
 -------------------------------------------------
-| ``all_lambda_differential_0:KGBElt x->[vec]`` Defined in line number 54.
+| ``all_lambda_differential_0:KGBElt x->[vec]`` Defined in line number 57.
 | 
 | 
 
@@ -48,7 +48,7 @@ all_lambda_differential_0
 
 all_equal_dlambda_K_parameters
 -------------------------------------------------
-| ``all_equal_dlambda_K_parameters:K_Type(x,lambda)->[K_Type]`` Defined in line number 59.
+| ``all_equal_dlambda_K_parameters:K_Type(x,lambda)->[K_Type]`` Defined in line number 62.
 | 
 | 
 
@@ -56,7 +56,7 @@ all_equal_dlambda_K_parameters
 
 all_parameters
 -------------------------------------------------
-| ``all_parameters:Param p->[Param]`` Defined in line number 63.
+| ``all_parameters:Param p->[Param]`` Defined in line number 66.
 | 
 | 
 
@@ -64,7 +64,7 @@ all_parameters
 
 all_parameters_x_gamma
 -------------------------------------------------
-| ``all_parameters_x_gamma:KGBElt x,ratvec gamma->[Param]`` Defined in line number 68.
+| ``all_parameters_x_gamma:KGBElt x,ratvec gamma->[Param]`` Defined in line number 71.
 | 
 | 
 
@@ -72,15 +72,32 @@ all_parameters_x_gamma
 
 all_parameters_gamma
 -------------------------------------------------
-| ``all_parameters_gamma:RealForm G,ratvec gamma->[Param]`` Defined in line number 79.
+| ``all_parameters_gamma:RealForm G,ratvec gamma->[Param]`` Defined in line number 82.
 | 
+| 
+
+.. _all_discrete_series_realform_g,_ratvec_gamma->[param]1:
+
+all_discrete_series
+-------------------------------------------------
+| ``all_discrete_series:RealForm G, ratvec gamma->[Param]`` Defined in line number 95.
+| 
+| 
+
+.. _all_minimal_principal_series_realform_g,ratvec_gamma->[param]1:
+
+all_minimal_principal_series
+-------------------------------------------------
+| ``all_minimal_principal_series:RealForm G,ratvec gamma->[Param]`` Defined in line number 108.
+| 
+| All minimal principal series of split group with given infinitesimal character
 | 
 
 .. _all_dominant_norm_upto_innerclass_ic,_ratvec_cowt,int_n->mat1:
 
 all_dominant_norm_upto
 -------------------------------------------------
-| ``all_dominant_norm_upto:InnerClass ic, ratvec cowt,int N->mat`` Defined in line number 107.
+| ``all_dominant_norm_upto:InnerClass ic, ratvec cowt,int N->mat`` Defined in line number 128.
 | 
 | 
 
@@ -88,7 +105,7 @@ all_dominant_norm_upto
 
 lambda_rho_from_dominant_norm_upto
 -------------------------------------------------
-| ``lambda_rho_from_dominant_norm_upto:KGBElt x, ratvec v, int N->mat`` Defined in line number 121.
+| ``lambda_rho_from_dominant_norm_upto:KGBElt x, ratvec v, int N->mat`` Defined in line number 142.
 | 
 | 
 
@@ -96,7 +113,7 @@ lambda_rho_from_dominant_norm_upto
 
 K_parameters_norm_upto
 -------------------------------------------------
-| ``K_parameters_norm_upto:(KGBElt,ratvec,int)(x,,):triple->[K_Type]`` Defined in line number 126.
+| ``K_parameters_norm_upto:(KGBElt,ratvec,int)(x,,):triple->[K_Type]`` Defined in line number 147.
 | 
 | 
 

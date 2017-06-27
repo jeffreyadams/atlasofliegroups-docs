@@ -32,7 +32,15 @@ deformation_terms
 
 recursive_deform
 -------------------------------------------------
-| ``recursive_deform:Param p, mat delta->ParamPol`` Defined in line number 82.
+| ``recursive_deform:Param p, mat delta->ParamPol`` Defined in line number 84.
+| 
+| 
+
+.. _twisted_recursive_deform_param_p->parampol1:
+
+twisted_recursive_deform
+-------------------------------------------------
+| ``twisted_recursive_deform:Param p->ParamPol`` Defined in line number 120.
 | 
 | 
 

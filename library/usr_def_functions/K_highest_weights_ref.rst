@@ -283,29 +283,45 @@ K0_highest_weight
 | Parameter for (the RealForm K_0) of the K_0-type with highest weight    (the restriction of) KHighestWeight mu.
 | 
 
+.. _dimension_rat_khighestweight_mu->rat1:
+
+dimension_rat
+-------------------------------------------------
+| ``dimension_rat:KHighestWeight mu->rat`` Defined in line number 483.
+| 
+| Dimension of the K_#-type with KHighestWeight mu.
+| 
+
 .. _dimension_khighestweight_mu->int1:
 
 dimension
 -------------------------------------------------
-| ``dimension:KHighestWeight mu->int`` Defined in line number 482.
+| ``dimension:KHighestWeight mu->int`` Defined in line number 484.
 | 
-| Dimension of the K_#-type with KHighestWeight mu.
+| 
+
+.. _dimension_rat_k_type_p->rat1:
+
+dimension_rat
+-------------------------------------------------
+| ``dimension_rat:K_Type p->rat`` Defined in line number 487.
+| 
+| Dimension of a K-type.
 | 
 
 .. _dimension_k_type_p->int1:
 
 dimension
 -------------------------------------------------
-| ``dimension:K_Type p->int`` Defined in line number 485.
+| ``dimension:K_Type p->int`` Defined in line number 492.
 | 
-| Dimension of a K-type.
 | 
 
 .. _h_weight_kgbelt_x,vec_mu_k->khighestweight1:
 
 H_weight
 -------------------------------------------------
-| ``H_weight:KGBElt x,vec mu_K->KHighestWeight`` Defined in line number 496.
+| ``H_weight:KGBElt x,vec mu_K->KHighestWeight`` Defined in line number 499.
 | 
 | (Auxiliary function)
 | 
@@ -314,7 +330,7 @@ H_weight
 
 fundamental_weights_K_H
 -------------------------------------------------
-| ``fundamental_weights_K_H:KGBElt x->[ratvec]`` Defined in line number 501.
+| ``fundamental_weights_K_H:KGBElt x->[ratvec]`` Defined in line number 504.
 | 
 | (Auxiliary function)
 | 
@@ -323,7 +339,7 @@ fundamental_weights_K_H
 
 K0_param
 -------------------------------------------------
-| ``K0_param:K_Type p,KGBElt x_K->Param`` Defined in line number 507.
+| ``K0_param:K_Type p,KGBElt x_K->Param`` Defined in line number 510.
 | 
 | ONE K_0-type in the restriction of a K_type to the identity component K_0 of K    (auxiliary function).
 | 
@@ -332,7 +348,7 @@ K0_param
 
 K0_param
 -------------------------------------------------
-| ``K0_param:K_Type p->Param`` Defined in line number 513.
+| ``K0_param:K_Type p->Param`` Defined in line number 516.
 | 
 | ONE K_0-type in the restriction of a K_type to the identity component K_0 of K    (auxiliary function).
 | 
@@ -341,7 +357,7 @@ K0_param
 
 K0_params
 -------------------------------------------------
-| ``K0_params:Param p,KGBElt x_K->[Param]`` Defined in line number 521.
+| ``K0_params:Param p,KGBElt x_K->[Param]`` Defined in line number 524.
 | 
 | All K_0-types in the restriction of the LKTs of parameter p K_0.
 | 
@@ -350,7 +366,7 @@ K0_params
 
 K0_params
 -------------------------------------------------
-| ``K0_params:Param p->[Param]`` Defined in line number 526.
+| ``K0_params:Param p->[Param]`` Defined in line number 529.
 | 
 | All K_0-types in the restriction of the LKTs of parameter p to K_0.
 | 
@@ -359,7 +375,7 @@ K0_params
 
 K0_param
 -------------------------------------------------
-| ``K0_param:Param p,KGBElt x_K->Param`` Defined in line number 530.
+| ``K0_param:Param p,KGBElt x_K->Param`` Defined in line number 533.
 | 
 | Unique K_0-type in the restriction of (unique) LKT to K_0 (error if not unique).
 | 
@@ -368,7 +384,7 @@ K0_param
 
 K0_param
 -------------------------------------------------
-| ``K0_param:Param p->Param`` Defined in line number 536.
+| ``K0_param:Param p->Param`` Defined in line number 539.
 | 
 | Unique K_0-type in the restriction of (unique) LKT to K_0 (error if not unique).
 | 
@@ -377,7 +393,7 @@ K0_param
 
 fundamental_weight_coordinates
 -------------------------------------------------
-| ``fundamental_weight_coordinates:KHighestWeight (x,mu)->vec`` Defined in line number 543.
+| ``fundamental_weight_coordinates:KHighestWeight (x,mu)->vec`` Defined in line number 546.
 | 
 | (Auxiliary function)
 | 
@@ -386,7 +402,7 @@ fundamental_weight_coordinates
 
 K_highest_weight_from_fundamental_weights
 -------------------------------------------------
-| ``K_highest_weight_from_fundamental_weights:KGBElt x,vec tau->KHighestWeight`` Defined in line number 549.
+| ``K_highest_weight_from_fundamental_weights:KGBElt x,vec tau->KHighestWeight`` Defined in line number 552.
 | 
 | (Auxiliary function)
 | 
@@ -395,7 +411,7 @@ K_highest_weight_from_fundamental_weights
 
 dimensions
 -------------------------------------------------
-| ``dimensions:Param p, KGBElt x_K->[int]`` Defined in line number 558.
+| ``dimensions:Param p, KGBElt x_K->[int]`` Defined in line number 561.
 | 
 | List of the dimensions of the K_0-types in the restriction of the LKTs of parameter p.
 | 
@@ -404,7 +420,7 @@ dimensions
 
 dimensions
 -------------------------------------------------
-| ``dimensions:Param p->[int]`` Defined in line number 562.
+| ``dimensions:Param p->[int]`` Defined in line number 565.
 | 
 | List of the dimensions of the K_0-types in the restriction of the LKTs of parameter p.
 | 
@@ -413,7 +429,7 @@ dimensions
 
 dimensions
 -------------------------------------------------
-| ``dimensions:[Param] B->[[int]]`` Defined in line number 566.
+| ``dimensions:[Param] B->[[int]]`` Defined in line number 569.
 | 
 | List of the dimensions of the K_0-types in the restriction of the LKTs of    a list of parameters.
 | 

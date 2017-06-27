@@ -1,8 +1,8 @@
 Example :math:`G=SL(2,\mathbb R)`.
 ==================================
 
-If :math:`H` is the split Cartan of :math:`G`. Let :math:`B` be a borel
-including this Cartan. We can construct the induced representation
+If :math:`H` is the split Cartan subgroup of :math:`G`. Let :math:`B` be a borel
+including this Cartan subgroup. We can construct the induced representation
 :math:`Ind_B ^G (\chi)` where :math:`\chi` is a character of
 :math:`H(\mathbb R)`.
 
@@ -34,7 +34,7 @@ infinitesimal character::
     final parameter (x=2,lambda=[2]/1,nu=[1]/1)
     atlas>
 
-Here the ``x`` is giving us Cartan involutions of the Cartans::
+Here the ``x`` is giving us Cartan involutions of the Cartan subgroups::
 
      atlas> involution(KGB(G,0))
      Value: 
@@ -49,9 +49,9 @@ Here the ``x`` is giving us Cartan involutions of the Cartans::
      | -1 |
 
 So, the first two parameters in the list are associated to the compact
-Cartan; the last two to the split one.
+Cartan subgroup; the last two to the split one.
 
-We can find out more about the Cartan for each parameter ``p`` as
+We can find out more about the Cartan subgroup for each parameter ``p`` as
 follows::
 
   atlas> set p= parameters[3]
@@ -72,7 +72,7 @@ follows::
   complex factor: empty
   atlas>
 
-So, this is the split Cartan for this group, with one real factor and
+So, this is the split Cartan subgroup for this group, with one real factor and
 no compact or complex factor. We can ignore the rest of the
 information for the moment.  
 

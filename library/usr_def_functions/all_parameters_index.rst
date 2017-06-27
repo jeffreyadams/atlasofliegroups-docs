@@ -1,6 +1,6 @@
-.. _all_Kparameters.at_index:
+.. _all_parameters.at_index:
 
-all_Kparameters.at Function Index
+all_parameters.at Function Index
 =======================================================
 |
 
@@ -31,6 +31,10 @@ Functions
    * - :ref:`all_parameters_x_gamma_kgbelt_x,ratvec_gamma->[param]1`
      - ``KGBElt x,ratvec gamma->[Param]``
    * - :ref:`all_parameters_gamma_realform_g,ratvec_gamma->[param]1`
+     - ``RealForm G,ratvec gamma->[Param]``
+   * - :ref:`all_discrete_series_realform_g,_ratvec_gamma->[param]1`
+     - ``RealForm G, ratvec gamma->[Param]``
+   * - :ref:`all_minimal_principal_series_realform_g,ratvec_gamma->[param]1`
      - ``RealForm G,ratvec gamma->[Param]``
    * - :ref:`all_dominant_norm_upto_innerclass_ic,_ratvec_cowt,int_n->mat1`
      - ``InnerClass ic, ratvec cowt,int N->mat``

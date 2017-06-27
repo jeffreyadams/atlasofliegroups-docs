@@ -34,8 +34,8 @@ Functions
      - ``RealForm G->ExtParamPol``
    * - :ref:`find_[(int,int)]_complete_indices,(int,int)_pair->int:first(#complete_indices,(int_i)bool1`
      - ``[(int,int)] complete_indices,(int,int) pair->int:first(#complete_indices,(int i)bool``
-   * - :ref:`deform_unreduced_param_p,_mat_delta,_int_sign->extparampol1`
-     - ``Param p, mat delta, int sign->ExtParamPol``
+   * - :ref:`deform_unreduced_param_p,_mat_delta,_int_type->extparampol1`
+     - ``Param p, mat delta, int type->ExtParamPol``
    * - :ref:`deform_param_p,mat_delta,_int_type->extparampol1`
      - ``Param p,mat delta, int type->ExtParamPol``
    * - :ref:`deform_old_param_p,_mat_delta,_int_type->extparampol1`
@@ -58,10 +58,18 @@ Functions
      - ``Param p,mat delta->void``
    * - :ref:`print_extended_indices_[param]_b,mat_delta->void1`
      - ``[Param] B,mat delta->void``
-   * - :ref:`character_formula_param_p,mat_delta->extparampol1`
-     - ``Param p,mat delta->ExtParamPol``
-   * - :ref:`c_form_irreducible_big_long_param_p,mat_delta,_int_type->(extparampol,[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],[((split,param),(parampol,parampol,parampol))],extparampol)1`
-     - ``Param p,mat delta, int type->(ExtParamPol,[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],[((Split,Param),(ParamPol,ParamPol,ParamPol))],ExtParamPol)``
+   * - :ref:`character_formula_param_p,mat_delta,int_type->extparampol1`
+     - ``Param p,mat delta,int type->ExtParamPol``
+   * - :ref:`c_form_std_big_param_p,mat_delta,_int_type->extparampol1`
+     - ``Param p,mat delta, int type->ExtParamPol``
+   * - :ref:`c_form_irreducible_big_param_p,mat_delta,_int_type,extparampol_cf->extparampol1`
+     - ``Param p,mat delta, int type,ExtParamPol cf->ExtParamPol``
+   * - :ref:`c_form_irreducible_big_param_p,mat_delta,_int_type->extparampol1`
+     - ``Param p,mat delta, int type->ExtParamPol``
+   * - :ref:`c_form_irreducible_big_as_sum_of_standards_param_p,mat_delta,_int_type->extparampol1`
+     - ``Param p,mat delta, int type->ExtParamPol``
+   * - :ref:`c_form_irreducible_big_long_param_p,mat_delta,_int_type->(extparampol,[((split,param),extparampol)],[((split,param),extparampol)],[((split,param),extparampol)],extparampol)1`
+     - ``Param p,mat delta, int type->(ExtParamPol,[((Split,Param),ExtParamPol)],[((Split,Param),ExtParamPol)],[((Split,Param),ExtParamPol)],ExtParamPol)``
    * - :ref:`print_c_form_irreducible_big_long_extparampol_cf,_[((split,param),extparampol)]_plus,[((split,param),extparampol)]_minus,[((split,param),extparampol)]_induced,extparampol_answer->void1`
      - ``ExtParamPol cf, [((Split,Param),ExtParamPol)] plus,[((Split,Param),ExtParamPol)] minus,[((Split,Param),ExtParamPol)] induced,ExtParamPol answer->void``
    * - :ref:`print_c_form_irreducible_big_long_param_p,mat_delta,_int_type->void1`

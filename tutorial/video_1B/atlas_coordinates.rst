@@ -58,7 +58,7 @@ But look what happens when we type::
     
     atlas>
 
-If you want to ask ``atlas`` about a vector in the Cartan or say an
+If you want to ask ``atlas`` about a vector in the Cartan subgroupor say an
 infinitesimal character, you need to write it in terms of the simple
 roots. Then the software will give you the vector in terms of the
 ``atlas`` coordinates. You then have to understand which coordinates

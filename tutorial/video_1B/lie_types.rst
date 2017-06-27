@@ -1,7 +1,7 @@
 Root Data and Lie Types
 ========================
 
-To start let us talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types. By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type as follows::
+To start let us talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types. By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type. for example ::
 
     atlas> set g=LieType:"A1T1"
     Identifier g: LieType
@@ -110,12 +110,14 @@ this means that :math:`X^* ={\mathbb Z}` and the simple root is ``alpha=[2]``, s
 ``alpha/2=[1]`` is in :math:`X^*`.
 
 On the other hand, for the adjoint group, we have that :math:`X^*` is
-still :math:`\mathbb Z`, the root ``alpha=[1]`` and ``[1]/2`` is NOT in :math:`X^*`.
+still :math:`\mathbb Z`, the simple root is ``alpha=[1]`` and ``alpha/2 =[1]/2`` is NOT in :math:`X^*`.
 
-In general :math:`X^*` and :math:`X_*` by definition are :math:`{\mathbb Z}^n`. Where the roots and coroots lie in them has to do with isogenies of the group.
+In general :math:`X^*` and :math:`X_*` by definition are :math:`{\mathbb Z}^n`. However, whether the roots or coroots lie in them, has to do with isogenies of the group.
 
 
-Another useful ``.at`` file that lets you put in Lie types without the quotation marks is the file "lietypes.at". It is also included in the all.at file. This file just defines the Lie types as striings::
+Another useful ``.at`` file that lets you put in Lie types without the
+quotation marks is the file "lietypes.at". It is also included in the
+``all.at`` file. This file just defines the Lie types as strings ::
 
 	atlas> A1
 	Value: "A1"

@@ -68,27 +68,19 @@ param
 | 
 | 
 
-.. _finalize_param_p->[param]:_for_c@q_in_parampol1:
+.. _finalize_param_p->parampol1:
 
 finalize
 -------------------------------------------------
-| ``finalize:Param p->[Param]: for c@q in ParamPol`` Defined in line number 28.
+| ``finalize:Param p->ParamPol`` Defined in line number 28.
 | 
 | 
 
-.. _finalize_parampol_p->parampol1:
-
-finalize
--------------------------------------------------
-| ``finalize:ParamPol P->ParamPol`` Defined in line number 30.
-| 
-| 
-
-.. _finalize_[param]_p->[param]1:
+.. _finalize_[param]_p->parampol1:
 
 finalize
 -------------------------------------------------
-| ``finalize:[Param] P->[Param]`` Defined in line number 37.
+| ``finalize:[Param] P->ParamPol`` Defined in line number 30.
 | 
 | 
 
@@ -96,7 +88,7 @@ finalize
 
 \#
 -------------------------------------------------
-| ``#:Split w,int t)=let (a,b->%w in int`` Defined in line number 42.
+| ``#:Split w,int t)=let (a,b->%w in int`` Defined in line number 35.
 | 
 | 
 
@@ -104,7 +96,7 @@ finalize
 
 \#
 -------------------------------------------------
-| ``#:Split w,rat t)=let (a,b->%w in rat`` Defined in line number 43.
+| ``#:Split w,rat t)=let (a,b->%w in rat`` Defined in line number 36.
 | 
 | 
 
@@ -112,7 +104,7 @@ finalize
 
 \#
 -------------------------------------------------
-| ``#:ParamPol P,int t->ParamPol`` Defined in line number 44.
+| ``#:ParamPol P,int t->ParamPol`` Defined in line number 37.
 | 
 | 
 
@@ -120,7 +112,7 @@ finalize
 
 fiber_partition
 -------------------------------------------------
-| ``fiber_partition:RealForm G->[int]`` Defined in line number 49.
+| ``fiber_partition:RealForm G->[int]`` Defined in line number 42.
 | 
 | 
 
@@ -128,7 +120,7 @@ fiber_partition
 
 in_distinguished_fiber
 -------------------------------------------------
-| ``in_distinguished_fiber:KGBElt x->bool`` Defined in line number 51.
+| ``in_distinguished_fiber:KGBElt x->bool`` Defined in line number 44.
 | 
 | 
 
@@ -136,7 +128,7 @@ in_distinguished_fiber
 
 distinguished_fiber
 -------------------------------------------------
-| ``distinguished_fiber:RealForm G->[int]`` Defined in line number 54.
+| ``distinguished_fiber:RealForm G->[int]`` Defined in line number 47.
 | 
 | 
 
@@ -144,7 +136,7 @@ distinguished_fiber
 
 root_length
 -------------------------------------------------
-| ``root_length:RootDatum rd,vec alpha->int`` Defined in line number 62.
+| ``root_length:RootDatum rd,vec alpha->int`` Defined in line number 55.
 | 
 | 
 
@@ -152,7 +144,7 @@ root_length
 
 is_simple_root
 -------------------------------------------------
-| ``is_simple_root:RootDatum rd,[int] alpha->bool`` Defined in line number 63.
+| ``is_simple_root:RootDatum rd,[int] alpha->bool`` Defined in line number 56.
 | 
 | 
 
@@ -160,7 +152,7 @@ is_simple_root
 
 simple_imaginary_subsystem
 -------------------------------------------------
-| ``simple_imaginary_subsystem:KGBElt x->(mat,mat)`` Defined in line number 65.
+| ``simple_imaginary_subsystem:KGBElt x->(mat,mat)`` Defined in line number 58.
 | 
 | 
 
@@ -168,7 +160,7 @@ simple_imaginary_subsystem
 
 simple_real_subsystem
 -------------------------------------------------
-| ``simple_real_subsystem:KGBElt x->(mat,mat)`` Defined in line number 68.
+| ``simple_real_subsystem:KGBElt x->(mat,mat)`` Defined in line number 61.
 | 
 | 
 
@@ -176,7 +168,7 @@ simple_real_subsystem
 
 to_binary
 -------------------------------------------------
-| ``to_binary:int length, int n->vec`` Defined in line number 71.
+| ``to_binary:int length, int n->vec`` Defined in line number 64.
 | 
 | 
 
@@ -184,7 +176,7 @@ to_binary
 
 generate_all_subsets
 -------------------------------------------------
-| ``generate_all_subsets:[int] S->[[int]]`` Defined in line number 77.
+| ``generate_all_subsets:[int] S->[[int]]`` Defined in line number 70.
 | 
 | 
 
@@ -192,7 +184,7 @@ generate_all_subsets
 
 prettyPrint
 -------------------------------------------------
-| ``prettyPrint:Split w->string`` Defined in line number 85.
+| ``prettyPrint:Split w->string`` Defined in line number 78.
 | 
 | 
 
@@ -200,7 +192,33 @@ prettyPrint
 
 prettyPrint
 -------------------------------------------------
-| ``prettyPrint:ParamPol P->void`` Defined in line number 98.
+| ``prettyPrint:ParamPol P->void`` Defined in line number 91.
 | 
+| 
+
+.. _smash_[int]_v,[[int]]_a->[[int]]1:
+
+smash
+-------------------------------------------------
+| ``smash:[int] v,[[int]] A->[[int]]`` Defined in line number 97.
+| 
+| 
+
+.. _rec_fun box_int_height,_int_rank->[[int]]1:
+
+rec_fun box
+-------------------------------------------------
+| ``rec_fun box:int height, int rank->[[int]]`` Defined in line number 101.
+| 
+| Cartesian power (#height)^rank, lists of length rank of numbers <height
+| 
+
+.. _rec_fun box_[int]_heights->[[int]]1:
+
+rec_fun box
+-------------------------------------------------
+| ``rec_fun box:[int] heights->[[int]]`` Defined in line number 105.
+| 
+| Cartesian product (#heights[0])*(#heights[1])*...*(heights~[0])
 | 
 

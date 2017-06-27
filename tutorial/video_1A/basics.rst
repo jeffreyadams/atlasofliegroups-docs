@@ -102,7 +102,7 @@ When you launch ``atlas`` with the standard built-in commands only,
 you sometimes may need another command that is not included there
 and you get an error telling you the command is undefined. The reason
 is because the command may be defined in a supplementary file that
-needs to be loaded. The ``basic.at`` contains most of the commands you will need to get familiar with the software.
+needs to be loaded. The ``basic.at`` filencontains most of the commands you will need to get familiar with the software.
 
 We need to introduce two other commands.
 

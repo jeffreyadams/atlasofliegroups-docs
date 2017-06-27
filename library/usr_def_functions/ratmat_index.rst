@@ -100,6 +100,8 @@ Functions
      - ``ratmat M,[ratvec] MM->ratmat``
    * - :ref:`inverse_ratmat(m,,d)->ratmat1`
      - ``ratmat(M,,d)->ratmat``
+   * - :ref:`solve_ratmat(m,,d),_ratvec_v->[ratvec]1`
+     - ``ratmat(M,,d), ratvec v->[ratvec]``
    * - :ref:`\*_[ratvec]_M,mat_MM->ratmat1`
      - ``[ratvec] M,mat MM->ratmat``
    * - :ref:`\*_mat_M,[ratvec]_MM->ratmat1`
@@ -114,6 +116,10 @@ Functions
      - ``mat M,[ratvec] MM->ratmat``
    * - :ref:`rational_inverse_mat_m->ratmat1`
      - ``mat M->ratmat``
+   * - :ref:`right_inverse_ratmat_m->ratmat1`
+     - ``ratmat M->ratmat``
+   * - :ref:`left_inverse_ratmat_m->ratmat1`
+     - ``ratmat M->ratmat``
    * - :ref:`ratvec_to_string_ratvec_v->string1`
      - ``ratvec v->string``
    * - :ref:`show_ratmat(m,,d)->void1`

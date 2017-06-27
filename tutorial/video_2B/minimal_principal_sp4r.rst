@@ -37,7 +37,7 @@ Now lets find all representations with infinitesimal character :math:`\rho` ::
 There are 18 representations with infinitesimal character
 :math:`\rho`. The last four parameters have :math:`K\backslash G/B`
 element ``x=10``. They correspond to the four priincipal series
-attached to the split Cartan.
+attached to the split Cartan subgroup.
 
 More generally if :math:`G(\mathbb R)` is split of rank :math:`n`, the
 number of minimal principal series of infinitesimal character
@@ -61,7 +61,7 @@ Let us make a separate list for them::
    atlas>
 
 These parameters are all principal series. How do we tell them apart?
-Each one is giving a character of the split Cartan. They have the same
+Each one is giving a character of the split Cartan subgroup. They have the same
 ``nu`` and same ``x=10`` and a different lambda. Each lambda is a
 character of :math:`{\mathbb Z}_2 \times {\mathbb Z}_2`. In other
 words they are in :math:`X^*/2X^*`.

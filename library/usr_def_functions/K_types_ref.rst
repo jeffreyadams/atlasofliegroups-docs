@@ -12,27 +12,11 @@ sort_by_height
 | 
 | 
 
-.. _branch_std_param_p,_int_bound->parampol1:
-
-branch_std
--------------------------------------------------
-| ``branch_std:Param p, int bound->ParamPol`` Defined in line number 10.
-| 
-| 
-
-.. _branch_std_parampol_p,int_bound->parampol1:
-
-branch_std
--------------------------------------------------
-| ``branch_std:ParamPol P,int bound->ParamPol`` Defined in line number 19.
-| 
-| 
-
 .. _branch_irr_param_p,_int_bound->parampol1:
 
 branch_irr
 -------------------------------------------------
-| ``branch_irr:Param p, int bound->ParamPol`` Defined in line number 23.
+| ``branch_irr:Param p, int bound->ParamPol`` Defined in line number 14.
 | 
 | 
 
@@ -40,7 +24,7 @@ branch_irr
 
 branch_irr
 -------------------------------------------------
-| ``branch_irr:ParamPol P,int bound->ParamPol`` Defined in line number 26.
+| ``branch_irr:ParamPol P,int bound->ParamPol`` Defined in line number 17.
 | 
 | 
 
@@ -48,7 +32,7 @@ branch_irr
 
 mult_std
 -------------------------------------------------
-| ``mult_std:Param p_K,Param p->int`` Defined in line number 104.
+| ``mult_std:Param p_K,Param p->int`` Defined in line number 94.
 | 
 | 
 
@@ -56,7 +40,23 @@ mult_std
 
 mult_irr
 -------------------------------------------------
-| ``mult_irr:Param p_K,Param p->int`` Defined in line number 108.
+| ``mult_irr:Param p_K,Param p->int`` Defined in line number 98.
+| 
+| 
+
+.. _mult_std_param_p_k,_parampol_p->split1:
+
+mult_std
+-------------------------------------------------
+| ``mult_std:Param p_K, ParamPol P->Split`` Defined in line number 101.
+| 
+| 
+
+.. _mult_irr_param_p_k,_parampol_p->split1:
+
+mult_irr
+-------------------------------------------------
+| ``mult_irr:Param p_K, ParamPol P->Split`` Defined in line number 103.
 | 
 | 
 
@@ -64,7 +64,7 @@ mult_irr
 
 K_signature_irr
 -------------------------------------------------
-| ``K_signature_irr:Param p,int bound->(ParamPol,ParamPol)`` Defined in line number 111.
+| ``K_signature_irr:Param p,int bound->(ParamPol,ParamPol)`` Defined in line number 106.
 | 
 | 
 
@@ -72,7 +72,7 @@ K_signature_irr
 
 signed_mult
 -------------------------------------------------
-| ``signed_mult:Param p_K,Param p->(int,int)`` Defined in line number 131.
+| ``signed_mult:Param p_K,Param p->(int,int)`` Defined in line number 126.
 | 
 | 
 
@@ -80,7 +80,7 @@ signed_mult
 
 print_K_types
 -------------------------------------------------
-| ``print_K_types:ParamPol P->void`` Defined in line number 138.
+| ``print_K_types:ParamPol P->void`` Defined in line number 133.
 | 
 | 
 
@@ -88,7 +88,7 @@ print_K_types
 
 print_K_types
 -------------------------------------------------
-| ``print_K_types:ParamPol P, KGBElt x_K->void`` Defined in line number 146.
+| ``print_K_types:ParamPol P, KGBElt x_K->void`` Defined in line number 141.
 | 
 | 
 

@@ -34,8 +34,10 @@ Functions
      - ``ParamPol P,RealForm G->ParamPol``
    * - :ref:`real_induce_irreducible_as_sum_of_standards_param_p_l,_realform_g->parampol1`
      - ``Param p_L, RealForm G->ParamPol``
-   * - :ref:`real_induce_irreducible_param_p_l,_realform_g->parampol1`
+   * - :ref:`real_induce_irreducible_final_param_p_l,_realform_g->parampol1`
      - ``Param p_L, RealForm G->ParamPol``
+   * - :ref:`real_induce_irreducible_parampol_p,realform_g->parampol1`
+     - ``ParamPol P,RealForm G->ParamPol``
    * - :ref:`cuspidal_data_param_p->(parabolic,param)1`
      - ``Param p->(Parabolic,Param)``
    * - :ref:`theta_stable_data_param_p->(parabolic,param)1`
@@ -48,10 +50,14 @@ Functions
      - ``ParamPol P->ParamPol``
    * - :ref:`theta_induce_standard_param_p_l,realform_g->parampol1`
      - ``Param p_L,RealForm G->ParamPol``
+   * - :ref:`theta_induce_parampol_parampol_p,_realform_g->parampol1`
+     - ``ParamPol P, RealForm G->ParamPol``
    * - :ref:`theta_induce_irreducible_as_sum_of_standards_param_p_l,_realform_g->parampol1`
      - ``Param p_L, RealForm G->ParamPol``
-   * - :ref:`theta_induce_irreducible_param_p_l,_realform_g->parampol1`
+   * - :ref:`theta_induce_irreducible_final_param_p_l,_realform_g->parampol1`
      - ``Param p_L, RealForm G->ParamPol``
+   * - :ref:`theta_induce_irreducible_parampol_p,realform_g->parampol1`
+     - ``ParamPol P,RealForm G->ParamPol``
    * - :ref:`map_into_distinguished_fiber_kgbelt_x->kgbelt1`
      - ``KGBElt x->KGBElt``
    * - :ref:`strong_map_into_distinguished_fiber_kgbelt_x->kgbelt1`
@@ -88,7 +94,7 @@ Functions
      - ``ratvec lambda,KGBElt x->int``
    * - :ref:`dim_u_cap_p_parabolic_(,x):p->int1`
      - ``Parabolic (,x):P->int``
-   * - :ref:`dim_u_cap_p_kgbelt_x->int3`
+   * - :ref:`dim_u_cap_p_kgbelt_x->int1`
      - ``KGBElt x->int``
    * - :ref:`dim_u_cap_p_ratvec_lambda,kgbelt_x->int1`
      - ``ratvec lambda,KGBElt x->int``
@@ -102,7 +108,7 @@ Functions
      - ``Parabolic P,ratvec H->int``
    * - :ref:`make_dominant_kgbelt_x_in,ratvec_lambda_in,_ratvec_lambda_q_in->(kgbelt,ratvec,ratvec)1`
      - ``KGBElt x_in,ratvec lambda_in, ratvec lambda_q_in->(KGBElt,ratvec,ratvec)``
-   * - :ref:`aq_param_pol_kgbelt_x_in,ratvec_lambda_in,_ratvec_lambda_q->parampol1`
+   * - :ref:`aq_reducible_kgbelt_x_in,ratvec_lambda_in,_ratvec_lambda_q->parampol1`
      - ``KGBElt x_in,ratvec lambda_in, ratvec lambda_q->ParamPol``
    * - :ref:`aq_kgbelt_x_in,ratvec_lambda_in,_ratvec_lambda_q->param1`
      - ``KGBElt x_in,ratvec lambda_in, ratvec lambda_q->Param``
@@ -114,6 +120,8 @@ Functions
      - ``RealForm G,ratvec lambda_in->Param``
    * - :ref:`is_one_dimensional_param_p->bool1`
      - ``Param p->bool``
+   * - :ref:`is_unitary_character_param_p->bool1`
+     - ``Param p->bool``
    * - :ref:`is_good_kgbelt_x_in,ratvec_lambda_in,ratvec_lambda_q_in->bool1`
      - ``KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool``
    * - :ref:`is_weakly_good_kgbelt_x_in,ratvec_lambda_in,ratvec_lambda_q_in->bool1`
@@ -122,8 +130,8 @@ Functions
      - ``KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool``
    * - :ref:`is_weakly_fair_kgbelt_x_in,ratvec_lambda_in,ratvec_lambda_q_in->bool1`
      - ``KGBElt x_in,ratvec lambda_in,ratvec lambda_q_in->bool``
-   * - :ref:`goodness_kgbelt_x,ratvec_lambda_in,ratvec_lambda_q->void1`
-     - ``KGBElt x,ratvec lambda_in,ratvec lambda_q->void``
+   * - :ref:`goodness_kgbelt_x,ratvec_lambda_in,ratvec_lambda_q->string1`
+     - ``KGBElt x,ratvec lambda_in,ratvec lambda_q->string``
    * - :ref:`is_good_param_p_l,realform_g->bool1`
      - ``Param p_L,RealForm G->bool``
    * - :ref:`is_weakly_good_param_p_l,realform_g->bool1`
@@ -132,8 +140,8 @@ Functions
      - ``Param p_L,RealForm G->bool``
    * - :ref:`is_weakly_fair_param_p_l,realform_g->bool1`
      - ``Param p_L,RealForm G->bool``
-   * - :ref:`goodness_param_p_l,realform_g->void1`
-     - ``Param p_L,RealForm G->void``
+   * - :ref:`goodness_param_p_l,realform_g->string1`
+     - ``Param p_L,RealForm G->string``
    * - :ref:`aq_packet_realform_g,complexparabolic_p->[param]1`
      - ``RealForm G,ComplexParabolic P->[Param]``
    * - :ref:`aq_packet_realform_g,[int]_s->[param]:aq_packet(g,complexparabolic1`
@@ -152,9 +160,11 @@ Functions
      - ``KGBElt x->bool``
    * - :ref:`is_good_range_induced_from_param_p->[param]1`
      - ``Param p->[Param]``
-   * - :ref:`reduce_good_range_param_p->param1`
-     - ``Param p->Param``
+   * - :ref:`reduce_good_range_param_p->(parabolic,param)1`
+     - ``Param p->(Parabolic,Param)``
    * - :ref:`is_good_aq_param_p->bool1`
      - ``Param p->bool``
    * - :ref:`is_proper_aq_param_p->bool1`
      - ``Param p->bool``
+   * - :ref:`all_real_induced_one_dimensional_realform_g->[param]1`
+     - ``RealForm G->[Param]``

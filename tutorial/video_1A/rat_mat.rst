@@ -6,7 +6,7 @@ rational matrices can be manipulated in ``atlas``. In particular, they
 can be inverted directly without having to turn them into integral
 matrices. We need a special command because the command ``inverse`` only
 inverts matrices which are invertible over the integers. If they are
-not, we get an error.::
+not, we get an error ::
 
      atlas> set A=mat:[[2,1],[0,1]]
      Variable A: mat
@@ -26,7 +26,8 @@ not, we get an error.::
      | 2, 0 |
      | 1, 1 |
      ]
-     (in call at <standard input>:8:0-10 of inverse@mat, defined at atlas-scripts/basic.at:293:4--295:74)
+     (in call at <standard input>:8:0-10 of inverse@mat, defined at atlas-
+     scripts/basic.at:293:4--295:74)
      Evaluation aborted.
      atlas>
 

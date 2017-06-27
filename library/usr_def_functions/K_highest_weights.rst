@@ -22,10 +22,10 @@ i) If G is relatively split, Cartan is (relatively) split, all roots in the
 tau-invariant, this is the "G-spherical" case of KHatHowe, Section 8.
 
 ii) If p is final standard limit tempered, it has a unique LKT,
-use theta_stable_data (see induction.at) to write p as cohomologically induced
-from a relatively split L.
+use theta_stable_data (see induction.at) to write p as cohomologically
+induced from a relatively split L.
 
-iii.) Apply ii) to all terms of finalize(p*0).
+iii.) Apply ii) to all terms of finalize(p.at_nu_0).
 
 
 2) K_types: Given a KHighestWeight mu=(x,kappa), find all K_types containing

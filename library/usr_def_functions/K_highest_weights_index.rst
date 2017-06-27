@@ -76,8 +76,12 @@ Functions
      - ``KHighestWeight(x,mu)->K_Type``
    * - :ref:`k0_highest_weight_khighestweight(x,mu)->param1`
      - ``KHighestWeight(x,mu)->Param``
+   * - :ref:`dimension_rat_khighestweight_mu->rat1`
+     - ``KHighestWeight mu->rat``
    * - :ref:`dimension_khighestweight_mu->int1`
      - ``KHighestWeight mu->int``
+   * - :ref:`dimension_rat_k_type_p->rat1`
+     - ``K_Type p->rat``
    * - :ref:`dimension_k_type_p->int1`
      - ``K_Type p->int``
    * - :ref:`h_weight_kgbelt_x,vec_mu_k->khighestweight1`
