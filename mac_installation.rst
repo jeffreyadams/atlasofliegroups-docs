@@ -27,11 +27,11 @@ Download source code in a single file
 This is the latest stable version.
 
 +--------------------------+------------------------------+---------------------------------------+
-| Version 1.0              |   `atlas_1.0.tgz`_           | source code for Fokko and atlas       |
+| Version 1.0.5              |   `atlas_1.0.5.tgz`_           | source code for Fokko and atlas       |
 |                          |                              | including messages and atlas-scripts  |
 +--------------------------+------------------------------+---------------------------------------+
 
-.. _atlas_1.0.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.tgz
+.. _atlas_1.0.5.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.5.tgz
 
 .. _using_git_Mac:
 
