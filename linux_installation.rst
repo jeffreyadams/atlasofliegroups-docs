@@ -30,7 +30,7 @@ Download source code in a single  file
 This is the latest stable version.
 
 +--------------------------+------------------------------+---------------------------------------+
-| Version 1.0.5              |   `atlas_1.0.5.tgz`_           | source code for Fokko and atlas       |
+| Version 1.0.5            |   `atlas_1.0.5.tgz`_         | source code for Fokko and atlas       |
 |                          |                              | including messages and atlas-scripts  |
 +--------------------------+------------------------------+---------------------------------------+
 
@@ -155,7 +155,7 @@ Download and Install an executable
 If the previous two methods fail, you can download and install  an executable file.
 
 +-----------------------------------+------------------------------+-------------------------------------+
-| linux 64 compiled                 | `atlas_linux_pre_1.01.tgz`_   |  executable, and messages           |
+| linux 64 compiled                 | `atlas_linux_pre_1.01.tgz`_  |  executable, and messages           |
 |                                   |                              |  atlas-scripts directories          |
 +-----------------------------------+------------------------------+-------------------------------------+
 

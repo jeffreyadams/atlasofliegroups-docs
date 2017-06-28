@@ -27,7 +27,7 @@ Download source code in a single file
 This is the latest stable version.
 
 +--------------------------+------------------------------+---------------------------------------+
-| Version 1.0.5              |   `atlas_1.0.5.tgz`_           | source code for Fokko and atlas       |
+| Version 1.0.5            |   `atlas_1.0.5.tgz`_         | source code for Fokko and atlas       |
 |                          |                              | including messages and atlas-scripts  |
 +--------------------------+------------------------------+---------------------------------------+
 
@@ -239,7 +239,7 @@ download install an executable file.
 Download a copy of the executable, and the atlas-scripts directory here:
 
 +-------------------------------+------------------------------+-------------------------------------+
-| Mac  compiled                 | `atlas_mac_pre_1.01.tgz`_     |  executable, and messages           |
+| Mac  compiled                 | `atlas_mac_pre_1.01.tgz`_    |  executable, and messages           |
 |                               |                              |  atlas-scripts directories          |
 +-------------------------------+------------------------------+-------------------------------------+
 

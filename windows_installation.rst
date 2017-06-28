@@ -56,7 +56,7 @@ The remainder of the process follows the standard linux process. See :ref:`linux
 Download the source code:
 
 +--------------------------+------------------------------+---------------------------------------+
-| Version 1.0.5              |   `atlas_1.0.5.tgz`_           | source code for Fokko and atlas       |
+| Version 1.0.5            |   `atlas_1.0.5.tgz`_         | source code for Fokko and atlas       |
 |                          |                              | including messages and atlas-scripts  |
 +--------------------------+------------------------------+---------------------------------------+
 
