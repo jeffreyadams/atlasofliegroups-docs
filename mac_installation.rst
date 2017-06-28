@@ -31,7 +31,7 @@ This is the latest stable version.
 |                          |                              | including messages and atlas-scripts  |
 +--------------------------+------------------------------+---------------------------------------+
 
-.. _atlas_1.0.5.tgz: http://www.liegroups.org/software/source/1.0/atlas_1.0.5.tgz
+.. _atlas_1.0.5.tgz: http://www.liegroups.org/software/source/1.0.5/atlas_1.0.5.tgz
 
 .. _using_git_Mac:
 
