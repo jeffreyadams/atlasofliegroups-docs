@@ -32,7 +32,10 @@ Note what happens if we add ``A`` and ``B``::
 Operations on Matrices
 -----------------------
 
-Multiplication on the left, resp. on the right of ``A`` by a vector automatically converts the product into the product of ``A`` by column or row vector respectively.   The transpose of A is obtained using ``^A``::
+Multiplication by a vector on the left, (resp. on the right) of ``A``,
+automatically converts the product into the product of ``A`` by column
+(resp. row) vector.  The transpose of A is obtained using
+``^A``::
 
 	       atlas> A*[1,1]
 	       Value: [ 4, 6 ]
@@ -89,7 +92,9 @@ inverse of ``A`` and ``d=1``::
 	  atlas> 
 
 
-The second command ``inverse(A)`` is not in the initial software commands. It is defined in the supplementary file ``basic.at``. This command calculates the inverse of matrix over the integers. 
+The second command ``inverse(A)`` is not in the initial software
+commands. It is defined in the supplementary file ``basic.at``. This
+command calculates the inverse of a matrix over the integers.
 
 
 Recall that to tell ``atlas`` where to find the ``.at`` files, you need to launch your software using the command ``./atlas --path=atlas-scripts``. If you have not done this yet, you can quit the software and launch it again with this command. 
@@ -97,7 +102,7 @@ Recall that to tell ``atlas`` where to find the ``.at`` files, you need to launc
 You can then input the file ``basic.at`` and continue.
 
 
-Now we can see if we can calculate the inverse of these matrices over the integers::
+Now we can see if we can calculate the inverse of these matrices over the integers ::
 
 
     atlas> A

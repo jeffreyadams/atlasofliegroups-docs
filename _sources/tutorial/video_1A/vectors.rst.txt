@@ -61,6 +61,11 @@ The commands for standard operations like length, dot product, coordinates of v,
     atlas> v[2]
     Value: 7
     atlas> v[3]
+    Runtime error:
+      index 3 out of range (0<= . <3) in subscription v[3]
+      Evaluation aborted.
+    atlas>
+
     atlas> v+w
     Value: [ 8, 12, 14 ]
     atlas> v/2

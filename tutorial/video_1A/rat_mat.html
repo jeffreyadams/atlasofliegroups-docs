@@ -172,7 +172,7 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Rational Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="local_variables.html">Local Variables</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax</a></li>
 <li class="toctree-l4"><a class="reference internal" href="local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
 </ul>
 </li>
@@ -247,6 +247,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_SL2R.html">Example <span class="math">\(SL(2,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp4R.html">Example <span class="math">\(Sp(4,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp6R.html">Example <span class="math">\(Sp(6,\mathbb R)\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_4A/intro_general_parameters.html">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_4A/intro_general_parameters.html#composition-series-and-character-formulas">Composition series and character formulas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
@@ -1158,7 +1165,7 @@ rational matrices can be manipulated in <code class="docutils literal"><span cla
 can be inverted directly without having to turn them into integral
 matrices. We need a special command because the command <code class="docutils literal"><span class="pre">inverse</span></code> only
 inverts matrices which are invertible over the integers. If they are
-not, we get an error.:</p>
+not, we get an error</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">A</span><span class="o">=</span><span class="n">mat</span><span class="p">:[[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]]</span>
 <span class="n">Variable</span> <span class="n">A</span><span class="p">:</span> <span class="n">mat</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span>
@@ -1177,7 +1184,8 @@ not, we get an error.:</p>
 <span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
 <span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
 <span class="p">]</span>
-<span class="p">(</span><span class="ow">in</span> <span class="n">call</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">8</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">10</span> <span class="n">of</span> <span class="n">inverse</span><span class="nd">@mat</span><span class="p">,</span> <span class="n">defined</span> <span class="n">at</span> <span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span><span class="o">/</span><span class="n">basic</span><span class="o">.</span><span class="n">at</span><span class="p">:</span><span class="mi">293</span><span class="p">:</span><span class="mi">4</span><span class="o">--</span><span class="mi">295</span><span class="p">:</span><span class="mi">74</span><span class="p">)</span>
+<span class="p">(</span><span class="ow">in</span> <span class="n">call</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">8</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">10</span> <span class="n">of</span> <span class="n">inverse</span><span class="nd">@mat</span><span class="p">,</span> <span class="n">defined</span> <span class="n">at</span> <span class="n">atlas</span><span class="o">-</span>
+<span class="n">scripts</span><span class="o">/</span><span class="n">basic</span><span class="o">.</span><span class="n">at</span><span class="p">:</span><span class="mi">293</span><span class="p">:</span><span class="mi">4</span><span class="o">--</span><span class="mi">295</span><span class="p">:</span><span class="mi">74</span><span class="p">)</span>
 <span class="n">Evaluation</span> <span class="n">aborted</span><span class="o">.</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>

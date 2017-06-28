@@ -172,7 +172,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="rat_mat.html">Rational Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="local_variables.html">Local Variables</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax</a></li>
 <li class="toctree-l4"><a class="reference internal" href="local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
 </ul>
 </li>
@@ -247,6 +247,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_SL2R.html">Example <span class="math">\(SL(2,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp4R.html">Example <span class="math">\(Sp(4,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp6R.html">Example <span class="math">\(Sp(6,\mathbb R)\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_4A/intro_general_parameters.html">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_4A/intro_general_parameters.html#composition-series-and-character-formulas">Composition series and character formulas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
@@ -1181,7 +1188,10 @@ from an array of integers. For example:</p>
 </div>
 <div class="section" id="operations-on-matrices">
 <h2>Operations on Matrices<a class="headerlink" href="#operations-on-matrices" title="Permalink to this headline">¶</a></h2>
-<p>Multiplication on the left, resp. on the right of <code class="docutils literal"><span class="pre">A</span></code> by a vector automatically converts the product into the product of <code class="docutils literal"><span class="pre">A</span></code> by column or row vector respectively.   The transpose of A is obtained using <code class="docutils literal"><span class="pre">^A</span></code>:</p>
+<p>Multiplication by a vector on the left, (resp. on the right) of <code class="docutils literal"><span class="pre">A</span></code>,
+automatically converts the product into the product of <code class="docutils literal"><span class="pre">A</span></code> by column
+(resp. row) vector.  The transpose of A is obtained using
+<code class="docutils literal"><span class="pre">^A</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span><span class="o">*</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
 <span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span> <span class="p">]</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">A</span>
@@ -1235,10 +1245,12 @@ inverse of <code class="docutils literal"><span class="pre">A</span></code> and 
   <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>The second command <code class="docutils literal"><span class="pre">inverse(A)</span></code> is not in the initial software commands. It is defined in the supplementary file <code class="docutils literal"><span class="pre">basic.at</span></code>. This command calculates the inverse of matrix over the integers.</p>
+<p>The second command <code class="docutils literal"><span class="pre">inverse(A)</span></code> is not in the initial software
+commands. It is defined in the supplementary file <code class="docutils literal"><span class="pre">basic.at</span></code>. This
+command calculates the inverse of a matrix over the integers.</p>
 <p>Recall that to tell <code class="docutils literal"><span class="pre">atlas</span></code> where to find the <code class="docutils literal"><span class="pre">.at</span></code> files, you need to launch your software using the command <code class="docutils literal"><span class="pre">./atlas</span> <span class="pre">--path=atlas-scripts</span></code>. If you have not done this yet, you can quit the software and launch it again with this command.</p>
 <p>You can then input the file <code class="docutils literal"><span class="pre">basic.at</span></code> and continue.</p>
-<p>Now we can see if we can calculate the inverse of these matrices over the integers:</p>
+<p>Now we can see if we can calculate the inverse of these matrices over the integers</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span>
 <span class="n">Value</span><span class="p">:</span>
 <span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span> <span class="o">|</span>

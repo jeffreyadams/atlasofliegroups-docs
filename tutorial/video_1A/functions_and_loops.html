@@ -172,7 +172,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="rat_mat.html">Rational Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="local_variables.html">Local Variables</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax</a></li>
 <li class="toctree-l4"><a class="reference internal" href="local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
 </ul>
 </li>
@@ -247,6 +247,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_SL2R.html">Example <span class="math">\(SL(2,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp4R.html">Example <span class="math">\(Sp(4,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp6R.html">Example <span class="math">\(Sp(6,\mathbb R)\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_4A/intro_general_parameters.html">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_4A/intro_general_parameters.html#composition-series-and-character-formulas">Composition series and character formulas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
@@ -1181,24 +1188,31 @@ atlas&gt;
 </pre></div>
 </div>
 <p>More functions are defined in the <code class="docutils literal"><span class="pre">.at</span></code> files and we can copy and paste more complicated functions from there.</p>
+<p>In addition, for a quick search, recall that the atlas library within this doccumentation lists all the functions already available.</p>
 <div class="section" id="arguments-and-outputs">
 <h2>Arguments and Outputs<a class="headerlink" href="#arguments-and-outputs" title="Permalink to this headline">¶</a></h2>
-<p>To find out about the usage of a function you type <code class="docutils literal"><span class="pre">whattype</span> <span class="pre">&lt;function</span> <span class="pre">name&gt;</span> <span class="pre">?</span></code>. <code class="docutils literal"><span class="pre">atlas</span></code> will list all the instances where that function is used with the type of input and output for each case. For example,:</p>
+<p>To find out about the usage of a function you type <code class="docutils literal"><span class="pre">whattype</span>
+<span class="pre">&lt;function</span> <span class="pre">name&gt;</span> <span class="pre">?</span></code>. <code class="docutils literal"><span class="pre">atlas</span></code> will list all the instances where that
+function is used with the type of input and output for each case. For
+example,:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype inverse ?
 Overloaded instances of &#39;inverse&#39;
 mat-&gt;mat
 atlas&gt;
 </pre></div>
 </div>
-<p>Gives you the argument and output for the function &#8216;inverse&#8217;. It says that the function &#8216;inverse&#8217; takes a matrix and produces another matrix.</p>
-<p>Note: Remember that the command <cite>whattype&#8217; without the question mark gives a data type. To get atlas to give you and argument you need to add `</cite>?``:</p>
+<p>Gives you the argument and output for the function <code class="docutils literal"><span class="pre">inverse</span></code>. It
+says that the function takes a matrix and produces another matrix.</p>
+<p>Note: Remember that the command <code class="docutils literal"><span class="pre">whattype</span></code> without the question mark
+gives a data type. To get atlas to give you an argument you need to
+add the <code class="docutils literal"><span class="pre">?</span></code></p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype invert ?
 Overloaded instances of &#39;invert&#39;
 mat-&gt;(mat,int)
 atlas&gt;
 </pre></div>
 </div>
-<p>This says that the function &#8216;invert&#8217; takes a matrix and gives back a pair of a matrix and an integer (See the section on Matrices for more information).</p>
+<p>This says that the function <code class="docutils literal"><span class="pre">invert</span></code> takes a matrix and gives back a pair of a matrix and an integer (See the section on Matrices for more information).</p>
 <p>To find all usages of the function <code class="docutils literal"><span class="pre">+</span></code> we do:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype + ?
 Overloaded instances of &#39;+&#39;
@@ -1228,29 +1242,36 @@ Split-&gt;int
 atlas&gt;
 </pre></div>
 </div>
-<p>Another command that tells us more about function usage for a given input is the command <code class="docutils literal"><span class="pre">&#64;</span></code>, which we use in the following format. suppose we want to know what the function inverse does to a matrix. Then we type:</p>
+<p>Another command that tells us more about function usage for a given
+input is the command <code class="docutils literal"><span class="pre">&#64;</span></code>, which we use in the following
+format. Suppose we want to know what the function inverse does to a
+matrix. Then we type:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">inverse</span><span class="nd">@mat</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">Function</span> <span class="n">defined</span> <span class="n">at</span> <span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span><span class="o">/</span><span class="n">basic</span><span class="o">.</span><span class="n">at</span><span class="p">:</span><span class="mi">254</span><span class="p">:</span><span class="mi">4</span><span class="o">--</span><span class="mi">256</span><span class="p">:</span><span class="mi">74</span>
-<span class="p">(</span><span class="n">M</span><span class="p">):</span> <span class="n">let</span> <span class="p">(</span><span class="n">inv</span><span class="p">,</span><span class="n">d</span><span class="p">)</span><span class="o">=</span><span class="n">invert</span><span class="nd">@mat</span><span class="p">(</span><span class="n">M</span><span class="p">)</span> <span class="ow">in</span> <span class="k">if</span> <span class="o">=@</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">int</span><span class="p">)(</span><span class="n">d</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="n">then</span> <span class="n">inv</span> <span class="k">else</span> <span class="n">error</span><span class="p">(</span><span class="s2">&quot;Matrix not invertible over the integers&quot;</span><span class="p">)</span> <span class="n">fi</span>
+<span class="p">(</span><span class="n">M</span><span class="p">):</span> <span class="n">let</span> <span class="p">(</span><span class="n">inv</span><span class="p">,</span><span class="n">d</span><span class="p">)</span><span class="o">=</span><span class="n">invert</span><span class="nd">@mat</span><span class="p">(</span><span class="n">M</span><span class="p">)</span> <span class="ow">in</span> <span class="k">if</span> <span class="o">=@</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">int</span><span class="p">)(</span><span class="n">d</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="n">then</span> <span class="n">inv</span> <span class="k">else</span>
+<span class="n">error</span><span class="p">(</span><span class="s2">&quot;Matrix not invertible over the integers&quot;</span><span class="p">)</span> <span class="n">fi</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Note that it also tells you in which .at file you can find the script of the function:</p>
+<p>Note that it also tells you in which <code class="docutils literal"><span class="pre">.at</span></code> file you can find the script
+of the function</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">+@</span><span class="p">(</span><span class="n">string</span><span class="p">,</span><span class="n">string</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">Function</span> <span class="n">defined</span> <span class="n">at</span> <span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span><span class="o">/</span><span class="n">basic</span><span class="o">.</span><span class="n">at</span><span class="p">:</span><span class="mi">108</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">70</span>
 <span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">):</span> <span class="c1">#@(string,string)(s,t)</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>This is defined in basic, takes a pair of strings and concatenates them</p>
-<p>However, if you want to know what &#8216;+&#8217; does to a matrix and an integer you get:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="o">+@</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span><span class="nb">int</span><span class="p">)</span>
+<p>This is defined in basic, takes a pair of strings and concatenates them.</p>
+<p>However, if you want to know what &#8216;+&#8217; does to a matrix and an
+integer you get:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="o">+@</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span><span class="nb">int</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="p">{</span><span class="o">+@</span><span class="p">(</span><span class="n">mat</span><span class="p">,</span><span class="nb">int</span><span class="p">)}</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>This means this is a built-in function that you can find in the <code class="docutils literal"><span class="pre">atlas-functions.help</span></code> file for information. But, in this case we can also try it to see what it does:</p>
+<p>This means this is a built-in function that you can find in the
+<code class="docutils literal"><span class="pre">atlas-functions.help</span></code> file for information. But, in this case we
+can also try it to see what it does:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">A</span> <span class="o">=</span><span class="n">id_mat</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">Identifier</span> <span class="n">A</span><span class="p">:</span> <span class="n">mat</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span>
@@ -1260,15 +1281,31 @@ atlas&gt;
 <span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="p">{</span><span class="n">A</span> <span class="n">quick</span> <span class="n">way</span> <span class="n">to</span> <span class="n">write</span> <span class="n">the</span> <span class="n">nxn</span> <span class="nb">id</span><span class="o">.</span> <span class="n">matrix</span><span class="p">}</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
+
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="o">+</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span>
 <span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
 <span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
 <span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">|</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">A</span><span class="o">=</span><span class="n">mat</span><span class="p">:[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+<span class="n">Variable</span> <span class="n">A</span><span class="p">:</span> <span class="n">mat</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">mat</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="o">+</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span> <span class="o">|</span>
+<span class="o">|</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
+
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>So, it adds a 1 to the diagonal of a matrix.</p>
+<p>In other words, the function <code class="docutils literal"><span class="pre">+(A,1)</span></code> adds a 1 to the diagonal of the matrix <code class="docutils literal"><span class="pre">A</span></code>.</p>
 </div>
 <div class="section" id="loops">
 <h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
@@ -1283,7 +1320,11 @@ atlas&gt;
 <span class="n">Value</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>If we do not want <code class="docutils literal"><span class="pre">atlass</span></code> to print the result we can use either <code class="docutils literal"><span class="pre">void:</span></code> before the loop or <code class="docutils literal"><span class="pre">;()</span></code> at the end of the loop:</p>
+<p>Here <code class="docutils literal"><span class="pre">od</span></code> tells <code class="docutils literal"><span class="pre">atlas</span></code> to end the loop once all the vectors of A
+were listed.</p>
+<p>If we do not want <code class="docutils literal"><span class="pre">atlas</span></code> to print the result we can
+use either <code class="docutils literal"><span class="pre">void:</span></code> before the loop or <code class="docutils literal"><span class="pre">;()</span></code> at the end of the
+loop:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span><span class="k">for</span> <span class="n">i</span><span class="p">:</span><span class="mi">3</span> <span class="n">do</span> <span class="n">i</span> <span class="n">od</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 
@@ -1325,7 +1366,8 @@ atlas&gt;
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>This is an example of a <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code>. Which tells the software that for each v in A you return something. Here od tells <code class="docutils literal"><span class="pre">atlas</span></code> to end the loop once all the vectors of A were listed.</p>
+<p>This is an example of a <code class="docutils literal"><span class="pre">for</span> <span class="pre">loop</span></code>. Which tells the software that
+for each v in A you return something.</p>
 <p>Another example is:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; v:=[1,2,3,4]
 Value: [1,2,3,4]
@@ -1354,7 +1396,7 @@ writes them concatenated into a single row:</p>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Again the command above that does this is a loop. The first part
+<p>Again the command above is a loop. The first part
 says that the function takes a matrix and outputs a vector.  The
 second part defines an empty vector <code class="docutils literal"><span class="pre">rv</span></code>. The third part is the loop that
 says that for each vector v in the matrix A, append it to what you

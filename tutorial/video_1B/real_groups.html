@@ -172,7 +172,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/rat_mat.html">Rational Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/local_variables.html">Local Variables</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
 </ul>
 </li>
@@ -247,6 +247,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_SL2R.html">Example <span class="math">\(SL(2,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp4R.html">Example <span class="math">\(Sp(4,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp6R.html">Example <span class="math">\(Sp(6,\mathbb R)\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_4A/intro_general_parameters.html">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_4A/intro_general_parameters.html#composition-series-and-character-formulas">Composition series and character formulas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
@@ -1169,7 +1176,7 @@ example:</p>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>These is a real Lie group , so the data type is a RealForm. Again the
+<p>These is a real Lie group , so the data type is a Real Form. Again the
 underlying root datum of <span class="math">\(G\)</span> is the one for the simply connected
 group of type <code class="docutils literal"><span class="pre">A1</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rd</span><span class="o">=</span><span class="n">root_datum</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
@@ -1182,15 +1189,8 @@ group of type <code class="docutils literal"><span class="pre">A1</span></code>:
 Lie group whose complexified Lie algebra is type <code class="docutils literal"><span class="pre">A1</span></code> and its root
 datum corresponds to the the roots of the simply connected complex
 group <span class="math">\(SL(2,\mathbb C)\)</span>.</p>
-<p>Now let&#8217;s take the non-semisimple Lie group <span class="math">\(GL(2,\mathbb R)\)</span>. We can define it
-in two ways. Note the different types of information we obtain:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rd</span><span class="o">=</span><span class="n">root_datum</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">rd</span><span class="p">:</span> <span class="n">RootDatum</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RootDatum</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">rd</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">simply</span> <span class="n">connected</span> <span class="n">root</span> <span class="n">datum</span> <span class="n">of</span> <span class="n">Lie</span> <span class="nb">type</span> <span class="s1">&#39;A1&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G</span><span class="p">:</span><span class="o">=</span><span class="n">GL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
+<p>Now let&#8217;s take the non-semisimple Lie group <span class="math">\(GL(2,\mathbb R)\)</span></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G</span><span class="p">:</span><span class="o">=</span><span class="n">GL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sl(2,R).gl(1,R)&#39;</span>
 
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>
@@ -1219,7 +1219,7 @@ in two ways. Note the different types of information we obtain:</p>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>On the other hand if we type:</p>
+<p>On the other hand if we type</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">C</span><span class="p">)</span>
 <span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">simple_roots</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
@@ -1331,13 +1331,13 @@ roots and coroots and rho:</p>
 </pre></div>
 </div>
 <p>Unfortunately these are not the usual coordinates for this group. Nevertheless the Cartan matrix is the usual one.</p>
-<p>There is also a function called Cartan_matrix. The possible arguments and outputs are given below:</p>
+<p>There is also a function called <code class="docutils literal"><span class="pre">Cartan_matrix</span></code>. The possible arguments and outputs are given below:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype Cartan_matrix ?
 Overloaded instances of &#39;Cartan_matrix&#39;
 LieType-&gt;mat
 RootDatum-&gt;mat
 (int,int)-&gt;mat
-&lt;example/&gt;atlas&gt; Cartan_matrix(rd)
+atlas&gt; Cartan_matrix(rd)
 Value:
 | 2, -1 |
 | -1, 2 |

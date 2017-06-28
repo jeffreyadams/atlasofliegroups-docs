@@ -172,7 +172,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/rat_mat.html">Rational Matrices</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1A/local_variables.html">Local Variables</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax::</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#the-syntax">The <code class="docutils literal"><span class="pre">;</span></code> syntax</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1A/local_variables.html#use-of-and-local-variables-in-for-statements">Use of <code class="docutils literal"><span class="pre">;</span></code> and local variables in <code class="docutils literal"><span class="pre">for</span></code> statements</a></li>
 </ul>
 </li>
@@ -247,6 +247,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_SL2R.html">Example <span class="math">\(SL(2,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp4R.html">Example <span class="math">\(Sp(4,R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_3B/example_Sp6R.html">Example <span class="math">\(Sp(6,\mathbb R)\)</span></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../general_parameters.html">General Parameters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_4A/intro_general_parameters.html">Introduction</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../video_4A/intro_general_parameters.html#composition-series-and-character-formulas">Composition series and character formulas</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
@@ -1153,7 +1160,7 @@
             
   <div class="section" id="root-data-and-lie-types">
 <h1>Root Data and Lie Types<a class="headerlink" href="#root-data-and-lie-types" title="Permalink to this headline">¶</a></h1>
-<p>To start let us talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types. By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type as follows:</p>
+<p>To start let us talk a bit about Lie types. A Lie type is a product of Complex Lie Algebras of different types. By choosing a Lie type we specify a complex reductive Lie Algebra which is a product of simple and abelian factors. Then we choose a root datum for that Lie type. for example</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; set g=LieType:&quot;A1T1&quot;
 Identifier g: LieType
 atlas&gt; g
@@ -1260,9 +1267,11 @@ interchanged. In these coordinates, for the simply connected case,
 this means that <span class="math">\(X^* ={\mathbb Z}\)</span> and the simple root is <code class="docutils literal"><span class="pre">alpha=[2]</span></code>, so
 <code class="docutils literal"><span class="pre">alpha/2=[1]</span></code> is in <span class="math">\(X^*\)</span>.</p>
 <p>On the other hand, for the adjoint group, we have that <span class="math">\(X^*\)</span> is
-still <span class="math">\(\mathbb Z\)</span>, the root <code class="docutils literal"><span class="pre">alpha=[1]</span></code> and <code class="docutils literal"><span class="pre">[1]/2</span></code> is NOT in <span class="math">\(X^*\)</span>.</p>
-<p>In general <span class="math">\(X^*\)</span> and <span class="math">\(X_*\)</span> by definition are <span class="math">\({\mathbb Z}^n\)</span>. Where the roots and coroots lie in them has to do with isogenies of the group.</p>
-<p>Another useful <code class="docutils literal"><span class="pre">.at</span></code> file that lets you put in Lie types without the quotation marks is the file &#8220;lietypes.at&#8221;. It is also included in the all.at file. This file just defines the Lie types as striings:</p>
+still <span class="math">\(\mathbb Z\)</span>, the simple root is <code class="docutils literal"><span class="pre">alpha=[1]</span></code> and <code class="docutils literal"><span class="pre">alpha/2</span> <span class="pre">=[1]/2</span></code> is NOT in <span class="math">\(X^*\)</span>.</p>
+<p>In general <span class="math">\(X^*\)</span> and <span class="math">\(X_*\)</span> by definition are <span class="math">\({\mathbb Z}^n\)</span>. However, whether the roots or coroots lie in them, has to do with isogenies of the group.</p>
+<p>Another useful <code class="docutils literal"><span class="pre">.at</span></code> file that lets you put in Lie types without the
+quotation marks is the file &#8220;lietypes.at&#8221;. It is also included in the
+<code class="docutils literal"><span class="pre">all.at</span></code> file. This file just defines the Lie types as strings</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">A1</span>
 <span class="n">Value</span><span class="p">:</span> <span class="s2">&quot;A1&quot;</span>
 <span class="n">atlas</span><span class="o">&gt;</span><span class="n">whattype</span> <span class="n">A1</span>
