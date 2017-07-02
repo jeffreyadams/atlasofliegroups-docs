@@ -3,7 +3,6 @@ Real Forms of a Complex Group
 
 We can also find out what are all the real forms of a Lie group. 
 
-{COMMENT: I THINK AN EXPLANATION IS NEEDED FOR A WIDER AUDIENCE AS TO WHY WE TALK ABOUT REAL FORMS OF A NON-COMPLEX GROUP AND WHY THE REAL FORMS OF Sp(4,C) ARE DIFFERENT. I THINK THIS WAS NOT COVERED LATER IN THE VIDEOS}::
 
     atlas> set G=Sp(4,R)
     Identifier G: RealForm
