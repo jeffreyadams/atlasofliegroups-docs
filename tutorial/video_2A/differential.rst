@@ -44,9 +44,9 @@ character::
     atlas> 
 
 If we have ``q=(x, lambda, nu)`` the differential of this character is
-the infinitesimal character which equals :math:`{(1+ \theta )\over /2}
+the infinitesimal character which equals :math:`{(1+ \theta )\over 2}
 \lambda +{(1- \theta )\over 2} \nu`. But ``nu`` is already averaged so
-this equals :math:`{(1+ \theta )\over 2} \lambda + \nu `::
+this equals :math:`{(1+ \theta )\over 2}\lambda +\nu`::
 
 	atlas> infinitesimal_character (q)
 	Value: [  5, -3 ]/2
