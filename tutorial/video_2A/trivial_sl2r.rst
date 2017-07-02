@@ -19,7 +19,7 @@ Let us consider again the case of :math:`SL(2,R)` and the trivial representation
 
 So the parameter for the trivial representation contains information
 of the Cartan subgroup and its cartan involution, :math:`\theta`,
-encoded in the :math:`K\backslash G/B$ element ``x``. In this case
+encoded in the :math:`K\backslash G/B` element ``x``. In this case
 :math:`\theta=-1`. This means it is the split Cartan subgroup, which
 is isomorphic to :math:`{\mathbb R }^x`
 
