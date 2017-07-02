@@ -15,22 +15,18 @@ command, which we can check as follows::
 We are interested in the first option. So, we can determine a
 particular torus by assigning three integers::
 
-	atlas> set H=torus(1,0,0)
-	Identifier H: RealForm (hiding previous one of type string (constant))
-	atlas> H
-	Value: compact connected quasisplit real group with Lie algebra 'u(1)'
-	atlas> set H=torus(0,1,0)
-	Identifier H: RealForm (hiding previous one of type RealForm)
-	atlas> H
-	Value: connected quasisplit real group with Lie algebra 'gl(1,C)'
-	atlas>  H:=torus(0,0,1)
-	Value: disconnected split real group with Lie algebra 'gl(1,R)'
-	atlas>
-
-	atlas> H:=torus(1,2,3) 
-	Value: disconnected quasisplit real group with Lie algebra
-	'u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)' 
-	atlas>
+   atlas> H:=torus(1,0,0)
+   Value: compact connected quasisplit real group with Lie algebra 'u(1)'
+   atlas>
+   atlas> H:=torus(0,1,0)
+   Value: connected quasisplit real group with Lie algebra 'gl(1,C)'
+   atlas>
+   atlas> H:=torus(0,0,1)
+   Value: disconnected split real group with Lie algebra 'gl(1,R)'
+   atlas>
+   atlas> H:=torus(1,2,3)
+   Value: disconnected quasisplit real group with Lie algebra 'u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)'
+   atlas> 
 
 In other words, the command ``torus(a,b,c)`` specifies a torus with
 ``a`` :math:`S^1` factors, ``b`` :math:`{\mathbb C}^{\times }` factors
@@ -75,7 +71,7 @@ is a complex torus with Cartan involution :math:`\theta`, and defined
 over :math:`\mathbb R`. Let :math:`H(\mathbb R )` be the corresponding
 real group. Denote by :math:`X^* (H)` the characters of
 :math:`H(\mathbb R )`. Then these characters are parametrized by
-triples :math:`(\theta, \gamma, \lambda)`. Here :math:`\gamma` is the
+triples :math:`(\theta, \lambda ,\nu)`. Here :math:`\nu` is the
 differential of the character and ``lambda`` is the restriction of the
 character to :math:`H^{\theta}`.
 
@@ -87,9 +83,13 @@ The basic fact is that the characters of :math:`H^{\theta}` are
 parametrized by :math:`X^*/(1-\theta)X^*`.
 
 So the characters of :math:`H(\mathbb R )` are parametrized by triples
-:math:`(\theta, \lambda, \nu)` where ``lambda`` is in
-:math:`X^*/(1-theta)X^*` and ``nu`` is in :math:`[X^*\otimes \mathbb
-Q]^{-\theta}`.
+:math:`(\theta, \lambda, \nu)` where 
+
+.. math:: \lambda \in(X^* )/(1-\theta )X^*
+
+and 
+
+.. math:: \nu \in [X^*\otimes \mathbb Q]^{-\theta}.
  
 So ``lambda`` is a character on :math:`H^\theta` and ``nu`` gives the
 character on the Lie algebra of the split Cartan subgroup
@@ -117,7 +117,7 @@ And for the character :math:`e^{i 3} t` of :math:`S^1` we have::
     atlas> 
 
 Note that ``nu`` is fixed by :math:`-\theta`. So, given any ``nu`` it will
-be replaced by :math:`(1-\theta)/2 \nu \in (X^*_{\mathbb Q})^{-\theta}`::
+be replaced by :math:`\frac{1-\theta,2} \nu \in (X^*_{\mathbb Q})^{-\theta}`::
 
     atlas> q:=parameter (x,[3],[2])
     Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
@@ -132,7 +132,7 @@ So, the above parameters are equivalent modulo the above equivalence relation an
 The characters of :math:`{\mathbb R}^{\times}`
 ----------------------------------------------
 
-Now lets take the most split one-dimensional torus::
+Now let us take the most split one-dimensional torus::
 
     atlas> H:=torus(0,0,1)
     Value: disconnected split real group with Lie algebra 'gl(1,R)'
@@ -229,7 +229,7 @@ For example if ``lambda = [0,0]`` and ``nu= [2,4]``, we have::
     atlas> 
 
 Here the software leaves ``lambda`` as ``[0,0]`` and it changes ``nu`` to
-``[-1,1]``.  Which makes sense since``nu`` is fixed by :math:`-\theta` so it changed ``nu`` to :math:`(1-\theta)\nu/2`::
+``[-1,1]``.  Which makes sense since``nu`` is fixed by :math:`-\theta` so it changed ``nu`` to :math:`\frac{1-\theta,2} \nu`::
 
 	atlas> (1-theta)*[2,4]/2
 	Value: [ -1,  1 ]/1

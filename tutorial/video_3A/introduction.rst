@@ -6,7 +6,7 @@ to discuss the theory a little bit.
 
 Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`
 
-where :math:`x \in K\backslash G/B` which determines an involution :math:`\theta _x` of the Cartan subgroup.
+where :math:`x \in K\backslash G / B` which determines an involution :math:`\theta _x` of the Cartan subgroup.
 
 .. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
@@ -35,7 +35,8 @@ R)={\mathbb R}^{*n}`
 
 In this case :math:`\lambda \in (X^* + \rho )/2X^*` gives a character
 of 
-.. math:: H(\mathbb R)^{\theta _x}=(\mathbb Z/2\mathbb Z)^n
+.. math:: H(\mathbb R)^{\theta _x} ={(\mathbb Z)/2\mathbb Z}^n
+
 
 So we get a character of the compact piece of the Cartan subgroup. 
 
@@ -45,7 +46,7 @@ to go to a covering.
 Now :math:`\nu \in {X}_{\mathbb Q} ^*` and we had constructed the
 induced representation
 
-.. math:: Ind_B ^G (\chi \otimes \nu)`,  
+.. math:: Ind_B ^G (\chi \otimes \nu),  
 
 where :math:`\chi=\rho -\lambda \in X^*`, since :math:`\lambda \in X^* + \rho`.
 
