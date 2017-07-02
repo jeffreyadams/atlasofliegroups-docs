@@ -85,7 +85,7 @@ parametrized by :math:`X^*/(1-\theta)X^*`.
 So the characters of :math:`H(\mathbb R )` are parametrized by triples
 :math:`(\theta, \lambda, \nu)` where 
 
-.. math:: \lambda \in(X^* )/(1-\theta )X^*
+.. math:: \lambda \in X^* /(1-\theta )X^*
 
 and 
 
@@ -117,7 +117,7 @@ And for the character :math:`e^{i 3} t` of :math:`S^1` we have::
     atlas> 
 
 Note that ``nu`` is fixed by :math:`-\theta`. So, given any ``nu`` it will
-be replaced by :math:`\frac{1-\theta,2} \nu \in (X^*_{\mathbb Q})^{-\theta}`::
+be replaced by :math:`\frac{1-\theta}{2} \nu \in (X^*_{\mathbb Q})^{-\theta}`::
 
     atlas> q:=parameter (x,[3],[2])
     Value: final parameter (x=0,lambda=[3]/1,nu=[0]/1)
@@ -229,7 +229,7 @@ For example if ``lambda = [0,0]`` and ``nu= [2,4]``, we have::
     atlas> 
 
 Here the software leaves ``lambda`` as ``[0,0]`` and it changes ``nu`` to
-``[-1,1]``.  Which makes sense since``nu`` is fixed by :math:`-\theta` so it changed ``nu`` to :math:`\frac{1-\theta,2} \nu`::
+``[-1,1]``.  Which makes sense since``nu`` is fixed by :math:`-\theta` so it changed ``nu`` to :math:`\frac{1-\theta}{2} \nu`::
 
 	atlas> (1-theta)*[2,4]/2
 	Value: [ -1,  1 ]/1
