@@ -36,13 +36,13 @@ Now lets find all representations with infinitesimal character :math:`\rho` ::
 
 There are 18 representations with infinitesimal character
 :math:`\rho`. The last four parameters have :math:`K\backslash G/B`
-element ``x=10``. They correspond to the four priincipal series
+element ``x=10``. They correspond to the four principal series
 attached to the split Cartan subgroup.
 
 More generally if :math:`G(\mathbb R)` is split of rank :math:`n`, the
 number of minimal principal series of infinitesimal character
-:math:`rho` corresponds to the set of characters of the split cartan
-:math:`({\mathbb R}^{\times}) ^n` : ``{(lambda,nu)}``. And up to the
+:math:`rho` corresponds to the set of characters ``{(lambda,nu)}``, of the split cartan
+:math:`({\mathbb R}^{\times}) ^n`. And up to the
 Weyl group, ``nu=rho``. So there are :math:`2^n` choices of ``lambda``
 which is a character of :math:`({\mathbb Z}_2)^n`.
 
