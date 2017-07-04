@@ -66,9 +66,9 @@ gives you the same list directly::
    atlas> whattype all_minimal_principal_series  ?
    Overloaded instances of 'all_minimal_principal_series'
      (RealForm,ratvec)->[Param]
-   atlas> set mp=all_minimal_principal_series (G, rho(G))
-   Variable mp: [Param]
-   atlas> void: for p in mp do prints(p) od
+   atlas> set ps=all_minimal_principal_series (G, rho(G))
+   Variable ps: [Param]
+   atlas> void: for p in ps do prints(p) od
    final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1)
    final parameter(x=10,lambda=[3,1]/1,nu=[2,1]/1)
    final parameter(x=10,lambda=[2,2]/1,nu=[2,1]/1)
@@ -85,11 +85,11 @@ words they are in :math:`X^*/2X^*`.
 To know which is which we look at their ``tau`` invariant::
 
    atlas> void: for p in ps do prints(p," ",tau(p)) od
-   final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1]
-   final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [1]
-   final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) []
-   final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [0]
-   atlas>
+   final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1]
+   final parameter(x=10,lambda=[3,1]/1,nu=[2,1]/1) [1]
+   final parameter(x=10,lambda=[2,2]/1,nu=[2,1]/1) []
+   final parameter(x=10,lambda=[3,2]/1,nu=[2,1]/1) [0]
+   atlas>   
 
 So the ``tau`` invariant is big for the element ``ps[0]``, which means
 the irreducible is a small representation. In fact that is the trivial
@@ -107,8 +107,9 @@ Mathematical Journal (1979). Vol 46, No 1 pp 61-108.
 Now lets look at the composition series of the standard module
 containing the trivial representation ::
 
-   atlas> p:ps[0]
-   Variable p: Param
+   atlas> p:=ps[0]
+   Value: final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas>
    atlas> show(composition_series(I(p)))
    1*J(x=0,lambda=[2/1,1/1],nu=[0/1,0/1])
    1*J(x=1,lambda=[2/1,1/1],nu=[0/1,0/1])
