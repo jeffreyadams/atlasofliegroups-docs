@@ -1,8 +1,7 @@
-Real Forms of a Complex Group
-==============================
+Real Forms
+===========
 
-We can also find out what are all the real forms of a Lie group. 
-
+We can also find out what are all the real forms of a Lie group::
 
     atlas> set G=Sp(4,R)
     Identifier G: RealForm
@@ -68,14 +67,14 @@ Now let's look at the real forms of :math:`G=SL(5,\mathbb R)`. It turns out ther
     Value: connected split real group with Lie algebra 'sl(5,R)'
     atlas>
 
-Note that the complexified Lie algebra of :math:`G`,
-:math:`\mathfrak{sl} (5,\mathbb C)` has other real forms. However,
-associated to :math:`G`, there is only one. This is because atlas
-thinks always in terms of inner classes. That is, a real form is a
-real form in a given inner class. And there is a distinquished
-involution in :math:`G` which is non trivial and which atlas uses to
-determine the inner class of the group :math:`G`. It turns out there
-is only one real form in this inner class.::
+Note that the Lie algebra, :math:`\mathfrak{sl}(5,\mathbb C)`, has
+other real forms. However, associated to :math:`G`, there is only
+one. This is because atlas thinks always in terms of inner
+classes. That is, a real form is a real form in a given inner
+class. And there is a distinquished involution in :math:`G` which is
+non trivial and which atlas uses to determine the inner class of the
+group :math:`G`. It turns out there is only one real form in this
+inner class::
 
     atlas> distinguished_involution(G)
     Value:
