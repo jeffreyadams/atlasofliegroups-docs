@@ -49,7 +49,7 @@ which is a character of :math:`({\mathbb Z}_2)^n`.
 In this case the rank is :math:`2`, so there are four, namely the last
 four representations in the above list.
 
-Let us make a separate list for them::
+Let us make a separate list for them. You can do::
 
    atlas> set ps=[parameters[14],parameters[15],parameters[16],parameters[17]]
    Variable ps: [Param]
@@ -59,6 +59,22 @@ Let us make a separate list for them::
    final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1)
    final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
    atlas>
+
+But, there is a new command, ``all_minimal_principal_series``, that
+gives you the same list directly::
+
+   atlas> whattype all_minimal_principal_series  ?
+   Overloaded instances of 'all_minimal_principal_series'
+     (RealForm,ratvec)->[Param]
+   atlas> set mp=all_minimal_principal_series (G, rho(G))
+   Variable mp: [Param]
+   atlas> void: for p in mp do prints(p) od
+   final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   final parameter(x=10,lambda=[3,1]/1,nu=[2,1]/1)
+   final parameter(x=10,lambda=[2,2]/1,nu=[2,1]/1)
+   final parameter(x=10,lambda=[3,2]/1,nu=[2,1]/1)
+   atlas> 
+ 
 
 These parameters are all principal series. How do we tell them apart?
 Each one is giving a character of the split Cartan subgroup. They have the same
