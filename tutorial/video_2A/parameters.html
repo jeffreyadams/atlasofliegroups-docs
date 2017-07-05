@@ -184,7 +184,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
 </ul>
@@ -205,7 +205,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="differential.html">The Character Differential</a></li>
-<li class="toctree-l3"><a class="reference internal" href="trivial_sl2r.html">Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="trivial_sl2r.html">Trivial Representation of <span class="math">\(SL(2,R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../first_examples.html">First Examples of Representations.</a><ul>
@@ -1246,11 +1246,11 @@ Weyl group of <span class="math">\(T\)</span>, since <code class="docutils liter
 whose differential is equal to <code class="docutils literal"><span class="pre">rho</span></code> are <span class="math">\(\{ x\rightarrow x,
 x^{-1},|x|, |x|^{-1} : x\in A \}\)</span>, where <span class="math">\(|x|=sign(x)x\)</span>.</p>
 <p>In this case <code class="docutils literal"><span class="pre">-1</span></code> is in the Weyl group of <span class="math">\(A\)</span>. So, up to conjugacy, we
-have that <span class="math">\({\widehat A} \rightarrow \{ x, |x| \}\)</span>.</p>
+have that <span class="math">\({\widehat A} \leftrightarrow \{ x, |x| \}\)</span>.</p>
 <p>This says that we have exactly four representations of <span class="math">\(SL(2,\mathbb R)\)</span>
 with infinitesimal character <code class="docutils literal"><span class="pre">rho</span></code>; two from each Cartan subgroup.</p>
 <p>Let us look for those representations of <span class="math">\(SL(2,\mathbb R)\)</span>. The command
-<code class="docutils literal"><span class="pre">parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <span class="math">\(G\)</span>
+<code class="docutils literal"><span class="pre">all_parameters_gamma</span> <span class="pre">(G,[1])</span></code> looks for all the parameters of <span class="math">\(G\)</span>
 with that infinitesimal character <code class="docutils literal"><span class="pre">[1]</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">P</span><span class="o">=</span><span class="n">all_parameters_gamma</span> <span class="p">(</span><span class="n">G</span><span class="p">,[</span><span class="mi">1</span><span class="p">])</span>
 <span class="n">Identifier</span> <span class="n">P</span><span class="p">:</span> <span class="p">[</span><span class="n">Param</span><span class="p">]</span>

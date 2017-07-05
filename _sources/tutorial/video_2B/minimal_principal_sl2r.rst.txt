@@ -150,9 +150,9 @@ non-integral infinitesimal character we get irreducibility::
     1*J(x=2,lambda=[2/1],nu=[3/2])
     atlas>
 
-So there are two large families of irreducible principal series, one
+So there are two large families of irreducible principal series; one
 with parameters of the form ``(x, [1], nu)``, and the other with
-parameters ``x, [0], nu ), where ``nu`` is non-integral::
+parameters ``(x, [0], nu )``, where ``nu`` is non-integral::
 
 
 

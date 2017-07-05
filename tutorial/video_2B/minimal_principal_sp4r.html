@@ -184,7 +184,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
 </ul>
@@ -205,7 +205,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/differential.html">The Character Differential</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2A/trivial_sl2r.html">Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/trivial_sl2r.html">Trivial Representation of <span class="math">\(SL(2,R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../first_examples.html">First Examples of Representations.</a><ul class="current">
@@ -1195,17 +1195,17 @@
 </div>
 <p>There are 18 representations with infinitesimal character
 <span class="math">\(\rho\)</span>. The last four parameters have <span class="math">\(K\backslash G/B\)</span>
-element <code class="docutils literal"><span class="pre">x=10</span></code>. They correspond to the four priincipal series
+element <code class="docutils literal"><span class="pre">x=10</span></code>. They correspond to the four principal series
 attached to the split Cartan subgroup.</p>
 <p>More generally if <span class="math">\(G(\mathbb R)\)</span> is split of rank <span class="math">\(n\)</span>, the
 number of minimal principal series of infinitesimal character
-<span class="math">\(rho\)</span> corresponds to the set of characters of the split cartan
-<span class="math">\(({\mathbb R}^{\times}) ^n\)</span> : <code class="docutils literal"><span class="pre">{(lambda,nu)}</span></code>. And up to the
+<span class="math">\(rho\)</span> corresponds to the set of characters <code class="docutils literal"><span class="pre">{(lambda,nu)}</span></code>, of the split cartan
+<span class="math">\(({\mathbb R}^{\times}) ^n\)</span>. And up to the
 Weyl group, <code class="docutils literal"><span class="pre">nu=rho</span></code>. So there are <span class="math">\(2^n\)</span> choices of <code class="docutils literal"><span class="pre">lambda</span></code>
 which is a character of <span class="math">\(({\mathbb Z}_2)^n\)</span>.</p>
 <p>In this case the rank is <span class="math">\(2\)</span>, so there are four, namely the last
 four representations in the above list.</p>
-<p>Let us make a separate list for them:</p>
+<p>Let us make a separate list for them. You can do:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">ps</span><span class="o">=</span><span class="p">[</span><span class="n">parameters</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span><span class="n">parameters</span><span class="p">[</span><span class="mi">15</span><span class="p">],</span><span class="n">parameters</span><span class="p">[</span><span class="mi">16</span><span class="p">],</span><span class="n">parameters</span><span class="p">[</span><span class="mi">17</span><span class="p">]]</span>
 <span class="n">Variable</span> <span class="n">ps</span><span class="p">:</span> <span class="p">[</span><span class="n">Param</span><span class="p">]</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ps</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">)</span> <span class="n">od</span>
@@ -1216,6 +1216,21 @@ four representations in the above list.</p>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
+<p>But, there is a new command, <code class="docutils literal"><span class="pre">all_minimal_principal_series</span></code>, that
+gives you the same list directly:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype all_minimal_principal_series  ?
+Overloaded instances of &#39;all_minimal_principal_series&#39;
+  (RealForm,ratvec)-&gt;[Param]
+atlas&gt; set ps=all_minimal_principal_series (G, rho(G))
+Variable ps: [Param]
+atlas&gt; void: for p in ps do prints(p) od
+final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1)
+final parameter(x=10,lambda=[3,1]/1,nu=[2,1]/1)
+final parameter(x=10,lambda=[2,2]/1,nu=[2,1]/1)
+final parameter(x=10,lambda=[3,2]/1,nu=[2,1]/1)
+atlas&gt;
+</pre></div>
+</div>
 <p>These parameters are all principal series. How do we tell them apart?
 Each one is giving a character of the split Cartan subgroup. They have the same
 <code class="docutils literal"><span class="pre">nu</span></code> and same <code class="docutils literal"><span class="pre">x=10</span></code> and a different lambda. Each lambda is a
@@ -1223,10 +1238,10 @@ character of <span class="math">\({\mathbb Z}_2 \times {\mathbb Z}_2\)</span>. I
 words they are in <span class="math">\(X^*/2X^*\)</span>.</p>
 <p>To know which is which we look at their <code class="docutils literal"><span class="pre">tau</span></code> invariant:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">ps</span> <span class="n">do</span> <span class="n">prints</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="n">tau</span><span class="p">(</span><span class="n">p</span><span class="p">))</span> <span class="n">od</span>
-<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[]</span>
-<span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[]</span>
+<span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -1243,8 +1258,9 @@ David Vogan&#8217;s paper: Irreducible Characters I. Definition 3.3. Duke
 Mathematical Journal (1979). Vol 46, No 1 pp 61-108.</p>
 <p>Now lets look at the composition series of the standard module
 containing the trivial representation</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="n">ps</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="o">=</span><span class="n">ps</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">show</span><span class="p">(</span><span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">p</span><span class="p">)))</span>
 <span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>
 <span class="mi">1</span><span class="o">*</span><span class="n">J</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">],</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="o">/</span><span class="mi">1</span><span class="p">])</span>

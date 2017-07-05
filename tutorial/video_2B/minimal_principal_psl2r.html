@@ -184,7 +184,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
 </ul>
@@ -205,7 +205,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/differential.html">The Character Differential</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2A/trivial_sl2r.html">Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/trivial_sl2r.html">Trivial Representation of <span class="math">\(SL(2,R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../first_examples.html">First Examples of Representations.</a><ul class="current">
@@ -1200,18 +1200,17 @@ representation of <span class="math">\(PSL(2, \mathbb R )\)</span>.</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="n">trivial</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 <span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">dimension</span> <span class="p">(</span><span class="n">p</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="mi">1</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<dl class="docutils">
-<dt>One thing to have in mind is that the trivial representation is</dt>
-<dd>always given by the maximal number <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">lambda=nu=rho</span></code></dd>
-</dl>
+<p>One thing to have in mind is that the trivial representation is always
+given by the maximal number <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">lambda=nu=rho</span></code></p>
 <p>This parameter has composition series:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">composition_series</span><span class="p">(</span><span class="n">I</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
 <span class="n">Value</span><span class="p">:</span> <span class="p">(</span>
 <span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 <span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span><span class="s2">&quot;irr&quot;</span><span class="p">)</span>

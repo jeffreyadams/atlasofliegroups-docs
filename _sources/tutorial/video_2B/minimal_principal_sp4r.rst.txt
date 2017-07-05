@@ -36,20 +36,20 @@ Now lets find all representations with infinitesimal character :math:`\rho` ::
 
 There are 18 representations with infinitesimal character
 :math:`\rho`. The last four parameters have :math:`K\backslash G/B`
-element ``x=10``. They correspond to the four priincipal series
+element ``x=10``. They correspond to the four principal series
 attached to the split Cartan subgroup.
 
 More generally if :math:`G(\mathbb R)` is split of rank :math:`n`, the
 number of minimal principal series of infinitesimal character
-:math:`rho` corresponds to the set of characters of the split cartan
-:math:`({\mathbb R}^{\times}) ^n` : ``{(lambda,nu)}``. And up to the
+:math:`rho` corresponds to the set of characters ``{(lambda,nu)}``, of the split cartan
+:math:`({\mathbb R}^{\times}) ^n`. And up to the
 Weyl group, ``nu=rho``. So there are :math:`2^n` choices of ``lambda``
 which is a character of :math:`({\mathbb Z}_2)^n`.
 
 In this case the rank is :math:`2`, so there are four, namely the last
 four representations in the above list.
 
-Let us make a separate list for them::
+Let us make a separate list for them. You can do::
 
    atlas> set ps=[parameters[14],parameters[15],parameters[16],parameters[17]]
    Variable ps: [Param]
@@ -60,6 +60,22 @@ Let us make a separate list for them::
    final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1)
    atlas>
 
+But, there is a new command, ``all_minimal_principal_series``, that
+gives you the same list directly::
+
+   atlas> whattype all_minimal_principal_series  ?
+   Overloaded instances of 'all_minimal_principal_series'
+     (RealForm,ratvec)->[Param]
+   atlas> set ps=all_minimal_principal_series (G, rho(G))
+   Variable ps: [Param]
+   atlas> void: for p in ps do prints(p) od
+   final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   final parameter(x=10,lambda=[3,1]/1,nu=[2,1]/1)
+   final parameter(x=10,lambda=[2,2]/1,nu=[2,1]/1)
+   final parameter(x=10,lambda=[3,2]/1,nu=[2,1]/1)
+   atlas> 
+ 
+
 These parameters are all principal series. How do we tell them apart?
 Each one is giving a character of the split Cartan subgroup. They have the same
 ``nu`` and same ``x=10`` and a different lambda. Each lambda is a
@@ -69,11 +85,11 @@ words they are in :math:`X^*/2X^*`.
 To know which is which we look at their ``tau`` invariant::
 
    atlas> void: for p in ps do prints(p," ",tau(p)) od
-   final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1]
-   final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [1]
-   final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) []
-   final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [0]
-   atlas>
+   final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1) [0,1]
+   final parameter(x=10,lambda=[3,1]/1,nu=[2,1]/1) [1]
+   final parameter(x=10,lambda=[2,2]/1,nu=[2,1]/1) []
+   final parameter(x=10,lambda=[3,2]/1,nu=[2,1]/1) [0]
+   atlas>   
 
 So the ``tau`` invariant is big for the element ``ps[0]``, which means
 the irreducible is a small representation. In fact that is the trivial
@@ -91,8 +107,9 @@ Mathematical Journal (1979). Vol 46, No 1 pp 61-108.
 Now lets look at the composition series of the standard module
 containing the trivial representation ::
 
-   atlas> p:ps[0]
-   Variable p: Param
+   atlas> p:=ps[0]
+   Value: final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas>
    atlas> show(composition_series(I(p)))
    1*J(x=0,lambda=[2/1,1/1],nu=[0/1,0/1])
    1*J(x=1,lambda=[2/1,1/1],nu=[0/1,0/1])

@@ -99,13 +99,13 @@ whose differential is equal to ``rho`` are :math:`\{ x\rightarrow x,
 x^{-1},|x|, |x|^{-1} : x\in A \}`, where :math:`|x|=sign(x)x`.
 
 In this case ``-1`` is in the Weyl group of :math:`A`. So, up to conjugacy, we
-have that :math:`{\widehat A} \rightarrow \{ x, |x| \}`.
+have that :math:`{\widehat A} \leftrightarrow \{ x, |x| \}`.
 
 This says that we have exactly four representations of :math:`SL(2,\mathbb R)`
 with infinitesimal character ``rho``; two from each Cartan subgroup.
 
 Let us look for those representations of :math:`SL(2,\mathbb R)`. The command
-``parameters_gamma (G,[1])`` looks for all the parameters of :math:`G`
+``all_parameters_gamma (G,[1])`` looks for all the parameters of :math:`G`
 with that infinitesimal character ``[1]``::
 
     atlas> set P=all_parameters_gamma (G,[1])

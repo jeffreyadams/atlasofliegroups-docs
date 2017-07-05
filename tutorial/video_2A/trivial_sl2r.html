@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Trivial Representation of SL(2,R) &mdash; atlas 0.6 documentation</title>
+  <title>Trivial Representation of \(SL(2,R)\) &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -184,7 +184,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
 </ul>
@@ -205,7 +205,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="differential.html">The Character Differential</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Trivial Representation of <span class="math">\(SL(2,R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../first_examples.html">First Examples of Representations.</a><ul>
@@ -1128,7 +1128,7 @@
         
           <li><a href="../coordinates_characters.html">Coordinates and Characters</a> &raquo;</li>
         
-      <li>Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></li>
+      <li>Trivial Representation of <span class="math">\(SL(2,R)\)</span></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -1158,17 +1158,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="trivial-representation-of-sl-2-r">
-<h1>Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code><a class="headerlink" href="#trivial-representation-of-sl-2-r" title="Permalink to this headline">¶</a></h1>
-<p>Let us consider again the case of <code class="docutils literal"><span class="pre">SL(2,R)</span></code> and the trivial representation.:</p>
+  <div class="section" id="trivial-representation-of">
+<h1>Trivial Representation of <span class="math">\(SL(2,R)\)</span><a class="headerlink" href="#trivial-representation-of" title="Permalink to this headline">¶</a></h1>
+<p>Let us consider again the case of <span class="math">\(SL(2,R)\)</span> and the trivial representation.:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
 <span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">connected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sl(2,R)&#39;</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="n">KGBElt</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">KGBElt</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span><span class="o">=</span><span class="n">x</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">KGB</span> <span class="n">element</span> <span class="c1">#2</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">theta</span><span class="p">:</span><span class="o">=</span><span class="n">involution</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -1179,14 +1177,15 @@
 </pre></div>
 </div>
 <p>So the parameter for the trivial representation contains information
-of the Cartan subgroup and its cartan involution, $theta$, encoded in
-the $K\G/B$ element <code class="docutils literal"><span class="pre">x</span></code>. In this case $theta=-1$. This means it
-is the split Cartan subgroup, which is isomorphic to ${mathbb R }^x$</p>
-<p>We also have encoded information about he character which, as we saw in the
+of the Cartan subgroup and its cartan involution, <span class="math">\(\theta\)</span>,
+encoded in the <span class="math">\(K\backslash G/B\)</span> element <code class="docutils literal"><span class="pre">x</span></code>. In this case
+<span class="math">\(\theta=-1\)</span>. This means it is the split Cartan subgroup, which
+is isomorphic to <span class="math">\({\mathbb R }^x\)</span></p>
+<p>We also have encoded information about the character which, as we saw in the
 section on characters of real tori, is given by <code class="docutils literal"><span class="pre">lambda</span></code> and
 <code class="docutils literal"><span class="pre">nu</span></code>. Here <code class="docutils literal"><span class="pre">nu=1</span></code> is the differential of the character, and
-<code class="docutils literal"><span class="pre">lambda=1</span></code> gives the character on the component group ${mathbb
-Z}/(1-theta){mathbb Z}=mathbb Z/2{mathbb Z}$, of the torus:</p>
+<code class="docutils literal"><span class="pre">lambda=1</span></code> gives the character on the component group <span class="math">\({\mathbb
+Z}/(1-\theta){\mathbb Z}=\mathbb Z/2{\mathbb Z}\)</span>, of the torus:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">theta</span><span class="p">)</span><span class="o">*</span><span class="k">lambda</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
 <span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="mi">0</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">theta</span><span class="p">)</span><span class="o">*</span><span class="n">nu</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>

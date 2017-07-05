@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Real Forms of a Complex Group &mdash; atlas 0.6 documentation</title>
+  <title>Real Forms &mdash; atlas 0.6 documentation</title>
   
 
   
@@ -184,7 +184,7 @@
 <li class="toctree-l3"><a class="reference internal" href="atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="cartan_classes.html">Cartan Subgroups</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Real Forms</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
 </ul>
@@ -205,7 +205,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../video_2A/differential.html">The Character Differential</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_2A/trivial_sl2r.html">Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../video_2A/trivial_sl2r.html">Trivial Representation of <span class="math">\(SL(2,R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../first_examples.html">First Examples of Representations.</a><ul>
@@ -1128,7 +1128,7 @@
         
           <li><a href="../structure_theory.html">Structure Theory</a> &raquo;</li>
         
-      <li>Real Forms of a Complex Group</li>
+      <li>Real Forms</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -1158,10 +1158,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="real-forms-of-a-complex-group">
-<h1>Real Forms of a Complex Group<a class="headerlink" href="#real-forms-of-a-complex-group" title="Permalink to this headline">¶</a></h1>
-<p>We can also find out what are all the real forms of a Lie group.</p>
-<p>{COMMENT: I THINK AN EXPLANATION IS NEEDED FOR A WIDER AUDIENCE AS TO WHY WE TALK ABOUT REAL FORMS OF A NON-COMPLEX GROUP AND WHY THE REAL FORMS OF Sp(4,C) ARE DIFFERENT. I THINK THIS WAS NOT COVERED LATER IN THE VIDEOS}:</p>
+  <div class="section" id="real-forms">
+<h1>Real Forms<a class="headerlink" href="#real-forms" title="Permalink to this headline">¶</a></h1>
+<p>We can also find out what are all the real forms of a Lie group:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">Sp</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
 <span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rf</span><span class="o">=</span><span class="n">real_forms</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
@@ -1189,7 +1188,7 @@ each Lie algebra above.</p>
 The Cartan classes are the same across all real forms of the same
 complex group. In fact even though within the compact real form there
 is only one conjugacy class of Cartan subgroups, we will have the same Cartan
-classes for <span class="math">\(G=Sp(2)\)</span> than for <span class="math">\(G=Sp(4,\mathbb R)\)</span>.:</p>
+classes for <span class="math">\(G=Sp(2)\)</span> than for <span class="math">\(G=Sp(4,\mathbb R)\)</span>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; rf[0]
 Value: compact connected real group with Lie algebra &#39;sp(2)&#39;
 atlas&gt; nr_of_Cartan_classes (rf[0])
@@ -1210,7 +1209,8 @@ atlas&gt;
 </div>
 <div class="section" id="inner-classes-and-outer-involutions">
 <h2>Inner Classes and Outer Involutions<a class="headerlink" href="#inner-classes-and-outer-involutions" title="Permalink to this headline">¶</a></h2>
-<p>Now let&#8217;s look at the real forms of <span class="math">\(G=SL(5,\mathbb R)\)</span>. It turns out there is only one: <span class="math">\(G\)</span> itself:</p>
+<p>Now let&#8217;s look at the real forms of <span class="math">\(G=SL(5,\mathbb R)\)</span>. It
+turns out there is only one, <span class="math">\(G\)</span> itself:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
 <span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rf</span> <span class="o">=</span><span class="n">real_forms</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
@@ -1223,14 +1223,14 @@ atlas&gt;
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Note that the complexified Lie algebra of <span class="math">\(G\)</span>,
-<span class="math">\(\mathfrak{sl} (5,\mathbb C)\)</span> has other real forms. However,
-associated to <span class="math">\(G\)</span>, there is only one. This is because atlas
-thinks always in terms of inner classes. That is, a real form is a
-real form in a given inner class. And there is a distinquished
-involution in <span class="math">\(G\)</span> which is non trivial and which atlas uses to
-determine the inner class of the group <span class="math">\(G\)</span>. It turns out there
-is only one real form in this inner class.:</p>
+<p>Note that the Lie algebra, <span class="math">\(\mathfrak{sl}(5,\mathbb C)\)</span>, has
+other real forms. However, associated to <span class="math">\(G\)</span>, there is only
+one. This is because atlas thinks always in terms of inner
+classes. That is, a real form is a real form in a given inner
+class. And there is a distinquished involution in <span class="math">\(G\)</span> which is
+non trivial and which atlas uses to determine the inner class of the
+group <span class="math">\(G\)</span>. In this case there is only one real form in this
+inner class:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">distinguished_involution</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span>
 <span class="o">|</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span> <span class="o">|</span>
@@ -1280,7 +1280,7 @@ diagram automorphism.</p>
 <p>So what will happen for <span class="math">\(G=SL(6,\mathbb R)\)</span>? We can see in the
 following example that there is another real form in the same inner
 class as <span class="math">\(SL(6,\mathbb R)\)</span>, namely <span class="math">\(SL(3,\mathbb H)\)</span>. This
-will be true whenever <code class="docutils literal"><span class="pre">p+q=2n</span></code>.:</p>
+will be true whenever <code class="docutils literal"><span class="pre">p+q=2n</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
 <span class="n">Identifier</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">rf</span><span class="o">=</span><span class="n">real_forms</span> <span class="p">(</span><span class="n">G</span><span class="p">)</span>

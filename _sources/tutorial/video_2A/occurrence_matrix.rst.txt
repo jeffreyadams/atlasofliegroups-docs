@@ -1,7 +1,7 @@
 Occurrence Matrices
 ====================
 
-We mentionned before that a Cartan subgroup may appear in different real forms
+We mentioned before that a Cartan subgroup may appear in different real forms
 of an inner class. More precisely, for a given inner class there
 is a fixed set of Cartan subgroups which may or may not appear in the different
 real forms associated to this inner class. If we ask for the number

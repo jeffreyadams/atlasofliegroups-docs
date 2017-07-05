@@ -1,9 +1,7 @@
-Real Forms of a Complex Group
-==============================
+Real Forms
+===========
 
-We can also find out what are all the real forms of a Lie group. 
-
-{COMMENT: I THINK AN EXPLANATION IS NEEDED FOR A WIDER AUDIENCE AS TO WHY WE TALK ABOUT REAL FORMS OF A NON-COMPLEX GROUP AND WHY THE REAL FORMS OF Sp(4,C) ARE DIFFERENT. I THINK THIS WAS NOT COVERED LATER IN THE VIDEOS}::
+We can also find out what are all the real forms of a Lie group::
 
     atlas> set G=Sp(4,R)
     Identifier G: RealForm
@@ -35,7 +33,7 @@ Now something interesting about real forms and Cartan classes is that
 The Cartan classes are the same across all real forms of the same
 complex group. In fact even though within the compact real form there
 is only one conjugacy class of Cartan subgroups, we will have the same Cartan
-classes for :math:`G=Sp(2)` than for :math:`G=Sp(4,\mathbb R)`.::
+classes for :math:`G=Sp(2)` than for :math:`G=Sp(4,\mathbb R)`::
 
     atlas> rf[0]
     Value: compact connected real group with Lie algebra 'sp(2)'
@@ -56,7 +54,8 @@ classes for :math:`G=Sp(2)` than for :math:`G=Sp(4,\mathbb R)`.::
 Inner Classes and Outer Involutions
 ------------------------------------
 
-Now let's look at the real forms of :math:`G=SL(5,\mathbb R)`. It turns out there is only one: :math:`G` itself::
+Now let's look at the real forms of :math:`G=SL(5,\mathbb R)`. It
+turns out there is only one, :math:`G` itself::
 
     atlas> set G=SL(5,R)
     Identifier G: RealForm (hiding previous one of type RealForm)
@@ -69,14 +68,14 @@ Now let's look at the real forms of :math:`G=SL(5,\mathbb R)`. It turns out ther
     Value: connected split real group with Lie algebra 'sl(5,R)'
     atlas>
 
-Note that the complexified Lie algebra of :math:`G`,
-:math:`\mathfrak{sl} (5,\mathbb C)` has other real forms. However,
-associated to :math:`G`, there is only one. This is because atlas
-thinks always in terms of inner classes. That is, a real form is a
-real form in a given inner class. And there is a distinquished
-involution in :math:`G` which is non trivial and which atlas uses to
-determine the inner class of the group :math:`G`. It turns out there
-is only one real form in this inner class.::
+Note that the Lie algebra, :math:`\mathfrak{sl}(5,\mathbb C)`, has
+other real forms. However, associated to :math:`G`, there is only
+one. This is because atlas thinks always in terms of inner
+classes. That is, a real form is a real form in a given inner
+class. And there is a distinquished involution in :math:`G` which is
+non trivial and which atlas uses to determine the inner class of the
+group :math:`G`. In this case there is only one real form in this
+inner class::
 
     atlas> distinguished_involution(G)
     Value:
@@ -127,7 +126,7 @@ diagram automorphism.
 So what will happen for :math:`G=SL(6,\mathbb R)`? We can see in the
 following example that there is another real form in the same inner
 class as :math:`SL(6,\mathbb R)`, namely :math:`SL(3,\mathbb H)`. This
-will be true whenever ``p+q=2n``.::
+will be true whenever ``p+q=2n``::
 
     atlas> set G=SL(6,R)
     Identifier G: RealForm (hiding previous one of type RealForm)

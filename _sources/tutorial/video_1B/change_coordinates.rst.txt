@@ -1,7 +1,7 @@
 Change of Coordinates 
 ======================
 
-For this and following sessions you want to download the files ``basic.at``, ``groups.at`` and ``lietypes.at``.
+For this and following sessions you want to download the files ``basic.at``, ``groups.at`` and ``lietypes.at``. Or, if you prefer, the file ``all.at`` to have most of the commands and scripts you will need.
 
 To change ``atlas`` coordinates for roots and other weights to your
 prefered coordinate system you can also download the file ``coordinates.at`` (included in the all.at file) and do the following::

@@ -3,7 +3,7 @@ Introduction
 
 So far the focus has been on Cartan subgroups, whose information is
 encoded on the element ``x`` as the Cartan involution of the complex
-abstract group :math:`H`, which determines the real group :math:`H(\mathbb
+abstract group :math:`H`, that determines the real group :math:`H(\mathbb
 R)`. Now ``x`` is really a :math:`K`-orbit on :math:`G/B`. So, it is
 the support of the corresponding :math:`D`-module. In order to explain this in
 detail we will look at some easy cases. In particular we will be

@@ -184,7 +184,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/atlas_coordinates.html"><code class="docutils literal"><span class="pre">atlas</span></code> choice of coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/change_coordinates.html">Change of Coordinates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../video_1B/cartan_classes.html">Cartan Subgroups</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms of a Complex Group</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../video_1B/real_forms.html">Real Forms</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#cartan-classes-accross-real-forms">Cartan Classes Accross Real Forms</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../video_1B/real_forms.html#inner-classes-and-outer-involutions">Inner Classes and Outer Involutions</a></li>
 </ul>
@@ -205,7 +205,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="differential.html">The Character Differential</a></li>
-<li class="toctree-l3"><a class="reference internal" href="trivial_sl2r.html">Trivial Representation of <code class="docutils literal"><span class="pre">SL(2,R)</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="trivial_sl2r.html">Trivial Representation of <span class="math">\(SL(2,R)\)</span></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../first_examples.html">First Examples of Representations.</a><ul>
@@ -1173,21 +1173,17 @@ atlas&gt;
 </div>
 <p>We are interested in the first option. So, we can determine a
 particular torus by assigning three integers:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">H</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">H</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">string</span> <span class="p">(</span><span class="n">constant</span><span class="p">))</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">compact</span> <span class="n">connected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;u(1)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">H</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">Identifier</span> <span class="n">H</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">connected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,C)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span>  <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,R)&#39;</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
-
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span>
-<span class="s1">&#39;u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)&#39;</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">quasisplit</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;u(1).gl(1,C).gl(1,C).gl(1,R).gl(1,R).gl(1,R)&#39;</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -1231,7 +1227,7 @@ is a complex torus with Cartan involution <span class="math">\(\theta\)</span>, 
 over <span class="math">\(\mathbb R\)</span>. Let <span class="math">\(H(\mathbb R )\)</span> be the corresponding
 real group. Denote by <span class="math">\(X^* (H)\)</span> the characters of
 <span class="math">\(H(\mathbb R )\)</span>. Then these characters are parametrized by
-triples <span class="math">\((\theta, \gamma, \lambda)\)</span>. Here <span class="math">\(\gamma\)</span> is the
+triples <span class="math">\((\theta, \lambda ,\nu)\)</span>. Here <span class="math">\(\nu\)</span> is the
 differential of the character and <code class="docutils literal"><span class="pre">lambda</span></code> is the restriction of the
 character to <span class="math">\(H^{\theta}\)</span>.</p>
 <p>The real points are not necessarily connected. So we need to specify
@@ -1240,9 +1236,12 @@ part which is encoded in the restriction to <span class="math">\(H^{\theta}\)</s
 <p>The basic fact is that the characters of <span class="math">\(H^{\theta}\)</span> are
 parametrized by <span class="math">\(X^*/(1-\theta)X^*\)</span>.</p>
 <p>So the characters of <span class="math">\(H(\mathbb R )\)</span> are parametrized by triples
-<span class="math">\((\theta, \lambda, \nu)\)</span> where <code class="docutils literal"><span class="pre">lambda</span></code> is in
-<span class="math">\(X^*/(1-theta)X^*\)</span> and <code class="docutils literal"><span class="pre">nu</span></code> is in <span class="math">\([X^*\otimes \mathbb
-Q]^{-\theta}\)</span>.</p>
+<span class="math">\((\theta, \lambda, \nu)\)</span> where</p>
+<div class="math">
+\[\lambda \in X^* /(1-\theta )X^*\]</div>
+<p>and</p>
+<div class="math">
+\[\nu \in [X^*\otimes \mathbb Q]^{-\theta}.\]</div>
 <p>So <code class="docutils literal"><span class="pre">lambda</span></code> is a character on <span class="math">\(H^\theta\)</span> and <code class="docutils literal"><span class="pre">nu</span></code> gives the
 character on the Lie algebra of the split Cartan subgroup
 <span class="math">\(A=H^{-\theta}\)</span>.</p>
@@ -1266,7 +1265,7 @@ t}\)</span>.</p>
 </pre></div>
 </div>
 <p>Note that <code class="docutils literal"><span class="pre">nu</span></code> is fixed by <span class="math">\(-\theta\)</span>. So, given any <code class="docutils literal"><span class="pre">nu</span></code> it will
-be replaced by <span class="math">\((1-\theta)/2 \nu \in (X^*_{\mathbb Q})^{-\theta}\)</span>:</p>
+be replaced by <span class="math">\(\frac{1-\theta}{2} \nu \in (X^*_{\mathbb Q})^{-\theta}\)</span>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span><span class="p">:</span><span class="o">=</span><span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="p">,[</span><span class="mi">3</span><span class="p">],[</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
@@ -1281,7 +1280,7 @@ be replaced by <span class="math">\((1-\theta)/2 \nu \in (X^*_{\mathbb Q})^{-\th
 </div>
 <div class="section" id="id1">
 <h2>The characters of <span class="math">\({\mathbb R}^{\times}\)</span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Now lets take the most split one-dimensional torus:</p>
+<p>Now let us take the most split one-dimensional torus:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">H</span><span class="p">:</span><span class="o">=</span><span class="n">torus</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,R)&#39;</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="o">=</span><span class="n">trivial</span> <span class="p">(</span><span class="n">H</span><span class="p">)</span>
@@ -1374,7 +1373,7 @@ For example if <code class="docutils literal"><span class="pre">lambda</span> <s
 </pre></div>
 </div>
 <p>Here the software leaves <code class="docutils literal"><span class="pre">lambda</span></code> as <code class="docutils literal"><span class="pre">[0,0]</span></code> and it changes <code class="docutils literal"><span class="pre">nu</span></code> to
-<code class="docutils literal"><span class="pre">[-1,1]</span></code>.  Which makes sense since``nu`` is fixed by <span class="math">\(-\theta\)</span> so it changed <code class="docutils literal"><span class="pre">nu</span></code> to <span class="math">\((1-\theta)\nu/2\)</span>:</p>
+<code class="docutils literal"><span class="pre">[-1,1]</span></code>.  Which makes sense since``nu`` is fixed by <span class="math">\(-\theta\)</span> so it changed <code class="docutils literal"><span class="pre">nu</span></code> to <span class="math">\(\frac{1-\theta}{2} \nu\)</span>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">theta</span><span class="p">)</span><span class="o">*</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span><span class="o">/</span><span class="mi">2</span>
 <span class="n">Value</span><span class="p">:</span> <span class="p">[</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">1</span> <span class="p">]</span><span class="o">/</span><span class="mi">1</span>
 <span class="n">atlas</span><span class="o">&gt;</span>

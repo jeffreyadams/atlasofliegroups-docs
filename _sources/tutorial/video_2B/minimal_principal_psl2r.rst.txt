@@ -43,16 +43,17 @@ Now let us look at the trivial representation ::
    atlas> p:trivial(G)
    Variable p: Param
    atlas> p
+   Value: final parameter(x=1,lambda=[1]/2,nu=[1]/2)
+   atlas>
    atlas> dimension (p)
    Value: 1
    atlas>
 
-One thing to have in mind is that the trivial representation is
- always given by the maximal number ``x`` and ``lambda=nu=rho``
+One thing to have in mind is that the trivial representation is always
+given by the maximal number ``x`` and ``lambda=nu=rho``
 
 This parameter has composition series::
 
-   Value: final parameter (x=1,lambda=[1]/2,nu=[1]/2)
    atlas> composition_series(I(p))
    Value: (
    1*final parameter (x=0,lambda=[1]/2,nu=[0]/1)
