@@ -1,7 +1,7 @@
 Example :math:`G=SO(3,2)`
 =========================
 
-Let's study the minimal principal series for this group> ::
+Let's study the minimal principal series for this group ::
 
    atlas> G:SO(3,2)
    Variable G: RealForm (overriding previous instance, which had type RealForm)
@@ -37,7 +37,7 @@ Note that here we can also just use the command
    Value: [final parameter(x=6,lambda=[3,1]/2,nu=[3,1]/2),final parameter(x=6,lambda=[5,1]/2,nu=[3,1]/2),final parameter(x=6,lambda=[3,3]/2,nu=[3,1]/2),final parameter(x=6,lambda=[5,3]/2,nu=[3,1]/2)]
    atlas>
 
-And to write them in one line we do::
+And to write them one line at a time we do::
 
     atlas> void: for p in ps do prints(p) od
     final parameter(x=6,lambda=[3,1]/2,nu=[3,1]/2)
