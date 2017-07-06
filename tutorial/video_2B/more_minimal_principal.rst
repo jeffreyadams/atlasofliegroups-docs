@@ -54,28 +54,61 @@ The group does not have to be semisimple::
    atlas> set ps= all_minimal_principal_series (G,rho(G))
    Variable ps: [Param] (overriding previous instance, which had type [Param])
    atlas> void: for p in ps do prints(p) od
-   final parameter (x=1,lambda=[1,-1]/2,nu=[1,-1]/2)
-   final parameter (x=1,lambda=[3,-1]/2,nu=[1,-1]/2)
-   final parameter (x=1,lambda=[1,1]/2,nu=[1,-1]/2)
-   final parameter (x=1,lambda=[3,1]/2,nu=[1,-1]/2)
+   final parameter(x=1,lambda=[1,-1]/2,nu=[1,-1]/2)
+   final parameter(x=1,lambda=[3,-1]/2,nu=[1,-1]/2)
+   final parameter(x=1,lambda=[1,1]/2,nu=[1,-1]/2)
+   final parameter(x=1,lambda=[3,1]/2,nu=[1,-1]/2)
+   atlas> 
 
-Also, :math:`G` does not have to be split either::
+WARNING: This command does not work for non-split groups ::
 
-   atlas> G=U(2,2)
-   Value: false
    atlas> G:=U(2,2)
    Value: connected quasisplit real group with Lie algebra 'su(2,2).u(1)'
    atlas> set ps= all_minimal_principal_series (G,rho(G))
-   Variable ps: [Param] (overriding previous instance, which had type [Param])
-   atlas> #ps
-   Value: 3
-   atlas> 
-   atlas> void: for p in ps do prints(p) od
-   final parameter (x=12,lambda=[3,1,-1,-3]/2,nu=[1,-1,1,-1]/2)
-   final parameter (x=17,lambda=[3,1,-1,-3]/2,nu=[1,1,-1,-1]/1)
-   final parameter (x=20,lambda=[3,1,-1,-3]/2,nu=[3,1,-1,-3]/2)
+   group is not split
+   (in call at atlas-scripts/basic.at:8:57-71 of error@string, built-in)
+     [b=false, message="group is not split"]
+   (in call at atlas-scripts/all_parameters.at:109:4-44 of assert@(bool,string), defined at atlas-scripts/basic.at:8:4-74)
+     [G=connected quasisplit real group with Lie algebra 'su(2,2).u(1)', gamma=[  3,  1, -1, -3 ]/2]
+     (in call at <standard input>:5:7-45 of all_minimal_principal_series@(RealForm,ratvec), defined at atlas-scripts/all_parameters.at:108:4--110:63)
+     Command 'set ps' interrupted, nothing defined.
+   atlas>
 
-Recall the all Cartan subgroups of :math:`U(2,2)` are connected. And we can find the information on the Cartan subgroup associated to each parameter as follows:: 
+For this group we do need to use the command that lists all
+representations with a given parameter ::
+
+atlas> G:=U(2,2)
+Value: connected quasisplit real group with Lie algebra 'su(2,2).u(1)'
+atlas> set params=all_parameters_gamma (G,rho(G))
+Variable params: [Param] (overriding previous instance, which had type [Param])
+atlas> #params
+Value: 21
+atlas>
+atlas> void: for p in params do prints(p) od
+final parameter(x=20,lambda=[3,1,-1,-3]/2,nu=[3,1,-1,-3]/2)
+final parameter(x=19,lambda=[3,1,-1,-3]/2,nu=[3,0,0,-3]/2)
+final parameter(x=18,lambda=[3,1,-1,-3]/2,nu=[3,0,0,-3]/2)
+final parameter(x=17,lambda=[3,1,-1,-3]/2,nu=[1,1,-1,-1]/1)
+final parameter(x=16,lambda=[3,1,-1,-3]/2,nu=[1,0,-1,0]/1)
+final parameter(x=15,lambda=[3,1,-1,-3]/2,nu=[1,0,-1,0]/1)
+final parameter(x=14,lambda=[3,1,-1,-3]/2,nu=[0,1,0,-1]/1)
+final parameter(x=13,lambda=[3,1,-1,-3]/2,nu=[0,1,0,-1]/1)
+final parameter(x=12,lambda=[3,1,-1,-3]/2,nu=[1,-1,1,-1]/2)
+final parameter(x=11,lambda=[3,1,-1,-3]/2,nu=[1,-1,0,0]/2)
+final parameter(x=10,lambda=[3,1,-1,-3]/2,nu=[1,-1,0,0]/2)
+final parameter(x=9,lambda=[3,1,-1,-3]/2,nu=[0,1,-1,0]/2)
+final parameter(x=8,lambda=[3,1,-1,-3]/2,nu=[0,1,-1,0]/2)
+final parameter(x=7,lambda=[3,1,-1,-3]/2,nu=[0,0,1,-1]/2)
+final parameter(x=6,lambda=[3,1,-1,-3]/2,nu=[0,0,1,-1]/2)
+final parameter(x=5,lambda=[3,1,-1,-3]/2,nu=[0,0,0,0]/1)
+final parameter(x=4,lambda=[3,1,-1,-3]/2,nu=[0,0,0,0]/1)
+final parameter(x=3,lambda=[3,1,-1,-3]/2,nu=[0,0,0,0]/1)
+final parameter(x=2,lambda=[3,1,-1,-3]/2,nu=[0,0,0,0]/1)
+final parameter(x=1,lambda=[3,1,-1,-3]/2,nu=[0,0,0,0]/1)
+final parameter(x=0,lambda=[3,1,-1,-3]/2,nu=[0,0,0,0]/1)
+atlas> 
+
+Recall that all Cartan subgroups of :math:`U(2,2)` are connected. And we can find the information on the Cartan subgroup associated to each parameter as follows :: 
 
    atlas> set p=ps[0]
    Variable p: Param
