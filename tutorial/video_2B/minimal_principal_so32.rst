@@ -75,53 +75,54 @@ representations ::
     Value: final parameter(x=6,lambda=[5,3]/2,nu=[3,1]/2)
     atlas>
     atlas> show(composition_series(I(p)))
-    1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
-    1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
-    1*J(x=3,lambda=[3/2,1/2],nu=[0/1,1/2])
-    1*J(x=3,lambda=[3/2,3/2],nu=[0/1,1/2])
+    1*J(x=6,lambda=[5/2,3/2],nu=[3/2,1/2])
     1*J(x=4,lambda=[5/2,1/2],nu=[3/2,0/1])
     1*J(x=5,lambda=[3/2,1/2],nu=[1/1,1/1])
-    1*J(x=6,lambda=[5/2,3/2],nu=[3/2,1/2])
-    atlas>
-
-    atlas> p:parameters[8]
-    Variable p: Param (overriding previous instance, which had type Param)
-    atlas> show(composition_series(I(p)))
-    1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
-    1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
     1*J(x=3,lambda=[3/2,1/2],nu=[0/1,1/2])
     1*J(x=3,lambda=[3/2,3/2],nu=[0/1,1/2])
+    1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
+    1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
+    atlas>
+    
+
+    atlas> p:ps[0]
+    Variable p: Param (overriding previous instance, which had type Param)
+    atlas> show(composition_series(I(p)))
+    1*J(x=6,lambda=[3/2,1/2],nu=[3/2,1/2])
     1*J(x=4,lambda=[3/2,1/2],nu=[3/2,0/1])
     1*J(x=5,lambda=[3/2,1/2],nu=[1/1,1/1])
-    1*J(x=6,lambda=[3/2,1/2],nu=[3/2,1/2])
+    1*J(x=3,lambda=[3/2,1/2],nu=[0/1,1/2])
+    1*J(x=3,lambda=[3/2,3/2],nu=[0/1,1/2])
+    1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
+    1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
     atlas>
 
 
 These are almost identical but not quite. For example, the ``lambdas``
-are different in lines 5 and 7.
+are different in lines 1 and 2.
 
-Similarly if we look at parameters 9 and 10 we have ::
+Similarly if we look at parameters ps[1] and ps[2] we have ::
 
-    atlas> p:parameters[9]
+    atlas> p:ps[1]
     Variable p: Param (overriding previous instance, which had type Param)
     atlas> show(composition_series(I(p)))
-    1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
-    1*J(x=1,lambda=[3/2,1/2],nu=[0/1,0/1])
-    1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
-    1*J(x=3,lambda=[3/2,3/2],nu=[0/1,1/2])
-    1*J(x=4,lambda=[5/2,1/2],nu=[3/2,0/1])
     1*J(x=6,lambda=[5/2,1/2],nu=[3/2,1/2])
-    atlas>
+    1*J(x=4,lambda=[5/2,1/2],nu=[3/2,0/1])
+    1*J(x=3,lambda=[3/2,3/2],nu=[0/1,1/2])
+    1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
+    1*J(x=1,lambda=[3/2,1/2],nu=[0/1,0/1])
+    1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
+    atlas> 
     
-    atlas> p:parameters[10]
+    atlas> p:ps[2]
     Variable p: Param (overriding previous instance, which had type Param)
     atlas> show(composition_series(I(p)))
-    1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
-    1*J(x=1,lambda=[3/2,1/2],nu=[0/1,0/1])
-    1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
-    1*J(x=3,lambda=[3/2,1/2],nu=[0/1,1/2])
-    1*J(x=4,lambda=[3/2,1/2],nu=[3/2,0/1])
     1*J(x=6,lambda=[3/2,3/2],nu=[3/2,1/2])
+    1*J(x=4,lambda=[3/2,1/2],nu=[3/2,0/1])
+    1*J(x=3,lambda=[3/2,1/2],nu=[0/1,1/2])
+    1*J(x=2,lambda=[3/2,1/2],nu=[1/2,-1/2])
+    1*J(x=1,lambda=[3/2,1/2],nu=[0/1,0/1])
+    1*J(x=0,lambda=[3/2,1/2],nu=[0/1,0/1])
     atlas>
 
 These are smaller standard representations, have less complicated and also very similar composition series.
