@@ -47,7 +47,7 @@ So, in this case we obtain again the four principal series of
 
 The ``nus`` are all ``rho`` and the ``lambdas`` are all possible lambdas in :math:`X^*/2X^*`.
 
-The group does not have to be semisimple::
+Note that the group does not have to be semisimple::
 
    atlas> G:=GL(2,R)
    Value: disconnected split real group with Lie algebra 'sl(2,R).gl(1,R)'
@@ -75,7 +75,7 @@ WARNING: This command does not work for non-split groups ::
    atlas>
 
 For this group we do need to use the command that lists all
-representations with a given parameter ::
+representations with a given parameter for :math:`G` ::
 
 atlas> G:=U(2,2)
 Value: connected quasisplit real group with Lie algebra 'su(2,2).u(1)'
@@ -110,8 +110,9 @@ atlas>
 
 Recall that all Cartan subgroups of :math:`U(2,2)` are connected. And we can find the information on the Cartan subgroup associated to each parameter as follows :: 
 
-   atlas> set p=ps[0]
-   Variable p: Param
+   atlas> p:=trivial(G)
+   Value: final parameter(x=20,lambda=[3,1,-1,-3]/2,nu=[3,1,-1,-3]/2)
+   atlas>
    atlas> H:=Cartan_class(p)
    Value: Cartan class #2, occurring for 1 real form and for 2 dual real forms
    atlas>
@@ -124,10 +125,11 @@ Recall that all Cartan subgroups of :math:`U(2,2)` are connected. And we can fin
    complex factor: A1
    atlas>
 
-This is the most split Cartan subgroup in :math:`U(2,2)`. It is just two copies
-of :math`{\mathbb C}^x. So it is connected. In fact this group has
-three minimal principal series not comming from the disconnectedness
-of the Cartan subgroup but from the Weyl group. We will address this later.
+This is the most split Cartan subgroup in :math:`U(2,2)`. It is just
+two copies of :math:`{\mathbb C}^x. So it is connected. In fact this
+group has three minimal principal series (with ``x=17`` and ``x=1`2``)
+not comming from the disconnectedness of the Cartan subgroup but from
+the Weyl group. We will address this later.
 
 
 Now let us look at another command::
