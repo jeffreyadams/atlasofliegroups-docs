@@ -1,10 +1,11 @@
 More on minimal pricipal series.
 =================================
 
-There is another file that you can load called ``all_parameters.at``
-which we will use here to look at more examples of minimal principal
-series. In particular the commands ``minimal_principal_series`` and
-``all_minimal_principal_series``. Let us compare their use with some
+There is another command which we will use here to look at more
+examples of minimal principal series. Namely, in addition to the
+command ``all_minimal_principal_series``, the command
+``minimal_principal_series`` help us identify a particular
+representation in the series. Let us compare their use with some
 examples::
 
 
@@ -23,7 +24,7 @@ We will use the first syntax above::
    atlas> minimal_principal_series(G,rho(G),[0,0])
    Value: final parameter (x=10,lambda=[2,1]/1,nu=[0,0]/1)
 
-So we get the single trivial or the representation with ``nu=0``. Now let's try the second command. Here we need to provide a real form and a rational vector::
+So we get the single trivial or the representation with ``nu=0``. Now, recall that with the first command, we need to provide a real form and a rational vector::
 
    atlas> whattype all_minimal_principal_series ?
    Overloaded instances of 'all_minimal_principal_series'

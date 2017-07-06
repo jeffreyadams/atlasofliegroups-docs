@@ -169,7 +169,7 @@ simply connected. But in any case, this is often another way to
 determine it.
 
 Now suppose we start with the trivial representation and we modify the
-parameter by an element of the Weyl group.::
+parameter ``nu`` by an element of the Weyl group::
 
    atlas> p:trivial(G)
    Variable p: Param (overriding previous instance, which had type Param)
@@ -180,24 +180,19 @@ parameter by an element of the Weyl group.::
    atlas> set q=parameter(KGB(G,10),[2,1],[-1,-2])
    Variable q: Param
    atlas> q
-   Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
+   Value: non-dominant parameter(x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
    atlas> p=q
+   Value: false
+   atlas> equivalent(p,q)
    Value: true
    atlas>
 
-The Weyl group sends ``[-1,-2]`` to``[2,1]``. And, since there is a
+The representations are not equal. However, they are equvalent. The Weyl group sends ``[-1,-2]`` to``[2,1]``. And, since there is a
 :math:`\rho`-shift in the parameter for the ``lambda``, what really
 matters is what the Weyl group does to :math:`\lambda-\rho`. and in
 this case this is ``[0.0]``.
 
-Let us look at the parameter ``q``. It is one of the parameters in the list and there is a useful function to find it ::
-
-    atlas> q
-    Value: final parameter (x=10,lambda=[2,1]/1,nu=[-1,-2]/1)
-    atlas> 
-
-We can also find ``q`` in our list of 18 parameters of representations
-using the command ``find`` ::
+Suppose we want to know which of the parameters in the list corresponds to the trivial representation. We can use the command ``find`` ::
 
     atlas> whattype find ?
     Overloaded instances of 'find'
@@ -212,13 +207,17 @@ using the command ``find`` ::
 
 We want to use the second instance of the use of this function: ::
 
-   atlas> find(parameters,q)
-   Value: -1
-   atlas> find( parameters,p)
-   Value: 14
-   
-   atlas> parameters[14]
-   Value: final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas> find(ps,p)
+   Value: 0
+   atlas> 
+   atlas> ps[0]
+   Value: final parameter(x=10,lambda=[2,1]/1,nu=[2,1]/1)
+   atlas>
+
+Or ::
+
+   atlas> find(ps,trivial(G))
+   Value: 0
    atlas>
 
 

@@ -254,6 +254,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../video_4A/intro_general_parameters.html#composition-series-and-character-formulas">Composition series and character formulas</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../video_4A/comp_series_char_formulas.html">Composition Series and Character formulas</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
@@ -1318,7 +1319,7 @@ the trivial representation this way. For example, if the group is not
 simply connected. But in any case, this is often another way to
 determine it.</p>
 <p>Now suppose we start with the trivial representation and we modify the
-parameter by an element of the Weyl group.:</p>
+parameter <code class="docutils literal"><span class="pre">nu</span></code> by an element of the Weyl group:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="p">:</span><span class="n">trivial</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
 <span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
@@ -1328,24 +1329,19 @@ parameter by an element of the Weyl group.:</p>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span><span class="n">parameter</span><span class="p">(</span><span class="n">KGB</span><span class="p">(</span><span class="n">G</span><span class="p">,</span><span class="mi">10</span><span class="p">),[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">Variable</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">non</span><span class="o">-</span><span class="n">dominant</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span><span class="o">=</span><span class="n">q</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">false</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">equivalent</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">q</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">true</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>The Weyl group sends <code class="docutils literal"><span class="pre">[-1,-2]</span></code> to``[2,1]``. And, since there is a
+<p>The representations are not equal. However, they are equvalent. The Weyl group sends <code class="docutils literal"><span class="pre">[-1,-2]</span></code> to``[2,1]``. And, since there is a
 <span class="math">\(\rho\)</span>-shift in the parameter for the <code class="docutils literal"><span class="pre">lambda</span></code>, what really
 matters is what the Weyl group does to <span class="math">\(\lambda-\rho\)</span>. and in
 this case this is <code class="docutils literal"><span class="pre">[0.0]</span></code>.</p>
-<p>Let us look at the parameter <code class="docutils literal"><span class="pre">q</span></code>. It is one of the parameters in the list and there is a useful function to find it</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">atlas</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>We can also find <code class="docutils literal"><span class="pre">q</span></code> in our list of 18 parameters of representations
-using the command <code class="docutils literal"><span class="pre">find</span></code></p>
+<p>Suppose we want to know which of the parameters in the list corresponds to the trivial representation. We can use the command <code class="docutils literal"><span class="pre">find</span></code></p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype find ?
 Overloaded instances of &#39;find&#39;
   ([int],int)-&gt;int
@@ -1359,13 +1355,17 @@ Overloaded instances of &#39;find&#39;
 </pre></div>
 </div>
 <p>We want to use the second instance of the use of this function:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">find</span><span class="p">(</span><span class="n">parameters</span><span class="p">,</span><span class="n">q</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">find</span><span class="p">(</span> <span class="n">parameters</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span> <span class="mi">14</span>
-
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">parameters</span><span class="p">[</span><span class="mi">14</span><span class="p">]</span>
-<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">find</span><span class="p">(</span><span class="n">ps</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">ps</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Or</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">find</span><span class="p">(</span><span class="n">ps</span><span class="p">,</span><span class="n">trivial</span><span class="p">(</span><span class="n">G</span><span class="p">))</span>
+<span class="n">Value</span><span class="p">:</span> <span class="mi">0</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>

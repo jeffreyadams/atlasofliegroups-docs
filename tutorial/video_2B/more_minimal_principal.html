@@ -254,6 +254,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../video_4A/intro_general_parameters.html#composition-series-and-character-formulas">Composition series and character formulas</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../video_4A/comp_series_char_formulas.html">Composition Series and Character formulas</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../parabolic_induction.html">Parabolic Induction</a><ul>
@@ -1160,10 +1161,11 @@
             
   <div class="section" id="more-on-minimal-pricipal-series">
 <h1>More on minimal pricipal series.<a class="headerlink" href="#more-on-minimal-pricipal-series" title="Permalink to this headline">¶</a></h1>
-<p>There is another file that you can load called <code class="docutils literal"><span class="pre">all_parameters.at</span></code>
-which we will use here to look at more examples of minimal principal
-series. In particular the commands <code class="docutils literal"><span class="pre">minimal_principal_series</span></code> and
-<code class="docutils literal"><span class="pre">all_minimal_principal_series</span></code>. Let us compare their use with some
+<p>There is another command which we will use here to look at more
+examples of minimal principal series. Namely, in addition to the
+command <code class="docutils literal"><span class="pre">all_minimal_principal_series</span></code>, the command
+<code class="docutils literal"><span class="pre">minimal_principal_series</span></code> help us identify a particular
+representation in the series. Let us compare their use with some
 examples:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; set G=Sp(4,R)
 Variable G: RealForm
@@ -1181,7 +1183,7 @@ Overloaded instances of &#39;minimal_principal_series&#39;
 <span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>So we get the single trivial or the representation with <code class="docutils literal"><span class="pre">nu=0</span></code>. Now let&#8217;s try the second command. Here we need to provide a real form and a rational vector:</p>
+<p>So we get the single trivial or the representation with <code class="docutils literal"><span class="pre">nu=0</span></code>. Now, recall that with the first command, we need to provide a real form and a rational vector:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span>atlas&gt; whattype all_minimal_principal_series ?
 Overloaded instances of &#39;all_minimal_principal_series&#39;
   (RealForm,ratvec)-&gt;[Param]
