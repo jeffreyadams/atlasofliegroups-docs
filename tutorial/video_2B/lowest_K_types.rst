@@ -38,7 +38,7 @@ follows ::
    atlas>
 
 The first representation, the trivial one, has lowest :math:`K`-type
-[0,0]. The next two have lowest :math:`K`-types [1,0] and [0,-1] and the las
+[0,0]. The next two have lowest :math:`K`-types [1,0] and [0,-1] and the last
 one has :math:`K`-types [1,1] and [-1,-1].
 
 COMMENT: The choice of ``2`` in the input ``KGB(G,2)`` is so that the output of the :math:`K` -types is given in the more familiar coordinates. We will see more about this when we discuss ``KGB`` elements in more detail.
