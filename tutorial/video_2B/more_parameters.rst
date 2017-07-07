@@ -71,12 +71,9 @@ WARNING: This command does not work for non-split groups::
    group is not split
    (in call at atlas-scripts/basic.at:8:57-71 of error@string, built-in)
      [b=false, message="group is not split"]
-   (in call at atlas-scripts/all_parameters.at:109:4-44 of assert@(bool,string), 
-defined at atlas-scripts/basic.at:8:4-74)
-     [G=connected quasisplit real group with Lie algebra 'su(2,2).u(1)', gamma=
-[  3,  1, -1, -3 ]/2]
-     (in call at <standard input>:5:7-45 of all_minimal_principal_series@(RealForm,
-ratvec), defined at atlas-scripts/all_parameters.at:108:4--110:63)
+   (in call at atlas-scripts/all_parameters.at:109:4-44 of assert@(bool,string),defined at atlas-scripts/basic.at:8:4-74)
+     [G=connected quasisplit real group with Lie algebra 'su(2,2).u(1)', gamma=[ 3,  1, -1, -3 ]/2]
+     (in call at <standard input>:5:7-45 of all_minimal_principal_series@(RealForm,ratvec), defined at atlas-scripts/all_parameters.at:108:4--110:63)
      Command 'set ps' interrupted, nothing defined.
    atlas>
 

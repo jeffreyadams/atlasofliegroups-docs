@@ -63,7 +63,7 @@ The standard representation containing the trivial is induced from a
 parabolic subgroup P with Levi factor equal to :math:`GL(1,R)` and a
 character ``q`` of :math:`GL(1,R)` with ``lambda=0`` and ``nu=1``.
  
-Moreover, we can see above that when we induce we obtain the composition series
+Moreover, we can see that when we induce we obtain the composition series
 of the spherical principal series that contains the trivial
 representation and the two discrete series ::
 

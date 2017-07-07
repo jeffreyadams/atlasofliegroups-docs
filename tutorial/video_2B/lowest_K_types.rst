@@ -38,11 +38,11 @@ follows ::
    atlas> void: for p in ps do prints(p, " ", highest_weights (p, KGB(G,2))) od 
    final parameter (x=10,lambda=[2,1]/1,nu=[2,1]/1) [(KGB element #2,[ 0, 0 ])] 
    final parameter (x=10,lambda=[3,1]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),
-(KGB element #2,[ 0, -1 ])] 
+     (KGB element #2,[ 0, -1 ])] 
    final parameter (x=10,lambda=[2,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 0 ]),
-(KGB element #2\ ,[ 0, -1 ])
+     (KGB element #2\ ,[ 0, -1 ])
    final parameter (x=10,lambda=[3,2]/1,nu=[2,1]/1) [(KGB element #2,[ 1, 1 ]),
-(KGB element #2\ ,[ -1, -1 ])]
+     (KGB element #2\ ,[ -1, -1 ])]
    atlas>
 
 The first representation, the trivial one, has lowest :math:`K`-type

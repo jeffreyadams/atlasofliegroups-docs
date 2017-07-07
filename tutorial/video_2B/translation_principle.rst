@@ -1,8 +1,8 @@
 Translation Principle
 ======================
 
-Now let's change infinitesimal character using the translation
-principle. Let us start again with the trivial representation::
+``atlas`` also lets us change infinitesimal character using the translation
+principle. Let us start again with the trivial representation ::
 
    atlas> set G=SL(2,R)
    Variable G: RealForm (overriding previous instance, which had type RealForm)
