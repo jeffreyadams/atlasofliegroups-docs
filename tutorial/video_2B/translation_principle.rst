@@ -25,9 +25,10 @@ We need to use the command ``T`` ::
      (ParamPol,ratvec)->ParamPol
    atlas>
 
+We want to use the first format ::
+
    atlas> set q= T(p,[2])
    Variable q: Param (overriding previous instance, which had type Param)
-
    atlas> q
    Value: final parameter (x=2,lambda=[2]/1,nu=[2]/1)
    atlas> p
