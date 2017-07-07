@@ -35,12 +35,7 @@ Now, let us find the cuspidal data for``t`` ::
     Value: disconnected split real group with Lie algebra 'gl(1,R)'
     atlas> real_form(q)
     Value: disconnected split real group with Lie algebra 'gl(1,R)'
-    atlas> induce_irreducible (q,P,G)
-    Value: 
-    1*final parameter (x=0,lambda=[1]/1,nu=[0]/1)
-    1*final parameter (x=1,lambda=[1]/1,nu=[0]/1)
-    1*final parameter (x=2,lambda=[1]/1,nu=[1]/1)
-    atlas> 
+    atlas>
 
 Recall that the Cartan subgroup for this parameter is the split Cartan subgroup::
 
@@ -59,6 +54,7 @@ Recall that the Cartan subgroup for this parameter is the split Cartan subgroup:
     imaginary root system: empty
     real root system: A1
     complex factor: empty
+    atlas>
 
 So, we can extract the character of the Cartan subgroup by finding the Cuspidal
 data for the representation with parameter ``t``. 
@@ -69,13 +65,21 @@ character ``q`` of :math:`GL(1,R)` with ``lambda=0`` and ``nu=1``.
  
 Moreover, we can see above that when we induce we obtain the composition series
 of the spherical principal series that contains the trivial
-representation and the two discrete series::
+representation and the two discrete series ::
 
+    atlas> induce_irreducible (q,P,G)
+    Value: 
+    1*final parameter (x=0,lambda=[1]/1,nu=[0]/1)
+    1*final parameter (x=1,lambda=[1]/1,nu=[0]/1)
+    1*final parameter (x=2,lambda=[1]/1,nu=[1]/1)
+    atlas> 
     atlas> t
     Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
     atlas>
 
-Similarly we can do the same for the non-spherical principal series::
+For more on induction, see the Section Parabolic Induction in this tutorial.
+
+Similarly we can do the same for the non-spherical principal series ::
 
     atlas> set p=parameters[3]
     Variable p: Param
@@ -102,7 +106,7 @@ to ``1`` and from the same parabolic subgroup as in the previous
 case. 
 
 
-Similarly, just to look at another example with non-integral infinitesimal character::
+We can look at another example with non-integral infinitesimal character::
 
    atlas> set u=parameter(x, [2], [3/2])
    Variable u: Param
