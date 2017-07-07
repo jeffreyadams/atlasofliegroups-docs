@@ -78,7 +78,7 @@ On the other hand if we type ::
    atlas>
 
 
-Which makes sense since :math:`SL(2,\mathbb C)` is the real Lie group with complexified Lie algebra of type ``A2 x A2``,
+Which makes sense since :math:`SL(2,\mathbb C)` is the real Lie group with complexified Lie algebra of type ``A1 x A1``,
 
 
 In general, if we use the standard real form notation for the

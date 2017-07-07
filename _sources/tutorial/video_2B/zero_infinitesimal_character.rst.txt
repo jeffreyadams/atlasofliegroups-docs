@@ -1,7 +1,7 @@
 Representations with Zero Infinitesimal Character
 ==================================================
 
-Let :math:`G=Sp(4, \mathbb R)`. Let us compute all the representations with
+Let :math:`G=Sp(4, \mathbb R)`. We can also compute all the representations with
 infinitesimal character zero ::
 
     atlas> G:Sp(4,R)

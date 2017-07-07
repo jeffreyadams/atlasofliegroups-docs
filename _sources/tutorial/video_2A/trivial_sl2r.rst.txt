@@ -1,5 +1,5 @@
 Trivial Representation of :math:`SL(2,R)`
-======================================
+==========================================
 
 Let us consider again the case of :math:`SL(2,R)` and the trivial representation.::
 

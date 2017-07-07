@@ -38,7 +38,7 @@
     <link rel="top" title="atlas 0.6 documentation" href="../../index.html"/>
         <link rel="up" title="First Examples of Representations." href="../first_examples.html"/>
         <link rel="next" title="Lowest \(K\)-types of a Representation" href="lowest_K_types.html"/>
-        <link rel="prev" title="More on minimal pricipal series." href="more_minimal_principal.html"/> 
+        <link rel="prev" title="More parameter commands" href="more_parameters.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -214,7 +214,13 @@
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="more_minimal_principal.html">More on minimal pricipal series.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="more_parameters.html">More parameter commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#principal-series-commands">Principal series commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-gamma"><code class="docutils literal"><span class="pre">all_parameters_gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-cartan-gamma"><code class="docutils literal"><span class="pre">all_parameters_Cartan_gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-parameters-with-the-same-differential"><code class="docutils literal"><span class="pre">all_parameters</span></code>. Parameters with the same differential</a></li>
+</ul>
+</li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Cuspidal Data for Representations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of a Representation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
@@ -1149,7 +1155,7 @@
         <a href="lowest_K_types.html" class="btn btn-neutral float-right" title="Lowest \(K\)-types of a Representation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="more_minimal_principal.html" class="btn btn-neutral" title="More on minimal pricipal series." accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="more_parameters.html" class="btn btn-neutral" title="More parameter commands" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
   </div>
   
@@ -1194,11 +1200,6 @@ the cuspidal data used to construct the representation. Let us review the parame
 <span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,R)&#39;</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">real_form</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">disconnected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;gl(1,R)&#39;</span>
-<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">induce_irreducible</span> <span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">P</span><span class="p">,</span><span class="n">G</span><span class="p">)</span>
-<span class="n">Value</span><span class="p">:</span>
-<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
-<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -1218,6 +1219,7 @@ twisted involution orbit size: 1; fiber size: 1; strong inv: 1
 imaginary root system: empty
 real root system: A1
 complex factor: empty
+atlas&gt;
 </pre></div>
 </div>
 <p>So, we can extract the character of the Cartan subgroup by finding the Cuspidal
@@ -1225,15 +1227,22 @@ data for the representation with parameter <code class="docutils literal"><span 
 <p>The standard representation containing the trivial is induced from a
 parabolic subgroup P with Levi factor equal to <span class="math">\(GL(1,R)\)</span> and a
 character <code class="docutils literal"><span class="pre">q</span></code> of <span class="math">\(GL(1,R)\)</span> with <code class="docutils literal"><span class="pre">lambda=0</span></code> and <code class="docutils literal"><span class="pre">nu=1</span></code>.</p>
-<p>Moreover, we can see above that when we induce we obtain the composition series
+<p>Moreover, we can see that when we induce we obtain the composition series
 of the spherical principal series that contains the trivial
-representation and the two discrete series:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">t</span>
+representation and the two discrete series</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">induce_irreducible</span> <span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">P</span><span class="p">,</span><span class="n">G</span><span class="p">)</span>
+<span class="n">Value</span><span class="p">:</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="mi">1</span><span class="o">*</span><span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">t</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Similarly we can do the same for the non-spherical principal series:</p>
+<p>For more on induction, see the Section Parabolic Induction in this tutorial.</p>
+<p>Similarly we can do the same for the non-spherical principal series</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">p</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">Variable</span> <span class="n">p</span><span class="p">:</span> <span class="n">Param</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
@@ -1258,7 +1267,7 @@ representation and the two discrete series:</p>
 the character on <span class="math">\(GL(1,R)\)</span> with <code class="docutils literal"><span class="pre">lambda</span></code> and <code class="docutils literal"><span class="pre">nu</span></code> both equal
 to <code class="docutils literal"><span class="pre">1</span></code> and from the same parabolic subgroup as in the previous
 case.</p>
-<p>Similarly, just to look at another example with non-integral infinitesimal character:</p>
+<p>We can look at another example with non-integral infinitesimal character:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">u</span><span class="o">=</span><span class="n">parameter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">Variable</span> <span class="n">u</span><span class="p">:</span> <span class="n">Param</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">u</span>
@@ -1295,7 +1304,7 @@ case.</p>
         <a href="lowest_K_types.html" class="btn btn-neutral float-right" title="Lowest \(K\)-types of a Representation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="more_minimal_principal.html" class="btn btn-neutral" title="More on minimal pricipal series." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="more_parameters.html" class="btn btn-neutral" title="More parameter commands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

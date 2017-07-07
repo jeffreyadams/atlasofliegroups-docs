@@ -214,7 +214,13 @@
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_psl2r.html">Example <span class="math">\(G=PSL(2,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_sp4r.html">Example <span class="math">\(G=Sp(4,\mathbb R)\)</span></a></li>
 <li class="toctree-l3"><a class="reference internal" href="minimal_principal_so32.html">Example <span class="math">\(G=SO(3,2)\)</span></a></li>
-<li class="toctree-l3"><a class="reference internal" href="more_minimal_principal.html">More on minimal pricipal series.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="more_parameters.html">More parameter commands</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#principal-series-commands">Principal series commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-gamma"><code class="docutils literal"><span class="pre">all_parameters_gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-cartan-gamma"><code class="docutils literal"><span class="pre">all_parameters_Cartan_gamma</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-parameters-with-the-same-differential"><code class="docutils literal"><span class="pre">all_parameters</span></code>. Parameters with the same differential</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data for Representations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="lowest_K_types.html">Lowest <span class="math">\(K\)</span>-types of a Representation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="zero_infinitesimal_character.html">Representations with Zero Infinitesimal Character</a></li>
@@ -1161,8 +1167,8 @@
             
   <div class="section" id="translation-principle">
 <h1>Translation Principle<a class="headerlink" href="#translation-principle" title="Permalink to this headline">¶</a></h1>
-<p>Now let&#8217;s change infinitesimal character using the translation
-principle. Let us start again with the trivial representation:</p>
+<p><code class="docutils literal"><span class="pre">atlas</span></code> also lets us change infinitesimal character using the translation
+principle. Let us start again with the trivial representation</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
 <span class="n">Variable</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">RealForm</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">p</span><span class="o">=</span><span class="n">trivial</span><span class="p">(</span><span class="n">G</span><span class="p">)</span>
@@ -1183,15 +1189,16 @@ Overloaded instances of &#39;T&#39;
   (Param,ratvec)-&gt;Param
   (ParamPol,ratvec)-&gt;ParamPol
 atlas&gt;
-
-atlas&gt; set q= T(p,[2])
-Variable q: Param (overriding previous instance, which had type Param)
-
-atlas&gt; q
-Value: final parameter (x=2,lambda=[2]/1,nu=[2]/1)
-atlas&gt; p
-Value: final parameter (x=2,lambda=[1]/1,nu=[1]/1)
-atlas&gt;
+</pre></div>
+</div>
+<p>We want to use the first format</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">q</span><span class="o">=</span> <span class="n">T</span><span class="p">(</span><span class="n">p</span><span class="p">,[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">Variable</span> <span class="n">q</span><span class="p">:</span> <span class="n">Param</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="n">Param</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">q</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span> <span class="n">p</span>
+<span class="n">Value</span><span class="p">:</span> <span class="n">final</span> <span class="n">parameter</span> <span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="k">lambda</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">,</span><span class="n">nu</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 <p>This means translate p from <code class="docutils literal"><span class="pre">nu</span> <span class="pre">=</span> <span class="pre">1</span></code> to <code class="docutils literal"><span class="pre">nu=2</span></code> by applying the Zuckerman
