@@ -95,24 +95,30 @@ group.
 
 Recall that a block is a singleton if and only if the representation is irreducible.
 
-Now do something similar for the real forms of ``E8`` ::
+Now do something similar for the real forms of ``E8``. For example for the split form ::
 
-   atlas> void: for H in real_forms(G) do prints(H) od
-   compact connected real group with Lie algebra 'e8'
-   connected real group with Lie algebra 'e8(e7.su(2))'
-   connected split real group with Lie algebra 'e8(R)'
-   atlas> 
-
-We have three real forms, the compact one, an intermediate one and the split one ::
-
-   atlas> block_sizes(split_form(E8))
+   atlas> G:=split_form(E8)
+   Value: connected split real group with Lie algebra 'e8(R)'
+   atlas> block_sizes(G)
    Value: 
    | 0,     0,      1 |
    | 0,  3150,  73410 |
    | 1, 73410, 453060 |
    
-   atlas>
+   atlas> 
+   
+This matrix tells us there are three real forms for :math:`E8`. Recall
+that we can find out as follows
+
+   atlas> void: for H in real_forms(G) do
+   prints(H) od compact connected real group with Lie algebra 'e8'
+   connected real group with Lie algebra 'e8(e7.su(2))' 
+   connected split real group with Lie algebra 'e8(R)' atlas>
+
+We have three real forms, the compact one, an intermediate one and the split one.
 
 Again the last row gives the block sizes of the blocks of the split real form of ``E8``. There is only one irreducible principal series and 255 reducible ones. 120 are in the second block and 135 in the other block.
+
+The first row gives the blocks of the compact real form which is just one block of size one. The second row corresponds to the blocks of the intermediate real form. 
 
 As an exercise it is interesting to print each block. 
