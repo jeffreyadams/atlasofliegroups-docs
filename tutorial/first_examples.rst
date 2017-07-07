@@ -11,7 +11,7 @@ First Examples of Representations.
    video_2B/minimal_principal_psl2r
    video_2B/minimal_principal_sp4r
    video_2B/minimal_principal_so32 
-   video_2B/more_minimal_principal
+   video_2B/more_parameters
    video_2B/cuspidal_data
    video_2B/lowest_K_types
    video_2B/zero_infinitesimal_character

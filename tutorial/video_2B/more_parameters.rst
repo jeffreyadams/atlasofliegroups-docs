@@ -1,6 +1,8 @@
-More on minimal pricipal series.
-=================================
+More parameter commands
+========================
 
+Principal series commands
+--------------------------
 There is another command which we will use here to look at more
 examples of minimal principal series. Namely, in addition to the
 command ``all_minimal_principal_series``, the command
@@ -60,6 +62,7 @@ Note that the group does not have to be semisimple::
    final parameter(x=1,lambda=[3,1]/2,nu=[1,-1]/2)
    atlas> 
 
+
 WARNING: This command does not work for non-split groups ::
 
    atlas> G:=U(2,2)
@@ -74,7 +77,11 @@ WARNING: This command does not work for non-split groups ::
      Command 'set ps' interrupted, nothing defined.
    atlas>
 
-For this group we do need to use the command that lists all
+
+``all_parameters_gamma``
+------------------------
+
+For this group we need to use the command that lists all
 representations with a given parameter for :math:`G` ::
 
 atlas> G:=U(2,2)
@@ -131,6 +138,9 @@ group has three minimal principal series (with ``x=17`` and ``x=1`2``)
 not comming from the disconnectedness of the Cartan subgroup but from
 the Weyl group. We will address this later.
 
+
+``all_parameters_Cartan_gamma``
+--------------------------------
 
 Now let us look at another command::
 
@@ -198,6 +208,10 @@ Another example::
 
 So this is a list of representations which are similar and coming from
 the same Cartan subgroup. So, we can study a representation by looking at similar ones and comparing them.
+
+
+``all_parameters``. Parameters with the same differential
+----------------------------------------------------------
 
 Another useful command helps you find all parameters with the same differential::
 
