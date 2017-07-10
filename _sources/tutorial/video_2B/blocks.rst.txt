@@ -108,7 +108,7 @@ Now do something similar for the real forms of ``E8``. For example for the split
    atlas> 
    
 This matrix tells us there are three real forms for :math:`E8`. Recall
-that we can find out as follows
+that we can find out as follows ::
 
    atlas> void: for H in real_forms(G) do
    prints(H) od compact connected real group with Lie algebra 'e8'

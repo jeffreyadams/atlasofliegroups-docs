@@ -217,8 +217,7 @@
 <li class="toctree-l3"><a class="reference internal" href="more_parameters.html">More parameter commands</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="more_parameters.html#principal-series-commands">Principal series commands</a></li>
 <li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-gamma"><code class="docutils literal"><span class="pre">all_parameters_gamma</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-cartan-gamma"><code class="docutils literal"><span class="pre">all_parameters_Cartan_gamma</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters-parameters-with-the-same-differential"><code class="docutils literal"><span class="pre">all_parameters</span></code>. Parameters with the same differential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="more_parameters.html#all-parameters"><code class="docutils literal"><span class="pre">all_parameters</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="cuspidal_data.html">Cuspidal Data for Representations</a></li>
@@ -1271,11 +1270,12 @@ group.</p>
 </div>
 <p>This matrix tells us there are three real forms for <span class="math">\(E8\)</span>. Recall
 that we can find out as follows</p>
-<blockquote>
-<div>atlas&gt; void: for H in real_forms(G) do
-prints(H) od compact connected real group with Lie algebra &#8216;e8&#8217;
-connected real group with Lie algebra &#8216;e8(e7.su(2))&#8217;
-connected split real group with Lie algebra &#8216;e8(R)&#8217; atlas&gt;</div></blockquote>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">void</span><span class="p">:</span> <span class="k">for</span> <span class="n">H</span> <span class="ow">in</span> <span class="n">real_forms</span><span class="p">(</span><span class="n">G</span><span class="p">)</span> <span class="n">do</span>
+<span class="n">prints</span><span class="p">(</span><span class="n">H</span><span class="p">)</span> <span class="n">od</span> <span class="n">compact</span> <span class="n">connected</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;e8&#39;</span>
+<span class="n">connected</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;e8(e7.su(2))&#39;</span>
+<span class="n">connected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;e8(R)&#39;</span> <span class="n">atlas</span><span class="o">&gt;</span>
+</pre></div>
+</div>
 <p>We have three real forms, the compact one, an intermediate one and the split one.</p>
 <p>Again the last row gives the block sizes of the blocks of the split real form of <code class="docutils literal"><span class="pre">E8</span></code>. There is only one irreducible principal series and 255 reducible ones. 120 are in the second block and 135 in the other block.</p>
 <p>The first row gives the blocks of the compact real form which is just one block of size one. The second row corresponds to the blocks of the intermediate real form.</p>
