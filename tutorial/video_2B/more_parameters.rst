@@ -183,4 +183,4 @@ This command helps us find representations with the same differential ::
    final parameter(x=7,lambda=[2,1]/1,nu=[2,0]/1)
    atlas>
 
-This Cartan subgroup has two connected components. So if you hand in a parameter for this subgroup, the total number of parameters with the same differential is two and this command gives the list of all of them
+This Cartan subgroup has two connected components. So if you hand in a parameter for this subgroup, the total number of parameters with the same differential is two and this command gives the list of all of them. 
