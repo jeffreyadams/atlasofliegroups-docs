@@ -228,6 +228,10 @@ to download the software and run it (it launches atlas and read in the
 fill all.at). The first time you do this it takes up
 to a few minutes.  Subsequent times it is much faster.
 
+To get the latest update, give the command
+
+    docker pull jeffreyadams/atlasofliegroups
+
 .. _executable_mac:
 
 Download and Install an executable

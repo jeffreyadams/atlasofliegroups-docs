@@ -147,6 +147,11 @@ fill all.at). Depending on your system you might need to log on a
 root, or run docker using sudo. The first time you do this it takes up
 to a few minutes.  Subsequent times it is much faster.
 
+To get the latest update, give the command
+    
+    docker pull jeffreyadams/atlasofliegroups
+
+
 .. _executable:
 
 Download and Install an executable
