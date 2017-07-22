@@ -111,5 +111,6 @@ Now to know about more representations we look at other blocks ::
    
    atlas> 
 
-So we have three representations at infinitesimal character ``rho`` and we have one extra at different infinitesimal character. 
-
+So the second row says that we have three representations for
+:math:`PGL(2,R)` at infinitesimal character ``rho`` and we have one
+extra at a different infinitesimal character.
