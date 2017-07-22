@@ -2,11 +2,21 @@ Introduction on :math:`K` orbits on :math:`G/B`
 ================================================
 
 In order to explain how ``atlas`` uses the ``KGB`` machinery we need
-to discuss the theory a little bit.
+to discuss the theory a little bit. KGB is the heart of the theory on which the software is based and it takes some time to get used to understanding how it works. 
 
-Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`
+Previously we focused on the minimal principal series representations
+of a Lie group, which are defined using a character on the maximally
+split Cartan subgroup. In the coming sections we will talk about the
+discrete series representations which are at the other end of the
+spectrum of representations in the sense that they are based on a
+compact Cartan subgroup of G and with some rather different
+features. After that, we will talk about the more general
+representations defined using characters of intermediate Cartan
+subgroups and which are in a way a combination of the two first
+constructions. So, understanding these separately will help us see the
+general case.
 
-where :math:`x \in K\backslash G / B` which determines an involution :math:`\theta _x` of the Cartan subgroup.
+Recall that a parameter is a triple :math:`p=(x,\lambda, \nu)`, where :math:`x \in K\backslash G / B` and which determines an involution :math:`\theta _x` of the Cartan subgroup.
 
 .. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
@@ -22,7 +32,7 @@ So the infinitesimal character can be written as
 
 .. math:: =\frac{1+\theta _x}{2}\lambda +\nu
 
-since :math:`\nu` is normally fixed by :math:`\theta`.
+since :math:`\nu` is normally fixed by :math:`1-\theta_x`.
 
 Recall that roughly the :math:`KGB` element ``x`` determines a
 :math:`G(\mathbb R)`-conjugacy class of Cartan subgroups :math:`H` and
@@ -33,15 +43,13 @@ Previously we focused on the case when :math:`\theta _x` is acting by
 :math:`-Id` This corresponded to the split Cartan subgroup :math:`H(\mathbb
 R)={\mathbb R}^{*n}`
 
-In this case :math:`\lambda \in (X^* + \rho )/2X^*` gives a character
-of 
+In that case the parameter :math:`\lambda \in (X^* + \rho )/2X^*`
+gives a character of
+
 .. math:: H(\mathbb R)^{\theta _x} ={(\mathbb Z)/2\mathbb Z}^n
 
 
 So we get a character of the compact piece of the Cartan subgroup. 
-
-Warning: we are assuming the :math:`\rho \in X^*` . Otherwise we need
-to go to a covering.
 
 Now :math:`\nu \in {X}_{\mathbb Q} ^*` and we had constructed the
 induced representation
@@ -63,10 +71,11 @@ Cartan subgroup and it equals :math:`\pm 1`
 :math:`KGB` elements
 ---------------------
 
-We fix once and for all a Cartan subgroup :math:`H` included in a
-Borel subgroup :math:`B`. This avoids having to work with different Cartan subgroups
-and roots and different choices of identifications. We will be working
-with the same Cartan subgroup all the time.
+In order to talk about all the representations of our group, we fix
+once and for all a Cartan subgroup :math:`H` included in a Borel
+subgroup :math:`B`. This avoids having to work with different Cartan
+subgroups and roots and different choices of identifications. We will
+be working with the same Cartan subgroup all the time.
 
 The choice of Cartan subgroup does not matter. We can think of :math:`H` as
 close to diagonal and :math:`B` upper triangular.
