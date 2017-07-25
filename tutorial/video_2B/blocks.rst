@@ -95,6 +95,69 @@ group.
 
 Recall that a block is a singleton if and only if the representation is irreducible.
 
+Now let us look at the other real forms of Sp(4,R) inner class ::
+
+   atlas> set rf=real_forms(G)
+   Variable rf: [RealForm]
+   atlas> #rf
+   Value: 3
+   atlas> void: for H in rf do prints(H) od 
+   compact connected real group with Lie algebra 'sp(2)'
+   connected real group with Lie algebra 'sp(1,1)'
+   connected split real group with Lie algebra 'sp(4,R)'
+   atlas>
+
+The ``block_sizes`` matrix is the same ::
+
+   atlas> G:=Sp(2,0)
+   Value: compact connected real group with Lie algebra 'sp(2)'
+   atlas> block_sizes (G)
+   Value: 
+   | 0, 0,  1 |
+   | 0, 0,  4 |
+   | 1, 5, 12 |
+   
+   atlas> all_parameters_gamma (G, rho(G))
+   Value: [final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1)]
+   atlas>
+
+And for the last real form ::
+
+   atlas> G:=Sp(1,1)
+   Value: connected real group with Lie algebra 'sp(1,1)'
+   atlas> block_sizes (G)
+   Value: 
+   | 0, 0,  1 |
+   | 0, 0,  4 |
+   | 1, 5, 12 |
+
+   atlas> set params=all_parameters_gamma (G, rho(G))
+   Variable params: [Param]
+   atlas> #params
+   Value: 4
+   atlas> void: for p in params do prints(p) od
+   final parameter(x=3,lambda=[2,1]/1,nu=[3,3]/2)
+   final parameter(x=2,lambda=[2,1]/1,nu=[1,-1]/2)
+   final parameter(x=1,lambda=[2,1]/1,nu=[0,0]/1)
+   final parameter(x=0,lambda=[2,1]/1,nu=[0,0]/1)
+   atlas> 
+
+And we can check that the block of the trivial for this group has the same elements ::
+
+   atlas> print_block (trivial(G))
+   Parameter defines element 3 of the following block:
+   0:  0  [i1,ic]  1  0   (2,*)  (*,*)  *(x=0,lam_rho=  [0,0], nu=  [0,0]/1)  e
+   1:  0  [i1,ic]  0  1   (2,*)  (*,*)  *(x=1,lam_rho=  [0,0], nu=  [0,0]/1)  e
+   2:  1  [r1,C+]  2  3   (0,1)  (*,*)  *(x=2,lam_rho=  [0,0], nu= [1,-1]/2)  1^e
+   3:  2  [ic,C-]  3  2   (*,*)  (*,*)  *(x=3,lam_rho=  [0,0], nu=  [3,3]/2)  2x1^e
+   atlas> 
+
+
+Warning: It doesn't always happen that the ``block_sizes`` matix accounts for all the represenyations at infinitesimal character ``rho``. For example ::
+
+AN EXAMPLE WILL BE COMMING SOON.
+
+
 Now do something similar for the real forms of ``E8``. For example for the split form ::
 
    atlas> G:=split_form(E8)
@@ -110,10 +173,11 @@ Now do something similar for the real forms of ``E8``. For example for the split
 This matrix tells us there are three real forms for :math:`E8`. Recall
 that we can find out as follows ::
 
-   atlas> void: for H in real_forms(G) do
-   prints(H) od compact connected real group with Lie algebra 'e8'
-   connected real group with Lie algebra 'e8(e7.su(2))' 
-   connected split real group with Lie algebra 'e8(R)' atlas>
+   atlas> void: for H in real_forms (G) do prints(H) od
+   compact connected real group with Lie algebra 'e8'
+   connected real group with Lie algebra 'e8(e7.su(2))'
+   connected split real group with Lie algebra 'e8(R)'
+   atlas>
 
 We have three real forms, the compact one, an intermediate one and the split one.
 
