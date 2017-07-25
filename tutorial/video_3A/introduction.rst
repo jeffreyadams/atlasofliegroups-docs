@@ -96,7 +96,7 @@ We are interested in the following space
 .. math:: K\backslash G/B=\{K-\text{orbits on the flag variety G/B }\}
 .. math:: =\{K \text{-conjugacy classes of Borel subgroups of G }\}.
 
-:math:`G/B` is a complex projective variety and :math:`K` is an
+That is :math:`G/B` is a complex projective variety and :math:`K` is an
 algebraic group acting on it with finitely many orbits. And
 :math:`G/B` is isomorphic to the space of Borel subgroups of :math:`G`
 and the :math:`K`-orbits are the Borel subgroups up to conjugacy by
@@ -105,9 +105,11 @@ and the :math:`K`-orbits are the Borel subgroups up to conjugacy by
 Parametrization Theorem
 ------------------------
 
+The finitenes of the :math:`K` orbits on the flag variety is what makes it easy for atlas to work with them. In fact, we will use the following result
+
 .. math:: K\backslash G/B \leftrightarrow \{x\in Norm_G (H)|x{\backsim }_G x_b\}/H
 
-This is a finite set. The map is given as follows:
+As we said, this is a finite set. The map is given as follows:
 
 If :math:`x=gx_b g^{-1}` then associate to x the element
 :math:`[g^{-1}Bg]`, the :math:`K`-conjugacy class of the Borel
@@ -120,7 +122,7 @@ Borel subgroups:
 
 On the right hand side the brackets mean :math:`K`-conjugacy
 class. So, by conjugating by :math:`K` we get the same conjugacy class
-of Borel subgroupns.
+of Borel subgroups.
 
 Parameter Set
 --------------
