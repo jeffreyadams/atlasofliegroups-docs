@@ -16,6 +16,8 @@ Let us review some basic examples ::
    Value: 
    | -1 |
 
+So the Cartan involution acts by ``-1`` which means the Cartan subgroup is split. This is a minimal spherical principal series with infinitesimal character ``rho``.
+
    atlas> infinitesimal_character (p)
    Value: [ 1 ]/1
    atlas> rho(G)
@@ -24,7 +26,7 @@ Let us review some basic examples ::
 
 This is the minimal principal series containing the trivial representation as unique irreducible quotient.
 
-On the other end we can talk about the discrete series ::
+On the other end we also talked about the discrete series ::
 
    atlas> whattype discrete_series ?
    Overloaded instances of 'discrete_series'
@@ -36,7 +38,7 @@ On the other end we can talk about the discrete series ::
    Value: final parameter(x=0,lambda=[1]/1,nu=[0]/1)
    atlas> 
 
-We can look at the block of the trivial representation to find other representations of this group ::
+To fidn more representations we look at the block of the trivial representation to find other representations of this group ::
 
    atlas> print_block (p)
    Parameter defines element 2 of the following block:
@@ -61,6 +63,22 @@ Here the trivial representation is #2 and the other two are discrete series ::
    atlas> 
 
 So, the Harish-Chandra parameter of ``q`` is ``1`` and that of ``r`` is ``-1``; the holomorphic and antiholomorphic one respectively.
+
+But, recall there is another representation with infinitesimal character ``rho`` which is not in the trivial block:
+
+   atlas> set params=all_parameters_gamma (G, rho(G))
+   Variable params: [Param] (overriding previous instance, which had type [Param])
+   atlas> void: for p in params do prints(p) od
+   final parameter(x=2,lambda=[1]/1,nu=[1]/1)
+   final parameter(x=2,lambda=[2]/1,nu=[1]/1)
+   final parameter(x=1,lambda=[1]/1,nu=[0]/1)
+   final parameter(x=0,lambda=[1]/1,nu=[0]/1)
+   atlas>
+
+And recall that the second representation in this list corresponds to the irreducible non-spherical principal series of :math:`SL(2,R)`
+
+So, other than principal series or discrete series, there is nothing else for this group.
+
 
 Now let us look at another group ::
 
