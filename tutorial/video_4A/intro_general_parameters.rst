@@ -1,8 +1,14 @@
 Introduction
 =============
 
-Recall that we had a parameter ``p`` determined by a triple ``p=(x,
-lambda, nu)``, where 
+In order to talk abou representations of A fixed Lie Group using
+``atlas`` we need to talk about general parameters and more concretely
+we will talk about everything between the discrete series and the
+minimal principal series representations and how to uderstand their
+parameters. Later we will talk about composition series, character
+formulas and Kazhdan-Lusztig Polynomials.
+
+Recall that we had a parameter ``p`` determined by a triple ``p=(x, lambda, nu)``, where
 
 .. math:: x\in K\backslash G/B \rightarrow \theta _x
 
@@ -11,8 +17,6 @@ so the Cartan involution is determined by ``x``
 .. math:: \lambda \in(X^* +\rho )/(1-{\theta }_x)X^*
 
 .. math:: \nu \in {X}_{\mathbb Q} ^* /(1+{\theta }_x ) X_{\mathbb Q}^*\cong (X_{\mathbb Q} ^*)^{-\theta _x}
-
-
 
 So that each term in the expression of the infinitesimal character 
 
@@ -44,7 +48,8 @@ have the following
    .. math:: 1\rightarrow 2: p\rightarrow I(p)=Ind_P^G (\sigma ).
    
    The full induced from :math:`\sigma =` (limit of) discrete series
-   This is called the standard module with parameter ``p``.
+   and a cuspidal Parabolic subgroup :math:`P`.  This is called the
+   standard module with parameter ``p``.
    
    .. math:: 2\rightarrow 3: Ind_P ^G (\sigma ) \rightarrow J
    
