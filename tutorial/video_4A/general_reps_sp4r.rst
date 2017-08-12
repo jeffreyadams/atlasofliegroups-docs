@@ -2,7 +2,7 @@ General Parameters :math:`Sp(4,\mathbb R )`
 ============================================
 
 Let us look at all the representations of :math:`Sp(4,\mathbb R )`
-with infinitesimal character ``rho``.
+with infinitesimal character ``rho`` ::
 
    atlas> G:=Sp(4,R)
    Value: connected split real group with Lie algebra 'sp(4,R)'
@@ -24,16 +24,15 @@ with infinitesimal character ``rho``.
    11:  3  [r2,rn]  10  11   ( 9, *)  ( *, *)  *(x=10,lam_rho=  [1,1], nu=  [2,1]/1)  1^2x1^e
    atlas>
 
-There are 12 representations in the block of the trivial
-representation of :math:`Sp(4,\mathbb R)`. the first four and the last
-two are the ones we already know. Namely, the four discrete series and
-the two minimal principal series of :math:`G`. We know the first four
-are discrete series because the roots involved (third column in the
-table) are all imaginary. Also, the second column tells us that their
-lengts are all zero. On the other hand the last two correspond to the
-``KGB`` element ``x=10`` and all the roots are real. So, this tells us
-we are in the split Cartan subgroup and these are minimal principal
-series.
+There are 12 representations in the block of the trivial of
+:math:`Sp(4,\mathbb R)`. The first four and the last two are the ones
+we already know. Namely, the four discrete series and the two minimal
+principal series of :math:`G`. We know the first four are discrete
+series because the roots involved (third column of the above table) are all
+imaginary. Also, the second column tells us that their lengts are all
+zero. On the other hand the last two correspond to the ``KGB`` element
+``x=10`` and all the roots are real. So, this tells us we are in the
+split Cartan subgroup and these are minimal principal series.
 
 Now we want to look at the representations numbered 4 to 9. For example::
 
@@ -57,11 +56,9 @@ Now we want to look at the representations numbered 4 to 9. For example::
    atlas> 
 
 This is the Cartan involution for one of the intermediate Cartan
-subgroups. Namely the ":mat:`SL(2)`- Cartan" or the "long root"
-Cartan". The Levi factor is :math:`SL(2,\mathbb R )\times GL(1,\mathbb R )`. More about this later. Let us look at the Cartan involution for this Cartan subgroup
+subgroups. Namely the ":math:`SL(2)`- Cartan" or the "long root"
+Cartan. The Levi factor is :math:`SL(2,\mathbb R )\times GL(1,\mathbb R )`. More about this later. Let us look at the Cartan involution for this Cartan subgroup ::
 
-   atlas> set theta=x
-   Variable theta: KGBElt
    atlas> set theta=involution(x)
    Variable theta: mat 
    atlas> theta
@@ -78,7 +75,7 @@ of the second coordinate, which is where the``nu`` parameter lives::
    Value: [ 0, 1 ]/1
    atlas> 
 
-And ``lambda`` has to do with the restriction of the infinitesimal character to the compact part of the Cartan subgroup. 
+And ``lambda`` has to do with the restriction to the compact part of the Cartan subgroup of the infinitesimal character. 
 
 Cuspidal Data
 ---------------
@@ -101,7 +98,8 @@ To get more information about the above representation we use a new command ::
 
 This is the cuspidal data of the representation with parameter
 ``p``. That is, :math:`P` is a real parabolic subgroup, ``sigma`` is a
-discrete series representation of the Levifactor :math:`M` and the standard representation
+discrete series representation of the Levi factor :math:`M` of
+:math:`P` and the standard representation
 
 .. math:: I(p)=Ind_P ^G (\sigma \otimes \nu)
 
@@ -111,5 +109,5 @@ integers lists the roots on the Levi factor. In this case it is just
 root number ``1``.  The `KGB` element information has to do with
 :math:`K` orbits on :math:`G/P`, which is a quotient of :math:`K`
 orbits on :math:`G/B`. There is more information about this in the
-papers section of `Atlas of Lie Groups <https://liegroups.org>`_ 
+papers section of `Atlas of Lie Groups <https://www.liegroups.org>`_ 
 
