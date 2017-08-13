@@ -109,5 +109,5 @@ integers lists the roots on the Levi factor. In this case it is just
 root number ``1``.  The `KGB` element information has to do with
 :math:`K` orbits on :math:`G/P`, which is a quotient of :math:`K`
 orbits on :math:`G/B`. There is more information about this in the
-papers section of `Atlas of Lie Groups <https://www.liegroups.org>`_ 
+papers section of `Atlas of Lie Groups <www.liegroups.org>`_ 
 
