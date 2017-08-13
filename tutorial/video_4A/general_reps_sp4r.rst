@@ -57,7 +57,10 @@ Now we want to look at the representations numbered 4 to 9. For example::
 
 This is the Cartan involution for one of the intermediate Cartan
 subgroups. Namely the ":math:`SL(2)`- Cartan" or the "long root"
-Cartan. The Levi factor is :math:`SL(2,\mathbb R )\times GL(1,\mathbb R )`. More about this later. Let us look at the Cartan involution for this Cartan subgroup ::
+Cartan. The Levi factor is :math:`SL(2,\mathbb R )\times GL(1,\mathbb R )`. 
+
+More about this later. Let us look at the Cartan involution for this
+Cartan subgroup ::
 
    atlas> set theta=involution(x)
    Variable theta: mat 
@@ -101,7 +104,7 @@ This is the cuspidal data of the representation with parameter
 discrete series representation of the Levi factor :math:`M` of
 :math:`P` and the standard representation
 
-.. math:: I(p)=Ind_P ^G (\sigma \otimes \nu)
+.. math:: I(p)=Ind_P ^G (\sigma )
 
 Note that :math:`P` is a pair of a string of integers and a ``KGB``
 element. This is a generalization of a Borel and the string of
@@ -111,4 +114,76 @@ root number ``1``.  The `KGB` element information has to do with
 orbits on :math:`G/B`. There is more information about this in the
 papers section of `Atlas of Lie Groups <http://www.liegroups.org>`_ 
 
-`The main git site <https://git-scm.com/documentation>`_
+Now, let us find out a bit more about :math:`M` ::
+
+   atlas> set M=Levi(P)
+   Variable M: RealForm
+   atlas> M
+   Value: disconnected split real group with Lie algebra 'sl(2,R).gl(1,R)'
+
+This does not completely determines :math:`M` since both,
+   :math:`SL(2,\mathbb R )\times GL(1, \mathbb R )` and :math:`GL(2,\mathbb R )` have the same
+   Lie algebra.  However, atlas has stored more information about :math:`M` ::
+
+   atlas> simple_roots (M) 
+   Value: 
+   | 0 |
+   | 2 |
+
+   atlas>
+
+This information determines :math:`M`. Remember that these are the
+simple roots of :math:`SL(2,\mathbb R)` whereas ::
+
+   atlas> H:=GL(2,R)
+   Value: disconnected split real group with Lie algebra 'sl(2,R).gl(1,R)'
+   atlas>  
+   atlas> simple_roots (H)
+   Value: 
+   |  1 |
+   | -1 |
+   
+   atlas> 
+
+
+Now about the representation ``sigma``, remember that sigma is a parameter for :math:`M`, even though the parameters ``lambda`` and ``nu`` are in terms of the Cartan for :math:`Sp(4,\mathbb R )` ::
+
+
+   atlas> sigma
+   Value: final parameter(x=0,lambda=[1,2]/1,nu=[1,0]/1)
+   atlas> 
+   atlas> real_form (sigma)
+   Value: disconnected split real group with Lie algebra 'sl(2,R).gl(1,R)'
+   atlas> 
+
+That is, this is a parameter for a "relative" discrete series of
+:math:`M`. That is, a discrete series modulo the center. And
+:math:`M=SL(2,\mathbb R )\times GL(1,\mathbb R )`, where the simple
+factor corresponds to the root ``[0,2]``. And :math:`GL(1,\mathbb R )`
+corresponds to the first coordinate. Hence the ``nu=[1,0]`` is on the
+:math:`GL(1, \mathbb R )`-factor.
+
+Now the ``lambda`` is giving you the discrete series parameter of the
+Levi factor. And the infinitesimal character is ::
+
+   atlas> infinitesimal_character (sigma)
+   Value: [ 1, 2 ]/1
+   atlas>
+
+This is normalized induction, so the infinitesimal character does not
+change. This is a conjugate of ::
+
+   atlas> rho(G)
+   Value: [ 2, 1 ]/1
+   atlas>
+
+On the other hand ::
+
+   atlas> rho (M)
+   Value: [ 0, 1 ]/1
+   atlas>
+
+   atlas> hc_parameter (sigma)
+   Value: [ 1, 2 ]/1
+   atlas>
+
