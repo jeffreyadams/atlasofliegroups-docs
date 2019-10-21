@@ -56,6 +56,9 @@ Sphinx also supports many other output format including LaTex and plain text.
 ```
 cd atlas_build/html
 ```
+
+CORRECTION: cd ../atlasofliegroups-docs-gh-pages
+
 You'll find all the automatically generated html files here. Open the index.html file with your browser, you can have a preview of the documentation website.
 
 ### To contribute
@@ -69,6 +72,8 @@ After you finished editing the .rst files, next step is to generate the html fil
 make html
 ```
 All the newly generated html files will be stored in atlas_build/html. Open index.html to preview the website. 
+
+CORRECTION: ../atlasofliegroups-docs-gh-pages
 
 You can now push everything to the master branch.
 
