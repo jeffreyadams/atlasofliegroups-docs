@@ -44,26 +44,25 @@ Under desired directory on your machine, do
 ```
 git clone https://github.com/jeffreyadams/atlasofliegroups-docs.git
 ```	
-Go to the atlas_documentation directory 
+Go to the atlasofliegroups-docs directory 
 ```
-cd atlas_documentation
+cd atlasofliegroups-docs
 ```
-since we are trying to make a website, type: 
+Use the the following command to generate html files from the rst files: 
 ```
 make html
 ```
-Sphinx also supports many other output format including LaTex and plain text.
-```
-cd atlas_build/html
-```
+Sidenote: Sphinx also supports many other output format including LaTex and plain text.
 
-CORRECTION: cd ../atlasofliegroups-docs-gh-pages
-
+Go to the parant folder and you'll see a new folder was generated: 
+```
+cd ../atlasofliegroups-docs-gh-pages
+```
 You'll find all the automatically generated html files here. Open the index.html file with your browser, you can have a preview of the documentation website.
 
 ### To contribute
 
-All the source files are the .rst files under atlas_documentation directory. You can edit them to add or modify content.
+All the source files are the .rst files under atlasofliegroups-docs directory. You can edit them to add or modify content.
 
 See http://www.sphinx-doc.org/en/stable/rest.html for a short introduction to reStructuredText syntax.
 
@@ -71,13 +70,22 @@ After you finished editing the .rst files, next step is to generate the html fil
 ```
 make html
 ```
-All the newly generated html files will be stored in atlas_build/html. Open index.html to preview the website. 
+All the newly generated html files will be stored in atlasofliegroups-docs-gh-pages. Open index.html to preview the website. 
 
-CORRECTION: ../atlasofliegroups-docs-gh-pages
-
-You can now push everything to the master branch.
-
-If you want to also update the content on the website, you can push the content in atlas_build/html to the gh-pages branch.
+You can now push the source files (namely the .rst files) to the master branch
+```
+cd atlasofliegroups-docs
+git add $FILE
+git commit $SOMETEXT
+git push origin master
+```
+and all the html files to the gh-pages branch
+```
+cd atlasofliegroups-docs-gh-pages
+git add --all
+git commit -m $SOMETEXT
+git push origin gh-pages
+```
 
 
 
