@@ -1,3 +1,4 @@
+
 .. _linux:
 
 ###################
@@ -14,25 +15,12 @@ Ways to download and install the software
 The options, in order of preference, are:
 
 * :ref:`compile`
-* :ref:`docker`
-* :ref:`executable`
+  * :ref:`docker`
 
 .. _compile:
 
 Download the source code and compile it yourself
 ================================================
-
-.. _direct:
-
-Download source code in a single  file
-++++++++++++++++++++++++++++++++++++++
-
-This is the latest stable version.
-
-+--------------------------+------------------------------+---------------------------------------+
-| Version 1.0.8            |   `atlas_1.0.8.tgz`_         | source code for Fokko and atlas       |
-|                          |                              | including messages and atlas-scripts  |
-+--------------------------+------------------------------+---------------------------------------+
 
 .. _atlas_1.0.8.tgz: http://www.liegroups.org/software/source/1.0.8/atlas_1.0.8.tgz
 
@@ -152,41 +140,7 @@ To get the latest update, give the command
     docker pull jeffreyadams/atlasofliegroups
 
 
-.. _executable:
 
-Download and Install an executable
-************************************
-
-If the previous two methods fail, you can download and install  an executable file.
-
-+-----------------------------------+------------------------------+-------------------------------------+
-| linux 64 compiled                 | `atlas_linux_pre_1.01.tgz`_  |  executable, and messages           |
-|                                   |                              |  atlas-scripts directories          |
-+-----------------------------------+------------------------------+-------------------------------------+
-
-.. _atlas_linux_pre_1.01.tgz: http://www.liegroups.org/software/source/1.01/atlas_linux_pre_1.01.tgz
-
-Extract the file:
-
-     tar xvfz atlas_linux_pre_1.01.tgz
-
-cd to the directory:
-
-     cd atlasofliegroups
-
-Make the file executable:
-
-    chmod u+x atlas
-
-Run the software with the command::
-
-     ./atlas  --path=atlas-scripts all
-
-The path argument tells atlas where to find the scripts, and ``all`` says to load
-most of the scripts (not including a few which are under development). 
-
-Unfortunately with the precompiled software readline (command line
-tools) does not work. For this reason we recommend installing from source.
 
 
 

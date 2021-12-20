@@ -9,9 +9,39 @@ Ways to download and install the software
 
 The options, in order of preference, are:
 
-* :ref:`compile_mac`
 * :ref:`docker`
-* :ref:`executable_mac`
+* :ref:`compile_mac`
+
+.. _docker:
+
+Using Docker
+============
+
+Docker is the preferred installation method on a Mac.
+
+Docker installs the software in a *container*, which is a self-contained linux
+environment (similar to a virtual machine) and runs the software in
+the container. This is less dependent on the details of your system,
+and is a good option of you have trouble compiling the software
+yourself. It requires adminsitrative privileges, so is mainly used for
+personal machines, and not instutional machines under the control of a
+system administrator.
+
+
+Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
+Double click on the dmg file to install it. This requires typing your password.
+
+Open a terminal window and give the command
+
+      docker run -it jeffreyadams/atlasofliegroups
+
+to download the software and run it (it launches atlas and read in the
+fill all.at). The first time you do this it takes up
+to a few minutes.  Subsequent times it is much faster.
+
+To get the latest update, give the command
+
+    docker pull jeffreyadams/atlasofliegroups
 
 
 .. _compile_mac:
@@ -19,19 +49,8 @@ The options, in order of preference, are:
 Download the source code and compile it yourself
 ================================================
 
-.. _source_mac:
-
-Download source code in a single file
-++++++++++++++++++++++++++++++++++++++
-
-This is the latest stable version.
-
-+--------------------------+------------------------------+---------------------------------------+
-| Version 1.0.8            |   `atlas_1.0.8.tgz`_         | source code for Fokko and atlas       |
-|                          |                              | including messages and atlas-scripts  |
-+--------------------------+------------------------------+---------------------------------------+
-
-.. _atlas_1.0.8.tgz: http://www.liegroups.org/software/source/1.0.8/atlas_1.0.8.tgz
+Compiling the source code on a Mac is more complicated than under Linux, due to the
+different (and changing) Mac environment.
 
 .. _using_git_Mac:
 
@@ -198,69 +217,3 @@ The software cwebx is needed to compile atlas. If you downloaded a tgz file from
 Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.
 
 You need to have a working copy of tex in your PATH to run cweavex.
-
-.. _docker:
-
-Using Docker
-============
-
-The preferred method is to :ref:`compile the software from source <compile_mac>`.
-
-The next choice is using `the Docker container system <https://www.docker.com>`_.
-
-This installs a *container*, which is a self-contained linux
-environment (similar to a virtual machine) and runs the software in
-the container. This is less dependent on the details of your system,
-and is a good option of you have trouble compiling the software
-yourself. It requires adminsitrative privileges, so is mainly used for
-personal machines, and not instutional machines under the control of a
-system administrator.
-
-
-Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
-Double click on the dmg file to install it. This requires typing your password.
-
-Open a terminal window and give the command
-
-      docker run -it jeffreyadams/atlasofliegroups
-
-to download the software and run it (it launches atlas and read in the
-fill all.at). The first time you do this it takes up
-to a few minutes.  Subsequent times it is much faster.
-
-To get the latest update, give the command
-
-    docker pull jeffreyadams/atlasofliegroups
-
-.. _executable_mac:
-
-Download and Install an executable
-==================================
-
-The best method is to compile from source. As a backup option you can 
-download install an executable file. 
-
-Download a copy of the executable, and the atlas-scripts directory here:
-
-+-------------------------------+------------------------------+-------------------------------------+
-| Mac  compiled                 | `atlas_mac_pre_1.01.tgz`_    |  executable, and messages           |
-|                               |                              |  atlas-scripts directories          |
-+-------------------------------+------------------------------+-------------------------------------+
-
-.. _atlas_mac_pre_1.01.tgz: http://www.liegroups.org/software/source/1.01/atlas_mac_pre_1.01.tgz
-
-Double-click on the file to extract it. 
-
-Open a terminal window, and cd to the directory where the files were downloaded.
-
-Make the file executable:
-
-    chmod u+x atlas
-
-Run the software with the command::
-
-     ./atlas  --path=atlas-scripts all
-
-The path argument tells atlas where to find the scripts, and ``all`` says to load
-most of the scripts (not including a few which are under development). (Double-clicking
-on the file will launch the application, but will not make the atlas-scripts available.) 
