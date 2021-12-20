@@ -89,3 +89,28 @@ git push origin gh-pages
 
 
 
+-------------------------------------------------------------------
+12/20/2021
+
+Instructions on editing the documentation site
+
+edit rst pages in this directory
+run sphinx-build, something like this is recommended (to update a single or small number of pages):
+
+sphinx-build  -b html -d ../atlasofliegroups-docs-gh-pages/doctrees   . ../atlasofliegroups-docs-gh-pages linux_installation.rst
+
+cd to ../atlasofliegroups-docs-gh-pages
+
+git add (changes files)
+git commit
+git push origin gh-pages
+
+to push the html pages to github
+
+You can view these changes in a browser by goingi to the local file ../atlasofliegroups-docs-gh-pages/index.html
+
+then on the atlas server, in
+
+/var/www/html/software/documentation/atlasofliegroups-docs#
+
+do git pull gh-pages

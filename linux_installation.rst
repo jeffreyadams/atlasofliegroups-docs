@@ -15,7 +15,7 @@ Ways to download and install the software
 The options, in order of preference, are:
 
 * :ref:`compile`
-  * :ref:`docker`
+* :ref:`docker`
 
 .. _compile:
 
@@ -113,7 +113,7 @@ Using Docker
 
 The preferred method is to :ref:`compile the software from source <compile>`.
 
-The next choice is using `the Docker container system <https://www.docker.com>`_.
+The next choice is using the Docker container system
 
 This installs a *container*, which is a self-contained linux
 environment (similar to a virtual machine) and runs the software in
