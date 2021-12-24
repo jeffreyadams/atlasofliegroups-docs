@@ -16,8 +16,7 @@ The readline package
 --------------------
 
 If you see an error about readline, you probably need to install the readline package.
-
-The software uses the readline package to provide very useful command line tools, including CTRL-p for previous line, tab completion, etc.
+The readline package to provide very useful command line tools, including CTRL-p for previous line, tab completion, etc.
 
 To compile atlas with readline you need the development version of readline. To install this under **Linux** Debian-based systems (including Ubuntu), do::
 
@@ -34,7 +33,6 @@ This line in the makefile tells the software where to find the readline library:
 On some systems it is necessary to replace ``-lcurses`` with ``-lncurses``.
 
 .. note:: If all else fails, you can compile the software without readline ``make readline = false``.
-
 
 .. _ctanglex:
 
@@ -55,7 +53,7 @@ this means you need to install `CWEBx <http://wwwmathlabo.univ-poitiers.fr/~maav
 Compiler error
 --------------
 
-Your g++ version should be newer than version 4.4. To check your g++ version, do::
+Your g++ version should be newer than version 9.3. To check your g++ version, do::
 
     g++ --version
 

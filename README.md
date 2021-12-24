@@ -97,6 +97,7 @@ Instructions on editing the documentation site
 edit rst pages in this directory
 run sphinx-build, something like this is recommended (to update a single or small number of pages):
 
+[Note the single dot!] 
 sphinx-build  -b html -d ../atlasofliegroups-docs-gh-pages/doctrees   . ../atlasofliegroups-docs-gh-pages linux_installation.rst
 
 cd to ../atlasofliegroups-docs-gh-pages

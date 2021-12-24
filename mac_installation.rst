@@ -54,18 +54,44 @@ Open a terminal, and type::
 
     xcode-select --install
 
-Next, install the base Macports system: go to `https://www.macports.org/install.php`_
+Next, install the base Macports system: go to `<https://www.macports.org/install.php>`_
 
 Now install the readline library: in a terminal window type::
 
     sudo port install readline
 
-Finally you need to tell the compiler where to find read readline libraries by setting
+You need to tell the compiler where to find read readline libraries by setting
 the shell variable rl_libs.
+The simplest method is to edit the appropriate "dot" file. This varies, but
+usually is either .zprofile or .zshrc (in your home directory). Add this line
+to the file:
 
-The simplest method is to edit your .cshrc file, and add the line::
+    export rl_libs="-lreadline -lcurses -L/opt/local/lib"
 
-    setenv rl_libs "-lreadline.8 -lcurses  -L/opt/local/lib"
+Then do "source .zprofile" (or whichever file you edited) to define the environment
+variable rl_libs. You can check this with the command "printenv".
+
+On a Mac there is an issue with the compiler finding the correct versions of the
+readline files. To remedy this you need to have administrative privileges. Do::
+
+    sudo su
+    [type your password]
+    cd /usr/local/include
+    mkdir readline
+    cp /opt/local/include/readline/* readline
+
+.. note:: If all else fails, you can compile the software without readline: ``make readline = false``.
+
+Some other compiler options are (you can set multiple options separated by spaces)::
+
+    optimize=false
+    debug=true
+    readline=false
+
+Optimize is true by default. ``debug=true`` enables more debugging
+output, and allows the software to abort if certain tests
+fail. ``readline=false`` should only be used if you are getting error
+messages related to readline.
 
 .. _using_git_Mac:
 
