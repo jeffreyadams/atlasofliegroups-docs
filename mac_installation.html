@@ -1102,17 +1102,43 @@ Open a terminal, and type:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
 </pre></div>
 </div>
-<p>Next, install the base Macports system: go to <a href="#id1"><span class="problematic" id="id2">`https://www.macports.org/install.php`_</span></a></p>
+<p>Next, install the base Macports system: go to <a class="reference external" href="https://www.macports.org/install.php">https://www.macports.org/install.php</a></p>
 <p>Now install the readline library: in a terminal window type:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">readline</span>
 </pre></div>
 </div>
-<p>Finally you need to tell the compiler where to find read readline libraries by setting
-the shell variable rl_libs.</p>
-<p>The simplest method is to edit your .cshrc file, and add the line:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setenv</span> <span class="n">rl_libs</span> <span class="s2">&quot;-lreadline.8 -lcurses  -L/opt/local/lib&quot;</span>
+<p>You need to tell the compiler where to find read readline libraries by setting
+the shell variable rl_libs.
+The simplest method is to edit the appropriate “dot” file. This varies, but
+usually is either .zprofile or .zshrc (in your home directory). Add this line
+to the file:</p>
+<blockquote>
+<div>export rl_libs=”-lreadline -lcurses -L/opt/local/lib”</div></blockquote>
+<p>Then do “source .zprofile” (or whichever file you edited) to define the environment
+variable rl_libs. You can check this with the command “printenv”.</p>
+<p>On a Mac there is an issue with the compiler finding the correct versions of the
+readline files. To remedy this you need to have administrative privileges. Do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">su</span>
+<span class="p">[</span><span class="nb">type</span> <span class="n">your</span> <span class="n">password</span><span class="p">]</span>
+<span class="n">cd</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span>
+<span class="n">mkdir</span> <span class="n">readline</span>
+<span class="n">cp</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">readline</span><span class="o">/*</span> <span class="n">readline</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If all else fails, you can compile the software without readline: <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">readline</span> <span class="pre">=</span> <span class="pre">false</span></code>.</p>
+</div>
+<p>Some other compiler options are (you can set multiple options separated by spaces):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">optimize</span><span class="o">=</span><span class="n">false</span>
+<span class="n">debug</span><span class="o">=</span><span class="n">true</span>
+<span class="n">readline</span><span class="o">=</span><span class="n">false</span>
+</pre></div>
+</div>
+<p>Optimize is true by default. <code class="docutils literal notranslate"><span class="pre">debug=true</span></code> enables more debugging
+output, and allows the software to abort if certain tests
+fail. <code class="docutils literal notranslate"><span class="pre">readline=false</span></code> should only be used if you are getting error
+messages related to readline.</p>
 <div class="section" id="download-the-source-code-using-git">
 <span id="using-git-mac"></span><h4>Download the source code using git<a class="headerlink" href="#download-the-source-code-using-git" title="Permalink to this headline">¶</a></h4>
 <p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span class="std std-ref">Help with git</span></a>.</p>
