@@ -1,5 +1,5 @@
 # atlas Documentation Project
-This is the sphinx source directory which stores the reStructuredText files. 
+This is the sphinx source directory which stores the reStructuredText files.
 
 The documentation website url is: https://jeffreyadams.github.io/atlasofliegroups-docs
 
@@ -86,32 +86,34 @@ git add --all
 git commit -m $SOMETEXT
 git push origin gh-pages
 ```
-
-
-
 -------------------------------------------------------------------
 12/20/2021
 
 Instructions on editing the documentation site
 
-edit rst pages in this directory
+edit rst pages in your local directory, probably atlasofliegroups-docs. 
+
 run sphinx-build, something like this is recommended (to update a single or small number of pages):
 
-[Note the single dot!] 
+[Note the single dot!]
 sphinx-build  -b html -d ../atlasofliegroups-docs-gh-pages/doctrees   . ../atlasofliegroups-docs-gh-pages linux_installation.rst
+
+If you give the command without the last argument it will update everything, which is slow. 
+
+Do git add/git commit/git push origin master (to update the rst files on github). Then
 
 cd to ../atlasofliegroups-docs-gh-pages
 
-git add (changes files)
+git add [list of changed files]
 git commit
 git push origin gh-pages
 
 to push the html pages to github
 
-You can view these changes in a browser by goingi to the local file ../atlasofliegroups-docs-gh-pages/index.html
+You can view these changes in a browser by going to the local file ../atlasofliegroups-docs-gh-pages/index.html
 
 then on the atlas server, in
 
-/var/www/html/software/documentation/atlasofliegroups-docs#
+/var/www/html/software/documentation/atlasofliegroups-docs
 
 do git pull gh-pages
