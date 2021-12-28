@@ -1073,7 +1073,7 @@ apply to Solaris with little or no change.</p>
 <p>The options, in order of preference, are:</p>
 <ul class="simple">
 <li><a class="reference internal" href="#compile"><span class="std std-ref">Download the source code and compile it yourself</span></a></li>
-<li><a class="reference internal" href="mac_installation.html#docker"><span class="std std-ref">Using Docker</span></a></li>
+<li><a class="reference internal" href="#docker"><span class="std std-ref">Using Docker</span></a></li>
 </ul>
 <div class="section" id="download-the-source-code-and-compile-it-yourself">
 <span id="compile"></span><h3>Download the source code and compile it yourself<a class="headerlink" href="#download-the-source-code-and-compile-it-yourself" title="Permalink to this headline">¶</a></h3>
@@ -1100,23 +1100,14 @@ different, depending on your system. This is specifying the C++ compiler.</p>
 </div>
 <p>The software has been well tested with g++ versions 4.8 and above, and
 should compile correctly with at least version 4.4.</p>
-<p>You can choose turn on the verbose option by typing:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">verbose</span><span class="o">=</span><span class="n">true</span>
+<p>Ideally, this should compile the code and produce both the file
+<code class="docutils literal notranslate"><span class="pre">atlas</span></code>. The most likely reason for an error has to do with
+the readline library. The software will run without it. To
+see if this is the problem give comment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">readline</span><span class="o">=</span><span class="n">false</span>
 </pre></div>
 </div>
-<p>This will show you the details of the commands your compiler is using to compile and link the codes.
-Some other compiler options are (you can set multiple options separated by spaces):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">optimize</span><span class="o">=</span><span class="n">false</span>
-<span class="n">debug</span><span class="o">=</span><span class="n">true</span>
-<span class="n">readline</span><span class="o">=</span><span class="n">false</span>
-</pre></div>
-</div>
-<p>Optimize is true by default. <code class="docutils literal notranslate"><span class="pre">debug=true</span></code> enables more debugging
-output, and allows the software to abort if certain tests
-fail. <code class="docutils literal notranslate"><span class="pre">readline=false</span></code> should only be used if you are getting error
-messages related to readline. See <a class="reference internal" href="ts-install.html#installation-troubleshooting"><span class="std std-ref">Installation – Trouble Shooting</span></a>.</p>
-<p>Ideally, this should compile the code, and produce both <code class="docutils literal notranslate"><span class="pre">Fokko</span></code> and
-<code class="docutils literal notranslate"><span class="pre">atlas</span></code>. If you encounter any error see see <a class="reference internal" href="ts-install.html#installation-troubleshooting"><span class="std std-ref">Installation – Trouble Shooting</span></a>.</p>
+<p>If you encounter any errors see see <a class="reference internal" href="ts-install.html#installation-troubleshooting"><span class="std std-ref">Installation – Trouble Shooting</span></a>.</p>
 <p>We recommend running:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span>
 </pre></div>
@@ -1124,9 +1115,9 @@ messages related to readline. See <a class="reference internal" href="ts-install
 <p>to put make <code class="docutils literal notranslate"><span class="pre">atlas</span></code> accessible from anywhere, and guarantee it has
 access to the atlas-scripts directory.  By default this will put a
 shell script in ~/bin and points to the atlas-scripts directory.  Make
-sure thath ~/bin is in your path. Then the commands <code class="docutils literal notranslate"><span class="pre">atlas</span></code> and
-<code class="docutils literal notranslate"><span class="pre">Fokko</span></code> will run the software, (and make the atlas-scripts (for
-atlas) and messages (for Fokko) directories available.</p>
+sure thath ~/bin is in your path. Then the command <code class="docutils literal notranslate"><span class="pre">atlas</span></code> will run
+the software, (and make the atlas-scripts (for atlas) directories
+available.</p>
 <p>To install the excecutable elsewhere run:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span> <span class="n">BINDIR</span><span class="o">=</span><span class="n">path</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="nb">bin</span><span class="o">-</span><span class="n">directory</span>
 </pre></div>
@@ -1137,8 +1128,9 @@ can execute</p>
 <p>./atlas –path=atlas-scripts all</p>
 <p>The path argument tells atlas where to find the scripts, and <code class="docutils literal notranslate"><span class="pre">all</span></code>
 says to load most of the scripts (possibly excluding a few which are under
-development). You can also run</p>
-<p>./Fokko</p>
+development).</p>
+<p>The compiler also produces an executable file <a href="#id1"><span class="problematic" id="id2">``</span></a>Fokko’’ which has the core software
+but not the scripting language.</p>
 </div>
 </div>
 </div>
