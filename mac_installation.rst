@@ -80,18 +80,29 @@ readline files. To remedy this you need to have administrative privileges. Do::
     mkdir readline
     cp /opt/local/include/readline/* readline
 
-.. note:: If all else fails, you can compile the software without readline: ``make readline = false``.
 
-Some other compiler options are (you can set multiple options separated by spaces)::
+Ideally, this should compile the code and produce both the file
+``atlas``. The most likely reason for an error has to do with
+the readline library. The software will run without it. To
+see if this is the problem give the command::
 
-    optimize=false
-    debug=true
-    readline=false
+    make readline=false
 
-Optimize is true by default. ``debug=true`` enables more debugging
-output, and allows the software to abort if certain tests
-fail. ``readline=false`` should only be used if you are getting error
-messages related to readline.
+You will at least have a usable version of atlas, albeit without
+the very useful readline functionality. 
+
+If you encounter any errors see see :ref:`installation_troubleshooting`.
+
+We recommend running::
+
+      make install
+
+to put make ``atlas`` accessible from anywhere, and guarantee it has
+access to the atlas-scripts directory.  By default this will put a
+shell script in ~/bin and points to the atlas-scripts directory.  Make
+sure thath ~/bin is in your path. Then the command ``atlas`` will run
+the software, (and make the atlas-scripts (for atlas) directories
+available.
 
 .. _using_git_Mac:
 
