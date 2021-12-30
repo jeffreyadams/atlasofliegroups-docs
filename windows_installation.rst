@@ -4,7 +4,7 @@
 Windows
 #######
 
-Ways to download and install the software
+Ways to download and install the s oftware
 =========================================
 
 The options, in order of preference, are:

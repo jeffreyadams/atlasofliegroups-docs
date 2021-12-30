@@ -1,3 +1,4 @@
+
 # atlas Documentation Project
 This is the sphinx source directory which stores the reStructuredText files.
 
@@ -59,6 +60,16 @@ Go to the parant folder and you'll see a new folder was generated:
 cd ../atlasofliegroups-docs-gh-pages
 ```
 You'll find all the automatically generated html files here. Open the index.html file with your browser, you can have a preview of the documentation website.
+
+headings:
+
+# with overline, for parts
+* with overline, for chapters
+=, for sections
+-, for subsections
+^, for subsubsections
+", for paragraphs
+
 
 ### To contribute
 
