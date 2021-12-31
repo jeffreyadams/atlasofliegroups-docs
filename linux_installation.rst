@@ -110,6 +110,7 @@ Here are few examples.
 We recommend creating a directory ``atlasofliegroups/my_files``, and always starting
 atlas from there. Assuming you've run ``make install`, you can do::
 
+    cd atlasofliegroups
     mkdir my_files
     cd my_files
     atlas
