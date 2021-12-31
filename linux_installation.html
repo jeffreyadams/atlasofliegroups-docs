@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Downloading and Installing in Linux (and Solaris) &mdash; atlas 0.6 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <title>Linux (and Solaris) &mdash; atlas 0.6 documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -48,9 +48,10 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="download_and_install.html">Download and Install</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Downloading and Installing in Linux (and Solaris)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#compiling-the-sofware">Compiling the Sofware</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Linux (and Solaris)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#compiling-the-sofware-from-source">Compiling the Sofware from Source</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#using-docker">Using Docker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#file-input-and-output-in-docker">File Input and Output in Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="mac_installation.html">Mac</a><ul>
@@ -1055,7 +1056,7 @@
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="getting_started.html">Getting Started</a> &raquo;</li>
           <li><a href="download_and_install.html">Download and Install</a> &raquo;</li>
-      <li>Downloading and Installing in Linux (and Solaris)</li>
+      <li>Linux (and Solaris)</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/linux_installation.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -1065,17 +1066,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="downloading-and-installing-in-linux-and-solaris">
-<span id="linux"></span><h1>Downloading and Installing in Linux (and Solaris)<a class="headerlink" href="#downloading-and-installing-in-linux-and-solaris" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="linux-and-solaris">
+<span id="linux"></span><h1>Linux (and Solaris)<a class="headerlink" href="#linux-and-solaris" title="Permalink to this headline">¶</a></h1>
 <p>These instructions apply to most Linux distributions. They
 apply to Solaris with little or no change.</p>
 <p>The two options, in order of preference, are:</p>
 <ul class="simple">
-<li><span class="xref std std-ref">compile</span></li>
+<li><a class="reference internal" href="#compiling-from-source"><span class="std std-ref">Compiling the Sofware from Source</span></a></li>
 <li><a class="reference internal" href="#docker"><span class="std std-ref">Using Docker</span></a></li>
 </ul>
-<div class="section" id="compiling-the-sofware">
-<span id="compile"></span><h2>Compiling the Sofware<a class="headerlink" href="#compiling-the-sofware" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="compiling-the-sofware-from-source">
+<span id="compiling-from-source"></span><h2>Compiling the Sofware from Source<a class="headerlink" href="#compiling-the-sofware-from-source" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="download-the-source-code-using-git">
 <span id="download"></span><h3>Download the source code using git<a class="headerlink" href="#download-the-source-code-using-git" title="Permalink to this headline">¶</a></h3>
 <p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span class="std std-ref">Help with git</span></a>. git is a software management
@@ -1086,8 +1087,8 @@ tool, and is included by default on most linux distributions.</p>
 </div>
 <p>This creates a subdirectory <code class="docutils literal notranslate"><span class="pre">atlasofliegroups</span></code> and stores the files there.</p>
 </div>
-<div class="section" id="compiling-from-source">
-<span id="id1"></span><h3>Compiling from source<a class="headerlink" href="#compiling-from-source" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="compile">
+<span id="id1"></span><h3>Compile<a class="headerlink" href="#compile" title="Permalink to this headline">¶</a></h3>
 <p>After you have the source code, cd to the atlasofliegroups directory.</p>
 <p>Type:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span>
@@ -1111,8 +1112,7 @@ different, depending on your system (this is specifying the C++ compiler).</p>
 </pre></div>
 </div>
 <p>The software has been well tested with g++ versions 4.8 and above.</p>
-<p>Ideally, this should compile the code and produce the file
-<code class="docutils literal notranslate"><span class="pre">atlas</span></code>. The most likely reason for an error has to do with
+<p>The most likely reason for an error has to do with
 the readline library. The software will run without it. To
 see if this is the problem give command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">readline</span><span class="o">=</span><span class="n">false</span>
@@ -1128,7 +1128,7 @@ on compiling with readline and other issues.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">install</span>
 </pre></div>
 </div>
-<p>(from the atlasofliegroups directory) to put make <code class="docutils literal notranslate"><span class="pre">atlas</span></code> accessible
+<p>(from the atlasofliegroups directory) to  make <code class="docutils literal notranslate"><span class="pre">atlas</span></code> accessible
 from anywhere. By default this will put a shell script in ~/bin and
 points to the atlas-scripts directory.  Make sure thath ~/bin is in
 your path. Then the command <code class="docutils literal notranslate"><span class="pre">atlas</span></code> will run the software.</p>
@@ -1136,12 +1136,13 @@ your path. Then the command <code class="docutils literal notranslate"><span cla
 atlasofliegroups/atlas-scripts, with the suffix .at (or
 .ax). Generally you want to load all of these, by loading the single
 file <code class="docutils literal notranslate"><span class="pre">all.at</span></code>. This happens automatically if you use <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">install</span></code>.</p>
+<p>See the Makefile for other options.</p>
 </div>
 <div class="section" id="other-ways-of-launching-atlas">
 <h3>Other ways of launching atlas<a class="headerlink" href="#other-ways-of-launching-atlas" title="Permalink to this headline">¶</a></h3>
 <p>Alternatively you can launch atlas and tell it where to find the scripts.
 Here are few examples.</p>
-<p>For example we recommend creating a directory <code class="docutils literal notranslate"><span class="pre">atlasofliegroups/my_files</span></code>, and always starting
+<p>We recommend creating a directory <code class="docutils literal notranslate"><span class="pre">atlasofliegroups/my_files</span></code>, and always starting
 atlas from there. Assuming you’ve run <a href="#id2"><span class="problematic" id="id3">``</span></a>make install`, you can do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">my_files</span>
 <span class="n">cd</span> <span class="n">my_files</span>
@@ -1151,44 +1152,63 @@ atlas from there. Assuming you’ve run <a href="#id2"><span class="problematic"
 <p>This will read the necessary files from the directory atlasofliegroups/atlas-scripts, and any files
 you write to will be in atlasofliegroups/my_files.
 Another possibility (which doesn’t require <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">install</span></code> is:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">my_files</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span>
+<span class="n">mkdir</span> <span class="n">my_files</span>
 <span class="n">cd</span> <span class="n">my_files</span>
 <span class="o">../</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=../</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span><span class="o">.</span><span class="n">at</span>
 </pre></div>
 </div>
-<p>Alternatively, in the directory in which you built the software you
-can execute:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span><span class="o">.</span><span class="n">at</span>
+<p>Alternatively go to thedirectory in which you built the software and run atlas from there:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span>
+<span class="o">./</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span><span class="o">.</span><span class="n">at</span>
 </pre></div>
 </div>
 <p>The path argument tells atlas where to find the scripts, and <code class="docutils literal notranslate"><span class="pre">all.at</span></code>
 says to load most of the scripts (possibly excluding a few which are under
 development).</p>
+<p>Another option is to run atlas from the atlas-scripts directory, in which
+case it doesn’t need the path:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span><span class="o">/</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
+<span class="o">../</span><span class="n">atlas</span> <span class="nb">all</span><span class="o">.</span><span class="n">at</span>
+</pre></div>
+</div>
 <p>The compiler also produces an executable file <a href="#id4"><span class="problematic" id="id5">``</span></a>Fokko’’ which has the core software
 but not the scripting language.</p>
-<p>See the Makefile for other options.</p>
+</div>
 <div class="section" id="file-input-and-output">
-<h4>File Input and Output<a class="headerlink" href="#file-input-and-output" title="Permalink to this headline">¶</a></h4>
+<span id="file-io"></span><h3>File Input and Output<a class="headerlink" href="#file-input-and-output" title="Permalink to this headline">¶</a></h3>
 <p>When you read files from within atlas it looks in the working directory (from which you launched atlas)
-and the atlas-scripts directory (or whatever directory you speficy with <code class="docutils literal notranslate"><span class="pre">--path</span></code>).</p>
-<p>Whe the atlas software writes output to a file, it is always in the working directory.</p>
+and the atlas-scripts directory, or whatever directory (or directories) you speficy with <code class="docutils literal notranslate"><span class="pre">--path</span></code>.</p>
+<p>When the atlas software writes output to a file, it is always in the working directory.</p>
 <p>Assuming you ran <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">install</span></code> as above you don’t need to do anything else. Files will be
 read from the working directory (from which you launched atlas) and the atlas-scripts directory. Output will go to
 files in the working directory.</p>
+<div class="section" id="other-compile-options">
+<h4>Other Compile Options<a class="headerlink" href="#other-compile-options" title="Permalink to this headline">¶</a></h4>
+<p>When you compile the software by running <code class="docutils literal notranslate"><span class="pre">make</span></code>, there are some other options available.
+Among these:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">optimize</span><span class="o">=</span><span class="n">true</span>
+</pre></div>
+</div>
+<p>is recommended: the compilation is slower, but the code runs substantially faster.</p>
+<p>See the Makefile for more options.</p>
 </div>
 </div>
 </div>
 <div class="section" id="using-docker">
 <span id="docker"></span><h2>Using Docker<a class="headerlink" href="#using-docker" title="Permalink to this headline">¶</a></h2>
-<p>The preferred method is to <span class="xref std std-ref">compile the software from source</span>.
+<p>The preferred method is to <a class="reference internal" href="#compiling-from-source"><span class="std std-ref">compile the software from source</span></a>.
 The next choice is using the Docker container system.</p>
 <p>This installs a <em>container</em>, which is a self-contained linux
-environment (similar to a virtual machine) and runs the software in
-the container. This is less dependent on the details of your system,
-and is a good option of you have trouble compiling the software
-yourself. It requires adminsitrative privileges, so is mainly used for
-personal machines, and not institutional machines under the control of a
-system administrator.</p>
+environment (similar to a virtual machine) on your machine which is
+called the <em>host</em>. The atlas software runs entirely in the container,
+so is less dependent on the details of your system. This is a good
+option of you have trouble compiling the software yourself.</p>
+<p>This
+requires adminsitrative privileges, so is mainly used for personal
+machines, and not institutional machines under the control of a system
+administrator. Also since the software is running in a container
+a little more effort is required for <a class="reference internal" href="#file-io-in-docker"><span class="std std-ref">file input and output</span></a>.</p>
 <p>Install docker (community version) for your system from <a class="reference external" href="https://www.docker.com/community-edition">https://www.docker.com/community-edition</a></p>
 <p>Give the command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span>
@@ -1202,6 +1222,9 @@ takes up to a few minutes.  Subsequent times it is much faster.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">pull</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span>
 </pre></div>
 </div>
+</div>
+<div class="section" id="file-input-and-output-in-docker">
+<span id="file-io-in-docker"></span><h2>File Input and Output in Docker<a class="headerlink" href="#file-input-and-output-in-docker" title="Permalink to this headline">¶</a></h2>
 <p>Since docker runs in a container, some extra effort is required to make
 files read/write from the host system. Here is an example,
 assuming your username is <code class="docutils literal notranslate"><span class="pre">joe_user</span></code>,  your home directory is <code class="docutils literal notranslate"><span class="pre">/home/joe_user</span></code>,
@@ -1218,25 +1241,28 @@ can see in youor my_files directory) are owned by root. They are readable,
 but you must be root to write to them. You can copy any file to another
 file, in which case the new file will be readable/writable by you,
 and visible to atlas.</p>
+<div class="section" id="other-docker-commands">
+<h3>Other Docker Commands<a class="headerlink" href="#other-docker-commands" title="Permalink to this headline">¶</a></h3>
 <p>Here are a few other frequently used docker commands:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">images</span>
 <span class="n">sudo</span> <span class="n">docker</span> <span class="n">image</span> <span class="n">ls</span>
 </pre></div>
 </div>
-<p>to list the images docker knows about,:</p>
+<p>to list the images docker knows about. Similarly:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">container</span> <span class="n">ls</span>
 </pre></div>
 </div>
 <p>to list the running containers (each container has a container
-id). Normally a container will die when it is not longer being used:</p>
+id). Occasionally you will need the container id, as in:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">container</span> <span class="n">kill</span> <span class="n">container_id</span>
 </pre></div>
 </div>
-<p>to kill a container that is running, and:</p>
+<p>to kill a container that is running. This command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">container</span> <span class="n">prune</span>
 </pre></div>
 </div>
-<p>to get rid of containers that are no longer running.</p>
+<p>gets rid of containers that are no longer running.</p>
+</div>
 </div>
 </div>
 
