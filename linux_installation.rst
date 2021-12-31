@@ -205,7 +205,7 @@ takes up to a few minutes.  Subsequent times it is much faster.
 
 To get the latest update, give the command::
 
-    sudo docker pull jeffreyadams/atlasofliegroups
+    sudo docker pull jeffreyadams/atlasofliegroups:version1.1
 
 .. _file_io_in_docker:
 
