@@ -48,16 +48,16 @@ Now install the readline library: in a terminal window type::
 
     sudo port install readline
 
-You need to tell the compiler where to find read readline libraries by setting
-the shell variable rl_libs.
-The simplest method is to edit the appropriate *dot* file. The name of this file varies, but
-usually is either .zprofile or .zshrc (in your home directory). Add this line
-to the file:
+Next, you need to tell the compiler where to find read readline
+libraries by setting the shell variable rl_libs.  The simplest method
+is to edit the appropriate *dot* file. The name of this file varies,
+but usually is either .zprofile or .zshrc (in your home
+directory). Add this line to the file:
 
     export rl_libs="-lreadline -lcurses -L/opt/local/lib"
 
-Then do "source .zprofile" (or whichever file you edited) to define the environment
-variable rl_libs. You can check this with the command "printenv", you should
+Then do ``source .zprofile`` (or whichever file you edited) to define the environment
+variable rl_libs. You can check this with the command *printenv*, you should
 see rl_libs in the output.
 
 On a Mac there is an issue with the compiler finding the correct versions of the
@@ -68,9 +68,6 @@ readline files. To remedy this you need to have administrative privileges. Do::
     cd /usr/local/include
     mkdir readline
     cp /opt/local/include/readline/* readline
-
-
-
 
 After you have the source code, cd to the atlasofliegroups directory.
 
@@ -230,16 +227,19 @@ Install docker (community version) for your system from `<https://www.docker.com
 
 Give the command::
 
-      sudo docker run -it jeffreyadams/atlasofliegroups
+      docker run -it jeffreyadams/atlasofliegroups
 
 to download the software and run it (it launches atlas and reads in
-the file all.at). docker needs to be run as roots, so all docker
-commands are preceded by ``sudo``.  The first time you do this it
-takes up to a few minutes.  Subsequent times it is much faster.
+the file all.at). The first time you do this it takes up to a few
+minutes.  Subsequent times it is much faster.
+
+Note: on the Mac (unlike linux) it should not be necessary to run docker as root
+using sudo. If this is required, replace each occurence of ``docker`` with
+``sudo docker``.
 
 To get the latest update, give the command::
 
-    sudo docker pull jeffreyadams/atlasofliegroups:version1.1
+    docker pull jeffreyadams/atlasofliegroups:version1.1
 
 .. _file_io_in_docker:
 
@@ -252,8 +252,11 @@ files read/write from the host system. Here is an example,
 assuming your username is ``joe_user``,  your home directory is ``/home/joe_user``,
 and you want to work in a subdirectory ``my_files`` of your home directory::
 
- sudo docker run --mount type=bind,source=/home/joe_user/my_files,\
- target=/atlasofliegroups/my_files jeffreyadams/atlasofliegroups:master
+ docker run -it --mount type=bind,source=/home/joe_user/my_files,\
+ target=/atlasofliegroups/my_files jeffreyadams/atlasofliegroups:version1.1
+
+(Note: the ``\`` indicates a new line, and no space is allowed after the comma.
+On the mac you may need to enter this as a single line.) 
 
 Now atlas will run as usual. Any files you write using atlas will be visible
 from the host system in the ``my_files`` directory. You can add files
@@ -272,20 +275,20 @@ Other Docker Commands
 
 Here are a few other frequently used docker commands::
 
-   sudo docker images
-   sudo docker image ls
+   docker images
+   docker image ls
 
 to list the images docker knows about. Similarly::
 
-    sudo docker container ls
+    docker container ls
 
 to list the running containers (each container has a container
 id). Occasionally you will need the container id, as in::
 
-    sudo docker container kill container_id
+    docker container kill container_id
 
 to kill a container that is running. This command::
 
-    sudo docker container prune
+    docker container prune
 
 gets rid of containers that are no longer running

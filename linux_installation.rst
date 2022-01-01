@@ -199,7 +199,7 @@ Give the command::
       sudo docker run -it jeffreyadams/atlasofliegroups
 
 to download the software and run it (it launches atlas and reads in
-the file all.at). docker needs to be run as roots, so all docker
+the file all.at). docker needs to be run as root, so all docker
 commands are preceded by ``sudo``.  The first time you do this it
 takes up to a few minutes.  Subsequent times it is much faster.
 
@@ -218,8 +218,11 @@ files read/write from the host system. Here is an example,
 assuming your username is ``joe_user``,  your home directory is ``/home/joe_user``,
 and you want to work in a subdirectory ``my_files`` of your home directory::
 
- sudo docker run --mount type=bind,source=/home/joe_user/my_files,\
- target=/atlasofliegroups/my_files jeffreyadams/atlasofliegroups:master
+ sudo docker run -it --mount type=bind,source=/home/joe_user/my_files,\
+ target=/atlasofliegroups/my_files jeffreyadams/atlasofliegroups:version1.1
+
+(Note: the ``\`` indicates a new line, and no space is allowed after the comma.
+On some systems this should be entered as a single line.)
 
 Now atlas will run as usual. Any files you write using atlas will be visible
 from the host system in the ``my_files`` directory. You can add files
