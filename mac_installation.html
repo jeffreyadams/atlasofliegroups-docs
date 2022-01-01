@@ -1070,8 +1070,8 @@
 <span id="macs"></span><h1>Mac<a class="headerlink" href="#mac" title="Permalink to this headline">¶</a></h1>
 <p>The two options, in order of preference, are:</p>
 <ul class="simple">
-<li><a class="reference internal" href="windows_installation.html#compiling-from-source"><span class="std std-ref">Compiling the Sofware from Source</span></a></li>
-<li><a class="reference internal" href="windows_installation.html#docker"><span class="std std-ref">Using Docker</span></a></li>
+<li><a class="reference internal" href="#compiling-from-source"><span class="std std-ref">Compiling the Sofware from Source</span></a></li>
+<li><a class="reference internal" href="#docker"><span class="std std-ref">Using Docker</span></a></li>
 </ul>
 <div class="section" id="compiling-the-sofware-from-source">
 <span id="compiling-from-source"></span><h2>Compiling the Sofware from Source<a class="headerlink" href="#compiling-the-sofware-from-source" title="Permalink to this headline">¶</a></h2>
@@ -1100,15 +1100,15 @@ of the Quickstart.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">readline</span>
 </pre></div>
 </div>
-<p>You need to tell the compiler where to find read readline libraries by setting
-the shell variable rl_libs.
-The simplest method is to edit the appropriate <em>dot</em> file. The name of this file varies, but
-usually is either .zprofile or .zshrc (in your home directory). Add this line
-to the file:</p>
+<p>Next, you need to tell the compiler where to find read readline
+libraries by setting the shell variable rl_libs.  The simplest method
+is to edit the appropriate <em>dot</em> file. The name of this file varies,
+but usually is either .zprofile or .zshrc (in your home
+directory). Add this line to the file:</p>
 <blockquote>
 <div>export rl_libs=”-lreadline -lcurses -L/opt/local/lib”</div></blockquote>
-<p>Then do “source .zprofile” (or whichever file you edited) to define the environment
-variable rl_libs. You can check this with the command “printenv”, you should
+<p>Then do <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">.zprofile</span></code> (or whichever file you edited) to define the environment
+variable rl_libs. You can check this with the command <em>printenv</em>, you should
 see rl_libs in the output.</p>
 <p>On a Mac there is an issue with the compiler finding the correct versions of the
 readline files. To remedy this you need to have administrative privileges. Do:</p>
@@ -1134,7 +1134,7 @@ readline files. To remedy this you need to have administrative privileges. Do:</
 <span class="n">compiled</span> <span class="n">on</span> <span class="n">Dec</span> <span class="mi">30</span> <span class="mi">2021</span> <span class="n">at</span> <span class="mi">16</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">25.</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">liegroups</span><span class="o">.</span><span class="n">org</span><span class="o">/</span>
 </pre></div>
 </div>
-<p>Congratulations! Go on to <a class="reference internal" href="windows_installation.html#post-compile"><span class="std std-ref">After compiling</span></a> for the next steps.</p>
+<p>Congratulations! Go on to <a class="reference internal" href="#post-compile"><span class="std std-ref">After compiling</span></a> for the next steps.</p>
 <p>You may need to edit the Makefile to change the line <code class="docutils literal notranslate"><span class="pre">CXX</span> <span class="pre">=</span> <span class="pre">g++</span> <span class="pre">-std=c++0x</span></code> to something
 different, depending on your system (this is specifying the C++ compiler).</p>
 <p>To find out your default compiler give the command:</p>
@@ -1228,7 +1228,7 @@ Among these:</p>
 </div>
 <div class="section" id="using-docker">
 <span id="docker"></span><h2>Using Docker<a class="headerlink" href="#using-docker" title="Permalink to this headline">¶</a></h2>
-<p>The preferred method is to <a class="reference internal" href="windows_installation.html#compiling-from-source"><span class="std std-ref">compile the software from source</span></a>.
+<p>The preferred method is to <a class="reference internal" href="#compiling-from-source"><span class="std std-ref">compile the software from source</span></a>.
 The next choice is using the Docker container system.</p>
 <p>This installs a <em>container</em>, which is a self-contained linux
 environment (similar to a virtual machine) on your machine which is
@@ -1239,18 +1239,20 @@ option of you have trouble compiling the software yourself.</p>
 requires adminsitrative privileges, so is mainly used for personal
 machines, and not institutional machines under the control of a system
 administrator. Also since the software is running in a container
-a little more effort is required for <a class="reference internal" href="windows_installation.html#file-io-in-docker"><span class="std std-ref">file input and output</span></a>.</p>
+a little more effort is required for <a class="reference internal" href="#file-io-in-docker"><span class="std std-ref">file input and output</span></a>.</p>
 <p>Install docker (community version) for your system from <a class="reference external" href="https://www.docker.com/community-edition">https://www.docker.com/community-edition</a></p>
 <p>Give the command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span>
 </pre></div>
 </div>
 <p>to download the software and run it (it launches atlas and reads in
-the file all.at). docker needs to be run as roots, so all docker
-commands are preceded by <code class="docutils literal notranslate"><span class="pre">sudo</span></code>.  The first time you do this it
-takes up to a few minutes.  Subsequent times it is much faster.</p>
+the file all.at). The first time you do this it takes up to a few
+minutes.  Subsequent times it is much faster.</p>
+<p>Note: on the Mac (unlike linux) it should not be necessary to run docker as root
+using sudo. If this is required, replace each occurence of <code class="docutils literal notranslate"><span class="pre">docker</span></code> with
+<code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">docker</span></code>.</p>
 <p>To get the latest update, give the command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">pull</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="p">:</span><span class="n">version1</span><span class="o">.</span><span class="mi">1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">pull</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="p">:</span><span class="n">version1</span><span class="o">.</span><span class="mi">1</span>
 </pre></div>
 </div>
 </div>
@@ -1260,10 +1262,12 @@ takes up to a few minutes.  Subsequent times it is much faster.</p>
 files read/write from the host system. Here is an example,
 assuming your username is <code class="docutils literal notranslate"><span class="pre">joe_user</span></code>,  your home directory is <code class="docutils literal notranslate"><span class="pre">/home/joe_user</span></code>,
 and you want to work in a subdirectory <code class="docutils literal notranslate"><span class="pre">my_files</span></code> of your home directory:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">run</span> <span class="o">--</span><span class="n">mount</span> <span class="nb">type</span><span class="o">=</span><span class="n">bind</span><span class="p">,</span><span class="n">source</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">joe_user</span><span class="o">/</span><span class="n">my_files</span><span class="p">,</span>\
-<span class="n">target</span><span class="o">=/</span><span class="n">atlasofliegroups</span><span class="o">/</span><span class="n">my_files</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="p">:</span><span class="n">master</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="o">--</span><span class="n">mount</span> <span class="nb">type</span><span class="o">=</span><span class="n">bind</span><span class="p">,</span><span class="n">source</span><span class="o">=/</span><span class="n">home</span><span class="o">/</span><span class="n">joe_user</span><span class="o">/</span><span class="n">my_files</span><span class="p">,</span>\
+<span class="n">target</span><span class="o">=/</span><span class="n">atlasofliegroups</span><span class="o">/</span><span class="n">my_files</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="p">:</span><span class="n">version1</span><span class="o">.</span><span class="mi">1</span>
 </pre></div>
 </div>
+<p>(Note: the <code class="docutils literal notranslate"><span class="pre">\</span></code> indicates a new line, and no space is allowed after the comma.
+On the mac you may need to enter this as a single line.)</p>
 <p>Now atlas will run as usual. Any files you write using atlas will be visible
 from the host system in the <code class="docutils literal notranslate"><span class="pre">my_files</span></code> directory. You can add files
 to this directory from the host filesystem, and <code class="docutils literal notranslate"><span class="pre">atlas</span></code> can read them.</p>
@@ -1275,21 +1279,21 @@ and visible to atlas.</p>
 <div class="section" id="other-docker-commands">
 <h3>Other Docker Commands<a class="headerlink" href="#other-docker-commands" title="Permalink to this headline">¶</a></h3>
 <p>Here are a few other frequently used docker commands:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">images</span>
-<span class="n">sudo</span> <span class="n">docker</span> <span class="n">image</span> <span class="n">ls</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">images</span>
+<span class="n">docker</span> <span class="n">image</span> <span class="n">ls</span>
 </pre></div>
 </div>
 <p>to list the images docker knows about. Similarly:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">container</span> <span class="n">ls</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">container</span> <span class="n">ls</span>
 </pre></div>
 </div>
 <p>to list the running containers (each container has a container
 id). Occasionally you will need the container id, as in:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">container</span> <span class="n">kill</span> <span class="n">container_id</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">container</span> <span class="n">kill</span> <span class="n">container_id</span>
 </pre></div>
 </div>
 <p>to kill a container that is running. This command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">container</span> <span class="n">prune</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">docker</span> <span class="n">container</span> <span class="n">prune</span>
 </pre></div>
 </div>
 <p>gets rid of containers that are no longer running</p>
