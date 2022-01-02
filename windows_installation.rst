@@ -31,7 +31,7 @@ Install docker (community version) for your system from `<https://www.docker.com
 
 Give the command::
 
-      sudo docker run -it jeffreyadams/atlasofliegroups
+      sudo docker run -it jeffreyadams/atlasofliegroups:version1.1
 
 to download the software and run it (it launches atlas and reads in
 the file all.at). docker needs to be run as roots, so all docker

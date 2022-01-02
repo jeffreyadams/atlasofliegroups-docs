@@ -202,6 +202,26 @@ is recommended: the compilation is slower, but the code runs substantially faste
 
 See the Makefile for more options.
 
+.. _updates:
+
+Updating the atlas software
++++++++++++++++++++++++++++
+
+At any time you can update the atlas software using git.
+In the atlasofliegroups directory give the command::
+
+     git pull origin master
+
+Assuming you have not edited any of the files in the distribution this
+will update the source code to the latest version. Typically you will
+not need to run ``make`` again. This is the case if the only files that
+changes (git reports this) are ``*.at`` files. If any files such as
+``*.cpp`` files where changed, you should run ``make`` again.
+
+If you get any errors due to conflicts you can try to resolve
+them. This can sometimes be tricky. A fallback option is to reinstall
+the software from scratch again.
+
 .. _docker:
 
 ************
@@ -227,7 +247,7 @@ Install docker (community version) for your system from `<https://www.docker.com
 
 Give the command::
 
-      docker run -it jeffreyadams/atlasofliegroups
+      docker run -it jeffreyadams/atlasofliegroups:version1.1
 
 to download the software and run it (it launches atlas and reads in
 the file all.at). The first time you do this it takes up to a few
