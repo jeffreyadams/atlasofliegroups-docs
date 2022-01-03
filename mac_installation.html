@@ -1125,6 +1125,16 @@ readline files. To remedy this you need to have administrative privileges. Do:</
 <span class="n">cp</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">readline</span><span class="o">/*</span> <span class="n">readline</span>
 </pre></div>
 </div>
+<p>If you don’t already have a directory <code class="docutils literal notranslate"><span class="pre">/usr/local/include</span></code> you need an extra step:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">su</span>
+<span class="p">[</span><span class="nb">type</span> <span class="n">your</span> <span class="n">password</span><span class="p">]</span>
+<span class="n">cd</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span>
+<span class="n">mkdir</span> <span class="n">include</span>
+<span class="n">cd</span> <span class="n">include</span>
+<span class="n">mkdir</span> <span class="n">readline</span>
+<span class="n">cp</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">readline</span><span class="o">/*</span> <span class="n">readline</span>
+</pre></div>
+</div>
 <p>After you have the source code, cd to the atlasofliegroups directory.</p>
 <p>Type:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span>
