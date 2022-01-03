@@ -4,263 +4,328 @@
 Mac
 ###
 
-Ways to download and install the software
-*****************************************
+The two options, in order of preference, are:
 
-The options, in order of preference, are:
-
-* :ref:`compile_mac`
+* :ref:`compiling_from_source`
 * :ref:`docker`
-* :ref:`executable_mac`
+  
+.. _compiling_from_source:
 
-
-.. _compile_mac:
-
-Download the source code and compile it yourself
-================================================
-
-.. _source_mac:
-
-Download source code in a single file
-++++++++++++++++++++++++++++++++++++++
-
-This is the latest stable version.
-
-+--------------------------+------------------------------+---------------------------------------+
-| Version 1.0.5            |   `atlas_1.0.5.tgz`_         | source code for Fokko and atlas       |
-|                          |                              | including messages and atlas-scripts  |
-+--------------------------+------------------------------+---------------------------------------+
-
-.. _atlas_1.0.5.tgz: http://www.liegroups.org/software/source/1.0.5/atlas_1.0.5.tgz
-
-.. _using_git_Mac:
+*********************************
+Compiling the Sofware from Source
+*********************************
+  
+.. _download:
 
 Download the source code using git
-++++++++++++++++++++++++++++++++++
+==================================
 
-For users who are not familiar with git, see :ref:`help_git` to get started with git.
-
-If you choose to use git, you can get the most up-to-date version of
-the software. Open a terminal window (in the Finder click
-Macintosh/Applications/Utilities/Terminal). Make sure your git client
-is relatively new. Version 1.7.0.4 and above should work.
-
-To check your git version, on the command line, do::
-
-    git --version
+For users who are not familiar with git, see :ref:`help_git`. git is a software management
+tool, and is included by default on most linux distributions. 
 
 Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type::
 
     git clone https://github.com/jeffreyadams/atlasofliegroups.git
-    
-This creates a subdirectory "atlasofliegroups" and stores the files there.
 
+This creates a subdirectory ``atlasofliegroups`` and stores the files there.
 
-Compiling from source
-************************
+.. _compile:
+
+Compile 
+========
+
+So far this is the same as linux. Now there are a few extra steps required on a Mac versus linux.
+First you need to install the XCode command line tools if you don't have these already.
+Open a terminal, and type::
+
+    xcode-select --install
+
+Next, install the base Macports system: go to `<https://www.macports.org/install.php>`_
+and follow the instructions there. Probably you just need step 3 (and possibly 2)
+of the Quickstart.
+
+Now install the readline library: in a terminal window type::
+
+    sudo port install readline
+
+Next, you need to tell the compiler where to find read readline
+libraries by setting the shell variable rl_libs.  The simplest method
+is to edit the appropriate *dot* file in your *home directory*.
+Your home directory is probably ``/Users/username``. You can also find 
+it out by giving the command ``printenv`` and looking for the line ``HOME=``.
+
+The name of this dot file varies, but usually is either .profile,
+.zprofile or .zshrc. Do ``ls -a`` to see all of your files, and
+look for one beginning with ``.``. In any event the command ``cd ~``
+will take you there.
+
+Add this line to the file::
+
+    export rl_libs="-lreadline -lcurses -L/opt/local/lib"
+
+Then do ``source .profile`` (or whichever file you edited) to define the environment
+variable rl_libs. You can check this with the command *printenv*, you should
+see rl_libs in the output.
+
+On a Mac there is an issue with the compiler finding the correct versions of the
+readline files. To remedy this you need to have administrative privileges. Do::
+
+    sudo su
+    [type your password]
+    cd /usr/local/include
+    mkdir readline
+    cp /opt/local/include/readline/* readline
+
+If you don't already have a directory ``/usr/local/include`` you need an extra step::
+
+    sudo su
+    [type your password]
+    cd /usr/local
+    mkdir include
+    cd include
+    mkdir readline
+    cp /opt/local/include/readline/* readline
 
 After you have the source code, cd to the atlasofliegroups directory.
 
-Compiling atlas for the Mac using Homebrew
-===========================================
+Type::
 
-To compile atlas on a Mac you need to install a C++ compiler (the
-default Mac compiler is not up to the task). Homebrew is a package
-manager for the Mac, which is an alternative to the more standard MacPorts. 
-Homebrew is the preferred method. Alternatively see 
-:ref:`macports`.
+    make
 
-Install Homebrew
-++++++++++++++++
+If all goes well you will have an executable file ``atlas``. Give the command::
 
-Go to `Homebrew <https://brew.sh>`_  and follow the instructions there to install Homebrew.
+    atlas
 
-(This  is a single command /usr/bin/ruby... executed in a terminal window)
+You should see something like::
 
-Install the C++ compiler
-++++++++++++++++++++++++
-
-Open a terminal window and give the commands
-
-     brew install gcc49
-
-and
-
-     brew install readline
-
-Edit two Makefiles
-++++++++++++++++++
-
-cd to the directory where you downloaded the source code. Edit the file Makefile 
-to replace CXX = g++ -std=c++0x with:
-
-      CXX = /usr/local/Cellar/gcc\@4.9/4.9.3_1/bin/g++-4.9  -std=c++0x
-
-The correct path for you might be slightly different from this. cd to /usr/local/Cellar and 
-find a file .../bin/g++... and use this. Also make the following changes: add **-L/usr/local/opt/readline/lib** to the end of two lines
-as follows:
-
-    ifdef LDFLAGS
-    
-    LDFLAGS := $(LDFLAGS) $(rl_libs) -L/usr/local/opt/readline/lib
-     
-    else
-      
-    LDFLAGS := $(rl_libs) -L/usr/local/opt/readline/lib
-    
-    endif
+    This is 'atlas' (version 1.1, axis language version 1.0),
+    the Atlas of Lie Groups and Representations interpreter,
+    compiled on Dec 30 2021 at 16:01:25.   http://www.liegroups.org/
 
 
-Also make the first change
+Congratulations! Go on to :ref:`post_compile` for the next steps.
 
-      CXX = /usr/local/Cellar/gcc\@4.9/4.9.3_1/bin/g++-4.9  -std=c++0x
+You may need to edit the Makefile to change the line ``CXX = g++ -std=c++0x`` to something 
+different, depending on your system (this is specifying the C++ compiler). 
 
-to the file ./sources/interpreter/Makefile
+To find out your default compiler give the command::
 
-Enable readline
-++++++++++++++++++
+    g++ --version
 
-Give the command 
+The software has been well tested with g++/gcc versions 4.8 and above.
 
-    brew link --force readline
+The most likely reason for an error has to do with
+the readline library. The software will run without it. To
+see if this is the problem give command::
 
-to install some symbolic links necessary for readline
+    make readline=false
 
-Compile
-+++++++
+If this succeeds, you have a functioning version of the software, but without the
+readline functions. See :ref:`installation_troubleshooting` for information
+on compiling with readline and other issues.
 
-Give the command
+.. _post_compile:
 
-     make 
+After compiling
+===============
 
-To compile atlas and Fokko, with readline.
+We recommend running::
 
-Other Compilation options: 
----------------------------
+      make install
 
-We recommend compiling with::
-
-   make atlas verbose=true optimize=true
-
-The option "verbose" makes atlas print a little more information about
-what it is doing, like printing a counter during a long
-Kazhdan-Lusztig computation. The option "optimize" tells the compiler
-to work hard to make the code as fast as possible; this takes slightly
-longer to compile, then runs maybe 10% faster.
-
-Other possibilities are::
-
-   debug=true
-   readline=false.
-
-The option "debug" makes the software report bad things (for example, negative coefficient in a KL polynomial) that aren't supposed to happen, to detect code problems early. 
-
-Installing Fokko and atlas
---------------------------
-
-To install the executables in [installation directory] and put symlinks in [binary directory], type::
-
-   make install INSTALLDIR=[installation directory] BINDIR=[binary directory]
-
-The default BINDIR is ``INSTALLDIR/../bin``
-
-Example: 
-~~~~~~~~~~~~~
-To install the executables in ``/usr/local/atlas``, and symlinks in ``/usr/local/bin``, type::
-
-   sudo make install INSTALLDIR=/usr/local/atlas
-
-(This example only works up to OS 10.10, and you need root access).
-
-Example: 
-~~~~~~~~~~
-To install the executables in /home/[userid]/software/atlas, and symlinks in /home/userid/bin, type::
-
-   make install INSTALLDIR=/home/[userid]/software BINDIR=/home/[userid]/bin
-
-Example: 
-~~~~~~~~~~~
-
-Say you unpacked the software in /home/[userid]/atlas_0.7. To leave the software there, and create symlinks in /home/[userid]/bin, type::
-
-   make install
-
-Next: see :ref:`Running Atlas <run_atlas>` 
+(from the atlasofliegroups directory) to  make ``atlas`` accessible
+from anywhere. By default this will put a shell script in ~/bin and
+points to the atlas-scripts directory.  Make sure thath ~/bin is in
+your path. Then the command ``atlas`` will run the software.
 
 
-.. _installing_cwebx:
+The software relies on a large set of auxiliary files in the directory
+atlasofliegroups/atlas-scripts, with the suffix .at (or
+.ax). Generally you want to load all of these, by loading the single
+file ``all.at``. This happens automatically if you use ``make install``.
 
-Installing cwebx
-+++++++++++++++++
+See the Makefile for other options.
 
-The software cwebx is needed to compile atlas. If you downloaded a tgz file from the downloads page, you should not need to install cwebx. If you downloaded the software from github using git, then cwebx is included in the directory cwebx, or available from www-math.univ-poitiers.fr/~maavl/CWEBx.
+.. _other_launches
 
-Running make in the directory cwebx should compile cwebx, and produce the executables cweb/ctanglex and cweb/cweavex. The file sources/interpreter/Makefile tells the compiler to look for these executables. If you move the cwebx directory, or want to use different versions, you must edit this Makefile.
+Other ways of launching atlas
+=============================
 
-You need to have a working copy of tex in your PATH to run cweavex.
+Alternatively you can launch atlas and tell it where to find the scripts.
+Here are few examples.
+
+
+We recommend creating a directory ``atlasofliegroups/my_files``, and always starting
+atlas from there. Assuming you've run ``make install`, you can do::
+
+    cd atlasofliegroups
+    mkdir my_files
+    cd my_files
+    atlas
+
+This will read the necessary files from the directory atlasofliegroups/atlas-scripts, and any files
+you write to will be in atlasofliegroups/my_files.
+Another possibility (which doesn't require ``make install`` is::
+
+    cd atlasofliegroups
+    mkdir my_files
+    cd my_files
+    ../atlas --path=../atlas-scripts all.at
+
+Alternatively go to thedirectory in which you built the software and run atlas from there::
+
+  cd atlasofliegroups
+  ./atlas --path=atlas-scripts all.at
+
+The path argument tells atlas where to find the scripts, and ``all.at``
+says to load most of the scripts (possibly excluding a few which are under
+development).
+
+Another option is to run atlas from the atlas-scripts directory, in which
+case it doesn't need the path::
+
+    cd atlasofliegroups/atlas-scripts
+    ../atlas all.at
+  
+
+The compiler also produces an executable file ``Fokko'' which has the core software
+but not the scripting language. 
+
+.. _file_io:
+
+File Input and Output
+=====================
+
+When you read files from within atlas it looks in the working directory (from which you launched atlas)
+and the atlas-scripts directory, or whatever directory (or directories) you speficy with ``--path``. 
+
+When the atlas software writes output to a file, it is always in the working directory.
+
+Assuming you ran ``make install`` as above you don't need to do anything else. Files will be
+read from the working directory (from which you launched atlas) and the atlas-scripts directory. Output will go to
+files in the working directory.
+
+.. _other_compile_options
+
+Other Compile Options
++++++++++++++++++++++
+
+When you compile the software by running ``make``, there are some other options available.
+Among these::
+
+     make optimize=true
+
+is recommended: the compilation is slower, but the code runs substantially faster.
+
+See the Makefile for more options.
+
+.. _updates:
+
+Updating the atlas software
++++++++++++++++++++++++++++
+
+At any time you can update the atlas software using git.
+In the atlasofliegroups directory give the command::
+
+     git pull origin master
+
+Assuming you have not edited any of the files in the distribution this
+will update the source code to the latest version. Typically you will
+not need to run ``make`` again. This is the case if the only files that
+changes (git reports this) are ``*.at`` files. If any files such as
+``*.cpp`` files where changed, you should run ``make`` again.
+
+If you get any errors due to conflicts you can try to resolve
+them. This can sometimes be tricky. A fallback option is to reinstall
+the software from scratch again.
 
 .. _docker:
 
+************
 Using Docker
-============
+************
 
-The preferred method is to :ref:`compile the software from source <compile_mac>`.
-
-The next choice is using `the Docker container system <https://www.docker.com>`_.
+The preferred method is to :ref:`compile the software from source <compiling_from_source>`.
+The next choice is using the Docker container system.
 
 This installs a *container*, which is a self-contained linux
-environment (similar to a virtual machine) and runs the software in
-the container. This is less dependent on the details of your system,
-and is a good option of you have trouble compiling the software
-yourself. It requires adminsitrative privileges, so is mainly used for
-personal machines, and not instutional machines under the control of a
-system administrator.
+environment (similar to a virtual machine) on your machine which is
+called the *host*. The atlas software runs entirely in the container,
+so is less dependent on the details of your system. This is a good
+option of you have trouble compiling the software yourself.
 
+This 
+requires adminsitrative privileges, so is mainly used for personal
+machines, and not institutional machines under the control of a system
+administrator. Also since the software is running in a container
+a little more effort is required for :ref:`file input and output<file_io_in_docker>`.
 
 Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
-Double click on the dmg file to install it. This requires typing your password.
 
-Open a terminal window and give the command
+Give the command::
 
-      docker run -it jeffreyadams/atlasofliegroups
+      docker run -it jeffreyadams/atlasofliegroups:version1.1
 
-to download the software and run it (it launches atlas and read in the
-fill all.at). The first time you do this it takes up
-to a few minutes.  Subsequent times it is much faster.
+to download the software and run it (it launches atlas and reads in
+the file all.at). The first time you do this it takes up to a few
+minutes.  Subsequent times it is much faster.
 
-To get the latest update, give the command
+Note: on the Mac (unlike linux) it should not be necessary to run docker as root
+using sudo. If this is required, replace each occurence of ``docker`` with
+``sudo docker``.
 
-    docker pull jeffreyadams/atlasofliegroups
+To get the latest update, give the command::
 
-.. _executable_mac:
+    docker pull jeffreyadams/atlasofliegroups:version1.1
 
-Download and Install an executable
-==================================
+.. _file_io_in_docker:
 
-The best method is to compile from source. As a backup option you can 
-download install an executable file. 
+*******************************
+File Input and Output in Docker
+*******************************
 
-Download a copy of the executable, and the atlas-scripts directory here:
+Since docker runs in a container, some extra effort is required to make
+files read/write from the host system. Here is an example,
+assuming your username is ``joe_user``,  your home directory is ``/home/joe_user``,
+and you want to work in a subdirectory ``my_files`` of your home directory::
 
-+-------------------------------+------------------------------+-------------------------------------+
-| Mac  compiled                 | `atlas_mac_pre_1.01.tgz`_    |  executable, and messages           |
-|                               |                              |  atlas-scripts directories          |
-+-------------------------------+------------------------------+-------------------------------------+
+ docker run -it --mount type=bind,source=/home/joe_user/my_files,\
+ target=/atlasofliegroups/my_files jeffreyadams/atlasofliegroups:version1.1
 
-.. _atlas_mac_pre_1.01.tgz: http://www.liegroups.org/software/source/1.01/atlas_mac_pre_1.01.tgz
+(Note: the ``\`` indicates a new line, and no space is allowed after the comma.
+On the mac you may need to enter this as a single line.) 
 
-Double-click on the file to extract it. 
+Now atlas will run as usual. Any files you write using atlas will be visible
+from the host system in the ``my_files`` directory. You can add files
+to this directory from the host filesystem, and ``atlas`` can read them.
 
-Open a terminal window, and cd to the directory where the files were downloaded.
+Since docker is running as root, any files that atlas creates (which you
+can see in youor my_files directory) are owned by root. They are readable,
+but you must be root to write to them. You can copy any file to another
+file, in which case the new file will be readable/writable by you,
+and visible to atlas.
 
-Make the file executable:
+.. _other_docker
 
-    chmod u+x atlas
+Other Docker Commands
+=====================
 
-Run the software with the command::
+Here are a few other frequently used docker commands::
 
-     ./atlas  --path=atlas-scripts all
+   docker images
+   docker image ls
 
-The path argument tells atlas where to find the scripts, and ``all`` says to load
-most of the scripts (not including a few which are under development). (Double-clicking
-on the file will launch the application, but will not make the atlas-scripts available.) 
+to list the images docker knows about. Similarly::
+
+    docker container ls
+
+to list the running containers (each container has a container
+id). Occasionally you will need the container id, as in::
+
+    docker container kill container_id
+
+to kill a container that is running. This command::
+
+    docker container prune
+
+gets rid of containers that are no longer running

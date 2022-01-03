@@ -42,9 +42,7 @@ mathematics.
    atlas_lib
    videos
    trouble_shooting
-   source_library
    web_interface
-   discussions
    
    
    

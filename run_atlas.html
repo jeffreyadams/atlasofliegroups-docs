@@ -49,18 +49,20 @@
 <li class="toctree-l1 current"><a class="reference internal" href="getting_started.html">Getting Started</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="download_and_install.html">Download and Install</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="linux_installation.html">Linux (and Solaris)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#ways-to-download-and-install-the-software">Ways to download and install the software</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#compiling-the-sofware-from-source">Compiling the Sofware from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#using-docker">Using Docker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linux_installation.html#file-input-and-output-in-docker">File Input and Output in Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="mac_installation.html">Mac</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#ways-to-download-and-install-the-software">Ways to download and install the software</a></li>
-<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#compiling-from-source">Compiling from source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#compiling-the-sofware-from-source">Compiling the Sofware from Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#using-docker">Using Docker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mac_installation.html#file-input-and-output-in-docker">File Input and Output in Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="windows_installation.html">Windows</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="windows_installation.html#ways-to-download-and-install-the-software">Ways to download and install the software</a></li>
 <li class="toctree-l4"><a class="reference internal" href="windows_installation.html#using-docker">Using Docker</a></li>
-<li class="toctree-l4"><a class="reference internal" href="windows_installation.html#compiling">Compiling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="windows_installation.html#compiling-the-sofware-from-source">Compiling the Sofware from Source</a></li>
 </ul>
 </li>
 </ul>
@@ -1033,9 +1035,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="source_library.html">Source Code Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web_interface.html">Web Interface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="discussions.html">Atlas Forum</a></li>
 </ul>
 
         </div>
@@ -1065,56 +1065,97 @@
              
   <div class="section" id="run-atlas">
 <span id="id1"></span><h1>Run atlas<a class="headerlink" href="#run-atlas" title="Permalink to this headline">¶</a></h1>
-<p>This document will tell you how to start running atlas after you have done <a class="reference internal" href="download_and_install.html#download-and-install"><span class="std std-ref">Download and Install</span></a>. These instructions work best for the latest version.</p>
+<p>This document will tell you how to start running atlas after you have done <a class="reference internal" href="download_and_install.html#download-and-install"><span class="std std-ref">Download and Install</span></a>.</p>
+<p>This video on <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">running the atlas software</a> covers some of the same
+material in this section.</p>
 <div class="section" id="get-atlas-running">
 <h2>Get atlas running<a class="headerlink" href="#get-atlas-running" title="Permalink to this headline">¶</a></h2>
 <p>Let’s say you’ve compiled the software in a directory
 atlasofliegroups.  Use your terminal to navigate into that
-directory. It should contain the executable files Fokko and atlas, and
-subdirectories “messages” (help files for Fokko) and “atlas-scripts”
-(auxiliary and help files for atlas).</p>
+directory. It should contain the executable file atlas.
+To see this do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">file</span> <span class="n">atlas</span>
+</pre></div>
+</div>
+<p>and you should see something like (of course details will differ):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="p">:</span> <span class="n">ELF</span> <span class="mi">64</span><span class="o">-</span><span class="n">bit</span> <span class="n">LSB</span> <span class="n">shared</span> <span class="nb">object</span><span class="p">,</span> <span class="n">x86</span><span class="o">-</span><span class="mi">64</span><span class="p">,</span> <span class="n">version</span> <span class="mi">1</span> <span class="p">(</span><span class="n">GNU</span><span class="o">/</span><span class="n">Linux</span><span class="p">),</span> <span class="n">dynamically</span> <span class="n">linked</span><span class="p">,</span>
+<span class="n">interpreter</span> <span class="o">/</span><span class="n">lib64</span><span class="o">/</span><span class="n">ld</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">x86</span><span class="o">-</span><span class="mf">64.</span><span class="n">so</span><span class="o">.</span><span class="mi">2</span><span class="p">,</span> <span class="n">BuildID</span><span class="p">[</span><span class="n">sha1</span><span class="p">]</span><span class="o">=</span><span class="n">db51b2603a2949cfa75646963f81c18343dfb993</span><span class="p">,</span>
+<span class="k">for</span> <span class="n">GNU</span><span class="o">/</span><span class="n">Linux</span> <span class="mf">3.2</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="ow">not</span> <span class="n">stripped</span>
+</pre></div>
+</div>
 <p>The minimal way to test that atlas is has been installed correctly
 is to give the command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span>
 </pre></div>
 </div>
-<p>(depending on your environment the “./” might not be necessary).</p>
+<p>(depending on your environment the <code class="docutils literal notranslate"><span class="pre">./</span></code> might not be necessary).</p>
 <p>You should see see something like this:</p>
-<blockquote>
-<div>This is ‘atlas’ (version 1.0.9, axis language version 1.0),
-the Atlas of Lie Groups and Representations interpreter,
-compiled on Aug 17 2021 at 18:04:22.   <a class="reference external" href="http://www.liegroups.org/">http://www.liegroups.org/</a>
-atlas&gt;</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="s1">&#39;atlas&#39;</span> <span class="p">(</span><span class="n">version</span> <span class="mf">1.1</span><span class="p">,</span> <span class="n">axis</span> <span class="n">language</span> <span class="n">version</span> <span class="mf">1.0</span><span class="p">),</span>
+<span class="n">the</span> <span class="n">Atlas</span> <span class="n">of</span> <span class="n">Lie</span> <span class="n">Groups</span> <span class="ow">and</span> <span class="n">Representations</span> <span class="n">interpreter</span><span class="p">,</span>
+<span class="n">compiled</span> <span class="n">on</span> <span class="n">Dec</span> <span class="mi">30</span> <span class="mi">2021</span> <span class="n">at</span> <span class="mi">16</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">25.</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">liegroups</span><span class="o">.</span><span class="n">org</span><span class="o">/</span>
+<span class="n">atlas</span><span class="o">&gt;</span>
+</pre></div>
+</div>
 <p>Assuming this works go to the next section to load scripts.</p>
 </div>
 <div class="section" id="load-scripts">
 <h2>Load scripts<a class="headerlink" href="#load-scripts" title="Permalink to this headline">¶</a></h2>
-<p>The folder atlas-scripts includes scripts, with names ending in “.at”, the provide additional functionality.
-The file <code class="docutils literal notranslate"><span class="pre">all.at</span></code> load all of the scripts and this is the recommended way to start atlas.</p>
-<p>To launch atlas, and all scripts, give the command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span>
+<p>The software relies on a large set of auxiliary files in the directory
+atlasofliegroups/atlas-scripts, with the suffix .at (or
+.ax). Generally you want to load all of these, by loading the single
+file <code class="docutils literal notranslate"><span class="pre">all.at</span></code>.</p>
+<p>Assuming you’ve run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">install</span></code> (see <a class="reference internal" href="linux_installation.html#post-compile"><span class="std std-ref">After compiling</span></a>)
+then the command <code class="docutils literal notranslate"><span class="pre">atlas</span></code> will run the software, and
+load <code class="docutils literal notranslate"><span class="pre">all.at</span></code>, and therefore load all of the scripts.</p>
+<p>Alternatively you can launch atlas and tell it where to find the scripts.
+Here are few examples.</p>
+<p>We recommend creating a directory <code class="docutils literal notranslate"><span class="pre">atlasofliegroups/my_files</span></code>, and always starting
+atlas from there. Assuming you’ve run <a href="#id2"><span class="problematic" id="id3">``</span></a>make install`, you can do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span>
+<span class="n">mkdir</span> <span class="n">my_files</span>
+<span class="n">cd</span> <span class="n">my_files</span>
+<span class="n">atlas</span>
+</pre></div>
+</div>
+<p>This will read the necessary files from the directory atlasofliegroups/atlas-scripts, and any files
+you write to will be in atlasofliegroups/my_files.
+Another possibility (which doesn’t require <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">install</span></code> is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span>
+<span class="n">mkdir</span> <span class="n">my_files</span>
+<span class="n">cd</span> <span class="n">my_files</span>
+<span class="o">../</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=../</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span><span class="o">.</span><span class="n">at</span>
+</pre></div>
+</div>
+<p>Alternatively go to thedirectory in which you built the software and run atlas from there:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span>
+<span class="o">./</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span> <span class="nb">all</span><span class="o">.</span><span class="n">at</span>
+</pre></div>
+</div>
+<p>The path argument tells atlas where to find the scripts, and <code class="docutils literal notranslate"><span class="pre">all.at</span></code>
+says to load most of the scripts (possibly excluding a few which are under
+development).</p>
+<p>Another option is to run atlas from the atlas-scripts directory, in which
+case it doesn’t need the path:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">atlasofliegroups</span><span class="o">/</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
+<span class="o">../</span><span class="n">atlas</span> <span class="nb">all</span><span class="o">.</span><span class="n">at</span>
 </pre></div>
 </div>
 <p>To test if the scripts are loaded do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">G</span><span class="o">=</span><span class="n">SL</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">R</span><span class="p">)</span>
-<span class="n">Variable</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
+</pre></div>
+</div>
+<p>and you should see:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Variable</span> <span class="n">G</span><span class="p">:</span> <span class="n">RealForm</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">G</span>
 <span class="n">Value</span><span class="p">:</span> <span class="n">connected</span> <span class="n">split</span> <span class="n">real</span> <span class="n">group</span> <span class="k">with</span> <span class="n">Lie</span> <span class="n">algebra</span> <span class="s1">&#39;sl(2,R)&#39;</span>
 </pre></div>
 </div>
-<p>You can also load scripts from within atlas:</p>
+<p>You can also load scripts from within atlas, for example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
-<span class="o">&lt;</span><span class="n">basic</span>
+<span class="o">&lt;</span><span class="n">basic</span><span class="o">.</span><span class="n">at</span>
 </pre></div>
 </div>
-<p>loads the script basic.at, or:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">atlas</span> <span class="o">--</span><span class="n">path</span><span class="o">=</span><span class="n">atlas</span><span class="o">-</span><span class="n">scripts</span>
-<span class="o">&lt;</span><span class="nb">all</span>
-</pre></div>
-</div>
-<p>is the same as “./atlas–path=atlas-scripts all” (except that it
-reports on what it is loading).</p>
-<p>The symbol “&lt;” means read a file. If this doesn’t work, please see <a class="reference internal" href="trouble_shooting.html#trouble-shooting"><span class="std std-ref">Trouble Shooting</span></a>. Also, there is a <a class="reference external" href="https://www.youtube.com/watch?v=SU4fql8rOQg&amp;feature=youtu.be">video</a> explaining how to launch atlas so that it finds the necessary .at files.</p>
+<p>The symbol “&lt;” means read a file. If this doesn’t work, please see <a class="reference internal" href="trouble_shooting.html#trouble-shooting"><span class="std std-ref">Trouble Shooting</span></a>.</p>
 <p>To check if readline (command completion, recalling previous commands, etc.) is working, hit <strong>TAB</strong> on your keyboard twice. You should see something like:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>atlas&gt;
 Display all 902 possibilities? (y or n)

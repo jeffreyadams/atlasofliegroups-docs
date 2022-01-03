@@ -3,56 +3,109 @@
 Run atlas
 =========
 
-This document will tell you how to start running atlas after you have done :ref:`download_and_install`. These instructions work best for the latest version.
+This document will tell you how to start running atlas after you have done :ref:`download_and_install`.
+
+This video on `running the atlas software <https://www.youtube.com/watch?v=SU4fql8rOQg&feature=youtu.be>`_ covers some of the same
+material in this section.
 
 Get atlas running
 --------------------
 
-Let's say you compiled the software in a directory atlasofliegroups, or perhaps you put a pre-compiled binary there. Use your terminal to navigate into that directory. It should contain the executable files Fokko and atlas, and subdirectories "messages" (help files for Fokko) and "atlas-scripts" (auxiliary and help files for atlas).
+Let's say you've compiled the software in a directory
+atlasofliegroups.  Use your terminal to navigate into that
+directory. It should contain the executable file atlas.
+To see this do::
 
-Once you are there, depending on your setting, do either::
+    file atlas
 
-    ./atlas --path=atlas-scripts
+and you should see something like (of course details will differ)::
 
-or::
+      atlas: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked,
+      interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=db51b2603a2949cfa75646963f81c18343dfb993,
+      for GNU/Linux 3.2.0, not stripped
 
-    atlas --path=atlas-scripts
+The minimal way to test that atlas is has been installed correctly
+is to give the command::
 
-You should then see something like this::
+    ./atlas
 
-    This is 'atlas' (version 0.6, axis language version 0.9),
+(depending on your environment the ``./`` might not be necessary).     
+
+You should see see something like this::
+
+    This is 'atlas' (version 1.1, axis language version 1.0),
     the Atlas of Lie Groups and Representations interpreter,
-    compiled on Jan 19 2016 at 02:21:55.   http://www.liegroups.org/
-    atlas> 
-    
-Alternatively, you can cd into the atlas-scripts folder, then do::
+    compiled on Dec 30 2021 at 16:01:25.   http://www.liegroups.org/
+    atlas>
 
-    ../atlas
-    
+Assuming this works go to the next section to load scripts.
+
 Load scripts
 ------------
 
-The folder atlas-scripts includes scripts, like "basics.at", that define a collection of functions complementing the primitive functions built into atlas.
+The software relies on a large set of auxiliary files in the directory
+atlasofliegroups/atlas-scripts, with the suffix .at (or
+.ax). Generally you want to load all of these, by loading the single
+file ``all.at``.
 
-Assuming you are in the atlas environment (when you see ``atlas>`` in your terminal), here is how to load some scripts. For example, to load the file "basic.at" do::
+Assuming you've run ``make install`` (see :ref:`post_compile`)
+then the command ``atlas`` will run the software, and
+load ``all.at``, and therefore load all of the scripts.
 
-    atlas> <basic
-    
-You will see atlas output::
+Alternatively you can launch atlas and tell it where to find the scripts.
+Here are few examples.
 
-    Starting to read from file 'atlas-scripts//basic.at'.
-    Added definition [12] of #: (int->[int])
-    Added definition [13] of #: (bool->int)
-    ...
-    
-The symbol "<" means read a file. If this doesn't work, please see :ref:`trouble_shooting`. Also, there is a `video <https://www.youtube.com/watch?v=SU4fql8rOQg&feature=youtu.be>`_ explaining how to launch atlas so that it finds the necessary .at files.
 
-Once this is working, you can and should load other files. Load "all.at" to get a recommended set of files::
+We recommend creating a directory ``atlasofliegroups/my_files``, and always starting
+atlas from there. Assuming you've run ``make install`, you can do::
 
-    atlas> <all
-    [... some atlas output ...]
-    atlas>
-    
+    cd atlasofliegroups
+    mkdir my_files
+    cd my_files
+    atlas
+
+This will read the necessary files from the directory atlasofliegroups/atlas-scripts, and any files
+you write to will be in atlasofliegroups/my_files.
+Another possibility (which doesn't require ``make install`` is::
+
+    cd atlasofliegroups
+    mkdir my_files
+    cd my_files
+    ../atlas --path=../atlas-scripts all.at
+
+Alternatively go to thedirectory in which you built the software and run atlas from there::
+
+  cd atlasofliegroups
+  ./atlas --path=atlas-scripts all.at
+
+The path argument tells atlas where to find the scripts, and ``all.at``
+says to load most of the scripts (possibly excluding a few which are under
+development).
+
+Another option is to run atlas from the atlas-scripts directory, in which
+case it doesn't need the path::
+
+    cd atlasofliegroups/atlas-scripts
+    ../atlas all.at
+
+To test if the scripts are loaded do::
+
+  atlas> set G=SL(2,R)
+
+and you should see::
+  
+  Variable G: RealForm
+  atlas> G
+  Value: connected split real group with Lie algebra 'sl(2,R)'
+
+You can also load scripts from within atlas, for example::
+
+    ./atlas --path=atlas-scripts
+    <basic.at
+
+
+The symbol "<" means read a file. If this doesn't work, please see :ref:`trouble_shooting`.
+
 To check if readline (command completion, recalling previous commands, etc.) is working, hit **TAB** on your keyboard twice. You should see something like::
 
     atlas> 
