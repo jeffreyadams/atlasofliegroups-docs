@@ -1,5 +1,4 @@
-
-.. _linux:
+.. _linux_installation:
 
 #################################################
 Linux (and Solaris)
@@ -90,7 +89,6 @@ from anywhere. By default this will put a shell script in ~/bin and
 points to the atlas-scripts directory.  Make sure thath ~/bin is in
 your path. Then the command ``atlas`` will run the software.
 
-
 The software relies on a large set of auxiliary files in the directory
 atlasofliegroups/atlas-scripts, with the suffix .at (or
 .ax). Generally you want to load all of these, by loading the single
@@ -98,7 +96,7 @@ file ``all.at``. This happens automatically if you use ``make install``.
 
 See the Makefile for other options.
 
-.. _other_launches
+.. _linux_other_launches:
 
 Other ways of launching atlas
 =============================
@@ -157,10 +155,10 @@ Assuming you ran ``make install`` as above you don't need to do anything else. F
 read from the working directory (from which you launched atlas) and the atlas-scripts directory. Output will go to
 files in the working directory.
 
-.. _other_compile_options
+.. _linux_other_compile_options:
 
 Other Compile Options
-+++++++++++++++++++++
+*********************
 
 When you compile the software by running ``make``, there are some other options available.
 Among these::
