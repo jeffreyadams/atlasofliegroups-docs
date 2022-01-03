@@ -74,6 +74,7 @@ readline files. To remedy this you need to have administrative privileges. Do::
     [type your password]
     cd /usr/local/include
     mkdir readline
+    chmod 755 readline
     cp /opt/local/include/readline/* readline
 
 If you don't already have a directory ``/usr/local/include`` you need an extra step::
@@ -82,8 +83,10 @@ If you don't already have a directory ``/usr/local/include`` you need an extra s
     [type your password]
     cd /usr/local
     mkdir include
+    chmod 755 include
     cd include
     mkdir readline
+    chmod 755 readline
     cp /opt/local/include/readline/* readline
 
 After you have the source code, cd to the atlasofliegroups directory.
