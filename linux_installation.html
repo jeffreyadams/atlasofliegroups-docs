@@ -1194,6 +1194,22 @@ Among these:</p>
 <p>is recommended: the compilation is slower, but the code runs substantially faster.</p>
 <p>See the Makefile for more options.</p>
 </div>
+<div class="section" id="updating-the-atlas-software">
+<span id="updates"></span><h4>Updating the atlas software<a class="headerlink" href="#updating-the-atlas-software" title="Permalink to this headline">¶</a></h4>
+<p>At any time you can update the atlas software using git.
+In the atlasofliegroups directory give the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
+</pre></div>
+</div>
+<p>Assuming you have not edited any of the files in the distribution this
+will update the source code to the latest version. Typically you will
+not need to run <code class="docutils literal notranslate"><span class="pre">bmake</span></code> again. This is the case if the only files that
+changes (git reports this) are <code class="docutils literal notranslate"><span class="pre">*.at</span></code> files. If any files such as
+<code class="docutils literal notranslate"><span class="pre">*.cpp</span></code> files where changed, you should run <code class="docutils literal notranslate"><span class="pre">make</span></code> again.</p>
+<p>If you get any errors due to conflicts you can try to resolve
+them. This can sometimes be tricky. A fallback option is to reinstall
+the software from scratch again.</p>
+</div>
 </div>
 </div>
 <div class="section" id="using-docker">
@@ -1212,7 +1228,7 @@ administrator. Also since the software is running in a container
 a little more effort is required for <a class="reference internal" href="mac_installation.html#file-io-in-docker"><span class="std std-ref">file input and output</span></a>.</p>
 <p>Install docker (community version) for your system from <a class="reference external" href="https://www.docker.com/community-edition">https://www.docker.com/community-edition</a></p>
 <p>Give the command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="p">:</span><span class="n">version1</span><span class="o">.</span><span class="mi">1</span>
 </pre></div>
 </div>
 <p>to download the software and run it (it launches atlas and reads in
