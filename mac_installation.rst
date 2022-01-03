@@ -50,13 +50,20 @@ Now install the readline library: in a terminal window type::
 
 Next, you need to tell the compiler where to find read readline
 libraries by setting the shell variable rl_libs.  The simplest method
-is to edit the appropriate *dot* file. The name of this file varies,
-but usually is either .zprofile or .zshrc (in your home
-directory). Add this line to the file:
+is to edit the appropriate *dot* file in your *home directory*.
+Your home directory is probably ``/Users/username``. You can also find 
+it out by giving the command ``printenv`` and looking for the line ``HOME=``.
+
+The name of this dot file varies, but usually is either .profile,
+.zprofile or .zshrc. Do ``ls -a`` to see all of your files, and
+look for one beginning with ``.``. In any event the command ``cd ~``
+will take you there.
+
+Add this line to the file::
 
     export rl_libs="-lreadline -lcurses -L/opt/local/lib"
 
-Then do ``source .zprofile`` (or whichever file you edited) to define the environment
+Then do ``source .profile`` (or whichever file you edited) to define the environment
 variable rl_libs. You can check this with the command *printenv*, you should
 see rl_libs in the output.
 
