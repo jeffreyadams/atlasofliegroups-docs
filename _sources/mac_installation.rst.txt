@@ -70,24 +70,22 @@ see rl_libs in the output.
 On a Mac there is an issue with the compiler finding the correct versions of the
 readline files. To remedy this you need to have administrative privileges. Do::
 
-    sudo su
+    sudo cd /usr/local/include
     [type your password]
-    cd /usr/local/include
-    mkdir readline
-    chmod 755 readline
-    cp /opt/local/include/readline/* readline
+    sudo mkdir readline
+    sudo chmod 755 readline
+    sudo cp /opt/local/include/readline/* readline
 
 If you don't already have a directory ``/usr/local/include`` you need an extra step::
 
-    sudo su
+    sudo cd /usr/local
     [type your password]
-    cd /usr/local
-    mkdir include
-    chmod 755 include
-    cd include
-    mkdir readline
-    chmod 755 readline
-    cp /opt/local/include/readline/* readline
+    sudo mkdir include
+    sudo chmod 755 include
+    sudo cd include
+    sudo mkdir readline
+    sudo chmod 755 readline
+    sudo cp /opt/local/include/readline/* readline
 
 After you have the source code, cd to the atlasofliegroups directory.
 

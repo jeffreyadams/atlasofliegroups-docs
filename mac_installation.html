@@ -1116,24 +1116,22 @@ variable rl_libs. You can check this with the command <em>printenv</em>, you sho
 see rl_libs in the output.</p>
 <p>On a Mac there is an issue with the compiler finding the correct versions of the
 readline files. To remedy this you need to have administrative privileges. Do:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">su</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">cd</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span>
 <span class="p">[</span><span class="nb">type</span> <span class="n">your</span> <span class="n">password</span><span class="p">]</span>
-<span class="n">cd</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span>
-<span class="n">mkdir</span> <span class="n">readline</span>
-<span class="n">chmod</span> <span class="mi">755</span> <span class="n">readline</span>
-<span class="n">cp</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">readline</span><span class="o">/*</span> <span class="n">readline</span>
+<span class="n">sudo</span> <span class="n">mkdir</span> <span class="n">readline</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">755</span> <span class="n">readline</span>
+<span class="n">sudo</span> <span class="n">cp</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">readline</span><span class="o">/*</span> <span class="n">readline</span>
 </pre></div>
 </div>
 <p>If you don’t already have a directory <code class="docutils literal notranslate"><span class="pre">/usr/local/include</span></code> you need an extra step:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">su</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">cd</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span>
 <span class="p">[</span><span class="nb">type</span> <span class="n">your</span> <span class="n">password</span><span class="p">]</span>
-<span class="n">cd</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span>
-<span class="n">mkdir</span> <span class="n">include</span>
-<span class="n">chmod</span> <span class="mi">755</span> <span class="n">include</span>
-<span class="n">cd</span> <span class="n">include</span>
-<span class="n">mkdir</span> <span class="n">readline</span>
-<span class="n">chmod</span> <span class="mi">755</span> <span class="n">readline</span>
-<span class="n">cp</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">readline</span><span class="o">/*</span> <span class="n">readline</span>
+<span class="n">sudo</span> <span class="n">mkdir</span> <span class="n">include</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">755</span> <span class="n">include</span>
+<span class="n">sudo</span> <span class="n">cd</span> <span class="n">include</span>
+<span class="n">sudo</span> <span class="n">mkdir</span> <span class="n">readline</span>
+<span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">755</span> <span class="n">readline</span>
+<span class="n">sudo</span> <span class="n">cp</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">readline</span><span class="o">/*</span> <span class="n">readline</span>
 </pre></div>
 </div>
 <p>After you have the source code, cd to the atlasofliegroups directory.</p>
