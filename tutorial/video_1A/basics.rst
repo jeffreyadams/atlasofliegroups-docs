@@ -34,15 +34,15 @@ Sometimes we want to ask ``atlas`` to repeat the previous value or to use it to 
     atlas>
 
 A useful way to change the value assigned to a variable is using the
-command ``:=``. However this works as long as the new value is of the
+command ``:=``. However, this works only as long as the new value is of the
 same data type as the old one. You may also notice in the example
 below that, if we don't use this way of assigning a new value to the
-variable, we get a message "(hiding previous one of type ....)"  
+variable, we get a message "(overriding previous instance, with had type ....)"
 
-However there are other reasons why this second method of redefining the value of a variable. They have to do with the software functionality ::
+There are other reasons for using this second method of redefining the value of a variable. They have to do with the software functionality ::
 
 	atlas> set x=2 
-	Identifier x: int (hiding previous one of type int) 
+	Identifier x: int (overriding previous instance, which had type int)
 	atlas> x 
 	Value: 2 
 	atlas> x:=5 
@@ -51,8 +51,9 @@ However there are other reasons why this second method of redefining the value o
         Error during analysis of expression at <standard input>:33:0-6
         Type error: 
   	  Subexpression /(2,3) at <standard input>:33:3-6
-	  has wrong type: found rat while int was needed.  
-	Type check failed 
+	  has wrong type: found rat while int was needed.
+	Expression analysis failed
+        Evaluation aborted. 
 	atlas>
 
 Note that if you have not assigned a value to a variable you cannot
@@ -62,6 +63,7 @@ use this method. You need to first use ``set``::
     Error during analysis of expression at <standard input>:2:0-4
       Undefined identifier 'z' in assignment z:=1
     Expression analysis failed
+    Evaluation aborted.
     atlas> set z=1
     Variable z: int
     atlas> z
@@ -73,7 +75,7 @@ use this method. You need to first use ``set``::
 The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity::
 
 
-   atlas> y:=3
+   atlas> set y=3
    Identifier y: int
    atlas> set z=3/2
    Identifier z: rat
@@ -99,10 +101,10 @@ The ``basic.at`` file
 ----------------------
 
 When you launch ``atlas`` with the standard built-in commands only,
-you sometimes may need another command that is not included there
+you sometimes need other commands that are not included there,
 and you get an error telling you the command is undefined. The reason
-is because the command may be defined in a supplementary file that
-needs to be loaded. The ``basic.at`` filencontains most of the commands you will need to get familiar with the software.
+is that the command may be defined in a supplementary file that
+needs to be loaded. The ``basic.at`` filen contains most of the commands you will need to get familiar with the software.
 
 We need to introduce two other commands.
 
