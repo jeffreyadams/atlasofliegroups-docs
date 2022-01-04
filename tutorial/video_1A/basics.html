@@ -1091,13 +1091,13 @@ atlas&gt;
 </pre></div>
 </div>
 <p>A useful way to change the value assigned to a variable is using the
-command <code class="docutils literal notranslate"><span class="pre">:=</span></code>. However this works as long as the new value is of the
+command <code class="docutils literal notranslate"><span class="pre">:=</span></code>. However, this works only as long as the new value is of the
 same data type as the old one. You may also notice in the example
 below that, if we don’t use this way of assigning a new value to the
-variable, we get a message “(hiding previous one of type ….)”</p>
-<p>However there are other reasons why this second method of redefining the value of a variable. They have to do with the software functionality</p>
+variable, we get a message “(overriding previous instance, with had type ….)”</p>
+<p>There are other reasons for using this second method of redefining the value of a variable. They have to do with the software functionality</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">x</span><span class="o">=</span><span class="mi">2</span>
-<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span> <span class="p">(</span><span class="n">hiding</span> <span class="n">previous</span> <span class="n">one</span> <span class="n">of</span> <span class="nb">type</span> <span class="nb">int</span><span class="p">)</span>
+<span class="n">Identifier</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span> <span class="p">(</span><span class="n">overriding</span> <span class="n">previous</span> <span class="n">instance</span><span class="p">,</span> <span class="n">which</span> <span class="n">had</span> <span class="nb">type</span> <span class="nb">int</span><span class="p">)</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span>
 <span class="n">Value</span><span class="p">:</span> <span class="mi">2</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span><span class="o">=</span><span class="mi">5</span>
@@ -1107,7 +1107,8 @@ variable, we get a message “(hiding previous one of type ….)”</p>
 <span class="n">Type</span> <span class="n">error</span><span class="p">:</span>
   <span class="n">Subexpression</span> <span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">33</span><span class="p">:</span><span class="mi">3</span><span class="o">-</span><span class="mi">6</span>
   <span class="n">has</span> <span class="n">wrong</span> <span class="nb">type</span><span class="p">:</span> <span class="n">found</span> <span class="n">rat</span> <span class="k">while</span> <span class="nb">int</span> <span class="n">was</span> <span class="n">needed</span><span class="o">.</span>
-<span class="n">Type</span> <span class="n">check</span> <span class="n">failed</span>
+<span class="n">Expression</span> <span class="n">analysis</span> <span class="n">failed</span>
+<span class="n">Evaluation</span> <span class="n">aborted</span><span class="o">.</span>
 <span class="n">atlas</span><span class="o">&gt;</span>
 </pre></div>
 </div>
@@ -1117,6 +1118,7 @@ use this method. You need to first use <code class="docutils literal notranslate
 <span class="n">Error</span> <span class="n">during</span> <span class="n">analysis</span> <span class="n">of</span> <span class="n">expression</span> <span class="n">at</span> <span class="o">&lt;</span><span class="n">standard</span> <span class="nb">input</span><span class="o">&gt;</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">0</span><span class="o">-</span><span class="mi">4</span>
   <span class="n">Undefined</span> <span class="n">identifier</span> <span class="s1">&#39;z&#39;</span> <span class="ow">in</span> <span class="n">assignment</span> <span class="n">z</span><span class="p">:</span><span class="o">=</span><span class="mi">1</span>
 <span class="n">Expression</span> <span class="n">analysis</span> <span class="n">failed</span>
+<span class="n">Evaluation</span> <span class="n">aborted</span><span class="o">.</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">z</span><span class="o">=</span><span class="mi">1</span>
 <span class="n">Variable</span> <span class="n">z</span><span class="p">:</span> <span class="nb">int</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="n">z</span>
@@ -1127,7 +1129,7 @@ use this method. You need to first use <code class="docutils literal notranslate
 </pre></div>
 </div>
 <p>The software will often accept a simpler data type (like an integer) in a place where a more complicated one (like a rational number) is required, as long as this can be done without ambiguity:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span><span class="o">=</span><span class="mi">3</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">y</span><span class="o">=</span><span class="mi">3</span>
 <span class="n">Identifier</span> <span class="n">y</span><span class="p">:</span> <span class="nb">int</span>
 <span class="n">atlas</span><span class="o">&gt;</span> <span class="nb">set</span> <span class="n">z</span><span class="o">=</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span>
 <span class="n">Identifier</span> <span class="n">z</span><span class="p">:</span> <span class="n">rat</span>
@@ -1149,10 +1151,10 @@ use this method. You need to first use <code class="docutils literal notranslate
 <div class="section" id="the-basic-at-file">
 <h2>The <code class="docutils literal notranslate"><span class="pre">basic.at</span></code> file<a class="headerlink" href="#the-basic-at-file" title="Permalink to this headline">¶</a></h2>
 <p>When you launch <code class="docutils literal notranslate"><span class="pre">atlas</span></code> with the standard built-in commands only,
-you sometimes may need another command that is not included there
+you sometimes need other commands that are not included there,
 and you get an error telling you the command is undefined. The reason
-is because the command may be defined in a supplementary file that
-needs to be loaded. The <code class="docutils literal notranslate"><span class="pre">basic.at</span></code> filencontains most of the commands you will need to get familiar with the software.</p>
+is that the command may be defined in a supplementary file that
+needs to be loaded. The <code class="docutils literal notranslate"><span class="pre">basic.at</span></code> filen contains most of the commands you will need to get familiar with the software.</p>
 <p>We need to introduce two other commands.</p>
 <p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code> is the input command that will help you load the <code class="docutils literal notranslate"><span class="pre">.at</span></code> files that you want.</p>
 <p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> is the output command. More on this later.</p>
