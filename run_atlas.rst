@@ -104,7 +104,7 @@ You can also load scripts from within atlas, for example::
     <basic.at
 
 
-The symbol "<" means read a file. If this doesn't work, please see :ref:`trouble_shooting`.
+The symbol "<" means read a file.
 
 To check if readline (command completion, recalling previous commands, etc.) is working, hit **TAB** on your keyboard twice. You should see something like::
 
