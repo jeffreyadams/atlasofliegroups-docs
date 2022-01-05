@@ -72,8 +72,7 @@ see if this is the problem give command::
     make readline=false
 
 If this succeeds, you have a functioning version of the software, but without the
-readline functions. See :ref:`installation_troubleshooting` for information
-on compiling with readline and other issues.
+readline functions. 
 
 .. _post_compile:
 

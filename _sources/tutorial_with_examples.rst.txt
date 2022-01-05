@@ -1,6 +1,6 @@
 .. _tutorial_with_examples:
 
-Tutorial
+Software Tutorial
 ==========
 
 .. toctree::

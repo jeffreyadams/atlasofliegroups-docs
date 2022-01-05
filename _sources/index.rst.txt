@@ -41,8 +41,6 @@ mathematics.
    tutorial_with_examples
    atlas_lib
    videos
-   trouble_shooting
-   web_interface
    
    
    
