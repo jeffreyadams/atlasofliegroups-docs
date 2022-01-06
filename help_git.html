@@ -17,7 +17,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tutorial" href="tutorial_with_examples.html" />
+    <link rel="next" title="Software Tutorial" href="tutorial_with_examples.html" />
     <link rel="prev" title="Run atlas" href="run_atlas.html" /> 
 </head>
 
@@ -85,7 +85,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial_with_examples.html">Tutorial</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_with_examples.html">Software Tutorial</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/preliminaries.html">Preliminaries</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/basics.html">Getting started using the software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/basics.html#the-basic-at-file">The <code class="docutils literal notranslate"><span class="pre">basic.at</span></code> file</a></li>
@@ -94,7 +94,6 @@
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html">Help files</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#atlas-help"><code class="docutils literal notranslate"><span class="pre">atlas.help</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#atlas-functions-help"><code class="docutils literal notranslate"><span class="pre">atlas-functions.help</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#scripts-help"><code class="docutils literal notranslate"><span class="pre">scripts.help</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/basic_commands.html">Basic Commands</a><ul>
@@ -1026,16 +1025,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="trouble_shooting.html">Trouble Shooting</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ts-install.html">Installation – Trouble Shooting</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ts-install.html#the-readline-package">The readline package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ts-install.html#ctanglex-error">ctanglex error</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ts-install.html#compiler-error">Compiler error</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="web_interface.html">Web Interface</a></li>
 </ul>
 
         </div>
@@ -1099,7 +1088,7 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">r</span>
 </pre></div>
 </div>
-<p>The primary branches are master, unitary, and latest. The The master branch is probably what most users would want. If you choose to download a specific branch, say the branch with name “unitary”, you can do:</p>
+<p>The primary branches are master, unitary, and latest. The master branch is probably what most users would want. If you choose to download a specific branch, say the branch with name “unitary”, you can do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="o">-</span><span class="n">b</span> <span class="n">unitary</span> <span class="o">--</span><span class="n">single</span><span class="o">-</span><span class="n">branch</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
@@ -1108,7 +1097,7 @@
 </pre></div>
 </div>
 <p>This will switch you into the branch named “latest”.</p>
-<p>To update only one the master branch do:</p>
+<p>To update only the master branch do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
 </pre></div>
 </div>
@@ -1116,7 +1105,7 @@
 </div>
 <div class="section" id="other-helpful-commands">
 <span id="other-commands"></span><h2>Other helpful commands<a class="headerlink" href="#other-helpful-commands" title="Permalink to this headline">¶</a></h2>
-<p>Again, after you have done <cite>git clone</cite>, most of these commands operate locally. Use you terminal to navigate into “atlasofliegroups” directory.</p>
+<p>Again, after you have done <cite>git clone</cite>, most of these commands operate locally. Use you terminal to navigate into the “atlasofliegroups” directory.</p>
 <p>To show the status of your local repository, compared to the remote one, do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">status</span>
 </pre></div>
@@ -1157,7 +1146,7 @@ Suppose this happens:</p>
 <span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
 </pre></div>
 </div>
-<p>to stash your local changes, and execute the update from google. The do:</p>
+<p>to stash your local changes, and execute the update from google. Then do:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">stash</span> <span class="n">pop</span>
 </pre></div>
 </div>
@@ -1220,7 +1209,7 @@ Here are some commands for working with git objects:</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="run_atlas.html" class="btn btn-neutral float-left" title="Run atlas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="tutorial_with_examples.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tutorial_with_examples.html" class="btn btn-neutral float-right" title="Software Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

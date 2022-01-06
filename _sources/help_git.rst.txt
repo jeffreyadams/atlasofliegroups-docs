@@ -49,7 +49,7 @@ This will show you which branch you are on (the default is master). To generate 
 
     git branch -r
     
-The primary branches are master, unitary, and latest. The The master branch is probably what most users would want. If you choose to download a specific branch, say the branch with name "unitary", you can do::
+The primary branches are master, unitary, and latest. The master branch is probably what most users would want. If you choose to download a specific branch, say the branch with name "unitary", you can do::
 
     git clone -b unitary --single-branch https://github.com/jeffreyadams/atlasofliegroups.git
 
@@ -59,7 +59,7 @@ To switch into other branches from the current branch, do::
     
 This will switch you into the branch named "latest".
 
-To update only one the master branch do::
+To update only the master branch do::
 
    git pull origin master
 
@@ -71,7 +71,7 @@ This will also update the atlas software.
 Other helpful commands
 -----------------------
 
-Again, after you have done `git clone`, most of these commands operate locally. Use you terminal to navigate into "atlasofliegroups" directory.
+Again, after you have done `git clone`, most of these commands operate locally. Use you terminal to navigate into the "atlasofliegroups" directory.
 
 To show the status of your local repository, compared to the remote one, do::
 
@@ -122,7 +122,7 @@ and the update from google will not execute (at all). Do this::
     git stash
     git pull origin master
 
-to stash your local changes, and execute the update from google. The do::
+to stash your local changes, and execute the update from google. Then do::
 
     git stash pop
 

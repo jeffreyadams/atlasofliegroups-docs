@@ -85,7 +85,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../tutorial_with_examples.html">Tutorial</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../tutorial_with_examples.html">Software Tutorial</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="../preliminaries.html">Preliminaries</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="basics.html">Getting started using the software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basics.html#the-basic-at-file">The <code class="docutils literal notranslate"><span class="pre">basic.at</span></code> file</a></li>
@@ -94,7 +94,6 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Help files</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#atlas-help"><code class="docutils literal notranslate"><span class="pre">atlas.help</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#atlas-functions-help"><code class="docutils literal notranslate"><span class="pre">atlas-functions.help</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scripts-help"><code class="docutils literal notranslate"><span class="pre">scripts.help</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="basic_commands.html">Basic Commands</a><ul>
@@ -1026,16 +1025,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../trouble_shooting.html">Trouble Shooting</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../ts-install.html">Installation – Trouble Shooting</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#the-readline-package">The readline package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#ctanglex-error">ctanglex error</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../ts-install.html#compiler-error">Compiler error</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../web_interface.html">Web Interface</a></li>
 </ul>
 
         </div>
@@ -1052,7 +1041,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../tutorial_with_examples.html">Tutorial</a> &raquo;</li>
+          <li><a href="../../tutorial_with_examples.html">Software Tutorial</a> &raquo;</li>
           <li><a href="../preliminaries.html">Preliminaries</a> &raquo;</li>
       <li>Help files</li>
       <li class="wy-breadcrumbs-aside">
@@ -1069,16 +1058,12 @@
 <div class="section" id="atlas-help">
 <h2><code class="docutils literal notranslate"><span class="pre">atlas.help</span></code><a class="headerlink" href="#atlas-help" title="Permalink to this headline">¶</a></h2>
 <p>To know more about the different commands and data types of the
-software you can quit <code class="docutils literal notranslate"><span class="pre">atlas</span></code> and go to the directory atlas-scripts
-and look for the help file atlas.help. This file has more general information about how the software works, how to use it and how it compares with the Fokko program. It gives an introduction of the software and how to install it. If you go to “#3. Design principles of <code class="docutils literal notranslate"><span class="pre">axis</span></code> language, and current limitations,” scrolling down you will find information about the details covered in the present document including the list of data types used by the software. Some of them are <code class="docutils literal notranslate"><span class="pre">bool</span></code> for boolean, <code class="docutils literal notranslate"><span class="pre">int</span></code> for integer, <code class="docutils literal notranslate"><span class="pre">rat</span></code> for rational, etc.; and some are related to Lie groups, like LieType, RootDatum, etc. that we will see later in these notes.</p>
+software you can quit <code class="docutils literal notranslate"><span class="pre">atlas</span></code>, go to the directory atlas-scripts
+and look for the help file atlas.help. This file has more general information about how the software works, how to use it and how it compares with the Fokko program. It gives an introduction of the software and how to install it. If you go to “#3. Design principles of the <code class="docutils literal notranslate"><span class="pre">axis</span></code> language, and current limitations,” scrolling down you will find information about the details covered in the present document including the list of data types used by the software. Some of them are <code class="docutils literal notranslate"><span class="pre">bool</span></code> for boolean, <code class="docutils literal notranslate"><span class="pre">int</span></code> for integer, <code class="docutils literal notranslate"><span class="pre">rat</span></code> for rational, etc.; and some are related to Lie groups, like <code class="docutils literal notranslate"><span class="pre">LieType</span></code>,``RootDatum``, etc. that we will see later in these notes.</p>
 </div>
 <div class="section" id="atlas-functions-help">
 <h2><code class="docutils literal notranslate"><span class="pre">atlas-functions.help</span></code><a class="headerlink" href="#atlas-functions-help" title="Permalink to this headline">¶</a></h2>
-<p>This is the most useful help file that lists all the operations and functions defined on <code class="docutils literal notranslate"><span class="pre">atlas</span></code>. It describes their domain and range (data types); starting from the basic symbol operators <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">_</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>, to booleans, to word operators like <code class="docutils literal notranslate"><span class="pre">null</span></code> that takes an integer <code class="docutils literal notranslate"><span class="pre">n</span></code> to the zero n-vector, to <code class="docutils literal notranslate"><span class="pre">invert</span></code> and <code class="docutils literal notranslate"><span class="pre">diagonalize</span></code>, which act on matrices, etc.</p>
-</div>
-<div class="section" id="scripts-help">
-<h2><code class="docutils literal notranslate"><span class="pre">scripts.help</span></code><a class="headerlink" href="#scripts-help" title="Permalink to this headline">¶</a></h2>
-<p>Finally, this help file lists most of the supplementary scripts found in this directory and a short description of what they do. The most basic one is <code class="docutils literal notranslate"><span class="pre">basic.at</span></code> which includes many useful functions. We will see how to load them and look at them directly to see what they do.</p>
+<p>This is the most useful help file that lists all the operations and functions defined in <code class="docutils literal notranslate"><span class="pre">atlas</span></code>. It describes their domain and range (data types); starting from the basic symbol operators <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">_</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>, to booleans, to word operators like <code class="docutils literal notranslate"><span class="pre">null</span></code> that takes an integer <code class="docutils literal notranslate"><span class="pre">n</span></code> to the zero n-vector, to <code class="docutils literal notranslate"><span class="pre">invert</span></code> and <code class="docutils literal notranslate"><span class="pre">diagonalize</span></code>, which act on matrices, etc.</p>
 </div>
 </div>
 
