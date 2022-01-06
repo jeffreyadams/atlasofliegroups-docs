@@ -85,7 +85,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial_with_examples.html">Tutorial</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_with_examples.html">Software Tutorial</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/preliminaries.html">Preliminaries</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/basics.html">Getting started using the software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/basics.html#the-basic-at-file">The <code class="docutils literal notranslate"><span class="pre">basic.at</span></code> file</a></li>
@@ -94,7 +94,6 @@
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html">Help files</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#atlas-help"><code class="docutils literal notranslate"><span class="pre">atlas.help</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#atlas-functions-help"><code class="docutils literal notranslate"><span class="pre">atlas-functions.help</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#scripts-help"><code class="docutils literal notranslate"><span class="pre">scripts.help</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/basic_commands.html">Basic Commands</a><ul>
@@ -1060,8 +1059,8 @@
 apply to Solaris with little or no change.</p>
 <p>The two options, in order of preference, are:</p>
 <ul class="simple">
-<li><a class="reference internal" href="mac_installation.html#compiling-from-source"><span class="std std-ref">Compiling the Sofware from Source</span></a></li>
-<li><a class="reference internal" href="mac_installation.html#docker"><span class="std std-ref">Using Docker</span></a></li>
+<li><a class="reference internal" href="#compiling-from-source"><span class="std std-ref">Compiling the Sofware from Source</span></a></li>
+<li><a class="reference internal" href="#docker"><span class="std std-ref">Using Docker</span></a></li>
 </ul>
 <div class="section" id="compiling-the-sofware-from-source">
 <span id="compiling-from-source"></span><h2>Compiling the Sofware from Source<a class="headerlink" href="#compiling-the-sofware-from-source" title="Permalink to this headline">¶</a></h2>
@@ -1092,7 +1091,7 @@ tool, and is included by default on most linux distributions.</p>
 <span class="n">compiled</span> <span class="n">on</span> <span class="n">Dec</span> <span class="mi">30</span> <span class="mi">2021</span> <span class="n">at</span> <span class="mi">16</span><span class="p">:</span><span class="mi">01</span><span class="p">:</span><span class="mf">25.</span>   <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">liegroups</span><span class="o">.</span><span class="n">org</span><span class="o">/</span>
 </pre></div>
 </div>
-<p>Congratulations! Go on to <a class="reference internal" href="mac_installation.html#post-compile"><span class="std std-ref">After compiling</span></a> for the next steps.</p>
+<p>Congratulations! Go on to <a class="reference internal" href="#post-compile"><span class="std std-ref">After compiling</span></a> for the next steps.</p>
 <p>You may need to edit the Makefile to change the line <code class="docutils literal notranslate"><span class="pre">CXX</span> <span class="pre">=</span> <span class="pre">g++</span> <span class="pre">-std=c++0x</span></code> to something
 different, depending on your system (this is specifying the C++ compiler).</p>
 <p>To find out your default compiler give the command:</p>
@@ -1201,7 +1200,7 @@ the software from scratch again.</p>
 </div>
 <div class="section" id="using-docker">
 <span id="docker"></span><h2>Using Docker<a class="headerlink" href="#using-docker" title="Permalink to this headline">¶</a></h2>
-<p>The preferred method is to <a class="reference internal" href="mac_installation.html#compiling-from-source"><span class="std std-ref">compile the software from source</span></a>.
+<p>The preferred method is to <a class="reference internal" href="#compiling-from-source"><span class="std std-ref">compile the software from source</span></a>.
 The next choice is using the Docker container system.</p>
 <p>This installs a <em>container</em>, which is a self-contained linux
 environment (similar to a virtual machine) on your machine which is
@@ -1212,8 +1211,12 @@ option of you have trouble compiling the software yourself.</p>
 requires adminsitrative privileges, so is mainly used for personal
 machines, and not institutional machines under the control of a system
 administrator. Also since the software is running in a container
-a little more effort is required for <a class="reference internal" href="mac_installation.html#file-io-in-docker"><span class="std std-ref">file input and output</span></a>.</p>
+a little more effort is required for <a class="reference internal" href="#file-io-in-docker"><span class="std std-ref">file input and output</span></a>.</p>
 <p>Install docker (community version) for your system from <a class="reference external" href="https://www.docker.com/community-edition">https://www.docker.com/community-edition</a></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The default way to install docker is as root, i.e. using <code class="docutils literal notranslate"><span class="pre">sudo</span></code>.  Assuming you do this every <code class="docutils literal notranslate"><span class="pre">docker</span></code> command must be preceded by <code class="docutils literal notranslate"><span class="pre">sudo</span></code> as illustrated here. It is possible to install and run docker in <a class="reference external" href="https://docs.docker.com/engine/security/rootless">rootless mode</a>.</p>
+</div>
 <p>Give the command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">it</span> <span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="p">:</span><span class="n">version1</span><span class="o">.</span><span class="mi">1</span>
 </pre></div>

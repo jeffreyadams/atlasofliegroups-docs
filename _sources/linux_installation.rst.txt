@@ -211,6 +211,8 @@ a little more effort is required for :ref:`file input and output<file_io_in_dock
 
 Install docker (community version) for your system from `<https://www.docker.com/community-edition>`_
 
+.. note:: The default way to install docker is as root, i.e. using ``sudo``.  Assuming you do this every ``docker`` command must be preceded by ``sudo`` as illustrated here. It is possible to install and run docker in `rootless mode <https://docs.docker.com/engine/security/rootless>`_.
+   
 Give the command::
 
       sudo docker run -it jeffreyadams/atlasofliegroups:version1.1

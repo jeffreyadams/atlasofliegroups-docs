@@ -136,7 +136,21 @@ We recommend running::
 (from the atlasofliegroups directory) to  make ``atlas`` accessible
 from anywhere. By default this will put a shell script in ~/bin and
 points to the atlas-scripts directory.  Make sure thath ~/bin is in
-your path. Then the command ``atlas`` will run the software.
+your path. To do this do::
+
+echo $PATH
+
+and look for something like ``Users/username/bin``. If it isn't there,
+one solution is to add a line like this::
+
+    set path = ( $PATH /Users/username/bin)
+
+to the appropriate dot file in your home directory, usually
+either .profile, .zprofile or .zshrc. Then quite the terminal
+program and launch it again (or do ``source .profile`` (possibly with .profile replaced
+by the file you edited); ~/bin should now be in your path.
+
+Now the command ``atlas`` will run the software.
 
 
 The software relies on a large set of auxiliary files in the directory
@@ -216,6 +230,11 @@ Among these::
      make optimize=true
 
 is recommended: the compilation is slower, but the code runs substantially faster.
+Also, if you encounter errors compiling you can try::
+
+     make optimize=true  atlas
+
+to compile atlas only (and not Fokko). 
 
 See the Makefile for more options.
 

@@ -85,7 +85,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial_with_examples.html">Tutorial</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="tutorial_with_examples.html">Software Tutorial</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="tutorial/preliminaries.html">Preliminaries</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/basics.html">Getting started using the software</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/basics.html#the-basic-at-file">The <code class="docutils literal notranslate"><span class="pre">basic.at</span></code> file</a></li>
@@ -94,7 +94,6 @@
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html">Help files</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#atlas-help"><code class="docutils literal notranslate"><span class="pre">atlas.help</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#atlas-functions-help"><code class="docutils literal notranslate"><span class="pre">atlas-functions.help</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="tutorial/video_1A/atlas_help_files.html#scripts-help"><code class="docutils literal notranslate"><span class="pre">scripts.help</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="tutorial/video_1A/basic_commands.html">Basic Commands</a><ul>
@@ -1165,7 +1164,18 @@ readline functions.</p>
 <p>(from the atlasofliegroups directory) to  make <code class="docutils literal notranslate"><span class="pre">atlas</span></code> accessible
 from anywhere. By default this will put a shell script in ~/bin and
 points to the atlas-scripts directory.  Make sure thath ~/bin is in
-your path. Then the command <code class="docutils literal notranslate"><span class="pre">atlas</span></code> will run the software.</p>
+your path. To do this do:</p>
+<p>echo $PATH</p>
+<p>and look for something like <code class="docutils literal notranslate"><span class="pre">Users/username/bin</span></code>. If it isn’t there,
+one solution is to add a line like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>set path = ( $PATH /Users/username/bin)
+</pre></div>
+</div>
+<p>to the appropriate dot file in your home directory, usually
+either .profile, .zprofile or .zshrc. Then quite the terminal
+program and launch it again (or do <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">.profile</span></code> (possibly with .profile replaced
+by the file you edited); ~/bin should now be in your path.</p>
+<p>Now the command <code class="docutils literal notranslate"><span class="pre">atlas</span></code> will run the software.</p>
 <p>The software relies on a large set of auxiliary files in the directory
 atlasofliegroups/atlas-scripts, with the suffix .at (or
 .ax). Generally you want to load all of these, by loading the single
@@ -1225,7 +1235,12 @@ Among these:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">optimize</span><span class="o">=</span><span class="n">true</span>
 </pre></div>
 </div>
-<p>is recommended: the compilation is slower, but the code runs substantially faster.</p>
+<p>is recommended: the compilation is slower, but the code runs substantially faster.
+Also, if you encounter errors compiling you can try:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">optimize</span><span class="o">=</span><span class="n">true</span>  <span class="n">atlas</span>
+</pre></div>
+</div>
+<p>to compile atlas only (and not Fokko).</p>
 <p>See the Makefile for more options.</p>
 </div>
 <div class="section" id="updating-the-atlas-software">
