@@ -1062,19 +1062,7 @@
 </ul>
 <div class="section" id="compiling-the-sofware-from-source">
 <span id="compiling-from-source"></span><h2>Compiling the Sofware from Source<a class="headerlink" href="#compiling-the-sofware-from-source" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="download-the-source-code-using-git">
-<span id="download"></span><h3>Download the source code using git<a class="headerlink" href="#download-the-source-code-using-git" title="Permalink to this headline">¶</a></h3>
-<p>For users who are not familiar with git, see <a class="reference internal" href="help_git.html#help-git"><span class="std std-ref">Help with git</span></a>. git is a software management
-tool, and is included by default on most linux distributions.</p>
-<p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="o">.</span><span class="n">git</span>
-</pre></div>
-</div>
-<p>This creates a subdirectory <code class="docutils literal notranslate"><span class="pre">atlasofliegroups</span></code> and stores the files there.</p>
-</div>
-<div class="section" id="compile">
-<span id="id1"></span><h3>Compile<a class="headerlink" href="#compile" title="Permalink to this headline">¶</a></h3>
-<p>So far this is the same as linux. Now there are a few extra steps required on a Mac versus linux.
+<p id="download">There are a few extra steps required on a Mac versus linux.
 First you need to install the XCode command line tools if you don’t have these already.
 Open a terminal, and type:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">xcode</span><span class="o">-</span><span class="n">select</span> <span class="o">--</span><span class="n">install</span>
@@ -1087,17 +1075,39 @@ of the Quickstart.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">readline</span>
 </pre></div>
 </div>
+<p>You also need to install the software management tool git if you don’t already have it.
+If you are not familiar with gitt see
+<a class="reference internal" href="help_git.html#help-git"><span class="std std-ref">Help with git</span></a>.</p>
+<p>Open a terminal open a terminal and give the command <code class="docutils literal notranslate"><span class="pre">git</span></code>.
+If you get an error it is not installed. If not type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">port</span> <span class="n">install</span> <span class="n">git</span>
+</pre></div>
+</div>
+<div class="section" id="download-the-source-code-using-git">
+<h3>Download the source code using git<a class="headerlink" href="#download-the-source-code-using-git" title="Permalink to this headline">¶</a></h3>
+<p>Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">jeffreyadams</span><span class="o">/</span><span class="n">atlasofliegroups</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>This creates a subdirectory <code class="docutils literal notranslate"><span class="pre">atlasofliegroups</span></code> and stores the files there.</p>
+</div>
+<div class="section" id="compile">
+<span id="id1"></span><h3>Compile<a class="headerlink" href="#compile" title="Permalink to this headline">¶</a></h3>
 <p>Next, you need to tell the compiler where to find read readline
 libraries by setting the shell variable rl_libs.  The simplest method
 is to edit the appropriate <em>dot</em> file in your <em>home directory</em>.
 Your home directory is probably <code class="docutils literal notranslate"><span class="pre">/Users/username</span></code>. You can also find
 it out by giving the command <code class="docutils literal notranslate"><span class="pre">printenv</span></code> and looking for the line <code class="docutils literal notranslate"><span class="pre">HOME=</span></code>.</p>
 <p>The name of this dot file varies, but usually is either .profile,
-.zprofile or .zshrc. Do <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-a</span></code> to see all of your files, and
+.zprofile, .zshrc or .cshrc. Do <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-a</span></code> to see all of your files, and
 look for one beginning with <code class="docutils literal notranslate"><span class="pre">.</span></code>. In any event the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code>
 will take you there.</p>
 <p>Add this line to the file:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">rl_libs</span><span class="o">=</span><span class="s2">&quot;-lreadline -lcurses -L/opt/local/lib&quot;</span>
+</pre></div>
+</div>
+<p>If the file is .cshrc add this instead:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">setenv</span> <span class="n">rl_libs</span> <span class="s2">&quot;-lreadline -lcurses -L/opt/local/lib”</span>
 </pre></div>
 </div>
 <p>Then do <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">.profile</span></code> (or whichever file you edited) to define the environment
