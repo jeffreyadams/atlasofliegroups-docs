@@ -17,24 +17,7 @@ Compiling the Sofware from Source
   
 .. _download:
 
-Download the source code using git
-==================================
-
-For users who are not familiar with git, see :ref:`help_git`. git is a software management
-tool, and is included by default on most linux distributions. 
-
-Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type::
-
-    git clone https://github.com/jeffreyadams/atlasofliegroups.git
-
-This creates a subdirectory ``atlasofliegroups`` and stores the files there.
-
-.. _compile:
-
-Compile 
-========
-
-So far this is the same as linux. Now there are a few extra steps required on a Mac versus linux.
+There are a few extra steps required on a Mac versus linux.
 First you need to install the XCode command line tools if you don't have these already.
 Open a terminal, and type::
 
@@ -48,6 +31,29 @@ Now install the readline library: in a terminal window type::
 
     sudo port install readline
 
+You also need to install the software management tool git if you don't already have it.
+If you are not familiar with gitt see 
+:ref:`help_git`.
+
+Open a terminal open a terminal and give the command ``git``.
+If you get an error it is not installed. If not type::
+
+    sudo port install git
+
+Download the source code using git
+==================================
+
+Choose a directory on your machine to store the source code. Use your terminal to navigate into that directory, then type::
+
+    git clone https://github.com/jeffreyadams/atlasofliegroups.git
+
+This creates a subdirectory ``atlasofliegroups`` and stores the files there.
+
+.. _compile:
+
+Compile 
+========
+
 Next, you need to tell the compiler where to find read readline
 libraries by setting the shell variable rl_libs.  The simplest method
 is to edit the appropriate *dot* file in your *home directory*.
@@ -55,13 +61,17 @@ Your home directory is probably ``/Users/username``. You can also find
 it out by giving the command ``printenv`` and looking for the line ``HOME=``.
 
 The name of this dot file varies, but usually is either .profile,
-.zprofile or .zshrc. Do ``ls -a`` to see all of your files, and
+.zprofile, .zshrc or .cshrc. Do ``ls -a`` to see all of your files, and
 look for one beginning with ``.``. In any event the command ``cd ~``
 will take you there.
 
 Add this line to the file::
 
     export rl_libs="-lreadline -lcurses -L/opt/local/lib"
+
+If the file is .cshrc add this instead::
+
+    setenv rl_libs "-lreadline -lcurses -L/opt/local/lib”
 
 Then do ``source .profile`` (or whichever file you edited) to define the environment
 variable rl_libs. You can check this with the command *printenv*, you should
